@@ -1,0 +1,178 @@
+
+
+
+/* Navigation-bar */
+
+.navigation-bar {
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+.navigation-bar ul.navigation-bar-nav {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation-bar ul.navigation-bar-nav li {
+	float: left;
+	list-style: none;
+	font-size: 16px;
+}
+
+.navigation-bar ul.navigation-bar-nav li a {
+	color: #fff;
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+
+.navigation-bar ul.navigation-bar-nav li a:hover, .navigation-bar ul.navigation-bar-nav li a:focus {
+	color: #fff;
+}
+
+.navigation-bar .currentbranch0 a {
+}
+
+.subnav {
+}
+
+.toggle-navigation {
+	display: none;
+}
+
+
+/* Navbar collapse for iPad portrait */
+
+@media (max-width: 770px) {
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    .navigation-bar ul.navigation-bar-nav {
+    	float: none;
+    }
+
+    .navigation-bar ul.navigation-bar-nav li {
+        float: none;
+        display: block;
+    }
+
+    .navigation-bar ul.navigation-bar-nav li a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        border-bottom: solid 1px #fff;
+        text-align: center;
+    }
+
+    .toggle-navigation {
+    	display: block;
+    	border-bottom: solid 1px #fff;
+        text-align: center;
+        font-size: 20px;
+    }
+
+	.toggle-navigation a {
+		color: #fff;
+		display: block;
+		width: 100%;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 6px;
+	}
+
+	.toggle-navigation a:hover, .toggle-navigation a:focus {
+		cursor: pointer;
+	}
+
+	.navigation-bar .container {
+		padding: 0;
+	}
+
+	ul.navigation-bar-nav {
+		display: none;
+	}
+
+	i.navigation-icon {
+		background: url('../images/furniture/menu-white-svg-icon.svg') no-repeat;
+		height: 14px;
+        width: 20px;
+        display: inline-block;
+        position: relative;
+        top: 0px;
+        margin-right: 6px;
+        background-size: 100%;
+	}
+}
+
+/* Navigation bar colors */
+
+	/* blue */
+
+	.navigation-bar {
+		background-color: $sta-blue;
+	}
+
+	.navigation-bar ul.navigation-bar-nav li a:hover, 
+	.navigation-bar ul.navigation-bar-nav li a:focus {
+		background-color: $sta-blue-hover;
+	}
+
+	.navigation-bar .currentbranch0 a{
+		background-color: $sta-blue-select;
+	}
+
+	.subnav {
+		background-color: $sta-blue-select;
+	}
+
+
+	@media (max-width: 770px) {
+		.toggle-navigation a:hover, 
+		.toggle-navigation a:focus {
+			background-color: $sta-blue-hover;
+			cursor: pointer;
+		}
+	}
+
+	/* blue-study */
+
+	.accent-blue-study .navigation-bar, 
+	.navigation-bar.blue-study {
+		background-color: $sta-blue-study;
+	}
+
+	.accent-blue-study .navigation-bar ul.navigation-bar-nav li a:hover, 
+	.accent-blue-study .navigation-bar ul.navigation-bar-nav li a:focus,
+	.navigation-bar.blue-study ul.navigation-bar-nav li a:hover, 
+	.navigation-bar.blue-study ul.navigation-bar-nav li a:focus {
+		background-color: $sta-blue-study-hover;
+	}
+
+	.accent-blue-study .navigation-bar .currentbranch0 a,
+	.navigation-bar.blue-study .currentbranch0 a {
+		background-color: $sta-blue-study-select;
+	}
+
+	.accent-blue-study .subnav,
+	.subnav.blue-study {
+		background-color: $sta-blue-study-select;
+	}
+
+
+	@media (max-width: 770px) {
+		.accent-blue-study .toggle-navigation a:hover, 
+		.blue-study .toggle-navigation a:focus,
+		.accent-blue-study .toggle-navigation a:hover, 
+		.blue-study .toggle-navigation a:focus {
+			background-color: $sta-blue-study-hover;
+			cursor: pointer;
+		}
+	}
+
+

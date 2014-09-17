@@ -6,6 +6,11 @@
 
  .tile {
  	clear: both;
+ 	background-color: white;
+ 	margin-bottom: 3em;
+ 	-webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+	-moz-box-shadow:    4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+	box-shadow:         4px 4px 8px 0px rgba(0, 0, 0, 0.38);
  }
 
  .tile img {
@@ -16,35 +21,38 @@
 
  }
 
- .tile h1 {
+ .tile h3 {
  	margin-top: -2.6em;
  	font-size: 1.3em;
  	line-height: 2.6em;
- 	background: $standrews-blue-80;
+ 	background: $sta-blue-50;
  	position: relative;
  	z-index: 100;
  	padding: 0 .8em;
+ 	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
  }
- .tile:hover h1 {
+ .tile:hover h3 {
  	background: rgba(0,85,128,0.8);
  }
  	
- .tile.green h1 {
- 	background: $standrews-green-80;
+ .tile.green h3 {
+ 	background: $sta-green-50;
  }
- .tile.purple h1 {
- 	background: $standrews-purple-80;
+ .tile.purple h3 {
+ 	background: $sta-purple-50;
  }
- .tile.red h1 {
- 	background: $standrews-red-80;
+ .tile.red h3 {
+ 	background: $sta-red-50;
  }
 
- .tile h1 a {
+ .tile h3 a {
  	color: white;
  }
 
  .tile p {
+ 	font-size: 1em;
  	height: 7em;
+ 	line-height: 1.2em;
  	padding: 0 1em;
  	margin: 1.5em 0;
  }
@@ -60,7 +68,7 @@
  	float: right;
  	padding-right: 1em;
  	font-weight: bold;
- 	color: $grey-medium;
+ 	color: $sta-grey-med;
  }
 
 

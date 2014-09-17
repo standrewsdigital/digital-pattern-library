@@ -1,0 +1,32 @@
+
+/**********************/
+/* Pattern: Tile Grid */
+/**********************/
+
+.tile-grid {
+	padding: 30px;
+	font-weight: 200;
+	line-height: 2.1428571435;
+	color: inherit;
+	background-color: $sta-grey-med;
+	background: url('../images/background/bg1.jpg');
+	background-position: center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.tile-grid h2 {
+	font-size: 2.5em;
+	color: white;
+	margin: 0;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.tile-grid .bg2 {
+	background-image: url('../images/background/bg2.jpg');
+}
+
+

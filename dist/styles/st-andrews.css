@@ -6662,51 +6662,6 @@ input#q {
   right: -1px;
 }
 
-/* Navigation-bar */
-.navigation-bar {
-  background-color: #0088cc;
-  border: 0;
-  border-radius: 0;
-  margin-bottom: 0;
-}
-
-.navigation-bar ul.navigation-bar-nav {
-  float: left;
-  margin: 0;
-  padding: 0;
-}
-
-.navigation-bar ul.navigation-bar-nav li {
-  float: left;
-  list-style: none;
-  font-size: 16px;
-}
-
-.navigation-bar ul.navigation-bar-nav li a {
-  color: #fff;
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-}
-
-.navigation-bar ul.navigation-bar-nav li a:hover, .navigation-bar ul.navigation-bar-nav li a:focus {
-  color: #fff;
-  background-color: #005580;
-}
-
-.navigation-bar .currentbranch0 a {
-  background-color: #3ba0d3;
-}
-
-.subnav {
-  background-color: #3ba0d3;
-}
-
-.toggle-navigation {
-  display: none;
-}
-
 /* Category header */
 #category-header {
   min-height: 100px;
@@ -7470,6 +7425,163 @@ input#q {
     background-position: left;
   }
 }
+/* Greys */
+/* Accent colors 
+ * Each accent color needs to have the folowing defined for it:
+ *  - $sta-<color>
+ *  - $sta-<color>-hover
+ *  - $sta-<color>-select
+ */
+.button.large.chevron.full-width {
+  font-size: 1.3em;
+  font-weight: normal;
+  color: white;
+  background-color: #00529b;
+  background-image: url(../images/furniture/chevron@2x.png);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  background-size: 1em;
+  width: 100%;
+  display: block;
+  padding-left: .8em;
+  text-decoration: none;
+}
+
+/*
+ * Pattern: Tile
+ */
+.tile {
+  clear: both;
+  background-color: white;
+  margin-bottom: 3em;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+}
+
+.tile img {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.tile h3 {
+  margin-top: -2.6em;
+  font-size: 1.3em;
+  line-height: 2.6em;
+  background: rgba(0, 82, 155, 0.5);
+  position: relative;
+  z-index: 100;
+  padding: 0 .8em;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.tile:hover h3 {
+  background: rgba(0, 85, 128, 0.8);
+}
+
+.tile.green h3 {
+  background: rgba(53, 135, 44, 0.5);
+}
+
+.tile.purple h3 {
+  background: rgba(139, 103, 170, 0.5);
+}
+
+.tile.red h3 {
+  background: rgba(155, 0, 0, 0.5);
+}
+
+.tile h3 a {
+  color: white;
+}
+
+.tile p {
+  font-size: 1em;
+  height: 7em;
+  line-height: 1.2em;
+  padding: 0 1em;
+  margin: 1.5em 0;
+}
+
+.tile-date {
+  float: left;
+  font-weight: bold;
+  padding-left: 1em;
+}
+
+.tile-type {
+  float: right;
+  padding-right: 1em;
+  font-weight: bold;
+  color: #666666;
+}
+
+/**********************/
+/* Pattern: Tile Grid */
+/**********************/
+.tile-grid {
+  padding: 30px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: inherit;
+  background-color: #666666;
+  background: url("../images/background/bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tile-grid h2 {
+  font-size: 2.5em;
+  color: white;
+  margin: 0;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.tile-grid .bg2 {
+  background-image: url("../images/background/bg2.jpg");
+}
+
+/* Navigation-bar */
+.navigation-bar {
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.navigation-bar ul.navigation-bar-nav {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-bar ul.navigation-bar-nav li {
+  float: left;
+  list-style: none;
+  font-size: 16px;
+}
+
+.navigation-bar ul.navigation-bar-nav li a {
+  color: #fff;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.navigation-bar ul.navigation-bar-nav li a:hover, .navigation-bar ul.navigation-bar-nav li a:focus {
+  color: #fff;
+}
+
+.toggle-navigation {
+  display: none;
+}
+
 /* Navbar collapse for iPad portrait */
 @media (max-width: 770px) {
   .navbar-collapse {
@@ -7511,7 +7623,6 @@ input#q {
   }
 
   .toggle-navigation a:hover, .toggle-navigation a:focus {
-    background-color: #005580;
     cursor: pointer;
   }
 
@@ -7534,65 +7645,72 @@ input#q {
     background-size: 100%;
   }
 }
-/*
- * Pattern: Tile
- */
-.tile {
+/* Navigation bar colors */
+/* blue */
+.navigation-bar {
+  background-color: #00529b;
+}
+
+.navigation-bar ul.navigation-bar-nav li a:hover,
+.navigation-bar ul.navigation-bar-nav li a:focus {
+  background-color: #00396c;
+}
+
+.navigation-bar .currentbranch0 a {
+  background-color: #1b74c3;
+}
+
+.subnav {
+  background-color: #1b74c3;
+}
+
+@media (max-width: 770px) {
+  .toggle-navigation a:hover,
+  .toggle-navigation a:focus {
+    background-color: #00396c;
+    cursor: pointer;
+  }
+}
+/* blue-study */
+.accent-blue-study .navigation-bar,
+.navigation-bar.blue-study {
+  background-color: #0088cc;
+}
+
+.accent-blue-study .navigation-bar ul.navigation-bar-nav li a:hover,
+.accent-blue-study .navigation-bar ul.navigation-bar-nav li a:focus,
+.navigation-bar.blue-study ul.navigation-bar-nav li a:hover,
+.navigation-bar.blue-study ul.navigation-bar-nav li a:focus {
+  background-color: #005580;
+}
+
+.accent-blue-study .navigation-bar .currentbranch0 a,
+.navigation-bar.blue-study .currentbranch0 a {
+  background-color: #3ba0d3;
+}
+
+.accent-blue-study .subnav,
+.subnav.blue-study {
+  background-color: #3ba0d3;
+}
+
+@media (max-width: 770px) {
+  .accent-blue-study .toggle-navigation a:hover,
+  .blue-study .toggle-navigation a:focus,
+  .accent-blue-study .toggle-navigation a:hover,
+  .blue-study .toggle-navigation a:focus {
+    background-color: #005580;
+    cursor: pointer;
+  }
+}
+.clear {
   clear: both;
 }
 
-.tile img {
-  height: 200px;
-  width: 100%;
-  position: relative;
-  z-index: 0;
+.top-buffer {
+  margin-top: 30px;
 }
 
-.tile h1 {
-  margin-top: -2.6em;
-  font-size: 1.3em;
-  line-height: 2.6em;
-  background: rgba(0, 127, 175, 0.8);
-  position: relative;
-  z-index: 100;
-  padding: 0 .8em;
-}
-
-.tile:hover h1 {
-  background: rgba(0, 85, 128, 0.8);
-}
-
-.tile.green h1 {
-  background: rgba(0, 127, 0, 0.8);
-}
-
-.tile.purple h1 {
-  background: rgba(139, 103, 170, 0.8);
-}
-
-.tile.red h1 {
-  background: rgba(135, 54, 44, 0.8);
-}
-
-.tile h1 a {
-  color: white;
-}
-
-.tile p {
-  height: 7em;
-  padding: 0 1em;
-  margin: 1.5em 0;
-}
-
-.tile-date {
-  float: left;
-  font-weight: bold;
-  padding-left: 1em;
-}
-
-.tile-type {
-  float: right;
-  padding-right: 1em;
-  font-weight: bold;
-  color: #777777;
+.bottom-buffer {
+  margin-bottom: 50px;
 }

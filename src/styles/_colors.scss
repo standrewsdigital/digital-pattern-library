@@ -1,12 +1,43 @@
-$standrews-blue-80: rgba(0,127,175,0.8);
-$standrews-green-80: rgba(0,127,0,0.8);
-$standrews-red-80: rgba(135,54,44,0.8);
-$standrews-purple-80: rgba(139,103,170,0.8);
+$sta-blue: 				rgb(0,82,155);
+$sta-blue-50: 			rgba(0,82,155,0.5);
+$sta-blue-hover: 		rgb(0,57,108);
+$sta-blue-select: 		rgb(27,116,195);
 
+$sta-blue-study: 		rgb(0,136,204);
+$sta-blue-study-50:		rgba(0,136,204,0.5);
+$sta-blue-study-hover:	rgb(0,85,128);
+$sta-blue-study-select:	rgb(59,160,211);
 
+$sta-green:				rgb(53,135,44);
+$sta-green-50: 			rgba(53,135,44,0.5);
 
+$sta-red:				rgb(155,0,0);
+$sta-red-50: 			rgba(155,0,0,0.5);
+$sta-red-hover:			rgb(108,0,0);
+	
+$sta-purple: 			rgb(139,103,170);
+$sta-purple-50:			rgba(139,103,170,0.5);
+	
+/* Greys */	
+	
+$sta-grey-light: 		rgb(238,238,238);
+$sta-grey-light-50: 	rgba(238,238,238,.5);
+	
+$sta-grey-med: 			rgb(102,102,102);
+$sta-grey-med-50: 		rgba(102,102,102,.5);
+	
+$sta-grey: 				rgb(68,68,68);
+$sta-grey-hover: 		rgb(34,34,34);
+$sta-grey-select: 		rgb(102,102,102);
+$sta-grey-50: 			rgba(68,68,68,.5);
 
+/* Accent colors 
+ * Each accent color needs to have the folowing defined for it:
+ *  - $sta-<color>
+ *  - $sta-<color>-hover
+ *  - $sta-<color>-select
+ */
 
+$accent_colors: 		blue blue-study 
 
-$grey-medium: #777;
 
