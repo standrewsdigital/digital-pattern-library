@@ -11,10 +11,12 @@ Last updated    1 March 2014
     PAGE STRUCTURE
 ================================================================================
 */
+/* line 14, ../../src/styles/print.scss */
 .container {
   background: none;
 }
 
+/* line 17, ../../src/styles/print.scss */
 body {
   background: none;
   color: #000;
@@ -28,15 +30,18 @@ body {
   word-spacing: 1.1pt;
 }
 
+/* line 29, ../../src/styles/print.scss */
 #header h1 a {
   text-decoration: none;
 }
 
+/* line 32, ../../src/styles/print.scss */
 #relatedcontent {
   border-top: 1px solid #000;
   margin-top: 1em;
 }
 
+/* line 36, ../../src/styles/print.scss */
 #footer-charity {
   left: 0;
   margin: 0;
@@ -44,6 +49,7 @@ body {
   text-align: left;
 }
 
+/* line 42, ../../src/styles/print.scss */
 #footer-charity:before {
   content: "Copyright ";
 }
@@ -51,6 +57,7 @@ body {
 /*==============================================================================
     REMOVE FROM PRINTED VERSION
 ==============================================================================*/
+/* line 66, ../../src/styles/print.scss */
 #skiptocontent,
 #topnavbar, #navglobal, #navsearch,
 #navmain,
@@ -74,10 +81,12 @@ nav.navigation-bar,
 /*==============================================================================
     DISPLAY PRINT-ONLY HEADER
 ==============================================================================*/
+/* line 73, ../../src/styles/print.scss */
 #print-header {
   display: block;
 }
 
+/* line 77, ../../src/styles/print.scss */
 #print-header img {
   height: auto;
   max-width: 100%;
@@ -87,6 +96,7 @@ nav.navigation-bar,
 /*==============================================================================
     HEADINGS
 ==============================================================================*/
+/* line 87, ../../src/styles/print.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: Palatino, "Palatino Roman", "Palatino Regular", "Book Antiqua", Georgia, Times, serif;
   font-weight: normal;
@@ -95,31 +105,38 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+/* line 94, ../../src/styles/print.scss */
 h2, h3, h4, h5, h6 {
   font-family: "Myriad Roman", "Myriad Pro", "PT Sans", Arial, sans-serif;
 }
 
+/* line 97, ../../src/styles/print.scss */
 h1 {
   font-size: 24pt;
 }
 
+/* line 98, ../../src/styles/print.scss */
 h2 {
   font-size: 18pt;
 }
 
+/* line 99, ../../src/styles/print.scss */
 h3 {
   font-size: 14pt;
 }
 
+/* line 100, ../../src/styles/print.scss */
 h4 {
   font-size: 12pt;
 }
 
+/* line 101, ../../src/styles/print.scss */
 h5 {
   font-size: 11pt;
   font-weight: bold;
 }
 
+/* line 102, ../../src/styles/print.scss */
 h6 {
   font-size: 10pt;
   font-style: italic;
@@ -128,6 +145,7 @@ h6 {
 /*==============================================================================
     HTML
 ==============================================================================*/
+/* line 109, ../../src/styles/print.scss */
 a:link,
 a:visited {
   background: transparent;
@@ -136,10 +154,12 @@ a:visited {
   text-decoration: underline;
 }
 
+/* line 115, ../../src/styles/print.scss */
 a img {
   border: none;
 }
 
+/* line 118, ../../src/styles/print.scss */
 blockquote {
   font-size: 0.9em;
   font-style: italic;
@@ -147,10 +167,12 @@ blockquote {
   padding: 1em;
 }
 
+/* line 124, ../../src/styles/print.scss */
 code {
   font: 0.9em "Courier New", Monaco, Courier, monospace;
 }
 
+/* line 127, ../../src/styles/print.scss */
 hr {
   background: #ccc;
   border: none;
@@ -161,11 +183,13 @@ hr {
   width: 100%;
 }
 
+/* line 136, ../../src/styles/print.scss */
 hr.space {
   background: #fff;
   color: #fff;
 }
 
+/* line 141, ../../src/styles/print.scss */
 #content img {
   clear: both;
   margin: 1.5em 1.5em 1.5em 0;
@@ -173,6 +197,7 @@ hr.space {
   height: auto;
 }
 
+/* line 148, ../../src/styles/print.scss */
 aside {
   border-top: solid 2px #ccc;
   padding-top: 1em;
@@ -181,39 +206,47 @@ aside {
 /*==============================================================================
     TABLE
 ==============================================================================*/
+/* line 157, ../../src/styles/print.scss */
 table {
   margin: 1px;
   text-align: left;
   width: 100%;
 }
 
+/* line 162, ../../src/styles/print.scss */
 th {
   border-bottom: 1px solid #333;
   font-weight: bold;
 }
 
+/* line 166, ../../src/styles/print.scss */
 tr {
   page-break-inside: avoid;
 }
 
+/* line 169, ../../src/styles/print.scss */
 td {
   border-bottom: 1px solid #333;
 }
 
+/* line 172, ../../src/styles/print.scss */
 th, td {
   padding: 4px 10px 4px 0;
 }
 
+/* line 175, ../../src/styles/print.scss */
 tfoot {
   font-style: italic;
 }
 
+/* line 178, ../../src/styles/print.scss */
 caption {
   background: #fff;
   margin-bottom: 2em;
   text-align: left;
 }
 
+/* line 183, ../../src/styles/print.scss */
 thead {
   display: table-header-group;
 }
@@ -221,43 +254,52 @@ thead {
 /*==============================================================================
     CLASSES
 ==============================================================================*/
+/* line 192, ../../src/styles/print.scss */
 .box {
   border: 2px solid dimgray;
   padding: 12px;
 }
 
+/* line 197, ../../src/styles/print.scss */
 .box a,
 .box p {
   margin: 0;
   padding: 0;
 }
 
+/* line 201, ../../src/styles/print.scss */
 .box h3 {
   margin-top: 0;
 }
 
+/* line 203, ../../src/styles/print.scss */
 .hide,
 .hidden {
   display: none;
 }
 
+/* line 204, ../../src/styles/print.scss */
 .large {
   font-size: 1.1em;
 }
 
+/* line 205, ../../src/styles/print.scss */
 .small {
   font-size: 0.9em;
 }
 
+/* line 207, ../../src/styles/print.scss */
 .pagebreak,
 .pagebreak-before {
   page-break-before: always;
 }
 
+/* line 210, ../../src/styles/print.scss */
 .pagebreak-after {
   page-break-after: always;
 }
 
+/* line 213, ../../src/styles/print.scss */
 .quiet {
   color: #999;
 }
@@ -267,6 +309,7 @@ thead {
 ==============================================================================*/
 /* Replace content - print URLs (but not in-page #links)
 ==============================================================================*/
+/* line 226, ../../src/styles/print.scss */
 #content a[href^="http://"]:link:after, #content a[href^="http://"]:visited:after,
 #content a[href^="https://"]:link:after, #content a[href^="https://"]:visited:after,
 #content a[href^="mailto:"]:link:after, #content a[href^="mailto"]:visited:after,
@@ -279,6 +322,7 @@ thead {
   font-size: 90%;
 }
 
+/* line 236, ../../src/styles/print.scss */
 #content a[href^="#"]:link:after,
 #content a[href^="#"]:visited:after,
 #relatedcontent a[href^="#"]:link:after,
@@ -288,6 +332,7 @@ thead {
 }
 
 /* Print abbreviations and acronym titles after content */
+/* line 241, ../../src/styles/print.scss */
 #content abbr:after,
 #content acronym:after {
   content: " (" attr(title) ") ";
@@ -296,6 +341,7 @@ thead {
 /*==============================================================================
     DISPLAY ACCORDION TOGGLE CONTENT
 ==============================================================================*/
+/* line 249, ../../src/styles/print.scss */
 .accordion .toggle {
   display: block!important;
 }

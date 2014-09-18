@@ -32,21 +32,36 @@
  	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
  }
  .tile:hover h3 {
- 	background: rgba(0,85,128,0.8);
+ 	background: $sta-blue-hover;
  }
  	
  .tile.green h3 {
  	background: $sta-green-50;
  }
+
+ .tile.green:hover h3 {
+ 	background: $sta-green-hover;
+ }
+
  .tile.purple h3 {
  	background: $sta-purple-50;
  }
+
+ .tile.purple:hover h3 {
+ 	background: $sta-purple-hover;
+ }
+
  .tile.red h3 {
  	background: $sta-red-50;
  }
 
+ .tile.red:hover h3 {
+ 	background: $sta-red-hover;
+ }
+
  .tile h3 a {
  	color: white;
+	text-decoration: none;
  }
 
  .tile p {

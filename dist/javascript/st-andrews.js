@@ -1,19 +1,18 @@
+// Pattern Tile - big target
+$(".tile h3 a").bigTarget({
+hoverClass: 'over', // CSS class applied to the click zone onHover
+clickZone : 'div:eq(0)' // jQuery parent selector
+});
 
+$("div.image-container .image-text-box a").bigTarget({
+hoverClass: 'over', // CSS class applied to the click zone onHover
+clickZone : 'div:eq(1)' // jQuery parent selector
+});
 
-// Pattern Tile
+$(document).ready(function(){
+$(".secondary-call").fitVids();
+});
 
-// $(".tile h1 a").bigTarget({
-// 	hoverClass: 'over', // CSS class applied to the click zone onHover
-// 	clickZone : 'article:eq(1)' // jQuery parent selector
-// });
-
-$('.tile').each(function(){
-	// var link = $(this).find('a').attr('href');
-	var tile = $(this);
-	var a = $(this).find('a').click();
-	tile.click(function(e){
-		e.stopPropagation();
-		a.click();
-		//$(this).find('a').click();
-	});
+$(".primary-toggle").click(function(){
+	$(".navigation-bar .primary-nav").slideToggle();
 });
