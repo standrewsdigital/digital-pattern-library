@@ -26,6 +26,22 @@
 	.button-ctb {
 		@extend .button;
 	}
+	.button-ctb:after {
+		content: " ";
+        position: relative;
+        top: .3em;
+        left: 0em;
+        height: 1.8em;
+        width: 1.8em;
+        display: inline-block;
+        padding: 0;
+        margin-left: 1em;
+
+        background-image: url(../images/furniture/chevron@2x.png);
+        background-size: 1.5em;
+        background-repeat: no-repeat;
+        background-position: center center;
+	}
 	.button-ctb:hover {
 		@extend .button:hover;	
 	}

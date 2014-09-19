@@ -9,15 +9,14 @@ Description     Framework built on Twitter Bootstrap
 Last Updated    1 March 2014
 */
 
-@import 'bootstrap';
-@import 'typography';
-@import 'original';
-@import 'colors';
-@import 'patterns/button';
-@import 'patterns/chevron';
-@import 'patterns/external-home';
-@import 'patterns/header';
-@import 'patterns/tile';
-@import 'patterns/tile-grid';
-@import 'patterns/navigation-bar';
-@import 'utilities';
+@import 'vendor/bootstrap';
+@import 'base/typography';
+@import 'base/original';
+@import 'base/colors';
+@import 'patterns/button/button';
+@import 'patterns/external-home/external-home';
+@import 'patterns/header/header';
+@import 'patterns/tile/tile';
+@import 'patterns/tile-grid/tile-grid';
+@import 'patterns/navigation-bar/navigation-bar';
+@import 'base/utilities';
