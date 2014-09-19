@@ -1,16 +1,98 @@
 
+	/**********************/
+	/* Pattern: Button    */
+	/**********************/
 
-	.button.large.chevron.full-width {
-		font-size: 1.3em;
-		font-weight: normal;
-		color: white;
+	.button {
 		background-color: $sta-blue;
-		background-image: url(../images/furniture/chevron@2x.png);
-		background-repeat: no-repeat;
-		background-position: 95% 50%;
-		background-size: 1em;
-		width: 100%;
-		display: block;
-		padding-left: .8em;
+		color: white;
+		display: inline-block;
 		text-decoration: none;
+		position: relative;
+		overflow: hidden;
+		padding: .3em .5em .5em;
 	}
+	.button:hover {
+		background-color: $sta-blue-hover;
+	}
+
+	.button-cta {
+		@extend .button;
+	}
+	.button-cta:hover {
+		@extend .button:hover;	
+	}
+
+	.button-ctb {
+		@extend .button;
+	}
+	.button-ctb:hover {
+		@extend .button:hover;	
+	}
+
+
+	.button-toggle-vert {
+		@extend .button;
+	}
+	.button-ctb:hover {
+		@extend .button:hover;	
+	}
+	.button-toggle-vert:after {
+		content: " ";
+        position: relative;
+        top: .3em;
+        left: 0em;
+        height: 1.8em;
+        width: 1.8em;
+        display: inline-block;
+        padding: 0;
+        margin-left: 1em;
+
+        background-image: url(../images/furniture/chevron@2x.png);
+        background-size: 1.5em;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+		-moz-transform:rotate(90deg);
+        -o-transform:rotate(90deg);
+        -webkit-transform:rotate(90deg);
+        -ms-transform:rotate(90deg);
+        transform:rotate(90deg);
+	}
+	.button-toggle-vert.button-toggle-vert-up:after {
+		-moz-transform:rotate(270deg);
+        -o-transform:rotate(270deg);
+        -webkit-transform:rotate(270deg);
+        -ms-transform:rotate(270deg);
+        transform:rotate(270deg);
+	}
+	
+
+
+
+	img.icon {
+		height: 30px !important;
+
+	}
+
+
+
+
+
+/*	.button-search {
+		background-image: url("../images/furniture/search-512.png");
+		background-repeat: no-repeat;
+		background-size: auto 75%;
+		background-position: left center;
+		width: 6em;
+	}
+	.button-search span {
+		display: none;
+	} */
+
+	/* BUTTON COLORS */
+
+	/* Default */
+
+
+
