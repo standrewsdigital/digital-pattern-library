@@ -104,6 +104,25 @@ module.exports = function(grunt) {
     },
 
 
+    /* task: clean - remove generated content */
+    clean: {
+      patterns: {
+        src: ["patterns"]
+      },
+      images: {
+        src: ["build/images"]
+      },
+      js: {
+        src: ["build/scripts"]
+      },
+      styles: {
+        src: ["build/styles"]
+      },
+      build: {
+        src: ["build"] 
+      }
+    },
+
     /* task: copy - move files (mostly images) from src to build */
     copy: {
       images: {
@@ -125,14 +144,21 @@ module.exports = function(grunt) {
       },
       js: {
         files: ['src/**/*.js'],
-        tasks: ['jshint','concat'],
+        tasks: ['clean:js','jshint','concat'],
+        options: {
+          interrupt: true
+        },
+      },
+      images: {
+        files: ['src/images/**/*'],
+        tasks: ['clean:images','copy'],
         options: {
           interrupt: true
         },
       },
       styles: {
         files: ['src/**/*.scss'],
-        tasks: ['compass'],
+        tasks: ['clean:styles','compass'],
         options: {
           interrupt: true
         },
@@ -142,7 +168,7 @@ module.exports = function(grunt) {
           'src/**/*.hbs',
           'src/**/*.json',
           'src/**/*.md'],
-        tasks: ['assemble'],
+        tasks: ['clean:patterns','assemble'],
         options: {
           interrupt: true
         },
@@ -156,7 +182,7 @@ module.exports = function(grunt) {
 
   // Load grunt plugins
   grunt.loadNpmTasks('assemble');  
-
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
@@ -166,7 +192,7 @@ module.exports = function(grunt) {
 
 
   // Define default tasks.
-  grunt.registerTask('default', ['compass','jshint','concat','assemble']);
+  grunt.registerTask('default', ['clean:build','clean:patterns','compass','jshint','concat','copy','assemble']);
 
 };
 
