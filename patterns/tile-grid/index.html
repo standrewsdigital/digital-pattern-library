@@ -287,7 +287,10 @@ A tile grid contains a heading, a call to browse button and a grid layout of til
     <script>
     (function($){
 
-      $(".pattern-source").html(htmlEncode($(".pattern-source").html()));
+      $(".pattern-source").each(function(){
+        var t = $(this)
+        t.html(htmlEncode(t.html()));
+      });
 
     })(jQuery);
 

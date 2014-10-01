@@ -188,7 +188,10 @@ A tile is a clickable, single-action item. It includes an image, title and descr
     <script>
     (function($){
 
-      $(".pattern-source").html(htmlEncode($(".pattern-source").html()));
+      $(".pattern-source").each(function(){
+        var t = $(this)
+        t.html(htmlEncode(t.html()));
+      });
 
     })(jQuery);
 
