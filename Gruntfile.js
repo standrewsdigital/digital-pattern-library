@@ -88,18 +88,18 @@ module.exports = function(grunt) {
         ]
       },
 
-      // examples: {
-      //   options: { layout: 'pattern_example.hbs' },
-      //   files: [
-      //     {
-      //       expand: true,     // Enable dynamic expansion.
-      //       cwd: 'src/patterns/',      // Src matches are relative to this path.
-      //       src: ['*/examples/*.hbs'], // Actual pattern(s) to match.
-      //       dest: 'patterns',
-      //       ext: '.html',   // Dest filepaths will have this extension.
-      //     }
-      //   ]
-      // }
+      examples: {
+        options: { layout: 'pattern_example.hbs' },
+        files: [
+          {
+            expand: true,     // Enable dynamic expansion.
+            cwd: 'src/patterns/',      // Src matches are relative to this path.
+            src: ['*/examples/*.hbs'], // Actual pattern(s) to match.
+            dest: 'patterns',
+            ext: '.html',   // Dest filepaths will have this extension.
+          }
+        ]
+      }
 
     },
 
