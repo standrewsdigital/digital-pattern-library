@@ -1,15 +1,22 @@
 To Do
 
-
-* Transition all patterns to new format (see tile pattern for an example)
-* (after tranisition) Remove unnecessary .html files in /src/
-* Update samples to pull in the new directory structure of files in /build/
-* Generate a list of patterns dynamically for an index page.
-* Create a basic header / footer for pattern that will give some easy of browsing around.
+Infrastructure
 * Implement Live Reload for pattern and sample pages.
   (https://github.com/gruntjs/grunt-contrib-watch/blob/master/docs/watch-examples.md#enabling-live-reload-in-your-html)
+* Add a patchwork pattern library page
+* Write summary
+* Write a README on how to get setup developing
+* Write another piece about how to add a new pattern.
 
 
+Coding Style Guide
+* Add a section to the patterns on coding style
+* Write a draft coding style guide.
+
+
+Pattern development
+* Transition all patterns to new format (see tile pattern for an example)
+* (after tranisition) Remove pattern-bkp folder
 * Finesse buttons for external-home pattern
 * Update with official colors 
 * Expand and document the accent color ideas (create a pattern?) 
