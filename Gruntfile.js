@@ -63,8 +63,8 @@ module.exports = function(grunt) {
       
       options: {
         assets: 'build',
-        layoutdir: 'src/_doc/layouts',
-        partials: ['src/patterns/*/*.hbs'],
+        layoutdir: 'src/patterns/_layouts',
+        partials: ['src/patterns/*/*.hbs','src/patterns/!(_layouts)/*.hbs'],
         ext: '.html',
         data: 'src/patterns/*/data/*.json',
         helpers: ['handlebars-helper-asset'],
@@ -76,10 +76,10 @@ module.exports = function(grunt) {
         },
         files: [
           {
-            expand: true,     // Enable dynamic expansion.
-            cwd: 'src/patterns/',      // Src matches are relative to this path.
-            src: ['index.hbs','*/*.doc.hbs'], // Actual pattern(s) to match.
-            ext: '.html',   // Dest filepaths will have this extension.
+            expand: true,     
+            cwd: 'src/patterns/',
+            src: ['index.hbs','*/*.doc.hbs'],
+            ext: '.html',
             dest: 'build',
             rename: function(src,dest){
               return 'patterns/' + dest.replace(/\/[a-zA-Z0-9_-]+.html$/,'/index.html');
