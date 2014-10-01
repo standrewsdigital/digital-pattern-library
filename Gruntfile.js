@@ -104,6 +104,20 @@ module.exports = function(grunt) {
     },
 
 
+    /* task: copy - move files (mostly images) from src to build */
+    copy: {
+      images: {
+        files: [
+          {
+            expand: true,     // Enable dynamic expansion.
+            cwd: 'src/images/',      // Src matches are relative to this path.
+            src: ['**/*'], // Actual pattern(s) to match.
+            dest: 'build/images'
+          }
+        ]
+      }
+    },
+
     /* task: watch - run tasks when specified files change */
     watch: {
       grunt: {
@@ -141,11 +155,14 @@ module.exports = function(grunt) {
 
 
   // Load grunt plugins
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('assemble');  
+
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('assemble');
+  
 
 
   // Define default tasks.
