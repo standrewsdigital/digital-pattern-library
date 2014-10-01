@@ -1,4 +1,17 @@
 ---
-title: Digital Pattern Library Index
+title: Digital Pattern Library
+layout: _base.hbs
 ---
-Pattern Index File
+
+<h1>Digital Pattern Library</h1>
+
+Patterns
+
+<ul>
+	{{#each pages }} 
+		{{#is basename "index"}}
+		{{else}}
+		<li> <a  href ="{{data.pattern}}/index.html" > {{data.pattern }} </a > </li > 
+		{{/is}}
+	{{/each  }} 
+</ul>

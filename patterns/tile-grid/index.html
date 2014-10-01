@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html > 
   <head > 
-    <title >Tile</title > 
+    <title >Tile Grid</title > 
 
     
         <style>
@@ -94,12 +94,12 @@
 
  
 
-  		<h1>Pattern: Tile</h1>
+  		<h1>Pattern: Tile Grid</h1>
 	   	
 
       
 
-A tile is a clickable, single-action item. It includes an image, title and description. It's ideally used for displaying an event or news item.
+A tile grid contains a heading, a call to browse button and a grid layout of tiles. It is used to show a collection of news and/or events.
 
 <h2>Rules</h2>
 
@@ -109,39 +109,138 @@ A tile is a clickable, single-action item. It includes an image, title and descr
 
 <h2>Syntax</h2>
 
-<div class="pattern-source">
+<div class="pattern-source"><div class="tile-grid">
+  
+  <div class="container">
+
+  	<div class="row top-buffer">
+	    <div class="col-md-8 bottom-buffer">
+	      <h2></h2>
+	    </div>
+	    <div class="col-md-4 bottom-buffer">
+	    	<div><a class="button large chevron full-width" href=""></a></div>
+	    </div>
+	</div>
+
+	<div class="row">
+	    <div class="col-sm-6 col-md-4">
+			
 <article class="tile">
 
-  <img src='path/to/image.jpg' alt="[Alternative text]">
+  <img src='' alt="">
   
-  <h3><a href="http://tile-url/">[Tile Title]</a></h3>
+  <h3><a href="">Tile Grid</a></h3>
   
-  <p>[Tile Description... Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.]</p>
+  <p></p>
   
-  <div class='tile-date' datetime="2014-08-21">21 August 2014</div>
+  <div class='tile-date' datetime=""></div>
   
-  <div class='tile-type'>Photo of the week</div>
+  <div class='tile-type'></div>
   
   <div class="clear"></div>
 
-</article></div>
+</article>
+		</div>
 
-<div class="pattern-source">
+		 <div class="col-sm-6 col-md-4">
+			
 <article class="tile">
 
-  <img src='../../../build/images/placeholders/360x240.jpg' alt="Description">
+  <img src='' alt="">
   
-  <h3><a href="http://google.com">A Rae of Aristic Sunshine</a></h3>
+  <h3><a href="">Tile Grid</a></h3>
   
-  <p>The work of one of Scotland&#x27;s most revered contemporary artists, Barbara Rae, is to go on display in St Andrews, thanks to the University of St Andrews&#x27; Museum Collections.</p>
+  <p></p>
   
-  <div class='tile-date' datetime="2014-08-21">21 August 2014</div>
+  <div class='tile-date' datetime=""></div>
   
-  <div class='tile-type'>Photo of the week</div>
+  <div class='tile-type'></div>
   
   <div class="clear"></div>
 
-</article></div>
+</article>
+	    </div>
+
+	    <div class="col-sm-6 col-md-4">
+			
+<article class="tile">
+
+  <img src='' alt="">
+  
+  <h3><a href="">Tile Grid</a></h3>
+  
+  <p></p>
+  
+  <div class='tile-date' datetime=""></div>
+  
+  <div class='tile-type'></div>
+  
+  <div class="clear"></div>
+
+</article>
+		</div>
+
+		 <div class="col-sm-6 col-md-4">
+			
+<article class="tile">
+
+  <img src='' alt="">
+  
+  <h3><a href="">Tile Grid</a></h3>
+  
+  <p></p>
+  
+  <div class='tile-date' datetime=""></div>
+  
+  <div class='tile-type'></div>
+  
+  <div class="clear"></div>
+
+</article>
+	    </div>
+
+	    <div class="col-sm-6 col-md-4">
+			
+<article class="tile">
+
+  <img src='' alt="">
+  
+  <h3><a href="">Tile Grid</a></h3>
+  
+  <p></p>
+  
+  <div class='tile-date' datetime=""></div>
+  
+  <div class='tile-type'></div>
+  
+  <div class="clear"></div>
+
+</article>
+		</div>
+
+		 <div class="col-sm-6 col-md-4">
+			
+<article class="tile">
+
+  <img src='' alt="">
+  
+  <h3><a href="">Tile Grid</a></h3>
+  
+  <p></p>
+  
+  <div class='tile-date' datetime=""></div>
+  
+  <div class='tile-type'></div>
+  
+  <div class="clear"></div>
+
+</article>
+	    </div>
+	</div>  <!-- // End .row -->
+
+  </div> <!-- // End .container -->
+
+</div>  <!-- // End .tile-grid --></div>
 
 
 <h2>Options</h2>
@@ -162,7 +261,7 @@ A tile is a clickable, single-action item. It includes an image, title and descr
 
 <ul>
 	
-	<li><a href="../tile-grid/index.html">tile-grid</a></li>
+	<li><a href="../tile/index.html">tile</a></li>
 	
 </ul>
 

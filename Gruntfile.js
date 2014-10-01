@@ -5,11 +5,6 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    dirs: {
-      src: 'src',
-      dest: 'build',
-    },
-
     // uglify: {
     //   options: {
     //     banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
@@ -20,23 +15,40 @@ module.exports = function(grunt) {
     //   }
     // },
 
+     /* task: concat - combine scripts into single file.  */
     concat: {
-      dist: {
-        src: ['<%= dirs.src %>/vendor/*.js','<%= dirs.src %>/base/*.js','<%= dirs.src %>/patterns/**/*.js'],
-        dest: '<%= dirs.dest %>/scripts/core.js'
+      js: {
+        src: [
+          'src/vendor/jquery-1.11.0.min.js', 
+          'src/vendor/jquery.bigtarget.js',
+          'src/vendor/jquery.fitvids.js',
+          'src/vendor/respond.js',
+          'src/vendor/bootstrap.min.js',
+          'src/base/*.js',
+          'src/patterns/*/*.js'
+        ],
+        dest: 'build/scripts/core.js'
       }
     },
 
+
+    /* task: jshint - check Javascript for errors  */
     jshint: {
-      defaults: ['<%= dirs.src %>/base/base.js','<%= dirs.src %>/patterns/**/*.js'],
+      defaults: ['src/base/base.js','src/patterns/**/*.js'],
     },
 
+
+    /* task: compass - compile compass/sass code to CSS */
     compass: {
       dist: {
-        options: {              // Target options
-          specify: ['<%= dirs.src %>/screen.scss','<%= dirs.src %>/print.scss','<%= dirs.src %>/ie.scss'],
-          sassDir: '<%= dirs.src %>',
-          cssDir: '<%= dirs.dest %>/styles',
+        options: {
+          specify: [
+            'src/screen.scss',
+            'src/print.scss',
+            'src/ie.scss'
+          ],
+          sassDir: 'src',
+          cssDir: 'build/styles',
           environment: 'production',
           force: true,
           trace: true,
@@ -45,17 +57,75 @@ module.exports = function(grunt) {
       }
     },
 
+
+    /* task: assemble - generate the pattern library*/
+    assemble: {
+      
+      options: {
+        assets: 'build',
+        layoutdir: 'src/_doc/layouts',
+        partials: ['src/patterns/*/*.hbs'],
+        ext: '.html',
+        data: 'src/patterns/*/data/*.json',
+        helpers: ['handlebars-helper-asset'],
+      },
+
+      patterns: {
+        options: { 
+          layout: 'pattern.hbs'
+        },
+        files: [
+          {
+            expand: true,     // Enable dynamic expansion.
+            cwd: 'src/patterns/',      // Src matches are relative to this path.
+            src: ['index.hbs','*/*.doc.hbs'], // Actual pattern(s) to match.
+            ext: '.html',   // Dest filepaths will have this extension.
+            dest: 'build',
+            rename: function(src,dest){
+              return 'patterns/' + dest.replace(/\/[a-zA-Z0-9_-]+.html$/,'/index.html');
+            }
+          }
+        ]
+      },
+
+      // examples: {
+      //   options: { layout: 'pattern_example.hbs' },
+      //   files: [
+      //     {
+      //       expand: true,     // Enable dynamic expansion.
+      //       cwd: 'src/patterns/',      // Src matches are relative to this path.
+      //       src: ['*/examples/*.hbs'], // Actual pattern(s) to match.
+      //       dest: 'patterns',
+      //       ext: '.html',   // Dest filepaths will have this extension.
+      //     }
+      //   ]
+      // }
+
+    },
+
+
+    /* task: watch - run tasks when specified files change */
     watch: {
       js: {
-        files: ['<%= dirs.src %>/**/*.js'],
+        files: ['src/**/*.js'],
         tasks: ['jshint','concat'],
         options: {
           interrupt: true
         },
       },
       styles: {
-        files: ['<%= dirs.src %>/**/*.scss'],
+        files: ['src/**/*.scss'],
         tasks: ['compass'],
+        options: {
+          interrupt: true
+        },
+      },
+      docs: {
+        files: [
+          'src/**/*.hbs',
+          'src/**/*.json',
+          'src/**/*.md'],
+        tasks: ['assemble'],
         options: {
           interrupt: true
         },
@@ -63,77 +133,21 @@ module.exports = function(grunt) {
     },
 
 
-    /* Used for generating the pattern library*/
-    assemble: {
-      options: {
-        assets: 'build',
-        layoutdir: '<%= dirs.src %>/_documentation_layouts',
-        partials: ['<%= dirs.src %>/patterns/*/*.hbs'],
-        ext: '.html',
-        data: '<%= dirs.src %>/patterns/*/*.json',
-
-        // registerFunctions: function (engine)  { 
-        //   var  helperFunctions = {};
-        //   helperFunctions['foo' ] = function ()  {  return  'bar'; };
-        //   engine.engine.registerFunctions(helperFunctions);
-        // }
-      },
-
-
-      index: {
-        options: { layout: 'index.hbs' },
-        files: {
-          'patterns/index.html':'<%= dirs.src %>/patterns/index.hbs'
-        }
-      },
-      patterns: {
-        options: { layout: 'pattern.hbs' },
-        files: [
-          {
-            expand: true,     // Enable dynamic expansion.
-            cwd: '<%= dirs.src %>/patterns/',      // Src matches are relative to this path.
-            src: ['*/*.hbs'], // Actual pattern(s) to match.
-            ext: '.html',   // Dest filepaths will have this extension.
-            rename: function(src,dest){
-              return 'patterns/' + dest.replace(/\/[a-zA-Z0-9_-]+.html$/,'/index.html');
-            }
-          }
-        ]
-
-      },
-      samples: {
-        options: { layout: 'pattern_sample.hbs' },
-        // src: ['<%= dirs.src %>/patterns/*/samples/*.hbs'],
-        // dest: 'patterns'
-        files: [
-          {
-            expand: true,     // Enable dynamic expansion.
-            cwd: '<%= dirs.src %>/patterns/',      // Src matches are relative to this path.
-            src: ['*/samples/*.hbs'], // Actual pattern(s) to match.
-            dest: 'patterns',
-            ext: '.html',   // Dest filepaths will have this extension.
-            // rename: function(src,dest){
-            //   return 'patterns/' + dest.replace(/\/[a-zA-Z0-9_-]+.html$/,'/index.html');
-            // }
-          }
-        ]
-      }
-    },
-
-
   });
 
+
+
   // Load grunt plugins
-  
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('assemble');
-  // grunt.loadNpmTasks('grunt-contrib-uglify');
-  // grunt.loadNpmTasks('grunt-contrib-jshint');
 
-  // Default task(s).
-  grunt.registerTask('default', ['compass','jshint','concat']);
+
+  // Define default tasks.
+  grunt.registerTask('default', ['compass','jshint','concat','assemble']);
 
 };
+
+

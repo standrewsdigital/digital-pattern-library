@@ -1,0 +1,44 @@
+---
+layout: _base.hbs
+core-js: true
+---
+
+  <section id="content">
+
+  	<nav id="pattern-nav">
+  		<h4><a href="../index.html">Digital Pattern Library</a></h4>
+  		<ul>
+    		{{#each  pages }} 
+          {{#is basename "index"}}
+          {{else}}
+          <li> <a  href ="../{{data.pattern}}/index.html" > {{data.pattern }} </a > </li > 
+          {{/is}}
+    		{{/each  }} 
+    		</ul>
+    	</nav>
+
+ 
+
+  		<h1>Pattern: {{ title }}</h1>
+	   	{{ description  }}
+
+      {{>body}}
+  
+
+   	</section>
+
+    
+
+    
+    <script>
+    (function($){
+
+      $(".pattern-source").html(htmlEncode($(".pattern-source").html()));
+
+    })(jQuery);
+
+    </script>
+
+
+    
+
