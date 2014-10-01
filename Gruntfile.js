@@ -106,6 +106,9 @@ module.exports = function(grunt) {
 
     /* task: watch - run tasks when specified files change */
     watch: {
+      grunt: {
+        files: ['Gruntfile.js']
+      },
       js: {
         files: ['src/**/*.js'],
         tasks: ['jshint','concat'],
