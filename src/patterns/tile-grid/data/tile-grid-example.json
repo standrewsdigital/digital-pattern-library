@@ -1,5 +1,71 @@
 {
   "heading": "What's happening in St&nbsp;Andrews?",
   "call-to-browse-text": "See all news",
-  "call-to-browse-url": "#"
- }
+  "call-to-browse-url": "#",
+  "tile-1": {
+	  "image": {
+	  	"url": "path/to/image.jpg",
+	  	"alt": "[Alternative text]"
+	  },
+	  "title": "[Tile Title]",
+	  "url": "http://tile-url/",
+	  "description": "[Tile Description... Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.]",
+	  "date" : "2014-08-21",
+	  "date-display" : "21 August 2014"
+  },
+  "tile-2": {
+    "image": {
+      "url": "path/to/image.jpg",
+      "alt": "[Alternative text]"
+    },
+    "title": "[Tile Title]",
+    "url": "http://tile-url/",
+    "description": "[Tile Description... Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.]",
+    "date" : "2014-08-21",
+    "date-display" : "21 August 2014"
+  },
+  "tile-3": {
+    "image": {
+      "url": "path/to/image.jpg",
+      "alt": "[Alternative text]"
+    },
+    "title": "[Tile Title]",
+    "url": "http://tile-url/",
+    "description": "[Tile Description... Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.]",
+    "date" : "2014-08-21",
+    "date-display" : "21 August 2014"
+  },
+  "tile-4": {
+    "image": {
+      "url": "path/to/image.jpg",
+      "alt": "[Alternative text]"
+    },
+    "title": "[Tile Title]",
+    "url": "http://tile-url/",
+    "description": "[Tile Description... Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.]",
+    "date" : "2014-08-21",
+    "date-display" : "21 August 2014"
+  },
+  "tile-5": {
+    "image": {
+      "url": "path/to/image.jpg",
+      "alt": "[Alternative text]"
+    },
+    "title": "[Tile Title]",
+    "url": "http://tile-url/",
+    "description": "[Tile Description... Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.]",
+    "date" : "2014-08-21",
+    "date-display" : "21 August 2014"
+  },
+  "tile-6": {
+    "image": {
+      "url": "path/to/image.jpg",
+      "alt": "[Alternative text]"
+    },
+    "title": "[Tile Title]",
+    "url": "http://tile-url/",
+    "description": "[Tile Description... Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.]",
+    "date" : "2014-08-21",
+    "date-display" : "21 August 2014"
+  }
+}

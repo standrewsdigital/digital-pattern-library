@@ -1,0 +1,83 @@
+{
+  "heading": "What's happening in St&nbsp;Andrews?",
+  "call-to-browse-text": "See all news",
+  "call-to-browse-url": "#",
+  "tile-1": {
+    "image": {
+      "url": "../../../build/images/placeholders/360x240.jpg",
+      "alt": "Description"
+    },
+    "title": "A Rae of Aristic Sunshine",
+    "url": "http://google.com",
+    "description": "The work of one of Scotland's most revered contemporary artists, Barbara Rae, is to go on display in St Andrews, thanks to the University of St Andrews' Museum Collections.",
+
+    "date" : "2014-08-21",
+    "date-display" : "21 August 2014",
+    "type" : "Photo of the week"
+  },
+  "tile-2": {
+    "image": {
+      "url": "../../../build/images/placeholders/360x240.jpg",
+      "alt": "Description"
+    },
+    "title": "A Rae of Aristic Sunshine",
+    "url": "http://google.com",
+    "description": "The work of one of Scotland's most revered contemporary artists, Barbara Rae, is to go on display in St Andrews, thanks to the University of St Andrews' Museum Collections.",
+
+    "date" : "2014-08-21",
+    "date-display" : "21 August 2014",
+    "type" : "Photo of the week"
+  },
+  "tile-3": {
+    "image": {
+      "url": "../../../build/images/placeholders/360x240.jpg",
+      "alt": "Description"
+    },
+    "title": "A Rae of Aristic Sunshine",
+    "url": "http://google.com",
+    "description": "The work of one of Scotland's most revered contemporary artists, Barbara Rae, is to go on display in St Andrews, thanks to the University of St Andrews' Museum Collections.",
+
+    "date" : "2014-08-21",
+    "date-display" : "21 August 2014",
+    "type" : "Photo of the week"
+  },
+  "tile-4": {
+    "image": {
+      "url": "../../../build/images/placeholders/360x240.jpg",
+      "alt": "Description"
+    },
+    "title": "A Rae of Aristic Sunshine",
+    "url": "http://google.com",
+    "description": "The work of one of Scotland's most revered contemporary artists, Barbara Rae, is to go on display in St Andrews, thanks to the University of St Andrews' Museum Collections.",
+
+    "date" : "2014-08-21",
+    "date-display" : "21 August 2014",
+    "type" : "Photo of the week"
+  },
+  "tile-5": {
+    "image": {
+      "url": "../../../build/images/placeholders/360x240.jpg",
+      "alt": "Description"
+    },
+    "title": "A Rae of Aristic Sunshine",
+    "url": "http://google.com",
+    "description": "The work of one of Scotland's most revered contemporary artists, Barbara Rae, is to go on display in St Andrews, thanks to the University of St Andrews' Museum Collections.",
+
+    "date" : "2014-08-21",
+    "date-display" : "21 August 2014",
+    "type" : "Photo of the week"
+  },
+  "tile-6": {
+    "image": {
+      "url": "../../../build/images/placeholders/360x240.jpg",
+      "alt": "Description"
+    },
+    "title": "A Rae of Aristic Sunshine",
+    "url": "http://google.com",
+    "description": "The work of one of Scotland's most revered contemporary artists, Barbara Rae, is to go on display in St Andrews, thanks to the University of St Andrews' Museum Collections.",
+
+    "date" : "2014-08-21",
+    "date-display" : "21 August 2014",
+    "type" : "Photo of the week"
+  }
+}
