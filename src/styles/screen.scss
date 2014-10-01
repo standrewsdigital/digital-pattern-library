@@ -10,13 +10,17 @@ Last Updated    1 March 2014
 */
 
 @import 'vendor/bootstrap';
-@import 'base/typography';
-@import 'base/original';
-@import 'base/colors';
-@import 'patterns/button/button';
-@import 'patterns/external-home/external-home';
-@import 'patterns/header/header';
-@import 'patterns/tile/tile';
-@import 'patterns/tile-grid/tile-grid';
-@import 'patterns/navigation-bar/navigation-bar';
-@import 'base/utilities';
+@import 'typography';
+@import 'original';
+@import 'colors';
+
+/* Patterns */
+@import 'button/button';
+@import 'external-home/external-home';
+@import 'header/header';
+@import 'tile/tile';
+@import 'tile-grid/tile-grid';
+@import 'navigation-bar/navigation-bar';
+
+/* Final additions */
+@import 'utilities';

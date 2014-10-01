@@ -19,12 +19,12 @@ module.exports = function(grunt) {
     concat: {
       js: {
         src: [
-          'src/vendor/jquery-1.11.0.min.js', 
-          'src/vendor/jquery.bigtarget.js',
-          'src/vendor/jquery.fitvids.js',
-          'src/vendor/respond.js',
-          'src/vendor/bootstrap.min.js',
-          'src/base/*.js',
+          'src/scripts/vendor/jquery-1.11.0.min.js', 
+          'src/scripts/vendor/jquery.bigtarget.js',
+          'src/scripts/vendor/jquery.fitvids.js',
+          'src/scripts/vendor/respond.js',
+          'src/scripts/vendor/bootstrap.min.js',
+          'src/scripts/base.js',
           'src/patterns/*/*.js'
         ],
         dest: 'build/scripts/core.js'
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
 
     /* task: jshint - check Javascript for errors  */
     jshint: {
-      defaults: ['src/base/base.js','src/patterns/**/*.js'],
+      defaults: ['src/scripts/base.js','src/patterns/*/*.js'],
     },
 
 
@@ -43,11 +43,12 @@ module.exports = function(grunt) {
       dist: {
         options: {
           specify: [
-            'src/screen.scss',
-            'src/print.scss',
-            'src/ie.scss'
+            'src/styles/screen.scss',
+            'src/styles/print.scss',
+            'src/styles/ie.scss'
           ],
-          sassDir: 'src',
+          sassDir: 'src/styles',
+          importPath: 'src/patterns',
           cssDir: 'build/styles',
           environment: 'production',
           force: true,
