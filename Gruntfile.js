@@ -140,6 +140,9 @@ module.exports = function(grunt) {
 
     /* task: watch - run tasks when specified files change */
     watch: {
+      options: {
+        livereload: true,
+      },
       grunt: {
         files: ['Gruntfile.js']
       },

@@ -1,8 +1,6 @@
 To Do
 
 Infrastructure
-* Implement Live Reload for pattern and sample pages.
-  (https://github.com/gruntjs/grunt-contrib-watch/blob/master/docs/watch-examples.md#enabling-live-reload-in-your-html)
 * Add a patchwork pattern library page
 * Write summary
 * Write a README on how to get setup developing
@@ -19,4 +17,4 @@ Pattern development
 * (after tranisition) Remove pattern-bkp folder
 * Finesse buttons for external-home pattern
 * Update with official colors 
-* Expand and document the accent color ideas (create a pattern?) 
+* Expand and document the accent color ideas (create a pattern?) d
