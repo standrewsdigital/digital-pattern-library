@@ -5,6 +5,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+
     // uglify: {
     //   options: {
     //     banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
@@ -122,13 +123,13 @@ module.exports = function(grunt) {
           layout: 'doc.hbs'
         },
         files: [
-          // {
-          //   expand: true,     
-          //   cwd: '',
-          //   src: ['*.md'],
-          //   ext: '.html',
-          //   dest: 'patterns'
-          // },
+          {
+            expand: true,     
+            cwd: '',
+            src: ['*.md'],
+            ext: '.html',
+            dest: 'patterns'
+          },
           {
             expand: true,     
             cwd: 'src/docs',
@@ -209,7 +210,9 @@ module.exports = function(grunt) {
         files: [
           'src/**/*.hbs',
           'src/**/*.json',
-          'src/**/*.md'],
+          'src/**/*.md',
+          '*.md'
+        ],
         tasks: ['clean:patterns','assemble'],
         options: {
           interrupt: true
