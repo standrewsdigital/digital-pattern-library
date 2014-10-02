@@ -100,17 +100,21 @@
 <h1 id="to-do">To Do</h1>
 <h2 id="infrastructure">Infrastructure</h2>
 <ul>
-<li>Write summary</li>
-<li>Write a README on how to get setup developing</li>
-<li>Write another piece about how to add a new pattern.</li>
-<li>Make patchwork contents (the list) automatically-generated.</li>
-<li>Add taxonomy for patterns (ie, pages, forms, galleries, call-to... ). This could be in the form of tags, categories, or something similar.</li>
-<li>Setup better CSS/JS for pattern library (rather than hard-coded in layout). Could we use the core JS/CSS?</li>
+<li>patchwork<ul>
+<li>Improve listing with pattern name and link to pattern documentation.</li>
+<li>Fully automate so that new patterns are automatically listed.</li>
 </ul>
-<h2 id="coding-style-guide">Coding Style Guide</h2>
+</li>
+<li>Add taxonomy for patterns.<br>This would allow us to group our patterns into things like page patterns, form patterns, ... Could implement this with Assemble&#39;s built in <a href="http://assemble.io/docs/Collections.html">tags or categories</a> or a custom taxonomy.</li>
+<li>Improve the CSS/JS used for <code>patterns</code>.<br>Currently it&#39;s hard coded. It would probably be best to use the core CSS and JS as long as that wouldn&#39;t cause any conflicts. At at minimum, using a separate <code>doc.css</code> and <code>doc.js</code> might be helpful. Anywhere that we have documentation it could use these core files.</li>
+</ul>
+<h2 id="documentation">Documentation</h2>
 <ul>
-<li><del>Add a section to the patterns on coding style</del></li>
-<li>Write a draft coding style guide.</li>
+<li>Write a draft README with installation and development instructions</li>
+<li>Write a draft About explaining the pattern library</li>
+<li>Write a draft Adding a pattern</li>
+<li>Write a draft CSS style guide</li>
+<li>Write a draft JS style guide</li>
 </ul>
 <h2 id="pattern-development">Pattern development</h2>
 <ul>
@@ -118,7 +122,8 @@
 <li>(after tranisition) Remove pattern-bkp folder</li>
 <li>Finesse buttons for external-home pattern</li>
 <li>Update with official colors </li>
-<li>Expand and document the accent color ideas (create a pattern?) d</li>
+<li>Expand and document the accent color ideas (create a pattern?)</li>
+<li>Remove <code>patterns_bkp</code></li>
 </ul>
 
 
