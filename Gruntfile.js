@@ -79,7 +79,7 @@ module.exports = function(grunt) {
           {
             expand: true,     
             cwd: 'src/patterns/',
-            src: ['*.hbs','!(index.hbs)'],
+            src: ['patchwork.hbs'],
             ext: '.html',
             dest: 'patterns'
           }
@@ -115,7 +115,29 @@ module.exports = function(grunt) {
             ext: '.html',   // Dest filepaths will have this extension.
           }
         ]
-      }
+      },
+
+      docs: {
+        options: { 
+          layout: 'doc.hbs'
+        },
+        files: [
+          // {
+          //   expand: true,     
+          //   cwd: '',
+          //   src: ['*.md'],
+          //   ext: '.html',
+          //   dest: 'patterns'
+          // },
+          {
+            expand: true,     
+            cwd: 'src/docs',
+            src: ['*.md'],
+            ext: '.html',
+            dest: 'patterns'
+          },
+        ]
+      },
 
     },
 

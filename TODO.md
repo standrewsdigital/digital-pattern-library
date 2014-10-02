@@ -1,19 +1,23 @@
-To Do
+# To Do
 
 Infrastructure
+
 * Write summary
 * Write a README on how to get setup developing
 * Write another piece about how to add a new pattern.
 * Make patchwork contents (the list) automatically-generated.
+* Add some taxonomy for patterns (ie, pages, forms, galleries, call-to... )
 * Setup better CSS/JS for pattern library (rather than hard-coded in layout)
   Can we dogfood?
 
 Coding Style Guide
+
 * Add a section to the patterns on coding style
 * Write a draft coding style guide.
 
 
 Pattern development
+
 * Transition all patterns to new format (see tile pattern for an example)
 * (after tranisition) Remove pattern-bkp folder
 * Finesse buttons for external-home pattern

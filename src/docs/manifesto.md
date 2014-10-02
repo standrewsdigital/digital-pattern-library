@@ -1,3 +1,4 @@
+# Manifesto
 
 Nothing should be in the pattern library unless it's used.
 

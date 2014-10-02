@@ -2,13 +2,9 @@
 <html lang="en"> 
   <head> 
     <meta charset="utf-8">
-    <title >{{ title }}</title > 
+    <title ></title > 
 
-    {{#if core-css}}
-    <link href="{{asset 'styles/screen.css'}}" rel="stylesheet" type="text/css" media="screen" />
-    <link href="{{asset 'styles/print.css'}}" rel="stylesheet" type="text/css" media="print" /> 
-    <!--[if lt IE 9]><link href="{{asset 'styles/ie.css'}}" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
-    {{else}}
+    
         <style>
 
         body {
@@ -86,10 +82,8 @@
         }
 
         </style>
-    {{/if}}
-    {{#if core-js}}
-    <script src="{{asset 'scripts/core.js'}}" type="text/javascript" ></script>
-    {{/if}}
+    
+    
 
   </head>
   <body>
@@ -97,7 +91,18 @@
 
 
     
-    {{> body  }} 
+    
+
+<a href="index.html">St Andrews Digital Pattern Library</a>
+
+<hr>
+
+<p>CSS Coding Style Guide</p>
+
+
+
+
+ 
 
 
 
