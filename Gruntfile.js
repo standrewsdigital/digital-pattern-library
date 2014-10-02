@@ -144,7 +144,8 @@ module.exports = function(grunt) {
         livereload: true,
       },
       grunt: {
-        files: ['Gruntfile.js']
+        files: ['Gruntfile.js'],
+        tasks: ['default'],
       },
       js: {
         files: ['src/**/*.js'],
