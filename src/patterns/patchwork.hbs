@@ -1,0 +1,69 @@
+---
+title: Patchwork of Patterns
+layout: pattern_example.hbs
+---
+
+
+<div class="header-bar">
+  <h1>Patchwork</h1>
+
+  <p>All patterns in library displayed. Jump to: 
+
+    <select name="jumpto" class="anchor-jump">
+      <option value="">(select a pattern)</option>
+      <option value="tile">tile</option>
+      <option value="tile-grid">tile-grid</option>
+    </select>
+
+  </p>
+
+  <p><a href="index.html">Pattern Library</a></p>
+
+  
+</div>
+
+
+
+<div class="patchwork">
+
+<a name="tile"></a>
+{{> tile tile-1}}
+
+<a name="tile-grid"></a>
+{{> tile-grid tile-grid-1 }}
+
+</div>
+
+
+<script>
+  (function($){
+    $(".anchor-jump").change(function(){
+      var dest = $(this).val();
+      if (dest) {
+        window.location = "#"+dest;
+      }
+    });
+  })(jQuery);
+</script>
+
+<style>
+
+    .header-bar {
+      padding: 1em;
+      position: fixed;
+      z-index: 1000;
+      width: 100%;
+      height: 70px;
+
+      background-color: #f0f0f0;
+      border-bottom: 1px solid #333;
+    }
+    .header-bar > * {
+      display: inline;
+      padding-right: 2em;
+    }
+
+
+
+
+</style>  

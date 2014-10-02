@@ -71,6 +71,21 @@ module.exports = function(grunt) {
         helpers: ['handlebars-helper-asset'],
       },
 
+      general: {
+        options: { 
+          layout: '_base.hbs'
+        },
+        files: [
+          {
+            expand: true,     
+            cwd: 'src/patterns/',
+            src: ['*.hbs','!(index.hbs)'],
+            ext: '.html',
+            dest: 'patterns'
+          }
+        ]
+      },
+
       patterns: {
         options: { 
           layout: 'pattern.hbs'
@@ -81,7 +96,7 @@ module.exports = function(grunt) {
             cwd: 'src/patterns/',
             src: ['index.hbs','*/*.doc.hbs'],
             ext: '.html',
-            dest: 'build',
+            dest: 'patterns',
             rename: function(src,dest){
               return 'patterns/' + dest.replace(/\/[a-zA-Z0-9_-]+.html$/,'/index.html');
             }

@@ -1,11 +1,12 @@
 To Do
 
 Infrastructure
-* Add a patchwork pattern library page
 * Write summary
 * Write a README on how to get setup developing
 * Write another piece about how to add a new pattern.
-
+* Make patchwork contents (the list) automatically-generated.
+* Setup better CSS/JS for pattern library (rather than hard-coded in layout)
+  Can we dogfood?
 
 Coding Style Guide
 * Add a section to the patterns on coding style

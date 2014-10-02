@@ -5,13 +5,37 @@ layout: _base.hbs
 
 <h1>Digital Pattern Library</h1>
 
-Patterns
+<div class="grey-3-box">
 
-<ul>
-	{{#each pages }} 
-		{{#is basename "index"}}
-		{{else}}
-		<li> <a  href ="{{data.pattern}}/index.html" > {{data.pattern }} </a > </li > 
-		{{/is}}
-	{{/each  }} 
-</ul>
+  <h2>Patterns</h2>
+
+  <ul>
+  	{{#each pages }} 
+  		{{#is basename "index"}}
+  		{{else}}
+  		<li> <a  href ="{{data.pattern}}/index.html" > {{data.pattern }} </a > </li > 
+  		{{/is}}
+  	{{/each  }} 
+  </ul>
+
+</div>
+
+<div class="grey-3-box">
+
+  <h2>Documentation</h2>
+
+  <ul>
+    <li>About the pattern library</li>
+    <li>Adding a new pattern</li>
+    <li>CSS Coding Style Guide</li>
+    <li>JS Coding Style Guide</li>
+  </ul>
+  
+</div>
+
+<div class="grey-3-box">
+
+  <p><a href="patchwork.html">Patchwork</a> – The patchwork 
+  shows all patterns in alphabetical order. Useful for testing or searching for a pattern.</p>
+  
+</div>

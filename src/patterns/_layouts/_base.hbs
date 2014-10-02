@@ -63,7 +63,24 @@
             font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
         }
 
-          </style>
+
+        .grey-3-box {
+            width: 24%;
+            margin-right: 3%;
+            float: left;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 0 1em;
+        }
+        @media (max-width: 767px) {
+            .grey-3-box {
+                width: auto;
+                margin: 1em 0;
+                float: none;
+            }
+        }
+
+        </style>
     {{/if}}
     {{#if core-js}}
     <script src="{{asset 'scripts/core.js'}}" type="text/javascript" ></script>
