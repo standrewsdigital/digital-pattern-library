@@ -3,6 +3,7 @@
 
 ## Infrastructure
 
+- ~~ Remove build and patterns folder since they are build dynamically. ~~
 - patchwork
   - Improve listing with pattern name and link to pattern documentation.
   - Fully automate so that new patterns are automatically listed.
