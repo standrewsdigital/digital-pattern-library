@@ -3,7 +3,8 @@
 
 ## Infrastructure
 
-- ~~ Remove build and patterns folder since they are build dynamically. ~~
+- ~~Remove build and patterns folder since they are build dynamically.~~
+- Build README dynamically from About and Getting Started (create a getting started page)
 - patchwork
   - Improve listing with pattern name and link to pattern documentation.
   - Fully automate so that new patterns are automatically listed.
