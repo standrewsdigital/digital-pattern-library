@@ -98,6 +98,45 @@
 <hr>
 
 <h1 id="st-andrews-digital-pattern-library">St Andrews Digital Pattern Library</h1>
+<p>The pattern library has three main audiences:</p>
+<ol>
+<li><strong>General users</strong> who will load pages using the core CSS and JS from the pattern library. Pages they access should all have the same look and feel.</li>
+<li><strong>Developers outside our team</strong> who build applications or websites using our core CSS and JS. These developers needs to know what the official patterns are and how to use them. </li>
+<li>The <strong>core team</strong> develops and designs the pattern library and uses it to build digital assets. Our team needs a central place to work on, test and document our design patterns.</li>
+</ol>
+<p>There are three main deliverables corresponding to the audiences:</p>
+<ol>
+<li><strong>Core CSS and JS.</strong> These are found in the <code>build</code> folder of the repository. They are also published to a central location.</li>
+<li><strong>Documentation.</strong> The <code>patterns</code> folder includes documentation about each pattern available in the pattern library, examples of each one, and a browsable patchwork of all the patterns. In addition, you will also find CSS and JS coding style guides, and other information.</li>
+<li><strong>Pattern tests.</strong> The core team can use the examples and patchwork in the <code>patterns</code> folder as a way to implement pattern-driven-development, which is a translation of test-driven-development to design patterns.</li>
+</ol>
+<h2 id="getting-started">Getting Started</h2>
+<p>This is intended to help you get setup developing the pattern library. We are using <a href="http://gruntjs.com/">Grunt</a> to automate the building process and Grunt is based on <a href="http://nodejs.org/">Node.JS</a> so you&#39;ll need to install them both.</p>
+<h3 id="step-1-install-node-js">Step 1: Install Node.JS</h3>
+<p>The first step is to install Node.JS on your computer. </p>
+<ol>
+<li>Visit <a href="http://nodejs.org/"><a href="http://nodejs.org/">http://nodejs.org/</a></a></li>
+<li>Click on &quot;Install&quot;</li>
+<li>Run the installer after it has downloaded.</li>
+</ol>
+<h3 id="step-2-clone-the-pattern-library">Step 2. Clone the pattern library</h3>
+<p>You&#39;ll need to clone the git repository for the pattern library somewhere on your computer. Anywhere you want is fine as long as you know the location.</p>
+<h3 id="step-3-initialize-developer-tools">Step 3. Initialize developer tools</h3>
+<p>Now you need to open &quot;Node.js command prompt&quot; (Windows), Terminal (OS X), or shell (*nix). </p>
+<ol>
+<li><p>Install the Grunt CLI (command-line-interface) by entering the following command (see Grunt&#39;s <a href="http://gruntjs.com/getting-started">Getting started</a> page for more details):</p>
+<pre><code> npm install -g grunt-cli</code></pre>
+</li>
+<li><p>Navigate to the folder containing your local clone of the pattern library. (Usually you&#39;ll type somthing like <code>cd path/to/folder</code> to do this)</p>
+</li>
+<li><p>Enter the following command to install the dependencies for the pattern library (it will automatically look in the contents of the <code>package.json</code> file to find the dependencies).</p>
+<pre><code> npm install</code></pre>
+</li>
+</ol>
+<h3 id="step-4-start-grunt-to-monitor-changes">Step 4. Start Grunt to monitor changes</h3>
+<p>Finally, to begin an active development session, you&#39;ll need to run Grunt in watch mode which will monitor changes to files and run the appropriate tasks when they change. </p>
+<pre><code>grunt watch</code></pre>
+<p>Files to watch and the tasks to run are configured by the <code>Gruntfile.js</code> if you&#39;re curious.</p>
 
 
 

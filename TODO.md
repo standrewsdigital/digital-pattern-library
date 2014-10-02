@@ -14,7 +14,7 @@
 
 ## Documentation
 
-- Write a draft README with installation and development instructions
+- ~~Write a draft README with installation and development instructions~~
 - Write a draft About explaining the pattern library
 - Write a draft Adding a pattern
 - Write a draft CSS style guide
