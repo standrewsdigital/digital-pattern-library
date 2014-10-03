@@ -18,9 +18,9 @@ module.exports = function(grunt) {
 
      /* task: concat - combine scripts into single file.  */
     concat: {
-      js: {
+      core: {
         src: [
-          'src/scripts/vendor/jquery-1.11.0.min.js', 
+          'src/scripts/vendor/jquery.min.js', 
           'src/scripts/vendor/jquery.bigtarget.js',
           'src/scripts/vendor/jquery.fitvids.js',
           'src/scripts/vendor/respond.js',
@@ -29,6 +29,15 @@ module.exports = function(grunt) {
           'src/patterns/*/*.js'
         ],
         dest: 'build/scripts/core.js'
+      },
+      doc: {
+        src: [
+          'src/scripts/vendor/jquery.min.js',
+          'src/scripts/vendor/respond.js',
+          'src/scripts/vendor/bootstrap.min.js',
+          'src/scripts/doc.js'
+        ],
+        dest: 'build/scripts/doc.js'
       }
     },
 
@@ -44,6 +53,7 @@ module.exports = function(grunt) {
       dist: {
         options: {
           specify: [
+            'src/styles/doc.scss',
             'src/styles/screen.scss',
             'src/styles/print.scss',
             'src/styles/ie.scss'
@@ -101,7 +111,8 @@ module.exports = function(grunt) {
             rename: function(src,dest){
               return 'patterns/' + dest.replace(/\/[a-zA-Z0-9_-]+.html$/,'/index.html');
             }
-          }
+          },
+          
         ]
       },
 

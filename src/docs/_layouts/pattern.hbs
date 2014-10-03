@@ -1,6 +1,5 @@
 ---
 layout: _base.hbs
-core-js: true
 ---
 
   <section id="content">
@@ -17,7 +16,6 @@ core-js: true
     		</ul>
     	</nav>
 
- 
 
   		<h1>Pattern: {{ title }}</h1>
 	   	{{ description  }}
@@ -28,20 +26,6 @@ core-js: true
    	</section>
 
     
-
-    
-    <script>
-    (function($){
-
-      $(".pattern-source").each(function(){
-        var t = $(this)
-        t.html(htmlEncode(t.html()));
-      });
-
-    })(jQuery);
-
-    </script>
-
 
     
 

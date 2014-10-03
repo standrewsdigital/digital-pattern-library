@@ -1,0 +1,87 @@
+@charset "utf-8";
+/*
+Stylesheet      St Andrews Documentation Style (doc.css)
+URI             http://www.st-andrews.ac.uk
+Version         0.1
+Authors         Samuel Parsons (sjp27)
+Description     Documentation styles. Includes Bootstrap framework.
+Last Updated    3 October 2014
+*/
+
+@import 'vendor/bootstrap';
+@import 'utilities';
+
+
+      body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+          padding: 1em;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+          font-weight: normal;
+      }
+
+      h1 {
+          font-size: 1.8em;
+      }
+
+      h2 {
+          font-size: 1.5em;   
+      }
+
+      h3 {
+          font-size: 1.2em;   
+      }
+
+      h4 {
+          font-size: 1em;   
+      }
+
+      h5 {
+          font-size: 1em;
+          font-weight: normal;
+          font-style: italic;   
+      }
+
+      hr {
+          border: none;
+          border-bottom: 1px solid #999;
+      }
+
+      #pattern-nav {
+          float: right;
+          padding: 15px;
+          background-color: #f0f0f0;
+          border: 1px solid #ccc;
+      }
+      #pattern-nav h4 {
+          margin-top: 0;
+          white-space: nowrap;
+      }
+
+
+      .pattern-source, .code {
+          background-color: #f0f0f0;
+          border: 1px solid #ccc;
+          padding: 10px;
+          white-space: pre-wrap;
+          font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+      }
+
+
+      .grey-3-box {
+          width: 24%;
+          margin-right: 3%;
+          float: left;
+          background-color: #f0f0f0;
+          border: 1px solid #ccc;
+          padding: 0 1em;
+      }
+      @media (max-width: 767px) {
+          .grey-3-box {
+              width: auto;
+              margin: 1em 0;
+              float: none;
+          }
+      }
