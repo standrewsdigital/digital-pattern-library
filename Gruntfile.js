@@ -140,13 +140,29 @@ module.exports = function(grunt) {
         ]
       },
 
+      meta: {
+        options: { 
+          layout: 'meta.hbs',
+          partials: ['src/docs/*.md'],
+          ext: '.md',
+        },
+        files: [
+          {
+            expand: true,     
+            cwd: 'src/meta',
+            src: ['*.hbs'],
+            dest: ''
+          }
+        ]
+      },
+
     },
 
 
     /* task: clean - remove generated content */
     clean: {
       patterns: {
-        src: ["patterns"]
+        src: ["patterns","*.md"]
       },
       images: {
         src: ["build/images"]
@@ -211,13 +227,13 @@ module.exports = function(grunt) {
           'src/**/*.hbs',
           'src/**/*.json',
           'src/**/*.md',
-          '*.md'
+          'package.json',
         ],
         tasks: ['clean:patterns','assemble'],
         options: {
           interrupt: true
         },
-      },
+      }
     },
 
 
