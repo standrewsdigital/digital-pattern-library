@@ -196,31 +196,23 @@ module.exports = function(grunt) {
     watch: {
       options: {
         livereload: true,
+        interrupt: true
       },
       grunt: {
         files: ['Gruntfile.js'],
-        tasks: ['default'],
+        tasks: ['default']
       },
       js: {
         files: ['src/**/*.js'],
         tasks: ['clean:js','jshint','concat'],
-        options: {
-          interrupt: true
-        },
       },
       images: {
         files: ['src/images/**/*'],
-        tasks: ['clean:images','copy'],
-        options: {
-          interrupt: true
-        },
+        tasks: ['clean:images','copy']
       },
       styles: {
         files: ['src/**/*.scss'],
-        tasks: ['clean:styles','compass'],
-        options: {
-          interrupt: true
-        },
+        tasks: ['clean:styles','compass']
       },
       docs: {
         files: [
@@ -229,10 +221,7 @@ module.exports = function(grunt) {
           'src/**/*.md',
           'package.json',
         ],
-        tasks: ['clean:patterns','assemble'],
-        options: {
-          interrupt: true
-        },
+        tasks: ['clean:patterns','assemble']
       }
     },
 
