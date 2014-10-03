@@ -65,8 +65,8 @@ module.exports = function(grunt) {
       
       options: {
         assets: 'build',
-        layoutdir: 'src/patterns/_layouts',
-        partials: ['src/patterns/*/*.hbs','src/patterns/!(_layouts)/*.hbs'],
+        layoutdir: 'src/docs/_layouts',
+        partials: ['src/patterns/*/*.hbs'],
         ext: '.html',
         data: 'src/patterns/*/data/*.json',
         helpers: ['handlebars-helper-asset'],
