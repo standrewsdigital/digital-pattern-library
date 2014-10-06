@@ -1,0 +1,19 @@
+{
+	"primary":[
+		{"title": "About",
+		 "url": "/about/",
+		 "selected":false},
+		{"title": "Study at St Andrews",
+		 "url": "/study/",
+		 "selected":false},
+		{"title": "Research",
+		 "url": "/research/",
+		 "selected":false}, 
+		{"title": "Alumni and donors",
+		 "url": "/alumni/",
+		 "selected":false},  
+		{"title": "Schools",
+		 "url": "/schools/",
+		 "selected":false} 
+	]	
+}
