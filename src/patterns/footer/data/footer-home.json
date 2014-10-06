@@ -1,0 +1,36 @@
+{
+	"section1":	{
+		"title": "Tools",
+		"links":[
+			{"title": "Current students",
+			 "url": "/students/"},
+			{"title": "Postgraduate",
+			 "url": "/pgstudents/"},
+			{"title": "Staff",
+			 "url": "/staff/"}, 
+			{"title": "Work at St Andrews",
+			 "url": "/vacancies/"}
+		]	
+	},
+	"section2":	{
+		"title": "Navigation",
+		"links":[
+			{"title": "About",
+			 "url": "/about/"},
+			{"title": "Study at St Andrews",
+			 "url": "/study/"},
+			{"title": "Research",
+			 "url": "/research/"}, 
+			{"title": "Alumni and donors",
+			 "url": "/alumni/"},
+			{"title": "Schools",
+			 "url": "/schools/"} 
+		]	
+	},
+	"contact":{
+		"url": "/contact/",
+		"unit" :"University of St Andrews",
+		"address":"College Gate<br>St Andrews, Fife<br>KY16 9AJ<br>Scotland, UK",
+		"phone":"+44 (0)1334 46 6161"
+	}
+}

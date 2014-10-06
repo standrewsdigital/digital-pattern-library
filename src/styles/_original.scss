@@ -16,7 +16,7 @@ a {
 	transition: all 200ms ease-out;
 }
 
-#main-content a:link, footer a:link {
+#main-content a:link{
    font-weight: bold;
 }
 
@@ -706,56 +706,6 @@ color: #fff;
 
 .sidebar ul {
 	padding-left: 25px;
-}
-
-
-/* Footer */
-
-#website-footer {
-	color: #aaa;
-	background-color: #202024;
-	border-top: 5px solid #666;
-	padding: 20px 0;
-}
-
-#website-footer a {
-	color: #59b5e3;
-}
-
-#website-footer a:hover {
-	color: #3e7e9e;
-}
-
-#university-footer {
-	color: #aaa;
-	background-color: #1a1a1d;
-	border-top: 1px solid #252529;
-	padding: 10px 0;
-}
-
-#university-footer a {
-	color: #59b5e3;
-}
-
-#university-footer a:hover {
-	color: #3e7e9e;
-}
-
-#website-footer ul, #university-footer ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-#university-footer ul li {
-	list-style-type: none;
-	display: inline;
-	margin: 0 10px 0 0;
-	padding: 0;
-}
-
-#university-footer p, #university-footer ul {
-	margin-bottom: 10px;
 }
 
 
