@@ -1,0 +1,25 @@
+{
+	"primary":[
+		{"title": "Undergraduate",
+		 "url": "/study/ug/",
+		 "selected":true},
+		{"title": "Postgraduate",
+		 "url": "/study/pg/",
+		 "selected":false},
+		{"title": "Non-degree courses",
+		 "url": "/study/non-degree/",
+		 "selected":false}, 
+		{"title": "Study abroad",
+		 "url": "/studyabroad/",
+		 "selected":false},  
+		{"title": "International",
+		 "url": "/study/international/",
+		 "selected":false}, 	
+		 {"title": "Access and outreach",
+		 "url": "/study/access/",
+		 "selected":false}, 
+		{"title": "Courses",
+		 "url": "/courses/",
+		 "selected":false}	 
+	]	
+}
