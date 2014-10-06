@@ -25,15 +25,13 @@
 		display: none;
 		border-bottom: $sta-blue 3px solid;
 		background-color: #ffffff;
-		background-color: #ffffff;
-		background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(242, 250, 253)));
-		background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(242, 250, 253));
-		background-image: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(242, 250, 253));
-		background-image: -o-linear-gradient(top, rgb(255, 255, 255), rgb(242, 250, 253));
-		background-image: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(242, 250, 253));
-		background-image: linear-gradient(top, rgb(255, 255, 255), rgb(242, 250, 253));
-		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#f2fafd');
-
+		background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(242,246,247,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(242,246,247,1)));
+		background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(242,246,247,1) 100%);
+		background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(242,246,247,1) 100%);
+		background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(242,246,247,1) 100%);
+		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(242,246,247,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f6f7', GradientType=0 );
 	}
 
 	#panel-people {
@@ -54,10 +52,9 @@
 	} 
 	#panel-people a {
 		font-weight: bold;
-		font-size: 1.3em;
+		font-size: 1.4em;
+		color:$sta-blue;
 	}
-
-
 
 	#panel-search form {
 		margin: 2em 0;

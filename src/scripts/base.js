@@ -20,7 +20,6 @@ $(".primary-toggle").click(function(){
 
 /* pattern:button-toggle-ver */
 
-
 $(".button-toggle-vert").click(function(){
 	var current = $(this);
 	var target_selector = current.attr('data-target');
