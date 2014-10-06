@@ -1,0 +1,17 @@
+<nav class="navigation-bar" role="navigation">
+	<div class="container">
+		<div class="toggle-navigation primary-toggle"><a class="navigation-button"><i class="navigation-icon"></i> Navigation</a></div>
+		<ul class="navigation-bar-nav primary-nav">{{#primary}}
+		<li>{{#if selected}}<span class="currentbranch0">{{/if}}<a href="{{url}}">{{title}}</a>{{#if selected}}</span>{{/if}}</li>{{/primary}}</ul>
+	</div>
+</nav>
+
+{{#if secondary}}
+<nav class="navigation-bar subnav" role="navigation">
+	<div class="container">
+		<div class="toggle-navigation secondary-toggle"><a class="navigation-button"><i class="navigation-icon"></i> Section navigation</a></div>
+		<ul class="navigation-bar-nav secondary-nav">{{#secondary}}
+		<li>{{#if selected}}<span class="currentbranch1">{{/if}}<a href="{{url}}">{{title}}</a>{{#if selected}}</span>{{/if}}</li>{{/secondary}}</ul>
+	</div>
+</nav>
+{{/if}}

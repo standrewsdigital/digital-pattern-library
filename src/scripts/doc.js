@@ -8,8 +8,16 @@ function htmlDecode(value){
 return $('<div/>').html(value).text();
 }
 
+(function($){
+	$(".pattern-source").each(function(){
+	  var t = $(this)
+	  t.html(htmlEncode(t.html()));
+	});
 
-$(".pattern-source").each(function(){
-  var t = $(this)
-  t.html(htmlEncode(t.html()));
-});
+	$(".anchor-jump").change(function(){
+	  var dest = $(this).val();
+	  if (dest) {
+	    window.location = "#"+dest;
+	  }
+	});
+})(jQuery);
