@@ -70,6 +70,38 @@
 
 
 
+	.panel-toggle {
+    @extend .button;
+    padding: 1em .5em;
+    margin-left: 13px;
+  }
+
+  .panel-toggle img.icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+  }
+
+  .panel-toggle img.chevron {
+    width: 15px;
+    -moz-transform:rotate(90deg);
+        -o-transform:rotate(90deg);
+        -webkit-transform:rotate(90deg);
+        -ms-transform:rotate(90deg);
+        transform:rotate(90deg);
+  }
+
+  .panel-toggle.panel-toggle-up img.chevron {
+        -moz-transform:rotate(270deg);
+        -o-transform:rotate(270deg);
+        -webkit-transform:rotate(270deg);
+        -ms-transform:rotate(270deg);
+        transform:rotate(270deg);
+  }
+
+
+
+
 	@media (max-width: 767px) {
 		#header {
 			margin: 20px 0;
