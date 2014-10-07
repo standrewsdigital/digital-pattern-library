@@ -38,12 +38,12 @@
   line-height: 1.33;
   margin: 20px 0 0 0;
   border-radius: 0;
-  background-color: #0088cc;
+  background-color: $sta-blue;
 }
 
 .hero-banner .btn:hover, 
 .hero-banner .btn:focus {
-  background-color: #005580;
+  background-color: $sta-blue-hover;
 }
 
 
