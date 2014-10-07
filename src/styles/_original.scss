@@ -538,52 +538,6 @@ color: #fff;
 	zoom:1;
 }
 
-/* Calls to action
-
-   Primary call */
-
-.primary-call {
-	background: url('../images/call-to-action.jpg');
-	background-position: right;
-	-webkit-background-position: right;
-	-moz-background-position: right;
-	-o-background-position: right;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	color: #fff;
-	background-repeat: no-repeat;
-}
-
-.primary-call .call-heading {
-	color: #fff;
-	font-size: 58px;
-	font-weight: 600;
-	text-shadow: 0px 2px 15px #8a8a8a;
-	line-height: 1.1;
-}
-
-.primary-call p {
-	color: #fff;
-	font-size: 23px;
-	width: 70%;
-	text-shadow: 0px 2px 15px #8a8a8a;
-	margin: 10px 0;
-}
-
-.primary-call .btn, .secondary-call .btn {
-	padding: 10px 32px;
-	font-size: 28px;
-	line-height: 1.33;
-	margin: 20px 0 0 0;
-	border-radius: 0;
-	background-color: #0088cc;
-}
-
-.primary-call .btn:hover, .secondary-call .btn:hover, .primary-call .btn:focus, .secondary-call .btn:focus {
-	background-color: #005580;
-}
 
 
 /* Secondary call */
@@ -631,6 +585,12 @@ color: #fff;
 	text-align: right;
     width: 100%;
 }
+
+.secondary-call .btn:hover, 
+.secondary-call .btn:focus {
+	background-color: #005580;
+}
+
 
 .footer-cta-0 {
 	background-image: url('../images/footer-cta/footer_0.jpg');
