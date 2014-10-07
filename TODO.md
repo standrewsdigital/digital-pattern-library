@@ -11,13 +11,14 @@
 - ~~Build README dynamically from About and Getting Started (create a getting started page)~~
 - ~~Improve the CSS/JS used for `patterns` with a separate doc.css and doc.js~~
 - ~~Link to https://github.com/sjparsons/handlebars-helper-asset/tree/relative-links instead of the standard [handlebars-helper-asset](https://github.com/helpers/handlebars-helper-asset).~~
+- Main index: use bootstrap now for layout.
 - **Add taxonomy for patterns.**  This would allow us to group our patterns into things like page patterns, form patterns. Implement this with Assemble's built in [tags or categories](http://assemble.io/docs/Collections.html) or a custom taxonomy.
 
 - Patchwork
   - Improve listing with pattern name and link to pattern documentation.
   - Improve CSS for header on Patchwork (some issues here)
   - Fully automate so that new patterns are automatically listed.
-- Main index: use bootstrap now for layout.
+
 - Create a grunt task / script to create a pattern.
 
 ## Documentation
