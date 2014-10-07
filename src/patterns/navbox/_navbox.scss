@@ -1,0 +1,62 @@
+/* Option boxes */
+
+.navbox {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.navbox {
+	margin-bottom: 10px;
+}
+
+.navbox-image img {
+	width: 100%!important;
+	height: auto!important;
+}
+
+.navbox-title {
+	background: $sta-blue-80;
+	background-repeat: repeat;
+	bottom: 0;
+	color: #fff!important;
+	width: 100%;
+	position: absolute;
+	padding: 15px 15px;
+	font-size: 24px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #444;
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+}
+
+.navbox-title a {
+	color: #fff!important;
+	text-decoration: none;
+	margin-right: 4px;
+}
+
+.navbox:hover{
+	cursor:pointer;
+}
+
+.navbox-title:hover, .navbox:hover .navbox-title{
+	background: $sta-blue-hover;
+}
+
+.navbox-title p {
+	margin-bottom: 0;
+}
+
+.navbox-title acronym {
+	display: none;
+}
+
+.navbox-chevron {
+	float: right;
+}
+
+.navbox-chevron img {
+	height: 35px!important;
+    width: 30px!important;
+}
