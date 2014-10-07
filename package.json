@@ -16,7 +16,7 @@
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-uglify": "^0.6.0",
     "grunt-contrib-watch": "^0.6.1",
-    "handlebars-helper-asset": "git://github.com/sjparsons/handlebars-helper-asset.git#relative-links",
+    "handlebars-helper-asset": "^0.1.0",
     "handlebars-helpers": "^0.5.8"
   }
 }
