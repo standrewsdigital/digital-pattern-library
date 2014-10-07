@@ -66,6 +66,19 @@
 		font-size: 1.5em;
 		line-height:2em;
 		padding: 0 .75em;
+		height: 55px;
+	}
+
+	#panel-search input[type~=submit]  {
+		background-color: $sta-blue;
+		color: white;
+		padding: 0.1em 1em ;
+		border: none;
+		font-size: 1.5em;
+		line-height:1.9em;
+		font-weight: normal;
+		height: 55px;
+		width: 100%;
 	}
 
 
@@ -106,5 +119,19 @@
 		#header {
 			margin: 20px 0;
 		}
+		#panel-search .col-sm-10,
+		#panel-search .col-sm-2 {
+			display: inline;
+
+		}
+
+
+	#panel-search input[type~=text] {
+		width: auto;
+	}
+
+	#panel-search input[type~=submit]  {
+		width: auto;
+	}
 
 	}
