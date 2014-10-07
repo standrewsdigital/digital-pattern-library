@@ -6,44 +6,48 @@ layout: _base.hbs
 
 <h1>Digital Pattern Library</h1>
 
-<div class="grey-3-box">
 
-  <h2>Patterns</h2>
+<div class="row">
 
-  <ul>
-  	{{#each pages }} 
-  		{{#is basename "index"}}
-  		{{else}}
-  		<li> <a  href ="{{data.pattern}}/index.html" > {{data.pattern }} </a > </li > 
-  		{{/is}}
-  	{{/each  }} 
-  </ul>
+  <div class="col-md-4">
 
-</div>
+    <h2>Patterns</h2>
 
-<div class="grey-3-box">
+    <ul>
+    	{{#each pages }} 
+    		{{#is basename "index"}}
+    		{{else}}
+    		<li> <a  href ="{{data.pattern}}/index.html" > {{data.pattern }} </a > </li > 
+    		{{/is}}
+    	{{/each  }} 
+    </ul>
 
-  <h2>Documentation</h2>
+  </div>
 
-  <ul>
-    <li><a href="manifesto.html">Manifesto</a></li>
-    <li><a href="about.html">About the pattern library</a></li>
-    <li><a href="adding-pattern.html">Adding a new pattern</a></li>
-    <li><a href="css-style.html">CSS Coding Style Guide</a></li>
-    <li><a href="js-style.html">JS Coding Style Guide</a></li>
-  </ul>
+  <div class="col-md-4">
 
-  <hr>
+   <h2>Documentation</h2>
 
-  <ul>
-    <li><a href="todo.html">To Do</a></li>
-    <li><a href="readme.html">Readme</a></li>
-  
-</div>
+    <ul>
+      <li><a href="about.html">About the pattern library</a></li>
+      <li><a href="adding-pattern.html">Adding a new pattern</a></li>
+      <li><a href="css-style.html">CSS Coding Style Guide</a></li>
+      <li><a href="js-style.html">JS Coding Style Guide</a></li>
+    </ul>
 
-<div class="grey-3-box">
+    <hr>
 
-  <p><a href="patchwork.html">Patchwork</a> – The patchwork 
-  shows all patterns in alphabetical order. Useful for testing or searching for a pattern.</p>
-  
+    <ul>
+      <li><a href="todo.html">To Do</a></li>
+    </ul>
+    
+  </div>
+
+  <div class="col-md-4">
+
+    <p><a href="patchwork.html">Patchwork</a> – The patchwork 
+    shows all patterns in alphabetical order. Useful for testing or searching for a pattern.</p>
+    
+  </div>
+
 </div>
