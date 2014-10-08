@@ -1,0 +1,18 @@
+
+<!-- Begin pattern: breadcrumbs //-->
+
+
+<div class="row">
+  <div class="col-lg-12">
+    <p id="breadcrumbs">
+    {{#if parents}}
+    {{#parents}}<a href="{{url}}">{{title}}</a> &gt; {{/parents}}
+    {{else}}
+    <a href="/">Parent1</a> &gt; <a href="/parent2/">Parent 2</a> &gt; 
+    {{/if}}
+    {{default current.title "[current.title]"}}</p>
+  </div>
+</div>
+
+
+<!-- End pattern: breadcrumbs //-->

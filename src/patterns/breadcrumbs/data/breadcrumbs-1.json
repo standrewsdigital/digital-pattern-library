@@ -1,0 +1,16 @@
+{
+  "parents": [
+    {
+      "title": "University",
+      "url": "/"
+    },
+    {
+      "title": "Study at St Andrews",
+      "url": "/study/"
+    }
+  ],
+  "current": {
+    "title": "Undergraduate",
+    "url": "/study/ug"
+  }
+ }
