@@ -5,7 +5,7 @@ $(".panel-toggle").click(function(){
   var target_selector = current.attr('data-target');
   var sibling_targets_selector = current.attr('data-siblings');
 
-  $(target_selector).slideToggle().siblings(sibling_targets_selector).slideUp();
+  $(target_selector).slideToggle(360).siblings(sibling_targets_selector).slideUp(360);
 
   if (!current.hasClass('panel-toggle-up')) {
     current.addClass('panel-toggle-up');
