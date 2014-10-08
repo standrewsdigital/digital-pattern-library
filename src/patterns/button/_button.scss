@@ -23,29 +23,35 @@
 		@extend .button:hover;	
 	}
 
-	.button-ctb {
+
+	.button.chevron {
 		@extend .button;
 	}
-	.button-ctb:after {
+	.button.chevron:after {
 		content: " ";
-        position: relative;
-        top: .3em;
-        left: 0em;
-        height: 1.8em;
-        width: 1.8em;
-        display: inline-block;
-        padding: 0;
-        margin-left: 1em;
+    position: relative;
+    top: .3em;
+    right: 0;
+    height: 1.8em;
+    width: 1.8em;
+    display: inline-block;
+    padding: 0;
+    margin-left: 1em;
 
-        background-image: url(../images/furniture/chevron@2x.png);
-        background-size: 1.5em;
-        background-repeat: no-repeat;
-        background-position: center center;
+    background-image: url(../images/furniture/chevron@2x.png);
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
 	}
-	.button-ctb:hover {
+	.button.chevron:hover {
 		@extend .button:hover;	
 	}
 
+  .button.large {
+    font-size: 1.5em;
+    padding: .2em .5em;
+
+  }
 
 	// .button-toggle-vert {
 	// 	@extend .button;
