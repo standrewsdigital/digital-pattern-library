@@ -1,12 +1,11 @@
+
 <!-- Begin pattern: intro //--> 
-
 	
-	<div class="container">
-		<div class="intro">
-			<h3>{{{heading}}}</h3>
-			<p>{{{paragraph}}}</p>
-		</div>
-	</div>
-
+  <div class="container">
+    <div class="intro">
+      {{#if heading}}<h3>{{{heading}}}</h3>{{else}}<h3>[heading]</h3>{{/if}}
+      {{#if paragraph}}<p>{{{paragraph}}}</p>{{else}}<p>[paragraph]</p>{{/if}}
+    </div>
+  </div>
 
 <!-- End pattern: intro //-->		

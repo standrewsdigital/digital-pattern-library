@@ -2,11 +2,23 @@
 
 <div class="container" id="homepage-content" role="main">
 	<div class="row">
+    {{#if items}}
 		{{#items}}
 			<div class="col-sm-4 category-images">
 			{{>navbox}}				
 			</div>
 		{{/items}}
+    {{else}}
+      <div class="col-sm-4 category-images">
+      {{>navbox}}       
+      </div>
+      <div class="col-sm-4 category-images">
+      {{>navbox}}       
+      </div>
+      <div class="col-sm-4 category-images">
+      {{>navbox}}       
+      </div>
+    {{/if}}
 	</div>
 </div>
 

@@ -19,17 +19,17 @@
 
 				<form action="http://www.st-andrews.ac.uk/gsasearch" method="get">
 					<div class="row">
-						<div class="col-md-10">
-			        		<input type="text" title="Enter search keywords" maxlength="256" name="q" placeholder="Search..."/>
-			        	</div>
-			        	<div class="col-md-2">
-			        		<input class="button full-width" type="submit" value="Search" name="btnG"/>
-			        	</div>
-			        </div>
-			        <input type="hidden" value="StAndrews_ITS" name="site"/>
-			        <input type="hidden" value="xml_no_dtd" name="output"/>
-			        <input type="hidden" value="StAndrews_ITS" name="client"/>
-			        <input type="hidden" value="StAndrews_ITS" name="proxystylesheet"/>
+						<div class="col-sm-10">
+		        		<input type="text" title="Enter search keywords" maxlength="256" name="q" placeholder="Search..."/>
+		        	</div>
+		        	<div class="col-sm-2 text-right">
+		        		<input class="" type="submit" value="Search" name="btnG"/>
+		        	</div>
+		        </div>
+		        <input type="hidden" value="StAndrews_ITS" name="site"/>
+		        <input type="hidden" value="xml_no_dtd" name="output"/>
+		        <input type="hidden" value="StAndrews_ITS" name="client"/>
+		        <input type="hidden" value="StAndrews_ITS" name="proxystylesheet"/>
 				</form>
 						
 			
@@ -53,17 +53,17 @@
 				<div class="col-md-5">
 				</div>
 
-				<div class="col-md-3">
+				<div class="col-md-3 text-right">
 
-					<a class="button-toggle-vert" 
-						data-target="#panel-people" 
-						data-siblings=".header-panel" 
-						><img src="{{asset "images/furniture/user-512.png"}}" alt="People" class="icon"></a>
+					<a class="panel-toggle" 
+            data-target="#panel-people" 
+            data-siblings=".header-panel" 
+            ><img src="{{asset "images/furniture/user-512.png"}}" alt="People" class="icon"><img src="{{asset "images/furniture/chevron@2x.png"}}" alt="People" class="chevron"></a>
 
-					<a class="button-toggle-vert" 
+					<a class="panel-toggle" 
 						data-target="#panel-search" 
 						data-siblings=".header-panel" 
-						><img src="{{asset "images/furniture/search-512.png"}}" alt="Search" class="icon"></a>
+						><img src="{{asset "images/furniture/search-512.png"}}" alt="Search" class="icon"><img src="{{asset "images/furniture/chevron@2x.png"}}" alt="People" class="chevron"></a>
 
 				</div>
 			</div>

@@ -18,24 +18,5 @@ $(".primary-toggle").click(function(){
 });
 
 
-/* pattern:button-toggle-ver */
-
-$(".button-toggle-vert").click(function(){
-	var current = $(this);
-	var target_selector = current.attr('data-target');
-	var sibling_targets_selector = current.attr('data-siblings');
-
-	$(target_selector).slideToggle().siblings(sibling_targets_selector).slideUp();
-
-	if (!current.hasClass('button-toggle-vert-up')) {
-		current.addClass('button-toggle-vert-up');
-	}
-	else {
-		current.removeClass('button-toggle-vert-up');
-	}
-	current.siblings(".button-toggle-vert").removeClass('button-toggle-vert-up');
-
-	return false;
-});
 
 
