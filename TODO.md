@@ -18,6 +18,8 @@
   - Improve listing with pattern name and link to pattern documentation.
   - Improve CSS for header on Patchwork (some issues here)
   - Fully automate so that new patterns are automatically listed.
+- Add comments to top/bottom of each pattern definition
+- Add comments to top(bottom?) of each pattern's scss file.
 
 - Create a grunt task / script to create a pattern.
 
@@ -34,7 +36,7 @@
 - Write a draft "CSS style guide"
 - Write a draft "JS style guide"
 - Ensure that all documentation follows the [house style](http://www.st-andrews.ac.uk/staff/policy/styleguides/housestyle/).
-
+- Create doc about accent colors. Specify the patterns that are 'accent'-able. Perhaps by using a taxonomy.
 
 ## Pattern development
 
