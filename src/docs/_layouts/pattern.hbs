@@ -2,28 +2,44 @@
 layout: _base.hbs
 ---
 
-  <section id="content">
+<section id="content">
 
-  	<nav class="pull-right">
-  		<h4><a href="../index.html">Digital Pattern Library</a></h4>
-  		<ul>
-    		{{#each  pages }} 
-          {{#is basename "index"}}
-          {{else}}
-          <li> <a  href ="../{{data.pattern}}/index.html" > {{data.pattern }} </a > </li > 
-          {{/is}}
-    		{{/each  }} 
-    		</ul>
-    	</nav>
+  <nav class="pull-right">
+    <h4><a href="../index.html">Digital Pattern Library</a></h4>
+    <ul>
+      {{#each  pages }} 
+      {{#is basename "index"}}
+      {{else}}
+      <li> <a  href ="../{{data.pattern}}/index.html" > {{data.pattern }} </a > </li > 
+      {{/is}}
+      {{/each  }} 
+    </ul>
+  </nav>
 
 
-  		<h1>Pattern: {{ title }}</h1>
-	   	{{ description  }}
+	<h1>Pattern: {{ title }}</h1>
 
-      {{>body}}
-  
+  {{>body}}
 
-   	</section>
+  {{#if examples}}
+  <h2>Examples</h2>
+  <ul>
+    {{#examples}}
+    <li><a href="examples/{{name}}.html">{{name}}</a></li>
+    {{/examples}}
+  </ul>
+  {{/if}}
+
+  {{#if related}}
+  <h2>Related patterns</h2>
+  <ul>
+    {{#related}}
+    <li><a href="../{{name}}/index.html">{{name}}</a></li>
+    {{/related}}
+  </ul>
+  {{/if}}
+
+</section>
 
     
 
