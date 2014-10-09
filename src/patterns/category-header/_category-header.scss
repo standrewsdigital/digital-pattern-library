@@ -1,0 +1,87 @@
+
+/*********************************/
+/* BEGIN Pattern: category-header*/
+/*********************************/
+
+
+#category-header {
+  min-height: 100px;
+  background-image: url('../images/header_general.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+#category-header h2 {
+  min-height: 100px;
+  background-color: $sta-blue-select-80;
+  color: #fff;
+  display: inline-block;
+  padding-top: 30px;
+  font-family: Georgia, serif;
+  position: relative;
+  padding-right: 40px;
+  padding-left: 100%;
+  margin-left: -100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-shadow: 1px 1px 1px #444;
+}
+
+#category-header h2 a {
+  color: white;
+  text-decoration: none;
+}
+
+/* This psuedo element creates the oblique angle after the heading. */
+#category-header h2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -37px;
+  width: 0;
+  height: 0;
+  border-top: 100px solid $sta-blue;      /* Define a non-transparent color first */
+  border-top-color: $sta-blue-select-80;
+  border-right: 37px solid transparent;
+}
+
+@media (max-width: 767px) {
+
+  #category-header h2 {
+    display: block;
+    margin-right: -15px;
+    padding-bottom: 30px;
+  }
+
+  #category-header h2:after{
+    display: none;
+  }
+
+}
+
+
+/* Color Accents */
+
+.accent-blue-study {
+
+  #category-header h2 {
+    background-color: $sta-blue-study-select-80;
+  }
+
+  #category-header h2:after {
+    border-top-color: $sta-blue-study;
+    border-top-color: $sta-blue-study-select-80;
+  }
+
+}
+
+/*********************************/
+/* END Pattern: category-header  */
+/*********************************/

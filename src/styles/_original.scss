@@ -138,70 +138,6 @@ iframe {
 
 
 
-/* Category header */
-
-#category-header {
-	min-height: 100px;
-	background-image: url('../images/header_general.jpg');
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	margin-bottom: 25px;
-	overflow: hidden;
-}
-
-/*
-
-#id-43301 #category-header {
-	background-image: url('../images/header_ug.jpg');
-}
-
-*/
-
-#id-43302 #category-header {
-	background-image: url('../images/header_pg.jpg');
-}
-
-#category-title {
-	position: relative;
-}
-
-#category-title h2 {
-	min-height: 100px;
-	background-color: rgba(59,160,211,0.8);
-	color: #fff;
-	display: inline-block;
-	padding-top: 30px;
-	font-family: Georgia, serif;
-	position: relative;
-	padding-right: 40px;
-	padding-left: 100%;
-	margin-left: -100%;
-	margin-top: 0;
-	margin-bottom: 0;
-	font-weight: normal;
-	text-shadow: 1px 1px 1px #444;
-}
-
-#category-title .oblique {
-	width: 0;
-	height: 0;
-	border-top: 100px solid #0088cc;
-	border-right: 37px solid transparent;
-	position: absolute;
-	top: 0;
-	right: -37px;
-	border-top-color: rgba(59,160,211,0.8);
-}
-
-#category-title h2 a {
-	color: #fff;
-}
-
-
 /* Buttons */
 
 .btn {
@@ -742,25 +678,6 @@ color: #fff;
 	#page-title h2 {
 		padding-right: 100%;
 		margin-right: -100%;
-	}
-
-	#category-title h2 {
-		min-height: 100px;
-		background-color: rgba(59,160,211,0.8);
-		color: #fff;
-		display: block;
-		font-family: Georgia, serif;
-		position: relative;
-		margin-right: -15px;
-		padding-left: 100%;
-		margin-left: -100%;
-		margin-top: 0;
-		font-weight: normal;
-		padding-bottom: 30px;
-	}
-
-	#category-title .oblique {
-		display: none;
 	}
 
 	.primary-call .call-heading {
