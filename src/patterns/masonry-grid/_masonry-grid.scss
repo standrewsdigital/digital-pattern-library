@@ -4,6 +4,19 @@
 /*********************************/
 
 
+  .masonry-grid .portrait-container {
+    float: right!important;
+  }
+
+@media (max-width: 992px) {
+
+  .masonry-grid .portrait-container {
+    float: none!important;
+  }
+
+
+}
+
 
 /*********************************/
 /* END Pattern: masonry-grid     */

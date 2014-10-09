@@ -88,6 +88,19 @@
   padding-top: 15px;
 }
 
+.masonry.portrait {
+  height: 630px;
+}
+
+
+@media (max-width: 992px) {
+
+  .masonry.portrait {
+    height: 300px;
+  }
+
+
+}
 
 
 /*********************************/
