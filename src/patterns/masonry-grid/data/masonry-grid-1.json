@@ -1,5 +1,6 @@
 {
   "masonry-1": {
+    "shape":"landscape",
     "image": {
       "url": "images/placeholders/360x240-1.jpg",
       "alt": "Description"
@@ -9,6 +10,7 @@
     "description": "The Museum of the University of St Andrews (MUSA) has attained the top standard for sustainability from the Green Tourism Business Scheme."
   },
   "masonry-2": {
+    "shape":"portrait",
     "image": {
       "url": "images/placeholders/360x240-2.jpg",
       "alt": "Description"
@@ -45,6 +47,7 @@
     "description": "Graduation is a time for all the family but this year one pet dog made its way into the post-ceremony celebrations in the Quad."
   },
   "masonry-6": {
+    "shape":"landscape",
     "image": {
       "url": "images/placeholders/360x240-6.jpg",
       "alt": "Description"
