@@ -103,5 +103,19 @@
       "url": "#",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
     }
-    }
+  },
+  "secondary-call": {
+    "heading":  "News and events",
+    "paragraph":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "action": {
+      "text": "News",
+      "url": "http://www.st-andrews.ac.uk/news/"
+    },
+    "action2": {
+      "text": "Events",
+      "url": "http://www.st-andrews.ac.uk/events/"
+    },
+    "alignment": "center",
+    "style": "7"
+  }
 }
