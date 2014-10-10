@@ -116,6 +116,22 @@ module.exports = function(grunt) {
         ]
       },
 
+      prototypes: {
+        options: { 
+          layout: 'prototype.hbs',
+          assets: 'prototypes/build',
+        },
+        files: [
+          {
+            expand: true,     
+            cwd: 'src/prototypes/',
+            src: ['**/*.hbs'],
+            ext: '.html',
+            dest: 'prototypes'
+          }
+        ],
+      },
+
       examples: {
         options: { layout: 'pattern_example.hbs' },
         files: [
@@ -175,6 +191,12 @@ module.exports = function(grunt) {
       patterns: {
         src: ["patterns","*.md"]
       },
+      prototypes: {
+        src: ["prototypes"]
+      },
+      prototype_assets: {
+        src: ["prototypes/build"]
+      },
       images: {
         src: ["build/images"]
       },
@@ -200,6 +222,16 @@ module.exports = function(grunt) {
             dest: 'build/images'
           }
         ]
+      },
+      prototype_assets: {
+        files: [
+          {
+            expand: true,     // Enable dynamic expansion.
+            cwd: 'build',      // Src matches are relative to this path.
+            src: ['**/*'], // Actual pattern(s) to match.
+            dest: 'prototypes/build'
+          }
+        ]
       }
     },
 
@@ -215,15 +247,15 @@ module.exports = function(grunt) {
       },
       js: {
         files: ['src/**/*.js'],
-        tasks: ['clean:js','jshint','concat'],
+        tasks: ['clean:js','jshint','concat','clean:prototype_assets','copy:prototype_assets'],
       },
       images: {
         files: ['src/images/**/*'],
-        tasks: ['clean:images','copy']
+        tasks: ['clean:images','copy','clean:prototype_assets','copy:prototype_assets']
       },
       styles: {
         files: ['src/**/*.scss'],
-        tasks: ['clean:styles','compass']
+        tasks: ['clean:styles','compass','clean:prototype_assets','copy:prototype_assets']
       },
       docs: {
         files: [
@@ -232,7 +264,7 @@ module.exports = function(grunt) {
           'src/**/*.md',
           'package.json',
         ],
-        tasks: ['clean:patterns','assemble']
+        tasks: ['clean:patterns','clean:prototypes','assemble','copy:prototype_assets']
       }
     },
 
@@ -253,7 +285,7 @@ module.exports = function(grunt) {
 
 
   // Define default tasks.
-  grunt.registerTask('default', ['clean:build','clean:patterns','compass','jshint','concat','copy','assemble']);
+  grunt.registerTask('default', ['clean:build','clean:patterns','clean:prototypes','compass','jshint','concat','copy:images','copy:prototype_assets','assemble']);
 
 };
 
