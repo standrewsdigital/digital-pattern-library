@@ -75,7 +75,7 @@ module.exports = function(grunt) {
       
       options: {
         assets: 'build',
-        layoutdir: 'src/docs/_layouts',
+        layoutdir: 'src/_layouts',
         partials: ['src/patterns/*/*.hbs'],
         ext: '.html',
         data: 'src/patterns/*/data/*.json',
