@@ -44,7 +44,7 @@
 
  .tile p {
  	font-size: 1em;
- 	height: 7em;
+ 	height: 4em;
  	line-height: 1.2em;
  	padding: 0 1em;
  	margin: 1.5em 0;
@@ -90,6 +90,12 @@
 
 .tile.red:hover h3 {
   background: $sta-red-hover;
+}
+
+@media (max-width: 767px) {
+  .tile p {
+    height: auto;
+  }
 }
 
 /*********************************/
