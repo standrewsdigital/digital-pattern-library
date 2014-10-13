@@ -38,6 +38,9 @@
   -moz-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
  }
+ .tile:hover {
+  cursor: pointer;
+ }
  .tile:hover h3 {
  	background: $sta-blue-hover;
  }
