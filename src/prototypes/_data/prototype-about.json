@@ -1,9 +1,6 @@
 {
   "navigation-bar" : {
     "primary":[
-      {"title": "About",
-       "url": "about/index.html",
-       "selected":true},
       {"title": "Study at St Andrews",
        "url": "http://www.st-andrews.ac.uk/study/",
        "selected":false},
@@ -15,7 +12,10 @@
        "selected":false},  
       {"title": "Schools",
        "url": "http://www.st-andrews.ac.uk/schools/",
-       "selected":false} 
+       "selected":false},
+       {"title": "About",
+       "url": "about/index.html",
+       "selected":true}
     ],
     "secondary":[
       {"title": "Facts and figures",
