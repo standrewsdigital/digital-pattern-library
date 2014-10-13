@@ -4,13 +4,14 @@
 /**********************************************/
 
 .secondary-call {
+  margin-top: 3em;
   padding: 30px;
   font-size: 21px;
   font-weight: 200;
   line-height: 2.1428571435;
   color: inherit;
   background-color: #eeeeee;
-  background: url('../images/secondary-call.jpg');
+  background: url('../images/secondary-call/0.jpg');
   background-position: center;
   text-align: center;
   background-size: cover;
@@ -18,6 +19,12 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-repeat: no-repeat;
+}
+.secondary-call.left {
+  text-align: left;
+}
+.secondary-call.right {
+  text-align: right; 
 }
 
 .secondary-call .call-heading {
@@ -47,50 +54,24 @@
     width: 100%;
 }
 
+.secondary-call .btn {
+  background-color: $sta-blue-80;
+}
+
 .secondary-call .btn:hover, 
 .secondary-call .btn:focus {
-  background-color: #005580;
+  background-color: $sta-blue-hover;
 }
 
+/* Alternative background images */
 
-.footer-cta-0 {
-  background-image: url('../images/footer-cta/footer_0.jpg');
+@for $i from 1 through 9 {
+  .secondary-call-#{$i} {
+    background-image: url("../images/secondary-call/#{$i}.jpg");
+  }
 }
-
-.footer-cta-1 {
-  background-image: url('../images/footer-cta/footer_1.jpg');
-}
-
-.footer-cta-2 {
-  background-image: url('../images/footer-cta/footer_2.jpg');
-}
-
-.footer-cta-3 {
-  background-image: url('../images/footer-cta/footer_3.jpg');
-}
-
-.footer-cta-4 {
-  background-image: url('../images/footer-cta/footer_4.jpg');
-}
-
-.footer-cta-5 {
-  background-image: url('../images/footer-cta/footer_5.jpg');
-}
-
-.footer-cta-6 {
-  background-image: url('../images/footer-cta/footer_6.jpg');
-}
-
-.footer-cta-7 {
-  background-image: url('../images/footer-cta/footer_7.jpg');
-}
-
-.footer-cta-8 {
-  background-image: url('../images/footer-cta/footer_8.jpg');
-}
-
-.footer-cta-9 {
-  background-image: url('../images/footer-cta/footer_9.jpg');
+.secondary-call-7 {
+  background-position: bottom;
 }
 
 

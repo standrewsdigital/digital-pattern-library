@@ -18,31 +18,104 @@
        "selected":false} 
     ],
     "secondary":[
-      {"title": "Study options",
-       "url": "/study/ug/options",
+      {"title": "Facts and figures",
+       "url": "#",
        "selected":false},
-      {"title": "Why St Andrews?",
-       "url": "/study/why/",
+      {"title": "Governance",
+       "url": "#",
        "selected":false},
-      {"title": "Fees and funding",
-       "url": "/study/ug/fees-and-funding/",
+      {"title": "History",
+       "url": "#",
        "selected":false}, 
-      {"title": "Accommodation",
-       "url": "/accommodation/ug/",
+      {"title": "Environment",
+       "url": "#",
        "selected":false},  
-      {"title": "Your future",
-       "url": "/study/ug/future/",
+      {"title": "Professional services",
+       "url": "#",
        "selected":false},   
-       {"title": "Meet us",
-       "url": "/study/ug/meet-us/",
+       {"title": "The town",
+       "url": "#",
        "selected":false}, 
-      {"title": "How to apply",
-       "url": "/study/ug/apply/",
+      {"title": "News and events",
+       "url": "#",
        "selected":false}   
     ] 
   },
   "category-header": {
     "title": "About",
     "url": "#"
-   }
+  },
+  "masonry-grid": {
+    "masonry-1": {
+      "shape":"landscape",
+      "image": {
+        "url": "images/prototype/about-tile-wide-1.jpg",
+        "alt": "Description"
+      },
+      "title": "History and heritage",
+      "url": "#",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+    },
+    "masonry-2": {
+      "shape":"portrait",
+      "image": {
+        "url": "images/prototype/about-tile-tall-1.jpg",
+        "alt": "Description"
+      },
+      "title": "Facts and figures",
+      "url": "#",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+    },
+    "masonry-3": {
+      "image": {
+        "url": "images/prototype/about-tile-small-1.jpg",
+        "alt": "Description"
+      },
+      "title": "Environment",
+      "url": "#",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+    },
+    "masonry-4": {
+      "image": {
+        "url": "images/prototype/about-tile-small-2.jpg",
+        "alt": "Description"
+      },
+      "title": "Governance",
+      "url": "#",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+    },
+    "masonry-5": {
+      "image": {
+        "url": "images/prototype/about-tile-small-3.jpg",
+        "alt": "Description"
+      },
+      "title": "The town",
+      "url": "#",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+    },
+    "masonry-6": {
+      "shape":"landscape",
+      "image": {
+        "url": "images/prototype/about-tile-wide-2.jpg",
+        "alt": "Description"
+      },
+      "title": "Professional services",
+      "url": "#",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+    }
+  },
+  "secondary-call": {
+    "heading":  "News and events",
+    "paragraph":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "action": {
+      "text": "News",
+      "url": "http://www.st-andrews.ac.uk/news/"
+    },
+    "action2": {
+      "text": "Events",
+      "url": "http://www.st-andrews.ac.uk/events/"
+    },
+    "alignment": "center",
+    "style": "7"
+  }
 }

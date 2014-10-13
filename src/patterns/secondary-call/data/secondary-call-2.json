@@ -1,0 +1,11 @@
+{
+  "heading":  "News and events",
+  "paragraph":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
+  "action": {
+    "text": "Call to action",
+    "url": "#"
+  },
+  "action-url": "#",
+  "alignment": "right",
+  "style": "2"
+}
