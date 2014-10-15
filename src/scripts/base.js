@@ -9,10 +9,3 @@ clickZone : 'div:eq(1)' // jQuery parent selector
 // $(".secondary-call").fitVids();
 // });
 
-$(".primary-toggle").click(function(){
-	$(".navigation-bar .primary-nav").slideToggle();
-});
-
-
-
-
