@@ -132,23 +132,18 @@
 		#header {
 			margin: 20px 0;
 		}
-		#panel-search .col-sm-10,
-		#panel-search .col-sm-2 {
-			display: inline;
-
-		}
 
     #header-logo img {
       max-width: 345px;
     }
 
-	#panel-search input[type~=text] {
-		width: auto;
-	}
+  	#panel-search input[type~=text] {
+      font-size: 1.2em;
+  	}
 
-	#panel-search input[type~=submit]  {
-		width: auto;
-	}
+  	#panel-search input[type~=submit]  {
+      font-size: 1.2em;
+  	}
 
 	}
 
