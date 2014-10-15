@@ -71,7 +71,12 @@
 }
 
 @media (max-width: 767px) {
-	 .navbox-image {
+
+	.navbox {
+		margin-bottom: 2em;
+	}
+
+	.navbox-image {
   	max-height: 250px;
 		overflow: hidden;
   }
