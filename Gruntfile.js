@@ -25,6 +25,7 @@ module.exports = function(grunt) {
           'src/scripts/vendor/jquery.fitvids.js',
           'src/scripts/vendor/respond.js',
           'src/scripts/vendor/bootstrap.min.js',
+          'src/scripts/vendor/enquire.js',
           'src/scripts/base.js',
           'src/patterns/*/*.js'
         ],
