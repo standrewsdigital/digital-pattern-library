@@ -1,5 +1,10 @@
 
+/*********************************/
+/* BEGIN Pattern: header         */
+/*********************************/
 
+
+/* Functionality for toggling the header search panel. */
 $(".panel-toggle").click(function(){
   var current = $(this);
   var target_selector = current.attr('data-target');
@@ -17,3 +22,9 @@ $(".panel-toggle").click(function(){
 
   return false;
 });
+
+
+
+/*********************************/
+/* END Pattern: header           */
+/*********************************/

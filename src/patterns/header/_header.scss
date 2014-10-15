@@ -24,6 +24,10 @@
 
 	}
 
+  #header-logo img {
+    max-width: 345px;
+  }
+
 	/* Header Panels */
 
 	.header-panel {
@@ -130,6 +134,9 @@
 
 		}
 
+    #header-logo img {
+      max-width: 345px;
+    }
 
 	#panel-search input[type~=text] {
 		width: auto;
