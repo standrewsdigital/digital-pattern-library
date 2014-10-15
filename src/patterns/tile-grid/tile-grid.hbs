@@ -14,7 +14,7 @@
 				<h2>[heading]</h2>
 	      {{/if}}
 	    </div>
-	    <div class="col-md-4 bottom-buffer">
+	    <div class="col-md-4 bottom-buffer read-more-container">
 	    	<div class="read-more">
 			    <div class="read-more-chevron"><i class="chevron large"></i></div>
 		    	<a href="{{default call-to-browse-url "[call-to-browse-url]"}}">{{default call-to-browse-text "call-to-browse-text"}}</a> 
@@ -23,15 +23,15 @@
 	</div>
 
 	<div class="row">
-	    <div class="col-sm-6 col-md-4">
+	  <div class="col-sm-6 col-md-4">
 			{{> tile tile-1 }}
 		</div>
 
-		 <div class="col-sm-6 col-md-4">
+		<div class="col-sm-6 col-md-4">
 			{{> tile tile-2}}
-	    </div>
+	  </div>
 
-	    <div class="col-sm-6 col-md-4">
+	  <div class="col-sm-6 col-md-4">
 			{{> tile tile-3}}
 		</div>
 
@@ -47,6 +47,8 @@
 			{{> tile tile-6}}
 	    </div>
 	</div>  <!-- // End .row -->
+
+	<div class="read-more-container-alt"></div>
 
   </div> <!-- // End .container -->
 
