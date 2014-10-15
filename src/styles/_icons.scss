@@ -1,18 +1,28 @@
 
-i.chevron {
+i.icon {
   position: relative;
   display: inline-block;
-  top: 2px;
-  height: .9em;
-  width: 0.9em;
-  margin: auto 6px;
-  background: url('../images/furniture/chevron@2x.png') no-repeat;
-  background-size: contain;
-  background-position: left center;
 
   -webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
+}
+
+i.chevron {
+  @extend i.icon;
+  top: 2px;
+  height: .9em;
+  width: 0.9em;
+  margin: auto;
+  background: url('../images/furniture/chevron@2x.png') no-repeat;
+  background-size: contain;
+  background-position: left center;
+}
+i.chevron.large {
+  height: 1.4em;
+  width: 1.4em;
+  top: .3em;
+  margin-right: 0;
 }
 
 i.chevron.down {
