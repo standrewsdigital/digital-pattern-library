@@ -36,6 +36,7 @@
 	@extend .button;
 	width: 100%;
 	margin-top: -2px;
+
 }
 .read-more a {
 	display: inline-block;
@@ -51,11 +52,33 @@
 	padding-top: .4em;
 	padding-right: .5em;
 }
-.read-more-chevron img {
-	height: 35px!important;
-  width: 30px!important;
-}
 
+
+@media (max-width: 767px) {
+	.tile-grid h2 {
+		font-size:1.5em;
+	}
+	.read-more {
+		width: auto;
+		padding-bottom: 5px;
+	}
+	.read-more a {
+		font-size: 1em;
+		line-height: 1em;
+		padding: .2em .3em 0.0em;
+	}
+	.read-more-chevron {
+		padding-top: 0.05em;
+	}
+	.read-more-chevron i.chevron.large {
+		height: .9em;
+  	width: 0.9em;
+  	top: 2px;
+  	margin-right: 0;
+  	margin-left: 1em;
+	}
+
+}
 
 /*********************************/
 /* END Pattern: tile-grid        */

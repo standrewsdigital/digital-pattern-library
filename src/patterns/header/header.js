@@ -1,5 +1,10 @@
 
+/*********************************/
+/* BEGIN Pattern: header         */
+/*********************************/
 
+
+/* Functionality for toggling the header search panel. */
 $(".panel-toggle").click(function(){
   var current = $(this);
   var target_selector = current.attr('data-target');
@@ -17,3 +22,40 @@ $(".panel-toggle").click(function(){
 
   return false;
 });
+
+
+enquire.register("screen and (max-width:767px)", {
+
+    // Triggered when a media query matches.
+    match : function() {
+      var current = $("#header-logo img").attr('src');
+      var updated = current.replace(/logo-foundation/,'logo-standard');
+      $("#header-logo img").attr('src',updated);
+    },      
+                                
+
+    // Triggered when the media query transitions 
+    // *from a matched state to an unmatched state*.
+    unmatch : function() {
+      var current = $("#header-logo img").attr('src');
+      var updated = current.replace(/logo-standard/,'logo-foundation');
+      $("#header-logo img").attr('src',updated);
+    },    
+    
+                                
+    // OPTIONAL, defaults to false
+    // If set to true, defers execution of the setup function 
+    // until the first time the media query is matched
+    deferSetup : true,
+                                
+    // OPTIONAL
+    // If supplied, triggered when handler is unregistered. 
+    // Place cleanup code here
+    destroy : function() {}
+      
+});
+
+
+/*********************************/
+/* END Pattern: header           */
+/*********************************/

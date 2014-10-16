@@ -12,23 +12,34 @@
 	box-shadow:         4px 4px 8px 0px rgba(0, 0, 0, 0.38);
  }
 
+.tile-image-title {
+  position: relative;
+}
+
  .tile img {
  	height: 200px;
  	width: 100%;
  	position: relative;
  	z-index: 0;
-
  }
 
  .tile h3 {
- 	margin-top: -2.6em;
+  width: 100%;
  	font-size: 1.3em;
- 	line-height: 2.6em;
+ 	line-height: 1.3em;
  	background: $sta-blue-50;
- 	position: relative;
+ 	position: absolute;
+  bottom: 0;
  	z-index: 100;
- 	padding: 0 .8em;
+ 	padding: .5em .8em;
+  margin: 0;
  	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+ }
+ .tile:hover {
+  cursor: pointer;
  }
  .tile:hover h3 {
  	background: $sta-blue-hover;
@@ -41,7 +52,7 @@
 
  .tile p {
  	font-size: 1em;
- 	height: 7em;
+ 	height: 5em;
  	line-height: 1.2em;
  	padding: 0 1em;
  	margin: 1.5em 0;
@@ -49,6 +60,7 @@
 
  .tile-date {
  	float: left;
+  font-size: 15px;
  	font-weight: bold;
  	padding-left: 1em;
 
@@ -56,6 +68,7 @@
 
  .tile-type {
  	float: right;
+  font-size: 15px;
  	padding-right: 1em;
  	font-weight: bold;
  	color: $sta-grey-med;
@@ -85,6 +98,12 @@
 
 .tile.red:hover h3 {
   background: $sta-red-hover;
+}
+
+@media (max-width: 767px) {
+  .tile p {
+    height: auto;
+  }
 }
 
 /*********************************/

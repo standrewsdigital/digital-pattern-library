@@ -24,6 +24,13 @@
 
 	}
 
+  #header-logo img {
+    max-width: 345px;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+  }
+
 	/* Header Panels */
 
 	.header-panel {
@@ -86,6 +93,12 @@
 		width: 100%;
 	}
 
+  #header .logo-container {
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+  }
+
 
 
 	.panel-toggle {
@@ -102,19 +115,23 @@
 
   .panel-toggle img.chevron {
     width: 15px;
-    -moz-transform:rotate(90deg);
-        -o-transform:rotate(90deg);
-        -webkit-transform:rotate(90deg);
-        -ms-transform:rotate(90deg);
-        transform:rotate(90deg);
+    -moz-transform:rotate(270deg);
+    -o-transform:rotate(270deg);
+    -webkit-transform:rotate(270deg);
+    -ms-transform:rotate(270deg);
+    transform:rotate(270deg);
+    
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
   }
 
   .panel-toggle.panel-toggle-up img.chevron {
-        -moz-transform:rotate(270deg);
-        -o-transform:rotate(270deg);
-        -webkit-transform:rotate(270deg);
-        -ms-transform:rotate(270deg);
-        transform:rotate(270deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
   }
 
 
@@ -124,22 +141,51 @@
 		#header {
 			margin: 20px 0;
 		}
-		#panel-search .col-sm-10,
-		#panel-search .col-sm-2 {
-			display: inline;
 
-		}
+    #header-logo img {
+      max-width: 250px;
+    }
 
+  	#panel-search input[type~=text] {
+      font-size: 1.2em;
+  	}
 
-	#panel-search input[type~=text] {
-		width: auto;
-	}
-
-	#panel-search input[type~=submit]  {
-		width: auto;
-	}
+  	#panel-search input[type~=submit]  {
+      font-size: 1.2em;
+  	}
 
 	}
+
+  @media (max-width: 480px) {
+
+    #header .logo-container {
+      float: left;
+      height: 100px;
+      width: 180px;
+ 
+    }
+    #header .button-container {
+      float: right;
+
+    }
+
+    .panel-toggle {
+      padding: .7em .3em;
+      margin-left: 0px;
+    }
+
+    .panel-toggle img.icon {
+      height: 22px;
+      width: 22px;
+      margin-right: 5px;
+    }
+
+    .panel-toggle img.chevron {
+      width: 10px;
+    }
+      
+
+  }
 
 /*********************************/
 /* END Pattern: header           */

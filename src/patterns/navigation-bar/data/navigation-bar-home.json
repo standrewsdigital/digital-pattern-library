@@ -1,8 +1,5 @@
 {
 	"primary":[
-		{"title": "About",
-		 "url": "/about/",
-		 "selected":false},
 		{"title": "Study at St Andrews",
 		 "url": "/study/",
 		 "selected":false},
@@ -14,6 +11,9 @@
 		 "selected":false},  
 		{"title": "Schools",
 		 "url": "/schools/",
-		 "selected":false} 
+		 "selected":false},
+		{"title": "About",
+		 "url": "/about/",
+		 "selected":false}
 	]	
 }

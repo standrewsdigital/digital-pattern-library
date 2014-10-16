@@ -64,6 +64,25 @@
     width: 30px!important;
 }
 
+@media (max-width: 991px) and (min-width: 768px) {
+  .navbox-title {
+  	position: relative;
+  }
+}
+
+@media (max-width: 767px) {
+
+	.navbox {
+		margin-bottom: 2em;
+	}
+
+	.navbox-image {
+  	max-height: 250px;
+		overflow: hidden;
+  }
+
+}
+
 /*********************************/
 /* END Pattern: navbox           */
 /*********************************/
