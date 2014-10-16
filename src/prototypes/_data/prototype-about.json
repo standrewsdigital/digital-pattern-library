@@ -45,6 +45,18 @@
     "title": "About",
     "url": "#"
   },
+  "breadcrumbs": {
+    "parents": [
+      {
+        "title": "University",
+        "url": "../../index.html"
+      }
+    ],
+    "current": {
+      "title": "About",
+      "url": "../index.html"
+    }
+  },
   "masonry-grid": {
     "masonry-1": {
       "shape":"landscape",

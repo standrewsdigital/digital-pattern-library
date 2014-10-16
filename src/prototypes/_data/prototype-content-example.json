@@ -45,77 +45,20 @@
     "title": "About",
     "url": "#"
   },
-  "masonry-grid": {
-    "masonry-1": {
-      "shape":"landscape",
-      "image": {
-        "url": "images/prototype/about-tile-wide-1.jpg",
-        "alt": "Description"
+  "breadcrumbs": {
+    "parents": [
+      {
+        "title": "University",
+        "url": "../../index.html"
       },
-      "title": "History and heritage",
-      "url": "#",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
-    },
-    "masonry-2": {
-      "shape":"portrait",
-      "image": {
-        "url": "images/prototype/about-tile-tall-1.jpg",
-        "alt": "Description"
-      },
+      {
+        "title": "About",
+        "url": "../index.html"
+      }
+    ],
+    "current": {
       "title": "Facts and figures",
-      "url": "#",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
-    },
-    "masonry-3": {
-      "image": {
-        "url": "images/prototype/about-tile-small-1.jpg",
-        "alt": "Description"
-      },
-      "title": "Environment",
-      "url": "#",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
-    },
-    "masonry-4": {
-      "image": {
-        "url": "images/prototype/about-tile-small-2.jpg",
-        "alt": "Description"
-      },
-      "title": "Governance",
-      "url": "#",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
-    },
-    "masonry-5": {
-      "image": {
-        "url": "images/prototype/about-tile-small-3.jpg",
-        "alt": "Description"
-      },
-      "title": "The town",
-      "url": "#",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
-    },
-    "masonry-6": {
-      "shape":"landscape",
-      "image": {
-        "url": "images/prototype/about-tile-wide-2.jpg",
-        "alt": "Description"
-      },
-      "title": "Professional services",
-      "url": "#",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+      "url": "index.html"
     }
-  },
-  "secondary-call": {
-    "heading":  "News and events",
-    "paragraph":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-    "action": {
-      "text": "News",
-      "url": "http://www.st-andrews.ac.uk/news/"
-    },
-    "action2": {
-      "text": "Events",
-      "url": "http://www.st-andrews.ac.uk/events/"
-    },
-    "alignment": "center",
-    "style": "7"
   }
 }
