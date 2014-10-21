@@ -14,12 +14,12 @@ layout: _base.hbs
     <h2>Patterns</h2>
 
     <ul>
-    	{{#each pages }} 
+    	{{#each pages }}
     		{{#is basename "index"}}
     		{{else}}
-    		<li> <a  href ="{{data.pattern}}/index.html" > {{data.pattern }} </a > </li > 
+    		<li> <a  href ="{{data.pattern}}/index.html" > {{data.pattern }} </a > </li >
     		{{/is}}
-    	{{/each  }} 
+    	{{/each  }}
     </ul>
 
   </div>
@@ -35,19 +35,13 @@ layout: _base.hbs
       <li><a href="js-style.html">JS Coding Style Guide</a></li>
     </ul>
 
-    <hr>
-
-    <ul>
-      <li><a href="todo.html">To Do</a></li>
-    </ul>
-    
   </div>
 
   <div class="col-md-4">
 
-    <p><a href="patchwork.html">Patchwork</a> – The patchwork 
+    <p><a href="patchwork.html">Patchwork</a> – The patchwork
     shows all patterns in alphabetical order. Useful for testing or searching for a pattern.</p>
-    
+
   </div>
 
 </div>
