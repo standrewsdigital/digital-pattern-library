@@ -1,0 +1,54 @@
+
+<!-- Begin pattern: content-2col //-->
+
+<div class="container" id="{{default id "[id]"}}">        
+  <div class="row">
+    <div class="col-sm-8">
+      <section class="content-wrapper" role="main">
+
+        {{#if text}}{{{text}}}{{else}}
+
+        <img src="{{asset 'images/placeholders/750x311.jpg'}}">
+
+        <h2>{{default title "Ullam corporis suscipit"}}</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <p><a href="#">Sed ut perspiciatis</a></p>
+        {{/if}}
+     
+      </section>
+    </div>
+    <div class="col-sm-4 sidebar" role="complementary">
+      
+        {{#if sidebar}}{{{sidebar}}}{{else}}
+
+
+        <div class="navbox"> <div class="navbox-image"> <img src="{{asset "images/placeholders/360x240.jpg"}}" alt="[alt]"></div> <div class="navbox-title"> <div class="navbox-chevron"><img src="../../build/images/furniture/chevron@2x.png" alt="chevron"></div> <p><a href="#">Call to action</a></p> </div> </div>
+
+        <hr>
+
+        <h3>Related links</h3>
+
+        <ul>
+          <li><a href="#">Related link 1</a></li>
+          <li><a href="#">Related link 2</a></li>
+          <li><a href="#">Related link 3</a></li>
+          <li><a href="#">Related link 4</a></li>
+          <li><a href="#">Related link 5</a></li>
+        </ul>
+
+
+
+        {{/if}}
+     
+    </div>
+  </div>
+</div>
+
+<!-- End pattern: content-2col //-->
