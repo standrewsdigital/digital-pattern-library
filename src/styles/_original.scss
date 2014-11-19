@@ -244,52 +244,6 @@ iframe {
 }
 
 
-/* Accordions */
-
-.accordion a.toggleLink {
-	display: block;
-	color: #ffffff!important;
-	background-color: #0088cc;
-	padding: 10px 15px;
-	text-decoration: none;
-}
-
-.accordion a.toggleLink:hover {
-	background-color: #005580;
-}
-
-.accordion i.chevron {
-	background: url('../images/furniture/chevron@2x.png') no-repeat;
-	background-size: 18px;
-	height: 20px;
-	width: 17px;
-	display: inline-block;
-	position: relative;
-	top: 3px;
-	margin-left: 6px;
-	-moz-transform:rotate(180deg);
-	-o-transform:rotate(180deg);
-	-webkit-transform:rotate(180deg);
-	-ms-transform:rotate(180deg);
-	transform:rotate(180deg);
-	zoom:1;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	float: right;
-}
-
-.accordion .open i.chevron {
-	-moz-transform:rotate(90deg);
-	-o-transform:rotate(90deg);
-	-webkit-transform:rotate(90deg);
-	-ms-transform:rotate(90deg);
-	transform:rotate(90deg);
-	zoom:1;
-}
-
 
 
 /* Main content */
