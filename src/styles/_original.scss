@@ -362,11 +362,11 @@ iframe {
 }
 
 @media (min-width: 768px) {
-	
+
 	.navbar-brand {
 		display: none;
 	}
-	
+
 }
 
 @media (max-width: 767px) {
@@ -407,17 +407,17 @@ iframe {
 	.image-container:hover .image-text-box, .image-container:focus .image-text-box {
 		background: rgba(0,85,128,0.8);
 	}
-	
+
 }
 
-@media (max-width: 480px) {   
+@media (max-width: 480px) {
 
 	#content-wrapper img {
     	float: none!important;
         margin: 10px 0;
         display: block;
     }
-    
+
     .image-container img {
     	margin: 0!important;
     }
