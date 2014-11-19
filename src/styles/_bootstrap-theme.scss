@@ -17,6 +17,16 @@ tr:nth-child(odd) {
   background-color: lighten($brand-primary, 90%);
 }
 
+
+// LABEL MODIFICATIONS
+// ====================================================
+
+.label {
+  border-radius: 0;
+}
+
+
+
 // BUTTON MODIFICATIONS
 // ====================================================
 
