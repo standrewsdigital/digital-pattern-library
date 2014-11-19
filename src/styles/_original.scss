@@ -49,24 +49,7 @@ img {
 	max-width: 100%; /* Removes unwanted horizontal scroll bar */
 }
 
-table {
-	border: solid 1px #444;
-    width: 100%;
-}
 
-th, td {
-	border: solid 1px #444;
-    padding: 4px;
-}
-
-th {
-	background-color: #0088cc;
-    color: #fff;
-}
-
-tr:nth-child(odd) {
-	background-color: #dbedf9;
-}
 
 iframe {
 	border: 0;

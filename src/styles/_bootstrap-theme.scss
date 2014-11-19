@@ -1,6 +1,25 @@
 // MODIFICATIONS TO BOOTSTRAP FOR OUR THEME
 
 
+// TABLE MODIFICATIONS
+// ====================================================
+
+table {
+    width: 100%;
+}
+
+th {
+  background-color: $brand-primary;
+  color: #fff;
+}
+
+tr:nth-child(odd) {
+  background-color: lighten($brand-primary, 90%);
+}
+
+// BUTTON MODIFICATIONS
+// ====================================================
+
 // Inherited from original 'Study' CSS
 // May no longer be needed. REVIEW[sjp27]
 // .btn-header {
