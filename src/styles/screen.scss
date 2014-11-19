@@ -9,10 +9,12 @@ Description     Framework built on Twitter Bootstrap
 Last Updated    1 March 2014
 */
 
-@import 'vendor/bootstrap';
+@import 'colors';
+@import 'bootstrap-custom';
+@import 'bootstrap-variables';
+@import 'bootstrap-theme';
 @import 'typography';
 @import 'original';
-@import 'colors';
 @import 'icons';
 
 

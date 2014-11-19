@@ -20,11 +20,11 @@ module.exports = function(grunt) {
     concat: {
       core: {
         src: [
-          'src/scripts/vendor/jquery.min.js', 
+          'src/scripts/vendor/jquery.min.js',
           'src/scripts/vendor/jquery.bigtarget.js',
           'src/scripts/vendor/jquery.fitvids.js',
           'src/scripts/vendor/respond.js',
-          'src/scripts/vendor/bootstrap.min.js',
+          'src/scripts/vendor/bootstrap.js',
           'src/scripts/vendor/enquire.js',
           'src/scripts/base.js',
           'src/patterns/*/*.js'
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
         src: [
           'src/scripts/vendor/jquery.min.js',
           'src/scripts/vendor/respond.js',
-          'src/scripts/vendor/bootstrap.min.js',
+          'src/scripts/vendor/bootstrap.js',
           'src/scripts/doc.js'
         ],
         dest: 'build/scripts/doc.js'
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
 
     /* task: assemble - generate the pattern library*/
     assemble: {
-      
+
       options: {
         assets: 'build',
         layoutdir: 'src/_layouts',
@@ -84,12 +84,12 @@ module.exports = function(grunt) {
       },
 
       general: {
-        options: { 
+        options: {
           layout: '_base.hbs'
         },
         files: [
           {
-            expand: true,     
+            expand: true,
             cwd: 'src/patterns/',
             src: ['patchwork.hbs'],
             ext: '.html',
@@ -99,12 +99,12 @@ module.exports = function(grunt) {
       },
 
       patterns: {
-        options: { 
+        options: {
           layout: 'pattern.hbs'
         },
         files: [
           {
-            expand: true,     
+            expand: true,
             cwd: 'src/patterns/',
             src: ['index.hbs','*/*.doc.hbs'],
             ext: '.html',
@@ -113,18 +113,18 @@ module.exports = function(grunt) {
               return 'patterns/' + dest.replace(/\/[a-zA-Z0-9_-]+.html$/,'/index.html');
             }
           },
-          
+
         ]
       },
 
       prototypes: {
-        options: { 
+        options: {
           layout: 'prototype.hbs',
           assets: 'prototypes/build',
         },
         files: [
           {
-            expand: true,     
+            expand: true,
             cwd: 'src/prototypes/',
             src: ['**/*.hbs'],
             ext: '.html',
@@ -147,21 +147,21 @@ module.exports = function(grunt) {
       },
 
       docs: {
-        options: { 
+        options: {
           layout: 'doc.hbs'
         },
         files: [
           {
-            expand: true,     
+            expand: true,
             cwd: '',
             src: ['*.md'],
             ext: '.html',
             dest: 'patterns'
           },
           {
-            expand: true,     
+            expand: true,
             cwd: 'src/docs',
-            src: ['*.md'],
+            src: ['*.md','*.html'],
             ext: '.html',
             dest: 'patterns'
           },
@@ -169,14 +169,14 @@ module.exports = function(grunt) {
       },
 
       meta: {
-        options: { 
+        options: {
           layout: 'meta.hbs',
           partials: ['src/docs/*.md'],
           ext: '.md',
         },
         files: [
           {
-            expand: true,     
+            expand: true,
             cwd: 'src/meta',
             src: ['*.hbs'],
             dest: ''
@@ -201,6 +201,9 @@ module.exports = function(grunt) {
       images: {
         src: ["build/images"]
       },
+      fonts: {
+        src: ["build/fonts"]
+      },
       js: {
         src: ["build/scripts"]
       },
@@ -208,7 +211,7 @@ module.exports = function(grunt) {
         src: ["build/styles"]
       },
       build: {
-        src: ["build"] 
+        src: ["build"]
       }
     },
 
@@ -221,6 +224,16 @@ module.exports = function(grunt) {
             cwd: 'src/images/',      // Src matches are relative to this path.
             src: ['**/*'], // Actual pattern(s) to match.
             dest: 'build/images'
+          }
+        ]
+      },
+      fonts: {
+        files: [
+          {
+            expand: true,     // Enable dynamic expansion.
+            cwd: 'src/fonts/',      // Src matches are relative to this path.
+            src: ['**/*'], // Actual pattern(s) to match.
+            dest: 'build/fonts'
           }
         ]
       },
@@ -254,12 +267,17 @@ module.exports = function(grunt) {
         files: ['src/images/**/*'],
         tasks: ['clean:images','copy','clean:prototype_assets','copy:prototype_assets']
       },
+      fonts: {
+        files: ['src/fonts/**/*'],
+        tasks: ['clean:fonts','copy','clean:prototype_assets','copy:prototype_assets']
+      },
       styles: {
         files: ['src/**/*.scss'],
         tasks: ['clean:styles','compass','clean:prototype_assets','copy:prototype_assets']
       },
       docs: {
         files: [
+          'src/**/*.html',
           'src/**/*.hbs',
           'src/**/*.json',
           'src/**/*.md',
@@ -275,19 +293,17 @@ module.exports = function(grunt) {
 
 
   // Load grunt plugins
-  grunt.loadNpmTasks('assemble');  
+  grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  
+
 
 
   // Define default tasks.
-  grunt.registerTask('default', ['clean:build','clean:patterns','clean:prototypes','compass','jshint','concat','copy:images','copy:prototype_assets','assemble']);
+  grunt.registerTask('default', ['clean:build','clean:patterns','clean:prototypes','compass','jshint','concat','copy:images','copy:fonts','copy:prototype_assets','assemble']);
 
 };
-
-
