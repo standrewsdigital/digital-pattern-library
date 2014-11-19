@@ -73,10 +73,10 @@ $font-family-base:        $font-family-sans-serif;
 // $line-height-computed:    floor(($font-size-base * $line-height-base)) // ~20px
 
 //** By default, this inherits from the `<body>`.
-// $headings-font-family:    inherit
-// $headings-font-weight:    500
-// $headings-line-height:    1.1
-// $headings-color:          inherit
+$headings-font-family:    inherit;
+$headings-font-weight:    700;
+$headings-line-height:    1.1;
+$headings-color:          inherit;
 
 
 //== Iconography
