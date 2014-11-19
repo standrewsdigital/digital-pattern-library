@@ -244,144 +244,6 @@ iframe {
 }
 
 
-/*POSTGRADUATE GREEN PASSIVE*/
-
-#id-43302 .subnav,
-#id-43302 .navigation-bar .currentbranch0 a {
-	background-color: #4d8346;
-}
-
-/*POSTGRADUATE GREEN HOVER*/
-#id-43302 .subnav li a:hover, #id-43302 .navigation-bar .currentbranch0 a:hover, #id-43302 .subnav li a:focus, #id-43302 .navigation-bar .currentbranch0 a:focus {
-background-color: #365b31;
-}
-
-/*POSTGRADUATE GREEN OPACITY*/
-#id-43302 #category-title h2,
-#id-43302 .image-text-box {
-background-color: rgba(77,131,70,0.8);
-}
-
-#id-43302 #category-title .oblique {
-border-top-color: rgba(77,131,70,0.8);
-}
-
-/*POSTGRADUATE GREEN OPACITY HOVER*/
-#id-43302 .image-container:hover .image-text-box, .image-container:focus .image-text-box {
-background: rgba(54,91,49,0.8);
-}
-
-/*POSTGRADUATE GREEN LINK PASSIVE*/
-#id-43302 #main-content a {
-color: #4d8346;
-}
-
-/*POSTGRADUATE GREEN LINK HOVER*/
-#id-43302 #main-content a:hover {
-color: #365b31;
-}
-
-/*POSTGRADUATE GREEN ACCORDION PASSIVE*/
-#id-43302 .accordion a.toggleLink {
-background-color: #4d8346;
-}
-
-/*POSTGRADUATE GREEN ACCORDION HOVER*/
-#id-43302 .accordion a.toggleLink:hover {
-background-color: #365b31;
-}
-
-/*POSTGRADUATE GREEN DIRECTIONAL MENU PASSIVE*/
-#id-43302 .directional-menu p a {
-background-color: #4d8346;
-}
-
-/*POSTGRADUATE GREEN DIRECTIONAL MENU HOVER*/
-#id-43302 .directional-menu .directional-menu-text-box:hover p a, .directional-menu .directional-menu-text-box:focus p a {
-background-color: #365b31;
-}
-
-/*POSTGRADUATE GREEN BUTTON PASSIVE*/
-#id-43302 .btn-primary{
-background-color: #4d8346;
-color: #fff!important;
-}
-
-/*POSTGRADUATE GREEN BUTTON HOVER*/
-#id-43302 .btn-primary:hover {
-background-color: #365b31;
-color: #fff!important;
-}
-
-/*-------------------------*/
-
-/*NON-DEGREE PURPLE PASSIVE*/
-#id-43303 .subnav,
-#id-43303 .navigation-bar .currentbranch0 a {
-	background-color: #8b67aa;
-}
-
-/*NON-DEGREE PURPLE HOVER*/
-#id-43303 .subnav li a:hover, #id-43303 .navigation-bar .currentbranch0 a:hover, #id-43303 .subnav li a:focus, #id-43303 .navigation-bar .currentbranch0 a:focus {
-background-color: #614877;
-}
-
-/*NON-DEGREE PURPLE OPACITY*/
-#id-43303 #category-title h2,
-#id-43303 .image-text-box {
-background-color: rgba(139,103,170,0.8);
-}
-
-#id-43303 #category-title .oblique {
-border-top-color: rgba(139,103,170,0.8);
-}
-
-/*NON-DEGREE PURPLE OPACITY HOVER*/
-#id-43303 .image-container:hover .image-text-box, .image-container:focus .image-text-box {
-background: rgba(97,72,119,0.8);
-}
-
-/*NON-DEGREE PURPLE LINK PASSIVE*/
-#id-43303 #main-content a {
-color: #8b67aa;
-}
-
-/*NON-DEGREE PURPLE LINK HOVER*/
-#id-43303 #main-content a:hover {
-color: #614877;
-}
-
-/*NON-DEGREE PURPLE ACCORDION PASSIVE*/
-#id-43303 .accordion a.toggleLink {
-background-color: #8b67aa;
-}
-
-/*NON-DEGREE PURPLE ACCORDION HOVER*/
-#id-43303 .accordion a.toggleLink:hover {
-background-color: #614877;
-}
-
-/*NON-DEGREE PURPLE DIRECTIONAL MENU PASSIVE*/
-#id-43303 .directional-menu p a {
-background-color: #8b67aa;
-}
-
-/*NON-DEGREE PURPLE DIRECTIONAL MENU HOVER*/
-#id-43303 .directional-menu .directional-menu-text-box:hover p a, .directional-menu .directional-menu-text-box:focus p a {
-background-color: #614877;
-}
-
-/*NON-DEGREE PURPLE BUTTON PASSIVE*/
-#id-43303 .btn-primary{
-background-color: #8b67aa;
-color: #fff!important;
-}
-
-/*NON-DEGREE PURPLE BUTTON HOVER*/
-#id-43303 .btn-primary:hover {
-background-color: #614877;
-color: #fff!important;
-}
 
 .btn-header {
 background-color: #0088cc!important;
@@ -609,3 +471,143 @@ color: #fff;
 }
 
 
+// OLD ID-SPECIFIC CSS RULES
+//
+// /*POSTGRADUATE GREEN PASSIVE*/
+//
+// #id-43302 .subnav,
+// #id-43302 .navigation-bar .currentbranch0 a {
+// 	background-color: #4d8346;
+// }
+//
+// /*POSTGRADUATE GREEN HOVER*/
+// #id-43302 .subnav li a:hover, #id-43302 .navigation-bar .currentbranch0 a:hover, #id-43302 .subnav li a:focus, #id-43302 .navigation-bar .currentbranch0 a:focus {
+// background-color: #365b31;
+// }
+//
+// /*POSTGRADUATE GREEN OPACITY*/
+// #id-43302 #category-title h2,
+// #id-43302 .image-text-box {
+// background-color: rgba(77,131,70,0.8);
+// }
+//
+// #id-43302 #category-title .oblique {
+// border-top-color: rgba(77,131,70,0.8);
+// }
+//
+// /*POSTGRADUATE GREEN OPACITY HOVER*/
+// #id-43302 .image-container:hover .image-text-box, .image-container:focus .image-text-box {
+// background: rgba(54,91,49,0.8);
+// }
+//
+// /*POSTGRADUATE GREEN LINK PASSIVE*/
+// #id-43302 #main-content a {
+// color: #4d8346;
+// }
+//
+// /*POSTGRADUATE GREEN LINK HOVER*/
+// #id-43302 #main-content a:hover {
+// color: #365b31;
+// }
+//
+// /*POSTGRADUATE GREEN ACCORDION PASSIVE*/
+// #id-43302 .accordion a.toggleLink {
+// background-color: #4d8346;
+// }
+//
+// /*POSTGRADUATE GREEN ACCORDION HOVER*/
+// #id-43302 .accordion a.toggleLink:hover {
+// background-color: #365b31;
+// }
+//
+// /*POSTGRADUATE GREEN DIRECTIONAL MENU PASSIVE*/
+// #id-43302 .directional-menu p a {
+// background-color: #4d8346;
+// }
+//
+// /*POSTGRADUATE GREEN DIRECTIONAL MENU HOVER*/
+// #id-43302 .directional-menu .directional-menu-text-box:hover p a, .directional-menu .directional-menu-text-box:focus p a {
+// background-color: #365b31;
+// }
+//
+// /*POSTGRADUATE GREEN BUTTON PASSIVE*/
+// #id-43302 .btn-primary{
+// background-color: #4d8346;
+// color: #fff!important;
+// }
+//
+// /*POSTGRADUATE GREEN BUTTON HOVER*/
+// #id-43302 .btn-primary:hover {
+// background-color: #365b31;
+// color: #fff!important;
+// }
+//
+// /*-------------------------*/
+//
+// /*NON-DEGREE PURPLE PASSIVE*/
+// #id-43303 .subnav,
+// #id-43303 .navigation-bar .currentbranch0 a {
+// 	background-color: #8b67aa;
+// }
+//
+// /*NON-DEGREE PURPLE HOVER*/
+// #id-43303 .subnav li a:hover, #id-43303 .navigation-bar .currentbranch0 a:hover, #id-43303 .subnav li a:focus, #id-43303 .navigation-bar .currentbranch0 a:focus {
+// background-color: #614877;
+// }
+//
+// /*NON-DEGREE PURPLE OPACITY*/
+// #id-43303 #category-title h2,
+// #id-43303 .image-text-box {
+// background-color: rgba(139,103,170,0.8);
+// }
+//
+// #id-43303 #category-title .oblique {
+// border-top-color: rgba(139,103,170,0.8);
+// }
+//
+// /*NON-DEGREE PURPLE OPACITY HOVER*/
+// #id-43303 .image-container:hover .image-text-box, .image-container:focus .image-text-box {
+// background: rgba(97,72,119,0.8);
+// }
+//
+// /*NON-DEGREE PURPLE LINK PASSIVE*/
+// #id-43303 #main-content a {
+// color: #8b67aa;
+// }
+//
+// /*NON-DEGREE PURPLE LINK HOVER*/
+// #id-43303 #main-content a:hover {
+// color: #614877;
+// }
+//
+// /*NON-DEGREE PURPLE ACCORDION PASSIVE*/
+// #id-43303 .accordion a.toggleLink {
+// background-color: #8b67aa;
+// }
+//
+// /*NON-DEGREE PURPLE ACCORDION HOVER*/
+// #id-43303 .accordion a.toggleLink:hover {
+// background-color: #614877;
+// }
+//
+// /*NON-DEGREE PURPLE DIRECTIONAL MENU PASSIVE*/
+// #id-43303 .directional-menu p a {
+// background-color: #8b67aa;
+// }
+//
+// /*NON-DEGREE PURPLE DIRECTIONAL MENU HOVER*/
+// #id-43303 .directional-menu .directional-menu-text-box:hover p a, .directional-menu .directional-menu-text-box:focus p a {
+// background-color: #614877;
+// }
+//
+// /*NON-DEGREE PURPLE BUTTON PASSIVE*/
+// #id-43303 .btn-primary{
+// background-color: #8b67aa;
+// color: #fff!important;
+// }
+//
+// /*NON-DEGREE PURPLE BUTTON HOVER*/
+// #id-43303 .btn-primary:hover {
+// background-color: #614877;
+// color: #fff!important;
+// }
