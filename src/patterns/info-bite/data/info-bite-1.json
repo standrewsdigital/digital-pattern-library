@@ -1,8 +1,8 @@
 {
   "image": {
-    "url": "example-url",
-    "alt": "alt..."
+    "url": "images/placeholders/info-bite-1.jpg",
+    "alt": "building"
   },
-  "bite": "blah",
-  "url": "http://www.google.com"
+  "bite": "Oldest university in Scotland, dating 1413",
+  "url": "#"
 }
