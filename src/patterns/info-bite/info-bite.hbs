@@ -7,7 +7,9 @@
     {{else}}  <img src="[path/to/image.ext]" alt="[alt]">
     {{/if}}</div>
     <div class="bite">
-      <a href="{{default url "[url]"}}">{{default bite "[bite]"}}</a>
+    {{#if url}}<a href="{{url}}">{{default bite "[bite]"}}</a>
+    {{else}}{{default bite "[bite]"}}
+    {{/if}}
   </div>
 </div>
 
