@@ -8,15 +8,17 @@
   position: relative;
   margin-bottom: 30px;
   height: 300px;
-  overflow:hidden;
+
 }
 
 .info-bite.landscape {
   width: 100%;
+  overflow:hidden;
 }
 
 .info-bite.portrait {
   height: 630px;
+  overflow:hidden;
 }
 
 .info-bite .image {

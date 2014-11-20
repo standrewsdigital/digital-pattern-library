@@ -1,1 +1,42 @@
-{{> info-bite-grid info-bite-grid-1}}
+
+
+
+
+<div class="info-bite-grid">
+
+  <div class="container">
+
+  <div class="row">
+
+
+  {{#with info-bite-grid-1}}
+    <div class="col-md-8">
+      {{> info-bite info-bite-1 }}
+    </div>
+
+    <div class="col-md-4 portrait-container">
+      {{> info-bite info-bite-2}}
+    </div>
+
+    <div class="col-md-4">
+      {{> info-bite info-bite-3}}
+    </div>
+
+    <div class="col-md-4">
+      {{> info-bite info-bite-4}}
+    </div>
+
+    <div class="col-md-4">
+      {{> info-bite info-bite-5}}
+    </div>
+
+    <div class=" col-md-8">
+      {{> info-bite info-bite-6}}
+    </div>
+  {{/with}}
+
+  </div>  <!-- // End .row -->
+
+  </div> <!-- // End .container -->
+
+</div>  <!-- // End .info-bite-grid -->

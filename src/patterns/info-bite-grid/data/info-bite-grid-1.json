@@ -1,8 +1,54 @@
 {
-  "image": {
-    "url": "images/placeholders/info-bite-1.jpg",
-    "alt": "building"
+  "info-bite-1": {
+    "class":"landscape",
+    "image": {
+      "url": "images/placeholders/info-bite-1.jpg",
+      "alt": "building"
+    },
+    "bite": "Oldest university<br> in Scotland, dating 1413",
+    "url": "#"
   },
-  "bite": "Oldest university<br> in Scotland, dating 1413",
-  "url": "#"
+  "info-bite-2": {
+    "class": "portrait",
+    "image": {
+      "url": "images/placeholders/info-bite-1.jpg",
+      "alt": "building"
+    },
+    "bite": "Oldest university<br> in Scotland, dating 1413",
+    "url": "#"
+  },
+  "info-bite-3": {
+    "image": {
+      "url": "images/placeholders/info-bite-1.jpg",
+      "alt": "building"
+    },
+    "bite": "Oldest university<br> in Scotland, dating 1413",
+    "url": "#"
+  },
+  "info-bite-4": {
+    "image": {
+      "url": "images/placeholders/info-bite-1.jpg",
+      "alt": "building"
+    },
+    "bite": "Oldest university<br> in Scotland, dating 1413",
+    "url": "#"
+  },
+  "info-bite-5": {
+
+    "image": {
+      "url": "images/placeholders/info-bite-1.jpg",
+      "alt": "building"
+    },
+    "bite": "Oldest university<br> in Scotland, dating 1413",
+    "url": "#"
+  },
+  "info-bite-6": {
+    "class": "landscape",
+    "image": {
+      "url": "images/placeholders/info-bite-1.jpg",
+      "alt": "building"
+    },
+    "bite": "Oldest university<br> in Scotland, dating 1413",
+    "url": "#"
+  }
 }

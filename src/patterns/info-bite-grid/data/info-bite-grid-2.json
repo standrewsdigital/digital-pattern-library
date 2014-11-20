@@ -1,8 +1,51 @@
 {
-  "image": {
-    "url": "images/placeholders/info-bite-2.jpg",
-    "alt": "st andrews degree"
+  "info-bite-1": {
+    "image": {
+      "url": "images/placeholders/info-bite-1.jpg",
+      "alt": "building"
+    },
+    "bite": "Oldest university<br> in Scotland, dating 1413",
+    "url": "#"
   },
-  "bite": "5 times top for student satisfaction",
-  "url": "#"
+  "info-bite-2": {
+    "image": {
+      "url": "images/placeholders/info-bite-1.jpg",
+      "alt": "building"
+    },
+    "bite": "Oldest university<br> in Scotland, dating 1413",
+    "url": "#"
+  },
+  "info-bite-3": {
+    "image": {
+      "url": "images/placeholders/info-bite-1.jpg",
+      "alt": "building"
+    },
+    "bite": "Oldest university<br> in Scotland, dating 1413",
+    "url": "#"
+  },
+  "info-bite-4": {
+    "image": {
+      "url": "images/placeholders/info-bite-1.jpg",
+      "alt": "building"
+    },
+    "bite": "Oldest university<br> in Scotland, dating 1413",
+    "url": "#"
+  },
+  "info-bite-5": {
+
+    "image": {
+      "url": "images/placeholders/info-bite-1.jpg",
+      "alt": "building"
+    },
+    "bite": "Oldest university<br> in Scotland, dating 1413",
+    "url": "#"
+  },
+  "info-bite-6": {
+    "image": {
+      "url": "images/placeholders/info-bite-1.jpg",
+      "alt": "building"
+    },
+    "bite": "Oldest university<br> in Scotland, dating 1413",
+    "url": "#"
+  }
 }
