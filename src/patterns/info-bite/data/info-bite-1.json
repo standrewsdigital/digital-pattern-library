@@ -1,1 +1,8 @@
-{}
+{
+  "image": {
+    "url": "example-url",
+    "alt": "alt..."
+  },
+  "bite": "blah",
+  "url": "http://www.google.com"
+}
