@@ -20,9 +20,10 @@ module.exports = function(grunt) {
     concat: {
       core: {
         src: [
-          'src/scripts/vendor/jquery.min.js', 
+          'src/scripts/vendor/jquery.min.js',
           'src/scripts/vendor/jquery.bigtarget.js',
           'src/scripts/vendor/jquery.fitvids.js',
+          'src/scripts/vendor/jquery.fittext.js',
           'src/scripts/vendor/respond.js',
           'src/scripts/vendor/bootstrap.min.js',
           'src/scripts/vendor/enquire.js',

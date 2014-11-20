@@ -1,16 +1,18 @@
 
 <!-- Begin pattern: info-bite //-->
 
-<div class="info-bite">
+<div class="info-bite  {{{ class }}}">
     <div class="image">
     {{#if image}} <img src="{{asset image.url}}" alt="{{image.alt}}">
     {{else}}  <img src="[path/to/image.ext]" alt="[alt]">
     {{/if}}</div>
-    <div class="bite">
-    {{#if url}}<a href="{{url}}">{{default bite "[bite]"}}</a>
-    {{else}}{{default bite "[bite]"}}
-    {{/if}}
-  </div>
+    <div class="bite-container">
+      <div class="bite">
+      {{#if url}}<a href="{{url}}">{{{default bite "[bite]"}}}</a>
+      {{else}}{{{default bite "[bite]"}}}
+      {{/if}}
+      </div>
+    </div>
 </div>
 
 <!-- End pattern: info-bite //-->

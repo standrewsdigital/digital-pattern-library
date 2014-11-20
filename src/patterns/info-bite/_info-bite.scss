@@ -4,6 +4,86 @@
 /*********************************/
 
 
+.info-bite {
+  position: relative;
+  margin-bottom: 30px;
+  height: 300px;
+  overflow:hidden;
+}
+
+.info-bite.landscape {
+  width: 100%;
+}
+
+.info-bite.portrait {
+  height: 630px;
+}
+
+.info-bite .image {
+  height: inherit;
+  width: inherit;
+}
+
+.info-bite .image img {
+  width: 100%!important;
+  height: 100%!important;
+}
+
+.info-bite.landscape .image img {
+  height: auto!important;
+}
+
+
+.info-bite .bite-container {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  width: 100%;
+  background: $sta-blue-80;
+  background-repeat: no-repeat;
+  padding: 36px;
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.info-bite .bite {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff!important;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #444;
+  text-align: center;
+}
+
+.info-bite .bite a {
+  color: #fff!important;
+  text-decoration: none;
+  margin-right: 4px;
+}
+
+
+@media (max-width: 991px) and (min-width: 768px) {
+  // .navbox-title {
+  //   position: relative;
+  // }
+}
+
+@media (max-width: 767px) {
+
+  // .navbox {
+  //   margin-bottom: 2em;
+  // }
+  //
+  // .navbox-image {
+  //   max-height: 250px;
+  //   overflow: hidden;
+  // }
+
+}
+
 
 /*********************************/
 /* END Pattern: info-bite        */
