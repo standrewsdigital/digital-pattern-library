@@ -8,6 +8,7 @@ examples:
 - {name: example4, width: 630px}
 - {name: example5, width: 300px, height: 630px}
 - {name: example6, width: 300px}
+- {name: example7, width: 300px}
 related:
 - name: info-bite-grid
 ---
@@ -30,7 +31,9 @@ or an image with a semi-opaque color on top.
 
 <ul>
 	<li>The link in the <code>.bite</code> is optional.</li>
-	<li>The image and therefore the <code>&lt;div class="image"&gt;...&lt;div&gt;</code> is optional.</li>
+	<li>The image and therefore the <code>&lt;div class="image"&gt;...&lt;div&gt;</code> is optional. In this case you should add a <code>solid</code> class e.g. <code>&lt;div class="info-bite solid"&gt;</code>.</li>
+	<li>To get a portrait info-bite, add a class <code>portrait</code>. This makes the info-bite twice as high.</li>
+	<li>To get a landscape info-bite of use in grids, add a class <code>landscape</code>. This adds styles to make text work better in the larger space.</li>
 </ul>
 
 
