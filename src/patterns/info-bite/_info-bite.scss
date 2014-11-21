@@ -7,8 +7,8 @@
 .info-bite {
   position: relative;
   margin-bottom: 30px;
-  height: 300px;
-
+  height: 280px;
+overflow:hidden;
 }
 
 .info-bite.landscape {
@@ -17,7 +17,7 @@
 }
 
 .info-bite.portrait {
-  height: 630px;
+  height: 590px;
   overflow:hidden;
 }
 
@@ -28,7 +28,7 @@
 
 .info-bite .image img {
   width: 100%!important;
-  height: 100%!important;
+  height: auto!important;
 }
 
 .info-bite.landscape .image img {
@@ -41,7 +41,7 @@
   top:0;
   bottom: 0;
   width: 100%;
-  background: $sta-blue-80;
+  background: $sta-blue-70;
   background-repeat: no-repeat;
   padding: 36px;
   -webkit-transition: all 200ms ease-out;
@@ -50,14 +50,19 @@
 }
 
 .info-bite .bite {
-  position: relative;
+  height: inherit;
+  width: inherit;
+  position: absolute;
   top: 50%;
+  left:0;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   color: #fff!important;
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 1px #444;
   text-align: center;
+  padding: 1em;
 }
 
 .info-bite .bite a {
@@ -67,22 +72,14 @@
 }
 
 
-@media (max-width: 991px) and (min-width: 768px) {
-  // .navbox-title {
-  //   position: relative;
-  // }
+@media (max-width: 991px) {
+  .info-bite.portrait {
+    height: 280px;
+  }
 }
 
 @media (max-width: 767px) {
 
-  // .navbox {
-  //   margin-bottom: 2em;
-  // }
-  //
-  // .navbox-image {
-  //   max-height: 250px;
-  //   overflow: hidden;
-  // }
 
 }
 

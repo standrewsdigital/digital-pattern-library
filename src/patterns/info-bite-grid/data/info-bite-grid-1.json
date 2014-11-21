@@ -1,54 +1,49 @@
 {
   "info-bite-1": {
-    "class":"landscape",
-    "image": {
-      "url": "images/placeholders/info-bite-1.jpg",
-      "alt": "building"
-    },
+    "class": "landscape solid",
+    "noimage": true,
     "bite": "Oldest university<br> in Scotland, dating 1413",
     "url": "#"
   },
   "info-bite-2": {
     "class": "portrait",
     "image": {
-      "url": "images/placeholders/info-bite-1.jpg",
-      "alt": "building"
+      "url": "images/placeholders/info-bite-2.jpg",
+      "alt": "st andrews degree"
     },
-    "bite": "Oldest university<br> in Scotland, dating 1413",
     "url": "#"
+    "bite": "5 times top for student satisfaction",
   },
   "info-bite-3": {
     "image": {
-      "url": "images/placeholders/info-bite-1.jpg",
-      "alt": "building"
+      "url": "images/placeholders/info-bite-3.jpg",
+      "alt": "st andrews students on beach"
     },
-    "bite": "Oldest university<br> in Scotland, dating 1413",
     "url": "#"
+    "bite": "Around 8,000 students",
   },
   "info-bite-4": {
     "image": {
-      "url": "images/placeholders/info-bite-1.jpg",
-      "alt": "building"
+      "url": "images/placeholders/info-bite-4.jpg",
+      "alt": "st andrews student working together"
     },
-    "bite": "Oldest university<br> in Scotland, dating 1413",
     "url": "#"
+    "bite": "32% undergraduate students international",
   },
   "info-bite-5": {
-
     "image": {
-      "url": "images/placeholders/info-bite-1.jpg",
-      "alt": "building"
+      "url": "images/placeholders/info-bite-5.jpg",
+      "alt": "st andrews on a cloudy day"
     },
-    "bite": "Oldest university<br> in Scotland, dating 1413",
     "url": "#"
+    "bite": "Over 600 years of academic excellence",
   },
   "info-bite-6": {
     "class": "landscape",
     "image": {
-      "url": "images/placeholders/info-bite-1.jpg",
-      "alt": "building"
+      "url": "images/placeholders/info-bite-6.jpg",
+      "alt": "the st andrews cathedral"
     },
-    "bite": "Oldest university<br> in Scotland, dating 1413",
-    "url": "#"
+    "bite": "Swell"
   }
 }
