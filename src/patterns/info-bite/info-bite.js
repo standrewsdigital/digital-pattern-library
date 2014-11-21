@@ -7,6 +7,11 @@
 jQuery(document).ready(function(){
 
 
+  $(".info-bite .bite-container a").bigTarget({
+    clickZone : 'div:eq(1)', // jQuery parent selector
+    clickZoneClass : '',
+    clickZoneHoverClass: 'hover'
+  });
 
   $(".info-bite .bite").fitText(0.8,{
       minFontSize: '28px',

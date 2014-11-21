@@ -49,6 +49,19 @@ overflow:hidden;
   transition: all 200ms ease-out;
 }
 
+.info-bite .bite-container.hover {
+  background: $sta-blue-hover;
+  cursor: pointer;
+}
+
+.info-bite.solid .bite-container {
+  background: $sta-blue;
+}
+.info-bite.solid .bite-container.hover {
+  background: $sta-blue-hover-100;
+  cursor: pointer;
+}
+
 .info-bite .bite {
   height: inherit;
   width: inherit;
