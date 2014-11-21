@@ -20,9 +20,10 @@ module.exports = function(grunt) {
     concat: {
       core: {
         src: [
-          'src/scripts/vendor/jquery.min.js', 
+          'src/scripts/vendor/jquery.min.js',
           'src/scripts/vendor/jquery.bigtarget.js',
           'src/scripts/vendor/jquery.fitvids.js',
+          'src/scripts/vendor/jquery.fittext.js',
           'src/scripts/vendor/respond.js',
           'src/scripts/vendor/bootstrap.min.js',
           'src/scripts/vendor/enquire.js',
@@ -73,7 +74,7 @@ module.exports = function(grunt) {
 
     /* task: assemble - generate the pattern library*/
     assemble: {
-      
+
       options: {
         assets: 'build',
         layoutdir: 'src/_layouts',
@@ -84,12 +85,12 @@ module.exports = function(grunt) {
       },
 
       general: {
-        options: { 
+        options: {
           layout: '_base.hbs'
         },
         files: [
           {
-            expand: true,     
+            expand: true,
             cwd: 'src/patterns/',
             src: ['patchwork.hbs'],
             ext: '.html',
@@ -99,12 +100,12 @@ module.exports = function(grunt) {
       },
 
       patterns: {
-        options: { 
+        options: {
           layout: 'pattern.hbs'
         },
         files: [
           {
-            expand: true,     
+            expand: true,
             cwd: 'src/patterns/',
             src: ['index.hbs','*/*.doc.hbs'],
             ext: '.html',
@@ -113,18 +114,18 @@ module.exports = function(grunt) {
               return 'patterns/' + dest.replace(/\/[a-zA-Z0-9_-]+.html$/,'/index.html');
             }
           },
-          
+
         ]
       },
 
       prototypes: {
-        options: { 
+        options: {
           layout: 'prototype.hbs',
           assets: 'prototypes/build',
         },
         files: [
           {
-            expand: true,     
+            expand: true,
             cwd: 'src/prototypes/',
             src: ['**/*.hbs'],
             ext: '.html',
@@ -147,19 +148,19 @@ module.exports = function(grunt) {
       },
 
       docs: {
-        options: { 
+        options: {
           layout: 'doc.hbs'
         },
         files: [
           {
-            expand: true,     
+            expand: true,
             cwd: '',
             src: ['*.md'],
             ext: '.html',
             dest: 'patterns'
           },
           {
-            expand: true,     
+            expand: true,
             cwd: 'src/docs',
             src: ['*.md'],
             ext: '.html',
@@ -169,14 +170,14 @@ module.exports = function(grunt) {
       },
 
       meta: {
-        options: { 
+        options: {
           layout: 'meta.hbs',
           partials: ['src/docs/*.md'],
           ext: '.md',
         },
         files: [
           {
-            expand: true,     
+            expand: true,
             cwd: 'src/meta',
             src: ['*.hbs'],
             dest: ''
@@ -208,7 +209,7 @@ module.exports = function(grunt) {
         src: ["build/styles"]
       },
       build: {
-        src: ["build"] 
+        src: ["build"]
       }
     },
 
@@ -275,19 +276,17 @@ module.exports = function(grunt) {
 
 
   // Load grunt plugins
-  grunt.loadNpmTasks('assemble');  
+  grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  
+
 
 
   // Define default tasks.
   grunt.registerTask('default', ['clean:build','clean:patterns','clean:prototypes','compass','jshint','concat','copy:images','copy:prototype_assets','assemble']);
 
 };
-
-

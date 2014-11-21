@@ -1,0 +1,102 @@
+
+/*********************************/
+/* BEGIN Pattern: info-bite      */
+/*********************************/
+
+
+.info-bite {
+  position: relative;
+  margin-bottom: 30px;
+  height: 280px;
+overflow:hidden;
+}
+
+.info-bite.landscape {
+  width: 100%;
+  overflow:hidden;
+}
+
+.info-bite.portrait {
+  height: 590px;
+  overflow:hidden;
+}
+
+.info-bite .image {
+  height: inherit;
+  width: inherit;
+}
+
+.info-bite .image img {
+  width: 100%!important;
+  height: auto!important;
+}
+
+.info-bite.landscape .image img {
+  height: auto!important;
+}
+
+
+.info-bite .bite-container {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  width: 100%;
+  background: $sta-blue-70;
+  background-repeat: no-repeat;
+  padding: 36px;
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.info-bite .bite-container.hover {
+  background: $sta-blue-hover;
+  cursor: pointer;
+}
+
+.info-bite.solid .bite-container {
+  background: $sta-blue;
+}
+.info-bite.solid .bite-container.hover {
+  background: $sta-blue-hover-100;
+  cursor: pointer;
+}
+
+.info-bite .bite {
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  top: 50%;
+  left:0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #fff!important;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #444;
+  text-align: center;
+  padding: 1em;
+}
+
+.info-bite .bite a {
+  color: #fff!important;
+  text-decoration: none;
+  margin-right: 4px;
+}
+
+
+@media (max-width: 991px) {
+  .info-bite.portrait {
+    height: 280px;
+  }
+}
+
+@media (max-width: 767px) {
+
+
+}
+
+
+/*********************************/
+/* END Pattern: info-bite        */
+/*********************************/

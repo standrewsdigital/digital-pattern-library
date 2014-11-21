@@ -1,7 +1,9 @@
 $sta-blue: 			rgb(0,82,155);
 $sta-blue-50: 			rgba(0,82,155,0.5);
+$sta-blue-70: 			rgba(0,82,155,0.7);
 $sta-blue-80: 			rgba(0,82,155,0.8);
 $sta-blue-hover: 		rgba(0,57,108,.8);
+$sta-blue-hover-100: 		rgb(0,57,108);
 $sta-blue-select: 		rgb(27,116,195);
 $sta-blue-select-80:     rgba(27,116,195,0.8);
 
@@ -18,35 +20,33 @@ $sta-green-hover:		rgba(53,135,44,.8);
 $sta-red:			rgb(155,0,0);
 $sta-red-50: 			rgba(155,0,0,0.5);
 $sta-red-hover:			rgba(108,0,0,0.8);
-	
+
 $sta-purple: 			rgb(139,103,170);
 $sta-purple-50:			rgba(139,103,170,0.5);
 $sta-purple-hover:		rgba(139,103,170,.8);
 
-	
-/* Greys */	
-	
+
+/* Greys */
+
 $sta-grey-light: 		rgb(238,238,238);
 $sta-grey-light-50: 	rgba(238,238,238,.5);
 
 $sta-grey-med-light: 	rgb(153,153,153);
 $sta-grey-med-light-50: rgba(153,153,153,.5);
-	
+
 $sta-grey-med: 			rgb(102,102,102);
 $sta-grey-med-50: 		rgba(102,102,102,.5);
-	
+
 $sta-grey: 				rgb(68,68,68);
 $sta-grey-hover: 		rgba(34,34,34,.8);
 $sta-grey-select: 		rgb(102,102,102);
 $sta-grey-50: 			rgba(68,68,68,.5);
 
-/* Accent colors 
+/* Accent colors
  * Each accent color needs to have the folowing defined for it:
  *  - $sta-<color>
  *  - $sta-<color>-hover
  *  - $sta-<color>-select
  */
 
-$accent_colors: 		blue blue-study 
-
-
+$accent_colors: 		blue blue-study
