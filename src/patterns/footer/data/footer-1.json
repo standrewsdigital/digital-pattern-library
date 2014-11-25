@@ -1,17 +1,17 @@
 
 {
 	"section1":	{
-		"title": "Tools",
+		"title": "Your St Andrews",
 		"links":[
 			{"title": "Current students",
 			 "url": "/students/"},
 			{"title": "Postgraduate",
 			 "url": "/pgstudents/"},
 			{"title": "Staff",
-			 "url": "/staff/"}, 
+			 "url": "/staff/"},
 			{"title": "Work at St Andrews",
 			 "url": "/vacancies/"}
-		]	
+		]
 	},
 	"section2":	{
 		"title": "Navigation",
@@ -21,12 +21,12 @@
 			{"title": "Study at St Andrews",
 			 "url": "/study/"},
 			{"title": "Research",
-			 "url": "/research/"}, 
+			 "url": "/research/"},
 			{"title": "Alumni and donors",
 			 "url": "/alumni/"},
 			{"title": "Schools",
-			 "url": "/schools/"} 
-		]	
+			 "url": "/schools/"}
+		]
 	},
 	"contact":{
 		"url": "/contact/",
