@@ -61,7 +61,7 @@
 		margin: 0;
 		padding-right: 2em;
 		white-space: nowrap;
-	} 
+	}
 	#panel-people a {
 		font-weight: bold;
 		font-size: 1.4em;
@@ -107,6 +107,10 @@
     margin-left: 13px;
   }
 
+	.panel-toggle:hover {
+		background-color: $sta-blue-hover-100;
+	}
+
   .panel-toggle img.icon {
     height: 30px;
     width: 30px;
@@ -120,7 +124,7 @@
     -webkit-transform:rotate(270deg);
     -ms-transform:rotate(270deg);
     transform:rotate(270deg);
-    
+
     -webkit-transition: all 200ms ease-out;
     -moz-transition: all 200ms ease-out;
     transition: all 200ms ease-out;
@@ -166,7 +170,7 @@
     #header .logo-container {
       float: left;
       width: 180px;
- 
+
     }
     #header .button-container {
       float: right;
@@ -187,7 +191,7 @@
     .panel-toggle img.chevron {
       width: 10px;
     }
-      
+
 
   }
 
