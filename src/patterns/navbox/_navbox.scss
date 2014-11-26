@@ -61,6 +61,25 @@
 }
 
 
+/* .navbox-title is the first child of .navbox when
+	 .navbox-image is not showing (i.e. not present). */
+
+.navbox-title:first-child {
+	background: $sta-blue;
+	position: relative;
+	bottom: auto;
+}
+.navbox-title:first-child:hover,
+.navbox:hover .navbox-title:first-child{
+	background: $sta-blue-hover-100;
+}
+
+/* when a p tag immediately follows a navbox
+   tighten up the margin a bit. */
+
+.navbox + p {
+	margin-top: -20px;
+}
 
 
 
