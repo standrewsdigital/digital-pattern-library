@@ -29,6 +29,15 @@
 	transition: all 200ms ease-out;
 }
 
+.navbox-title:before {
+	@extend i.chevron;
+	content: "";
+	float: right;
+	height: 35px!important;
+	width: 30px!important;
+	top:0 !important;
+}
+
 .navbox-title a {
 	color: #fff!important;
 	text-decoration: none;
@@ -51,14 +60,9 @@
 	display: none;
 }
 
-.navbox-chevron {
-	float: right;
-}
 
-.navbox-chevron img {
-	height: 35px!important;
-    width: 30px!important;
-}
+
+
 
 @media (max-width: 991px) and (min-width: 768px) {
   .navbox-title {
