@@ -1,0 +1,8 @@
+{
+  "image": {
+  	"url": "[path/to/image.jpg]",
+  	"alt": "Alternative text"
+  },
+  "title": "Link text",
+  "url": "/link/url/"
+ }

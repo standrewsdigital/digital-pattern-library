@@ -29,6 +29,15 @@
 	transition: all 200ms ease-out;
 }
 
+.navbox-title:before {
+	@extend i.chevron;
+	content: "";
+	float: right;
+	height: 35px!important;
+	width: 30px!important;
+	top:0 !important;
+}
+
 .navbox-title a {
 	color: #fff!important;
 	text-decoration: none;
@@ -51,14 +60,28 @@
 	display: none;
 }
 
-.navbox-chevron {
-	float: right;
+
+/* .navbox-title is the first child of .navbox when
+	 .navbox-image is not showing (i.e. not present). */
+
+.navbox-title:first-child {
+	background: $sta-blue;
+	position: relative;
+	bottom: auto;
+}
+.navbox-title:first-child:hover,
+.navbox:hover .navbox-title:first-child{
+	background: $sta-blue-hover-100;
 }
 
-.navbox-chevron img {
-	height: 35px!important;
-    width: 30px!important;
+/* when a p tag immediately follows a navbox
+   tighten up the margin a bit. */
+
+.navbox + p {
+	margin-top: -20px;
 }
+
+
 
 @media (max-width: 991px) and (min-width: 768px) {
   .navbox-title {
