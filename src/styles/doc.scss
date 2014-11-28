@@ -119,3 +119,65 @@ Last Updated    3 October 2014
     .example .code {
       display: none;
     }
+
+    .swatch {
+
+      position: relative;
+      background-color: #333;
+      height: 150px;
+      width: 300px;
+      display: inline-block;
+      color: white;
+      padding: 8px 0 0 10px;
+      border-right: 10px solid white;
+      border-bottom: 10px solid white;
+
+      &:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "(hover)";
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        background-color: #222;
+        padding: 8px 0 0 10px;
+        border-bottom: 10px solid white;
+      }
+
+      @each $name,$color,$color-hover,$color-T,$color-T-hover,$color-S,$color-S-hover in $sta-colors {
+
+        &.#{$name} {
+          background-color: $color;
+        }
+        &.#{$name}:after {
+          background-color: $color-hover;
+        }
+
+        &.#{$name}-T {
+          background-color: $color-T-hover;
+        }
+        &.#{$name}-T:after {
+          background-color: $color-T-hover;
+        }
+
+        &.#{$name}-S {
+          background-color: $color-S;
+        }
+        &.#{$name}-S:after {
+          background-color: $color-S-hover;
+        }
+
+
+      }
+    }
+
+    .bgimage {
+      display: inline-block;
+      background-image: url(../images/placeholders/360x240-study.jpg);
+      background-size: cover;
+      background-position: center middle;
+      overflow:hidden;
+      padding:0;
+      margin: 0;
+    }
