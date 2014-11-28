@@ -131,6 +131,10 @@ Last Updated    3 October 2014
       padding: 8px 0 0 10px;
       border-right: 10px solid white;
       border-bottom: 10px solid white;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+      -webkit-transition: all 200ms ease-out;
+      -moz-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
 
       &:after {
         position: absolute;
@@ -150,22 +154,28 @@ Last Updated    3 October 2014
         &.#{$name} {
           background-color: $color;
         }
-        &.#{$name}:after {
+        &.#{$name}:after, &.#{$name}:hover  {
           background-color: $color-hover;
         }
 
         &.#{$name}-T {
+          background-color: $color-T;
+        }
+        &.#{$name}-T:hover {
           background-color: $color-T-hover;
         }
         &.#{$name}-T:after {
-          background-color: $color-T-hover;
+          display: none;
         }
 
-        &.#{$name}-S {
+        &.#{$name}-S, &.#{$name}:active {
           background-color: $color-S;
         }
         &.#{$name}-S:after {
           background-color: $color-S-hover;
+        }
+        &.#{$name}-S:hover {
+          background-color: $color;
         }
 
 
@@ -173,11 +183,11 @@ Last Updated    3 October 2014
     }
 
     .bgimage {
+      position: relative;
       display: inline-block;
       background-image: url(../images/placeholders/360x240-study.jpg);
       background-size: cover;
       background-position: center middle;
-      overflow:hidden;
       padding:0;
       margin: 0;
     }
