@@ -20,6 +20,7 @@ module.exports = function(grunt) {
     concat: {
       core: {
         src: [
+          /* Note: update src/docs/dependencies.md if any of these change */
           'src/scripts/vendor/jquery.min.js',
           'src/scripts/vendor/jquery.bigtarget.js',
           'src/scripts/vendor/jquery.fitvids.js',
