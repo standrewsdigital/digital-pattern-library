@@ -32,6 +32,13 @@ module.exports = function(grunt) {
         ],
         dest: 'build/scripts/core.js'
       },
+      corebase: {
+        src: [
+          'src/scripts/base.js',
+          'src/patterns/*/*.js'
+        ],
+        dest: 'build/scripts/core-base.js'
+      },
       doc: {
         src: [
           'src/scripts/vendor/jquery.min.js',
@@ -76,6 +83,7 @@ module.exports = function(grunt) {
     assemble: {
 
       options: {
+        pkg: '<%= pkg %>',
         assets: 'build',
         layoutdir: 'src/_layouts',
         partials: ['src/patterns/*/*.hbs'],

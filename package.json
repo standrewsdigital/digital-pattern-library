@@ -19,5 +19,9 @@
     "handlebars-helper-asset": "git://github.com/sjparsons/handlebars-helper-asset.git#relative-links",
     "handlebars-helpers": "^0.5.8",
     "swag": "^0.7.0"
+  },
+  "cdn" : {
+      "endpoint" : "//www.st-andrews.ac.uk/~cdn",
+      "package": "dpl"
   }
 }
