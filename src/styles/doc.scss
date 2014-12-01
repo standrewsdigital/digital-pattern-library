@@ -164,11 +164,14 @@ Last Updated    3 October 2014
         &.#{$name}-T:hover {
           background-color: $color-T-hover;
         }
+        &.#{$name}-T:active {
+          background-color: $color-T;
+        }
         &.#{$name}-T:after {
           display: none;
         }
 
-        &.#{$name}-S, &.#{$name}:active {
+        &.#{$name}-S, &.#{$name}:active   {
           background-color: $color-S;
         }
         &.#{$name}-S:after {
@@ -176,6 +179,9 @@ Last Updated    3 October 2014
         }
         &.#{$name}-S:hover {
           background-color: $color;
+        }
+        &.#{$name}-S:active {
+          background-color: $color-S;
         }
 
 

@@ -60,8 +60,9 @@ $accent_colors: 		blue blue-study;
 /* NEW COLORS */
 
 
-$hover-darken:          10%;
-$transparency:          0.40;
+$hover-darken:          7%;
+$transparency:          0.30;
+$select-saturation:     25%;
 
 
 /* Blue (sta-blue) */
@@ -71,7 +72,7 @@ $sta-blue-hover:        darken($sta-blue, $hover-darken);
 $sta-blue-T:            transparentize($sta-blue,$transparency);
 $sta-blue-T-hover:      darken($sta-blue-T, $hover-darken);
 
-$sta-blue-S:            saturate($sta-blue,20%);
+$sta-blue-S:            saturate($sta-blue,$select-saturation);
 $sta-blue-S-hover:      darken($sta-blue-S, $hover-darken);
 
 /* Red (sta-red) */
@@ -81,7 +82,7 @@ $sta-red-hover:         darken($sta-red, $hover-darken);
 $sta-red-T:             transparentize($sta-red,$transparency);
 $sta-red-T-hover:       darken($sta-red-T, $hover-darken);
 
-$sta-red-S:             saturate($sta-red,20%);
+$sta-red-S:             saturate($sta-red,$select-saturation);
 $sta-red-S-hover:       darken($sta-red-S, $hover-darken);
 
 /* Yellow (sta-yellow) */
@@ -91,7 +92,7 @@ $sta-yellow-hover:      darken($sta-yellow, $hover-darken);
 $sta-yellow-T:          transparentize($sta-yellow,$transparency);
 $sta-yellow-T-hover:    darken($sta-yellow-T, $hover-darken);
 
-$sta-yellow-S:          saturate($sta-yellow,20%);
+$sta-yellow-S:          saturate($sta-yellow,$select-saturation);
 $sta-yellow-S-hover:    darken($sta-yellow-S, $hover-darken);
 
 /* Grey (sta-grey) */
@@ -101,7 +102,7 @@ $sta-grey-hover:        darken($sta-grey, $hover-darken);
 $sta-grey-T:            transparentize($sta-grey,$transparency);
 $sta-grey-T-hover:      darken($sta-grey-T, $hover-darken);
 
-$sta-grey-S:            saturate($sta-grey,20%);
+$sta-grey-S:            saturate($sta-grey,$select-saturation);
 $sta-grey-S-hover:      darken($sta-grey-S, $hover-darken);
 
 /* Cyan (sta-cyan) */
@@ -111,7 +112,7 @@ $sta-cyan-hover:        darken($sta-cyan, $hover-darken);
 $sta-cyan-T:            transparentize($sta-cyan,$transparency);
 $sta-cyan-T-hover:      darken($sta-cyan-T, $hover-darken);
 
-$sta-cyan-S:            saturate($sta-cyan,20%);
+$sta-cyan-S:            saturate($sta-cyan,$select-saturation);
 $sta-cyan-S-hover:      darken($sta-cyan-S, $hover-darken);
 
 /* Orange (sta-orange) */
@@ -121,7 +122,7 @@ $sta-orange-hover:      darken($sta-orange, $hover-darken);
 $sta-orange-T:          transparentize($sta-orange,$transparency);
 $sta-orange-T-hover:    darken($sta-orange-T, $hover-darken);
 
-$sta-orange-S:          saturate($sta-orange,20%);
+$sta-orange-S:          saturate($sta-orange,$select-saturation);
 $sta-orange-S-hover:    darken($sta-orange-S, $hover-darken);
 
 /* Green (sta-green) */
@@ -131,7 +132,7 @@ $sta-green-hover:       darken($sta-green, $hover-darken);
 $sta-green-T:           transparentize($sta-green,$transparency);
 $sta-green-T-hover:     darken($sta-green-T, $hover-darken);
 
-$sta-green-S:           saturate($sta-green,20%);
+$sta-green-S:           saturate($sta-green,$select-saturation);
 $sta-green-S-hover:     darken($sta-green-S, $hover-darken);
 
 /* Dark Green (sta-dkgreen) */
@@ -141,7 +142,7 @@ $sta-dkgreen-hover:     darken($sta-dkgreen, $hover-darken);
 $sta-dkgreen-T:         transparentize($sta-dkgreen,$transparency);
 $sta-dkgreen-T-hover:   darken($sta-dkgreen-T, $hover-darken);
 
-$sta-dkgreen-S:         saturate($sta-dkgreen,20%);
+$sta-dkgreen-S:         saturate($sta-dkgreen,$select-saturation);
 $sta-dkgreen-S-hover:   darken($sta-dkgreen-S, $hover-darken);
 
 /* Purple (sta-purple) */
@@ -151,7 +152,7 @@ $sta-purple-hover:      darken($sta-purple, $hover-darken);
 $sta-purple-T:          transparentize($sta-purple,$transparency);
 $sta-purple-T-hover:    darken($sta-purple-T, $hover-darken);
 
-$sta-purple-S:          saturate($sta-purple,20%);
+$sta-purple-S:          saturate($sta-purple,$select-saturation);
 $sta-purple-S-hover:    darken($sta-purple-S, $hover-darken);
 
 /* Burgundy (sta-burgundy) */
@@ -161,7 +162,7 @@ $sta-burgundy-hover:    darken($sta-burgundy, $hover-darken);
 $sta-burgundy-T:        transparentize($sta-burgundy,$transparency);
 $sta-burgundy-T-hover:  darken($sta-burgundy-T, $hover-darken);
 
-$sta-burgundy-S:        saturate($sta-burgundy,20%);
+$sta-burgundy-S:        saturate($sta-burgundy,$select-saturation);
 $sta-burgundy-S-hover:  darken($sta-burgundy-S, $hover-darken);
 
 
