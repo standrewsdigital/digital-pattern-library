@@ -76,7 +76,7 @@ $sta-blue-S:            saturate($sta-blue,$select-saturation);
 $sta-blue-S-hover:      darken($sta-blue-S, $hover-darken);
 
 /* Red (sta-red) */
-$sta-red:               #932c26;
+$sta-red:               #c22a22;
 $sta-red-hover:         darken($sta-red, $hover-darken);
 
 $sta-red-T:             transparentize($sta-red,$transparency);
@@ -86,7 +86,7 @@ $sta-red-S:             saturate($sta-red,$select-saturation);
 $sta-red-S-hover:       darken($sta-red-S, $hover-darken);
 
 /* Yellow (sta-yellow) */
-$sta-yellow:            #f4b400;
+$sta-yellow:            #f4c900;
 $sta-yellow-hover:      darken($sta-yellow, $hover-darken);
 
 $sta-yellow-T:          transparentize($sta-yellow,$transparency);
@@ -96,7 +96,7 @@ $sta-yellow-S:          saturate($sta-yellow,$select-saturation);
 $sta-yellow-S-hover:    darken($sta-yellow-S, $hover-darken);
 
 /* Grey (sta-grey) */
-$sta-grey:              #4b4b4c;
+$sta-grey:              #6b6b6b;
 $sta-grey-hover:        darken($sta-grey, $hover-darken);
 
 $sta-grey-T:            transparentize($sta-grey,$transparency);
@@ -106,7 +106,7 @@ $sta-grey-S:            saturate($sta-grey,$select-saturation);
 $sta-grey-S-hover:      darken($sta-grey-S, $hover-darken);
 
 /* Cyan (sta-cyan) */
-$sta-cyan:              #0e4e66;
+$sta-cyan:              #0280bf;
 $sta-cyan-hover:        darken($sta-cyan, $hover-darken);
 
 $sta-cyan-T:            transparentize($sta-cyan,$transparency);
@@ -116,7 +116,7 @@ $sta-cyan-S:            saturate($sta-cyan,$select-saturation);
 $sta-cyan-S-hover:      darken($sta-cyan-S, $hover-darken);
 
 /* Orange (sta-orange) */
-$sta-orange:            #664924;
+$sta-orange:            #d68721;
 $sta-orange-hover:      darken($sta-orange, $hover-darken);
 
 $sta-orange-T:          transparentize($sta-orange,$transparency);
@@ -126,7 +126,7 @@ $sta-orange-S:          saturate($sta-orange,$select-saturation);
 $sta-orange-S-hover:    darken($sta-orange-S, $hover-darken);
 
 /* Green (sta-green) */
-$sta-green:             #354920;
+$sta-green:             #608738;
 $sta-green-hover:       darken($sta-green, $hover-darken);
 
 $sta-green-T:           transparentize($sta-green,$transparency);
@@ -146,7 +146,7 @@ $sta-dkgreen-S:         saturate($sta-dkgreen,$select-saturation);
 $sta-dkgreen-S-hover:   darken($sta-dkgreen-S, $hover-darken);
 
 /* Purple (sta-purple) */
-$sta-purple:            #54376d;
+$sta-purple:            #785596;
 $sta-purple-hover:      darken($sta-purple, $hover-darken);
 
 $sta-purple-T:          transparentize($sta-purple,$transparency);
