@@ -1,7 +1,7 @@
 
 
 
-$sta-blue-50:           rgba(0,82,155,0.5);
+$sta-blue-light-50:           rgba(0,82,155,0.5);
 $sta-blue-70:           rgba(0,82,155,0.7);
 $sta-blue-80:           rgba(0,82,155,0.8);
 //
@@ -203,4 +203,47 @@ $sta-colors : (
 'sta-dkgreen' $sta-dkgreen $sta-dkgreen-hover $sta-dkgreen-T $sta-dkgreen-T-hover $sta-dkgreen-S $sta-dkgreen-S-hover ,
 'sta-purple' $sta-purple $sta-purple-hover $sta-purple-T $sta-purple-T-hover $sta-purple-S $sta-purple-S-hover ,
 'sta-burgundy' $sta-burgundy $sta-burgundy-hover $sta-burgundy-T $sta-burgundy-T-hover $sta-burgundy-S $sta-burgundy-S-hover
+);
+
+$default_palette: (
+  'primary':
+      $sta-blue $sta-blue-hover
+      $sta-blue-T $sta-blue-T-hover
+      $sta-blue-S $sta-blue-S-hover,
+  'secondary':
+      $sta-blue-light $sta-blue-light-hover
+      $sta-blue-light-T $sta-blue-light-T-hover
+      $sta-blue-light-S $sta-blue-light-S-hover,
+  'tertiary-1':
+      $sta-green $sta-green-hover
+      $sta-green-T $sta-green-T-hover
+      $sta-green-S $sta-green-S-hover,
+  'tertiary-2':
+      $sta-burgundy $sta-burgundy-hover
+      $sta-burgundy-T $sta-burgundy-T-hover
+      $sta-burgundy-S $sta-burgundy-S-hover,
+  'tertiary-3':
+      $sta-purple $sta-purple-hover
+      $sta-purple-T $sta-purple-T-hover
+      $sta-purple-S $sta-purple-S-hover
+);
+
+$study_palette: (
+  'primary':
+    $sta-cyan $sta-cyan-hover
+    $sta-cyan-T $sta-cyan-T-hover
+    $sta-cyan-S $sta-cyan-S-hover,
+  'secondary':
+    $sta-cyan-light $sta-cyan-light-hover
+    $sta-cyan-light-T $sta-cyan-light-T-hover
+    $sta-cyan-light-S $sta-cyan-light-S-hover,
+  'tertiary-1':
+    $sta-green $sta-green-hover
+    $sta-green-T $sta-green-T-hover
+    $sta-green-S $sta-green-S-hover,
+  'tertiary-2':
+    $sta-purple $sta-purple-hover
+    $sta-purple-T $sta-purple-T-hover
+    $sta-purple-S $sta-purple-S-hover,
+
 );
