@@ -10,7 +10,7 @@ Our palettes are collections of brand colours that we use together to form the p
 
 
 
-## Default Palette (used on Homepage)
+## Default palette
 
 <div class="swatch sta-blue">primary</div><br>
 <div class="swatch sta-blue-light">secondary 1</div><br>
@@ -19,7 +19,7 @@ Our palettes are collections of brand colours that we use together to form the p
 <div class="swatch sta-purple">tertiary-3</div>
 
 
-## Palette 2 (Used on Study)
+## Study palette
 
 
 <div class="swatch sta-cyan">primary</div><br>
@@ -28,7 +28,7 @@ Our palettes are collections of brand colours that we use together to form the p
 <div class="swatch sta-purple">tertiary-2</div>
 
 
-## Bootstrap States
+## Bootstrap contexts
 
 <div class="swatch sta-green">success</div>
 <div class="swatch sta-blue-light">info</div>
