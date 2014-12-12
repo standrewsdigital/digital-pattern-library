@@ -10,6 +10,10 @@ These are the University of St Andrews colours for the web. To help compare the 
 <div class="swatch sta-blue-S">blue selected</div>
 <div class="bgimage"><div class="swatch sta-blue-T">blue transparent</div></div>
 <br>
+<div class="swatch sta-blue-light">blue</div>
+<div class="swatch sta-blue-light-S">blue selected</div>
+<div class="bgimage"><div class="swatch sta-blue-light-T">blue transparent</div></div>
+<br>
 <div class="swatch sta-red">red</div>
 <div class="swatch sta-red-S">red selected</div>
 <div class="bgimage"><div class="swatch sta-red-T">red transparent</div></div>
@@ -25,6 +29,10 @@ These are the University of St Andrews colours for the web. To help compare the 
 <div class="swatch sta-cyan">cyan</div>
 <div class="swatch sta-cyan-S">cyan selected</div>
 <div class="bgimage"><div class="swatch sta-cyan-T">cyan transparent</div></div>
+<br>
+<div class="swatch sta-cyan-light">cyan light</div>
+<div class="swatch sta-cyan-light-S">cyan light selected</div>
+<div class="bgimage"><div class="swatch sta-cyan-light-T">cyan transparent</div></div>
 <br>
 <div class="swatch sta-orange">orange</div>
 <div class="swatch sta-orange-S">orange selected</div>
@@ -45,3 +53,5 @@ These are the University of St Andrews colours for the web. To help compare the 
 <div class="swatch sta-burgundy">burgundy</div>
 <div class="swatch sta-burgundy-S">burgundy selected</div>
 <div class="bgimage"><div class="swatch sta-burgundy-T">burgundy transparent</div></div>
+
+Please see [palettes](palettes.html) to see how these colors are used together.
