@@ -1,7 +1,34 @@
 
 <!-- Begin pattern: staff-profile //-->
 
+<div class="staff-profile">
+<h3><a href="{{call-to-action-link}}">{{title}}</a></h3>
 
+	<div class="row">
+		<div class="col-sm-7 staff-details">
+			<h4>{{name}}</h4>
+			<p>{{bio}}</p>
 
+			<h4>Contact</h4>
+			<dl>
+			{{#contact-info}}
+				<dt>Email: </dt><dd><a href="mailto:{{email}}">{{email}}</a></dd>
+				<dt>Phone: </dt><dd>{{phone}}</dd>
+				<dt>Fax: </dt><dd>{{fax}}</dd>
+			{{/contact-info}}
+			</dl>
+			<div class="clearfix"></div>
+		</div>
+		<div class="col-sm-5 text-center">
+			{{#if image.url}}
+			<img src="{{asset image.url}}" alt="{{image.alt}}">
+			{{else}}
+			<img src="path/to/image.jpg" alt="some image">
+			{{/if}}
+			<p><a href="{{call-to-action-link}}" class="button-wide">Full biography</a></p>
+		</div>
+	</div>
+	<hr/>
+</div>
 
 <!-- End pattern: staff-profile //-->

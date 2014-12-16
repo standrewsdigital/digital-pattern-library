@@ -1,0 +1,66 @@
+{
+  "navigation-bar" : {
+    "primary":[
+      {"title": "Study at St Andrews",
+       "url": "http://www.st-andrews.ac.uk/study/",
+       "selected":false},
+      {"title": "Research",
+       "url": "http://www.st-andrews.ac.uk/research/",
+       "selected":false}, 
+      {"title": "Alumni and donors",
+       "url": "http://www.st-andrews.ac.uk/alumni/",
+       "selected":false},  
+      {"title": "Schools",
+       "url": "http://www.st-andrews.ac.uk/schools/",
+       "selected":false},
+       {"title": "About",
+       "url": "about/index.html",
+       "selected":true}
+    ],
+    "secondary":[
+      {"title": "Facts and figures",
+       "url": "#",
+       "selected":false},
+      {"title": "Governance",
+       "url": "#",
+       "selected":false},
+      {"title": "History",
+       "url": "#",
+       "selected":false}, 
+      {"title": "Environment",
+       "url": "#",
+       "selected":false},  
+      {"title": "Professional services",
+       "url": "#",
+       "selected":false},   
+       {"title": "The town",
+       "url": "#",
+       "selected":false}, 
+      {"title": "News and events",
+       "url": "#",
+       "selected":false}   
+    ] 
+  },
+  "category-header": {
+    "title": "Staff profiles",
+    "url": "#"
+  },
+  "breadcrumbs": {
+    "parents": [
+      {
+        "title": "University",
+        "url": "../index.html"
+      }
+    ],
+    "current": {
+      "title": "Staff profiles",
+      "url": "index.html"
+    }
+  },
+  "content": {
+    "id": "main-content",
+    "title": "saldkfj",
+    "text" : "<div class=\"staff-profile\"> <h3><a href=\"#\">The Principal and Vice-Chancellor</a></h3> <div class=\"row\"> <div class=\"col-sm-7 staff-details\"> <h4>Professor Louise Richardson</h4> <p>Professor Louise Richardson is the Principal and Vice-Chancellor (chief executive officer) of the University and Professor of International Relations.</p> <h4>Contact</h4> <dl> <dt>Email: </dt><dd><a href=\"mailto:principal@st-andrews.ac.uk\">principal@st-andrews.ac.uk</a></dd> <dt>Phone: </dt><dd>+44 (0)1334 46 2544</dd> <dt>Fax: </dt><dd>+44 (0)1334 46 xxxx</dd> </dl> <div class=\"clearfix\"></div> </div> <div class=\"col-sm-5 text-center\"> <img src=\"../build/images/placeholders/staff-profile.jpg\" alt=\"Mr Smith\"> <p><a href=\"#\" class=\"button-wide\">Full biography</a></p> </div> </div> <hr/> </div>",
+     "sidebar" : "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>  <p><a href=\"#\">Sed ut perspiciatis</a></p>"
+  }
+}

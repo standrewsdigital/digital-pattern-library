@@ -23,6 +23,11 @@
 		@extend .button:hover;	
 	}
 
+	.button-wide{
+		@extend .button;
+		padding-right:1.5em;
+		padding-left:1.5em;
+	}
 
 	.button.chevron {
 		@extend .button;
