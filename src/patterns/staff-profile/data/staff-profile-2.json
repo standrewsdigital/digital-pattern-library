@@ -7,10 +7,6 @@
       "phone": "+44 (0)1334 46 2544",
       "fax": "+44 (0)1334 46 xxxx"
   },
-  "call-to-action": {
-      "link":"http://www.st-andrews.ac.uk",
-      "text":"Full biography"
-  },
   "image": {
       "url": "images/placeholders/staff-profile.jpg",
       "alt": "Mr Smith"
