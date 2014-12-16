@@ -1,4 +1,4 @@
-#digital-pattern-library (v0.0.1)
+#digital-pattern-library (v0.0.2)
 
 
 
