@@ -3,7 +3,7 @@
 	/* Pattern: Button    */
 	/**********************/
 
-	.button {
+	.button, a.button {
 		background-color: $sta-blue;
 		color: white;
 		display: inline-block;
@@ -12,7 +12,7 @@
 		overflow: hidden;
 		padding: .3em .5em .5em;
 	}
-	.button:hover {
+	.button:hover, a.button:hover {
 		background-color: $sta-blue-hover;
 	}
 
@@ -23,6 +23,15 @@
 		@extend .button:hover;	
 	}
 
+	.button-wide, a.button-wide {
+		@extend .button;
+		padding-right:1.5em;
+		padding-left:1.5em;
+	}
+
+	.button-wide:hover, a.button-wide:hover {
+		@extend .button:hover;	
+	}
 
 	.button.chevron {
 		@extend .button;
