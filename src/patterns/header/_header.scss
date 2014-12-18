@@ -74,7 +74,7 @@
 
 	#panel-search input[type~=text] {
 		width: 100%;
-		border: 1px solid $sta-grey-med-light;
+		border: 1px solid $sta-grey-light;
 		font-size: 1.5em;
 		line-height:2em;
 		padding: 0 .75em;
@@ -91,6 +91,12 @@
 		font-weight: normal;
 		height: 55px;
 		width: 100%;
+		-webkit-transition: all 200ms ease-out;
+		-moz-transition: all 200ms ease-out;
+		transition: all 200ms ease-out;
+	}
+	#panel-search input[type~=submit]:hover {
+		background-color: $sta-blue-hover;
 	}
 
   #header .logo-container {
@@ -108,7 +114,7 @@
   }
 
 	.panel-toggle:hover {
-		background-color: $sta-blue-hover-100;
+		background-color: $sta-blue-hover;
 	}
 
   .panel-toggle img.icon {
