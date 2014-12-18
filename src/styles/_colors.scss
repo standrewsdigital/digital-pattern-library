@@ -59,10 +59,15 @@ $accent_colors: 		blue blue-study;
 /* NEW COLORS */
 
 
+
+
+/* Variables for adjusting colors */
 $hover-darken:          7%;
 $transparency:          0.25;
-$select-saturation:     25%;
+$select-saturation:     10%;
 
+
+/* ST ANDREWS COLORS */
 
 /* Blue (sta-blue) */
 $sta-blue:              #00539b;
@@ -114,6 +119,26 @@ $sta-grey-T-hover:      darken($sta-grey-T, $hover-darken);
 
 $sta-grey-S:            saturate($sta-grey,$select-saturation);
 $sta-grey-S-hover:      darken($sta-grey-S, $hover-darken);
+
+/* Grey (sta-grey-light) */
+$sta-grey-light:        rgb(180,180,181);
+$sta-grey-light-hover:  darken($sta-grey-light, $hover-darken);
+
+$sta-grey-light-T:      transparentize($sta-grey-light,$transparency);
+$sta-grey-light-T-hover:darken($sta-grey-light-T, $hover-darken);
+
+$sta-grey-light-S:      saturate($sta-grey-light,$select-saturation);
+$sta-grey-light-S-hover:darken($sta-grey-light-S, $hover-darken);
+
+/* Grey-dark (sta-grey-dark) */
+$sta-grey-dark:         #202024;
+$sta-grey-dark-hover:   darken($sta-grey-dark, $hover-darken);
+
+$sta-grey-dark-T:       transparentize($sta-grey-dark,$transparency);
+$sta-grey-dark-T-hover: darken($sta-grey-dark-T, $hover-darken);
+
+$sta-grey-dark-S:       saturate($sta-grey-dark,$select-saturation);
+$sta-grey-dark-S-hover: darken($sta-grey-dark-S, $hover-darken);
 
 /* Cyan (sta-cyan) */
 $sta-cyan:              #0280bf;
@@ -195,6 +220,8 @@ $sta-colors : (
 'sta-red' $sta-red $sta-red-hover $sta-red-T $sta-red-T-hover $sta-red-S $sta-red-S-hover ,
 'sta-yellow' $sta-yellow $sta-yellow-hover $sta-yellow-T $sta-yellow-T-hover $sta-yellow-S $sta-yellow-S-hover ,
 'sta-grey' $sta-grey $sta-grey-hover $sta-grey-T $sta-grey-T-hover $sta-grey-S $sta-grey-S-hover ,
+'sta-grey-light' $sta-grey-light $sta-grey-light-hover $sta-grey-light-T $sta-grey-light-T-hover $sta-grey-light-S $sta-grey-light-S-hover ,
+'sta-grey-dark' $sta-grey-dark $sta-grey-dark-hover $sta-grey-dark-T $sta-grey-dark-T-hover $sta-grey-dark-S $sta-grey-dark-S-hover ,
 'sta-cyan' $sta-cyan $sta-cyan-hover $sta-cyan-T $sta-cyan-T-hover $sta-cyan-S $sta-cyan-S-hover ,
 'sta-cyan-light' $sta-cyan-light $sta-cyan-light-hover $sta-cyan-light-T $sta-cyan-light-T-hover $sta-cyan-light-S $sta-cyan-light-S-hover ,
 'sta-orange' $sta-orange $sta-orange-hover $sta-orange-T $sta-orange-T-hover $sta-orange-S $sta-orange-S-hover ,

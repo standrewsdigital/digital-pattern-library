@@ -26,6 +26,14 @@ These are the University of St Andrews colours for the web. To help compare the 
 <div class="swatch sta-grey-S">grey selected</div>
 <div class="bgimage"><div class="swatch sta-grey-T">grey transparent</div></div>
 <br>
+<div class="swatch sta-grey-light">grey-dark</div>
+<div class="swatch sta-grey-light-S">grey-dark selected</div>
+<div class="bgimage"><div class="swatch sta-grey-light-T">grey-dark transparent</div></div>
+<br>
+<div class="swatch sta-grey-dark">grey-dark</div>
+<div class="swatch sta-grey-dark-S">grey-dark selected</div>
+<div class="bgimage"><div class="swatch sta-grey-dark-T">grey-dark transparent</div></div>
+<br>
 <div class="swatch sta-cyan">cyan</div>
 <div class="swatch sta-cyan-S">cyan selected</div>
 <div class="bgimage"><div class="swatch sta-cyan-T">cyan transparent</div></div>
