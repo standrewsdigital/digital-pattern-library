@@ -1,46 +1,49 @@
-$sta-blue: 			rgb(0,82,155);
-$sta-blue-50: 			rgba(0,82,155,0.5);
-$sta-blue-70: 			rgba(0,82,155,0.7);
-$sta-blue-80: 			rgba(0,82,155,0.8);
-$sta-blue-hover: 		rgba(0,57,108,.8);
-$sta-blue-hover-100: 		rgb(0,57,108);
-$sta-blue-select: 		rgb(27,116,195);
-$sta-blue-select-80:     rgba(27,116,195,0.8);
 
-$sta-blue-study: 		rgb(0,136,204);
-$sta-blue-study-50:		rgba(0,136,204,0.5);
+
+$sta-blue-50:           rgba(0,82,155,0.5);
+$sta-blue-70:           rgba(0,82,155,0.7);
+$sta-blue-80:           rgba(0,82,155,0.8);
+//
+//
+$sta-blue-hover-100: 		rgb(0,57,108);
+$sta-blue-select: 		  rgb(27,116,195);
+$sta-blue-select-80:    rgba(27,116,195,0.8);
+
+
+$sta-blue-study: 		    rgb(0,136,204);
+// $sta-blue-study-50:		rgba(0,136,204,0.5);
 $sta-blue-study-hover:		rgba(0,85,128,.8);
 $sta-blue-study-select:		rgb(59,160,211);
 $sta-blue-study-select-80:   rgba(59,160,211,0.8);
-
-$sta-green:			rgb(53,135,44);
+//
+// $sta-green:			rgb(53,135,44);
 $sta-green-50: 			rgba(53,135,44,0.5);
 $sta-green-hover:		rgba(53,135,44,.8);
-
-$sta-red:			rgb(155,0,0);
+//
+// $sta-red:			rgb(155,0,0);
 $sta-red-50: 			rgba(155,0,0,0.5);
 $sta-red-hover:			rgba(108,0,0,0.8);
-
-$sta-purple: 			rgb(139,103,170);
+//
+// $sta-purple: 			rgb(139,103,170);
 $sta-purple-50:			rgba(139,103,170,0.5);
 $sta-purple-hover:		rgba(139,103,170,.8);
-
-
-/* Greys */
-
-$sta-grey-light: 		rgb(238,238,238);
-$sta-grey-light-50: 	rgba(238,238,238,.5);
-
+//
+//
+// /* Greys */
+//
+// $sta-grey-light: 		rgb(238,238,238);
+// $sta-grey-light-50: 	rgba(238,238,238,.5);
+//
 $sta-grey-med-light: 	rgb(153,153,153);
-$sta-grey-med-light-50: rgba(153,153,153,.5);
-
+// $sta-grey-med-light-50: rgba(153,153,153,.5);
+//
 $sta-grey-med: 			rgb(102,102,102);
-$sta-grey-med-50: 		rgba(102,102,102,.5);
-
-$sta-grey: 				rgb(68,68,68);
-$sta-grey-hover: 		rgba(34,34,34,.8);
-$sta-grey-select: 		rgb(102,102,102);
-$sta-grey-50: 			rgba(68,68,68,.5);
+// $sta-grey-med-50: 		rgba(102,102,102,.5);
+//
+// $sta-grey: 				rgb(68,68,68);
+// $sta-grey-hover: 		rgba(34,34,34,.8);
+// $sta-grey-select: 		rgb(102,102,102);
+// $sta-grey-50: 			rgba(68,68,68,.5);
 
 /* Accent colors
  * Each accent color needs to have the folowing defined for it:
@@ -49,4 +52,197 @@ $sta-grey-50: 			rgba(68,68,68,.5);
  *  - $sta-<color>-select
  */
 
-$accent_colors: 		blue blue-study
+
+$accent_colors: 		blue blue-study;
+
+
+/* NEW COLORS */
+
+
+$hover-darken:          7%;
+$transparency:          0.30;
+$select-saturation:     25%;
+
+
+/* Blue (sta-blue) */
+$sta-blue:              #00539b;
+$sta-blue-hover:        darken($sta-blue, $hover-darken);
+
+$sta-blue-T:            transparentize($sta-blue,$transparency);
+$sta-blue-T-hover:      darken($sta-blue-T, $hover-darken);
+
+$sta-blue-S:            saturate($sta-blue,$select-saturation);
+$sta-blue-S-hover:      darken($sta-blue-S, $hover-darken);
+
+/* Blue-light (sta-blue-light) */
+$sta-blue-light:        rgb(27,116,195);
+$sta-blue-light-hover:  darken($sta-blue-light, $hover-darken);
+
+$sta-blue-light-T:      transparentize($sta-blue-light,$transparency);
+$sta-blue-light-T-hover:darken($sta-blue-light-T, $hover-darken);
+
+$sta-blue-light-S:      saturate($sta-blue-light,$select-saturation);
+$sta-blue-light-S-hover:darken($sta-blue-light-S, $hover-darken);
+
+
+/* Red (sta-red) */
+$sta-red:               #c22a22;
+$sta-red-hover:         darken($sta-red, $hover-darken);
+
+$sta-red-T:             transparentize($sta-red,$transparency);
+$sta-red-T-hover:       darken($sta-red-T, $hover-darken);
+
+$sta-red-S:             saturate($sta-red,$select-saturation);
+$sta-red-S-hover:       darken($sta-red-S, $hover-darken);
+
+/* Yellow (sta-yellow) */
+$sta-yellow:            #f4c900;
+$sta-yellow-hover:      darken($sta-yellow, $hover-darken);
+
+$sta-yellow-T:          transparentize($sta-yellow,$transparency);
+$sta-yellow-T-hover:    darken($sta-yellow-T, $hover-darken);
+
+$sta-yellow-S:          saturate($sta-yellow,$select-saturation);
+$sta-yellow-S-hover:    darken($sta-yellow-S, $hover-darken);
+
+/* Grey (sta-grey) */
+$sta-grey:              #6a6a6b;
+$sta-grey-hover:        darken($sta-grey, $hover-darken);
+
+$sta-grey-T:            transparentize($sta-grey,$transparency);
+$sta-grey-T-hover:      darken($sta-grey-T, $hover-darken);
+
+$sta-grey-S:            saturate($sta-grey,$select-saturation);
+$sta-grey-S-hover:      darken($sta-grey-S, $hover-darken);
+
+/* Cyan (sta-cyan) */
+$sta-cyan:              #0280bf;
+$sta-cyan-hover:        darken($sta-cyan, $hover-darken);
+
+$sta-cyan-T:            transparentize($sta-cyan,$transparency);
+$sta-cyan-T-hover:      darken($sta-cyan-T, $hover-darken);
+
+$sta-cyan-S:            saturate($sta-cyan,$select-saturation);
+$sta-cyan-S-hover:      darken($sta-cyan-S, $hover-darken);
+
+/* Cyan (sta-cyan-light) */
+$sta-cyan-light:        #3BA0D3;
+$sta-cyan-light-hover:  darken($sta-cyan-light, $hover-darken);
+
+$sta-cyan-light-T:      transparentize($sta-cyan-light,$transparency);
+$sta-cyan-light-T-hover:darken($sta-cyan-light-T, $hover-darken);
+
+$sta-cyan-light-S:      saturate($sta-cyan-light,$select-saturation);
+$sta-cyan-light-S-hover:darken($sta-cyan-light-S, $hover-darken);
+
+
+
+
+/* Orange (sta-orange) */
+$sta-orange:            #d68721;
+$sta-orange-hover:      darken($sta-orange, $hover-darken);
+
+$sta-orange-T:          transparentize($sta-orange,$transparency);
+$sta-orange-T-hover:    darken($sta-orange-T, $hover-darken);
+
+$sta-orange-S:          saturate($sta-orange,$select-saturation);
+$sta-orange-S-hover:    darken($sta-orange-S, $hover-darken);
+
+/* Green (sta-green) */
+$sta-green:             #608738;
+$sta-green-hover:       darken($sta-green, $hover-darken);
+
+$sta-green-T:           transparentize($sta-green,$transparency);
+$sta-green-T-hover:     darken($sta-green-T, $hover-darken);
+
+$sta-green-S:           saturate($sta-green,$select-saturation);
+$sta-green-S-hover:     darken($sta-green-S, $hover-darken);
+
+/* Dark Green (sta-dkgreen) */
+$sta-dkgreen:           #044d48;
+$sta-dkgreen-hover:     darken($sta-dkgreen, $hover-darken);
+
+$sta-dkgreen-T:         transparentize($sta-dkgreen,$transparency);
+$sta-dkgreen-T-hover:   darken($sta-dkgreen-T, $hover-darken);
+
+$sta-dkgreen-S:         saturate($sta-dkgreen,$select-saturation);
+$sta-dkgreen-S-hover:   darken($sta-dkgreen-S, $hover-darken);
+
+/* Purple (sta-purple) */
+$sta-purple:            #785596;
+$sta-purple-hover:      darken($sta-purple, $hover-darken);
+
+$sta-purple-T:          transparentize($sta-purple,$transparency);
+$sta-purple-T-hover:    darken($sta-purple-T, $hover-darken);
+
+$sta-purple-S:          saturate($sta-purple,$select-saturation);
+$sta-purple-S-hover:    darken($sta-purple-S, $hover-darken);
+
+/* Burgundy (sta-burgundy) */
+$sta-burgundy:          #8b1233;
+$sta-burgundy-hover:    darken($sta-burgundy, $hover-darken);
+
+$sta-burgundy-T:        transparentize($sta-burgundy,$transparency);
+$sta-burgundy-T-hover:  darken($sta-burgundy-T, $hover-darken);
+
+$sta-burgundy-S:        saturate($sta-burgundy,$select-saturation);
+$sta-burgundy-S-hover:  darken($sta-burgundy-S, $hover-darken);
+
+
+$sta-colors : (
+'sta-blue' $sta-blue $sta-blue-hover $sta-blue-T $sta-blue-T-hover $sta-blue-S $sta-blue-S-hover,
+'sta-blue-light' $sta-blue-light $sta-blue-light-hover $sta-blue-light-T $sta-blue-light-T-hover $sta-blue-light-S $sta-blue-light-S-hover,
+'sta-red' $sta-red $sta-red-hover $sta-red-T $sta-red-T-hover $sta-red-S $sta-red-S-hover ,
+'sta-yellow' $sta-yellow $sta-yellow-hover $sta-yellow-T $sta-yellow-T-hover $sta-yellow-S $sta-yellow-S-hover ,
+'sta-grey' $sta-grey $sta-grey-hover $sta-grey-T $sta-grey-T-hover $sta-grey-S $sta-grey-S-hover ,
+'sta-cyan' $sta-cyan $sta-cyan-hover $sta-cyan-T $sta-cyan-T-hover $sta-cyan-S $sta-cyan-S-hover ,
+'sta-cyan-light' $sta-cyan-light $sta-cyan-light-hover $sta-cyan-light-T $sta-cyan-light-T-hover $sta-cyan-light-S $sta-cyan-light-S-hover ,
+'sta-orange' $sta-orange $sta-orange-hover $sta-orange-T $sta-orange-T-hover $sta-orange-S $sta-orange-S-hover ,
+'sta-green' $sta-green $sta-green-hover $sta-green-T $sta-green-T-hover $sta-green-S $sta-green-S-hover ,
+'sta-dkgreen' $sta-dkgreen $sta-dkgreen-hover $sta-dkgreen-T $sta-dkgreen-T-hover $sta-dkgreen-S $sta-dkgreen-S-hover ,
+'sta-purple' $sta-purple $sta-purple-hover $sta-purple-T $sta-purple-T-hover $sta-purple-S $sta-purple-S-hover ,
+'sta-burgundy' $sta-burgundy $sta-burgundy-hover $sta-burgundy-T $sta-burgundy-T-hover $sta-burgundy-S $sta-burgundy-S-hover
+);
+
+$default_palette: (
+  'primary':
+      $sta-blue $sta-blue-hover
+      $sta-blue-T $sta-blue-T-hover
+      $sta-blue-S $sta-blue-S-hover,
+  'secondary':
+      $sta-blue-light $sta-blue-light-hover
+      $sta-blue-light-T $sta-blue-light-T-hover
+      $sta-blue-light-S $sta-blue-light-S-hover,
+  'tertiary-1':
+      $sta-green $sta-green-hover
+      $sta-green-T $sta-green-T-hover
+      $sta-green-S $sta-green-S-hover,
+  'tertiary-2':
+      $sta-burgundy $sta-burgundy-hover
+      $sta-burgundy-T $sta-burgundy-T-hover
+      $sta-burgundy-S $sta-burgundy-S-hover,
+  'tertiary-3':
+      $sta-purple $sta-purple-hover
+      $sta-purple-T $sta-purple-T-hover
+      $sta-purple-S $sta-purple-S-hover
+);
+
+$study_palette: (
+  'primary':
+    $sta-cyan $sta-cyan-hover
+    $sta-cyan-T $sta-cyan-T-hover
+    $sta-cyan-S $sta-cyan-S-hover,
+  'secondary':
+    $sta-cyan-light $sta-cyan-light-hover
+    $sta-cyan-light-T $sta-cyan-light-T-hover
+    $sta-cyan-light-S $sta-cyan-light-S-hover,
+  'tertiary-1':
+    $sta-green $sta-green-hover
+    $sta-green-T $sta-green-T-hover
+    $sta-green-S $sta-green-S-hover,
+  'tertiary-2':
+    $sta-purple $sta-purple-hover
+    $sta-purple-T $sta-purple-T-hover
+    $sta-purple-S $sta-purple-S-hover,
+
+);
