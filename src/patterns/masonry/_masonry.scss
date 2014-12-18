@@ -7,7 +7,7 @@
   position: relative;
   margin-bottom: 30px;
   height: 300px;
-  background-color: #333;
+  background-color: $sta-grey;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -33,14 +33,13 @@
   width: 100%;
   position: absolute;
   padding: 0;
-  
-  text-shadow: 1px 1px 1px #444;
+  text-shadow: 1px 1px 1px rgb(68, 68, 68);
 
 }
 
 .masonry-title h3 {
   padding: 15px;
-  background: $sta-blue-80;
+  background: $sta-blue-T;
   margin: 0;
   font-weight: bold;
   font-size: 24px;
@@ -67,7 +66,7 @@
 }
 
 .masonry:hover h3 {
-  background: $sta-blue-hover;
+  background: $sta-blue-T-hover;
   -webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
@@ -108,4 +107,3 @@
 /*********************************/
 /* END Pattern: masonry          */
 /*********************************/
- 
