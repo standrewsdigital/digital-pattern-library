@@ -19,7 +19,7 @@
 
 #category-header h2 {
   min-height: 100px;
-  background-color: $sta-blue-select-80;
+  background-color: $sta-blue-light-T;
   color: #fff;
   display: inline-block;
   padding-top: 30px;
@@ -47,8 +47,8 @@
   right: -37px;
   width: 0;
   height: 0;
-  border-top: 100px solid $sta-blue;      /* Define a non-transparent color first */
-  border-top-color: $sta-blue-select-80;
+  border-top: 100px solid $sta-blue-light;      /* Define a non-transparent color first */
+  border-top-color: $sta-blue-light-T;
   border-right: 37px solid transparent;
 }
 
@@ -72,12 +72,12 @@
 .accent-blue-study {
 
   #category-header h2 {
-    background-color: $sta-blue-study-select-80;
+    background-color: $sta-cyan-light-T;
   }
 
   #category-header h2:after {
-    border-top-color: $sta-blue-study;
-    border-top-color: $sta-blue-study-select-80;
+    border-top-color: $sta-cyan-light;
+    border-top-color: $sta-cyan-light-T;
   }
 
 }
