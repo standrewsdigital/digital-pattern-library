@@ -8,33 +8,27 @@ footer a:link {
 }
 
 #website-footer {
-	color: #aaa;
-	background-color: #202024;
-	border-top: 5px solid #666;
+	color: rgb(170, 170, 170);
+	background-color: $sta-grey-dark;
+	border-top: 5px solid $sta-grey;
 	padding: 20px 0;
 }
 
-#website-footer a {
-	color: #59b5e3;
+#website-footer a,
+#university-footer a {
+  color: $sta-cyan-light;
 }
 
-#website-footer a:hover {
-	color: #3e7e9e;
+#website-footer a:hover,
+#university-footer a:hover {
+  color: $sta-cyan-light-hover;
 }
 
 #university-footer {
-	color: #aaa;
-	background-color: #1a1a1d;
-	border-top: 1px solid #252529;
+	color: $sta-grey-light;
+	background-color: $sta-grey-dark-hover;
+	border-top: 1px solid $sta-grey-T-hover;
 	padding: 10px 0;
-}
-
-#university-footer a {
-	color: #59b5e3;
-}
-
-#university-footer a:hover {
-	color: #3e7e9e;
 }
 
 #website-footer ul, #university-footer ul {
