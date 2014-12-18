@@ -14,7 +14,7 @@ $select-saturation:     10%;
 /* ST ANDREWS COLORS */
 
 /* Blue (sta-blue) */
-$sta-blue:              #00539b;
+$sta-blue:              rgb(0, 83, 155);
 $sta-blue-hover:        darken($sta-blue, $hover-darken);
 
 $sta-blue-T:            transparentize($sta-blue,$transparency);
@@ -25,7 +25,7 @@ $sta-blue-S-hover:      darken($sta-blue-S, $hover-darken);
 
 
 /* Blue-light (sta-blue-light) */
-$sta-blue-light:        rgb(27,116,195);
+$sta-blue-light:        rgb(27, 116, 195);
 $sta-blue-light-hover:  darken($sta-blue-light, $hover-darken);
 
 $sta-blue-light-T:      transparentize($sta-blue-light,$transparency);
@@ -36,7 +36,7 @@ $sta-blue-light-S-hover:darken($sta-blue-light-S, $hover-darken);
 
 
 /* Red (sta-red) */
-$sta-red:               #c22a22;
+$sta-red:               rgb(194, 42, 34);
 $sta-red-hover:         darken($sta-red, $hover-darken);
 
 $sta-red-T:             transparentize($sta-red,$transparency);
@@ -47,7 +47,7 @@ $sta-red-S-hover:       darken($sta-red-S, $hover-darken);
 
 
 /* Yellow (sta-yellow) */
-$sta-yellow:            #f4c900;
+$sta-yellow:            rgb(244, 201, 0);
 $sta-yellow-hover:      darken($sta-yellow, $hover-darken);
 
 $sta-yellow-T:          transparentize($sta-yellow,$transparency);
@@ -58,7 +58,7 @@ $sta-yellow-S-hover:    darken($sta-yellow-S, $hover-darken);
 
 
 /* Grey (sta-grey) */
-$sta-grey:              #6a6a6b;
+$sta-grey:              rgb(106, 106, 107);
 $sta-grey-hover:        darken($sta-grey, $hover-darken);
 
 $sta-grey-T:            transparentize($sta-grey,$transparency);
@@ -79,7 +79,7 @@ $sta-grey-light-S:      saturate($sta-grey-light,$select-saturation);
 $sta-grey-light-S-hover:darken($sta-grey-light-S, $hover-darken);
 
 /* Grey-dark (sta-grey-dark) */
-$sta-grey-dark:         #202024;
+$sta-grey-dark:         rgb(32, 32, 36);
 $sta-grey-dark-hover:   darken($sta-grey-dark, $hover-darken);
 
 $sta-grey-dark-T:       transparentize($sta-grey-dark,$transparency);
@@ -90,7 +90,7 @@ $sta-grey-dark-S-hover: darken($sta-grey-dark-S, $hover-darken);
 
 
 /* Cyan (sta-cyan) */
-$sta-cyan:              #0280bf;
+$sta-cyan:              rgb(2, 128, 191);
 $sta-cyan-hover:        darken($sta-cyan, $hover-darken);
 
 $sta-cyan-T:            transparentize($sta-cyan,$transparency);
@@ -101,7 +101,7 @@ $sta-cyan-S-hover:      darken($sta-cyan-S, $hover-darken);
 
 
 /* Cyan (sta-cyan-light) */
-$sta-cyan-light:        #3BA0D3;
+$sta-cyan-light:        rgb(59, 160, 211);
 $sta-cyan-light-hover:  darken($sta-cyan-light, $hover-darken);
 
 $sta-cyan-light-T:      transparentize($sta-cyan-light,$transparency);
@@ -112,7 +112,7 @@ $sta-cyan-light-S-hover:darken($sta-cyan-light-S, $hover-darken);
 
 
 /* Orange (sta-orange) */
-$sta-orange:            #d68721;
+$sta-orange:            rgb(214, 135, 33);
 $sta-orange-hover:      darken($sta-orange, $hover-darken);
 
 $sta-orange-T:          transparentize($sta-orange,$transparency);
@@ -123,7 +123,7 @@ $sta-orange-S-hover:    darken($sta-orange-S, $hover-darken);
 
 
 /* Green (sta-green) */
-$sta-green:             #608738;
+$sta-green:             rgb(96, 135, 56);
 $sta-green-hover:       darken($sta-green, $hover-darken);
 
 $sta-green-T:           transparentize($sta-green,$transparency);
@@ -134,7 +134,7 @@ $sta-green-S-hover:     darken($sta-green-S, $hover-darken);
 
 
 /* Dark Green (sta-dkgreen) */
-$sta-dkgreen:           #044d48;
+$sta-dkgreen:           rgb(4, 77, 72);
 $sta-dkgreen-hover:     darken($sta-dkgreen, $hover-darken);
 
 $sta-dkgreen-T:         transparentize($sta-dkgreen,$transparency);
@@ -145,7 +145,7 @@ $sta-dkgreen-S-hover:   darken($sta-dkgreen-S, $hover-darken);
 
 
 /* Purple (sta-purple) */
-$sta-purple:            #785596;
+$sta-purple:            rgb(120, 85, 150);
 $sta-purple-hover:      darken($sta-purple, $hover-darken);
 
 $sta-purple-T:          transparentize($sta-purple,$transparency);
@@ -156,7 +156,7 @@ $sta-purple-S-hover:    darken($sta-purple-S, $hover-darken);
 
 
 /* Burgundy (sta-burgundy) */
-$sta-burgundy:          #8b1233;
+$sta-burgundy:          rgb(139, 18, 51);
 $sta-burgundy-hover:    darken($sta-burgundy, $hover-darken);
 
 $sta-burgundy-T:        transparentize($sta-burgundy,$transparency);
