@@ -309,7 +309,7 @@ $palette-study: (
  *
  * This palette defines the colors to be used for Bootstrap contexts.
  */
-$palette-boostrap: (
+$palette-context: (
   'success':
       $sta-green $sta-green-hover
       $sta-green-T $sta-green-T-hover
@@ -330,7 +330,7 @@ $palette-boostrap: (
 
 
 @function -dpl-color($palette,$color,$variation) {
-  $i: map-get($palette_variations,$variation);
+  $i: map-get($color_variations,$variation);
   $value: nth(map-get($palette,$color),$i);
   @return $value;
 }
