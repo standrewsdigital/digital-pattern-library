@@ -10,11 +10,12 @@ p, ul, ol {
 	margin: 0 0 25px;
 }
 
-a {
-	-webkit-transition: all 200ms ease-out;
-	-moz-transition: all 200ms ease-out;
-	transition: all 200ms ease-out;
-}
+// Added elsewhere.
+// a {
+// 	-webkit-transition: all 200ms ease-out;
+// 	-moz-transition: all 200ms ease-out;
+// 	transition: all 200ms ease-out;
+// }
 
 #main-content a:link{
    font-weight: bold;
