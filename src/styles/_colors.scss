@@ -187,62 +187,64 @@ $color_variations: (
  * Palette: St Andrews Colors (all colors)
  *
  * This palette is unique in that in has all the colors and the name for each
- * color is just the name in the source.
+ * color is just the name in the source
+ * Note: this palette has a different data type – it's not a map, it's a list.
+ * this is because of how we need to use this palette in src/styles/docs.scss
  */
 $palette-sta : (
-  'sta-blue':
+  'sta-blue'
       $sta-blue $sta-blue-hover
       $sta-blue-T $sta-blue-T-hover
       $sta-blue-S $sta-blue-S-hover,
-  'sta-blue-light':
+  'sta-blue-light'
       $sta-blue-light $sta-blue-light-hover
       $sta-blue-light-T $sta-blue-light-T-hover
       $sta-blue-light-S $sta-blue-light-S-hover,
-  'sta-red':
+  'sta-red'
       $sta-red $sta-red-hover
       $sta-red-T $sta-red-T-hover
       $sta-red-S $sta-red-S-hover,
-  'sta-yellow':
+  'sta-yellow'
       $sta-yellow $sta-yellow-hover
       $sta-yellow-T $sta-yellow-T-hover
       $sta-yellow-S $sta-yellow-S-hover,
-  'sta-grey':
+  'sta-grey'
       $sta-grey $sta-grey-hover
       $sta-grey-T $sta-grey-T-hover
       $sta-grey-S $sta-grey-S-hover,
-  'sta-grey-light':
+  'sta-grey-light'
       $sta-grey-light $sta-grey-light-hover
       $sta-grey-light-T $sta-grey-light-T-hover
       $sta-grey-light-S $sta-grey-light-S-hover,
-  'sta-grey-dark':
+  'sta-grey-dark'
       $sta-grey-dark $sta-grey-dark-hover
       $sta-grey-dark-T $sta-grey-dark-T-hover
       $sta-grey-dark-S $sta-grey-dark-S-hover,
-  'sta-cyan':
+  'sta-cyan'
       $sta-cyan $sta-cyan-hover
       $sta-cyan-T $sta-cyan-T-hover
       $sta-cyan-S $sta-cyan-S-hover,
-  'sta-cyan-light':
+  'sta-cyan-light'
       $sta-cyan-light $sta-cyan-light-hover
       $sta-cyan-light-T $sta-cyan-light-T-hover
       $sta-cyan-light-S $sta-cyan-light-S-hover,
-  'sta-orange':
+  'sta-orange'
       $sta-orange $sta-orange-hover
       $sta-orange-T $sta-orange-T-hover
       $sta-orange-S $sta-orange-S-hover,
-  'sta-green':
+  'sta-green'
       $sta-green $sta-green-hover
       $sta-green-T $sta-green-T-hover
       $sta-green-S $sta-green-S-hover,
-  'sta-dkgreen':
+  'sta-dkgreen'
       $sta-dkgreen $sta-dkgreen-hover
       $sta-dkgreen-T $sta-dkgreen-T-hover
       $sta-dkgreen-S $sta-dkgreen-S-hover,
-  'sta-purple':
+  'sta-purple'
       $sta-purple $sta-purple-hover
       $sta-purple-T $sta-purple-T-hover
       $sta-purple-S $sta-purple-S-hover,
-  'sta-burgundy':
+  'sta-burgundy'
       $sta-burgundy $sta-burgundy-hover
       $sta-burgundy-T $sta-burgundy-T-hover
       $sta-burgundy-S $sta-burgundy-S-hover
