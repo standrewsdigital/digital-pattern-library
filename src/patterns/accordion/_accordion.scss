@@ -13,6 +13,7 @@
   -webkit-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .accordion h3:hover {
@@ -51,6 +52,12 @@
   zoom:1;
 }
 
+.accordion h3 a {
+  color: inherit;
+}
+.accordion h3 a:hover {
+  text-decoration: none;
+}
 
 
 /*********************************/

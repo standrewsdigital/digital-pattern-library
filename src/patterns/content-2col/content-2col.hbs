@@ -1,16 +1,16 @@
 
 <!-- Begin pattern: content-2col //-->
 
-<div class="container" id="{{default id "[id]"}}">        
+<div class="container" id="{{default id "[id]"}}">
   <div class="row">
     <div class="col-sm-8">
       <section class="content-wrapper" role="main">
 
         {{#if text}}{{{text}}}{{else}}
 
-        <img src="{{asset 'images/placeholders/750x311.jpg'}}">
-
         <h2>{{default title "Ullam corporis suscipit"}}</h2>
+
+        <img src="{{asset 'images/placeholders/750x311.jpg'}}">
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -21,11 +21,11 @@
 
         <p><a href="#">Sed ut perspiciatis</a></p>
         {{/if}}
-     
+
       </section>
     </div>
     <div class="col-sm-4 sidebar" role="complementary">
-      
+
         {{#if sidebar}}{{{sidebar}}}{{else}}
 
 
@@ -46,7 +46,7 @@
 
 
         {{/if}}
-     
+
     </div>
   </div>
 </div>

@@ -5,7 +5,6 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-
     // uglify: {
     //   options: {
     //     banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
@@ -20,9 +19,11 @@ module.exports = function(grunt) {
     concat: {
       core: {
         src: [
+          /* Note: update src/docs/dependencies.md if any of these change */
           'src/scripts/vendor/jquery.min.js',
           'src/scripts/vendor/jquery.bigtarget.js',
           'src/scripts/vendor/jquery.fitvids.js',
+          'src/scripts/vendor/jquery.fittext.js',
           'src/scripts/vendor/respond.js',
           'src/scripts/vendor/bootstrap.js',
           'src/scripts/vendor/enquire.js',
@@ -30,6 +31,13 @@ module.exports = function(grunt) {
           'src/patterns/*/*.js'
         ],
         dest: 'build/scripts/core.js'
+      },
+      corebase: {
+        src: [
+          'src/scripts/base.js',
+          'src/patterns/*/*.js'
+        ],
+        dest: 'build/scripts/core-base.js'
       },
       doc: {
         src: [
@@ -75,6 +83,7 @@ module.exports = function(grunt) {
     assemble: {
 
       options: {
+        pkg: '<%= pkg %>',
         assets: 'build',
         layoutdir: 'src/_layouts',
         partials: ['src/patterns/*/*.hbs'],

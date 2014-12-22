@@ -1,7 +1,7 @@
 
-<!-- Begin pattern: hero-banner //--> 
+<!-- Begin pattern: hero-banner //-->
 
-<div class="hero-banner">
+<div class="hero-banner" {{#if bg-image}}style="background-image: url({{asset bg-image}});"{{/if}}>
   <div class="container">
     <div class="call-heading">{{default heading "[heading]"}}</div>
     <p>{{default paragraph "[paragraph]"}}</p>
@@ -9,4 +9,4 @@
   </div>
 </div>
 
-<!-- End pattern: hero-banner //-->		
+<!-- End pattern: hero-banner //-->

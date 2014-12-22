@@ -6,7 +6,7 @@
 
 .hero-banner {
   @extend .jumbotron;  /*  Based on Twitter Bootstrap .jumbotron */
-  background: url('../images/cta/external.jpg');
+  background: $sta-grey;
   background-position: right;
   -webkit-background-position: right;
   -moz-background-position: right;
@@ -23,7 +23,7 @@
   color: #fff;
   font-size: 58px;
   font-weight: 600;
-  text-shadow: 0px 2px 15px #8a8a8a;
+  text-shadow: 0px 2px 15px rgb(138, 138, 138);
   line-height: 1.1;
 }
 
@@ -31,7 +31,7 @@
   color: #fff;
   font-size: 23px;
   width: 70%;
-  text-shadow: 0px 2px 15px #8a8a8a;
+  text-shadow: 0px 2px 15px rgb(138, 138, 138);
   margin: 10px 0;
 }
 
@@ -44,7 +44,7 @@
   background-color: $sta-blue;
 }
 
-.hero-banner .btn:hover, 
+.hero-banner .btn:hover,
 .hero-banner .btn:focus {
   background-color: $sta-blue-hover;
 }
@@ -55,13 +55,13 @@
   .hero-banner p {
     width: 100%;
   }
-  
+
   .hero-banner {
     background-position: left;
   }
 }
 
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
   .hero-banner .call-heading {
     font-size: 32px;
   }
@@ -71,11 +71,11 @@
   }
 }
 
-@media (max-width: 480px) {   
+@media (max-width: 480px) {
     .hero-banner p {
     width: 100%;
   }
-  
+
     .hero-banner {
     background-position: left;
 

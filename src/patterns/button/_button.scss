@@ -20,9 +20,18 @@
 		@extend .button;
 	}
 	.button-cta:hover {
-		@extend .button:hover;	
+		@extend .button:hover;
 	}
 
+	.button-wide, a.button-wide {
+		@extend .button;
+		padding-right:1.5em;
+		padding-left:1.5em;
+	}
+
+	.button-wide:hover {
+		@extend .button:hover;
+	}
 
 	.button.chevron {
 		@extend .button;
@@ -44,7 +53,7 @@
     background-position: center center;
 	}
 	.button.chevron:hover {
-		@extend .button:hover;	
+		@extend .button:hover;
 	}
 
   .button.large {
@@ -57,7 +66,7 @@
 	// 	@extend .button;
 	// }
 	// .button-ctb:hover {
-	// 	@extend .button:hover;	
+	// 	@extend .button:hover;
 	// }
  //  .button-toggle-vert {
  //    height: 3.5em;
@@ -96,7 +105,7 @@
  //        -ms-transform:rotate(270deg);
  //        transform:rotate(270deg);
 	// }
-	
+
 
 
 
@@ -160,6 +169,3 @@
 	/* BUTTON COLORS */
 
 	/* Default */
-
-
-

@@ -2,8 +2,8 @@
 
 <!-- Begin pattern: tile-grid //-->
 
-<div class="tile-grid">
-  
+<div class="tile-grid"{{#if bg-image}} style="background-image: url({{asset bg-image}});"{{/if}}>
+
   <div class="container">
 
   	<div class="row top-buffer">
@@ -17,7 +17,7 @@
 	    <div class="col-md-4 bottom-buffer read-more-container">
 	    	<div class="read-more">
 			    <div class="read-more-chevron"><i class="chevron large"></i></div>
-		    	<a href="{{default call-to-browse-url "[call-to-browse-url]"}}">{{default call-to-browse-text "call-to-browse-text"}}</a> 
+		    	<a href="{{default call-to-browse-url "[call-to-browse-url]"}}">{{default call-to-browse-text "call-to-browse-text"}}</a>
 	    	</div>
 	    </div>
 	</div>

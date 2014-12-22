@@ -15,23 +15,26 @@ Last Updated    1 March 2014
 
 // @import 'original';
 // @import 'icons';
-//
-//
-// /* Patterns */
+
+/* Patterns */
 @import 'accordion/accordion';
-// @import 'button/button';
-// @import 'category-header/category-header';
-// @import 'footer/footer';
-// @import 'header/header';
-// @import 'hero-banner/hero-banner';
-// @import 'intro/intro';
-// @import 'masonry/masonry';
-// @import 'masonry-grid/masonry-grid';
-// @import 'navbox/navbox';
-// @import 'navigation-bar/navigation-bar';
-// @import 'secondary-call/secondary-call';
-// @import 'tile/tile';
-// @import 'tile-grid/tile-grid';
-//
-// /* Final additions */
-// @import 'utilities';
+@import 'button/button';
+@import 'category-header/category-header';
+@import 'footer/footer';
+@import 'header/header';
+@import 'hero-banner/hero-banner';
+@import 'info-bite/info-bite';
+@import 'info-bite-grid/info-bite-grid';
+@import 'intro/intro';
+@import 'masonry/masonry';
+@import 'masonry-grid/masonry-grid';
+@import 'navbox/navbox';
+@import 'navbox-grid/navbox-grid';
+@import 'navigation-bar/navigation-bar';
+@import 'secondary-call/secondary-call';
+@import 'staff-profile/staff-profile';
+@import 'tile/tile';
+@import 'tile-grid/tile-grid';
+
+/* Final additions */
+@import 'utilities';

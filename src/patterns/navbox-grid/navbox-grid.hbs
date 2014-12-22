@@ -1,26 +1,28 @@
 
 <!-- Begin pattern: navbox-grid //-->
 
-<div class="container" id="homepage-content" role="main">
+
+<div class="container">
 	<div class="row">
     {{#if items}}
 		{{#items}}
-			<div class="col-sm-4 category-images">
-			{{>navbox}}				
+			<div class="col-sm-4">
+			{{>navbox}}
 			</div>
 		{{/items}}
     {{else}}
-      <div class="col-sm-4 category-images">
-      {{>navbox}}       
+      <div class="col-sm-4">
+      {{>navbox}}
       </div>
-      <div class="col-sm-4 category-images">
-      {{>navbox}}       
+      <div class="col-sm-4">
+      {{>navbox}}
       </div>
-      <div class="col-sm-4 category-images">
-      {{>navbox}}       
+      <div class="col-sm-4">
+      {{>navbox}}
       </div>
     {{/if}}
 	</div>
 </div>
+
 
 <!-- End pattern: navbox-grid //-->

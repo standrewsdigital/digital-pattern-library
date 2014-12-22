@@ -1,6 +1,6 @@
 {
   "name": "digital-pattern-library",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "digital pattern library.",
   "repository": {
     "type": "git",
@@ -19,5 +19,9 @@
     "handlebars-helper-asset": "git://github.com/sjparsons/handlebars-helper-asset.git#relative-links",
     "handlebars-helpers": "^0.5.8",
     "swag": "^0.7.0"
+  },
+  "cdn" : {
+      "endpoint" : "//www.st-andrews.ac.uk/~cdn",
+      "package": "dpl"
   }
 }

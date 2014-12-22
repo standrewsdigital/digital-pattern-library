@@ -27,7 +27,7 @@
   width: 100%;
  	font-size: 1.3em;
  	line-height: 1.3em;
- 	background: $sta-blue-50;
+ 	background: $sta-blue-T;
  	position: absolute;
   bottom: 0;
  	z-index: 100;
@@ -42,7 +42,7 @@
   cursor: pointer;
  }
  .tile:hover h3 {
- 	background: $sta-blue-hover;
+ 	background: $sta-blue-T-hover;
  }
 
  .tile h3 a {
@@ -63,7 +63,7 @@
   font-size: 15px;
  	font-weight: bold;
  	padding-left: 1em;
-
+  color: $sta-grey;
  }
 
  .tile-type {
@@ -71,33 +71,33 @@
   font-size: 15px;
  	padding-right: 1em;
  	font-weight: bold;
- 	color: $sta-grey-med;
+ 	color: $sta-grey;
  }
 
 /* Colors */
 
 .tile.green h3 {
-  background: $sta-green-50;
+  background: $sta-green-T;
 }
 
 .tile.green:hover h3 {
-  background: $sta-green-hover;
+  background: $sta-green-T-hover;
 }
 
 .tile.purple h3 {
-  background: $sta-purple-50;
+  background: $sta-purple-T;
 }
 
 .tile.purple:hover h3 {
-  background: $sta-purple-hover;
+  background: $sta-purple-T-hover;
 }
 
 .tile.red h3 {
-  background: $sta-red-50;
+  background: $sta-red-T;
 }
 
 .tile.red:hover h3 {
-  background: $sta-red-hover;
+  background: $sta-red-T-hover;
 }
 
 @media (max-width: 767px) {
@@ -109,4 +109,3 @@
 /*********************************/
 /* END Pattern: tile             */
 /*********************************/
- 
