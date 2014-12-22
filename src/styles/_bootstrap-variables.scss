@@ -140,7 +140,7 @@ $table-condensed-cell-padding:  2px;
 //** Default background color used for all tables.
 $table-bg:                      transparent;
 //** Background color used for `.table-striped`.
-$table-bg-accent:               #dbedf9;
+$table-bg-accent:               lighten(-dpl-color($palette-default,'secondary','base'), 53%);
 //** Background color used for `.table-hover`.
 $table-bg-hover:                $gray-lightest;
 $table-bg-active:               $table-bg-hover;
