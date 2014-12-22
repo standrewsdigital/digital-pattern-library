@@ -42,7 +42,7 @@ $text-color:             $gray-dark;
 
 //** Global textual link color.
 $link-color:             -dpl-color($palette-default,'primary','base');
-$link-hover-color:       -dpl-color($palette-default,'primary','basehover');
+$link-hover-color:       -dpl-color($palette-default,'primary','base-hover');
 $link-hover-decoration:  underline;
 
 
@@ -55,7 +55,6 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
-
 $font-size-base:          18px;
 
 // $font-size-large:         ceil(($font-size-base * 1.25)) // ~18px
