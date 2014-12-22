@@ -6,7 +6,7 @@
 
 .hero-banner {
   @extend .jumbotron;  /*  Based on Twitter Bootstrap .jumbotron */
-  background: #666;
+  background: $sta-grey;
   background-position: right;
   -webkit-background-position: right;
   -moz-background-position: right;
@@ -23,7 +23,7 @@
   color: #fff;
   font-size: 58px;
   font-weight: 600;
-  text-shadow: 0px 2px 15px #8a8a8a;
+  text-shadow: 0px 2px 15px rgb(138, 138, 138);
   line-height: 1.1;
 }
 
@@ -31,7 +31,7 @@
   color: #fff;
   font-size: 23px;
   width: 70%;
-  text-shadow: 0px 2px 15px #8a8a8a;
+  text-shadow: 0px 2px 15px rgb(138, 138, 138);
   margin: 10px 0;
 }
 

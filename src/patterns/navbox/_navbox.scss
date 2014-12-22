@@ -14,16 +14,16 @@
 }
 
 .navbox-title {
-	background: $sta-blue-80;
+	background: $sta-blue-T;
 	background-repeat: repeat;
 	bottom: 0;
-	color: #fff!important;
+	color: white!important;
 	width: 100%;
 	position: absolute;
 	padding: 15px 15px;
 	font-size: 24px;
 	font-weight: bold;
-	text-shadow: 1px 1px 1px #444;
+	text-shadow: 1px 1px 1px rgb(68, 68, 68);
 	-webkit-transition: all 200ms ease-out;
 	-moz-transition: all 200ms ease-out;
 	transition: all 200ms ease-out;
@@ -39,7 +39,7 @@
 }
 
 .navbox-title a {
-	color: #fff!important;
+	color: white!important;
 	text-decoration: none;
 	margin-right: 4px;
 }
@@ -49,7 +49,7 @@
 }
 
 .navbox-title:hover, .navbox:hover .navbox-title{
-	background: $sta-blue-hover;
+	background: $sta-blue-T-hover;
 }
 
 .navbox-title p {
@@ -71,7 +71,7 @@
 }
 .navbox-title:first-child:hover,
 .navbox:hover .navbox-title:first-child{
-	background: $sta-blue-hover-100;
+	background: $sta-blue-hover;
 }
 
 /* when a p tag immediately follows a navbox

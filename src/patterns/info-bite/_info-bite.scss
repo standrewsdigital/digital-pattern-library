@@ -8,7 +8,7 @@
   position: relative;
   margin-bottom: 30px;
   height: 280px;
-overflow:hidden;
+  overflow:hidden;
 }
 
 .info-bite.landscape {
@@ -41,7 +41,7 @@ overflow:hidden;
   top:0;
   bottom: 0;
   width: 100%;
-  background: $sta-blue-70;
+  background: $sta-blue-T;
   background-repeat: no-repeat;
   padding: 36px;
   -webkit-transition: all 200ms ease-out;
@@ -50,7 +50,7 @@ overflow:hidden;
 }
 
 .info-bite .bite-container.hover {
-  background: $sta-blue-hover;
+  background: $sta-blue-T-hover;
   cursor: pointer;
 }
 
@@ -58,7 +58,7 @@ overflow:hidden;
   background: $sta-blue;
 }
 .info-bite.solid .bite-container.hover {
-  background: $sta-blue-hover-100;
+  background: $sta-blue-hover;
   cursor: pointer;
 }
 
@@ -73,7 +73,7 @@ overflow:hidden;
   color: #fff!important;
   font-size: 24px;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #444;
+  text-shadow: 1px 1px 1px rgb(68, 68, 68);
   text-align: center;
   padding: 1em;
 }
