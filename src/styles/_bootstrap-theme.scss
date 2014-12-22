@@ -22,9 +22,30 @@ tr:nth-child(odd) {
 // ====================================================
 
 .label {
+  display: inline-block;
   border-radius: 0;
+  padding: .3em .6em;
+  font-weight: normal;
+  border: 3px double white;
 }
 
+// Additional variations for secondary and tertiary colors
+.label-secondary {
+  $bg-color: -dpl-color($palette-default,'secondary','base');
+  @include label-variant($bg-color);
+}
+.label-tertiary-1 {
+  $bg-color: -dpl-color($palette-default,'tertiary-1','base');
+  @include label-variant($bg-color);
+}
+.label-tertiary-2 {
+  $bg-color: -dpl-color($palette-default,'tertiary-2','base');
+  @include label-variant($bg-color);
+}
+.label-tertiary-3 {
+  $bg-color: -dpl-color($palette-default,'tertiary-3','base');
+  @include label-variant($bg-color);
+}
 
 
 // BUTTON MODIFICATIONS
