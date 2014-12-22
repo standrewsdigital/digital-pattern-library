@@ -35,16 +35,15 @@ $brand-danger:           -dpl-color($palette-context,'danger','base');
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff;
+$body-bg:                white;
+
 //** Global text color on `<body>`.
-$text-color:            $gray-dark;
+$text-color:             $gray-dark;
 
 //** Global textual link color.
- $link-color:            $brand-primary;
-//** Link hover color set via `darken()` function.
-// $link-hover-color:      darken($link-color, 15%)
-//** Link hover decoration.
-// $link-hover-decoration: underline
+$link-color:             -dpl-color($palette-default,'primary','base');
+$link-hover-color:       -dpl-color($palette-default,'primary','basehover');
+$link-hover-decoration:  underline;
 
 
 //== Typography
