@@ -18,10 +18,10 @@
   &.active,
   .open > &.dropdown-toggle {
     color: $color;
-    background-color: darken($background, 10%);
+    background-color: darken($background, $hover-darken);
     -webkit-transition: all 200ms ease-out; // ADDED
     -moz-transition: all 200ms ease-out; // ADDED
-    border-color: darken($border, 10%);
+    border-color: darken($border, $hover-darken);
   }
   &:active,
   &.active,
