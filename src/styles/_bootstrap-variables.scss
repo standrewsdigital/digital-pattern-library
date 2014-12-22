@@ -23,11 +23,11 @@ $gray-lighter:           lighten($gray-base, 93.5%); // #eee
 $gray-lightest:          lighten($gray-base, 97.5%); // #f8f8f8
 
 
-$brand-primary:         #ff0000;
-$brand-success:         #5cb85c;
-$brand-info:            #5bc0de;
-$brand-warning:         #f0ad4e;
-$brand-danger:          #d9534f;
+$brand-primary:          -dpl-color($palette-default,'primary','base');
+$brand-success:          -dpl-color($palette-context,'success','base');
+$brand-info:             -dpl-color($palette-context,'info','base');
+$brand-warning:          -dpl-color($palette-context,'warning','base');
+$brand-danger:           -dpl-color($palette-context,'danger','base');
 
 
 //== Scaffolding
