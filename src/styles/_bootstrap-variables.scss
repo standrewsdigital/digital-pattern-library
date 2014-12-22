@@ -120,7 +120,7 @@ $border-radius-small:       0px;
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    white;
 //** Global background color for active items (e.g., navs or dropdowns).
-$component-active-bg:       -dpl-color($palette-default,'primary','selected');
+$component-active-bg:       -dpl-color($palette-default,'primary','base');
 
 //** Width of the `border` for generating carets that indicator dropdowns.
 // $caret-width-base:          4px
@@ -439,9 +439,10 @@ $btn-link-disabled-color:        $gray-light;
 // $nav-tabs-justified-active-link-border-color:     $body-bg
 
 //== Pills
-// $nav-pills-border-radius:                   $border-radius-base
-// $nav-pills-active-link-hover-bg:            $component-active-bg
-// $nav-pills-active-link-hover-color:         $component-active-color
+
+$nav-pills-border-radius:                   $border-radius-base;
+$nav-pills-active-link-hover-bg:            $component-active-bg;
+$nav-pills-active-link-hover-color:         $component-active-color;
 
 
 //== Pagination
