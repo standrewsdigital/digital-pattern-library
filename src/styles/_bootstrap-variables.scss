@@ -470,16 +470,16 @@ $pagination-disabled-border:           #ddd;
 //
 //##
 
-// $pager-bg:                             $pagination-bg
-// $pager-border:                         $pagination-border
-// $pager-border-radius:                  15px
+$pager-bg:                             $pagination-bg;
+$pager-border:                         $pagination-border;
+$pager-border-radius:                  $border-radius-base;
 
-// $pager-hover-bg:                       $pagination-hover-bg
+$pager-hover-bg:                       $pagination-hover-bg;
 
-// $pager-active-bg:                      $pagination-active-bg
-// $pager-active-color:                   $pagination-active-color
+$pager-active-bg:                      $pagination-active-bg;
+$pager-active-color:                   $pagination-active-color;
 
-// $pager-disabled-color:                 $pagination-disabled-color
+$pager-disabled-color:                 $pagination-disabled-color;
 
 
 //== Jumbotron

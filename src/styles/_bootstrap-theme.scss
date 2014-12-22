@@ -18,6 +18,16 @@ tr:nth-child(odd) {
 }
 
 
+
+// PAGER MODIFICATIONS
+// ====================================================
+
+.pager .disabled {
+  pointer-events: none;
+}
+
+
+
 // LABEL MODIFICATIONS
 // ====================================================
 
