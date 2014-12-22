@@ -1101,6 +1101,15 @@ layout: none
                 </div>
               </div>
 
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel info</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+
               <div class="panel panel-warning">
                 <div class="panel-heading">
                   <h3 class="panel-title">Panel warning</h3>
@@ -1109,10 +1118,7 @@ layout: none
                   Panel content
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="bs-component">
+
               <div class="panel panel-danger">
                 <div class="panel-heading">
                   <h3 class="panel-title">Panel danger</h3>
@@ -1122,14 +1128,50 @@ layout: none
                 </div>
               </div>
 
-              <div class="panel panel-info">
+
+
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="bs-component">
+
+              <div class="panel panel-secondary">
                 <div class="panel-heading">
-                  <h3 class="panel-title">Panel info</h3>
+                  <h3 class="panel-title">Panel secondary</h3>
                 </div>
                 <div class="panel-body">
                   Panel content
                 </div>
               </div>
+
+              <div class="panel panel-tertiary-1">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel tertiary-1</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+
+              <div class="panel panel-tertiary-2">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel tertiary-2</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+
+              <div class="panel panel-tertiary-3">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel tertiary-3</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>
@@ -1238,9 +1280,8 @@ layout: none
         </div>
       </div>
 
-
-
     </div>
+  </div>
 
 
     <!-- Bootstrap core JavaScript
@@ -1250,5 +1291,62 @@ layout: none
 
     <script src="http://localhost:35729/livereload.js"></script>
 
+
+
+    <script>
+    (function(){
+      $(window).scroll(function () {
+        var top = $(document).scrollTop();
+        $('.splash').css({
+          'background-position': '0px -'+(top/3).toFixed(2)+'px'
+        });
+        if(top > 50)
+          $('#home > .navbar').removeClass('navbar-transparent');
+          else
+            $('#home > .navbar').addClass('navbar-transparent');
+          });
+
+          var $button = $("<div id='source-button' class='btn btn-primary btn-xs'>&lt; &gt;</div>").click(function(){
+            var html = $(this).parent().html();
+            html = cleanSource(html);
+            $("#source-modal pre").text(html);
+            $("#source-modal").modal();
+          });
+
+          $('.bs-component [data-toggle="popover"]').popover();
+          $('.bs-component [data-toggle="tooltip"]').tooltip();
+
+          $(".bs-component").hover(function(){
+            $(this).append($button);
+            $button.show();
+          }, function(){
+            $button.hide();
+          });
+
+          function cleanSource(html) {
+            var lines = html.split(/\n/);
+
+            lines.shift();
+            lines.splice(-1, 1);
+
+            var indentSize = lines[0].length - lines[0].trim().length,
+            re = new RegExp(" {" + indentSize + "}");
+
+            lines = lines.map(function(line){
+              if (line.match(re)) {
+                line = line.substring(indentSize);
+              }
+
+              return line;
+            });
+
+            lines = lines.join("\n");
+
+            return lines;
+          }
+
+        })();
+
+    </script>
   </body>
 </html>

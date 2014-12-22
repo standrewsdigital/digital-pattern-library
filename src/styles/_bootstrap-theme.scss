@@ -23,7 +23,7 @@ tr:nth-child(odd) {
 // ====================================================
 
 .pager .disabled {
-  pointer-events: none;
+  pointer-events: none; // SHOULD SUGGEST THIS TO BOOTSTRAP CORE.
 }
 
 
@@ -95,4 +95,29 @@ tr:nth-child(odd) {
 }
 .btn-link {
   font-weight: bold; /* To match standard link styling */
+}
+
+
+
+// PANEL MODIFICATIONS
+// ====================================================
+
+
+// Add variants for secondary, tertiary-1, tertiary-2 and tertiary-3.
+
+.panel-secondary {
+  $bg-color: -dpl-color($palette-default,'secondary','base');
+  @include panel-variant($bg-color, white, $bg-color, $bg-color);
+}
+.panel-tertiary-1 {
+  $bg-color: -dpl-color($palette-default,'tertiary-1','base');
+  @include panel-variant($bg-color, white, $bg-color, $bg-color);
+}
+.panel-tertiary-2 {
+  $bg-color: -dpl-color($palette-default,'tertiary-2','base');
+  @include panel-variant($bg-color, white, $bg-color, $bg-color);
+}
+.panel-tertiary-3 {
+  $bg-color: -dpl-color($palette-default,'tertiary-3','base');
+  @include panel-variant($bg-color, white, $bg-color, $bg-color);
 }
