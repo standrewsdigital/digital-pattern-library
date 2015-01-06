@@ -51,7 +51,7 @@ enquire.register("screen and (max-width:767px)", {
     // OPTIONAL, defaults to false
     // If set to true, defers execution of the setup function
     // until the first time the media query is matched
-    deferSetup : true,
+    deferSetup : false,
 
     // OPTIONAL
     // If supplied, triggered when handler is unregistered.
