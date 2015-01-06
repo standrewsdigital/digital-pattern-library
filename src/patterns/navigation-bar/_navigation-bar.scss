@@ -44,9 +44,9 @@
 }
 
 
-/* Navbar collapse for iPad portrait */
+/* Navbar collapse for phones*/
 
-@media (max-width: 770px) {
+@media (max-width: 767px) {
 
     .navbar-collapse {
         border-top: 1px solid transparent;
@@ -124,7 +124,7 @@
 	}
 
 
-	@media (max-width: 770px) {
+	@media (max-width: 767px) {
 		.toggle-navigation a:hover,
 		.toggle-navigation a:focus {
 			background-color: $sta-blue-hover;
@@ -157,7 +157,7 @@
 	}
 
 
-	@media (max-width: 770px) {
+	@media (max-width: 767px) {
 		.accent-blue-study .toggle-navigation a:hover,
 		.blue-study .toggle-navigation a:focus,
 		.accent-blue-study .toggle-navigation a:hover,
