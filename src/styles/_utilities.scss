@@ -14,3 +14,10 @@
 .bottom-buffer {
 	margin-bottom: 50px;	
 }
+
+/* Remove mobile safari default styles */
+
+textarea, input[type~=text], input[type~=submit] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
