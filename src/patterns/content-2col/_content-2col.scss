@@ -12,6 +12,11 @@
 	margin-top:0px;
 }
 
+@media (max-width:767px) {
+	.sidebar {
+		padding-top:10px;
+	}
+}
 
 /*********************************/
 /* END Pattern: content-2col     */
