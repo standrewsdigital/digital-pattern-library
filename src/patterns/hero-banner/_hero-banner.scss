@@ -50,18 +50,19 @@
 }
 
 
-@media (max-width: 991px) and (min-width: 768px) {
+@media (max-width: 991px) {
 
   .hero-banner p {
     width: 100%;
+
   }
 
-  .hero-banner {
-    background-position: left;
-  }
+
 }
 
 @media (max-width: 767px) {
+
+
   .hero-banner .call-heading {
     font-size: 32px;
   }
@@ -69,18 +70,17 @@
   .hero-banner .btn, .hero-banner .btn {
     font-size: 18px;
   }
+
+
 }
 
 @media (max-width: 480px) {
-    .hero-banner p {
-    width: 100%;
+  
+  .hero-banner {
+    padding: 20px 0;
   }
-
-    .hero-banner {
-    background-position: left;
 
 }
-  }
 
 
 /*********************************/
