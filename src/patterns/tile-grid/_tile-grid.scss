@@ -20,7 +20,7 @@
 .tile-grid h2 {
 	font-size: 2.5em;
 	color: white;
-	margin: 0;
+	margin: 10px 0 20px;
 	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -32,6 +32,7 @@ a.read-more {
 	line-height: 2em;
 	padding: 0.4em .8em .2em 1em;
 	text-decoration: none;
+	margin: 0 0 30px;
 }
 
 a.read-more:before {
@@ -45,8 +46,12 @@ a.read-more:before {
 
 
 @media (max-width: 767px) {
+	.tile-grid {
+		padding: 30px 0;
+	}
 	.tile-grid h2 {
-		font-size: 1.5em;
+		font-size: 1.8em;
+		margin-bottom: 30px;
 	}
 	a.read-more {
 		font-size: 1.2em;
@@ -55,6 +60,12 @@ a.read-more:before {
 		height: 20px!important;
 	}
 
+}
+
+@media (max-width: 479px) {
+	.tile-grid h2 {
+		font-size: 1.5em;
+	}
 }
 
 /*********************************/

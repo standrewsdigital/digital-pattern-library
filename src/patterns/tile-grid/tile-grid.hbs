@@ -6,15 +6,15 @@
 
   <div class="container">
 
-  	<div class="row top-buffer">
-	    <div class="col-md-8 bottom-buffer">
+  	<div class="row">
+	    <div class="col-md-8">
 	    	{{#if heading}}
 	      <h2>{{{ heading }}}</h2>
 	      {{else}}
 				<h2>[heading]</h2>
 	      {{/if}}
 	    </div>
-	    <div class="col-md-4 bottom-buffer read-more-container">
+	    <div class="col-md-4 read-more-container">
 			    
 		    <a class="read-more" href="{{default call-to-browse-url "[call-to-browse-url]"}}">{{default call-to-browse-text "call-to-browse-text"}}</a>
 

@@ -101,6 +101,9 @@
 }
 
 @media (max-width: 767px) {
+  .tile {
+    margin-bottom: 2em;
+  }
   .tile p {
     height: auto;
   }
