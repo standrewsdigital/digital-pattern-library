@@ -24,27 +24,25 @@ $(".panel-toggle").click(function(){
 });
 
 
-enquire.register("screen and (max-width:767px)", {
+enquire.register("screen and (min-width:768px)", {
 
     // Triggered when a media query matches.
     match : function() {
       var current = $("#header-logo img").attr('src');
       if (current) {
-          var updated = current.replace(/logo-foundation/,'logo-standard');
+          var updated = current.replace(/logo-standard/,'logo-foundation');
           $("#header-logo img").attr('src',updated);
       }
     },
-
 
     // Triggered when the media query transitions
     // *from a matched state to an unmatched state*.
     unmatch : function() {
       var current = $("#header-logo img").attr('src');
       if (current) {
-          var updated = current.replace(/logo-standard/,'logo-foundation');
+          var updated = current.replace(/logo-foundation/,'logo-standard');
           $("#header-logo img").attr('src',updated);
       }
-
     },
 
 
