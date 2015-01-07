@@ -6,7 +6,7 @@
 
 .hero-banner {
   @extend .jumbotron;  /*  Based on Twitter Bootstrap .jumbotron */
-  background: $sta-grey;
+  background: $sta-blue-T;
   background-position: right;
   -webkit-background-position: right;
   -moz-background-position: right;
@@ -50,7 +50,19 @@
 }
 
 
+@media (max-width: 1169px) {
+ .hero-banner {
+    background-position:80% 0;
+    -webkit-background-position:80% 0;
+    -moz-background-position:80% 0;
+    -o-background-position: 80% 0;
+  }
+}
+
+
 @media (max-width: 991px) {
+
+
 
   .hero-banner p {
     width: 100%;
@@ -63,6 +75,12 @@
 
 @media (max-width: 767px) {
 
+  .hero-banner {
+    background-position:85% 0;
+    -webkit-background-position:85% 0;
+    -moz-background-position:85% 0;
+    -o-background-position: 85% 0;
+  }
 
   .hero-banner .call-heading {
     font-size: 32px;
@@ -73,13 +91,28 @@
   }
 
 
+
+
 }
 
 @media (max-width: 480px) {
   
   .hero-banner {
-    padding: 20px 0;
+    background-position:90% 0;
+    -webkit-background-position:90% 0;
+    -moz-background-position:90% 0;
+    -o-background-position: 90% 0;
+    background-size: auto 200px;
+    -webkit-background-size: auto 200px;
+    -moz-background-size: auto 200px;
+    -o-background-size: auto 200px;
+    padding: 200px 0 0;
   }
+
+  .hero-banner .container {
+    padding: 20px;
+  }
+
 
 }
 
