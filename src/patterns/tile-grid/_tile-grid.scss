@@ -24,7 +24,7 @@
 	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
-a.read-more {
+.read-more a {
 	@extend .button;
 	width: 100%;
 	color: white;
@@ -35,7 +35,7 @@ a.read-more {
 	margin: 0 0 30px;
 }
 
-a.read-more:before {
+.read-more a:before {
 	@extend i.chevron;
 	content: "";
 	float: right;
@@ -53,10 +53,10 @@ a.read-more:before {
 		font-size: 1.8em;
 		margin-bottom: 30px;
 	}
-	a.read-more {
+	.read-more a {
 		font-size: 1.2em;
 	}
-	a.read-more:before {
+	.read-more a:before {
 		height: 20px!important;
 	}
 
