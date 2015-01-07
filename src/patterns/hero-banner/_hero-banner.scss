@@ -7,10 +7,10 @@
 .hero-banner {
   @extend .jumbotron;  /*  Based on Twitter Bootstrap .jumbotron */
   background: $sta-blue-T;
-  background-position: right;
-  -webkit-background-position: right;
-  -moz-background-position: right;
-  -o-background-position: right;
+  background-position:80% 0;
+  -webkit-background-position:80% 0;
+  -moz-background-position:80% 0;
+  -o-background-position: 80% 0;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -23,7 +23,7 @@
   color: #fff;
   font-size: 58px;
   font-weight: 600;
-  text-shadow: 2px 2px 9px rgba(45, 45, 45, 1);
+  text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.7);
   line-height: 1.1;
 }
 
@@ -31,7 +31,7 @@
   color: #fff;
   font-size: 23px;
   width: 70%;
-  text-shadow: 2px 2px 9px rgba(45, 45, 45, 1);
+  text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.7);
   margin: 10px 0;
 }
 
@@ -50,47 +50,51 @@
 }
 
 
-@media (max-width: 1169px) {
+@media (max-width: 1199px) {
  .hero-banner {
     background-position:80% 0;
     -webkit-background-position:80% 0;
     -moz-background-position:80% 0;
     -o-background-position: 80% 0;
   }
-}
 
-
-@media (max-width: 991px) {
-
-
-
-  .hero-banner p {
-    width: 100%;
-    text-shadow: 1px 1px 30px rgba(0, 0, 0, 1);
-
+  .hero-banner .call-heading {
+    font-size: 40px;
   }
 
-
+  .hero-banner p {
+    width: 50%;
+  }
 }
+
+
 
 @media (max-width: 767px) {
 
   .hero-banner {
-    background-position:85% 0;
-    -webkit-background-position:85% 0;
-    -moz-background-position:85% 0;
-    -o-background-position: 85% 0;
+    background-position:75% 0;
+    -webkit-background-position:75% 0;
+    -moz-background-position:75% 0;
+    -o-background-position: 75% 0;
+    padding: 0;
+  }
+
+  .hero-banner .container {
+    padding: 20px 15px;
   }
 
   .hero-banner .call-heading {
     font-size: 32px;
   }
 
+  .hero-banner p {
+    width: 60%;
+    font-size: 20px;
+  }
+
   .hero-banner .btn, .hero-banner .btn {
     font-size: 18px;
   }
-
-
 
 
 }
@@ -110,7 +114,16 @@
   }
 
   .hero-banner .container {
-    padding: 20px;
+    padding: 20px 15px;
+  }
+
+  .hero-banner .call-heading {
+    text-shadow: none;
+  }
+
+  .hero-banner p {
+    text-shadow: none;
+    width: 100%;
   }
 
 
