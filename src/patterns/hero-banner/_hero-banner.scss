@@ -6,11 +6,11 @@
 
 .hero-banner {
   @extend .jumbotron;  /*  Based on Twitter Bootstrap .jumbotron */
-  background: $sta-blue-T;
-  background-position:80% 0;
-  -webkit-background-position:80% 0;
-  -moz-background-position:80% 0;
-  -o-background-position: 80% 0;
+  background: $sta-grey;
+  background-position: left;
+  -webkit-background-position: left;
+  -moz-background-position: left;
+  -o-background-position: left;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -23,7 +23,7 @@
   color: #fff;
   font-size: 58px;
   font-weight: 600;
-  text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 9px rgba(68, 68, 68, 0.7);
   line-height: 1.1;
 }
 
@@ -31,7 +31,7 @@
   color: #fff;
   font-size: 23px;
   width: 70%;
-  text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 9px rgba(68, 68, 68, 0.7);
   margin: 10px 0;
 }
 
@@ -49,33 +49,26 @@
   background-color: $sta-blue-hover;
 }
 
-
 @media (max-width: 1199px) {
- .hero-banner {
-    background-position:80% 0;
-    -webkit-background-position:80% 0;
-    -moz-background-position:80% 0;
-    -o-background-position: 80% 0;
-  }
 
   .hero-banner .call-heading {
     font-size: 40px;
   }
 
-  .hero-banner p {
-    width: 50%;
-  }
 }
-
 
 
 @media (max-width: 767px) {
 
+  .hero-banner p {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  
   .hero-banner {
-    background-position:75% 0;
-    -webkit-background-position:75% 0;
-    -moz-background-position:75% 0;
-    -o-background-position: 75% 0;
     padding: 0;
   }
 
@@ -87,45 +80,13 @@
     font-size: 32px;
   }
 
-  .hero-banner p {
-    width: 60%;
+  .hero-banner .btn {
     font-size: 20px;
   }
 
-  .hero-banner .btn, .hero-banner .btn {
-    font-size: 18px;
-  }
-
-
-}
-
-@media (max-width: 480px) {
-  
-  .hero-banner {
-    background-position:90% 0;
-    -webkit-background-position:90% 0;
-    -moz-background-position:90% 0;
-    -o-background-position: 90% 0;
-    background-size: auto 200px;
-    -webkit-background-size: auto 200px;
-    -moz-background-size: auto 200px;
-    -o-background-size: auto 200px;
-    padding: 200px 0 0;
-  }
-
-  .hero-banner .container {
-    padding: 20px 15px;
-  }
-
-  .hero-banner .call-heading {
-    text-shadow: none;
-  }
-
   .hero-banner p {
-    text-shadow: none;
     width: 100%;
   }
-
 
 }
 
