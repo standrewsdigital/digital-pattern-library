@@ -19,6 +19,10 @@
   background-repeat: no-repeat;
 }
 
+.hero-banner .bg {
+  display: none;
+}
+
 .hero-banner .call-heading {
   color: #fff;
   font-size: 58px;
@@ -68,14 +72,25 @@
 }
 
 
+@media (max-width: 991px) {
+ .hero-banner {
+    background-position:70% 0;
+    -webkit-background-position:70% 0;
+    -moz-background-position:70% 0;
+    -o-background-position: 70% 0;
+    padding: 20px inherit;
+  }
+
+}
+
 
 @media (max-width: 767px) {
 
   .hero-banner {
-    background-position:75% 0;
-    -webkit-background-position:75% 0;
-    -moz-background-position:75% 0;
-    -o-background-position: 75% 0;
+    background-position:70% 0;
+    -webkit-background-position:70% 0;
+    -moz-background-position:70% 0;
+    -o-background-position: 70% 0;
     padding: 0;
   }
 
@@ -102,27 +117,60 @@
 @media (max-width: 480px) {
   
   .hero-banner {
-    background-position:90% 0;
-    -webkit-background-position:90% 0;
-    -moz-background-position:90% 0;
-    -o-background-position: 90% 0;
-    background-size: auto 200px;
-    -webkit-background-size: auto 200px;
-    -moz-background-size: auto 200px;
-    -o-background-size: auto 200px;
-    padding: 200px 0 0;
+    background-position:70% 0;
+    -webkit-background-position:70% 0;
+    -moz-background-position:70% 0;
+    -o-background-position: 70% 0;
+    // background-size: auto 200px;
+    // -webkit-background-size: auto 200px;
+    // -moz-background-size: auto 200px;
+    // -o-background-size: auto 200px;
+    // padding: 200px 0 0;
+
   }
 
   .hero-banner .container {
-    padding: 20px 15px;
+    padding: 0;
+    position: relative;
   }
 
+  .hero-banner .bg {
+    display: block;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99;
+
+    /* Pull the background 70px higher to the same place as #bg's */
+    background-position: 70% 0;
+
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    filter: url('/media/blur.svg#blur'); /* for Firefox */
+
+  } 
+
+  .hero-banner .fg {
+    position: relative;
+    padding: 20px 15px;
+    z-index: 100;
+    background-color: rgba(0,0,0,.1);
+  }
+
+
   .hero-banner .call-heading {
-    text-shadow: none;
+    // text-shadow: none;
   }
 
   .hero-banner p {
-    text-shadow: none;
+    // text-shadow: none;
     width: 100%;
   }
 
