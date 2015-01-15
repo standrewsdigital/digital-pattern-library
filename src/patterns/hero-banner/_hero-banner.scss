@@ -17,6 +17,7 @@
   -o-background-size: cover;
   color: #fff;
   background-repeat: no-repeat;
+
 }
 
 .hero-banner .bg {
@@ -46,6 +47,7 @@
   margin: 20px 0 0 0;
   border-radius: 0;
   background-color: $sta-blue;
+  text-shadow: none;
 }
 
 .hero-banner .btn:hover,
@@ -117,10 +119,10 @@
 @media (max-width: 480px) {
   
   .hero-banner {
-    background-position:70% 0;
-    -webkit-background-position:70% 0;
-    -moz-background-position:70% 0;
-    -o-background-position: 70% 0;
+    background-position:left;
+    -webkit-background-position:left;
+    -moz-background-position:left;
+    -o-background-position: left;
     // background-size: auto 200px;
     // -webkit-background-size: auto 200px;
     // -moz-background-size: auto 200px;
@@ -153,7 +155,9 @@
     filter: blur(3px);
     -webkit-filter: blur(3px);
     -moz-filter: blur(3px);
-    filter: url('/media/blur.svg#blur'); /* for Firefox */
+    filter: url('../images/blur.svg'); /* for Firefox */
+    overflow: none;
+    border-bottom: 10px solid white;
 
   } 
 
@@ -162,6 +166,7 @@
     padding: 20px 15px;
     z-index: 100;
     background-color: rgba(0,0,0,.1);
+    border-bottom: 10px solid white;
   }
 
 
@@ -173,6 +178,7 @@
     // text-shadow: none;
     width: 100%;
   }
+
 
 
 }
