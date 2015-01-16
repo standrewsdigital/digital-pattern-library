@@ -6,11 +6,11 @@
 
 .hero-banner {
   @extend .jumbotron;
-  background: $sta-grey;
-  background-position: left;
-  -webkit-background-position: left;
-  -moz-background-position: left;
-  -o-background-position: left;
+  background: $sta-blue-T;
+  background-position:80% 0;
+  -webkit-background-position:80% 0;
+  -moz-background-position:80% 0;
+  -o-background-position: 80% 0;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -57,8 +57,19 @@
 
 @media (max-width: 1199px) {
 
+ .hero-banner {
+    background-position:80% 0;
+    -webkit-background-position:80% 0;
+    -moz-background-position:80% 0;
+    -o-background-position: 80% 0;
+  }
+
   .hero-banner .call-heading {
     font-size: 40px;
+  }
+
+  .hero-banner p {
+    width: 50%;
   }
 
 }
@@ -95,7 +106,12 @@
   }
 
   .hero-banner p {
+    width: 60%;
     font-size: 20px;
+  }
+
+  .hero-banner .btn, .hero-banner .btn {
+    font-size: 18px;
   }
 
 }
@@ -142,9 +158,6 @@
     z-index: 100;
     background-color: rgba(0,0,0,.1);
     border-bottom: 10px solid white;
-  }
-
-  .hero-banner .call-heading {
   }
 
   .hero-banner p {
