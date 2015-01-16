@@ -5,7 +5,7 @@
 
 
 .hero-banner {
-  @extend .jumbotron;  /*  Based on Twitter Bootstrap .jumbotron */
+  @extend .jumbotron;
   background: $sta-grey;
   background-position: left;
   -webkit-background-position: left;
@@ -103,15 +103,11 @@
 @media (max-width: 480px) {
   
   .hero-banner {
+    /* Only browsers without filter support see this */
     background-position:left;
     -webkit-background-position:left;
     -moz-background-position:left;
     -o-background-position: left;
-    // background-size: auto 200px;
-    // -webkit-background-size: auto 200px;
-    // -moz-background-size: auto 200px;
-    // -o-background-size: auto 200px;
-    // padding: 200px 0 0;
   }
 
   .hero-banner .container {
@@ -121,6 +117,7 @@
 
   .hero-banner .bg {
     display: block;
+    background-position: 70% 0;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -132,16 +129,11 @@
     left: 0px;
     z-index: 99;
 
-    /* Pull the background 70px higher to the same place as #bg's */
-    background-position: 70% 0;
-
     filter: blur(3px);
     -webkit-filter: blur(3px);
     -moz-filter: blur(3px);
-    filter: url('../images/blur.svg'); /* for Firefox */
     overflow: none;
     border-bottom: 10px solid white;
-
   } 
 
   .hero-banner .fg {
@@ -152,13 +144,10 @@
     border-bottom: 10px solid white;
   }
 
-
   .hero-banner .call-heading {
-    // text-shadow: none;
   }
 
   .hero-banner p {
-    // text-shadow: none;
     width: 100%;
   }
 }
