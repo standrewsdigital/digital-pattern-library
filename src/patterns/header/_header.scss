@@ -16,15 +16,16 @@
 	}
 
 	#header-logo {
-
+    margin: 0;
+    padding:0;
 	}
 
 	#header-logo h1 {
 		margin: 0;
-
 	}
 
   #header-logo img {
+    width: 100%;
     max-width: 345px;
     -webkit-transition: all 200ms ease-out;
     -moz-transition: all 200ms ease-out;
@@ -84,7 +85,7 @@
 	#panel-search input[type~=submit]  {
 		background-color: $sta-blue;
 		color: white;
-		padding: 0.1em 1em ;
+		padding: 0.1em 0;
 		border: none;
 		font-size: 1.5em;
 		line-height:1.9em;
@@ -163,6 +164,10 @@
   	#panel-search input[type~=submit]  {
       font-size: 1.2em;
   	}
+
+    #panel-people li {
+      display: block;
+    }
 
 	}
 

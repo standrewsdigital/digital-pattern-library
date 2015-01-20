@@ -6,19 +6,18 @@
 
   <div class="container">
 
-  	<div class="row top-buffer">
-	    <div class="col-md-8 bottom-buffer">
+  	<div class="row">
+	    <div class="col-md-8">
 	    	{{#if heading}}
 	      <h2>{{{ heading }}}</h2>
 	      {{else}}
 				<h2>[heading]</h2>
 	      {{/if}}
 	    </div>
-	    <div class="col-md-4 bottom-buffer read-more-container">
-	    	<div class="read-more">
-			    <div class="read-more-chevron"><i class="chevron large"></i></div>
-		    	<a href="{{default call-to-browse-url "[call-to-browse-url]"}}">{{default call-to-browse-text "call-to-browse-text"}}</a>
-	    	</div>
+	    <div class="col-md-4 read-more read-more-container">
+			    
+		    <a href="{{default call-to-browse-url "[call-to-browse-url]"}}">{{default call-to-browse-text "call-to-browse-text"}}</a>
+
 	    </div>
 	</div>
 
@@ -48,7 +47,7 @@
 	    </div>
 	</div>  <!-- // End .row -->
 
-	<div class="read-more-container-alt"></div>
+	<div class="read-more read-more-container-alt"></div>
 
   </div> <!-- // End .container -->
 

@@ -5,25 +5,30 @@
 
 
 .hero-banner {
-  @extend .jumbotron;  /*  Based on Twitter Bootstrap .jumbotron */
-  background: $sta-grey;
-  background-position: right;
-  -webkit-background-position: right;
-  -moz-background-position: right;
-  -o-background-position: right;
+  @extend .jumbotron;
+  background: $sta-blue-T;
+  background-position:80% 0;
+  -webkit-background-position:80% 0;
+  -moz-background-position:80% 0;
+  -o-background-position: 80% 0;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   color: #fff;
   background-repeat: no-repeat;
+
+}
+
+.hero-banner .bg {
+  display: none;
 }
 
 .hero-banner .call-heading {
   color: #fff;
   font-size: 58px;
   font-weight: 600;
-  text-shadow: 0px 2px 15px rgb(138, 138, 138);
+  text-shadow: 2px 2px 9px rgba(68, 68, 68, 0.7);
   line-height: 1.1;
 }
 
@@ -31,7 +36,7 @@
   color: #fff;
   font-size: 23px;
   width: 70%;
-  text-shadow: 0px 2px 15px rgb(138, 138, 138);
+  text-shadow: 2px 2px 9px rgba(68, 68, 68, 0.7);
   margin: 10px 0;
 }
 
@@ -42,6 +47,7 @@
   margin: 20px 0 0 0;
   border-radius: 0;
   background-color: $sta-blue;
+  text-shadow: none;
 }
 
 .hero-banner .btn:hover,
@@ -49,38 +55,116 @@
   background-color: $sta-blue-hover;
 }
 
+@media (max-width: 1199px) {
 
-@media (max-width: 991px) and (min-width: 768px) {
+ .hero-banner {
+    background-position:80% 0;
+    -webkit-background-position:80% 0;
+    -moz-background-position:80% 0;
+    -o-background-position: 80% 0;
+  }
+
+  .hero-banner .call-heading {
+    font-size: 40px;
+  }
 
   .hero-banner p {
-    width: 100%;
+    width: 50%;
   }
 
-  .hero-banner {
-    background-position: left;
-  }
 }
 
+
+@media (max-width: 991px) {
+ .hero-banner {
+    background-position:70% 0;
+    -webkit-background-position:70% 0;
+    -moz-background-position:70% 0;
+    -o-background-position: 70% 0;
+    padding: 20px inherit;
+  }
+
+}
+
+
 @media (max-width: 767px) {
+
+  .hero-banner {
+    background-position:70% 0;
+    -webkit-background-position:70% 0;
+    -moz-background-position:70% 0;
+    -o-background-position: 70% 0;
+    padding: 0;
+  }
+
+  .hero-banner .container {
+    padding: 20px 15px;
+  }
+
   .hero-banner .call-heading {
     font-size: 32px;
+  }
+
+  .hero-banner p {
+    width: 60%;
+    font-size: 20px;
   }
 
   .hero-banner .btn, .hero-banner .btn {
     font-size: 18px;
   }
+
 }
 
 @media (max-width: 480px) {
-    .hero-banner p {
+  
+  .hero-banner {
+    /* Only browsers without filter support see this */
+    background-position:left;
+    -webkit-background-position:left;
+    -moz-background-position:left;
+    -o-background-position: left;
+  }
+
+  .hero-banner .container {
+    padding: 0;
+    position: relative;
+  }
+
+  .hero-banner .bg {
+    display: block;
+    background-position: 70% 0;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99;
+
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    filter: url(../images/blur.svg);
+    overflow: none;
+    border-bottom: 10px solid white;
+  } 
+
+  .hero-banner .fg {
+    position: relative;
+    padding: 20px 15px;
+    z-index: 100;
+    background-color: rgba(0,0,0,.1);
+    border-bottom: 10px solid white;
+  }
+
+  .hero-banner p {
     width: 100%;
   }
-
-    .hero-banner {
-    background-position: left;
-
 }
-  }
 
 
 /*********************************/
