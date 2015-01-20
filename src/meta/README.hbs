@@ -5,3 +5,40 @@ title: <%= pkg.name %> (v<%= pkg.version %>)
 {{>about }}
 
 {{>contributing }}
+
+## Deploying
+
+To deploy your code you can use the two grunt commands
+
+```
+grunt deploy-core --tag=<version-num>
+```
+
+```
+grunt deploy-docs --tag=<version-num>
+```
+
+Replacing `<version-num>` with the appopriate version. For example:
+
+```
+grunt deploy-core --tag=0.1.2
+```
+
+```
+grunt deploy-docs --tag=0.1.2
+```
+
+In order for the commands to work you will need to create a file called `.ftppass` and include your FTP credentials in it. It should have the following form:
+
+```
+{
+  "core": {
+    "username": "your-username",
+    "password": "password"
+  },
+  "docs": {
+    "username": "your-username",
+    "password": "password"
+  }
+}
+```
