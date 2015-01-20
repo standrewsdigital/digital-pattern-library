@@ -1,6 +1,8 @@
+.ftppass
 .sass-cache
 .vagrant
-/node_modules/
 /build/
+/docs/
+/node_modules/
 /patterns/
 /prototypes/
