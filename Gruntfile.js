@@ -219,6 +219,9 @@ module.exports = function(grunt) {
       },
       build: {
         src: ["build"]
+      },
+      docs: {
+        src: ["docs"]
       }
     },
 
@@ -243,6 +246,32 @@ module.exports = function(grunt) {
             dest: 'prototypes/build'
           }
         ]
+      },
+      docs: {
+        files: [
+          {
+            expand: true,     // Enable dynamic expansion.
+            cwd: 'build',      // Src matches are relative to this path.
+            src: ['**/*'], // Actual pattern(s) to match.
+            dest: 'docs/build'
+          },
+          {
+            expand: true,     // Enable dynamic expansion.
+            cwd: 'patterns',      // Src matches are relative to this path.
+            src: ['**/*'], // Actual pattern(s) to match.
+            dest: 'docs/patterns'
+          },
+          {
+            expand: true,     // Enable dynamic expansion.
+            cwd: 'prototypes',      // Src matches are relative to this path.
+            src: ['**/*'], // Actual pattern(s) to match.
+            dest: 'docs/prototypes'
+          },
+          {
+            src: 'src/misc/docs_redirect.html', 
+            dest: 'docs/index.html'
+          },
+        ]
       }
     },
 
@@ -258,15 +287,17 @@ module.exports = function(grunt) {
       },
       js: {
         files: ['src/**/*.js'],
-        tasks: ['clean:js','jshint','concat','clean:prototype_assets','copy:prototype_assets'],
+        tasks: ['clean:js','jshint','concat','clean:prototype_assets','copy:prototype_assets',
+          'clean:docs','copy:docs'
+          ],
       },
       images: {
         files: ['src/images/**/*'],
-        tasks: ['clean:images','copy','clean:prototype_assets','copy:prototype_assets']
+        tasks: ['clean:images','copy','clean:prototype_assets','copy:prototype_assets','clean:docs','copy:docs']
       },
       styles: {
         files: ['src/**/*.scss'],
-        tasks: ['clean:styles','compass','clean:prototype_assets','copy:prototype_assets']
+        tasks: ['clean:styles','compass','clean:prototype_assets','copy:prototype_assets','clean:docs','copy:docs']
       },
       docs: {
         files: [
@@ -275,13 +306,36 @@ module.exports = function(grunt) {
           'src/**/*.md',
           'package.json',
         ],
-        tasks: ['clean:patterns','clean:prototypes','assemble','copy:prototype_assets']
+        tasks: ['clean:patterns','clean:prototypes','assemble','copy:prototype_assets','clean:docs','copy:docs']
       }
     },
 
 
-  });
+    /* task: deploy over ftp  */
+    'ftp-deploy': {
+      core: {
+        auth: {
+          host: 'www-users.st-andrews.ac.uk',
+          port: 21,
+          authKey: 'core'
+        },
+        src: 'build',
+        dest: '/dpl/'+grunt.option('tag')+'/',
+        exclusions: []
+      },
+      docs: {
+        auth: {
+          host: 'www-users.st-andrews.ac.uk',
+          port: 21,
+          authKey: 'docs'
+        },
+        src: 'docs',
+        dest: '/dpl/'+grunt.option('tag')+'/',
+        exclusions: []
+      }
+    }
 
+  });
 
 
   // Load grunt plugins
@@ -292,10 +346,37 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
-
+  
 
   // Define default tasks.
-  grunt.registerTask('default', ['clean:build','clean:patterns','clean:prototypes','compass','jshint','concat','copy:images','copy:prototype_assets','assemble']);
+  grunt.registerTask('default', ['clean:build','clean:patterns','clean:prototypes','compass','jshint','concat','copy:images','copy:prototype_assets','assemble','clean:docs','copy:docs']);
+
+
+  // Deploy core files
+  grunt.registerTask('deploy-core', 'Uploads core files as specified version.', function(n) {
+    var deploy_tag = grunt.option('tag');
+    if (!deploy_tag) {
+      grunt.log.error("You must specify a tag to deploy as, i.e. '--tag=1.0.2'");
+      grunt.fail.warn('Cannot deploy core files without a version tag.');
+      return;
+    }
+    grunt.log.writeln("Deploying core files in 'build/' as version (" + deploy_tag+")");
+    grunt.task.loadNpmTasks('grunt-ftp-deploy');
+    grunt.task.run(['ftp-deploy:core']);
+  });
+
+  // Deploy docs
+  grunt.registerTask('deploy-docs', 'Upload docs as specified version.', function(n) {
+    var deploy_tag = grunt.option('tag');
+    if(!deploy_tag) {
+      grunt.log.error("You must specify a tag to deploy as, i.e. '--tag=1.0.2'");
+      grunt.fail.warn('Cannot deploy docs without a version tag.');
+      return;
+    }
+    grunt.log.writeln("Deploying 'docs/' as version (" + deploy_tag+")");
+    grunt.task.loadNpmTasks('grunt-ftp-deploy');
+    grunt.task.run(['ftp-deploy:docs']);
+  });
+
 
 };
