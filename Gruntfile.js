@@ -200,7 +200,7 @@ module.exports = function(grunt) {
     /* task: clean - remove generated content */
     clean: {
       patterns: {
-        src: ["patterns","*.md"]
+        src: ["patterns"]
       },
       prototypes: {
         src: ["prototypes"]

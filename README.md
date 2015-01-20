@@ -1,8 +1,4 @@
-#digital-pattern-library (v0.0.2)
-
-
-
-
+# Digital pattern library
 
 The pattern library has three main audiences:
 
@@ -22,7 +18,7 @@ There are three main deliverables corresponding to the audiences:
 * The pattern library should be opinionated. 
 
 
-
+## Contributing
 
 This is intended to help you get setup developing the pattern library. We are using [Grunt](http://gruntjs.com/) to automate the building process and Grunt is based on [Node.js](http://nodejs.org/) so you'll need to install them both.
 
@@ -71,4 +67,41 @@ Finally, to begin an active development session, you can run Grunt in watch mode
     grunt watch
 
 The Gruntfile sets which files Grunt should watch.
+
+## Deploying
+
+To deploy your code you can use the two grunt commands
+
+```
+grunt deploy-core --tag=<version-num>
+```
+
+```
+grunt deploy-docs --tag=<version-num>
+```
+
+Replacing `<version-num>` with the appopriate version. For example:
+
+```
+grunt deploy-core --tag=0.1.2
+```
+
+```
+grunt deploy-docs --tag=0.1.2
+```
+
+In order for the commands to work you will need to create a file called `.ftppass` and include your FTP credentials in it. It should have the following form:
+
+```
+{
+  "core": {
+    "username": "your-username",
+    "password": "password"
+  },
+  "docs": {
+    "username": "your-username",
+    "password": "password"
+  }
+}
+```
 
