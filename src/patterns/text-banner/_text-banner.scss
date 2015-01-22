@@ -1,0 +1,65 @@
+
+/*********************************/
+/* BEGIN Pattern: text-banner    */
+/*********************************/
+
+
+.text-banner {
+  background-color: $sta-grey;
+}
+
+
+.text-banner p.message {
+  @extend .container;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.text-banner a {
+  color: white;
+  font-weight: bold;
+}
+
+// Alignment classes.
+
+.text-banner.left p.message {
+  text-align: left;
+}
+
+.text-banner.right p.message {
+  text-align: right;
+}
+
+
+// Color classes.
+
+.text-banner.primary {
+  background-color: $sta-blue;
+}
+
+.text-banner.secondary {
+  background-color: $sta-blue-light;
+}
+
+.text-banner.success {
+  background-color: $sta-green;
+}
+
+.text-banner.info {
+  background-color: $sta-blue-light;
+}
+
+.text-banner.warning {
+  background-color: $sta-orange;
+}
+
+.text-banner.danger {
+  background-color: $sta-red;
+}
+
+
+
+/*********************************/
+/* END Pattern: text-banner      */
+/*********************************/
