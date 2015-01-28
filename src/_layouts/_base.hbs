@@ -1,3 +1,6 @@
+---
+date: <%= new Date() %>
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,6 +26,21 @@
     {{#if core-assets}}
     <script src="{{asset 'scripts/core.js'}}" type="text/javascript" ></script> 
     {{else}}
+
+    <footer>
+
+        <div class="row">
+            <div class="col-xs-6">
+                {{pkg.name}} v{{pkg.version}}
+            </div>
+
+            <div class="col-xs-6 text-right">
+                {{formatDate date "%F"}} at {{formatDate date "%I:%M%p"}}
+            </div>
+        </div>
+
+    </footer>
+
     <script src="{{asset 'scripts/doc.js'}}" type="text/javascript" ></script>
     {{/if}}
     <script src="http://localhost:35729/livereload.js"></script>
