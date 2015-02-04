@@ -198,14 +198,14 @@ $btn-link-disabled-color:        $gray-light;
 
 // TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
 //** Default `.form-control` border radius
-// $input-border-radius:            $border-radius-base
+$input-border-radius:            $border-radius-base;
 //** Large `.form-control` border radius
-// $input-border-radius-large:      $border-radius-large
+$input-border-radius-large:      $border-radius-base;
 //** Small `.form-control` border radius
-// $input-border-radius-small:      $border-radius-small
+$input-border-radius-small:      $border-radius-base;
 
 //** Border color for inputs on focus
-// $input-border-focus:             #66afe9
+$input-border-focus: -dpl-color($palette-default,'secondary','transparent');
 
 //** Placeholder text color
 // $input-color-placeholder:        #999
@@ -743,13 +743,13 @@ $panel-danger-heading-bg:     -dpl-color($palette-context,'danger','base');
 //##
 
 //** Padding around the thumbnail image
-// $thumbnail-padding:           4px
+$thumbnail-padding: 0px;
 //** Thumbnail background color
 // $thumbnail-bg:                $body-bg
 //** Thumbnail border color
-// $thumbnail-border:            #ddd
+$thumbnail-border: transparent;
 //** Thumbnail border radius
-// $thumbnail-border-radius:     $border-radius-base
+$thumbnail-border-radius:     $border-radius-base;
 
 //** Custom text color for thumbnail captions
 // $thumbnail-caption-color:     $text-color
