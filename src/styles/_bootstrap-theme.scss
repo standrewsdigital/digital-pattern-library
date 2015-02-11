@@ -63,14 +63,15 @@ tr:nth-child(odd) {
 .label {
   display: inline-block;
   border-radius: 0;
-  padding: .3em .6em;
+  padding: 0.4em 0.6em 0.3em;
   font-weight: normal;
-  border: 3px double white;
 }
 
 // Additional variations for secondary and tertiary colors
 .label-secondary {
   $bg-color: -dpl-color($palette-default,'secondary','base');
+  $bg-color: adjust-saturation($bg-color, -30%);
+  $bg-color: adjust-lightness($bg-color, 5%);
   @include label-variant($bg-color);
 }
 .label-tertiary-1 {
@@ -150,3 +151,10 @@ tr:nth-child(odd) {
   $bg-color: -dpl-color($palette-default,'tertiary-3','base');
   @include panel-variant($bg-color, white, $bg-color, $bg-color);
 }
+
+
+
+
+// FORMS MODIFICATIONS
+// ====================================================
+

@@ -336,3 +336,9 @@ $palette-context: (
   $value: nth(map-get($palette,$color),$i);
   @return $value;
 }
+
+@function -dpl-wash-out($color) {
+  $color: adjust-lightness($color, 5%);
+  $color: adjust-saturation($color, -20%);
+  @return $color;
+}
