@@ -155,6 +155,10 @@ tr:nth-child(odd) {
 
 
 
-// FORMS MODIFICATIONS
+// POPOVER MODIFICATIONS
 // ====================================================
 
+
+.popover {
+  @include box-shadow(0 5px 10px rgba(0,0,0,0.05));
+}
