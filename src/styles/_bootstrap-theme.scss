@@ -1,11 +1,22 @@
 // MODIFICATIONS TO BOOTSTRAP FOR OUR THEME
 
 
-// paragraphs
+// Block level elements
 // ====================================================
 
 p, ul, ol {
   margin: 0 0 25px;
+}
+
+
+hr {
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    height: 8px;
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 
