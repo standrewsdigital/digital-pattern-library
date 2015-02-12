@@ -162,3 +162,26 @@ tr:nth-child(odd) {
 .popover {
   @include box-shadow(0 5px 10px rgba(0,0,0,0.05));
 }
+
+
+// JUMBOTRON MODIFICATIONS
+// ====================================================
+
+.jumbotron {
+  @media screen and (min-width: $screen-sm-min) {
+    h1,
+    .h1 {
+      font-size: ($font-size-base * 3.25);
+    }
+  }
+}
+
+// LIST GROUP MODIFICATIONS
+// ====================================================
+
+a.list-group-item {
+  font-weight: normal;
+   .list-group-item-heading {
+    font-weight: bold;
+  }
+}

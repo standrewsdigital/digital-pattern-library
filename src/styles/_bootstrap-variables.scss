@@ -490,7 +490,7 @@ $pager-disabled-color:                 $pagination-disabled-color;
 // $jumbotron-color:                inherit
 // $jumbotron-bg:                   $gray-lighter
 // $jumbotron-heading-color:        inherit
-// $jumbotron-font-size:            ceil(($font-size-base * 1.5))
+$jumbotron-font-size:            23px;
 
 
 //== Form states and alerts
@@ -696,7 +696,7 @@ $list-group-disabled-text-color: $list-group-disabled-color;
 
 $list-group-link-color:         -dpl-color($palette-default,'primary','base');
 $list-group-link-hover-color:   $list-group-link-color;
-$list-group-link-heading-color: #333;
+$list-group-link-heading-color: -dpl-color($palette-default,'primary','base');
 
 
 //== Panels
