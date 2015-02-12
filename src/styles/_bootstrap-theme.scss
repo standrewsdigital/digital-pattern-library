@@ -185,3 +185,17 @@ a.list-group-item {
     font-weight: bold;
   }
 }
+
+
+// INPUT GROUP MODIFICATIONS
+// ====================================================
+
+// For some reason
+
+.input-group {
+    .form-control {
+      display: table-cell;
+      height: 100%;
+    }
+
+}
