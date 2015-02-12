@@ -8,9 +8,11 @@ Description     Documentation styles. Includes Bootstrap framework.
 Last Updated    3 October 2014
 */
 
-@import 'vendor/bootstrap';
-@import 'utilities';
 @import 'colors';
+@import 'fonts';
+@import 'bootstrap-custom';
+@import 'utilities';
+
 
       body {
           font-family: Arial, Helvetica, sans-serif;
