@@ -5,7 +5,6 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-
     // uglify: {
     //   options: {
     //     banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
@@ -26,7 +25,7 @@ module.exports = function(grunt) {
           'src/scripts/vendor/jquery.fitvids.js',
           'src/scripts/vendor/jquery.fittext.js',
           'src/scripts/vendor/respond.js',
-          'src/scripts/vendor/bootstrap.min.js',
+          'src/scripts/vendor/bootstrap.js',
           'src/scripts/vendor/matchmedia.polyfill.js',
           'src/scripts/vendor/matchMedia.addListener.js',
           'src/scripts/vendor/enquire.js',
@@ -46,7 +45,7 @@ module.exports = function(grunt) {
         src: [
           'src/scripts/vendor/jquery.min.js',
           'src/scripts/vendor/respond.js',
-          'src/scripts/vendor/bootstrap.min.js',
+          'src/scripts/vendor/bootstrap.js',
           'src/scripts/doc.js'
         ],
         dest: 'build/scripts/doc.js'
@@ -173,7 +172,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: 'src/docs',
-            src: ['*.md'],
+            src: ['*.md','*.html'],
             ext: '.html',
             dest: 'patterns'
           },
@@ -213,6 +212,9 @@ module.exports = function(grunt) {
       images: {
         src: ["build/images"]
       },
+      fonts: {
+        src: ["build/fonts"]
+      },
       js: {
         src: ["build/scripts"]
       },
@@ -236,6 +238,16 @@ module.exports = function(grunt) {
             cwd: 'src/images/',      // Src matches are relative to this path.
             src: ['**/*'], // Actual pattern(s) to match.
             dest: 'build/images'
+          }
+        ]
+      },
+      fonts: {
+        files: [
+          {
+            expand: true,     // Enable dynamic expansion.
+            cwd: 'src/fonts/',      // Src matches are relative to this path.
+            src: ['**/*'], // Actual pattern(s) to match.
+            dest: 'build/fonts'
           }
         ]
       },
@@ -297,12 +309,17 @@ module.exports = function(grunt) {
         files: ['src/images/**/*'],
         tasks: ['clean:images','copy','clean:prototype_assets','copy:prototype_assets','clean:docs','copy:docs']
       },
+      fonts: {
+        files: ['src/fonts/**/*'],
+        tasks: ['clean:fonts','copy','clean:prototype_assets','copy:prototype_assets']
+      },
       styles: {
         files: ['src/**/*.scss'],
         tasks: ['clean:styles','compass','clean:prototype_assets','copy:prototype_assets','clean:docs','copy:docs']
       },
       docs: {
         files: [
+          'src/**/*.html',
           'src/**/*.hbs',
           'src/**/*.json',
           'src/**/*.md',

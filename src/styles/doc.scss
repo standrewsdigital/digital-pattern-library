@@ -8,9 +8,11 @@ Description     Documentation styles. Includes Bootstrap framework.
 Last Updated    3 October 2014
 */
 
-@import 'vendor/bootstrap';
-@import 'utilities';
 @import 'colors';
+@import 'fonts';
+@import 'bootstrap-custom';
+@import 'utilities';
+
 
       body {
           font-family: Arial, Helvetica, sans-serif;
@@ -149,7 +151,7 @@ Last Updated    3 October 2014
         border-bottom: 10px solid white;
       }
 
-      @each $name,$color,$color-hover,$color-T,$color-T-hover,$color-S,$color-S-hover in $sta-colors {
+      @each $name, $color,$color-hover,$color-T,$color-T-hover,$color-S,$color-S-hover in $palette-sta {
 
         &.#{$name} {
           background-color: $color;
