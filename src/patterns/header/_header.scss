@@ -75,11 +75,12 @@
 
 	#panel-search input[type~=text] {
 		width: 100%;
-		border: 1px solid $sta-grey-light;
+		border: 1px solid $sta-grey-light-T;
 		font-size: 1.5em;
 		line-height:2em;
 		padding: 0 .75em;
 		height: 55px;
+        @include form-control-focus;
 	}
 
 	#panel-search input[type~=submit]  {
