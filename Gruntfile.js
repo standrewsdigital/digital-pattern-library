@@ -368,7 +368,7 @@ module.exports = function(grunt) {
   
 
   // Define default tasks.
-  grunt.registerTask('default', ['clean:build','clean:patterns','clean:prototypes','compass','jshint','concat','copy:images','copy:prototype_assets','assemble','clean:docs','copy:docs']);
+  grunt.registerTask('default', ['clean:build','clean:patterns','clean:prototypes','compass','jshint','concat','copy:images','copy:prototype_assets','copy:fonts','assemble','clean:docs','copy:docs']);
 
 
   // Deploy core files
