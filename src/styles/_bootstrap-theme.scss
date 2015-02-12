@@ -190,12 +190,17 @@ a.list-group-item {
 // INPUT GROUP MODIFICATIONS
 // ====================================================
 
-// For some reason
-
 .input-group {
     .form-control {
       display: table-cell;
       height: 100%;
     }
+}
 
+// BADGE MODIFICATIONS
+// ====================================================
+
+.badge {
+  vertical-align: 2px;
+  padding-top: 4px;
 }
