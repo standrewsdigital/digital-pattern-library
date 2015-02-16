@@ -5,14 +5,10 @@
 
 
 .accordion h3 {
+  @include -dpl-transition();
   background-color: $sta-blue;
-  color: #ffffff;
+  color: white;
   padding: 10px 15px;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 
@@ -20,43 +16,32 @@
   background-color: $sta-blue-hover;
 }
 
-.accordion h3 i.chevron {
-  height: 20px;
-  width: 17px;
-  display: inline-block;
-  position: relative;
+.accordion h3:before {
+  @extend i.chevron;
+  @include rotate(180deg);
+  content: "";
   float: right;
-  top: 3px;
-  margin-left: 6px;
-  background: url('../images/furniture/chevron@2x.png') no-repeat;
-  background-size: 18px;
-  -moz-transform:rotate(180deg);
-  -o-transform:rotate(180deg);
-  -webkit-transform:rotate(180deg);
-  -ms-transform:rotate(180deg);
-  transform:rotate(180deg);
-  zoom:1;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  height: 20px !important;
+  width: 17px !important;
+  top: 3px; 
 }
 
-.accordion h3.open i.chevron {
-  -moz-transform:rotate(90deg);
-  -o-transform:rotate(90deg);
-  -webkit-transform:rotate(90deg);
-  -ms-transform:rotate(90deg);
-  transform:rotate(90deg);
-  zoom:1;
+.accordion h3.open:before {
+  @include rotate(90deg);
+}
+
+// The following styles give us backwards compatibility with the
+// old code for accordions.
+
+.accordion h3 i.chevron {
+  display: none;
 }
 
 .accordion h3 a {
   color: inherit;
+  text-decoration: none;
 }
 .accordion h3 a:hover {
-  text-decoration: none;
 }
 
 
