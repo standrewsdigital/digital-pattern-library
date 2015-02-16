@@ -1,8 +1,8 @@
 ---
-title: Using the Pattern Library
+title: Using the pattern library
 ---
 
-In order to use the pattern library you have to include the assets. You have to make several decisions: _type_ of assets and _where_ to include the assets from. You can then go to the bottom and build your
+In order to use the pattern library you have to include the assets. You have to make several decisions: _type_ of assets and _where_ to include the assets from.
 
 
 

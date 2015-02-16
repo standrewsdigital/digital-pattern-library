@@ -49,7 +49,7 @@ Now you need to open "Node.js command prompt" (Windows), Terminal (OS X), or she
         npm install
 
 
-### Step 4. Run Grunt to generate `build` folder
+### Step 4. Run Grunt to generate `core` and `docs` folders
 
 To get the pattern library kicked off run:
 

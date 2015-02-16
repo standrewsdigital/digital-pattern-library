@@ -5,13 +5,15 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+
+
     // uglify: {
     //   options: {
     //     banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
     //   },
     //   build: {
     //     src: 'src/<%= pkg.name %>.js',
-    //     dest: 'build/<%= pkg.name %>.min.js'
+    //     dest: 'core/<%= pkg.name %>.min.js'
     //   }
     // },
 
@@ -32,14 +34,14 @@ module.exports = function(grunt) {
           'src/scripts/base.js',
           'src/patterns/*/*.js'
         ],
-        dest: 'build/scripts/core.js'
+        dest: 'core/scripts/core.js'
       },
       corebase: {
         src: [
           'src/scripts/base.js',
           'src/patterns/*/*.js'
         ],
-        dest: 'build/scripts/core-base.js'
+        dest: 'core/scripts/core-base.js'
       },
       doc: {
         src: [
@@ -48,7 +50,7 @@ module.exports = function(grunt) {
           'src/scripts/vendor/bootstrap.js',
           'src/scripts/doc.js'
         ],
-        dest: 'build/scripts/doc.js'
+        dest: 'core/scripts/doc.js'
       }
     },
 
@@ -72,7 +74,7 @@ module.exports = function(grunt) {
           ],
           sassDir: 'src/styles',
           importPath: 'src/patterns',
-          cssDir: 'build/styles',
+          cssDir: 'core/styles',
           environment: 'production',
           force: true,
           trace: true,
@@ -87,28 +89,31 @@ module.exports = function(grunt) {
 
       options: {
         pkg: '<%= pkg %>',
-        assets: 'build',
+        assets: 'docs/assets',
         layoutdir: 'src/_layouts',
         partials: ['src/patterns/*/*.hbs'],
         ext: '.html',
-        data: ['src/patterns/*/data/*.json','src/prototypes/_data/*.json'],
-        helpers: ['handlebars-helper-asset'],
+        data: ['src/_meta/*.json','src/patterns/*/data/*.json','src/examples/_data/*.json'],
+        helpers: ['handlebars-helper-asset','handlebars-helper-rel'],
+        site: {
+          root: "docs",
+        },
       },
 
-      general: {
-        options: {
-          layout: '_base.hbs'
-        },
-        files: [
-          {
-            expand: true,
-            cwd: 'src/patterns/',
-            src: ['patchwork.hbs'],
-            ext: '.html',
-            dest: 'patterns'
-          }
-        ]
-      },
+      // general: {
+      //   options: {
+      //     layout: '_base.hbs'
+      //   },
+      //   files: [
+      //     {
+      //       expand: true,
+      //       cwd: 'src/_meta/',
+      //       src: ['patchwork.hbs'],
+      //       ext: '.html',
+      //       dest: 'docs/patchwork/index.html'
+      //     }
+      //   ]
+      // },
 
       patterns: {
         options: {
@@ -120,42 +125,45 @@ module.exports = function(grunt) {
             cwd: 'src/patterns/',
             src: ['index.hbs','*/*.doc.hbs'],
             ext: '.html',
-            dest: 'patterns',
+            dest: 'docs/patterns',
             rename: function(src,dest){
-              return 'patterns/' + dest.replace(/\/[a-zA-Z0-9_-]+.html$/,'/index.html');
+              return 'docs/patterns/' + dest.replace(/\/[a-zA-Z0-9_-]+.html$/,'/index.html');
             }
           },
 
         ]
       },
 
-      prototypes: {
-        options: {
-          layout: 'prototype.hbs',
-          assets: 'prototypes/build',
+      pattern_examples: {
+        options: { 
+          layout: 'pattern_example.hbs'
         },
-        files: [
-          {
-            expand: true,
-            cwd: 'src/prototypes/',
-            src: ['**/*.hbs'],
-            ext: '.html',
-            dest: 'prototypes'
-          }
-        ],
-      },
-
-      examples: {
-        options: { layout: 'pattern_example.hbs' },
         files: [
           {
             expand: true,     // Enable dynamic expansion.
             cwd: 'src/patterns/',      // Src matches are relative to this path.
             src: ['*/examples/*.hbs'], // Actual pattern(s) to match.
-            dest: 'patterns',
+            dest: 'docs/patterns',
             ext: '.html',   // Dest filepaths will have this extension.
           }
         ]
+      },
+
+
+      examples: {
+        options: {
+          layout: 'example.hbs'
+          // assets: 'prototypes/build',
+        },
+        files: [
+          {
+            expand: true,
+            cwd: 'src/examples/',
+            src: ['**/*.hbs'],
+            ext: '.html',
+            dest: 'docs/examples'
+          }
+        ],
       },
 
       docs: {
@@ -165,72 +173,43 @@ module.exports = function(grunt) {
         files: [
           {
             expand: true,
-            cwd: '',
-            src: ['*.md'],
-            ext: '.html',
-            dest: 'patterns'
-          },
-          {
-            expand: true,
             cwd: 'src/docs',
-            src: ['*.md','*.html'],
+            src: ['*.md','*.html','**/*.hbs'],
             ext: '.html',
-            dest: 'patterns'
+            dest: 'docs'
           },
         ]
-      },
-
-      meta: {
-        options: {
-          layout: 'meta.hbs',
-          partials: ['src/docs/*.md'],
-          ext: '.md',
-        },
-        files: [
-          {
-            expand: true,
-            cwd: 'src/meta',
-            src: ['*.hbs'],
-            dest: ''
-          }
-        ]
-      },
+      }
 
     },
 
 
     /* task: clean - remove generated content */
     clean: {
-      patterns: {
-        src: ["patterns"]
-      },
-      prototypes: {
-        src: ["prototypes"]
-      },
-      prototype_assets: {
-        src: ["prototypes/build"]
-      },
       images: {
-        src: ["build/images"]
+        src: ["core/images"]
       },
       fonts: {
-        src: ["build/fonts"]
+        src: ["core/fonts"]
       },
       js: {
-        src: ["build/scripts"]
+        src: ["core/scripts"]
       },
       styles: {
-        src: ["build/styles"]
+        src: ["core/styles"]
       },
-      build: {
-        src: ["build"]
+      core: {
+        src: ["core"]
       },
       docs: {
         src: ["docs"]
+      },
+      docs_assets: {
+        src: ["docs/assets"]
       }
     },
 
-    /* task: copy - move files (mostly images) from src to build */
+    /* task: copy - move files */
     copy: {
       images: {
         files: [
@@ -238,7 +217,7 @@ module.exports = function(grunt) {
             expand: true,     // Enable dynamic expansion.
             cwd: 'src/images/',      // Src matches are relative to this path.
             src: ['**/*'], // Actual pattern(s) to match.
-            dest: 'build/images'
+            dest: 'core/images'
           }
         ]
       },
@@ -248,44 +227,18 @@ module.exports = function(grunt) {
             expand: true,     // Enable dynamic expansion.
             cwd: 'src/fonts/',      // Src matches are relative to this path.
             src: ['**/*'], // Actual pattern(s) to match.
-            dest: 'build/fonts'
+            dest: 'core/fonts'
           }
         ]
       },
-      prototype_assets: {
+      docs_assets: {
         files: [
           {
             expand: true,     // Enable dynamic expansion.
-            cwd: 'build',      // Src matches are relative to this path.
+            cwd: 'core',      // Src matches are relative to this path.
             src: ['**/*'], // Actual pattern(s) to match.
-            dest: 'prototypes/build'
+            dest: 'docs/assets'
           }
-        ]
-      },
-      docs: {
-        files: [
-          {
-            expand: true,     // Enable dynamic expansion.
-            cwd: 'build',      // Src matches are relative to this path.
-            src: ['**/*'], // Actual pattern(s) to match.
-            dest: 'docs/build'
-          },
-          {
-            expand: true,     // Enable dynamic expansion.
-            cwd: 'patterns',      // Src matches are relative to this path.
-            src: ['**/*'], // Actual pattern(s) to match.
-            dest: 'docs/patterns'
-          },
-          {
-            expand: true,     // Enable dynamic expansion.
-            cwd: 'prototypes',      // Src matches are relative to this path.
-            src: ['**/*'], // Actual pattern(s) to match.
-            dest: 'docs/prototypes'
-          },
-          {
-            src: 'src/misc/docs_redirect.html', 
-            dest: 'docs/index.html'
-          },
         ]
       }
     },
@@ -302,21 +255,19 @@ module.exports = function(grunt) {
       },
       js: {
         files: ['src/**/*.js'],
-        tasks: ['clean:js','jshint','concat','clean:prototype_assets','copy:prototype_assets',
-          'clean:docs','copy:docs'
-          ],
+        tasks: ['clean:js','jshint','concat','clean:docs_assets','copy:docs_assets'],
       },
       images: {
         files: ['src/images/**/*'],
-        tasks: ['clean:images','copy','clean:prototype_assets','copy:prototype_assets','clean:docs','copy:docs']
+        tasks: ['clean:images','copy:images','clean:docs_assets','copy:docs_assets']
       },
       fonts: {
         files: ['src/fonts/**/*'],
-        tasks: ['clean:fonts','copy','clean:prototype_assets','copy:prototype_assets']
+        tasks: ['clean:fonts','copy:fonts','clean:docs_assets','copy:docs_assets']
       },
       styles: {
         files: ['src/**/*.scss'],
-        tasks: ['clean:styles','compass','clean:prototype_assets','copy:prototype_assets','clean:docs','copy:docs']
+        tasks: ['clean:styles','compass','clean:docs_assets','copy:docs_assets']
       },
       docs: {
         files: [
@@ -326,7 +277,7 @@ module.exports = function(grunt) {
           'src/**/*.md',
           'package.json',
         ],
-        tasks: ['clean:patterns','clean:prototypes','assemble','copy:prototype_assets','clean:docs','copy:docs']
+        tasks: ['clean:docs','assemble','copy:docs_assets']
       }
     },
 
@@ -339,7 +290,7 @@ module.exports = function(grunt) {
           port: 21,
           authKey: 'core'
         },
-        src: 'build',
+        src: 'core',
         dest: '/dpl/'+grunt.option('tag')+'/',
         exclusions: []
       },
@@ -355,6 +306,8 @@ module.exports = function(grunt) {
       }
     }
 
+
+
   });
 
 
@@ -369,7 +322,7 @@ module.exports = function(grunt) {
   
 
   // Define default tasks.
-  grunt.registerTask('default', ['clean:build','clean:patterns','clean:prototypes','compass','jshint','concat','copy:images','copy:prototype_assets','copy:fonts','assemble','clean:docs','copy:docs']);
+  grunt.registerTask('default', ['clean:core','clean:docs','compass','jshint','concat','copy','assemble']);
 
 
   // Deploy core files

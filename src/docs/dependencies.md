@@ -1,5 +1,5 @@
 ---
-External Dependencies
+title: JavaScript dependencies
 ---
 
 The Pattern Library uses code from the following packages. By default, all of these dependencies are built into our core files. However, the pattern library also provides a pattern-only version of the JavaScript file that does not include jQuery, Bootstrap JS and other external JavaScript libraries. If you use that version then you need to include these dependencies manually:

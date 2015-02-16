@@ -1,0 +1,69 @@
+---
+title: Digital Pattern Library
+removeContainer: True
+---
+
+
+<div class="jumbotron" style="background-image: url({{asset "images/dpl-banner.png"}}); background-size: cover; background-position: center 40%; color: white;">
+  <div class="container">
+    <h1>Digital pattern library</h1>
+    <p>A consistent look and feel for digital products at the University of St Andrews.</p>
+    <p><a href="using.html" class="btn btn-primary">Start using</a></p>
+  </div>
+</div>
+
+
+
+<div class="container">
+<div class="row">
+
+  <div class="col-md-4 col-sm-6">
+
+    <h2>Patterns</h2>
+
+    <ul>
+    	{{#each dpl-nav.items.0.items}}
+    		<li><a href ="{{url}}">{{name}}</a></li>
+    	{{/each }}
+    </ul>
+
+
+
+  </div>
+
+  <div class="col-md-4 col-sm-6">
+    <h2>Bootstrap Theme</h2>
+
+    <p>The pattern library is built on a custom <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> theme. To view the styling for standard Bootstrap components, view the following example pages:</p>
+
+     <ul>
+       <li><a href="examples/bootstrap.html">Bootstrap components</a></li>
+       <li><a href="examples/bootstrap2.html">Advanced Bootstrap components</a></li>
+     </ul>
+
+     <h2>Patchwork</h2>
+
+      <p>The patchwork shows all patterns in alphabetical order. Useful for testing or searching for a pattern.</p>
+
+      <p><a href="patchwork/index.html" class="btn btn-primary">Patchwork</a></p>
+
+
+  </div>
+
+  <div class="col-md-4 col-sm-6">
+
+    <h2>Documentation</h2>
+
+    <ul>
+      {{#each dpl-nav.items.1.items}}
+        <li><a href ="{{url}}">{{name}}</a></li>
+      {{/each }}
+    </ul>
+    
+
+  </div>
+
+
+
+</div>
+</div>

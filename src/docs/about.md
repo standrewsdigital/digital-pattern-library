@@ -1,5 +1,5 @@
 ---
-title: About
+title: About the pattern library
 ---
 
 The pattern library has three main audiences:
@@ -14,7 +14,3 @@ There are three main deliverables corresponding to the audiences:
 2. **Documentation.** The `patterns` folder includes documentation about each pattern available in the pattern library, examples of each one, and a browsable patchwork of all the patterns. In addition, you will also find CSS and JS coding style guides, and other information.
 3. **Pattern tests.** The core team can use the examples and patchwork in the `patterns` folder as a way to implement pattern-driven-development, which is a translation of test-driven-development to design patterns.
 
-## Principles
-
-* Nothing should be in the pattern library unless it's used.
-* The pattern library should be opinionated. 
