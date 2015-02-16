@@ -34,9 +34,7 @@
  	padding: .5em .8em;
   margin: 0;
  	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 200ms ease-out;
-  -moz-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  @include -dpl-transition();
  }
  .tile:hover {
   cursor: pointer;
