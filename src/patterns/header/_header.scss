@@ -3,36 +3,37 @@
 /* BEGIN Pattern: header         */
 /*********************************/
 
-	#print-header {
-		display: none;
-	}
+    #print-header {
+        display: none;
+    }
 
-	/* Header styles */
+    /* Header styles */
 
-	#header {
-		position: relative;
-		min-height: 72px;
+    #header {
+        position: relative;
+        min-height: 72px;
         margin: 15px 0 10px;
-	}
+    }
 
-	#header-logo {
-    margin: 0;
-    padding:0;
-	}
+    #header-logo {
+        margin: 0;
+        padding:0;
+    }
 
-	#header-logo h1 {
-		margin: 0;
-	}
+    #header-logo h1 {
+        margin: 0;
+    }
 
-  #header-logo img {
-    width: 100%;
-    max-width: 345px;
-    -webkit-transition: all 200ms ease-out;
-    -moz-transition: all 200ms ease-out;
-    transition: all 200ms ease-out;
-  }
+    #header-logo img {
+        width: 100%;
+        max-width: 345px;
+        -webkit-transition: all 200ms ease-out;
+        -moz-transition: all 200ms ease-out;
+        transition: all 200ms ease-out;
+    }
 
-	/* Header Panels */
+
+     /* Header Panels */
 
 	.header-panel {
 		display: none;
@@ -47,26 +48,24 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f6f7', GradientType=0 );
 	}
 
-	#panel-people {
-
-	}
-
 
 	#panel-people ul {
 		list-style-type: none;
 		margin: 2.6em 0;
 		padding: 0;
 	}
+
 	#panel-people li {
 		display: inline;
 		margin: 0;
 		padding-right: 2em;
 		white-space: nowrap;
 	}
+
 	#panel-people a {
 		font-weight: bold;
 		font-size: 1.4em;
-		color:$sta-blue;
+		color: $sta-blue;
 	}
 
 	#panel-search form {
@@ -93,107 +92,104 @@
 		font-weight: normal;
 		height: 55px;
 		width: 100%;
-		-webkit-transition: all 200ms ease-out;
-		-moz-transition: all 200ms ease-out;
-		transition: all 200ms ease-out;
+
+        @include -dpl-transition();
 	}
+
 	#panel-search input[type~=submit]:hover {
 		background-color: $sta-blue-hover;
 	}
 
-  #header .logo-container {
-    -webkit-transition: all 200ms ease-out;
-    -moz-transition: all 200ms ease-out;
-    transition: all 200ms ease-out;
-  }
-
-
-  .panel-toggle {
-    @extend .btn;
-    @extend .btn-primary;
-    padding: 1em .5em;
-    margin-left: 13px;
-  }
-
-  .panel-toggle:before {
-    @extend i.chevron;
-    @include rotate(270deg);
-    content: "";
-    float: right;
-    height: 17px !important;
-    width: 17px !important;
-    top: 4px !important;
-  }
-
-  .panel-toggle.panel-toggle-up:before {
-    @include rotate(90deg);
-  }
-
-  .panel-toggle img.icon {
-    height: 30px;
-    width: 30px;
-    margin-right: 5px;
-  }
-
-
-
-  @media (max-width: 767px) {
-	#header {
-		margin: 20px 0;
-	}
-
-    #header-logo img {
-      max-width: 250px;
-    }
-
-  	#panel-search input[type~=text] {
-      font-size: 1.2em;
-  	}
-
-  	#panel-search input[type~=submit]  {
-      font-size: 1.2em;
-  	}
-
-    #panel-people li {
-      display: block;
-    }
-
-  }
-
-  @media (max-width: 480px) {
-
-    #header {
-      min-height: auto;
-      margin: 20px 0 0px;
-    }
-
     #header .logo-container {
-      float: left;
-      width: 180px;
-
-    }
-    #header .button-container {
-      float: right;
-
+        @include -dpl-transition();
     }
 
     .panel-toggle {
-      padding: .7em .3em;
-      margin-left: 0px;
+        @extend .btn;
+        @extend .btn-primary;
+        padding: 1em .5em;
+        margin-left: 13px;
     }
 
     .panel-toggle img.icon {
-      height: 22px;
-      width: 22px;
-      margin-right: 5px;
+        height: 30px;
+        width: 30px;
+        margin-right: 5px;
     }
 
-    .panel-toggle img.chevron {
-      width: 10px;
+    // The :before pseud element is used to place the 
+    // chevron, without increasing markup.
+    .panel-toggle:before {
+        @extend i.chevron;
+        @include rotate(270deg);
+        content: "";
+        float: right;
+        height: 17px !important;
+        width: 17px !important;
+        top: 4px !important;
+    }
+
+    .panel-toggle.panel-toggle-up:before {
+        @include rotate(90deg);
     }
 
 
-  }
+    @media (max-width: 767px) {
+    	#header {
+    		margin: 20px 0;
+    	}
+
+        #header-logo img {
+          max-width: 250px;
+        }
+
+      	#panel-search input[type~=text] {
+          font-size: 1.2em;
+      	}
+
+      	#panel-search input[type~=submit]  {
+          font-size: 1.2em;
+      	}
+
+        #panel-people li {
+          display: block;
+        }
+
+    }
+
+    @media (max-width: 480px) {
+
+        #header {
+          min-height: auto;
+          margin: 20px 0 0px;
+        }
+
+        #header .logo-container {
+          float: left;
+          width: 180px;
+
+        }
+        #header .button-container {
+          float: right;
+
+        }
+
+        .panel-toggle {
+          padding: .7em .3em;
+          margin-left: 0px;
+        }
+
+        .panel-toggle img.icon {
+          height: 22px;
+          width: 22px;
+          margin-right: 5px;
+        }
+
+        .panel-toggle img.chevron {
+          width: 10px;
+        }
+
+    }
 
 /*********************************/
 /* END Pattern: header           */

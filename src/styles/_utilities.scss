@@ -8,6 +8,12 @@
     transform:          rotate($deg);
 }
 
+@mixin -dpl-transition() {
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
 
 .clear {
 	clear:both
