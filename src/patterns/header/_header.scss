@@ -12,7 +12,7 @@
 	#header {
 		position: relative;
 		min-height: 72px;
-    margin: 15px 0 10px;
+        margin: 15px 0 10px;
 	}
 
 	#header-logo {
@@ -108,16 +108,26 @@
   }
 
 
-
-	.panel-toggle {
-    @extend .button;
+  .panel-toggle {
+    @extend .btn;
+    @extend .btn-primary;
     padding: 1em .5em;
     margin-left: 13px;
   }
 
-	.panel-toggle:hover {
-		background-color: $sta-blue-hover;
-	}
+  .panel-toggle:before {
+    @extend i.chevron;
+    @include rotate(270deg);
+    content: "";
+    float: right;
+    height: 17px !important;
+    width: 17px !important;
+    top: 4px !important;
+  }
+
+  .panel-toggle.panel-toggle-up:before {
+    @include rotate(90deg);
+  }
 
   .panel-toggle img.icon {
     height: 30px;
@@ -125,34 +135,12 @@
     margin-right: 5px;
   }
 
-  .panel-toggle img.chevron {
-    width: 15px;
-    -moz-transform:rotate(270deg);
-    -o-transform:rotate(270deg);
-    -webkit-transform:rotate(270deg);
-    -ms-transform:rotate(270deg);
-    transform:rotate(270deg);
-
-    -webkit-transition: all 200ms ease-out;
-    -moz-transition: all 200ms ease-out;
-    transition: all 200ms ease-out;
-  }
-
-  .panel-toggle.panel-toggle-up img.chevron {
-    -moz-transform:rotate(90deg);
-    -o-transform:rotate(90deg);
-    -webkit-transform:rotate(90deg);
-    -ms-transform:rotate(90deg);
-    transform:rotate(90deg);
-  }
 
 
-
-
-	@media (max-width: 767px) {
-		#header {
-			margin: 20px 0;
-		}
+  @media (max-width: 767px) {
+	#header {
+		margin: 20px 0;
+	}
 
     #header-logo img {
       max-width: 250px;
@@ -170,7 +158,7 @@
       display: block;
     }
 
-	}
+  }
 
   @media (max-width: 480px) {
 

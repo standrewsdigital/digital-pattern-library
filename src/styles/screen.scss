@@ -1,14 +1,6 @@
 @charset "utf-8";
-/*
-Stylesheet      St Andrews (Study at St Andrews)
-Theme Name      Study at St Andrews (Bootstrap) 2014-03
-URI             http://www.st-andrews.ac.uk
-Version         1.0
-Authors         Duncan Stephen (dbss), Lewis Wake (lw75), Carley Hollis (ch432), Steve Evans (sde1), Gareth Saunders (gjms1)
-Description     Framework built on Twitter Bootstrap
-Last Updated    1 March 2014
-*/
 
+@import 'utilities';
 @import 'colors';
 @import 'fonts';
 @import 'bootstrap-custom';
@@ -40,5 +32,4 @@ Last Updated    1 March 2014
 @import 'tile/tile';
 @import 'tile-grid/tile-grid';
 
-/* Final additions */
-@import 'utilities';
+
