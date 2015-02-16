@@ -10,6 +10,10 @@ In order to use the pattern library you have to include the assets. You have to 
 
 There are two flavours of the JavaScript files that you can choose between. A combined JS file, `core.js`, that has all the JavaScript needed in one file, or a separate pattern-only JS file, `core-base.js`. `core.js` includes Bootstrap's JS code, jQuery and jQuery plugins in addition to pattern-related JavaScript. If you use `core-base.js`, you are responsible for ensuring that all required [JavaScript dependencies](dependencies.html) are included. See the `Gruntfile.js` to determine which additional JS pieces are rolled into `core.js`.
 
+## Type: Patterns or bootstrap-only CSS
+
+There are two flavours of the CSS files that you can choose between. A combined CSS file, `screen.css`, that has all the CSS needed in one file, or a separate Bootstrap-only CSS file, `screen-bootstrap-only.css`. `screen.css` includes CSS for the patterns laid out in the library in addition to the underlying custom Boostrap theme. The `screen-bootstrap-only.css` includes only the Bootstrap theme, meaning that patterns such as the header, footer, etc are not supported.
+
 ## Where: CDN or local
 
 ### Including core files from the CDN

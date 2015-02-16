@@ -65,9 +65,10 @@ module.exports = function(grunt) {
         options: {
           specify: [
             'src/styles/doc.scss',
-            'src/styles/screen.scss',
+            'src/styles/ie.scss',
             'src/styles/print.scss',
-            'src/styles/ie.scss'
+            'src/styles/screen-bootstrap-only.scss',
+            'src/styles/screen.scss'
           ],
           sassDir: 'src/styles',
           importPath: 'src/patterns',
