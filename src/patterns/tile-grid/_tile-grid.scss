@@ -25,23 +25,23 @@
 }
 
 .read-more a {
-	@extend .button;
-	width: 100%;
+	@extend .btn;
+	@extend .btn-primary;
+	@extend .btn-block;
+	text-align: left;
 	color: white;
-	font-weight: normal;
 	font-size: 1.5em;
 	line-height: 2em;
-	padding: 0.4em .8em .2em 1em;
-	text-decoration: none;
-	margin: 0 0 30px;
+	padding: 0.4em .8em .2em;
+	margin: 0 0 40px;
 }
 
 .read-more a:before {
 	@extend i.chevron;
 	content: "";
 	float: right;
-	height: 28px!important;
-	width: 30px!important;
+	height: 28px !important;
+	width: 30px !important;
 	top: 10px !important;
 }
 
