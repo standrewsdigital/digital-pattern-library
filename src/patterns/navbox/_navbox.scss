@@ -24,22 +24,20 @@
 	font-size: 24px;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px rgb(68, 68, 68);
-	-webkit-transition: all 200ms ease-out;
-	-moz-transition: all 200ms ease-out;
-	transition: all 200ms ease-out;
+	@include -dpl-transition();
 }
 
 .navbox-title:before {
 	@extend i.chevron;
 	content: "";
 	float: right;
-	height: 35px!important;
-	width: 30px!important;
-	top:0 !important;
+	height: 35px !important;
+	width: 30px !important;
+	top: 0 !important;
 }
 
 .navbox-title a {
-	color: white!important;
+	color: white !important;
 	text-decoration: none;
 	margin-right: 4px;
 }
