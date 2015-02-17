@@ -1,7 +1,11 @@
 ---
-layout: doc.hbs
+layout: _base.hbs
 title: <%= title %>
 ---
+
+<div class="container">
+
+<h1>{{title}}</h1>
 
 {{>body}}
 
@@ -28,5 +32,5 @@ style="{{#if width}}width:{{width}};{{/if}} {{#if height}}height:{{height}};{{/i
   {{/related}}
 </ul>
 {{/if}}
-
+</div>
 
