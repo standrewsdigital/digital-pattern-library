@@ -18,7 +18,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-ftp-deploy": "^0.1.9",
     "handlebars-helper-asset": "git://github.com/sjparsons/handlebars-helper-asset.git#relative-links",
-    "handlebars-helper-rel": "^0.2.0",
+    "handlebars-helper-rel": "git://github.com/sjparsons/handlebars-helper-rel.git#fix",
     "handlebars-helpers": "^0.5.8",
     "swag": "^0.7.0"
   },
