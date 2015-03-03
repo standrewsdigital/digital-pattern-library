@@ -57,14 +57,17 @@ table {
 }
 
 th {
-  background-color: $brand-primary;
+  background-color: $gray-light;
   color: #fff;
 }
 
 tr:nth-child(odd) {
-  background-color: lighten($brand-primary, 80%);
+  background-color: lighten($gray, 80%);
 }
 
+table.table-primary th {
+  background-color: $brand-primary;
+}
 
 
 // PAGER MODIFICATIONS
