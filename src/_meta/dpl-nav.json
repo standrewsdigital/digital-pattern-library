@@ -142,16 +142,16 @@
                     "url" : "examples/bootstrap2.html"
                 },
                 {
-                    "name" : "Ex: Data tables",
-                    "url" : "examples/data-tables.html"
-                },
-                {
                     "name" : "Ex: Web application",
                     "url" : "examples/web-app.html"
                 },
                 {
                     "name" : "Ex: HTML elements",
                     "url" : "examples/html-elements.html"
+                },
+                {
+                    "name" : "Ex: Tables",
+                    "url" : "examples/tables.html"
                 }
             ]
         },
