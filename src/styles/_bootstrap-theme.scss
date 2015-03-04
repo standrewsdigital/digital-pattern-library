@@ -69,6 +69,38 @@ table.table-primary th {
   background-color: $brand-primary;
 }
 
+table.table-success th {
+  background-color: $brand-success;
+}
+
+table.table-info th {
+  background-color: $brand-info;
+}
+
+table.table-warning th {
+  background-color: $brand-warning;
+}
+
+table.table-danger th {
+  background-color: $brand-danger;
+}
+
+table.table-secondary th {
+  background-color: -dpl-color($palette-default,'secondary','base');
+}
+
+table.table-tertiary-1 th {
+  background-color: -dpl-color($palette-default,'tertiary-1','base');
+}
+
+table.table-tertiary-2 th {
+  background-color: -dpl-color($palette-default,'tertiary-2','base');
+}
+
+table.table-tertiary-3 th {
+  background-color: -dpl-color($palette-default,'tertiary-3','base');
+}
+
 
 // PAGER MODIFICATIONS
 // ====================================================
