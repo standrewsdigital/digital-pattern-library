@@ -187,6 +187,17 @@ table.table-tertiary-3 th {
 // ====================================================
 
 
+.panel {
+  border: 0;
+  -webkit-box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow:    4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  box-shadow:         4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.panel-heading {
+  font-size: 20px;
+}
+
 // Add variants for secondary, tertiary-1, tertiary-2 and tertiary-3.
 
 .panel-secondary {
@@ -204,20 +215,6 @@ table.table-tertiary-3 th {
 .panel-tertiary-3 {
   $bg-color: -dpl-color($palette-default,'tertiary-3','base');
   @include panel-variant($bg-color, white, $bg-color, $bg-color);
-}
-
-
-// add a style which removes border and adds a drop-shadow
-// to make it appear as a card.
-.panel.panel-card {
-  border: 0;
-  -webkit-box-shadow: 5px 5px 23px 6px rgba(150,147,150,0.36);
--moz-box-shadow: 5px 5px 23px 6px rgba(150,147,150,0.36);
-box-shadow: 5px 5px 23px 6px rgba(150,147,150,0.36);
-
-    -webkit-box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.38);
-  -moz-box-shadow:    4px 4px 15px 0px rgba(0, 0, 0, 0.38);
-  box-shadow:         4px 4px 15px 0px rgba(0, 0, 0, 0.38);
 }
 
 
