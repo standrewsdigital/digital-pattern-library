@@ -9,8 +9,7 @@
 }
 
 
-.text-banner p.message {
-  @extend .container;
+.text-banner p {
   color: white;
   padding: 10px 0;
   text-align: center;
@@ -24,11 +23,11 @@
 
 // Alignment classes.
 
-.text-banner.left p.message {
+.text-banner.left p {
   text-align: left;
 }
 
-.text-banner.right p.message {
+.text-banner.right p {
   text-align: right;
 }
 
