@@ -47,17 +47,24 @@
 					<div id="header-logo"><h1><a href="http://www.st-andrews.ac.uk/"><img src="{{asset "images/furniture/logo-standard.svg"}}" alt="University of St Andrews" /></a></h1></div>
 				</div>
 
-				<div class="col-lg-3 col-lg-offset-5 col-md-5 col-xs-5 col-md-offset-2  text-right button-container">
+				<div class="col-lg-3  col-lg-offset-5  col-md-5  col-xs-5  col-md-offset-2  text-right  button-container">
+
 					<a class="panel-toggle"
-            data-target="#panel-people"
-            data-siblings=".header-panel"
-            ><img src="{{asset "images/furniture/user-512.png"}}" alt="People" class="icon">
-            		</a>
+            		   data-target="#panel-people"
+            		   data-siblings=".header-panel"
+            		   data-toggle="tooltip" 
+            		   data-placement="bottom" 
+            		   data-original-title="Resources for current students and staff"
+            		   title="" ><img src="{{asset "images/furniture/user-512.png"}}" alt="People" class="icon"></a>
 
 					<a class="panel-toggle"
 						data-target="#panel-search"
 						data-siblings=".header-panel"
-						><img src="{{asset "images/furniture/search-512.png"}}" alt="Search" class="icon"></a>
+						data-toggle="tooltip"
+						data-placement="bottom"
+						data-original-title="Search the University website"
+						title="" ><img src="{{asset "images/furniture/search-512.png"}}" alt="Search" class="icon"></a>
+
 				</div>
 
 			</div>
