@@ -175,18 +175,19 @@
         }
 
         .panel-toggle {
-          padding: .7em .3em;
+          padding: .7em .25em;
           margin-left: 0px;
         }
 
         .panel-toggle img.icon {
-          height: 22px;
-          width: 22px;
+          height: 20px;
+          width: 20px;
           margin-right: 5px;
         }
 
-        .panel-toggle img.chevron {
-          width: 10px;
+        .panel-toggle:before {
+          height: 10px !important;
+          width: 10px !important;
         }
 
     }
