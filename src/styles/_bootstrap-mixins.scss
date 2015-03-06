@@ -114,3 +114,20 @@
 }
 
 
+// A copy of the version in Bootstrap apart from lines noted.
+@mixin alert-variant($background, $border, $text-color) {
+  background-color: $background;
+  border-color: $border;
+  color: $text-color;
+
+  hr {
+    border-top-color: darken($border, 5%);
+  }
+  // REMOVED:
+  // .alert-link {
+  // ADDED:
+  .alert-link, a {
+    color: darken($text-color, 10%);
+  }
+}
+
