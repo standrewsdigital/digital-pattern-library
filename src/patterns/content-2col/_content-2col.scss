@@ -3,6 +3,12 @@
 /* BEGIN Pattern: content-2col   */
 /*********************************/
 
+
+/* remove margin of h2 when it's the first element of the content */
+.content *:nth-child(1) {
+    margin-top:0px;
+}
+
 .sidebar {
 	padding-top:63px;
 }
