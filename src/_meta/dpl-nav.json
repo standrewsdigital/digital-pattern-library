@@ -99,16 +99,20 @@
                     "url" : "about.html"
                 },
                 {
-                    "name" : "Using the pattern library",
-                    "url" : "using.html"
+                    "name" : "Colors",
+                    "url" : "colors.html"
+                },
+                 {
+                    "name" : "Datatables",
+                    "url" : "datatables.html"
                 },
                 {
                     "name" : "JavaScript dependencies",
                     "url" : "dependencies.html"
                 },
                 {
-                    "name" : "Colors",
-                    "url" : "colors.html"
+                    "name" : "Using the pattern library",
+                    "url" : "using.html"
                 },
                 {
                     "name" : "Palettes",
@@ -130,20 +134,16 @@
                     "url" : "examples/about.html"
                 },
                 {
-                    "name" : "Ex: Content",
-                    "url" : "examples/content.html"
-                },
-                {
                     "name" : "Ex: Bootstrap components",
                     "url" : "examples/bootstrap.html"
                 },
                 {
-                    "name" : "Ex: Bootstrap advanced components",
+                    "name" : "Ex: Bootstrap components - advanced",
                     "url" : "examples/bootstrap2.html"
                 },
                 {
-                    "name" : "Ex: Web application",
-                    "url" : "examples/web-app.html"
+                    "name" : "Ex: Content",
+                    "url" : "examples/content.html"
                 },
                 {
                     "name" : "Ex: HTML elements",
@@ -152,12 +152,17 @@
                 {
                     "name" : "Ex: Tables",
                     "url" : "examples/tables.html"
+                },
+                {
+                    "name" : "Ex: Tables - Datatables",
+                    "url" : "examples/datatables.html"
+                },
+                {
+                    "name" : "Ex: Web application",
+                    "url" : "examples/web-app.html"
                 }
+
             ]
-        },
-        {
-            "name" : "Patchwork",
-            "url" : "patchwork/index.html"
         }
     ]
 }
