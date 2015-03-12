@@ -117,6 +117,10 @@
                 {
                     "name" : "Palettes",
                     "url" : "palettes.html"
+                },
+                {
+                    "name" : "Using data tables",
+                    "url" : "datatables.html"
                 }
             ]
 
@@ -158,10 +162,13 @@
                     "url" : "examples/tables.html"
                 },
                 {
+                    "name" : "Ex: Tables – Data tables",
+                    "url" : "examples/datatables.html"
+                },
+                {
                     "name" : "Ex: Web application",
                     "url" : "examples/web-app.html"
                 }
-
             ]
         }
     ]
