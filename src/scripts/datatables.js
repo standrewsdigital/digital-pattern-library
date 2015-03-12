@@ -46,10 +46,11 @@ $.extend( true, DataTable.defaults, {
 
         // Get some CSS styles applied to the table;
         // Apply those to elements of the data table wrapper.
-        var bgcolor = table.find("th").css('background-color');
-        var textcolor = table.find("th").css('color');
-        container.css('background-color',bgcolor);
-        container.find(".dt-pre").css('color',textcolor);
+        
+        // var bgcolor = table.find("th").css('background-color');
+        // var textcolor = table.find("th").css('color');
+        // container.css('background-color',bgcolor);
+        // container.find(".dt-pre").css('color',textcolor);
 
         var padding = table.find("th").css('padding');
         console.log(padding)

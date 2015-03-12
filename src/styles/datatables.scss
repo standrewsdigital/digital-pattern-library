@@ -5,7 +5,7 @@
 // dt-bootstrap is the wrapper class added by default
 // we attach all of our styles to this class.
 .dt-bootstrap {
-    background-color: #ccc;
+    background-color: white;
     position: relative;
 }
 
@@ -54,11 +54,10 @@
 
 .dt-bootstrap caption {
     position: absolute;
-    top: -40px;
-    left: 25px;
+    top: -45px;
     font-size: 24px;
     font-weight: bold;
-    color: white;
+    color: $text-color;
 }
 
 .dt-bootstrap .dataTables_info {
@@ -66,7 +65,8 @@
 }
 
 .dt-bootstrap .dataTables_filter {
-    color: $gray-light-medium;
+    color: $gray-light;
+    font-weight: normal;
 }
 
 
