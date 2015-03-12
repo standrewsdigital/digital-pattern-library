@@ -519,15 +519,15 @@ $state-danger-border:           darken(adjust-hue($state-danger-bg, -10), 8%);
 //##
 
 //** Tooltip max width
-// $tooltip-max-width:           200px
+$tooltip-max-width:           200px;
 //** Tooltip text color
 $tooltip-color:               white;
 //** Tooltip background color
 $tooltip-bg:                  #333;
-// $tooltip-opacity:             .9
+$tooltip-opacity:             1;
 
 //** Tooltip arrow width
-$tooltip-arrow-width:         11px;
+$tooltip-arrow-width:         6px;
 //** Tooltip arrow color
 $tooltip-arrow-color:         $tooltip-bg;
 

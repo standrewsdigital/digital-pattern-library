@@ -1,0 +1,732 @@
+---
+script_footer: |
+    <script src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+    <script>
+    /* Set the defaults for DataTables initialisation */
+    $.extend(true, $.fn.dataTable.defaults, {
+        "sDom": "<'row'<'col-xs-6'fp><'col-xs-6'li>r>t<'row'<'col-xs-12'p>>",
+        "sPaginationType": "bootstrap",
+        "oLanguage": {
+            "sLengthMenu": "_MENU_ records per page"
+        }
+    });
+
+
+
+
+    /* Default class modification */
+    $.extend($.fn.dataTableExt.oStdClasses, {
+        "sWrapper": "dataTables_wrapper form-inline"
+    });
+
+
+    /* API method to get paging information */
+    $.fn.dataTableExt.oApi.fnPagingInfo = function(oSettings)
+    {
+        return {
+            "iStart": oSettings._iDisplayStart,
+            "iEnd": oSettings.fnDisplayEnd(),
+            "iLength": oSettings._iDisplayLength,
+            "iTotal": oSettings.fnRecordsTotal(),
+            "iFilteredTotal": oSettings.fnRecordsDisplay(),
+            "iPage": oSettings._iDisplayLength === -1 ?
+                    0 : Math.ceil(oSettings._iDisplayStart / oSettings._iDisplayLength),
+            "iTotalPages": oSettings._iDisplayLength === -1 ?
+                    0 : Math.ceil(oSettings.fnRecordsDisplay() / oSettings._iDisplayLength)
+        };
+    };
+
+
+    /* Bootstrap style pagination control */
+    $.extend($.fn.dataTableExt.oPagination, {
+        "bootstrap": {
+            "fnInit": function(oSettings, nPaging, fnDraw) {
+                var oLang = oSettings.oLanguage.oPaginate;
+                var fnClickHandler = function(e) {
+                    e.preventDefault();
+                    if (oSettings.oApi._fnPageChange(oSettings, e.data.action)) {
+                        fnDraw(oSettings);
+                    }
+                };
+
+                $(nPaging).append(
+                        '<ul class="pagination">' +
+                        '<li class="prev disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span> ' + oLang.sPrevious + '</a></li>' +
+                        '<li class="next disabled"><a href="#">' + oLang.sNext + ' <span class="glyphicon glyphicon-chevron-right"></span></a></li>' +
+                        '</ul>'
+                        );
+                var els = $('a', nPaging);
+                $(els[0]).bind('click.DT', {action: "previous"}, fnClickHandler);
+                $(els[1]).bind('click.DT', {action: "next"}, fnClickHandler);
+            },
+            "fnUpdate": function(oSettings, fnDraw) {
+                var iListLength = 5;
+                var oPaging = oSettings.oInstance.fnPagingInfo();
+                var an = oSettings.aanFeatures.p;
+                var i, ien, j, sClass, iStart, iEnd, iHalf = Math.floor(iListLength / 2);
+
+                if (oPaging.iTotalPages < iListLength) {
+                    iStart = 1;
+                    iEnd = oPaging.iTotalPages;
+                }
+                else if (oPaging.iPage <= iHalf) {
+                    iStart = 1;
+                    iEnd = iListLength;
+                } else if (oPaging.iPage >= (oPaging.iTotalPages - iHalf)) {
+                    iStart = oPaging.iTotalPages - iListLength + 1;
+                    iEnd = oPaging.iTotalPages;
+                } else {
+                    iStart = oPaging.iPage - iHalf + 1;
+                    iEnd = iStart + iListLength - 1;
+                }
+
+                for (i = 0, ien = an.length; i < ien; i++) {
+    // Remove the middle elements
+                    $('li:gt(0)', an[i]).filter(':not(:last)').remove();
+
+    // Add the new list items and their event handlers
+                    for (j = iStart; j <= iEnd; j++) {
+                        sClass = (j == oPaging.iPage + 1) ? 'class="active"' : '';
+                        $('<li ' + sClass + '><a href="#">' + j + '</a></li>')
+                                .insertBefore($('li:last', an[i])[0])
+                                .bind('click', function(e) {
+                            e.preventDefault();
+                            oSettings._iDisplayStart = (parseInt($('a', this).text(), 10) - 1) * oPaging.iLength;
+                            fnDraw(oSettings);
+                        });
+                    }
+
+    // Add / remove disabled classes from the static elements
+                    if (oPaging.iPage === 0) {
+                        $('li:first', an[i]).addClass('disabled');
+                    } else {
+                        $('li:first', an[i]).removeClass('disabled');
+                    }
+
+                    if (oPaging.iPage === oPaging.iTotalPages - 1 || oPaging.iTotalPages === 0) {
+                        $('li:last', an[i]).addClass('disabled');
+                    } else {
+                        $('li:last', an[i]).removeClass('disabled');
+                    }
+                }
+            }
+        }
+    });
+
+
+    /*
+     * TableTools Bootstrap compatibility
+     * Required TableTools 2.1+
+     */
+    if ($.fn.DataTable.TableTools) {
+    // Set the classes that TableTools uses to something suitable for Bootstrap
+        $.extend(true, $.fn.DataTable.TableTools.classes, {
+            "container": "DTTT btn-group",
+            "buttons": {
+                "normal": "btn btn-default",
+                "disabled": "disabled"
+            },
+            "collection": {
+                "container": "DTTT_dropdown dropdown-menu",
+                "buttons": {
+                    "normal": "",
+                    "disabled": "disabled"
+                }
+            },
+            "print": {
+                "info": "DTTT_print_info modal"
+            },
+            "select": {
+                "row": "active"
+            }
+        });
+
+    // Have the collection use a bootstrap compatible dropdown
+        $.extend(true, $.fn.DataTable.TableTools.DEFAULTS.oTags, {
+            "collection": {
+                "container": "ul",
+                "button": "li",
+                "liner": "a"
+            }
+        });
+    }
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('#unit-users').DataTable({
+                bAutoWidth: false,
+                'columnDefs': [
+                    {
+                        'targets': 3,
+                        'searchable': false,
+                        'orderable': false,
+                        'data': null,
+                        'render': function(data) {
+                            return "<a class='btn btn-primary' href='/expense-claim/user/admin/user-forms.htm?username=" + data.email + "'>View forms</a>";
+                        }
+                    }
+                ]
+            });
+        });
+
+    </script> 
+---
+<link href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.min.css">
+
+<div class="container">
+
+    <h1>Tables</h1>
+
+
+    <h2>Standard tables</h2>
+
+    <p><code>.table</code></p>
+
+    <table class="table">
+        <tr>
+            <th>Email Address</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        
+        <tr>
+            <td>abc@domain.com</td>
+            <td>Abacus</td>
+            <td>Brixton</td>
+        </tr>
+
+        <tr>
+            <td>def@domain.com</td>
+            <td>Dominicus</td>
+            <td>Edwards</td>
+        </tr>
+
+        <tr>
+            <td>ghi@domain.com</td>
+            <td>Gerald</td>
+            <td>Houghton</td>
+        </tr>
+
+    </table>
+
+
+    <p><code>.table .table-primary</code></p>
+
+    <table class="table table-primary">
+        <tr>
+            <th>Email Address</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        
+        <tr>
+            <td>abc@domain.com</td>
+            <td>Abacus</td>
+            <td>Brixton</td>
+        </tr>
+
+        <tr>
+            <td>def@domain.com</td>
+            <td>Dominicus</td>
+            <td>Edwards</td>
+        </tr>
+
+    </table>
+
+    <p><code>.table .table-success</code></p>
+
+    <table class="table table-success">
+        <tr>
+            <th>Email Address</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        
+        <tr>
+            <td>abc@domain.com</td>
+            <td>Abacus</td>
+            <td>Brixton</td>
+        </tr>
+
+        <tr>
+            <td>def@domain.com</td>
+            <td>Dominicus</td>
+            <td>Edwards</td>
+        </tr>
+
+    </table>
+
+    <p><code>.table .table-info</code></p>
+
+    <table class="table table-info">
+        <tr>
+            <th>Email Address</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        
+        <tr>
+            <td>abc@domain.com</td>
+            <td>Abacus</td>
+            <td>Brixton</td>
+        </tr>
+
+        <tr>
+            <td>def@domain.com</td>
+            <td>Dominicus</td>
+            <td>Edwards</td>
+        </tr>
+
+    </table>
+
+    <p><code>.table .table-warning</code></p>
+
+    <table class="table table-warning">
+        <tr>
+            <th>Email Address</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        
+        <tr>
+            <td>abc@domain.com</td>
+            <td>Abacus</td>
+            <td>Brixton</td>
+        </tr>
+
+        <tr>
+            <td>def@domain.com</td>
+            <td>Dominicus</td>
+            <td>Edwards</td>
+        </tr>
+
+    </table>
+
+    <p><code>.table .table-danger</code></p>
+
+    <table class="table table-danger">
+        <tr>
+            <th>Email Address</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        
+        <tr>
+            <td>abc@domain.com</td>
+            <td>Abacus</td>
+            <td>Brixton</td>
+        </tr>
+
+        <tr>
+            <td>def@domain.com</td>
+            <td>Dominicus</td>
+            <td>Edwards</td>
+        </tr>
+
+    </table>
+
+    <p><code>.table .table-secondary</code></p>
+
+    <table class="table table-secondary">
+        <tr>
+            <th>Email Address</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        
+        <tr>
+            <td>abc@domain.com</td>
+            <td>Abacus</td>
+            <td>Brixton</td>
+        </tr>
+
+        <tr>
+            <td>def@domain.com</td>
+            <td>Dominicus</td>
+            <td>Edwards</td>
+        </tr>
+
+    </table>
+
+    <p><code>.table .table-tertiary-1</code></p>
+
+    <table class="table table-tertiary-1">
+        <tr>
+            <th>Email Address</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        
+        <tr>
+            <td>abc@domain.com</td>
+            <td>Abacus</td>
+            <td>Brixton</td>
+        </tr>
+
+        <tr>
+            <td>def@domain.com</td>
+            <td>Dominicus</td>
+            <td>Edwards</td>
+        </tr>
+
+    </table>
+
+    <p><code>.table .table-tertiary-2</code></p>
+
+    <table class="table table-tertiary-2">
+        <tr>
+            <th>Email Address</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        
+        <tr>
+            <td>abc@domain.com</td>
+            <td>Abacus</td>
+            <td>Brixton</td>
+        </tr>
+
+        <tr>
+            <td>def@domain.com</td>
+            <td>Dominicus</td>
+            <td>Edwards</td>
+        </tr>
+
+    </table>
+
+    <p><code>.table .table-tertiary-3</code></p>
+
+    <table class="table table-tertiary-3">
+        <tr>
+            <th>Email Address</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        
+        <tr>
+            <td>abc@domain.com</td>
+            <td>Abacus</td>
+            <td>Brixton</td>
+        </tr>
+
+        <tr>
+            <td>def@domain.com</td>
+            <td>Dominicus</td>
+            <td>Edwards</td>
+        </tr>
+
+    </table>
+
+
+    <h2>Data table</h2>
+
+    <p>Using jQuery and jQuery datatables.</p>
+
+            <table id="unit-users" class="table dataTable no-footer" aria-describedby="unit-users_info" role="grid">
+                    <thead>
+                        <tr role="row"><th class="sorting" tabindex="0" aria-controls="unit-users" rowspan="1" colspan="1" aria-label="Email Address: activate to sort column ascending">Email Address</th><th class="sorting" tabindex="0" aria-controls="unit-users" rowspan="1" colspan="1" aria-label="First Name: activate to sort column ascending">First Name</th><th class="sorting_asc" tabindex="0" aria-controls="unit-users" rowspan="1" colspan="1" aria-label="Last Name: activate to sort column ascending" aria-sort="ascending">Last Name</th><th rowspan="1" colspan="1"></th></tr>
+                    </thead>
+                    <tbody><tr role="row" class="odd"><td class="">greg@st.com</td><td class="">Greg</td><td class="sorting_1">C</td><td><a class="btn btn-primary" href="/expense-claim/user/admin/user-forms.htm?username=greg@st.com">View forms</a></td></tr><tr role="row" class="even"><td class="">dairygoodness@hotmail.com</td><td class="">Andrew</td><td class="sorting_1">Coomber</td><td><a class="btn btn-primary" href="/expense-claim/user/admin/user-forms.htm?username=dairygoodness@hotmail.com">View forms</a></td></tr><tr role="row" class="odd"><td class="">leecoomber@hotmail.com</td><td class="">Lee</td><td class="sorting_1">Coomber</td><td><a class="btn btn-primary" href="/expense-claim/user/admin/user-forms.htm?username=leecoomber@hotmail.com">View forms</a></td></tr><tr role="row" class="even"><td class="">ankit@test.com</td><td class="">Ankit</td><td class="sorting_1">Sawa</td><td><a class="btn btn-primary" href="/expense-claim/user/admin/user-forms.htm?username=ankit@test.com">View forms</a></td></tr><tr role="row" class="odd"><td class="">test@test.com</td><td class="">Test</td><td class="sorting_1">Testing</td><td><a class="btn btn-primary" href="/expense-claim/user/admin/user-forms.htm?username=test@test.com">View forms</a></td></tr><tr role="row" class="even"><td class="">hannah@hannah.com</td><td class="">Hannah</td><td class="sorting_1">Thomson</td><td><a class="btn btn-primary" href="/expense-claim/user/admin/user-forms.htm?username=hannah@hannah.com">View forms</a></td></tr></tbody>
+                </table>
+
+
+
+</div>
+
+
+<style>
+div.dataTables_length {
+    text-align: right;
+}
+
+div.dataTables_length label {
+    font-weight: normal;
+}
+
+div.dataTables_length select {
+    width: 75px;
+}
+
+div.dataTables_filter label {
+    font-weight: normal;
+}
+
+div.dataTables_filter input {
+    width: 16em;
+}
+
+div.dataTables_info {
+    text-align: right;
+    padding-top: 8px;
+}
+
+div.dataTables_paginate {
+    margin: 0;
+}
+
+div.dataTables_paginate ul.pagination {
+    margin: 2px 0;
+    white-space: nowrap;
+}
+
+table.dataTable td,
+table.dataTable th {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+table.dataTable {
+    clear: both;
+    margin-top: 6px !important;
+    margin-bottom: 6px !important;
+    max-width: none !important;
+}
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+    cursor: pointer;
+}
+
+table.dataTable thead .sorting { 
+    background-image: url('../assets/images/datatables/sort.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_asc_disabled { 
+    background-image: url('../assets/images/datatables/sort_asc.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_desc_disabled { 
+    background-image: url('../assets/images/datatables/sort_desc.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+
+table.dataTable thead > tr > th {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+table.dataTable th:active {
+    outline: none;
+}
+
+/* Scrolling */
+div.dataTables_scrollHead table {
+    margin-bottom: 0 !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+div.dataTables_scrollHead table thead tr:last-child th:first-child,
+div.dataTables_scrollHead table thead tr:last-child td:first-child {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+div.dataTables_scrollBody table {
+    border-top: none;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+div.dataTables_scrollBody tbody tr:first-child th,
+div.dataTables_scrollBody tbody tr:first-child td {
+    border-top: none;
+}
+
+div.dataTables_scrollFoot table {
+    margin-top: 0 !important;
+    border-top: none;
+}
+
+/* Frustratingly the border-collapse:collapse used by Bootstrap makes the column
+   width calculations when using scrolling impossible to align columns. We have
+   to use separate
+ */
+table.table-bordered.dataTable {
+    border-collapse: separate !important;
+}
+table.table-bordered thead th,
+table.table-bordered thead td {
+    border-left-width: 0;
+    border-top-width: 0;
+}
+table.table-bordered tbody th,
+table.table-bordered tbody td {
+    border-left-width: 0;
+    border-bottom-width: 0;
+}
+table.table-bordered th:last-child,
+table.table-bordered td:last-child {
+    border-right-width: 0;
+}
+div.dataTables_scrollHead table.table-bordered {
+    border-bottom-width: 0;
+}
+
+/*
+ * TableTools styles
+ */
+.table tbody tr.active td,
+.table tbody tr.active th {
+    background-color: #08C;
+    color: white;
+}
+
+.table tbody tr.active:hover td,
+.table tbody tr.active:hover th {
+    background-color: #0075b0 !important;
+}
+
+.table tbody tr.active a {
+    color: white;
+}
+
+.table-striped tbody tr.active:nth-child(odd) td,
+.table-striped tbody tr.active:nth-child(odd) th {
+    background-color: #017ebc;
+}
+
+table.DTTT_selectable tbody tr {
+    cursor: pointer;
+}
+
+div.DTTT .btn {
+    color: #333 !important;
+    font-size: 12px;
+}
+
+div.DTTT .btn:hover {
+    text-decoration: none !important;
+}
+
+ul.DTTT_dropdown.dropdown-menu {
+  z-index: 2003;
+}
+
+ul.DTTT_dropdown.dropdown-menu a {
+    color: #333 !important; /* needed only when demo_page.css is included */
+}
+
+ul.DTTT_dropdown.dropdown-menu li {
+    position: relative;
+}
+
+ul.DTTT_dropdown.dropdown-menu li:hover a {
+    background-color: #0088cc;
+    color: white !important;
+}
+
+div.DTTT_collection_background {
+    z-index: 2002;  
+}
+
+/* TableTools information display */
+div.DTTT_print_info.modal {
+    height: 150px;
+    margin-top: -75px;
+    text-align: center;
+}
+
+div.DTTT_print_info h6 {
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 28px;
+    margin: 1em;
+}
+
+div.DTTT_print_info p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+div.dataTables_processing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 40px;
+    margin-left: -50%;
+    margin-top: -25px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: white;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(25%, rgba(255,255,255,0.9)), color-stop(75%, rgba(255,255,255,0.9)), color-stop(100%, rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+}
+
+
+
+/*
+ * FixedColumns styles
+ */
+div.DTFC_LeftHeadWrapper table,
+div.DTFC_LeftFootWrapper table,
+div.DTFC_RightHeadWrapper table,
+div.DTFC_RightFootWrapper table,
+table.DTFC_Cloned tr.even {
+    background-color: white;
+    margin-bottom: 0;
+}
+ 
+div.DTFC_RightHeadWrapper table ,
+div.DTFC_LeftHeadWrapper table {
+    margin-bottom: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+ 
+div.DTFC_RightHeadWrapper table thead tr:last-child th:first-child,
+div.DTFC_RightHeadWrapper table thead tr:last-child td:first-child,
+div.DTFC_LeftHeadWrapper table thead tr:last-child th:first-child,
+div.DTFC_LeftHeadWrapper table thead tr:last-child td:first-child {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+ 
+div.DTFC_RightBodyWrapper table,
+div.DTFC_LeftBodyWrapper table {
+    border-top: none;
+    margin: 0 !important;
+}
+ 
+div.DTFC_RightBodyWrapper tbody tr:first-child th,
+div.DTFC_RightBodyWrapper tbody tr:first-child td,
+div.DTFC_LeftBodyWrapper tbody tr:first-child th,
+div.DTFC_LeftBodyWrapper tbody tr:first-child td {
+    border-top: none;
+}
+ 
+div.DTFC_RightFootWrapper table,
+div.DTFC_LeftFootWrapper table {
+    border-top: none;
+}
+
+
+/*
+ * FixedHeader styles
+ */
+div.FixedHeader_Cloned table {
+    margin: 0 !important
+}
+
+</style>
+
+
+

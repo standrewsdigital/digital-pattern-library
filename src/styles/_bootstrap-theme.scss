@@ -57,14 +57,49 @@ table {
 }
 
 th {
-  background-color: $brand-primary;
+  background-color: $gray-light;
   color: #fff;
 }
 
 tr:nth-child(odd) {
-  background-color: lighten($brand-primary, 80%);
+  background-color: lighten($gray, 80%);
 }
 
+table.table-primary th {
+  background-color: $brand-primary;
+}
+
+table.table-success th {
+  background-color: $brand-success;
+}
+
+table.table-info th {
+  background-color: $brand-info;
+}
+
+table.table-warning th {
+  background-color: $brand-warning;
+}
+
+table.table-danger th {
+  background-color: $brand-danger;
+}
+
+table.table-secondary th {
+  background-color: -dpl-color($palette-default,'secondary','base');
+}
+
+table.table-tertiary-1 th {
+  background-color: -dpl-color($palette-default,'tertiary-1','base');
+}
+
+table.table-tertiary-2 th {
+  background-color: -dpl-color($palette-default,'tertiary-2','base');
+}
+
+table.table-tertiary-3 th {
+  background-color: -dpl-color($palette-default,'tertiary-3','base');
+}
 
 
 // PAGER MODIFICATIONS
@@ -152,6 +187,24 @@ tr:nth-child(odd) {
 // ====================================================
 
 
+.panel {
+  border: 0;
+  -webkit-box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow:    4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  box-shadow:         4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.panel-heading {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.panel-title {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: inherit;
+}
+
 // Add variants for secondary, tertiary-1, tertiary-2 and tertiary-3.
 
 .panel-secondary {
@@ -170,7 +223,6 @@ tr:nth-child(odd) {
   $bg-color: -dpl-color($palette-default,'tertiary-3','base');
   @include panel-variant($bg-color, white, $bg-color, $bg-color);
 }
-
 
 
 
