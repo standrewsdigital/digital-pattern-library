@@ -9,18 +9,15 @@
     // });
 
 
-/*! DataTables Bootstrap 3 integration
- * Â©2011-2014 SpryMedia Ltd - datatables.net/license
- */
-
-/**
- * DataTables integration for Bootstrap 3. This requires Bootstrap 3 and
- * DataTables 1.10 or newer.
+/* DataTables integration
+ * 
+ * Based on the vanilla integration for Bootstrap 3.
+ * http://datatables.net/manual/styling/bootstrap
  *
  * This file sets the defaults and adds options to DataTables to style its
- * controls using Bootstrap. See http://datatables.net/manual/styling/bootstrap
- * for further information.
+ * controls.
  */
+
 (function(window, document, undefined){
 
 var factory = function( $, DataTable ) {
@@ -72,7 +69,19 @@ $.extend( true, DataTable.defaults, {
 
     lengthChange: false, // disable the num of rows selector
     pageLength: 15,
-    processing: true
+    processing: true,
+    responsive: {
+        details : {
+            type: "column",
+            target: -1,
+            /* ,
+            a custom renderer of extra data.
+            renderer: function(api, rowIdx) {
+                
+            }
+            */
+        }
+    }
 
 } );
 
