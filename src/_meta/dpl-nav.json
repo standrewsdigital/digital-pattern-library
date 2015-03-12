@@ -102,10 +102,6 @@
                     "name" : "Colors",
                     "url" : "colors.html"
                 },
-                 {
-                    "name" : "Datatables",
-                    "url" : "datatables.html"
-                },
                 {
                     "name" : "JavaScript dependencies",
                     "url" : "dependencies.html"
@@ -152,10 +148,6 @@
                 {
                     "name" : "Ex: Tables",
                     "url" : "examples/tables.html"
-                },
-                {
-                    "name" : "Ex: Tables - Datatables",
-                    "url" : "examples/datatables.html"
                 },
                 {
                     "name" : "Ex: Web application",
