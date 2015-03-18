@@ -4,7 +4,7 @@ title: Colours
 
 ## St Andrews Colours
 
-These are the University of St Andrews colours for the web. To help compare the selected vesion of a color with it's original, hover over it. It will switch to the original when hovered over.
+These are the University of St Andrews colours for the web. To help compare the selected vesion of a colour with its original, hover over it. It will switch to the original when hovered over.
 
 <div class="swatch sta-blue">blue</div>
 <div class="swatch sta-blue-S">blue selected</div>
