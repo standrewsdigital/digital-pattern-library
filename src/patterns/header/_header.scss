@@ -5,18 +5,37 @@
 
     #print-header {
         display: none;
+    }    
+
+    #header-top {
+        // FIX: perhaps use dpl colors for gray here.
+        border-bottom: 1px solid $gray-lighter; 
+
+        .btn {
+            text-decoration: none;
+        }
+
+        // Override some styles of the typical 
+        // dropdown menus to fit better with the header
+        .dropdown-menu {
+            border-top: none;
+            margin-top: 0;
+            -webkit-box-shadow: 0 6px 6px rgba(0,0,0,0.175);
+            box-shadow: 0 6px 6px rgba(0,0,0,0.175);
+        }
     }
 
-    /* Header styles */
 
-    #header {
+
+
+    #header-main {
         position: relative;
         min-height: 72px;
-        margin: 15px 0 10px;
     }
 
+
     #header-logo {
-        margin: 0;
+        margin: 30px 0px;
         padding:0;
     }
 
@@ -32,107 +51,25 @@
         transition: all 200ms ease-out;
     }
 
-
-     /* Header Panels */
-
-	.header-panel {
-		display: none;
-		border-bottom: $sta-blue 3px solid;
-		background-color: #ffffff;
-		background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(242,246,247,1) 100%);
-		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(242,246,247,1)));
-		background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(242,246,247,1) 100%);
-		background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(242,246,247,1) 100%);
-		background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(242,246,247,1) 100%);
-		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(242,246,247,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f6f7', GradientType=0 );
-	}
-
-
-	#panel-people ul {
-		list-style-type: none;
-		margin: 2.6em 0;
-		padding: 0;
-	}
-
-	#panel-people li {
-		display: inline;
-		margin: 0;
-		padding-right: 2em;
-		white-space: nowrap;
-	}
-
-	#panel-people a {
-		font-weight: bold;
-		font-size: 1.4em;
-		color: $sta-blue;
-	}
-
-	#panel-search form {
-		margin: 2em 0;
-	}
-
-	#panel-search input[type~=text] {
-		width: 100%;
-		border: 1px solid $sta-grey-light-T;
-		font-size: 1.5em;
-		line-height:2em;
-		padding: 0 .75em;
-		height: 55px;
-        @include form-control-focus;
-	}
-
-	#panel-search input[type~=submit]  {
-		background-color: $sta-blue;
-		color: white;
-		padding: 0.1em 0;
-		border: none;
-		font-size: 1.5em;
-		line-height:1.9em;
-		font-weight: normal;
-		height: 55px;
-		width: 100%;
-
-        @include -dpl-transition();
-	}
-
-	#panel-search input[type~=submit]:hover {
-		background-color: $sta-blue-hover;
-	}
-
-    #header .logo-container {
-        @include -dpl-transition();
+    #header-search {
+        margin: 40px 0 0;
     }
 
-    .panel-toggle {
-        @extend .btn;
-        @extend .btn-primary;
-        padding: 1em .5em;
-        margin-left: 13px;
+
+    // BEGIN alignment hack
+    // Pull the first and last buttons out by 12px horizontally 
+    // to line them up with container edges.
+
+    #header-top-left .btn:nth-child(1) {
+        margin-left: -12px;
     }
 
-    .panel-toggle img.icon {
-        height: 30px;
-        width: 30px;
-        margin-right: 5px;
+    #header-top-right .btn:nth-last-child(1) {
+       margin-right: -12px;
     }
 
-    // The :before pseud element is used to place the 
-    // chevron, without increasing markup.
-    .panel-toggle:before {
-        @extend i.chevron;
-        @include rotate(270deg);
-        content: "";
-        float: right;
-        height: 17px !important;
-        width: 17px !important;
-        top: 4px !important;
-    }
-
-    .panel-toggle.panel-toggle-up:before {
-        @include rotate(90deg);
-    }
-
+    // END alignment hack
+    
 
     @media (max-width: 767px) {
     	#header {

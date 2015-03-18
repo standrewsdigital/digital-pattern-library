@@ -1,67 +1,100 @@
 <!-- Begin pattern: header //-->
 
-	<div class="sr-only " id="accessibility"><a class="skip" href="#content-begin">Skip to content</a></div>
+<!-- For accessibility on screen readers (sr-only) //-->
+<div class="sr-only"><a href="#content-begin">Skip to content</a></div>
 
-	<div id="print-header">
+<header>
+
+<!-- Print view header //-->
+<div id="print-header">
     <img src="{{asset "images/furniture/print-crest.png"}}" alt="University of St Andrews" />
-  </div>
+</div>
 
-	<div id="panel-people" class="header-panel">
-		<div class="container">
-				<ul>
-					<li><a href="/students/">Current students</a></li>
-					<li><a href="/pgstudents/">Current postgraduates</a></li>
-					<li><a href="/staff/">Staff</a></li>
-				</ul>
-		</div>
-	</div>
-	<div id="panel-search" class="header-panel" role="search">
-		<div class="container">
+<!-- BEGIN: #header-top //-->
+<div id="header-top">
+    <div class="container">
+        <!-- BEGIN: Audience navigation //-->
+        <div id="header-top-left" class="pull-left">
+
+            {{#authenticated}}
+            <div class="btn-group">
+              <a href="#" class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> &nbsp; {{first-name}}&nbsp;{{last-name}} <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/email/">Email</a></li>
+                <li><a href="/mms/">MMS</a></li>
+                <li><a href="/moodle/">Moodle</a></li>
+                <li><a href="/iSaint/">iSaint</a></li>
+              </ul>
+            </div>
+            {{else }}
+            <div class="btn-group">
+              <a href="#" class="btn btn-link dropdown-toggle" data-toggle="dropdown">Students <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/students/">Current students</a></li>
+                <li><a href="/pgstudents/">Current postgraduates</a></li>
+              </ul>
+            </div>
+            <a href="/staff/" class="btn btn-link">Staff</a>
+            {{/authenticated}}
+        </div>
+        <!-- END: Audience navigation //-->
+
+        <div id="header-top-right" class="pull-right">
+            {{#if authenticated}}
+            <a href="/logout/" class="btn btn-link"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Log out</a> 
+            {{else}}
+            <a href="/login/" class="btn btn-link">Log in <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a>             {{/if}}
+
+        </div>
+
+    </div>
+</div>
+<!-- END: #header-top //-->
+
+<!-- BEGIN: #header-main //-->
+<div id="header-main" role="banner">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-4 col-md-5 col-xs-7 logo-container">
+                <div id="header-logo"><h1><a href="http://www.st-andrews.ac.uk/"><img src="{{asset "images/furniture/logo-standard.svg"}}" alt="University of St Andrews" /></a></h1></div>
+            </div>
+
+            <div class="col-lg-4  col-lg-offset-4  col-md-5  col-xs-5  col-md-offset-2  text-right ">
+
+                <!-- BEGIN: Search //-->
+                <div id="header-search" role="search">     
+                    <form action="http://www.st-andrews.ac.uk/gsasearch" method="get">
+                        
+                    <div class="input-group">
+                        <input class="form-control" type="text" title="Enter search keywords" maxlength="256" name="q" placeholder="Search..."/>
+                        <span class="input-group-btn">
+                            <input class="btn btn-primary" type="submit" value="Search" name="btnG"/>
+                        </span>
+                    </div>
+                    
+                    <input type="hidden" value="StAndrews_ITS" name="site"/>
+                    <input type="hidden" value="xml_no_dtd" name="output"/>
+                    <input type="hidden" value="StAndrews_ITS" name="client"/>
+                    <input type="hidden" value="StAndrews_ITS" name="proxystylesheet"/>
+                    </form>
+                </div>
+                <!-- EDN: Search //-->
 
 
-				<form action="http://www.st-andrews.ac.uk/gsasearch" method="get">
-					<div class="row">
-						<div class="col-sm-10 col-xs-8">
-		        		<input type="text" title="Enter search keywords" maxlength="256" name="q" placeholder="Search..."/>
-		        	</div>
-		        	<div class="col-sm-2 col-xs-4 text-right">
-		        		<input class="" type="submit" value="Search" name="btnG"/>
-		        	</div>
-		        </div>
-		        <input type="hidden" value="StAndrews_ITS" name="site"/>
-		        <input type="hidden" value="xml_no_dtd" name="output"/>
-		        <input type="hidden" value="StAndrews_ITS" name="client"/>
-		        <input type="hidden" value="StAndrews_ITS" name="proxystylesheet"/>
-				</form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- END: #header-main //-->
+
+</header>
 
 
-		</div>
-	</div>
 
-	<header id="header" role="banner">
-
-		<div class="container">
-			<div class="row">
-
-				<div class="col-lg-4 col-md-5 col-xs-7 logo-container">
-					<div id="header-logo"><h1><a href="http://www.st-andrews.ac.uk/"><img src="{{asset "images/furniture/logo-standard.svg"}}" alt="University of St Andrews" /></a></h1></div>
-				</div>
-
-				<div class="col-lg-3  col-lg-offset-5  col-md-5  col-xs-5  col-md-offset-2  text-right  button-container">
-
-					<a class="panel-toggle"
-            		   data-target="#panel-people"
-            		   data-siblings=".header-panel"><img src="{{asset "images/furniture/user-512.png"}}" alt="Resources for current students and staff" class="icon"></a>
-
-					<a class="panel-toggle"
-						data-target="#panel-search"
-						data-siblings=".header-panel"><img src="{{asset "images/furniture/search-512.png"}}" alt="Search" class="icon"></a>
-
-				</div>
-
-			</div>
-
-		</div>
-	</header>
 
 <!-- End pattern: header //-->
