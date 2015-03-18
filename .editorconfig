@@ -9,6 +9,6 @@ root = true
 end_of_line = lf
 insert_final_newline = true
 
-# Space indentation, 2 spaces
+# Space indentation, 4 spaces
 indent_style = space
-indent_size = 2
+indent_size = 4
