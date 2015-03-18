@@ -1,8 +1,8 @@
 ---
-title: Colors
+title: Colours
 ---
 
-## St Andrews Colors
+## St Andrews Colours
 
 These are the University of St Andrews colours for the web. To help compare the selected vesion of a color with it's original, hover over it. It will switch to the original when hovered over.
 
@@ -62,4 +62,4 @@ These are the University of St Andrews colours for the web. To help compare the 
 <div class="swatch sta-burgundy-S">burgundy selected</div>
 <div class="bgimage"><div class="swatch sta-burgundy-T">burgundy transparent</div></div>
 
-Please see [palettes](palettes.html) to see how these colors are used together.
+Please see [palettes](palettes.html) to see how these colours are used together.
