@@ -49,15 +49,19 @@ Now you need to open "Node.js command prompt" (Windows), Terminal (OS X), or she
         npm install
 
 
+4. Install the Ruby compass gem. Currently we are using compass to process the Sass files. In the future, we may choose to update 
+
+    gem install compass
+
 ### Step 4. Run Grunt to generate `core` and `docs` folders
 
 To get the pattern library kicked off run:
 
     grunt
 
-After you've run this you should have a freshly made `build` folder and `patterns` folder constructed from the code in src.
+After you've run this you should have a freshly made `core` folder and `docs` folder built using code in `src`.
 
-The tasks are defined in the Gruntfile (`Gruntfile.js`).
+The tasks that are defined in `Gruntfile.js`.
 
 
 ### Step 5. Start Grunt to monitor changes
