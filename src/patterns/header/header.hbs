@@ -3,96 +3,74 @@
 <!-- For accessibility on screen readers (sr-only) //-->
 <div class="sr-only"><a href="#content-begin">Skip to content</a></div>
 
-<header>
 
-<!-- Print view header //-->
-<div id="print-header">
-    <img src="{{asset "images/furniture/print-crest.png"}}" alt="University of St Andrews" />
-</div>
 
-<!-- BEGIN: #header-top //-->
-<div id="header-top">
-    <div class="container">
-        <!-- BEGIN: Audience navigation //-->
-        <div id="header-top-left" class="pull-left">
+<!-- BEGIN: #header //-->
+<header id="header">
 
-            {{#authenticated}}
-            <div class="btn-group">
-              <a href="#" class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> &nbsp; {{first-name}}&nbsp;{{last-name}} <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/email/">Email</a></li>
-                <li><a href="/mms/">MMS</a></li>
-                <li><a href="/moodle/">Moodle</a></li>
-                <li><a href="/iSaint/">iSaint</a></li>
-              </ul>
-            </div>
-            {{else }}
-            <div class="btn-group">
-              <a href="#" class="btn btn-link dropdown-toggle" data-toggle="dropdown">Students <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/students/">Current students</a></li>
-                <li><a href="/pgstudents/">Current postgraduates</a></li>
-              </ul>
-            </div>
-            <a href="/staff/" class="btn btn-link">Staff</a>
-            {{/authenticated}}
-        </div>
-        <!-- END: Audience navigation //-->
-
-        <div id="header-top-right" class="pull-right">
-            {{#if authenticated}}
-            <a href="/logout/" class="btn btn-link"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Log out</a> 
-            {{else}}
-            <a href="/login/" class="btn btn-link">Log in <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a>             {{/if}}
-
-        </div>
-
+    <!-- Print header //-->
+    <div id="header-print">
+        <img src="{{asset "images/furniture/print-crest.png"}}" alt="University of St Andrews" />
     </div>
-</div>
-<!-- END: #header-top //-->
-
-<!-- BEGIN: #header-main //-->
-<div id="header-main" role="banner">
 
     <div class="container">
 
-        <div class="row">
+        <div id="header-row" class="row" >
 
-            <div class="col-lg-4 col-md-5 col-xs-7 logo-container">
+            <div id="header-audience" class="col-sm-5  col-sm-push-7">
+                {{#authenticated}}
+                <div class="btn-group">
+                  <a href="#" class="btn btn-link dropdown-toggle" data-toggle="dropdown">{{first-name}}&nbsp;{{last-name}} <span class="caret"></span></a>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="/email/">Email</a></li>
+                    <li><a href="/mms/">MMS</a></li>
+                    <li><a href="/moodle/">Moodle</a></li>
+                    <li><a href="/iSaint/">iSaint</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li><a href="/logout/"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Log out</a></li>
+                  </ul>
+                </div>
+                {{else}}
+                <div class="btn-group">
+                    <a href="/students/" class="btn btn-link">Students</a>
+                    <a href="/pgstudents/" class="btn btn-link">Postgraduates</a>
+                    <a href="/staff/" class="btn btn-link">Staff</a>
+                </div>
+                {{/authenticated}}
+            </div>
+
+            <div id="logo-container" class="col-sm-7 col-sm-pull-5 col-xs-7">
                 <div id="header-logo"><h1><a href="http://www.st-andrews.ac.uk/"><img src="{{asset "images/furniture/logo-standard.svg"}}" alt="University of St Andrews" /></a></h1></div>
             </div>
 
-            <div class="col-lg-4  col-lg-offset-4  col-md-5  col-xs-5  col-md-offset-2  text-right ">
+            <div id="header-search" class="col-sm-5 col-xs-5" role="search">
 
-                <!-- BEGIN: Search //-->
-                <div id="header-search" role="search">     
-                    <form action="http://www.st-andrews.ac.uk/gsasearch" method="get">
-                        
-                    <div class="input-group">
-                        <input class="form-control" type="text" title="Enter search keywords" maxlength="256" name="q" placeholder="Search..."/>
-                        <span class="input-group-btn">
-                            <input class="btn btn-primary" type="submit" value="Search" name="btnG"/>
-                        </span>
-                    </div>
+                <!-- BEGIN: Search //-->   
+                <form action="http://www.st-andrews.ac.uk/gsasearch" method="get">
                     
-                    <input type="hidden" value="StAndrews_ITS" name="site"/>
-                    <input type="hidden" value="xml_no_dtd" name="output"/>
-                    <input type="hidden" value="StAndrews_ITS" name="client"/>
-                    <input type="hidden" value="StAndrews_ITS" name="proxystylesheet"/>
-                    </form>
+                <div class="input-group">
+                    <input class="form-control" type="text" title="Enter search keywords" maxlength="256" name="q" placeholder="Search..."/>
+                    <span class="input-group-btn">
+                        <button class="btn btn-link" type="submit" value="Search" name="btnG"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </span>
                 </div>
+                
+                <input type="hidden" value="StAndrews_ITS" name="site"/>
+                <input type="hidden" value="xml_no_dtd" name="output"/>
+                <input type="hidden" value="StAndrews_ITS" name="client"/>
+                <input type="hidden" value="StAndrews_ITS" name="proxystylesheet"/>
+                </form>
+            
                 <!-- EDN: Search //-->
-
 
             </div>
 
         </div>
 
     </div>
-</div>
-<!-- END: #header-main //-->
-
 </header>
+<!-- END: #header //-->
+
 
 
 

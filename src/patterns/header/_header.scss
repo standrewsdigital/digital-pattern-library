@@ -3,131 +3,153 @@
 /* BEGIN Pattern: header         */
 /*********************************/
 
-    #print-header {
+
+    #header-print {
         display: none;
     }    
 
-    #header-top {
-        // FIX: perhaps use dpl colors for gray here.
-        border-bottom: 1px solid $gray-lighter; 
 
-        .btn {
-            text-decoration: none;
-        }
+    #header-audience {
+      
+      border-bottom: 1px solid $gray-lighter;
 
-        // Override some styles of the typical 
-        // dropdown menus to fit better with the header
-        .dropdown-menu {
-            border-top: none;
-            margin-top: 0;
-            -webkit-box-shadow: 0 6px 6px rgba(0,0,0,0.175);
-            box-shadow: 0 6px 6px rgba(0,0,0,0.175);
-        }
+      .btn {
+          text-decoration: none;
+          border-bottom: none;
+          z-index: 1001;
+          -webkit-transition: none;
+          -moz-transition: none;
+          transition: none;
+      }
+
+      &.open .btn {
+          background-color: white;
+          border: 1px solid rgba(0,0,0,0.15);
+          border-bottom: none;
+      }
+
+      .dropdown-menu {
+          margin-top: -1px;
+      }
+
     }
-
-
-
-
-    #header-main {
-        position: relative;
-        min-height: 72px;
-    }
-
 
     #header-logo {
-        margin: 30px 0px;
-        padding:0;
+        margin: 10px 0px;
+
+        h1 {
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+            max-width: 245px;
+            -webkit-transition: all 200ms ease-out;
+            -moz-transition: all 200ms ease-out;
+            transition: all 200ms ease-out;
+        }
     }
 
-    #header-logo h1 {
-        margin: 0;
-    }
+    // BEGIN TEMP CODE FOR SEARCH
 
-    #header-logo img {
-        width: 100%;
-        max-width: 345px;
-        -webkit-transition: all 200ms ease-out;
-        -moz-transition: all 200ms ease-out;
-        transition: all 200ms ease-out;
-    }
 
     #header-search {
-        margin: 40px 0 0;
+      text-align: right;
+      margin-top: 13px;
+
+      .input-group .form-control {
+        display: none;
+      }
+
     }
+    @media (min-width: 468px) {
+      #header-search .input-group .form-control {
+        display: block;
+      }
+      #header-search .input-group .btn {
+        background-color: -dpl-color($palette-default,'primary','base');
+        color: white;
+      }
+    }
+
+    // END TEMP CODE FOR SEARCH
+
 
 
     // BEGIN alignment hack
     // Pull the first and last buttons out by 12px horizontally 
     // to line them up with container edges.
 
-    #header-top-left .btn:nth-child(1) {
-        margin-left: -12px;
-    }
-
-    #header-top-right .btn:nth-last-child(1) {
-       margin-right: -12px;
+    #header-audience .btn:nth-child(1) {
+       margin-left: -12px;
     }
 
     // END alignment hack
+
+
+    /* BEGIN: LAYOUT HACK
+     * In order to get the elements in the correct order on mobile, 
+     * we have to engage in some shenaningans. The mobile layout should
+     * be: 
+     *     AUDIENCE 
+     *     LOGO   |  SEARCH
+     *
+     * but on desktop it should be
+     *     LOGO   |  AUDIENCE 
+     *     LOGO   |  SEARCH
+     *
+     * So we put the elements in the following order which makes it easy
+     * to achieve the mobile layout
+     *  - AUDIENCE
+     *  - LOGO
+     *  - SEARCH
+     *
+     * And then position SEARCH absolutely on larger screens.
+     */
+
+    @media (min-width: 768px) {
+
+      #header-row {
+        /* By adding a position property to this selector, 
+         * this element will act as an anchor for absolutely
+         * positioned child elements */
+        position: relative;
+      }
+
+      #header-audience {
+        margin-top: 15px;
+        text-align: right;
+        border-bottom: none;
+      }
+      #header-audience .btn:nth-last-child(1) {
+        margin-right: -12px;
+      }
+
+      #header-logo {
+        margin: 30px 0px;
+        img {
+          max-width: 345px;
+        }
+      }
+
+      #header-search {
+          /* Positioning absolutely, here, refers the first parent
+           * with a 'position' attribute which should be the containing
+           * row. This means we can align it to the right. */
+          position: absolute;
+          right: 0;
+          top: 43px;
+      }
+
+
+
+    }
+
+    /* END: LAYOUT HACK */
+
+
     
 
-    @media (max-width: 767px) {
-    	#header {
-    		margin: 20px 0;
-    	}
-
-        #header-logo img {
-          max-width: 250px;
-        }
-
-      	#panel-search input[type~=text] {
-          font-size: 1.2em;
-      	}
-
-      	#panel-search input[type~=submit]  {
-          font-size: 1.2em;
-      	}
-
-        #panel-people li {
-          display: block;
-        }
-
-    }
-
-    @media (max-width: 480px) {
-
-        #header {
-          min-height: auto;
-          margin: 20px 0 0px;
-        }
-
-        #header .logo-container {
-          float: left;
-          width: 180px;
-
-        }
-        #header .button-container {
-          float: right;
-
-        }
-
-        .panel-toggle {
-          padding: .7em .25em;
-          margin-left: 0px;
-        }
-
-        .panel-toggle img.icon {
-          height: 20px;
-          width: 20px;
-          margin-right: 5px;
-        }
-
-        .panel-toggle:before {
-          height: 10px !important;
-          width: 10px !important;
-        }
-
-    }
 
 /*********************************/
 /* END Pattern: header           */
