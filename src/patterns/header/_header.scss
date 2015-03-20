@@ -87,6 +87,33 @@
     // END alignment hack
 
 
+    // BEGIN desktop styles
+
+    @media (min-width: 768px) {
+
+      #header-audience {
+        margin-top: 15px;
+        text-align: right;
+        border-bottom: none;
+      }
+
+      #header-audience .btn:nth-last-child(1) {
+        margin-right: -12px;
+      }
+
+      #header-logo {
+        margin: 30px 0px;
+
+        img {
+          max-width: 345px;
+        }
+      }
+
+    }
+    // END desktop styles
+
+
+
     /* BEGIN: LAYOUT HACK
      * In order to get the elements in the correct order on mobile, 
      * we have to engage in some shenaningans. The mobile layout should
@@ -116,22 +143,6 @@
         position: relative;
       }
 
-      #header-audience {
-        margin-top: 15px;
-        text-align: right;
-        border-bottom: none;
-      }
-      #header-audience .btn:nth-last-child(1) {
-        margin-right: -12px;
-      }
-
-      #header-logo {
-        margin: 30px 0px;
-        img {
-          max-width: 345px;
-        }
-      }
-
       #header-search {
           /* Positioning absolutely, here, refers the first parent
            * with a 'position' attribute which should be the containing
@@ -140,8 +151,6 @@
           right: 0;
           top: 43px;
       }
-
-
 
     }
 
