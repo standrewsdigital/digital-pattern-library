@@ -268,6 +268,12 @@ a.list-group-item {
     }
 }
 
+// Remove inner box shadows on input elements.
+.form-control {
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
+
 // BADGE MODIFICATIONS
 // ====================================================
 
