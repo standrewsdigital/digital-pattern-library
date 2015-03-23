@@ -45,13 +45,22 @@
 
             <div id="header-search" class="col-sm-5 col-xs-5" role="search">
 
+                <!-- BEGIN: Search Trigger //-->
+                <div style=" ">
+                    <button class="btn btn-link" type="button" value="" name="btnG" id="header-search-trigger"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                </div>
+                <!-- BEGIN: Search Trigger //-->
+
                 <!-- BEGIN: Search //-->   
                 <form action="http://www.st-andrews.ac.uk/gsasearch" method="get">
                     
                 <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-link" type="button" value="" name="btnG" id="header-search-close"/><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                    </span>
                     <input class="form-control" type="text" title="Enter search keywords" maxlength="256" name="q" placeholder="Search..."/>
                     <span class="input-group-btn">
-                        <button class="btn btn-link" type="submit" value="Search" name="btnG"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        <button class="btn btn-primary" type="submit" value="Search" name="btnG" id="header-search-submit"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                     </span>
                 </div>
                 
@@ -61,7 +70,9 @@
                 <input type="hidden" value="StAndrews_ITS" name="proxystylesheet"/>
                 </form>
             
-                <!-- EDN: Search //-->
+                <!-- END: Search //-->
+
+                
 
             </div>
 

@@ -55,21 +55,30 @@
 
     #header-search {
       text-align: right;
-      margin-top: 13px;
+      margin-top: 16px;
 
-      .input-group .form-control {
+      form {
         display: none;
+      }
+
+      #header-search-close {
+        margin-left: -13px
       }
 
     }
     @media (min-width: 468px) {
-      #header-search .input-group .form-control {
+      
+      #header-search form {
         display: block;
       }
-      #header-search .input-group .btn {
-        background-color: -dpl-color($palette-default,'primary','base');
-        color: white;
+
+      // Hide the search-trigger and search-close buttons
+      // on larger screens since those are only used for the 
+      // interactivty on small screens.
+      #header-search-trigger, #header-search-close {
+        display: none;
       }
+
     }
 
     // END TEMP CODE FOR SEARCH
@@ -149,7 +158,7 @@
            * row. This means we can align it to the right. */
           position: absolute;
           right: 0;
-          top: 43px;
+          top: 40px;  // Note: this is a 'magic' number.
       }
 
     }
