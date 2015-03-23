@@ -35,7 +35,7 @@
     }
 
     #header-logo {
-        margin: 10px 0px;
+        margin: 13px 0px;
 
         h1 {
             margin: 0;
@@ -43,7 +43,7 @@
 
         img {
             width: 100%;
-            max-width: 245px;
+            max-width: 205px;
             -webkit-transition: all 200ms ease-out;
             -moz-transition: all 200ms ease-out;
             transition: all 200ms ease-out;
@@ -55,7 +55,7 @@
 
     #header-search {
       text-align: right;
-      margin-top: 16px;
+      margin-top: 19px;
 
       form {
         display: none;
@@ -66,6 +66,12 @@
       }
 
     }
+
+    #header-search-trigger {
+      margin-top: -5px;
+      font-size: 22px;
+    }
+
     @media (min-width: 468px) {
       
       #header-search form {
@@ -101,7 +107,7 @@
     @media (min-width: 768px) {
 
       #header-audience {
-        margin-top: 15px;
+        margin-top: 11px;
         text-align: right;
         border-bottom: none;
       }
@@ -111,10 +117,10 @@
       }
 
       #header-logo {
-        margin: 30px 0px;
+        margin: 25px 0px;
 
         img {
-          max-width: 345px;
+          max-width: 325px;
         }
       }
 
@@ -158,7 +164,7 @@
            * row. This means we can align it to the right. */
           position: absolute;
           right: 0;
-          top: 40px;  // Note: this is a 'magic' number.
+          top: 30px;  // Note: this is a 'magic' number.
       }
 
     }
