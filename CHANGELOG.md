@@ -7,6 +7,23 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+
+## [0.2.0] - ?
+### Added
+- Local fallback copies of PT Sans in the event that Google fonts are not available.
+- Web application example page.
+
+### Changed
+- A new design for the header was implemented resulting considerable 
+  refactoring of the header pattern.
+
+### Fixed
+- Typos in documentation.
+- Missing step in the README getting started steps.
+- Removed unncessary 'accessibility' id from header
+
+
+
 ## [0.1.1] - 2015-03-12
 ### Added
 - Better support for links within alert elements.
