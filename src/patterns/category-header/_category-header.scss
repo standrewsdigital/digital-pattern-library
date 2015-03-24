@@ -5,83 +5,79 @@
 
 
 #category-header {
-  min-height: 100px;
   background-image: url('../images/header_general.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
   overflow: hidden;
-}
 
-#category-header h2 {
-  min-height: 100px;
-  background-color: $sta-blue-light-T;
-  color: #fff;
-  display: inline-block;
-  padding-top: 30px;
-  font-family: Georgia, serif;
-  position: relative;
-  padding-right: 40px;
-  padding-left: 100%;
-  margin-left: -100%;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: normal;
-  text-shadow: 1px 1px 1px #444;
-}
+  h2 {
+    background-color: -dpl-color($palette-default,'secondary','transparent');
+    background-color: rgba(27,116,195,0.4); // Override with great transparency.
+                                            // Fix this, probably.
+    color: white;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    position: relative;
+    padding: 20px 100%;
+    margin: 0 -100%;
+    text-shadow: 1px 1px 1px #444;
 
-#category-header h2 a {
-  color: white;
-  text-decoration: none;
-  font-weight: normal;
-}
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: normal;
+    }
 
-/* This psuedo element creates the oblique angle after the heading. */
-#category-header h2:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -37px;
-  width: 0;
-  height: 0;
-  border-top: 100px solid $sta-blue-light;      /* Define a non-transparent color first */
-  border-top-color: $sta-blue-light-T;
-  border-right: 37px solid transparent;
-}
-
-@media (max-width: 767px) {
-
-  #category-header h2 {
-    display: block;
-    margin-right: -15px;
-    padding-bottom: 30px;
-  }
-
-  #category-header h2:after{
-    display: none;
   }
 
 }
 
 
-/* Color Accents */
+// Solid background color, variant
 
-.accent-blue-study {
+#category-header.category-header-solid {
+  background: -dpl-color($palette-default,'secondary','base');
 
-  #category-header h2 {
-    background-color: $sta-cyan-light-T;
+  h2 {
+    background: transparent;
+    //text-shadow: 1px 1px 1px -dpl-color($palette-default,'primary','base');;
+    text-shadow:none;
   }
 
-  #category-header h2:after {
-    border-top-color: $sta-cyan-light;
-    border-top-color: $sta-cyan-light-T;
-  }
 
 }
+
+
+
+
+
+/* DISABLED, but saved here for historical reference.
+ * This psuedo element creates the oblique angle after the 
+ * heading and had a neat implementation.
+ *
+ *    #category-header h2:after {
+ *        content: "";
+ *        position: absolute;
+ *        top: 0;
+ *        right: -37px;
+ *        width: 0;
+ *        height: 0;
+ *        border-top: 100px solid $sta-blue-light;
+ *        border-top-color: $sta-blue-light-T;
+ *        border-right: 37px solid transparent;
+ *      }
+ */
+
+// @media (max-width: 767px) {
+
+//   #category-header h2 {
+//     display: block;
+//   }
+
+// }
+
 
 /*********************************/
 /* END Pattern: category-header  */

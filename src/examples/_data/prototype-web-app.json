@@ -1,0 +1,43 @@
+{
+    "header" : {
+        "authenticated": {
+            "username": "js73",
+            "first-name": "John",
+            "last-name": "Smith"
+        }
+    },
+    "category-header": {
+        "class":"category-header-solid",
+        "title": "Annual Leave",
+        "url": "#"
+    },
+    "navigation-bar" : {
+        "primary":[
+            {
+                "title": "Item 1",
+                "url": "#",
+                "selected": false
+            },
+            {
+                "title": "Item 2",
+                "url": "#",
+                "selected": false
+            },
+            {
+                "title": "Item 3",
+                "url": "#",
+                "selected": false
+            },
+            {
+                "title": "Item 4",
+                "url": "#",
+                "selected": false
+            },
+            {
+                "title": "Item 5",
+                "url": "#",
+                "selected": false
+            }
+        ]
+    }
+}
