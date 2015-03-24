@@ -168,6 +168,10 @@
                 {
                     "name" : "Ex: Web application",
                     "url" : "examples/web-app.html"
+                },
+                {
+                    "name" : "Ex: Long-form content",
+                    "url" : "examples/long-form-content.html"
                 }
             ]
         }
