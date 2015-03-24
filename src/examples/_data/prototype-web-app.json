@@ -36,7 +36,7 @@
             {
                 "title": "Item 5",
                 "url": "#",
-                "selected": true
+                "selected": false
             }
         ]
     }
