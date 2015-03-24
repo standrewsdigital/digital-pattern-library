@@ -3,7 +3,22 @@
 /* BEGIN Pattern: long-form      */
 /*********************************/
 
+.long-form {
+    
+}
 
+.long-form-bg-dark, .long-form-bg-light {
+    background-size: cover;
+}
+
+.long-form-bg-dark {
+    color: white;
+}
+
+.long-form-content {
+    @extend .col-md-8;
+    @extend .col-md-offset-2;
+}
 
 /*********************************/
 /* END Pattern: long-form        */
