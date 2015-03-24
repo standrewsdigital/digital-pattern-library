@@ -13,8 +13,9 @@
       
       border-bottom: 1px solid $gray-lighter;
 
+
+
       .btn {
-          text-decoration: none;
           border-bottom: none;
           z-index: 1001;
           -webkit-transition: none;
@@ -30,6 +31,12 @@
 
       .dropdown-menu {
           margin-top: -1px;
+      }
+
+      .audience {
+        display: inline-block;
+        margin-left: 13px;
+        margin-top: 7px;
       }
 
     }
@@ -95,9 +102,9 @@
     // Pull the first and last buttons out by 12px horizontally 
     // to line them up with container edges.
 
-    #header-audience .btn:nth-child(1) {
-       margin-left: -12px;
-    }
+    // #header-audience .btn:nth-child(1) {
+    //    margin-left: -12px;
+    // }
 
     // END alignment hack
 
