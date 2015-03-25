@@ -4,21 +4,210 @@
 /*********************************/
 
 .long-form {
-    
+    font-family: 'PT Serif', Gerogia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $font-family-sans-serif  ;      
+    }
+    h2 {
+        font-size: 60px;
+    }
+
+    blockquote {
+        border:none;
+        margin: 40px;
+        font-size: 22px;
+        font-style: italic;
+    }
+
+    abbr {
+        font-family: 'PT Serif Caption', Gerogia, 'Times New Roman', Times, serif;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
 }
+
+/* Width options */
+
+.long-form-wrapper {
+    z-index: 1200;
+}
+
+.long-form {
+    .long-form-wrapper {
+        @extend .col-md-8;
+        @extend .col-md-offset-2;
+    }
+}
+
+.long-form.long-form-medium {
+    .long-form-wrapper {
+        @extend .col-md-10;
+        @extend .col-md-offset-1;
+    }
+}
+
+.long-form.long-form-full {
+    .long-form-wrapper {
+        @extend .col-md-12;
+    }
+}
+
+
 
 .long-form-bg-dark, .long-form-bg-light {
     background-size: cover;
+    background-position: center center;
 }
 
 .long-form-bg-dark {
     color: white;
 }
 
-.long-form-content {
-    @extend .col-md-8;
-    @extend .col-md-offset-2;
+.long-form-bg-darken {
+    position: relative;
+    z-index: 1000;
+
+
+    &:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 1001;
+    }
 }
+
+
+
+
+.long-form-content {
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+}
+
+
+
+///////////////////////////////////////////////////////////
+// Special Features                                      //
+///////////////////////////////////////////////////////////
+
+
+// Pull quotes
+
+.long-form .pull-quote {
+    font-size: 28px;
+    font-style: italic;
+    line-height: 1.8;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 50px 20px 0px;
+    margin: 40px -20%;
+    position: relative;
+
+    .pull-quote-share {
+        position: absolute;
+        bottom: -35px ;
+        right: 30px;
+        background-color: white;
+        padding: 0 15px;
+
+        a {
+            text-decoration: none;
+        }
+        .genericon {
+            font-size: 30px;
+            color: #aaa;
+            padding-right: 7px;
+        }
+    }
+
+    &.pull-quote-right {
+        text-align: right;
+        padding-right: 0;
+        padding-left: 50px;
+
+        .pull-quote-share {
+            right: auto;
+            left: 30px;
+        }
+    }
+
+
+}
+
+// Bio asides
+
+figure.long-form-bio {
+    position: absolute;
+    right: -170px;
+    font-size: 14px;
+    font-family: $font-family-sans-serif;
+    width: 150px;
+
+    img {
+        width: 100%;
+    }
+    figcaption {
+        padding: 8px 0;
+    }
+}
+
+// Gallery
+
+.long-form-gallery {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+
+    h4 {
+        font-size: 22px;
+        font-style: italic;
+        font-weight: normal;
+        font-family: 'PT Serif', Gerogia, 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+
+    img {
+        height: 300px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        cursor: pointer;
+    }
+
+    img.zoom {
+        position: absolute;
+
+
+        img.zoom:before {
+            position: absolute;
+            background-color: red;
+        }
+    }
+}
+.long-form-gallery-viewer {
+    z-index: 1400;
+    position: fixed;
+    background-color: rgba(255,255,255,0.95);
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+        display: block;
+        margin: 100px auto;
+    }
+}
+
+
+
 
 /*********************************/
 /* END Pattern: long-form        */
