@@ -45,15 +45,21 @@
         border-bottom: 1px solid #666;
     }
 
-    hr.end {
-        @extend .genericon;
-        @extend .genericon-stop;
-        border: none;
-        display: inline;
-        width: auto;
-        font-size: 36px;
-        margin-left: -10px ;
-        -webkit-font-smoothing: antialiased;
+    .end {
+        margin: 40px 0;
+        font-family: $font-family-sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        
+        &:before {
+            @extend .genericon;
+            content: '\f449';
+            font-size: 36px;
+            margin-left: -8px;
+            margin-top: -5px;
+            padding-right: 10px;
+        }
+        // -webkit-font-smoothing: antialiased;
     }
 
 }
