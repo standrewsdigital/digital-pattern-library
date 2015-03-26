@@ -187,9 +187,37 @@ aside.parallel-left {
 
 // Figures
 
-figure figcaption {
-    font-size: 14px;
-    font-family: $font-family-sans-serif;
+figure {
+
+    figcaption {
+        font-size: 14px;
+        font-family: $font-family-sans-serif;
+    }
+
+    // positioning within content.
+    &.left, &.left-out {
+        float: left;
+        padding: 15px 0 10px;
+        padding-right: 30px;
+    }
+    &.right, &.right-out {
+        float: right;
+        padding: 15px 0;
+        padding-left: 30px;
+    }
+
+    &.left-out {
+        margin-left: -25%;
+    }
+
+    &.right-out {
+        margin-right: -25%;
+    }
+
+    &.full {
+        width: 100%;
+    }
+    
 }
 
 figure.image {
