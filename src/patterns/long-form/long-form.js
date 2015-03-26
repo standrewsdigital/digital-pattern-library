@@ -31,22 +31,23 @@ var gallery_viewer = $("<div class='long-form-viewer'></div>").hide();
 $('body').append(gallery_viewer); // add to the end of <body>
 
 // Setup viewer for all images in the Thumbnail gallery
-$(".long-form .long-form-thumbnail-gallery").each(function(){
+$(".long-form-thumbnail-gallery, .long-form-slider-gallery").each(function(){
 
     console.log('setup gallery');
 
-    $(this).find('figure.image').click(function(){
-        
-        console.log('image clicked');
-        gallery_viewer.html("");
-        var img = $(this).clone(); // 'this' is the current clicked element.
-        gallery_viewer.click(function(){
-            gallery_viewer.hide(); // click anywhere closes the viewer.
-        });
-        gallery_viewer.append(img);
-        gallery_viewer.show();
+    $(this).find('figure.image')
+        .css('cursor','pointer')
+        .click(function(){
+            
+            gallery_viewer.html("");
+            var img = $(this).clone(); // 'this' is the current clicked element.
+            gallery_viewer.click(function(){
+                gallery_viewer.hide(); // click anywhere closes the viewer.
+            });
+            gallery_viewer.append(img);
+            gallery_viewer.show();
 
-    });
+        });
 
 });
 

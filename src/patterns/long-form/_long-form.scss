@@ -65,6 +65,7 @@
 .long-form.long-form-full {
     .long-form-wrapper {
         @extend .col-md-12;
+        @extend .col-md-offset-0;
     }
 }
 
@@ -229,7 +230,6 @@ figure.audio {
     }
 
     figure.image {
-        //@extend .col-md-3;
         display: inline-block;
         padding-right: 20px;
         padding-bottom: 10px;
@@ -244,12 +244,13 @@ figure.audio {
         height: 170px;
         //height: auto !important;
         width: auto !important;
-        cursor: pointer;
+        
     }
 
 }
 
-
+// Styles for a div that JS creates. 
+// this gives us the light-box style image zooms.
 .long-form-viewer {
     z-index: 1400;
     position: fixed;
@@ -271,6 +272,27 @@ figure.audio {
             max-height: 80%; // and height
         }
 
+    }
+}
+
+// Slider gallery
+
+.long-form.long-form-slider-gallery {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+
+    .slider-container {
+        overflow-x: scroll;
+        display: table-row;
+
+        figure.image {
+            display: table-cell;
+            padding-right: 20px;
+            img {
+                height: 300px;
+                width: auto;
+            }
+        }
     }
 }
 
