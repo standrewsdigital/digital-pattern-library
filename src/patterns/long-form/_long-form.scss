@@ -77,6 +77,9 @@
 
 .long-form-bg-dark {
     color: white;
+
+
+
 }
 
 .long-form-bg-darken {
@@ -156,15 +159,39 @@
 
 }
 
-// Bio asides
+// Asides 
 
-figure.long-form-bio {
-    position: absolute;
-    right: -170px;
+aside.pull-quote {
+
+}
+
+aside.parallel-right {
+    
+    > * {
+        padding-top: 10px;
+        position: absolute;
+        right: -170px;
+        width: 150px;
+    }
+}
+
+aside.parallel-left {
+    > * {
+        padding-top: 10px;
+        position: absolute;
+        left: -170px;
+        width: 150px;
+    }  
+}
+
+// Figures
+
+figure figcaption {
     font-size: 14px;
     font-family: $font-family-sans-serif;
-    width: 150px;
+}
 
+figure.image {
     img {
         width: 100%;
     }
@@ -174,8 +201,18 @@ figure.long-form-bio {
 }
 
 // Gallery
+figure.quote {
 
 .long-form-gallery {
+}
+
+figure.video {
+
+}
+
+figure.audio {
+
+}
     padding-top: 70px;
     padding-bottom: 70px;
     text-align: center;
