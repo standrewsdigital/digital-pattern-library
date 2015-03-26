@@ -26,24 +26,22 @@ $(".long-form .pull-quote").each(function(){
         
 });
 
+// Create the gallery viewer div (hidden at the bottom of the page)
+var gallery_viewer = $("<div class='long-form-viewer'></div>").hide();
+$('body').append(gallery_viewer); // add to the end of <body>
 
-var gallery_viewer = $("<div class='long-form-gallery-viewer'></div>").hide();
-$('body').append(gallery_viewer);
-console.log('setup all galleries');
-$(".long-form .long-form-gallery").each(function(){
-
-    var gallery = $(this);
-    var images = gallery.find('img');
+// Setup viewer for all images in the Thumbnail gallery
+$(".long-form .long-form-thumbnail-gallery").each(function(){
 
     console.log('setup gallery');
 
-    images.click(function(){
+    $(this).find('figure.image').click(function(){
         
         console.log('image clicked');
         gallery_viewer.html("");
-        var img = $(this).clone();
+        var img = $(this).clone(); // 'this' is the current clicked element.
         gallery_viewer.click(function(){
-            gallery_viewer.hide();
+            gallery_viewer.hide(); // click anywhere closes the viewer.
         });
         gallery_viewer.append(img);
         gallery_viewer.show();

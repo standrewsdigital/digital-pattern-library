@@ -93,7 +93,7 @@
         top: 0;
         height: 100%;
         width: 100%;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0,0,0,0.6);
         z-index: 1001;
     }
 }
@@ -200,10 +200,8 @@ figure.image {
     }
 }
 
-// Gallery
 figure.quote {
 
-.long-form-gallery {
 }
 
 figure.video {
@@ -213,6 +211,10 @@ figure.video {
 figure.audio {
 
 }
+
+// Thumbnail gallery
+
+.long-form-thumbnail-gallery {
     padding-top: 70px;
     padding-bottom: 70px;
     text-align: center;
@@ -223,26 +225,32 @@ figure.audio {
         font-weight: normal;
         font-family: 'PT Serif', Gerogia, 'Times New Roman', Times, serif;
         text-align: center;
+        margin-bottom: 20px;
+    }
+
+    figure.image {
+        //@extend .col-md-3;
+        display: inline-block;
+        padding-right: 20px;
+        padding-bottom: 10px;
+
+        figcaption {
+            text-align: left;    
+        }
     }
 
     img {
-        height: 300px;
-        padding-right: 20px;
-        padding-bottom: 20px;
+        // max-width: 100%;
+        height: 170px;
+        //height: auto !important;
+        width: auto !important;
         cursor: pointer;
     }
 
-    img.zoom {
-        position: absolute;
-
-
-        img.zoom:before {
-            position: absolute;
-            background-color: red;
-        }
-    }
 }
-.long-form-gallery-viewer {
+
+
+.long-form-viewer {
     z-index: 1400;
     position: fixed;
     background-color: rgba(255,255,255,0.95);
@@ -250,9 +258,19 @@ figure.audio {
     width: 100%;
     height: 100%;
 
-    img {
+    figure.image {
         display: block;
-        margin: 100px auto;
+        margin: 10% auto;
+        width: auto;
+        text-align: center;
+        height: 90%;
+
+        img {
+            width: auto; // show it's natural size.
+            max-width: 90%; // but give a max width,
+            max-height: 80%; // and height
+        }
+
     }
 }
 
