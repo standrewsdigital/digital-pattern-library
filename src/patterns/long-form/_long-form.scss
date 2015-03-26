@@ -44,6 +44,18 @@
         font-weight: normal;
         border-bottom: 1px solid #666;
     }
+
+    hr.end {
+        @extend .genericon;
+        @extend .genericon-stop;
+        border: none;
+        display: inline;
+        width: auto;
+        font-size: 36px;
+        margin-left: -10px ;
+        -webkit-font-smoothing: antialiased;
+    }
+
 }
 
 /* Width options */
