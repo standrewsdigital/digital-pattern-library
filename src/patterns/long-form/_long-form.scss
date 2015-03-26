@@ -21,6 +21,10 @@
         margin: 40px;
         font-size: 22px;
         font-style: italic;
+
+        &:nth-child(1) { // remove top margin when first element.
+            margin-top: 0;
+        }
     }
 
     abbr {
@@ -188,10 +192,12 @@ aside.parallel-left {
 // Figures
 
 figure {
+    margin-bottom: 25px; // to match <p> styling.
 
     figcaption {
         font-size: 14px;
         font-family: $font-family-sans-serif;
+        padding: 8px 0;
     }
 
     // positioning within content.
@@ -199,11 +205,13 @@ figure {
         float: left;
         padding: 15px 0 10px;
         padding-right: 30px;
+        margin-bottom: 0;
     }
     &.right, &.right-out {
         float: right;
         padding: 15px 0;
         padding-left: 30px;
+        margin-bottom: 0;
     }
 
     &.left-out {
@@ -223,9 +231,6 @@ figure {
 figure.image {
     img {
         width: 100%;
-    }
-    figcaption {
-        padding: 8px 0;
     }
 }
 
