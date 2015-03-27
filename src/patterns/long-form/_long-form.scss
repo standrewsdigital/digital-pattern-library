@@ -4,10 +4,9 @@
 /*********************************/
 
 .long-form {
-    font-family: 'PT Serif', Gerogia, 'Times New Roman', Times, serif;
+    font-family: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
     font-size: 22px;
     line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
 
     h1, h2, h3, h4, h5, h6 {
         font-family: $font-family-sans-serif  ;      
