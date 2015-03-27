@@ -18,14 +18,27 @@
     // long the finding and replacing takes.
     var start = new Date().getTime();
 
-    // All strings listed here will be searched for. It would only
-    // make sense to search for strings that included spaces.
-    var unbreakables = [ 'St Andrews' ];
-
     // A callback function used to do the actual replacement.
     function unbreakableSpaces(str) {
         return str.replace(/ /g,'&nbsp;');
     }
+
+    // ORPHANED WORDS
+    // Replace the last two spaces in a paragraph with 
+    // non-breaking spaces to fix orphaned words.
+
+    // Regex explanation: (ex: "famous last words.")
+    //      match 0 or more non-spaces ("last")
+    //      followed by a space (" ")
+    //      followed 0 or more non-spaces ("words.")
+    //      folowed by the end of the string ($)
+    var orphan_regex = /[^ ]* [^ ]*$/gi;
+    $('body p').replaceText(orphan_regex,unbreakableSpaces);
+
+    // CUSTOM UNBREAKABLES
+    // All strings listed here will be searched for. It would only
+    // make sense to search for strings that included spaces.
+    var unbreakables = [ 'St Andrews' ];
 
     // Loop through the unbreakables and use the jQuery replacetext
     // plugin to repl

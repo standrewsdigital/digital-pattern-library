@@ -62,6 +62,12 @@
         // -webkit-font-smoothing: antialiased;
     }
 
+    p {
+        // This only affects paged media (like print view), and is not very widely supported by browsers yet.
+        orphans: 3;
+        widows: 3;
+    }
+
 }
 
 /* Width options */
