@@ -8,7 +8,7 @@
 	border: 0;
 	border-radius: 0;
 	margin-bottom: 0;
-  z-index: 999;
+    z-index: 999;
 }
 
 .navigation-bar a {
@@ -35,7 +35,16 @@
 	text-decoration: none;
 }
 
-.navigation-bar ul.navigation-bar-nav li a:hover, .navigation-bar ul.navigation-bar-nav li a:focus {
+// This rule compensates for the padding added to the a tag. 
+// This rule pulls the first <li> <a> to left by 15px
+// to compensate for the padding added to all <li> <a>'s 
+// and line the first element up with the .container  edge.
+.navigation-bar ul.navigation-bar-nav:nth-child(2) li:nth-child(1) a {
+    margin-left: -15px;
+}
+
+.navigation-bar ul.navigation-bar-nav li a:hover, 
+.navigation-bar ul.navigation-bar-nav li a:focus {
 	color: white;
 }
 

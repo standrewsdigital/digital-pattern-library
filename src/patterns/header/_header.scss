@@ -3,194 +3,184 @@
 /* BEGIN Pattern: header         */
 /*********************************/
 
-    #print-header {
+
+    #header-print {
         display: none;
-    }
+    }    
 
-    /* Header styles */
 
-    #header {
-        position: relative;
-        min-height: 72px;
-        margin: 15px 0 10px;
+    #header-audience {
+      
+      border-bottom: 1px solid $gray-lighter;
+
+
+
+      .btn {
+          border-bottom: none;
+          z-index: 1001;
+          -webkit-transition: none;
+          -moz-transition: none;
+          transition: none;
+      }
+
+      .open .btn {
+          background-color: white;
+          border: 1px solid rgba(0,0,0,0.15);
+          border-bottom: none;
+      }
+
+      .dropdown-menu {
+          margin-top: -1px;
+      }
+
+      .audience {
+        display: inline-block;
+        margin-left: 13px;
+        margin-top: 7px;
+      }
+
     }
 
     #header-logo {
-        margin: 0;
-        padding:0;
-    }
+        margin: 13px 0px;
 
-    #header-logo h1 {
-        margin: 0;
-    }
-
-    #header-logo img {
-        width: 100%;
-        max-width: 345px;
-        -webkit-transition: all 200ms ease-out;
-        -moz-transition: all 200ms ease-out;
-        transition: all 200ms ease-out;
-    }
-
-
-     /* Header Panels */
-
-	.header-panel {
-		display: none;
-		border-bottom: $sta-blue 3px solid;
-		background-color: #ffffff;
-		background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(242,246,247,1) 100%);
-		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(242,246,247,1)));
-		background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(242,246,247,1) 100%);
-		background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(242,246,247,1) 100%);
-		background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(242,246,247,1) 100%);
-		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(242,246,247,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f6f7', GradientType=0 );
-	}
-
-
-	#panel-people ul {
-		list-style-type: none;
-		margin: 2.6em 0;
-		padding: 0;
-	}
-
-	#panel-people li {
-		display: inline;
-		margin: 0;
-		padding-right: 2em;
-		white-space: nowrap;
-	}
-
-	#panel-people a {
-		font-weight: bold;
-		font-size: 1.4em;
-		color: $sta-blue;
-	}
-
-	#panel-search form {
-		margin: 2em 0;
-	}
-
-	#panel-search input[type~=text] {
-		width: 100%;
-		border: 1px solid $sta-grey-light-T;
-		font-size: 1.5em;
-		line-height:2em;
-		padding: 0 .75em;
-		height: 55px;
-        @include form-control-focus;
-	}
-
-	#panel-search input[type~=submit]  {
-		background-color: $sta-blue;
-		color: white;
-		padding: 0.1em 0;
-		border: none;
-		font-size: 1.5em;
-		line-height:1.9em;
-		font-weight: normal;
-		height: 55px;
-		width: 100%;
-
-        @include -dpl-transition();
-	}
-
-	#panel-search input[type~=submit]:hover {
-		background-color: $sta-blue-hover;
-	}
-
-    #header .logo-container {
-        @include -dpl-transition();
-    }
-
-    .panel-toggle {
-        @extend .btn;
-        @extend .btn-primary;
-        padding: 1em .5em;
-        margin-left: 13px;
-    }
-
-    .panel-toggle img.icon {
-        height: 30px;
-        width: 30px;
-        margin-right: 5px;
-    }
-
-    // The :before pseud element is used to place the 
-    // chevron, without increasing markup.
-    .panel-toggle:before {
-        @extend i.chevron;
-        @include rotate(270deg);
-        content: "";
-        float: right;
-        height: 17px !important;
-        width: 17px !important;
-        top: 4px !important;
-    }
-
-    .panel-toggle.panel-toggle-up:before {
-        @include rotate(90deg);
-    }
-
-
-    @media (max-width: 767px) {
-    	#header {
-    		margin: 20px 0;
-    	}
-
-        #header-logo img {
-          max-width: 250px;
+        h1 {
+            margin: 0;
         }
 
-      	#panel-search input[type~=text] {
-          font-size: 1.2em;
-      	}
-
-      	#panel-search input[type~=submit]  {
-          font-size: 1.2em;
-      	}
-
-        #panel-people li {
-          display: block;
+        img {
+            width: 100%;
+            max-width: 205px;
+            -webkit-transition: all 200ms ease-out;
+            -moz-transition: all 200ms ease-out;
+            transition: all 200ms ease-out;
         }
+    }
+
+    // BEGIN TEMP CODE FOR SEARCH
+
+
+    #header-search {
+      text-align: right;
+      margin-top: 19px;
+
+      form {
+        display: none;
+      }
+
+      #header-search-close {
+        margin-left: -13px
+      }
 
     }
 
-    @media (max-width: 480px) {
+    #header-search-trigger {
+      margin-top: -5px;
+      font-size: 22px;
+    }
 
-        #header {
-          min-height: auto;
-          margin: 20px 0 0px;
-        }
+    @media (min-width: 468px) {
+      
+      #header-search form {
+        display: block;
+      }
 
-        #header .logo-container {
-          float: left;
-          width: 180px;
-
-        }
-        #header .button-container {
-          float: right;
-
-        }
-
-        .panel-toggle {
-          padding: .7em .25em;
-          margin-left: 0px;
-        }
-
-        .panel-toggle img.icon {
-          height: 20px;
-          width: 20px;
-          margin-right: 5px;
-        }
-
-        .panel-toggle:before {
-          height: 10px !important;
-          width: 10px !important;
-        }
+      // Hide the search-trigger and search-close buttons
+      // on larger screens since those are only used for the 
+      // interactivty on small screens.
+      #header-search-trigger, #header-search-close {
+        display: none;
+      }
 
     }
+
+    // END TEMP CODE FOR SEARCH
+
+
+
+    // BEGIN alignment hack
+    // Pull the first and last buttons out by 12px horizontally 
+    // to line them up with container edges.
+
+    // #header-audience .btn:nth-child(1) {
+    //    margin-left: -12px;
+    // }
+
+    // END alignment hack
+
+
+    // BEGIN desktop styles
+
+    @media (min-width: 768px) {
+
+      #header-audience {
+        margin-top: 11px;
+        text-align: right;
+        border-bottom: none;
+      }
+
+      #header-audience .btn:nth-last-child(1) {
+        margin-right: -12px;
+      }
+
+      #header-logo {
+        margin: 25px 0px;
+
+        img {
+          max-width: 325px;
+        }
+      }
+
+    }
+    // END desktop styles
+
+
+
+    /* BEGIN: LAYOUT HACK
+     * In order to get the elements in the correct order on mobile, 
+     * we have to engage in some shenaningans. The mobile layout should
+     * be: 
+     *     AUDIENCE 
+     *     LOGO   |  SEARCH
+     *
+     * but on desktop it should be
+     *     LOGO   |  AUDIENCE 
+     *     LOGO   |  SEARCH
+     *
+     * So we put the elements in the following order which makes it easy
+     * to achieve the mobile layout
+     *  - AUDIENCE
+     *  - LOGO
+     *  - SEARCH
+     *
+     * And then position SEARCH absolutely on larger screens.
+     */
+
+    @media (min-width: 768px) {
+
+      #header-row {
+        /* By adding a position property to this selector, 
+         * this element will act as an anchor for absolutely
+         * positioned child elements */
+        position: relative;
+      }
+
+      #header-search {
+          /* Positioning absolutely, here, refers the first parent
+           * with a 'position' attribute which should be the containing
+           * row. This means we can align it to the right. */
+          position: absolute;
+          right: 0;
+          top: 30px;  // Note: this is a 'magic' number.
+      }
+
+    }
+
+    /* END: LAYOUT HACK */
+
+
+    
+
 
 /*********************************/
 /* END Pattern: header           */

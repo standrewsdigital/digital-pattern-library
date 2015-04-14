@@ -9,7 +9,4 @@ $("div.image-container .image-text-box a").bigTarget({
 $('[data-toggle="popover"]').popover();
 $('[data-toggle="tooltip"]').tooltip();
 
-// $(document).ready(function(){
-// $(".secondary-call").fitVids();
-// });
 
