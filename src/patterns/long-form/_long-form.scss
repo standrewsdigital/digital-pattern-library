@@ -448,30 +448,11 @@ figure.audio {
 }
 
 @media (min-width: 992px) {
-//     .long-form-viewer {
-//         z-index: 1400;
-//         position: fixed;
-//         background-color: rgba(255,255,255,0.95);
-//         top: 0;
-//         width: 100%;
-//         height: 100%;
 
-        figure.image {
-            padding-top: 50px;
-//             display: block;
-//             margin: 10% auto;
-//             width: auto;
-//             text-align: center;
-//             max-height: 90%;
-
-//             img {
-//                 width: auto; // show it's natural size.
-//                 max-width: 90%; // but give a max width,
-//                 max-height: 80%; // and height
-//             }
-
-         }
-//     }  
+    .long-form-viewer figure.image {
+        padding-top: 50px;
+    }
+    
 }
 
 // Slider gallery
