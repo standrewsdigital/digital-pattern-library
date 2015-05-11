@@ -32,8 +32,8 @@
     //      followed by a space (" ")
     //      followed 0 or more non-spaces ("words.")
     //      folowed by the end of the string ($)
-    var orphan_regex = /[^ ]* [^ ]*$/gi;
-    $('body p').replaceText(orphan_regex,unbreakableSpaces);
+    //var orphan_regex = /[^ ]* [^ ]*$/gi;
+    //$('body p').replaceText(orphan_regex,unbreakableSpaces);
 
     // CUSTOM UNBREAKABLES
     // All strings listed here will be searched for. It would only
