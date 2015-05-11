@@ -56,9 +56,17 @@ $(".long-form-thumbnail-gallery, .long-form-slider-gallery").each(function(){
             
             gallery_viewer.html("");
             var img = $(this).clone(); // 'this' is the current clicked element.
+            
+            // click anywhere closes the viewer.
             gallery_viewer.click(function(){
-                gallery_viewer.hide(); // click anywhere closes the viewer.
+                gallery_viewer.hide(); 
             });
+
+            // pressing esc (char 27) will do the same thing as clicking.
+            $(document).keyup(function(e) {
+                if (e.keyCode == 27) gallery_viewer.click();   
+            });
+
             gallery_viewer.append(img);
             gallery_viewer.show();
 
