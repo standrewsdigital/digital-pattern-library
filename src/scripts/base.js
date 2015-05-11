@@ -15,6 +15,9 @@ $('[data-toggle="tooltip"]').tooltip();
 // Note, to allow future devs to use the DPL and not use the 
 // default audio player, they can add an 'exclude' class.
 var audios = $('audio').not('audio.exclude');
+var audios_config = {
+    audioWidth: 320 // Set the audio player width default to 320 so that it's more mobile friendly.
+};
 if (audios.length) {
 
     // Get the MediaElement.js script from CDN
@@ -22,7 +25,7 @@ if (audios.length) {
 
         // Activate all audios with media element.
         function(){
-            audios.mediaelementplayer();
+            audios.mediaelementplayer(audios_config);
         }
     );
 
