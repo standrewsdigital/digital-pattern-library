@@ -50,7 +50,8 @@
 
 // Target select item in T4 and WordPress respectively
 .navigation-bar .currentbranch0 a,
-.navigation-bar .current-menu-item a {
+.navigation-bar .current-menu-item a, 
+.navigation-bar .current-menu-ancestor a {
 }
 
 .subnav {
@@ -133,7 +134,8 @@
 
     // Target select item in T4 and WordPress respectively
 	.navigation-bar .currentbranch0 a,
-    .navigation-bar .current-menu-item a {
+    .navigation-bar .current-menu-item a,
+    .navigation-bar .current-menu-ancestor a {
 		background-color: $sta-blue-light;
 	}
 
@@ -169,8 +171,8 @@
 	.navigation-bar.blue-study .currentbranch0 a,
     .accent-blue-study .navigation-bar .current-menu-item a,
     .navigation-bar.blue-study .current-menu-item a,
-
-     {
+    .accent-blue-study .navigation-bar .current-menu-ancestor a,
+    .navigation-bar.blue-study .current-menu-ancestor a {
 		background-color: $sta-cyan-light;
 	}
 
