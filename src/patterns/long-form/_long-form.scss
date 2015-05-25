@@ -19,6 +19,13 @@
         margin-bottom: 20px; 
     }
 
+    h5 {
+        text-transform: uppercase;
+        font-size: .9em;
+        color: #777;
+        font-weight: normal;
+    }
+
     blockquote {
         border:none;
         margin: 20px 0 20px 20px;
@@ -452,7 +459,7 @@ figure.audio {
     .long-form-viewer figure.image {
         padding-top: 50px;
     }
-    
+
 }
 
 // Slider gallery
