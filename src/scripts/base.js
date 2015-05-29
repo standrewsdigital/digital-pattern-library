@@ -21,7 +21,7 @@ var audios_config = {
 if (audios.length) {
 
     // Get the MediaElement.js script from CDN
-    $.getScript("http://www.st-andrews.ac.uk/~cdn/mediaelement/2.16.3/mediaelement-and-player.min.js", 
+    $.getScript("//www.st-andrews.ac.uk/~cdn/mediaelement/2.16.3/mediaelement-and-player.min.js", 
 
         // Activate all audios with media element.
         function(){
@@ -33,7 +33,7 @@ if (audios.length) {
     $('<link/>', {
        rel: 'stylesheet',
        type: 'text/css',
-       href: 'http://www.st-andrews.ac.uk/~cdn/mediaelement/2.16.3/mediaelementplayer.css'
+       href: '//www.st-andrews.ac.uk/~cdn/mediaelement/2.16.3/mediaelementplayer.css'
     }).appendTo('head');
 
 }
