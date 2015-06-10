@@ -7,6 +7,17 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## [0.3.0] - 2015-06-10
+### Added
+- Font aliasing to improve quality of fonts
+- Classes for implementing navigation in WordPress to support our theme.
+
+### Changed
+- The breadcrumb pattern was updated to <ul> based instead of <p> based.
+
+### Fixed
+- Increase opacity of category header to make more legible.
+
 
 ## [0.2.0] - 2015-04-14
 ### Added

@@ -48,7 +48,10 @@
 	color: white;
 }
 
-.navigation-bar .currentbranch0 a {
+// Target select item in T4 and WordPress respectively
+.navigation-bar .currentbranch0 a,
+.navigation-bar .current-menu-item a, 
+.navigation-bar .current-menu-ancestor a {
 }
 
 .subnav {
@@ -129,8 +132,10 @@
 	}
 
 
-
-	.navigation-bar .currentbranch0 a{
+    // Target select item in T4 and WordPress respectively
+	.navigation-bar .currentbranch0 a,
+    .navigation-bar .current-menu-item a,
+    .navigation-bar .current-menu-ancestor a {
 		background-color: $sta-blue-light;
 	}
 
@@ -161,8 +166,13 @@
 		background-color: $sta-cyan-hover;
 	}
 
+    // Target select item in T4 and WordPress respectively
 	.accent-blue-study .navigation-bar .currentbranch0 a,
-	.navigation-bar.blue-study .currentbranch0 a {
+	.navigation-bar.blue-study .currentbranch0 a,
+    .accent-blue-study .navigation-bar .current-menu-item a,
+    .navigation-bar.blue-study .current-menu-item a,
+    .accent-blue-study .navigation-bar .current-menu-ancestor a,
+    .navigation-bar.blue-study .current-menu-ancestor a {
 		background-color: $sta-cyan-light;
 	}
 
