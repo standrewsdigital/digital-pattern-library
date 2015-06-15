@@ -7,6 +7,17 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## [0.3.1] - 2015-06-15
+
+### Changed
+- Optimised logo-standard.svg:      69 KB -> 41 KB
+- Optimised logo-foundation.svg:    60 KB -> 33 KB
+- Optimised print-crest.png:        41 KB -> 11 KB
+
+### Removed 
+- Unused logos and images.
+
+
 ## [0.3.0] - 2015-06-10
 ### Added
 - Font aliasing to improve quality of fonts
