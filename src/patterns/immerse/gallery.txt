@@ -1,0 +1,53 @@
+Immersive gallery
+
+<div class="immerse">
+    
+    <h2 class="immerse__title">{{gallery-title}}</h2>
+
+    <div class="immerse__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.</div>
+
+    <div class="immerse__images">
+
+        <figure id="immerse-3vde9c">
+            <img src="{{thumbnail}}" alt="{{alt}}">
+            <figcaption>{{caption}}</figcaption>
+        </figure>
+
+        ...
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+## Flexibility
+
+- If link is in .immerse__image then use the target of the link as target for larger image.
+- If ID's are added then update the window.location with that ID. 
+- If an hash is used, then open viewer on that item.
+
+
+
+immerse__images figure, 
+figure.immerse__image {
+    
+    /**
+     * You don't need .immerse__image on each figure
+     * if the figure is inside an immerse__images
+     * element.
+     */
+
+}
