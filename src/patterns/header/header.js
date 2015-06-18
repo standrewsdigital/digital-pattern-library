@@ -13,19 +13,22 @@ $("#header-search-trigger").click(function(){
     var trigger = $("#header-search-trigger");
     var logo = $("#header-logo");
 
-    form.show();
-    input.focus();
+    trigger.hide();
+
+    logo.css({
+      "opacity" : 0.1
+    });
 
     search.css({
       "position": "absolute",
       "width": "100%"
     });
 
-    trigger.hide();
+    form.show();
+    input.focus();
+
     
-    logo.css({
-      "opacity" : 0.1
-    });
+
     return false;
 });
 
