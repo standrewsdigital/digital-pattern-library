@@ -56,31 +56,6 @@ $("#header-search-close").click(function(){
 });
 
 
-// This code switches the logo on desktop devices from a plain ('standard')
-// logo to one showing the founding year ('foundation').
-enquire.register("screen and (min-width:768px)", {
-
-    // Triggered when a media query matches.
-    match : function() {
-      var current = $("#header-logo img").attr('src');
-      if (current) {
-          var updated = current.replace(/logo-standard/,'logo-foundation');
-          $("#header-logo img").attr('src',updated);
-      }
-    },
-
-    // Triggered when the media query transitions
-    // from a matched state to an unmatched state
-    unmatch : function() {
-      var current = $("#header-logo img").attr('src');
-      if (current) {
-          var updated = current.replace(/logo-foundation/,'logo-standard');
-          $("#header-logo img").attr('src',updated);
-      }
-    }
-
-});
-
 
 /*********************************/
 /* END Pattern: header           */
