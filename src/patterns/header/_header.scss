@@ -4,11 +4,6 @@
 /*********************************/
 
 
-    #header-print {
-        display: none;
-    }    
-
-
     #header-audience {
       
       border-bottom: 1px solid $gray-lighter;
@@ -35,27 +30,41 @@
 
       .audience {
         display: inline-block;
-        margin-left: 13px;
+        margin-right: 13px;
         margin-top: 7px;
+        margin-bottom: 7px;
       }
 
     }
 
     #header-logo {
-        margin: 13px 0px;
 
         h1 {
-            margin: 0;
+          margin: 0;
+          padding: 0;
         }
 
-        img {
+        margin: 13px 0;
+
+        a {
+            display: inline-block;
             width: 100%;
+            height: 50px;
             max-width: 205px;
-            -webkit-transition: all 200ms ease-out;
-            -moz-transition: all 200ms ease-out;
-            transition: all 200ms ease-out;
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            background-image: url(../images/furniture/logo-standard.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-size: contain;
+            background-position: left center;
+        }
+        span {
+            display: none;
         }
     }
+
 
     // BEGIN TEMP CODE FOR SEARCH
 
@@ -119,15 +128,18 @@
         border-bottom: none;
       }
 
-      #header-audience .btn:nth-last-child(1) {
-        margin-right: -12px;
+      #header-audience .audience {
+        margin-left: 13px;
+        margin-right: 0;
       }
 
       #header-logo {
-        margin: 25px 0px;
+        margin: 25px 0px 16px;
 
-        img {
+        a {
           max-width: 325px;
+          height: 60px;
+          background-image: url(../images/furniture/logo-foundation.svg);
         }
       }
 

@@ -13,19 +13,22 @@ $("#header-search-trigger").click(function(){
     var trigger = $("#header-search-trigger");
     var logo = $("#header-logo");
 
-    form.show();
-    input.focus();
+    trigger.hide();
+
+    logo.css({
+      "opacity" : 0.1
+    });
 
     search.css({
       "position": "absolute",
       "width": "100%"
     });
 
-    trigger.hide();
+    form.show();
+    input.focus();
+
     
-    logo.css({
-      "opacity" : 0.1
-    });
+
     return false;
 });
 
@@ -55,31 +58,6 @@ $("#header-search-close").click(function(){
     return false;
 });
 
-
-// This code switches the logo on desktop devices from a plain ('standard')
-// logo to one showing the founding year ('foundation').
-enquire.register("screen and (min-width:768px)", {
-
-    // Triggered when a media query matches.
-    match : function() {
-      var current = $("#header-logo img").attr('src');
-      if (current) {
-          var updated = current.replace(/logo-standard/,'logo-foundation');
-          $("#header-logo img").attr('src',updated);
-      }
-    },
-
-    // Triggered when the media query transitions
-    // from a matched state to an unmatched state
-    unmatch : function() {
-      var current = $("#header-logo img").attr('src');
-      if (current) {
-          var updated = current.replace(/logo-foundation/,'logo-standard');
-          $("#header-logo img").attr('src',updated);
-      }
-    }
-
-});
 
 
 /*********************************/

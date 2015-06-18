@@ -7,6 +7,20 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## [0.3.2] - 2015-06-18
+
+### Fixed
+- Fixed bug where logo would flash on desktops because the
+  JavaScript had to load before it would switch from standard to foundation logo.
+- Fixed bug where both standard and foundation logos were loading. Now CSS media queries only loads the correct one.
+- Fixed bug where print header was loading even though not showing. Now the print stylesheet loads the correct logo for print.
+- Some minor fixes on print styles. 
+- Improved interactivity of the search box on mobile devices.
+- Improvde spacing of audience links on mobile devices.
+- Reduced size of text in `<figcaption>` elements.
+- Provide PNG logo fallback for IE8.
+
+
 ## [0.3.1] - 2015-06-15
 
 ### Changed
