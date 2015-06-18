@@ -1,34 +1,17 @@
 @charset "utf-8";
-/*
-Theme Name      PRINT Study at St Andrews 2014
-Theme URI       http://www.st-andrews.ac.uk/study/
-Description     Printer-friendly stylesheet
-Version         1.0
-Author          gjms1 and dbss
-Last updated    1 March 2014
 
-================================================================================
-    PAGE STRUCTURE
-================================================================================
-*/
-.container {
-    background: none;
+
+@page {
+    margin: 20mm 20mm 20mm 20mm;
 }
+
 body {
-    background: none;
-    color: #000;
+    color: black;
     font-family: "Myriad Roman", "Myriad Pro", "PT Sans", "Arial", sans-serif;
-    font-size: 11pt;
-    letter-spacing: 0.2pt;
-    line-height: 1.4;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    word-spacing: 1.1pt;
+    line-height: 1.5;
+    font-size: 12pt;
 }
-#header h1 a {
-    text-decoration: none;
-}
+
 #relatedcontent {
     border-top: 1px solid #000;
     margin-top: 1em;
@@ -43,16 +26,16 @@ body {
     content: "Copyright ";
 }
 
-/*==============================================================================
-    REMOVE FROM PRINTED VERSION
-==============================================================================*/
 
-#skiptocontent,
+/*================================================
+    REMOVE SCREEN-ONLY ELEMENTS
+=================================================*/
+
+.sr-only,
 #topnavbar, #navglobal, #navsearch,
 #navmain,
-#header.js-enabled,
-#header form,
-#header img,
+#header-audience,
+#header-search,
 #breadcrumbs,
 #welcomeimage, #featurenav,
 #sidebar,
@@ -67,18 +50,25 @@ nav.navigation-bar,
     display: none;
 }
 
-/*==============================================================================
-    DISPLAY PRINT-ONLY HEADER
-==============================================================================*/
-#print-header {
+/*================================================
+    DISPLAY PRINT LOGO
+=================================================*/
+
+#header-logo a {
     display: block;
+    height: 2cm;
+    width: 10cm;
+    background-image: url(../images/furniture/print-crest.png);
+    content:url(../images/furniture/print-crest.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-#print-header img {
-    height: auto;
-    max-width: 100%;
-    width: 20cm;
+#header-logo span {
+    display: none;
 }
+
+
 
 /*==============================================================================
     HEADINGS
