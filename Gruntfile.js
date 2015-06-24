@@ -32,6 +32,7 @@ module.exports = function(grunt) {
           'src/scripts/vendor/matchmedia.polyfill.js',
           'src/scripts/vendor/matchMedia.addListener.js',
           'src/scripts/vendor/enquire.js',
+          'src/scripts/vendor/hammer.js',
           'src/scripts/base.js',
           'src/scripts/unbreakableSpaces.js',
           'src/patterns/*/*.js'
