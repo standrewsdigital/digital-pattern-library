@@ -18,7 +18,7 @@
         var init = function() {
             console.log("init");
             console.log(this);
-            var theatreStage = $("<div id='theatre__stage'><h2></h2><div id='theatre__wrap'><div id='theatre__prev'><a href=''>prev</a></div><figure id='theatre__figure'><img src='' alt=''><figcaption></figcaption></figure><div id='theatre__next'><a href=''>next</a></div></div><div id='theatre__close'><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></div></div>");
+            var theatreStage = $("<div id='theatre__stage'><div id='theatre__wrap'><div id='theatre__prev'><a href=''></a></div><figure id='theatre__figure'><img src='' alt=''><figcaption></figcaption></figure><div id='theatre__next'><a href=''></a></div></div><div id='theatre__close'><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></div></div>");
 
             theatreStage.hide()
                         .appendTo('body');
@@ -40,7 +40,10 @@
                 return false;
             });
 
-            // Handle key presses.
+            // Handle key presses
+            // ==================
+
+
             $("body").keyup(function(e){
                 
                 // ESC
@@ -66,7 +69,9 @@
                 }
             });
 
+
             // Handle swipes
+            // ==================
 
             // Use Hammer.js to detect swipes and gestures.
             var hammer = new Hammer(theatreStage[0]);
@@ -82,8 +87,6 @@
 
             // Swipe right - previous
             hammer.on('swiperight', function(ev) {
-                console.log('swiped right; previous');
-                console.log(ev);
                 if (theatreStage.is(':visible')) {
                     $("#theatre__prev a").click();
                 }
@@ -91,8 +94,6 @@
 
             // Swipe left - next
             hammer.on('swipeleft', function(ev) {
-                console.log('swiped left; next');
-                console.log(ev);
                 if (theatreStage.is(':visible')) {
                     $("#theatre__next a").click();
                 }
@@ -107,8 +108,6 @@
             console.log('activate theatre stage');
             var item = $(el);
             var stage = $("#theatre__stage");
-
-            stage.find('h2').text(item.attr('data-theatre-title'));
 
             if (item.find('img').parent('a').length !== 0) {
                 console.log(item.find('img').parent('a'));
