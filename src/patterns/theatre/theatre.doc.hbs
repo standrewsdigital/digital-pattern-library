@@ -1,0 +1,43 @@
+---
+title: Theatre
+pattern: theatre
+examples:
+- name: example-standalone
+- name: example-standalone-big
+- name: example-standalone-multiple
+---
+
+<p>The Theatre pattern provides an immersive experience to view either a single image or a group of images.</p>
+
+<h2>Usage</h2>
+
+<ul>
+  <li>You must place each image inside a <code>&lt;figure&gt;</code> element.</li>
+  <li>Each <code>&lt;figure&gt;</code> element must have a class <code>theatre__image</code> or must be inside an element with class <code>theatre__images</code>.</li>
+  
+
+</ul>
+
+<h2>Syntax</h2>
+
+There are two methods of using the immersive viewer: (1) for standalone images, (2) for a gallery of images. 
+
+<h3>Standalone useage</h3>
+
+<div class="pattern-source">{{> theatre-standalone theatre-standalone-default }}</div>
+
+
+<h3>Gallery useage</h3>
+
+
+
+<div class="pattern-source">{{> theatre-gallery }}</div>
+
+<h2>Options</h2>
+
+<ul>
+  <li><strong>Captions</strong><br> Captions can be added by included a <code>&lt;figcaption&gt;</code> element inside each <code>&lt;figure&gt;</code>.</li>
+
+  
+
+</ul>

@@ -1,0 +1,7 @@
+{
+  "thumbnail":  "path/to/thumbnail.jpg",
+  "alt":        "alt text",
+  "id":         "optional-id",
+  "caption":    "optional caption",
+  "large-img":  "path/to/large-image.jpg"
+}
