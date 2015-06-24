@@ -127,6 +127,18 @@
             // bottom: 0;
         }
 
+#theatre__counter {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1500;
+
+    padding-left: 1em;
+    padding-top: 0.5em;
+
+    color: white;
+}
 
 
 #theatre__close {
