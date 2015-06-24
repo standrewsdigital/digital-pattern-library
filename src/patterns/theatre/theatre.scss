@@ -1,7 +1,13 @@
+.theatre__images {
+    @extend .row;
+}
+
 .theatre__image {
+    @extend .col-md-3;
     img {
         max-width: 100%;
     }
+    margin-bottom: 1em;
 }
 
 // Styles for a div that JS creates. 
@@ -9,7 +15,7 @@
 #theatre__stage {
     z-index: 1000;
     position: fixed;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,1);
     background-color: rgba(0,0,0,0.8);
     top: 0;
     width: 100%;
@@ -195,7 +201,7 @@
             width: 80%;
 
                 max-width: 1280px;
-                max-height: 853px;
+                max-height: 600px;
             
 
             img {
@@ -208,6 +214,7 @@
 
                 width: auto;
                 height: auto;
+                max-height: 600px;
 
 
 
@@ -223,23 +230,23 @@
 }
 
 
-@media (min-height: 800px) {
+// @media (min-height: 800px) {
 
 
-    #theatre__figure {
+//     #theatre__figure {
 
 
-        figcaption {
-            position: relative;
-            display: block;
-            width: 100%;
+//         figcaption {
+//             position: relative;
+//             display: block;
+//             width: 100%;
 
-            vertical-align: middle; 
-            background-color: inherit;
-            color: white;
+//             vertical-align: middle; 
+//             background-color: inherit;
+//             color: white;
 
-            font-size: 1em;
-        }
+//             font-size: 1em;
+//         }
 
-    }
-}
+//     }
+// }

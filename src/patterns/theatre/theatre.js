@@ -16,28 +16,34 @@
         
 
         var init = function() {
-            console.log("init");
-            console.log(this);
+            // console.log("init");
+            // console.log(this);
             var theatreStage = $("<div id='theatre__stage'><div id='theatre__wrap'><div id='theatre__prev'><a href=''></a></div><figure id='theatre__figure'><img src='' alt=''><figcaption></figcaption></figure><div id='theatre__next'><a href=''></a></div></div><div id='theatre__close'><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></div></div>");
 
             theatreStage.hide()
                         .appendTo('body');
 
             // Clicking any where closes the theatre.
-            theatreStage.click(function(){
-                theatreStage.hide();
-                window.location.hash = '';
-            });
-            // but clicking on the figure does not.
-            $('#theatre__figure').click(function(){
-                return false;
-            });
+            // theatreStage.click(function(){
+            //     theatreStage.hide();
+            //     window.location.hash = '';
+            // });
+            // // but clicking on the image or caption does not.
+            // $('#theatre__figure img, #theatre__figure figcaption').click(function(){
+            //     return false;
+            // });
 
             // Setup click events for next/prev buttons
             $("#theatre__prev a, #theatre__next a").click(function(){
-                console.log($(this).attr('href'));
+                // console.log($(this).attr('href'));
                 $($(this).attr('href')).click();
                 return false;
+            });
+
+            $("#theatre__close").click(function(){
+                // console.log($(this).attr('href'));
+                theatreStage.hide();
+                window.location.hash = '';
             });
 
             // Handle key presses
@@ -105,16 +111,16 @@
         var play = function(el) {
             // this activates the theatre mode.
             // we attach this to clicks on images.
-            console.log('activate theatre stage');
+            // console.log('activate theatre stage');
             var item = $(el);
             var stage = $("#theatre__stage");
 
             if (item.find('img').parent('a').length !== 0) {
-                console.log(item.find('img').parent('a'));
+                // console.log(item.find('img').parent('a'));
                 stage.find('img').attr('src',item.find('img').parent('a').attr('href'));            
             }
             else {
-                console.log('no parent link');
+                // console.log('no parent link');
                 stage.find('img').attr('src',item.find('img').attr('src'));
             }
             
@@ -133,7 +139,7 @@
             }
 
             // update the location if current item has an ID.
-            console.log(item);
+            // console.log(item);
             if(item.attr('id')) {
                 window.location.hash = 'theatre---' + item.attr('id');
             }
@@ -145,7 +151,7 @@
 
         if ( $('#theatre__stage').length === 0 ) {
             init();
-            console.log(this);
+            // console.log(this);
         }
 
 
@@ -158,7 +164,7 @@
             if (i > 0) {
                 // console.log(i,'prev', i-1);
                 // console.log(current[i-1]);
-                item.attr('data-theatre-prev', current[i-1].id);
+                item.attr('data-theatre-prev', current[i-1 % current.length ].id);
             }
             if (i < current.length - 1) {
                 // console.log(i,'next',i+1);
@@ -171,10 +177,10 @@
                 return play(this);
             });
 
-            console.log('init loading');
-            console.log(window.location.hash);
+            // console.log('init loading');
+            // console.log(window.location.hash);
             if ('#theatre---' + item.attr('id') === window.location.hash) {
-                console.log(window.location.hash);
+                // console.log(window.location.hash);
                 play(this);
             }
             
