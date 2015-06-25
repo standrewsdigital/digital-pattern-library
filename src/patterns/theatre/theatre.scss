@@ -189,4 +189,28 @@
 
 }
 
+// At a certain threshold, place the caption
+// right below the picture instead of the mobile
+// solution of a fixed-bottom transparent element.
+@media (min-height: 700px) {
+
+
+    #theatre__figure {
+
+
+        figcaption {
+            position: relative;
+            display: block;
+            width: 100%;
+
+            vertical-align: middle; 
+            background-color: inherit;
+            color: white;
+
+            font-size: 1em;
+        }
+
+    }
+}
+
 
