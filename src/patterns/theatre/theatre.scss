@@ -189,6 +189,14 @@
 
 }
 
+@media (min-width: 992px) and (min-height: 992px) {
+
+    #theatre__figure img {
+
+        max-height: 800px;
+    }
+}
+
 // At a certain threshold, place the caption
 // right below the picture instead of the mobile
 // solution of a fixed-bottom transparent element.
