@@ -50,7 +50,7 @@ $.extend( true, DataTable.defaults, {
         // container.find(".dt-pre").css('color',textcolor);
 
         var padding = table.find("th").css('padding');
-        console.log(padding)
+
         container.find(".dt-title").css('padding',padding);
         container.find(".dataTables_filter").css('padding',padding);
 
