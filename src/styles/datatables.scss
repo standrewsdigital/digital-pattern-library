@@ -71,6 +71,17 @@
 }
 
 
+.dt-bootstrap .dataTables_processing {
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 1em;
+    color: $gray-light-medium;
+}
+
+
 // div.dataTables_length {
 //     text-align: right;
 // }
