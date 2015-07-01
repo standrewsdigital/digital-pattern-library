@@ -14,10 +14,12 @@
     transition: all 200ms ease-out;
 }
 
-body {
+* {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-variant-ligatures: common-ligatures;
+    text-shadow:none;
+    text-rendering: optimizeLegibility;
 }
 
 .clear {
