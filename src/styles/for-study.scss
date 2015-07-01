@@ -4,7 +4,11 @@
 @import 'colors';
 // @import 'fonts';
 // @import 'bootstrap-custom';
-@import 'bootstrap-variables';
+@import "vendor/bootstrap/variables";
+@import "bootstrap-variables"; // CUSTOM VARIABLES
+@import "vendor/bootstrap/mixins";
+@import "bootstrap-mixins"; // CUSTOM MIXINS
+@import "vendor/bootstrap/glyphicons";
 // @import 'icons';
 // @import 'figures';
 
