@@ -38,24 +38,11 @@ module.exports = function(grunt) {
         ],
         dest: 'core/scripts/core.js'
       },
-      forStudy: {
+      headerOnly: {
         src: [
-          /* Note: update src/docs/dependencies.md if any of these change */
-          //'src/scripts/vendor/jquery.min.js',
-          // 'src/scripts/vendor/jquery.bigtarget.js',
-          // 'src/scripts/vendor/jquery.fitvids.js',
-          // 'src/scripts/vendor/jquery.fittext.js',
-          // 'src/scripts/vendor/jquery.replacetext.js',
-          // 'src/scripts/vendor/respond.js',
-          // 'src/scripts/vendor/bootstrap.js',
-          // 'src/scripts/vendor/matchmedia.polyfill.js',
-          // 'src/scripts/vendor/matchMedia.addListener.js',
-          // 'src/scripts/vendor/enquire.js',
-          // 'src/scripts/base.js',
-          // 'src/scripts/unbreakableSpaces.js',
           'src/patterns/header/header.js'
         ],
-        dest: 'core/scripts/for-study.js'
+        dest: 'core/scripts/header-only.js'
       },
       corebase: {
         src: [
@@ -92,7 +79,7 @@ module.exports = function(grunt) {
             'src/styles/print.scss',
             'src/styles/screen-bootstrap-only.scss',
             'src/styles/screen.scss',
-            'src/styles/for-study.scss'
+            'src/styles/header-only.scss'
           ],
           sassDir: 'src/styles',
           importPath: 'src/patterns',
