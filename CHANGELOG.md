@@ -6,6 +6,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## [*] - *
+
+### Fixed
+- Improved how navboxes show on smaller screens, making them more concise.
+- Fixed tile images that were scaling out of proportion at some screen widths.
+- Fixed tile grid padding which was incorrect at smaller screen widths.
+- Set navigation bar to be collapsed at iPad vertical and below.
+
 
 ## [0.3.2] - 2015-06-18
 
