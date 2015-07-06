@@ -86,6 +86,7 @@
 	/* Make the title show below instead of on top of the image... */
   .navbox-title {
   	position: relative;
+  	font-size: 21px;
   }
 
   /* ... and switch to non-transprent background colour. */
@@ -98,6 +99,12 @@
 		background: $sta-blue-hover;
 	}
 
+	.navbox-title:before {
+  		display: none;
+	}
+
+
+
 }
 
 @media (max-width: 767px) {
@@ -107,9 +114,17 @@
 	}
 
 	.navbox-image {
-  	max-height: 250px;
+  		max-height: 65px;
 		overflow: hidden;
-  }
+  	}
+
+  	.navbox-image img {
+  		margin-top: -20%;
+  	}
+
+  	.navbox-title {
+		top: 0;
+	}
 
 }
 
