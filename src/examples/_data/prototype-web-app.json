@@ -4,7 +4,8 @@
             "username": "js73",
             "first-name": "John",
             "last-name": "Smith"
-        }
+        },
+        "audience": true
     },
     "category-header": {
         "class":"category-header-solid",
