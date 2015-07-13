@@ -4,11 +4,14 @@
 /*********************************/
 
 
+  #header {
+    @extend .container;
+  }
+
     #header-audience {
-      
+      @extend .col-sm-5;
+
       border-bottom: 1px solid $gray-lighter;
-
-
 
       .btn {
           border-bottom: none;
@@ -35,6 +38,12 @@
         margin-bottom: 7px;
       }
 
+    }
+
+
+    #logo-container {
+      @extend .col-sm-7;
+      @extend .col-xs-7;
     }
 
     #header-logo {
@@ -66,10 +75,9 @@
     }
 
 
-    // BEGIN TEMP CODE FOR SEARCH
-
-
     #header-search {
+      @extend .col-sm-5;
+      @extend .col-xs-5;
       text-align: right;
       margin-top: 19px;
 
@@ -102,20 +110,6 @@
       }
 
     }
-
-    // END TEMP CODE FOR SEARCH
-
-
-
-    // BEGIN alignment hack
-    // Pull the first and last buttons out by 12px horizontally 
-    // to line them up with container edges.
-
-    // #header-audience .btn:nth-child(1) {
-    //    margin-left: -12px;
-    // }
-
-    // END alignment hack
 
 
     // BEGIN desktop styles
@@ -170,7 +164,7 @@
 
     @media (min-width: 768px) {
 
-      #header-row {
+      #header .row {
         /* By adding a position property to this selector, 
          * this element will act as an anchor for absolutely
          * positioned child elements */
@@ -183,15 +177,39 @@
            * row. This means we can align it to the right. */
           position: absolute;
           right: 0;
-          top: 30px;  // Note: this is a 'magic' number.
+          top: 18px;  // Note: this is a 'magic' number.
       }
+
 
     }
 
     /* END: LAYOUT HACK */
 
 
-    
+
+
+    // BEGIN audience header modifier
+    // Note there are some further changes under 'desktop for this'
+    .header--audience {
+
+      #logo-container {
+        @extend .col-sm-pull-5;
+      }
+
+      #header-audience {
+        @extend .col-sm-push-7;
+      }
+
+      @media (min-width: 768px) {
+        #header-search {
+          /* When the audience links are showing then push the search down
+           * a bit more. */
+          top: 30px;  // Note: this is another 'magic' number.
+        }
+      }
+    }
+    // END audience header modifier
+
 
 
 /*********************************/
