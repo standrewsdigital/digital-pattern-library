@@ -2,16 +2,17 @@
 title: Header
 pattern: header
 examples:
-- name: example1
-- name: example2
+- name: default-header
+- name: audience-header
+- name: authenticated-header
 ---
 
-<p>The Header pattern includes the logo, audience navigation and search.</p>
+<p>The Header pattern includes the logo and search. On the homepage, the header also includes audience navigation. </p>
 
 <h2>Usage</h2>
 
 <ul>
-	<li>A Header should be at the top of all pages.</li>
+	<li>The header should be included at the top of all pages.</li>
 </ul>
 
 <h2>Syntax</h2>
@@ -21,5 +22,6 @@ examples:
 <h2>Options</h2>
 
 <ul>
-	<li><em>None</em></li>
+	<li><em>Audience navigation</em> The audience navigation should only be included on the homepage.</li>
+    <li><em>Authenticated links</em> When authenticated the header should be altered to include the name of the person logged in, any audience-specific links they may have access to in addition to a link to logout.</li>
 </ul>

@@ -1,58 +1,51 @@
 <!-- Begin pattern: header //-->
 
-
 <div class="sr-only"><a href="#content-begin">Skip to content</a></div>
 
+<header id="header" class="{{#audience}}header--audience{{/audience}}">
 
-<!-- BEGIN: #header //-->
-<header id="header">
-
-    <div class="container">
-
-        <div id="header-row" class="row" >
-
-            <div id="header-audience" class="col-sm-5  col-sm-push-7">
-                {{#authenticated}}
-                <div class="btn-group">
-                  <a href="#" class="btn btn-link dropdown-toggle" data-toggle="dropdown">{{first-name}}&nbsp;{{last-name}} <span class="caret"></span></a>
-                  <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="/email/">Email</a></li>
-                    <li><a href="/mms/">MMS</a></li>
-                    <li><a href="/moodle/">Moodle</a></li>
-                    <li><a href="/iSaint/">iSaint</a></li>
-                    <li role="presentation" class="divider"></li>
-                    <li><a href="/logout/"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Log out</a></li>
-                  </ul>
-                </div>
-                {{else}}
+    <div class="row" >
+        {{#audience}}
+        <div id="header-audience">
+        
+            {{#authenticated}}
+            <div class="btn-group">
+              <a href="#" class="btn btn-link dropdown-toggle" data-toggle="dropdown">{{first-name}}&nbsp;{{last-name}} <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/email/">Email</a></li>
+                <li><a href="/mms/">MMS</a></li>
+                <li><a href="/moodle/">Moodle</a></li>
+                <li><a href="/iSaint/">iSaint</a></li>
+                <li role="presentation" class="divider"></li>
+                <li><a href="/logout/"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Log out</a></li>
+              </ul>
+            </div>
+            {{else }}
                 
-                <a href="/students/" class="audience">Students</a>
-                <a href="/pgstudents/" class="audience">Postgraduates</a>
-                <a href="/staff/" class="audience">Staff</a>
+            <a href="/students/" class="audience">Students</a>
+            <a href="/pgstudents/" class="audience">Postgraduates</a>
+            <a href="/staff/" class="audience">Staff</a>
+                
+            {{/authenticated}}
 
-                {{/authenticated}}
-            </div>
+        </div>
+        {{/audience}}
+        
+        <div id="logo-container">
+            <div id="header-logo"><h1><a href="http://www.st-andrews.ac.uk/"><span>University of St Andrews</span></a></h1></div>
+        </div>
 
-            <div id="logo-container" class="col-sm-7 col-sm-pull-5 col-xs-7">
-                <div id="header-logo"><h1><a href="http://www.st-andrews.ac.uk/"><span>University of St Andrews</span></a></h1></div>
-            </div>
+        <div id="header-search" role="search">
 
-            <div id="header-search" class="col-sm-5 col-xs-5" role="search">
+            <button class="btn btn-link" type="button" value="" name="btnG" id="header-search-trigger"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
 
-                <!-- BEGIN: Search Trigger //-->
-                <div style=" ">
-                    <button class="btn btn-link" type="button" value="" name="btnG" id="header-search-trigger"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                </div>
-                <!-- BEGIN: Search Trigger //-->
-
-                <!-- BEGIN: Search //-->   
-                <form action="http://www.st-andrews.ac.uk/gsasearch" method="get">
-                    
+            <form action="http://www.st-andrews.ac.uk/gsasearch" method="get">
+                
                 <div class="input-group">
                     <span class="input-group-btn">
                         <button class="btn btn-link" type="button" value="" name="btnG" id="header-search-close"/><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
                     </span>
-                    <input class="form-control" type="text" title="Enter search keywords" maxlength="256" name="q" placeholder="Search..."/>
+                    <input class="form-control" type="text" title="Enter search keywords" maxlength="256" name="q" placeholder="Search the University website..."/>
                     <span class="input-group-btn">
                         <button class="btn btn-primary" type="submit" value="Search" name="btnG" id="header-search-submit"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                     </span>
@@ -62,19 +55,13 @@
                 <input type="hidden" value="xml_no_dtd" name="output"/>
                 <input type="hidden" value="StAndrews_ITS" name="client"/>
                 <input type="hidden" value="StAndrews_ITS" name="proxystylesheet"/>
-                </form>
-            
-                <!-- END: Search //-->
-
-                
-
-            </div>
-
+            </form>
+        
         </div>
 
     </div>
+
 </header>
-<!-- END: #header //-->
 
 
 <!-- End pattern: header //-->
