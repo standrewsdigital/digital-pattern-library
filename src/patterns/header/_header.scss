@@ -127,6 +127,13 @@
         margin-right: 0;
       }
 
+      /* On desktops, when the audience shows on the right
+       * align the dropdown-menu to the right. */
+      #header-audience .dropdown-menu {
+        left: auto;
+        right: 0;
+      }
+
       #header-logo {
         margin: 25px 0px 16px;
 
@@ -136,6 +143,8 @@
           background-image: url(../images/furniture/logo-foundation.svg);
         }
       }
+
+      
 
     }
     // END desktop styles
