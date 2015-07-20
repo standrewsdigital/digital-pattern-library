@@ -6,6 +6,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## [*] - *
+
+### Added
+- Header-only JavaScript and CSS core files. 
+  These will be used in places where only the header and footer styles are 
+  needed.
+
 
 ## [0.3.2] - 2015-06-18
 
