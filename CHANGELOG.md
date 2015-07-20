@@ -8,6 +8,11 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ## [*] - *
 
+### Added
+- Header-only JavaScript and CSS core files. 
+  These will be used in places where only the header and footer styles are 
+  needed.
+
 ### Changed
 - Updated default header pattern to have no audience links
 - Added an audience-header variation examples for showing audience links.

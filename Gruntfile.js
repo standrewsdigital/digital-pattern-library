@@ -38,6 +38,12 @@ module.exports = function(grunt) {
         ],
         dest: 'core/scripts/core.js'
       },
+      headerOnly: {
+        src: [
+          'src/patterns/header/header.js'
+        ],
+        dest: 'core/scripts/header-only.js'
+      },
       corebase: {
         src: [
           'src/scripts/base.js',
@@ -72,7 +78,8 @@ module.exports = function(grunt) {
             'src/styles/ie.scss',
             'src/styles/print.scss',
             'src/styles/screen-bootstrap-only.scss',
-            'src/styles/screen.scss'
+            'src/styles/screen.scss',
+            'src/styles/header-only.scss'
           ],
           sassDir: 'src/styles',
           importPath: 'src/patterns',
