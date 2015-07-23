@@ -1,0 +1,18 @@
+.gallery__images {
+    @extend .row;
+
+    figure {
+        @extend .col-md-3;
+        margin-bottom: 1.5em;
+
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            display: none;
+        }
+    }
+
+
+}
