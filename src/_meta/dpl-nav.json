@@ -85,10 +85,6 @@
                     "url" : "patterns/text-banner/index.html"
                 },
                 {
-                    "name" : "Theatre",
-                    "url" : "patterns/theatre/index.html"
-                },
-                {
                     "name" : "Tile",
                     "url" : "patterns/tile/index.html"
                 },
