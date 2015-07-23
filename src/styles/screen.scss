@@ -31,8 +31,9 @@
 @import 'secondary-call/secondary-call';
 @import 'staff-profile/staff-profile';
 @import 'text-banner/text-banner';
-@import 'theatre/theatre';
 @import 'tile/tile';
 @import 'tile-grid/tile-grid';
 
 
+/* Other vendor scripts */
+@import 'vendor/jquery.theatre.min.css';
