@@ -6,6 +6,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## [*] - *
+
+### Added
+- Added a Gallery pattern.
+- Additional placeholder images for galleries.
+- Added jQuery Theatre (v1.0.1) plugin to provide immersive experience.
+- Added Hammer.js to support jQuery Theatre.
+
 
 ## [0.3.2] - 2015-06-18
 
