@@ -1,0 +1,16 @@
+<div class="gallery">
+    
+    <h2 class="gallery__title">{{gallery-title}}</h2>
+
+    <div class="gallery__description">{{gallery-description}}</div>
+
+    <div class="gallery__images">
+        {{#gallery-images}}
+        <figure id="{{id}}"">
+            <a href="{{asset large-img}}"><img src="{{asset thumbnail}}" alt="{{alt}}"></a>
+            <figcaption>{{caption}}</figcaption>
+        </figure>
+        {{/gallery-images}}
+    </div>
+
+</div>

@@ -29,6 +29,10 @@
                     "url" : "patterns/footer/index.html"
                 },
                 {
+                    "name" : "Gallery",
+                    "url" : "patterns/gallery/index.html"
+                },
+                {
                     "name" : "Header",
                     "url" : "patterns/header/index.html"
                 },
@@ -144,6 +148,10 @@
                 {
                     "name" : "Ex: Content",
                     "url" : "examples/content.html"
+                },
+                {
+                    "name" : "Ex: Gallery",
+                    "url" : "examples/gallery.html"
                 },
                 {
                     "name" : "Ex: HTML elements",
