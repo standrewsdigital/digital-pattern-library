@@ -6,6 +6,31 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## [0.4.0] - 2015-07-27
+
+### Added
+- Header-only JavaScript and CSS core files. 
+  These will be used in places where only the header and footer styles are 
+  needed.
+- Added a Gallery pattern.
+- Additional placeholder images for galleries.
+- Added jQuery Theatre (v1.0.1) plugin to provide immersive experience.
+- Added Hammer.js to support jQuery Theatre.
+- Custom defaults and styling for jQuery DataTables.
+- Guidance about using DataTables.
+
+### Changed
+- Updated default header pattern to have no audience links
+- Added an audience-header variation examples for showing audience links.
+
+### Fixed
+- Improved how navboxes show on smaller screens, making them more concise.
+- Fixed tile images that were scaling out of proportion at some screen widths.
+- Fixed tile grid padding which was incorrect at smaller screen widths.
+- Set navigation bar to be collapsed at iPad vertical and below.
+- Authenticated header dropdown is now aligned right on mobile screens.
+- Made header search placeholder text less ambiguous.
+
 
 ## [0.3.2] - 2015-06-18
 

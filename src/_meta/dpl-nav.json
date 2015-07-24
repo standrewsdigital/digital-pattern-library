@@ -29,6 +29,10 @@
                     "url" : "patterns/footer/index.html"
                 },
                 {
+                    "name" : "Gallery",
+                    "url" : "patterns/gallery/index.html"
+                },
+                {
                     "name" : "Header",
                     "url" : "patterns/header/index.html"
                 },
@@ -113,6 +117,10 @@
                 {
                     "name" : "Palettes",
                     "url" : "palettes.html"
+                },
+                {
+                    "name" : "Using jQuery DataTables",
+                    "url" : "datatables.html"
                 }
             ]
 
@@ -142,6 +150,10 @@
                     "url" : "examples/content.html"
                 },
                 {
+                    "name" : "Ex: Gallery",
+                    "url" : "examples/gallery.html"
+                },
+                {
                     "name" : "Ex: HTML elements",
                     "url" : "examples/html-elements.html"
                 },
@@ -150,10 +162,13 @@
                     "url" : "examples/tables.html"
                 },
                 {
+                    "name" : "Ex: Tables – DataTables",
+                    "url" : "examples/datatables.html"
+                },
+                {
                     "name" : "Ex: Web application",
                     "url" : "examples/web-app.html"
                 }
-
             ]
         }
     ]

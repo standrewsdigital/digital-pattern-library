@@ -17,6 +17,7 @@
 @import 'content-2col/content-2col';
 @import 'content-full/content-full';
 @import 'footer/footer';
+@import 'gallery/gallery';
 @import 'header/header';
 @import 'hero-banner/hero-banner';
 @import 'info-bite/info-bite';
@@ -34,3 +35,5 @@
 @import 'tile-grid/tile-grid';
 
 
+/* Other vendor scripts */
+@import 'vendor/jquery.theatre.min';

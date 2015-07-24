@@ -3,5 +3,6 @@
         "username": "js73",
         "first-name": "John",
         "last-name": "Smith"
-    }
+    },
+    "audience": true
 }

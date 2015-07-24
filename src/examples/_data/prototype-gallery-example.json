@@ -1,0 +1,71 @@
+{
+  "gallery" : {
+    "gallery-title": "Title of gallery",
+    "gallery-description": "Description",
+    "gallery-images": [
+        {
+            "thumbnail":  "images/placeholders/360x240-7.jpg",
+            "alt":        "alt text for image 1",
+            "id":         "optional-id2",
+            "caption":    "Image 1",
+            "large-img":  "images/placeholders/1280x853-7.jpg"
+        },
+        {
+            "thumbnail":  "images/placeholders/360x240-8.jpg",
+            "alt":        "alt text for image 2",
+            "id":         "optional-id3",
+            "caption":    "Image 2",
+            "large-img":  "images/placeholders/1280x853-8.jpg"
+        },
+        {
+            "thumbnail":  "images/placeholders/360x240-9.jpg",
+            "alt":        "alt text for image 3",
+            "id":         "optional-id4",
+            "caption":    "Image 3",
+            "large-img":  "images/placeholders/1280x853-9.jpg"
+        },
+        {
+            "thumbnail":  "images/placeholders/360x240-7.jpg",
+            "alt":        "alt text for image 1",
+            "id":         "optional-id5",
+            "caption":    "Image 1",
+            "large-img":  "images/placeholders/1280x853-7.jpg"
+        },
+        {
+            "thumbnail":  "images/placeholders/360x240-8.jpg",
+            "alt":        "alt text for image 2",
+            "id":         "optional-id6",
+            "caption":    "Image 2",
+            "large-img":  "images/placeholders/1280x853-8.jpg"
+        },
+        {
+            "thumbnail":  "images/placeholders/360x240-9.jpg",
+            "alt":        "alt text for image 3",
+            "id":         "optional-id7",
+            "caption":    "Image 3",
+            "large-img":  "images/placeholders/1280x853-9.jpg"
+        },
+        {
+            "thumbnail":  "images/placeholders/360x240-7.jpg",
+            "alt":        "alt text for image 1",
+            "id":         "optional-id8",
+            "caption":    "Image 1",
+            "large-img":  "images/placeholders/1280x853-7.jpg"
+        },
+        {
+            "thumbnail":  "images/placeholders/360x240-8.jpg",
+            "alt":        "alt text for image 2",
+            "id":         "optional-id9",
+            "caption":    "Image 2",
+            "large-img":  "images/placeholders/1280x853-8.jpg"
+        },
+        {
+            "thumbnail":  "images/placeholders/360x240-9.jpg",
+            "alt":        "alt text for image 3",
+            "id":         "optional-id10",
+            "caption":    "Image 3",
+            "large-img":  "images/placeholders/1280x853-9.jpg"
+        }
+    ]
+  }
+}
