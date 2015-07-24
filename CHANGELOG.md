@@ -16,6 +16,8 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 - Additional placeholder images for galleries.
 - Added jQuery Theatre (v1.0.1) plugin to provide immersive experience.
 - Added Hammer.js to support jQuery Theatre.
+- Custom defaults and styling for jQuery DataTables.
+- Guidance about using DataTables.
 
 ### Changed
 - Updated default header pattern to have no audience links

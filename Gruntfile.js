@@ -61,6 +61,12 @@ module.exports = function(grunt) {
           'src/scripts/doc.js'
         ],
         dest: 'core/scripts/doc.js'
+      },
+      datatables: {
+        src: [
+          'src/scripts/datatables.js'
+        ],
+        dest: 'core/scripts/datatables.js'
       }
     },
 
@@ -76,6 +82,7 @@ module.exports = function(grunt) {
       dist: {
         options: {
           specify: [
+            'src/styles/datatables.scss',
             'src/styles/doc.scss',
             'src/styles/ie.scss',
             'src/styles/print.scss',

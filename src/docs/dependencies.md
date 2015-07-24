@@ -13,3 +13,9 @@ The Pattern Library uses code from the following packages. By default, all of th
 * [Respond.js](https://github.com/scottjehl/Respond) (v1.4.0)
 * [Bootstrap-Sass](https://github.com/twbs/bootstrap-sass) (v3.3.1)
 * [Enquire.js](https://github.com/WickyNilliams/enquire.js) (v2.1.2)
+
+## Supported additional packages
+
+These packages are supported by not required.
+
+* [jQuery DataTables](http://www.datatables.net/) (v1.10.7) is supported and we provide additional JavaScript and CSS to match the pattern library. See [Data tables](datatables.html) for more information.
