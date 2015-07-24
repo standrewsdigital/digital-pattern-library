@@ -1,21 +1,9 @@
-    // /* Set the defaults for DataTables initialisation */
-    // $.extend(true, $.fn.dataTable.defaults, {
-    //     //"sDom": "<'row'<'col-xs-6'fp><'col-xs-6'li>r>t<'row'<'col-xs-12'p>>",
-    //     "sDom": "<'row'<'col-md-4'><'col-md-4'i><'col-md-4'f>r>t<'row'<'col-md-6'p><'col-md-6'l>>",
-    //     "sPaginationType": "bootstrap",
-    //     "oLanguage": {
-    //         "sLengthMenu": "_MENU_ records per page"
-    //     }
-    // });
-
-
-/* DataTables integration
- * 
+/**
+ * DataTables integration
+ * This file sets defaults styles and options for the Datatable plugin.
+ *
  * Based on the vanilla integration for Bootstrap 3.
  * http://datatables.net/manual/styling/bootstrap
- *
- * This file sets the defaults and adds options to DataTables to style its
- * controls.
  */
 
 (function(window, document, undefined){
@@ -32,28 +20,12 @@ $.extend( true, DataTable.defaults, {
         "<'row dt-post'<'col-md-6'p><'col-md-6 text-right'il>>",
     renderer: 'bootstrap',
     preDrawCallback: function( settings ) {
-        var container = $(this.api().table().container());
-        var table = $(this.api().table().node());
-        // var tableCaption = table.find('caption').first();
-
-        // // Load the table caption as the title of the datatable container.
-        // // Hide the original caption since it would be redundant.
-        // container.find('.dt-title').first().html(tableCaption.html());
-        // tableCaption.css('display','none');
-
-        // Get some CSS styles applied to the table;
-        // Apply those to elements of the data table wrapper.
-        
-        // var bgcolor = table.find("th").css('background-color');
-        // var textcolor = table.find("th").css('color');
-        // container.css('background-color',bgcolor);
-        // container.find(".dt-pre").css('color',textcolor);
-
-        var padding = table.find("th").css('padding');
+        var container = $(this.api().table().container()),
+            table = $(this.api().table()),
+            padding = table.find("th").css('padding');
 
         container.find(".dt-title").css('padding',padding);
         container.find(".dataTables_filter").css('padding',padding);
-
     },
     language: {
         info: "_START_ to _END_ of _TOTAL_ rows",
@@ -73,13 +45,7 @@ $.extend( true, DataTable.defaults, {
     responsive: {
         details : {
             type: "column",
-            target: -1,
-            /* ,
-            a custom renderer of extra data.
-            renderer: function(api, rowIdx) {
-                
-            }
-            */
+            target: -1
         }
     }
 
