@@ -119,7 +119,7 @@
                     "url" : "palettes.html"
                 },
                 {
-                    "name" : "Using data tables",
+                    "name" : "Using jQuery DataTables",
                     "url" : "datatables.html"
                 }
             ]
@@ -162,7 +162,7 @@
                     "url" : "examples/tables.html"
                 },
                 {
-                    "name" : "Ex: Tables – Data tables",
+                    "name" : "Ex: Tables – DataTables",
                     "url" : "examples/datatables.html"
                 },
                 {

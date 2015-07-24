@@ -1,10 +1,9 @@
 ---
 script_footer: |
 
-    <!--<link href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.min.css">//-->
-    <link href="../assets/styles/datatables.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="http://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
 
-    <script src="http://cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+    <link href="../assets/styles/datatables.css" rel="stylesheet" type="text/css" media="screen" />
 
     <script src="../assets/scripts/datatables.js"></script>
 
@@ -37,12 +36,11 @@ script_footer: |
 
 <div class="container">
 
-    <h1>Datatables</h1>
+    <h1>DataTables</h1>
 
-    <p>Using jQuery and jQuery datatables.</p>
+    <p>jQuery DataTables.</p>
 
-
-    
+    <!-- This table is made into a DataTable by a custom call in the JavaScript on this page. //-->
 
     <table id="unit-users" class="table no-footer" aria-describedby="unit-users_info" role="grid">
             <caption>Users in the system</caption>
@@ -53,7 +51,10 @@ script_footer: |
         </table>
 
 
-            <table id="unit-users2" class="table table-primary dataTable no-footer" role="grid">
+
+        <!-- This table is made into a DataTable by the additional of the dataTable class. //-->
+
+        <table id="unit-users2" class="table table-primary dataTable no-footer" role="grid">
             <caption>Users in the system2</caption>
             <thead>
                 <tr role="row"><th class="sorting" tabindex="0" aria-controls="unit-users" rowspan="1" colspan="1" aria-label="Email Address: activate to sort column ascending">Email Address</th><th class="sorting" tabindex="0" aria-controls="unit-users" rowspan="1" colspan="1" aria-label="First Name: activate to sort column ascending">First Name</th><th class="sorting_asc" tabindex="0" aria-controls="unit-users" rowspan="1" colspan="1" aria-label="Last Name: activate to sort column ascending" aria-sort="ascending">Last Name</th><th rowspan="1" colspan="1"></th></tr>
