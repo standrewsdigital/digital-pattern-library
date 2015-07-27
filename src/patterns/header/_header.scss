@@ -48,12 +48,13 @@
 
     #header-logo {
 
+        margin: 13px 0;
+
         h1 {
           margin: 0;
           padding: 0;
+          height: 50px;
         }
-
-        margin: 13px 0;
 
         a {
             display: inline-block;
@@ -136,6 +137,10 @@
 
       #header-logo {
         margin: 25px 0px 16px;
+
+        h1 {
+          height: 65px;
+        }
 
         a {
           max-width: 325px;
