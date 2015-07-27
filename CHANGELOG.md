@@ -6,7 +6,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
-## [0.4.0] - 2015-07-27
+
+## [0.4.1] - 2015-07-27
+
+### Fixed
+- Spacing issue in the header on mobile screens.
+
+
+## [0.4.0] - 2015-07-24
 
 ### Added
 - Header-only JavaScript and CSS core files. 
