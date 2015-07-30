@@ -1,5 +1,21 @@
 ---
 title: Palettes
+default:
+    primary: {color: sta-blue, name: Primary - Blue}
+    secondary: {color: sta-blue-light, name: Secondary - Blue light}
+    tertiary1: {color: sta-green, name: Tertiary 1 - Green}
+    tertiary2: {color: sta-burgundy, name: Tertiary 2 - Burgundy}
+    tertiary3: {color: sta-purple, name: Tertiary 3 - Purple}
+study:
+    primary: {color: sta-cyan, name: Primary - Cyan}
+    secondary: {color: sta-cyan-light, name: Secondary - Cyan light}
+    tertiary1: {color: sta-green, name: Tertiary 1 - Green}
+    tertiary2: {color: sta-purple, name: Tertiary 2 - Purple}
+context:
+    success: {color: sta-green, name: Success - Green}
+    info: {color: sta-blue-light, name: Info - Blue light}
+    warning: {color: sta-orange, name: Warning - Orange}
+    danger: {color: sta-red, name: Danger - Red}
 ---
 
 Our palettes are collections of brand colours that we use together to form the palette for a website. Constraining our design to few colours helps give a consistent, professional appearance.
@@ -12,25 +28,24 @@ Our palettes are collections of brand colours that we use together to form the p
 
 ## Default palette
 
-<div class="swatch sta-blue">primary</div><br>
-<div class="swatch sta-blue-light">secondary 1</div><br>
-<div class="swatch sta-green">tertiary-1</div>
-<div class="swatch sta-burgundy">tertiary-2</div>
-<div class="swatch sta-purple">tertiary-3</div>
+{{> swatch default.primary}}
+{{> swatch default.secondary}}
+{{> swatch default.tertiary1}}
+{{> swatch default.tertiary2}}
+{{> swatch default.tertiary3}}
 
 
 ## Study palette
 
-
-<div class="swatch sta-cyan">primary</div><br>
-<div class="swatch sta-cyan-light">secondary</div><br>
-<div class="swatch sta-green">tertiary-1</div>
-<div class="swatch sta-purple">tertiary-2</div>
+{{> swatch study.primary}}
+{{> swatch study.secondary}}
+{{> swatch study.tertiary1}}
+{{> swatch study.tertiary2}}
 
 
 ## Bootstrap contexts
 
-<div class="swatch sta-green">success</div>
-<div class="swatch sta-blue-light">info</div>
-<div class="swatch sta-orange">warning</div>
-<div class="swatch sta-red">danger</div>
+{{> swatch context.success}}
+{{> swatch context.info}}
+{{> swatch context.warning}}
+{{> swatch context.danger}}

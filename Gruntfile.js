@@ -35,6 +35,7 @@ module.exports = function(grunt) {
           'src/scripts/vendor/matchMedia.addListener.js',
           'src/scripts/vendor/enquire.js',
           'src/scripts/base.js',
+
           'src/scripts/unbreakableSpaces.js',
           'src/patterns/*/*.js'
         ],
@@ -109,7 +110,7 @@ module.exports = function(grunt) {
         pkg: '<%= pkg %>',
         assets: 'docs/assets',
         layoutdir: 'src/_layouts',
-        partials: ['src/patterns/*/*.hbs'],
+        partials: ['src/patterns/*/*.hbs', 'src/_partials/*.hbs'],
         ext: '.html',
         data: ['src/_meta/*.json','src/patterns/*/data/*.json','src/examples/_data/*.json'],
         helpers: ['handlebars-helper-asset','handlebars-helper-rel'],
