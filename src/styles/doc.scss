@@ -130,7 +130,7 @@ Last Updated    3 October 2014
     // of the base color and 5 variants for each of the st andrews colours.
 
     .swatch {
-
+      cursor: pointer;
       position: relative;
       max-width: 600px;
       display: block;
@@ -152,6 +152,7 @@ Last Updated    3 October 2014
       .swatch__base-hover,
       .swatch__selected-hover,
       .swatch__transparent-hover {
+
         padding: 0.5em;
         margin: 0;
         
