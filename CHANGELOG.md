@@ -22,6 +22,9 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 - Adjusted the selected colour variants
 - Improved documentation about footer pattern
 
+### Removed
+- Remove unused Bootstrap components: carousel and scrollspy
+
 
 ## [0.4.1] - 2015-07-27
 
