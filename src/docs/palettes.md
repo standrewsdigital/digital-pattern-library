@@ -18,7 +18,7 @@ context:
     danger: {color: sta-red, name: Danger - Red}
 ---
 
-Our palettes are collections of brand colours that we use together to form the palette for a website. Constraining our design to few colours helps give a consistent, professional appearance.
+Our palettes are collections of brand colours that we use together to form the palette for a website. Constraining our design to a few colours helps give a consistent, professional appearance.
 
  - **Primary** – used for navigation bar, calls to action.
  - **Secondary** – used for secondary navigation bar
