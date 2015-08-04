@@ -7,6 +7,13 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## [*] - *
+
+### Added
+- Created `.core-stats.txt` file to track filesizes of core assets.
+- Added a summary JSON file when the `core` folder is built.
+
+
 ## [0.4.1] - 2015-07-27
 
 ### Fixed
