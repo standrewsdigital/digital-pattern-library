@@ -1,11 +1,12 @@
 'use strict';
+var timestamp = new Date();
 module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-
+    gitinfo: {},
 
     // uglify: {
     //   options: {
@@ -108,6 +109,11 @@ module.exports = function(grunt) {
 
       options: {
         pkg: '<%= pkg %>',
+        git: {
+          branch: '<%= gitinfo.local.branch.current.name %>',
+          commit: '<%= gitinfo.local.branch.current.SHA %>'
+        },
+        now: timestamp.toString(),
         assets: 'docs/assets',
         layoutdir: 'src/_layouts',
         partials: ['src/patterns/*/*.hbs', 'src/_partials/*.hbs'],
@@ -182,7 +188,7 @@ module.exports = function(grunt) {
             ext: '.html',
             dest: 'docs/examples'
           }
-        ],
+        ]
       },
 
       docs: {
@@ -196,7 +202,21 @@ module.exports = function(grunt) {
             src: ['*.md','*.html','**/*.hbs'],
             ext: '.html',
             dest: 'docs'
-          },
+          }
+        ]
+      },
+
+      core_meta: {
+        options: {
+          ext: '.json',
+        },
+        files: [
+          {
+            expand: true,
+            cwd: 'src/_meta',
+            src: ['build.tmpl'],
+            dest: 'core'
+          }
         ]
       }
 
@@ -323,7 +343,25 @@ module.exports = function(grunt) {
         dest: '/dpl/'+grunt.option('tag')+'/',
         exclusions: []
       }
-    }
+    },
+
+
+
+    filesize: {
+      base: {
+        files: [
+          {expand: true, cwd: 'core', src: ['**/*.css', '**/*.js']}
+        ],
+        options: {
+          output: [
+            {
+              path: ".core-stats.txt",
+              format: "{filename} - {kb:'0.0'} kb"
+            }
+          ]
+        }
+      }
+    },
 
 
 
@@ -331,6 +369,7 @@ module.exports = function(grunt) {
 
 
   // Load grunt plugins
+  grunt.loadNpmTasks('grunt-gitinfo');
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-compass');
@@ -338,10 +377,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-filesize');
+  
   
 
   // Define default tasks.
-  grunt.registerTask('default', ['clean:core','clean:docs','compass','jshint','concat','copy','assemble']);
+  grunt.registerTask('default', ['clean:core','clean:docs','compass','jshint','concat','gitinfo','assemble','copy','filesize']);
 
 
   // Deploy core files
