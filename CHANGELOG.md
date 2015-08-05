@@ -12,6 +12,9 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 ### Added
 - Created `.core-stats.txt` file to track filesizes of core assets.
 - Added a summary JSON file when the `core` folder is built.
+- Set up build process to add a banner with verison and date to all compiled 
+  CSS and JS
+- Added minified versions of JavaScript files.
 
 
 ## [0.4.1] - 2015-07-27
