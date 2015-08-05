@@ -1,5 +1,5 @@
 core/styles/datatables.css - 1.14 kb
-core/styles/doc.css - 131.62 kb
+core/styles/doc.css - 129.78 kb
 core/styles/header-only.css - 19.45 kb
 core/styles/ie.css - 0.40 kb
 core/styles/print.css - 3.18 kb
@@ -8,5 +8,5 @@ core/styles/screen.css - 152.55 kb
 core/scripts/core-base.js - 5.56 kb
 core/scripts/core.js - 220.94 kb
 core/scripts/datatables.js - 6.28 kb
-core/scripts/doc.js - 169.37 kb
+core/scripts/doc.js - 170.51 kb
 core/scripts/header-only.js - 1.44 kb
