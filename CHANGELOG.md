@@ -10,8 +10,14 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 ## [*] - *
 
 ### Added
+- Added ability to easily retrieve Hex and RGB(A) codes for brand colours.
 - Created `.core-stats.txt` file to track filesizes of core assets.
 - Added a summary JSON file when the `core` folder is built.
+
+### Changed
+- Restyled the colour swatches in documentation
+- Adjusted the selected colour variants
+- Improved documentation about footer pattern
 
 
 ## [0.4.1] - 2015-07-27
