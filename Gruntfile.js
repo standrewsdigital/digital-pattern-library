@@ -91,6 +91,7 @@ module.exports = function(grunt) {
     compass: {
       dist: {
         options: {
+          banner: '/*! <%= pkg.name %> v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */\n',
           specify: [
             'src/styles/datatables.scss',
             'src/styles/doc.scss',
