@@ -9,4 +9,12 @@ core/scripts/core-base.js - 5.56 kb
 core/scripts/core.js - 220.94 kb
 core/scripts/datatables.js - 6.28 kb
 core/scripts/doc.js - 170.51 kb
+core/scripts/core-base.min.js - 2.25 kb
+core/scripts/core.js - 209.42 kb
+core/scripts/core.min.js - 156.44 kb
+core/scripts/datatables.js - 6.28 kb
+core/scripts/datatables.min.js - 2.43 kb
+core/scripts/doc.js - 158.99 kb
+core/scripts/doc.min.js - 128.40 kb
 core/scripts/header-only.js - 1.44 kb
+core/scripts/header-only.min.js - 0.56 kb

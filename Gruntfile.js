@@ -8,15 +8,7 @@ module.exports = function(grunt) {
 
     gitinfo: {},
 
-    // uglify: {
-    //   options: {
-    //     banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-    //   },
-    //   build: {
-    //     src: 'src/<%= pkg.name %>.js',
-    //     dest: 'core/<%= pkg.name %>.min.js'
-    //   }
-    // },
+
 
      /* task: concat - combine scripts into single file.  */
     concat: {
@@ -73,6 +65,22 @@ module.exports = function(grunt) {
     },
 
 
+    uglify: {
+      options: {
+        banner: '/*! <%= pkg.name %> v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+      },
+      core: {
+        files: {
+          'core/scripts/core-base.min.js': ['core/scripts/core-base.js'],
+          'core/scripts/core.min.js': ['core/scripts/core.js'],
+          'core/scripts/datatables.min.js': ['core/scripts/datatables.js'],
+          'core/scripts/doc.min.js': ['core/scripts/doc.js'],
+          'core/scripts/header-only.min.js': ['core/scripts/header-only.js']
+        }
+      }
+    },
+
+
     /* task: jshint - check Javascript for errors  */
     jshint: {
       defaults: ['src/scripts/base.js','src/patterns/*/*.js'],
@@ -124,21 +132,6 @@ module.exports = function(grunt) {
           root: "docs",
         },
       },
-
-      // general: {
-      //   options: {
-      //     layout: '_base.hbs'
-      //   },
-      //   files: [
-      //     {
-      //       expand: true,
-      //       cwd: 'src/_meta/',
-      //       src: ['patchwork.hbs'],
-      //       ext: '.html',
-      //       dest: 'docs/patchwork/index.html'
-      //     }
-      //   ]
-      // },
 
       patterns: {
         options: {
@@ -250,7 +243,7 @@ module.exports = function(grunt) {
 
     /* task: copy - move files */
     copy: {
-      images: {
+      core_images: {
         files: [
           {
             expand: true,     // Enable dynamic expansion.
@@ -260,7 +253,7 @@ module.exports = function(grunt) {
           }
         ]
       },
-      fonts: {
+      core_fonts: {
         files: [
           {
             expand: true,     // Enable dynamic expansion.
@@ -294,7 +287,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: ['src/**/*.js'],
-        tasks: ['clean:js','jshint','concat','clean:docs_assets','copy:docs_assets'],
+        tasks: ['clean:js','jshint','concat','uglify','clean:docs_assets','copy:docs_assets'],
       },
       images: {
         files: ['src/images/**/*'],
@@ -316,7 +309,7 @@ module.exports = function(grunt) {
           'src/**/*.md',
           'package.json',
         ],
-        tasks: ['clean:docs','assemble','copy:docs_assets']
+        tasks: ['docs']
       }
     },
 
@@ -348,7 +341,7 @@ module.exports = function(grunt) {
 
 
     filesize: {
-      base: {
+      core_stats: {
         files: [
           {expand: true, cwd: 'core', src: ['**/*.css', '**/*.js']}
         ],
@@ -377,15 +370,23 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-filesize');
   
+
+  //== TASK ALIASES
+
+  // default – builds the core assets, compiles documentation
+  grunt.registerTask('default', ['build','docs']);
   
+  // build – builds the core assets from source
+  grunt.registerTask('build', ['clean:core','compass','jshint','concat','uglify','gitinfo','assemble:core_meta','copy:core_images','copy:core_fonts','filesize:core_stats']);
 
-  // Define default tasks.
-  grunt.registerTask('default', ['clean:core','clean:docs','compass','jshint','concat','gitinfo','assemble','copy','filesize']);
+  // docs – builds the documentation, makes use of build too.
+  grunt.registerTask('docs', ['clean:docs','assemble:patterns','assemble:pattern_examples','assemble:examples','assemble:docs','copy:docs_assets']);
 
 
-  // Deploy core files
+  // deploy-core – Deploy core assets via FTP to CDN
   grunt.registerTask('deploy-core', 'Uploads core files as specified version.', function(n) {
     var deploy_tag = grunt.option('tag');
     if (!deploy_tag) {
@@ -398,7 +399,7 @@ module.exports = function(grunt) {
     grunt.task.run(['ftp-deploy:core']);
   });
 
-  // Deploy docs
+  // deploy-docs – Deploys documentation via FTP
   grunt.registerTask('deploy-docs', 'Upload docs as specified version.', function(n) {
     var deploy_tag = grunt.option('tag');
     if(!deploy_tag) {
