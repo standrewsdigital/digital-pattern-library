@@ -94,22 +94,21 @@ this guide we'll use the following.
    `src/patterns/new-feature/new-feature.doc.hbs`. Note that these will be 
    linked up and shown on the documentation page automatically when you build
    the documentation with the `grunt` command.
-
+   
    In the YAML front matter of `src/patterns/new-feature/new-feature.doc.hbs`
    we have: 
-   
+
         ...
         - name: new-feature-1
         - name: new-feature-2
         ...
    
    So we will create the following files and respective contents.
-
+   
    * `src/patterns/new-feature/examples/new-feature1.hbs`
-
-
+     
             {{> new-feature new-feature-1}}
-
+      
       This is Handlebars code to include the Handlebars partial `new-feature`
       which maps to the file `src/patterns/new-feature/new-feature.hbs` 
       populate with the data from the object `new-feature1.json`. When building
