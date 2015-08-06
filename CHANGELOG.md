@@ -16,11 +16,13 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 - Set up build process to add a banner with verison and date to all compiled 
   CSS and JS
 - Added minified versions of JavaScript files.
+- Added contributor documentation: CONTRIBUTING.md, SETUP.md, ADD-PATTERN.md.
 
 ### Changed
 - Restyled the colour swatches in documentation
 - Adjusted the selected colour variants
 - Improved documentation about footer pattern
+- Refactored the README.md file.
 
 
 ## [0.4.1] - 2015-07-27
