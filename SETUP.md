@@ -35,7 +35,7 @@ Terminal (OS X), or shell (*nix) – and follow these steps.
 2. At the command line, navigate to the folder containing your local clone of 
    the pattern library. 
    
-       $ cd path/to/folder
+        $ cd path/to/folder
 
    Where `path/to/folder` is the path to the folder you cloned the pattern 
    library locally.
@@ -44,19 +44,19 @@ Terminal (OS X), or shell (*nix) – and follow these steps.
    package manager (a.k.a. 'npm'). The `package.json` file configures what
    the dependencies are.
 
-       $ npm install
+        $ npm install
 
 4. Install the Ruby compass gem to compile sass code into CSS.
 
-       $ gem install compass
+        $ gem install compass
 
 
 ## 3. Configuration for deployment
 
-If you want to use either of the deploy commands (`deploy-docs` and 
+If you want to use either of the deploy commands (`deploy-docs` or 
 `deploy-core`), you'll need to create a file called `.ftppass` in the root of
-the pattern library folder and specify your FTP credentials to the appropriate 
-secondary account. 
+the pattern library folder and specify your FTP credentials to the 
+secondary accounts. 
 
 ```
 {
@@ -72,10 +72,10 @@ secondary account.
 ```
 
 See the Grunt plugin [grunt-ftp-deploy](https://github.com/zonak/grunt-ftp-deploy) 
-for further details. 
+if you're curious about further details. 
 
-**Note**: git is configured to ignore this file in `.gitignore`. This is so 
-that everyone can use their own credentials to deploy rather than share 
+**Note**: git is configured to ignore the `.ftppass` file in `.gitignore`. This
+is so that everyone can use their own credentials to deploy rather than share 
 credentials. It's generally a bad idea to commit passwords into a shared
 repository.
 

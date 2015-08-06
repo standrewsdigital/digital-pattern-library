@@ -4,20 +4,16 @@ This is the source code for the Digital pattern library. There are two
 components built using this code: 
 
 * **Core assets** Production JavaScript, CSS, fonts and images
-* **Documentation** Documentation about using the patterns supported by the 
-  core assets. 
+* **Documentation** Documentation about using the patterns in the library and 
+  other information for developers who consume the core assets. 
 
-The **Documentation** component has general information for consumers of the 
-pattern library. 
-
-Additionally, at the source code level, we have the following documenation, 
-aimed at assisting those who are contributing and developing the pattern 
-library.
+In the repository, we have the following additional documenation aimed at 
+assisting those who contribute and develop the pattern library.
 
 * [SETUP.md](SETUP.md) – How to set up your development environment.
 * [CONTRIBUTING.md](CONTRIBUTING.md) – General guidelines for contributing to
    pattern library.
-* [ADD-PATTERN.md](ADD-PATTERN.md) – How add a new pattern.
+* [ADD-PATTERN.md](ADD-PATTERN.md) – How to add a new pattern.
 
 
 ## Commands

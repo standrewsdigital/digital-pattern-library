@@ -13,12 +13,13 @@ If you haven't already set up your development environment, go see
 * The pattern library should be opinionated. 
 
 
-## Feature workflow
+## Workflow
 
-Workflow relates to how we branch source code, and then merge those changed 
-back together again. We follow [Github flow](http://scottchacon.com/2011/08/31/github-flow.html) 
-which is a fairly simple workflow that has just enough structure. Read Scott
-Chacon's article for a good intro. The main points are: 
+Workflow in our context is about how we branch source code, and then merge 
+those changes back together again. We follow Github flow which is a fairly 
+simple workflow that has just enough structure. Read [Scott Chacon's article 
+about Github flow](http://scottchacon.com/2011/08/31/github-flow.html) for a 
+good intro. The main points are: 
 
 * All development must take place in feature branches. 
 * Feature branches should be branched from `master`.
@@ -28,26 +29,28 @@ Chacon's article for a good intro. The main points are:
 * Code reviews are a part of the pull request. Ideally, a person other than 
   yourself should review (at a minimum conduct a sanity check) on all features 
   before they are merged into `master`.
-* When reviewed, a do a non-fast-forward merge of the feature branch into 
-  `master` and resolve any conflicts. This preserves the history of how each 
-  feature was made. 
+* When approved by your reviewer, you should non-fast-forward merge your 
+  feature branch into `master` and resolve any conflicts. This preserves the 
+  history of how each feature was made. 
 
 
 ## Versioning
 
-The Digital pattern library follows [semantic versioning](http://semver.org/). 
-This means that every version number has three parts: 
+The Digital pattern library follows semantic versioning. This means that every 
+version number has three parts: 
 
     MAJOR.MINOR.PATCH
 
-If you're not familiar with semantic versioning, you should read the overview. 
-The main points are that: 
+When determining the appropriate number for a new version, increment the:
 
-* `PATCH`-level increments fix bugs
-* `MINOR`-level increments indicate that new features have been added. 
-* `MAJOR`-level increments indicate that the API may have changed. If 
-  `MAJOR` is less than 1 (i.e. `0.5.4`) this indicates that the API is not yet 
-  become stable.
+* MAJOR version when you make incompatible API changes,
+* MINOR version when you add functionality in a backwards-compatible manner, and
+* PATCH version when you make backwards-compatible bug fixes.
+
+See [Semantic Versioning](http://semver.org/) for more information.
+
+
+### Git tags for versions
 
 We follow the convention that for version `0.5.4` the git tag would be:
 
@@ -57,9 +60,10 @@ But the folder that is deployed to on the CDN and for the docs would simply be
 
     0.5.4
 
-The reason for having the extra `v` in the tag is that it means you can quickly 
-find all the version tags, if you additionally have other tags in your git
-repository.
+The reason for having the extra `v` in the git tag is that it means you can 
+quickly find all the version tags since you may have non-version related tags
+in your git repository. There's not really a strong argument for or against
+the `v`; consistency is the main thing.
 
 
 ## Change log
@@ -67,11 +71,13 @@ repository.
 I can't really emphasize this enough. Having a human-readable change log is 
 essential to quickly bringing new developers up to speed with a project. 
 Therefore, whenever you work on the pattern library you need to update 
-CHANGELOG.md to reflect those changes. I try to document changes I make as a I 
-go. Changes to the CHANGELOG.md then get committed alongside the actual changes
-to the code. 
+`CHANGELOG.md` to reflect those changes.
 
-At a minimum, each time you add a tag and release a new version of the 
-pattern library the CHANGELOG should be updated to reflect that new version, 
+It's best to document changes as you 
+go; that way updates to `CHANGELOG.md` get committed alongside the changes to 
+the code. 
+
+At a minimum, each time you add a git tag and release a new version of the 
+pattern library the change log should be updated to reflect that new version, 
 the date it was released and the changes that have occured since the last 
 version.
