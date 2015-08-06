@@ -61,9 +61,12 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ### Fixed
 - Fixed bug where logo would flash on desktops because the
-  JavaScript had to load before it would switch from standard to foundation logo.
-- Fixed bug where both standard and foundation logos were loading. Now CSS media queries only loads the correct one.
-- Fixed bug where print header was loading even though not showing. Now the print stylesheet loads the correct logo for print.
+  JavaScript had to load before it would switch from standard to foundation 
+  logo.
+- Fixed bug where both standard and foundation logos were loading. Now CSS 
+  media queries only loads the correct one.
+- Fixed bug where print header was loading even though not showing. Now the 
+  print stylesheet loads the correct logo for print.
 - Some minor fixes on print styles. 
 - Improved interactivity of the search box on mobile devices.
 - Improvde spacing of audience links on mobile devices.
@@ -83,20 +86,23 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 
 ## [0.3.0] - 2015-06-10
+
 ### Added
 - Font aliasing to improve quality of fonts
 - Classes for implementing navigation in WordPress to support our theme.
 
 ### Changed
-- The breadcrumb pattern was updated to <ul> based instead of <p> based.
+- The breadcrumb pattern was updated to `<ul>` based instead of `<p>` based.
 
 ### Fixed
 - Increase opacity of category header to make more legible.
 
 
 ## [0.2.0] - 2015-04-14
+
 ### Added
-- Local fallback copies of PT Sans in the event that Google fonts are not available.
+- Local fallback copies of PT Sans in the event that Google fonts are not 
+  available.
 - Web application example page.
 
 ### Changed
@@ -111,6 +117,7 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 
 ## [0.1.1] - 2015-03-12
+
 ### Added
 - Better support for links within alert elements.
 - Change log to summarise updates in a human readable format.
@@ -120,7 +127,8 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
   class modifiers.
 - Bootstrap panels now have card-like view, with no border and a subtle drop
   shadow.
-- Improved and standardised documentation of patterns including descriptions, usage and options.
+- Improved and standardised documentation of patterns including descriptions, 
+  usage and options.
 - Re-ordered the navigation in the docs.
 
 ### Fixed

@@ -52,11 +52,10 @@ this guide we'll use the following.
            <li>Option 1</li>
            <li>Option 2</li>
         </ul>
-
-
-   The Assemble grunt plugin that builds the documentation populates the 
-   Handlebars template below with the variables defined in the YAML front 
-   matter. 
+   
+    The Assemble grunt plugin that builds the documentation populates the 
+    Handlebars template below with the variables defined in the YAML front 
+    matter. 
 
 4. Create Sass file `src/patterns/new-feature/_new-feature.scss`. This is the 
    Sass partial that contains the Sass/CSS to implement the pattern. The prefix
@@ -94,62 +93,61 @@ this guide we'll use the following.
    `src/patterns/new-feature/new-feature.doc.hbs`. Note that these will be 
    linked up and shown on the documentation page automatically when you build
    the documentation with the `grunt` command.
-   
-   In the YAML front matter of `src/patterns/new-feature/new-feature.doc.hbs`
-   we have: 
+
+    In the YAML front matter of `src/patterns/new-feature/new-feature.doc.hbs`
+    we have: 
 
         ...
         - name: new-feature-1
         - name: new-feature-2
         ...
-   
-   So we will create the following files and respective contents.
-   
-   * `src/patterns/new-feature/examples/new-feature1.hbs`
+    
+    So we will create the following files and respective contents.
+
+    * `src/patterns/new-feature/examples/new-feature1.hbs`
      
             {{> new-feature new-feature-1}}
       
-      This is Handlebars code to include the Handlebars partial `new-feature`
-      which maps to the file `src/patterns/new-feature/new-feature.hbs` 
-      populate with the data from the object `new-feature1.json`. When building
-      the page Assemble will look in `src/patterns/*/data/*.json` for the data
-      to populate the partial with. This will lead us to creating (in the next
-      step) an associated `data/` folder and files. 
+        This is Handlebars code to include the Handlebars partial `new-feature`
+        which maps to the file `src/patterns/new-feature/new-feature.hbs` 
+        populate with the data from the object `new-feature1.json`. When 
+        building the page Assemble will look in `src/patterns/*/data/*.json` 
+        for the data to populate the partial with. This will lead us to 
+        creating (in the next step) an associated `data/` folder and files. 
 
-   * `src/patterns/new-feature/examples/new-feature2.hbs`
+    * `src/patterns/new-feature/examples/new-feature2.hbs`
 
             {{> new-feature new-feature-2}}
 
-      Again, this causes Assemble to look for a file named `new-feature2.json`
-      in the data folders to populate the Handlebars partial 
-      `src/patterns/new-feature/new-feature.hbs`.
+        Again, this causes Assemble to look for a file named 
+        `new-feature2.json` in the data folders to populate the Handlebars 
+        partial `src/patterns/new-feature/new-feature.hbs`.
 
 8. Create the folder `src/patterns/new-feature/data` and a JSON file to 
    correspond with each example we've defined (in the previous step).
-   
-   So we will create the following files and respective contents.
+    
+    So we will create the following files and respective contents.
 
-   * `src/patterns/new-feature/data/new-feature1.json`
-
+    * `src/patterns/new-feature/data/new-feature1.json`
+    
             {
                 "first-name": "John",
                 "last-name": "Smith",
             }
 
-      This JSON code defines the variables that are available to populate the
-      Handlebars partial (`src/patterns/new-feature/new-feature.hbs`).
+        This JSON code defines the variables that are available to populate the
+        Handlebars partial (`src/patterns/new-feature/new-feature.hbs`).
 
-   * `src/patterns/new-feature/data/new-feature2.json`
+    * `src/patterns/new-feature/data/new-feature2.json`
 
             {
                 "first-name": "Llanfairpwllgwyngyllgogerychwyrndrobwyll",
                 "last-name": " Llantysiliogogogoch",
             }
 
-      The idea is that each example loads different data that configures
-      different variations of the pattern.
+        The idea is that each example loads different data that configures
+        different variations of the pattern.
 
-      
 9. You need to add a new entry in the navigation for this pattern. In the JSON
    file `src/_meta/dpl-nav.json` in the `items[0].items` array, add an item 
    at the appropriate place like so: 

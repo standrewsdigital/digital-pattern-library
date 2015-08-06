@@ -34,11 +34,11 @@ Terminal (OS X), or shell (*nix) – and follow these steps.
 
 2. At the command line, navigate to the folder containing your local clone of 
    the pattern library. 
-   
+    
         $ cd path/to/folder
-
-   Where `path/to/folder` is the path to the folder you cloned the pattern 
-   library locally.
+    
+    Where `path/to/folder` is the path to the folder you cloned the pattern 
+    library locally.
 
 3. Install the dependencies for building the pattern library using the Node 
    package manager (a.k.a. 'npm'). The `package.json` file configures what
@@ -58,18 +58,16 @@ If you want to use either of the deploy commands (`deploy-docs` or
 the pattern library folder and specify your FTP credentials to the 
 secondary accounts. 
 
-```
-{
-  "core": {
-    "username": "your-username",
-    "password": "password"
-  },
-  "docs": {
-    "username": "your-username",
-    "password": "password"
-  }
-}
-```
+    {
+      "core": {
+        "username": "your-username",
+        "password": "password"
+      },
+      "docs": {
+        "username": "your-username",
+        "password": "password"
+      }
+    }
 
 See the Grunt plugin [grunt-ftp-deploy](https://github.com/zonak/grunt-ftp-deploy) 
 if you're curious about further details. 
