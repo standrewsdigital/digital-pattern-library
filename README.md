@@ -55,10 +55,10 @@ This is really helpful when actively developing patterns.
 
 ### Deploy core
 
-    $ grunt deploy-core --tag=<tag-name>
+    $ grunt deploy-core --tag=LABEL
 
-* `<tag-name>` (Required) A label to apply to this package of core. 
-   Typically this label is a a version like `0.4.1` or perhaps a branch name
+* `LABEL` (Required) A label to apply to this package of core. 
+   Typically this label is a version like `0.4.1` or perhaps a branch name
    for easy access to work that is ongoing. However, the grunt task will let 
    you label it anything you want.
 
@@ -85,10 +85,10 @@ failed to run `grunt` before running `grunt deploy-core`
 
 ### Deploy core
 
-    $ grunt deploy-docs --tag=<tag-name>
+    $ grunt deploy-docs --tag=LABEL
 
-* `<tag-name>` (Required) A label to apply to this package of docs. 
-   Typically this label is a a version like `0.4.1` or perhaps a branch name
+* `LABEL` (Required) A label to apply to this package of docs. 
+   Typically this label is a version like `0.4.1` or perhaps a branch name
    for easy access to work that is ongoing. However, the grunt task will let 
    you label it anything you want.
 
