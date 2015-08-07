@@ -23,7 +23,23 @@ module.exports = function(grunt) {
           'src/scripts/vendor/jquery.replacetext.js',
           'src/scripts/vendor/jquery.theatre.min.js',
           'src/scripts/vendor/respond.js',
-          'src/scripts/vendor/bootstrap.js',
+
+          // Bootstrap JavaScript
+          // Note these scripts should align with the CSS that you're including
+          'src/scripts/vendor/bootstrap/affix.js',
+          'src/scripts/vendor/bootstrap/alert.js',
+          'src/scripts/vendor/bootstrap/button.js',
+          // 'src/scripts/vendor/bootstrap/carousel.js',
+          'src/scripts/vendor/bootstrap/collapse.js',
+          'src/scripts/vendor/bootstrap/dropdown.js',
+          'src/scripts/vendor/bootstrap/modal.js',
+          'src/scripts/vendor/bootstrap/popover.js',
+          // 'src/scripts/vendor/bootstrap/scrollspy.js',
+          'src/scripts/vendor/bootstrap/tab.js',
+          'src/scripts/vendor/bootstrap/tooltip.js',
+          'src/scripts/vendor/bootstrap/transition.js',
+
+
           'src/scripts/vendor/matchmedia.polyfill.js',
           'src/scripts/vendor/matchMedia.addListener.js',
           'src/scripts/vendor/enquire.js',
@@ -51,7 +67,22 @@ module.exports = function(grunt) {
         src: [
           'src/scripts/vendor/jquery.min.js',
           'src/scripts/vendor/respond.js',
-          'src/scripts/vendor/bootstrap.js',
+
+          // Bootstrap JavaScript
+          // Note these scripts should align with the CSS that you're including
+          'src/scripts/vendor/bootstrap/affix.js',
+          'src/scripts/vendor/bootstrap/alert.js',
+          'src/scripts/vendor/bootstrap/button.js',
+          // 'src/scripts/vendor/bootstrap/carousel.js',
+          'src/scripts/vendor/bootstrap/collapse.js',
+          'src/scripts/vendor/bootstrap/dropdown.js',
+          'src/scripts/vendor/bootstrap/modal.js',
+          'src/scripts/vendor/bootstrap/popover.js',
+          // 'src/scripts/vendor/bootstrap/scrollspy.js',
+          'src/scripts/vendor/bootstrap/tab.js',
+          'src/scripts/vendor/bootstrap/tooltip.js',
+          'src/scripts/vendor/bootstrap/transition.js',
+
           'src/scripts/doc.js'
         ],
         dest: 'core/scripts/doc.js'
