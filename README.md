@@ -77,10 +77,10 @@ This would make the core assets available at:
 
     http://www.st-andrews.ac.uk/~cdn/dpl/1.2.3/
 
-**Note** The `deploy-core` command doesn't not run `grunt` or `grunt core` 
+**Note** The `deploy-core` command does not run `grunt` or `grunt core` 
 before deploying code, so the code needs to be build first using one of those 
 commands. You could get unexpected results if you switched to a new branch and 
-failed to run `grunt` before running `grunt deploy-core`
+failed to run `grunt` before running `grunt deploy-core`.
 
 
 ### Deploy core
@@ -88,7 +88,7 @@ failed to run `grunt` before running `grunt deploy-core`
     $ grunt deploy-docs --tag=<tag-name>
 
 * `<tag-name>` (Required) A label to apply to this package of docs. 
-   Typically this label is a a version like `0.4.1` or perhaps a branch name
+   Typically this label is a version like `0.4.1` or perhaps a branch name
    for easy access to work that is ongoing. However, the grunt task will let 
    you label it anything you want.
 
@@ -113,10 +113,10 @@ the `<meta>` tag in `index.html` at this location:
 
  to point to `1.2.3`.
 
-**Note** The `deploy-docs` command doesn't not run `grunt` or `grunt docs` 
+**Note** The `deploy-docs` command does not run `grunt` or `grunt docs` 
 before deploying code, so the code needs to be build first using one of those 
 commands. You could get unexpected results if you switched to a new branch and 
-failed to run `grunt` before running `grunt deploy-docs`
+failed to run `grunt` before running `grunt deploy-docs`.
 
 
 
