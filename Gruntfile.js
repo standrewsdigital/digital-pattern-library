@@ -78,7 +78,10 @@ module.exports = function(grunt) {
                     ext: '.html',
                     dest: 'docs/patterns',
                     rename: function(src,dest){
-                        return 'docs/patterns/' + dest.replace(/\/[a-zA-Z0-9_-]+.html$/,'/index.html');
+                        var prefix = 'docs/patterns/',
+                            pattern = /\/[a-zA-Z0-9_-]+.html$/,
+                            suffix = '/index.html';
+                        return prefix + dest.replace(pattern, suffix);
                     }
                 }]
             },
@@ -171,7 +174,8 @@ module.exports = function(grunt) {
         compass: {
             dist: {
                 options: {
-                    banner: '/*! <%= pkg.name %> v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */\n',
+                    banner: '/*! <%= pkg.name %> v<%= pkg.version %> ' + 
+                        '- <%= grunt.template.today("yyyy-mm-dd") %> */\n',
                     specify: [
                         'src/styles/datatables.scss',
                         'src/styles/doc.scss',
@@ -197,7 +201,7 @@ module.exports = function(grunt) {
         concat: {
             core: {
                 src: [
-                    /* Note: update src/docs/dependencies.md if any of these change */
+                    // Update src/docs/dependencies.md if any of these change 
                     'src/scripts/vendor/hammer.js',
                     'src/scripts/vendor/jquery.min.js',
                     'src/scripts/vendor/jquery.bigtarget.js',
@@ -208,7 +212,7 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/respond.js',
 
                     // Bootstrap JavaScript
-                    // Note these scripts should align with the CSS that you're including
+                    // Note these scripts should align with the CSS 
                     'src/scripts/vendor/bootstrap/affix.js',
                     'src/scripts/vendor/bootstrap/alert.js',
                     'src/scripts/vendor/bootstrap/button.js',
@@ -253,7 +257,7 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/respond.js',
 
                     // Bootstrap JavaScript
-                    // Note these scripts should align with the CSS that you're including
+                    // Note these scripts should align with the CSS 
                     'src/scripts/vendor/bootstrap/affix.js',
                     'src/scripts/vendor/bootstrap/alert.js',
                     'src/scripts/vendor/bootstrap/button.js',
@@ -365,15 +369,21 @@ module.exports = function(grunt) {
         // uglify - create compressed versions of JS files
         uglify: {
             options: {
-                banner: '/*! <%= pkg.name %> v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+                banner: '/*! <%= pkg.name %> v<%= pkg.version %> - ' + 
+                    '<%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             core: {
                 files: {
-                    'core/scripts/core-base.min.js': ['core/scripts/core-base.js'],
-                    'core/scripts/core.min.js': ['core/scripts/core.js'],
-                    'core/scripts/datatables.min.js': ['core/scripts/datatables.js'],
-                    'core/scripts/doc.min.js': ['core/scripts/doc.js'],
-                    'core/scripts/header-only.min.js': ['core/scripts/header-only.js']
+                    'core/scripts/core-base.min.js': 
+                        ['core/scripts/core-base.js'],
+                    'core/scripts/core.min.js': 
+                        ['core/scripts/core.js'],
+                    'core/scripts/datatables.min.js': 
+                        ['core/scripts/datatables.js'],
+                    'core/scripts/doc.min.js': 
+                        ['core/scripts/doc.js'],
+                    'core/scripts/header-only.min.js': 
+                        ['core/scripts/header-only.js']
                 }
             }
         }, // END of uglify
@@ -391,19 +401,23 @@ module.exports = function(grunt) {
             },
             js: {
                 files: ['src/**/*.js'],
-                tasks: ['clean:js','jshint','concat','uglify','clean:docs_assets','copy:docs_assets'],
+                tasks: ['clean:js','jshint','concat','uglify',
+                    'clean:docs_assets','copy:docs_assets'],
             },
             images: {
                 files: ['src/images/**/*'],
-                tasks: ['clean:images','copy:images','clean:docs_assets','copy:docs_assets']
+                tasks: ['clean:images','copy:images','clean:docs_assets',
+                    'copy:docs_assets']
             },
             fonts: {
                 files: ['src/fonts/**/*'],
-                tasks: ['clean:fonts','copy:fonts','clean:docs_assets','copy:docs_assets']
+                tasks: ['clean:fonts','copy:fonts','clean:docs_assets',
+                    'copy:docs_assets']
             },
             styles: {
                 files: ['src/**/*.scss'],
-                tasks: ['clean:styles','compass','clean:docs_assets','copy:docs_assets']
+                tasks: ['clean:styles','compass','clean:docs_assets',
+                    'copy:docs_assets']
             },
             docs: {
                 files: [
@@ -430,39 +444,53 @@ module.exports = function(grunt) {
 
   
     // build – builds the core assets from source
-    grunt.registerTask('build', ['clean:core','compass','jshint','concat','uglify','gitinfo','assemble:core_meta','copy:core_images','copy:core_fonts','filesize:core_stats']);
+    grunt.registerTask('build', ['clean:core','compass','jshint','concat',
+        'uglify','gitinfo','assemble:core_meta','copy:core_images',
+        'copy:core_fonts','filesize:core_stats']);
 
 
     // docs – builds the documentation, makes use of build too.
-    grunt.registerTask('docs', ['clean:docs','assemble:patterns','assemble:pattern_examples','assemble:examples','assemble:docs','copy:docs_assets']);
+    grunt.registerTask('docs', ['clean:docs','assemble:patterns',
+        'assemble:pattern_examples','assemble:examples','assemble:docs',
+        'copy:docs_assets']);
 
 
     // deploy-core – Deploy core assets via FTP to CDN
-    grunt.registerTask('deploy-core', 'Uploads core files as specified version.', function(n) {
-        var deploy_tag = grunt.option('tag');
-        if (!deploy_tag) {
-            grunt.log.error("You must specify a tag to deploy as, i.e. '--tag=1.0.2'");
-            grunt.fail.warn('Cannot deploy core files without a version tag.');
-            return;
+    grunt.registerTask('deploy-core', 
+        'Uploads core files as specified version.', 
+        function(n) {
+            var deploy_tag = grunt.option('tag');
+            if (!deploy_tag) {
+                grunt.log.error(
+                    "You must specify a tag to deploy as, i.e. '--tag=1.0.2'");
+                grunt.fail.warn(
+                    'Cannot deploy core files without a version tag.');
+                return;
+            }
+            grunt.log.writeln("Deploying core files in 'build/' as version (" + 
+                deploy_tag+")");
+            grunt.task.loadNpmTasks('grunt-ftp-deploy');
+            grunt.task.run(['ftp-deploy:core']);
         }
-        grunt.log.writeln("Deploying core files in 'build/' as version (" + deploy_tag+")");
-        grunt.task.loadNpmTasks('grunt-ftp-deploy');
-        grunt.task.run(['ftp-deploy:core']);
-    });
+    );
 
 
     // deploy-docs – Deploys documentation via FTP
-    grunt.registerTask('deploy-docs', 'Upload docs as specified version.', function(n) {
-        var deploy_tag = grunt.option('tag');
-        if(!deploy_tag) {
-            grunt.log.error("You must specify a tag to deploy as, i.e. '--tag=1.0.2'");
-            grunt.fail.warn('Cannot deploy docs without a version tag.');
-            return;
+    grunt.registerTask('deploy-docs', 
+        'Upload docs as specified version.', 
+        function(n) {
+            var deploy_tag = grunt.option('tag');
+            if(!deploy_tag) {
+                grunt.log.error(
+                    "You must specify a tag to deploy as, i.e. '--tag=1.0.2'");
+                grunt.fail.warn('Cannot deploy docs without a version tag.');
+                return;
+            }
+            grunt.log.writeln("Deploying 'docs/' as version ("+deploy_tag+")");
+            grunt.task.loadNpmTasks('grunt-ftp-deploy');
+            grunt.task.run(['ftp-deploy:docs']);
         }
-        grunt.log.writeln("Deploying 'docs/' as version (" + deploy_tag+")");
-        grunt.task.loadNpmTasks('grunt-ftp-deploy');
-        grunt.task.run(['ftp-deploy:docs']);
-    });
+    );
 
 
 };
