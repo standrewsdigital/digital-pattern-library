@@ -53,6 +53,10 @@
                     "url" : "patterns/intro/index.html"
                 },
                 {
+                    "name" : "Long-form content",
+                    "url" : "patterns/long-form/index.html"
+                },
+                {
                     "name" : "Masonry",
                     "url" : "patterns/masonry/index.html"
                 },
@@ -154,6 +158,10 @@
                     "url" : "examples/gallery.html"
                 },
                 {
+                    "name" : "Ex: Long-form content",
+                    "url" : "examples/long-form-content.html"
+                },
+                {
                     "name" : "Ex: HTML elements",
                     "url" : "examples/html-elements.html"
                 },
@@ -168,10 +176,6 @@
                 {
                     "name" : "Ex: Web application",
                     "url" : "examples/web-app.html"
-                },
-                {
-                    "name" : "Ex: Long-form content",
-                    "url" : "examples/long-form-content.html"
                 }
             ]
         }
