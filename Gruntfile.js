@@ -164,8 +164,8 @@ module.exports = function(grunt) {
             docs: {
                 src: ["docs"]
             },
-            docs_assets: {
-                src: ["docs/assets"]
+            docs_core: {
+                src: ["docs/assets/core"]
             }
         }, // END of clean
 
@@ -288,7 +288,7 @@ module.exports = function(grunt) {
             core_images: {
                 files: [{
                     expand: true,
-                    cwd: 'src/images/',
+                    cwd: 'src/images-core/',
                     src: ['**/*'], 
                     dest: 'core/images'
                 }]
@@ -301,12 +301,20 @@ module.exports = function(grunt) {
                     dest: 'core/fonts'
                 }]
             },
-            docs_assets: {
+            docs_core: {
                 files: [{
                     expand: true,
                     cwd: 'core',
                     src: ['**/*'],
-                    dest: 'docs/assets'
+                    dest: 'docs/assets/core'
+                }]
+            },
+            docs_images: {
+                files: [{
+                    expand: true,
+                    cwd: 'src/images-docs',
+                    src: ['**/*'],
+                    dest: 'docs/assets/docs/images'
                 }]
             }
         }, // END of copy
@@ -415,8 +423,8 @@ module.exports = function(grunt) {
             },
             styles: {
                 files: ['src/**/*.scss'],
-                tasks: ['clean:styles','compass','clean:docs_assets',
-                    'copy:docs_assets']
+                tasks: ['clean:styles','compass','clean:docs_core',
+                    'copy:docs_core']
             },
             docs: {
                 files: [
@@ -451,7 +459,7 @@ module.exports = function(grunt) {
     // docs – builds the documentation, makes use of build too.
     grunt.registerTask('docs', ['clean:docs','assemble:patterns',
         'assemble:pattern_examples','assemble:examples','assemble:docs',
-        'copy:docs_assets']);
+        'copy:docs_core','copy:docs_images']);
 
 
     // deploy-core – Deploy core assets via FTP to CDN

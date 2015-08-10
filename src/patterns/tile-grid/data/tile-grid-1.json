@@ -2,11 +2,11 @@
   "heading": "What's happening in St&nbsp;Andrews",
   "call-to-browse-text": "See all news",
   "call-to-browse-url": "http://www.google.com/",
-  "bg-image": "images/background/bg1.jpg",
+  "bg-image": "docs/images/background/bg1.jpg",
   "tile-1": {
     "color": "",
     "image": {
-      "url": "images/placeholders/360x240-1.jpg",
+      "url": "docs/images/placeholders/360x240-1.jpg",
       "alt": "Description"
     },
     "title": "MUSA is going greener",
@@ -20,7 +20,7 @@
   "tile-2": {
     "color": "red",
     "image": {
-      "url": "images/placeholders/360x240-2.jpg",
+      "url": "docs/images/placeholders/360x240-2.jpg",
       "alt": "Description"
     },
     "title": "A Rae of Aristic Sunshine",
@@ -34,7 +34,7 @@
   "tile-3": {
     "color": "red",
     "image": {
-      "url": "images/placeholders/360x240-3.jpg",
+      "url": "docs/images/placeholders/360x240-3.jpg",
       "alt": "Description"
     },
     "title": "World Cup fever at Sandy's Bar",
@@ -48,7 +48,7 @@
   "tile-4": {
     "color": "",
     "image": {
-      "url": "images/placeholders/360x240-4.jpg",
+      "url": "docs/images/placeholders/360x240-4.jpg",
       "alt": "Description"
     },
     "title": "All in hand",
@@ -62,7 +62,7 @@
   "tile-5": {
     "color": "red",
     "image": {
-      "url": "images/placeholders/360x240-5.jpg",
+      "url": "docs/images/placeholders/360x240-5.jpg",
       "alt": "Description"
     },
     "title": "Dogrees all round!",
@@ -76,7 +76,7 @@
   "tile-6": {
     "color": "green",
     "image": {
-      "url": "images/placeholders/360x240-6.jpg",
+      "url": "docs/images/placeholders/360x240-6.jpg",
       "alt": "Description"
     },
     "title": "Darling: \"We belong together\"",
