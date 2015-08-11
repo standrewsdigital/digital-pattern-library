@@ -447,11 +447,11 @@ module.exports = function(grunt) {
 
 
     // default – builds the core assets, compiles documentation
-    grunt.registerTask('default', ['build','docs']);
+    grunt.registerTask('default', ['core','docs']);
 
   
-    // build – builds the core assets from source
-    grunt.registerTask('build', ['clean:core','compass','jshint','concat',
+    // core – builds the core assets from source
+    grunt.registerTask('core', ['clean:core','compass','jshint','concat',
         'uglify','gitinfo','assemble:core_meta','copy:core_images',
         'copy:core_fonts','filesize:core_stats']);
 
@@ -474,7 +474,7 @@ module.exports = function(grunt) {
                     'Cannot deploy core files without a version tag.');
                 return;
             }
-            grunt.log.writeln("Deploying core files in 'build/' as version (" + 
+            grunt.log.writeln("Deploying core files in 'core/' as version (" + 
                 deploy_tag+")");
             grunt.task.loadNpmTasks('grunt-ftp-deploy');
             grunt.task.run(['ftp-deploy:core']);
