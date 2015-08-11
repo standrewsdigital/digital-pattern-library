@@ -7,7 +7,7 @@ components built using this code:
 * **Documentation** Documentation about using the patterns in the library and 
   other information for developers who consume the core assets. 
 
-In the repository, we have the following additional documenation aimed at 
+In the repository, we have the following additional documentation aimed at 
 assisting those who contribute and develop the pattern library.
 
 * [SETUP.md](SETUP.md) – How to set up your development environment.
