@@ -49,8 +49,20 @@ When determining the appropriate number for a new version, increment the:
 
 See [Semantic Versioning](http://semver.org/) for more information.
 
+Whenever you release a new version you must update the version in the source
+code and add a git tag for that version.
 
-### Git tags for versions
+
+### 1. Updating version number in source code
+
+The version number is stored in the `package.json` file in the root of the 
+DPL. You must change the version number here to your new version number and
+then rebuild `core/` and `docs/` with Grunt. When Grunt runs, the version 
+number found in `package.json` is listed at the top of all the JavaScript and 
+CSS core assets and is also output in the footer of the documentation pages.
+
+
+### 2. Git tags for versions
 
 We follow the convention that for version `0.5.4` the git tag would be:
 
