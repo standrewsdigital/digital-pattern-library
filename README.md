@@ -13,6 +13,7 @@ assisting those who contribute and develop the pattern library.
 * [SETUP.md](SETUP.md) – How to set up your development environment.
 * [CONTRIBUTING.md](CONTRIBUTING.md) – General guidelines for contributing to
    pattern library.
+* [FILES.md](FILES.md) – Overview of source folders and files.
 * [ADD-PATTERN.md](ADD-PATTERN.md) – How to add a new pattern.
 
 
