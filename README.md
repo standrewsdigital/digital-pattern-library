@@ -26,20 +26,22 @@ After [getting setup](SETUP.md), you can use the following Grunt tasks.
     $ grunt
 
 This command will build the core assets and place them in `core/` and will 
-build the documentation and place it in `docs/`. It is identical to running 
-the two commands listed below individually.
+build the documentation and place it in `docs/`. Behind the scenes it runs the
+following two individual commands. 
 
-### Build core
+1. Build core
 
-    $ grunt core
+        $ grunt core
 
-This command builds the core assets and places them in `core/`.
+    This command builds the core assets and places them in `core/`.
 
-### Build docs
+2. Build docs
 
-    $ grunt docs
+        $ grunt docs
 
-This command builds the documentation and places it in `docs/`.
+    This command builds the documentation and places it in `docs/` and copies
+    what's currently in `core/` into the `docs/assets/core/` for use by the
+    documentation and examples.
 
 ### Watch (interactive building)
 
@@ -84,7 +86,7 @@ commands. You could get unexpected results if you switched to a new branch and
 failed to run `grunt` before running `grunt deploy-core`.
 
 
-### Deploy core
+### Deploy docs
 
     $ grunt deploy-docs --tag=LABEL
 
