@@ -41,10 +41,6 @@ module.exports = function(grunt) {
             // General options
             options: {
                 pkg: '<%= pkg %>',
-                git: {
-                    branch: '<%= gitinfo.local.branch.current.name %>',
-                    commit: '<%= gitinfo.local.branch.current.SHA %>'
-                },
                 now: '<%= grunt.template.today("isoDateTime") %>',
                 assets: 'docs/assets',
                 layoutdir: 'src/_layouts',
@@ -131,7 +127,11 @@ module.exports = function(grunt) {
             // Meta doc(s) 
             core_meta: {
                 options: {
-                ext: '.json',
+                    git: {
+                        branch: '<%= gitinfo.local.branch.current.name %>',
+                        commit: '<%= gitinfo.local.branch.current.SHA %>'
+                    },
+                    ext: '.json',
                 },
                 files: [{
                     expand: true,

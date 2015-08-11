@@ -7,12 +7,14 @@ related:
 
 ---
 
-<p>The Long form pattern is a flexible pattern that can be repeated in a page to achieve a variety of effects.</p>
+<p>The Long form pattern is a flexible pattern that is designed to be repeated a large number of times on a page utilising a series of variations to give a consistent look and feel that works well for longer passages of text enriched with media like images, video and audio. It is a rather unique pattern in that there are also several sub-patterns that are made available inside this pattern.</p>
 
 <h2>Usage</h2>
 
 <ul>
-	<li>...</li>
+	<li>Use a university header and university footer</li>
+    <li>use as many long-form sections as you want in between</li>
+    <li>Ensure that the final one has the watermark variant.</li>
 </ul>
 
 <h2>Syntax</h2>
@@ -20,8 +22,113 @@ related:
 <div class="pattern-source">{{> long-form }}</div>
 
 
-<h2>Options</h2>
+<h2>Variants</h2>
+
+<p>You can mix and match these variants to get a variety of display options
+that still fit well together.</p>
+
+<h3>Text and backgrounds</h3>
 
 <ul>
-    <li><em>None</em></li>
+    <li>**Background image**</li>
+    <li><code>.long-form--inverse</code></li>
+    <li><code>.long-form--bg-light-grey</code></li>
+    <li><code>.long-form--bg-darken</code></li>
+    <li><code>.long-form--bg-lighten</code></li>
 </ul>
+
+<h3>Width</h3>
+
+<ul>
+    <li><code>.long-form--width-medium</code></li>
+    <li><code>.long-form--width-full</code></li>
+</ul>
+
+<h3>Vertical padding</h3>
+
+<ul>
+    <li><code>.long-form--padding-none</code></li>
+</ul>
+
+<h3>Other</h3>
+
+<ul>
+    <li><code>.long-form--watermark-logo</code></li>
+</ul>
+
+<h2>Available elements</h2>
+
+<p>The following objects are available: </p>
+
+<ul>
+    <li>Asides</li>
+    <li>End piece</li>
+    <li>Horizontal gallery (beta)</li>
+    <li>Pull quotes</li>
+    <li>Thumbnail gallery</li>
+</ul>
+
+
+<h3>Asides</h3>
+
+<p>There are a variety of alignment variations that can be applied to <code>aside</code> elements the long-form pattern that make them quite powerful.</p>
+
+<p><strong>Context:</strong> <code>&lt;div class="long-form-content"&gt;</code>; note that these asides are <strong>not</strong> designed to work inside <code>.long-form--width-medium</code> or <code>.long-form--width-full</code> variants described above.</p>
+
+<pre><code>
+&lt;aside class="ALIGNMENT-CLASS"&gt; ... &lt;/aside&gt;
+</code></pre>
+
+<h4>Options</h4>
+
+<ul>
+    <li>Parallel-left</li>
+    <li>Parallel-right</li>
+    <li>right</li>
+    <li>right-out</li>
+    <li>left</li>
+    <li>left-out</li>
+</ul>
+
+<h3>End piece</h3>
+
+<p>...</p>
+
+<p><strong>Context:</strong> <code>&lt;div class="long-form-content"&gt;</code></p>
+
+<pre><code>
+...
+</code></pre>
+
+<h3>Horizontal gallery</h3>
+
+<p>...</p>
+
+<p><strong>Context:</strong> <code>&lt;div class="long-form-content"&gt;</code></p>
+
+<pre><code>
+...
+</code></pre>
+
+
+<h3>Pull quotes</h3>
+
+<p>Pull quotes intended to quote something from the flow of the article in a larger size to draw the reader into the article. This is typically different in purpose to a blockquote where you want to include a longish quotation in the flow of the narrative. Additionally, these pull quote elements have links to share on twitter and facebook.</p>
+
+<p><strong>Context:</strong> <code>&lt;div class="long-form-content"&gt;</code></p>
+
+<pre><code>
+&lt;p class="pull-quote" data-quote="(quote-to-tweet; 140 chars)"&gt;(quote-to-display)&lt;/p&gt;
+</code></pre>
+
+<p>The <em>quote-to-display</em> is obviously not optional, however the <em>quote-to-tweet</em> in the <code>data-quote</code> attribute is optional. If the <code>data-quote</code> attribute is left blank, then the quote for the tweet will be created automatically based on the <em>quote-to-display</code> truncated to tweet length with an ellipsis (if appropriate). This could mean that the quote might be truncated in a non-optimal location, so for more control use the <code>data-quote</code> attribute to specify exactly what you want tweeted.</p>
+
+<h3>Thumbnail gallery</h3>
+
+<p>...</p>
+
+<p><strong>Context:</strong> <code>&lt;div class="long-form-content"&gt;</code></p>
+
+<pre><code>
+...
+</code></pre>
