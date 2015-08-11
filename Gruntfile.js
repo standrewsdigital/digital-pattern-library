@@ -378,10 +378,10 @@ module.exports = function(grunt) {
   //== TASK ALIASES
 
   // default – builds the core assets, compiles documentation
-  grunt.registerTask('default', ['build','docs']);
+  grunt.registerTask('default', ['core','docs']);
   
   // build – builds the core assets from source
-  grunt.registerTask('build', ['clean:core','compass','jshint','concat','uglify','gitinfo','assemble:core_meta','copy:core_images','copy:core_fonts','filesize:core_stats']);
+  grunt.registerTask('core', ['clean:core','compass','jshint','concat','uglify','gitinfo','assemble:core_meta','copy:core_images','copy:core_fonts','filesize:core_stats']);
 
   // docs – builds the documentation, makes use of build too.
   grunt.registerTask('docs', ['clean:docs','assemble:patterns','assemble:pattern_examples','assemble:examples','assemble:docs','copy:docs_assets']);
