@@ -7,14 +7,18 @@ related:
 
 ---
 
-<p>The Long form pattern is a flexible pattern that is designed to be repeated a large number of times on a page utilising a series of variations to give a consistent look and feel that works well for longer passages of text enriched with media like images, video and audio. It is a rather unique pattern in that there are also several sub-patterns that are made available inside this pattern.</p>
+<p>The Long form pattern is designed to be used repetitively with a variety of
+options to achieve an engaging, story-telling experience that still remains
+consistenty in look and feel. It's ideally suited to blend longer passages of 
+text with images, video and audio. It also carries several sub-patterns.</p>
 
 <h2>Usage</h2>
 
 <ul>
-	<li>Use a university header and university footer</li>
-    <li>use as many long-form sections as you want in between</li>
-    <li>Ensure that the final one has the watermark variant.</li>
+	<li>Use a university header and university footer (an abbreviated footer 
+        is typically acceptable).</li>
+    <li>Use as many Long form sections as you want in between.</li>
+    <li>The last Long form section should be a Credits variant, see below</li>
 </ul>
 
 <h2>Syntax</h2>
@@ -30,30 +34,68 @@ that still fit well together.</p>
 <h3>Text and backgrounds</h3>
 
 <ul>
-    <li>**Background image**</li>
-    <li><code>.long-form--inverse</code></li>
-    <li><code>.long-form--bg-light-grey</code></li>
-    <li><code>.long-form--bg-darken</code></li>
-    <li><code>.long-form--bg-lighten</code></li>
+    <li><strong>Background image</strong><br>
+        Using a <code>style</code> attribute, set the URL of background image 
+        on the <code>&lt;div class="long-form"&gt;</code> element.
+    </li>
+    <li><strong>Inverse text</strong><br>
+        Modifier class: <code>.long-form--inverse</code><br>
+        This switches the text colour from black to white. It's useful in 
+        conjunction with a darker background image.
+    </li>
+    <li><strong>Background light grey</strong><br>
+        Modifier class: <code>.long-form--bg-light-grey</code><br>
+        Sets the background colour to a light grey.
+        </li>
+    <li><strong>Darkened background image</strong><br>
+        Modifier class: <code>.long-form--bg-darken</code><br>
+        Adds a semi-transparent black overlay on the background image. 
+        Typically used to make a bright background image usable behind white 
+        text.
+    </li>
+    <li><strong>Ligthened background image</strong><br>
+        Modifier class: <code>.long-form--bg-lighten</code><br>
+        Adds a semi-transparent white overlay on the background image. 
+        Typically used to make a dark background image usable behind black 
+        text.
+    </li>
 </ul>
 
 <h3>Width</h3>
 
 <ul>
-    <li><code>.long-form--width-medium</code></li>
-    <li><code>.long-form--width-full</code></li>
+    <li><strong>Compressed content column</strong> (Default)<br>
+        By default content has a width of 8 grid columns with a 2 grid column 
+        offset achieving a 2-8-2 pattern.</li>
+    <li><strong>Medium content column</strong><br>
+        Modifier class: <code>.long-form--width-medium</code><br>
+        This sets the content to have a width of 10 grid columns with a 1 
+        grid column offset achieving a 1-10-1 pattern.
+    </li>
+    <li><strong>Full-width content column</strong><br>
+        Modifier class: <code>.long-form--width-full</code><br>
+        This sets the content to span all 12 grid columns.
+    </li>
 </ul>
 
 <h3>Vertical padding</h3>
 
 <ul>
-    <li><code>.long-form--padding-none</code></li>
+    <li><strong>No vertical padding</strong><br>
+        Modifier class: <code>.long-form--padding-none</code><br>
+        Removes the top and bottom padding.
+    </li>
 </ul>
 
-<h3>Other</h3>
+<h3>Credits</h3>
 
 <ul>
-    <li><code>.long-form--watermark-logo</code></li>
+    <li><strong>Credits section</strong><br>
+        Modifier class: <code>.long-form--credits</code><br>
+        All long form pages must end with a credits section. This section has
+        a medium (1-10-1) width, grey background, smaller text, and a 
+        St Andrews logo in a watermark effect.
+    </li>
 </ul>
 
 <h2>Available elements</h2>
