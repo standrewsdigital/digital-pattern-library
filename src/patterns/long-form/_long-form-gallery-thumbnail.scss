@@ -1,0 +1,38 @@
+
+// Thumbnail gallery
+
+.long-form__content .thumbnail-gallery {
+
+    text-align: center;
+
+    .thumbnail-gallery__title {
+        position: relative;
+        font-size: 22px;
+        font-style: italic;
+        font-weight: normal;
+        font-family: 'PT Serif', Gerogia, 'Times New Roman', Times, serif;
+        text-align: center;
+        margin-bottom: 30px;
+
+    }
+
+    .thumbnail-gallery__images {
+        @extend .row;
+    }
+
+    figure.image {
+        display: inline-block;
+        padding-right: 20px;
+        padding-bottom: 10px;
+
+        figcaption {
+            text-align: left;    
+        }
+    }
+
+    img {
+        height: 170px;
+        width: auto !important;
+    }
+
+}

@@ -1,0 +1,35 @@
+
+
+// Slider gallery
+
+.long-form--gallery-slider {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    overflow-x: scroll;
+    min-height: 420px; // 50 + 50 + 300 + 20
+                       // padding top and bottom (of the gallery) +
+                       //   height of the image slides +
+                       //   a little for the caption
+
+    .slides-container {
+        position: relative;
+        overflow-x: visible;
+        
+    }
+
+    .slides {
+        position: absolute;
+        display: table-row;
+        // overflow-x: scroll;
+
+        figure.image {
+            display: table-cell;
+            padding-right: 20px;
+            img {
+                height: 300px;
+                width: auto;
+            }
+        }
+    }
+}
+

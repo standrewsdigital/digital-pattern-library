@@ -1,13 +1,11 @@
 
 <!-- Begin pattern: long-form //-->
 
-<section class="long-form OPTIONAL-VARIANTS" style="background-image: url({{asset "docs/images/long-form-content/bg-antiques.jpg"}});">
-    <div class="container"><div class="row"><div class="long-form-wrapper">
+<section class="long-form {{variant}}" {{#if bg-image}}style="background-image: url({{asset bg-image}});"{{/if}}>
+    <div class="container"><div class="row"><div class="long-form__wrapper">
 
-        <div class="long-form-content">
-
-            ... content ...
-
+        <div class="long-form__content">
+            {{{lf-content}}}
         </div>
 
     </div></div></div>

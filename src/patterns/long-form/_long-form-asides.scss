@@ -1,0 +1,89 @@
+
+// Asides
+// ====================
+
+
+// Align centre
+.long-form__content aside.align-centre,
+.long-form__content aside.align-center {
+    text-align: center;
+}
+
+// Align left
+.long-form__content aside.align-left {
+    text-align: left;
+}
+
+// Align right
+.long-form__content aside.align-right {
+    text-align: right;   
+}
+
+// Extend left
+.long-form__content aside.extend-left {
+    float: left;
+    padding: 15px 0 10px;
+    padding-right: 30px;
+    margin-bottom: 0;
+    margin-left: -25%;
+}
+
+// Extend right
+.long-form__content aside.extend-right {
+    float: right;
+    padding: 15px 0;
+    padding-left: 30px;
+    margin-bottom: 0;
+    margin-right: -25%;
+}
+
+// Float left
+.long-form__content aside.float-left {
+    float: left;
+    padding: 15px 0 10px;
+    padding-right: 30px;
+    margin-bottom: 0;
+}
+
+// Float right
+.long-form__content aside.float-right {
+    float: right;
+    padding: 15px 0;
+    padding-left: 30px;
+    margin-bottom: 0;
+}
+
+// Parallel left
+// Parallel right
+.long-form__content aside.parallel-left,
+.long-form__content aside.parallel-right {
+    padding: 10px 20px 10px;
+    width: 150px;  
+}
+
+@media (min-width: 992px) {
+    .long-form__content aside.parallel-left {
+
+        padding: 10px 0 0;
+        position: absolute;
+        left: -170px;
+    }
+    .long-form__content aside.parallel-right {
+        padding: 10px 0 0;
+        position: absolute;
+        right: -170px;
+    }
+}
+
+
+
+// A figure for use in examples.
+aside figure.example {
+    background-color: #c00;
+    padding: 10px;
+    code {
+        color: white;
+        background-color: inherit;
+        font-size: 15px;
+    }
+}
