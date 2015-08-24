@@ -9,7 +9,7 @@ related:
 
 <p>The Long form pattern is designed to be used repetitively with a variety of
 options to achieve an engaging, story-telling experience that still remains
-consistenty in look and feel. It's ideally suited to blend longer passages of 
+consistent in look and feel. It's ideally suited to blend longer passages of 
 text with images, video and audio. It also carries several sub-patterns.</p>
 
 <h2>Usage</h2>
@@ -34,14 +34,17 @@ that still fit well together.</p>
 <h3>Text and backgrounds</h3>
 
 <ul>
-    <li><strong>Background image</strong><br>
-        Using a <code>style</code> attribute, set the URL of background image 
-        on the <code>&lt;div class="long-form"&gt;</code> element.
+    <li><strong>Black and white</strong> (Default)<br>
+        By default the background is white and the text is black (dark grey).
     </li>
     <li><strong>Inverse text</strong><br>
         Modifier class: <code>.long-form--inverse</code><br>
         This switches the text colour from black to white. It's useful in 
         conjunction with a darker background image.
+    </li>
+    <li><strong>Background image</strong><br>
+        Using a <code>style</code> attribute, set the URL of background image 
+        on the <code>&lt;div class="long-form"&gt;</code> element.
     </li>
     <li><strong>Background light grey</strong><br>
         Modifier class: <code>.long-form--bg-light-grey</code><br>
@@ -81,6 +84,9 @@ that still fit well together.</p>
 <h3>Vertical padding</h3>
 
 <ul>
+    <li><strong>Vertical padding</strong> (Default)<br>
+        By default there is generous padding on the top and bottom.
+    </li>
     <li><strong>No vertical padding</strong><br>
         Modifier class: <code>.long-form--padding-none</code><br>
         Removes the top and bottom padding.
@@ -98,9 +104,9 @@ that still fit well together.</p>
     </li>
 </ul>
 
-<h2>Available elements</h2>
+<h2>Subpatterns</h2>
 
-<p>The following objects are available: </p>
+<p>The following sub patterns can be used inside the <code>&lt;div class="long-form-content"&gt;</code> element.</p>
 
 <ul>
     <li>Asides</li>
@@ -113,19 +119,31 @@ that still fit well together.</p>
 
 <h3>Asides</h3>
 
-<p>There are a variety of alignment variations that can be applied to <code>aside</code> elements the long-form pattern that make them quite powerful.</p>
+<p>Standard HTML5 <code>&lt;aside&gt;</code> elements are enhanced with a set of classes to flexibly align them relative to content. This approach procludes the need for a dedicated sidebar. The <code>&lt;aside&gt;</code> element is often used to wrap <code>&lt;figure&gt;</code> elements, but can equally wrap any tangential content.</p>
 
-<p><strong>Context:</strong> <code>&lt;div class="long-form-content"&gt;</code>; note that these asides are <strong>not</strong> designed to work inside <code>.long-form--width-medium</code> or <code>.long-form--width-full</code> variants described above.</p>
+<p><strong>Note:</strong> These asides are only designed to work inside the default compressed content column, not the mdium or full-width variants.</p>
 
-<pre><code>
-&lt;aside class="ALIGNMENT-CLASS"&gt; ... &lt;/aside&gt;
+<pre><code>&lt;aside class="ALIGNMENT"&gt;
+    ...
+&lt;/aside&gt;
 </code></pre>
 
-<h4>Options</h4>
+<h4>Variants</h4>
 
 <ul>
-    <li>Parallel-left</li>
-    <li>Parallel-right</li>
+    <li><strong>Parallel-left</strong><br>
+        Modifier class: <code>.parallel-left</code><br>
+        This places the <code>&lt;aside&gt;</code> in the left 2 grid columns directly parallel to the content that it precedes. 
+    </li>
+    <li><strong>Parallel-right</strong><br>
+        Modifier class: <code>.parallel-right</code><br>
+        This places the <code>&lt;aside&gt;</code> in the right 2 grid columns directly parallel to the content that it precedes. 
+    </li>
+    <li><strong>Parallel-right</strong><br>
+        Modifier class: <code>.parallel-right</code><br>
+        This places the <code>&lt;aside&gt;</code> in the right 2 grid columns directly parallel to the content that it precedes. 
+    </li>
+    
     <li>right</li>
     <li>right-out</li>
     <li>left</li>
