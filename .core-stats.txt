@@ -5,11 +5,11 @@ core/styles/header-only.css - 19.50 kb
 core/styles/ie.css - 0.45 kb
 core/styles/print.css - 33.91 kb
 core/styles/screen-bootstrap-only.css - 146.37 kb
-core/styles/screen.css - 183.95 kb
-core/scripts/core-base.js - 8.91 kb
-core/scripts/core-base.min.js - 3.67 kb
-core/scripts/core.js - 213.26 kb
-core/scripts/core.min.js - 157.86 kb
+core/styles/screen.css - 183.93 kb
+core/scripts/core-base.js - 8.41 kb
+core/scripts/core-base.min.js - 3.28 kb
+core/scripts/core.js - 212.76 kb
+core/scripts/core.min.js - 157.46 kb
 core/scripts/datatables.js - 6.28 kb
 core/scripts/datatables.min.js - 2.43 kb
 core/scripts/doc.js - 158.99 kb
