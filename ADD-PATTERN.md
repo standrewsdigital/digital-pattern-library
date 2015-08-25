@@ -2,11 +2,7 @@
 
 This is a guide to adding a new pattern to the pattern library. 
 
-First, determine the name and short-name for the pattern. For the purpose of 
-this guide we'll use the following. 
-
-    Name: New feature
-    Short-name: new-feature
+First, decide the name of the pattern. Then create a computer-friendly version  for naming folders and files; it must consist of lowercase letters and hyphens only. For this example, the name of the pattern will be "New feature" and `new-feature`.
 
 1. Create the folder `src/patterns/new-feature`.  
    This folder contains the JavaScript, CSS and documentation for the feature.
@@ -14,7 +10,8 @@ this guide we'll use the following.
 2. Create Handlebars file `src/patterns/new-feature/new-feature.hbs`. 
    This file contains the source HTML for the pattern in Handlebars format. 
    Being Handlebars means that you can populate dynamic portions of the 
-   HTML with Handlebars values. See [Handlebars] for more info. 
+   HTML with Handlebars values. See [Handlebars](http://handlebarsjs.com/) 
+   for more info. 
 
 3. Create Handlebars file `src/patterns/new-feature/new-feature.doc.hbs`. 
    This file is the main documentation for the pattern. The file should begin 
@@ -102,47 +99,55 @@ this guide we'll use the following.
         - name: new-feature-2
         ...
     
+    Each example file should contain Handlebars code to include partial for 
+    this pattern and specify the data to populate the partial with. You include Handlebars partials in this format:
+
+        {{> partial-name data-file }}
+
     So we will create the following files and respective contents.
 
-    * `src/patterns/new-feature/examples/new-feature1.hbs`
+    * File: `src/patterns/new-feature/examples/new-feature1.hbs`
      
             {{> new-feature new-feature-1}}
       
-        This is Handlebars code to include the Handlebars partial `new-feature`
+        This includes the Handlebars partial `new-feature`
         which maps to the file `src/patterns/new-feature/new-feature.hbs` 
-        populate with the data from the object `new-feature1.json`. When 
-        building the page Assemble will look in `src/patterns/*/data/*.json` 
-        for the data to populate the partial with. This will lead us to 
-        creating (in the next step) an associated `data/` folder and files. 
+        and populates the partial with the JSON data from `new-feature-1`
+        which maps to the file 
+        `src/patterns/new-feature/data/new-feature-1.json`. When building the 
+        page Assemble (a grunt plugin that generates the HTML files in the 
+        documentation) will look in `src/patterns/*/data/*.json` for the data 
+        to populate the partial with. This will lead us to creating (in the 
+        next step) an associated `data/` folder and files. 
 
-    * `src/patterns/new-feature/examples/new-feature2.hbs`
+    * File: `src/patterns/new-feature/examples/new-feature-2.hbs`
 
             {{> new-feature new-feature-2}}
 
         Again, this causes Assemble to look for a file named 
-        `new-feature2.json` in the data folders to populate the Handlebars 
-        partial `src/patterns/new-feature/new-feature.hbs`.
+        `new-feature-2.json` in the `data` folder to populate the Handlebars 
+        partial.
 
 8. Create the folder `src/patterns/new-feature/data` and a JSON file to 
    correspond with each example we've defined (in the previous step).
     
     So we will create the following files and respective contents.
 
-    * `src/patterns/new-feature/data/new-feature1.json`
+    * `src/patterns/new-feature/data/new-feature-1.json`
     
             {
                 "first-name": "John",
-                "last-name": "Smith",
+                "last-name": "Smith"
             }
 
         This JSON code defines the variables that are available to populate the
         Handlebars partial (`src/patterns/new-feature/new-feature.hbs`).
 
-    * `src/patterns/new-feature/data/new-feature2.json`
+    * `src/patterns/new-feature/data/new-feature-2.json`
 
             {
                 "first-name": "Llanfairpwllgwyngyllgogerychwyrndrobwyll",
-                "last-name": " Llantysiliogogogoch",
+                "last-name": "Llantysiliogogogoch"
             }
 
         The idea is that each example loads different data that configures
