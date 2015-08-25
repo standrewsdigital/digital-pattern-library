@@ -5,10 +5,10 @@ title: Long-form content page
 
 {{> header }}
 
-<section class="long-form long-form-bg-dark long-form-bg-darken" style="background-image: url({{asset "docs/images/long-form-content/bg-antiques.jpg"}});">
-    <div class="container"><div class="row"><div class="long-form-wrapper">
+<section class="long-form long-form--inverse long-form--bg-darken" style="background-image: url({{asset "docs/images/long-form-content/bg-antiques.jpg"}});">
+    <div class="container"><div class="row"><div class="long-form__wrapper">
 
-        <div class="long-form-content">
+        <div class="long-form__content">
 
             <h1>Light Box</h1>
 
@@ -25,9 +25,9 @@ title: Long-form content page
 
 <section class="long-form">
 
-    <div class="container"><div class="row"><div class="long-form-wrapper">
+    <div class="container"><div class="row"><div class="long-form__wrapper">
 
-        <div class="long-form-content">
+        <div class="long-form__content">
 
             <blockquote>
             <p>We meet as clearly as two beams . . .<br>
@@ -92,11 +92,11 @@ title: Long-form content page
 
 </section>
 
-<section class="long-form long-form-bg-dark long-form-bg-darken" style="background-image: url({{asset "docs/images/long-form-content/bg-spark.jpg"}})">
+<section class="long-form long-form--inverse long-form--bg-darken" style="background-image: url({{asset "docs/images/long-form-content/bg-spark.jpg"}})">
 
-    <div class="container"><div class="row"><div class="long-form-wrapper">
+    <div class="container"><div class="row"><div class="long-form__wrapper">
 
-        <div class="long-form-content">
+        <div class="long-form__content">
 
             <h2>The spark</h2>
 
@@ -118,9 +118,9 @@ title: Long-form content page
 
 <section class="long-form">
 
-    <div class="container"><div class="row"><div class="long-form-wrapper">
+    <div class="container"><div class="row"><div class="long-form__wrapper">
 
-        <div class="long-form-content">
+        <div class="long-form__content">
 
             <p>Light Box was not the first project that Robert Crawford and Norman McBeath had worked together on, but including scientists into their collaboration added a new dimension to their work. It was the researchers within the the University’s Organic Semiconductor Optoelectronics group who enlightened both Robert and Norman about the use of light in contemporary physics, inspiring the photographic and poetic process.</p>
 
@@ -158,11 +158,11 @@ title: Long-form content page
 </section>
 
 
-<section class="long-form long-form-bg-dark long-form-bg-darken" style="background-image: url({{asset "docs/images/long-form-content/bg-light.jpg"}});">
+<section class="long-form long-form--inverse long-form--bg-darken" style="background-image: url({{asset "docs/images/long-form-content/bg-light.jpg"}});">
 
-    <div class="container"><div class="row"><div class="long-form-wrapper">
+    <div class="container"><div class="row"><div class="long-form__wrapper">
 
-        <div class="long-form-content">
+        <div class="long-form__content">
         
             <h2>The partnership</h2>
 
@@ -195,9 +195,9 @@ title: Long-form content page
 
 <section class="long-form">
 
-    <div class="container"><div class="row"><div class="long-form-wrapper">
+    <div class="container"><div class="row"><div class="long-form__wrapper">
 
-        <div class="long-form-content">
+        <div class="long-form__content">
 
             <h2>The science</h2>
 
@@ -246,32 +246,36 @@ title: Long-form content page
 </section>
 
 
-<section class="long-form long-form-medium long-form-thumbnail-gallery" style="padding-top: 0;">
+<section class="long-form long-form--width-medium" style="padding-top: 0;">
 
-    <div class="container"><div class="row"><div class="long-form-wrapper">
+    <div class="container"><div class="row"><div class="long-form__wrapper">
 
-        <div class="">
+        <div class="long-form__content">
             
-            <h4>Scientists involved with Light Box</h4>
+            <div class="thumbnail-gallery">
 
-            <div class="row">
+                <h4 class="thumbnail-gallery__title">Scientists involved with Light Box</h4>
 
-            <figure class="image">
-                <img src="{{asset "docs/images/long-form-content/portrait-ifor-samuel.jpg"}}" alt="Professor Ifor Samuel" title="Professor Ifor Samuel">
-                <figcaption>Ifor Samuel<br><em>Physicist</em></figcaption>
-            </figure><figure class="image">
-                <img src="{{asset "docs/images/long-form-content/portrait-john-allen.jpg"}}" alt="John Allen" title="Ashu Kumar Bansal">
-                <figcaption>John Allen<br><em>Physicist</em></figcaption>
-            </figure><figure class="image">
-                <img src="{{asset "docs/images/long-form-content/portrait-ashu-kumar-bansal.jpg"}}" alt="Ashu Kumar Bansal" title="Ashu Kumar Bansal">
-                <figcaption>Ashu Kumar Bansal<br><em>Optical physicist</em></figcaption>
-            </figure><figure class="image">
-                <img src="{{asset "docs/images/long-form-content/portrait-hien-nguyen.jpg"}}" alt="Hien Nguyen" title="Hien Nguyen">
-                <figcaption>Hien Nguyen<br><em>Polymer chemist</em></figcaption>
-            </figure><figure class="image">
-                <img src="{{asset "docs/images/long-form-content/portrait-olena-kulyk.jpg"}}" alt="Olena Kulyk" title="Olena Kulyk">
-                <figcaption>Olena Kulyk<br><em>Biomedical electronics engineer</em></figcaption>
-            </figure>
+                <div class="thumbnail-gallery__images">
+
+                    <figure class="image">
+                        <img src="{{asset "docs/images/long-form-content/portrait-ifor-samuel.jpg"}}" alt="Professor Ifor Samuel" title="Professor Ifor Samuel">
+                        <figcaption>Ifor Samuel<br><em>Physicist</em></figcaption>
+                    </figure><figure class="image">
+                        <img src="{{asset "docs/images/long-form-content/portrait-john-allen.jpg"}}" alt="John Allen" title="Ashu Kumar Bansal">
+                        <figcaption>John Allen<br><em>Physicist</em></figcaption>
+                    </figure><figure class="image">
+                        <img src="{{asset "docs/images/long-form-content/portrait-ashu-kumar-bansal.jpg"}}" alt="Ashu Kumar Bansal" title="Ashu Kumar Bansal">
+                        <figcaption>Ashu Kumar Bansal<br><em>Optical physicist</em></figcaption>
+                    </figure><figure class="image">
+                        <img src="{{asset "docs/images/long-form-content/portrait-hien-nguyen.jpg"}}" alt="Hien Nguyen" title="Hien Nguyen">
+                        <figcaption>Hien Nguyen<br><em>Polymer chemist</em></figcaption>
+                    </figure><figure class="image">
+                        <img src="{{asset "docs/images/long-form-content/portrait-olena-kulyk.jpg"}}" alt="Olena Kulyk" title="Olena Kulyk">
+                        <figcaption>Olena Kulyk<br><em>Biomedical electronics engineer</em></figcaption>
+                    </figure>
+
+                </div>
 
             </div>
 
@@ -282,11 +286,11 @@ title: Long-form content page
 </section>
 
 
-<section class="long-form long-form-bg-dark long-form-bg-darken" style="background-image: url({{asset "docs/images/long-form-content/bg-light.jpg"}})">
+<section class="long-form long-form--inverse long-form--bg-darken" style="background-image: url({{asset "docs/images/long-form-content/bg-light.jpg"}})">
 
-    <div class="container"><div class="row"><div class="long-form-wrapper">
+    <div class="container"><div class="row"><div class="long-form__wrapper">
 
-        <div class="long-form-content">
+        <div class="long-form__content">
 
             <h2>The art</h2>
 
@@ -329,16 +333,18 @@ title: Long-form content page
 
 <section class="long-form">
 
-    <div class="container"><div class="row"><div class="long-form-wrapper">
+    <div class="container"><div class="row"><div class="long-form__wrapper">
 
-        <div class="long-form-content">
+        <div class="long-form__content">
 
             <p>Further inspiration came from the contemporary research undertaken by St Andrews scientists. Vietnamese chemist, Dr Hien Nguyen has recently synthesized for the first time a new form of the chemical coumarin.
 
-            <figure class="image right-out">
-                <img src="{{asset "docs/images/long-form-content/photo-studio.jpg"}}" style="max-width: 500px">
-                <figcaption><em>Aton</em> haiku and photograph in Light Box</figcaption>
-            </figure>
+            <aside class="extend-right">
+                <figure class="image">
+                    <img src="{{asset "docs/images/long-form-content/photo-studio.jpg"}}" style="max-width: 500px">
+                    <figcaption><em>Aton</em> haiku and photograph in Light Box</figcaption>
+                </figure>
+            </aside>
 
             In a union of science and art, she made her discovery available to Scottish PhD student Stuart Thomson, who worked with Norman McBeath to use this chemical for the very first time in a photographic process.</p>
 
@@ -352,7 +358,7 @@ title: Long-form content page
 </section>
 
 
-<section class="long-form long-form-bg-light-grey">
+<section class="long-form long-form--bg-light-grey">
 
     <div class="container"><div class="row">
 
@@ -402,9 +408,9 @@ title: Long-form content page
 
 <section class="long-form">
 
-    <div class="container"><div class="row"><div class="long-form-wrapper">
+    <div class="container"><div class="row"><div class="long-form__wrapper">
 
-        <div class="long-form-content">
+        <div class="long-form__content">
 
             <h2>Further collaboration</h2>
 
@@ -433,7 +439,7 @@ title: Long-form content page
             </figure>
 
 
-            <p>See these poems along with the images created to accompany them:  <a href="long-form-content-support.html#poem-summer"><em>Summer</em></a> by Amanda Merritt, <a href="long-form-content-support.html#poem-light-fantastic"><em>Light fantastic</em></a> by Helen Nicholson and <a href="long-form-content-support.html#poem-improve-detection"><em>Improve detection of explosives in Croatia</em></a> by Tristram Fane Saunders.</p>
+            <p>See these poems along with the images created to accompany them:  <a href="long-form__content-support.html#poem-summer"><em>Summer</em></a> by Amanda Merritt, <a href="long-form__content-support.html#poem-light-fantastic"><em>Light fantastic</em></a> by Helen Nicholson and <a href="long-form__content-support.html#poem-improve-detection"><em>Improve detection of explosives in Croatia</em></a> by Tristram Fane Saunders.</p>
 
             
             <p class="end">11 May 2015</p>
@@ -445,11 +451,11 @@ title: Long-form content page
 </section>
 
 
-<section class="long-form long-form-no-padding ">
+<section class="long-form long-form--padding-none ">
 
-    <div class="container"><div class="row"><div class="long-form-wrapper">
+    <div class="container"><div class="row"><div class="long-form__wrapper">
 
-        <div class="long-form-content">
+        <div class="long-form__content">
             <div class="row">
                 <div class="col-md-6">
 
@@ -475,11 +481,11 @@ title: Long-form content page
 
 </section>
 
-<section class="long-form long-form-credits">
+<section class="long-form long-form--credits">
 
-    <div class="container"><div class="row"><div class="long-form-wrapper">
+    <div class="container"><div class="row"><div class="long-form__wrapper">
 
-        <div class="long-form-content">
+        <div class="long-form__content">
 
             <h3>Credits</h3>
             
