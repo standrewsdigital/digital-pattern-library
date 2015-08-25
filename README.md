@@ -49,11 +49,14 @@ following two individual commands.
 
 This command starts grunt in a "watch" mode which means it will monitor file
 in `src/` and if something changes will run the appropriate tasks to rebuild
-`core/` and `docs/`. It also stars a live reload server so that any pages
+`core/` and `docs/`. It also starts a live reload server so that any pages
 open to local copies of the docs will get reloaded once it has rebuilt the
 `core/` and `docs/` files. 
 
 This is really helpful when actively developing patterns.
+
+Note: you should run `grunt` first since `grunt watch` only rebuilds the 
+parts that have changed. 
 
 
 ### Deploy core
