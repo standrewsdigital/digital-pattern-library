@@ -69,14 +69,18 @@
 
 
 @media (min-width: 992px) {
-    h1 {
-        font-size: 65px;
-    }
-    h2 {
-        font-size: 55px;
-    }
-    blockquote {        
-        margin: 60px;
+    .long-form__content {
+
+        h1 {
+            font-size: 65px;
+        }
+        h2 {
+            font-size: 55px;
+        }
+        blockquote {        
+            margin: 60px;
+        }
+        
     }
 
 }
