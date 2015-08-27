@@ -7,7 +7,7 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
-## [*] - *
+## [0.5.0] - 2015-08-27
 
 ### Added
 - Added Long form pattern for easily building Long form style pages.
