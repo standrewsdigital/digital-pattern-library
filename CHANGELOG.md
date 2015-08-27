@@ -10,20 +10,21 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 ## [*] - *
 
 ### Added
+- Added Long form pattern for easily building Long form style pages.
 - Added ability to easily retrieve Hex and RGB(A) codes for brand colours.
 - Created `.core-stats.txt` file to track filesizes of core assets.
-- Added a summary JSON file when the `core` folder is built.
-- Set up build process to add a banner with verison and date to all compiled 
-  CSS and JS
+- Added a summary JSON file into the `core` folder when built.
+- Set up build process to add a text banner with verison and date to all compiled 
+  CSS and JS.
 - Added minified versions of JavaScript files.
 
 ### Changed
-- Restyled the colour swatches in documentation
-- Adjusted the selected colour variants
-- Improved documentation about footer pattern
+- Restyled the colour swatches in documentation.
+- Adjusted the selected colour variants.
+- Improved documentation about footer pattern.
 
 ### Removed
-- Remove unused Bootstrap components: carousel and scrollspy
+- Remove unused Bootstrap components: carousel and scrollspy.
 
 
 ## [0.4.1] - 2015-07-27
