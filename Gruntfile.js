@@ -449,7 +449,6 @@ module.exports = function(grunt) {
     // default – builds the core assets, compiles documentation
     grunt.registerTask('default', ['core','docs']);
 
-  
     // core – builds the core assets from source
     grunt.registerTask('core', ['clean:core','compass','jshint','concat',
         'uglify','gitinfo','assemble:core_meta','copy:core_images',

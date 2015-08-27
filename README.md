@@ -1,111 +1,129 @@
 # Digital pattern library
 
-The pattern library has three main audiences:
+This is the source code for the Digital pattern library. There are two 
+components built using this code: 
 
-1. **General users** who will load pages using the core CSS and JS from the pattern library. Pages they access should all have the same look and feel.
-2. **Developers outside our team** who build applications or websites using our core CSS and JS. These developers needs to know what the official patterns are and how to use them. 
-3. The **core team** develops and designs the pattern library and uses it to build digital assets. Our team needs a central place to work on, test and document our design patterns.
+* **Core assets** Production JavaScript, CSS, fonts and images
+* **Documentation** Documentation about using the patterns in the library and 
+  other information for developers who consume the core assets. 
 
-There are three main deliverables corresponding to the audiences:
+In the repository, we have the following additional documentation aimed at 
+assisting those who contribute and develop the pattern library.
 
-1. **Core CSS and JS.** These are found in the `build` folder of the repository. They are also published to a central location.
-2. **Documentation.** The `patterns` folder includes documentation about each pattern available in the pattern library, examples of each one, and a browsable patchwork of all the patterns. In addition, you will also find CSS and JS coding style guides, and other information.
-3. **Pattern tests.** The core team can use the examples and patchwork in the `patterns` folder as a way to implement pattern-driven-development, which is a translation of test-driven-development to design patterns.
-
-## Principles
-
-* Nothing should be in the pattern library unless it's used.
-* The pattern library should be opinionated. 
-
-
-## Contributing
-
-This is intended to help you get setup developing the pattern library. We are using [Grunt](http://gruntjs.com/) to automate the building process and Grunt is based on [Node.js](http://nodejs.org/) so you'll need to install them both.
-
-### Step 1: Install Node.js
-
-The first step is to install Node.js on your computer.
-
-1. Visit [http://nodejs.org/](http://nodejs.org/)
-2. Click on "Install"
-3. Run the installer after it has downloaded.
-
-### Step 2. Clone the pattern library
-
-You'll need to clone the git repository for the pattern library somewhere on your computer. Anywhere you want is fine as long as you know the location.
-
-### Step 3. Initialize developer tools
-
-Now you need to open "Node.js command prompt" (Windows), Terminal (OS X), or shell (*nix).
-
-1. Install the Grunt CLI (command-line-interface) by entering the following command (see Grunt's [Getting started](http://gruntjs.com/getting-started) page for more details):
-
-        npm install -g grunt-cli
-
-2. Navigate to the folder containing your local clone of the pattern library. (Usually you'll type somthing like `cd path/to/folder` to do this)
-
-3. Enter the following command to install the dependencies for the pattern library (it will automatically look in the contents of the `package.json` file to find the dependencies).
-
-        npm install
+* [SETUP.md](SETUP.md) – How to set up your development environment.
+* [CONTRIBUTING.md](CONTRIBUTING.md) – General guidelines for contributing to
+   pattern library.
+* [FILES.md](FILES.md) – Overview of source folders and files.
+* [ADD-PATTERN.md](ADD-PATTERN.md) – How to add a new pattern.
 
 
-4. Install the Ruby compass gem. Currently we are using compass to process the Sass files. In the future, we may choose to update 
+## Commands
 
-    gem install compass
+After [getting setup](SETUP.md), you can use the following Grunt tasks.
 
-### Step 4. Run Grunt to generate `core` and `docs` folders
+### Build core and docs
 
-To get the pattern library kicked off run:
+    $ grunt
 
-    grunt
+This command will build the core assets and place them in `core/` and will 
+build the documentation and place it in `docs/`. Behind the scenes it runs the
+following two individual commands. 
 
-After you've run this you should have a freshly made `core` folder and `docs` folder built using code in `src`.
+1. Build core
 
-The tasks that are defined in `Gruntfile.js`.
+        $ grunt core
+
+    This command builds the core assets and places them in `core/`.
+
+2. Build docs
+
+        $ grunt docs
+
+    This command builds the documentation and places it in `docs/` and copies
+    what's currently in `core/` into the `docs/assets/core/` for use by the
+    documentation and examples.
+
+### Watch (interactive building)
+
+    $ grunt watch
+
+This command starts grunt in a "watch" mode which means it will monitor file
+in `src/` and if something changes will run the appropriate tasks to rebuild
+`core/` and `docs/`. It also starts a live reload server so that any pages
+open to local copies of the docs will get reloaded once it has rebuilt the
+`core/` and `docs/` files. 
+
+This is really helpful when actively developing patterns.
+
+Note: you should run `grunt` first since `grunt watch` only rebuilds the 
+parts that have changed. 
 
 
-### Step 5. Start Grunt to monitor changes
+### Deploy core
 
-Finally, to begin an active development session, you can run Grunt in watch mode which will monitor changes to files and run the appropriate tasks when they change.
+    $ grunt deploy-core --tag=LABEL
 
-    grunt watch
+* `LABEL` (Required) A label to apply to this package of core. 
+   Typically this label is a version like `0.4.1` or perhaps a branch name
+   for easy access to work that is ongoing. However, the grunt task will let 
+   you label it anything you want.
 
-The Gruntfile sets which files Grunt should watch.
+This deploys code currently in `core/` to the content delivery network (CDN)
+via FTP. The actual destination folder is determined by the given `<tag-name>`
+and the config in `Gruntfile.js`. 
 
-## Deploying
+For example, if you wanted to publish `v1.2.3` of the core assets you would 
+build (if you haven't already done so) and deploy the docs with the following 
+commands.
 
-To deploy your code you can use the two grunt commands
+    $ grunt core
+    $ grunt deploy-core --tag=1.2.3
 
-```
-grunt deploy-core --tag=<version-num>
-```
+This would make the core assets available at: 
 
-```
-grunt deploy-docs --tag=<version-num>
-```
+    http://www.st-andrews.ac.uk/~cdn/dpl/1.2.3/
 
-Replacing `<version-num>` with the appopriate version. For example:
+**Note** The `deploy-core` command does not run `grunt` or `grunt core` 
+before deploying code, so the code needs to be build first using one of those 
+commands. You could get unexpected results if you switched to a new branch and 
+failed to run `grunt` before running `grunt deploy-core`.
 
-```
-grunt deploy-core --tag=0.1.2
-```
 
-```
-grunt deploy-docs --tag=0.1.2
-```
+### Deploy docs
 
-In order for the commands to work you will need to create a file called `.ftppass` and include your FTP credentials in it. It should have the following form:
+    $ grunt deploy-docs --tag=LABEL
 
-```
-{
-  "core": {
-    "username": "your-username",
-    "password": "password"
-  },
-  "docs": {
-    "username": "your-username",
-    "password": "password"
-  }
-}
-```
+* `LABEL` (Required) A label to apply to this package of docs. 
+   Typically this label is a version like `0.4.1` or perhaps a branch name
+   for easy access to work that is ongoing. However, the grunt task will let 
+   you label it anything you want.
+
+This deploys code currently in `docs/` to the pattern library location on the
+web via FTP. The actual destination folder is determined by the given 
+`<tag-name>` and the config in `Gruntfile.js`. 
+
+For example, if you wanted to publish `v1.2.3` of the docs you would build and
+deploy the docs with the following commands.
+
+    $ grunt docs
+    $ grunt deploy-docs --tag=1.2.3
+
+This would make the docs available at: 
+
+    http://www.st-andrews.ac.uk/~wwwtest/dpl/1.2.3/
+
+If you wanted to make this version the new default you would need to update 
+the `<meta>` tag in `index.html` at this location: 
+
+    http://www.st-andrews.ac.uk/~wwwtest/dpl/
+
+ to point to `1.2.3`.
+
+**Note** The `deploy-docs` command does not run `grunt` or `grunt docs` 
+before deploying code, so the code needs to be build first using one of those 
+commands. You could get unexpected results if you switched to a new branch and 
+failed to run `grunt` before running `grunt deploy-docs`.
+
+
+
 
