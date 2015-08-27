@@ -8,8 +8,8 @@ pattern library.
 
 We are using [Grunt](http://gruntjs.com/) to automate the build process and 
 Grunt is based on [Node.js](http://nodejs.org/). If you're not familiar with 
-either of these can see [Getting started with Grunt](http://gruntjs.com/getting-started)
-for the basics.
+either of these can see [Getting started with Grunt]
+(http://gruntjs.com/getting-started) for the basics.
 
 Let's begin by installing Node.js. 
 
@@ -22,6 +22,23 @@ command prompt" (Windows), Terminal (OS X), or shell (*nix) and run the
 following command.
 
     $ npm install -g grunt-cli
+
+We also use a ruby package for compiling the compass/sass code, so you
+need to install Ruby if you don't already have it. 
+
+* **Installing ruby on Windows**  
+  The easiest way to install Ruby is with an install wizard from 
+  [RubyInstaller for Windows](http://rubyinstaller.org/downloads/).
+
+  When prompted at the beginning of the wizard, make sure to check the box
+  with the label "Add Ruby executables to your PATH". This will mean that you
+  can run commands like `gem install ...` below. Once you're finished with the
+  installation, you should close and reopen any command prompts that you have 
+  since they will need to get the updated PATH with Ruby added.
+
+* **Installing ruby on MacOS X**  
+  Recent versions of MacOS X already have Ruby installed, so no installation
+  is required.
 
 
 ## 2. Initialize developer tools
