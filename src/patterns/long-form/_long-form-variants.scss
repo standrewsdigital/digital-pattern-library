@@ -1,0 +1,114 @@
+//////////////
+// VARIANTS //
+//////////////
+
+
+// Text and backgrounds
+// ====================
+
+// Inverse text
+.long-form--inverse {
+    color: white;
+
+    a {
+        border-bottom-color: rgb(200, 200, 200);
+    }
+
+    small {
+        color: rgb(230, 230, 230);   
+    }
+}
+
+// Background light grey
+.long-form--bg-light-grey {
+    background-color: #f0f0f0;
+}
+
+// Darkened background image
+.long-form--bg-darken {
+    &:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.6);
+        z-index: 1001;
+    }
+}
+
+// Lightened background image
+.long-form--bg-lighten {
+    &:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255,255,255,0.6);
+        z-index: 1001;
+    }
+}
+
+
+// Width
+// ====================
+
+// Medium content column
+.long-form--width-medium .long-form__wrapper {
+    @extend .col-md-10;
+    @extend .col-md-offset-1;
+}
+
+// Full-width content column
+.long-form--width-full .long-form__wrapper {
+    @extend .col-md-12;
+    @extend .col-md-offset-0;
+}
+
+
+// Vertical padding
+// ====================
+
+.long-form--padding-none {
+    padding-top: 0px;
+    padding-bottom: 70px;  
+}
+
+
+// Credits
+// ====================
+
+.long-form--credits {
+    background-color: #f0f0f0;
+    color: #666;
+    font-size: 16px;
+    
+    h3 {
+        font-size: 20px;
+    }
+    .long-form__wrapper {
+        @extend .col-md-10;
+        @extend .col-md-offset-1; 
+    }
+
+    .long-form__content {
+        position: relative; // needed to act as an achor for the watermark.   
+        padding-bottom: 120px;
+
+        // Watermark logo
+        &:before {
+            content: " ";
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            height: 250px;
+            width: 250px;
+            background-image: url(../images/furniture/UStA_Logo_BK.svg);
+            background-repeat: no-repeat;
+            background-position: -28px bottom; // neg margin because bg image has padding and we want the logo to align with left edge of container.
+            background-size: 250px;    
+            opacity: 0.75;
+        }
+    }    
+}

@@ -1,0 +1,258 @@
+---
+title: Long form
+pattern: long-form
+examples:
+- name: standard
+- name: background-light-grey
+- name: background-image-white-text
+- name: background-image-dark-text
+- name: medium-width
+- name: full-width
+- name: no-padding
+- name: credits
+- name: asides
+- name: end-piece
+- name: lead-paragraph
+- name: pull-quote
+- name: thumbnail-gallery
+- name: BETA-slider-gallery
+related:
+date: <%= new Date() %>
+---
+
+<p>The Long form pattern is designed to be used repetitively with a variety of
+options to achieve an engaging, story-telling experience that still remains
+consistent in look and feel. It's ideally suited to blend longer passages of 
+text with images, video and audio. It also carries several subpatterns.</p>
+
+<h2>Usage</h2>
+
+<ul>
+	<li>Use a university header and university footer (an abbreviated footer 
+        is typically acceptable).</li>
+    <li>Use as many Long form sections as you want in between.</li>
+    <li>At the end of the story narrative, you should use the End piece 
+    element to communicate that the story has finished.</li>
+    <li>The page must end with a Credits variant, see below.</li>
+</ul>
+
+<p>Examples for individual variants and subpatterns are below, but you can 
+also see the <a href="../../examples/long-form-content.html">full page example
+</a> to get a sense for how to use the variants and subpatterns together.</p>
+
+
+
+<h2>Syntax</h2>
+
+<div class="pattern-source">{{> long-form long-form-default }}</div>
+
+
+<h2>Variants</h2>
+
+<p>You can mix and match these variants to get a variety of display options.</p>
+
+<h3>Text and backgrounds</h3>
+
+<ul>
+    <li><strong>Black and white</strong> (Default)<br>
+        By default the background is white and the text is black (dark grey).
+    </li>
+    <li><strong>Inverse text</strong><br>
+        Modifier class: <code>.long-form--inverse</code><br>
+        This switches the text colour from black to white. It's useful in 
+        conjunction with a darker background image.
+    </li>
+    <li><strong>Background image</strong><br>
+        Using a <code>style</code> attribute, set the URL of background image 
+        on the <code>&lt;div class="long-form"&gt;</code> element.
+    </li>
+    <li><strong>Background light grey</strong><br>
+        Modifier class: <code>.long-form--bg-light-grey</code><br>
+        Sets the background colour to a light grey.
+        </li>
+    <li><strong>Darkened background image</strong><br>
+        Modifier class: <code>.long-form--bg-darken</code><br>
+        Adds a semi-transparent black overlay on the background image. 
+        Typically used to make a bright background image usable behind white 
+        text.
+    </li>
+    <li><strong>Ligthened background image</strong><br>
+        Modifier class: <code>.long-form--bg-lighten</code><br>
+        Adds a semi-transparent white overlay on the background image. 
+        Typically used to make a dark background image usable behind black 
+        text.
+    </li>
+</ul>
+
+<h3>Width</h3>
+
+<ul>
+    <li><strong>Compressed content column</strong> (Default)<br>
+        By default content has a width of 8 grid columns with a 2 grid column 
+        offset achieving a 2-8-2 pattern.</li>
+    <li><strong>Medium content column</strong><br>
+        Modifier class: <code>.long-form--width-medium</code><br>
+        This sets the content to have a width of 10 grid columns with a 1 
+        grid column offset achieving a 1-10-1 pattern.
+    </li>
+    <li><strong>Full-width content column</strong><br>
+        Modifier class: <code>.long-form--width-full</code><br>
+        This sets the content to span all 12 grid columns.
+    </li>
+</ul>
+
+<h3>Vertical padding</h3>
+
+<ul>
+    <li><strong>Vertical padding</strong> (Default)<br>
+        By default there is generous padding on the top and bottom.
+    </li>
+    <li><strong>No vertical padding</strong><br>
+        Modifier class: <code>.long-form--padding-none</code><br>
+        Removes the top and bottom padding.
+    </li>
+</ul>
+
+<h3>Credits</h3>
+
+<ul>
+    <li><strong>Credits section</strong><br>
+        Modifier class: <code>.long-form--credits</code><br>
+        All long form pages must end with a credits section. This section has
+        a medium (1-10-1) width, grey background, smaller text, and a 
+        St Andrews logo in a watermark effect.
+    </li>
+</ul>
+
+<h2>Subpatterns</h2>
+
+<p>The following subpatterns can be used inside the <code>&lt;div class="long-form__content"&gt;</code> element.</p>
+
+<ul>
+    <li>Asides</li>
+    <li>End piece</li>
+    <li>Pull quotes</li>
+    <li>Thumbnail gallery</li>
+    <li>(beta) Horizontal gallery</li>
+</ul>
+
+
+<h3>Asides</h3>
+
+<p>Standard HTML5 <code>&lt;aside&gt;</code> elements are enhanced with a set of classes to flexibly position them relative to content. This approach procludes the need for a dedicated sidebar. The <code>&lt;aside&gt;</code> element is often used to wrap <code>&lt;figure&gt;</code> elements, but can equally wrap any tangential content.</p>
+
+<p><strong>Note:</strong> These asides are only designed to work inside the default compressed content column, not the mdium or full-width variants.</p>
+
+<pre><code>&lt;aside class="ALIGNMENT"&gt;
+    ...
+&lt;/aside&gt;
+</code></pre>
+
+<h4>Aside variants</h4>
+
+<ul>
+    <li><strong>Align centre</strong><br>
+        Modifier class: <code>.align-centre</code> or <code>.align-center</code><br>
+        Centre the <code>&lt;aside&gt;</code> inside the content column.
+    </li>
+    <li><strong>Align left</strong><br>
+        Modifier class: <code>.align-left</code><br>
+        Align <code>&lt;aside&gt;</code> to the left of the content column.
+    </li>
+    <li><strong>Align right</strong><br>
+        Modifier class: <code>.align-right</code><br>
+        Align <code>&lt;aside&gt;</code> to the right of the content column.
+    </li>
+    <li><strong>Extend left</strong><br>
+        Modifier class: <code>.extend-left</code><br>
+        Float to left and span the content column and the 2 left grid columns. Since no width is set, the <code>&lt;aside&gt;</code> takes on the width of the content it contains.
+    </li>
+    <li><strong>Extend right</strong><br>
+        Modifier class: <code>.extend-right</code><br>
+        Float to right and span the content column and the 2 right grid columns. Since no width is set, the <code>&lt;aside&gt;</code> takes on the width of the content it contains.
+    </li>
+    <li><strong>Float left</strong><br>
+        Modifier class: <code>.float-left</code><br>
+        Float left.
+    </li>
+    <li><strong>Float right</strong><br>
+        Modifier class: <code>.float-right</code><br>
+        Float right.
+    </li>
+    <li><strong>Parallel left</strong><br>
+        Modifier class: <code>.parallel-left</code><br>
+        Place the <code>&lt;aside&gt;</code> in the left 2 grid columns directly parallel to the content that it precedes. 
+    </li>
+    <li><strong>Parallel right</strong><br>
+        Modifier class: <code>.parallel-right</code><br>
+        Place the <code>&lt;aside&gt;</code> in the right 2 grid columns directly parallel to the content that it precedes. 
+    </li>
+</ul>
+
+<h3>End piece</h3>
+
+<p>Long form articles should end with the end piece subpattern. It shows a square box with the date the article was published.</p>
+
+<pre><code>&lt;p class="end"&gt;{{formatDate date "%d %B %Y"}}&lt;/p&gt;
+</code></pre>
+
+
+<h3>Lead paragraph</h3>
+
+<p>The opening <code>&lt;h1&gt;</code> is typically followed by a lead paragraph.</p>
+
+<pre><code>&lt;p class="lead"&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+</code></pre>
+
+
+<h3>Pull quotes</h3>
+
+<p>Pull quotes are used to quote something from the flow of the article in a larger size to draw the reader into the article. This is different in purpose to a blockquote where you want to include a longish quotation in the flow of the narrative. Additionally, these pull quote elements are automatically populated with links to share on Twitter and Facebook.</p>
+
+<pre><code>&lt;p class="pull-quote" data-quote="...there is nothing in the world so irresistibly contagious as laughter and good humour."&gt;
+    It is a fair, even-handed, noble adjustment of things, that while there is infection in disease and sorrow, there is nothing in the world so irresistibly contagious as laughter and good humour.
+&lt;/p&gt;
+</code></pre>
+
+<p>If <code>data-quote</code> attribute is not present or left blank then the tweet quote will be created automatically, and if needed will be truncated to fit inside 140 characters. However, you can provide a custom tweet quote using the <code>data-quote</code> attribute if desired.</p>
+
+<h3>Thumbnail gallery</h3>
+
+<p>The thumbnail gallery provides a simple and elegant display of a collection of images in thumbnail format, additionally enhancing them by setting them to open up in the pattern library's theatre viewer for further navigation.</p>
+
+<pre><code>...
+
+&lt;div class=&quot;thumbnail-gallery&quot;&gt;
+    &lt;h4 class=&quot;thumbnail-gallery__title&quot;&gt;Scientists involved with Light Box&lt;/h4&gt;
+
+    &lt;div class=&quot;thumbnail-gallery__images&quot;&gt;
+
+        &lt;figure class=&quot;image&quot;&gt;
+            &lt;img src=&quot;path/to/image.jpg&quot; alt=&quot;Professor Ifor Samuel&quot; title=&quot;Professor Ifor Samuel&quot;&gt;
+            &lt;figcaption&gt;Ifor Samuel&lt;br&gt;&lt;em&gt;Physicist&lt;/em&gt;&lt;/figcaption&gt;
+        &lt;/figure&gt;&lt;figure class=&quot;image&quot;&gt;
+            &lt;img src=&quot;path/to/image.jpg&quot; alt=&quot;John Allen&quot; title=&quot;Ashu Kumar Bansal&quot;&gt;
+            &lt;figcaption&gt;John Allen&lt;br&gt;&lt;em&gt;Physicist&lt;/em&gt;&lt;/figcaption&gt;
+        &lt;/figure&gt;&lt;figure class=&quot;image&quot;&gt;
+            &lt;img src=&quot;path/to/image.jpg&quot; alt=&quot;Ashu Kumar Bansal&quot; title=&quot;Ashu Kumar Bansal&quot;&gt;
+            &lt;figcaption&gt;Ashu Kumar Bansal&lt;br&gt;&lt;em&gt;Optical physicist&lt;/em&gt;&lt;/figcaption&gt;
+        &lt;/figure&gt;&lt;figure class=&quot;image&quot;&gt;
+            &lt;img src=&quot;path/to/image.jpg&quot; alt=&quot;Hien Nguyen&quot; title=&quot;Hien Nguyen&quot;&gt;
+            &lt;figcaption&gt;Hien Nguyen&lt;br&gt;&lt;em&gt;Polymer chemist&lt;/em&gt;&lt;/figcaption&gt;
+        &lt;/figure&gt;&lt;figure class=&quot;image&quot;&gt;
+            &lt;img src=&quot;path/to/image.jpg&quot; alt=&quot;Olena Kulyk&quot; title=&quot;Olena Kulyk&quot;&gt;
+            &lt;figcaption&gt;Olena Kulyk&lt;br&gt;&lt;em&gt;Biomedical electronics engineer&lt;/em&gt;&lt;/figcaption&gt;
+        &lt;/figure&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+...
+</code></pre>
+
+
+<h3>(BETA) Slider gallery</h3>
+
+<p>The slider gallery provides an alternative interface for displaying large images in the long form pages. Note, this is a conceptual implementation currently and needs further engineering before being used in production situations.</p>

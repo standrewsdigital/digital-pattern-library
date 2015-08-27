@@ -41,10 +41,6 @@ module.exports = function(grunt) {
             // General options
             options: {
                 pkg: '<%= pkg %>',
-                git: {
-                    branch: '<%= gitinfo.local.branch.current.name %>',
-                    commit: '<%= gitinfo.local.branch.current.SHA %>'
-                },
                 now: '<%= grunt.template.today("isoDateTime") %>',
                 assets: 'docs/assets',
                 layoutdir: 'src/_layouts',
@@ -131,7 +127,11 @@ module.exports = function(grunt) {
             // Meta doc(s) 
             core_meta: {
                 options: {
-                ext: '.json',
+                    git: {
+                        branch: '<%= gitinfo.local.branch.current.name %>',
+                        commit: '<%= gitinfo.local.branch.current.SHA %>'
+                    },
+                    ext: '.json',
                 },
                 files: [{
                     expand: true,
@@ -163,6 +163,9 @@ module.exports = function(grunt) {
             },
             docs: {
                 src: ["docs"]
+            },
+            docs_assets: {
+                src: ["docs/assets"]
             },
             docs_core: {
                 src: ["docs/assets/core"]
@@ -409,17 +412,15 @@ module.exports = function(grunt) {
             js: {
                 files: ['src/**/*.js'],
                 tasks: ['clean:js','jshint','concat','uglify',
-                    'clean:docs_assets','copy:docs_assets'],
+                    'clean:docs_assets','copy:docs_core','copy:docs_images'],
             },
             images: {
                 files: ['src/images/**/*'],
-                tasks: ['clean:images','copy:images','clean:docs_assets',
-                    'copy:docs_assets']
+                tasks: ['clean:images','copy:images','clean:docs_assets','copy:docs_core','copy:docs_images']
             },
             fonts: {
                 files: ['src/fonts/**/*'],
-                tasks: ['clean:fonts','copy:fonts','clean:docs_assets',
-                    'copy:docs_assets']
+                tasks: ['clean:fonts','copy:fonts','clean:docs_assets','copy:docs_core','copy:docs_images']
             },
             styles: {
                 files: ['src/**/*.scss'],
