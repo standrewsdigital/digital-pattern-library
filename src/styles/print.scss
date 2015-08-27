@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+@import 'fonts';
+@import 'colors';
+@import 'bootstrap-variables';
+
 
 @page {
     margin: 20mm 20mm 20mm 20mm;
@@ -10,6 +14,10 @@ body {
     font-family: "Myriad Roman", "Myriad Pro", "PT Sans", "Arial", sans-serif;
     line-height: 1.5;
     font-size: 12pt;
+}
+
+#header h1 a {
+    text-decoration: none;
 }
 
 #relatedcontent {
@@ -106,10 +114,8 @@ a img {
     border: none;
 }
 blockquote {
-    font-size: 0.9em;
     font-style: italic;
-    margin: 1.5em;
-    padding: 1em;
+    margin: 2em;
 }
 code {
     font: 0.9em "Courier New", Monaco, Courier, monospace;
@@ -238,4 +244,100 @@ thead {
 
 .accordion .toggle {
 	display: block!important;
+}
+
+
+/*==============================================================================
+    LONG FORM CONTENT
+==============================================================================*/
+
+.long-form {
+    font-family: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    line-height: 1.5;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $font-family-sans-serif  ; 
+        font-weight: bold;     
+    }
+
+    figure {
+        margin-bottom: 25px; // to match <p> styling.
+
+        figcaption {
+            font-size: 14px;
+            font-family: $font-family-sans-serif;
+            padding: 8px 0;
+        }
+
+
+        
+    }
+}
+
+.long-form-bg-dark, .long-form-bg-light {
+    background: none !important;
+}
+.long-form-bg-darken {
+    background: none;
+}
+
+figure img {
+    width: 100%;
+}
+
+aside.parallel-left {
+    border: none;
+    float: left;
+    clear: left;
+    padding: 10px 20px;
+    padding-left: 0;
+    width: 150px;    
+}
+
+aside.parallel-right {
+    border: none;
+    float: right;
+    clear: right;
+    padding: 10px 20px;
+    padding-right: 0;
+    width: 150px;
+}
+
+aside.parallel-left figure, 
+aside.parallel-right figure {
+    padding: 0;
+    margin: 0;
+}
+
+.long-form .pull-quote {
+    font-size: 28px;
+    font-style: italic;
+    line-height: 1.8;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 40px;
+    margin: 40px 0;
+
+    .pull-quote-share  {
+      display: none;
+    }
+}
+
+
+.long-form-thumbnail-gallery {
+    figure.image {
+        display: inline-block;
+        padding-right: 20px;
+        padding-bottom: 10px;
+
+        figcaption {
+            text-align: left;    
+        }
+    }
+
+    img {
+        height: 170px;
+        width: auto !important;
+    }
 }

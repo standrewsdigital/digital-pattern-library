@@ -1,37 +1,39 @@
-
 {
+	"website-footer": true,
 	"section1":	{
-		"title": "Your St Andrews",
+		"title": "(Relevant links, section 1)",
 		"links":[
-			{"title": "Current students",
-			 "url": "/students/"},
-			{"title": "Postgraduate",
-			 "url": "/pgstudents/"},
-			{"title": "Staff",
-			 "url": "/staff/"},
-			{"title": "Work at St Andrews",
-			 "url": "/vacancies/"}
+			{"title": "Link 1",
+			 "url": "/link1/"},
+			{"title": "Link 2",
+			 "url": "/link2/"},
+			{"title": "Link 3",
+			 "url": "/link3/"},
+			{"title": "Link 4",
+			 "url": "/link4/"},
+			{"title": "Link 4",
+			 "url": "/link5/"}
 		]
 	},
 	"section2":	{
-		"title": "Navigation",
+		"title": "(Relevant links, section 2)",
 		"links":[
-			{"title": "About",
-			 "url": "/about/"},
-			{"title": "Study at St Andrews",
-			 "url": "/study/"},
-			{"title": "Research",
-			 "url": "/research/"},
-			{"title": "Alumni and donors",
-			 "url": "/alumni/"},
-			{"title": "Schools",
-			 "url": "/schools/"}
+			{"title": "Link 1",
+			 "url": "/link1/"},
+			{"title": "Link 2",
+			 "url": "/link2/"},
+			{"title": "Link 3",
+			 "url": "/link3/"},
+			{"title": "Link 4",
+			 "url": "/link4/"},
+			{"title": "Link 4",
+			 "url": "/link5/"}
 		]
 	},
 	"contact":{
 		"url": "/contact/",
-		"unit" :"University of St Andrews",
-		"address":"College Gate<br>St Andrews, Fife<br>KY16 9AJ<br>Scotland, UK",
-		"phone":"+44 (0)1334 46 6161"
+		"unit" :"(Relevant unit)",
+		"address":"University of St Andrews<br>College Gate<br>St Andrews, Fife<br>KY16 9AJ<br>Scotland, UK",
+		"phone":"+44 (0)1334 46 XXXX"
 	}
 }

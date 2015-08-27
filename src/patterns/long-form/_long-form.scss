@@ -1,0 +1,59 @@
+
+/*********************************/
+/* BEGIN Pattern: long-form      */
+/*********************************/
+
+.long-form {
+    // Lots of padding on top and bottom by default
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    // Position backgrounds images correctly if specified later
+    background-size: cover;
+    background-position: center center;
+
+    // Typography
+    font-family: $font-family-serif;
+    font-size: 22px;
+    line-height: 1.5;
+    word-wrap: break-word;
+
+    // Positioning
+    z-index: 1000;
+    position: relative; // A hook for other absolute positioning inside
+}
+
+
+.long-form__wrapper {
+    z-index: 1200;
+    @extend .col-md-8;
+    @extend .col-md-offset-2;
+}
+
+@media (min-width: 992px) {
+    .long-form {
+        // Lots of padding top and bottom
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+// Styles for standard HTML elements inside content.
+@import 'long-form/long-form-content';
+
+// Variants of the long-form pattern
+@import 'long-form/long-form-variants';
+
+// Subpatterns
+@import 'long-form/long-form-asides';
+@import 'long-form/long-form-end-lead';
+@import 'long-form/long-form-pull-quote';
+@import 'long-form/long-form-gallery-thumbnail';
+@import 'long-form/long-form-gallery-slider';
+
+
+
+
+/*********************************/
+/* END Pattern: long-form        */
+/*********************************/

@@ -7,9 +7,6 @@
 @import 'icons';
 @import 'figures';
 
-// @import 'original';
-@import 'relocate';
-
 /* Patterns */
 @import 'accordion/accordion';
 @import 'breadcrumbs/breadcrumbs';
@@ -23,6 +20,7 @@
 @import 'info-bite/info-bite';
 @import 'info-bite-grid/info-bite-grid';
 @import 'intro/intro';
+@import 'long-form/long-form';
 @import 'masonry/masonry';
 @import 'masonry-grid/masonry-grid';
 @import 'navbox/navbox';
@@ -33,7 +31,6 @@
 @import 'text-banner/text-banner';
 @import 'tile/tile';
 @import 'tile-grid/tile-grid';
-
 
 /* Other vendor scripts */
 @import 'vendor/jquery.theatre.min';

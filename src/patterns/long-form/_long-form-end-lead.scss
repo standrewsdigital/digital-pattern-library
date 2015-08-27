@@ -1,0 +1,37 @@
+// End piece
+// ====================
+
+.long-form__content .end {
+    margin: 40px 0;
+    font-family: $font-family-sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+        
+    &:before {
+        @extend .genericon;
+        content: '\f449';
+        font-size: 36px;
+        margin-left: -8px;
+        margin-top: -5px;
+        padding-right: 10px;
+    }
+    // -webkit-font-smoothing: antialiased;
+}
+
+
+
+// Lead paragraph
+// ====================
+.long-form__content .lead {
+    font-size: 30px;
+    font-family: $font-family-sans-serif;
+}
+
+
+@media (min-width: 992px) {
+
+    .long-form__content .lead {
+        font-size: 36px;
+    }
+
+}
