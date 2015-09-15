@@ -7,6 +7,13 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## [x.x.x] - 2015-09-15
+
+### Changed
+- Improved documentation about long-form pattern (corrections and 
+  clarifications)
+
+
 ## [0.5.0] - 2015-08-27
 
 ### Added
