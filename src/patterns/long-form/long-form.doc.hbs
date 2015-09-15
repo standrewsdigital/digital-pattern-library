@@ -193,7 +193,7 @@ also see the <a href="../../examples/long-form-content.html">full page example
 
 <p>Long form articles should end with the End piece subpattern. It shows a square box with the date the article was published.</p>
 
-<pre><code>&lt;p class="end"&gt;{{formatDate date "%d %B %Y"}}&lt;/p&gt;
+<pre><code>&lt;p class="end"&gt;{{formatDate date "%A %d %B %Y"}}&lt;/p&gt;
 </code></pre>
 
 
@@ -216,7 +216,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&g
 &lt;/p&gt;
 </code></pre>
 
-<p>If <code>data-quote</code> attribute is not present or left blank then the tweet quote will be created automatically, and if needed will be truncated to fit inside 140 characters. However, you can provide a custom tweet quote using the <code>data-quote</code> attribute if desired.</p>
+<p>You may provide a custom tweet quote using the <code>data-quote</code> attribute. However, if the <code>data-quote</code> attribute is not present — or left blank — then the tweet quote will be created automatically; if required, it will be truncated to fit within 140 characters.</p>
 
 <h3>Thumbnail gallery</h3>
 
