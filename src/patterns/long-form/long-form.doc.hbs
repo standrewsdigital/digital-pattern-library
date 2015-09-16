@@ -22,21 +22,21 @@ date: <%= new Date() %>
 
 <p>The Long form pattern is designed to be used repetitively with a variety of
 options to achieve an engaging, story-telling experience that still remains
-consistent in look and feel. It's ideally suited to blend longer passages of 
+consistent in look and feel. It is ideally suited to blend longer passages of
 text with images, video and audio. It also carries several subpatterns.</p>
 
 <h2>Usage</h2>
 
 <ul>
-	<li>Use a university header and university footer (an abbreviated footer 
+	<li>Use a University header and University footer (an abbreviated footer
         is typically acceptable).</li>
     <li>Use as many Long form sections as you want in between.</li>
-    <li>At the end of the story narrative, you should use the End piece 
+    <li>At the end of the story narrative, you should use the End piece
     element to communicate that the story has finished.</li>
-    <li>The page must end with a Credits variant, see below.</li>
+    <li>The page <strong>must</strong> end with a Credits variant, see below.</li>
 </ul>
 
-<p>Examples for individual variants and subpatterns are below, but you can 
+<p>Examples for individual variants and subpatterns are below, but you can
 also see the <a href="../../examples/long-form-content.html">full page example
 </a> to get a sense for how to use the variants and subpatterns together.</p>
 
@@ -59,12 +59,12 @@ also see the <a href="../../examples/long-form-content.html">full page example
     </li>
     <li><strong>Inverse text</strong><br>
         Modifier class: <code>.long-form--inverse</code><br>
-        This switches the text colour from black to white. It's useful in 
+        This switches the text colour from black to white. It is useful in
         conjunction with a darker background image.
     </li>
     <li><strong>Background image</strong><br>
-        Using a <code>style</code> attribute, set the URL of background image 
-        on the <code>&lt;div class="long-form"&gt;</code> element.
+        Using a <code>style</code> attribute, set the URL of a background image
+        on the <code>&lt;section class="long-form"&gt;</code> element.
     </li>
     <li><strong>Background light grey</strong><br>
         Modifier class: <code>.long-form--bg-light-grey</code><br>
@@ -72,14 +72,14 @@ also see the <a href="../../examples/long-form-content.html">full page example
         </li>
     <li><strong>Darkened background image</strong><br>
         Modifier class: <code>.long-form--bg-darken</code><br>
-        Adds a semi-transparent black overlay on the background image. 
-        Typically used to make a bright background image usable behind white 
+        Adds a semi-transparent black overlay on the background image.
+        Typically used to make a bright background image usable behind white
         text.
     </li>
     <li><strong>Ligthened background image</strong><br>
         Modifier class: <code>.long-form--bg-lighten</code><br>
-        Adds a semi-transparent white overlay on the background image. 
-        Typically used to make a dark background image usable behind black 
+        Adds a semi-transparent white overlay on the background image.
+        Typically used to make a dark background image usable behind black
         text.
     </li>
 </ul>
@@ -88,11 +88,11 @@ also see the <a href="../../examples/long-form-content.html">full page example
 
 <ul>
     <li><strong>Compressed content column</strong> (Default)<br>
-        By default content has a width of 8 grid columns with a 2 grid column 
+        By default content has a width of 8 grid columns with a 2 grid column
         offset achieving a 2-8-2 pattern.</li>
     <li><strong>Medium content column</strong><br>
         Modifier class: <code>.long-form--width-medium</code><br>
-        This sets the content to have a width of 10 grid columns with a 1 
+        This sets the content to have a width of 10 grid columns with a 1
         grid column offset achieving a 1-10-1 pattern.
     </li>
     <li><strong>Full-width content column</strong><br>
@@ -119,29 +119,29 @@ also see the <a href="../../examples/long-form-content.html">full page example
     <li><strong>Credits section</strong><br>
         Modifier class: <code>.long-form--credits</code><br>
         All long form pages must end with a credits section. This section has
-        a medium (1-10-1) width, grey background, smaller text, and a 
+        a medium (1-10-1) width, grey background, smaller text, and a
         St Andrews logo in a watermark effect.
     </li>
 </ul>
 
 <h2>Subpatterns</h2>
 
-<p>The following subpatterns can be used inside the <code>&lt;div class="long-form__content"&gt;</code> element.</p>
+<p>The following subpatterns may be used inside the <code>&lt;div class="long-form__content"&gt;</code> element.</p>
 
 <ul>
     <li>Asides</li>
     <li>End piece</li>
     <li>Pull quotes</li>
     <li>Thumbnail gallery</li>
-    <li>(beta) Horizontal gallery</li>
+    <li>(BETA) Horizontal gallery</li>
 </ul>
 
 
 <h3>Asides</h3>
 
-<p>Standard HTML5 <code>&lt;aside&gt;</code> elements are enhanced with a set of classes to flexibly position them relative to content. This approach procludes the need for a dedicated sidebar. The <code>&lt;aside&gt;</code> element is often used to wrap <code>&lt;figure&gt;</code> elements, but can equally wrap any tangential content.</p>
+<p>Standard HTML5 <code>&lt;aside&gt;</code> elements are enhanced with a set of classes to flexibly position them relative to content. This approach removes the need for a dedicated sidebar. The <code>&lt;aside&gt;</code> element is often used to wrap <code>&lt;figure&gt;</code> elements, but can equally wrap any tangential content.</p>
 
-<p><strong>Note:</strong> These asides are only designed to work inside the default compressed content column, not the mdium or full-width variants.</p>
+<p><strong>Note:</strong> These asides are only designed to work inside the default compressed content column, not the medium or full-width variants.</p>
 
 <pre><code>&lt;aside class="ALIGNMENT"&gt;
     ...
@@ -181,19 +181,19 @@ also see the <a href="../../examples/long-form-content.html">full page example
     </li>
     <li><strong>Parallel left</strong><br>
         Modifier class: <code>.parallel-left</code><br>
-        Place the <code>&lt;aside&gt;</code> in the left 2 grid columns directly parallel to the content that it precedes. 
+        Place the <code>&lt;aside&gt;</code> in the left 2 grid columns directly parallel to the content that it precedes.
     </li>
     <li><strong>Parallel right</strong><br>
         Modifier class: <code>.parallel-right</code><br>
-        Place the <code>&lt;aside&gt;</code> in the right 2 grid columns directly parallel to the content that it precedes. 
+        Place the <code>&lt;aside&gt;</code> in the right 2 grid columns directly parallel to the content that it precedes.
     </li>
 </ul>
 
 <h3>End piece</h3>
 
-<p>Long form articles should end with the end piece subpattern. It shows a square box with the date the article was published.</p>
+<p>Long form articles should end with the End piece subpattern. It shows a square box with the date the article was published.</p>
 
-<pre><code>&lt;p class="end"&gt;{{formatDate date "%d %B %Y"}}&lt;/p&gt;
+<pre><code>&lt;p class="end"&gt;{{formatDate date "%A %d %B %Y"}}&lt;/p&gt;
 </code></pre>
 
 
@@ -216,7 +216,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&g
 &lt;/p&gt;
 </code></pre>
 
-<p>If <code>data-quote</code> attribute is not present or left blank then the tweet quote will be created automatically, and if needed will be truncated to fit inside 140 characters. However, you can provide a custom tweet quote using the <code>data-quote</code> attribute if desired.</p>
+<p>You may provide a custom tweet quote using the <code>data-quote</code> attribute. However, if the <code>data-quote</code> attribute is not present — or left blank — then the tweet quote will be created automatically; if required, it will be truncated to fit within 140 characters.</p>
 
 <h3>Thumbnail gallery</h3>
 
@@ -255,4 +255,4 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&g
 
 <h3>(BETA) Slider gallery</h3>
 
-<p>The slider gallery provides an alternative interface for displaying large images in the long form pages. Note, this is a conceptual implementation currently and needs further engineering before being used in production situations.</p>
+<p>The Slider gallery provides an alternative interface for displaying large images in the long form pages. Note, this is a conceptual implementation currently and needs further engineering before being used in production situations.</p>

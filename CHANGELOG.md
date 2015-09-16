@@ -7,6 +7,17 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## [0.5.1] - 2015-09-16
+
+### Changed
+- Improved documentation about long-form pattern (corrections and 
+  clarifications).
+
+### Fixed
+- Removed http: protocol from Google font URL (replaced with //) so
+  that it may be served under https without issue.
+
+
 ## [0.5.0] - 2015-08-27
 
 ### Added
