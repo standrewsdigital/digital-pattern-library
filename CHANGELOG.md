@@ -7,11 +7,11 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
-## [x.x.x] - 2015-09-15
+## [0.5.1] - 2015-09-16
 
 ### Changed
 - Improved documentation about long-form pattern (corrections and 
-  clarifications)
+  clarifications).
 
 ### Fixed
 - Removed http: protocol from Google font URL (replaced with //) so
