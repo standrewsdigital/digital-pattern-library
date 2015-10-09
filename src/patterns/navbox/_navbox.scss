@@ -111,19 +111,24 @@
 
 	.navbox {
 		margin-bottom: 2em;
+		overflow: hidden;
+		max-height: 130px;
 	}
 
 	.navbox-image {
-  		max-height: 65px;
-		overflow: hidden;
+		position: absolute;
+		top: 0;
+		z-index: -10;
   	}
 
   	.navbox-image img {
   		margin-top: -20%;
   	}
 
-  	.navbox-title {
+  	div.navbox-title {
 		top: 0;
+		background: rgba(0,83,155,0.75);
+		position: relative;
 	}
 
 }
