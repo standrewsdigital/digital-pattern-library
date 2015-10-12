@@ -20,6 +20,7 @@
 	color: white!important;
 	width: 100%;
 	position: absolute;
+	display: table;
 	padding: 15px 15px;
 	font-size: 24px;
 	font-weight: bold;
@@ -30,10 +31,15 @@
 .navbox-title:before {
 	@extend i.chevron;
 	content: "";
-	float: right;
 	height: 35px !important;
 	width: 30px !important;
 	top: 0 !important;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.navbox-title:after {
+	display: none;
 }
 
 .navbox-title a {
@@ -99,7 +105,7 @@
 		background: $sta-blue-hover;
 	}
 
-	.navbox-title:before {
+	.navbox-title:after {
   		display: none;
 	}
 
@@ -113,6 +119,23 @@
 		margin-bottom: 2em;
 		overflow: hidden;
 		max-height: 130px;
+		display: table;
+		width: 100%;
+	}
+
+	.navbox-title:before {
+  		display: none;
+	}
+
+	.navbox-title:after {
+		@extend i.chevron;
+		content: "";
+		height: 35px !important;
+		width: 30px !important;
+		top: 0 !important;
+		float: none;
+	    display: table-cell;
+	    vertical-align: middle;
 	}
 
 	.navbox-image {
