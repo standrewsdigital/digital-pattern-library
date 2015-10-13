@@ -39,6 +39,12 @@
 }
 
 .navbox-title:after {
+	@extend i.chevron;
+	content: "";
+	height: 35px !important;
+	width: 30px !important;
+	top: 0 !important;
+	float: none;
 	display: none;
 }
 
@@ -128,12 +134,6 @@
 	}
 
 	.navbox-title:after {
-		@extend i.chevron;
-		content: "";
-		height: 35px !important;
-		width: 30px !important;
-		top: 0 !important;
-		float: none;
 	    display: table-cell;
 	    vertical-align: middle;
 	}
