@@ -48,6 +48,10 @@
 	display: none;
 }
 
+.navbox-title:empty {
+    display: none;
+}
+
 .navbox-title a {
 	color: white !important;
 	text-decoration: none;
