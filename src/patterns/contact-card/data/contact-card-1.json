@@ -1,4 +1,13 @@
 {
-    "first-name": "John",
-    "last-name": "Smith"
-}
+  "image": {
+  	"url": "docs/images/placeholders/360x240.jpg",
+  	"alt": "Description"
+  },
+  "name": "Dr Leonidas Barbopoulos",
+  "url": "#",
+  "description": "Lecturer",
+
+  "date" : "2014-08-21",
+  "type-1" : "Email:",
+  "type-2" : "Phone:"
+ }
