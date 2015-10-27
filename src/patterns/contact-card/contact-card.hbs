@@ -2,30 +2,29 @@
 <!-- Begin pattern: contact-card //-->
 
 <article class="contact-card">
-<div class="contact-card-image-title">
-  <h3><a href="{{default url "[url]"}}">{{default name "[name]"}}</a></h3>
-  <h4 style='contact-card-job-title'>{{default description "[description]"}}</h4>
-  </div>
 
-    <div class='contact-card-image'>
-    {{#if image.url}}
+  <h3><a href="{{default name-url "[name-url]"}}">{{default name "[name]"}}</a></h3>
+  <h4>{{default job-title "[job-title]"}}</h4>
+
+  {{#if image.url}}
   <img src='{{asset image.url}}' alt="{{default image.alt "[alt]"}}">
   {{else}}
   <img src='path/to/image.ext' alt="{{default image.alt "[alt]"}}">
   {{/if}}
-</div>
 
-  <div class='contact-card-links'>
-  <a href="{{default url "[url]"}}">{{default link "[link]"}}</a></br>
-  <a href="{{default url "[url]"}}">{{default link "[link]"}}</a></br>
-  <a href="{{default url "[url]"}}">{{default link "[link]"}}</a></br>
-  <a href="{{default url "[url]"}}">{{default link "[link]"}}</a>
-  </div>
+  <ul class='contact-card-links'>
+    <li><a href="{{default link-url-1 "[link-url-1]"}}">{{default link-1 "[link-1]"}}</a></li>
+    <li><a href="{{default link-url-2 "[link-url-2]"}}">{{default link-2 "[link-2]"}}</a></li>
+    <li><a href="{{default link-url-3 "[link-url-3]"}}">{{default link-3 "[link-3]"}}</a></li>
+    <li><a href="{{default link-url-4 "[link-url-4]"}}">{{default link-4 "[link-4]"}}</a></li>
+  </ul>
   
   <div class='contact-card-contact'>
-    <h4 style='contact-card-job-title'>Contact</h4>
-    {{default type-1 "[type-1]"}}</br>
-    {{default type-2 "[type-2]"}}
+    <h4>Contact</h4>
+    <ul class='contact-card-links'>
+    <li>{{default type-1 "[type-1]"}} <a href="{{default type-content-url "[type-content-url]"}}">{{default type-content-1 "[type-content-1]"}}</a></li>
+    <li>{{default type-2 "[type-2]"}} {{default type-content-2 "[type-content-2]"}}</li>
+  </ul>
   </div>
   
   <div class="clear"></div>

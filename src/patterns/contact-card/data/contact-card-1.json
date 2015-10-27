@@ -1,13 +1,25 @@
 {
   "image": {
-  	"url": "docs/images/placeholders/360x240.jpg",
+  	"url": "docs/images/placeholders/contact-profile.jpg",
   	"alt": "Description"
   },
-  "name": "Dr Leonidas Barbopoulos",
-  "url": "#",
-  "description": "Lecturer",
+  "name": "Dr Lorem Ipsum",
+  "name-url": "#",
+  "job-title": "Lecturer",
 
-  "date" : "2014-08-21",
+  "link-1" : "Lorem",
+  "link-2" : "Ipsum",
+  "link-3" : "Dolor",
+  "link-4" : "Sit",
+
+  "link-url-1" : "#",
+  "link-url-2" : "#",
+  "link-url-3" : "#",
+  "link-url-4" : "#",
+
   "type-1" : "Email:",
-  "type-2" : "Phone:"
+  "type-2" : "Phone:",
+  "type-content-1" : "ab12@st-andrews.ac.uk",
+  "type-content-url" : "#",
+  "type-content-2" : "+44 (0)1334 123 456"
  }
