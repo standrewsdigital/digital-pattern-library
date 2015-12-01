@@ -5,7 +5,7 @@
 
 
 // Code for affixing the internal nav to the top
-    var normal_top = $('#nav-top').offset().top
+    var normal_top = $('#nav-top').offset().top;
     $('#nav-top').affix({
       offset: {
         top: function () {
@@ -21,8 +21,7 @@
 
     $('a[href*=#]:not([href=#])').click(function() {
 
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-            || location.hostname == this.hostname) {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
 
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
