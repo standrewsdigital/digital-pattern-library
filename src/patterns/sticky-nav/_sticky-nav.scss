@@ -13,10 +13,8 @@
     display: none;
 }
 
-@media (min-width: 768px) {
-    #nav-top {
-        display: block;
-    }
+#internal-nav {
+	height: 45px;
 }
 
 #nav-top .top-link {
@@ -25,6 +23,13 @@
 #nav-top.affix .top-link {
     display: block;
 }
+
+@media (min-width: 768px) {
+    #nav-top {
+        display: block;
+    }
+}
+
 /* A cool hack to get the offset right when linking to internal id's
  * whilst also having a nav bar absolutely positioned on the top. 
  * Hat tip -  UCL.
