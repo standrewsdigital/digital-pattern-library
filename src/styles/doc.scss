@@ -119,6 +119,7 @@ Last Updated    3 October 2014
 
     .example iframe {
       border: none;
+      height: 500px;
       width: 100%;
     }
     .example .code {
@@ -145,7 +146,7 @@ Last Updated    3 October 2014
         color: white;
         font-weight: bold;
       }
-    
+
       .swatch__base,
       .swatch__selected,
       .swatch__transparent,
@@ -155,7 +156,7 @@ Last Updated    3 October 2014
 
         padding: 0.5em;
         margin: 0;
-        
+
         width: 33.333%;
         color: white;
         float: left;
