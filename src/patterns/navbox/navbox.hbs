@@ -2,14 +2,14 @@
  <!-- Begin pattern: navbox //-->
 
 <div class="navbox">
+  <div class="navbox-title">
+      <p><a href="{{default url "[url]"}}">{{default title "[title]"}}</a></p>
+  </div>
 {{#if image}}
   <div class="navbox-image">
     <img src="{{asset image.url}}" alt="{{image.alt}}">
   </div>
 {{/if}}
-  <div class="navbox-title">
-      <p><a href="{{default url "[url]"}}">{{default title "[title]"}}</a></p>
-  </div>
 </div>
 
 {{#if text}}
