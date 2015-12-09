@@ -1,44 +1,27 @@
 
 <!-- Begin pattern: staff-profile //-->
 
-<div class="staff-profile">
-{{#if call-to-action}}
-<h3><a href="{{call-to-action.link}}">{{default person-title "[title]"}}</a></h3>
-{{else}}
-<h3>{{default person-title "[title]"}}</h3>
-{{/if}}
-
-	<div class="row">
-		<div class="col-sm-7 staff-details">
-			<h4>{{default person-name "[name]"}}</h4>
-			<p>{{default bio "[bio]"}}</p>
-
-			<h4>Contact</h4>
-			<dl>
-			{{#if contact-info}}
-			{{#contact-info}}
-				<dt>Email: </dt><dd><a href="mailto:{{email}}">{{default email "name@domain.com"}}</a></dd>
-				<dt>Phone: </dt><dd>{{phone}}</dd>
-				<dt>Fax: </dt><dd>{{fax}}</dd>
-			{{/contact-info}}
-			{{else}}
-				<dt>Email: </dt><dd><a href="mailto:[email]">[email]</a></dd>
-				<dt>Phone: </dt><dd>[phone]</dd>
-				<dt>Fax: </dt><dd>[fax]</dd>
+<article id="{{id}}" class="contact-card {{contract-type}}">
+	<h3>
+		<a href="https://www.st-andrews.ac.uk/profile/{{id}}">{{name}}</a>
+	</h3>
+	<h4>{{title}}</h4>
+	{{#if staff-image}}
+	<img src="http://portal.st-andrews.ac.uk/staff-photos/{{id}}/small" alt="{{name}}" title="{{name}}" class="profilePhoto">
+	{{/if}}
+	<div class="contact">
+		<h4>Contact</h4>
+			<ul class="contact-card-links">
+			{{#if contact-info.phone}}
+				<li>
+					<a href="tel:{{contact-info.phone}}" data-rel="external">{{contact-info.phone}}</a>
+				</li>
 			{{/if}}
-			</dl>
-			<div class="clearfix"></div>
-		</div>
-		<div class="col-sm-5 text-center">
-			{{#if image}}
-			<img src="{{asset image.url}}" alt="{{image.alt}}">
-			{{/if}}
-			{{#if call-to-action}}
-			<p><a href="{{call-to-action.link}}" class="btn btn-primary btn-lg">{{call-to-action.text}}</a></p>
-			{{/if}}
-		</div>
+				<li>
+					<a href="mailto:{{contact-info.email}}">{{contact-info.email}}</a>
+				</li>
+			</ul>
 	</div>
-	<hr/>
-</div>
+</article>
 
 <!-- End pattern: staff-profile //-->
