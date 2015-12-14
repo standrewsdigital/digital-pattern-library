@@ -1,6 +1,6 @@
 <!-- Begin pattern: navbox //-->
 
-<div class="navbox">
+<div class="navbox {{#if visible}} {{visible}} {{/if}}">
 {{#if image}}
     <div class="navbox-image">
       <img src="{{asset image.url}}" alt="{{image.alt}}">
