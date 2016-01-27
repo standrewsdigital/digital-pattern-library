@@ -81,6 +81,10 @@
                     "url" : "patterns/secondary-call/index.html"
                 },
                 {
+                    "name" : "Sticky nav",
+                    "url" : "patterns/sticky-nav/index.html"
+                },
+                {
                     "name" : "Staff profile",
                     "url" : "patterns/staff-profile/index.html"
                 },

@@ -1,0 +1,49 @@
+
+/*********************************/
+/* BEGIN Pattern: sticky-nav     */
+/*********************************/
+
+/* LONG FORM NAV STYLES */
+
+#nav-top {
+    transition: background .2s linear, border-radius 1s ease-in 1s;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    display: none;
+}
+
+#internal-nav {
+	height: 45px;
+}
+
+#nav-top .top-link {
+    display: none;
+}
+#nav-top.affix .top-link {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    #nav-top {
+        display: block;
+    }
+}
+
+/* A cool hack to get the offset right when linking to internal id's
+ * whilst also having a nav bar absolutely positioned on the top. 
+ * Hat tip -  UCL.
+ */
+
+.copy__anchor:before {
+    content: '';
+    display: block;
+    position: relative; 
+    width: 0;
+    height: 80px;
+    margin-top: -80px;
+}
+
+/*********************************/
+/* END Pattern: sticky-nav       */
+/*********************************/
