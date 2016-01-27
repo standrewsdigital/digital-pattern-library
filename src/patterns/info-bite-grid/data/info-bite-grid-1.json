@@ -8,7 +8,7 @@
   "info-bite-2": {
     "class": "portrait",
     "image": {
-      "url": "images/placeholders/info-bite-2.jpg",
+      "url": "docs/images/placeholders/info-bite-2.jpg",
       "alt": "st andrews degree"
     },
     "bite": "5 times top for student satisfaction",
@@ -16,7 +16,7 @@
   },
   "info-bite-3": {
     "image": {
-      "url": "images/placeholders/info-bite-3.jpg",
+      "url": "docs/images/placeholders/info-bite-3.jpg",
       "alt": "st andrews students on beach"
     },
     "bite": "Around 8,000 students",
@@ -24,7 +24,7 @@
   },
   "info-bite-4": {
     "image": {
-      "url": "images/placeholders/info-bite-4.jpg",
+      "url": "docs/images/placeholders/info-bite-4.jpg",
       "alt": "st andrews student working together"
     },
     "bite": "32% undergraduate students international",
@@ -32,7 +32,7 @@
   },
   "info-bite-5": {
     "image": {
-      "url": "images/placeholders/info-bite-5.jpg",
+      "url": "docs/images/placeholders/info-bite-5.jpg",
       "alt": "st andrews on a cloudy day"
     },
     "bite": "Over 600 years of academic excellence",
@@ -41,7 +41,7 @@
   "info-bite-6": {
     "class": "landscape",
     "image": {
-      "url": "images/placeholders/info-bite-6.jpg",
+      "url": "docs/images/placeholders/info-bite-6.jpg",
       "alt": "the st andrews cathedral"
     },
     "bite": "Swell"
