@@ -10,14 +10,65 @@ date: <%= new Date() %>
 
     {{#if core-assets}}
         <link href="{{asset 'core/styles/screen.css'}}" rel="stylesheet" type="text/css" media="screen" />
+        <link href="{{asset 'core/styles/screen.css'}}" rel="stylesheet" type="text/css" media="screen" />
         <link href="{{asset 'core/styles/print.css'}}" rel="stylesheet" type="text/css" media="print" />
         <!--[if lt IE 9]><link href="{{asset 'core/styles/ie.css'}}" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
     {{else}}
+        <link href="{{asset 'core/styles/screen.css'}}" rel="stylesheet" type="text/css" media="screen" />
         <link href="{{asset 'core/styles/doc.css'}}" rel="stylesheet" type="text/css" media="screen" />
     {{/if}}
 
   </head>
   <body>
+
+  <header id="header" class="header--audience">
+
+      <div class="row">
+          <div id="header-audience">
+              <a href="/students/" class="audience">Students</a>
+              <a href="/pgstudents/" class="audience">Postgraduates</a>
+              <a href="/staff/" class="audience">Staff</a>
+          </div>
+
+          <div id="logo-container">
+              <div id="header-logo"><h1><a href="http://www.st-andrews.ac.uk/"><span>University of St&nbsp;Andrews</span></a></h1></div>
+          </div>
+
+          <div id="header-search" role="search">
+              <button class="btn btn-link" type="button" value="" name="btnG" id="header-search-trigger"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+
+              <form action="//www.st-andrews.ac.uk/gsasearch" method="get">
+
+                  <div class="input-group">
+                      <span class="input-group-btn">
+                          <button class="btn btn-link" type="button" value="" name="btnG" id="header-search-close"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                      </span>
+                      <input class="form-control" type="text" title="Enter search keywords" maxlength="256" name="q" placeholder="Search the University website...">
+                      <span class="input-group-btn">
+                          <button class="btn btn-primary" type="submit" value="Search" name="btnG" id="header-search-submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                      </span>
+                  </div>
+
+                  <input type="hidden" value="StAndrews_ITS" name="site">
+                  <input type="hidden" value="xml_no_dtd" name="output">
+                  <input type="hidden" value="StAndrews_ITS" name="client">
+                  <input type="hidden" value="StAndrews_ITS" name="proxystylesheet">
+              </form>
+
+          </div>
+
+      </div>
+  </header>
+
+
+<!-- Begin pattern: category-header //-->
+<div id="category-header" class="">
+  <div class="container">
+    <h2><a href="[url]">Digital pattern library</a></h2>
+  </div>
+</div>
+<!-- End pattern: category-header //-->
+
 
     <div class="navbar navbar-inverse navbar-static-top">
       <div class="container">
@@ -57,7 +108,7 @@ date: <%= new Date() %>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://digitalcommunications.wp.st-andrews.ac.uk/" target="_blank">Digital Communications</a></li>
+            <li><a href="http://digitalcommunications.wp.st-andrews.ac.uk/" target="_blank">Blog</a></li>
           </ul>
 
         </div>
@@ -69,7 +120,7 @@ date: <%= new Date() %>
 
 
     {{#if core-assets}}
-    <script src="{{asset 'core/scripts/core.js'}}" type="text/javascript" ></script> 
+    <script src="{{asset 'core/scripts/core.js'}}" type="text/javascript" ></script>
     {{else}}
 
     <footer>

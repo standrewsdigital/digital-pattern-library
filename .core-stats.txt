@@ -1,9 +1,13 @@
 core/fonts/genericons/genericons.css - 26.88 kb
 core/styles/datatables.css - 1.19 kb
 <<<<<<< HEAD
+core/styles/doc.css - 154.55 kb
+=======
+<<<<<<< HEAD
 core/styles/doc.css - 154.53 kb
 =======
 core/styles/doc.css - 154.55 kb
+>>>>>>> master
 >>>>>>> master
 core/styles/header-only.css - 19.50 kb
 core/styles/ie.css - 0.45 kb
