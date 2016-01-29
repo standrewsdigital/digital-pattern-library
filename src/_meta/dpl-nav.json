@@ -17,6 +17,10 @@
                     "url" : "patterns/category-header/index.html"
                 },
                 {
+                    "name" : "Contact card",
+                    "url" : "patterns/contact-card/index.html"
+                },
+                {
                     "name" : "Content 2 column",
                     "url" : "patterns/content-2col/index.html"
                 },
