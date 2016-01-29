@@ -1,9 +1,8 @@
 {
   "id":"al244",
-  "name":"Tom Test",
-  "title":"Lecturer",
-  "contract-type":"academic",
-  "staff-image":"yes",
+  "name":"Student Test",
+  "title":"PhD student",
+  "contract-type":"student",
   "contact-info":{
       "email":"tst123@st-andrews.ac.uk",
       "phone":"01334 46xxxx"

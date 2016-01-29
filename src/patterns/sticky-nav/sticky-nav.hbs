@@ -1,0 +1,21 @@
+
+ <!-- Begin pattern: sticky-nav //-->
+
+<div class="accent-grey" id="internal-nav">
+	<div id="nav-top" class="affix">
+		<nav class="navigation-bar" role="navigation">
+		    <div class="container">
+		        <div class="toggle-navigation primary-toggle"><a class="navigation-button">Navigation <i class="chevron left"></i></a></div>
+		        <ul class="navigation-bar-nav primary-nav" style="width:100%;">
+					{{#each nav-link}}
+						<li><a href="#{{this.link}}">{{this.name}}</a></li>
+					{{/each}}
+			        <li style="float:right;" class="top-link glyphicon glyphicon-chevron-up btn-lg" aria-hidden="true"><a href="#page"></a></li>
+		        </ul>
+		    </div>
+		</nav>
+	</div>
+</div>
+
+
+<!-- End pattern: sticky-nav //-->

@@ -1,20 +1,16 @@
+<!-- Begin pattern: navbox //-->
 
- <!-- Begin pattern: navbox //-->
-
-<div class="navbox">
+<div class="navbox {{#if visible}} {{visible}} {{/if}}">
 {{#if image}}
-  <div class="navbox-image">
-    <img src="{{asset image.url}}" alt="{{image.alt}}">
-  </div>
+    <div class="navbox-image">
+      <img src="{{asset image.url}}" alt="{{image.alt}}">
+    </div>
 {{/if}}
-  <div class="navbox-title">
-      <p><a href="{{default url "[url]"}}">{{default title "[title]"}}</a></p>
-  </div>
+    <div class="navbox-title">
+        <p><a href="{{default url "[url]"}}">{{default title "[title]"}}</a></p>
+    </div>
 </div>
-
 {{#if text}}
-  <p>{{ text }}</p>
+    <p>{{ text }}</p>
 {{/if}}
-
-
 <!-- End pattern: navbox //-->
