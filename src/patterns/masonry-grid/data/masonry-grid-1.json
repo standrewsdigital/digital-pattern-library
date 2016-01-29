@@ -2,7 +2,7 @@
   "masonry-1": {
     "shape":"landscape",
     "image": {
-      "url": "images/placeholders/360x240-1.jpg",
+      "url": "docs/images/placeholders/360x240-1.jpg",
       "alt": "Description"
     },
     "title": "MUSA is going greener",
@@ -12,7 +12,7 @@
   "masonry-2": {
     "shape":"portrait",
     "image": {
-      "url": "images/placeholders/360x240-2.jpg",
+      "url": "docs/images/placeholders/360x240-2.jpg",
       "alt": "Description"
     },
     "title": "A Rae of Aristic Sunshine",
@@ -21,7 +21,7 @@
   },
   "masonry-3": {
     "image": {
-      "url": "images/placeholders/360x240-3.jpg",
+      "url": "docs/images/placeholders/360x240-3.jpg",
       "alt": "Description"
     },
     "title": "World Cup fever at Sandy's Bar",
@@ -30,7 +30,7 @@
   },
   "masonry-4": {
     "image": {
-      "url": "images/placeholders/360x240-4.jpg",
+      "url": "docs/images/placeholders/360x240-4.jpg",
       "alt": "Description"
     },
     "title": "All in hand",
@@ -39,7 +39,7 @@
   },
   "masonry-5": {
     "image": {
-      "url": "images/placeholders/360x240-5.jpg",
+      "url": "docs/images/placeholders/360x240-5.jpg",
       "alt": "Description"
     },
     "title": "Dogrees all round!",
@@ -49,7 +49,7 @@
   "masonry-6": {
     "shape":"landscape",
     "image": {
-      "url": "images/placeholders/360x240-6.jpg",
+      "url": "docs/images/placeholders/360x240-6.jpg",
       "alt": "Description"
     },
     "title": "Darling: \"We belong together\"",
