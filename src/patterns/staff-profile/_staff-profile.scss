@@ -3,7 +3,7 @@
 /* BEGIN Pattern: staff-profile  */
 /*********************************/
 
-.contact-card {
+.staff-profile {
 	margin: 0 auto 3em;
 	clear: both;
 	background-color: #f0f0f0;
@@ -19,15 +19,15 @@
 	vertical-align: bottom;
 }
 
-.contact-card.student {
-	height: 200px;
+.staff-profile.student {
+	height: 230px;
 }
 
-.contact-card.student .contact {
+.staff-profile.student .contact {
 	top: 130px;
 }
 
-.contact-card img {
+.staff-profile img {
 	height: 127px;
 	width: 111px;
 	position: relative;
@@ -36,7 +36,7 @@
 	border: 1px #ccc solid;
 }
 
-.contact-card h3 {
+.staff-profile h3 {
 	width: 100%;
 	font-size: 1.3em;
 	line-height: 1.3em;
@@ -46,7 +46,7 @@
 	@include -dpl-transition();
 }
 
-.contact-card p {
+.staff-profile p {
 	font-size: 1em;
 	height: 5em;
 	line-height: 1.2em;
@@ -54,7 +54,7 @@
 	margin: 1.5em 0;
 }
 
-.contact-card-links {
+.staff-profile-links {
 	font-size: 15px;
 	font-weight: bold;
 	color: $sta-grey;
@@ -62,31 +62,31 @@
 	list-style-type: none;
 }
 
-.contact-card .contact {
+.staff-profile .contact {
 	position: absolute;
 	top: 170px;
 }
 
-.contact-card h4 {
+.staff-profile h4 {
 	font-size: 18px;
 	font-weight: bold;
 	color: $sta-grey;
 }
 
 @media (max-width: 767px) and (min-width: 450px) {
-	.contact-card {
+	.staff-profile {
 		margin-bottom: 2em;
 	}
-	.contact-card p {
+	.staff-profile p {
 		height: auto;
 	}
 }
 
 @media (max-width: 449px) {
-	.contact-card, .contact-card.student {
+	.staff-profile, .staff-profile.student {
 		width: 285px;
 	}
-	.contact-card img {
+	.staff-profile img {
 		height: 107px;
 		width: 91px;
 	}	

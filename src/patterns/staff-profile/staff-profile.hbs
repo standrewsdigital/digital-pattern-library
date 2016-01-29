@@ -1,27 +1,31 @@
 
 <!-- Begin pattern: staff-profile //-->
-
-<article id="{{id}}" class="contact-card {{contract-type}}">
-	<h3>
-		<a href="https://www.st-andrews.ac.uk/profile/{{id}}">{{name}}</a>
-	</h3>
-	<h4>{{title}}</h4>
-	{{#if staff-image}}
-	<img src="http://portal.st-andrews.ac.uk/staff-photos/{{id}}/small" alt="{{name}}" title="{{name}}" class="profilePhoto">
-	{{/if}}
-	<div class="contact">
-		<h4>Contact</h4>
-			<ul class="contact-card-links">
-			{{#if contact-info.phone}}
-				<li>
-					<a href="tel:{{contact-info.phone}}" data-rel="external">{{contact-info.phone}}</a>
-				</li>
-			{{/if}}
-				<li>
-					<a href="mailto:{{contact-info.email}}">{{contact-info.email}}</a>
-				</li>
-			</ul>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-4">
+			<article id="{{id}}" class="staff-profile {{contract-type}}">
+				<h3>
+					<a href="https://www.st-andrews.ac.uk/profile/{{id}}">{{name}}</a>
+				</h3>
+				<h4>{{title}}</h4>
+				{{#if staff-image}}
+				<img src="http://portal.st-andrews.ac.uk/staff-photos/{{id}}/small" alt="{{name}}" title="{{name}}" class="profilePhoto">
+				{{/if}}
+				<div class="contact">
+					<h4>Contact</h4>
+						<ul class="staff-profile-links">
+						{{#if contact-info.phone}}
+							<li>
+								<a href="tel:{{contact-info.phone}}" data-rel="external">{{contact-info.phone}}</a>
+							</li>
+						{{/if}}
+							<li>
+								<a href="mailto:{{contact-info.email}}">{{contact-info.email}}</a>
+							</li>
+						</ul>
+				</div>
+			</article>
+		</div>
 	</div>
-</article>
-
+</div>
 <!-- End pattern: staff-profile //-->
