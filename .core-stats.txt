@@ -1,62 +1,18 @@
 core/fonts/genericons/genericons.css - 26.88 kb
 core/styles/datatables.css - 1.19 kb
-<<<<<<< HEAD
-core/styles/doc.css - 154.54 kb
-core/styles/header-only.css - 19.50 kb
-core/styles/ie.css - 0.46 kb
-core/styles/print.css - 33.87 kb
-core/styles/screen-bootstrap-only.css - 146.34 kb
-core/styles/screen.css - 184.04 kb
-core/scripts/core-base.js - 9.08 kb
-core/scripts/core-base.min.js - 3.33 kb
-core/scripts/core.js - 215.92 kb
-core/scripts/core.min.js - 157.51 kb
-core/scripts/datatables.js - 6.49 kb
-core/scripts/datatables.min.js - 2.43 kb
-core/scripts/doc.js - 160.93 kb
-core/scripts/doc.min.js - 128.40 kb
-core/scripts/header-only.js - 1.51 kb
-=======
-<<<<<<< HEAD
-core/styles/doc.css - 154.53 kb
-=======
-<<<<<<< HEAD
-core/styles/doc.css - 154.55 kb
-=======
-<<<<<<< HEAD
-core/styles/doc.css - 154.53 kb
-=======
-core/styles/doc.css - 154.55 kb
->>>>>>> master
->>>>>>> master
->>>>>>> master
+core/styles/doc.css - 154.59 kb
 core/styles/header-only.css - 19.50 kb
 core/styles/ie.css - 0.45 kb
 core/styles/print.css - 33.87 kb
 core/styles/screen-bootstrap-only.css - 146.33 kb
-<<<<<<< HEAD
 core/styles/screen.css - 185.99 kb
-=======
-core/styles/screen.css - 184.04 kb
-<<<<<<< HEAD
-core/scripts/core-base.js - 9.65 kb
-core/scripts/core-base.min.js - 3.78 kb
-core/scripts/core.js - 214.00 kb
-core/scripts/core.min.js - 157.97 kb
-=======
->>>>>>> master
-core/scripts/core-base.js - 8.41 kb
-core/scripts/core-base.min.js - 3.28 kb
-core/scripts/core.js - 212.76 kb
-core/scripts/core.min.js - 157.47 kb
-<<<<<<< HEAD
-=======
->>>>>>> master
->>>>>>> master
+core/scripts/core-base.js - 9.99 kb
+core/scripts/core-base.min.js - 3.83 kb
+core/scripts/core.js - 214.34 kb
+core/scripts/core.min.js - 158.02 kb
 core/scripts/datatables.js - 6.28 kb
 core/scripts/datatables.min.js - 2.43 kb
 core/scripts/doc.js - 158.99 kb
 core/scripts/doc.min.js - 128.41 kb
 core/scripts/header-only.js - 1.44 kb
->>>>>>> master
 core/scripts/header-only.min.js - 0.56 kb

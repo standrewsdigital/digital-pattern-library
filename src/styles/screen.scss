@@ -35,3 +35,18 @@
 
 /* Other vendor scripts */
 @import 'vendor/jquery.theatre.min';
+
+
+img.placeholder_size {
+  height: 85px;
+  width: 85px;
+}
+
+/* 
+	Fix for t4 image issues 
+	use by adding these two classes to the parent container of the img in question
+*/
+.img-responsive.override_image_size img {
+	height: 100% !important;
+	width: 100% !important;
+}

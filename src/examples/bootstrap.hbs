@@ -9,31 +9,33 @@ layout: none
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap Theme</title>
+    <title>Bootstrap elements</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" href="{{asset 'core/images/favicon.ico'}}">
-
-    <title>Theme Template for Bootstrap</title>
 
     <link href="{{asset 'core/styles/screen.css'}}" rel="stylesheet" type="text/css" media="screen" />
     <link href="{{asset 'core/styles/print.css'}}" rel="stylesheet" type="text/css" media="print" />
     <!--[if lt IE 9]><link href="{{asset 'core/styles/ie.css'}}" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
 
-    <style>
-      body {
-        padding-top:50px;
-      }
-    </style>
-
   </head>
   <body>
 
+    {{> header }}
+    
+    <!-- Begin pattern: category-header //-->
+<div id="category-header" class="">
+  <div class="container">
+    <h2 style="font-size: 1.5em;"><a href="../index.html">Digital pattern library</a></h2>
+  </div>
+</div>
+<!-- End pattern: category-header //-->
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
+
+    <div class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="../" class="navbar-brand">Bootswatch</a>
+          <a href="../index.html" class="navbar-brand">Digital pattern library</a>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -42,53 +44,137 @@ layout: none
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
+
+            
+
+                
+
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
-              <ul class="dropdown-menu" aria-labelledby="themes">
-                <li><a href="../default/">Default</a></li>
-                <li class="divider"></li>
-                <li><a href="../cerulean/">Cerulean</a></li>
-                <li><a href="../cosmo/">Cosmo</a></li>
-                <li><a href="../cyborg/">Cyborg</a></li>
-                <li><a href="../darkly/">Darkly</a></li>
-                <li><a href="../flatly/">Flatly</a></li>
-                <li><a href="../journal/">Journal</a></li>
-                <li><a href="../lumen/">Lumen</a></li>
-                <li><a href="../paper/">Paper</a></li>
-                <li><a href="../readable/">Readable</a></li>
-                <li><a href="../sandstone/">Sandstone</a></li>
-                <li><a href="../simplex/">Simplex</a></li>
-                <li><a href="../slate/">Slate</a></li>
-                <li><a href="../spacelab/">Spacelab</a></li>
-                <li><a href="../superhero/">Superhero</a></li>
-                <li><a href="../united/">United</a></li>
-                <li><a href="../yeti/">Yeti</a></li>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="nav-Patterns">Patterns<span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="Patterns">
+                
+                <li><a href="../patterns/accordion/index.html">Accordion</a></li>
+                
+                <li><a href="../patterns/breadcrumbs/index.html">Breadcrumbs</a></li>
+                
+                <li><a href="../patterns/category-header/index.html">Category header</a></li>
+                
+                <li><a href="../patterns/contact-card/index.html">Contact card</a></li>
+                
+                <li><a href="../patterns/content-2col/index.html">Content 2 column</a></li>
+                
+                <li><a href="../patterns/content-full/index.html">Content full</a></li>
+                
+                <li><a href="../patterns/footer/index.html">Footer</a></li>
+                
+                <li><a href="../patterns/gallery/index.html">Gallery</a></li>
+                
+                <li><a href="../patterns/header/index.html">Header</a></li>
+                
+                <li><a href="../patterns/hero-banner/index.html">Hero banner</a></li>
+                
+                <li><a href="../patterns/info-bite/index.html">Info bite</a></li>
+                
+                <li><a href="../patterns/info-bite-grid/index.html">Info bite grid</a></li>
+                
+                <li><a href="../patterns/intro/index.html">Intro</a></li>
+                
+                <li><a href="../patterns/long-form/index.html">Long-form content</a></li>
+                
+                <li><a href="../patterns/masonry/index.html">Masonry</a></li>
+                
+                <li><a href="../patterns/masonry-grid/index.html">Masonry grid</a></li>
+                
+                <li><a href="../patterns/navbox/index.html">Navbox</a></li>
+                
+                <li><a href="../patterns/navbox-grid/index.html">Navbox grid</a></li>
+                
+                <li><a href="../patterns/navigation-bar/index.html">Navigation bar</a></li>
+                
+                <li><a href="../patterns/secondary-call/index.html">Secondary call-to-action</a></li>
+                
+                <li><a href="../patterns/sticky-nav/index.html">Sticky nav</a></li>
+                
+                <li><a href="../patterns/staff-profile/index.html">Staff profile</a></li>
+                
+                <li><a href="../patterns/text-banner/index.html">Text banner</a></li>
+                
+                <li><a href="../patterns/tile/index.html">Tile</a></li>
+                
+                <li><a href="../patterns/tile-grid/index.html">Tile grid</a></li>
+                
               </ul>
             </li>
-            <li>
-              <a href="../help/">Help</a>
-            </li>
-            <li>
-              <a href="http://news.bootswatch.com">Blog</a>
-            </li>
+
+                
+
+            
+
+                
+
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Download <span class="caret"></span></a>
-              <ul class="dropdown-menu" aria-labelledby="download">
-                <li><a href="./bootstrap.min.css">bootstrap.min.css</a></li>
-                <li><a href="./bootstrap.css">bootstrap.css</a></li>
-                <li class="divider"></li>
-                <li><a href="./variables.less">variables.less</a></li>
-                <li><a href="./bootswatch.less">bootswatch.less</a></li>
-                <li class="divider"></li>
-                <li><a href="./_variables.scss">_variables.scss</a></li>
-                <li><a href="./_bootswatch.scss">_bootswatch.scss</a></li>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="docs/index.html" id="nav-Documentation">Documentation<span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="Documentation">
+                
+                <li><a href="../about.html">About the pattern library</a></li>
+                
+                <li><a href="../colours.html">Colours</a></li>
+                
+                <li><a href="../dependencies.html">JavaScript dependencies</a></li>
+                
+                <li><a href="../using.html">Using the pattern library</a></li>
+                
+                <li><a href="../palettes.html">Palettes</a></li>
+                
+                <li><a href="../datatables.html">Using jQuery DataTables</a></li>
+                
               </ul>
             </li>
+
+                
+
+            
+
+                
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="examples/index.html" id="nav-Example pages">Example pages<span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="Example pages">
+                
+                <li><a href="../examples/homepage.html">Ex: Homepage</a></li>
+                
+                <li><a href="../examples/about.html">Ex: About</a></li>
+                
+                <li><a href="../examples/bootstrap.html">Ex: Bootstrap components</a></li>
+                
+                <li><a href="../examples/bootstrap2.html">Ex: Bootstrap components - advanced</a></li>
+                
+                <li><a href="../examples/content.html">Ex: Content</a></li>
+                
+                <li><a href="../examples/gallery.html">Ex: Gallery</a></li>
+                
+                <li><a href="../examples/long-form-content.html">Ex: Long-form content</a></li>
+                
+                <li><a href="../examples/html-elements.html">Ex: HTML elements</a></li>
+                
+                <li><a href="../examples/tables.html">Ex: Tables</a></li>
+                
+                <li><a href="../examples/datatables.html">Ex: Tables – DataTables</a></li>
+                
+                <li><a href="../examples/web-app.html">Ex: Web application</a></li>
+                
+              </ul>
+            </li>
+
+                
+
+            
+
+
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://builtwithbootstrap.com/" target="_blank">Built With Bootstrap</a></li>
-            <li><a href="https://wrapbootstrap.com/?ref=bsw" target="_blank">WrapBootstrap</a></li>
+            <li><a href="http://digitalcommunications.wp.st-andrews.ac.uk/" target="_blank">Blog</a></li>
           </ul>
 
         </div>

@@ -4,7 +4,7 @@
 /*********************************/
 
 
-#category-header {
+.category-header {
   background-image: url('../images/header_general.jpg');
   background-position: center;
   background-size: cover;
@@ -37,7 +37,7 @@
 
 // Solid background color, variant
 
-#category-header.category-header-solid {
+.category-header.category-header-solid {
   background: -dpl-color($palette-default,'secondary','base');
 
   h2 {
@@ -49,7 +49,11 @@
 
 }
 
-
+@media (max-width: 600px) {
+  .category-header {
+    max-width: 300px;
+  }
+}
 
 
 
