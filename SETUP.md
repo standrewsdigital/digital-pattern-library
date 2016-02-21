@@ -1,6 +1,6 @@
 # Setting up the dev environment
 
-This is a guide to get your environment setup to contibute to the Digital 
+This is a guide to get your environment set up to contibute to the Digital 
 pattern library. 
 
 
