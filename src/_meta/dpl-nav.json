@@ -45,6 +45,10 @@
                     "url" : "patterns/hero-banner/index.html"
                 },
                 {
+                    "name" : "Image pattern Duncan",
+                    "url" : "patterns/image-pattern-duncan/index.html"
+                },
+                {
                     "name" : "Info bite",
                     "url" : "patterns/info-bite/index.html"
                 },
