@@ -3,95 +3,24 @@
 /* BEGIN Pattern: staff-profile  */
 /*********************************/
 
-.staff-profile {
-	margin: 0 auto 3em;
-	clear: both;
-	background-color: #f0f0f0;
-	-webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
-	-moz-box-shadow:    4px 4px 8px 0px rgba(0, 0, 0, 0.38);
-	box-shadow:         4px 4px 8px 0px rgba(0, 0, 0, 0.38);
-	width: 360px;
-	height: 260px;
-	padding: 1em;
-	position: relative;
-	display: inline-block;
-	margin: 10px;
-	vertical-align: bottom;
+.staff-details { 
+    margin-bottom: 15px; 
 }
 
-.staff-profile.student {
-	height: 230px;
+.staff-profile dt { 
+    float: left; 
+    clear: left; 
+    padding-right: 10px; 
+}  
+.staff-profile dd { 
+    float: left; 
+    clear: none; 
 }
 
-.staff-profile.student .contact {
-	top: 130px;
+.staff-profile img { 
+    margin-top: 15px; 
+    margin-bottom: 30px; 
 }
-
-.staff-profile img {
-	height: 127px;
-	width: 111px;
-	position: relative;
-	z-index: 0;
-	float: right;
-	border: 1px #ccc solid;
-}
-
-.staff-profile h3 {
-	width: 100%;
-	font-size: 1.3em;
-	line-height: 1.3em;
-	bottom: 0;
-	z-index: 100;
-	margin: 0;
-	@include -dpl-transition();
-}
-
-.staff-profile p {
-	font-size: 1em;
-	height: 5em;
-	line-height: 1.2em;
-	padding: 0 1em;
-	margin: 1.5em 0;
-}
-
-.staff-profile-links {
-	font-size: 15px;
-	font-weight: bold;
-	color: $sta-grey;
-	padding-left: 0;
-	list-style-type: none;
-}
-
-.staff-profile .contact {
-	position: absolute;
-	top: 170px;
-}
-
-.staff-profile h4 {
-	font-size: 18px;
-	font-weight: bold;
-	color: $sta-grey;
-}
-
-@media (max-width: 767px) and (min-width: 450px) {
-	.staff-profile {
-		margin-bottom: 2em;
-	}
-	.staff-profile p {
-		height: auto;
-	}
-}
-
-@media (max-width: 449px) {
-	.staff-profile, .staff-profile.student {
-		width: 285px;
-	}
-	.staff-profile img {
-		height: 107px;
-		width: 91px;
-	}	
-}
-
 
 /*********************************/
 /* END Pattern: staff-profile    */
