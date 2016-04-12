@@ -49,6 +49,10 @@
                     "url" : "patterns/image-pattern-duncan/index.html"
                 },
                 {
+                    "name" : "Image pattern Peter",
+                    "url" : "patterns/image-pattern-peter/index.html"
+                },
+                {
                     "name" : "Info bite",
                     "url" : "patterns/info-bite/index.html"
                 },
