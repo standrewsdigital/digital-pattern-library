@@ -39,3 +39,23 @@ if (audios.length) {
 }
 
 
+// ROUGH DRAFT of HIDEAWAYS
+
+$('.hideaway').hide();
+$('.hideaway-reveal').css('white-space','nowrap');
+$('.hideaway-reveal').click(function(){
+
+var siblings = $( '.' + $(this).attr('data-target-siblings') );
+var target = $( '#' + $(this).attr('data-target-id') ); 
+
+if (target.is( ":hidden" )) {
+    siblings.hide();    
+    target.show();
+}
+else {
+    target.hide();   
+}
+
+return false;
+});
+
