@@ -5,7 +5,7 @@
 
 
 // Code for affixing the internal nav to the top
-    var normal_top = $('#nav-top').offset().top;
+    if ( $('#nav-top').length ){ var normal_top = $('#nav-top').offset().top; }
     $('#nav-top').affix({
       offset: {
         top: function () {
