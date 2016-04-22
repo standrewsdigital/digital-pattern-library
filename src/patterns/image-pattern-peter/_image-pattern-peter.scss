@@ -1,0 +1,29 @@
+
+/***************************************/
+/* BEGIN Pattern: image-pattern-peter */
+/***************************************/
+
+ .image-pattern-peter {
+  margin: 0 auto 3em;
+ }
+
+ .image-pattern-peter img {
+    margin: 0 auto;
+    display: block;
+  position: relative;
+  z-index: 0;
+ }
+
+ .image-pattern-peter p {
+    margin-top: 10px;
+ }
+
+@media (max-width: 767px) {
+  .image-pattern-peter {
+    margin-bottom: 2em;
+  }
+}
+
+/*************************************/
+/* END Pattern: image-pattern-peter */
+/*************************************/
