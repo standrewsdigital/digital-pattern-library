@@ -31,8 +31,8 @@
                      scrollTop: target.offset().top
                 }, 500);
                 var a = $(this);
-                a.parent().siblings().removeClass('current-menu-item');
-                a.parent().addClass('current-menu-item');
+                // a.parent().siblings().removeClass('current-menu-item');
+                // a.parent().addClass('current-menu-item');
                 //return false;
             }
         }
