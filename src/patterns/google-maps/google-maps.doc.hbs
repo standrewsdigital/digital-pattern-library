@@ -1,0 +1,31 @@
+---
+title: Google maps
+pattern: google-maps
+examples:
+- name: no-text
+- name: with-text
+
+---
+
+<!--
+
+-->
+
+<p>Generic Google Map with choice for multiple or single location markers. Locations held in local or external JSON data.</p>
+
+<h2>Usage</h2>
+
+<ul>
+   <li>Used by any site to show building locations.</li>
+   <li>Populate JSON data with location longitude, latitude and address.</li>
+</ul>
+
+<h2>Syntax</h2>
+<div class="pattern-source">{{> google-maps }}</div>
+
+<h2>Options</h2>
+
+<ul>
+   <li><strong>External JSON file</strong> Need to add <code>$.getJSON</code> command -- <code>$.getJSON( "FILENAME" , function(json1) {</code> to .js file. As shown in comments within code.</li>
+   <li><strong>With text</strong> Map to one side, with column of text</li>
+</ul>

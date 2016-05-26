@@ -1,0 +1,23 @@
+<!-- Begin pattern: google-maps //-->
+<!-- display map here -->
+
+    <div class="container">
+        <div class="row">
+        {{#if text}}
+        	<div class="col-sm-4">{{text}}</div>
+        	<div class="col-sm-8">
+                <div id="googleMap"></div>
+            </div>          
+        {{else}}
+            <div class="col-sm-12">
+                <div id="googleMap"></div>
+            </div>
+        {{/if}}
+        </div>
+    </div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCymL7HTpzMlo0sqRZH2j9wkn2cuMOQVSA&callback=initMap"></script>
+
+<!-- End pattern: google-maps //-->
+
+
