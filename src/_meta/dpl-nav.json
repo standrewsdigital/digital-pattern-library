@@ -37,6 +37,10 @@
                     "url" : "patterns/gallery/index.html"
                 },
                 {
+                    "name" : "Google Maps",
+                    "url" : "patterns/google-maps/index.html"
+                },
+                {
                     "name" : "Header",
                     "url" : "patterns/header/index.html"
                 },
