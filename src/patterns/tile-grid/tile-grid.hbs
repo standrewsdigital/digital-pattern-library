@@ -8,15 +8,16 @@
 
   	<div class="row">
 	    <div class="col-md-8">
-	    	{{#if heading}}
-	      <h2>{{{ heading }}}</h2>
-	      {{else}}
-				<h2>[heading]</h2>
-	      {{/if}}
+	    {{#if heading}}	
+		      <h2>{{{ heading }}}</h2>
+	    {{else}} 
+		      	<h2 class="sta-grey">{{{ heading-dark }}}</h2>
+	    {{/if}}
 	    </div>
+
 	    <div class="col-md-4 read-more read-more-container">
 			    
-		    <a href="{{default call-to-browse-url "[call-to-browse-url]"}}">{{default call-to-browse-text "call-to-browse-text"}}</a>
+		    <a href="{{default call-to-browse-url "call-to-browse-url"}}">{{default call-to-browse-text "call-to-browse-text"}}</a>
 
 	    </div>
 	</div>
