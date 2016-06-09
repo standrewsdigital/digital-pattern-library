@@ -7,7 +7,8 @@
 		  },
 		  "title": "Why St Andrews",
 		  "url": "#",
-		  "column_size": "8"
+		  "column_size": "8",
+		  "open": true
 		 },
 		 {
 		  "image": {
@@ -16,7 +17,8 @@
 		  },
 		  "title": "Research",
 		  "url": "#",
-		  "column_size": "4"
+		  "column_size": "4",
+		  "close": true
 		 },
 		 {
 		  "image": {
@@ -25,7 +27,8 @@
 		  },
 		  "title": "Alumni and donors",
 		  "url": "#",
-		  "column_size": "4"
+		  "column_size": "4",
+		  "open": true
 		 },
 		 {
 		  "image": {
@@ -34,7 +37,8 @@
 		  },
 		  "title": "The town",
 		  "url": "#",
-		  "column_size": "8"
+		  "column_size": "8",
+		  "close": true
 		 }
 	]
 }
