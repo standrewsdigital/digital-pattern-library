@@ -11,6 +11,15 @@
 			</div>
 		{{/items}}
     {{else}}
+      {{#if items_masonry}}
+      {{#items_masonry}}
+        {{#if open}}<div class="row">{{/if}}
+        <div class="col-sm-{{column_size}}">
+        {{>navbox}}
+        </div>
+        {{#if close}}</div>{{/if}}
+      {{/items_masonry}}
+    {{else}}
       <div class="col-sm-4">
       {{>navbox}}
       </div>
@@ -20,6 +29,7 @@
       <div class="col-sm-4">
       {{>navbox}}
       </div>
+    {{/if}}
     {{/if}}
 	</div>
 </div>
