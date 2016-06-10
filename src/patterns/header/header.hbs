@@ -21,12 +21,15 @@
               </ul>
             </div>
             {{else }}
-                
-            <a href="/students/" class="audience">Students</a>
-            <a href="/pgstudents/" class="audience">Postgraduates</a>
-            <a href="/staff/" class="audience">Staff</a>
-                
+            
+            {{#if links}}
+                {{#each links}}
+                    <a href="{{this}}" class="audience">{{@key}}</a>
+                {{/each}}
+            {{/if}}
+
             {{/authenticated}}
+           
 
         </div>
         {{/audience}}

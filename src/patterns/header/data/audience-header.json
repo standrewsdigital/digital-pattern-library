@@ -1,3 +1,8 @@
 {
-    "audience": true
+    "audience": true,
+    "links": {
+    	"Students":"/students/",
+    	"Postgraduates":"/pgstudents/",
+    	"Staff":"/staff/"
+    }
 }
