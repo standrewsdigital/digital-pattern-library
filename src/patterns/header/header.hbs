@@ -22,11 +22,9 @@
             </div>
             {{else }}
             
-            {{#if links}}
-                {{#each links}}
-                    <a href="{{this}}" class="audience">{{@key}}</a>
-                {{/each}}
-            {{/if}}
+            {{#each links}}
+                <a href="{{this}}" class="audience">{{@key}}</a>
+            {{/each}}
 
             {{/authenticated}}
            
