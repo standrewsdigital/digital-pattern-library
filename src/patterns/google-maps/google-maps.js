@@ -66,9 +66,9 @@ function initialize() {
       //  });       // FOR EXTERNAL FILE, UN-COMMENT LINE.
 
 }
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
+if ($('#googleMap').length) {
+  google.maps.event.addDomListener(window, 'load', initialize);
+}
 
 /*********************************/
 /* END Pattern: google-maps      */

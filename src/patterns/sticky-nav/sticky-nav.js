@@ -5,7 +5,7 @@
 
 
 // Code for affixing the internal nav to the top
-    var normal_top = $('#nav-top').offset().top;
+    if ( $('#nav-top').length ){ var normal_top = $('#nav-top').offset().top; }
     $('#nav-top').affix({
       offset: {
         top: function () {
@@ -31,8 +31,8 @@
                      scrollTop: target.offset().top
                 }, 500);
                 var a = $(this);
-                a.parent().siblings().removeClass('current-menu-item');
-                a.parent().addClass('current-menu-item');
+                // a.parent().siblings().removeClass('current-menu-item');
+                // a.parent().addClass('current-menu-item');
                 //return false;
             }
         }

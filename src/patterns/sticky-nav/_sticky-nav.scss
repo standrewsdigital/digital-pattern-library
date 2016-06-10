@@ -9,7 +9,7 @@
     transition: background .2s linear, border-radius 1s ease-in 1s;
     top: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 999;
     display: none;
 }
 
@@ -22,6 +22,11 @@
 }
 #nav-top.affix .top-link {
     display: block;
+}
+#nav-top.affix {
+    width: 100%;
+    top: 0;
+    z-index: 999;
 }
 
 @media (min-width: 768px) {
