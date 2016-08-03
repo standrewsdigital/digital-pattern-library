@@ -319,6 +319,14 @@ module.exports = function(grunt) {
                     src: ['**/*'],
                     dest: 'docs/assets/docs/images'
                 }]
+            },
+            docs_googlemaps: {
+                files: [{
+                    expand: true,
+                    cwd: 'src/scripts/',
+                    src: ['location-data.js'],
+                    dest: 'docs/patterns/google-maps/examples/'
+                }]
             }
         }, // END of copy
 
@@ -459,7 +467,7 @@ module.exports = function(grunt) {
     // docs – builds the documentation, makes use of build too.
     grunt.registerTask('docs', ['clean:docs','assemble:patterns',
         'assemble:pattern_examples','assemble:examples','assemble:docs',
-        'copy:docs_core','copy:docs_images']);
+        'copy:docs_core','copy:docs_images','copy:docs_googlemaps']);
 
 
     // deploy-core – Deploy core assets via FTP to CDN
