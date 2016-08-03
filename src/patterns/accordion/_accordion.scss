@@ -4,7 +4,7 @@
 /*********************************/
 
 
-.accordion h3 {
+.accordion > h3 {
   @include -dpl-transition();
   background-color: $sta-blue;
   color: white;
@@ -12,11 +12,11 @@
   cursor: pointer;
 }
 
-.accordion h3:hover {
+.accordion > h3:hover {
   background-color: $sta-blue-hover;
 }
 
-.accordion h3:before {
+.accordion > h3:before {
   @extend i.chevron;
   @include rotate(180deg);
   content: "";
@@ -26,7 +26,7 @@
   top: 3px; 
 }
 
-.accordion h3.open:before {
+.accordion > h3.open:before {
   @include rotate(90deg);
 }
 
