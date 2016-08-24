@@ -50,6 +50,10 @@
   text-shadow: none;
 }
 
+.hero-banner .btn:first-child {
+  margin-right: 30px;
+}
+
 .hero-banner .btn:hover,
 .hero-banner .btn:focus {
   background-color: $sta-blue-hover;

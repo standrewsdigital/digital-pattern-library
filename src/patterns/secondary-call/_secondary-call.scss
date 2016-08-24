@@ -58,6 +58,10 @@
   background-color: $sta-blue;
 }
 
+.secondary-call .btn:nth-child(2) {
+  margin-left: 30px;
+}
+
 .secondary-call .btn:hover,
 .secondary-call .btn:focus {
   background-color: $sta-blue-hover;
