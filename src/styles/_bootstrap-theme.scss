@@ -56,7 +56,7 @@ table {
     width: 100%;
 }
 
-th {
+thead > th, thead > tr th {
   background-color: $gray-light;
   color: #fff;
 }
