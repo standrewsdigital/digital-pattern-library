@@ -29,6 +29,10 @@
                     "url" : "patterns/content-full/index.html"
                 },
                 {
+                    "name" : "Content updates",
+                    "url" : "patterns/content-updates/index.html"
+                },
+                {
                     "name" : "Footer",
                     "url" : "patterns/footer/index.html"
                 },

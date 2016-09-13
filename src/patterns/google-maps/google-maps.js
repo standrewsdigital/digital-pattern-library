@@ -5,28 +5,6 @@
 
 function initialize() {
 
-  // JSON data to be used for marker locations.
-  var locations = [ 
-     {
-       "title": "Bute Medical Building",
-       "lat": 56.337974,
-       "lng": -2.793692,
-       "description": "Bute Annexe, St Andrews, Fife, KY16 9TS"
-     },
-     {
-       "title": "The Library",
-       "lat": 56.341958,
-       "lng": -2.795838,
-       "description": "University of St Andrews, St Andrews, Fife, KY16 9TR"
-     },
-     {
-       "title": "Sports Centre",
-       "lat": 56.339211,
-       "lng": -2.814914,
-       "description": "St Leonard's Rd, St Andrews, Fife, KY16 9DY"
-     }
-  ];
-
   // Map view settings
   var mapProp = {
     center:new google.maps.LatLng(56.339775,-2.796721), // map starting position
@@ -41,8 +19,7 @@ function initialize() {
   infoWindow = new google.maps.InfoWindow();
 
     // Read through txt file for marker data
-
-    //  $.getJSON( "location-data.js" , function(locations) {     // FOR EXTERNAL FILE, UN-COMMENT LINE.
+     $.getJSON( "location-data.js" , function(locations) {
           $.each(locations, function(key, data) {               
 
               var latLng = new google.maps.LatLng(data.lat, data.lng); 
@@ -63,7 +40,7 @@ function initialize() {
 
             });   
           }); 
-      //  });       // FOR EXTERNAL FILE, UN-COMMENT LINE.
+       });
 
 }
 if ($('#googleMap').length) {
