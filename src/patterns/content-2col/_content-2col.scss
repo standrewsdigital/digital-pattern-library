@@ -4,11 +4,11 @@
 /*********************************/
 
 
-/* remove margin of h2 when it's the first element of the content */
-.content *:nth-child(1) {
+.content h3:nth-child(1), .content h4:nth-child(1) {
     margin-top:0px;
 }
 
+/* remove margin of h2 when it's the first element of the content */
 .content h2 {
     margin-top:0px;   
 }

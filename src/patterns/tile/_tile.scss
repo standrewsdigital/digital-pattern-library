@@ -13,6 +13,17 @@
   max-width: 360px;
  }
 
+ .tile.tile-responsive {
+  margin: 0 auto 2em;
+  // clear: both;
+  background-color: white;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow:    4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+  box-shadow:         4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+  max-width: 100%;
+ }
+
+
 .tile-image-title {
   position: relative;
 }
