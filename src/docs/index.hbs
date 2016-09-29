@@ -24,7 +24,7 @@ layout: _base.hbs
             <p>External agencies or partners who wish to use the DPL must request access from the digital communications team. Access to the DPL to external partners is granted on a case by case basis.</p>
             <p>All users of the DPL must have an understanding of <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/user-centred/">user-centred design</a>, and keep up to date with amendments to the <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/">digital communications team service manual</a>.</p>
             <p><strong>New web applications and webpages designed using the DPL must be approved by the digital communications team before they publish live.</strong></p>
-            
+
             <h2>Obtaining permission to use the DPL</h2>
             <p>All users who wish to use the DPL to build a product must first organise a kick-off meeting with the digital communications team. At this meeting rules and responsibilities will be explained, and users will be required to sign a Memorandum of Understanding.</p>
             <p>The Memorandum of Understanding will set out clear sign off gateways, which require users to share the information architecture (for web pages) and/or workflow (for web apps) as well as plans for content management with the digital communications team before the DPL is used to build or prototype a product. Once the IA or workflow has been agreed, the product must meet the <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/links/">relevant URL policy</a>. All products using any element of the DPL must conform to the <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/house-style/">house style</a>, <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/content-management/standards/">content standards</a> and <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/corporate-identity/">corporate identity policy</a> of the University.</p>
@@ -44,19 +44,34 @@ layout: _base.hbs
         </div>
 
         <div class="col-md-4 col-sm-6">
-            <h2>Build key info</h2>
-            <p><strong>Current version:</strong> v{{pkg.version}}</p>
-            <p><strong>Build date:</strong> {{formatDate date "%F"}} at {{formatDate date "%I:%M%p"}}</p>
-            <p><strong>Github repo:</strong> <a href="https://github.com/standrewsdigital/digital-pattern-library">standrewsdigital/digital-pattern-library</a></p>
-             <!--  <p>
-                <strong>Current version:</strong> v{{pkg.version}}<br>
-                <strong>Build date:</strong> {{formatDate date "%F"}} at {{formatDate date "%I:%M%p"}}<br>
-                <strong>Github repo:</strong> <a href="https://github.com/standrewsdigital/digital-pattern-library">standrewsdigital/digital-pattern-library</a>
-            </p> -->
+            <h2>Current version</h2>
+
+            <dl>
+                <dt>Build number</dt>
+                <dd>v{{pkg.version}}</dd>
+            </dl>
+
+            <dl>
+                <dt>Build date and time</dt>
+                <!-- Format should be: Thursday 29 September 2016
+                Documentation for format can be found on Ruby Doc:
+                http://ruby-doc.org/core-2.3.1/Time.html#M000392 -->
+                <dd>{{formatDate date "%A %e %B %Y"}}<br>{{formatDate date "%H:%M"}}</dd>
+            </dl>
+
             <hr>
-            <h2>Found a bug?</h2>
-            <p>Please submit an issue on github.</p>
-            <p><a href="https://github.com/standrewsdigital/digital-pattern-library/issues" class="btn btn-primary">Report a issue</a></p>
+            <h2>Digital standards</h2>
+            <ul>
+                <li><a href="http://www.st-andrews.ac.uk/digital-standards/service-manual/">Service manual</a></li>
+                <li><a href="http://www.st-andrews.ac.uk/digital-standards/service-manual/code-standards/">Code standards</a></li>
+            </ul>
+
+
+            <h2>Code</h2>
+            <p><a href="https://github.com/standrewsdigital/digital-pattern-library" class="btn btn-primary">GitHub repository</a></p>
+
+            <p><a href="https://github.com/standrewsdigital/digital-pattern-library/issues" class="btn btn-secondary">Report an issue</a></p>
+
         </div>
     </div>
 </div>
