@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title >{{ title }}</title >
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-    <link rel="canonical" href="http://www.st-andrews.ac.uk">
-    <meta name="copyright" content="Copyright (c) 2014 University of St Andrews" />
-    <meta name="rating" content="general" />
-    <meta name="dc.keywords" content="University"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en-GB">
+    <head>
+        <title >{{ title }}</title >
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+        <link rel="canonical" href="http://www.st-andrews.ac.uk">
+        <meta name="copyright" content="Copyright (c) 2016 University of St Andrews" />
+        <meta name="rating" content="general" />
+        <meta name="dc.keywords" content="University"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="{{asset 'core/styles/screen.css'}}" rel="stylesheet" type="text/css" media="screen" />
-    <link href="{{asset 'core/styles/print.css'}}" rel="stylesheet" type="text/css" media="print" />
-    <!--[if lt IE 9]><link href="{{asset 'styles/ie.css'}}" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+        <link href="{{asset 'core/styles/screen.css'}}" rel="stylesheet" media="screen" />
+        <link href="{{asset 'core/styles/print.css'}}" rel="stylesheet" media="print" />
+        <!--[if lt IE 9]><link href="{{asset 'styles/ie.css'}}" rel="stylesheet" media="screen" /><![endif]-->
+    </head>
+    <body>
 
-    
-  </head>
-  <body>
-
-    {{> body  }}
+        {{> body  }}
 
 
-    <script src="{{asset 'core/scripts/core.js'}}" type="text/javascript" ></script>
-    <script src="http://localhost:35729/livereload.js"></script>
+        <script src="{{asset 'core/scripts/core.js'}}"></script>
+        <script src="http://localhost:35729/livereload.js"></script>
 
-    {{{ script_footer }}}
+        {{{ script_footer }}}
 
-  </body >
+    </body >
 </html >
