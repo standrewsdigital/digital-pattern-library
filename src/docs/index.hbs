@@ -3,16 +3,6 @@ title: Digital Pattern Library
 layout: _base.hbs
 ---
 
-<!--
-<div class="jumbotron" style="background-image: url({{asset "docs/images/dpl-banner.png"}}); background-size: cover; background-position: center 40%; color: white;">
-  <div class="container">
-    <h1>Digital pattern library</h1>
-    <p>A consistent look and feel for digital products at the University of St Andrews.</p>
-    <p><a href="using.html" class="btn btn-primary">Start using</a></p>
-  </div>
-</div>
--->
-
 <div class="container">
     <div class="row">
 
@@ -20,25 +10,39 @@ layout: _base.hbs
             <h2>Digital pattern library</h2>
             <p>The digital pattern library (DPL) is a resource created and owned by the <a href="http://digitalcommunications.wp.st-andrews.ac.uk/about/">digital communications team</a>. Find out what the DPL does on the <a href="/about.html">about page</a>.</p>
             <p>The DPL is used to create both web applications and web pages. It follows the design principles of the digital communications team. The code in the DPL is version controlled via GitHub. It is content management system (CMS) and system agnostic.</p>
-            <p>If you wish to use the DPL and you are a member of staff at the University of St Andrews, you must liaise with the digital communications team for access and training. Any member of staff using the DPL will be expected to attend the fortnightly DPL developers’ meeting on a regular basis.</p>
+            <p>If you wish to use the DPL and you are a member of staff at the University of St&nbsp;Andrews, you must liaise with the digital communications team for access and training. Any member of staff using the DPL will be expected to attend the fortnightly DPL developers’ meeting on a regular basis.</p>
             <p>External agencies or partners who wish to use the DPL must request access from the digital communications team. Access to the DPL to external partners is granted on a case by case basis.</p>
             <p>All users of the DPL must have an understanding of <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/user-centred/">user-centred design</a>, and keep up to date with amendments to the <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/">digital communications team service manual</a>.</p>
             <p><strong>New web applications and webpages designed using the DPL must be approved by the digital communications team before they publish live.</strong></p>
+            
+            <!-- Begin pattern: accordion //-->
+            <div class="accordion">                
+                <h3>Obtaining permission to use the DPL</h3>
+                <div>
+                    <p>All users who wish to use the DPL to build a product must first organise a kick-off meeting with the digital communications team. At this meeting rules and responsibilities will be explained, and users will be required to sign a Memorandum of Understanding.</p>
+                    <p>The Memorandum of Understanding will set out clear sign off gateways, which require users to share the information architecture (for web pages) and/or workflow (for web apps) as well as plans for content management with the digital communications team before the DPL is used to build or prototype a product. Once the IA or workflow has been agreed, the product must meet the <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/links/">relevant URL policy</a>. All products using any element of the DPL must conform to the <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/house-style/">house style</a>, <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/content-management/standards/">content standards</a> and <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/corporate-identity/">corporate identity policy</a> of the University.</p>
+                    <p>A clear commitment must be given that no new product using the DPL will go live without the explicit, written sign-off of the digital communications team.</p>
+                </div>                
+            </div>
+            <!-- End pattern: accordion //-->            
+            
+            <!-- Begin pattern: accordion //-->
+            <div class="accordion">                
+                <h3>Code standards in the DPL</h3>
+                <div>
+                    <p>Developers using the DPL should not fork the code in GitHub. No patterns or elements (such as colours) in the DPL may be edited without liaising with the digital communications team. This is the case in both the DPL and in any content management system; patterns should not be modified in any manner. Do not use CSS to overrule DPL elements, patterns, fonts etc. All code written must follow the digital communications team’s <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/code-standards/">code standards</a>. Rules on all patterns must be adhered to - if in doubt, please ask.</p>
+                    <p>New patterns may only be created by developers working directly alongside the digital communications team.</p>
+                </div>                
+            </div>
 
-            <h2>Obtaining permission to use the DPL</h2>
-            <p>All users who wish to use the DPL to build a product must first organise a kick-off meeting with the digital communications team. At this meeting rules and responsibilities will be explained, and users will be required to sign a Memorandum of Understanding.</p>
-            <p>The Memorandum of Understanding will set out clear sign off gateways, which require users to share the information architecture (for web pages) and/or workflow (for web apps) as well as plans for content management with the digital communications team before the DPL is used to build or prototype a product. Once the IA or workflow has been agreed, the product must meet the <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/links/">relevant URL policy</a>. All products using any element of the DPL must conform to the <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/house-style/">house style</a>, <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/content-management/standards/">content standards</a> and <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/corporate-identity/">corporate identity policy</a> of the University.</p>
-            <p>A clear commitment must be given that no new product using the DPL will go live without the explicit, written sign-off of the digital communications team.</p>
-
-            <h2>Code standards in the DPL</h2>
-            <p>Developers using the DPL should not fork the code in GitHub. No patterns or elements (such as colours) in the DPL may be edited without liaising with the digital communications team. This is the case in both the DPL and in any content management system; patterns should not be modified in any manner. Do not use CSS to overrule DPL elements, patterns, fonts etc. All code written must follow the digital communications team’s <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/code-standards/">code standards</a>. Rules on all patterns must be adhered to - if in doubt, please ask.</p>
-            <p>New patterns may only be created by developers working directly alongside the digital communications team.</p>
-
-            <h2>Building patterns in a CMS</h2>
-            <p>DPL patterns should only be added to our central CMS, T4, or to WordPress by the digital communications team. Some patterns already exist within T4 and WordPress; developers are free to use these patterns in accordance to the rules of the patterns, and in accordance with this policy. There should only be one instance of each pattern in T4/WordPress. Do not duplicate patterns / content types. Any new pattern in T4/WordPress must follow the digital communications team naming conventions.</p>
-            <p>Please sign below to state that you have read and agreed to this policy.
-                <br>Signature:
-                <br>Name:
+            <!-- Begin pattern: accordion //-->
+            <div class="accordion">                
+                <h3>Building patterns in a CMS</h3>
+                <div>                    
+                    <p>DPL patterns should only be added to our central CMS, T4, or to WordPress by the digital communications team. Some patterns already exist within T4 and WordPress; developers are free to use these patterns in accordance to the rules of the patterns, and in accordance with this policy. There should only be one instance of each pattern in T4/WordPress. Do not duplicate patterns / content types. Any new pattern in T4/WordPress must follow the digital communications team naming conventions.</p>                    
+                </div>                
+            </div>
+            <p>If you use the DPL you agree to this policy. If you use the DPL without agreement, we will find you and we will take your website down. <blockquote>But what I do have are a very particular set of skills; skills I have acquired over a very long career. Skills that make me a nightmare for people like you.</blockquote>
             </p>
             <p>This policy is supported by the digital communications take down policy, which states that any incorrect usage of the DPL may result in a request to rollback or remove the product.</p>
         </div>

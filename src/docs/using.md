@@ -32,7 +32,7 @@ Links to the CDN assets have the form:
 
 ### Building core files from source
 
-If you'd rather build the core files from source, you can do so by gaining access to the source code through git and then following the [Contributing](contributing.html) guide to setting up Grunt to build the files. You can then copy the files in the `build` folder into your project.
+If you'd rather build the core files from source, you can do so by gaining access to the source code through git and then following the [Contributing](https://github.com/standrewsdigital/digital-pattern-library/blob/master/CONTRIBUTING.md) guide to setting up Grunt to build the files. You can then copy the files in the `build` folder into your project.
 
 ## Header and Footer Code
 
