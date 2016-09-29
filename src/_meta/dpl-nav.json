@@ -150,47 +150,47 @@
             "url" : "examples/index.html",
             "items" : [
                 {
-                    "name" : "Ex: Homepage",
+                    "name" : "Homepage",
                     "url" : "examples/homepage.html"
                 },
                 {
-                    "name" : "Ex: About",
+                    "name" : "About",
                     "url" : "examples/about.html"
                 },
                 {
-                    "name" : "Ex: Bootstrap components",
+                    "name" : "Bootstrap components",
                     "url" : "examples/bootstrap.html"
                 },
                 {
-                    "name" : "Ex: Bootstrap components - advanced",
+                    "name" : "Bootstrap components - advanced",
                     "url" : "examples/bootstrap2.html"
                 },
                 {
-                    "name" : "Ex: Content",
+                    "name" : "Content",
                     "url" : "examples/content.html"
                 },
                 {
-                    "name" : "Ex: Gallery",
+                    "name" : "Gallery",
                     "url" : "examples/gallery.html"
                 },
                 {
-                    "name" : "Ex: Long-form content",
+                    "name" : "Long-form content",
                     "url" : "examples/long-form-content.html"
                 },
                 {
-                    "name" : "Ex: HTML elements",
+                    "name" : "HTML elements",
                     "url" : "examples/html-elements.html"
                 },
                 {
-                    "name" : "Ex: Tables",
+                    "name" : "Tables",
                     "url" : "examples/tables.html"
                 },
                 {
-                    "name" : "Ex: Tables – DataTables",
+                    "name" : "Tables – DataTables",
                     "url" : "examples/datatables.html"
                 },
                 {
-                    "name" : "Ex: Web application",
+                    "name" : "Web application",
                     "url" : "examples/web-app.html"
                 }
             ]

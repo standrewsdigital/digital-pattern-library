@@ -14,56 +14,49 @@ layout: _base.hbs
 -->
 
 <div class="container">
-<div class="row">
+    <div class="row">
 
-  <div class="col-md-4 col-sm-6">
+        <div class="col-md-8 col-sm-6">
+            <h2>Digital pattern library</h2>
+            <p>The digital pattern library (DPL) is a resource created and owned by the <a href="http://digitalcommunications.wp.st-andrews.ac.uk/about/">digital communications team</a>. Find out what the DPL does on the <a href="/about.html">about page</a>.</p>
+            <p>The DPL is used to create both web applications and web pages. It follows the design principles of the digital communications team. The code in the DPL is version controlled via GitHub. It is content management system (CMS) and system agnostic.</p>
+            <p>If you wish to use the DPL and you are a member of staff at the University of St Andrews, you must liaise with the digital communications team for access and training. Any member of staff using the DPL will be expected to attend the fortnightly DPL developers’ meeting on a regular basis.</p>
+            <p>External agencies or partners who wish to use the DPL must request access from the digital communications team. Access to the DPL to external partners is granted on a case by case basis.</p>
+            <p>All users of the DPL must have an understanding of <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/user-centred/">user-centred design</a>, and keep up to date with amendments to the <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/">digital communications team service manual</a>.</p>
+            <p><strong>New web applications and webpages designed using the DPL must be approved by the digital communications team before they publish live.</strong></p>
+            
+            <h2>Obtaining permission to use the DPL</h2>
+            <p>All users who wish to use the DPL to build a product must first organise a kick-off meeting with the digital communications team. At this meeting rules and responsibilities will be explained, and users will be required to sign a Memorandum of Understanding.</p>
+            <p>The Memorandum of Understanding will set out clear sign off gateways, which require users to share the information architecture (for web pages) and/or workflow (for web apps) as well as plans for content management with the digital communications team before the DPL is used to build or prototype a product. Once the IA or workflow has been agreed, the product must meet the <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/links/">relevant URL policy</a>. All products using any element of the DPL must conform to the <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/house-style/">house style</a>, <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/content-management/standards/">content standards</a> and <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/corporate-identity/">corporate identity policy</a> of the University.</p>
+            <p>A clear commitment must be given that no new product using the DPL will go live without the explicit, written sign-off of the digital communications team.</p>
 
-    <h2>Patterns</h2>
+            <h2>Code standards in the DPL</h2>
+            <p>Developers using the DPL should not fork the code in GitHub. No patterns or elements (such as colours) in the DPL may be edited without liaising with the digital communications team. This is the case in both the DPL and in any content management system; patterns should not be modified in any manner. Do not use CSS to overrule DPL elements, patterns, fonts etc. All code written must follow the digital communications team’s <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/code-standards/">code standards</a>. Rules on all patterns must be adhered to - if in doubt, please ask.</p>
+            <p>New patterns may only be created by developers working directly alongside the digital communications team.</p>
 
-    <ul>
-    	{{#each dpl-nav.items.0.items}}
-    		<li><a href ="{{url}}">{{name}}</a></li>
-    	{{/each }}
-    </ul>
+            <h2>Building patterns in a CMS</h2>
+            <p>DPL patterns should only be added to our central CMS, T4, or to WordPress by the digital communications team. Some patterns already exist within T4 and WordPress; developers are free to use these patterns in accordance to the rules of the patterns, and in accordance with this policy. There should only be one instance of each pattern in T4/WordPress. Do not duplicate patterns / content types. Any new pattern in T4/WordPress must follow the digital communications team naming conventions.</p>
+            <p>Please sign below to state that you have read and agreed to this policy.
+                <br>Signature:
+                <br>Name:
+            </p>
+            <p>This policy is supported by the digital communications take down policy, which states that any incorrect usage of the DPL may result in a request to rollback or remove the product.</p>
+        </div>
 
-
-
-  </div>
-
-  <div class="col-md-4 col-sm-6">
-    <h2>Bootstrap theme</h2>
-
-    <p>The pattern library is built on a custom <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> theme. To view the styling for standard Bootstrap components, view the following example pages:</p>
-
-     <ul>
-       <li><a href="examples/bootstrap.html">Bootstrap components</a></li>
-       <li><a href="examples/bootstrap2.html">Advanced Bootstrap components</a></li>
-     </ul>
-
-
-
-  </div>
-
-  <div class="col-md-4 col-sm-6">
-
-    <h2>Documentation</h2>
-
-    <ul>
-      {{#each dpl-nav.items.1.items}}
-        <li><a href ="{{url}}">{{name}}</a></li>
-      {{/each }}
-    </ul>
-
-    <h2>Found a bug?</h2>
-
-    <p>Use the bug report form to let us know.</p>
-
-    <p><a href="http://www.st-andrews.ac.uk/~wwwtest/dpl/bugs/" class="btn btn-primary">Report a bug</a></p>
-
-
-  </div>
-
-
-
-</div>
+        <div class="col-md-4 col-sm-6">
+            <h2>Build key info</h2>
+            <p><strong>Current version:</strong> v{{pkg.version}}</p>
+            <p><strong>Build date:</strong> {{formatDate date "%F"}} at {{formatDate date "%I:%M%p"}}</p>
+            <p><strong>Github repo:</strong> <a href="https://github.com/standrewsdigital/digital-pattern-library">standrewsdigital/digital-pattern-library</a></p>
+             <!--  <p>
+                <strong>Current version:</strong> v{{pkg.version}}<br>
+                <strong>Build date:</strong> {{formatDate date "%F"}} at {{formatDate date "%I:%M%p"}}<br>
+                <strong>Github repo:</strong> <a href="https://github.com/standrewsdigital/digital-pattern-library">standrewsdigital/digital-pattern-library</a>
+            </p> -->
+            <hr>
+            <h2>Found a bug?</h2>
+            <p>Please submit an issue on github.</p>
+            <p><a href="https://github.com/standrewsdigital/digital-pattern-library/issues" class="btn btn-primary">Report a issue</a></p>
+        </div>
+    </div>
 </div>
