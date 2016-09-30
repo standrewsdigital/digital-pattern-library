@@ -1,10 +1,10 @@
 {
   "name": "digital-pattern-library",
-  "version": "0.6.0-rc1",
+  "version": "0.5.5",
   "description": "digital pattern library.",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/st-andrews/digital-pattern-library.git"
+    "url": "https://github.com/standrewsdigital/digital-pattern-library.git"
   },
   "devDependencies": {
     "assemble": "^0.4.42",
