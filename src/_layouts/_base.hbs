@@ -123,15 +123,15 @@ date: <%= new Date() %>
                 </div>
 
                 <div class="col-xs-6 text-right">
-                    {{formatDate date "%F"}} at {{formatDate date "%I:%M%p"}}
+                    {{formatDate date "%A %e %B %Y"}} at {{formatDate date "%H:%M"}}
                 </div>
             </div>
 
         </footer>
 
-        <script src="{{asset 'core/scripts/doc.js'}}" ></script>
         {{/if}}
         <script src="http://localhost:35729/livereload.js"></script>
         <!-- <script src="{{asset 'core/scripts/core.js'}}"></script> -->
+        <script src="{{asset 'core/scripts/doc.js'}}" ></script>
     </body>
 </html>

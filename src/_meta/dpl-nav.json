@@ -1,5 +1,31 @@
 {
     "items": [
+
+        { "name" : "About",
+            "url" : "/about.html"
+        },
+
+        { "name" : "Documentation",
+            "url" : "docs/index.html",
+            "items" : [
+                { "name" : "Colours",
+                  "url" : "colours.html"
+                },
+                { "name" : "JavaScript dependencies",
+                  "url" : "dependencies.html"
+                },
+                { "name" : "Using the pattern library",
+                  "url" : "using.html"
+                },
+                { "name" : "Palettes",
+                  "url" : "palettes.html"
+                },
+                { "name" : "Using jQuery DataTables",
+                  "url" : "datatables.html"
+                }
+            ]
+        },
+
         { "name" : "Patterns",
             "url" : "#",
             "items": [
@@ -86,29 +112,7 @@
                 }
             ]
         },
-        { "name" : "Documentation",
-            "url" : "docs/index.html",
-            "items" : [
-                { "name" : "About the pattern library",
-                  "url" : "about.html"
-                },
-                { "name" : "Colours",
-                  "url" : "colours.html"
-                },
-                { "name" : "JavaScript dependencies",
-                  "url" : "dependencies.html"
-                },
-                { "name" : "Using the pattern library",
-                  "url" : "using.html"
-                },
-                { "name" : "Palettes",
-                  "url" : "palettes.html"
-                },
-                { "name" : "Using jQuery DataTables",
-                  "url" : "datatables.html"
-                }
-            ]
-        },
+
         { "name" : "Example pages",
             "url" : "examples/index.html",
             "items" : [
