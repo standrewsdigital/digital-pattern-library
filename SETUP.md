@@ -4,16 +4,25 @@ This is a guide to get your environment set up to contribute to the digital
 pattern library. 
 
 
+
+
 ## 1. Prerequisites
 
 ### Git
 
-The digital pattern library code is stored in a Git repository, so you will need a Git client to clone it to your local machine and commit changes back to the repo. Select a client that suits your preferences, e.g.
+The digital pattern library code is stored in a Git repository, so you will need a Git client to clone it to your local machine and commit changes back to the repo.
+
+If you are a Windows user, we recommend that you always install the Git command line client, as this will allow you to right-click within a folder and select "Git Bash Here" to open a command-line prompt. You can use this to run Git, Node, Grunt, and Ruby commands.
 
 * [Command line](https://git-scm.com/)
+
+There are also a number of GUI clients available; our favourites, in order, are:
+
+* [GitKraken](http://www.gitkraken.com/)
 * [GitHub Desktop](https://desktop.github.com/)
 * [SourceTree](https://www.sourcetreeapp.com/)
-* [GitKraken](http://www.gitkraken.com/)
+
+
 
 ### Node.js
 
@@ -25,11 +34,14 @@ To install Node.js:
 2. Download the latest stable release.
 3. Run the installer.
 
+
 ### Grunt CLI
 
 Next install the [Grunt command line interface (CLI)](http://gruntjs.com/using-the-cli). Open a "Node.js command prompt" (Windows), Terminal (OS X), or shell (*nix) and run the following command:
 
-    $ npm install -g grunt-cli
+```
+$ npm install -g grunt-cli
+```
 
 ### Ruby
 
@@ -48,13 +60,18 @@ Once you're finished with the installation, you should close and reopen any comm
 Recent versions of MacOS X already have Ruby installed, so no further installation is required.
 
 
+
+
 ## 2. Initialize developer tools
 
 ### Clone the repo
 
-Clone the Git repository into a folder on your computer using your Git client or at the command line:
+Clone the Git repository into a folder on your computer using your Git client, or at the command line:
 
-    git clone https://github.com/standrewsdigital/digital-pattern-library.git
+```
+git clone https://github.com/standrewsdigital/digital-pattern-library.git
+```
+
 
 ### Install Grunt dependencies
 
@@ -71,26 +88,38 @@ Clone the Git repository into a folder on your computer using your Git client or
 
         $ npm install
 
+
 #### Error: Unable to connect to github.com
 
 If you get an error such as
 
-    npm ERR! Error: Command failed: fatal: unable to connect to github.com:
+```
+npm ERR! Error: Command failed: fatal: unable to connect to github.com:
+```
 
 it may be that you are behind a firewall and need to use https instead of git and git+ssh. Append the following to your `.gitconfig` file:
 
-        # Use https instead of git and git+ssh
-        [url "https://github.com/"]
-            insteadOf = git://github.com/
-        [url "https://github.com/"]
-            insteadOf = git@github.com:
- 
+```
+# Use https instead of git and git+ssh
+[url "https://github.com/"]
+        insteadOf = git://github.com/
+[url "https://github.com/"]
+        insteadOf = git@github.com:
+```
+
+You can always find the location of your `.gitconfig` file by typing the following command into a command prompt: `git config --global --edit`.
+
+(On Windows, to exit this editor press `Ctrl+C`, then type `:quit` and press Enter.)
+
 
 ### Install Compass Ruby gem
 
 Install the Compass Ruby gem to compile Sass code into CSS.
 
-        $ gem install compass
+```
+$ gem install compass
+```
+
 
 ## 3. Configuration for deployment (DEPRECATED)
 
@@ -99,21 +128,25 @@ If you want to use either of the deploy commands (`deploy-docs` or
 the pattern library folder and specify your FTP credentials to the 
 secondary accounts. 
 
-    {
-      "core": {
-        "username": "your-username",
-        "password": "password"
-      },
-      "docs": {
-        "username": "your-username",
-        "password": "password"
-      }
-    }
+```
+{
+  "core": {
+    "username": "your-username",
+    "password": "password"
+  },
+  "docs": {
+    "username": "your-username",
+    "password": "password"
+  }
+}
+```
 
 See the Grunt plugin [grunt-ftp-deploy](https://github.com/zonak/grunt-ftp-deploy) if you're curious about further details.
 
 Be assured that Git is configured to ignore the `.ftppass` file in `.gitignore`. This is so that everyone can use their own credentials to deploy rather than share credentials. It's generally a bad idea to commit passwords into a shared
 repository.
+
+
 
 
 ## Conclusion
