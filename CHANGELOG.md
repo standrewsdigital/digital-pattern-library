@@ -6,34 +6,36 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+
 ## v0.5.5
 
 Release date: 4 October 2016
 
 ### Changed
 
-* DOCS (home page) making new home page to make explicit governance responsibilities of the DPL.
-* DOCS (home page) Aside content
-* Improve setup documentation for Windows users.
-* Remove 'Ex:' prefix from Examples dropdowns.
-* Change header to default header (remove audiences).
-* FEAT (home page) Finalise text
+* DOCS (homepage) Aside content
+* DOCS (homepage) making new homepage to make explicit governance responsibilities of the DPL.
+* FEAT (homepage) Finalise text
+* FEAT (homepage) Post QA tweaks
 * FEAT (Navigation) Reorder nav
-* FIX (Bootstrap examples) Nav bar fix
+* FEAT (setup) Improve setup documentation for Windows users.
 
 
 ### Fixed
 
-* FIX (patterns) small tweaks and redundant code
-* Correct repository URL in package.json (it was still set to Bitbucket).
-* Update code in DPL documentation to meet house code style and standards.
 * DOCS (_layouts) audit _layouts
+* DOCS (Change log) Update to house style
 * DOCS (examples) audit examples
+* FIX (Bootstrap examples) Nav bar fix
+* FIX (Bootstrap examples) Nav bar fix
+* FIX (Bootstrap examples) Nav bar fix
 * FIX (homepage) H2 to H3 in aside
-* FIX (Bootstrap examples) Nav bar fix
-* FIX (Bootstrap examples) Nav bar fix
 * FIX (Package.json) Change version and update repo
-* 
+* FIX (patterns) small tweaks and redundant code
+* FIX Change header to default header (remove audiences). 
+* FIX Correct repository URL in package.json (it was still set to Bitbucket).
+* FIX Remove 'Ex:' prefix from Examples dropdowns.
+* FIX Update code in DPL documentation to meet house code style and standards.
 
 
 ---
