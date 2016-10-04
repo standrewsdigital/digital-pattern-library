@@ -2,143 +2,136 @@
 date: <%= new Date() %>
 ---
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title >{{ title }}</title >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <title >{{ title }}</title >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {{#if core-assets}}
-        <link href="{{asset 'core/styles/screen.css'}}" rel="stylesheet" type="text/css" media="screen" />
-        <link href="{{asset 'core/styles/screen.css'}}" rel="stylesheet" type="text/css" media="screen" />
-        <link href="{{asset 'core/styles/print.css'}}" rel="stylesheet" type="text/css" media="print" />
-        <!--[if lt IE 9]><link href="{{asset 'core/styles/ie.css'}}" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
-    {{else}}
-        <link href="{{asset 'core/styles/screen.css'}}" rel="stylesheet" type="text/css" media="screen" />
-        <link href="{{asset 'core/styles/doc.css'}}" rel="stylesheet" type="text/css" media="screen" />
-    {{/if}}
+        {{#if core-assets}}
+        <link href="{{asset 'core/styles/screen.css'}}" rel="stylesheet" media="screen" />
+        <link href="{{asset 'core/styles/screen.css'}}" rel="stylesheet" media="screen" />
+        <link href="{{asset 'core/styles/print.css'}}" rel="stylesheet" media="print" />
+        <!--[if lt IE 9]><link href="{{asset 'core/styles/ie.css'}}" rel="stylesheet" media="screen" /><![endif]-->
+        {{else}}
+        <link href="{{asset 'core/styles/screen.css'}}" rel="stylesheet" media="screen" />
+        <link href="{{asset 'core/styles/doc.css'}}" rel="stylesheet" media="screen" />
+        {{/if}}
 
-  </head>
-  <body>
+    </head>
+    <body>
 
-  <header id="header" class="header--audience">
+        <header class="header" id="header">
 
-      <div class="row">
-          <div id="header-audience">
-              <a href="/students/" class="audience">Students</a>
-              <a href="/pgstudents/" class="audience">Postgraduates</a>
-              <a href="/staff/" class="audience">Staff</a>
-          </div>
+            <div class="row">
+<!--                 <div id="header-audience">
+    <a href="/students/" class="audience">Students</a>
+    <a href="/pgstudents/" class="audience">Postgraduates</a>
+    <a href="/staff/" class="audience">Staff</a>
+</div> -->
+                <div id="logo-container">
+                    <div id="header-logo">
+                        <h1><a href="http://www.st-andrews.ac.uk/"><span>University of St&nbsp;Andrews</span></a></h1>
+                    </div>
+                </div>
+                <div id="header-search" role="search">
+                    <button class="btn btn-link" type="button" value="" name="btnG" id="header-search-trigger"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
 
-          <div id="logo-container">
-              <div id="header-logo"><h1><a href="http://www.st-andrews.ac.uk/"><span>University of St&nbsp;Andrews</span></a></h1></div>
-          </div>
-
-          <div id="header-search" role="search">
-              <button class="btn btn-link" type="button" value="" name="btnG" id="header-search-trigger"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-
-              <form action="//www.st-andrews.ac.uk/gsasearch" method="get">
-
-                  <div class="input-group">
-                      <span class="input-group-btn">
-                          <button class="btn btn-link" type="button" value="" name="btnG" id="header-search-close"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-                      </span>
-                      <input class="form-control" type="text" title="Enter search keywords" maxlength="256" name="q" placeholder="Search the University website...">
-                      <span class="input-group-btn">
-                          <button class="btn btn-primary" type="submit" value="Search" name="btnG" id="header-search-submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                      </span>
-                  </div>
-
-                  <input type="hidden" value="StAndrews_ITS" name="site">
-                  <input type="hidden" value="xml_no_dtd" name="output">
-                  <input type="hidden" value="StAndrews_ITS" name="client">
-                  <input type="hidden" value="StAndrews_ITS" name="proxystylesheet">
-              </form>
-
-          </div>
-
-      </div>
-  </header>
-
-
-<!-- Begin pattern: category-header //-->
-<div id="category-header" class="">
-  <div class="container">
-    <h2><a href="{{rel "index.html"}}">Digital pattern library</a></h2>
-  </div>
-</div>
-<!-- End pattern: category-header //-->
+                    <form action="//www.st-andrews.ac.uk/gsasearch" method="get">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-link" type="button" value="" name="btnG" id="header-search-close"></button>
+                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </span>
+                            <input class="form-control" type="text" title="Enter search keywords" maxlength="256" name="q" placeholder="Search the University website...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="submit" value="Search" name="btnG" id="header-search-submit">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                            </span>
+                        </div>
+                        <input type="hidden" value="StAndrews_ITS" name="site">
+                        <input type="hidden" value="xml_no_dtd" name="output">
+                        <input type="hidden" value="StAndrews_ITS" name="client">
+                        <input type="hidden" value="StAndrews_ITS" name="proxystylesheet">
+                    </form>
+                </div>
+              </div>
+        </header>
 
 
-    <div class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="{{rel "index.html"}}" class="navbar-brand">Digital pattern library</a>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse" id="navbar-main">
-          <ul class="nav navbar-nav">
-
-            {{#each dpl-nav.items}}
-
-                {{#if items}}
-
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="{{rel url}}" id="nav-{{name}}">{{name}}<span class="caret"></span></a>
-              <ul class="dropdown-menu" aria-labelledby="{{name}}">
-                {{#each items}}
-                <li><a href="{{rel url}}">{{name}}</a></li>
-                {{/each}}
-              </ul>
-            </li>
-
-                {{else}}
-            <li>
-              <a href="{{rel url}}">{{name}}</a>
-            </li>
-                {{/if}}
-
-            {{/each}}
-
-
-          </ul>
-
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://digitalcommunications.wp.st-andrews.ac.uk/" target="_blank">Blog</a></li>
-          </ul>
-
-        </div>
-      </div>
-    </div>
-
-
-    {{> body  }}
-
-
-    {{#if core-assets}}
-    <script src="{{asset 'core/scripts/core.js'}}" type="text/javascript" ></script>
-    {{else}}
-
-    <footer>
-
-        <div class="row">
-            <div class="col-xs-6">
-                {{pkg.name}} v{{pkg.version}}
+        <!-- Begin pattern: category-header //-->
+        <div id="category-header" class="">
+            <div class="container">
+                <h2><a href="{{rel "index.html"}}">Digital pattern library</a></h2>
             </div>
+        </div>
+        <!-- End pattern: category-header //-->
 
-            <div class="col-xs-6 text-right">
-                {{formatDate date "%F"}} at {{formatDate date "%I:%M%p"}}
+
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- <a href="{{rel "index.html"}}" class="navbar-brand">Digital pattern library</a> -->
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-main">
+                    <ul class="nav navbar-nav">
+                    {{#each dpl-nav.items}}
+                        {{#if items}}
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="{{rel url}}" id="nav-{{name}}">{{name}}<span class="caret"></span></a>
+                                <ul class="dropdown-menu" aria-labelledby="{{name}}">
+                                    {{#each items}}
+                                    <li><a href="{{rel url}}">{{name}}</a></li>
+                                    {{/each}}
+                                </ul>
+                        </li>
+                        {{else}}
+                            <li>
+                                <a href="{{rel url}}">{{name}}</a>
+                            </li>
+                        {{/if}}
+                    {{/each}}
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="http://digitalcommunications.wp.st-andrews.ac.uk/" target="_blank">Blog</a></li>
+                    </ul>
+
+                </div>
             </div>
         </div>
 
-    </footer>
 
-    <script src="{{asset 'core/scripts/doc.js'}}" type="text/javascript" ></script>
-    {{/if}}
-    <script src="http://localhost:35729/livereload.js"></script>
-  </body >
-</html >
+        {{> body  }}
+
+
+        {{#if core-assets}}
+            <script src="{{asset 'core/scripts/core.js'}}" ></script>
+        {{else}}
+
+        <footer>
+
+            <div class="row">
+                <div class="col-xs-6">
+                    {{pkg.name}} v{{pkg.version}}
+                </div>
+
+                <div class="col-xs-6 text-right">
+                    {{formatDate date "%A %e %B %Y"}} at {{formatDate date "%H:%M"}}
+                </div>
+            </div>
+
+        </footer>
+
+        {{/if}}
+        <script src="http://localhost:35729/livereload.js"></script>
+        <!-- <script src="{{asset 'core/scripts/core.js'}}"></script> -->
+        <script src="{{asset 'core/scripts/doc.js'}}" ></script>
+    </body>
+</html>

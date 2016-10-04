@@ -1,21 +1,26 @@
 {
-  "navigation-bar" : {
-    "primary":[
-      {"title": "Study at St Andrews",
-       "url": "http://www.st-andrews.ac.uk/study/",
-       "selected":false},
-      {"title": "Research",
-       "url": "http://www.st-andrews.ac.uk/research/",
-       "selected":false}, 
-      {"title": "Alumni and donors",
-       "url": "http://www.st-andrews.ac.uk/alumni/",
-       "selected":false},  
-      {"title": "Schools",
-       "url": "http://www.st-andrews.ac.uk/schools/",
-       "selected":false},
-      {"title": "About",
-       "url": "about/index.html",
-       "selected":false}
-    ] 
-  }
+    "navigation-bar" : {
+        "primary":[
+            {"title": "Study at St Andrews",
+             "url": "http://www.st-andrews.ac.uk/study/",
+             "selected":false
+            },
+            {"title": "Research",
+             "url": "http://www.st-andrews.ac.uk/research/",
+             "selected":false
+            }, 
+            {"title": "Alumni and donors",
+             "url": "http://www.st-andrews.ac.uk/alumni/",
+             "selected":false
+            },  
+            {"title": "Schools",
+             "url": "http://www.st-andrews.ac.uk/schools/",
+             "selected":false
+            },
+            {"title": "About",
+             "url": "about/index.html",
+             "selected":false
+            }
+        ] 
+    }
 }

@@ -84,7 +84,7 @@ module.exports = function(grunt) {
 
             // Pattern examples - uses the pattern_example.hbs layout
             pattern_examples: {
-                options: { 
+                options: {
                     layout: 'pattern_example.hbs'
                 },
                 files: [{
@@ -124,7 +124,7 @@ module.exports = function(grunt) {
                 }]
             },
 
-            // Meta doc(s) 
+            // Meta doc(s)
             core_meta: {
                 options: {
                     git: {
@@ -177,7 +177,7 @@ module.exports = function(grunt) {
         compass: {
             dist: {
                 options: {
-                    banner: '/*! <%= pkg.name %> v<%= pkg.version %> ' + 
+                    banner: '/*! <%= pkg.name %> v<%= pkg.version %> ' +
                         '- <%= grunt.template.today("yyyy-mm-dd") %> */\n',
                     specify: [
                         'src/styles/datatables.scss',
@@ -204,7 +204,7 @@ module.exports = function(grunt) {
         concat: {
             core: {
                 src: [
-                    // Update src/docs/dependencies.md if any of these change 
+                    // Update src/docs/dependencies.md if any of these change
                     'src/scripts/vendor/hammer.js',
                     'src/scripts/vendor/jquery.min.js',
                     'src/scripts/vendor/jquery.bigtarget.js',
@@ -215,7 +215,7 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/respond.js',
 
                     // Bootstrap JavaScript
-                    // Note these scripts should align with the CSS 
+                    // Note these scripts should align with the CSS
                     'src/scripts/vendor/bootstrap/affix.js',
                     'src/scripts/vendor/bootstrap/alert.js',
                     'src/scripts/vendor/bootstrap/button.js',
@@ -259,7 +259,7 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/respond.js',
 
                     // Bootstrap JavaScript
-                    // Note these scripts should align with the CSS 
+                    // Note these scripts should align with the CSS
                     'src/scripts/vendor/bootstrap/affix.js',
                     'src/scripts/vendor/bootstrap/alert.js',
                     'src/scripts/vendor/bootstrap/button.js',
@@ -273,7 +273,10 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/bootstrap/tooltip.js',
                     'src/scripts/vendor/bootstrap/popover.js',
 
-                    'src/scripts/doc.js'
+                    'src/scripts/doc.js',
+
+                    // DPL-specific scripts
+                    'src/patterns/accordion/accordion.js',
                 ],
                 dest: 'core/scripts/doc.js'
             },
@@ -292,7 +295,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/images-core/',
-                    src: ['**/*'], 
+                    src: ['**/*'],
                     dest: 'core/images'
                 }]
             },
@@ -300,7 +303,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/fonts/',
-                    src: ['**/*'], 
+                    src: ['**/*'],
                     dest: 'core/fonts'
                 }]
             },
@@ -341,8 +344,8 @@ module.exports = function(grunt) {
                     }]
                 },
                 files: [{
-                    expand: true, 
-                    cwd: 'core', 
+                    expand: true,
+                    cwd: 'core',
                     src: ['**/*.css', '**/*.js']
                 }]
             }
@@ -387,20 +390,20 @@ module.exports = function(grunt) {
         // uglify - create compressed versions of JS files
         uglify: {
             options: {
-                banner: '/*! <%= pkg.name %> v<%= pkg.version %> - ' + 
+                banner: '/*! <%= pkg.name %> v<%= pkg.version %> - ' +
                     '<%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             core: {
                 files: {
-                    'core/scripts/core-base.min.js': 
+                    'core/scripts/core-base.min.js':
                         ['core/scripts/core-base.js'],
-                    'core/scripts/core.min.js': 
+                    'core/scripts/core.min.js':
                         ['core/scripts/core.js'],
-                    'core/scripts/datatables.min.js': 
+                    'core/scripts/datatables.min.js':
                         ['core/scripts/datatables.js'],
-                    'core/scripts/doc.min.js': 
+                    'core/scripts/doc.min.js':
                         ['core/scripts/doc.js'],
-                    'core/scripts/header-only.min.js': 
+                    'core/scripts/header-only.min.js':
                         ['core/scripts/header-only.js']
                 }
             }
@@ -471,8 +474,8 @@ module.exports = function(grunt) {
 
 
     // deploy-core – Deploy core assets via FTP to CDN
-    grunt.registerTask('deploy-core', 
-        'Uploads core files as specified version.', 
+    grunt.registerTask('deploy-core',
+        'Uploads core files as specified version.',
         function(n) {
             var deploy_tag = grunt.option('tag');
             if (!deploy_tag) {
@@ -482,7 +485,7 @@ module.exports = function(grunt) {
                     'Cannot deploy core files without a version tag.');
                 return;
             }
-            grunt.log.writeln("Deploying core files in 'core/' as version (" + 
+            grunt.log.writeln("Deploying core files in 'core/' as version (" +
                 deploy_tag+")");
             grunt.task.loadNpmTasks('grunt-ftp-deploy');
             grunt.task.run(['ftp-deploy:core']);
@@ -491,8 +494,8 @@ module.exports = function(grunt) {
 
 
     // deploy-docs – Deploys documentation via FTP
-    grunt.registerTask('deploy-docs', 
-        'Upload docs as specified version.', 
+    grunt.registerTask('deploy-docs',
+        'Upload docs as specified version.',
         function(n) {
             var deploy_tag = grunt.option('tag');
             if(!deploy_tag) {
