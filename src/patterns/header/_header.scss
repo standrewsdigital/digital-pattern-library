@@ -3,227 +3,204 @@
 /* BEGIN Pattern: header         */
 /*********************************/
 
-
-  #header {
+#header {
     @extend .container;
-  }
+}
 
-    #header-audience {
-      @extend .col-sm-5;
+#header-audience {
+    @extend .col-sm-5;
+    border-bottom: 1px solid $gray-lighter;
 
-      border-bottom: 1px solid $gray-lighter;
-
-      .btn {
-          border-bottom: none;
-          z-index: 1001;
-          -webkit-transition: none;
-          -moz-transition: none;
-          transition: none;
-      }
-
-      .open .btn {
-          background-color: white;
-          border: 1px solid rgba(0,0,0,0.15);
-          border-bottom: none;
-      }
-
-      .dropdown-menu {
-          margin-top: -1px;
-      }
-
-      .audience {
-        display: inline-block;
-        margin-right: 13px;
-        margin-top: 7px;
-        margin-bottom: 7px;
-      }
-
+    .btn {
+        border-bottom: none;
+        -webkit-transition: none;
+           -moz-transition: none;
+                transition: none;
+        z-index: 1001;
     }
 
+    .open .btn {
+        background-color: white;
+        border: 1px solid rgba(0,0,0,0.15);
+        border-bottom: none;
+    }
 
-    #logo-container {
-      @extend .col-sm-7;
-      @extend .col-xs-7;
+    .dropdown-menu {
+        margin-top: -1px;
+    }
+
+    .audience {
+        display: inline-block;
+        margin-right:  13px;
+        margin-top:    7px;
+        margin-bottom: 7px;
+    }
+}
+
+#logo-container {
+    @extend .col-sm-7;
+    @extend .col-xs-7;
+}
+
+#header-logo {
+    margin: 13px 0;
+
+    h1 {
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        background-image:    url(../images/furniture/logo-standard.svg);
+        background-position: left center;
+        background-repeat:   no-repeat;
+        background-size:     100%;
+        background-size:     contain;
+        display: inline-block;
+        height: 50px;
+        max-width: 205px;
+        -webkit-transition: none;
+           -moz-transition: none;
+                transition: none;
+        width: 100%;
+    }
+
+    span {
+        display: none;
+    }
+}
+
+#header-search {
+    @extend .col-sm-5;
+    @extend .col-xs-5;
+    margin-top: 19px;
+    text-align: right;
+
+    form {
+        display: none;
+    }
+
+    #header-search-close {
+        margin-left: -13px
+    }
+}
+
+#header-search-trigger {
+    font-size: 22px;
+    margin-top: -5px;
+}
+
+@media (min-width: 468px) {
+    #header-search form {
+        display: block;
+    }
+
+    // Hide the search-trigger and search-close buttons
+    // on larger screens since those are only used for the
+    // interactivty on small screens.
+    #header-search-trigger, #header-search-close {
+        display: none;
+    }
+}
+
+// BEGIN desktop styles
+
+@media (min-width: 768px) {
+
+    #header-audience {
+        border-bottom: none;
+        margin-top: 11px;
+        text-align: right;
+    }
+
+    #header-audience .audience {
+        margin-left:  13px;
+        margin-right: 0;
+    }
+
+    /* On desktops, when the audience shows on the right
+     * align the dropdown-menu to the right. */
+    #header-audience .dropdown-menu {
+        left:  auto;
+        right: 0;
     }
 
     #header-logo {
-
-        margin: 13px 0;
-
-        h1 {
-          margin: 0;
-          padding: 0;
-          height: 50px;
-        }
-
-        a {
-            display: inline-block;
-            width: 100%;
-            height: 50px;
-            max-width: 205px;
-            -webkit-transition: none;
-            -moz-transition: none;
-            transition: none;
-            background-image: url(../images/furniture/logo-standard.svg);
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-size: contain;
-            background-position: left center;
-        }
-        span {
-            display: none;
-        }
-    }
-
-
-    #header-search {
-      @extend .col-sm-5;
-      @extend .col-xs-5;
-      text-align: right;
-      margin-top: 19px;
-
-      form {
-        display: none;
-      }
-
-      #header-search-close {
-        margin-left: -13px
-      }
-
-    }
-
-    #header-search-trigger {
-      margin-top: -5px;
-      font-size: 22px;
-    }
-
-    @media (min-width: 468px) {
-      
-      #header-search form {
-        display: block;
-      }
-
-      // Hide the search-trigger and search-close buttons
-      // on larger screens since those are only used for the 
-      // interactivty on small screens.
-      #header-search-trigger, #header-search-close {
-        display: none;
-      }
-
-    }
-
-
-    // BEGIN desktop styles
-
-    @media (min-width: 768px) {
-
-      #header-audience {
-        margin-top: 11px;
-        text-align: right;
-        border-bottom: none;
-      }
-
-      #header-audience .audience {
-        margin-left: 13px;
-        margin-right: 0;
-      }
-
-      /* On desktops, when the audience shows on the right
-       * align the dropdown-menu to the right. */
-      #header-audience .dropdown-menu {
-        left: auto;
-        right: 0;
-      }
-
-      #header-logo {
         margin: 25px 0px 16px;
 
         h1 {
-          height: 65px;
+            height: 65px;
         }
 
         a {
-          max-width: 325px;
-          height: 60px;
-          background-image: url(../images/furniture/logo-foundation.svg);
+            background-image: url(../images/furniture/logo-foundation.svg);
+            height: 60px;
+            max-width: 325px;
         }
-      }
-
-      
-
     }
-    // END desktop styles
+}
+// END desktop styles
 
+/* BEGIN: LAYOUT HACK
+ * In order to get the elements in the correct order on mobile,
+ * we have to engage in some shenaningans. The mobile layout should
+ * be:
+ *     AUDIENCE
+ *     LOGO   |  SEARCH
+ *
+ * but on desktop it should be
+ *     LOGO   |  AUDIENCE
+ *     LOGO   |  SEARCH
+ *
+ * So we put the elements in the following order which makes it easy
+ * to achieve the mobile layout
+ *  - AUDIENCE
+ *  - LOGO
+ *  - SEARCH
+ *
+ * And then position SEARCH absolutely on larger screens.
+ */
 
-
-    /* BEGIN: LAYOUT HACK
-     * In order to get the elements in the correct order on mobile, 
-     * we have to engage in some shenaningans. The mobile layout should
-     * be: 
-     *     AUDIENCE 
-     *     LOGO   |  SEARCH
-     *
-     * but on desktop it should be
-     *     LOGO   |  AUDIENCE 
-     *     LOGO   |  SEARCH
-     *
-     * So we put the elements in the following order which makes it easy
-     * to achieve the mobile layout
-     *  - AUDIENCE
-     *  - LOGO
-     *  - SEARCH
-     *
-     * And then position SEARCH absolutely on larger screens.
-     */
-
-    @media (min-width: 768px) {
-
-      #header .row {
-        /* By adding a position property to this selector, 
+@media (min-width: 768px) {
+    #header .row {
+        /* By adding a position property to this selector,
          * this element will act as an anchor for absolutely
          * positioned child elements */
         position: relative;
-      }
-
-      #header-search {
-          /* Positioning absolutely, here, refers the first parent
-           * with a 'position' attribute which should be the containing
-           * row. This means we can align it to the right. */
-          position: absolute;
-          right: 0;
-          top: 18px;  // Note: this is a 'magic' number.
-      }
-
-
     }
 
-    /* END: LAYOUT HACK */
+    #header-search {
+        /* Positioning absolutely, here, refers the first parent
+         * with a 'position' attribute which should be the containing
+         * row. This means we can align it to the right. */
+        position: absolute;
+        right: 0;
+        top: 18px;  // Note: this is a 'magic' number.
+    }
+}
+/* END: LAYOUT HACK */
 
-
-
-
-    // BEGIN audience header modifier
-    // Note there are some further changes under 'desktop for this'
-    .header--audience {
-
-      #logo-container {
+// BEGIN audience header modifier
+// Note there are some further changes under 'desktop for this'
+.header--audience {
+    #logo-container {
         @extend .col-sm-pull-5;
-      }
-
-      #header-audience {
-        @extend .col-sm-push-7;
-      }
-
-      @media (min-width: 768px) {
-        #header-search {
-          /* When the audience links are showing then push the search down
-           * a bit more. */
-          top: 30px;  // Note: this is another 'magic' number.
-        }
-      }
     }
-    // END audience header modifier
 
+    #header-audience {
+        @extend .col-sm-push-7;
+    }
+
+    @media (min-width: 768px) {
+        #header-search {
+            /* When the audience links are showing then push the search down
+             * a bit more. */
+            top: 30px;  // Note: this is another 'magic' number.
+        }
+    }
+}
+// END audience header modifier
 
 
 /*********************************/

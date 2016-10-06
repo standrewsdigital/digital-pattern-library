@@ -4,7 +4,7 @@
 /**********************************************/
 
 .secondary-call {
-    background: url('../images/secondary-call/0.jpg');
+    background: url(../images/secondary-call/0.jpg);
     background-color: $sta-grey;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,7 +72,7 @@
 
 @for $i from 1 through 9 {
     .secondary-call-#{$i} {
-        background-image: url("../images/secondary-call/#{$i}.jpg");
+        background-image: url(../images/secondary-call/#{$i}.jpg);
     }
 }
 
