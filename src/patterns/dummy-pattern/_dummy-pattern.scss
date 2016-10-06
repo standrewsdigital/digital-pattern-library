@@ -4,12 +4,12 @@
 /*********************************/
 
 .tile {
-    margin: 0 auto 3em;
-    clear: both;
     background-color: white;
     -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
        -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
             box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+    clear: both;
+    margin: 0 auto 3em;
     max-width: 360px;
 }
 
@@ -19,22 +19,22 @@
 
 .tile img {
     height: auto;
-    width: 100%;
     position: relative;
+    width: 100%;
     z-index: 0;
 }
 
 .tile h3 {
-    width: 100%;
+    background: $sta-blue-T;
+    bottom: 0;
     font-size: 1.3em;
     line-height: 1.3em;
-    background: $sta-blue-T;
-    position: absolute;
-    bottom: 0;
-    z-index: 100;
-    padding: .5em .8em;
     margin: 0;
+    padding: .5em .8em;
+    position: absolute;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    z-index: 100;
     @include -dpl-transition();
 }
 
@@ -55,24 +55,24 @@
  	font-size: 1em;
  	height: 5em;
  	line-height: 1.2em;
- 	padding: 0 1em;
  	margin: 1.5em 0;
+    padding: 0 1em;
 }
 
 .tile-date {
+    color: $sta-grey;
     float: left;
-    font-size: 15px;
+    font-size:   15px;
     font-weight: bold;
     padding-left: 1em;
-    color: $sta-grey;
 }
 
 .tile-type {
-    float: right;
-    font-size: 15px;
-    padding-right: 1em;
-    font-weight: bold;
     color: $sta-grey;
+    float: right;
+    font-size:   15px;
+    font-weight: bold;
+    padding-right: 1em;
 }
 
 /* Colors */

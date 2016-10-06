@@ -8,24 +8,24 @@ footer a:link {
 }
 
 #website-footer {
-	color: rgb(170, 170, 170);
 	background-color: $sta-grey-dark;
 	border-top: 5px solid $sta-grey;
+	color: rgb(170, 170, 170);
 	padding: 20px 0;
 }
 
 #website-footer a, #university-footer a {
-  color: $sta-cyan-light;
+	color: $sta-cyan-light;
 }
 
 #website-footer a:hover, #university-footer a:hover {
-  color: $sta-cyan-light-hover;
+  	color: $sta-cyan-light-hover;
 }
 
 #university-footer {
-	color: $sta-grey-light;
 	background-color: $sta-grey-dark-hover;
 	border-top: 1px solid $sta-grey-T-hover;
+	color: $sta-grey-light;
 	padding: 10px 0;
 }
 
@@ -36,8 +36,8 @@ footer a:link {
 }
 
 #university-footer ul li {
-	list-style-type: none;
 	display: inline;
+	list-style-type: none;
 	margin: 0 10px 0 0;
 	padding: 0;
 }
