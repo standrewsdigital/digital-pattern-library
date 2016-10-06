@@ -14,13 +14,11 @@ footer a:link {
 	padding: 20px 0;
 }
 
-#website-footer a,
-#university-footer a {
+#website-footer a, #university-footer a {
   color: $sta-cyan-light;
 }
 
-#website-footer a:hover,
-#university-footer a:hover {
+#website-footer a:hover, #university-footer a:hover {
   color: $sta-cyan-light-hover;
 }
 
@@ -45,7 +43,7 @@ footer a:link {
 }
 
 #university-footer p, #university-footer ul {
-	margin-bottom: 10px;
+	margin: 0 0 10px 0;
 }
 
 /*********************************/
