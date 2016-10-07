@@ -4,10 +4,10 @@
 /*********************************/
 
 .navigation-bar {
-  position: relative;
-	border: 0;
-	border-radius: 0;
-	margin-bottom: 0;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    position: relative;
     z-index: 999;
 }
 
@@ -23,35 +23,33 @@
 
 .navigation-bar ul.navigation-bar-nav li {
 	float: left;
-	list-style: none;
 	font-size: 18px;
+    list-style: none;
 }
 
 .navigation-bar ul.navigation-bar-nav li a {
 	color: white;
-	position: relative;
 	display: block;
-	padding: 10px 15px;
+    padding: 10px 15px;
+    position: relative;
 	text-decoration: none;
 }
 
-// This rule compensates for the padding added to the a tag. 
+// This rule compensates for the padding added to the a tag.
 // This rule pulls the first <li> <a> to left by 15px
-// to compensate for the padding added to all <li> <a>'s 
+// to compensate for the padding added to all <li> <a>'s
 // and line the first element up with the .container  edge.
 .navigation-bar ul.navigation-bar-nav:nth-child(2) li:nth-child(1) a {
     margin-left: -15px;
 }
 
-.navigation-bar ul.navigation-bar-nav li a:hover, 
-.navigation-bar ul.navigation-bar-nav li a:focus {
+.navigation-bar ul.navigation-bar-nav li a:hover, .navigation-bar ul.navigation-bar-nav li a:focus {
 	color: white;
 }
 
 // Target select item in T4 and WordPress respectively
 .navigation-bar .currentbranch0 a,
-.navigation-bar .current-menu-item a, 
-.navigation-bar .current-menu-ancestor a {
+.navigation-bar .current-menu-item a, .navigation-bar .current-menu-ancestor a {
 }
 
 .subnav {
@@ -61,11 +59,9 @@
 	display: none;
 }
 
-
 /* Navbar collapse for phones*/
 
 @media (max-width: 991px) {
-
 	.navigation-bar .container {
 		width: 100%;
 	}
@@ -80,32 +76,32 @@
     }
 
     .navigation-bar ul.navigation-bar-nav li {
-        float: none;
         display: block;
+        float: none;
     }
 
     .navigation-bar ul.navigation-bar-nav li a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        text-decoration: none;
         border-bottom: solid 1px rgba(255,255,255,0.3);
+        padding-top:    10px;
+        padding-bottom: 10px;
         text-align: center;
+        text-decoration: none;
     }
 
     .toggle-navigation {
-    	display: block;
     	border-bottom: solid 0px white;
-        text-align: center;
+        display: block;
         font-size: 20px;
+        text-align: center;
     }
 
 	.toggle-navigation a {
 		color: white;
 		display: block;
-		width: 100%;
 		font-weight: bold;
-		text-decoration: none;
-		padding: 6px;
+        padding: 6px;
+        text-decoration: none;
+        width: 100%;
 	}
 
 	.toggle-navigation a:hover, .toggle-navigation a:focus {
@@ -119,27 +115,22 @@
 	ul.navigation-bar-nav {
 		display: none;
 	}
-
 }
 
 /* Navigation bar colors */
 
 	/* blue */
-
 	.navigation-bar {
 		background-color: $sta-blue;
 	}
 
-	.navigation-bar ul.navigation-bar-nav li a:hover,
-	.navigation-bar ul.navigation-bar-nav li a:focus {
+	.navigation-bar ul.navigation-bar-nav li a:hover, .navigation-bar ul.navigation-bar-nav li a:focus {
 		background-color: $sta-blue-hover;
 	}
 
-
     // Target select item in T4 and WordPress respectively
 	.navigation-bar .currentbranch0 a,
-    .navigation-bar .current-menu-item a,
-    .navigation-bar .current-menu-ancestor a {
+    .navigation-bar .current-menu-item a, .navigation-bar .current-menu-ancestor a {
 		background-color: $sta-blue-light;
 	}
 
@@ -147,17 +138,14 @@
 		background-color: $sta-blue-light;
 	}
 
-
 	@media (max-width: 991px) {
-		.toggle-navigation a:hover,
-		.toggle-navigation a:focus {
+		.toggle-navigation a:hover, .toggle-navigation a:focus {
 			background-color: $sta-blue-hover;
 			cursor: pointer;
 		}
 	}
 
 	/* blue-study */
-
 	.accent-blue-study .navigation-bar,
 	.navigation-bar.blue-study {
 		background-color: $sta-cyan;
@@ -184,7 +172,6 @@
 	.subnav.blue-study {
 		background-color: $sta-cyan-light;
 	}
-
 
 	@media (max-width: 991px) {
 		.accent-blue-study .toggle-navigation a:hover,
