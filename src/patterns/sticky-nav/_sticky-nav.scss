@@ -6,11 +6,11 @@
 /* LONG FORM NAV STYLES */
 
 #nav-top {
+    display: none;
     transition: background .2s linear, border-radius 1s ease-in 1s;
     top: 0;
     width: 100%;
     z-index: 999;
-    display: none;
 }
 
 #internal-nav {
@@ -20,12 +20,14 @@
 #nav-top .top-link {
     display: none;
 }
+
 #nav-top.affix .top-link {
     display: block;
 }
+
 #nav-top.affix {
-    width: 100%;
     top: 0;
+    width: 100%;
     z-index: 999;
 }
 
@@ -36,17 +38,17 @@
 }
 
 /* A cool hack to get the offset right when linking to internal id's
- * whilst also having a nav bar absolutely positioned on the top. 
+ * whilst also having a nav bar absolutely positioned on the top.
  * Hat tip -  UCL.
  */
 
 .copy__anchor:before {
     content: '';
     display: block;
-    position: relative; 
-    width: 0;
     height: 80px;
     margin-top: -80px;
+    position: relative;
+    width: 0;
 }
 
 /*********************************/
