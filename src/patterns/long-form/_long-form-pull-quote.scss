@@ -2,38 +2,38 @@
 // ====================
 
 .long-form__content .pull-quote {
-    
-    font-size: 28px;
+    border-top:    1px solid rgb(240, 240, 240);
+    border-bottom: 1px solid rgb(240, 240, 240);
+    font-size:  28px;
     font-style: italic;
     line-height: 1.8;
-    border-top: 1px solid #f0f0f0;
-    border-bottom: 1px solid #f0f0f0;
+    margin: 40px 0;
     padding: 20px 50px 20px 0px;
     position: relative;
-    margin: 40px 0;
 
     .pull-quote-share {
-        position: absolute;
-        bottom: -35px ;
-        right: 30px;
         background-color: white;
         padding: 0 15px;
+        position: absolute;
+        right: 30px;
+        bottom: -35px;
 
         a {
-            text-decoration: none;
             border-bottom: none;
+            text-decoration: none;
         }
+
         .genericon {
+            color: rgb(170, 170, 170);
             font-size: 30px;
-            color: #aaa;
             padding-right: 7px;
         }
     }
 
     &.pull-quote-right {
-        text-align: right;
         padding-right: 0;
-        padding-left: 50px;
+        padding-left:  50px;
+        text-align: right;
 
         .pull-quote-share {
             right: auto;
@@ -42,10 +42,9 @@
     }
 }
 
-
 @media (min-width: 992px) {
     .long-form__content .pull-quote {
-        margin: 40px -20%;    
+        margin: 40px -20%;
     }
 }
 

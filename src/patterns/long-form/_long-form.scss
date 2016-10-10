@@ -5,22 +5,22 @@
 
 .long-form {
     // Lots of padding on top and bottom by default
-    padding-top: 40px;
+    padding-top:    40px;
     padding-bottom: 40px;
 
     // Position backgrounds images correctly if specified later
-    background-size: cover;
     background-position: center center;
+    background-size:     cover;
 
     // Typography
     font-family: $font-family-serif;
-    font-size: 22px;
+    font-size:   22px;
     line-height: 1.5;
     word-wrap: break-word;
 
     // Positioning
-    z-index: 1000;
     position: relative; // A hook for other absolute positioning inside
+    z-index: 1000;
 }
 
 
@@ -33,7 +33,7 @@
 @media (min-width: 992px) {
     .long-form {
         // Lots of padding top and bottom
-        padding-top: 70px;
+        padding-top:    70px;
         padding-bottom: 70px;
     }
 }
@@ -50,8 +50,6 @@
 @import 'long-form/long-form-pull-quote';
 @import 'long-form/long-form-gallery-thumbnail';
 @import 'long-form/long-form-gallery-slider';
-
-
 
 
 /*********************************/
