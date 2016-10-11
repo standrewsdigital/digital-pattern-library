@@ -1,11 +1,11 @@
 {
-  "id":"al244",
-  "name":"Tom Test",
-  "title":"Lecturer",
-  "contract-type":"academic",
-  "staff-image":"yes",
-  "contact-info":{
-      "email":"tst123@st-andrews.ac.uk",
-      "phone":"01334 46xxxx"
-  }
+	"id":"al244",
+	"name":"Tom Test",
+	"title":"Lecturer",
+	"contract-type":"academic",
+	"staff-image":"yes",
+	"contact-info":{
+		"email":"tst123@st-andrews.ac.uk",
+		"phone":"01334 46xxxx"
+	}
 }
