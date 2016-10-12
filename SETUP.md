@@ -1,4 +1,27 @@
-# Setting up the dev environment
+# Setup
+
+Version 0.2
+Last updated: Wednesday 12 October 2016
+
+<!-- MarkdownTOC -->
+
+- [1. Prerequisites](#1-prerequisites)
+  - [Git](#git)
+  - [Node.js](#nodejs)
+  - [Grunt CLI](#grunt-cli)
+  - [Ruby](#ruby)
+    - [Install Ruby on Windows](#install-ruby-on-windows)
+    - [Install Ruby on MacOS X](#install-ruby-on-macos-x)
+- [2. Initialize developer tools](#2-initialize-developer-tools)
+  - [Clone the repo](#clone-the-repo)
+  - [Install Grunt dependencies](#install-grunt-dependencies)
+    - [Error: Unable to connect to github.com](#error-unable-to-connect-to-githubcom)
+  - [Install Compass Ruby gem](#install-compass-ruby-gem)
+- [Conclusion](#conclusion)
+
+<!-- /MarkdownTOC -->
+
+---
 
 This is a guide to get your environment set up to contribute to the digital 
 pattern library. 
@@ -23,7 +46,6 @@ There are also a number of GUI clients available; our favourites, in order, are:
 * [SourceTree](https://www.sourcetreeapp.com/)
 
 
-
 ### Node.js
 
 The digital pattern library uses [Grunt](http://gruntjs.com/), the JavaScript task runner, to automate the build process. Grunt is built on [Node.js](http://nodejs.org/) which is a JavaScript runtime that uses [Google Chrome's V8 JavaScript engine](https://developers.google.com/v8/). If you're not familiar with either of these see [Getting started with Grunt](http://gruntjs.com/getting-started) for the basics.
@@ -43,9 +65,11 @@ Next install the [Grunt command line interface (CLI)](http://gruntjs.com/using-t
 $ npm install -g grunt-cli
 ```
 
+
 ### Ruby
 
 We also use [Compass](http://compass-style.org/) to compile [Sass](http://sass-lang.com/) code to CSS. This requires [Ruby](https://www.ruby-lang.org/).
+
 
 #### Install Ruby on Windows
 
@@ -55,6 +79,7 @@ When prompted at the beginning of the installation make sure to check the box wi
 
 Once you're finished with the installation, you should close and reopen any command prompts that you have since they will need to get the updated PATH with Ruby added.
 
+
 #### Install Ruby on MacOS X
 
 Recent versions of MacOS X already have Ruby installed, so no further installation is required.
@@ -63,6 +88,7 @@ Recent versions of MacOS X already have Ruby installed, so no further installati
 
 
 ## 2. Initialize developer tools
+
 
 ### Clone the repo
 
@@ -77,9 +103,9 @@ git clone https://github.com/standrewsdigital/digital-pattern-library.git
 
 1. At the command line, navigate to the folder containing your local clone of 
    the pattern library. 
-    
+    ```
         $ cd path/to/folder
-    
+    ```
     Where `path/to/folder` is the path to the folder you cloned the pattern 
     library locally. (Or in Windows right-click within the folder containing your local clone of the pattern library and select 'Git Bash'.)
 
@@ -119,34 +145,6 @@ Install the Compass Ruby gem to compile Sass code into CSS.
 ```
 $ gem install compass
 ```
-
-
-## 3. Configuration for deployment (DEPRECATED)
-
-If you want to use either of the deploy commands (`deploy-docs` or 
-`deploy-core`), you'll need to create a file called `.ftppass` in the root of
-the pattern library folder and specify your FTP credentials to the 
-secondary accounts. 
-
-```
-{
-  "core": {
-    "username": "your-username",
-    "password": "password"
-  },
-  "docs": {
-    "username": "your-username",
-    "password": "password"
-  }
-}
-```
-
-See the Grunt plugin [grunt-ftp-deploy](https://github.com/zonak/grunt-ftp-deploy) if you're curious about further details.
-
-Be assured that Git is configured to ignore the `.ftppass` file in `.gitignore`. This is so that everyone can use their own credentials to deploy rather than share credentials. It's generally a bad idea to commit passwords into a shared
-repository.
-
-
 
 
 ## Conclusion
