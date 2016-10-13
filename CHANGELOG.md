@@ -7,9 +7,28 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+- [v0.5.5](#v055)
+- [v0.5.4](#v054)
+- [v0.5.3](#v053)
+- [v0.5.2](#v052)
+- [v0.5.1](#v051)
+- [v0.5.0](#v050)
+- [v0.4.1](#v041)
+- [v0.4.0](#v040)
+- [v0.3.2](#v032)
+- [v0.3.1](#v031)
+- [v0.3.0](#v030)
+- [v0.2.0](#v020)
+- [v0.1.1](#v011)
+
+---
+
+
+
 ## v0.5.5
 
 Release date: 4 October 2016
+
 
 ### Changed
 
@@ -37,12 +56,15 @@ Release date: 4 October 2016
 * FIX Remove 'Ex:' prefix from Examples dropdowns.
 * FIX Update code in DPL documentation to meet house code style and standards.
 
-
 ---
+
+
+
 
 ## v0.5.4
 
 Release date: 24 August 2016
+
 
 ### New feature
 
@@ -50,6 +72,7 @@ Release date: 24 August 2016
 * FEAT (content-updates) research school updates
 * FEAT (header) school header example
 * FEAT (header) update links handlebars
+
 
 ### Fixed
 
@@ -61,13 +84,15 @@ Release date: 24 August 2016
 * FIX (google-maps) remove in file location data
 * FIX (version number) update version number
 
-
-
 ---
+
+
+
 
 ## v0.5.3
 
 Release date: 10 June 2016
+
 
 ### Changed
 
@@ -96,14 +121,15 @@ Release date: 10 June 2016
 * FIX (sticky-nav) implementing scroll-spy
 * FIX (tile-grid) remove repositioning JS
 
-
-
-
 ---
+
+
+
 
 ## v0.5.2
 
 Release date: 9 February 2016
+
 
 ### Changed
 
@@ -152,32 +178,35 @@ Release date: 9 February 2016
 * FIX (sticky-nav) fix hbs doc file
 * FIX (sticky-nav) fix JS syntax errors
 
-
-
-
 ---
+
+
+
 
 ## v0.5.1
 
 Release date: 16 September 2015
+
 
 ### Changed
 
 * Improve documentation about long-form pattern (corrections and 
   clarifications).
 
+
 ### Fixed
 * Remove http: protocol from Google font URL (replaced with //) so
   that it may be served under https without issue.
 
-
-
-
 ---
+
+
+
 
 ## v0.5.0
 
 Release date: 27 August 2015
+
 
 ### Added
 * Add Long form pattern for easily building Long form style pages.
@@ -200,26 +229,28 @@ Release date: 27 August 2015
 ### Removed
 * Remove unused Bootstrap components: carousel and scrollspy.
 
-
-
-
 ---
+
+
+
 
 ## v0.4.1
 
 Release date: 27 July 2015
 
+
 ### Fixed
 * Spacing issue in the header on mobile screens.
 
-
-
-
 ---
+
+
+
 
 ## v0.4.0
 
 Release date: 24 July 2015
+
 
 ### Added
 * Header-only JavaScript and CSS core files. 
@@ -246,14 +277,15 @@ Release date: 24 July 2015
 * Authenticated header dropdown is now aligned right on mobile screens.
 * Made header search placeholder text less ambiguous.
 
-
-
-
 ---
+
+
+
 
 ## v0.3.2
 
 Release date: 18 June 2015
+
 
 ### Fixed
 * Fixed bug where logo would flash on desktops because the
@@ -269,14 +301,15 @@ Release date: 18 June 2015
 * Reduced size of text in `<figcaption>` elements.
 * Provide PNG logo fallback for IE8.
 
-
-
-
 ---
+
+
+
 
 ## v0.3.1
 
 Release date: 15 June 2015
+
 
 ### Changed
 * Optimised logo-standard.svg:      69 KB -> 41 KB
@@ -287,14 +320,15 @@ Release date: 15 June 2015
 ### Removed 
 * Unused logos and images.
 
-
-
-
 ---
+
+
+
 
 ## v0.3.0
 
 Release date: 10 June 2015
+
 
 ### Added
 * Font aliasing to improve quality of fonts
@@ -308,10 +342,10 @@ Release date: 10 June 2015
 ### Fixed
 * Increase opacity of category header to make more legible.
 
-
-
-
 ---
+
+
+
 
 ## v0.2.0
 
@@ -334,14 +368,15 @@ Release date: 14 April 2015
 * Removed unncessary 'accessibility' id from header.
 * Bug with spacing in navigation bar pattern.
 
-
-
-
 ---
+
+
+
 
 ## v0.1.1
 
 Release date: 12 March 2015
+
 
 ### Added
 * Better support for links within alert elements.

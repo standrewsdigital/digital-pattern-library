@@ -1,7 +1,18 @@
 # File and folder overview
 
-A list of the main folders and files in the DPL source code and brief
-summaries about each.
+Version 0.1
+Last updated: Thursday 13 October 2016
+
+<!-- MarkdownTOC -->
+
+- [A list of the main folders and files in the DPL source code and brief summaries about each.](#a-list-of-the-main-folders-and-files-in-the-dpl-source-code-and-brief-summaries-about-each)
+
+<!-- /MarkdownTOC -->
+
+---
+
+
+#### A list of the main folders and files in the DPL source code and brief summaries about each.
 
 ```
 src/
