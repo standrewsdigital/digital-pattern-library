@@ -6,21 +6,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
-
-- [v0.5.5](#v055)
-- [v0.5.4](#v054)
-- [v0.5.3](#v053)
-- [v0.5.2](#v052)
-- [v0.5.1](#v051)
-- [v0.5.0](#v050)
-- [v0.4.1](#v041)
-- [v0.4.0](#v040)
-- [v0.3.2](#v032)
-- [v0.3.1](#v031)
-- [v0.3.0](#v030)
-- [v0.2.0](#v020)
-- [v0.1.1](#v011)
-
 ---
 
 
@@ -108,7 +93,7 @@ Release date: 10 June 2016
 * FEAT (version) update version number
 
 
-### Fixes
+### Fixed
 
 * FIX (base and misc) fix home link and misc
 * FIX (category-header) fix css selector
