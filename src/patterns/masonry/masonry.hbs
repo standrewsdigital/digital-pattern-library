@@ -1,17 +1,16 @@
 
 <!-- Begin pattern: masonry //-->
 
-
 {{#if image}}
-<div class="masonry {{shape}}" style="background-image: url({{asset image.url}})">
+    <div class="masonry {{shape}}" style="background-image: url({{asset image.url}})">
 {{else}}
-<div class="masonry [shape]" style="background-image: url(path/to/image.ext)">
+    <div class="masonry [shape]" style="background-image: url(path/to/image.ext)">
 {{/if}}
-    <div class="masonry-title">
-        <div class="masonry-chevron"><img src="{{asset "core/images/furniture/chevron@2x.png"}}" alt="chevron" /></div>
-        <h3><a href="{{default url "[url]"}}">{{default title "[title]"}}</a></h3>
-        <p>{{description}}</p>
-    </div>    
-</div>
+        <div class="masonry-title">
+            <div class="masonry-chevron"><img src="{{asset "core/images/furniture/chevron@2x.png"}}" alt="chevron" /></div>
+            <h3><a href="{{default url "[url]"}}">{{default title "[title]"}}</a></h3>
+            <p>{{description}}</p>
+        </div>
+    </div>
 
 <!-- End pattern: masonry //-->
