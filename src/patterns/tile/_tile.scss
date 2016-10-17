@@ -3,120 +3,122 @@
 /* BEGIN Pattern: tile           */
 /*********************************/
 
- .tile {
-  margin: 0 auto 3em;
- 	clear: both;
- 	background-color: white;
- 	-webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
-	-moz-box-shadow:    4px 4px 8px 0px rgba(0, 0, 0, 0.38);
-	box-shadow:         4px 4px 8px 0px rgba(0, 0, 0, 0.38);
-  max-width: 360px;
- }
-
- .tile.tile-responsive {
-  margin: 0 auto 2em;
-  // clear: both;
-  background-color: white;
-  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
-  -moz-box-shadow:    4px 4px 8px 0px rgba(0, 0, 0, 0.38);
-  box-shadow:         4px 4px 8px 0px rgba(0, 0, 0, 0.38);
-  max-width: 100%;
- }
-
-
-.tile-image-title {
-  position: relative;
+.tile {
+    background-color: white;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+       -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+            box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+    clear: both;
+    margin: 0 auto 3em;
+    max-width: 360px;
 }
 
- .tile img {
- 	height: auto;
- 	width: 100%;
+.tile.tile-responsive {
+    background-color: white;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+       -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+            box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+    // clear: both;
+    margin: 0 auto 2em;
+    max-width: 100%;
+}
+
+.tile-image-title {
+    position: relative;
+}
+
+.tile img {
+    height: auto;
  	position: relative;
- 	z-index: 0;
- }
+    width: 100%;
+    z-index: 0;
+}
 
- .tile h3 {
-  width: 100%;
- 	font-size: 1.3em;
- 	line-height: 1.3em;
- 	background: $sta-blue-T;
- 	position: absolute;
-  bottom: 0;
- 	z-index: 100;
- 	padding: .5em .8em;
-  margin: 0;
- 	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-  @include -dpl-transition();
- }
- .tile:hover {
-  cursor: pointer;
- }
- .tile:hover h3 {
- 	background: $sta-blue-T-hover;
- }
+.tile h3 {
+    background: $sta-blue-T;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin: 0;
+    padding: .5em .8em;
+    position: absolute;
+    bottom: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    z-index: 100;
+    @include -dpl-transition();
+}
 
- .tile h3 a {
- 	color: white;
+.tile:hover {
+    cursor: pointer;
+}
+
+.tile:hover h3 {
+    background: $sta-blue-T-hover;
+}
+
+.tile h3 a {
+    color: white;
 	text-decoration: none;
- }
+}
 
- .tile p {
- 	font-size: 1em;
+.tile p {
+    font-size: 1em;
  	height: 5em;
  	line-height: 1.2em;
- 	padding: 0 1em;
  	margin: 1.5em 0;
- }
+    padding: 0 1em;
+}
 
- .tile-date {
- 	float: left;
-  font-size: 15px;
- 	font-weight: bold;
- 	padding-left: 1em;
-  color: $sta-grey;
- }
+.tile-date {
+    color: $sta-grey;
+    float: left;
+    font-size:   15px;
+    font-weight: bold;
+    padding-left: 1em;
+}
 
- .tile-type {
- 	float: right;
-  font-size: 15px;
- 	padding-right: 1em;
- 	font-weight: bold;
- 	color: $sta-grey;
- }
+.tile-type {
+    color: $sta-grey;
+    float: right;
+    font-size:   15px;
+    font-weight: bold;
+    padding-right: 1em;
+}
 
 /* Colors */
 
 .tile.green h3 {
-  background: $sta-green-T;
+    background: $sta-green-T;
 }
 
 .tile.green:hover h3 {
-  background: $sta-green-T-hover;
+    background: $sta-green-T-hover;
 }
 
 .tile.purple h3 {
-  background: $sta-purple-T;
+    background: $sta-purple-T;
 }
 
 .tile.purple:hover h3 {
-  background: $sta-purple-T-hover;
+    background: $sta-purple-T-hover;
 }
 
 .tile.red h3 {
-  background: $sta-red-T;
+    background: $sta-red-T;
 }
 
 .tile.red:hover h3 {
-  background: $sta-red-T-hover;
+    background: $sta-red-T-hover;
 }
 
 @media (max-width: 767px) {
-  .tile {
-    margin-bottom: 2em;
-  }
-  .tile p {
-    height: auto;
-  }
+    .tile {
+        margin-bottom: 2em;
+    }
+
+    .tile p {
+        height: auto;
+    }
 }
 
 /*********************************/
