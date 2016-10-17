@@ -5,7 +5,7 @@
 // ====================================================
 
 p, ul, ol {
-  margin: 0 0 25px;
+    margin: 0 0 25px;
 }
 
 
@@ -27,10 +27,10 @@ hr {
 // Add variants for secondary, tertiary-1, tertiary-2 and tertiary-3.
 
 a {
-  -webkit-transition: all 200ms ease-out;
-  -moz-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
-  font-weight: 700;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+    font-weight: 700;
 }
 
 
@@ -39,11 +39,11 @@ a {
 
 
 .navbar {
-  border: none;
+    border: none;
 }
 
 .navbar a {
-  font-weight: normal;
+    font-weight: normal;
 }
 
 
@@ -57,48 +57,48 @@ table {
 }
 
 thead > th, thead > tr th {
-  background-color: $gray-light;
-  color: #fff;
+    background-color: $gray-light;
+    color: #fff;
 }
 
 tr:nth-child(odd) {
-  background-color: lighten($gray, 80%);
+    background-color: lighten($gray, 80%);
 }
 
 table.table-primary th {
-  background-color: $brand-primary;
+    background-color: $brand-primary;
 }
 
 table.table-success th {
-  background-color: $brand-success;
+    background-color: $brand-success;
 }
 
 table.table-info th {
-  background-color: $brand-info;
+    background-color: $brand-info;
 }
 
 table.table-warning th {
-  background-color: $brand-warning;
+    background-color: $brand-warning;
 }
 
 table.table-danger th {
-  background-color: $brand-danger;
+    background-color: $brand-danger;
 }
 
 table.table-secondary th {
-  background-color: -dpl-color($palette-default,'secondary','base');
+    background-color: -dpl-color($palette-default,'secondary','base');
 }
 
 table.table-tertiary-1 th {
-  background-color: -dpl-color($palette-default,'tertiary-1','base');
+   background-color: -dpl-color($palette-default,'tertiary-1','base');
 }
 
 table.table-tertiary-2 th {
-  background-color: -dpl-color($palette-default,'tertiary-2','base');
+    background-color: -dpl-color($palette-default,'tertiary-2','base');
 }
 
 table.table-tertiary-3 th {
-  background-color: -dpl-color($palette-default,'tertiary-3','base');
+    background-color: -dpl-color($palette-default,'tertiary-3','base');
 }
 
 
@@ -106,14 +106,14 @@ table.table-tertiary-3 th {
 // ====================================================
 
 .pagination {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 // PAGER MODIFICATIONS
 // ====================================================
 
 .pager .disabled {
-  pointer-events: none; // SHOULD SUGGEST THIS TO BOOTSTRAP CORE.
+    pointer-events: none; // SHOULD SUGGEST THIS TO BOOTSTRAP CORE.
 }
 
 
@@ -122,30 +122,30 @@ table.table-tertiary-3 th {
 // ====================================================
 
 .label {
-  display: inline-block;
-  border-radius: 0;
-  padding: 0.4em 0.6em 0.3em;
-  font-weight: normal;
+    display: inline-block;
+    border-radius: 0;
+    padding: 0.4em 0.6em 0.3em;
+    font-weight: normal;
 }
 
 // Additional variations for secondary and tertiary colors
 .label-secondary {
-  $bg-color: -dpl-color($palette-default,'secondary','base');
-  $bg-color: adjust-saturation($bg-color, -30%);
-  $bg-color: adjust-lightness($bg-color, 5%);
-  @include label-variant($bg-color);
+    $bg-color: -dpl-color($palette-default,'secondary','base');
+    $bg-color: adjust-saturation($bg-color, -30%);
+    $bg-color: adjust-lightness($bg-color, 5%);
+    @include label-variant($bg-color);
 }
 .label-tertiary-1 {
-  $bg-color: -dpl-color($palette-default,'tertiary-1','base');
-  @include label-variant($bg-color);
+    $bg-color: -dpl-color($palette-default,'tertiary-1','base');
+    @include label-variant($bg-color);
 }
 .label-tertiary-2 {
-  $bg-color: -dpl-color($palette-default,'tertiary-2','base');
-  @include label-variant($bg-color);
+    $bg-color: -dpl-color($palette-default,'tertiary-2','base');
+    @include label-variant($bg-color);
 }
 .label-tertiary-3 {
-  $bg-color: -dpl-color($palette-default,'tertiary-3','base');
-  @include label-variant($bg-color);
+    $bg-color: -dpl-color($palette-default,'tertiary-3','base');
+    @include label-variant($bg-color);
 }
 
 
@@ -169,23 +169,23 @@ table.table-tertiary-3 th {
  * the standard Bootstrap 'default', 'primary', 'success', ...
  */
 .btn-secondary {
-  $bg-color: -dpl-color($palette-default,'secondary','base');
-  @include button-variant(white, $bg-color, $bg-color);
+    $bg-color: -dpl-color($palette-default,'secondary','base');
+    @include button-variant(white, $bg-color, $bg-color);
 }
 .btn-tertiary-1 {
-  $bg-color: -dpl-color($palette-default,'tertiary-1','base');
-  @include button-variant(white, $bg-color, $bg-color);
+    $bg-color: -dpl-color($palette-default,'tertiary-1','base');
+    @include button-variant(white, $bg-color, $bg-color);
 }
 .btn-tertiary-2 {
-  $bg-color: -dpl-color($palette-default,'tertiary-2','base');
-  @include button-variant(white, $bg-color, $bg-color);
+    $bg-color: -dpl-color($palette-default,'tertiary-2','base');
+    @include button-variant(white, $bg-color, $bg-color);
 }
 .btn-tertiary-3 {
-  $bg-color: -dpl-color($palette-default,'tertiary-3','base');
-  @include button-variant(white, $bg-color, $bg-color);
+    $bg-color: -dpl-color($palette-default,'tertiary-3','base');
+    @include button-variant(white, $bg-color, $bg-color);
 }
 .btn-link {
-  font-weight: bold; /* To match standard link styling */
+    font-weight: bold; /* To match standard link styling */
 }
 
 
@@ -195,40 +195,40 @@ table.table-tertiary-3 th {
 
 
 .panel {
-  border: 0;
-  -webkit-box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow:    4px 4px 20px 0px rgba(0, 0, 0, 0.25);
-  box-shadow:         4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    border: 0;
+    -webkit-box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+       -moz-box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .panel-heading {
-  font-size: 20px;
-  font-weight: normal;
+    font-size: 20px;
+    font-weight: normal;
 }
 
 .panel-title {
-  font-size: 20px;
-  font-weight: normal;
-  line-height: inherit;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: inherit;
 }
 
 // Add variants for secondary, tertiary-1, tertiary-2 and tertiary-3.
 
 .panel-secondary {
-  $bg-color: -dpl-color($palette-default,'secondary','base');
-  @include panel-variant($bg-color, white, $bg-color, $bg-color);
+    $bg-color: -dpl-color($palette-default,'secondary','base');
+    @include panel-variant($bg-color, white, $bg-color, $bg-color);
 }
 .panel-tertiary-1 {
-  $bg-color: -dpl-color($palette-default,'tertiary-1','base');
-  @include panel-variant($bg-color, white, $bg-color, $bg-color);
+    $bg-color: -dpl-color($palette-default,'tertiary-1','base');
+    @include panel-variant($bg-color, white, $bg-color, $bg-color);
 }
 .panel-tertiary-2 {
-  $bg-color: -dpl-color($palette-default,'tertiary-2','base');
-  @include panel-variant($bg-color, white, $bg-color, $bg-color);
+    $bg-color: -dpl-color($palette-default,'tertiary-2','base');
+    @include panel-variant($bg-color, white, $bg-color, $bg-color);
 }
 .panel-tertiary-3 {
-  $bg-color: -dpl-color($palette-default,'tertiary-3','base');
-  @include panel-variant($bg-color, white, $bg-color, $bg-color);
+    $bg-color: -dpl-color($palette-default,'tertiary-3','base');
+    @include panel-variant($bg-color, white, $bg-color, $bg-color);
 }
 
 
@@ -238,7 +238,7 @@ table.table-tertiary-3 th {
 
 
 .popover {
-  @include box-shadow(0 5px 10px rgba(0,0,0,0.05));
+    @include box-shadow(0 5px 10px rgba(0,0,0,0.05));
 }
 
 
@@ -246,22 +246,21 @@ table.table-tertiary-3 th {
 // ====================================================
 
 .jumbotron {
-  @media screen and (min-width: $screen-sm-min) {
-    h1,
-    .h1 {
-      font-size: ($font-size-base * 3.25);
+    @media screen and (min-width: $screen-sm-min) {
+        h1, .h1 {
+           font-size: ($font-size-base * 3.25);
+        }
     }
-  }
 }
 
 // LIST GROUP MODIFICATIONS
 // ====================================================
 
 a.list-group-item {
-  font-weight: normal;
-   .list-group-item-heading {
-    font-weight: bold;
-  }
+    font-weight: normal;
+        .list-group-item-heading {
+            font-weight: bold;
+    }
 }
 
 
@@ -271,14 +270,14 @@ a.list-group-item {
 
 // Remove inner box shadows on input elements.
 .form-control {
-  -webkit-box-shadow:none;
-  box-shadow:none;
+    -webkit-box-shadow:none;
+            box-shadow:none;
 }
 
 // BADGE MODIFICATIONS
 // ====================================================
 
 .badge {
-  vertical-align: 2px;
-  padding-top: 4px;
+    vertical-align: 2px;
+    padding-top: 4px;
 }

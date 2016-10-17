@@ -1,11 +1,9 @@
-
-
 @mixin rotate($deg) {
-    -moz-transform:     rotate($deg);
-    -o-transform:       rotate($deg);
     -webkit-transform:  rotate($deg);
-    -ms-transform:      rotate($deg);
-    transform:          rotate($deg);
+       -moz-transform:  rotate($deg);
+         -o-transform:  rotate($deg);
+        -ms-transform:  rotate($deg);
+            transform:  rotate($deg);
 }
 
 @mixin -dpl-transition() {
@@ -15,7 +13,7 @@
 }
 
 body {
-    -webkit-font-smoothing: antialiased;
+     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     -moz-font-feature-settings: "liga" on;
@@ -41,6 +39,6 @@ body {
 /* Remove mobile safari default styles */
 
 textarea, input[type~=text], input[type~=submit] {
-  -webkit-appearance: none;
-  border-radius: 0;
+    -webkit-appearance: none;
+    border-radius: 0;
 }

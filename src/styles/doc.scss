@@ -14,210 +14,205 @@ Last Updated    3 October 2014
 @import 'utilities';
 
 
-      body {
-          margin: 0;
-          padding-bottom: 50px;
-      }
+body {
+    margin: 0;
+    padding-bottom: 50px;
+}
 
-      h1, h2, h3, h4, h5, h6 {
-          font-weight: normal;
-      }
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
 
-      h1 {
-          font-size: 1.8em;
-      }
+h1 {
+    font-size: 1.8em;
+}
 
-      h2 {
-          font-size: 1.5em;
-      }
+h2 {
+    font-size: 1.5em;
+}
 
-      h3 {
-          font-size: 1.2em;
-      }
+h3 {
+    font-size: 1.2em;
+}
 
-      h4 {
-          font-size: 1em;
-      }
+h4 {
+    font-size: 1em;
+}
 
-      h5 {
-          font-size: 1em;
-          font-weight: normal;
-          font-style: italic;
-      }
+h5 {
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+}
 
-      hr {
-          /*border: none;
-          border-bottom: 1px solid #999;*/
-      }
+hr {
+    /*border: none;
+    border-bottom: 1px solid #999;*/
+}
 
-      .navbar {
-        margin-bottom: 0;
-      }
+.navbar {
+    margin-bottom: 0;
+}
 
-      #pattern-nav {
-          float: right;
-          padding: 15px;
-          background-color: #f0f0f0;
-          border: 1px solid #ccc;
-      }
-      #pattern-nav h4 {
-          margin-top: 0;
-          white-space: nowrap;
-      }
-
-
-      .pattern-source, .code {
-          background-color: #f0f0f0;
-          border: 1px solid #ccc;
-          padding: 10px;
-          white-space: pre-wrap;
-          word-wrap: break-word;
-          font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-      }
-
-      code {
-        word-wrap: break-word;
-      }
+#pattern-nav {
+    float: right;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+#pattern-nav h4 {
+    margin-top: 0;
+    white-space: nowrap;
+}
 
 
-      .grey-3-box {
-          width: 24%;
-          margin-right: 3%;
-          float: left;
-          background-color: #f0f0f0;
-          border: 1px solid #ccc;
-          padding: 0 1em;
-      }
-      @media (max-width: 767px) {
-          .grey-3-box {
-              width: auto;
-              margin: 1em 0;
-              float: none;
-          }
-      }
+.pattern-source, .code {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
 
-      .header-bar {
-      padding: 1em;
-      position: fixed;
-      z-index: 1000;
-      width: 100%;
-      height: 70px;
+code {
+    word-wrap: break-word;
+}
 
-      background-color: #f0f0f0;
-      border-bottom: 1px solid #333;
+
+.grey-3-box {
+    width: 24%;
+    margin-right: 3%;
+    float: left;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 0 1em;
+}
+@media (max-width: 767px) {
+    .grey-3-box {
+        width: auto;
+        margin: 1em 0;
+        float: none;
     }
-    .header-bar > * {
-      display: inline;
-      padding-right: 2em;
-    }
+}
 
+.header-bar {
+    padding: 1em;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 70px;
 
-    .example {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #333;
+}
+.header-bar > * {
+    display: inline;
+    padding-right: 2em;
+}
 
-    }
+.example h3 {
+    background-color: #666;
+    color: white;
+    padding: .5em 1em;
+}
 
-    .example h3 {
-      background-color: #666;
-      color: white;
-      padding: .5em 1em;
-    }
+.example iframe {
+    border: none;
+    height: 500px;
+    width: 100%;
+}
+.example .code {
+    display: none;
+}
 
-    .example iframe {
-      border: none;
-      height: 500px;
-      width: 100%;
-    }
-    .example .code {
-      display: none;
-    }
+// Swatches
+// This is quite elaborate to achieve a specific grouping
+// of the base color and 5 variants for each of the st andrews colours.
 
-    // Swatches
-    // This is quite elaborate to achieve a specific grouping
-    // of the base color and 5 variants for each of the st andrews colours.
+.swatch {
+    cursor: pointer;
+    position: relative;
+    max-width: 600px;
+    display: block;
+    padding: 0;
+    margin: 0 0 10px;
 
-    .swatch {
-      cursor: pointer;
-      position: relative;
-      max-width: 600px;
-      display: block;
-      padding: 0;
-      margin: 0 0 10px;
+    background-image: url(../images/placeholder-360x240.jpg);
+    background-position: 110% 100%;
 
-      background-image: url(../images/placeholder-360x240.jpg);
-      background-position: 110% 100%;
-
-      .swatch__title {
-        padding: 0.5em;
-        color: white;
-        font-weight: bold;
-      }
-
-      .swatch__base,
-      .swatch__selected,
-      .swatch__transparent,
-      .swatch__base-hover,
-      .swatch__selected-hover,
-      .swatch__transparent-hover {
-
-        padding: 0.5em;
-        margin: 0;
-
-        width: 33.333%;
-        color: white;
-        float: left;
-      }
-
-      .swatch__base,
-      .swatch__selected,
-      .swatch__transparent {
-        height: 150px;
-      }
-
-      .swatch__base-hover,
-      .swatch__selected-hover,
-      .swatch__transparent-hover {
-        height: 80px;
-      }
-
-      // Populate elements with appropriate colors.
-
-      @each $name, $color,$color-hover,$color-T,$color-T-hover,$color-S,$color-S-hover in $palette-sta {
-
-        &.#{$name} .swatch__title,
-        &.#{$name} .swatch__base {
-          background-color: $color;
-        }
-        &.#{$name} .swatch__base-hover {
-          background-color: $color-hover;
+        .swatch__title {
+            padding: 0.5em;
+            color: white;
+            font-weight: bold;
         }
 
-        &.#{$name} .swatch__transparent  {
-          background-color: $color-T;
-        }
-        &.#{$name} .swatch__transparent-hover {
-          background-color: $color-T-hover;
-        }
-        &.#{$name} .swatch__selected  {
-          background-color: $color-S;
-        }
-        &.#{$name} .swatch__selected-hover {
-          background-color: $color-S-hover;
-        }
-      }
+        .swatch__base,
+        .swatch__selected,
+        .swatch__transparent,
+        .swatch__base-hover,
+        .swatch__selected-hover,
+        .swatch__transparent-hover {
 
-    }
+            padding: 0.5em;
+            margin: 0;
+
+            width: 33.333%;
+            color: white;
+            float: left;
+        }
+
+        .swatch__base,
+        .swatch__selected,
+        .swatch__transparent {
+            height: 150px;
+        }
+
+        .swatch__base-hover,
+        .swatch__selected-hover,
+        .swatch__transparent-hover {
+            height: 80px;
+        }
+
+        // Populate elements with appropriate colors.
+
+        @each $name, $color,$color-hover,$color-T,$color-T-hover,$color-S,$color-S-hover in $palette-sta {
+
+            &.#{$name} .swatch__title,
+            &.#{$name} .swatch__base {
+                background-color: $color;
+            }
+            &.#{$name} .swatch__base-hover {
+                background-color: $color-hover;
+            }
+
+            &.#{$name} .swatch__transparent  {
+                background-color: $color-T;
+            }
+            &.#{$name} .swatch__transparent-hover {
+                background-color: $color-T-hover;
+            }
+            &.#{$name} .swatch__selected  {
+                background-color: $color-S;
+            }
+            &.#{$name} .swatch__selected-hover {
+                background-color: $color-S-hover;
+            }
+        }
+
+}
 
 
-    body {
-      margin-bottom: 2em;
-    }
-    footer {
-      display: block;
-      width: 100%;
-      padding: 5px 15px;
-      background-color: rgba(255,255,255,.7);
-      border-top: 1px solid #ccc;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-    }
+body {
+    margin-bottom: 2em;
+}
+footer {
+    display: block;
+    width: 100%;
+    padding: 5px 15px;
+    background-color: rgba(255,255,255,.7);
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
