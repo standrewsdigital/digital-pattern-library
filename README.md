@@ -10,8 +10,8 @@ Last updated: Wednesday 12 October 2016
     - [1.1.1 Build core](#111-build-core)
     - [1.1.2 Build docs](#112-build-docs)
   - [1.2 Watch \(interactive building\)](#12-watch-interactive-building)
-  - [1.3 Deploy core](#13-deploy-core)
-  - [1.4 Deploy docs](#14-deploy-docs)
+  - [1.3 Deploy core DEPRECATED](#13-deploy-core-deprecated)
+  - [1.4 Deploy docs DEPRECATED](#14-deploy-docs-deprecated)
 
 <!-- /MarkdownTOC -->
 
@@ -90,7 +90,10 @@ Note: you should run `grunt` first since `grunt watch` only rebuilds the
 parts that have changed. 
 
 
-### 1.3 Deploy core
+
+---
+
+### 1.3 Deploy core DEPRECATED
 
 ```
 $ grunt deploy-core --tag=LABEL
@@ -126,7 +129,7 @@ commands. You could get unexpected results if you switched to a new branch and
 failed to run `grunt` before running `grunt deploy-core`.
 
 
-### 1.4 Deploy docs
+### 1.4 Deploy docs DEPRECATED
 
 ```
 $ grunt deploy-docs --tag=LABEL
