@@ -2,96 +2,101 @@
 <!-- Begin pattern: footer //-->
 
 <footer>
-  {{#if website-footer}}
-  <div id="website-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4" id="footer-tools">
-        {{#if section1}}
-          {{#section1}}
-          <h3>{{title}}</h3>
-          <ul>
-          {{#links}}
-          <li><a href="{{url}}">{{title}}</a></li>
-          {{/links}}
-          </ul>
-          {{/section1}}
-        {{else}}
-          <h3>Section 1 Title</h3>
-          <ul>
-          <li><a href="#">Link1</a></li>
-          <li><a href="#">Link2</a></li>
-          <li><a href="#">Link3</a></li>
-          </ul>
-        {{/if}}
-        </div>
+    {{#if website-footer}}
+        <div id="website-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4" id="footer-tools">
+                        {{#if section1}}
+                            {{#section1}}
+                                <h3>{{title}}</h3>
+                                <ul>
+                                    {{#links}}
+                                    <li><a href="{{url}}">{{title}}</a></li>
+                                    {{/links}}
+                                </ul>
+                            {{/section1}}
+                        {{else}}
+                            <h3>Section 1 Title</h3>
+                            <ul>
+                                <li><a href="#">Link1</a></li>
+                                <li><a href="#">Link2</a></li>
+                                <li><a href="#">Link3</a></li>
+                            </ul>
+                        {{/if}}
+                    </div>
 
-        <div class="col-sm-4" id="footer-navigation">
-        {{#if section2}}
-          {{#section2}}
-          <h3>{{title}}</h3>
-          <ul>
-          {{#links}}
-          <li><a href="{{url}}">{{title}}</a></li>
-          {{/links}}
-          </ul>
-          {{/section2}}
-        {{else}}
-          <h3>Section 2 Title</h3>
-          <ul>
-          <li><a href="#">Link1</a></li>
-          <li><a href="#">Link2</a></li>
-          <li><a href="#">Link3</a></li>
-          </ul>
-        {{/if}}
-        </div>
+                    <div class="col-sm-4" id="footer-navigation">
+                        {{#if section2}}
+                            {{#section2}}
+                                <h3>{{title}}</h3>
+                                <ul>
+                                    {{#links}}
+                                    <li><a href="{{url}}">{{title}}</a></li>
+                                    {{/links}}
+                                </ul>
+                            {{/section2}}
+                        {{else}}
+                            <h3>Section 2 Title</h3>
+                            <ul>
+                                <li><a href="#">Link1</a></li>
+                                <li><a href="#">Link2</a></li>
+                                <li><a href="#">Link3</a></li>
+                            </ul>
+                        {{/if}}
+                    </div>
 
-        <div class="col-sm-4" id="footer-contact">
-        {{#if contact}}
-          {{#contact}}
-            <h3><a href="{{url}}">Contact us</a></h3>
-            <address>
-            <strong>{{unit}}</strong><br>
-            {{{address}}}<br><br>
-            <strong>Phone:</strong> {{phone}}</p>
-            </address>
-          {{/contact}}
-        {{else}}
-          <h3><a href="[url]">Contact us</a></h3>
-          <address>
-          <strong>[unit]</strong><br>
-          Street Address<br><br>
-          <strong>Phone:</strong> [phone]</p>
-          </address>
-        {{/if}}
-        </div>
-      </div> <!-- End .row -->
-    </div> <!-- End .container -->
-  </div> <!-- End #website-footer -->
-  {{/if}}
+                    <div class="col-sm-4" id="footer-contact">
+                        {{#if contact}}
+                            {{#contact}}
+                                <h3><a href="{{url}}">Contact us</a></h3>
+                                <address>
+                                    <p>
+                                        <strong>{{unit}}</strong><br>
+                                        {{{address}}}
+                                    </p>
+                                    <p><strong>Phone:</strong> {{phone}}</p>
+                                </address>
+                            {{/contact}}
+                        {{else}}
+                            <h3><a href="[url]">Contact us</a></h3>
+                            <address>
+                                <p>
+                                    <strong>[unit]</strong><br>
+                                    Street Address
+                                </p>
+                                <p><strong>Phone:</strong> [phone]</p>
+                            </address>
+                        {{/if}}
+                    </div>
+                </div> <!-- End .row -->
+            </div> <!-- End .container -->
+        </div> <!-- End #website-footer -->
+    {{/if}}
 
-  <div id="university-footer">
-    <div class="container">
-      <div class="row">
+    <div id="university-footer">
+        <div class="container">
+            <div class="row">
 
-        <div class="col-lg-8">
-          <p id="footer-charity" role="contentinfo">&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> University of St Andrews is a charity registered in Scotland, No SC013532.</p>
-          <ul id="footer-links">
-            <li><a href="/terms/">Terms and conditions</a></li>
-            <li><a href="/help/">Website help</a></li>
-          </ul>
-        </div>
+                <div class="col-lg-8">
+                    <p id="footer-charity" role="contentinfo">&copy; <script>document.write(new Date().getFullYear());</script> University of St Andrews is a charity registered in Scotland, No SC013532.</p>
 
-        <div class="col-lg-4">
-          <ul id="social">
-            <li><a href="https://www.facebook.com/uniofsta"><img src="{{asset "core/images/furniture/facebook-logo-svg.svg"}}" alt="Facebook"></a></li>
-            <li><a href="https://twitter.com/univofstandrews/"><img src="{{asset "core/images/furniture/twitter-logo-svg.svg"}}" alt="Twitter"  /></a></li>
-          </ul>
-        </div>
+                    <ul id="footer-links">
+                        <li><a href="/terms/">Terms and conditions</a></li>
+                        <li><a href="/help/">Website help</a></li>
+                    </ul>
+                </div>
 
-      </div> <!-- End .row //-->
-    </div> <!-- End .container //-->
-  </div> <!-- End #university-footer //-->
+                <div class="col-lg-4">
+                    <ul id="social">
+                        <li><a href="https://www.facebook.com/uniofsta"><img src="{{asset "core/images/furniture/facebook-logo-svg.svg"}}" alt="Facebook"></a></li>
+                        <li><a href="https://twitter.com/univofstandrews/"><img src="{{asset "core/images/furniture/twitter-logo-svg.svg"}}" alt="Twitter"  /></a></li>
+                    </ul>
+                </div>
+
+            </div> <!-- End .row //-->
+        </div> <!-- End .container //-->
+    </div> <!-- End #university-footer //-->
 
 </footer>
 

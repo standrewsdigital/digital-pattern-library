@@ -4,99 +4,96 @@
 /**********************************************/
 
 .secondary-call {
-  margin-top: 3em;
-  padding: 30px;
-  font-size: 21px;
-  font-weight: 200;
-  line-height: 2.1428571435;
-  color: inherit;
-  background-color: $sta-grey;
-  background: url('../images/secondary-call/0.jpg');
-  background-position: center;
-  text-align: center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-repeat: no-repeat;
+    background: url(../images/secondary-call/0.jpg);
+    background-color: $sta-grey;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    color: inherit;
+    font-size:   21px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    margin-top: 3em;
+    padding: 30px;
+    text-align: center;
 }
+
 .secondary-call.left {
-  text-align: left;
+    text-align: left;
 }
+
 .secondary-call.right {
-  text-align: right;
+    text-align: right;
 }
 
 .secondary-call .call-heading {
-  color: white;
-  font-size: 24px;
-  margin: 10px auto;
-  font-weight: bold;
-  line-height: 1.2;
-  width: 85%;
+    color: white;
+    font-size:   24px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 10px auto;
+    width: 85%;
 }
 
 .secondary-call p {
-  color: white;
-  width: 85%;
-  line-height: 1.5;
-  font-size: 21px;
-  margin: 10px auto;
+    color: white;
+    font-size: 21px;
+    line-height: 1.5;
+    margin: 10px auto;
+    width: 85%;
 }
 
 .secondary-call .left p, .secondary-call .left .call-heading {
-  text-align: left;
-  width: 100%;
+    text-align: left;
+    width: 100%;
 }
 
 .secondary-call .right p, .secondary-call .right .call-heading {
-  text-align: right;
-  width: 100%;
+    text-align: right;
+    width: 100%;
 }
 
 .secondary-call .btn {
-  background-color: $sta-blue;
+    background-color: $sta-blue;
 }
 
 .secondary-call .btn:nth-child(2) {
-  margin-left: 30px;
+    margin-left: 30px;
 }
 
-.secondary-call .btn:hover,
-.secondary-call .btn:focus {
-  background-color: $sta-blue-hover;
+.secondary-call .btn:hover, .secondary-call .btn:focus {
+    background-color: $sta-blue-hover;
 }
 
 /* Alternative background images */
 
 @for $i from 1 through 9 {
-  .secondary-call-#{$i} {
-    background-image: url("../images/secondary-call/#{$i}.jpg");
-  }
-}
-.secondary-call-7 {
-  background-position: bottom;
+    .secondary-call-#{$i} {
+        background-image: url(../images/secondary-call/#{$i}.jpg);
+    }
 }
 
+.secondary-call-7 {
+    background-position: bottom;
+}
 
 @media (max-width: 991px) {
-
-  .secondary-call .left p, .secondary-call .left .call-heading, .secondary-call .right p, .secondary-call .right .call-heading {
-      text-align: center;
-  }
+    .secondary-call .left p, .secondary-call .left .call-heading, .secondary-call .right p, .secondary-call .right .call-heading {
+        text-align: center;
+    }
 }
 
-
 @media (max-width: 767px) {
+    .secondary-call .btn {
+        font-size: 18px;
+    }
 
-
-  .secondary-call .btn {
-    font-size: 18px;
-  }
-
-  .secondary-call p {
-    font-size: 18px;
-  }
+    .secondary-call p {
+        font-size: 18px;
+    }
 }
 
 /**********************************************/

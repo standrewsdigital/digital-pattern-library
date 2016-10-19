@@ -1,10 +1,10 @@
 {
-  "heading":  "News and events",
-  "paragraph":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
-  "action": {
-    "text": "Call to action",
-    "url": "#"
-  },
-  "alignment": "left",
-  "style": "9"
+	"heading":  "News and events",
+	"paragraph":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
+	"action": {
+		"text": "Call to action",
+		"url": "#"
+	},
+	"alignment": "left",
+	"style": "9"
 }

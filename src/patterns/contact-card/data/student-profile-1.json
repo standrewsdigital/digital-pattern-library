@@ -1,10 +1,10 @@
 {
-  "id":"al244",
-  "name":"Student Test",
-  "title":"PhD student",
-  "contract-type":"student",
-  "contact-info":{
-      "email":"tst123@st-andrews.ac.uk",
-      "phone":"01334 46xxxx"
-  }
+	"id":"al244",
+	"name":"Student Test",
+	"title":"PhD student",
+	"contract-type":"student",
+	"contact-info":{
+		"email":"tst123@st-andrews.ac.uk",
+		"phone":"01334 46xxxx"
+	}
 }

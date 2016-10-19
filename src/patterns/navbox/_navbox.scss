@@ -1,45 +1,44 @@
-
 /*********************************/
 /* BEGIN Pattern: navbox         */
 /*********************************/
 
 .navbox {
-	position: relative;
 	margin-bottom: 30px;
+    position: relative;
 }
 
 .navbox-image img {
-	width: 100%!important;
-	height: auto!important;
+	height: auto !important;
+    width: 100% !important;
 }
 
 .navbox-title {
-	background: $sta-blue-T;
+	background:        $sta-blue-T;
 	background-repeat: repeat;
-	bottom: 0;
-	color: white!important;
-	width: 100%;
-	position: absolute;
+	color: white !important;
+	font-size:   24px;
+    font-weight: bold;
 	padding: 15px 15px;
-	font-size: 24px;
-	font-weight: bold;
+    position: absolute;
+    bottom: 0;
 	text-shadow: 1px 1px 1px rgb(68, 68, 68);
+    width: 100%;
 	@include -dpl-transition();
 }
 
 .navbox-title:before {
 	@extend i.chevron;
-	content: "";
+	content: '';
 	float: right;
 	height: 35px !important;
-	width: 30px !important;
 	top: 0 !important;
+    width: 30px !important;
 }
 
 .navbox-title a {
 	color: white !important;
-	text-decoration: none;
 	margin-right: 4px;
+    text-decoration: none;
 }
 
 .navbox:hover{
@@ -58,7 +57,6 @@
 	display: none;
 }
 
-
 /* .navbox-title is the first child of .navbox when
 	 .navbox-image is not showing (i.e. not present). */
 
@@ -67,6 +65,7 @@
 	position: relative;
 	bottom: auto;
 }
+
 .navbox-title:first-child:hover,
 .navbox:hover .navbox-title:first-child{
 	background: $sta-blue-hover;
@@ -79,42 +78,38 @@
 	margin-top: -20px;
 }
 
-
-
 @media (max-width: 991px) and (min-width: 768px) {
 
 	/* Make the title show below instead of on top of the image... */
-  .navbox-title {
-  	position: relative;
-  	font-size: 21px;
-  }
+    .navbox-title {
+        font-size: 21px;
+        position: relative;
+    }
 
-  /* ... and switch to non-transprent background colour. */
+    /* ... and switch to non-transprent background colour. */
 
-  .navbox-title {
-		background: $sta-blue;
-	}
+    .navbox-title {
+        background: $sta-blue;
+    }
 
-  .navbox-title:hover, .navbox:hover .navbox-title{
-		background: $sta-blue-hover;
-	}
+    .navbox-title:hover, .navbox:hover .navbox-title{
+        background: $sta-blue-hover;
+    }
 
-	.navbox-title:before {
-  		display: none;
-	}
-
-
+    .navbox-title:before {
+        display: none;
+    }
 
 }
 
 @media (max-width: 767px) {
 
-	.navbox {
+    .navbox {
 		margin-bottom: 2em;
 	}
 
 	.navbox-image {
-  		max-height: 65px;
+        max-height: 65px;
 		overflow: hidden;
   	}
 

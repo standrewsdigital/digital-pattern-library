@@ -3,23 +3,22 @@
 // Slider gallery
 
 .long-form--gallery-slider {
-    background-color: #f0f0f0;
-    padding: 50px 0;
-    overflow-x: scroll;
+    background-color: rgb(240, 240, 240);
     min-height: 420px; // 50 + 50 + 300 + 20
                        // padding top and bottom (of the gallery) +
                        //   height of the image slides +
                        //   a little for the caption
+    overflow-x: scroll;
+    padding: 50px 0;
 
     .slides-container {
-        position: relative;
         overflow-x: visible;
-        
+        position: relative;
     }
 
     .slides {
-        position: absolute;
         display: table-row;
+        position: absolute;
         // overflow-x: scroll;
 
         figure.image {

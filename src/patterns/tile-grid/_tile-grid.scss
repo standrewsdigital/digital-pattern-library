@@ -4,50 +4,50 @@
 /*********************************/
 
 .tile-grid {
-	padding: 30px 0;
+	background-color:        $sta-grey-light;
+	background-position:     center;
+	background-repeat:       no-repeat;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	color: inherit;
 	font-weight: 200;
 	line-height: 2.1428571435;
-	color: inherit;
-	background-color: $sta-grey-light;
-	background-position: center;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-repeat: no-repeat;
+	padding: 30px 0;
 }
 
 .tile-grid h2 {
-	font-size: 2.5em;
 	color: white;
-	margin: 10px 0 20px;
-	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+	font-size: 2.5em;
+	margin: 10px 0 20px 0;
+	text-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 .tile-grid h2.sta-grey {
 	color: $sta-grey;
-	text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+	text-shadow: 0 rgba(0, 0, 0, 0);
 }
 
 .read-more a {
 	@extend .btn;
 	@extend .btn-primary;
 	@extend .btn-block;
-	text-align: left;
 	color: white;
 	font-size: 1.5em;
 	line-height: 2em;
-	padding: 0.4em .8em .2em;
-	margin: 0 0 40px;
+	margin: 0 0 40px 0;
+	padding: 0.4em 0.8em 0.2em 0.8em;
+	text-align: left;
 }
 
 .read-more a:before {
 	@extend i.chevron;
-	content: "";
+	content: '';
 	float: right;
 	height: 28px !important;
-	width: 30px !important;
 	top: 10px !important;
+	width: 30px !important;
 }
 
 
@@ -55,17 +55,19 @@
 	.tile-grid {
 		padding: 30px 0;
 	}
+
 	.tile-grid h2 {
 		font-size: 1.8em;
 		margin-bottom: 30px;
 	}
+
 	.read-more a {
 		font-size: 1.2em;
 	}
-	.read-more a:before {
-		height: 20px!important;
-	}
 
+	.read-more a:before {
+		height: 20px !important;
+	}
 }
 
 @media (max-width: 479px) {

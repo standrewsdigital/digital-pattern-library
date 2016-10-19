@@ -1,49 +1,49 @@
 {
 	"items_masonry": [
 		{
-		  "image": {
-		  	"url": "docs/images/placeholders/555x240-001.jpg",
-		  	"alt": "Description"
-		  },
-		  "title": "Undergraduate",
-		  "url": "#",
-		  "column_size": "6"
-		 },
-		 {
-		  "image": {
-		  	"url": "docs/images/placeholders/555x240-002.jpg",
-		  	"alt": "Description"
-		  },
-		  "title": "Postgraduate",
-		  "url": "#",
-		  "column_size": "6"
-		 },
-		 {
-		  "image": {
-		  	"url": "docs/images/placeholders/360x240-8.jpg",
-		  	"alt": "Description"
-		  },
-		  "title": "Schools",
-		  "url": "#",
-		  "column_size": "4"
-		 },
-		 {
-		  "image": {
-		  	"url": "docs/images/placeholders/360x240-1.jpg",
-		  	"alt": "Description"
-		  },
-		  "title": "About",
-		  "url": "#",
-		  "column_size": "4"
-		 },
-		 {
-		  "image": {
-		  	"url": "docs/images/placeholders/360x240-7.jpg",
-		  	"alt": "Description"
-		  },
-		  "title": "Contact",
-		  "url": "#",
-		  "column_size": "4"
-		 }
+	  		"image": {
+			  	"url": "docs/images/placeholders/555x240-001.jpg",
+			  	"alt": "Description"
+			},
+		  	"title": "Undergraduate",
+		  	"url": "#",
+		  	"column_size": "6"
+		},
+		{
+			"image": {
+		  		"url": "docs/images/placeholders/555x240-002.jpg",
+		  		"alt": "Description"
+			},
+		  	"title": "Postgraduate",
+		  	"url": "#",
+		  	"column_size": "6"
+		},
+		{
+			"image": {
+		  		"url": "docs/images/placeholders/360x240-8.jpg",
+		  		"alt": "Description"
+		  	},
+	    	"title": "Schools",
+		  	"url": "#",
+		  	"column_size": "4"
+		},
+		{
+			"image": {
+		  		"url": "docs/images/placeholders/360x240-1.jpg",
+		  		"alt": "Description"
+		  	},
+		  	"title": "About",
+		  	"url": "#",
+		  	"column_size": "4"
+		},
+		{
+			"image": {
+		  		"url": "docs/images/placeholders/360x240-7.jpg",
+		  		"alt": "Description"
+		  	},
+  			"title": "Contact",
+		  	"url": "#",
+		  	"column_size": "4"
+	 	}
 	]
 }

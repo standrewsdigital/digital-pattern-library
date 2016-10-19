@@ -5,13 +5,23 @@
 	{{#if items}}
 		{{#items}}
 			<h3>{{{ accordion-heading }}}</h3>
-			<div>{{{accordion-content}}}</div>
+			<div>{{{ accordion-content }}}</div>
 		{{/items}}
 	{{else}}
-	<h3>{{#if accordion-heading}}{{{ accordion-heading }}}{{else}}[heading]{{/if}}</h3>
-	<div>
-		{{#if accordion-content}}{{{ accordion-content }}}{{else}}[content]{{/if}}
-	</div>
+		<h3>
+			{{#if accordion-heading}}
+				{{{ accordion-heading }}}
+			{{else}}
+				[heading]
+			{{/if}}
+		</h3>
+		<div>
+			{{#if accordion-content}}
+				{{{ accordion-content }}}
+			{{else}}
+				[content]
+			{{/if}}
+		</div>
 	{{/if}}
 </div>
 

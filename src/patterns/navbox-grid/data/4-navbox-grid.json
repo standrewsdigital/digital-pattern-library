@@ -1,44 +1,44 @@
 {
 	"items_masonry": [
 		{
-		  "image": {
-		  	"url": "docs/images/placeholders/750x240-001.jpg",
-		  	"alt": "Description"
-		  },
-		  "title": "Why St Andrews",
-		  "url": "#",
-		  "column_size": "8",
-		  "open": true
-		 },
-		 {
-		  "image": {
-		  	"url": "docs/images/placeholders/360x240-research.jpg",
-		  	"alt": "Description"
-		  },
-		  "title": "Research",
-		  "url": "#",
-		  "column_size": "4",
-		  "close": true
-		 },
-		 {
-		  "image": {
-		  	"url": "docs/images/placeholders/360x240-alumni.jpg",
-		  	"alt": "Description"
-		  },
-		  "title": "Alumni and donors",
-		  "url": "#",
-		  "column_size": "4",
-		  "open": true
-		 },
-		 {
-		  "image": {
-		  	"url": "docs/images/placeholders/750x240-002.jpg",
-		  	"alt": "Description"
-		  },
-		  "title": "The town",
-		  "url": "#",
-		  "column_size": "8",
-		  "close": true
-		 }
+			"image": {
+		  		"url": "docs/images/placeholders/750x240-001.jpg",
+		  		"alt": "Description"
+		  	},
+		  	"title": "Why St Andrews",
+		  	"url": "#",
+		  	"column_size": "8",
+		  	"open": true
+		},
+		{
+			"image": {
+		  		"url": "docs/images/placeholders/360x240-research.jpg",
+		  		"alt": "Description"
+			},
+			"title": "Research",
+		  	"url": "#",
+		  	"column_size": "4",
+		  	"close": true
+	 	},
+		{
+			"image": {
+		  		"url": "docs/images/placeholders/360x240-alumni.jpg",
+		  		"alt": "Description"
+		  	},
+	  		"title": "Alumni and donors",
+		  	"url": "#",
+		  	"column_size": "4",
+		  	"open": true
+	 	},
+		{
+			"image": {
+		  		"url": "docs/images/placeholders/750x240-002.jpg",
+		  		"alt": "Description"
+		  	},
+		  	"title": "The town",
+		  	"url": "#",
+		  	"column_size": "8",
+		  	"close": true
+		}
 	]
 }

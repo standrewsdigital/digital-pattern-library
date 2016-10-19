@@ -1,56 +1,55 @@
 
-
 <!-- Begin pattern: tile-grid //-->
 
 <div class="tile-grid"{{#if bg-image}} style="background-image: url({{asset bg-image}});"{{/if}}>
 
-  <div class="container">
+	<div class="container">
 
-  	<div class="row">
-	    <div class="col-md-8">
-	    {{#if heading}}	
-		      <h2>{{{ heading }}}</h2>
-	    {{else}} 
-		      	<h2 class="sta-grey">{{{ heading-dark }}}</h2>
-	    {{/if}}
-	    </div>
+		<div class="row">
+			<div class="col-md-8">
+				{{#if heading}}
+					<h2>{{{ heading }}}</h2>
+				{{else}}
+					<h2 class="sta-grey">{{{ heading-dark }}}</h2>
+				{{/if}}
+			</div>
 
-	    <div class="col-md-4 read-more read-more-container">
-			    
-		    <a href="{{default call-to-browse-url "call-to-browse-url"}}">{{default call-to-browse-text "call-to-browse-text"}}</a>
+			<div class="col-md-4 read-more read-more-container">
 
-	    </div>
-	</div>
+				<a href="{{default call-to-browse-url "call-to-browse-url"}}">{{default call-to-browse-text "call-to-browse-text"}}</a>
 
-	<div class="row">
-	  <div class="col-sm-6 col-md-4">
-			{{> tile tile-1 }}
+			</div>
 		</div>
 
-		<div class="col-sm-6 col-md-4">
-			{{> tile tile-2}}
-	  </div>
+		<div class="row">
+			<div class="col-sm-6 col-md-4">
+				{{> tile tile-1 }}
+			</div>
 
-	  <div class="col-sm-6 col-md-4">
-			{{> tile tile-3}}
-		</div>
+			<div class="col-sm-6 col-md-4">
+				{{> tile tile-2}}
+			</div>
 
-		 <div class="col-sm-6 col-md-4">
-			{{> tile tile-4}}
-	    </div>
+			<div class="col-sm-6 col-md-4">
+				{{> tile tile-3}}
+			</div>
 
-	    <div class="col-sm-6 col-md-4">
-			{{> tile tile-5}}
-		</div>
+			<div class="col-sm-6 col-md-4">
+				{{> tile tile-4}}
+			</div>
 
-		 <div class="col-sm-6 col-md-4">
-			{{> tile tile-6}}
-	    </div>
-	</div>  <!-- // End .row -->
+			<div class="col-sm-6 col-md-4">
+				{{> tile tile-5}}
+			</div>
 
-	<div class="read-more read-more-container-alt"></div>
+			<div class="col-sm-6 col-md-4">
+				{{> tile tile-6}}
+			</div>
+		</div>  <!-- // End .row -->
 
-  </div> <!-- // End .container -->
+		<div class="read-more read-more-container-alt"></div>
+
+	</div> <!-- // End .container -->
 
 </div>  <!-- // End .tile-grid -->
 

@@ -1,14 +1,14 @@
 {
-  "heading":  "News and events",
-  "paragraph":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
-  "action": {
-    "text": "Call to action",
-    "url": "#"
-  },
-  "action2": {
-    "text": "Call to action 2",
-    "url": "#"
-  },
-  "alignment": "left",
-  "style": "1"
+    "heading":  "News and events",
+    "paragraph":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
+    "action": {
+        "text": "Call to action",
+        "url": "#"
+    },
+    "action2": {
+        "text": "Call to action 2",
+        "url": "#"
+    },
+    "alignment": "left",
+    "style": "1"
 }

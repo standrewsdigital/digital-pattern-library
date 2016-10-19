@@ -11,105 +11,86 @@
 //
 // Note, that like the default Bootstrap mixins, these redefinitions need
 // to be included before the partials that depend on them.
-
-
 // mixin: button-variant
 // 
 // This modifies the original Bootstrap version to add our desired 
 // animations transitions.
 //
 // Lines modified or added are commented.
-@mixin button-variant($color, $background, $border) {
-  color: $color;
-  background-color: $background;
-  border-color: $border;
-
-  & {
-    transition: all 200ms ease-out; // ADDED
-  }
-
-  &:hover,
-  &:focus,
-  &.focus,
-  &:active,
-  &.active,
-  .open > &.dropdown-toggle {
+@mixin button-variant($color,
+$background,
+$border) {
     color: $color;
-    background-color: darken($background, $hover-darken);
-    -webkit-transition: all 200ms ease-out; // ADDED
-    -moz-transition: all 200ms ease-out; // ADDED
-    border-color: darken($border, $hover-darken);
-  }
-  &:active,
-  &.active,
-  .open > &.dropdown-toggle {
-    background-image: none;
-  }
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] & {
-    &,
+    background-color: $background;
+    border-color: $border;
+    & {
+        transition: all 200ms ease-out; // ADDED
+    }
     &:hover,
     &:focus,
     &.focus,
     &:active,
-    &.active {
-      background-color: $background;
-          border-color: $border;
+    &.active,
+    .open > &.dropdown-toggle {
+        color: $color;
+        background-color: darken($background, $hover-darken);
+        -webkit-transition: all 200ms ease-out; // ADDED
+        -moz-transition: all 200ms ease-out; // ADDED
+        border-color: darken($border, $hover-darken);
     }
-  }
-
-  .badge {
-    color: $background;
-    background-color: $color;
-  }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        background-image: none;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &, &:hover, &:focus, &.focus, &:active, &.active {
+            background-color: $background;
+            border-color: $border;
+        }
+    }
+    .badge {
+        color: $background;
+        background-color: $color;
+    }
 }
-
-
 // mixin: form-control-validation
 // 
 // This modifies the original Bootstrap version to remove the inset shadow
 // on form control elements.
 //
 // Lines removed are commented.
-@mixin form-control-validation($text-color: #555, $border-color: #ccc, $background-color: #f5f5f5) {
-  // Color the label and help text
-  .help-block,
-  .control-label,
-  .radio,
-  .checkbox,
-  .radio-inline,
-  .checkbox-inline,
-  &.radio label,
-  &.checkbox label,
-  &.radio-inline label,
-  &.checkbox-inline label  {
-    color: $text-color;
-  }
-  // Set the border and box shadow on specific inputs to match
-  .form-control {
-    border-color: $border-color;
-    @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075)); // Redeclare so transitions work
-    &:focus {
-      border-color: darken($border-color, 10%);
-      // REMOVED:
-      // $shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px lighten($border-color, 20%);
-      // @include box-shadow($shadow);
+@mixin form-control-validation($text-color: #555,
+$border-color: #ccc,
+$background-color: #f5f5f5) {
+    // Color the label and help text
+    .help-block, .control-label, .radio, .checkbox, .radio-inline, .checkbox-inline, &.radio label, &.checkbox label, &.radio-inline label, &.checkbox-inline label {
+        color: $text-color;
     }
-  }
-  // Set validation states also for addons
-  .input-group-addon {
-    color: $text-color;
-    border-color: $border-color;
-    background-color: $background-color;
-  }
-  // Optional feedback icon
-  .form-control-feedback {
-    color: $text-color;
-  }
+    // Set the border and box shadow on specific inputs to match
+    .form-control {
+        border-color: $border-color;
+        @include box-shadow(inset 0 1px 1px rgba(0, 0, 0, .075)); // Redeclare so transitions work
+        &:focus {
+            border-color: darken($border-color, 10%);
+            // REMOVED:
+            // $shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px lighten($border-color, 20%);
+            // @include box-shadow($shadow);
+        }
+    }
+    // Set validation states also for addons
+    .input-group-addon {
+        color: $text-color;
+        border-color: $border-color;
+        background-color: $background-color;
+    }
+    // Optional feedback icon
+    .form-control-feedback {
+        color: $text-color;
+    }
 }
-
-
 // mixin: form-control-focus
 // 
 // This modifies the original Bootstrap version to remove the inset shadow
@@ -117,16 +98,14 @@
 //
 // Lines removed are commented.
 @mixin form-control-focus($color: $input-border-focus) {
-  $color-rgba: rgba(red($color), green($color), blue($color), .6);
-  &:focus {
-    border-color: $color;
-    outline: 0;
-    // REMOVED:
-    // @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px $color-rgba);
-  }
+    $color-rgba: rgba(red($color), green($color), blue($color), .6);
+    &:focus {
+        border-color: $color;
+        outline: 0;
+        // REMOVED:
+        // @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px $color-rgba);
+    }
 }
-
-
 // mixin: label-variant
 // 
 // This modifies the original Bootstrap version to systematically wash-out the
@@ -134,36 +113,33 @@
 //
 // Lines removed are commented.
 @mixin label-variant($color) {
-  background-color: -dpl-wash-out($color); // MODIFIED
-
-  &[href] {
-    &:hover,
-    &:focus {
-      background-color: darken($color, 10%);
+    background-color: -dpl-wash-out($color); // MODIFIED
+    &[href] {
+        &:hover, &:focus {
+            background-color: darken($color, 10%);
+        }
     }
-  }
 }
-
-
 // mixin: alert-variant
 // 
 // This modifies the original Bootstrap version to set the darker link styling
 // to all links in the alert.
 //
 // Lines added and removed are commented.
-@mixin alert-variant($background, $border, $text-color) {
-  background-color: $background;
-  border-color: $border;
-  color: $text-color;
-
-  hr {
-    border-top-color: darken($border, 5%);
-  }
-  // REMOVED:
-  // .alert-link {
-  // ADDED:
-  .alert-link, a {
-    color: darken($text-color, 10%);
-  }
+@mixin alert-variant($background,
+$border,
+$text-color) {
+    background-color: $background;
+    border-color: $border;
+    color: $text-color;
+    hr {
+        border-top-color: darken($border, 5%);
+    }
+    // REMOVED:
+    // .alert-link {
+    // ADDED:
+    .alert-link,
+    a {
+        color: darken($text-color, 10%);
+    }
 }
-

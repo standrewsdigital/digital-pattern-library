@@ -5,60 +5,55 @@
 
 
 #category-header {
-  background-image: url('../images/header_general.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 0px;
-  overflow: hidden;
+    background-image:    url(../images/header_general.jpg);
+    background-position: center;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    margin-bottom: 0px;
+    overflow: hidden;
 
-  h2 {
-    background-color: -dpl-color($palette-default,'secondary','transparent');
-    background-color: rgba(27,116,195,0.7); // Override with great transparency.
-                                            // Fix this, probably.
-    color: white;
-    font-family: Georgia, serif;
-    font-weight: normal;
-    position: relative;
-    padding: 20px 100%;
-    margin: 0 -100%;
-    text-shadow: 1px 1px 1px #444;
+    h2 {
+        background-color: -dpl-color($palette-default,'secondary','transparent');
+        background-color: rgba(27, 116 ,195 ,0.7); // Override with great transparency.
+                                                // Fix this, probably.
+        color: white;
+        font-family: Georgia, serif;
+        font-weight: normal;
+        margin: 0 -100%;
+        padding: 20px 100%;
+        position: relative;
+        text-shadow: 1px 1px 1px rgb(68, 68, 68);
 
-    a {
-      color: white;
-      text-decoration: none;
-      font-weight: normal;
+        a {
+            color: white;
+            font-weight: normal;
+            text-decoration: none;
+        }
     }
-
-  }
-
 }
-
 
 // Solid background color, variant
 
 #category-header.category-header-solid {
-  background: -dpl-color($palette-default,'secondary','base');
+    background: -dpl-color($palette-default,'secondary','base');
 
-  h2 {
-    background: transparent;
-    //text-shadow: 1px 1px 1px -dpl-color($palette-default,'primary','base');;
-    text-shadow:none;
-  }
-
-
+    h2 {
+        background: transparent;
+        //text-shadow: 1px 1px 1px -dpl-color($palette-default,'primary','base');;
+        text-shadow:none;
+    }
 }
 
 @media (max-width: 600px) {
-  .category-header {
-    max-width: 300px;
-  }
+    .category-header {
+        max-width: 300px;
+    }
 }
 
 
 
 /* DISABLED, but saved here for historical reference.
- * This psuedo element creates the oblique angle after the 
+ * This psuedo element creates the oblique angle after the
  * heading and had a neat implementation.
  *
  *    #category-header h2:after {
@@ -75,11 +70,9 @@
  */
 
 // @media (max-width: 767px) {
-
-//   #category-header h2 {
-//     display: block;
-//   }
-
+//     #category-header h2 {
+//         display: block;
+//     }
 // }
 
 

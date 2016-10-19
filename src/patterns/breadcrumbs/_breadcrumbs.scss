@@ -3,25 +3,26 @@
 /* BEGIN Pattern: breadcrumbs    */
 /*********************************/
 
-    .breadcrumbs {
-        margin: 0 0 1em;
-        padding: 0;
+.breadcrumbs {
+    margin: 0 0 1em 0;
+    padding: 0;
 
-        li {
-            display: inline;
-            padding-right: 0.35em;
-        }
-
-        // Add 'greater than' before each element, except first.
-        li:before {
-            content: ">";
-            padding-right: 0.35em;
-        }
-        li:first-child:before {
-            content: "";   
-            padding-right: 0;
-        }
+    li {
+        display: inline;
+        padding-right: 0.35em;
     }
+
+    // Add 'greater than' before each element, except first.
+    li:before {
+        content: ">";
+        padding-right: 0.35em;
+    }
+
+    li:first-child:before {
+        content: "";
+        padding-right: 0;
+    }
+}
 
 
 /*********************************/

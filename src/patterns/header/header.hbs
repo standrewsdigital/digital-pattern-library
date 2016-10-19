@@ -6,58 +6,57 @@
 
     <div class="row" >
         {{#audience}}
-        <div id="header-audience">
-        
-            {{#authenticated}}
-            <div class="btn-group">
-              <a href="#" class="btn btn-link dropdown-toggle" data-toggle="dropdown">{{first-name}}&nbsp;{{last-name}} <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/email/">Email</a></li>
-                <li><a href="/mms/">MMS</a></li>
-                <li><a href="/moodle/">Moodle</a></li>
-                <li><a href="/iSaint/">iSaint</a></li>
-                <li role="presentation" class="divider"></li>
-                <li><a href="/logout/"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Log out</a></li>
-              </ul>
+            <div id="header-audience">
+
+                {{#authenticated}}
+                    <div class="btn-group">
+                        <a class="btn btn-link dropdown-toggle" data-toggle="dropdown" href="#">{{first-name}}&nbsp;{{last-name}} <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/email/">Email</a></li>
+                            <li><a href="/mms/">MMS</a></li>
+                            <li><a href="/moodle/">Moodle</a></li>
+                            <li><a href="/iSaint/">iSaint</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li><a href="/logout/"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Log out</a></li>
+                        </ul>
+                    </div>
+                {{else }}
+
+                    {{#each links}}
+                        <a class="audience" href="{{this}}">{{@key}}</a>
+                    {{/each}}
+
+                {{/authenticated}}
+
             </div>
-            {{else }}
-            
-            {{#each links}}
-                <a href="{{this}}" class="audience">{{@key}}</a>
-            {{/each}}
-
-            {{/authenticated}}
-           
-
-        </div>
         {{/audience}}
-        
+
         <div id="logo-container">
             <div id="header-logo"><h1><a href="http://www.st-andrews.ac.uk/"><span>University of St Andrews</span></a></h1></div>
         </div>
 
         <div id="header-search" role="search">
 
-            <button class="btn btn-link" type="button" value="" name="btnG" id="header-search-trigger"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            <button class="btn btn-link" id="header-search-trigger" name="btnG" type="button" value="" /><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
 
             <form action="http://www.st-andrews.ac.uk/gsasearch" method="get">
-                
+
                 <div class="input-group">
                     <span class="input-group-btn">
-                        <button class="btn btn-link" type="button" value="" name="btnG" id="header-search-close"/><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                        <button class="btn btn-link" id="header-search-close" name="btnG" type="button" value=""/><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
                     </span>
-                    <input class="form-control" type="text" title="Enter search keywords" maxlength="256" name="q" placeholder="Search the University website..."/>
+                    <input class="form-control" name="q" type="text" title="Enter search keywords" maxlength="256" placeholder="Search the University website..."/>
                     <span class="input-group-btn">
-                        <button class="btn btn-primary" type="submit" value="Search" name="btnG" id="header-search-submit"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        <button class="btn btn-primary" id="header-search-submit" name="btnG" type="submit" value="Search"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                     </span>
                 </div>
-                
-                <input type="hidden" value="StAndrews_ITS" name="site"/>
-                <input type="hidden" value="xml_no_dtd" name="output"/>
-                <input type="hidden" value="StAndrews_ITS" name="client"/>
-                <input type="hidden" value="StAndrews_ITS" name="proxystylesheet"/>
+
+                <input name="site" type="hidden" value="StAndrews_ITS"/>
+                <input name="output" type="hidden" value="xml_no_dtd"/>
+                <input name="client" type="hidden" value="StAndrews_ITS"/>
+                <input name="proxystylesheet" type="hidden" value="StAndrews_ITS"/>
             </form>
-        
+
         </div>
 
     </div>
