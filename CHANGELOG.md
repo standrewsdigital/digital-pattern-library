@@ -1,241 +1,235 @@
 # Change log
 
-All notable changes to Digital Pattern Library will be documented in this file.
-This project adheres to [Semantic Versioning](http://semver.org/).
+All notable changes to digital pattern library will be documented in this file.
+This project adheres to [semantic versioning](http://semver.org/).
 
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
-
----
-
 
 
 ## v0.5.5
 
 Release date: 4 October 2016
 
+### Added
+
+* New homepage with 'rules of engagement' text approved by
+  Corporate Communications. This also features an aside showing
+  current version, build date and time, plus links to the GitHub
+  repository.
+
 
 ### Changed
 
-* DOCS (homepage) Aside content
-* DOCS (homepage) making new homepage to make explicit governance responsibilities of the DPL.
-* FEAT (homepage) Finalise text
-* FEAT (homepage) Post QA tweaks
-* FEAT (Navigation) Reorder nav
-* FEAT (setup) Improve setup documentation for Windows users.
+* Reordered the navigation to bring About up to the top level.
+* Removed the 'Ex:' prefix from Examples dropdowns. 
+* Improved setup documentation for Windows users.
 
 
 ### Fixed
 
-* DOCS (_layouts) audit _layouts
-* DOCS (Change log) Update to house style
-* DOCS (examples) audit examples
-* FIX (Bootstrap examples) Nav bar fix
-* FIX (Bootstrap examples) Nav bar fix
-* FIX (Bootstrap examples) Nav bar fix
-* FIX (homepage) H2 to H3 in aside
-* FIX (Package.json) Change version and update repo
-* FIX (patterns) small tweaks and redundant code
-* FIX Change header to default header (remove audiences). 
-* FIX Correct repository URL in package.json (it was still set to Bitbucket).
-* FIX Remove 'Ex:' prefix from Examples dropdowns.
-* FIX Update code in DPL documentation to meet house code style and standards.
+* Changed the audience header to the correct default header.
+* Corrected the repository URL in package.json (it was still 
+  set to Bitbucket rather than GitHub).
+* Updated code in DPL change log, documentation, examples, and _layouts
+  to meet house code style and standards.
+* Fixed aside heading (was H2, now H3).
+* Fixed Bootstrap examples nav bar.
+* Small tweaks and removal of redundant code in various patterns.
 
----
 
 
 
+---
 
 ## v0.5.4
 
 Release date: 24 August 2016
 
+### Added
 
-### New feature
+* Added School header example.
 
-* FEAT (content-updates) CSS updates
-* FEAT (content-updates) research school updates
-* FEAT (header) school header example
-* FEAT (header) update links handlebars
+
+### Changed
+
+* Various minor CSS updates.
+* Research school updates.
+* Changed how Google Maps are done. Now pulls in external 
+  location data and remove in-file location data.
+* Updated links handlebars.
 
 
 ### Fixed
 
-* FIX (accordion) fix css cascading
-* FIX (Accordion) make CSS rules more specific
-* FIX (content-updates) fix sentence
-* FIX (content-updates) responsive adjustments
-* FIX (google-maps) pulls in external location-data
-* FIX (google-maps) remove in file location data
-* FIX (version number) update version number
+* Fixed accordion CSS code to make the rules more specific.
+* Various minor content fixes.
+* Make adjustments to responsive code.
 
----
 
 
 
+---
 
 ## v0.5.3
 
 Release date: 10 June 2016
 
+### Added
+
+* Added Google Maps pattern.
+* Added first iteration of hideaway JavaScript code.
+* Added new variants, placeholder images and template to 
+  the Navbox Grid pattern.
+* Added new light grey background variation to Tile Grid pattern.
+
 
 ### Changed
 
-* FEAT (enable-scrollspy) uncomment scrollspy includes
-* FEAT (google-maps) added Google Maps pattern
-* FEAT (google-maps) update version and check for google maps
-* FEAT (google-maps) updates from commit message
-* FEAT (hideaway) hideaway javascript
-* FEAT (navbox) Alt text 1
-* FEAT (navbox-grid) new variations on grid
-* FEAT (navbox-grid) Placeholder images and template
-* FEAT (tile-grid) new light grey background variation
-* FEAT (version) update version number
+* Uncommented scrollspy includes.
 
 
-### Fixed
+### Fixes
 
-* FIX (base and misc) fix home link and misc
-* FIX (category-header) fix css selector
-* FIX (footer) added javascript to update copy date
-* FIX (google-maps) fixing api key issue
-* FIX (long-form) copyright year
-* FIX (navbox-grid) responsive bug in example 4
-* FIX (staff-listing) fixing a naming convention mixup
-* FIX (sticky nav) positioning and z-index
-* FIX (sticky-nav) implementing scroll-spy
-* FIX (tile-grid) remove repositioning JS
+* Fixed home link in base.
+* Fixed CSS selector in category header.
+* Fixed copy date in footer by adding JavaScript to update it.
+* Fixed issue with Google Maps API key.
+* Fixed copyright year in long form.
+* Fixed responsive bug in Navbox Grid pattern, example 4.
+* Fixed a naming convention mix-up in the Staff Listing pattern.
+* Fixed positioning, z-index and ScrollSpy in Sticky Nav.
+* Removed repositioning JavaScript in Tile Grid pattern.
 
----
 
 
 
+---
 
 ## v0.5.2
 
 Release date: 9 February 2016
 
+### Added
+
+* Added user stories to documentation.
+* Created Contact Card pattern for staff listings.
+* Created a working dummy pattern to make creating new patterns easier
+  and quicker: simply copy and rename the dummy pattern as a template.
+* Added Sticky Nav pattern.
+* Updated .gitignore to that Sublime Text project files are now also ignored.
+* Added blank Navbox grid example.
+
 
 ### Changed
 
-* DOCS (About): Add user stories to documentation
-* DOCS (About): Fix typo in deliverables
-* DOCS (About): Fix typos
-* DOCS (Change log): Add change to grunt-ftp-deploy destination
-* FEAT (Contact card): Create contact card pattern for staff listings.
-* FEAT (CSS) Changes to CSS to allow for the chevron to be vertically aligned.
-* FEAT (DPL chrome) Replace headers
-* FEAT (Dummy pattern): Create working dummy pattern
-* FEAT (Examples) Increase example iframe height
-* FEAT (Handlebars) Updating Handlebars structure to be mobile first for the Navboxes and updating SCSS to adjust the changes for the Navboxes. FIXES navbox title spilling out of the box on mobile devices.
-* FEAT (sticky nav) add sticky nav
-* MAINT (.gitignore): Ignore Sublime Text project files
+* Updated change log regarding grunt-ftp-deploy destination.
+* Replaced headers throughout the DPL.
+* Increased iFrame height for examples.
+* Updated header with University brand.
 
 
 ### Fixed
 
-* FIX (bootstrap-adv) fixing responsive issues
-* FIX (bootstrap2) fix example of nested media
-* FIX (Content 2 column) Example 2 broken
-* FIX (Gallery) Remove apostrophes from Options
-* FIX (general) to fix T4 responsive images
-* FIX (grunt-ftp-deploy): Change CDN endpoint
-* FIX (grunt-ftp-deploy): Change FTP destination to standrewsdigital.org.uk
-* FIX (grunt-ftp-deploy): Fix path to docs/dpl in gruntfile
-* FIX (header) update header with university brand
-* FIX (Info bite grid) Background images in examples
-* FIX (info-bite-grid) fixing examples
-* FIX (Long form) Inconsistent names
-* FIX (Masonry grid) Background images missing in example
-* FIX (mobile-sizing) fixed breaking lines and url
-* FIX (Navbox) Add CSS to hide empty Navboxs
-* FIX (navbox) conditional into navbox for hidden
-* FIX (Navbox) remove extra line breaks from syntax
-* FIX (navbox-grid) added blank no 3 example
-* FIX (navbox-grid) Documentation update
-* FIX (navbox-grid) use hidden for boxes unshown
-* FIX (package) version numbers
-* FIX (Secondary call-to-action) Inconsistent menu item
-* FIX (staff-profile) class change and structure
-* FIX (staff-profile) updating layout
-* FIX (Sticky nav) Add sticky-nav to DPL nav
-* FIX (sticky-nav) cleanup prior to merge request
-* FIX (sticky-nav) fix hbs doc file
-* FIX (sticky-nav) fix JS syntax errors
+* Updated Handlebars structure to be mobile first for the 
+  Navboxes and updated SCSS to adjust the changes for the 
+  Navboxes. This fixes the Navbox title spilling out of the 
+  box on mobile devices.
+* Fixed typo in About deliverables.
+* Fixed vertical alignment for chevrons.
+* Fixed responsive issues in Bootstrap Advanced examples.
+* Fixed example of nested media.
+* Fixed example 2 in Content 2 column.
+* Removed apostrophes from Gallery options.
+* Fixed T4 responsive images.
+* Fixed grunt-ftp-deploy to point to standrewsdigital.org.uk in light 
+  of change of secondary accounts to TLS/SSL Explicit: changed CDN 
+  endpoint; changed FTP destination to standrewsdigital.org.uk and fixed
+  path to docs/dpl in gruntfile
+* Fixed examples and background images in Info bite grid.
+* Fixed inconsistent names in Long form pattern.
+* Fixed Masonry grid pattern background images: missing in example.
+* Fixed breaking lines and URL in mobile.
+* Fixed Navbox pattern: it now hides empty navboxes.
+* Fixed Navbox grid pattern for empty boxes, and updated documentation.
+* Fixed inconsistent menu item in Secondary call-to-action.
+* Fixed class, layout and structure in Staff profile pattern.
+* Added Sticky Nav pattern to the DPL navigation (it was missing!)
+* Various minor fixes in Sticky Nav pattern (hbs doc, JavaScript 
+  syntax errors).
 
----
 
 
 
+---
 
 ## v0.5.1
 
 Release date: 16 September 2015
 
-
 ### Changed
 
-* Improve documentation about long-form pattern (corrections and 
+* Improved documentation about long-form pattern (corrections and 
   clarifications).
 
-
 ### Fixed
-* Remove http: protocol from Google font URL (replaced with //) so
+* Removed http: protocol from Google font URL (replaced with //) so
   that it may be served under https without issue.
 
+
+
+
 ---
-
-
-
 
 ## v0.5.0
 
 Release date: 27 August 2015
 
-
 ### Added
-* Add Long form pattern for easily building Long form style pages.
-* Add ability to easily retrieve Hex and RGB(A) codes for brand colours.
-* Create `.core-stats.txt` file to track filesizes of core assets.
-* Add a summary JSON file into the `core` folder when built.
+
+* Added long form pattern for easily building Long form style pages.
+* Added ability to easily retrieve Hex and RGB(A) codes for brand colours.
+* Created `.core-stats.txt` file to track filesizes of core assets.
+* Added a summary JSON file into the `core` folder when built.
 * Set up build process to add a text banner with version and date to all 
   compiled CSS and JS.
-* Add minified versions of JavaScript files.
-* Add contributor documentation: CONTRIBUTING.md, SETUP.md, ADD-PATTERN.md.
+* Added minified versions of JavaScript files.
+* Added contributor documentation: CONTRIBUTING.md, SETUP.md, ADD-PATTERN.md.
 
 
 ### Changed
-* Restyle the colour swatches in documentation.
-* Adjuste the selected colour variants.
-* Improve documentation about footer pattern.
-* Refactor the README.md file.
+
+* Restyled the colour swatches in documentation.
+* Adjusted the selected colour variants.
+* Improved documentation about footer pattern.
+* Refactored the README.md file.
 
 
 ### Removed
-* Remove unused Bootstrap components: carousel and scrollspy.
+
+* Removed unused Bootstrap components: Carousel and ScrollSpy.
+
+
+
 
 ---
-
-
-
 
 ## v0.4.1
 
 Release date: 27 July 2015
 
-
 ### Fixed
+
 * Spacing issue in the header on mobile screens.
 
+
+
+
 ---
-
-
-
 
 ## v0.4.0
 
 Release date: 24 July 2015
-
 
 ### Added
 * Header-only JavaScript and CSS core files. 
@@ -250,11 +244,13 @@ Release date: 24 July 2015
 
 
 ### Changed
+
 * Updated default header pattern to have no audience links
 * Added an audience-header variation examples for showing audience links.
 
 
 ### Fixed
+
 * Improved how navboxes show on smaller screens, making them more concise.
 * Fixed tile images that were scaling out of proportion at some screen widths.
 * Fixed tile grid padding which was incorrect at smaller screen widths.
@@ -262,17 +258,17 @@ Release date: 24 July 2015
 * Authenticated header dropdown is now aligned right on mobile screens.
 * Made header search placeholder text less ambiguous.
 
+
+
+
 ---
-
-
-
 
 ## v0.3.2
 
 Release date: 18 June 2015
 
-
 ### Fixed
+
 * Fixed bug where logo would flash on desktops because the
   JavaScript had to load before it would switch from standard to foundation 
   logo.
@@ -286,89 +282,95 @@ Release date: 18 June 2015
 * Reduced size of text in `<figcaption>` elements.
 * Provide PNG logo fallback for IE8.
 
+
+
+
 ---
-
-
-
 
 ## v0.3.1
 
 Release date: 15 June 2015
 
-
 ### Changed
+
 * Optimised logo-standard.svg:      69 KB -> 41 KB
 * Optimised logo-foundation.svg:    60 KB -> 33 KB
 * Optimised print-crest.png:        41 KB -> 11 KB
 
 
 ### Removed 
+
 * Unused logos and images.
 
+
+
+
 ---
-
-
-
 
 ## v0.3.0
 
 Release date: 10 June 2015
 
-
 ### Added
+
 * Font aliasing to improve quality of fonts
 * Classes for implementing navigation in WordPress to support our theme.
 
 
 ### Changed
+
 * The breadcrumb pattern was updated to `<ul>` based instead of `<p>` based.
 
 
 ### Fixed
 * Increase opacity of category header to make more legible.
 
+
+
+
 ---
-
-
-
 
 ## v0.2.0
 
 Release date: 14 April 2015
 
 ### Added
+
 * Local fallback copies of PT Sans in the event that Google fonts are not 
   available.
 * Web application example page.
 
 
 ### Changed
+
 * A new design for the header was implemented resulting considerable 
   refactoring of the header pattern.
 
 
 ### Fixed
+
 * Typos in documentation.
 * Missing step in the README getting started steps.
 * Removed unncessary 'accessibility' id from header.
 * Bug with spacing in navigation bar pattern.
 
+
+
+
 ---
-
-
-
 
 ## v0.1.1
 
 Release date: 12 March 2015
 
-
 ### Added
+
 * Better support for links within alert elements.
 * Change log to summarise updates in a human readable format.
 
 
 ### Changed
+
 * Table headers now default to grey with additional colors available with 
   class modifiers.
 * Bootstrap panels now have card-like view, with no border and a subtle drop
@@ -379,6 +381,7 @@ Release date: 12 March 2015
 
 
 ### Fixed
+
 * Header toggle buttons were stacked on small screens.
 * Tiles had a height of 200px instead of 240px.
 * Sidebars had an unnecessary margin-top.
