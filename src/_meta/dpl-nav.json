@@ -38,7 +38,7 @@
                 { "name" : "Category header",
                   "url" : "patterns/category-header/index.html"
                 },
-                { "name" : "Contact card",
+                { "name" : "Contact card <span class='text-danger'>(deprecated)</span>",
                   "url" : "patterns/contact-card/index.html"
                 },
                 { "name" : "Content 2 column",
@@ -65,10 +65,10 @@
                 { "name" : "Hero banner",
                   "url" : "patterns/hero-banner/index.html"
                 },
-                { "name" : "Info bite",
+                { "name" : "Info bite <span class='text-danger'>(deprecated)</span>",
                   "url" : "patterns/info-bite/index.html"
                 },
-                { "name" : "Info bite grid",
+                { "name" : "Info bite grid <span class='text-danger'>(deprecated)</span>",
                   "url" : "patterns/info-bite-grid/index.html"
                 },
                 { "name" : "Intro",
@@ -77,10 +77,10 @@
                 { "name" : "Long-form content",
                   "url" : "patterns/long-form/index.html"
                 },
-                { "name" : "Masonry",
+                { "name" : "Masonry <span class='text-danger'>(deprecated)</span>",
                   "url" : "patterns/masonry/index.html"
                 },
-                { "name" : "Masonry grid",
+                { "name" : "Masonry grid <span class='text-danger'>(deprecated)</span>",
                   "url" : "patterns/masonry-grid/index.html"
                 },
                 { "name" : "Navbox",
@@ -101,7 +101,7 @@
                 { "name" : "Staff profile",
                   "url" : "patterns/staff-profile/index.html"
                 },
-                { "name" : "Text banner",
+                { "name" : "Text banner <span class='text-danger'>(deprecated)</span>",
                   "url" : "patterns/text-banner/index.html"
                 },
                 { "name" : "Tile",
