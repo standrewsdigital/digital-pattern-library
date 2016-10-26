@@ -6,7 +6,7 @@
         },
 
         { "name" : "Documentation",
-            "url" : "docs/index.html",
+            "url" : "#",
             "items" : [
                 { "name" : "Colours",
                   "url" : "colours.html"
@@ -38,7 +38,7 @@
                 { "name" : "Category header",
                   "url" : "patterns/category-header/index.html"
                 },
-                { "name" : "Contact card <span class='text-danger'>(deprecated)</span>",
+                { "name" : "Contact card",
                   "url" : "patterns/contact-card/index.html"
                 },
                 { "name" : "Content 2 column",
@@ -114,7 +114,7 @@
         },
 
         { "name" : "Example pages",
-            "url" : "examples/index.html",
+            "url" : "#",
             "items" : [
                 { "name" : "Homepage",
                   "url" : "examples/homepage.html"
