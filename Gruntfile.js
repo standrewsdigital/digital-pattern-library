@@ -352,31 +352,6 @@ module.exports = function(grunt) {
         }, // END of filesize
 
 
-        // ftp-deploy - send files via FTP to production website
-        'ftp-deploy': {
-            core: {
-                src: 'core',
-                dest: '/dpl/'+grunt.option('tag')+'/',
-                exclusions: [],
-                auth: {
-                    host: 'www-users.st-andrews.ac.uk',
-                    port: 21,
-                    authKey: 'core'
-                }
-            },
-            docs: {
-                src: 'docs',
-                dest: '/dpl/'+grunt.option('tag')+'/',
-                exclusions: [],
-                auth: {
-                    host: 'www-users.st-andrews.ac.uk',
-                    port: 21,
-                    authKey: 'docs'
-                }
-            }
-        }, // END of ftp-deploy
-
-
         // gitinfo – loads info from git into object for grunt to access.
         gitinfo: {},
 
@@ -472,43 +447,6 @@ module.exports = function(grunt) {
         'assemble:pattern_examples','assemble:examples','assemble:docs',
         'copy:docs_core','copy:docs_images','copy:docs_googlemaps']);
 
-
-    // deploy-core – Deploy core assets via FTP to CDN
-    grunt.registerTask('deploy-core',
-        'Uploads core files as specified version.',
-        function(n) {
-            var deploy_tag = grunt.option('tag');
-            if (!deploy_tag) {
-                grunt.log.error(
-                    "You must specify a tag to deploy as, i.e. '--tag=1.0.2'");
-                grunt.fail.warn(
-                    'Cannot deploy core files without a version tag.');
-                return;
-            }
-            grunt.log.writeln("Deploying core files in 'core/' as version (" +
-                deploy_tag+")");
-            grunt.task.loadNpmTasks('grunt-ftp-deploy');
-            grunt.task.run(['ftp-deploy:core']);
-        }
-    );
-
-
-    // deploy-docs – Deploys documentation via FTP
-    grunt.registerTask('deploy-docs',
-        'Upload docs as specified version.',
-        function(n) {
-            var deploy_tag = grunt.option('tag');
-            if(!deploy_tag) {
-                grunt.log.error(
-                    "You must specify a tag to deploy as, i.e. '--tag=1.0.2'");
-                grunt.fail.warn('Cannot deploy docs without a version tag.');
-                return;
-            }
-            grunt.log.writeln("Deploying 'docs/' as version ("+deploy_tag+")");
-            grunt.task.loadNpmTasks('grunt-ftp-deploy');
-            grunt.task.run(['ftp-deploy:docs']);
-        }
-    );
 
 
 };
