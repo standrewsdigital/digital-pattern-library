@@ -1,14 +1,29 @@
-# Setup
+# Set up
 
 Version 0.3
 Last updated: Friday 04 November 2016
 
 <!-- MarkdownTOC -->
 
-- 1. Prerequisites
-- 2. Initialize developer tools
-- 3. Upgrading an existing install
-- Conclusion
+- [1. Prerequisites](#1-prerequisites)
+  - [Git](#git)
+  - [Node.js](#nodejs)
+  - [Grunt CLI](#grunt-cli)
+  - [Ruby](#ruby)
+    - [Install Ruby on Windows](#install-ruby-on-windows)
+    - [Install Ruby on MacOS X](#install-ruby-on-macos-x)
+- [2. Initialize developer tools](#2-initialize-developer-tools)
+  - [Clone the repo](#clone-the-repo)
+  - [Install Grunt dependencies](#install-grunt-dependencies)
+    - [Error: Unable to connect to github.com](#error-unable-to-connect-to-githubcom)
+  - [Install Compass Ruby gem](#install-compass-ruby-gem)
+- [Conclusion](#conclusion)
+- [Update an existing install](#update-an-existing-install)
+  - [1. Make sure your Node.js version is up-to-date.](#1-make-sure-your-nodejs-version-is-up-to-date)
+  - [2. Checkout the branch from GitHub.](#2-checkout-the-branch-from-github)
+  - [3. Delete the `node_modules` folder.](#3-delete-the-nodemodules-folder)
+  - [4. Reinstall npm to your DPL directory.](#4-reinstall-npm-to-your-dpl-directory)
+  - [5. Verify it works.](#5-verify-it-works)
 
 <!-- /MarkdownTOC -->
 
@@ -139,20 +154,30 @@ $ gem install compass
 ```
 
 
+## Conclusion
 
-## 3. Upgrading an existing install
+You should now be all configured to start work on the pattern library. You should now read [CONTRIBUTING.md](CONTRIBUTING.md) for some general guidelines and principles of development.
+
+---
+
+
+
+
+## Update an existing install
 
 If you already have the DPL installed and need to update the underlying packages start here:
 
 
 ### 1. Make sure your Node.js version is up-to-date.
    
-To find out which version you have run `node -v` using git bash or the command line. You can upgrade to version `6.9.1 LTS` if you don't already have this from [http://nodejs.org/](http://nodejs.org/).
+To find out which version you have, run `node -v` using Git Bash or the command line. 
+
+Update to version `6.9.1 LTS` if you don't already have it from [http://nodejs.org/](http://nodejs.org/). All the default installation options work so there is no need to change them.
 
 
-### 2. Clone branch from GitHub.
+### 2. Checkout the branch from GitHub.
 
-Use your prefered git client to clone the branch containing the updated `package.json` files.
+Use your prefered Git client to checkout the branch containing the updated `package.json` files.
 
 
 ### 3. Delete the `node_modules` folder.
@@ -162,14 +187,10 @@ This can be found within the root of the DPL folder. This may take a long time d
 
 ### 4. Reinstall npm to your DPL directory.
 
-Run `npm install` using git bash or the command line. Note: Node.js have changed the file structure so all dependencies will be installed as normal folders instead of nesting the folders.
+Run `npm install` using Git Bash or the command line. 
 
 
 ### 5. Verify it works.
 
-Build out the updated files using `grunt` to verify that it all works.
+Run `grunt` and if it building the DPL you win!
 
-
-## Conclusion
-
-You should now be all configured to start work on the pattern library. You should now read [CONTRIBUTING.md](CONTRIBUTING.md) for some general guidelines and principles of development.
