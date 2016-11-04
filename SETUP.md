@@ -145,9 +145,9 @@ $ gem install compass
 If you already have the DPL installed and need to update the underlying packages start here:
 
 
-### 1. Make sure your node.js version is up-to-date.
+### 1. Make sure your Node.js version is up-to-date.
    
-To find out which version you have run `node -v`. You can upgrade to version 6.9.1 LTS if you don't already have this from [http://nodejs.org/](http://nodejs.org/).
+To find out which version you have run `node -v` using git bash or the command line. You can upgrade to version `6.9.1 LTS` if you don't already have this from [http://nodejs.org/](http://nodejs.org/).
 
 
 ### 2. Clone branch from GitHub.
@@ -155,14 +155,14 @@ To find out which version you have run `node -v`. You can upgrade to version 6.9
 Use your prefered git client to clone the branch containing the updated `package.json` files.
 
 
-### 3. Delete the 'node-module' folder.
+### 3. Delete the `node_modules` folder.
 
-This may take a long time due to the size of these files.
+This can be found within the root of the DPL folder. This may take a long time due to the size of these files.
 
 
 ### 4. Reinstall npm to your DPL directory.
 
-Run `npm install`. Note: node have changed the file structure so all dependencies will be installed as normal folders instead of nesting the folders.
+Run `npm install` using git bash or the command line. Note: Node.js have changed the file structure so all dependencies will be installed as normal folders instead of nesting the folders.
 
 
 ### 5. Verify it works.
