@@ -17,7 +17,7 @@ module.exports = function(grunt) {
     // == 1. Load task libraries
 
     grunt.loadNpmTasks('grunt-gitinfo');
-    grunt.loadNpmTasks('assemble');
+    grunt.loadNpmTasks('grunt-assemble');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-concat');
@@ -25,7 +25,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-filesize');
 
 
     // == 2. Config
@@ -334,24 +333,6 @@ module.exports = function(grunt) {
         }, // END of copy
 
 
-        // filesize - report filesize into a git commited stats file.
-        filesize: {
-            core_stats: {
-                options: {
-                    output: [{
-                        path: ".core-stats.txt",
-                        format: "{filename} - {kb:'0.0'} kb"
-                    }]
-                },
-                files: [{
-                    expand: true,
-                    cwd: 'core',
-                    src: ['**/*.css', '**/*.js']
-                }]
-            }
-        }, // END of filesize
-
-
         // gitinfo – loads info from git into object for grunt to access.
         gitinfo: {},
 
@@ -439,7 +420,7 @@ module.exports = function(grunt) {
     // core – builds the core assets from source
     grunt.registerTask('core', ['clean:core','compass','jshint','concat',
         'uglify','gitinfo','assemble:core_meta','copy:core_images',
-        'copy:core_fonts','filesize:core_stats']);
+        'copy:core_fonts']);
 
 
     // docs – builds the documentation, makes use of build too.
