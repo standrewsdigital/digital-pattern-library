@@ -44,7 +44,6 @@
 
 .hidden {
   display: none !important;
-  visibility: hidden !important;
 }
 
 
@@ -53,7 +52,4 @@
 
 .affix {
   position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 999;
 }
