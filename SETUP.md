@@ -192,5 +192,5 @@ Run `npm install` using Git Bash or the command line.
 
 ### 5. Verify it works.
 
-Run `grunt` and if it building the DPL you win!
+Run `grunt` and if it works then you're successfully updated.
 
