@@ -1,0 +1,5 @@
+{
+    "variant": "section-header--inverse long-form--bg-darken",
+    "bg-image": "docs/images/long-form-content/bg-spark.jpg",
+    "sh-content": "<h2>Lorem ipsum dolor</h2>"
+} 

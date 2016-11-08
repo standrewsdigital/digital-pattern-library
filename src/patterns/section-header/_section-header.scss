@@ -1,0 +1,78 @@
+
+/*********************************/
+/* BEGIN Pattern: section-header */
+/*********************************/
+
+// Darkened background image
+.section-header--bg-darken {
+    &:after {
+        background-color: rgba(0,0,0,0.6);
+        content: ' ';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1001;
+    }
+}
+
+// Lightened background image
+.section-header--bg-lighten {
+    &:after {
+        background-color: rgba(255,255,255,0.6);
+        content: ' ';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1001;
+    }
+}
+
+.section-header {
+    // Lots of padding on top and bottom by default
+    padding-top:    40px;
+    padding-bottom: 40px;
+
+    // Position backgrounds images correctly if specified later
+    background-position: center center;
+    background-size:     cover;
+
+    // Positioning
+    position: relative; // A hook for other absolute positioning inside
+    z-index: 1000;
+
+}
+
+.section-header__wrapper {
+    z-index: 1200;
+    @extend .col-md-8;
+    @extend .col-md-offset-2;
+}
+
+.section-header__content h2 { 
+        font-family: $font-family-sans-serif;
+        font-size: 35px;
+        margin: 20px 0;
+        color: white;
+}
+
+.section-header--bg-lighten .section-header__content h2 { 
+        color: rgb(68, 68, 68);
+}
+
+@media (min-width: 992px){
+    .section-header__content h2{
+            font-size:65px;
+    }
+
+    .section-header {
+        // Lots of padding top and bottom
+        padding-top:    70px;
+        padding-bottom: 70px;
+    }
+}
+
+/*********************************/
+/* END Pattern: section-header   */
+/*********************************/

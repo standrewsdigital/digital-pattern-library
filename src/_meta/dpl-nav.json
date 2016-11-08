@@ -95,6 +95,9 @@
                 { "name" : "Secondary call-to-action",
                   "url" : "patterns/secondary-call/index.html"
                 },
+                { "name" : "Section header",
+                  "url" : "patterns/section-header/index.html"
+                },
                 { "name" : "Sticky nav",
                   "url" : "patterns/sticky-nav/index.html"
                 },
