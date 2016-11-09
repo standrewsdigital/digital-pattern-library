@@ -47,7 +47,7 @@
 .section-header__wrapper {
     z-index: 1200;
     @extend .col-md-8;
-    @extend .col-md-offset-2;
+    /*@extend .col-md-offset-2;*/
 }
 
 .section-header__content h2 { 
