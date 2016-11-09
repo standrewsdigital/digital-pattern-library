@@ -4,10 +4,15 @@
 /*********************************/
 
 .kis-widget {
-    overflow: hidden;
     border: 0px none transparent;
-    width: 700px;
     height: 160px;
+    margin-top: 15px;
+    overflow: hidden;
+    width: 700px;
+}
+
+.subject.course {
+    padding-bottom: 40px;
 }
 
 .subject-popover .popover {
@@ -19,10 +24,15 @@
 }
 
 .honours-degree-item button {
-    padding: 0 6px;
-    margin-right: 4em;
     border-radius: 4px;
     font-size: 14px;
+    margin-right: 4em;
+    padding: 0 6px;
+}
+
+div.course.kis-widget-red {
+    background-color: rgb(221, 49, 44);
+    padding: 0;
 }
 
 /*********************************/

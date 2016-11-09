@@ -1,6 +1,7 @@
+{{#if columns}}
 <div class="container subject course">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-xs-12">
             <h2>Joint Honours Degrees</h2>
             <p>Students may also apply to study English alongside any of the following subjects:</p>
         </div>
@@ -19,13 +20,16 @@
         </ul>
     </div>
 </div>
+{{/if}}
+{{#if kis-banner}}
 <div class="kis-widget-red course">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2" style="padding-top: 15px">
-                <iframe id="unistats-widget-frame" class="kis-widget" title="Unistats KIS Widget" src="https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small" scrolling="no" style="overflow: hidden; border: 0px none transparent; width: 700px; height: 160px;">
+            <div class="col-md-8 col-md-offset-2">
+                <iframe id="unistats-widget-frame" class="kis-widget" title="Unistats KIS Widget" src='{{default kis-banner "[KIS banner URL]"}}' scrolling="no">
                 </iframe>
             </div>
         </div>
     </div>
 </div>
+{{/if}}
