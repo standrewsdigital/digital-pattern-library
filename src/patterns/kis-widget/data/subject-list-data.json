@@ -1,0 +1,40 @@
+{
+    "columns": [
+        {
+            "courses": [
+                {
+                    "subject": "Arabic",
+                    "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small"
+                },
+                {
+                    "subject": "Arabic2",
+                    "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small"
+                }
+            ]
+        },
+        {
+            "courses": [
+                {
+                    "subject": "Arabic3",
+                    "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small"
+                },
+                {
+                    "subject": "Arabic4",
+                    "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small"
+                }
+            ]
+        },
+        {
+            "courses": [
+                {
+                    "subject": "Arabic57",
+                    "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small"
+                },
+                {
+                    "subject": "Arabic9",
+                    "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small"
+                }
+            ]
+        }
+    ]
+}

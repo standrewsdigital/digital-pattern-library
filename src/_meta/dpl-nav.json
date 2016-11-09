@@ -74,6 +74,9 @@
                 { "name" : "Intro",
                   "url" : "patterns/intro/index.html"
                 },
+                { "name" : "KIS widget",
+                  "url" : "patterns/kis-widget/index.html"
+                },
                 { "name" : "Long-form content",
                   "url" : "patterns/long-form/index.html"
                 },
