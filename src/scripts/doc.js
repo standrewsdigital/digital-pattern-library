@@ -39,17 +39,17 @@ function htmlDecode(value) {
     });
 
 
-    $('iframe').load(function() {
+    $('iframe').on("load" , (function() {
         $('iframe').height($('iframe').contents().height());
-    });
+    }));
 
-    $(".example iframe").load(function() {
+    $(".example iframe").on("load" , (function() {
         var html = $(this).contents().find('body .example').first().html();
         var encoded_html = htmlEncode(html);
-        console.log(encoded_html);
+        // console.log(encoded_html);
         $(this).siblings('.code').html(encoded_html);
 
-    });
+    }));
 
 
     // Helper function for the swatch popovers.

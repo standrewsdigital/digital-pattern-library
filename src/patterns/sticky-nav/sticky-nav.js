@@ -21,7 +21,7 @@ $('#nav-top').affix({
     // Modified version of this smooth scrolling:
     // https://css-tricks.com/snippets/jquery/smooth-scrolling/
 
-$('a[href*=#]:not([href=#])').click(function() {
+$('a[href*="#"]:not([href="#"])').click(function() {
 
     if ( location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'' ) || location.hostname == this.hostname ) {
 
