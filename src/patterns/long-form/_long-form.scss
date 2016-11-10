@@ -6,7 +6,8 @@
 .long-form {
     // Lots of padding on top and bottom by default
     padding-top:    40px;
-    padding-bottom: 0;
+    padding-bottom: 40px;
+    // padding-bottom: 0; //Lewis, are we sure about this?
 
     // Position backgrounds images correctly if specified later
     background-position: center center;
@@ -30,13 +31,14 @@
     @extend .col-md-offset-2;
 }
 
-@media (min-width: 992px) {
-    .long-form {
-        // Lots of padding top and bottom
-        padding-top:    0;
-        padding-bottom: 0;
-    }
-}
+// Lewis, are we sure about this?
+// @media (min-width: 992px) {
+//     .long-form {
+//         // Lots of padding top and bottom
+//         padding-top:    0;
+//         padding-bottom: 0;
+//     }
+// }
 
 // Styles for standard HTML elements inside content.
 @import 'long-form/long-form-content';

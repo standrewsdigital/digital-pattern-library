@@ -1,3 +1,16 @@
+/**
+ * screen.scss
+ * Master scss file for assembling the DPL patterns.
+ *
+ *
+ * @version     0.1 2016-11-10
+ * @author      Aaron Lott <al244@st-andrews.ac.uk>
+*/
+
+/* ==========================================================================
+IMPORTS AND PATTERNS
+========================================================================== */
+
 @charset "utf-8";
 
 @import 'utilities';
@@ -7,7 +20,11 @@
 @import 'icons';
 @import 'figures';
 
-/* Patterns */
+/* Patterns import
+   --------------------------------------------------------------------------
+   
+   @version 1.0.0
+   */
 @import 'accordion/accordion';
 @import 'breadcrumbs/breadcrumbs';
 @import 'category-header/category-header';
@@ -35,30 +52,55 @@
 @import 'tile/tile';
 @import 'tile-grid/tile-grid';
 
-/* Other vendor scripts */
+/* Other vendor scripts
+   --------------------------------------------------------------------------
+   
+   @version 1.0.0
+   */
 @import 'vendor/jquery.theatre.min';
 
 
-img.placeholder_size {
-	height: 85px;
-	width: 85px;
+/* ==========================================================================
+GLOBAL CSS RULES
+========================================================================== */
+
+/* Course patterns global rules
+   --------------------------------------------------------------------------
+   
+   @version 1.0.0
+   */
+
+.course {
+	padding: 40px 15px;
 }
 
-/* 
-	Fix for t4 image issues 
-	use by adding these two classes to the parent container of the img in question
-*/
+.pgt-intro {
+	padding-bottom: 25px;
+}
+
+.course.st-andrews-blue-light {
+	color: rgb(255,255,255);
+}
+
+
+/* Misc global rules
+   --------------------------------------------------------------------------
+   Fix for t4 image issues use by adding these two classes to the parent 
+   container of the img in question. Also the hideaway style.
+
+   @version 1.0.0
+   */
+
 .img-responsive.override_image_size img {
 	height: 100% !important;
 	width: 100% !important;
 }
 
-/* Needs to be moved into the content 2 column */
-.course.st-andrews-blue-light {
-	color: rgb(255,255,255);
-}
-
-/* Hideaway CSS */
 .hideaway-reveal {
 	margin-top: 3em;
+}
+
+img.placeholder_size {
+	height: 85px;
+	width: 85px;
 }
