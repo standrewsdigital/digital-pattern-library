@@ -252,6 +252,43 @@ module.exports = function(grunt) {
                 ],
                 dest: 'core/scripts/core-base.js'
             },
+            nojquery: {
+                src: [
+                    // Update src/docs/dependencies.md if any of these change
+                    'src/scripts/vendor/hammer.js',
+                    'src/scripts/vendor/jquery.bigtarget.js',
+                    'src/scripts/vendor/jquery.fitvids.js',
+                    'src/scripts/vendor/jquery.fittext.js',
+                    'src/scripts/vendor/jquery.replacetext.js',
+                    'src/scripts/vendor/jquery.theatre.min.js',
+                    'src/scripts/vendor/respond.js',
+
+                    // Bootstrap JavaScript
+                    // Note these scripts should align with the CSS
+                    'src/scripts/vendor/bootstrap/affix.js',
+                    'src/scripts/vendor/bootstrap/alert.js',
+                    'src/scripts/vendor/bootstrap/button.js',
+                    // 'src/scripts/vendor/bootstrap/carousel.js',
+                    'src/scripts/vendor/bootstrap/collapse.js',
+                    'src/scripts/vendor/bootstrap/dropdown.js',
+                    'src/scripts/vendor/bootstrap/tab.js',
+                    'src/scripts/vendor/bootstrap/transition.js',
+                    'src/scripts/vendor/bootstrap/scrollspy.js',
+                    'src/scripts/vendor/bootstrap/modal.js',
+                    'src/scripts/vendor/bootstrap/tooltip.js',
+                    'src/scripts/vendor/bootstrap/popover.js',
+
+                    'src/scripts/vendor/matchmedia.polyfill.js',
+                    'src/scripts/vendor/matchMedia.addListener.js',
+                    'src/scripts/vendor/enquire.js',
+
+                    // DPL-specific scripts
+                    'src/scripts/base.js',
+                    'src/scripts/unbreakableSpaces.js',
+                    'src/patterns/*/*.js' // This includes all JS in patterns.
+                ],
+                dest: 'core/scripts/core-nojquery.js'
+            },
             doc: {
                 src: [
                     'src/scripts/vendor/jquery.min.js',
