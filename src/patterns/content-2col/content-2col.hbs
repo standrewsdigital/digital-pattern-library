@@ -1,27 +1,27 @@
 
 <!-- Begin pattern: content-2col //-->
 {{#if background}}
-    <section class="{{{background}}}" role="main">
+    <section class="{{{background}}}">
 {{/if}}
-    <div class="container" id="main-content">
+        <div class="container">
 
-        {{#if heading}}
-            {{{heading}}}
-        {{/if}}
+            {{#if heading}}
+                <div id=\"\" class=\"row\"><div class=\"col-xs-12 col-sm-6\"><h2>{{{heading}}}</h2></div></div>
+            {{/if}}
 
-        <div class="row">
-            <div {{{col-1}}}>
-                {{#if text}}
-                     {{{text}}}
-                {{/if}}
-            </div>
-            <div {{{col-2}}}>
-                {{#if sidebar}}
-                    {{{sidebar}}}
-                {{/if}}
+            <div class="row">
+                <div {{{col-1}}}>
+                    {{#if text}}
+                         {{{text}}}
+                    {{/if}}
+                </div>
+                <div {{{col-2}}}>
+                    {{#if sidebar}}
+                        {{{sidebar}}}
+                    {{/if}}
+                </div>
             </div>
         </div>
-    </div>
 {{#if background}}    
     </section>
 {{/if}}

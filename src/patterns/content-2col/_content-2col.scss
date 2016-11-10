@@ -9,8 +9,12 @@
 }
 
 /* remove margin of h2 when it's the first element of the content */
-.content h2 {
+.content h2, .content h3 {
     margin-top:0px;
+}
+
+.sta-grey-light{
+	background-color: $sta-grey-light;
 }
 
 /*********************************/
