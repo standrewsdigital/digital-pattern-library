@@ -227,9 +227,6 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/bootstrap/modal.js',
                     'src/scripts/vendor/bootstrap/tooltip.js',
                     'src/scripts/vendor/bootstrap/popover.js',
-
-                    'src/scripts/vendor/matchmedia.polyfill.js',
-                    'src/scripts/vendor/matchMedia.addListener.js',
                     'src/scripts/vendor/enquire.js',
 
                     // DPL-specific scripts
