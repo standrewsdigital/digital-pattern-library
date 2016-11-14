@@ -1,0 +1,41 @@
+
+/*********************************/
+/* BEGIN Pattern: kis-widget     */
+/*********************************/
+
+.kis-widget {
+    border: 0px none transparent;
+    height: 160px;
+    margin-top: 15px;
+    overflow: hidden;
+    width: 700px;
+}
+
+.subject.course {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.subject-popover .popover {
+    max-width: 645px;
+}
+
+.honours-degree-item {
+    padding-bottom: 4px;
+}
+
+.honours-degree-item button {
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 4em;
+    padding: 0 6px;
+}
+
+div.course.kis-widget-red {
+    background-color: rgb(221, 49, 44);
+    padding: 0;
+}
+
+/*********************************/
+/* END Pattern: kis-widget       */
+/*********************************/

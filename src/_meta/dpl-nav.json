@@ -74,6 +74,9 @@
                 { "name" : "Intro",
                   "url" : "patterns/intro/index.html"
                 },
+                { "name" : "KIS widget",
+                  "url" : "patterns/kis-widget/index.html"
+                },
                 { "name" : "Long-form content",
                   "url" : "patterns/long-form/index.html"
                 },
@@ -94,6 +97,9 @@
                 },
                 { "name" : "Secondary call-to-action",
                   "url" : "patterns/secondary-call/index.html"
+                },
+                { "name" : "Section header",
+                  "url" : "patterns/section-header/index.html"
                 },
                 { "name" : "Sticky nav",
                   "url" : "patterns/sticky-nav/index.html"
