@@ -390,6 +390,8 @@ module.exports = function(grunt) {
                 files: {
                     'core/scripts/core-base.min.js':
                         ['core/scripts/core-base.js'],
+                    'core/scripts/core-nojquery.min.js':
+                        ['core/scripts/core-nojquery.js'],
                     'core/scripts/core.min.js':
                         ['core/scripts/core.js'],
                     'core/scripts/datatables.min.js':
