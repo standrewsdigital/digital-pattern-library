@@ -1,51 +1,30 @@
 
 <!-- Begin pattern: content-2col //-->
+{{#if background}}
+    <section class="{{background}}">
+{{/if}}
+        <div class="container">
 
-<div class="container" id="{{default id "[id]"}}">
-    <div class="row">
-        <div class="col-sm-8">
-            <section class="content" role="main">
-                {{#if text}}
-                    {{{text}}}
-                {{else}}
-                    <h2>{{default title "Ullam corporis suscipit"}}</h2>
-
-                    <img src="{{asset 'docs/images/placeholders/750x311.jpg'}}">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                    <p><a href="#">Sed ut perspiciatis</a></p>
-                {{/if}}
-            </section>
-        </div>
-        <div class="col-sm-4 sidebar content" role="complementary">
-            {{#if sidebar}}
-                {{{sidebar}}}
-            {{else}}
-                <!-- Begin pattern: navbox //-->
-                <div class="navbox big-target-click-zone">
-                    <div class="navbox-image">
-                        <img src="{{asset "docs/images/placeholders/360x240.jpg"}}" alt="Description">
-                    </div>
-                    <div class="navbox-title">
-                        <p><a class="big-target-anchor" href="/study">Study</a></p>
-                    </div>
-                </div> <!-- End pattern: navbox //-->
-
-                <hr>
-
-                <h3>Related links</h3>
-
-                <ul>
-                    <li><a href="#">Related link 1</a></li>
-                    <li><a href="#">Related link 2</a></li>
-                    <li><a href="#">Related link 3</a></li>
-                    <li><a href="#">Related link 4</a></li>
-                    <li><a href="#">Related link 5</a></li>
-                </ul>
+            {{#if heading}}
+                <div class="row"><div class="col-xs-12 col-sm-6"><h2>{{heading}}</h2></div></div>
             {{/if}}
-        </div>
-    </div>
-</div>
 
+            <div class="row">
+                <div class="{{col-1}}">
+                    {{#if text}}
+                         {{{text}}}
+                    {{/if}}
+                </div>
+                {{#if col-2}}
+                <div class="{{col-2}}" {{#if role}}role="{{role}}"{{/if}}>
+                    {{#if sidebar}}
+                        {{{sidebar}}}
+                    {{/if}}
+                </div>
+                {{/if}}
+            </div>
+        </div>
+{{#if background}}    
+    </section>
+{{/if}}
 <!-- End pattern: content-2col //-->
