@@ -1,0 +1,24 @@
+<!-- Begin pattern: featured media //-->
+
+<article class="tile {{default color "[color]"}}">
+
+    <div class="tile-image-title">
+        {{#if image.url}}
+            <img src='{{asset image.url}}' alt="{{default image.alt "[alt]"}}">
+        {{else}}
+            <img src='path/to/image.ext' alt="{{default image.alt "[alt]"}}">
+        {{/if}}
+        <h3><a href="{{default url "[url]"}}">{{default title "[title]"}}</a></h3>
+    </div>
+
+    <p>{{default description "[description]"}}</p>
+
+    <div class='tile-date' datetime="{{default date "[date]"}}">{{default date-display "[date-display]"}}</div>
+
+    <div class='tile-type'>{{default type "[type]"}}</div>
+
+    <div class="clear"></div>
+
+</article>
+
+<!-- End pattern: featured media //-->
