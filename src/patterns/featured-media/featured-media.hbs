@@ -1,13 +1,10 @@
 <!-- Begin pattern: featured media //-->
 
-<div class="featured-media" style="background-color: rgb(0, 97, 180);">
+<div class="featured-media{{background}}" {{#if bg-img}}style="background-image: url({{bg-img}}); background-size: cover;"{{/if}}>
     <div class="container">
         {{{column1}}}
-        <div class="col-md-5">
-            <div class="embed-responsive embed-responsive-16by9"><iframe src="https://www.youtube.com/embed/bsjsUn61pe4" allowfullscreen=""></iframe></div>
-        </div>
+        {{{column2}}}
     </div>
 </div>
-
 
 <!-- End pattern: featured media //-->
