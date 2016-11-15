@@ -1,24 +1,13 @@
 <!-- Begin pattern: featured media //-->
 
-<article class="tile {{default color "[color]"}}">
-
-    <div class="tile-image-title">
-        {{#if image.url}}
-            <img src='{{asset image.url}}' alt="{{default image.alt "[alt]"}}">
-        {{else}}
-            <img src='path/to/image.ext' alt="{{default image.alt "[alt]"}}">
-        {{/if}}
-        <h3><a href="{{default url "[url]"}}">{{default title "[title]"}}</a></h3>
+<div class="featured-media" style="background-color: rgb(0, 97, 180);">
+    <div class="container">
+        {{{column1}}}
+        <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9"><iframe src="https://www.youtube.com/embed/bsjsUn61pe4" allowfullscreen=""></iframe></div>
+        </div>
     </div>
+</div>
 
-    <p>{{default description "[description]"}}</p>
-
-    <div class='tile-date' datetime="{{default date "[date]"}}">{{default date-display "[date-display]"}}</div>
-
-    <div class='tile-type'>{{default type "[type]"}}</div>
-
-    <div class="clear"></div>
-
-</article>
 
 <!-- End pattern: featured media //-->
