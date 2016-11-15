@@ -17,6 +17,14 @@
     background-color: $sta-blue;
 }
 
+@media (max-width: 991px) {
+    .featured-media img {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+}
+
 /*********************************/
 /* END Pattern: featured media   */
 /*********************************/
