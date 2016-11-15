@@ -247,6 +247,14 @@ thead {
 }
 
 /*==============================================================================
+    FEATURED MEDIA
+==============================================================================*/
+
+.featured-media img {
+    display: none;
+}
+
+/*==============================================================================
     KIS WIDGET
 ==============================================================================*/
 
@@ -267,8 +275,8 @@ thead {
     line-height: 1.5;
 
     h1, h2, h3, h4, h5, h6 {
-        font-family: $font-family-sans-serif  ; 
-        font-weight: bold;     
+        font-family: $font-family-sans-serif  ;
+        font-weight: bold;
     }
 
     figure {
@@ -281,7 +289,7 @@ thead {
         }
 
 
-        
+
     }
 }
 
@@ -302,7 +310,7 @@ aside.parallel-left {
     clear: left;
     padding: 10px 20px;
     padding-left: 0;
-    width: 150px;    
+    width: 150px;
 }
 
 aside.parallel-right {
@@ -314,7 +322,7 @@ aside.parallel-right {
     width: 150px;
 }
 
-aside.parallel-left figure, 
+aside.parallel-left figure,
 aside.parallel-right figure {
     padding: 0;
     margin: 0;
@@ -342,7 +350,7 @@ aside.parallel-right figure {
         padding-bottom: 10px;
 
         figcaption {
-            text-align: left;    
+            text-align: left;
         }
     }
 

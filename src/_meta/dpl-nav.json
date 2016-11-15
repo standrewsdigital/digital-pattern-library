@@ -50,6 +50,9 @@
                 { "name" : "Content updates",
                   "url" : "patterns/content-updates/index.html"
                 },
+                { "name" : "Featured media",
+                  "url" : "patterns/featured-media/index.html"
+                },
                 { "name" : "Footer",
                   "url" : "patterns/footer/index.html"
                 },
