@@ -1,0 +1,24 @@
+<!-- Begin pattern: tabs pattern //-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="tabs-container">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="active" role="presentation"><a href="#tab-1" data-toggle="tab" aria-controls="home" role="tab">First year</a></li>
+                    <li class="" role="presentation"><a href="#tab-2" data-toggle="tab" aria-controls="home" role="tab">Second year</a></li>
+                    <li class="" role="presentation"><a href="#tab-3" data-toggle="tab" aria-controls="home" role="tab">Honours</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    {{#each tabs}}
+                        <div class="tab-pane fade {{class}}" id="{{id}}" role="tabpanel">
+                            {{{tab-content}}}
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+<div>
+<!-- End pattern: tabs pattern //-->

@@ -107,6 +107,9 @@
                 { "name" : "Staff profile",
                   "url" : "patterns/staff-profile/index.html"
                 },
+                { "name" : "Tabs",
+                  "url" : "patterns/tabs/index.html"
+                },
                 { "name" : "Text banner <span class='text-danger'>(deprecated)</span>",
                   "url" : "patterns/text-banner/index.html"
                 },
