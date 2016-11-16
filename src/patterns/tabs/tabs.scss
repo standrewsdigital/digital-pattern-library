@@ -1,0 +1,27 @@
+
+/*********************************/
+/* BEGIN Pattern: tabs          */
+/*********************************/
+
+.tabs-container {
+    margin-bottom: 20px;
+}
+
+.tab-pane {
+    border:     1px solid rgb(204, 204, 204);
+    border-top: none;
+    padding:        15px;
+    padding-bottom: 0;
+
+}
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear;
+         -o-transition: opacity 0.15s linear;
+            transition: opacity 0.15s linear;
+}
+
+/*********************************/
+/* END Pattern: tabs            */
+/*********************************/

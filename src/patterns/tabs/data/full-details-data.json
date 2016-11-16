@@ -1,0 +1,19 @@
+{
+    "tabs": [
+        { 
+            "class": "active in", 
+            "id": "tab-1", 
+            "tab-content": "<p>In&nbsp;your first year, you must take the following two modules:</p><ul><li><a href='#'>Culture and Conflict: An introduction to Nineteenth- and Twentieth-Century Literature</a>:&nbsp;introduces a small number of texts, in prose and verse, from the nineteenth and twentieth centuries.</li><li><a href='#'>Explorers and Revolutionaries: Literature 1680-1830</a>:&nbsp;examines travel, colonialism, and different constructions of “man’s natural estate” in the early eighteenth century.</li></ul>"
+        },
+
+        { 
+            "id": "tab-2", 
+            "tab-content": "<p>Second year students must take the following two modules:</p><ul><li><a href='#'>Mediaeval and Renaissance Texts</a>:&nbsp;introduces early forms of English language and literature, using specially edited texts from Old English, Middle English and Older Scots.</li><li><a href='#'>Drama: Reading and Performance</a>:&nbsp;introduces a number of representative plays from the Renaissance period and from the twentieth century. Emphasis is placed upon the context in which these plays were first created and those in which they are now received.</li></ul>"
+        },
+
+        { 
+            "id": "tab-3", 
+            "tab-content": "<p>If you decide to take English in your third and fourth years, you choose from a wide variety of advanced options, including modules in Old English, Renaissance literature, Romanticism, the Victorian novel, literary theory, Scottish verse, Restoration drama, Shakespeare, modern American drama, contemporary fiction, creative writing and playwriting.</p><p>Here is a sample of Honours modules which have been offered in previous years:</p><ul><li>Beowulf</li><li>The Younger Romantics: Poetry and Prose (1810-1830)</li><li>Postcolonial Literature and Theory</li><li>Romantic Writing and Women</li><li>Contemporary British Fiction</li><li>Civil Wars on Page and Screen</li></ul><p>In fourth year, students also undertake a 10,000 word dissertation on a topic of their choice. This independent project enables you to develop key research skills which are desired by both prospective employers and by graduate schools offering postgraduate degrees.</p>"
+        }           
+    ]
+}
