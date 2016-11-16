@@ -18,7 +18,7 @@ The Digital pattern library provides a JavaScript configuration and CSS styles t
 
 To use DataTables, first, you need to include the DataTables plugin. DataTables is loaded on the St Andrews CDN. These are the current file you need.
 
-* JavaScript: `https://www.st-andrews.ac.uk/~cdn/datatables/1.10.7/js/jquery.dataTables.min.js`
+* JavaScript: `https:{{pkg.cdn.endpoint}}/{{pkg.cdn.package}}/{{pkg.version}}/scripts/jquery.dataTables.min.js`
 
 Additionally, you should load the Digital Pattern library's custom DataTables JavaScript and CSS. These files customise the look, feel and functionality of DataTables to match the pattern library.
 
