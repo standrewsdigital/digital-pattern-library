@@ -1,7 +1,7 @@
 # How to use - Digital pattern library
 
-Version 0.1
-Last updated: Wednesday 12 October 2016
+Version 0.2
+Last updated: Wednesday 16 November 2016
 
 <!-- MarkdownTC -->
 
