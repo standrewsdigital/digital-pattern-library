@@ -18,4 +18,4 @@ The Pattern Library uses code from the following packages. By default, all of th
 
 These packages are supported by not required.
 
-* [jQuery DataTables](http://www.datatables.net/) (v1.10.7) is supported and we provide additional JavaScript and CSS to match the pattern library. See [Data tables](datatables.html) for more information.
+* [jQuery DataTables](http://www.datatables.net/) (v1.10.12) is supported and we provide additional JavaScript and CSS to match the pattern library. See [Data tables](datatables.html) for more information.

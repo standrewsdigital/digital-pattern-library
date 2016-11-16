@@ -363,7 +363,16 @@ module.exports = function(grunt) {
                     src: ['location-data.js'],
                     dest: 'docs/patterns/google-maps/examples/'
                 }]
+            },
+            docs_datatables: {
+                files: [{
+                    expand: true,
+                    cwd: 'src/scripts/vendor/',
+                    src: ['jquery.dataTables.min.js'],
+                    dest: 'core/scripts/'
+                }]
             }
+
         }, // END of copy
 
 
@@ -456,7 +465,7 @@ module.exports = function(grunt) {
     // core – builds the core assets from source
     grunt.registerTask('core', ['clean:core','compass','jshint','concat',
         'uglify','gitinfo','assemble:core_meta','copy:core_images',
-        'copy:core_fonts']);
+        'copy:core_fonts', 'copy:docs_datatables']);
 
 
     // docs – builds the documentation, makes use of build too.
