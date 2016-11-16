@@ -12,12 +12,6 @@
     box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25);
 }
 
-.panel-primary>.panel-heading {
-    color: #fff;
-    background-color: $sta-blue;
-    border-color: $sta-blue;
-}
-
 .panel-heading {
     font-size: 1.3em;
     font-weight: 700;
@@ -48,38 +42,46 @@
     @include -dpl-transition();
 }
 
-.panel:hover {
-    cursor: pointer;
-}
-
-.tile:hover h3 {
-    background: $sta-blue-hover;
-}
-
 /* Colors */
 
 .panel-primary {
-    border-color: #00539b;
+    border-color: $sta-blue;
 }
 
-.panel-success {
-    border-color: #608738;
+.panel-primary>.panel-heading:hover {
+    background: $sta-blue-hover;
 }
 
-.panel-info {
-    border-color: #1b74c3;
+.panel-secondary {
+    border-color: $sta-cyan-light;
 }
 
-.panel-warning {
-    border-color: #d68721;
+.panel-secondary>.panel-heading:hover {
+    background: $sta-cyan-hover;
 }
 
-.panel-danger {
-    border-color: #c22a22;
+.panel-tertiary-1 {
+    border-color: $sta-green;
 }
 
-@media (max-width: 767px) {
+.panel-tertiary-1>.panel-heading:hover {
+    background: $sta-green-hover;
+}
 
+.panel-tertiary-2 {
+    border-color: $sta-burgundy;
+}
+
+.panel-tertiary-2>.panel-heading:hover {
+    background: $sta-burgundy-hover;
+}
+
+.panel-tertiary-3 {
+    border-color: $sta-purple;
+}
+
+.panel-tertiary-3>.panel-heading:hover {
+    background: $sta-purple-hover;
 }
 
 /*********************************/

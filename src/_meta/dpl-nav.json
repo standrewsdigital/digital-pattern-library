@@ -101,6 +101,9 @@
                 { "name" : "Panel",
                   "url" : "patterns/panel/index.html"
                 },
+                { "name" : "Panel grid",
+                  "url" : "patterns/panel-grid/index.html"
+                },
                 { "name" : "Secondary call-to-action",
                   "url" : "patterns/secondary-call/index.html"
                 },
