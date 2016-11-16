@@ -1,0 +1,87 @@
+
+/*********************************/
+/* BEGIN Pattern: panel           */
+/*********************************/
+
+.panel {
+    margin: 0 auto 3em;
+    background-color: #fff;
+    border: 0;
+    -webkit-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25);
+    box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25);
+}
+
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: $sta-blue;
+    border-color: $sta-blue;
+}
+
+.panel-heading {
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: -1px;
+    border-top-left-radius: -1px;
+}
+
+.panel-title {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: inherit;
+}
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 21px;
+    color: inherit;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+.panel h3 {
+    @include -dpl-transition();
+}
+
+.panel:hover {
+    cursor: pointer;
+}
+
+.tile:hover h3 {
+    background: $sta-blue-hover;
+}
+
+/* Colors */
+
+.panel-primary {
+    border-color: #00539b;
+}
+
+.panel-success {
+    border-color: #608738;
+}
+
+.panel-info {
+    border-color: #1b74c3;
+}
+
+.panel-warning {
+    border-color: #d68721;
+}
+
+.panel-danger {
+    border-color: #c22a22;
+}
+
+@media (max-width: 767px) {
+
+}
+
+/*********************************/
+/* END Pattern: panel            */
+/*********************************/
