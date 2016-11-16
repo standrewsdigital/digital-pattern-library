@@ -3,8 +3,6 @@
 Version 0.2
 Last updated: Wednesday 16 November 2016
 
-The digital pattern library (DPL) is a resource created and owned by the [digital communications team](digitalcommunications.wp.st-andrews.ac.uk).
-
 <!-- MarkdownTOC -->
 
 - [1. About the pattern library](#1-about-the-pattern-library)
@@ -25,6 +23,7 @@ The digital pattern library (DPL) is a resource created and owned by the [digita
 
 ## 1. About the pattern library
 
+The digital pattern library (DPL) is a resource created and owned by the [digital communications team](digitalcommunications.wp.st-andrews.ac.uk).
 
 ### 1.1 Audiences
 
