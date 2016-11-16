@@ -7,6 +7,9 @@ Last updated: Wednesday 16 November 2016
 
 - [1. About the pattern library](#1-about-the-pattern-library)
     - [1.1 Audiences](#11-audiences)
+        - [1.1.1 General users](#111-general-users)
+        - [1.1.2 Web developers](#112-web-developers)
+        - [1.1.3 Digital communications team](#113-digital-communications-team)
     - [1.2 Deliverables](#12-deliverables)
 - [2 Permission to use the DPL](#2-permission-to-use-the-dpl)
     - [2.1 Obtaining permission to use the DPL](#21-obtaining-permission-to-use-the-dpl)
@@ -23,7 +26,7 @@ Last updated: Wednesday 16 November 2016
 
 ## 1. About the pattern library
 
-The digital pattern library (DPL) is a resource created and owned by the [digital communications team](digitalcommunications.wp.st-andrews.ac.uk). 
+The digital pattern library (DPL) is a resource created and owned by the [digital communications team](http://digitalcommunications.wp.st-andrews.ac.uk/). 
 
 
 ### 1.1 Audiences
