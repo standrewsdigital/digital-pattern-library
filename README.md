@@ -1,89 +1,106 @@
 # Readme - Digital pattern library
 
-Version 0.1
-Last updated: Wednesday 12 October 2016
+Version 0.2
+Last updated: Wednesday 16 November 2016
 
-<!-- MarkdownTC -->
+The digital pattern library (DPL) is a resource created and owned by the [digital communications team](digitalcommunications.wp.st-andrews.ac.uk).
 
-- [1. Commands](#1-commands)
-  - [1.1 Build core and docs](#11-build-core-and-docs)
-    - [1.1.1 Build core](#111-build-core)
-    - [1.1.2 Build docs](#112-build-docs)
-  - [1.2 Watch \(interactive building\)](#12-watch-interactive-building)
+<!-- MarkdownTOC -->
+
+- [1. About the pattern library](#1-about-the-pattern-library)
+    - [1.1 Audiences](#11-audiences)
+    - [1.2 Deliverables](#12-deliverables)
+- [2 Permission to use the DPL](#2-permission-to-use-the-dpl)
+    - [2.1 Obtaining permission to use the DPL](#21-obtaining-permission-to-use-the-dpl)
+- [3 Code standards in the DPL](#3-code-standards-in-the-dpl)
+- [References](#references)
 
 <!-- /MarkdownTOC -->
 
 
 ---
 
-This is the source code for the Digital pattern library. There are two 
-components built using this code: 
-
-* **Core assets** Production JavaScript, CSS, fonts and images
-* **Documentation** Documentation about using the patterns in the library and 
-  other information for developers who consume the core assets. 
-
-In the repository, we have the following additional documentation aimed at 
-assisting those who contribute and develop the pattern library.
-
-* [SETUP.md](SETUP.md) – How to set up your development environment.
-* [CONTRIBUTING.md](CONTRIBUTING.md) – General guidelines for contributing to
-   pattern library.
-* [FILES.md](FILES.md) – Overview of source folders and files.
-* [ADD-PATTERN.md](ADD-PATTERN.md) – How to add a new pattern.
 
 
 
-
-## 1. Commands
-
-After [getting setup](SETUP.md), you can use the following Grunt tasks.
-
-### 1.1 Build core and docs
-
-```
-$ grunt
-```
-
-This command will build the core assets and place them in `core/` and will 
-build the documentation and place it in `docs/`. Behind the scenes it runs the
-following two individual commands. 
+## 1. About the pattern library
 
 
-#### 1.1.1 Build core
+### 1.1 Audiences
 
-```
-$ grunt core
-```
-
-This command builds the core assets and places them in `core/`.
+The digital pattern library has three main audiences, built around the following user stories:
 
 
-#### 1.1.2 Build docs
+#### 1.1.1 General users
 
-```
-$ grunt docs
-```
+General users will load pages in their browser, using the core CSS and JavaScript from the pattern library. Pages they access should all have the same look and feel.
 
-This command builds the documentation and places it in `docs/` and copies
-what's currently in `core/` into the `docs/assets/core/` for use by the
-documentation and examples.
+* As an end user I want the University website to be displayed regardless of platform or browser so that I can easily navigate and use the content.
 
 
-### 1.2 Watch (interactive building)
+#### 1.1.2 Web developers
 
-```
-$ grunt watch
-```
+Developers outwith the digital communications team build applications or websites using our core CSS and JavaScript. These developers need to know what the official patterns are and how to use them.
 
-This command starts grunt in a "watch" mode which means it will monitor file
-in `src/` and if something changes will run the appropriate tasks to rebuild
-`core/` and `docs/`. It also starts a live reload server so that any pages
-open to local copies of the docs will get reloaded once it has rebuilt the
-`core/` and `docs/` files. 
+* As a web developer I want clear documentation about how, when and where to use design patterns so that there is a consistency across the applications and websites that I develop.
 
-This is really helpful when actively developing patterns.
 
-Note: you should run `grunt` first since `grunt watch` only rebuilds the 
-parts that have changed. 
+#### 1.1.3 Digital communications team
+
+The core team develops and designs the pattern library and uses it to build digital assets. Our team needs a central place to work on, test and document our design patterns.
+
+* As a member of the digital communications team I want a test-driven approach to developing websites/web applications so that new patterns are quality assured.
+* As a member of the digital communications team I want the digital pattern library to be stored in a central code repository so that I may collaborate with other developers.
+* As a member of the digital communications team I want the digital pattern library to be stored in a central code repository so that I may version control the code (and roll back if required).
+
+
+### 1.2 Deliverables
+
+1. **Core CSS and JavaScript** These are found in the `build` folder of the repository; they are also published to a central location.
+2. **Documentation** The `patterns` folder includes documentation about each pattern available in the pattern library, examples of each one, and a browsable patchwork of all the patterns. In addition, you will also find CSS and JavaScript coding style guides, and other information.
+3. **Pattern tests** The core team can use the examples and patchwork in the `patterns` folder as a way to implement pattern-driven-development, which is a translation of test-driven-development to design patterns.
+
+
+
+
+## 2 Permission to use the DPL 
+
+The DPL is used to create both web applications and web pages. It follows the design principles of the digital communications team. The code in the DPL is version controlled via GitHub. It is a content management system (CMS) and system agnostic.
+
+If you wish to use the DPL and you are a member of staff at the University of St&nbsp;Andrews, you must liaise with the digital communications team for access and training. Any member of staff using the DPL will be expected to attend the fortnightly DPL developers’ meeting on a regular basis.
+
+External agencies or partners who wish to use the DPL must request access from the digital communications team. Access to the DPL to external partners is granted on a case by case basis.
+
+All users of the DPL must have an understanding of [user-centred design](https://www.st-andrews.ac.uk/digital-standards/service-manual/user-centred), and keep up to date with amendments to the [digital communications team service manual](https://www.st-andrews.ac.uk/digital-standards/service-manual/).
+
+New web applications and webpages designed using the digital pattern library must be approved by the digital communications team before they are deployed to a production environment.
+
+
+### 2.1 Obtaining permission to use the DPL
+
+All users who wish to use the DPL to build a product must first organise a kick-off meeting with the digital communications team. At this meeting rules and responsibilities will be explained, and users will be required to sign a Memorandum of Understanding.
+
+The Memorandum of Understanding will set out clear sign off gateways, which require users to share the information architecture (for web pages) and/or workflow (for web apps) as well as plans for content management with the digital communications team before the DPL is used to build or prototype a product. 
+
+Once the IA or workflow has been agreed, the product must meet the relevant [URL policy](https://www.st-andrews.ac.uk/digital-standards/service-manual/links/). All products using any element of the DPL must conform to the [house style](https://www.st-andrews.ac.uk/digital-standards/service-manual/house-style/), [content standards](https://www.st-andrews.ac.uk/digital-standards/service-manual/content-management/standards/) and [corporate identity policy](https://www.st-andrews.ac.uk/digital-standards/service-manual/corporate-identity/) of the University.
+
+A clear commitment must be given that no new product using the DPL will go live without the explicit, written sign-off by the digital communications team.
+
+
+
+
+## 3 Code standards in the DPL
+
+Developers using the DPL should not fork the code in GitHub. No patterns or elements (such as colours) in the DPL may be edited without liaising with the digital communications team. This is the case in both the DPL and in any content management system; patterns should not be modified in any manner. Do not use CSS to overrule DPL elements, patterns, fonts etc. All code written must follow the digital communications team’s [code standards](https://www.st-andrews.ac.uk/digital-standards/service-manual/code-standards/). Rules on all patterns must be adhered to - if in doubt, please ask.
+
+New patterns may only be created by developers working directly alongside the digital communications team.
+
+
+---
+
+## References
+
+* [Service manual](http://www.st-andrews.ac.uk/digital-standards/service-manual/)
+* [Code standards](http://www.st-andrews.ac.uk/digital-standards/service-manual/code-standards/)
+* [Development milestones](https://github.com/standrewsdigital/digital-pattern-library/milestones")
 
