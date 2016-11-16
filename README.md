@@ -65,7 +65,7 @@ The core team develops and designs the pattern library and uses it to build digi
 
 ## 2 Permission to use the DPL 
 
-The DPL is used to create both web applications and web pages. It follows the design principles of the digital communications team. The code in the DPL is version controlled via GitHub. It is a content management system (CMS) and system agnostic.
+The DPL is used to create both external (outside the University of St Andrews domain) and internal web applications and web pages. It follows the design principles of the digital communications team. The code in the DPL is version controlled via GitHub. It is a content management system (CMS) and system agnostic.
 
 If you wish to use the DPL and you are a member of staff at the University of St&nbsp;Andrews, you must liaise with the digital communications team for access and training. Any member of staff using the DPL will be expected to attend the fortnightly DPL developers’ meeting on a regular basis.
 
