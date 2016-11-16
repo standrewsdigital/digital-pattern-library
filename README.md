@@ -23,7 +23,8 @@ Last updated: Wednesday 16 November 2016
 
 ## 1. About the pattern library
 
-The digital pattern library (DPL) is a resource created and owned by the [digital communications team](digitalcommunications.wp.st-andrews.ac.uk).
+The digital pattern library (DPL) is a resource created and owned by the [digital communications team](digitalcommunications.wp.st-andrews.ac.uk). 
+
 
 ### 1.1 Audiences
 
@@ -77,7 +78,7 @@ New web applications and webpages designed using the digital pattern library mus
 
 ### 2.1 Obtaining permission to use the DPL
 
-All users who wish to use the DPL to build a product must first organise a kick-off meeting with the digital communications team. At this meeting rules and responsibilities will be explained, and users will be required to sign a Memorandum of Understanding.
+All users who wish to use the DPL to build a product must first organise a kick-off meeting with the digital communications team. At this meeting rules and responsibilities will be explained. Once they have been introduced to and understand the DPL and want to continue to use it they will be required to sign a Memorandum of Understanding.
 
 The Memorandum of Understanding will set out clear sign off gateways, which require users to share the information architecture (for web pages) and/or workflow (for web apps) as well as plans for content management with the digital communications team before the DPL is used to build or prototype a product. 
 
@@ -85,7 +86,7 @@ Once the IA or workflow has been agreed, the product must meet the relevant [URL
 
 A clear commitment must be given that no new product using the DPL will go live without the explicit, written sign-off by the digital communications team.
 
-
+In turn, the digital communications team will provide advice and support for use of the DPL. 
 
 
 ## 3 Code standards in the DPL
