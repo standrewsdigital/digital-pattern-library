@@ -98,9 +98,6 @@
                 { "name" : "Navigation bar",
                   "url" : "patterns/navigation-bar/index.html"
                 },
-                { "name" : "Panel",
-                  "url" : "patterns/panel/index.html"
-                },
                 { "name" : "Panel grid",
                   "url" : "patterns/panel-grid/index.html"
                 },
