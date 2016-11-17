@@ -11,9 +11,9 @@ Last updated: Wednesday 16 November 2016
         - [1.1.2 Web developers](#112-web-developers)
         - [1.1.3 Digital communications team](#113-digital-communications-team)
     - [1.2 Deliverables](#12-deliverables)
-- [2 Permission to use the DPL](#2-permission-to-use-the-dpl)
+- [2. Permission to use the DPL](#2-permission-to-use-the-dpl)
     - [2.1 Obtaining permission to use the DPL](#21-obtaining-permission-to-use-the-dpl)
-- [3 Code standards in the DPL](#3-code-standards-in-the-dpl)
+- [3. Code standards in the DPL](#3-code-standards-in-the-dpl)
 - [References](#references)
 
 <!-- /MarkdownTOC -->
@@ -66,7 +66,7 @@ The core team develops and designs the pattern library and uses it to build digi
 
 
 
-## 2 Permission to use the DPL 
+## 2. Permission to use the DPL 
 
 The DPL is used to create both external (outside the University of St Andrews domain) and internal web applications and web pages. It follows the design principles of the digital communications team. The code in the DPL is version controlled via GitHub. It is a content management system (CMS) and system agnostic.
 
@@ -92,7 +92,9 @@ A clear commitment must be given that no new product using the DPL will go live 
 In turn, the digital communications team will provide advice and support for use of the DPL. 
 
 
-## 3 Code standards in the DPL
+
+
+## 3. Code standards in the DPL
 
 Developers using the DPL should not fork the code in GitHub. No patterns or elements (such as colours) in the DPL may be edited without liaising with the digital communications team. This is the case in both the DPL and in any content management system; patterns should not be modified in any manner. Do not use CSS to overrule DPL elements, patterns, fonts etc. All code written must follow the digital communications team’s [code standards](https://www.st-andrews.ac.uk/digital-standards/service-manual/code-standards/). Rules on all patterns must be adhered to - if in doubt, please ask.
 
