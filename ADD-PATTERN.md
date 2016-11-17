@@ -5,39 +5,74 @@ Last updated: Wednesday 12 October 2016
 
 <!-- MarkdownTOC -->
 
-- [1. Create the folder `src/patterns/new-feature`.](#1-create-the-folder-srcpatternsnew-feature)
-- [2. Create Handlebars file `src/patterns/new-feature/new-feature.hbs`.](#2-create-handlebars-file-srcpatternsnew-featurenew-featurehbs)
-- [3. Create Handlebars file `src/patterns/new-feature/new-feature.doc.hbs`.](#3-create-handlebars-file-srcpatternsnew-featurenew-featuredochbs)
-- [4. Create Sass file `src/patterns/new-feature/_new-feature.scss`.](#4-create-sass-file-srcpatternsnew-featurenew-featurescss)
-- [5. Add the Sass partial for this pattern to the file `src/styles/screen.scss`.](#5-add-the-sass-partial-for-this-pattern-to-the-file-srcstylesscreenscss)
-- [6. If you need to add some JavaScript](#6-if-you-need-to-add-some-javascript)
-- [7. Create the folder `src/patterns/new-feature/examples`.](#7-create-the-folder-srcpatternsnew-featureexamples)
-- [8. Create the folder `src/patterns/new-feature/data`](#8-create-the-folder-srcpatternsnew-featuredata)
-- [9. You need to add a new entry in the navigation for this pattern.](#9-you-need-to-add-a-new-entry-in-the-navigation-for-this-pattern)
-- [10. After you've got the pattern created you should run `grunt`](#10-after-youve-got-the-pattern-created-you-should-run-grunt)
-- [11. Finally!](#11-finally)
+- Quick guide
+- In-depth guide
 
 <!-- /MarkdownTOC -->
 
-This is a guide to adding a new pattern to the pattern library. 
+This is a guide to adding a new pattern to the pattern library. This assumes that you already have the DPL setup, if you don't see: [SETUP.md] (https://github.com/standrewsdigital/digital-pattern-library/blob/master/SETUP.md)  
 
 First, decide the name of the pattern. Then create a computer-friendly version  for naming folders and files; it must consist of lowercase letters and hyphens only. For this example, the name of the pattern will be "New feature" and `new-feature`.
 
 
 ---
 
-
-#### 1. Create the folder `src/patterns/new-feature`. 
-
-This folder contains the JavaScript, CSS and documentation for the feature.
+## Quick guide
 
 
-#### 2. Create Handlebars file `src/patterns/new-feature/new-feature.hbs`. 
-
-This file contains the source HTML for the pattern in Handlebars format. Being Handlebars means that you can populate dynamic portions of the HTML with Handlebars values. See [Handlebars](http://handlebarsjs.com/) for more info. 
+#### 1. Create a branch from Master
 
 
-#### 3. Create Handlebars file `src/patterns/new-feature/new-feature.doc.hbs`. 
+#### 2. Duplicate dummy pattern folder
+
+Navigate to: `\digital-pattern-library\src\patterns` and duplicate the `dummy-pattern` folder, renaming it to your new pattern name. Change all instances of'dummy-pattern' within these files and filenames to your new pattern name.
+
+
+#### Contents of dummy-pattern -
+
+
+| file / folder   |      description      |
+|----------|-------------|
+| data folder |contains JSON files, hold data for use in examples |
+| examples folder |    contains Handlebars files that match data with pattern   |
+| _dummy-pattern.scss | This is the Sass partial that contains the Sass/CSS to implement the pattern  |
+| dummy-pattern.doc.hbs |  This file is the main documentation for the pattern |
+| dummy-pattern.hbs |    This file contains the source HTML for the pattern in Handlebars format   |
+| dummy-pattern.js | This is the JavaScript partial that contains the JavaScript to implement the pattern. |
+
+
+
+#### 3. Add the Sass partial for this pattern to the file `src/styles/screen.scss`.
+
+#### 4. Add a new entry in the JSON file `src/_meta/dpl-nav.json`.
+
+#### 5. Make your first commit to GitHub.
+
+
+
+---
+
+
+
+
+## In-depth guide
+
+
+
+
+
+#### 1. Create a branch from Master
+
+Using your preffered Git client create a new branch using your decided pattern name.
+
+
+#### 2. Duplicate dummy pattern folder
+
+Navigate to: `\digital-pattern-library\src\patterns` and duplicate the `dummy-pattern` folder, renaming it to your new pattern name. Change all instances of'dummy-pattern' within these files and filenames to your new pattern name.
+
+
+
+#### 3. Modify docs Handlebars file `src/patterns/dummy-pattern/dummy-pattern.doc.hbs`.
 
 This file is the main documentation for the pattern. The file should begin with YAML font matter (the section beginning and ending in `---`). It then should contain HTML with Handlebars code to build the documentation page. Here's an example:
 
@@ -49,8 +84,6 @@ pattern: new-feature
 examples:
 * name: new-feature-1
 * name: new-feature-2
-related:
-* name: related-pattern-name
 ---
 
 <p>Several sentence description of the pattern.</p>
@@ -63,10 +96,6 @@ related:
     <li>When not to use, rule 3</li>
 </ul>
 
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> new-feature }}</div>
-
 <h2>Options</h2>
 
 <ul>
@@ -75,16 +104,40 @@ related:
 </ul>
 ```
 
-The Assemble grunt plugin that builds the documentation populates the Handlebars template below with the variables defined in the YAML front matter. 
+The Assemble grunt plugin that builds the documentation populates the Handlebars template below with the variables defined in the YAML front matter.
+
+Change the title to the new pattern name. This should be human-readable and may contain spaces.
+
+Change the pattern to the new patter name.
+
+Change the names of the examples above. These are in the /examples directory. Use descriptive names rather than example-1, example-2, etc. It makes it much easier
 
 
-#### 4. Create Sass file `src/patterns/new-feature/_new-feature.scss`. 
+#### 4. Modify Handlebars file `src/patterns/dummy-pattern/dummy-pattern.hbs`. 
+
+This file contains the source HTML for the pattern in Handlebars format. Being Handlebars means that you can populate dynamic portions of the HTML with Handlebars values. See [Handlebars](http://handlebarsjs.com/) for more info.
+
+Change `dummy-pattern` in the top and bottom comments to your new pattern name.
+
+```html
+
+<!-- Begin pattern: dummy pattern //-->
+
+// Add your Handlebars code here.
+
+<!-- End pattern: dummy pattern //-->
+
+```
+
+#### 5. Modify Sass file `src/patterns/new-feature/_dummy-pattern.scss`.  
 
 This is the Sass partial that contains the Sass/CSS to implement the pattern. The prefix of an underscore (`_`) is important, without it the Sass processor will not consider it a partial. To start, we create the file with the following content.
 
+Change `dummy-pattern` in the top and bottom comments to your new pattern name.
+
 ```css
 /**********************************************/
-/* BEGIN Pattern: new-feature                 */
+/* BEGIN Pattern: dummy-pattern                */
 /**********************************************/
 
 // Add your CSS code here.
@@ -95,32 +148,47 @@ This is the Sass partial that contains the Sass/CSS to implement the pattern. Th
 ```
 
 
-#### 5. Add the Sass partial for this pattern to the file `src/styles/screen.scss`.
+#### 6. If your pattern needs Javascript
 
-Adding this line at the appropriate place under `Patterns` (note the patterns are added into `screen.scss) in alphabetical order.
+Modify the JavaScript file `src/patterns/dummy-pattern/dummy-pattern.js`. When you run grunt next time this file will be found automatically.
 
-```css
-...
-@import 'navigation-bar/navigation-bar';
-@import 'new-feature/new-feature';          // <<==== ADDED
-@import 'secondary-call/secondary-call';
-...
+This can be deleted if you do not need Javascript for your pattern.
+
+
+#### 7. Modify the 'data' folder `src/patterns/dummy-pattern/data`.
+
+This JSON code defines the variables that are available to populate the Handlebars partial (`src/patterns/dummy-pattern/dummy-pattern.hbs`).
+
+* `src/patterns/dummy-pattern/data/full-details-data.json`
+
+```js
+{
+    "image": {
+        "url": "docs/images/placeholders/360x240.jpg",
+        "alt": "Description"
+    },
+    "title": "Title of image",
+    "url": "http://www.st-andrews.ac.uk",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+
+    "date" : "2014-08-21",
+    "date-display" : "21 August 2014",
+    "type" : "Photo of the week"
+ }
 ```
 
-
-#### 6. If you need to add some JavaScript
-
-Create the JavaScript file `src/patterns/new-feature/new-feature.js`. When you run grunt next time this file will be found automatically.
+The idea is that each example loads different data that configures different variations of the pattern.
 
 
-#### 7. Create the folder `src/patterns/new-feature/examples`.
-Also a file for each example you have documented in the YAML front matter of `src/patterns/new-feature/new-feature.doc.hbs`. Note that these will be linked up and shown on the documentation page automatically when you build the documentation with the `grunt` command.
+#### 8. Modify the 'examples' folder `src/patterns/dummy-pattern/examples`.
+Create a file for each example you have documented in the YAML front matter of `src/patterns/new-feature/new-feature.doc.hbs`. Note that these will be linked up and shown on the documentation page automatically when you build the documentation with the `grunt` command.
 
 In the YAML front matter of `src/patterns/new-feature/new-feature.doc.hbs` we have: 
 ```
 ...
-+ name: new-feature-1
-+ name: new-feature-2
+examples:
+- name: full-details
+- name: no-image
 ...
 ```
 
@@ -132,53 +200,32 @@ Each example file should contain Handlebars code to include partial for this pat
 
 So we will create the following files and respective contents.
 
-* File: `src/patterns/new-feature/examples/new-feature1.hbs`
+* File: `src/patterns/dummy-pattern/examples/full-details.hbs`
 
 ```
-{{> new-feature new-feature-1}}
+{{> dummy-pattern full-details }}
 ```
 
-This includes the Handlebars partial `new-feature` which maps to the file `src/patterns/new-feature/new-feature.hbs` and populates the partial with the JSON data from `new-feature-1` which maps to the file `src/patterns/new-feature/data/new-feature-1.json`. When building the page Assemble (a grunt plugin that generates the HTML files in the documentation) will look in `src/patterns/data.json` for the data to populate the partial with. This will lead us to creating (in the next step) an associated `data/` folder and files. 
+This includes the Handlebars partial `dummy-pattern` which maps to the file `src/patterns/new-feature/dummy-pattern.hbs` and populates the partial with the JSON data from `full-details` which maps to the file `src/patterns/new-feature/data/full-details-data.json`. When building the page Assemble (a grunt plugin that generates the HTML files in the documentation) will look in `src/patterns/data.json` for the data to populate the partial with. This will lead us to creating (in the next step) an associated `data/` folder and files. 
 
-* File: `src/patterns/new-feature/examples/new-feature-2.hbs`
+
+
+#### 9. Add the Sass partial for this pattern to the file `src/styles/screen.scss`.
+
+Adding this line at the appropriate place under `Patterns` (note the patterns are added into `screen.scss) in alphabetical order.
+
+```css
+...
+@import 'navigation-bar/navigation-bar';
+@import 'dummy-pattern/dummy-pattern';          // <<==== ADDED
+@import 'secondary-call/secondary-call';
 
 ```
-{{> new-feature new-feature-2}}
-```
-
-Again, this causes Assemble to look for a file named `new-feature-2.json` in the `data` folder to populate the Handlebars partial.
 
 
-#### 8. Create the folder `src/patterns/new-feature/data` 
-
-And also a JSON file to correspond with each example we've defined (in the previous step).
-    
-So we will create the following files and respective contents.
-
-* `src/patterns/new-feature/data/new-feature-1.json`
-
-```js
-{
-    "first-name": "John",
-    "last-name": "Carter"
-}
-```
-
-This JSON code defines the variables that are available to populate the Handlebars partial (`src/patterns/new-feature/new-feature.hbs`).
-
-* `src/patterns/new-feature/data/new-feature-2.json`
-
-```js
-{
-    "first-name": "Dejah",
-    "last-name": "Thoris"
-}
-```
-
-The idea is that each example loads different data that configures different variations of the pattern.
 
 
-#### 9. You need to add a new entry in the navigation for this pattern.
+#### 10. Add a new entry in the navigation for this pattern.
 
 In the JSON file `src/_meta/dpl-nav.json` in the `items[0].items` array, add an item at the appropriate place like so: 
 
@@ -186,20 +233,20 @@ In the JSON file `src/_meta/dpl-nav.json` in the `items[0].items` array, add an 
 ...
 },
 {
-   "name" : "New feature",
-   "url" : "patterns/new-feature/index.html"
+   "name" : "Dummy pattern",
+   "url" : "patterns/dummy-pattern/index.html"
 },
 ...
 ```
 
 
-#### 10. After you've got the pattern created you should run `grunt` 
+#### 11. After you've got the pattern created you should run `grunt`
 
 This will build the `core/` folder and the `docs/` folder. Make sure you don't have any errors. If you open `docs/index.html` in your browser you should be able to see your new pattern showing up in the listing. You should also be able to visit the documentation page and see the basic examples wired up.
 
 
-#### 11. Finally!
+#### 12. Finally!
 
-Now that we have a working stub of the pattern – admittedly without any working CSS or JavaScript or even maybe the correct HTML – we're ready to create a first commit. Make sure that you've started a new branch for this feature and create a new commit containing the work to create the sub.
+Now that we have a working stub of the pattern – admittedly without the correct CSS, JavaScript or HTML – we're ready to create a first commit. Make sure that you've started a new branch for this feature and create a new commit containing the work to create the sub.
 
 You should now be ready to start building the HTML, CSS and JavaScript incrementally to complete the pattern. Remember to commit often!
