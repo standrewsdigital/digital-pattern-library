@@ -74,6 +74,7 @@ Make sure to read our [Commit message style guide](https://github.com/standrewsd
 
 ---
 
+## Quick guide
 
 
 
