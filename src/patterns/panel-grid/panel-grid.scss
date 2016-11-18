@@ -4,34 +4,34 @@
 /*********************************/
 
 .panel {
-    margin: 0 auto 3em;
-    background-color: #fff;
+    background-color: white;
     border: 0;
     -webkit-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25);
-    box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25);
+       -moz-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25);
+            box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25);
+    margin: 0 auto 3em;
 }
 
 .panel-heading {
-    font-size: 1.3em;
+    border-bottom:           1px solid transparent;
+    border-top-right-radius: -1px;
+    border-top-left-radius:  -1px;
+    font-size:   1.3em;
     font-weight: 700;
     padding: 10px 15px;
-    border-bottom: 1px solid transparent;
-    border-top-right-radius: -1px;
-    border-top-left-radius: -1px;
 }
 
 .panel-title {
-    font-size: 20px;
+    font-size:   20px;
     font-weight: normal;
     line-height: inherit;
 }
 
 .panel-title {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 21px;
     color: inherit;
+    font-size: 21px;
+    margin-top:    0;
+    margin-bottom: 0;
 }
 
 .panel-body {
