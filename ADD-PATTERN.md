@@ -1,28 +1,32 @@
 # Add a pattern
 
-Version 0.2 Last updated: Thursday 17 November 2016
+Version 0.3 Last updated: Friday 18 November 2016
 
-*   [Getting started](#getting-started)
-    *   [1\. Create a branch from Master](#1-create-a-branch-from-master)
-    *   [2\. Duplicate dummy pattern folder](#2-duplicate-dummy-pattern-folder)
-        *   [Contents of new-pattern:](#contents-of-new-pattern)
-    *   [3\. Add the Sass partial for this pattern to the file](#3-add-the-sass-partial-for-this-pattern-to-the-file)
-    *   [4\. Add a new entry in the navigation for this pattern.](#4-add-a-new-entry-in-the-navigation-for-this-pattern)
-    *   [5\. Make your first commit to GitHub.](#5-make-your-first-commit-to-github)
-*   [User guide](#user-guide)
-    *   [1\. Create a branch from Master](#1-create-a-branch-from-master-1)
-    *   [2\. Duplicate dummy pattern folder](#2-duplicate-dummy-pattern-folder-1)
-    *   [3\. Update filenames](#3-update-filenames)
-    *   [3\. Modify docs Handlebars file `src/patterns/new-pattern/new-pattern.doc.hbs`.](#3-modify-docs-handlebars-file-srcpatternsnew-patternnew-patterndochbs)
-    *   [4\. Modify Handlebars file `src/patterns/new-pattern/new-pattern.hbs`.](#4-modify-handlebars-file-srcpatternsnew-patternnew-patternhbs)
-    *   [5\. Modify Sass file `src/patterns/new-pattern/_new-pattern.scss`.](#5-modify-sass-file-srcpatternsnew-pattern_new-patternscss)
-    *   [6\. If your pattern needs Javascript](#6-if-your-pattern-needs-javascript)
-    *   [7\. Modify the 'examples' folder `src/patterns/new-pattern/examples`.](#7-modify-the-examples-folder-srcpatternsnew-patternexamples)
-    *   [8\. Modify the 'data' folder `src/patterns/new-pattern/data`.](#8-modify-the-data-folder-srcpatternsnew-patterndata)
-    *   [9\. Add the Sass partial for this pattern to the file `src/styles/screen.scss`.](#9-add-the-sass-partial-for-this-pattern-to-the-file-srcstylesscreenscss)
-    *   [10\. Add a new entry in the navigation for this pattern.](#10-add-a-new-entry-in-the-navigation-for-this-pattern)
-    *   [11\. After you've got the pattern created you should run `grunt`](#11-after-youve-got-the-pattern-created-you-should-run-grunt)
-    *   [12\. Finally!](#12-finally)
+<!-- MarkdownTOC -->
+
+- [Quickstart guide](#quickstart-guide)
+    - [1. Create a branch from Master](#1-create-a-branch-from-master)
+    - [2. Duplicate dummy pattern folder](#2-duplicate-dummy-pattern-folder)
+    - [3. Add the Sass partial for this pattern to the file](#3-add-the-sass-partial-for-this-pattern-to-the-file)
+    - [4. Add a new entry in the navigation for this pattern.](#4-add-a-new-entry-in-the-navigation-for-this-pattern)
+    - [5. Make your first commit to GitHub.](#5-make-your-first-commit-to-github)
+- [In depth guide](#in-depth-guide)
+    - [1. Create a branch from Master](#1-create-a-branch-from-master-1)
+    - [2. Duplicate dummy pattern folder](#2-duplicate-dummy-pattern-folder-1)
+    - [3. Update filenames](#3-update-filenames)
+    - [4. Modify docs Handlebars file `src/patterns/new-pattern/new-pattern.doc.hbs`.](#4-modify-docs-handlebars-file-srcpatternsnew-patternnew-patterndochbs)
+    - [5. Modify Handlebars file `src/patterns/new-pattern/new-pattern.hbs`.](#5-modify-handlebars-file-srcpatternsnew-patternnew-patternhbs)
+    - [6. Modify Sass file `src/patterns/new-pattern/_new-pattern.scss`.](#6-modify-sass-file-srcpatternsnew-patternnew-patternscss)
+    - [7. If your pattern needs Javascript](#7-if-your-pattern-needs-javascript)
+    - [8. Modify the 'examples' folder `src/patterns/new-pattern/examples`.](#8-modify-the-examples-folder-srcpatternsnew-patternexamples)
+    - [9. Modify the 'data' folder `src/patterns/new-pattern/data`.](#9-modify-the-data-folder-srcpatternsnew-patterndata)
+    - [10. Add the Sass partial for this pattern to the file `src/styles/screen.scss`.](#10-add-the-sass-partial-for-this-pattern-to-the-file-srcstylesscreenscss)
+    - [11. Add a new entry in the navigation for this pattern.](#11-add-a-new-entry-in-the-navigation-for-this-pattern)
+    - [12. After you've got the pattern created you should run `grunt`.](#12-after-youve-got-the-pattern-created-you-should-run-grunt)
+    - [13. Finally!](#13-finally)
+
+<!-- /MarkdownTOC -->
+
 
 This is a guide to adding a new pattern to the pattern library. This assumes that you already have the DPL setup, if you don't see: [SETUP.md](https://github.com/standrewsdigital/digital-pattern-library/blob/master/SETUP.md).
 
@@ -33,7 +37,7 @@ First, decide the name of the pattern. Then create a computer-friendly version f
 
 
 
-## Getting started
+## Quickstart guide
 
 
 #### 1. Create a branch from Master
@@ -50,9 +54,9 @@ Duplicate `\digital-pattern-library\src\patterns\dummy-pattern`, renaming it usi
 
 | File / folder | Description |
 | ----------------- | ------------------- |
-| data folder | contains JSON files, hold data for use in examples |
-| examples folder | contains Handlebars files that match data with pattern |
-| _new-pattern.scss | This is the Sass partial that contains the Sass/CSS to implement the pattern |
+| data folder | contains JSON files, they hold the data for use in examples |
+| examples folder | contains Handlebars files that match data with a pattern |
+| _new-pattern.scss | This is the Sass partial that contains the SASS to implement the pattern |
 | new-pattern.doc.hbs | This file is the main documentation for the pattern |
 | new-pattern.hbs | This file contains the source HTML for the pattern in Handlebars format |
 | new-pattern.js | This is the JavaScript partial that contains the JavaScript to implement the pattern. |
@@ -60,12 +64,12 @@ Duplicate `\digital-pattern-library\src\patterns\dummy-pattern`, renaming it usi
 
 #### 3. Add the Sass partial for this pattern to the file
 
-In the SCSS file `src/styles/screen.scss` add into the appropriate place.
+In the SCSS file `src/styles/screen.scss` add into the list of pattern scss files.
 
 
 #### 4. Add a new entry in the navigation for this pattern.
 
-In the JSON file `src/_meta/dpl-nav.json` in the `items[0].items` array.
+In the JSON file `src/_meta/dpl-nav.json` in the `"name" : "Patterns"` array `items`.
 
 
 #### 5. Make your first commit to GitHub.
@@ -74,11 +78,10 @@ Make sure to read our [Commit message style guide](https://github.com/standrewsd
 
 ---
 
-## Quick guide
 
 
 
-## User guide
+## In depth guide
 
 
 #### 1. Create a branch from Master
@@ -131,12 +134,12 @@ examples:
 
 ```
 
-The Assemble grunt plugin that builds the documentation populates the Handlebars template below with the variables defined in the YAML front matter.
+The assemble grunt plugin that builds the documentation populates the Handlebars template below with the variables defined in the YAML front matter.
 
 Remember to change the names of the examples above. These are in the /examples directory. Use descriptive names rather than example-1, example-2, etc. Making it easier to understand the context of the example.
 
 
-#### 4. Modify Handlebars file `src/patterns/new-pattern/new-pattern.hbs`.
+#### 5. Modify Handlebars file `src/patterns/new-pattern/new-pattern.hbs`.
 
 This file contains the source HTML for the pattern in Handlebars format. Being Handlebars means that you can populate dynamic portions of the HTML with Handlebars values. See [Handlebars](http://handlebarsjs.com/) for more info.
 
@@ -170,7 +173,7 @@ Here's an example:
 ```
 
 
-#### 5. Modify Sass file `src/patterns/new-pattern/_new-pattern.scss`.
+#### 6. Modify Sass file `src/patterns/new-pattern/_new-pattern.scss`.
 
 This is the Sass partial that contains the Sass/CSS to implement the pattern. The prefix of an underscore (`_`) is important, without it the Sass processor will not consider it a partial. To start, we create the file with the following content.
 
@@ -209,7 +212,7 @@ Here's an example:
 ```
 
 
-#### 6. If your pattern needs Javascript
+#### 7. If your pattern needs Javascript
 
 Modify the JavaScript file `src/patterns/new-pattern/new-pattern.js`. When you run grunt next time this file will be found automatically.
 
@@ -235,9 +238,9 @@ $(".tile h3 a").bigTarget({
 ```
 
 
-#### 7. Modify the 'examples' folder `src/patterns/new-pattern/examples`.
+#### 8. Modify the 'examples' folder `src/patterns/new-pattern/examples`.
 
-Create a file for each example you have documented in the YAML front matter of `src/patterns/new-pattern/new-pattern.doc.hbs`. Note that these will be linked up and shown on the documentation page automatically when you build the documentation with the `grunt` command.
+Create a file for each example you have documented in the YAML front matter of `src/patterns/new-pattern/new-pattern.doc.hbs`. Note that these will be linked up and shown on the documentation page automatically when you build the DPL with the `grunt` command.
 
 In the YAML front matter of `src/patterns/new-pattern/new-pattern.doc.hbs` we have:
 
@@ -247,7 +250,7 @@ In the YAML front matter of `src/patterns/new-pattern/new-pattern.doc.hbs` we ha
     - name: new-pattern-text
     ...
 
-Each example file should contain Handlebars code to include partial for this pattern and specify the data to populate the partial with. You include Handlebars partials in this format:
+Each example file should contain Handlebars code to include a partial for this pattern and specify the data to populate the partial with. You include Handlebars partials in this format:
 
 ```
 {{> partial-name data-file }}
@@ -261,10 +264,10 @@ So we will create the following files and respective contents.
 {{> new-pattern new-pattern-image }}
 ```
 
-This includes the Handlebars partial `new-pattern` which maps to the file `src/patterns/new-pattern/new-pattern.hbs` and populates the partial with the JSON data from `new-pattern-image` which maps to the file `src/patterns/new-pattern/data/new-pattern-image-data.json`. When building the page Assemble (a grunt plugin that generates the HTML files in the documentation) will look in `src/patterns/new-pattern-image-data.json` for the data to populate the partial with. This will lead us to modifying (in the next step) an associated `/data/` folder and files.
+This includes the Handlebars partial `new-pattern` which maps to the file `src/patterns/new-pattern/new-pattern.hbs` and populates the partial with the JSON data from `new-pattern-image` which maps to the file `src/patterns/new-pattern/data/new-pattern-image-data.json`. When building the page assemble (a grunt plugin that generates the HTML files in the documentation) will look in `src/patterns/new-pattern-image-data.json` for the data to populate the partial with. This will lead us to modifying (in the next step) an associated `/data/` folder and files.
 
 
-#### 8. Modify the 'data' folder `src/patterns/new-pattern/data`.
+#### 9. Modify the 'data' folder `src/patterns/new-pattern/data`.
 
 This JSON code defines the variables that are available to populate the Handlebars partial (`src/patterns/new-pattern/new-pattern.hbs`).
 
@@ -277,7 +280,7 @@ Here's an example:
     "image": {
         "url": "docs/images/placeholders/360x240.jpg",
         "alt": "Description"
-},
+    },
     "title": "Title of image",
     "url": "http://www.st-andrews.ac.uk",
     "description": "Lorem ipsum dolor sit amet, consectetur.",
@@ -291,9 +294,9 @@ Here's an example:
 The idea is that each example loads different data that configures different variations of the pattern.
 
 
-#### 9. Add the Sass partial for this pattern to the file `src/styles/screen.scss`.
+#### 10. Add the Sass partial for this pattern to the file `src/styles/screen.scss`.
 
-Adding this line at the appropriate place under `Patterns` (note the patterns are added into `screen.scss) in alphabetical order.
+Add the import near the top of `screen.scss` under the  `Patterns import` section. Please note these are in alphabetical order.
 
 ```css
 @import 'navigation-bar/navigation-bar';
@@ -302,7 +305,7 @@ Adding this line at the appropriate place under `Patterns` (note the patterns ar
 ```
 
 
-#### 10. Add a new entry in the navigation for this pattern.
+#### 11. Add a new entry in the navigation for this pattern.
 
 We now need to list your pattern in the DPL navigation.
 
@@ -325,12 +328,12 @@ In the JSON file `src/_meta/dpl-nav.json` in the `items[0].items` array, add an 
 ```
 
 
-#### 11. After you've got the pattern created you should run `grunt`.
+#### 12. After you've got the pattern created you should run `grunt`.
 
 This will build the `core/` folder and the `docs/` folder. Make sure you don't have any errors. If you open `docs/index.html` in your browser you should be able to see your new pattern showing up in the listing. You should also be able to visit the documentation page and see the basic examples wired up.
 
 
-#### 12. Finally!
+#### 13. Finally!
 
 Now that we have a working stub of the pattern – admittedly without the correct CSS, JavaScript or HTML – we're ready to create a first commit. Make sure that you've started a new branch for this feature and create a new commit containing the work to create the sub.
 
