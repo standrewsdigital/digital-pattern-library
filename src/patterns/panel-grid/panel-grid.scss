@@ -1,0 +1,89 @@
+
+/*********************************/
+/* BEGIN Pattern: panel-grid     */
+/*********************************/
+
+.panel {
+    background-color: white;
+    border: 0;
+    -webkit-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25);
+       -moz-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25);
+            box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25);
+    margin: 0 auto 3em;
+}
+
+.panel-heading {
+    border-bottom:           1px solid transparent;
+    border-top-right-radius: -1px;
+    border-top-left-radius:  -1px;
+    font-size:   1.3em;
+    font-weight: 700;
+    padding: 10px 15px;
+}
+
+.panel-title {
+    font-size:   20px;
+    font-weight: normal;
+    line-height: inherit;
+}
+
+.panel-title {
+    color: inherit;
+    font-size: 21px;
+    margin-top:    0;
+    margin-bottom: 0;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+.panel h3 {
+    @include -dpl-transition();
+}
+
+/* Colors */
+
+.panel-primary {
+    border-color: $sta-blue;
+}
+
+.panel-primary>.panel-heading:hover {
+    background: $sta-blue-hover;
+}
+
+.panel-secondary {
+    border-color: $sta-cyan-light;
+}
+
+.panel-secondary>.panel-heading:hover {
+    background: $sta-cyan-hover;
+}
+
+.panel-tertiary-1 {
+    border-color: $sta-green;
+}
+
+.panel-tertiary-1>.panel-heading:hover {
+    background: $sta-green-hover;
+}
+
+.panel-tertiary-2 {
+    border-color: $sta-burgundy;
+}
+
+.panel-tertiary-2>.panel-heading:hover {
+    background: $sta-burgundy-hover;
+}
+
+.panel-tertiary-3 {
+    border-color: $sta-purple;
+}
+
+.panel-tertiary-3>.panel-heading:hover {
+    background: $sta-purple-hover;
+}
+
+/*********************************/
+/* END Pattern: panel-grid       */
+/*********************************/
