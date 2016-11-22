@@ -23,7 +23,12 @@ Last updated: Friday 11 November 2016
 
 ## 1. Introduction
 
-The DPL is used to create both external (outside the University of St Andrews domain) and internal web applications and web pages. It follows the design principles of the digital communications team. The code in the DPL is version controlled via GitHub. It is a content management system (CMS) and system agnostic.
+The digital pattern library is a system-agnostic resource to ensure a consistent look and feel for all digital products at the University of St&nbsp;Andrews.
+
+It acts as a central repository for the source code of each pattern used on the University website and web applications, and also documents coding standards, colours, and other development criteria for digital products. 
+
+The digital pattern library is an evolving set of design patterns underpinning a new digital approach for the University, built through collaboration, and tested with real people who use our products.
+
 
 
 
