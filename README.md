@@ -1,21 +1,20 @@
-# University of St Andrews digital pattern library
+## University of St Andrews
 
-Version 0.2
-Last updated: Friday 11 November 2016
+# Digital pattern library
+
+Version 0.3
+Last updated: Tuesday 22 November 2016
 
 <!-- MarkdownTOC -->
 
 - [1. Introduction](#1-introduction)
 - [2. Getting started](#2-getting-started)
     - [Quick start](#quick-start)
-- [3. Running the tests](#3-running-the-tests)
-- [4. Deployment](#4-deployment)
-- [5. Built with](#5-built-with)
-- [6. Contributing](#6-contributing)
-- [7. Versioning](#7-versioning)
-- [8. Authors](#8-authors)
-- [9. License](#9-license)
-- [References](#references)
+    - [What is included?](#what-is-included)
+- [3. Contributing to the DPL](#3-contributing-to-the-dpl)
+    - [Development milestones](#development-milestones)
+    - [Bug reports and feature requests](#bug-reports-and-feature-requests)
+- [4. License](#4-license)
 
 <!-- /MarkdownTOC -->
 
@@ -26,6 +25,8 @@ Last updated: Friday 11 November 2016
 
 The digital pattern library (DPL) is a system-agnostic resource to ensure a consistent look and feel for all digital products at the University of St&nbsp;Andrews.
 
+The DPL is created and owned by the University of St&nbsp;Andrews [digital communications team](http://digitalcommunications.wp.st-andrews.ac.uk/). 
+
 It acts as a central repository for the source code of each pattern used on the University website and web applications, and also documents coding standards, colours, and other development criteria for digital products. 
 
 The digital pattern library is an evolving set of design patterns underpinning a new digital approach for the University, built through collaboration, and tested with real people who use our products.
@@ -35,7 +36,7 @@ The digital pattern library is an evolving set of design patterns underpinning a
 
 ## 2. Getting started
 
-See the [set up](https://github.com/standrewsdigital/digital-pattern-library/blob/master/SETUP.md) guide for prerequisites and how to install the DPL.
+See [SETUP.md](https://github.com/standrewsdigital/digital-pattern-library/blob/master/SETUP.md) for detailed instructions and how to install the DPL, and upgrade the DPL to the latest version.
 
 ### Quick start
 
@@ -51,91 +52,45 @@ To get set up quickly, follow these steps.
 * `grunt`
 
 
+### What is included?
 
-
-## 3. Running the tests
-
-When grunt is run it takes the code from the `src` folder and creates documentation in the `docs` folder and code (HTML, CSS and JavaScript) in the `core` folder. Any errors found during production are reported to allow issues to be resolved.
-
-
-
-
-## 4. Deployment
-
-Pull-requests are made and the code peer-reviewed before merging with the master branch. In order to make the code available to web applications and web sites, the documentation and code is deployed by the digital communications team to two locations:
-
-* Documentation to the [digital pattern library website](http://www.st-andrews.ac.uk/dpl/).
-* Code to [http://www.st-andrews.ac.uk/~dpl/x.x.x/](http://www.st-andrews.ac.uk/~dpl/x.x.x/).
+[FILES.md](FILES.md) gives a list of the main folders and files in the DPL source code and brief summaries about each.
 
 
 
 
-## 5. Built with
+## 3. Contributing to the DPL
 
-* Bootstrap
-* JQuery
-* Node.js
-* Grunt
-* Compass
+[CONTRIBUTING.md](CONTRIBUTING.md) goes into detail about DPL development practices (workflow, version numbers, etc.) as well as how to build the DPL using grunt, and detailed instructions on how to create a new pattern.
 
 
+### Development milestones
+
+[Development milestones](https://github.com/standrewsdigital/digital-pattern-library/milestones) can be found on GitHub.
 
 
-## 6. Contributing
+### Bug reports and feature requests
 
-Developers using the DPL should not fork the code in GitHub. No patterns or elements (such as colours) in the DPL may be edited without liaising with the digital communications team. This is the case in both the DPL and in any content management system; patterns should not be modified in any manner. Do not use CSS to overrule DPL elements, patterns, fonts etc. All code written must follow the digital communications team’s [code standards](https://www.st-andrews.ac.uk/digital-standards/service-manual/code-standards/). Rules on all patterns must be adhered to - if in doubt, please ask.
-
-New patterns may only be created by developers working directly alongside the digital communications team.
-
-See [contributing to the pattern library](https://github.com/standrewsdigital/digital-pattern-library/blob/master/CONTRIBUTING.md) for further details.
-
-Commit messages must follow the [commit message style guide](https://github.com/standrewsdigital/digital-code-style-guide/blob/master/commit-messages.md).
+Bug reports and feature requests can be made on the [GitHub issues](https://github.com/standrewsdigital/digital-pattern-library/issues) page.
 
 
 
+## 4. License
 
-## 7. Versioning
-
-The dpl versioning follows [semantic versioning](https://github.com/standrewsdigital/digital-pattern-library/blob/master/CONTRIBUTING.md#3-versioning).
-
-
-
-
-## 8. Authors
-
-The digital pattern library (DPL) is a resource created and owned by the University of St Andrews [digital communications team](http://digitalcommunications.wp.st-andrews.ac.uk/). 
-
-
-
-
-## 9. License
-
-If you wish to use the DPL and you are a member of staff at the University of St&nbsp;Andrews, you must liaise with the digital communications team for access and training. Any member of staff using the DPL will be expected to attend the fortnightly DPL developers’ meeting on a regular basis.
+If you wish to use the DPL you must [liaise with the digital communications team](https://www.st-andrews.ac.uk/digital-standards/contact/) for access and training. Any member of staff using the DPL will be expected to attend the fortnightly DPL developers' meeting.
 
 External agencies or partners who wish to use the DPL must request access from the digital communications team. Access to the DPL to external partners is granted on a case by case basis.
 
-All users of the DPL must have an understanding of [user-centred design](https://www.st-andrews.ac.uk/digital-standards/service-manual/user-centred), and keep up to date with amendments to the [digital communications team service manual](https://www.st-andrews.ac.uk/digital-standards/service-manual/).
+All users of the DPL must have an understanding of [user-centred design](https://www.st-andrews.ac.uk/digital-standards/service-manual/user-centred), and keep up to date with the [digital communications team service manual](https://www.st-andrews.ac.uk/digital-standards/service-manual/).
 
 New web applications and webpages designed using the digital pattern library must be approved by the digital communications team before they are deployed to a production environment.
 
-All users who wish to use the DPL to build a product must first organise a kick-off meeting with the digital communications team. At this meeting rules and responsibilities will be explained. Once they have been introduced to and understand the DPL and want to continue to use it they will be required to sign a Memorandum of Understanding.
+All users who wish to use the DPL to build a product must first organise a kick-off meeting with the digital communications team. At this meeting rules and responsibilities will be agreed. Once they have been introduced to and understand the DPL and want to continue to use it they will be required to sign a memorandum of understanding.
 
-The Memorandum of Understanding will set out clear sign off gateways, which require users to share the information architecture (for web pages) and/or workflow (for web apps) as well as plans for content management with the digital communications team before the DPL is used to build or prototype a product. 
+The memorandum of understanding will set out clear sign-off gateways, which require users to share the information architecture (IA) for web pages and/or workflow for web apps as well as plans for content management with the digital communications team before the DPL is used to build or prototype a product. 
 
-Once the IA or workflow has been agreed, the product must meet the relevant [URL policy](https://www.st-andrews.ac.uk/digital-standards/service-manual/links/). All products using any element of the DPL must conform to the [house style](https://www.st-andrews.ac.uk/digital-standards/service-manual/house-style/), [content standards](https://www.st-andrews.ac.uk/digital-standards/service-manual/content-management/standards/) and [corporate identity policy](https://www.st-andrews.ac.uk/digital-standards/service-manual/corporate-identity/) of the University.
+Once the IA or workflow has been agreed, the product must meet the relevant [URL policy](https://www.st-andrews.ac.uk/digital-standards/service-manual/links/). All products using any element of the DPL must conform to the [code standards](http://www.st-andrews.ac.uk/digital-standards/service-manual/code-standards/), [house style](https://www.st-andrews.ac.uk/digital-standards/service-manual/house-style/), [content standards](https://www.st-andrews.ac.uk/digital-standards/service-manual/content-management/standards/) and [corporate identity policy](https://www.st-andrews.ac.uk/digital-standards/service-manual/corporate-identity/) of the University of St&nbsp;Andrews.
 
 A clear commitment must be given that no new product using the DPL will go live without the explicit, written sign-off by the digital communications team.
 
-In turn, the digital communications team will provide advice and support for use of the DPL. 
-
-
-
-
----
-
-## References
-
-* [Service manual](http://www.st-andrews.ac.uk/digital-standards/service-manual/)
-* [Code standards](http://www.st-andrews.ac.uk/digital-standards/service-manual/code-standards/)
-* [Development milestones](https://github.com/standrewsdigital/digital-pattern-library/milestones")
-
+In turn, the digital communications team will provide advice and support for use of the DPL.
