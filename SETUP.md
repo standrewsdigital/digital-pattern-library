@@ -1,4 +1,4 @@
-# Set up
+# Set up the digital pattern library
 
 Version 0.3
 Last updated: Friday 04 November 2016
@@ -21,7 +21,7 @@ Last updated: Friday 04 November 2016
 - [Update an existing install](#update-an-existing-install)
   - [1. Make sure your Node.js version is up-to-date.](#1-make-sure-your-nodejs-version-is-up-to-date)
   - [2. Checkout the branch from GitHub.](#2-checkout-the-branch-from-github)
-  - [3. Delete the `node_modules` folder.](#3-delete-the-nodemodules-folder)
+  - [3. Delete the `node_modules` folder.](#3-delete-the-node_modules-folder)
   - [4. Reinstall npm to your DPL directory.](#4-reinstall-npm-to-your-dpl-directory)
   - [5. Verify it works.](#5-verify-it-works)
 
@@ -30,8 +30,7 @@ Last updated: Friday 04 November 2016
 
 ---
 
-This is a guide to get your environment set up to contribute to the digital 
-pattern library. 
+This is a guide to get your environment set up to contribute to the digital pattern library. 
 
 
 
@@ -156,7 +155,7 @@ $ gem install compass
 
 ## Conclusion
 
-You should now be all configured to start work on the pattern library. You should now read [CONTRIBUTING.md](CONTRIBUTING.md) for some general guidelines and principles of development.
+You should now be all configured to start work on the pattern library. You should now read [CONTRIBUTING.md](CONTRIBUTING.md) and [ADD-PATTERN.md](ADD-PATTERN.md) for some guidelines and principles of development.
 
 ---
 
