@@ -6,31 +6,37 @@ Last updated: Tuesday 22 November 2016
 <!-- MarkdownTOC -->
 
 - [1. Introduction](#1-introduction)
-    - [Set up](#set-up)
-    - [Principles](#principles)
-    - [Workflow](#workflow)
-    - [Clone don't fork](#clone-dont-fork)
-    - [Version numbers](#version-numbers)
-        - [Source code version numbers](#source-code-version-numbers)
-        - [Git tags for versions](#git-tags-for-versions)
-    - [Change log](#change-log)
+  - [Set up](#set-up)
+  - [Principles](#principles)
+  - [Workflow](#workflow)
+  - [Clone don't fork](#clone-dont-fork)
+  - [Version numbers](#version-numbers)
+    - [Source code version numbers](#source-code-version-numbers)
+    - [Git tags for versions](#git-tags-for-versions)
+  - [Change log](#change-log)
 - [2. How to build the DPL](#2-how-to-build-the-dpl)
-    - [Build core and docs](#build-core-and-docs)
-    - [Build core only](#build-core-only)
-    - [Build docs](#build-docs)
-    - [Grunt watch \(interactive building\)](#grunt-watch-interactive-building)
-- [3. How to add a new pattern](#3-how-to-add-a-new-pattern)
-    - [a. Create a new folder](#a-create-a-new-folder)
-    - [b. Create Handlebars files](#b-create-handlebars-files)
-    - [c. Create a Sass file](#c-create-a-sass-file)
-    - [d. Add a Sass partial](#d-add-a-sass-partial)
-    - [e. Add JavaScript \(optional\)](#e-add-javascript-optional)
-    - [f. Create an examples folder](#f-create-an-examples-folder)
-    - [g. Create a data folder](#g-create-a-data-folder)
-    - [h. Add a new navigation entry](#h-add-a-new-navigation-entry)
-    - [i. Run grunt](#i-run-grunt)
-    - [j. Commit](#j-commit)
-    - [k. Continue building...](#k-continue-building)
+  - [Build core and docs](#build-core-and-docs)
+  - [Build core only](#build-core-only)
+  - [Build docs](#build-docs)
+  - [Grunt watch \(interactive building\)](#grunt-watch-interactive-building)
+- [EDIT THIS Quickstart guide](#edit-this-quickstart-guide)
+    - [1. Create a branch from Master](#1-create-a-branch-from-master)
+    - [2. Duplicate dummy pattern folder](#2-duplicate-dummy-pattern-folder)
+    - [3. Add the Sass partial for this pattern to the file](#3-add-the-sass-partial-for-this-pattern-to-the-file)
+    - [4. Add a new entry in the navigation for this pattern.](#4-add-a-new-entry-in-the-navigation-for-this-pattern)
+    - [5. Make your first commit to GitHub.](#5-make-your-first-commit-to-github)
+- [3. How to add a new pattern \(manual\)](#3-how-to-add-a-new-pattern-manual)
+  - [a. Create a new folder](#a-create-a-new-folder)
+  - [b. Create Handlebars files](#b-create-handlebars-files)
+  - [c. Create a Sass file](#c-create-a-sass-file)
+  - [d. Add a Sass partial](#d-add-a-sass-partial)
+  - [e. Add JavaScript \(optional\)](#e-add-javascript-optional)
+  - [f. Create an examples folder](#f-create-an-examples-folder)
+  - [g. Create a data folder](#g-create-a-data-folder)
+  - [h. Add a new navigation entry](#h-add-a-new-navigation-entry)
+  - [i. Run grunt](#i-run-grunt)
+  - [j. Commit](#j-commit)
+  - [k. Continue building...](#k-continue-building)
 
 <!-- /MarkdownTOC -->
 
@@ -209,7 +215,54 @@ parts that have changed.
 
 ---
 
-## 3. How to add a new pattern
+## EDIT THIS Quickstart guide
+
+
+#### 1. Create a branch from Master
+
+Using your preffered Git client create a new branch using your new pattern name.
+
+
+#### 2. Duplicate dummy pattern folder
+
+Duplicate `\digital-pattern-library\src\patterns\dummy-pattern`, renaming it using your new pattern name, in this case we are using `new-pattern`. Change all instances of 'dummy-pattern' within these files and filenames to your new pattern name.
+
+
+##### Contents of new-pattern:
+
+| File / folder       | Description |
+| ------------------- | ------------------- |
+| data folder         | contains JSON files, they hold the data for use in examples |
+| examples folder     | contains Handlebars files that match data with a pattern |
+| _new-pattern.scss   | This is the Sass partial that contains the SASS to implement the pattern |
+| new-pattern.doc.hbs | This file is the main documentation for the pattern |
+| new-pattern.hbs     | This file contains the source HTML for the pattern in Handlebars format     |
+| new-pattern.js      | This is the JavaScript partial that contains the JavaScript to implement the pattern. |
+
+
+#### 3. Add the Sass partial for this pattern to the file
+
+In the SCSS file `src/styles/screen.scss` add into the list of pattern scss files.
+
+
+#### 4. Add a new entry in the navigation for this pattern.
+
+In the JSON file `src/_meta/dpl-nav.json` in the `"name" : "Patterns"` array `items`.
+
+
+#### 5. Make your first commit to GitHub.
+
+Make sure to read our [Commit message style guide](https://github.com/standrewsdigital/digital-code-style-guide/blob/master/commit-messages.md).
+
+
+
+
+
+
+
+
+
+## 3. How to add a new pattern (manual)
 
 This is a guide to manually adding a new pattern to the digital pattern library.
 
