@@ -24,7 +24,7 @@ Last updated: Friday 11 November 2016
 
 ## 1. Introduction
 
-The digital pattern library is a system-agnostic resource to ensure a consistent look and feel for all digital products at the University of St&nbsp;Andrews.
+The digital pattern library (DPL) is a system-agnostic resource to ensure a consistent look and feel for all digital products at the University of St&nbsp;Andrews.
 
 It acts as a central repository for the source code of each pattern used on the University website and web applications, and also documents coding standards, colours, and other development criteria for digital products. 
 
