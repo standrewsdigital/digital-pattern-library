@@ -7,6 +7,7 @@ Last updated: Friday 11 November 2016
 
 - [1. Introduction](#1-introduction)
 - [2. Getting started](#2-getting-started)
+    - [Quick start](#quick-start)
 - [3. Running the tests](#3-running-the-tests)
 - [4. Deployment](#4-deployment)
 - [5. Built with](#5-built-with)
@@ -35,6 +36,19 @@ The digital pattern library is an evolving set of design patterns underpinning a
 ## 2. Getting started
 
 See the [set up](https://github.com/standrewsdigital/digital-pattern-library/blob/master/SETUP.md) guide for prerequisites and how to install the DPL.
+
+### Quick start
+
+To get set up quickly, follow these steps.
+
+* Install the following
+    * [Git](https://git-scm.com/) (command line) or [GitKraken](https://www.gitkraken.com/)
+    * [Node.js](https://nodejs.org/en/)
+    * [Grunt CLI](https://github.com/gruntjs/grunt-cli)
+* Clone the repo
+* `npm install`
+* `gem install compass`
+* `grunt`
 
 
 
