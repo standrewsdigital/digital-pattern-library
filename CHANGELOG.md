@@ -6,6 +6,23 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v0.6.0
+
+Release date: TBC
+
+### Changed
+
+* README.md has had a significant rewrite, as has CONTRIBUTING.md which now incorporates information from ADD-PATTERN.md (now deleted).
+
+
+### Removed
+
+* ADD-PATTERN.md information has now been merged into CONTRIBUTING.md.
+
+
+
+
+---
 
 ## v0.5.5
 
