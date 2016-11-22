@@ -1,4 +1,4 @@
-# Readme - Digital pattern library
+# University of St Andrews digital pattern library
 
 Version 0.2
 Last updated: Friday 11 November 2016
