@@ -32,6 +32,12 @@
                 { "name" : "Accordion",
                   "url" : "patterns/accordion/index.html"
                 },
+                { "name" : "Bootstrap components",
+                  "url" : "examples/bootstrap.html"
+                },
+                { "name" : "Bootstrap components - advanced",
+                  "url" : "examples/bootstrap2.html"
+                },                
                 { "name" : "Breadcrumbs",
                   "url" : "patterns/breadcrumbs/index.html"
                 },
@@ -113,6 +119,12 @@
                 { "name" : "Staff profile",
                   "url" : "patterns/staff-profile/index.html"
                 },
+                { "name" : "Tables",
+                  "url" : "examples/tables.html"
+                },
+                { "name" : "Tables – DataTables",
+                  "url" : "examples/datatables.html"
+                },                
                 { "name" : "Tabs",
                   "url" : "patterns/tabs/index.html"
                 },
@@ -129,42 +141,7 @@
         },
 
         { "name" : "Example pages",
-            "url" : "#",
-            "items" : [
-                { "name" : "Homepage",
-                  "url" : "examples/homepage.html"
-                },
-                { "name" : "About",
-                  "url" : "examples/about.html"
-                },
-                { "name" : "Bootstrap components",
-                  "url" : "examples/bootstrap.html"
-                },
-                { "name" : "Bootstrap components - advanced",
-                  "url" : "examples/bootstrap2.html"
-                },
-                { "name" : "Content",
-                  "url" : "examples/content.html"
-                },
-                { "name" : "Gallery",
-                  "url" : "examples/gallery.html"
-                },
-                { "name" : "Long-form content",
-                  "url" : "examples/long-form-content.html"
-                },
-                { "name" : "HTML elements",
-                  "url" : "examples/html-elements.html"
-                },
-                { "name" : "Tables",
-                  "url" : "examples/tables.html"
-                },
-                { "name" : "Tables – DataTables",
-                  "url" : "examples/datatables.html"
-                },
-                { "name" : "Web application",
-                  "url" : "examples/web-app.html"
-                }
-            ]
+            "url" : "/example-pages.html"
         }
     ]
 }
