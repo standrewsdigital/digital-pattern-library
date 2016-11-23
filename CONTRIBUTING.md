@@ -3,7 +3,7 @@
 Version 0.2
 Last updated: Tuesday 22 November 2016
 
-<!-- MarkdownTOC depth=4 -->
+<!-- MarkdownTOC -->
 
 - [1. Introduction](#1-introduction)
     - [1.1 Set up](#11-set-up)
