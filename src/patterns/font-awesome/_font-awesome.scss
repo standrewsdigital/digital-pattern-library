@@ -1,0 +1,31 @@
+
+/*********************************/
+/* BEGIN Pattern: font awesome   */
+/*********************************/
+
+.fa-examples > * {
+	margin-bottom: 10px;
+}
+
+.fa_icons_example div.fa_icon {	
+    border-radius: 4px;
+    color: #222;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+    padding-left: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.fa_icons_example i.fa {
+    width: 32px;
+    font-size: 14px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px;
+}
+
+/*********************************/
+/* END Pattern: font awesome     */
+/*********************************/

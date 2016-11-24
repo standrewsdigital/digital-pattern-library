@@ -1,0 +1,103 @@
+<!-- Begin pattern: dummy pattern //-->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+{{#if example}}
+    
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3 fa-examples">
+                <a class="btn btn-danger" href="#">
+                    <i class="fa fa-trash-o fa-lg"></i> Delete</a>
+                <a class="btn btn-default btn-sm" href="#">
+                    <i class="fa fa-cog"></i> Settings</a>
+                <a class="btn btn-lg btn-success" href="#">
+                    <i class="fa fa-flag fa-2x pull-left"></i> Font Awesome
+                    <br>Version 4.7.0</a>
+                <div class="btn-group">
+                    <a class="btn btn-default" href="#">
+                        <i class="fa fa-align-left" title="Align Left"></i>
+                    </a>
+                    <a class="btn btn-default" href="#">
+                        <i class="fa fa-align-center" title="Align Center"></i>
+                    </a>
+                    <a class="btn btn-default" href="#">
+                        <i class="fa fa-align-right" title="Align Right"></i>
+                    </a>
+                    <a class="btn btn-default" href="#">
+                        <i class="fa fa-align-justify" title="Align Justify"></i>
+                    </a>
+                </div>
+
+                <div class="input-group margin-bottom-sm">
+                    <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                    <input class="form-control" type="text" placeholder="Email address">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                    <input class="form-control" type="password" placeholder="Password">
+                </div>
+
+                <div class="btn-group open">
+                    <a class="btn btn-primary" href="#"><i class="fa fa-user fa-fw"></i> User</a>
+                    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="fa fa-caret-down" title="Toggle dropdown menu"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="fa fa-unlock"></i> Make admin</a>
+                        </li>
+                    </ul>
+                </div>
+          </div>
+          <div class="col-md-4 fa-examples">
+                <a class="btn btn-default" href="path/to/settings" aria-label="Settings">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                </a>
+
+                <a class="btn btn-danger" href="path/to/settings" aria-label="Delete">
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                </a>
+
+                <a class="btn btn-primary" href="#navigation-main" aria-label="Skip to main navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+                <i class="fa fa-refresh fa-spin fa-3x fa-fw" aria-hidden="true"></i>
+                <span class="sr-only">Refreshing...</span>
+
+                <i class="fa fa-cog fa-spin fa-3x fa-fw" aria-hidden="true"></i>
+                <span class="sr-only">Saving. Hang tight!</span>
+                <div class="input-group margin-bottom-sm">
+                    <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></span>
+                    <input class="form-control" type="text" placeholder="Email address">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-key fa-fw" aria-hidden="true"></i></span>
+                    <input class="form-control" type="password" placeholder="Password">
+                </div>
+          </div>
+      </div>
+  </div>
+
+{{else}}   
+    <div class="container fa_icons_example">
+        <h3>These are the approved icons.</h3>
+        <div class="row">
+            {{#each icons}}
+                <div class="col-md-3 col-sm-4">
+                    <div class="fa_icon">
+                        <i class="fa fa-{{this}}" aria-hidden="true"></i> 
+                        <span class="sr-only">Example of </span>{{this}}
+                    </div>
+                </div>    
+            {{/each}}
+        </div>
+    </div>
+{{/if}}
+
+
+<!-- End pattern: dummy pattern //-->
