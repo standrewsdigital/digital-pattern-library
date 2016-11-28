@@ -81,6 +81,10 @@
                   "img": "../docs/assets/docs/images/patterns/google-maps.jpg",
                   "url": "patterns/google-maps/index.html"
                 },
+                { "name": "HTML elements",
+                  "img": "../docs/assets/docs/images/patterns/pattern.jpg",
+                  "url": "examples/html-elements.html"
+                },                
                 { "name": "Info bite (Deprecated)",
                   "img": "../docs/assets/docs/images/patterns/info-bite.jpg",
                   "url": "patterns/info-bite/index.html"
