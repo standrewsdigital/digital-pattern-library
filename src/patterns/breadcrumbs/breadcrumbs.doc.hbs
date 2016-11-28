@@ -2,29 +2,15 @@
 title: Breadcrumbs
 pattern: breadcrumbs
 examples:
-- name: example1
-related:
-- name: header
-- name: navigation-bar
-- name: category-header
-
+- name: default
 ---
 
-<p>The Breadcrumbs pattern list the pages in the hiearchy between the homepage and the current page.</p>
+<p>The breadcrumbs pattern indicates the current page's location within a navigational hierarchy in relation to the homepage.</p>
 
 <h2>Usage</h2>
 
 <ul>
-	<li>Should be used at the top of all content pages.</li>
-</ul>
-
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> breadcrumbs }}</div>
-
-
-<h2>Options</h2>
-
-<ul>
-	<li><em>None</em></li>
+	<li>Should not be used on the homepage or on longform pages.</li>
+    <li>Should be used at the top of all other content pages.</li>
+    <li>Should always sit below the navigation bar and above the page content.</li>
 </ul>
