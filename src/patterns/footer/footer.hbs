@@ -17,16 +17,14 @@
                                 </ul>
                             {{/section1}}
                         {{else}}
-                            <h3>Section 1 Title</h3>
+                            <h3>Section 1 title</h3>
                             <ul>
                                 <li><a href="#">Link1</a></li>
                                 <li><a href="#">Link2</a></li>
                                 <li><a href="#">Link3</a></li>
                             </ul>
                         {{/if}}
-                    </div>
 
-                    <div class="col-sm-4" id="footer-navigation">
                         {{#if section2}}
                             {{#section2}}
                                 <h3>{{title}}</h3>
@@ -37,7 +35,27 @@
                                 </ul>
                             {{/section2}}
                         {{else}}
-                            <h3>Section 2 Title</h3>
+                            <h3>Section 2 title</h3>
+                            <ul>
+                                <li><a href="#">Link1</a></li>
+                                <li><a href="#">Link2</a></li>
+                                <li><a href="#">Link3</a></li>
+                            </ul>
+                        {{/if}}
+                    </div>
+
+                    <div class="col-sm-4" id="footer-navigation">
+                        {{#if section3}}
+                            {{#section3}}
+                                <h3>{{title}}</h3>
+                                <ul>
+                                    {{#links}}
+                                    <li><a href="{{url}}">{{title}}</a></li>
+                                    {{/links}}
+                                </ul>
+                            {{/section3}}
+                        {{else}}
+                            <h3>Section 3 title</h3>
                             <ul>
                                 <li><a href="#">Link1</a></li>
                                 <li><a href="#">Link2</a></li>
