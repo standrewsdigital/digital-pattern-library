@@ -1,8 +1,7 @@
 {
     "icons": [
         "address-book",
-        "address-book-o",
-        "address-card-o",
+        "address-card",
         "adjust",
         "archive",
         "area-chart",
@@ -40,10 +39,8 @@
         "comments",
         "dashboard",
         "desktop",
-        "diamond",
         "dot-circle-o",
         "download",
-        "drivers-license",
         "edit",
         "ellipsis-h",
         "ellipsis-v",
@@ -181,6 +178,6 @@
         "window-minimize",
         "window-restore",
         "wordpress",
-        "youtube-square"    
+        "youtube-square"
     ]
  }
