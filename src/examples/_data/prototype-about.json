@@ -2,29 +2,29 @@
     "navigation-bar" : {
         "primary":[
             {"title": "Study at St Andrews",
-             "url": "http://www.st-andrews.ac.uk/study/",
+             "url": "#",
              "selected":false
             },
             {"title": "Research",
-             "url": "http://www.st-andrews.ac.uk/research/",
+             "url": "#",
              "selected":false
-            }, 
+            },
             {"title": "Alumni and donors",
-             "url": "http://www.st-andrews.ac.uk/alumni/",
+             "url": "#",
              "selected":false
-            },  
+            },
             {"title": "Schools",
-             "url": "http://www.st-andrews.ac.uk/schools/",
+             "url": "#",
              "selected":false
             },
              {"title": "About",
-             "url": "about/index.html",
+             "url": "#",
              "selected":true
             }
         ],
         "secondary":[
             {"title": "Facts and figures",
-             "url": "facts-figures/index.html",
+             "url": "#",
              "selected":false
             },
             {"title": "Governance",
@@ -34,24 +34,24 @@
             {"title": "History",
              "url": "#",
              "selected":false
-            }, 
+            },
             {"title": "Environment",
              "url": "#",
              "selected":false
-            },  
+            },
             {"title": "Professional services",
              "url": "#",
              "selected":false
-            },   
+            },
              {"title": "The town",
              "url": "#",
              "selected":false
-            }, 
+            },
             {"title": "News and events",
              "url": "#",
              "selected":false
-            }   
-      ] 
+            }
+      ]
     },
     "category-header": {
         "title": "About",
@@ -60,12 +60,12 @@
     "breadcrumbs": {
         "parents": [
             {"title": "University",
-             "url": "../../index.html"
+             "url": "#"
             }
         ],
         "current": {
             "title": "About",
-            "url": "../index.html"
+            "url": "#"
           }
     },
     "masonry-grid": {
