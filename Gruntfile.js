@@ -218,7 +218,6 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/bootstrap/affix.js',
                     'src/scripts/vendor/bootstrap/alert.js',
                     'src/scripts/vendor/bootstrap/button.js',
-                    // 'src/scripts/vendor/bootstrap/carousel.js',
                     'src/scripts/vendor/bootstrap/collapse.js',
                     'src/scripts/vendor/bootstrap/dropdown.js',
                     'src/scripts/vendor/bootstrap/tab.js',
@@ -265,7 +264,6 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/bootstrap/affix.js',
                     'src/scripts/vendor/bootstrap/alert.js',
                     'src/scripts/vendor/bootstrap/button.js',
-                    // 'src/scripts/vendor/bootstrap/carousel.js',
                     'src/scripts/vendor/bootstrap/collapse.js',
                     'src/scripts/vendor/bootstrap/dropdown.js',
                     'src/scripts/vendor/bootstrap/tab.js',
@@ -289,6 +287,7 @@ module.exports = function(grunt) {
             doc: {
                 src: [
                     'src/scripts/vendor/jquery.min.js',
+                    'src/scripts/vendor/jquery.bigtarget.js',
                     'src/scripts/vendor/respond.js',
 
                     // Bootstrap JavaScript
@@ -296,7 +295,6 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/bootstrap/affix.js',
                     'src/scripts/vendor/bootstrap/alert.js',
                     'src/scripts/vendor/bootstrap/button.js',
-                    // 'src/scripts/vendor/bootstrap/carousel.js',
                     'src/scripts/vendor/bootstrap/collapse.js',
                     'src/scripts/vendor/bootstrap/dropdown.js',
                     'src/scripts/vendor/bootstrap/tab.js',
@@ -310,6 +308,7 @@ module.exports = function(grunt) {
 
                     // DPL-specific scripts
                     'src/patterns/accordion/accordion.js',
+                    'src/patterns/navbox/navbox.js'
                 ],
                 dest: 'core/scripts/doc.js'
             },
