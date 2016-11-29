@@ -9,35 +9,35 @@
     },
     "category-header": {
         "class":"category-header-solid",
-        "title": "Annual Leave",
+        "title": "Annual leave",
         "url": "#"
     },
     "navigation-bar" : {
         "primary":[
             {
-                "title": "Item 1",
+                "title": "View current year",
                 "url": "#",
                 "selected": false
             },
             {
-                "title": "Item 2",
+                "title": "View previous years",
                 "url": "#",
                 "selected": false
             },
             {
-                "title": "Item 3",
+                "title": "Request leave",
                 "url": "#",
                 "selected": false
             },
             {
-                "title": "Item 4",
+                "title": "Cancel leave",
                 "url": "#",
                 "selected": false
             },
             {
-                "title": "Item 5",
+                "title": "Manage users",
                 "url": "#",
-                "selected": false
+                "selected": true
             }
         ]
     }

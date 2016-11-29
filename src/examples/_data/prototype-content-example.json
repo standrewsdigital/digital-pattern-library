@@ -2,23 +2,23 @@
     "navigation-bar" : {
         "primary":[
             {"title": "Study at St Andrews",
-             "url": "http://www.st-andrews.ac.uk/study/",
+             "url": "#",
              "selected":false
             },
             {"title": "Research",
-             "url": "http://www.st-andrews.ac.uk/research/",
+             "url": "#",
              "selected":false
-            }, 
+            },
             {"title": "Alumni and donors",
-             "url": "http://www.st-andrews.ac.uk/alumni/",
+             "url": "#",
              "selected":false
-            },  
+            },
             {"title": "Schools",
-             "url": "http://www.st-andrews.ac.uk/schools/",
+             "url": "#",
              "selected":false
             },
              {"title": "About",
-             "url": "about/index.html",
+             "url": "#",
              "selected":true
             }
         ],
@@ -34,24 +34,24 @@
             {"title": "History",
              "url": "#",
              "selected":false
-            }, 
+            },
             {"title": "Environment",
              "url": "#",
              "selected":false
-            },  
+            },
             {"title": "Professional services",
              "url": "#",
              "selected":false
-            },   
+            },
              {"title": "The town",
              "url": "#",
              "selected":false
-            }, 
+            },
             {"title": "News and events",
              "url": "#",
              "selected":false
-            }   
-        ] 
+            }
+        ]
       },
       "category-header": {
           "title": "About",
@@ -61,16 +61,23 @@
         "parents": [
           {
               "title": "University",
-              "url": "../../index.html"
+              "url": "#"
           },
           {
               "title": "About",
-              "url": "../index.html"
+              "url": "#"
           }
         ],
         "current": {
-            "title": "Facts and figures",
-            "url": "index.html"
+            "title": "Example page",
+            "url": "#"
         }
+    },
+    "content": {
+        "text" : "<h2>Example content page</h2><p><img src='../../docs/assets/docs/images/placeholders/750x311.jpg'></p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>  <p><a href=\"#\">Sed ut perspiciatis</a></p>",
+        "sidebar" : " <!-- Begin pattern: navbox //--> <div class='navbox big-target-click-zone'> <div class='navbox-image'> <img src='../../docs/assets/docs/images/placeholders/360x240.jpg' alt='Description'> </div> <div class='navbox-title'> <p><a class='big-target-anchor' href='#'>Study</a></p> </div> </div> <!-- End pattern: navbox //--><h3>Related content</h3><ul><li><a href='#'>Lorem ipsum dolor sit amet</a></li><li><a href='#'>Consectetuer adipiscing elit</a></li><li><a href='#'>Aenean commodo ligula</a></li></ul>",
+        "col-1": "col-sm-8 content",
+        "col-2": "col-sm-4 content",
+        "role": "complementary"
     }
 }

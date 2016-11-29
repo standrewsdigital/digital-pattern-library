@@ -1,39 +1,55 @@
 {
 	"website-footer": true,
 	"section1":	{
-		"title": "(Relevant links, section 1)",
+		"title": "Your St Andrews",
 		"links":[
-			{"title": "Link 1",
-			 "url": "/link1/"},
-			{"title": "Link 2",
-			 "url": "/link2/"},
-			{"title": "Link 3",
-			 "url": "/link3/"},
-			{"title": "Link 4",
-			 "url": "/link4/"},
-			{"title": "Link 4",
-			 "url": "/link5/"}
+			{"title": "Current students",	"url": "#"},
+			{"title": "Postgraduate",		"url": "#"},
+			{"title": "Staff",				"url": "#"},
+			{"title": "Jobs at St Andrews", "url": "#"}
 		]
 	},
 	"section2":	{
-		"title": "(Relevant links, section 2)",
+		"title": "Navigation",
 		"links":[
-			{"title": "Link 1",
-			 "url": "/link1/"},
-			{"title": "Link 2",
-			 "url": "/link2/"},
-			{"title": "Link 3",
-			 "url": "/link3/"},
-			{"title": "Link 4",
-			 "url": "/link4/"},
-			{"title": "Link 4",
-			 "url": "/link5/"}
+			{"title": "Study at St Andrews",	"url": "#"},
+			{"title": "Research",				"url": "#"},
+			{"title": "Alumni and donors",		"url": "#"},
+			{"title": "Community facilities", 	"url": "#"},
+			{"title": "Business services", 		"url": "#"},
+			{"title": "About", 					"url": "#"}
+		]
+	},
+	"section3":	{
+		"title": "Subjects",
+		"links":[
+			{"title": "Art History", 							"url": "#"},
+			{"title": "Biology",								"url": "#"},
+			{"title": "Chemistry",								"url": "#"},
+			{"title": "Classics",								"url": "#"},
+			{"title": "Computer Science",						"url": "#"},
+			{"title": "Divinity",								"url": "#"},
+			{"title": "Earth and Environmental Sciences",		"url": "#"},
+			{"title": "Economics and Finance",					"url": "#"},
+			{"title": "English",								"url": "#"},
+			{"title": "Film Studies",							"url": "#"},
+			{"title": "Geography and Sustainable Development",	"url": "#"},
+			{"title": "History",								"url": "#"},
+			{"title": "International Relations",				"url": "#"},
+			{"title": "Languages and Comparative Literature",	"url": "#"},
+			{"title": "Management",								"url": "#"},
+			{"title": "Mathematics and Statistics",				"url": "#"},
+			{"title": "Medicine",								"url": "#"},
+			{"title": "Philosophy",								"url": "#"},
+			{"title": "Physics and Astronomy",					"url": "#"},
+			{"title": "Psychology and Neuroscience",			"url": "#"},
+			{"title": "Social Anthropology",					"url": "#"}
 		]
 	},
 	"contact":{
 		"url": "/contact/",
-		"unit" :"(Relevant unit)",
-		"address":"University of St Andrews<br>College Gate<br>St Andrews, Fife<br>KY16 9AJ<br>Scotland, UK",
-		"phone":"+44 (0)1334 46 XXXX"
+		"unit" :"University of St Andrews",
+		"address":"College Gate<br>St Andrews, Fife<br>KY16 9AJ<br>Scotland, UK",
+		"phone":"+44 (0)1334 47 6161"
 	}
 }

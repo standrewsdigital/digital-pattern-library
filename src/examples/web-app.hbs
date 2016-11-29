@@ -1,7 +1,8 @@
 ---
-title: 
+title:
 ---
 
+{{> text-banner prototype-text-banner.web-application}}
 
 {{> header prototype-web-app.header}}
 
@@ -12,13 +13,12 @@ title:
 
 <div class="container" id="main-content">
 
+<h2>Manage users</h2>
 
 <input type="hidden" id="contextPath" value="/expense-claim">
 
-
-<br><br>
-
 <div class="panel panel-primary">
+
     <div class="panel-heading">
         <h3 class="panel-title">Current users</h3>
     </div>
@@ -28,137 +28,116 @@ title:
                 <table id="unit-users" class="datatable table no-footer" aria-describedby="unit-users_info" role="grid">
                 <thead>
                    <tr role="row">
-                        <th class="sorting" tabindex="0" aria-controls="unit-users" rowspan="1" colspan="1" aria-label="Email Address: activate to sort column ascending">Email Address</th>
-                        <th class="sorting" tabindex="0" aria-controls="unit-users" rowspan="1" colspan="1" aria-label="First Name: activate to sort column ascending">First Name</th>
-                        <th class="sorting_asc" tabindex="0" aria-controls="unit-users" rowspan="1" colspan="1" aria-label="Last Name: activate to sort column ascending" aria-sort="ascending">Last Name</th>
-                        <th rowspan="1" colspan="1"></th>
+                        <th class="sorting" tabindex="0" aria-controls="unit-users" rowspan="1" colspan="1" aria-label="First name">First name</th>
+                        <th class="sorting" tabindex="0" aria-controls="unit-users" rowspan="1" colspan="1" aria-label="Last name">Last name</th>
+                        <th class="sorting_asc" tabindex="0" aria-controls="unit-users" rowspan="1" colspan="1" aria-label="Username" aria-sort="ascending">Username</th>
+                        <th rowspan="1" colspan="1">Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr role="row" class="odd">
-                        <td class="">greg@st.com</td>
-                        <td class="">Greg</td>
-                        <td class="sorting_1">C</td>
-                        <td><a class="btn btn-default" href="/expense-claim/user/admin/user-forms.htm?username=greg@st.com">View forms</a>
+                    <tr role="row" class="">
+                        <td class="">Aaron</td>
+                        <td class="">Lott</td>
+                        <td class="">al244</td>
+                        <td><a class="btn btn-default" href="#">View record</a>
                         </td>
                     </tr>
-                    <tr role="row" class="even">
-                        <td class="">dairygoodness@hotmail.com</td>
-                        <td class="">Andrew</td>
-                        <td class="sorting_1">Coomber</td>
-                        <td><a class="btn btn-default" href="/expense-claim/user/admin/user-forms.htm?username=dairygoodness@hotmail.com">View forms</a>
+                    <tr role="row" class="">
+                        <td class="">Carley</td>
+                        <td class="">Hollis</td>
+                        <td class="">ch432</td>
+                        <td><a class="btn btn-default" href="#">View record</a>
                         </td>
                     </tr>
-                    <tr role="row" class="odd">
-                        <td class="">leecoomber@hotmail.com</td>
-                        <td class="">Lee</td>
-                        <td class="sorting_1">Coomber</td>
-                        <td><a class="btn btn-default" href="/expense-claim/user/admin/user-forms.htm?username=leecoomber@hotmail.com">View forms</a>
+                    <tr role="row" class="">
+                        <td class="">Charles</td>
+                        <td class="">Gibson</td>
+                        <td class="">charles.gibson</td>
+                        <td><a class="btn btn-default" href="#">View record</a>
                         </td>
                     </tr>
-                    <tr role="row" class="even">
-                        <td class="">ankit@test.com</td>
-                        <td class="">Ankit</td>
-                        <td class="sorting_1">Sawa</td>
-                        <td><a class="btn btn-default" href="/expense-claim/user/admin/user-forms.htm?username=ankit@test.com">View forms</a>
+                    <tr role="row" class="">
+                        <td class="">Christopher</td>
+                        <td class="">Gordon</td>
+                        <td class="">cg51</td>
+                        <td><a class="btn btn-default" href="#">View record</a>
                         </td>
                     </tr>
-                    <tr role="row" class="odd">
-                        <td class="">test@test.com</td>
-                        <td class="">Test</td>
-                        <td class="sorting_1">Testing</td>
-                        <td><a class="btn btn-default" href="/expense-claim/user/admin/user-forms.htm?username=test@test.com">View forms</a>
+                    <tr role="row" class="">
+                        <td class="">Duncan</td>
+                        <td class="">Sanderson</td>
+                        <td class="">ds231</td>
+                        <td><a class="btn btn-default" href="#">View record</a>
                         </td>
                     </tr>
-                    <tr role="row" class="even">
-                        <td class="">hannah@hannah.com</td>
-                        <td class="">Hannah</td>
-                        <td class="sorting_1">Thomson</td>
-                        <td><a class="btn btn-default" href="/expense-claim/user/admin/user-forms.htm?username=hannah@hannah.com">View forms</a>
+                    <tr role="row" class="">
+                        <td class="">Duncan</td>
+                        <td class="">Stephen</td>
+                        <td class="">dbss</td>
+                        <td><a class="btn btn-default" href="#">View record</a>
                         </td>
                     </tr>
-                    <tr role="row" class="odd">
-                        <td class="">greg@st.com</td>
-                        <td class="">Greg</td>
-                        <td class="sorting_1">C</td>
-                        <td><a class="btn btn-default" href="/expense-claim/user/admin/user-forms.htm?username=greg@st.com">View forms</a>
+                    <tr role="row" class="">
+                        <td class="">Felicity</td>
+                        <td class="">Wild</td>
+                        <td class="">fw72</td>
+                        <td><a class="btn btn-default" href="#">View record</a>
                         </td>
                     </tr>
-                    <tr role="row" class="even">
-                        <td class="">dairygoodness@hotmail.com</td>
-                        <td class="">Andrew</td>
-                        <td class="sorting_1">Coomber</td>
-                        <td><a class="btn btn-default" href="/expense-claim/user/admin/user-forms.htm?username=dairygoodness@hotmail.com">View forms</a>
+                    <tr role="row" class="">
+                        <td class="">Gareth</td>
+                        <td class="">Saunders</td>
+                        <td class="">gjms1</td>
+                        <td><a class="btn btn-default" href="#">View record</a>
                         </td>
                     </tr>
-                    <tr role="row" class="odd">
-                        <td class="">leecoomber@hotmail.com</td>
-                        <td class="">Lee</td>
-                        <td class="sorting_1">Coomber</td>
-                        <td><a class="btn btn-default" href="/expense-claim/user/admin/user-forms.htm?username=leecoomber@hotmail.com">View forms</a>
+                    <tr role="row" class="">
+                        <td class="">Jenny</td>
+                        <td class="">Hamrick</td>
+                        <td class="">jh280</td>
+                        <td><a class="btn btn-default" href="#">View record</a>
                         </td>
                     </tr>
-                    <tr role="row" class="even">
-                        <td class="">ankit@test.com</td>
-                        <td class="">Ankit</td>
-                        <td class="sorting_1">Sawa</td>
-                        <td><a class="btn btn-default" href="/expense-claim/user/admin/user-forms.htm?username=ankit@test.com">View forms</a>
+                    <tr role="row" class="">
+                        <td class="">Lewis</td>
+                        <td class="">Wake</td>
+                        <td class="">lw75</td>
+                        <td><a class="btn btn-default" href="#">View record</a>
                         </td>
                     </tr>
-                    <tr role="row" class="odd">
-                        <td class="">test@test.com</td>
-                        <td class="">Test</td>
-                        <td class="sorting_1">Testing</td>
-                        <td><a class="btn btn-default" href="/expense-claim/user/admin/user-forms.htm?username=test@test.com">View forms</a>
+                    <tr role="row" class="">
+                        <td class="">Maria</td>
+                        <td class="">Drummond</td>
+                        <td class="">md223</td>
+                        <td><a class="btn btn-default" href="#">View record</a>
                         </td>
                     </tr>
-                    <tr role="row" class="even">
-                        <td class="">hannah@hannah.com</td>
-                        <td class="">Hannah</td>
-                        <td class="sorting_1">Thomson</td>
-                        <td><a class="btn btn-default" href="/expense-claim/user/admin/user-forms.htm?username=hannah@hannah.com">View forms</a>
+                    <tr role="row" class="">
+                        <td class="">Peter</td>
+                        <td class="">Woodbridge</td>
+                        <td class="">pw42</td>
+                        <td><a class="btn btn-default" href="#">View record</a>
                         </td>
                     </tr>
-                    <tr role="row" class="odd">
-                        <td class="">greg@st.com</td>
-                        <td class="">Greg</td>
-                        <td class="sorting_1">C</td>
-                        <td><a class="btn btn-default" href="/expense-claim/user/admin/user-forms.htm?username=greg@st.com">View forms</a>
+                    <tr role="row" class="">
+                        <td class="">Richard</td>
+                        <td class="">Gordon</td>
+                        <td class="">rg40</td>
+                        <td><a class="btn btn-default" href="#">View record</a>
                         </td>
                     </tr>
-                    <tr role="row" class="even">
-                        <td class="">dairygoodness@hotmail.com</td>
-                        <td class="">Andrew</td>
-                        <td class="sorting_1">Coomber</td>
-                        <td><a class="btn btn-default" href="/expense-claim/user/admin/user-forms.htm?username=dairygoodness@hotmail.com">View forms</a>
+                    <tr role="row" class="">
+                        <td class="">Samuel</td>
+                        <td class="">Parsons</td>
+                        <td class="">sjp27</td>
+                        <td><a class="btn btn-default" href="#">View record</a>
                         </td>
                     </tr>
-                    <tr role="row" class="odd">
-                        <td class="">leecoomber@hotmail.com</td>
-                        <td class="">Lee</td>
-                        <td class="sorting_1">Coomber</td>
-                        <td><a class="btn btn-default" href="/expense-claim/user/admin/user-forms.htm?username=leecoomber@hotmail.com">View forms</a>
-                        </td>
-                    </tr>
-                    <tr role="row" class="even">
-                        <td class="">ankit@test.com</td>
-                        <td class="">Ankit</td>
-                        <td class="sorting_1">Sawa</td>
-                        <td><a class="btn btn-default" href="/expense-claim/user/admin/user-forms.htm?username=ankit@test.com">View forms</a>
-                        </td>
-                    </tr>
-                    <tr role="row" class="odd">
-                        <td class="">test@test.com</td>
-                        <td class="">Test</td>
-                        <td class="sorting_1">Testing</td>
-                        <td><a class="btn btn-default" href="/expense-claim/user/admin/user-forms.htm?username=test@test.com">View forms</a>
-                        </td>
-                    </tr>
-                    <tr role="row" class="even">
-                        <td class="">hannah@hannah.com</td>
-                        <td class="">Hannah</td>
-                        <td class="sorting_1">Thomson</td>
-                        <td><a class="btn btn-default" href="/expense-claim/user/admin/user-forms.htm?username=hannah@hannah.com">View forms</a>
+                    <tr role="row" class="">
+                        <td class="">Stephen</td>
+                        <td class="">Evans</td>
+                        <td class="">sde1</td>
+                        <td><a class="btn btn-default" href="#">View record</a>
                         </td>
                     </tr>
                 </tbody>
@@ -170,27 +149,27 @@ title:
 
 <div class="panel panel-primary">
     <div class="panel-heading">
-        <h3 class="panel-title">Add form</h3>
+        <h3 class="panel-title">Find user</h3>
     </div>
     <div class="panel-body">
         <div class="row">
             <div class="col-md-6">
                 <div class="select2-container" id="s2id_new-unit-form" style="width: 100%;">
-                    <a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"> <span class="select2-chosen" id="select2-chosen-1">Find user</span><abbr class="select2-search-choice-close"></abbr> <span class="select2-arrow" role="presentation"><b role="presentation"></b></span>
+                    <a href="#" class="select2-choice select2-default" tabindex="-1"> <span class="select2-chosen" id="select2-chosen-1">Username</span><abbr class="select2-search-choice-close"></abbr> <span class="select2-arrow" role="presentation"><b role="presentation"></b></span>
                     </a>
                     <label for="s2id_autogen1" class="select2-offscreen"></label>
-                    <input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-1" id="s2id_autogen1">
+                    <input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true"aria-labelledby="select2-chosen-1" id="s2id_autogen1">
                     <div class="select2-drop select2-display-none select2-with-searchbox">
                         <div class="select2-search">
                             <label for="s2id_autogen1_search" class="select2-offscreen"></label>
-                            <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-1" id="s2id_autogen1_search" placeholder=""> </div>
+                        </div>
                         <ul class="select2-results" role="listbox" id="select2-results-1"> </ul>
                     </div>
                 </div>
                 <input type="hidden" id="new-unit-form" tabindex="-1" title="" style="display: none;">
             </div>
             <div class="col-md-6">
-                <button id="add-user-form" class="btn btn-success"><span class="fa fa-plus"> Add form</span></button>
+                <button id="add-user-form" class="btn btn-success"><span class="fa fa-plus">Search</span></button>
             </div>
         </div>
     </div>
@@ -201,13 +180,13 @@ title:
         <h3 class="panel-title">Add user</h3>
     </div>
     <div class="panel-body">
-        <p class="alert alert-info">A new form will be created when you add a new user.</p>
-        <form id="new-user-form" class="must-validate" role="form" action="/expense-claim/user/admin/manage.htm" method="POST" novalidate="novalidate">
+        <p class="alert alert-info">A new record will be created when you add a new user.</p>
+        <form id="new-user-form" class="must-validate" role="form" action="#" method="POST" novalidate="novalidate">
             <input type="hidden" name="unit" id="unit">
             <div class="row">
                 <div class="col-xs-12">
                     <div class="form-group has-feedback">
-                        <label class="control-label" for="email">Email</label>
+                        <label class="control-label" for="email">Username</label>
                         <input type="email" class="form-control" required="required" name="email" id="email" aria-required="true">
                         <span class="glyphicon form-control-feedback"></span>
                     </div>
@@ -249,4 +228,4 @@ title:
 
 </div>
 
-{{> footer footer-1}}
+{{> footer footer-2}}

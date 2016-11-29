@@ -1,7 +1,7 @@
 {
     "gallery" : {
-        "gallery-title": "Title of gallery",
-        "gallery-description": "Description",
+        "gallery-title": "Example gallery",
+        "gallery-description": "Selection of images from the University of St Andrews.",
         "gallery-images": [
             {
                 "thumbnail":  "docs/images/placeholders/360x240-7.jpg",
