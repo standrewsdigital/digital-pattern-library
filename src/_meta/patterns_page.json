@@ -2,7 +2,7 @@
     "categories": [
 
         {
-            "heading": "Bootstrap patterns",
+            "heading": "Bootstrap",
             "subheading": "Common Bootstrap elements styled to match the visual language of the digital pattern library.",
             "patterns": [
                 { "name": "Bootstrap components",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "heading": "Call to action patterns",
+            "heading": "Call to action",
             "subheading": "Patterns used to bring attention and link to content of importance both on the University website and external.",
             "patterns": [
                 { "name": "Featured media",
@@ -50,7 +50,7 @@
             ]
         },
         {
-            "heading": "Content patterns",
+            "heading": "Content",
             "subheading": "Patterns used to display content in various ways.",
             "patterns": [
                 { "name": "Accordion",
@@ -112,7 +112,7 @@
             ]
         },
         {
-            "heading": "Core patterns",
+            "heading": "Core",
             "subheading": "Patterns essential to building a basic University of St Andrews webpage.",
             "patterns": [
                 { "name": "Breadcrumbs",
@@ -134,7 +134,17 @@
             ]
         },
         {
-            "heading": "Long-form patterns",
+            "heading": "Icons",
+            "subheading": "Patterns used to accent elements using icons.",
+            "patterns": [
+                { "name": "Font Awesome",
+                  "img": "../docs/assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/font-awesome/index.html"
+                }
+            ]
+        },
+        {
+            "heading": "Long-form",
             "subheading": "Patterns used to build long-form content pages.",
             "patterns": [
                 { "name": "Long-form content",
@@ -144,7 +154,7 @@
             ]
         },
         {
-            "heading": "Navigation patterns",
+            "heading": "Navigation",
             "subheading": "Patterns used to connect content pages across the University of St Andrews website.",
             "patterns": [
                 { "name": "Navbox",
@@ -170,7 +180,7 @@
             ]
         },
         {
-            "heading": "Deprecated patterns",
+            "heading": "Deprecated",
             "subheading": "Patterns that are no longer supported and will be removed in future versions of the pattern library.",
             "patterns": [
                 { "name": "Info bite (deprecated)",

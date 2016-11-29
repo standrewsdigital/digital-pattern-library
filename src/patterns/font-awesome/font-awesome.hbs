@@ -1,0 +1,65 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+{{#if example}}
+
+  <div class="container">
+      <div class="row">
+
+          <div class="col-md-4 fa-examples">
+                <p>Social media icons</p>
+                <div class="btn-group">
+                    <a class="" href="#">
+                        <i class="fa fa-facebook-official fa-2x" title="Facebook"></i>
+                    </a>
+                    <a class="" href="#">
+                        <i class="fa fa-instagram fa-2x" title="Instagram"></i>
+                    </a>
+                    <a class="" href="#">
+                        <i class="fa fa-snapchat-square fa-2x" title="Snapchat"></i>
+                    </a>
+                    <a class="" href="#">
+                        <i class="fa fa-twitter-square fa-2x" title="Twitter"></i>
+                    </a>
+                    <a class="" href="#">
+                        <i class="fa fa-youtube-square fa-2x" title="YouTube"></i>
+                    </a>
+                </div>
+
+          </div>
+
+          <div class="col-md-4 fa-examples">
+                <p>File icons</p>
+                <p><a href="#">University prospectus <i class="fa fa-file-pdf-o" title="PDF"></i></a></p>
+                <p><a href="#">University email signature <i class="fa fa-file-word-o" title="Word"></i></a></p>
+                <p><a href="#">University PowerPoint <i class="fa fa-file-powerpoint-o" title="PowerPoint"></i></a></p>
+          </div>
+
+          <div class="col-md-4 fa-examples">
+                <p>Web applications</p>
+                <div class="list-group-item list-group-child" style="display: block;">
+                    <a href="#">View records (staff)</a>
+                    <a href="#" target="_blank" title="Open in new tab"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                </div>
+                <div class="list-group-item list-group-child" style="display: block;">
+                    <a href="#">Create records (staff)</a>
+                    <a href="#" target="_blank" title="Open in new tab"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                </div>
+          </div>
+      </div>
+  </div>
+
+{{else}}
+    <div class="container fa_icons_example">
+        <h3>Approved icons</h3>
+        <p>To use as a class name, prefix the icon name with <code>fa-</code>, e.g. <code>fa-address-book</code>.</p>
+        <div class="row">
+            {{#each icons}}
+                <div class="col-md-3 col-sm-4">
+                    <div class="fa_icon">
+                        <i class="fa fa-{{this}}" aria-hidden="true"></i>
+                        <span class="sr-only">Example of </span>{{this}}
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+{{/if}}
