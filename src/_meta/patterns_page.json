@@ -1,9 +1,9 @@
 {
     "categories": [
 
-        { 
+        {
             "heading": "Bootstrap patterns",
-            "subheading": "Common Bootstrap elements styled to match the visual language of the digital pattern library",
+            "subheading": "Common Bootstrap elements styled to match the visual language of the digital pattern library.",
             "patterns": [
                 { "name": "Bootstrap components",
                   "img": "../docs/assets/docs/images/patterns/pattern.jpg",
@@ -15,7 +15,7 @@
                 }
             ]
         },
-        { 
+        {
             "heading": "Call to action patterns",
             "subheading": "Patterns used to bring attention and link to content of importance both on the University website and external.",
             "patterns": [
@@ -49,9 +49,9 @@
                 }
             ]
         },
-        { 
+        {
             "heading": "Content patterns",
-            "subheading": "Patterns used to display content in various mediums.",
+            "subheading": "Patterns used to display content in various ways.",
             "patterns": [
                 { "name": "Accordion",
                   "img": "../docs/assets/docs/images/patterns/accordion.jpg",
@@ -84,14 +84,6 @@
                 { "name": "HTML elements",
                   "img": "../docs/assets/docs/images/patterns/pattern.jpg",
                   "url": "examples/html-elements.html"
-                },                
-                { "name": "Info bite (Deprecated)",
-                  "img": "../docs/assets/docs/images/patterns/info-bite.jpg",
-                  "url": "patterns/info-bite/index.html"
-                },
-                { "name": "Info bite grid (Deprecated)",
-                  "img": "../docs/assets/docs/images/patterns/pattern.jpg",
-                  "url": "patterns/info-bite-grid/index.html"
                 },
                 { "name": "Intro",
                   "img": "../docs/assets/docs/images/patterns/pattern.jpg",
@@ -119,7 +111,7 @@
                 }
             ]
         },
-        { 
+        {
             "heading": "Core patterns",
             "subheading": "Patterns essential to building a basic University of St Andrews webpage.",
             "patterns": [
@@ -141,9 +133,9 @@
                 }
             ]
         },
-        { 
+        {
             "heading": "Long-form patterns",
-            "subheading": "Patterns used to build long-form pattern pages.",
+            "subheading": "Patterns used to build long-form content pages.",
             "patterns": [
                 { "name": "Long-form content",
                   "img": "../docs/assets/docs/images/patterns/pattern.jpg",
@@ -151,18 +143,10 @@
                 }
             ]
         },
-        { 
+        {
             "heading": "Navigation patterns",
             "subheading": "Patterns used to connect content pages across the University of St Andrews website.",
             "patterns": [
-                { "name": "Masonry (deprecated)",
-                  "img": "../docs/assets/docs/images/patterns/pattern.jpg",
-                  "url": "patterns/masonry/index.html"
-                },
-                { "name": "Masonry grid (deprecated)",
-                  "img": "../docs/assets/docs/images/patterns/pattern.jpg",
-                  "url": "patterns/masonry-grid/index.html"
-                },
                 { "name": "Navbox",
                   "img": "../docs/assets/docs/images/patterns/navbox.jpg",
                   "url": "patterns/navbox/index.html"
@@ -182,6 +166,28 @@
                 { "name": "Sticky nav",
                   "img": "../docs/assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/sticky-nav/index.html"
+                }
+            ]
+        },
+        {
+            "heading": "Deprecated patterns",
+            "subheading": "Patterns that are no longer supported and will be removed in future versions of the pattern library.",
+            "patterns": [
+                { "name": "Info bite (deprecated)",
+                  "img": "../docs/assets/docs/images/patterns/info-bite.jpg",
+                  "url": "patterns/info-bite/index.html"
+                },
+                { "name": "Info bite grid (deprecated)",
+                  "img": "../docs/assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/info-bite-grid/index.html"
+                },
+                { "name": "Masonry (deprecated)",
+                  "img": "../docs/assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/masonry/index.html"
+                },
+                { "name": "Masonry grid (deprecated)",
+                  "img": "../docs/assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/masonry-grid/index.html"
                 }
             ]
         }
