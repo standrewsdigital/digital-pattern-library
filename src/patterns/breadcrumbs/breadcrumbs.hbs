@@ -4,16 +4,15 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12 content">
-            <ul class="breadcrumbs">
-                {{#if parents}}
+            <h2 class="sr-only">Breadcrumbs navigation</h2>
+            <nav>
+                <ul class="breadcrumbs">
                     {{#parents}}
                         <li><a href="{{url}}">{{title}}</a></li>
                     {{/parents}}
-                {{else}}
-                    <li><a href="/">Parent1</a></li><li><a href="/parent2/">Parent 2</a></li>
-                {{/if}}
-                <li>{{default current.title "[current.title]"}}</li>
-            </ul>
+                    <li>{{current.title}}</li>
+                </ul>
+            </nav>
         </div>
     </div>
 </div>
