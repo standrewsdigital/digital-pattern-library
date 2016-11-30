@@ -2,38 +2,27 @@
 title: Hero banner
 pattern: hero-banner
 examples:
-- name: hero-banner1
-- name: hero-banner2
-- name: hero-banner3
+- name: hero-banner
+- name: hero-banner-with-sections
+- name: hero-banner-no-background
 related:
 ---
 
-<p>The Hero banner pattern displays a large heading, introductory text and a call to action over an optional, large background image.</p>
+<p>The hero banner pattern displays a large heading, introductory text and a call to action over an optional, large background image.</p>
 
 <h2>Background image template</h2>
-
-<p>So that it can be positioned reliable across a variety of screen sizes, the background image must follow this template. Use the Photoshop template below to generate new banners that are compatible.</p>
-
+<p>So that it may be positioned reliably across a variety of screen sizes, the background image must follow this template. Use the Photoshop template below to generate new banners that are compatible.</p>
 <p><img src="{{asset "docs/images/cta/hero-banner-photoshop-template.jpg"}}" style="width:100%; max-width:992px;"></p>
-
 <ul>
     <li><a href="../../assets/docs/images/cta/hero-banner-photoshop-template.psd">Hero banner Photoshop template</a></li>
 </ul>
 
-
 <h2>Usage</h2>
-
 <ul>
-    <li>Background images are optional, but if present should be <code>1905px</code> x <code>362px</code> and created with the Photoshop template (see above).</li>
+    <li>Background images are optional, but if present should be 1905px &times; 362px and created using the background image template (see above).</li>
 </ul>
 
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> hero-banner}}</div>
-
 <h2>Options</h2>
-
 <ul>
-	<li>By default there is no background image, you'll need to supply this by attaching inline style on <code>&lt;div class="hero-banner"&gt;</code>. For example:
-    <code>&lt;div class="hero-banner" style="background-image: url(path/to/image.jpg)"&gt;</code>.</li>
+	<li>There is no default background image, you will need to supply an image by attaching an inline style on <code>&lt;div class="hero-banner"&gt;</code>. For example: <code>&lt;div class="hero-banner" style="background-image: url(path/to/image.jpg)"&gt;</code>.</li>
 </ul>
