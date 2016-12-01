@@ -3,9 +3,9 @@ title: Colours
 sta-blue: {color: sta-blue, name: Blue}
 sta-blue-light: {color: sta-blue-light, name: Blue light}
 sta-red: {color: sta-red, name: Red}
-sta-yellow: {color: sta-yellow, name: Yellow}
+sta-yellow: {color: sta-yellow, name: Yellow, contrast: contrast_text}
 sta-grey: {color: sta-grey, name: Grey}
-sta-grey-light: {color: sta-grey-light, name: Grey light}
+sta-grey-light: {color: sta-grey-light, name: Grey light, contrast: contrast_text}
 sta-grey-dark: {color: sta-grey-dark, name: Grey dark}
 sta-cyan: {color: sta-cyan, name: Cyan}
 sta-cyan-light: {color: sta-cyan-light, name: Cyan light}
@@ -14,11 +14,18 @@ sta-green: {color: sta-green, name: Green}
 sta-dkgreen: {color: sta-dkgreen, name: Dark green}
 sta-purple: {color: sta-purple, name: Purple}
 sta-burgundy: {color: sta-burgundy, name: Burgundy}
+context:
+    success: {color: sta-green, name: Success - Green}
+    info: {color: sta-blue-light, name: Info - Blue light}
+    warning: {color: sta-orange, name: Warning - Orange}
+    danger: {color: sta-red, name: Danger - Red}
 ---
 
 ## St Andrews Colours
 
 These are the University of St Andrews colours for the web. Click on a color to see the corresponding CSS code.
+
+Please see [palettes](palettes.html) to see how these colours are used together.
 
 {{> swatch sta-blue }}
 
@@ -48,5 +55,11 @@ These are the University of St Andrews colours for the web. Click on a color to 
 
 {{> swatch sta-burgundy }}
 
+## Bootstrap contexts
 
-Please see [palettes](palettes.html) to see how these colours are used together.
+These colours should only be used for buttons, alerts, and text banners.
+
+{{> swatch context.success}}
+{{> swatch context.info}}
+{{> swatch context.warning}}
+{{> swatch context.danger}}

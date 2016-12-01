@@ -73,22 +73,36 @@ function htmlDecode(value) {
 
     // Activate a popover on all the swatch elements.
     // Get the background color and determine the hex code (if not rgba).
-    $('.swatch > *').popover({
-        content: function() {
-            var item = $(this),
-                bgcolor = item.css('background-color'),
-                hexcode = rgbToHex(bgcolor),
-                content = "<strong>CSS code</strong><br>" +
-                "RGB: <code>" + bgcolor + "</code>";
+    // $('.swatch > *').popover({
+    //     content: function() {
+    //         var item = $(this),
+    //             bgcolor = item.css('background-color'),
+    //             hexcode = rgbToHex(bgcolor),
+    //             content = "<strong>CSS code</strong><br>" +
+    //             "RGB: <code>" + bgcolor + "</code>";
 
-            if (hexcode) {
-                content += "<br>Hex: <code>" + hexcode + "</code>";
-            }
+    //         if (hexcode) {
+    //             content += "<br>Hex: <code>" + hexcode + "</code>";
+    //         }
 
-            return content;
-        },
-        html: true,
-        placement: 'bottom'
+    //         return content;
+    //     },
+    //     html: true,
+    //     placement: 'bottom'
+    // });
+
+    $('.swatch > *:not(.swatch__title, .clearfix)').append(function ( index ) { 
+        var item = $(this);
+        bgcolor = item.css('background-color');
+        hexcode = rgbToHex(bgcolor);
+        bgcolor = bgcolor.replace("0.74902","0.75");
+        content = "<br><p><strong>RGB:</strong> " + bgcolor ;
+        if (hexcode) {
+            content += "<br><strong>Hex:</strong> " + hexcode;
+        }
+        content += "</p>";
+
+        return content;
     });
 
 })(jQuery);

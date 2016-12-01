@@ -11,11 +11,6 @@ study:
     secondary: {color: sta-cyan-light, name: Secondary - Cyan light}
     tertiary1: {color: sta-green, name: Tertiary 1 - Green}
     tertiary2: {color: sta-purple, name: Tertiary 2 - Purple}
-context:
-    success: {color: sta-green, name: Success - Green}
-    info: {color: sta-blue-light, name: Info - Blue light}
-    warning: {color: sta-orange, name: Warning - Orange}
-    danger: {color: sta-red, name: Danger - Red}
 ---
 
 Our palettes are collections of brand colours that we use together to form the palette for a website. Constraining our design to a few colours helps give a consistent, professional appearance.
@@ -42,10 +37,3 @@ Our palettes are collections of brand colours that we use together to form the p
 {{> swatch study.tertiary1}}
 {{> swatch study.tertiary2}}
 
-
-## Bootstrap contexts
-
-{{> swatch context.success}}
-{{> swatch context.info}}
-{{> swatch context.warning}}
-{{> swatch context.danger}}
