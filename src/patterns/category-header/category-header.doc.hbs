@@ -7,6 +7,8 @@ examples:
 - name: old-category-header
 ---
 
+<div class="alert alert-info">The category header pattern has been updated so that the transparent overlay is now added using <code>&lt;div class="transparent-overlay"&gt;</code> rather then using the <code>&lt;h2&gt;</code> element, as it was previously – see old-category-header example below. This support will be removed at some point, so please do not use the old category header markup.</div>
+
 <p>The category header pattern contains the name of the current category or section and a link to it. In the case of <a href="../../examples/web-app.html">web applications</a> the name of the web application is shown in the category header.</p>
 
 <h2>Background image template</h2>
@@ -26,9 +28,9 @@ examples:
 <h2>Usage</h2>
 
 <ul>
-	<li>Should be used directly below the header and before the navigation bar.</li>
+	<li>Must be used directly below the header and before the navigation bar.</li>
     <li>Web applications typically show a solid colour background, rather than the transparent background image.</li>
-    <li>Background images should be 1905px &times; 120px and created using the background image template (see above).</li>
+    <li>Background images must be <code>1905px &times; 120px</code> and created using the background image template (see above).</li>
 </ul>
 
 <h2>Options</h2>
