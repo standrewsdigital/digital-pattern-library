@@ -1,0 +1,31 @@
+---
+title: Primary palette
+layout: _base.hbs
+default:
+    primary: {color: sta-blue, name: Primary - Blue}
+    secondary: {color: sta-blue-light, name: Secondary - Blue light}
+    tertiary1: {color: sta-green, name: Tertiary 1 - Green}
+    tertiary2: {color: sta-burgundy, name: Tertiary 2 - Burgundy}
+    tertiary3: {color: sta-purple, name: Tertiary 3 - Purple}
+---
+
+
+<div class="container">
+
+	<h1>{{title}}</h1>
+
+	<p>This is the primary color palette that is to be used on any new development for the University website.</p>
+
+	<ul>
+		<li><strong>Primary</strong> - used for navigation bar, calls to action.</li>
+		<li><strong>Secondary</strong> - used for secondary navigation bar.</li>
+		<li><strong>Tertiary</strong> - used, usually all together, to add style and differentiate between items in a set (for example, tiles).</li>
+	</ul>
+
+	{{> swatch default.primary}}
+	{{> swatch default.secondary}}
+	{{> swatch default.tertiary1}}
+	{{> swatch default.tertiary2}}
+	{{> swatch default.tertiary3}}
+
+</div>

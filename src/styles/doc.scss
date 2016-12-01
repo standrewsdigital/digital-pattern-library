@@ -202,7 +202,19 @@ code {
         }
 
 }
+.palette_swatch {
+    height: 15px;
+    width: 30px;
+    display: inline-block;
 
+    @each $name, $color in $palette-sta {
+
+        &.#{$name} {
+            background-color: $color;
+        }
+
+    }
+}
 .swatch.contrast_text > * {
     color: #444;
 }

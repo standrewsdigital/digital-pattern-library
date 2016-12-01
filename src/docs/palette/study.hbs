@@ -1,0 +1,33 @@
+---
+title: Study palette
+layout: _base.hbs
+default:
+    primary: {color: sta-cyan, name: Primary - Cyan}
+    secondary: {color: sta-cyan-light, name: Secondary - Cyan light}
+    tertiary1: {color: sta-green, name: Tertiary 1 - Green}
+    tertiary2: {color: sta-purple, name: Tertiary 2 - Purple}
+---
+
+
+<div class="container">
+
+	<h1>{{title}}</h1>
+
+	<div class="alert alert-danger"> 
+		<strong>This palette is depreciated.</strong> Do not attempt to use this palette for any new website development.
+	</div>
+	
+	<p>This is the colour palette that is used on the study part of the University website.</p>
+
+	<ul>
+		<li><strong>Primary</strong> - used for navigation bar, calls to action.</li>
+		<li><strong>Secondary</strong> - used for secondary navigation bar.</li>
+		<li><strong>Tertiary</strong> - used, usually all together, to add style and differentiate between items in a set (for example, tiles).</li>
+	</ul>
+
+	{{> swatch default.primary}}
+	{{> swatch default.secondary}}
+	{{> swatch default.tertiary1}}
+	{{> swatch default.tertiary2}}
+
+</div>
