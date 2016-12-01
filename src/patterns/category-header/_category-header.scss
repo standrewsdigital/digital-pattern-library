@@ -18,6 +18,18 @@
         text-decoration: none;
     }
 }
+
+#category-header .transparent-overlay {
+    background-color: -dpl-color($palette-default,'secondary','transparent');
+    padding-bottom: 10px;
+
+    h2 {
+        font-family: Georgia, serif;
+        text-shadow: 1px 1px 1px rgb(68, 68, 68);
+    }
+}
+
+// This is for the old implementation of the pattern.
 #category-header > div > h2 {
     background-color: -dpl-color($palette-default,'secondary','transparent');
     font-family: Georgia, serif;
@@ -27,17 +39,6 @@
     text-shadow: 1px 1px 1px rgb(68, 68, 68);
 }
 
-#category-header .transparent-overlay {
-    background-color: -dpl-color($palette-default,'secondary','transparent');
-
-    h2 {
-        font-family: Georgia, serif;
-        text-shadow: 1px 1px 1px rgb(68, 68, 68);
-        padding-bottom: 10px;
-    }
-}
-
-
 // Solid background colour, variant
 #category-header.category-header-solid {
     background: -dpl-color($palette-default,'secondary','base');
@@ -45,12 +46,6 @@
     h2 {
         background: transparent;
         text-shadow:none;
-    }
-}
-
-@media (max-width: 600px) {
-    .category-header {
-        max-width: 300px;
     }
 }
 
