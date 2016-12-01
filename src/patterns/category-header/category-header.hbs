@@ -1,8 +1,10 @@
 <!-- Begin pattern: category-header //-->
 
-<div class="{{class}}" id="category-header">
-    <div class="container">
-        <h2><a href="{{url}}">{{title}}</a></h2>
+<div {{#if class}}class="{{class}}"{{/if}} id="category-header">
+    <div class="transparent-overlay">
+        <div class="container">
+            <h2><a href="{{url}}">{{title}}</a></h2>
+        </div>
     </div>
 </div>
 
