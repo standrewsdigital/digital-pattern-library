@@ -31,6 +31,7 @@ Release date: 22 November 2016
 * Update DPL homepage.
 * Research group / panel grid - research group information to be on individual panels arranged in a grid. The panel already exists as part of Bootstrap, but need to decide how to best display research group.
 * Update documentation for ADD-PATTERN.md
+* Update documentation for Colours and Palettes. 
 
 ### Removed
 

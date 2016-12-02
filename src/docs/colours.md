@@ -1,14 +1,14 @@
 ---
 title: Colours
 sta-blue: {color: sta-blue, name: Blue}
-sta-blue-light: {color: sta-blue-light, name: Blue light}
+sta-blue-light: {color: sta-blue-light, name: Light blue}
 sta-red: {color: sta-red, name: Red}
 sta-yellow: {color: sta-yellow, name: Yellow, contrast: contrast_text}
 sta-grey: {color: sta-grey, name: Grey}
-sta-grey-light: {color: sta-grey-light, name: Grey light, contrast: contrast_text}
-sta-grey-dark: {color: sta-grey-dark, name: Grey dark}
+sta-grey-light: {color: sta-grey-light, name: Light grey, contrast: contrast_text}
+sta-grey-dark: {color: sta-grey-dark, name: Dark grey }
 sta-cyan: {color: sta-cyan, name: Cyan}
-sta-cyan-light: {color: sta-cyan-light, name: Cyan light}
+sta-cyan-light: {color: sta-cyan-light, name: Light cyan}
 sta-orange: {color: sta-orange, name: Orange}
 sta-green: {color: sta-green, name: Green}
 sta-dkgreen: {color: sta-dkgreen, name: Dark green}
@@ -21,13 +21,13 @@ context:
     danger: {color: sta-red, name: Danger - Red}
 primary_palette:
     primary: {color: sta-blue, name: Primary - Blue}
-    secondary: {color: sta-blue-light, name: Secondary - Blue light}
+    secondary: {color: sta-blue-light, name: Secondary - Light blue}
     tertiary1: {color: sta-green, name: Tertiary 1 - Green}
     tertiary2: {color: sta-burgundy, name: Tertiary 2 - Burgundy}
     tertiary3: {color: sta-purple, name: Tertiary 3 - Purple}
 study_palette:
     primary: {color: sta-cyan, name: Primary - Cyan}
-    secondary: {color: sta-cyan-light, name: Secondary - Cyan light}
+    secondary: {color: sta-cyan-light, name: Secondary - Light cyan}
     tertiary1: {color: sta-green, name: Tertiary 1 - Green}
     tertiary2: {color: sta-purple, name: Tertiary 2 - Purple}
 ---
@@ -78,6 +78,9 @@ Our palettes are collections of brand colours that we use together to form the c
 {{> swatch sta-purple }}
 
 {{> swatch sta-burgundy }}
+
+
+
 
 ## Bootstrap contexts
 
