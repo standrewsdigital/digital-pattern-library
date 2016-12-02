@@ -6,6 +6,11 @@ default:
     secondary: {color: sta-cyan-light, name: Secondary - Cyan light}
     tertiary1: {color: sta-green, name: Tertiary 1 - Green}
     tertiary2: {color: sta-purple, name: Tertiary 2 - Purple}
+context:
+    success: {color: sta-green, name: Success - Green}
+    info: {color: sta-blue-light, name: Info - Blue light}
+    warning: {color: sta-orange, name: Warning - Orange}
+    danger: {color: sta-red, name: Danger - Red}
 ---
 
 
@@ -29,5 +34,14 @@ default:
 	{{> swatch default.secondary}}
 	{{> swatch default.tertiary1}}
 	{{> swatch default.tertiary2}}
+
+	<h2>Bootstrap contexts</h2>
+
+	<p>These colours should only be used for buttons, alerts, and text banners.</p>
+
+	{{> swatch context.success}}
+	{{> swatch context.info}}
+	{{> swatch context.warning}}
+	{{> swatch context.danger}}
 
 </div>

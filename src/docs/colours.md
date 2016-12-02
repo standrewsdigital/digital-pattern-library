@@ -37,14 +37,14 @@ study_palette:
 
 ## St Andrews Colours
 
-These are the University of St Andrews colours for the web. Click on a color to see the corresponding CSS code.
+These are the University of St Andrews colours for the web. See below for the RGB and Hex codes for each colour.
 
 
 
 
 ## Palettes
 
-Our palettes are collections of brand colours that we use together to form the palette for a website. Constraining our design to a few colours helps give a consistent, professional appearance. Please see the below palettes to see how these colours are used together. 
+Our palettes are collections of brand colours that we use together to form the colour scheme for a website. Constraining our design to a few colours helps give a consistent, professional appearance. Please see the below palettes to see how these colours are used together. 
 
 * [Primary palette](palette/primary.html) {{> palette_swatch primary_palette.primary }}{{> palette_swatch primary_palette.secondary }}{{> palette_swatch primary_palette.tertiary1 }}{{> palette_swatch primary_palette.tertiary2 }}{{> palette_swatch primary_palette.tertiary3 }}
 * [Study palette](palette/study.html) {{> palette_swatch study_palette.primary }}{{> palette_swatch study_palette.secondary }}{{> palette_swatch study_palette.tertiary1 }}{{> palette_swatch study_palette.tertiary2 }}
