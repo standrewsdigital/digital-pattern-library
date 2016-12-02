@@ -139,6 +139,7 @@ code {
     margin: 0 0 25px;
 
     background-image: url(../images/colours-swatch-bg-image.jpg);
+    background-position-y: 30px;
     // background-position: 110% 100%;
 
         .swatch__title {
@@ -202,10 +203,12 @@ code {
         }
 
 }
+
 .palette_swatch {
-    height: 15px;
+    height: 30px;
     width: 30px;
     display: inline-block;
+    vertical-align: middle;
 
     @each $name, $color in $palette-sta {
 
@@ -214,6 +217,10 @@ code {
         }
 
     }
+}
+
+#palettes_container ul li {
+    margin-bottom: 20px;
 }
 .swatch.contrast_text > * {
     color: #444;
