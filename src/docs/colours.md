@@ -15,26 +15,26 @@ sta-dkgreen: {color: sta-dkgreen, name: Dark green}
 sta-purple: {color: sta-purple, name: Purple}
 sta-burgundy: {color: sta-burgundy, name: Burgundy}
 context:
-    success: {color: sta-green, name: Success - green}
-    info: {color: sta-blue-light, name: Info - blue light}
-    warning: {color: sta-orange, name: Warning - orange}
-    danger: {color: sta-red, name: Danger - red}
+    success: {color: sta-green, name: Success (green)}
+    info: {color: sta-blue-light, name: Info (blue light)}
+    warning: {color: sta-orange, name: Warning (orange)}
+    danger: {color: sta-red, name: Danger (red)}
 primary_palette:
-    primary: {color: sta-blue, name: Primary - blue}
-    secondary: {color: sta-blue-light, name: Secondary - light blue}
-    tertiary1: {color: sta-green, name: Tertiary 1 - green}
-    tertiary2: {color: sta-burgundy, name: Tertiary 2 - burgundy}
-    tertiary3: {color: sta-purple, name: Tertiary 3 - purple}
+    primary: {color: sta-blue, name: Primary (blue)}
+    secondary: {color: sta-blue-light, name: Secondary (light blue)}
+    tertiary1: {color: sta-green, name: Tertiary 1 (green)}
+    tertiary2: {color: sta-burgundy, name: Tertiary 2 (burgundy)}
+    tertiary3: {color: sta-purple, name: Tertiary 3 (purple)}
 study_palette:
-    primary: {color: sta-cyan, name: Primary - cyan}
-    secondary: {color: sta-cyan-light, name: Secondary - light cyan}
-    tertiary1: {color: sta-green, name: Tertiary 1 - green}
-    tertiary2: {color: sta-purple, name: Tertiary 2 - purple}
+    primary: {color: sta-cyan, name: Primary (cyan)}
+    secondary: {color: sta-cyan-light, name: Secondary (light cyan)}
+    tertiary1: {color: sta-green, name: Tertiary 1 (green)}
+    tertiary2: {color: sta-purple, name: Tertiary 2 (purple)}
 ---
 
 ## Palettes
 
-Palettes are collections of brand colours that are used together to form the colour scheme for a website. Constraining our design to a few colours helps give a consistent, professional appearance.
+Palettes are collections of brand colours that are selected to form the colour schemes for webpages. Constraining our design to a few colours helps give a consistent, professional appearance.
 
 <div id="palettes_container" class="col-md-5">
     <ul>
@@ -44,38 +44,27 @@ Palettes are collections of brand colours that are used together to form the col
 </div>
 
 
+
+
 ---
 
 ## Approved colours
 
-These are the approved colours for use on the University of St Andrews domain.
+These are the approved colours for use on webpages at the University of St Andrews.
 
 {{> swatch sta-blue }}
-
 {{> swatch sta-blue-light }}
-
 {{> swatch sta-red }}
-
 {{> swatch sta-yellow }}
-
 {{> swatch sta-grey }}
-
 {{> swatch sta-grey-light }}
-
 {{> swatch sta-grey-dark }}
-
 {{> swatch sta-cyan }}
-
 {{> swatch sta-cyan-light }}
-
 {{> swatch sta-orange }}
-
 {{> swatch sta-green }}
-
 {{> swatch sta-dkgreen }}
-
 {{> swatch sta-purple }}
-
 {{> swatch sta-burgundy }}
 
 
