@@ -6,6 +6,40 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+
+## v0.8.0
+
+Release date: 2 December 2016
+
+
+### Added
+
+* Add text banner page.
+* Create a new Font Awesome page.
+* Create a new patterns page.
+
+
+### Changed
+
+* Fix link to Photoshop template in hero banner pattern.
+* Rework example pages.
+* Update accordion page.
+* Update breadcrumbs pattern.
+* Update category header.
+* Update CONTRIBUTING.md and merge in ADD-PATTERN.md so all author instructions are together.
+* Update documentation for Colours and Palettes.
+* Update README.md 
+
+
+### Removed
+
+* Remove palletes page (superceded now by colours page).
+
+
+
+
+---
+
 ## v0.7.0
 
 Release date: 22 November 2016
@@ -31,7 +65,6 @@ Release date: 22 November 2016
 * Update DPL homepage.
 * Research group / panel grid - research group information to be on individual panels arranged in a grid. The panel already exists as part of Bootstrap, but need to decide how to best display research group.
 * Update documentation for ADD-PATTERN.md
-* Update documentation for Colours and Palettes. 
 
 ### Removed
 
