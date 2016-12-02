@@ -32,24 +32,18 @@ study_palette:
     tertiary2: {color: sta-purple, name: Tertiary 2 - Purple}
 ---
 
-
-
-
-## St Andrews Colours
-
-These are the University of St Andrews colours for the web. See below for the RGB and Hex codes for each colour.
-
-
-
-
 ## Palettes
 
-Our palettes are collections of brand colours that we use together to form the colour scheme for a website. Constraining our design to a few colours helps give a consistent, professional appearance. Please see the below palettes to see how these colours are used together. 
+Palettes are collections of brand colours that are used together to form the colour scheme for a website. Constraining our design to a few colours helps give a consistent, professional appearance.
 
 * [Primary palette](palette/primary.html) {{> palette_swatch primary_palette.primary }}{{> palette_swatch primary_palette.secondary }}{{> palette_swatch primary_palette.tertiary1 }}{{> palette_swatch primary_palette.tertiary2 }}{{> palette_swatch primary_palette.tertiary3 }}
-* [Study palette](palette/study.html) {{> palette_swatch study_palette.primary }}{{> palette_swatch study_palette.secondary }}{{> palette_swatch study_palette.tertiary1 }}{{> palette_swatch study_palette.tertiary2 }}
+* [Study palette](palette/study.html) (deprecated) {{> palette_swatch study_palette.primary }}{{> palette_swatch study_palette.secondary }}{{> palette_swatch study_palette.tertiary1 }}{{> palette_swatch study_palette.tertiary2 }}
 
 ---
+
+## Approved colours
+
+These are the approved colours for use on the University of St Andrews domain.
 
 {{> swatch sta-blue }}
 
