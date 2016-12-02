@@ -17,9 +17,6 @@
                 { "name" : "Using the pattern library",
                   "url" : "using.html"
                 },
-                { "name" : "Palettes",
-                  "url" : "palettes.html"
-                },
                 { "name" : "Using jQuery DataTables",
                   "url" : "datatables.html"
                 }

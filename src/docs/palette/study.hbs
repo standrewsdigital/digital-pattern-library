@@ -1,0 +1,47 @@
+---
+title: Study palette
+layout: _base.hbs
+default:
+    primary: {color: sta-cyan, name: Primary (cyan)}
+    secondary: {color: sta-cyan-light, name: Secondary (light cyan)}
+    tertiary1: {color: sta-green, name: Tertiary 1 (green)}
+    tertiary2: {color: sta-purple, name: Tertiary 2 (purple)}
+context:
+    success: {color: sta-green, name: Success (green)}
+    info: {color: sta-blue-light, name: Info (light blue)}
+    warning: {color: sta-orange, name: Warning (orange)}
+    danger: {color: sta-red, name: Danger (red)}
+---
+
+
+<div class="container">
+
+	<h1>{{title}}</h1>
+
+	<div class="alert alert-danger">
+		<strong>This palette is deprecated.</strong> Do not attempt to use this palette for any new website development.
+	</div>
+
+	<p>This is the colour palette that is used on the study at St Andrews section of the University website.</p>
+
+	<ul>
+		<li><strong>Primary</strong> - used for navigation bar, calls to action.</li>
+		<li><strong>Secondary</strong> - used for secondary navigation bar.</li>
+		<li><strong>Tertiary</strong> - used, usually all together, to add style and differentiate between items in a set (for example, tiles).</li>
+	</ul>
+
+	{{> swatch default.primary}}
+	{{> swatch default.secondary}}
+	{{> swatch default.tertiary1}}
+	{{> swatch default.tertiary2}}
+
+	<h2>Bootstrap contexts</h2>
+
+	<p>These colours should only be used for buttons, alerts, and text banners.</p>
+
+	{{> swatch context.success}}
+	{{> swatch context.info}}
+	{{> swatch context.warning}}
+	{{> swatch context.danger}}
+
+</div>
