@@ -1,9 +1,30 @@
 {
     "categories": [
-
         {
-            "heading": "Bootstrap",
-            "subheading": "Common Bootstrap elements styled to match the visual language of the digital pattern library.",
+            "heading": "Core",
+            "subheading": "Patterns essential to building a basic University of St Andrews webpage; listed from the top of the page to the bottom.",
+            "patterns": [
+                { "name": "Header",
+                  "img": "../docs/assets/docs/images/patterns/header.jpg",
+                  "url": "patterns/header/index.html"
+                },
+                { "name": "Category header",
+                  "img": "../docs/assets/docs/images/patterns/category-header.jpg",
+                  "url": "patterns/category-header/index.html"
+                },
+                { "name": "Breadcrumbs",
+                  "img": "../docs/assets/docs/images/patterns/breadcrumbs.jpg",
+                  "url": "patterns/breadcrumbs/index.html"
+                },
+                { "name": "Footer",
+                  "img": "../docs/assets/docs/images/patterns/footer.jpg",
+                  "url": "patterns/footer/index.html"
+                }
+            ]
+        },
+        {
+            "heading": "Bootstrap framework",
+            "subheading": "Common Bootstrap framework elements that have been styled to match the visual language of the University's digital pattern library.",
             "patterns": [
                 { "name": "Bootstrap components",
                   "img": "../docs/assets/docs/images/patterns/pattern.jpg",
@@ -108,28 +129,6 @@
                 { "name": "Tabs",
                   "img": "../docs/assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/tabs/index.html"
-                }
-            ]
-        },
-        {
-            "heading": "Core",
-            "subheading": "Patterns essential to building a basic University of St Andrews webpage.",
-            "patterns": [
-                { "name": "Breadcrumbs",
-                  "img": "../docs/assets/docs/images/patterns/breadcrumbs.jpg",
-                  "url": "patterns/breadcrumbs/index.html"
-                },
-                { "name": "Category header",
-                  "img": "../docs/assets/docs/images/patterns/category-header.jpg",
-                  "url": "patterns/category-header/index.html"
-                },
-                { "name": "Footer",
-                  "img": "../docs/assets/docs/images/patterns/footer.jpg",
-                  "url": "patterns/footer/index.html"
-                },
-                { "name": "Header",
-                  "img": "../docs/assets/docs/images/patterns/header.jpg",
-                  "url": "patterns/header/index.html"
                 }
             ]
         },
