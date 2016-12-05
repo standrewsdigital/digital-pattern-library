@@ -14,15 +14,16 @@ Release date: TBC
 
 ### Added
 
+* Create pattern content-thirds.
+
 
 ### Changed
 
-* 
+* Rename pattern content-2col to content-halves.
+* Update content-halves pattern.
 
 
 ### Removed
-
-
 
 
 ---
