@@ -1,0 +1,18 @@
+
+/*********************************/
+/* BEGIN Pattern: content-thirds   */
+/*********************************/
+
+/* remove margin of h2 when it's the first element of the content */
+
+.content h2, .content h3, .content h3:nth-child(1), .content h4:nth-child(1) {
+    margin-top: 0;
+}
+
+section.sta-grey-light {
+	background-color: $sta-grey-light;
+}
+
+/*********************************/
+/* END Pattern: content-thirds     */
+/*********************************/
