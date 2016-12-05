@@ -30,7 +30,7 @@ IMPORTS AND PATTERNS
 @import 'category-header/category-header';
 @import 'contact-card/contact-card';
 @import 'content-2col/content-2col';
-@import 'content-full/content-full';
+@import 'content-whole/content-whole';
 @import 'content-updates/content-updates';
 @import 'featured-media/featured-media';
 @import 'font-awesome/font-awesome';
@@ -69,6 +69,19 @@ IMPORTS AND PATTERNS
 /* ==========================================================================
 GLOBAL CSS RULES
 ========================================================================== */
+
+
+/* Content global rules
+   --------------------------------------------------------------------------
+   Used in 'content-whole', 'content-thirds' and 'content-halves' patterns.
+
+   @version 1.0.0
+   */
+
+.content {
+    margin-top: 20px;
+}
+
 
 /* Course patterns global rules
    --------------------------------------------------------------------------
