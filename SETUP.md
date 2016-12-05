@@ -1,7 +1,7 @@
 # Set up the digital pattern library
 
-Version 0.3
-Last updated: Friday 04 November 2016
+Version 0.4
+Last updated: Monday 6 December 2016
 
 <!-- MarkdownTOC -->
 
@@ -13,7 +13,7 @@ Last updated: Friday 04 November 2016
     - [Install Ruby on Windows](#install-ruby-on-windows)
     - [Install Ruby on MacOS X](#install-ruby-on-macos-x)
 - [2. Initialize developer tools](#2-initialize-developer-tools)
-  - [Clone the repo](#clone-the-repo)
+  - [Clone the repository](#clone-the-repository)
   - [Install Grunt dependencies](#install-grunt-dependencies)
     - [Error: Unable to connect to github.com](#error-unable-to-connect-to-githubcom)
   - [Install Compass Ruby gem](#install-compass-ruby-gem)
@@ -39,7 +39,7 @@ This is a guide to get your environment set up to contribute to the digital patt
 
 ### Git
 
-The digital pattern library code is stored in a Git repository, so you will need a Git client to clone it to your local machine and commit changes back to the repo.
+The digital pattern library code is stored in a Git repository, so you will need a Git client to clone it to your local machine and commit changes back to the repository.
 
 If you are a Windows user, we recommend that you always install the Git command line client, as this will allow you to right-click within a folder and select "Git Bash Here" to open a command-line prompt. You can use this to run Git, Node, Grunt, and Ruby commands.
 
@@ -88,7 +88,7 @@ Once you're finished with the installation, you should close and reopen any comm
 
 #### Install Ruby on MacOS X
 
-Recent versions of MacOS X already have Ruby installed, so no further installation is required.
+Recent versions of MacOS X already have Ruby installed, no further installation is required.
 
 
 
@@ -96,7 +96,7 @@ Recent versions of MacOS X already have Ruby installed, so no further installati
 ## 2. Initialize developer tools
 
 
-### Clone the repo
+### Clone the repository
 
 Clone the Git repository into a folder on your computer using your Git client, or at the command line:
 
@@ -155,7 +155,7 @@ $ gem install compass
 
 ## Conclusion
 
-You should now be all configured to start work on the pattern library. You should now read [CONTRIBUTING.md](CONTRIBUTING.md) and [ADD-PATTERN.md](ADD-PATTERN.md) for some guidelines and principles of development.
+You should now be configured to start work on the pattern library. You should now read [CONTRIBUTING.md](CONTRIBUTING.md) for some guidelines and principles of development.
 
 ---
 
@@ -192,4 +192,3 @@ Run `npm install` using Git Bash or the command line.
 ### 5. Verify it works.
 
 Run `grunt` and if it works then you're successfully updated.
-
