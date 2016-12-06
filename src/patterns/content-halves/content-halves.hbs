@@ -1,5 +1,5 @@
 
-<!-- Begin pattern: content-2col //-->
+<!-- Begin pattern: content-halves //-->
 {{#if background}}
     <section class="{{background}}">
 {{/if}}
@@ -10,21 +10,19 @@
             {{/if}}
 
             <div class="row">
-                <div class="{{col-1}}">
-                    {{#if text}}
-                         {{{text}}}
+                <div class="col-sm-6 content">
+                    {{#if column1}}
+                         {{{column1}}}
                     {{/if}}
                 </div>
-                {{#if col-2}}
-                <div class="{{col-2}}" {{#if role}}role="{{role}}"{{/if}}>
-                    {{#if sidebar}}
-                        {{{sidebar}}}
+                <div class="col-sm-6 content">
+                    {{#if column2}}
+                         {{{column2}}}
                     {{/if}}
                 </div>
-                {{/if}}
             </div>
         </div>
 {{#if background}}    
     </section>
 {{/if}}
-<!-- End pattern: content-2col //-->
+<!-- End pattern: content-halves //-->

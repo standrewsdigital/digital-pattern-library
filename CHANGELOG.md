@@ -7,38 +7,29 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
-## v0.9.0
+## v0.9.0 
+ 
+Release date: TBC 
+ 
+ 
+### Added 
 
-Release date: TBC
-
-
-### Added
-
-
-### Changed
-
-* Rename pattern content-full to content-whole
-* Update content-whole pattern.
-* Moved .content class from pattern to screen.scss.
-
-
-### Removed
-
-
----
-
-## v.0.8.1
-
-Release date: 6 December 2016
-
-### Changed
-
-* Fix sticky nav click listener that was breaking tab content
-
+* Create pattern content-thirds.
+ 
+ 
+### Changed 
+ 
+* Rename pattern content-full to content-whole 
+* Update content-whole pattern. 
+* Moved .content class from pattern to screen.scss
+* Rename pattern content-2col to content-halves.
+* Update content-halves pattern. 
+ 
+ 
+### Removed 
+ 
 
 ---
-
-
 
 ## v0.8.0
 

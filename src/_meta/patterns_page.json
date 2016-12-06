@@ -82,9 +82,13 @@
                   "img": "assets/docs/images/patterns/contact-card.jpg",
                   "url": "patterns/contact-card/index.html"
                 },
-                { "name": "Content 2 column",
-                  "img": "assets/docs/images/patterns/content-2col.jpg",
-                  "url": "patterns/content-2col/index.html"
+                { "name": "Content halves",
+                  "img": "assets/docs/images/patterns/content-halves.jpg",
+                  "url": "patterns/content-halves/index.html"
+                },
+                { "name": "Content thirds",
+                  "img": "assets/docs/images/patterns/content-thirds.jpg",
+                  "url": "patterns/content-thirds/index.html"
                 },
                 { "name": "Content whole",
                   "img": "assets/docs/images/patterns/content-whole.jpg",

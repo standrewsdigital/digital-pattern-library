@@ -1,0 +1,28 @@
+
+<!-- Begin pattern: content-thirds //-->
+{{#if background}}
+    <section class="{{background}}">
+{{/if}}
+        <div class="container">
+
+            {{#if heading}}
+                <div class="row"><div class="col-xs-12 col-sm-6"><h2>{{heading}}</h2></div></div>
+            {{/if}}
+
+            <div class="row">
+                <div class="col-sm-8 content">
+                    {{#if text}}
+                         {{{text}}}
+                    {{/if}}
+                </div>
+                {{#if sidebar}}
+                    <div class="col-sm-4 content" {{#if role}}role="{{role}}"{{/if}}>
+                        {{{sidebar}}}
+                    </div>
+                {{/if}}
+            </div>
+        </div>
+{{#if background}}    
+    </section>
+{{/if}}
+<!-- End pattern: content-thirds //-->
