@@ -1,0 +1,44 @@
+---
+title: Primary palette
+layout: _base.hbs
+default:
+    primary: {color: sta-blue, name: Primary (blue)}
+    secondary: {color: sta-blue-light, name: Secondary (light blue)}
+    tertiary1: {color: sta-green, name: Tertiary 1 (green)}
+    tertiary2: {color: sta-burgundy, name: Tertiary 2 (burgundy)}
+    tertiary3: {color: sta-purple, name: Tertiary 3 (purple)}
+context:
+    success: {color: sta-green, name: Success (green)}
+    info: {color: sta-blue-light, name: Info (light blue)}
+    warning: {color: sta-orange, name: Warning (orange)}
+    danger: {color: sta-red, name: Danger (red)}
+---
+
+
+<div class="container">
+
+	<h1>{{title}}</h1>
+
+	<p>This is the primary palette that is to be used on any new development for the University website.</p>
+
+	<ul>
+		<li><strong>Primary</strong> - used for navigation bar, calls to action.</li>
+		<li><strong>Secondary</strong> - used for secondary navigation bar.</li>
+		<li><strong>Tertiary</strong> - used, usually all together, to add style and differentiate between items in a set (for example, tiles).</li>
+	</ul>
+
+	{{> swatch default.primary}}
+	{{> swatch default.secondary}}
+	{{> swatch default.tertiary1}}
+	{{> swatch default.tertiary2}}
+	{{> swatch default.tertiary3}}
+
+	<h2>Bootstrap contexts</h2>
+
+	<p>These colours should only be used for buttons, alerts, and text banners.</p>
+
+	{{> swatch context.success}}
+	{{> swatch context.info}}
+	{{> swatch context.warning}}
+	{{> swatch context.danger}}
+</div>

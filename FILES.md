@@ -1,18 +1,10 @@
-# File and folder overview
+# Files and folders overview
 
-Version 0.1
-Last updated: Thursday 13 October 2016
-
-<!-- MarkdownTOC -->
-
-- [A list of the main folders and files in the DPL source code and brief summaries about each.](#a-list-of-the-main-folders-and-files-in-the-dpl-source-code-and-brief-summaries-about-each)
-
-<!-- /MarkdownTOC -->
-
----
+Version 0.2
+Last updated: Tuesday 22 November 2016
 
 
-#### A list of the main folders and files in the DPL source code and brief summaries about each.
+A list of the main folders and files in the DPL source code and brief summaries about each.
 
 ```
 src/
@@ -88,16 +80,15 @@ src/
 |                                   #  build core folder.
 |-- .editorconfig                   # Editor-agnostic editor settings
 |-- .gitignore                      # List of files git should ignore
-|-- ADD-PATTERN.md
 |-- bootstrap.sh                    # Kick off file for Vagrant test box
 |-- CHANGELOG.md
 |-- CONTRIBUTING.md
 |-- FILES.md
 |-- Gruntfile.js                    # core config for Grunt tasks
-|-- package.json                    # Meta about project. 
-|                                   #   NOTE: Only place where you will find 
-|                                   #   the version in the source code.
+|-- package.json                    # Meta about project. Note, this is the 
+|                                   #  only place where you will find the 
+|                                   #  version in the source code.
 |-- README.md
 |-- SETUP.md
-`-- Vagrantfile                     # Config for Vagrant test box
+|-- Vagrantfile                     # Config for Vagrant test box
 ```

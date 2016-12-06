@@ -1,4 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 
+<title>Tables</title>
+
+<link href="{{asset 'core/styles/screen.css'}}" rel="stylesheet" type="text/css" media="screen" />
+<link href="{{asset 'core/styles/print.css'}}" rel="stylesheet" type="text/css" media="print" />
+<!--[if lt IE 9]><link href="{{asset 'core/styles/ie.css'}}" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="{{asset "core/images/favicon.ico"}}">
+
+  </head>
+  <body>
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+   {{> header }}
+
+    <!-- Begin pattern: category-header //-->
+<div id="category-header" class="">
+  <div class="container">
+    <h2 style="font-size: 1.5em;"><a href="../index.html">Digital pattern library</a></h2>
+  </div>
+</div>
+<!-- End pattern: category-header //-->
+
+<div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+          <div class="navbar-header">
+              <!-- <a href="{{rel "index.html"}}" class="navbar-brand">Digital pattern library</a> -->
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar-main">
+              <ul class="nav navbar-nav">
+              {{#each dpl-nav.items}}
+                  {{#if items}}
+                  <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="{{rel url}}" id="nav-{{name}}">{{name}}<span class="caret"></span></a>
+                          <ul class="dropdown-menu" aria-labelledby="{{name}}">
+                              {{#each items}}
+                              <li><a href="{{rel url}}">{{{name}}}</a></li>
+                              {{/each}}
+                          </ul>
+                  </li>
+                  {{else}}
+                      <li>
+                          <a href="{{rel url}}">{{name}}</a>
+                      </li>
+                  {{/if}}
+              {{/each}}
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="http://digitalcommunications.wp.st-andrews.ac.uk/tag/digital-pattern-library/" target="_blank">Blog</a></li>
+              </ul>
+
+          </div>
+      </div>
+  </div>
 
 <div class="container">
 
@@ -288,3 +359,6 @@
 
 </div>
 
+</body>
+
+</html>

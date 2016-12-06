@@ -7,6 +7,92 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.8.0
+
+Release date: 2 December 2016
+
+
+### Added
+
+* Add text banner page.
+* Create a new Font Awesome page.
+* Create a new patterns page.
+
+
+### Changed
+
+* Fix link to Photoshop template in hero banner pattern.
+* Rework example pages.
+* Update accordion page.
+* Update breadcrumbs pattern.
+* Update category header.
+* Update CONTRIBUTING.md and merge in ADD-PATTERN.md so all author instructions are together.
+* Update documentation for Colours and Palettes.
+* Update README.md 
+
+
+### Removed
+
+* Remove palletes page (superceded now by colours page).
+
+
+
+
+---
+
+## v0.7.0
+
+Release date: 22 November 2016
+
+### Added
+
+* KIS widget.
+* There is a global_css_fix.css file on the test subject pages e.g. http://www.st-andrews.ac.uk/subject-test/ancient-history/. This needs to be reviewed and code merged into the DPL for the appropriate patterns.
+* Content 2 column pattern - add (1/2 + 1/2). Add a new two column content example with optional header and optional full-width background to the Content 2 column pattern.
+* Section header - new pattern for a section header to separate the sections on the subjects page.
+* Build core.js without jQuery so when IT Services developers are already using jQuery they can have use with the DPL without fear of code clashes.
+* Make CHANGELOG accessible in the DPL docs.
+* Featured media - new pattern for a full width background image with text to the left or right with image or video beside it. Used for content such as testimonials and reputation.
+* Add and upgrade datatables.js to DPL - until now it was pulled in manually.
+
+### Changed
+
+* Upgrade jQuery and plugins to latest versions.
+* Upgrade to Bootstrap v3.3.7.
+* Subject page header size increase. Heading at top of subject page e.g. chemistry, needs to be in a larger font. Add as a new example to the content-full pattern.
+* Update blog link on DPL to DPL tag.
+* Tabs.
+* Update DPL homepage.
+* Research group / panel grid - research group information to be on individual panels arranged in a grid. The panel already exists as part of Bootstrap, but need to decide how to best display research group.
+* Update documentation for ADD-PATTERN.md
+
+### Removed
+
+* Remove IE9 polyfills. DPL uses a couple of JavaScrip polyfills to support media queries in IE9. We no longer support IE9 so we can safely remove these.
+
+
+
+
+---
+
+## v0.6.0
+
+Release date: 27 October 2016
+
+### Changed
+
+* README.md has had a significant rewrite, as has CONTRIBUTING.md which now incorporates information from ADD-PATTERN.md (now deleted).
+
+
+### Removed
+
+* ADD-PATTERN.md information has now been merged into CONTRIBUTING.md.
+
+
+
+
+---
+
 ## v0.5.5
 
 Release date: 4 October 2016

@@ -1,0 +1,30 @@
+{
+    "university-home": {
+      "style-type": "success",
+      "message": "Example University home page. <a href='../example-pages.html'>Back to example pages</a>."
+    },
+    "about": {
+      "style-type": "success",
+      "message": "Example about page. <a href='../example-pages.html'>Back to example pages</a>."
+    },
+    "content": {
+      "style-type": "success",
+      "message": "Example content page. <a href='../example-pages.html'>Back to example pages</a>."
+    },
+    "gallery": {
+      "style-type": "success",
+      "message": "Example gallery. <a href='../example-pages.html'>Back to example pages</a>."
+    },
+    "web-application": {
+      "style-type": "success",
+      "message": "Example web application. <a href='../example-pages.html'>Back to example pages</a>."
+    },
+    "long-form": {
+      "style-type": "success",
+      "message": "Example long form content page. <a href='../example-pages.html'>Back to example pages</a>."
+    },
+    "html-elements": {
+      "style-type": "success",
+      "message": "Example HTML elements. <a href='../pattern-pages.html'>Back to pattern pages</a>."
+    }    
+}

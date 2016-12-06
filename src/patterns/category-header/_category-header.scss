@@ -1,55 +1,53 @@
 
 /*********************************/
-/* BEGIN Pattern: category-header*/
+/* END Pattern: category-header  */
 /*********************************/
 
-
+// Image background with transparent colour overlay
 #category-header {
-    background-image:    url(../images/header_general.jpg);
+    background-image: url(../images/header_general.jpg);
     background-position: center;
-    background-repeat:   no-repeat;
-    background-size:     cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 0px;
     overflow: hidden;
 
-    h2 {
-        background-color: -dpl-color($palette-default,'secondary','transparent');
-        background-color: rgba(27, 116 ,195 ,0.7); // Override with great transparency.
-                                                // Fix this, probably.
+    h2 a {
         color: white;
-        font-family: Georgia, serif;
         font-weight: normal;
-        margin: 0 -100%;
-        padding: 20px 100%;
-        position: relative;
-        text-shadow: 1px 1px 1px rgb(68, 68, 68);
-
-        a {
-            color: white;
-            font-weight: normal;
-            text-decoration: none;
-        }
+        text-decoration: none;
     }
 }
 
-// Solid background color, variant
+#category-header .transparent-overlay {
+    background-color: -dpl-color($palette-default,'secondary','transparent');
+    padding-bottom: 10px;
 
+    h2 {
+        font-family: Georgia, serif;
+        text-shadow: 1px 1px 1px rgb(68, 68, 68);
+    }
+}
+
+// This is for the old implementation of the pattern.
+#category-header > div > h2 {
+    background-color: -dpl-color($palette-default,'secondary','transparent');
+    font-family: Georgia, serif;
+    margin: 0 -100%;
+    padding: 20px 100%;
+    position: relative;
+    text-shadow: 1px 1px 1px rgb(68, 68, 68);
+}
+
+// Solid background colour, variant
 #category-header.category-header-solid {
     background: -dpl-color($palette-default,'secondary','base');
 
     h2 {
         background: transparent;
-        //text-shadow: 1px 1px 1px -dpl-color($palette-default,'primary','base');;
         text-shadow:none;
     }
 }
-
-@media (max-width: 600px) {
-    .category-header {
-        max-width: 300px;
-    }
-}
-
 
 
 /* DISABLED, but saved here for historical reference.
