@@ -21,7 +21,7 @@ $('#nav-top').affix({
     // Modified version of this smooth scrolling:
     // https://css-tricks.com/snippets/jquery/smooth-scrolling/
 
-$('a[href*="#"]:not([href="#"])').click(function() {
+$('nav a[href*="#"]:not([href="#"])').click(function() {
 
     if ( location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'' ) || location.hostname == this.hostname ) {
 
@@ -30,7 +30,7 @@ $('a[href*="#"]:not([href="#"])').click(function() {
 
         if ( target.length ) {
             $('html,body').animate({
-                scrollTop: target.offset().top
+                scrollTop: target.offset().top - 45
             }, 500);
             var a = $(this);
             // a.parent().siblings().removeClass('current-menu-item');

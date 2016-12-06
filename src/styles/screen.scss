@@ -53,6 +53,7 @@ IMPORTS AND PATTERNS
 @import 'secondary-call/secondary-call';
 @import 'section-header/section-header';
 @import 'staff-profile/staff-profile';
+@import 'sticky-nav/sticky-nav';
 @import 'tabs/tabs';
 @import 'text-banner/text-banner';
 @import 'tile/tile';
@@ -86,8 +87,19 @@ GLOBAL CSS RULES
 
 .course.st-andrews-blue-light {
 	color: rgb(255,255,255);
+    background-color: rgba(27,116,195,1);
+}
+.course.st-andrews-grey-light {
+    background-color: rgba(240,240,240,1);
 }
 
+.course tr:nth-child(odd) {
+    background-color: transparent;
+}
+
+.course tr {
+    line-height: 1.7em;
+}
 
 /* Misc global rules
    --------------------------------------------------------------------------

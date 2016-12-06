@@ -29,6 +29,14 @@
     top: 0;
     width: 100%;
     z-index: 999;
+    position: fixed;
+}
+#nav-top li.active {
+    background-color: $sta-blue-hover;
+} 
+
+#nav-top .navbar.nav {
+    min-height: 45px;
 }
 
 @media (min-width: 768px) {
