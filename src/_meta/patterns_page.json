@@ -86,9 +86,9 @@
                   "img": "assets/docs/images/patterns/content-2col.jpg",
                   "url": "patterns/content-2col/index.html"
                 },
-                { "name": "Content full",
-                  "img": "assets/docs/images/patterns/content-full.jpg",
-                  "url": "patterns/content-full/index.html"
+                { "name": "Content whole",
+                  "img": "assets/docs/images/patterns/content-whole.jpg",
+                  "url": "patterns/content-whole/index.html"
                 },
                 { "name": "Content updates",
                   "img": "assets/docs/images/patterns/content-updates.jpg",

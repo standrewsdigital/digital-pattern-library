@@ -7,6 +7,26 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.9.0
+
+Release date: TBC
+
+
+### Added
+
+
+### Changed
+
+* Rename pattern content-full to content-whole
+* Update content-whole pattern.
+* Moved .content class from pattern to screen.scss.
+
+
+### Removed
+
+
+---
+
 ## v.0.8.1
 
 Release date: 6 December 2016
