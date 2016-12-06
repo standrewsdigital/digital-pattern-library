@@ -7,24 +7,27 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
-## v0.9.0
-
-Release date: TBC
-
-
-### Added
+## v0.9.0 
+ 
+Release date: TBC 
+ 
+ 
+### Added 
 
 * Create pattern content-thirds.
-
-
-### Changed
-
+ 
+ 
+### Changed 
+ 
+* Rename pattern content-full to content-whole 
+* Update content-whole pattern. 
+* Moved .content class from pattern to screen.scss
 * Rename pattern content-2col to content-halves.
-* Update content-halves pattern.
-
-
-### Removed
-
+* Update content-halves pattern. 
+ 
+ 
+### Removed 
+ 
 
 ---
 
