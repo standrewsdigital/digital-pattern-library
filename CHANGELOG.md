@@ -7,6 +7,19 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v.0.8.1
+
+Release date: 6 December 2016
+
+### Changed
+
+* Fix sticky nav click listener that was breaking tab content
+
+
+---
+
+
+
 ## v0.8.0
 
 Release date: 2 December 2016
