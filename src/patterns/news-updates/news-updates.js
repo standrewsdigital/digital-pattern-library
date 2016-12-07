@@ -5,7 +5,7 @@
 
 
 // Use bigTarget to make tile image clickable.
-$(".news-updates h4 a").bigTarget({
+$(".news-updates h3 a").bigTarget({
     clickZone : 'div:eq(0)' // jQuery parent selector
 });
 
