@@ -7,9 +7,9 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
-## v0.9.0 
+## v0.8.2
  
-Release date: TBC 
+Release date: 7 December 2016
  
  
 ### Added 
@@ -24,10 +24,22 @@ Release date: TBC
 * Moved .content class from pattern to screen.scss
 * Rename pattern content-2col to content-halves.
 * Update content-halves pattern. 
- 
- 
-### Removed 
- 
+
+
+
+
+---
+
+## v0.8.1
+
+Release date: 6 December 2016
+
+### Changed
+
+* Fix sticky nav click listener that was breaking tab content.
+
+
+
 
 ---
 
