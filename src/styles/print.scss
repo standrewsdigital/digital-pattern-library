@@ -400,3 +400,19 @@ aside.parallel-right figure {
 .accordion > div {
     display: block !important;
 }
+
+/*==============================================================================
+    NEWS UPDATES
+==============================================================================*/
+
+.news-updates figure {
+    display:none;
+}
+
+.news-updates a.btn {
+    display:none;
+}
+
+.news-updates a {
+    text-decoration: none;
+}

@@ -1,12 +1,20 @@
 
 /**********************************/
-/* BEGIN Pattern: content-updates */
+/* BEGIN Pattern: news-updates */
 /**********************************/
 
-.card.card-news-horizontal figure {
+.news-updates figure {
     float: left;
     padding-right: 15px;
     width: 40%;
+}
+
+.news-updates-small img{
+	margin-bottom:25px;
+}
+
+.news-updates h4{
+	margin-top:0;
 }
 
 figure {
@@ -18,6 +26,10 @@ img {
     max-width: 100%;
 }
 
+.news-updates:hover {
+    cursor: pointer;
+}
+
 /*********************************/
-/* END Pattern: content-updates  */
+/* END Pattern: news-updates  */
 /*********************************/
