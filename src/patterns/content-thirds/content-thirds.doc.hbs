@@ -4,7 +4,9 @@ pattern: content-thirds
 examples:
 - name: first-col-only
 - name: col-with-aside
-- name: heading-col-with-aside
+- name: col-with-aside-heading
+- name: col-with-aside-background
+
 ---
 
 <p>The content thirds pattern contains a &frac23; width column for the main content and an optional &frac13; width column for related content. There is the option of a heading above the columns and a full-width background colour.</p>
@@ -12,8 +14,8 @@ examples:
 <h2>Usage</h2>
 
 <ul>
-    <li>When using the optional heading above the columns it must use heading 2 and sub-headings in the content as heading 3.</li>
-    <li>If using a background colour, it must use colours from the DPL palette and comply with accessibility for contrast between text and background: a contrast ratio of 0.8 or above.</li>
+    <li>When using the optional heading above the columns it must use heading 2 (<code>&lt;h2&gt;</code>) and sub-headings in the content as heading 3 (<code>&lt;h3&gt;</code>).</li>
+    <li>If using a background colour, only the class: <code>sta-grey-light</code> is allowed.</li>
     <li>The second column (&frac13;) must only contain a navigation box or related content.</li>
 </ul>
 
@@ -21,6 +23,6 @@ examples:
 
 <ul>
     <li>Content in the second column (&frac13;).</li>
-    <li>Heading 2 above the columns.</li>
-    <li>Full width background colour.</li>
+    <li>Heading 2 (<code>&lt;h2&gt;</code>) above the columns.</li>
+    <li>Full width background colour, light grey only (<code>sta-grey-light</code>)</li>
 </ul>
