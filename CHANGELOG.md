@@ -7,6 +7,24 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.8.3
+ 
+Release date: 8 December 2016
+
+
+### Added 
+
+* New example illustrating background colour with content-thirds pattern.
+
+
+### Changed 
+ 
+* Rename pattern content-update to news-updates.
+* Update news-updates pattern.
+
+
+
+
 ## v0.8.2
  
 Release date: 7 December 2016
