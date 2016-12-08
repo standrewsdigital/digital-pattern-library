@@ -1,6 +1,6 @@
 
 /*********************************/
-/* BEGIN Pattern: news-updates           */
+/* BEGIN Pattern: news-updates   */
 /*********************************/
 
 
@@ -11,5 +11,5 @@ $(".news-updates h3 a").bigTarget({
 
 
 /*********************************/
-/* END Pattern: news-updates             */
+/* END Pattern: news-updates     */
 /*********************************/
