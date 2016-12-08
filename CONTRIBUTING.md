@@ -6,38 +6,36 @@ Last updated: Tuesday 22 November 2016
 <!-- MarkdownTOC -->
 
 - [1. Introduction](#1-introduction)
-    - [1.1 Set up](#11-set-up)
-    - [1.2 Principles](#12-principles)
-    - [1.3 Workflow](#13-workflow)
-    - [1.4 Clone don't fork](#14-clone-dont-fork)
-    - [1.5 Version numbers](#15-version-numbers)
-        - [1.5.1 Source code version numbers](#151-source-code-version-numbers)
-        - [1.5.2 Git tags for versions](#152-git-tags-for-versions)
-    - [1.6 Change log](#16-change-log)
+  - [1.1 Set up](#11-set-up)
+  - [1.2 Principles](#12-principles)
+  - [1.3 Workflow](#13-workflow)
+  - [1.4 Clone don't fork](#14-clone-dont-fork)
+  - [1.5 Version numbers](#15-version-numbers)
+  - [1.6 Change log](#16-change-log)
 - [2. How to build the DPL](#2-how-to-build-the-dpl)
-    - [2.1 Build core and docs](#21-build-core-and-docs)
-    - [2.2 Build core only](#22-build-core-only)
-    - [2.3 Build docs](#23-build-docs)
-    - [2.4 Grunt watch \(interactive building\)](#24-grunt-watch-interactive-building)
+  - [2.1 Build core and docs](#21-build-core-and-docs)
+  - [2.2 Build core only](#22-build-core-only)
+  - [2.3 Build docs](#23-build-docs)
+  - [2.4 Grunt watch \(interactive building\)](#24-grunt-watch-interactive-building)
 - [3. How to add a new pattern \(using dummy-pattern\)](#3-how-to-add-a-new-pattern-using-dummy-pattern)
-    - [3.1 Branch from master](#31-branch-from-master)
-    - [3.2 Duplicate dummy pattern folder](#32-duplicate-dummy-pattern-folder)
-    - [3.3 Add Sass partial](#33-add-sass-partial)
-    - [3.4 Add new navigation entry](#34-add-new-navigation-entry)
-    - [3.5 Test, commit and continue building...](#35-test-commit-and-continue-building)
+  - [3.1 Branch from master](#31-branch-from-master)
+  - [3.2 Duplicate dummy pattern folder](#32-duplicate-dummy-pattern-folder)
+  - [3.3 Add Sass partial](#33-add-sass-partial)
+  - [3.4 Add new navigation entry](#34-add-new-navigation-entry)
+  - [3.5 Test, commit and continue building...](#35-test-commit-and-continue-building)
 - [4. How to add a new pattern \(manually\)](#4-how-to-add-a-new-pattern-manually)
-    - [4.1 Branch from master](#41-branch-from-master)
-    - [4.2 Create a new folder](#42-create-a-new-folder)
-    - [4.3 Create Handlebars files](#43-create-handlebars-files)
-    - [4.4 Create a Sass file](#44-create-a-sass-file)
-    - [4.5 Add a Sass partial](#45-add-a-sass-partial)
-    - [4.6 Add JavaScript \(optional\)](#46-add-javascript-optional)
-    - [4.7 Create an examples folder](#47-create-an-examples-folder)
-    - [4.8 Create a data folder](#48-create-a-data-folder)
-    - [4.9 Add a new navigation entry](#49-add-a-new-navigation-entry)
-    - [4.10 Run grunt](#410-run-grunt)
-    - [4.11 Commit](#411-commit)
-    - [4.12 Continue building...](#412-continue-building)
+  - [4.1 Branch from master](#41-branch-from-master)
+  - [4.2 Create a new folder](#42-create-a-new-folder)
+  - [4.3 Create Handlebars files](#43-create-handlebars-files)
+  - [4.4 Create a Sass file](#44-create-a-sass-file)
+  - [4.5 Add a Sass partial](#45-add-a-sass-partial)
+  - [4.6 Add JavaScript \(optional\)](#46-add-javascript-optional)
+  - [4.7 Create an examples folder](#47-create-an-examples-folder)
+  - [4.8 Create a data folder](#48-create-a-data-folder)
+  - [4.9 Add pattern to patterns page](#49-add-pattern-to-patterns-page)
+  - [4.10 Run grunt](#410-run-grunt)
+  - [4.11 Commit](#411-commit)
+  - [4.12 Continue building...](#412-continue-building)
 
 <!-- /MarkdownTOC -->
 
@@ -460,19 +458,22 @@ And now create this file: `src/patterns/new-feature/data/new-feature-2.json` and
 The idea is that each example loads different data that configures different variations of the pattern.
 
 
-### 4.9 Add a new navigation entry
+### 4.9 Add pattern to patterns page
 
-You need to add a new entry in the navigation for this pattern.
+If there is an example icon for the pattern then this needs to be added to `images-docs/patterns/` and given the same name as the pattern e.g. `content-whole.jpg`. The image size needs to be `720 pixels by 480 pixels`.
 
-In the JSON file `src/_meta/dpl-nav.json` in the `items[0].items` array, add an item at the appropriate place like so: 
+Then in the JSON file `src/_meta/patterns_page.json` add an entry for the new pattern in the array at an appropriate place like so: 
 
 ```js
 },
 {
-   "name" : "New feature",
-   "url" : "patterns/new-feature/index.html"
+   "name": "New feature",
+   "img": "assets/docs/images/patterns/pattern.jpg",
+   "url": "patterns/new-feature/index.html"
 },
 ```
+
+Note that the `img` path will need to either use the default `pattern.jpg` or the name of the custom icon image.
 
 
 ### 4.10 Run grunt
