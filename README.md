@@ -85,7 +85,7 @@ All users of the DPL must have an understanding of [user-centred design](https:/
 
 New web applications and webpages designed using the digital pattern library must be approved by the digital communications team before they are deployed to a production environment.
 
-All users who wish to use the DPL to build a product must first organise a kick-off meeting with the digital communications team. At this meeting rules and responsibilities will be agreed. Once they have been introduced to and understand the DPL and want to continue to use it they will be required to sign a memorandum of understanding.
+All users who wish to use the DPL to build a product must first organise a kick-off meeting with the digital communications team. At this meeting rules and responsibilities will be agreed. Once they have been introduced to and understand the DPL and want to continue to use it they will be required to sign a [memorandum of understanding](CONTRIBUTING-FORM.docx) (Word, 19KB).
 
 The memorandum of understanding will set out clear sign-off gateways, which require users to share the information architecture (IA) for web pages and/or workflow for web apps as well as plans for content management with the digital communications team before the DPL is used to build or prototype a product. 
 
