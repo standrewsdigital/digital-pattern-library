@@ -39,7 +39,8 @@ $( '#header-search-close' ).click( function() {
     var trigger = $( '#header-search-trigger' );
     var logo = $( '#header-logo' );
 
-    form.hide();
+    // form.hide();
+    form.css("display","");
 
     search.css({
         "position": "relative",
