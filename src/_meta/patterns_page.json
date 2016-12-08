@@ -94,10 +94,6 @@
                   "img": "assets/docs/images/patterns/content-whole.jpg",
                   "url": "patterns/content-whole/index.html"
                 },
-                { "name": "Content updates",
-                  "img": "assets/docs/images/patterns/content-updates.jpg",
-                  "url": "patterns/content-updates/index.html"
-                },
                 { "name": "Gallery",
                   "img": "assets/docs/images/patterns/gallery.jpg",
                   "url": "patterns/gallery/index.html"
@@ -114,6 +110,10 @@
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/intro/index.html"
                 },
+                { "name": "News updates",
+                  "img": "assets/docs/images/patterns/news-updates.jpg",
+                  "url": "patterns/news-updates/index.html"
+                },                
                 { "name": "Section header",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/section-header/index.html"

@@ -19,7 +19,7 @@ Release date: 8 December 2016
 
 ### Changed 
  
-* Rename pattern content-update to news-updates.
+* Rename pattern content-updates to news-updates.
 * Update news-updates pattern.
 
 
