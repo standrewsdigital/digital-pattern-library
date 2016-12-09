@@ -7,10 +7,33 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.8.5
+
+Release date: 9 December 2016
+
+### Changed 
+
+* Update header pattern documentation.
+* Fixed bug where search box dissapears after closing it in mobile view
+
+
+
+
+## v0.8.4
+
+
+Release date: 9 December 2016
+
+### Changed
+
+* CONTRIBUTING.md - remove adding to navigation and replace with adding to pattern page.
+
+
+
+
 ## v0.8.3
  
 Release date: 8 December 2016
-
 
 ### Added 
 
@@ -28,7 +51,6 @@ Release date: 8 December 2016
 ## v0.8.2
  
 Release date: 7 December 2016
- 
  
 ### Added 
 
