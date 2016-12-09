@@ -7,6 +7,19 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.8.4
+
+Release date: 9 December 2016
+
+
+### Changed 
+
+* Update header pattern documentation.
+* Fixed bug where search box dissapears after closing it in mobile view
+
+
+
+
 ## v0.8.3
  
 Release date: 8 December 2016
