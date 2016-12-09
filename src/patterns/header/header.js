@@ -39,12 +39,11 @@ $( '#header-search-close' ).click( function() {
     var trigger = $( '#header-search-trigger' );
     var logo = $( '#header-logo' );
 
-    // form.hide();
     form.css("display","");
 
     search.css({
-        "position": "relative",
-        "width": "" // Note by setting this to "", we remove the CSS property
+        "position": "",
+        "width": "" // Note by setting these to "", we remove the CSS property
                   // which turns out is crucial.
     });
 
@@ -56,6 +55,20 @@ $( '#header-search-close' ).click( function() {
 
     return false;
 });
+
+// Close the search bar if the screen width is increased above 467px while the
+// search bar is open. If this is not done the search box will remain open and
+// cannot be closed since the 'X' disappears.
+$(window).resize(function() {
+    if ( $(window).width() > 467 ) {
+        $( '#header-search-close' ).click();
+        // Hide the small screen search icon otherwise it will appear above
+        // the search box.
+        $( '#header-search-trigger' ).css("display", "");
+    }
+});
+
+
 
 
 /*********************************/
