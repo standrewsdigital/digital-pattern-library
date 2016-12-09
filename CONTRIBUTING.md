@@ -34,7 +34,7 @@ Last updated: Tuesday 22 November 2016
     - [4.6 Add JavaScript \(optional\)](#46-add-javascript-optional)
     - [4.7 Create an examples folder](#47-create-an-examples-folder)
     - [4.8 Create a data folder](#48-create-a-data-folder)
-    - [4.9 Add a new navigation entry](#49-add-a-new-navigation-entry)
+    - [4.9 Add pattern to patterns page](#49-add-pattern-to-patterns-page)
     - [4.10 Run grunt](#410-run-grunt)
     - [4.11 Commit](#411-commit)
     - [4.12 Continue building...](#412-continue-building)
@@ -460,19 +460,21 @@ And now create this file: `src/patterns/new-feature/data/new-feature-2.json` and
 The idea is that each example loads different data that configures different variations of the pattern.
 
 
-### 4.9 Add a new navigation entry
+### 4.9 Add pattern to patterns page
 
-You need to add a new entry in the navigation for this pattern.
+If there is not one already, create a patterns page navbox image (`720px × 480px`), with the same name as the pattern (e.g. `new-feature.jpg`), and add it to `src/images-docs/patterns/`. 
 
-In the JSON file `src/_meta/dpl-nav.json` in the `items[0].items` array, add an item at the appropriate place like so: 
+Add an entry to `src/_meta/patterns_page.json` within the correct category, for instance:
 
 ```js
-},
 {
-   "name" : "New feature",
-   "url" : "patterns/new-feature/index.html"
+   "name": "New feature",
+   "img": "assets/docs/images/patterns/new-feature.jpg",
+   "url": "patterns/new-feature/index.html"
 },
 ```
+
+If the custom navbox image for the pattern has not yet been created, you may use the default image: `img: assets/docs/images/patterns/pattern.jpg`.
 
 
 ### 4.10 Run grunt
