@@ -2,24 +2,23 @@
 title: Footer
 pattern: footer
 examples:
-- name: footer-full
-- name: footer-university-only
+- name: copyright-footer
+- name: navigation-menu-footer
+- name: old-copyright-footer
 ---
 
-<p>The Footer pattern demonstrates the information that should be found at the bottom of all pages.</p>
+<div class="alert alert-info">The footer pattern has been updated so that the social media icons are now added using <a href="../font-awesome/"><strong>Font Awesome</strong></a> rather then using SVG images – see <code>old-copyright-footer</code> example below. This support will be removed in a future version of the DPL, so please do not use the <code>old-category-header</code> markup.</div>
 
-<p>There are two components of the footer: the <em>website footer</em> and <em>University footer</em>. The website footer contains links and contact information relevant to the website the page is located. The University footer contains copyright, legal information and social media links.</p>
+<p>The footer pattern demonstrates the information that should be found at the bottom of all pages.</p>
 
-
+<p>There are two components of the footer: the <code>copyright-footer</code> and <code>navigation-menu-footer</code>. The <code>copyright-footer</code> contains copyright, legal information and social media links. The <code>navigation-menu-footer</code> contains links and contact information relevant to the website.</p>
 
 <h2>Usage</h2>
 
 <ul>
-	<li>The <em>University footer</em> must appear at the bottom of all pages without any modifications.</li>
-    <li>The <em>website footer</em> should be used if needed and should contain content relevant to the section of the website where the page is located.</li>
+	<li>The <code>copyright-footer</code> must appear at the bottom of all pages without any modifications.</li>
+    <li>The <code>navigation-menu-footer</code> should be used if needed and should contain content relevant to the section of the website where the page is located.</li>
+    <li>The <code>navigation-menu-footer</code> must never be included without the <code>copyright-footer</code> below it.</li>
+    <li>The third column in the <code>navigation-menu-footer</code> must be reserved for the contact information.</li>
+    <li>Custom icons for social media links must not be added. Unique social media links must use text and can only be added to the <code>navigation-menu-footer</code> (see example below).</li>
 </ul>
-
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> footer}}</div>
-
