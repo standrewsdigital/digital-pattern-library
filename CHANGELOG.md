@@ -7,6 +7,24 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.8.7
+
+Release date: xx December 2016
+
+### Changed 
+
+* Merged `JavaScript dependencies` page into `using the pattern library` page.
+* Merged `using jQuery DataTables` information into the `Tables - DataTables` pattern.
+
+
+### Removed
+
+* Deleted JavaScript dependencies page and entry in main navigation.
+* Deleted using jQuery DataTables page and entry in main navigation.
+
+
+
+
 ## v0.8.6
 
 Release date: 12 December 2016

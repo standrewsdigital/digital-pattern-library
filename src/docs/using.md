@@ -11,14 +11,20 @@ In order to use the pattern library you have to include the assets. You have to 
 
 There are a number of different JavaScript options to choose between. 
 
+
 ### Combined JavaScript
 
-`core.js`, that has all the JavaScript needed in one file. It includes Bootstrap's JS code, jQuery and jQuery plugins in addition to pattern-related JavaScript. 
+`core.js` has all the JavaScript needed in one file. It includes Bootstrap's JavaScript code, jQuery and jQuery plugins in addition to pattern-related JavaScript. 
+
+
+### No jQuery
+
+`core-nojquery.js` includes all the components of `core.js` without the main jQuery library.
 
 
 ### Pattern only JavaScript
 
-A pattern-only version of the JavaScript file, `core-base.js`, that does not include jQuery, Bootstrap JS and other external JavaScript libraries. If you use that version then you need to include these dependencies manually:
+A pattern-only version of the JavaScript file, `core-base.js`, does not include jQuery, Bootstrap JS and other external JavaScript libraries. If you use that version then you need to include these dependencies manually:
 
 * [jQuery](http://jquery.com/) (v3.1.1)
 * jQuery [Big Target](https://github.com/leevigraham/jquery-bigTarget.js/)
@@ -29,11 +35,12 @@ A pattern-only version of the JavaScript file, `core-base.js`, that does not inc
 * [Bootstrap-Sass](https://github.com/twbs/bootstrap-sass) (v3.3.7)
 * [Enquire.js](https://github.com/WickyNilliams/enquire.js) (v2.1.2)
 
+See the `Gruntfile.js` to determine which additional JS pieces are rolled into `core.js`.
+
 The following package is supported by not required.
 
 * [jQuery DataTables](http://www.datatables.net/) (v1.10.13) is supported and we provide additional JavaScript and CSS to match the pattern library. See [Data tables](datatables.html) for more information.
 
-See the `Gruntfile.js` to determine which additional JS pieces are rolled into `core.js`.
 
 
 
