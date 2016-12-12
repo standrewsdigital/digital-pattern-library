@@ -7,7 +7,7 @@ In order to use the pattern library you have to include the assets. You have to 
 
 
 
-## Type: JavaScript options
+## Type: JavaScript
 
 There are a number of different JavaScript options to choose between. 
 
@@ -99,8 +99,7 @@ If you want the combined JavaScript file, then include the following at the end 
 <script src="{{pkg.cdn.endpoint}}/{{pkg.cdn.package}}/{{pkg.version}}/scripts/core.js" type="text/javascript" ></script>
 ```
 
-If you want the pattern-only JavaScript file, then include the following at the end of your`<body>` element. __Note__: you must manually link to all required [
-dependencies](dependencies.html) separately.
+If you want the pattern-only JavaScript file, then include the following at the end of your`<body>` element. __Note__: you must manually link to all required dependencies separately.
 
 ```
 <script src="{{pkg.cdn.endpoint}}/{{pkg.cdn.package}}/{{pkg.version}}/scripts/core-base.js" type="text/javascript" ></script>

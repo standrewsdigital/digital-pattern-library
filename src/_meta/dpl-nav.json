@@ -8,11 +8,11 @@
         { "name" : "Documentation",
             "url" : "#",
             "items" : [
-                { "name" : "Colours",
-                  "url" : "colours.html"
-                },
                 { "name" : "Using the pattern library",
                   "url" : "using.html"
+                },
+                { "name" : "Colours",
+                  "url" : "colours.html"
                 }
             ]
         },
