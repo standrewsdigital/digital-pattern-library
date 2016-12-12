@@ -106,3 +106,22 @@ If you want the pattern-only JavaScript file, then include the following at the 
 ```
 
 
+---
+
+## Third-party applications
+
+The digital communications team must be consulted when using the pattern library with third-party applications, which often offer limited customisation. It may only be possible to use certain elements of the pattern library such as the header and footer. At the very minimum we would expect the following to be applied to a third-party application:
+
+* Header
+* Colours
+* Fonts
+* Footer
+
+
+## Content management systems
+
+The pattern library is agnostic of platform. Integrating the pattern library with a content management system such as WordPress or T4 must use the following principals:
+
+* The core CSS and JavaScripts must be referenced from the CDN i.e. a local copy must not be stored within the content management system.
+* Naming conventions for the patterns should be mirrored in the content management system themes and templates. If the name of a pattern were to change, this should be updated in the content management system.
+* The code of a pattern (HTML, CSS, JavaScript) must not be added to or modified other than to allow the content to be edited e.g. by the addition of tags to indicate editable areas.

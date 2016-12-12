@@ -15,12 +15,19 @@ Release date: xx December 2016
 
 * Merged `JavaScript dependencies` page into `using the pattern library` page.
 * Merged `using jQuery DataTables` information into the `Tables - DataTables` pattern.
+* Put `Using the pattern library` first in the main navigation drop-down.
+* Updated `Using the pattern library` to include guidance for third-party applications and content management systems.
 
 
 ### Removed
 
 * Deleted JavaScript dependencies page and entry in main navigation.
 * Deleted using jQuery DataTables page and entry in main navigation.
+
+
+### Fixed
+
+* Added CDN endpoint and package variables to package.json
 
 
 
