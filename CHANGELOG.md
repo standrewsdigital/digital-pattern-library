@@ -7,6 +7,18 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.8.6
+
+Release date: 12 December 2016
+
+### Changed 
+
+* Fix bug where search box can't close when screen size expanded.
+* Fixed bug where search box position is altered when screen size is expanded.
+
+
+
+
 ## v0.8.5
 
 Release date: 9 December 2016
