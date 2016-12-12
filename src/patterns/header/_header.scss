@@ -11,6 +11,10 @@
     @extend .col-sm-5;
     border-bottom: 1px solid $gray-lighter;
 
+    .btn-group {
+        float: right;
+    }
+
     .btn {
         border-bottom: none;
         -webkit-transition: none;
@@ -27,6 +31,8 @@
 
     .dropdown-menu {
         margin-top: -1px;
+        right: 0;
+        left: auto;
     }
 
     .audience {
@@ -42,7 +48,7 @@
     @extend .col-xs-7;
 }
 
-#header-logo {
+#header-logo, #web-application-header-logo {
     margin: 13px 0;
 
     h1 {
@@ -68,6 +74,20 @@
 
     span {
         display: none;
+    }
+}
+
+#web-application-header-logo {
+    margin: 0;
+
+    a {
+        background-image: url(../images/furniture/university-of-st-andrews-crest.svg);
+        height: 30px;
+        margin-top: 5px;
+    }
+
+    h1 {
+        height: 38px;
     }
 }
 
@@ -143,6 +163,18 @@
             max-width: 325px;
         }
     }
+
+    #web-application-header-logo {
+
+    a {
+        background-image: url(../images/furniture/university-of-st-andrews-logo-one-line.svg);
+        height: 40px;
+    }
+
+    h1 {
+        height: 38px;
+    }
+}
 }
 // END desktop styles
 

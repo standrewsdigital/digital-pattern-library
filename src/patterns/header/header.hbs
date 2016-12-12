@@ -31,33 +31,40 @@
             </div>
         {{/audience}}
 
-        <div id="logo-container">
-            <div id="header-logo"><h1><a href="http://www.st-andrews.ac.uk/"><span>University of St Andrews</span></a></h1></div>
-        </div>
+        {{#if web-application}}
+            <div id="logo-container">
+                <div id="web-application-header-logo"><h1><a href="http://www.st-andrews.ac.uk/"><span>University of St Andrews</span></a></h1></div>
+            </div>
 
-        <div id="header-search" role="search">
+        {{else}}
+            <div id="logo-container">
+                <div id="header-logo"><h1><a href="http://www.st-andrews.ac.uk/"><span>University of St Andrews</span></a></h1></div>
+            </div>
 
-            <button class="btn btn-link" id="header-search-trigger" name="btnG" type="button" value="" /><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            <div id="header-search" role="search">
 
-            <form action="http://www.st-andrews.ac.uk/gsasearch" method="get">
+                <button class="btn btn-link" id="header-search-trigger" name="btnG" type="button" value="" /><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
 
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button class="btn btn-link" id="header-search-close" name="btnG" type="button" value=""/><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-                    </span>
-                    <input class="form-control" name="q" type="text" title="Enter search keywords" maxlength="256" placeholder="Search the University website..."/>
-                    <span class="input-group-btn">
-                        <button class="btn btn-primary" id="header-search-submit" name="btnG" type="submit" value="Search"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                    </span>
-                </div>
+                <form action="http://www.st-andrews.ac.uk/gsasearch" method="get">
 
-                <input name="site" type="hidden" value="StAndrews_ITS"/>
-                <input name="output" type="hidden" value="xml_no_dtd"/>
-                <input name="client" type="hidden" value="StAndrews_ITS"/>
-                <input name="proxystylesheet" type="hidden" value="StAndrews_ITS"/>
-            </form>
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button class="btn btn-link" id="header-search-close" name="btnG" type="button" value=""/><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                        </span>
+                        <input class="form-control" name="q" type="text" title="Enter search keywords" maxlength="256" placeholder="Search the University website..."/>
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" id="header-search-submit" name="btnG" type="submit" value="Search"/><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        </span>
+                    </div>
 
-        </div>
+                    <input name="site" type="hidden" value="StAndrews_ITS"/>
+                    <input name="output" type="hidden" value="xml_no_dtd"/>
+                    <input name="client" type="hidden" value="StAndrews_ITS"/>
+                    <input name="proxystylesheet" type="hidden" value="StAndrews_ITS"/>
+                </form>
+
+            </div>
+        {{/if}}
 
     </div>
 
