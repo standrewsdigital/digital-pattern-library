@@ -13,6 +13,7 @@
 
     .btn-group {
         float: right;
+
     }
 
     .btn {
@@ -80,14 +81,15 @@
 #web-application-header-logo {
     margin: 0;
 
+    h1 {
+        height: 38px;
+    }
+
     a {
+        // Logo - crest only.
         background-image: url(../images/furniture/university-of-st-andrews-crest.svg);
         height: 30px;
         margin-top: 5px;
-    }
-
-    h1 {
-        height: 38px;
     }
 }
 
@@ -166,15 +168,12 @@
 
     #web-application-header-logo {
 
-    a {
-        background-image: url(../images/furniture/university-of-st-andrews-logo-one-line.svg);
-        height: 40px;
+        a {
+            // Logo - crest with text.
+            background-image: url(../images/furniture/university-of-st-andrews-logo-one-line.svg);
+            height: 40px;
+        }
     }
-
-    h1 {
-        height: 38px;
-    }
-}
 }
 // END desktop styles
 
