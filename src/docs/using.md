@@ -39,7 +39,7 @@ See the `Gruntfile.js` to determine which additional JS pieces are rolled into `
 
 The following package is supported by not required.
 
-* [jQuery DataTables](http://www.datatables.net/) (v1.10.13) is supported and we provide additional JavaScript and CSS to match the pattern library. See [Data tables](datatables.html) for more information.
+* [jQuery DataTables](http://www.datatables.net/) (v1.10.13) is supported and we provide additional JavaScript and CSS to match the pattern library. See [Data tables](examples/datatables.html) for more information.
 
 
 
