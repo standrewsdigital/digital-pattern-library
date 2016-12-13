@@ -50,8 +50,13 @@
     }
 }
 
+// Set the logo and authenticated button to be on the same line.
 .web-application-header {
     float: none !important;
+
+    a {
+        padding-left: 0;
+    }
 }
 
 #logo-container {
