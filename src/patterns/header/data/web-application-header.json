@@ -4,6 +4,5 @@
         "first-name": "Josef",
         "last-name": "Smith"
     },
-    "audience": true,
     "web-application": true
 }
