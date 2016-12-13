@@ -7,6 +7,19 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.8.7
+
+Release date: 13 December 2016
+
+### Changed
+
+* Updated footer pattern documentation.
+* Social media icons within the footer now use Font Awesome instead of SVG images. 
+* Added new example with deprecated code for the SVG links.
+
+
+
+
 ## v0.8.6
 
 Release date: 12 December 2016
