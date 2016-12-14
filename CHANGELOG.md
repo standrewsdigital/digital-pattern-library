@@ -7,6 +7,33 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+
+
+## v0.8.8
+
+Release date: 14 December 2016
+
+### Changed 
+
+* Merged `JavaScript dependencies` page into `using the pattern library` page.
+* Merged `using jQuery DataTables` information into the `Tables - DataTables` pattern.
+* Put `using the pattern library` first in the main navigation drop-down.
+* Updated `using the pattern library` to include guidance for third-party applications and content management systems.
+
+
+### Removed
+
+* Deleted `JavaScript dependencies` page and entry in main navigation.
+* Deleted `using jQuery DataTables` page and entry in main navigation.
+
+
+### Fixed
+
+* Added CDN endpoint and package variables to package.json
+
+
+
+
 ## v0.8.7
 
 Release date: 13 December 2016

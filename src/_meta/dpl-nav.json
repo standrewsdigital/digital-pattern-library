@@ -8,17 +8,11 @@
         { "name" : "Documentation",
             "url" : "#",
             "items" : [
-                { "name" : "Colours",
-                  "url" : "colours.html"
-                },
-                { "name" : "JavaScript dependencies",
-                  "url" : "dependencies.html"
-                },
                 { "name" : "Using the pattern library",
                   "url" : "using.html"
                 },
-                { "name" : "Using jQuery DataTables",
-                  "url" : "datatables.html"
+                { "name" : "Colours",
+                  "url" : "colours.html"
                 }
             ]
         },
