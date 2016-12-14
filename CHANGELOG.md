@@ -7,6 +7,8 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+
+
 ## v0.8.8
 
 Release date: 14 December 2016
@@ -28,6 +30,19 @@ Release date: 14 December 2016
 ### Fixed
 
 * Added CDN endpoint and package variables to package.json
+
+
+
+
+## v0.8.7
+
+Release date: 13 December 2016
+
+### Changed
+
+* Updated footer pattern documentation.
+* Social media icons within the footer now use Font Awesome instead of SVG images. 
+* Added new example with deprecated code for the SVG links.
 
 
 
