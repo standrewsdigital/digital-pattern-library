@@ -24,22 +24,23 @@ There are a number of different JavaScript options to choose between.
 
 ### Pattern only JavaScript
 
-A pattern-only version of the JavaScript file, `core-base.js`, does not include jQuery, Bootstrap JS and other external JavaScript libraries. If you use that version then you need to include these dependencies manually:
+A pattern-only version of the JavaScript file, `core-base.js`, does not include jQuery, Bootstrap JavaScript and other external JavaScript libraries. If you use that version then you need to include these dependencies manually:
 
 * [jQuery](http://jquery.com/) (v3.1.1)
 * jQuery [Big Target](https://github.com/leevigraham/jquery-bigTarget.js/)
 * jQuery [FitVids](https://github.com/davatron5000/FitVids.js) (v1.1)
 * jQuery [FitTexts](https://github.com/davatron5000/FitText.js) (v1.2)
 * jQuery [Theatre](https://bitbucket.org/st-andrews/jquery-theatre) (v1.0.1)
-* [Respond.js](https://github.com/scottjehl/Respond) (v1.4.0)
 * [Bootstrap-Sass](https://github.com/twbs/bootstrap-sass) (v3.3.7)
 * [Enquire.js](https://github.com/WickyNilliams/enquire.js) (v2.1.2)
+* [Hammer.js](http://hammerjs.github.io/) (v.2.0.4)
+* [Respond.js](https://github.com/scottjehl/Respond) (v1.4.0)
 
-See the `Gruntfile.js` to determine which additional JS pieces are rolled into `core.js`.
+See the `Gruntfile.js` to determine which additional JavaScript pieces are rolled into `core.js`.
 
-The following package is supported by not required.
+The following package is supported by not required:
 
-* [jQuery DataTables](http://www.datatables.net/) (v1.10.13) is supported and we provide additional JavaScript and CSS to match the pattern library. See [Data tables](examples/datatables.html) for more information.
+* [jQuery DataTables](http://www.datatables.net/) (v1.10.13) is supported and we provide additional JavaScript and CSS to match the pattern library. See [DataTables](examples/datatables.html) for more information.
 
 
 
@@ -124,4 +125,4 @@ The pattern library is agnostic of platform. Integrating the pattern library wit
 
 * The core CSS and JavaScripts must be referenced from the CDN i.e. a local copy must not be stored within the content management system.
 * Naming conventions for the patterns should be mirrored in the content management system themes and templates. If the name of a pattern were to change, this should be updated in the content management system.
-* The code of a pattern (HTML, CSS, JavaScript) must not be added to or modified other than to allow the content to be edited e.g. by the addition of tags to indicate editable areas.
+* The code of a pattern (HTML, CSS, JavaScript) must not be added to or modified, other than to allow the content to be edited e.g. by the addition of tags to indicate editable areas.

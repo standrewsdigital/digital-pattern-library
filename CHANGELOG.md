@@ -7,9 +7,9 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
-## v0.8.7
+## v0.8.8
 
-Release date: xx December 2016
+Release date: 14 December 2016
 
 ### Changed 
 
