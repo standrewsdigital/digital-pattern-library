@@ -7,6 +7,52 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.8.9
+
+Release date: ?? December 2016
+
+### Added
+
+* New example to the header patter for a web application header.
+
+
+
+
+## v0.8.8
+
+Release date: 14 December 2016
+
+### Changed
+
+* Merged JavaScript dependencies page into using the pattern library page.
+* Merged using jQuery DataTables information into the Tables - DataTables pattern.
+* Put using the pattern library first in the main navigation drop-down.
+* Updated using the pattern library to include guidance for third-party applications and content management systems.
+
+### Removed
+
+* Deleted JavaScript dependencies page and entry in main navigation.
+* Deleted using jQuery DataTables page and entry in main navigation.
+
+### Fixed
+
+* Added CDN endpoint and package variables to package.json
+
+
+
+
+## v0.8.7
+
+Release date: 13 December 2016
+
+### Changed
+
+* Updated footer pattern documentation.
+* Social media icons within the footer now use Font Awesome instead of SVG * images.
+* Added new example with deprecated code for the SVG links.
+
+
+
 ## v0.8.6
 
 Release date: 12 December 2016
