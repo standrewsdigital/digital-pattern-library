@@ -13,8 +13,8 @@
 
     .audience {
         display: inline-block;
-        margin-right:  13px;
         margin-top:    7px;
+        margin-right:  13px;
         margin-bottom: 7px;
     }
 }
@@ -39,14 +39,14 @@
 
     .open .btn {
         background-color: white;
-        border: 1px solid rgba(0,0,0,0.15);
+        border:        1px solid rgba(0,0,0,0.15);
         border-bottom: none;
     }
 
     .dropdown-menu {
         margin-top: -1px;
         right: 0;
-        left: auto;
+        left:  auto;
     }
 }
 
@@ -168,8 +168,8 @@
     /* On desktops, when the audience shows on the right
      * align the dropdown-menu to the right. */
     #header-audience .dropdown-menu {
-        left:  auto;
         right: 0;
+        left:  auto;
     }
 
     #header-logo {
@@ -227,8 +227,8 @@
          * with a 'position' attribute which should be the containing
          * row. This means we can align it to the right. */
         position: absolute;
+        top:   18px;  // Note: this is a 'magic' number.
         right: 0;
-        top: 18px;  // Note: this is a 'magic' number.
     }
 }
 /* END: LAYOUT HACK */
