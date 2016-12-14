@@ -3,7 +3,7 @@ title: Header
 pattern: header
 examples:
 - name: default-header
-- name: audience-header
+- name: university-homepage-header
 - name: school-header
 - name: authenticated-header
 - name: web-application-header
@@ -22,9 +22,9 @@ examples:
 <h2>Options</h2>
 
 <ul>
-	<li><strong>Default header</strong> - The default header should be used on all University webpages that are not the homepage, School homepage, or web application.</li>
-	<li><strong>Audience header</strong> - The audience header should only be included on the University homepage.</li>
-	<li><strong>School header</strong> - The school header should be used on every page within a school website.</li>
-    <li><strong>Authenticated header</strong> - When authenticated, the header should be altered to include the name of the person logged in and display any audience-specific links they may have access to in addition to a link to logout.</li>
-    <li><strong>Web application header</strong> - The web application header is a condensed header and must only be used on web applications.</li>
+	<li><strong>Default header</strong> - should be used on all University webpages except the University homepage, School homepages, or web applications.</li>
+	<li><strong>University homepage header</strong> - only used on the University homepage.</li>
+	<li><strong>School header</strong> - should be used on every page within a School website.</li>
+    <li><strong>Authenticated header</strong> - when a user is authenticated, the header should be altered to include the name of the person logged in and display any user-specific links they may have access to in addition to a link to logout.</li>
+    <li><strong>Web application header</strong> - a condensed header that must only be used on web applications.</li>
 </ul>
