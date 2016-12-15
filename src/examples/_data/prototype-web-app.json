@@ -5,7 +5,7 @@
             "first-name": "John",
             "last-name": "Smith"
         },
-        "audience": true
+        "web-application": true
     },
     "category-header": {
         "class":"category-header-solid",
