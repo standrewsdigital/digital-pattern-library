@@ -7,6 +7,10 @@
     @extend .container;
 }
 
+#header .clear {
+    clear: both;
+}
+
 #header-audience {
     @extend .col-sm-5;
     border-bottom: 1px solid $gray-lighter;
@@ -149,6 +153,10 @@
 
 @media (min-width: 768px) {
 
+    #header .clear {
+        clear: none;
+    }
+
     #header-audience, #header-authenticated {
         border-bottom: none;
         margin-top: 11px;
@@ -188,7 +196,7 @@
 
     #web-application-header-logo a {
         // Logo - crest with text.
-        background-image: url(../images/furniture/university-of-st-andrews-logo-one-line.svg);
+        background-image: url(../images/furniture/logo-standard.svg);
     }
 }
 // END desktop styles
