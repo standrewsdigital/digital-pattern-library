@@ -28,7 +28,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="clear"></div>
+            {{#unless web-application}}
+                <div class="clear"></div>
+            {{/unless}}
         {{/if}}
 
         {{#if web-application}}
