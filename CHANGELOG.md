@@ -6,6 +6,19 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v0.8.12
+
+Release date: Friday 16 December 2016
+
+### Changed
+
+* Re-named 'Pattern-pages' to 'Patterns'.
+* Re-named 'Example-pages' to 'Examples'. 
+
+
+
+
+---
 
 ## v0.8.11
 

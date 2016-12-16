@@ -18,11 +18,11 @@
         },
 
         { "name" : "Patterns",
-            "url" : "/pattern-pages.html"
+            "url" : "/patterns.html"
         },
 
-        { "name" : "Example pages",
-            "url" : "/example-pages.html"
+        { "name" : "Examples",
+            "url" : "/examples.html"
         }
     ]
 }
