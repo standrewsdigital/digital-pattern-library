@@ -203,7 +203,7 @@ module.exports = function(grunt) {
         concat: {
             core: {
                 src: [
-                    // Update src/docs/dependencies.md if any of these change
+                    // Update src/docs/using.md if any of these change
                     'src/scripts/vendor/hammer.js',
                     'src/scripts/vendor/jquery.min.js',
                     'src/scripts/vendor/jquery.bigtarget.js',
@@ -250,7 +250,7 @@ module.exports = function(grunt) {
             },
             nojquery: {
                 src: [
-                    // Update src/docs/dependencies.md if any of these change
+                    // Update src/docs/using.md if any of these change
                     'src/scripts/vendor/hammer.js',
                     'src/scripts/vendor/jquery.bigtarget.js',
                     'src/scripts/vendor/jquery.fitvids.js',

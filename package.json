@@ -3,6 +3,10 @@
   "version": "0.8.10",
   "description": "digital pattern library.",
   "license": "",
+  "cdn": {
+    "endpoint": "//www.st-andrews.ac.uk/~cdn",
+    "package": "dpl"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/standrewsdigital/digital-pattern-library.git"
