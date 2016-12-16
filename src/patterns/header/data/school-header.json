@@ -1,7 +1,7 @@
 {
     "audience": true,
     "links": {
-    	"Students":"SCHOOL_LINK/students/",
-    	"Staff":"SCHOOL_LINK/staff/"
+    	"Students":"#",
+    	"Staff":"#"
     }
 }
