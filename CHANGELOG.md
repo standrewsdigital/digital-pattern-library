@@ -7,6 +7,19 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.8.11
+
+Release date: Friday 16 December 2016
+
+### Fixed
+
+* Floating footer fixed on example pages.
+
+
+
+
+---
+
 ## v0.8.10
 
 Release date: Friday 16 December 2016

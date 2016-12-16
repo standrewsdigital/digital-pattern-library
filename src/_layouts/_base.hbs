@@ -7,17 +7,9 @@ date: <%= new Date() %>
         <meta charset="utf-8">
         <title >{{ title }}</title >
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        {{#if core-assets}}
-        <link href="{{asset 'core/styles/screen.css'}}" rel="stylesheet" media="screen" />
         <link href="{{asset 'core/styles/screen.css'}}" rel="stylesheet" media="screen" />
         <link href="{{asset 'core/styles/print.css'}}" rel="stylesheet" media="print" />
-        <!--[if lt IE 9]><link href="{{asset 'core/styles/ie.css'}}" rel="stylesheet" media="screen" /><![endif]-->
-        {{else}}
-        <link href="{{asset 'core/styles/screen.css'}}" rel="stylesheet" media="screen" />
         <link href="{{asset 'core/styles/doc.css'}}" rel="stylesheet" media="screen" />
-        {{/if}}
-
     </head>
     <body>
 
