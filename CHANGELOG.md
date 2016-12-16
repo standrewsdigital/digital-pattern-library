@@ -7,16 +7,32 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
-## v0.8.9
+## v0.8.10
 
-Release date: ?? December 2016
+Release date: 16 December 2016
 
 ### Added
 
-* New example to the header patter for a web application header.
+* New example to the header pattern for a web application header.
 
 
 
+
+---
+
+## v0.8.9
+
+Release date: Thursday 15 December 2016
+
+### Changed
+
+* Update CONTRIBUTING-CHEATSHEET to include specific instructions about updating package.json and CHANGELOG.md before deployment, and tagging releases after deployment.
+* Added day names to CHANGELOG.md to match house style regarding dates.
+
+
+
+
+---
 
 ## v0.8.8
 
@@ -41,6 +57,8 @@ Release date: 14 December 2016
 
 
 
+---
+
 ## v0.8.7
 
 Release date: 13 December 2016
@@ -52,6 +70,9 @@ Release date: 13 December 2016
 * Added new example with deprecated code for the SVG links.
 
 
+
+
+---
 
 ## v0.8.6
 
@@ -65,6 +86,8 @@ Release date: 12 December 2016
 
 
 
+---
+
 ## v0.8.5
 
 Release date: 9 December 2016
@@ -77,8 +100,9 @@ Release date: 9 December 2016
 
 
 
-## v0.8.4
+---
 
+## v0.8.4
 
 Release date: 9 December 2016
 
@@ -88,6 +112,8 @@ Release date: 9 December 2016
 
 
 
+
+---
 
 ## v0.8.3
  
@@ -105,6 +131,8 @@ Release date: 8 December 2016
 
 
 
+
+---
 
 ## v0.8.2
  
