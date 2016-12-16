@@ -15,6 +15,11 @@ Release date: Friday 16 December 2016
 
 * Floating footer fixed on example pages.
 
+### Changed
+
+* Re-named 'Pattern-pages' to 'Patterns'.
+* Re-named 'Example-pages' to 'Examples'. 
+
 
 
 
