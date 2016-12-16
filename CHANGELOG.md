@@ -7,14 +7,40 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.8.11
+
+Release date: Friday 16 December 2016
+
+### Fixed
+
+* Floating footer fixed on example pages.
+
+
+
+
+---
+
+## v0.8.10
+
+Release date: Friday 16 December 2016
+
+### Added
+
+* New example to the header pattern for a web application header.
+
+
+
+
+---
+
 ## v0.8.9
 
 Release date: Thursday 15 December 2016
 
 ### Changed
 
-* Update CONTRIBUTING-CHEATSHEET to include specific instructions about updating `package.json` and `CHANGELOG.md` before deployment, and tagging releases after deployment.
-* Added day names to `CHANGELOG.md` to match house style regarding dates.
+* Update CONTRIBUTING-CHEATSHEET to include specific instructions about updating package.json and CHANGELOG.md before deployment, and tagging releases after deployment.
+* Added day names to CHANGELOG.md to match house style regarding dates.
 
 
 
@@ -37,6 +63,7 @@ Release date: Wednesday 14 December 2016
 
 * Delete `JavaScript dependencies` page and entry in main navigation.
 * Delete `using jQuery DataTables` page and entry in main navigation.
+
 
 ### Fixed
 
@@ -91,7 +118,6 @@ Release date: Friday 9 December 2016
 ---
 
 ## v0.8.4
-
 
 Release date: Friday 9 December 2016
 
