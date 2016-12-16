@@ -7,9 +7,31 @@
     @extend .container;
 }
 
+#header .clear {
+    clear: both;
+}
+
 #header-audience {
     @extend .col-sm-5;
     border-bottom: 1px solid $gray-lighter;
+
+    .audience {
+        display: inline-block;
+        margin-top:    7px;
+        margin-right:  13px;
+        margin-bottom: 7px;
+    }
+}
+
+#header-authenticated {
+    @extend .col-sm-5;
+    border-bottom: 1px solid $gray-lighter;
+    float: right;
+    width: 100%;
+
+    .btn-group {
+        float: right;
+    }
 
     .btn {
         border-bottom: none;
@@ -21,19 +43,23 @@
 
     .open .btn {
         background-color: white;
-        border: 1px solid rgba(0,0,0,0.15);
+        border:        1px solid rgba(0,0,0,0.15);
         border-bottom: none;
     }
 
     .dropdown-menu {
         margin-top: -1px;
+        right: 0;
+        left:  auto;
     }
+}
 
-    .audience {
-        display: inline-block;
-        margin-right:  13px;
-        margin-top:    7px;
-        margin-bottom: 7px;
+// Set the logo and authenticated button to be on the same line.
+.web-application-header {
+    float: none !important;
+
+    a {
+        padding-left: 0;
     }
 }
 
@@ -42,7 +68,7 @@
     @extend .col-xs-7;
 }
 
-#header-logo {
+#header-logo, #web-application-header-logo {
     margin: 13px 0;
 
     h1 {
@@ -68,6 +94,21 @@
 
     span {
         display: none;
+    }
+}
+
+#web-application-header-logo {
+    margin: 0;
+
+    h1 {
+        height: 38px;
+    }
+
+    a {
+        // Logo - crest only.
+        background-image: url(../images/furniture/university-of-st-andrews-crest.svg);
+        height: 30px;
+        margin-top: 5px;
     }
 }
 
@@ -112,10 +153,19 @@
 
 @media (min-width: 768px) {
 
-    #header-audience {
+    #header .clear {
+        clear: none;
+    }
+
+    #header-audience, #header-authenticated {
         border-bottom: none;
         margin-top: 11px;
         text-align: right;
+    }
+
+    #header-authenticated {
+        margin-top: auto;
+        width: auto;
     }
 
     #header-audience .audience {
@@ -126,8 +176,8 @@
     /* On desktops, when the audience shows on the right
      * align the dropdown-menu to the right. */
     #header-audience .dropdown-menu {
-        left:  auto;
         right: 0;
+        left:  auto;
     }
 
     #header-logo {
@@ -142,6 +192,11 @@
             height: 60px;
             max-width: 325px;
         }
+    }
+
+    #web-application-header-logo a {
+        // Logo - crest with text.
+        background-image: url(../images/furniture/logo-standard.svg);
     }
 }
 // END desktop styles
@@ -179,8 +234,8 @@
          * with a 'position' attribute which should be the containing
          * row. This means we can align it to the right. */
         position: absolute;
+        top:   18px;  // Note: this is a 'magic' number.
         right: 0;
-        top: 18px;  // Note: this is a 'magic' number.
     }
 }
 /* END: LAYOUT HACK */
