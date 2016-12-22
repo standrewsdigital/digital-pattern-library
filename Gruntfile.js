@@ -181,7 +181,6 @@ module.exports = function(grunt) {
                     specify: [
                         'src/styles/datatables.scss',
                         'src/styles/doc.scss',
-                        'src/styles/ie.scss',
                         'src/styles/print.scss',
                         'src/styles/screen-bootstrap-only.scss',
                         'src/styles/screen.scss',
@@ -303,7 +302,6 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/bootstrap/modal.js',
                     'src/scripts/vendor/bootstrap/tooltip.js',
                     'src/scripts/vendor/bootstrap/popover.js',
-
                     'src/scripts/doc.js',
 
                     // DPL-specific scripts
@@ -454,9 +452,7 @@ module.exports = function(grunt) {
     });
 
 
-
     // == 3. Task aliases
-
 
     // default – builds the core assets, compiles documentation
     grunt.registerTask('default', ['core','docs']);
@@ -466,12 +462,8 @@ module.exports = function(grunt) {
         'uglify','gitinfo','assemble:core_meta','copy:core_images',
         'copy:core_fonts', 'copy:docs_datatables']);
 
-
     // docs – builds the documentation, makes use of build too.
     grunt.registerTask('docs', ['clean:docs','assemble:patterns',
         'assemble:pattern_examples','assemble:examples','assemble:docs',
         'copy:docs_core','copy:docs_images','copy:docs_googlemaps']);
-
-
-
 };
