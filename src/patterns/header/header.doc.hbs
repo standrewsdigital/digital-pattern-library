@@ -1,17 +1,6 @@
 ---
 title: Header
-pattern: header
 ---
-
-<!--
-
-examples:
-- name: default-header
-- name: university-homepage-header
-- name: school-header
-- name: authenticated-header
-- name: mini-authenticated-header
--->
 
 <p>The header pattern includes the logo and search field. On the University homepage, the header also includes audience specific navigation links above the search bar.</p>
 <ul>
@@ -21,58 +10,20 @@ examples:
 </ul>
 
 <hr>
-<h3>Default header</h3>
 
-<p>Should be used on all University webpages except the University homepage, School homepages, or web applications.</p>
+{{#example-data.options}}
 
-{{> header default-header }}
-<span class="label label-default">Code</span>
-<form><textarea cols="100" rows="20">
-    {{> header default-header }}
-</textarea></form>
+    <h3>{{option-header}}</h3>
 
+    {{{option-description}}}
 
-<hr>
-<h3>University homepage header</h3>
+    {{> header}}
 
-<p>Must be used only on the University homepage.</p>
+    <span class="label label-default">Code</span>
+    <form><textarea cols="100" rows="20">
 
-{{> header university-homepage-header}}
-<span class="label label-default">Code</span>
-<form><textarea cols="100" rows="20">
-    {{> header university-homepage-header}}
-</textarea></form>
+        {{> header}}
 
+    </textarea></form>
 
-<hr>
-<h3>School header</h3>
-
-<p>Must be used on every page within a School website.</p>
-
-{{> header school-header}}
-<span class="label label-default">Code</span>
-    {{> header school-header}}
-
-
-<hr>
-<h3>Authenticated header</h3>
-
-<p>When a user is authenticated, the header should be altered to include the name of the person logged in and display any user-specific links they may have access to in addition to a link to logout.</p>
-
-{{> header authenticated-header}}
-<span class="label label-default">Code</span>
-<form><textarea cols="100" rows="20">
-    {{> header authenticated-header}}
-</textarea></form>
-
-
-<hr>
-<h3>Mini authenticated header</h3>
-
-<p>A condensed header that must only be used on web applications.</p>
-
-{{> header mini-authenticated-header}}
-<span class="label label-default">Code</span>
-<form><textarea cols="100" rows="20">
-    {{> header mini-authenticated-header}}
-</textarea></form>
+{{/example-data.options}}
