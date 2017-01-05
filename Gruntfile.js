@@ -3,7 +3,7 @@
 // This file configures all of the Grunt tasks used. It contains the following
 // sections.
 //
-// 1. Config
+// 1. Load task libraries
 // 2. Config
 // 3. Task aliases
 //
