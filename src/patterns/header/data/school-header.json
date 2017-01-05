@@ -1,7 +1,0 @@
-{
-    "audience": true,
-    "links": {
-    	"Students":"#",
-    	"Staff":"#"
-    }
-}
