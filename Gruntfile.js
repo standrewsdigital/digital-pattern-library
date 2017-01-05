@@ -456,12 +456,28 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['core','docs']);
 
     // core – builds the core assets from source
-    grunt.registerTask('core', ['clean:core','compass','jshint','concat',
-        'uglify','gitinfo','assemble:core_meta','copy:core_images',
-        'copy:core_fonts', 'copy:docs_datatables']);
+    grunt.registerTask('core', [
+        'clean:core',
+        'compass',
+        'jshint',
+        'concat',
+        'uglify',
+        'gitinfo',
+        'assemble:core_meta',
+        'copy:core_images',
+        'copy:core_fonts',
+        'copy:docs_datatables'
+    ]);
 
     // docs – builds the documentation, makes use of build too.
-    grunt.registerTask('docs', ['clean:docs','assemble:patterns',
-        'assemble:pattern_examples','assemble:examples','assemble:docs',
-        'copy:docs_core','copy:docs_images','copy:docs_googlemaps']);
+    grunt.registerTask('docs', [
+        'clean:docs',
+        'assemble:patterns',
+        // 'assemble:pattern_examples',
+        'assemble:examples',
+        'assemble:docs',
+        'copy:docs_core',
+        'copy:docs_images',
+        'copy:docs_googlemaps'
+    ]);
 };
