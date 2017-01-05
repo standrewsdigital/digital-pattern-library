@@ -68,10 +68,10 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: 'src/patterns/',
-                    src: ['index.hbs', '*/*.doc.hbs'],
-                    ext: '.html',
-                    dest: 'docs/patterns',
+                    cwd:    'src/patterns/',
+                    src:    ['index.hbs', '*/*.doc.hbs'],
+                    dest:   'docs/patterns',
+                    ext:    '.html',
                     rename: function(src,dest){
                         var prefix = 'docs/patterns/',
                             pattern = /\/[a-zA-Z0-9_-]+.html$/,
@@ -88,10 +88,10 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: 'src/patterns/',
-                    src: ['*/examples/*.hbs'],
-                    dest: 'docs/patterns',
-                    ext: '.html',
+                    cwd:    'src/patterns/',
+                    src:    ['*/examples/*.hbs'],
+                    dest:   'docs/patterns',
+                    ext:    '.html',
                 }]
             },
 
@@ -102,10 +102,10 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: 'src/examples/',
-                    src: ['**/*.hbs'],
-                    ext: '.html',
-                    dest: 'docs/examples'
+                    cwd:    'src/examples/',
+                    src:    ['**/*.hbs'],
+                    dest:   'docs/examples',
+                    ext:    '.html'
                 }]
             },
 
@@ -116,10 +116,10 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: 'src/docs',
-                    src: ['*.md','*.html','**/*.hbs'],
-                    ext: '.html',
-                    dest: 'docs'
+                    cwd:    'src/docs',
+                    src:    ['*.md','*.html','**/*.hbs'],
+                    ext:    '.html',
+                    dest:   'docs'
                 }]
             },
 
@@ -447,8 +447,6 @@ module.exports = function(grunt) {
                 tasks: ['docs']
             }
         }, // END of watch
-
-
     });
 
 
