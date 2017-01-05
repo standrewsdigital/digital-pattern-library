@@ -1,14 +1,21 @@
 // Gruntfile.js
 //
 // This file configures all of the Grunt tasks used. It contains the following
-// sections.
+// sections:
 //
 // 1. Load task libraries
 // 2. Config
-// 3. Task aliases
-//
-// The Tasks section combines the tasks defined in config into commands that
-// are documented (see README.md)
+//    * Assemble
+//    * Clean
+//    * Compass
+//    * Concat
+//    * Copy
+//    * Git info
+//    * JSHint
+//    * Uglify
+//    * Watch
+// 3. Task aliases - the tasks section combines the tasks defined in config into
+//    commands that are documented (see README.md)
 
 'use strict';
 
@@ -16,23 +23,31 @@ module.exports = function(grunt) {
 
     // == 1. Load task libraries
 
-    grunt.loadNpmTasks('grunt-gitinfo');
     grunt.loadNpmTasks('grunt-assemble');
+    grunt.loadNpmTasks('grunt-gitinfo');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
 
     // == 2. Config
+    //    * Assemble
+    //    * Clean
+    //    * Compass
+    //    * Concat
+    //    * Copy
+    //    * Git info
+    //    * JSHint
+    //    * Uglify
+    //    * Watch
 
     grunt.initConfig({
 
         pkg: grunt.file.readJSON('package.json'),
-
 
         // assemble - generate documentation
         assemble: {
@@ -454,7 +469,10 @@ module.exports = function(grunt) {
     // == 3. Task aliases
 
     // default – builds the core assets, compiles documentation
-    grunt.registerTask('default', ['core','docs']);
+    grunt.registerTask('default', [
+        'core',
+        'docs'
+    ]);
 
     // core – builds the core assets from source
     grunt.registerTask('core', [
