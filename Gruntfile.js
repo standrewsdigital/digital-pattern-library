@@ -63,7 +63,6 @@ module.exports = function(grunt) {
                 ext:        '.html',
                 data:       [
                                 'src/_meta/*.json',
-                                // 'src/patterns/*/data/*.json',
                                 'src/patterns/*/*.json',
                                 'src/examples/_data/*.json'
                             ],
@@ -98,21 +97,6 @@ module.exports = function(grunt) {
                                     suffix = '/index.html';
                                 return prefix + dest.replace(pattern, suffix);
                     }
-                }]
-            },
-
-            // Pattern examples - uses /src/_layouts/pattern_example.hbs
-            // TODO: Delete this
-            pattern_examples: {
-                options: {
-                    layout: 'pattern_example.hbs'
-                },
-                files: [{
-                    expand: true,
-                    cwd:    'src/patterns/',
-                    src:    ['*/examples/*.hbs'],
-                    dest:   'docs/patterns',
-                    ext:    '.html',
                 }]
             },
 
