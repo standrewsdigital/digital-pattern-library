@@ -20,3 +20,20 @@ examples:
 	<li>Must not be used on a home page.</li>
 	<li>Must not be used in an aside.</li>
 </ul>
+
+{{#accordion-options.options}}
+
+    <h3>{{option-header}}</h3>
+
+    {{{option-description}}}
+
+    {{> accordion}}
+
+    <span class="label label-default">Code</span>
+    <form>
+        <textarea cols="100" rows="20">
+            {{> accordion}}
+        </textarea>
+    </form>
+
+{{/accordion-options.options}}

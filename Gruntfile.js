@@ -62,8 +62,8 @@ module.exports = function(grunt) {
                 ext: '.html',
                 data: [
                     'src/_meta/*.json',
-                    'src/patterns/*/data/*.json',
-                    'src/patterns/*/example-data.json',
+                    // 'src/patterns/*/data/*.json',
+                    'src/patterns/*/*.json',
                     'src/examples/_data/*.json'
                 ],
                 helpers: [
