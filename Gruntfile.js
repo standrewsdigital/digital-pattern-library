@@ -49,35 +49,36 @@ module.exports = function(grunt) {
 
         pkg: grunt.file.readJSON('package.json'),
 
-        // assemble - generate documentation
+        // Assemble - Generate documentation about DPL
+        // See http://assemble.io/docs/ for more details
         assemble: {
 
             // General options
             options: {
-                pkg: '<%= pkg %>',
-                now: '<%= grunt.template.today("isoDateTime") %>',
-                assets: 'docs/assets',
-                layoutdir: 'src/_layouts',
-                partials: ['src/patterns/*/*.hbs', 'src/_partials/*.hbs'],
-                ext: '.html',
-                data: [
-                    'src/_meta/*.json',
-                    // 'src/patterns/*/data/*.json',
-                    'src/patterns/*/*.json',
-                    'src/examples/_data/*.json'
-                ],
-                helpers: [
-                    'handlebars-helper-asset',
-                    'handlebars-helper-rel'
-                ],
-                site: {
-                    root: "docs",
-                },
+                pkg:        '<%= pkg %>',
+                now:        '<%= grunt.template.today("isoDateTime") %>',
+                assets:     'docs/assets',
+                layoutdir:  'src/_layouts',
+                partials:   ['src/patterns/*/*.hbs', 'src/_partials/*.hbs'],
+                ext:        '.html',
+                data:       [
+                                'src/_meta/*.json',
+                                // 'src/patterns/*/data/*.json',
+                                'src/patterns/*/*.json',
+                                'src/examples/_data/*.json'
+                            ],
+                helpers:    [
+                                'handlebars-helper-asset',
+                                'handlebars-helper-rel'
+                            ],
+                site:       {
+                                root: "docs",
+                            },
             },
 
             // ASSEMBLE SECTIONS
 
-            // Patterns - uses the pattern.hbs layout
+            // Patterns - uses /src/_layouts/pattern.hbs
             patterns: {
                 options: {
                     layout: 'pattern.hbs'
@@ -85,19 +86,23 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd:    'src/patterns/',
-                    src:    ['index.hbs', '*/*.doc.hbs'],
+                    src:    [
+                                'index.hbs',
+                                '*/*.doc.hbs'
+                            ],
                     dest:   'docs/patterns',
                     ext:    '.html',
                     rename: function(src,dest){
-                        var prefix = 'docs/patterns/',
-                            pattern = /\/[a-zA-Z0-9_-]+.html$/,
-                            suffix = '/index.html';
-                        return prefix + dest.replace(pattern, suffix);
+                                var prefix = 'docs/patterns/',
+                                    pattern = /\/[a-zA-Z0-9_-]+.html$/,
+                                    suffix = '/index.html';
+                                return prefix + dest.replace(pattern, suffix);
                     }
                 }]
             },
 
-            // Pattern examples - uses the pattern_example.hbs layout
+            // Pattern examples - uses /src/_layouts/pattern_example.hbs
+            // TODO: Delete this
             pattern_examples: {
                 options: {
                     layout: 'pattern_example.hbs'
@@ -111,7 +116,7 @@ module.exports = function(grunt) {
                 }]
             },
 
-            // Pattern examples - uses the pattern_example.hbs layout
+            // Example pages - uses /src/_layouts/example.hbs
             examples: {
                 options: {
                     layout: 'example.hbs'
@@ -125,7 +130,7 @@ module.exports = function(grunt) {
                 }]
             },
 
-            // General guidance pages - uses the doc.hbs layout
+            // General guidance pages - uses /src/_layouts/doc.hbs
             docs: {
                 options: {
                     layout: 'doc.hbs'
@@ -301,12 +306,15 @@ module.exports = function(grunt) {
             },
             doc: {
                 src: [
+                    /*
                     'src/scripts/vendor/jquery.min.js',
                     'src/scripts/vendor/jquery.bigtarget.js',
                     'src/scripts/vendor/respond.js',
+                    */
 
                     // Bootstrap JavaScript
                     // Note these scripts should align with the CSS
+                    /*
                     'src/scripts/vendor/bootstrap/affix.js',
                     'src/scripts/vendor/bootstrap/alert.js',
                     'src/scripts/vendor/bootstrap/button.js',
@@ -318,11 +326,14 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/bootstrap/modal.js',
                     'src/scripts/vendor/bootstrap/tooltip.js',
                     'src/scripts/vendor/bootstrap/popover.js',
+                    */
                     'src/scripts/doc.js',
 
                     // DPL-specific scripts
+                    /*
                     'src/patterns/accordion/accordion.js',
                     'src/patterns/navbox/navbox.js'
+                    */
                 ],
                 dest: 'core/scripts/doc.js'
             },
