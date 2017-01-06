@@ -122,7 +122,11 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd:    'src/docs',
-                    src:    ['*.md','*.html','**/*.hbs'],
+                    src:    [
+                                '*.md',
+                                '*.html',
+                                '**/*.hbs'
+                            ],
                     ext:    '.html',
                     dest:   'docs'
                 }]
@@ -290,34 +294,7 @@ module.exports = function(grunt) {
             },
             doc: {
                 src: [
-                    /*
-                    'src/scripts/vendor/jquery.min.js',
-                    'src/scripts/vendor/jquery.bigtarget.js',
-                    'src/scripts/vendor/respond.js',
-                    */
-
-                    // Bootstrap JavaScript
-                    // Note these scripts should align with the CSS
-                    /*
-                    'src/scripts/vendor/bootstrap/affix.js',
-                    'src/scripts/vendor/bootstrap/alert.js',
-                    'src/scripts/vendor/bootstrap/button.js',
-                    'src/scripts/vendor/bootstrap/collapse.js',
-                    'src/scripts/vendor/bootstrap/dropdown.js',
-                    'src/scripts/vendor/bootstrap/tab.js',
-                    'src/scripts/vendor/bootstrap/transition.js',
-                    'src/scripts/vendor/bootstrap/scrollspy.js',
-                    'src/scripts/vendor/bootstrap/modal.js',
-                    'src/scripts/vendor/bootstrap/tooltip.js',
-                    'src/scripts/vendor/bootstrap/popover.js',
-                    */
                     'src/scripts/doc.js',
-
-                    // DPL-specific scripts
-                    /*
-                    'src/patterns/accordion/accordion.js',
-                    'src/patterns/navbox/navbox.js'
-                    */
                 ],
                 dest: 'core/scripts/doc.js'
             },
