@@ -1,5 +1,5 @@
 {
-    "variants": [
+    "options": [
         {
             "option-header": "Default header",
             "option-description": "<p>Should be used on all University webpages except the University homepage, School homepages, or web applications.</p>"

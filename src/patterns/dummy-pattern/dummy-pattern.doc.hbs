@@ -1,10 +1,5 @@
 ---
 title: Dummy pattern
-pattern: dummy-pattern
-examples:
-- name: full-details
-- name: no-image
-
 ---
 
 <!--
@@ -21,20 +16,23 @@ START HERE...
 Now edit the `dummy-pattern.hbs` file.
 -->
 
-<p>Several sentence description of the pattern.</p>
+<p>The introduction may be several paragraphs long if required. It should introduce the pattern, explain what it is and when and where it may be used.</p>
 
-<h2>Usage</h2>
-
-<ul>
-   <li>When to use, rule 1</li>
-   <li>How to use, rule 2</li>
-   <li>When not to use, rule 3</li>
-</ul>
-
-
-<h2>Options</h2>
+<p>You may use any formatting as required, such as paragraphs and unordered lists:</p>
 
 <ul>
-   <li>Option 1</li>
-   <li>Option 2</li>
+    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+    <li>Aliquam tincidunt mauris eu risus.</li>
+    <li>Dolores tempore enim debitis totam</li>
 </ul>
+
+<p>Documentation should follow the writing for the web guidelines and adhere to the house style guide.</p>
+
+{{#dummy-pattern-options.options}}
+<hr>
+<h3>{{option-header}}</h3>
+{{{option-description}}}
+{{> dummy-pattern}}
+<span class="label label-default">Code</span>
+<div class="pattern-source html">{{> dummy-pattern}}</div>
+{{/dummy-pattern-options.options}}
