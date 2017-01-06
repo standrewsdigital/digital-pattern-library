@@ -1,0 +1,22 @@
+{
+    "options" : [
+        {
+            "option-header": "HTML",
+            "option-description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorem quos amet deleniti, obcaecati quibusdam consequatur repudiandae similique rem sint harum corporis. Deleniti ipsa, distinctio itaque delectus dolorem nostrum tempora.</p>",
+            "code-class": "html",
+            "code": "<div id='test'><p>Hello!</p></div>"
+         },
+
+
+
+
+         {
+            "option-header": "JavaScript",
+            "option-description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>",
+            "code-class": "js",
+            "code": "$('.long-form__content .thumbnail-gallery figure, .long-form--gallery-slider figure').theatre();"
+          }
+
+
+    ]
+}
