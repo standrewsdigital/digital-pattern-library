@@ -1,5 +1,5 @@
 {
-    "variants": [
+    "options": [
         {
             "option-header": "Copyright footer",
             "option-description": "<p>The copyright footer must appear at the bottom of all pages without any modifications.</p>"

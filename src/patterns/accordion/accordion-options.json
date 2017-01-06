@@ -1,5 +1,5 @@
 {
-    "variants": [
+    "options": [
         {
             "option-header": "Single accordion",
             "option-description": "<p>Description here.</p>",
