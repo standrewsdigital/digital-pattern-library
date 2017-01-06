@@ -103,21 +103,21 @@ date: <%= new Date() %>
         {{> body  }}
 
 
-        <footer>
+<footer>
 
-            <div class="row">
-                <div class="col-xs-6">
-                    {{pkg.name}} v{{pkg.version}}
-                </div>
+    <div class="row">
+        <div class="col-xs-6">
+            {{pkg.name}} v{{pkg.version}}
+        </div>
 
-                <div class="col-xs-6 text-right">
-                    {{formatDate date "%A %e %B %Y"}} at {{formatDate date "%H:%M"}}
-                </div>
-            </div>
+        <div class="col-xs-6 text-right">
+            {{formatDate date "%A %e %B %Y"}} at {{formatDate date "%H:%M"}}
+        </div>
+    </div>
 
-        </footer>
-
+</footer>
         <script src="http://localhost:35729/livereload.js"></script>
-        <script src="{{asset 'core/scripts/core-min.js'}}" ></script>
+        <script src="{{asset 'core/scripts/core.min.js'}}" ></script>
+        <script src="{{asset 'core/scripts/doc.js'}}" ></script>
     </body>
 </html>
