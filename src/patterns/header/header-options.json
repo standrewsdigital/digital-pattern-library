@@ -1,9 +1,13 @@
 {
-    "options": [
+    "variants": [
         {
             "option-header": "Default header",
             "option-description": "<p>Should be used on all University webpages except the University homepage, School homepages, or web applications.</p>"
         },
+
+
+
+
         {
             "option-header": "University homepage header",
             "option-description": "<p>Must be used only on the University homepage.</p>",
@@ -14,6 +18,10 @@
                 "Staff":"https://www.st-andrews.ac.uk/staff/"
             }
         },
+
+
+
+
         {
             "option-header": "School header",
             "option-description": "<p>Must be used on every page within a School website.</p>",
@@ -23,6 +31,10 @@
                 "Staff":"#"
             }
         },
+
+
+
+
         {
             "option-header": "Authenticated header",
             "option-description": "<p>When a user is authenticated, the header should be altered to include the name of the person logged in and display any user-specific links they may have access to in addition to a link to logout.</p>",
@@ -32,9 +44,13 @@
                 "last-name": "Smith"
             }
         },
+
+
+
+
         {
             "option-header": "Mini authenticated header",
-            "option-description": "<p>A condensed header that must only be used on web applications.</p>",
+            "option-description": "<p>This condensed header may be used only on web applications.</p>",
             "authenticated": {
                 "username": "js73",
                 "first-name": "Josef",

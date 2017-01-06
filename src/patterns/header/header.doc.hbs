@@ -9,21 +9,11 @@ title: Header
 	<li>The background colour of the header must always be white.</li>
 </ul>
 
+{{#header-options.variants}}
 <hr>
-
-{{#example-data.options}}
-
-    <h3>{{option-header}}</h3>
-
-    {{{option-description}}}
-
-    {{> header}}
-
-    <span class="label label-default">Code</span>
-    <form><textarea cols="100" rows="20">
-
-        {{> header}}
-
-    </textarea></form>
-
-{{/example-data.options}}
+<h3>{{option-header}}</h3>
+{{{option-description}}}
+{{> header}}
+<span class="label label-default">Code</span>
+<div class="pattern-source html" style="">{{> header}}</div>
+{{/header-options.variants}}
