@@ -63,7 +63,6 @@ module.exports = function(grunt) {
                 ext:        '.html',
                 data:       [
                                 'src/_meta/*.json',
-                                // 'src/patterns/*/data/*.json',
                                 'src/patterns/*/*.json',
                                 'src/examples/_data/*.json'
                             ],
@@ -101,21 +100,6 @@ module.exports = function(grunt) {
                 }]
             },
 
-            // Pattern examples - uses /src/_layouts/pattern_example.hbs
-            // TODO: Delete this
-            pattern_examples: {
-                options: {
-                    layout: 'pattern_example.hbs'
-                },
-                files: [{
-                    expand: true,
-                    cwd:    'src/patterns/',
-                    src:    ['*/examples/*.hbs'],
-                    dest:   'docs/patterns',
-                    ext:    '.html',
-                }]
-            },
-
             // Example pages - uses /src/_layouts/example.hbs
             examples: {
                 options: {
@@ -138,7 +122,11 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd:    'src/docs',
-                    src:    ['*.md','*.html','**/*.hbs'],
+                    src:    [
+                                '*.md',
+                                '*.html',
+                                '**/*.hbs'
+                            ],
                     ext:    '.html',
                     dest:   'docs'
                 }]
@@ -307,34 +295,7 @@ module.exports = function(grunt) {
             },
             doc: {
                 src: [
-                    /*
-                    'src/scripts/vendor/jquery.min.js',
-                    'src/scripts/vendor/jquery.bigtarget.js',
-                    'src/scripts/vendor/respond.js',
-                    */
-
-                    // Bootstrap JavaScript
-                    // Note these scripts should align with the CSS
-                    /*
-                    'src/scripts/vendor/bootstrap/affix.js',
-                    'src/scripts/vendor/bootstrap/alert.js',
-                    'src/scripts/vendor/bootstrap/button.js',
-                    'src/scripts/vendor/bootstrap/collapse.js',
-                    'src/scripts/vendor/bootstrap/dropdown.js',
-                    'src/scripts/vendor/bootstrap/tab.js',
-                    'src/scripts/vendor/bootstrap/transition.js',
-                    'src/scripts/vendor/bootstrap/scrollspy.js',
-                    'src/scripts/vendor/bootstrap/modal.js',
-                    'src/scripts/vendor/bootstrap/tooltip.js',
-                    'src/scripts/vendor/bootstrap/popover.js',
-                    */
                     'src/scripts/doc.js',
-
-                    // DPL-specific scripts
-                    /*
-                    'src/patterns/accordion/accordion.js',
-                    'src/patterns/navbox/navbox.js'
-                    */
                 ],
                 dest: 'core/scripts/doc.js'
             },
@@ -504,7 +465,6 @@ module.exports = function(grunt) {
     grunt.registerTask('docs', [
         'clean:docs',
         'assemble:patterns',
-        // 'assemble:pattern_examples',
         'assemble:examples',
         'assemble:docs',
         'copy:docs_core',
