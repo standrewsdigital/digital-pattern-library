@@ -102,20 +102,39 @@ date: <%= new Date() %>
 
         {{> body  }}
 
+        <!-- Begin pattern: footer //-->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-<footer>
+        <footer role="contentinfo">
 
-    <div class="row">
-        <div class="col-xs-6">
-            {{pkg.name}} v{{pkg.version}}
-        </div>
+         <div id="university-footer">
+                <div class="container">
+                    <div class="row">
 
-        <div class="col-xs-6 text-right">
-            {{formatDate date "%A %e %B %Y"}} at {{formatDate date "%H:%M"}}
-        </div>
-    </div>
+                        <div class="col-lg-8">
+                            <p id="footer-charity" role="contentinfo">© <script>document.write(new Date().getFullYear());</script> University of St&nbsp;Andrews is a charity registered in Scotland, No SC013532.</p>
 
-</footer>
+                            <ul id="footer-links">
+                                <li><a href="http://www.st-andrews.ac.uk/terms/">Terms and conditions</a></li>
+                                <li><a href="http://www.st-andrews.ac.uk/help/">Website help</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <ul id="social">
+                                <li><a href="https://www.facebook.com/uniofsta"><i class="fa fa-facebook-official fa-2x" title="Facebook"></i></a></li>
+                                <li><a href="https://twitter.com/univofstandrews/"><i class="fa fa-twitter-square fa-2x" title="Twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/uniofstandrews"><i class="fa fa-instagram fa-2x" title="Instagram"></i></a></li>
+                                <li><a href="https://www.youtube.com/uofstandrews"><i class="fa fa-youtube-square fa-2x" title="YouTube"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div> <!-- End .row //-->
+                </div> <!-- End .container //-->
+            </div> <!-- End #university-footer //-->
+        </footer>
+        <!-- End pattern: footer //-->
+
         <script src="http://localhost:35729/livereload.js"></script>
         <script src="{{asset 'core/scripts/core.min.js'}}" ></script>
         <script src="{{asset 'core/scripts/doc.js'}}" ></script>
