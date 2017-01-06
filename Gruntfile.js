@@ -487,7 +487,6 @@ module.exports = function(grunt) {
     grunt.registerTask('docs', [
         'clean:docs',
         'assemble:patterns',
-        // 'assemble:pattern_examples',
         'assemble:examples',
         'assemble:docs',
         'copy:docs_core',
