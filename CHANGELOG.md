@@ -6,14 +6,50 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+
+## v0.8.14
+
+Release date: Sunday 8 January 2017
+
+### Added
+
+* Add section number for "Update an existing install" (now section 3).
+* Add section 4 for troubleshooting, and add steps to resolve "Error: handlebars does not support render".
+
+### Fixed
+
+* Correct URL in text-banner on example pages to take users back to the examples homepage.
+
+
+
+
+---
+
+## v0.8.13
+
+Release date: Tuesday 20 December 2016
+
+### Added
+
+* Add navigation to Bootstrap components page.
+
+### Changed
+
+* Reorder (A-Z) and simplify navigation on Bootstrap components - advanced page.
+
+
+
+
+---
+
 ## v0.8.12
 
 Release date: Friday 16 December 2016
 
 ### Changed
 
-* Re-named 'Pattern-pages' to 'Patterns'.
-* Re-named 'Example-pages' to 'Examples'. 
+* Rename 'Pattern-pages' to 'Patterns'.
+* Rename 'Example-pages' to 'Examples'. 
 
 
 
@@ -26,7 +62,7 @@ Release date: Friday 16 December 2016
 
 ### Fixed
 
-* Floating footer fixed on example pages.
+* Fix floating footer on example pages.
 
 
 
@@ -53,7 +89,7 @@ Release date: Thursday 15 December 2016
 ### Changed
 
 * Update CONTRIBUTING-CHEATSHEET to include specific instructions about updating package.json and CHANGELOG.md before deployment, and tagging releases after deployment.
-* Added day names to CHANGELOG.md to match house style regarding dates.
+* Add day names to CHANGELOG.md to match house style regarding dates.
 
 
 
@@ -93,9 +129,9 @@ Release date: Tuesday 13 December 2016
 
 ### Changed
 
-* Updated footer pattern documentation.
+* Update footer pattern documentation.
 * Social media icons within the footer now use [Font Awesome](http://fontawesome.io/) instead of SVG images. 
-* Added new example with deprecated code for the SVG links.
+* Add new example with deprecated code for the SVG links.
 
 
 
