@@ -1,22 +1,4 @@
 {
-    "options" : [
-        {
-            "option-header": "HTML",
-            "option-description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorem quos amet deleniti, obcaecati quibusdam consequatur repudiandae similique rem sint harum corporis. Deleniti ipsa, distinctio itaque delectus dolorem nostrum tempora.</p>",
-            "language": "html",
-            "code": "<div id='test'><p>Hello!</p></div>"
-         },
-
-
-
-
-         {
-            "option-header": "JavaScript",
-            "option-description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>",
-            "language": "javascript",
-            "code": "var $example; echo('Hello world');"
-          }
-
-
-    ]
+    "code-language": "{code-language}",
+    "code": "<!-- Insert your code here -->"
 }

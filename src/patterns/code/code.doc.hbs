@@ -2,27 +2,88 @@
 title: Code
 ---
 
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+<p>The code pattern is used to display example code on pages, for example in documentation such as the digital pattern library or in blog post tutorials demonstrating how to do something.</p>
 
-<p>The introduction may be several paragraphs long if required. It should introduce the pattern, explain what it is and when and where it may be used.</p>
+<p>This pattern uses the <a href="https://highlightjs.org/">highlight.js</a> library to automatically add syntax highlighting to code.</p>
 
-<p>You may use any formatting as required, such as paragraphs and unordered lists:</p>
+<p>You do not need to first encode the source code, the digital pattern library will do this automatically.</p>
 
-<ul>
-    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-    <li>Aliquam tincidunt mauris eu risus.</li>
-    <li>Dolores tempore enim debitis totam</li>
-</ul>
-
-<p>Documentation should follow the writing for the web guidelines and adhere to the house style guide.</p>
-
-{{#code-options.options}}
-<hr>
-<h3>{{option-header}}</h3>
-{{{option-description}}}
+<p>You must wrap code using the following syntax:</p>
 
 <span class="label label-default">Code</span>
-<pre>
-    <code class="{{code-class}} pattern-source">{{> code}}</code>
-</pre>
-{{/code-options.options}}
+<pre><code class="pattern-source html">{{> code code-options}}</code></pre>
+
+<h3>Supported languages</h3>
+
+<p>The following languages are currently supported:</p>
+
+<ul>
+    <li>HTML (html)</li>
+    <li>CSS (css)</li>
+    <li>JavaScript (javascript)</li>
+    <li>JSON (json)</li>
+    <li>PHP (php)</li>
+</ul>
+
+
+<h3>Examples</h3>
+
+<h4>HTML</h4>
+<p>Add class of <code>html</code>.</p>
+<span class="label label-info">Example</span>
+<pre><code class="pattern-source html"><p class="something">This is an example page.</p>
+</code></pre>
+
+<hr>
+<h4>CSS</h4>
+<p>Add class of <code>css</code>.</p>
+<span class="label label-info">Example</span>
+<pre><code class="pattern-source css">pre, pre code.pattern-source {
+    background-color: #23241f;
+}
+pre {
+    max-height: 14em;
+    overflow: auto;
+}
+</code></pre>
+
+<hr>
+<h4>JavaScript</h4>
+<p>Add class of <code>javascript</code>.</p>
+<span class="label label-info">Example</span>
+<pre><code class="pattern-source javascript">function $initHighlight(block, cls) {
+  try {
+    if (cls.search(/\bno\-highlight\b/) != -1)
+      return process(block, true, 0x0F) +
+             ` class="${cls}"`;
+  } catch (e) {
+    /* handle exception */
+  }
+  for (var i = 0 / 2; i < classes.length; i++) {
+    if (checkCondition(classes[i]) === undefined)
+      console.log('undefined');
+  }
+}
+
+export  $initHighlight;
+</code></pre>
+
+<hr>
+<h4>JSON</h4>
+<p>Add class of <code>json</code>.</p>
+
+<span class="label label-info">Example</span>
+<pre><code class="pattern-source json">
+[
+  {
+    "title": "apples",
+    "count": [12000, 20000],
+    "description": {"text": "...", "sensitive": false}
+  },
+  {
+    "title": "oranges",
+    "count": [17500, null],
+    "description": {"text": "...", "sensitive": false}
+  }
+]
+</code></pre>
