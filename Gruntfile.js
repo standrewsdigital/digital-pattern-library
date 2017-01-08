@@ -409,21 +409,44 @@ module.exports = function(grunt) {
             },
             js: {
                 files: ['src/**/*.js'],
-                tasks: ['clean:js','jshint','concat','uglify',
-                    'clean:docs_assets','copy:docs_core','copy:docs_images'],
+                tasks: [
+                    'clean:js',
+                    'jshint',
+                    'concat',
+                    'uglify',
+                    'clean:docs_assets',
+                    'copy:docs_core',
+                    'copy:docs_images'
+                ],
             },
             images: {
                 files: ['src/images/**/*'],
-                tasks: ['clean:images','copy:images','clean:docs_assets','copy:docs_core','copy:docs_images']
+                tasks: [
+                    'clean:images',
+                    'copy:images',
+                    'clean:docs_assets',
+                    'copy:docs_core',
+                    'copy:docs_images'
+                ]
             },
             fonts: {
                 files: ['src/fonts/**/*'],
-                tasks: ['clean:fonts','copy:fonts','clean:docs_assets','copy:docs_core','copy:docs_images']
+                tasks: [
+                    'clean:fonts',
+                    'copy:fonts',
+                    'clean:docs_assets',
+                    'copy:docs_core',
+                    'copy:docs_images'
+                ]
             },
             styles: {
                 files: ['src/**/*.scss'],
-                tasks: ['clean:styles','compass','clean:docs_core',
-                    'copy:docs_core']
+                tasks: [
+                    'clean:styles',
+                    'compass',
+                    'clean:docs_core',
+                    'copy:docs_core'
+                ]
             },
             docs: {
                 files: [
