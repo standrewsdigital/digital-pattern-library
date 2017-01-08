@@ -6,24 +6,26 @@ Last updated: Monday 6 December 2016
 <!-- MarkdownTOC -->
 
 - [1. Prerequisites](#1-prerequisites)
-  - [Git](#git)
-  - [Node.js](#nodejs)
-  - [Grunt CLI](#grunt-cli)
-  - [Ruby](#ruby)
-    - [Install Ruby on Windows](#install-ruby-on-windows)
-    - [Install Ruby on MacOS X](#install-ruby-on-macos-x)
+    - [Git](#git)
+    - [Node.js](#nodejs)
+    - [Grunt CLI](#grunt-cli)
+    - [Ruby](#ruby)
+        - [Install Ruby on Windows](#install-ruby-on-windows)
+        - [Install Ruby on MacOS X](#install-ruby-on-macos-x)
 - [2. Initialize developer tools](#2-initialize-developer-tools)
-  - [Clone the repository](#clone-the-repository)
-  - [Install Grunt dependencies](#install-grunt-dependencies)
-    - [Error: Unable to connect to github.com](#error-unable-to-connect-to-githubcom)
-  - [Install Compass Ruby gem](#install-compass-ruby-gem)
-- [Conclusion](#conclusion)
-- [Update an existing install](#update-an-existing-install)
-  - [1. Make sure your Node.js version is up-to-date.](#1-make-sure-your-nodejs-version-is-up-to-date)
-  - [2. Checkout the branch from GitHub.](#2-checkout-the-branch-from-github)
-  - [3. Delete the `node_modules` folder.](#3-delete-the-node_modules-folder)
-  - [4. Reinstall npm to your DPL directory.](#4-reinstall-npm-to-your-dpl-directory)
-  - [5. Verify it works.](#5-verify-it-works)
+    - [Clone the repository](#clone-the-repository)
+    - [Install Grunt dependencies](#install-grunt-dependencies)
+        - [Error: Unable to connect to github.com](#error-unable-to-connect-to-githubcom)
+    - [Install Compass Ruby gem](#install-compass-ruby-gem)
+    - [Conclusion](#conclusion)
+- [3. Update an existing install](#3-update-an-existing-install)
+    - [1. Make sure your Node.js version is up-to-date.](#1-make-sure-your-nodejs-version-is-up-to-date)
+    - [2. Checkout the branch from GitHub.](#2-checkout-the-branch-from-github)
+    - [3. Delete the `node_modules` folder.](#3-delete-the-node_modules-folder)
+    - [4. Reinstall npm to your DPL directory.](#4-reinstall-npm-to-your-dpl-directory)
+    - [5. Verify it works.](#5-verify-it-works)
+- [4. Troubleshooting](#4-troubleshooting)
+    - [Error: handlebars does not support render](#error-handlebars-does-not-support-render)
 
 <!-- /MarkdownTOC -->
 
@@ -153,7 +155,7 @@ $ gem install compass
 ```
 
 
-## Conclusion
+### Conclusion
 
 You should now be configured to start work on the pattern library. You should now read [CONTRIBUTING.md](CONTRIBUTING.md) for some guidelines and principles of development.
 
@@ -162,7 +164,7 @@ You should now be configured to start work on the pattern library. You should no
 
 
 
-## Update an existing install
+## 3. Update an existing install
 
 If you already have the DPL installed and need to update the underlying packages start here:
 
@@ -192,3 +194,38 @@ Run `npm install` using Git Bash or the command line.
 ### 5. Verify it works.
 
 Run `grunt` and if it works then you're successfully updated.
+
+---
+
+
+
+
+## 4. Troubleshooting
+
+### Error: handlebars does not support render
+
+If you get the following error when running Grunt:
+
+```
+Running "assemble:core_meta" (assemble) task
+handlebars does not support render.
+Assembling core/build.json ERROR
+Warning: handlebars does not support render. Use --force to continue.
+
+Aborted due to warnings.
+```
+
+it may be that `npm install` did not complete. It has been reported on [Stack Overflow](http://stackoverflow.com/questions/33568306/handlebars-not-supporting-render-when-adding-assemble-to-a-yeoman-webapp-project) that sometimes node doesn't recursively install the modules for assemble-handlebars; this is a known issue in grunt-assemble, [issue #31](https://github.com/assemble/grunt-assemble/issues/31).
+
+You can easily test for this by adding a [pre-release identifier](http://semver.org/#spec-item-9) to the version number in `package.json`, e.g.
+
+```
+"version": "0.9.0-alpha",
+```
+
+If `grunt` breaks after adding this, do the following:
+
+1. At the command line (e.g. using Git Bash) navigate to `node_modules/assemble-handlebars`.
+2. Run `npm install`.
+3. The remaining modules will install.
+4. Run `grunt` – it should complete successfully now.
