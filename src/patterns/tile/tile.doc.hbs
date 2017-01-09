@@ -11,19 +11,16 @@ related:
 
 <p>The Tile pattern is a clickable, single-action item. It includes an image, title and description. It's ideally used for displaying an event or news item.</p>
 
-<h2>Usage</h2>
-
 <ul>
 	<li>The <code>description</code> text should be 3 - 4 lines in length or roughly 80 - 140 characters.</li>
 </ul>
 
-<h2>Syntax</h2>
 
-<div class="pattern-source">{{> tile}}</div>
-
-
-<h2>Options</h2>
-
-<ul>
-    <li><em>None</em></li>
-</ul>
+{{#tile-options.options}}
+<hr>
+<h3>{{option-header}}</h3>
+{{{option-description}}}
+{{>  tile}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> tile}}</code></pre>
+{{/tile-options.options}}
