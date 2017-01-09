@@ -1,0 +1,69 @@
+{
+    "options": [
+
+        {
+            "option-heading": "With portrait container",
+            "option-description": "<p>This example shows a double-height masonry item with the <code>portrait-container</code> class.</p>",
+            "masonry-1": {
+                "shape":"landscape",
+                "image": {
+                    "url": "docs/images/placeholders/360x240-1.jpg",
+                    "alt": "Description"
+                },
+                "title": "MUSA is going greener",
+                "url": "#",
+                "description": "The Museum of the University of St Andrews (MUSA) has attained the top standard for sustainability from the Green Tourism Business Scheme."
+            },
+            "masonry-2": {
+                "shape":"portrait",
+                "image": {
+                    "url": "docs/images/placeholders/360x240-2.jpg",
+                    "alt": "Description"
+                },
+                "title": "A Rae of Aristic Sunshine",
+                "url": "#",
+                "description": "The work of one of Scotland's most revered contemporary artists, Barbara Rae, is to go on display in St Andrews, thanks to the University of St Andrews' Museum Collections."
+            },
+            "masonry-3": {
+                "image": {
+                    "url": "docs/images/placeholders/360x240-3.jpg",
+                    "alt": "Description"
+                },
+                "title": "World Cup fever at Sandy's Bar",
+                "url": "#",
+                "description": "Hundreds of football fans watched the World Cup final in the newly opened Sandy's Bar at the Students' Association on Sunday."
+            },
+            "masonry-4": {
+                "image": {
+                    "url": "docs/images/placeholders/360x240-4.jpg",
+                    "alt": "Description"
+                },
+                "title": "All in hand",
+                "url": "#",
+                "description": "Scientists have, for the first time, decoded the meanings of chimpanzee gestures. The study, by researches at teh University of St Andrews, reveals what wild chimpanzees are trying to say when they communicate with their body and hand movements."
+            },
+            "masonry-5": {
+                "image": {
+                    "url": "docs/images/placeholders/360x240-5.jpg",
+                    "alt": "Description"
+                },
+                "title": "Dogrees all round!",
+                "url": "#",
+                "description": "Graduation is a time for all the family but this year one pet dog made its way into the post-ceremony celebrations in the Quad."
+            },
+            "masonry-6": {
+                "shape":"landscape",
+                "image": {
+                    "url": "docs/images/placeholders/360x240-6.jpg",
+                    "alt": "Description"
+                },
+                "title": "Darling: \"We belong together\"",
+                "url": "#",
+                "description": "Alistair Darling to use public address to make the case for Scotland remaining in the UK"
+            }
+        }
+
+
+
+    ]
+}

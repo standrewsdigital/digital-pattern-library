@@ -1,30 +1,18 @@
 ---
 title: Masonry grid (deprecated)
-pattern: masonry-grid
-examples:
-- name: example1
-related:
 ---
 
-<div class="alert alert-danger"> 
-  <strong>This pattern is depreciated.</strong> Do not attempt to use this pattern for any new website development. It will be removed in a future update. 
+<div class="alert alert-danger">
+  <strong>This pattern is depreciated.</strong> Do not attempt to use this pattern for any new website development. It will be removed in a future update.
 </div>
 
-<p>The Masonry grid pattern arranges masonry items in a grid.</p>
+<p>The masonry grid pattern arranges masonry items in a customisable grid.</p>
 
-<h2>Usage</h2>
-
-<ul>
-	<li>Use one of the agreed layouts.</li>
-</ul>
-
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> masonry-grid }}</div>
-
-
-<h2>Options</h2>
-
-<ul>
-    <li><em>None</em></li>
-</ul>
+{{#masonry-grid-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+{{>  masonry-grid}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> masonry-grid}}</code></pre>
+{{/masonry-grid-options.options}}
