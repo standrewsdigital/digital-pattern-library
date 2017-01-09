@@ -1,7 +1,7 @@
 {
     "options" : [
         {
-            "option-header": "Default tile",
+            "option-heading": "Default tile",
             "option-description": "<p>This is an example of a default tile.</p>",
             "image": {
                 "url": "docs/images/placeholders/360x240.jpg",
