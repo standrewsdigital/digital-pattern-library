@@ -1,0 +1,85 @@
+{
+    "options": [
+        {
+          "image": {
+            "url": "docs/images/placeholders/info-bite-1.jpg",
+            "alt": "building"
+          },
+          "bite": "Oldest university<br> in Scotland, dating 1413",
+          "url": "#"
+        },
+
+
+
+
+        {
+          "image": {
+            "url": "docs/images/placeholders/info-bite-2.jpg",
+            "alt": "st andrews degree"
+          },
+          "bite": "5 times top for student satisfaction",
+          "url": "#"
+        },
+
+
+
+
+
+        {
+          "image": {
+            "url": "docs/images/placeholders/info-bite-3.jpg",
+            "alt": "st andrews students on beach"
+          },
+          "bite": "Around 8,000 students",
+          "url": "#"
+        },
+
+
+
+
+        {
+          "class":"landscape",
+          "image": {
+            "url": "docs/images/placeholders/info-bite-4.jpg",
+            "alt": "st andrews student working together"
+          },
+          "bite": "32% undergraduate students international",
+          "url": "#"
+        },
+
+
+
+
+        {
+          "class": "portrait",
+          "image": {
+            "url": "docs/images/placeholders/info-bite-5.jpg",
+            "alt": "st andrews on a cloudy day"
+          },
+          "bite": "Over 600 years of academic excellence",
+          "url": "#"
+        },
+
+
+
+
+        {
+          "image": {
+            "url": "docs/images/placeholders/info-bite-1.jpg",
+            "alt": "the st andrews cathedral"
+          },
+          "bite": "Swell"
+        },
+
+
+
+
+        {
+          "class": "solid",
+          "noimage": true,
+          "bite": "Swell",
+          "url": "http://www.st-andrews.ac.uk"
+        }
+
+    ]
+}
