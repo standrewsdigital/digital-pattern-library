@@ -1,41 +1,22 @@
 ---
 title: Info bite (deprecated)
-pattern: info-bite
-examples:
-- {name: example1, width: 300px}
-- {name: example2, width: 300px}
-- {name: example3, width: 300px}
-- {name: example4, width: 630px}
-- {name: example5, width: 300px, height: 630px}
-- {name: example6, width: 300px}
-- {name: example7, width: 300px}
-related:
-- name: info-bite-grid
 ---
 
-<div class="alert alert-danger"> 
-  <strong>This pattern is depreciated.</strong> Do not attempt to use this pattern for any new website development. It will be removed in a future update. 
+<div class="alert alert-danger">
+  <strong>This pattern is depreciated.</strong> Do not attempt to use this pattern for any new website development. It will be removed in a future update.
 </div>
 
-<p>The Info bite pattern is a short snippet of information shown on either a solid background color
-or a background image with a semi-opaque color overlay.</p>
+<p>The info bite pattern is a short snippet of information shown on either a solid background colour
+or a background image with a semi-opaque colour overlay. Info bite is used in situations where you want to convey short snippets or 'bites' of information, quite possibly in a grid.</p>
 
-<h2>Usage</h2>
+{{#info-bite-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
 
-<ul>
-	<li>Used in situations where you want to convey short bites of information, possibly in a grid.</li>
-</ul>
-
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> info-bite }}</div>
-
-
-<h2>Options</h2>
-
-<ul>
-	<li>The link in the <code>.bite</code> is optional.</li>
-	<li>The image and therefore the <code>&lt;div class="image"&gt;...&lt;div&gt;</code> is optional. In this case you should add a <code>solid</code> class e.g. <code>&lt;div class="info-bite solid"&gt;</code>.</li>
-	<li>To get a portrait info-bite, add a class <code>portrait</code>. This makes the info-bite twice as high.</li>
-	<li>To get a landscape info-bite of use in grids, add a class <code>landscape</code>. This adds styles to make text work better in the larger space.</li>
-</ul>
+<div style="width:{{div-width}};">
+{{> info-bite}}
+</div>
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> info-bite}}</code></pre>
+{{/info-bite-options.options}}

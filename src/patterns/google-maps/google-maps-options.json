@@ -1,0 +1,17 @@
+{
+    "options": [
+        {
+            "option-heading": "No text data",
+            "option-description": "<p></p>",
+            "text": ""
+        },
+
+
+
+        {
+            "option-heading": "With text data",
+            "option-description": "<p>Map to one side, with column of text.</p>",
+            "text": "<h3>Contact us</h3><h4>School of Bionuclear Poetry</h4><p>University of St Andrews<br />College Gate<br />St Andrews<br />KY16 9AJ<br />Fife, Scotland, United Kingdom</p><h4>General inquiries</h4><p>Telephone: +44 (0)1334 476161</p>"
+        }
+    ]
+}

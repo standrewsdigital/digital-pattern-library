@@ -1,42 +1,28 @@
 ---
 title: Secondary call-to-action
-pattern: secondary-call
-examples:
-- name: secondary-call-default
-- name: secondary-call-1
-- name: secondary-call-2
-- name: secondary-call-3
-- name: secondary-call-4
-- name: secondary-call-5
-- name: secondary-call-6
-- name: secondary-call-7
-- name: secondary-call-8
-- name: secondary-call-9
-related:
 ---
 
-<p>The Secondary call-to-action pattern displays a heading, some intro text and a button with a large background image.</p>
+<p>The secondary call-to-action pattern displays a heading, some intro text and a button with a large background image.</p>
 
-<h2>Usage</h2>
-
-<ul>
-	<li>Only show at the bottom of the page, above the footer.</li>
-</ul>
-
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> secondary-call }}</div>
-
-<h2>Options</h2>
+<p>Only show at the bottom of the page, immediately above the footer.</p>
 
 <ul>
   	<li><strong>Alignment</strong><br>
       By adding a class of <code>center</code> (default), <code>right</code>, or <code>left</code>, you can specify how the content should be aligned.
     </li>
-    <li><strong>Background Image</strong><br>
-        By adding a class of the from <code>secondary-call-*</code>, where <code>*</code> is a number between 0 and 10, you can select a preferred background image from 10 additional ones.
+    <li><strong>Background image</strong><br>
+        By adding a class of the from <code>secondary-call-*</code>, where <code>*</code> is a number between 0 and 9, you may select a preferred background image from additional variants.
     </li>
-    <li><strong>Multiple Call to actions</strong><br>
-        You can include more than more one call to action if needed.
+    <li><strong>Multiple calls to action</strong><br>
+        You may include more than more one call to action if needed.
     </li>
 </ul>
+
+{{#secondary-call-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+</div>{{> secondary-call}}<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> secondary-call}}</code></pre>
+{{/secondary-call-options.options}}

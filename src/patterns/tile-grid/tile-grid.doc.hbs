@@ -8,27 +8,14 @@ related:
 - name: tile
 ---
 
-<p>The tile grid pattern contains a heading, a call to browse button and a grid layout of tiles.</p>
+<p>The tile grid pattern contains a heading, a call to browse button and a grid layout of tiles; it is used to show a collection of news and/or events.</p>
 
-<h2>Usage</h2>
+{{#tile-grid-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+</div>{{> tile-grid}}<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> tile-grid}}</code></pre>
+{{/tile-grid-options.options}}
 
-<ul>
-	<li>It is used to show a collection of news and/or events.</li>
-</ul>
-
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> tile-grid tile-grid-example}}</div>
-
-
-<h2>Options</h2>
-
-<ul>
-	<li>
-        <p><strong>Background image</strong></p>
-
-        <p>By default there is no background image. To add a background image, attach the image using an inline style. For example: <code>&lt;div class="tile-grid" style="background-image: url(path/to/image.jpg)"&gt;</code>.</p>
-
-        <p>The image will be be set to <code>cover</code> the background, so select a large image. The example image is <code>2100 x 1400</code>.
-	</li>
-</ul>

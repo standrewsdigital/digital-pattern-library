@@ -1,5 +1,4 @@
 <!-- Begin pattern: header //-->
-
 <div class="sr-only"><a href="#content-begin">Skip to content</a></div>
 
 <header id="header" class="{{#audience}}header--audience{{/audience}}" role="banner">
@@ -12,7 +11,6 @@
                 {{/each}}
             </div>
         {{/audience}}
-
         {{#if authenticated}}
             <div {{#if web-application}}class="web-application-header"{{/if}} id="header-authenticated">
 
@@ -32,12 +30,10 @@
                 <div class="clear"></div>
             {{/unless}}
         {{/if}}
-
         {{#if web-application}}
-            <div id="logo-container">
-                <div id="web-application-header-logo"><h1><a href="http://www.st-andrews.ac.uk/"><span>University of St Andrews</span></a></h1></div>
-            </div>
-
+        <div id="logo-container">
+            <div id="web-application-header-logo"><h1><a href="http://www.st-andrews.ac.uk/"><span>University of St Andrews</span></a></h1></div>
+        </div>
         {{else}}
             <div id="logo-container">
                 <div id="header-logo"><h1><a href="http://www.st-andrews.ac.uk/"><span>University of St Andrews</span></a></h1></div>
@@ -67,10 +63,7 @@
 
             </div>
         {{/if}}
-
     </div>
 
 </header>
-
-
 <!-- End pattern: header //-->

@@ -1,32 +1,16 @@
 ---
 title: Navbox
-pattern: navbox
-examples:
-- name: example1
-  width: 30%;
-- name: example2
-  width: 30%;
-- name: example3
-  width: 30%;
-- name: example4
-  width: 30%;
 ---
 
 <p>The Navbox pattern is used to present feature navigation with an optional background image and description.</p>
 
-<h2>Usage</h2>
-
-<ul>
-	<li>...</li>
-</ul>
-
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> navbox navbox-default}}</div>
-
-
-<h2>Options</h2>
-
-<ul>
-    <li><em>None</em></li>
-</ul>
+{{#navbox-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+<div style="width:30%;">
+{{> navbox}}
+</div>
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> navbox}}</code></pre>
+{{/navbox-options.options}}

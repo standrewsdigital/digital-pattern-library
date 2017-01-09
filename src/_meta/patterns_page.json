@@ -78,6 +78,10 @@
                   "img": "assets/docs/images/patterns/accordion.jpg",
                   "url": "patterns/accordion/index.html"
                 },
+                { "name": "Code",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/code/index.html"
+                },
                 { "name": "Contact card",
                   "img": "assets/docs/images/patterns/contact-card.jpg",
                   "url": "patterns/contact-card/index.html"
@@ -113,7 +117,7 @@
                 { "name": "News updates",
                   "img": "assets/docs/images/patterns/news-updates.jpg",
                   "url": "patterns/news-updates/index.html"
-                },                
+                },
                 { "name": "Section header",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/section-header/index.html"
