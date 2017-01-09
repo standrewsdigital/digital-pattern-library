@@ -1,0 +1,32 @@
+{
+    "options": [
+        {
+            "option-header": "Default hero banner",
+            "option-description": "",
+            "heading":  "Scotland's first university",
+            "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
+            "action-text": "Study at St Andrews",
+            "action-url": "#",
+            "bg-image": "docs/images/cta/cta-example1.jpg"
+        },
+        {
+            "option-header": "Hero banner with sections",
+            "option-description": "",
+            "heading":  "Scotland's first university",
+            "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
+            "action-text": "Study at St Andrews",
+            "action-url": "#",
+            "bg-image": "docs/images/cta/cta-sections.jpg"
+        },
+        {
+            "option-header": "Hero banner no background",
+            "option-description": "",
+            "heading":  "Ever to excel",
+            "paragraph":  "Study at the University of St Andrews and experience world-class teaching, cutting edge research and the flexible degree structure of Scotland’s first university.",
+            "action-text": "Search for courses",
+            "action-text-2": "News",
+            "action-url": "#",
+            "bg-image": ""
+        }
+    ]
+}
