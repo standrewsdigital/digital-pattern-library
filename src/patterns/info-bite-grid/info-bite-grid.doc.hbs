@@ -1,16 +1,9 @@
 ---
 title: Info bite grid (deprecated)
-pattern: info-bite-grid
-examples:
-- name: example1
-- name: example2
-- name: example3
-related:
-- name: info-bite
 ---
 
-<div class="alert alert-danger"> 
-  <strong>This pattern is depreciated.</strong> Do not attempt to use this pattern for any new website development. It will be removed in a future update. 
+<div class="alert alert-danger">
+  <strong>This pattern is depreciated.</strong> Do not attempt to use this pattern for any new website development. It will be removed in a future update.
 </div>
 
 <p>The Info bite grid pattern presents a set of Info bites in a grid.</p>
@@ -19,7 +12,69 @@ related:
 <hr>
 <h3>{{option-heading}}</h3>
 {{{option-description}}}
-{{>  info-bite-grid}}
+
+</div>
+<!-- Pattern: Info bite grid -->
+<div class="info-bite-grid">
+    <div class="container">
+        <div class="row">
+            <div class="{{grid-class-1}}">
+                {{> info-bite info-bite-1 }}
+            </div>
+            <div class="{{grid-class-2}}">
+                {{> info-bite info-bite-2}}
+            </div>
+
+            <div class="{{grid-class-3}}">
+                {{> info-bite info-bite-3}}
+            </div>
+
+            <div class="{{grid-class-4}}">
+                {{> info-bite info-bite-4}}
+            </div>
+
+            <div class="{{grid-class-5}}">
+                {{> info-bite info-bite-5}}
+            </div>
+
+            <div class="{{grid-class-6}}">
+                {{> info-bite info-bite-6}}
+            </div>
+        </div>  <!-- // End .row -->
+    </div> <!-- // End .container -->
+</div>  <!-- // End .info-bite-grid -->
+<div class="container">
+
 <span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> info-bite-grid}}</code></pre>
+<pre><code class="pattern-source html"><!-- Pattern: Info bite grid -->
+<div class="info-bite-grid">
+    <div class="container">
+        <div class="row">
+            <div class="{{grid-class-1}}">
+                {{> info-bite info-bite-1 }}
+            </div>
+        {{#unless single}}
+            <div class="{{grid-class-2}}">
+                {{> info-bite info-bite-2}}
+            </div>
+
+            <div class="{{grid-class-3}}">
+                {{> info-bite info-bite-3}}
+            </div>
+
+            <div class="{{grid-class-4}}">
+                {{> info-bite info-bite-4}}
+            </div>
+
+            <div class="{{grid-class-5}}">
+                {{> info-bite info-bite-5}}
+            </div>
+
+            <div class="{{grid-class-6}}">
+                {{> info-bite info-bite-6}}
+            </div>
+        {{/unless}}
+        </div>  <!-- // End .row -->
+    </div> <!-- // End .container -->
+</div>  <!-- // End .info-bite-grid --></code></pre>
 {{/info-bite-grid-options.options}}
