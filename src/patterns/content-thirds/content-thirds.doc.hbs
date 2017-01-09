@@ -1,17 +1,8 @@
 ---
 title: Content thirds
-pattern: content-thirds
-examples:
-- name: first-col-only
-- name: col-with-aside
-- name: col-with-aside-heading
-- name: col-with-aside-background
-
 ---
 
 <p>The content thirds pattern contains a &frac23; width column for the main content and an optional &frac13; width column for related content. There is the option of a heading above the columns and a full-width background colour.</p>
-
-<h2>Usage</h2>
 
 <ul>
     <li>When using the optional heading above the columns it must use heading 2 (<code>&lt;h2&gt;</code>) and sub-headings in the content as heading 3 (<code>&lt;h3&gt;</code>).</li>
@@ -19,10 +10,14 @@ examples:
     <li>The second column (&frac13;) must only contain a navigation box or related content.</li>
 </ul>
 
-<h2>Options</h2>
 
-<ul>
-    <li>Content in the second column (&frac13;).</li>
-    <li>Heading 2 (<code>&lt;h2&gt;</code>) above the columns.</li>
-    <li>Full width background colour, light grey only (<code>sta-grey-light</code>)</li>
-</ul>
+{{#content-thirds-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+{{> content-thirds}}
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> content-thirds}}</code></pre>
+{{/content-thirds-options.options}}
