@@ -1,6 +1,6 @@
 {
     "name": "digital-pattern-library",
-    "version": "0.9.0-alpha",
+    "version": "0.9.0-rc1",
     "description": "digital pattern library.",
     "license": "Creative Commons Attribution-ShareAlike 4.0 International License.",
     "cdn": {
