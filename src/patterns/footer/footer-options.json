@@ -1,7 +1,7 @@
 {
     "options": [
         {
-            "option-header": "Copyright footer",
+            "option-heading": "Copyright footer",
             "option-description": "<p>The copyright footer must appear at the bottom of all pages without any modifications.</p>"
         },
 
@@ -9,7 +9,7 @@
 
 
         {
-            "option-header": "Navigation menu footer",
+            "option-heading": "Navigation menu footer",
             "option-description": "<p>The navigation menu footer should be used if needed and should contain content relevant to the section of the website where the page is located.</p><p>The navigation menu footer must never be included without the copyright footer below it.</p><p>The third column in the navigation menu footer must be reserved for the contact information.</p><p>Custom icons for social media links must not be added. Unique social media links must use text and can only be added to the navigation menu footer (see example below).</p>",
             "website-footer": true,
             "section1": {

@@ -1,12 +1,5 @@
 ---
 title: Featured media
-pattern: featured media
-examples:
-- name: text-video-with-colour-background
-- name: video-text-with-image-background
-- name: text-image-with-colour-background
-- name: image-text-with-image-background
-
 ---
 
 <p>This pattern is for displaying content such as testimonials or reputations with full width background. Text is displayed within the left or right column with an image or video beside it, in a separate column.</p>
@@ -26,3 +19,14 @@ examples:
    <li>Text can be placed in either the left or right column with an image or a video in the other column.</li>
    <li>The background can either be an image or coloured, the colour background cannot be white, grey or yellow.</li>
 </ul>
+
+{{#featured-media-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+	{{> featured-media}}
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> featured-media}}</code></pre>
+{{/featured-media-options.options}}

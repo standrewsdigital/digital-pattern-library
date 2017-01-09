@@ -1,13 +1,8 @@
 ---
 title: Tabs pattern
-pattern: tabs
-examples:
-- name: full-details
 ---
 
 <p>The tabs pattern is a dynamic pattern that shows related content in tabs, but that doesn't need to be seen simultaneously.</p>
-
-<h2>Usage</h2>
 
 <ul>
     <li>Use tabs when you want to show content that is related but isn't meant to be compared.</li>
@@ -16,4 +11,11 @@ examples:
     <li>This pattern should only be used in the main container, not in the aside.</li>
 </ul>
 
-This is a dynamic pattern that uses tabs to show related content that doesn't need to be viewed simultaneously.
+{{#tabs-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+{{> tabs}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> tabs}}</code></pre>
+{{/tabs-options.options}}
