@@ -1,26 +1,26 @@
 {
     "options": [
         {
-            "option-heading": "Sticky navigation",
+            "option-heading": "Example",
             "option-description": "<p></p>",
             "nav-link": [
                 { "name":"Courses",
-                  "link":"subject-courses"
+                  "link":"#"
                 },
                 { "name":"Testimonial",
-                  "link":"testimonial"
+                  "link":"#"
                 },
                 { "name":"Another link",
-                  "link":"test1"
+                  "link":"#"
                 },
-                { "name":"Yet Another",
-                  "link":"test2"
+                { "name":"Yet another",
+                  "link":"#"
                 },
                 { "name":"The last one",
-                  "link":"test3"
+                  "link":"#"
                 }
             ]
-            
-        }      
+
+        }
     ]
  }
