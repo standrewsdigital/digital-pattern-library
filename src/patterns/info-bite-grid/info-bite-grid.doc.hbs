@@ -15,19 +15,11 @@ related:
 
 <p>The Info bite grid pattern presents a set of Info bites in a grid.</p>
 
-<h2>Usage</h2>
-
-<ul>
-	<li>...</li>
-</ul>
-
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> info-bite-grid }}</div>
-
-
-<h2>Options</h2>
-
-<ul>
-    <li><em>None</em></li>
-</ul>
+{{#info-bite-grid-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+{{>  info-bite-grid}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> info-bite-grid}}</code></pre>
+{{/info-bite-grid-options.options}}
