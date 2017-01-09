@@ -1,0 +1,172 @@
+{
+    "options": [
+        {
+            "option-heading": "Primary only navigation",
+            "option-description": "<p></p>",
+            "primary":[
+                {"title": "Undergraduate",
+                 "url": "/study/ug/",
+                 "selected":true},
+                {"title": "Postgraduate",
+                 "url": "/study/pg/",
+                 "selected":false},
+                {"title": "Non-degree courses",
+                 "url": "/study/non-degree/",
+                 "selected":false}, 
+                {"title": "Study abroad",
+                 "url": "/studyabroad/",
+                 "selected":false},  
+                {"title": "International",
+                 "url": "/study/international/",
+                 "selected":false},     
+                 {"title": "Access and outreach",
+                 "url": "/study/access/",
+                 "selected":false}, 
+                {"title": "Courses",
+                 "url": "/courses/",
+                 "selected":false}   
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Primary and expanded secondary navigation",
+            "option-description": "<p></p>",
+            "primary":[
+                {"title": "Undergraduate",
+                 "url": "/study/ug/",
+                 "selected":true},
+                {"title": "Postgraduate",
+                 "url": "/study/pg/",
+                 "selected":false},
+                {"title": "Non-degree courses",
+                 "url": "/study/non-degree/",
+                 "selected":false}, 
+                {"title": "Study abroad",
+                 "url": "/studyabroad/",
+                 "selected":false},  
+                {"title": "International",
+                 "url": "/study/international/",
+                 "selected":false},     
+                 {"title": "Access and outreach",
+                 "url": "/study/access/",
+                 "selected":false}, 
+                {"title": "Courses",
+                 "url": "/courses/",
+                 "selected":false}   
+            ],
+            "secondary":[
+                {"title": "Study options",
+                 "url": "/study/ug/options",
+                 "selected":false},
+                {"title": "Why St Andrews?",
+                 "url": "/study/why/",
+                 "selected":false},
+                {"title": "Fees and funding",
+                 "url": "/study/ug/fees-and-funding/",
+                 "selected":false}, 
+                {"title": "Accommodation",
+                 "url": "/accommodation/ug/",
+                 "selected":false},  
+                {"title": "Your future",
+                 "url": "/study/ug/future/",
+                 "selected":false},     
+                 {"title": "Meet us",
+                 "url": "/study/ug/meet-us/",
+                 "selected":false}, 
+                {"title": "How to apply",
+                 "url": "/study/ug/apply/",
+                 "selected":false}   
+            ]           
+        },
+
+
+
+
+        {
+            "option-heading": "Primary only navigation (study blue)",
+            "option-description": "<p></p>",
+            "blue": true,
+            "primary":[
+                {"title": "Undergraduate",
+                 "url": "/study/ug/",
+                 "selected":true},
+                {"title": "Postgraduate",
+                 "url": "/study/pg/",
+                 "selected":false},
+                {"title": "Non-degree courses",
+                 "url": "/study/non-degree/",
+                 "selected":false}, 
+                {"title": "Study abroad",
+                 "url": "/studyabroad/",
+                 "selected":false},  
+                {"title": "International",
+                 "url": "/study/international/",
+                 "selected":false},     
+                 {"title": "Access and outreach",
+                 "url": "/study/access/",
+                 "selected":false}, 
+                {"title": "Courses",
+                 "url": "/courses/",
+                 "selected":false}   
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Primary and expanded secondary navigation (study blue)",
+            "option-description": "<p></p>",
+            "blue": true,
+            "primary":[
+                {"title": "Undergraduate",
+                 "url": "/study/ug/",
+                 "selected":true},
+                {"title": "Postgraduate",
+                 "url": "/study/pg/",
+                 "selected":false},
+                {"title": "Non-degree courses",
+                 "url": "/study/non-degree/",
+                 "selected":false}, 
+                {"title": "Study abroad",
+                 "url": "/studyabroad/",
+                 "selected":false},  
+                {"title": "International",
+                 "url": "/study/international/",
+                 "selected":false},     
+                 {"title": "Access and outreach",
+                 "url": "/study/access/",
+                 "selected":false}, 
+                {"title": "Courses",
+                 "url": "/courses/",
+                 "selected":false}   
+            ],
+            "secondary":[
+                {"title": "Study options",
+                 "url": "/study/ug/options",
+                 "selected":false},
+                {"title": "Why St Andrews?",
+                 "url": "/study/why/",
+                 "selected":false},
+                {"title": "Fees and funding",
+                 "url": "/study/ug/fees-and-funding/",
+                 "selected":false}, 
+                {"title": "Accommodation",
+                 "url": "/accommodation/ug/",
+                 "selected":false},  
+                {"title": "Your future",
+                 "url": "/study/ug/future/",
+                 "selected":false},     
+                 {"title": "Meet us",
+                 "url": "/study/ug/meet-us/",
+                 "selected":false}, 
+                {"title": "How to apply",
+                 "url": "/study/ug/apply/",
+                 "selected":false}   
+            ]
+        }        
+    ]
+ }
