@@ -87,8 +87,7 @@
 
     <p>Inline code: <code>var x = "abc";</code></p>
 
-<pre><code>
-from urllib.parse import quote
+<pre><code class="pattern-source javascript">from urllib.parse import quote
 import urllib.request
 from urllib.error import URLError, HTTPError
 
@@ -105,8 +104,8 @@ def getUrl(url):
         "status": True,
         "errorMessage": None,
         "code": None,
-        "data": None, 
-        "size": None, 
+        "data": None,
+        "size": None,
         "meta": None,
         "content-type": None
     }
@@ -139,15 +138,14 @@ def getUrl(url):
     result['content-type'] = result['meta'].get_content_type()
     usock.close()
 
-    return result    
-</code></pre>
+    return result</code></pre>
 
     <hr>
 
     <h2>Tables</h2>
 
     <p>[In the future will contain examples of tables.]</p>
-    
+
     <hr>
 
     <h2>Media</h2>
