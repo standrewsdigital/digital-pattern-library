@@ -25,6 +25,6 @@
     },
     "html-elements": {
       "style-type": "success",
-      "message": "Example HTML elements. <a href='../pattern-pages.html'>Back to pattern pages</a>."
+      "message": "Example HTML elements. <a href='../patterns.html'>Back to pattern pages</a>."
     }
 }

@@ -1,14 +1,8 @@
 ---
 title: Section header
-pattern: section-header
-examples:
-- name: section-header-dark-text
-- name: section-header-white-text
 ---
 
 <p>The Section header pattern contains the name of a section with either a full-width dark or light colour background image. Only for use on the subject pages to clearly delineate the different sections.</p>
-
-<h2>Usage</h2>
 
 <ul>
    <li>For subject pages only</li>
@@ -17,9 +11,11 @@ examples:
    <li>Image needs to be 1700 by 300 pixels</li>
 </ul>
 
-<h2>Options</h2>
-
-<ul>
-   <li>Dark grey text on light background</li>
-   <li>White text on dark background</li>
-</ul>
+{{#tabs-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+{{>  section-header}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> section-header}}</code></pre>
+{{/tabs-options.options}}
