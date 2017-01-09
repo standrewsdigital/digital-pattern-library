@@ -20,16 +20,9 @@ related:
 <p>The Info bite pattern is a short snippet of information shown on either a solid background color
 or a background image with a semi-opaque color overlay.</p>
 
-<h2>Usage</h2>
-
 <ul>
 	<li>Used in situations where you want to convey short bites of information, possibly in a grid.</li>
 </ul>
-
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> info-bite }}</div>
-
 
 <h2>Options</h2>
 
@@ -39,3 +32,12 @@ or a background image with a semi-opaque color overlay.</p>
 	<li>To get a portrait info-bite, add a class <code>portrait</code>. This makes the info-bite twice as high.</li>
 	<li>To get a landscape info-bite of use in grids, add a class <code>landscape</code>. This adds styles to make text work better in the larger space.</li>
 </ul>
+
+{{#info-bite-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+{{>  info-bite}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> info-bite}}</code></pre>
+{{/info-bite-options.options}}
