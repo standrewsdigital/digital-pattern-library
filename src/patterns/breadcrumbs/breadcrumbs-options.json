@@ -1,7 +1,7 @@
 {
     "options": [
         {
-            "option-header": "Default breadcrumbs",
+            "option-heading": "Default breadcrumbs",
             "option-description": "<p></p>",
             "parents": [
             {
