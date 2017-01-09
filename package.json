@@ -1,33 +1,33 @@
 {
-    "name": "digital-pattern-library",
-    "version": "0.9.0-rc1",
-    "description": "digital pattern library.",
-    "license": "",
-    "cdn": {
-        "endpoint": "//www.st-andrews.ac.uk/~cdn",
-        "package": "dpl"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/standrewsdigital/digital-pattern-library.git"
-    },
-    "devDependencies": {
-        "grunt": "~1.0.0",
-        "grunt-assemble": "~0.5.0",
-        "grunt-contrib-clean": "~1.0.0",
-        "grunt-contrib-compass": "~1.1.0",
-        "grunt-contrib-concat": "~1.0.0",
-        "grunt-contrib-copy": "~1.0.0",
-        "grunt-contrib-jshint": "~1.0.0",
-        "grunt-contrib-uglify": "~2.0.0",
-        "grunt-contrib-watch": "~1.0.0",
-        "grunt-gitinfo": "~0.1.0",
-        "handlebars-helper-asset": "git://github.com/sjparsons/handlebars-helper-asset.git#relative-links",
-        "handlebars-helper-rel": "git://github.com/sjparsons/handlebars-helper-rel.git#fix",
-        "handlebars-helpers": "~0.7.0",
-        "swag": "~0.7.0"
-    },
-    "keywords": [
-        "handlebars-helper-rel"
-    ]
+  "name": "digital-pattern-library",
+  "version": "0.9.0-rc1",
+  "description": "digital pattern library.",
+  "license": "",
+  "cdn": {
+    "endpoint": "//www.st-andrews.ac.uk/~cdn",
+    "package": "dpl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/standrewsdigital/digital-pattern-library.git"
+  },
+  "devDependencies": {
+    "grunt": "~1.0.0",
+    "grunt-assemble": "~0.5.0",
+    "grunt-contrib-clean": "~1.0.0",
+    "grunt-contrib-compass": "~1.1.0",
+    "grunt-contrib-concat": "~1.0.0",
+    "grunt-contrib-copy": "~1.0.0",
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-contrib-uglify": "~2.0.0",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-gitinfo": "~0.1.0",
+    "handlebars-helper-asset": "git://github.com/sjparsons/handlebars-helper-asset.git#relative-links",
+    "handlebars-helper-rel": "git://github.com/sjparsons/handlebars-helper-rel.git#fix",
+    "handlebars-helpers": "~0.7.0",
+    "swag": "~0.7.0"
+  },
+  "keywords": [
+    "handlebars-helper-rel"
+  ]
 }
