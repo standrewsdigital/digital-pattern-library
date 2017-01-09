@@ -1,31 +1,22 @@
 ---
 title: Staff profile
-pattern: staff-profile
-examples:
-- name: example1
-- name: example2
-- name: example3
-related:
-
 ---
 
-<p>The Staff profile pattern includes a title, name, short biography, contact details, optional photo and optional call to action.</p>
-
-<h2>Usage</h2>
+<p>The staff profile pattern includes a title, name, short biography, contact details, optional photo and optional call to action.</p>
 
 <ul>
 	<li>The <code>bio</code> should be no more than 140 characters.</li>
 	<li>Image must be <code>200px</code> square.</li>
 	<li>If using a call-to-action, an image must be present as well.</li>
 	<li>When the call to action is present, then the <code>title</code> links to the call to action URL too.</li>
+	<li>"Email", "Phone" and "Fax" should always be present if available for the person. However, additional fields may be used: "Website", "Twitter"</li>	
 </ul>
 
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> staff-profile}}</div>
-
-<h2>Options</h2>
-
-<ul>
-	<li>"Email", "Phone" and "Fax" should always be present if available for the person. However, additional fields may be used: "Website", "Twitter"</li>
-</ul>
+{{#staff-profile-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+{{> staff-profile}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> staff-profile}}</code></pre>
+{{/staff-profile-options.options}}
