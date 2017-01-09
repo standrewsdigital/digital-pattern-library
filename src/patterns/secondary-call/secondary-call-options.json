@@ -2,7 +2,7 @@
     "options": [
         {
             "option-heading": "Default",
-            "option-description": "",
+            "option-description": "<p>No <code>secondary-call-*</code> class.</p>",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
             "action": {
@@ -17,7 +17,7 @@
 
 
        {
-            "option-heading": "Secondary call 1",
+            "option-heading": "Background image 1 - left aligned",
             "option-description": "",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
@@ -37,7 +37,7 @@
 
 
        {
-            "option-heading": "Secondary call 2",
+            "option-heading": "Background image 2 - right aligned",
             "option-description": "",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
@@ -54,7 +54,7 @@
 
 
        {
-            "option-heading": "Secondary call 3",
+            "option-heading": "Background image 3 - centre aligned",
             "option-description": "",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
@@ -70,7 +70,7 @@
 
 
        {
-            "option-heading": "Secondary call 4",
+            "option-heading": "Background image 4",
             "option-description": "",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
@@ -86,7 +86,7 @@
 
 
        {
-            "option-heading": "Secondary call 5",
+            "option-heading": "Background image 5",
             "option-description": "",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
@@ -102,7 +102,7 @@
 
 
        {
-            "option-heading": "Secondary call 6",
+            "option-heading": "Background image 6",
             "option-description": "",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
@@ -118,7 +118,7 @@
 
 
        {
-            "option-heading": "Secondary call 7",
+            "option-heading": "Background image 7",
             "option-description": "",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
@@ -138,7 +138,7 @@
 
 
        {
-            "option-heading": "Secondary call 8",
+            "option-heading": "Background image 8",
             "option-description": "",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
@@ -154,7 +154,7 @@
 
 
        {
-            "option-heading": "Secondary call 9",
+            "option-heading": "Background image 9",
             "option-description": "",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
