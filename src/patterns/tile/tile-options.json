@@ -2,7 +2,7 @@
     "options" : [
         {
             "option-heading": "Default tile",
-            "option-description": "<p>This is an example of a default tile.</p>",
+            "option-description": "<p>The description in this example is 173 characters long, to demonstrate how it looks with more than the recommended length of content.</p>",
             "image": {
                 "url": "docs/images/placeholders/360x240.jpg",
                 "alt": "Description"
