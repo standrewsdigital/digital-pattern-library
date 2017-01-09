@@ -1,0 +1,22 @@
+{
+    "options": [
+        {
+            "option-heading": "Dark grey text on light background",
+            "option-description": "<p>Description here.</p>",
+        	"variant": "section-header--bg-lighten",
+		    "bg-image": "docs/images/section-header/bg-section-header-1700x300.jpg",
+		    "sh-content": "Lorem ipsum dolor"
+        },
+
+
+
+
+		{
+			"option-heading": "White text on dark background",
+            "option-description": "<p>Description here.</p>",
+		    "variant": "section-header--inverse long-form--bg-darken",
+		    "bg-image": "docs/images/section-header/bg-section-header-1700x300.jpg",
+		    "sh-content": "Lorem ipsum dolor"
+		} 
+	]
+}
