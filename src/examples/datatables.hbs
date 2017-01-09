@@ -81,7 +81,6 @@
     <script>
         $(document).ready(function(){
 
-
             $('#unit-users').DataTable({
                 bAutoWidth: false,
                 'columnDefs': [
@@ -96,8 +95,6 @@
                     }
                 ]
             });
-
-
 
         });
 
@@ -144,9 +141,9 @@
 
     <p>If you&#39;d like to customise the look, feel or functionality, you can create DataTable instances with your own customisations, beginning with the pattern library defaults and modifying as needed. For example you might call DataTables like this:</p>
 
-    <pre><code>$(&#39;tables.all_my_tables&#39;).DataTable({
-        // Custom options ...
-    });</code></pre>
+<pre><code class="javascript">$(&#39;tables.all_my_tables&#39;).DataTable({
+    // Custom options ...
+});</code></pre>
 
     <p>For more information including a reference manual on DataTables see the <a href="http://www.datatables.net">DataTables website</a>.</p>
 
@@ -154,7 +151,7 @@
     <h2>Examples</h2>
 
         <h3>Add dataTable class</h3>
-        
+
         <p>This table is made into a DataTable by the addition of the dataTable class.</p>
 
         <table id="unit-users2" class="table table-primary dataTable no-footer" role="grid">
