@@ -17,13 +17,20 @@ examples:
 	<li>Use a grid whenever presenting a group of Navboxes.</li>
 </ul>
 
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> navbox-grid navbox-grid-example}}</div>
-
 
 <h2>Options</h2>
 
 <ul>
     <li>Option to disable the no. 2 and 3 or just he no. 3 navboxes using the bootstrap CSS helper class <code>hidden</code></li>
 </ul>
+
+{{#navbox-grid-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+{{> navbox-grid}}
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> navbox-grid}}</code></pre>
+{{/navbox-grid-options.options}}
