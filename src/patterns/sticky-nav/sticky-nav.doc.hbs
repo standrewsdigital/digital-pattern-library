@@ -1,9 +1,5 @@
 ---
 title: Sticky Nav
-pattern: sticky-nav
-examples:
-- name: example1
-  width: 30%;
 ---
 
 <p>The Sticky nav is for linking within a page to in-page content only, and it appears below the normal nav and will affix to the top as you scroll down to it.</p>
@@ -14,13 +10,17 @@ examples:
 	<li>...</li>
 </ul>
 
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> sticky-nav sticky-nav}}</div>
-
-
 <h2>Options</h2>
 
 <ul>
     <li><em>None</em></li>
 </ul>
+
+{{#sticky-nav-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+{{> sticky-nav}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> sticky-nav}}</code></pre>
+{{/sticky-nav-options.options}}
