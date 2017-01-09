@@ -1,0 +1,169 @@
+{
+    "options": [
+        {
+            "option-heading": "Default",
+            "option-description": "",
+            "heading": "News and events",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
+            "action": {
+              "text": "Call to action",
+              "url": "#"
+            },
+            "alignment": "center",
+            "style":""
+       },
+
+
+
+
+       {
+            "option-heading": "Secondary call 1",
+            "option-description": "",
+            "heading": "News and events",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
+            "action": {
+                "text": "Call to action",
+                "url": "#"
+            },
+            "action2": {
+                "text": "Call to action 2",
+                "url": "#"
+            },
+            "alignment": "left",
+            "style": "1"
+       },
+
+
+
+
+       {
+            "option-heading": "Secondary call 2",
+            "option-description": "",
+            "heading": "News and events",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
+            "action": {
+                "text": "Call to action",
+                "url": "#"
+            },
+            "action-url": "#",
+            "alignment": "right",
+            "style": "2"
+       },
+
+
+
+
+       {
+            "option-heading": "Secondary call 3",
+            "option-description": "",
+            "heading": "News and events",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
+            "action": {
+                "text": "Call to action",
+                "url": "#"
+            },
+            "alignment": "center",
+            "style": "3"
+       },
+
+
+
+
+       {
+            "option-heading": "Secondary call 4",
+            "option-description": "",
+            "heading": "News and events",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
+            "action": {
+                "text": "Call to action",
+                "url": "#"
+            },
+            "alignment": "left",
+            "style": "4"
+       },
+
+
+
+
+       {
+            "option-heading": "Secondary call 5",
+            "option-description": "",
+            "heading": "News and events",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
+            "action": {
+                "text": "Call to action",
+                "url": "#"
+            },
+            "alignment": "left",
+            "style": "5"
+       },
+
+
+
+
+       {
+            "option-heading": "Secondary call 6",
+            "option-description": "",
+            "heading": "News and events",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
+            "action": {
+                "text": "Call to action",
+                "url": "#"
+            },
+            "alignment": "left",
+            "style": "6"
+       },
+
+
+
+
+       {
+            "option-heading": "Secondary call 7",
+            "option-description": "",
+            "heading": "News and events",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
+            "action": {
+                "text": "Call to action",
+                "url": "#"
+            },
+            "action2": {
+                "text": "Call to action",
+                "url": "#"
+            },
+            "alignment": "center",
+            "style": "7"
+       },
+
+
+
+
+       {
+            "option-heading": "Secondary call 8",
+            "option-description": "",
+            "heading": "News and events",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
+            "action": {
+                "text": "Call to action",
+                "url": "#"
+            },
+            "alignment": "left",
+            "style": "8"
+       },
+
+
+
+
+       {
+            "option-heading": "Secondary call 9",
+            "option-description": "",
+            "heading": "News and events",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
+            "action": {
+                "text": "Call to action",
+                "url": "#"
+            },
+            "alignment": "left",
+            "style": "9"
+       }
+    ]
+}

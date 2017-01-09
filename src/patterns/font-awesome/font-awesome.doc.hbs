@@ -1,10 +1,5 @@
 ---
 title: Font Awesome
-pattern: font-awesome
-examples:
-- name: sample-usage
-- name: approved-icons
-
 ---
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -15,7 +10,6 @@ examples:
 </blockquote>
 <p>We use Font Awesome 4.x icons to accent elements on webpages and web applications. See below for examples and the list of approved icons.</p>
 
-<h2>Usage</h2>
 <ul>
     <li>You may use only the approved icons, below.</li>
     <li>Use icons to accent existing elements.</li>
@@ -27,3 +21,12 @@ examples:
 
 <h2>Requesting more icons</h2>
 <p>If you would like to use an icon that is not on the approved list (below) please contact the <a href="http://digitalcommunications.wp.st-andrews.ac.uk/about/">digital communications team</a>.</p>
+
+{{#font-awesome-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+{{>  font-awesome}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> font-awesome}}</code></pre>
+{{/font-awesome-options.options}}
