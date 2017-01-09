@@ -1,38 +1,21 @@
 ---
 title: Text banner
-pattern: text-banner
-examples:
-- name: default
-- name: primary
-- name: secondary
-- name: success
-- name: info
-- name: warning
-- name: danger
-- name: primary-left
-- name: primary-right
 ---
 
 <p>The text banner pattern is full-width, short message with a background colour.</p>
 
-<h2>Usage</h2>
 <ul>
     <li>Must be used only at the very top of a page.</li>
     <li>May be used to indicate the status of a page, e.g. alpha or beta version, to alert the user that this is an example page, etc.</li>
 </ul>
 
-<h2>Options</h2>
-<ul>
-    <li><strong>Alignment</strong><Br> By default the text is centre-aligned. You may alter the alignment by adding a <code>.left</code> or <code>.right</code> class.</li>
-    <li><strong>Background colour</strong><br> You can add the following classes to alter the background colour:
-        <ul>
-            <li>default (grey)</li>
-            <li><code>.primary</code> (depends on pallete)</li>
-            <li><code>.secondary</code> (depends on pallete)</li>
-            <li><code>.success</code> (green)</li>
-            <li><code>.info</code> (blue)</li>
-            <li><code>.warning</code> (orange)</li>
-            <li><code>.danger</code> (red)</li>
-        </ul>
-    </li>
-</ul>
+{{#text-banner-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+{{>  text-banner}}
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> text-banner}}</code></pre>
+{{/text-banner-options.options}}
