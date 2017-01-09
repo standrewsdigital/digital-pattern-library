@@ -1,12 +1,5 @@
 ---
 title: Navigation bar
-pattern: navigation-bar
-examples:
-- name: example1
-- name: example2
-- name: example3
-- name: example4
-related:
 ---
 
 <p>The Navigation bar pattern displays a primary horizonal and optional secondary navigation.</p>
@@ -17,11 +10,6 @@ related:
     <li>Each menu should contains 5-8 links</li>
 </ul>
 
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> navigation-bar navigation-bar-2}}</div>
-
-
 <h2>Options</h2>
 
 <ul>
@@ -29,3 +17,12 @@ related:
         Secondary navigation is achieved by using the same pattern for primary, but adding a <code>secondary</code> class to the main element.
     </li>
 </ul>
+
+{{#navigation-bar-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+</div>{{> navigation-bar}}<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> navigation-bar}}</code></pre>
+{{/navigation-bar-options.options}}
