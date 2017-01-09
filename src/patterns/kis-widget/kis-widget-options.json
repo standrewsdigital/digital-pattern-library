@@ -1,0 +1,105 @@
+{
+    "options": [
+        {
+            "option-heading": "Subject list",
+            "option-description": "<p>List of undergraduate courses with a button that opens the KIS widget in a pop-up window.</p>",
+            "columns": [
+                {
+                    "courses": [
+                        {
+                            "subject": "Arabic",
+                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small"
+                        },
+                        {
+                            "subject": "Arabic2",
+                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small"
+                        }
+                    ]
+                },
+                {
+                    "courses": [
+                        {
+                            "subject": "Arabic3",
+                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small"
+                        },
+                        {
+                            "subject": "Arabic4",
+                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small"
+                        }
+                    ]
+                },
+                {
+                    "courses": [
+                        {
+                            "subject": "Arabic57",
+                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small"
+                        },
+                        {
+                            "subject": "Arabic9",
+                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small"
+                        }
+                    ]
+                }
+            ],
+            "example": 1
+        },
+
+
+
+
+        {
+            "option-heading": "Subject banner",
+            "option-description": "<p>KIS widget displayed on its own.</p>",
+            "kis-banner": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small",
+            "example": 2
+        },
+
+
+
+
+        {
+            "option-heading": "Subject list and banner",
+            "option-description": "<p>KIS widget below a list of undergraduate courses.</p>",
+            "columns": [
+                {
+                    "courses": [
+                        {
+                            "subject": "Arabic",
+                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small"
+                        },
+                        {
+                            "subject": "Arabic2",
+                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small"
+                        }
+                    ]
+                },
+                {
+                    "courses": [
+                        {
+                            "subject": "Arabic3",
+                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small"
+                        },
+                        {
+                            "subject": "Arabic4",
+                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small"
+                        }
+                    ]
+                },
+                {
+                    "courses": [
+                        {
+                            "subject": "Arabic57",
+                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small"
+                        },
+                        {
+                            "subject": "Arabic9",
+                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small"
+                        }
+                    ]
+                }
+            ],
+            "kis-banner": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small",
+            "example": 3
+        }
+    ]
+}

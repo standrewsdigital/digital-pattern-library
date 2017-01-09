@@ -2,7 +2,7 @@
     "options": [
 
         {
-            "option-header": "Image background with transparent overlay",
+            "option-heading": "Image background with transparent overlay",
             "option-description": "<p>An image with a transparent colour overlay or a solid colour may be used for the background.</p>",
             "title": "Category title",
             "url": "#"
@@ -12,7 +12,7 @@
 
 
         {
-            "option-header": "Solid background",
+            "option-heading": "Solid background",
             "option-description": "",
             "class": "category-header-solid",
             "title": "Category title",
@@ -23,7 +23,7 @@
 
 
         {
-            "option-header": "Web application",
+            "option-heading": "Web application",
             "option-description": "",
             "class": "category-header-solid",
             "title": "Web application",

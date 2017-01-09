@@ -1,17 +1,8 @@
 ---
 title: Content halves
-pattern: content-halves
-examples:
-- name: no-heading
-- name: heading-background
-- name: heading-video
-related:
 ---
 
 <p>The content halves pattern contains two equal width content columns. There is the option of a heading above the columns and a full-width background colour.</p>
-
-<h2>Usage</h2>
-
 <ul>
 	<li>Content must be present in both columns.</li>
 	<li>A video is allowed in the second column.</li>
@@ -20,9 +11,11 @@ related:
 	<li>If using a background colour, it must use colours from the DPL palette and comply with accessibility for contrast between text and background: a contrast ratio of 0.8 or above.</li>
 </ul>
 
-<h2>Options</h2>
-
-<ul>
-	<li>Heading 2 above the columns.</li>
-	<li>Full width background colour.</li>
-</ul>
+{{#content-halves-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+{{> content-halves}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> content-halves}}</code></pre>
+{{/content-halves-options.options}}

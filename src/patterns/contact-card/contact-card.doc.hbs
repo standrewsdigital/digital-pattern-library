@@ -1,29 +1,21 @@
 ---
 title: Contact Card
-pattern: contact-card
-examples:
-- name: example1
-- name: example2
-related:
-
 ---
 
 <p>The Contact Card pattern includes a name, title, contact details and image. Student card is also the same but without an image.</p>
 
-<h2>Usage</h2>
 
 <ul>
 	<li>Name should be linked to PURE profile for more info.</li>
 	<li>Image must be <code>127px</code> high by <code>111px</code> wide.</li>
 </ul>
 
-<h2>Syntax</h2>
 
-<div class="pattern-source">{{> contact-card}}</div>
-
-
-<h2>Options</h2>
-
-<ul>
-	<li>"Email" and "Phone" should always be present if available for the person.</li>
-</ul>
+{{#contact-card-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+{{> contact-card}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> contact-card}}</code></pre>
+{{/contact-card-options.options}}
