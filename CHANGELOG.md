@@ -10,11 +10,19 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 Release date: Tuesday 10 January 2017
 
+### Added
+
+* Added pattern-options.json to all patterns for the new layout.
+* Added troubleshooting to `SETUP.md`.
+
 ### Changed
 
 * Updated all patterns to reflect the new layout for examples and code.
+* Simplified the homepage.
 
+### Removed
 
+* Remove the data and example folders from all the patterns, as they were no longer needed.
 
 
 ---
