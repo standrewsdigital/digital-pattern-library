@@ -244,3 +244,103 @@ also see the <a href="../../examples/long-form-content.html">full page example
 <h3 id="beta-slider-gallery">Slider gallery (beta)</h3>
 
 <p>The slider gallery provides an alternative interface for displaying large images in the long-form content pages. Note, this is a conceptual implementation currently and needs further engineering before being used in production situations.</p>
+
+
+
+{{#long-form-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+{{> long-form}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> long-form}}</code></pre>
+{{/long-form-options.options}}
+
+
+<hr>
+<h3>Slider gallery (beta)</h3>
+
+<section class="long-form long-form--gallery-slider">
+
+    <div class="container"><div class="row">
+
+        <div class="col-md-4 long-form__content">
+
+            <h3>People involved with Light Box</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud ex</p>
+
+        </div>
+
+        <div class="col-md-8 slider-container long-form__content">
+            <div class="slides">
+
+            <figure class="image">
+                <img src="{{asset "docs/images/long-form-content/presentation-aton.png"}}" alt="Lens">
+                <figcaption>Lens</figcaption>
+            </figure>
+
+            <figure class="image">
+                <img src="{{asset "docs/images/long-form-content/support-light-fantastic.jpg"}}" alt="Field">
+                <figcaption>Field</figcaption>
+            </figure>
+
+            <figure class="image">
+                <img src="{{asset "docs/images/long-form-content/portrait-john-allen.jpg"}}" alt="Prof John Allen">
+                <figcaption>Prof John Allen</figcaption>
+            </figure>
+
+            <figure class="image">
+                <img src="{{asset "docs/images/long-form-content/portrait-ifor-samuel.jpg"}}" alt="Ifor Samuel">
+                <figcaption>Prof Ifor Samuel</figcaption>
+            </figure>
+
+            </div>
+
+        </div>
+
+
+    </div></div>
+
+</section>
+
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html"><section class="long-form long-form--gallery-slider">
+    <div class="container"><div class="row">
+        <div class="col-md-4 long-form__content">
+            <h3>People involved with Light Box</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud ex</p>
+        </div>
+
+        <div class="col-md-8 slider-container long-form__content">
+            <div class="slides">
+
+            <figure class="image">
+                <img src="{{asset "docs/images/long-form-content/presentation-aton.png"}}" alt="Lens">
+                <figcaption>Lens</figcaption>
+            </figure>
+
+            <figure class="image">
+                <img src="{{asset "docs/images/long-form-content/support-light-fantastic.jpg"}}" alt="Field">
+                <figcaption>Field</figcaption>
+            </figure>
+
+            <figure class="image">
+                <img src="{{asset "docs/images/long-form-content/portrait-john-allen.jpg"}}" alt="Prof John Allen">
+                <figcaption>Prof John Allen</figcaption>
+            </figure>
+
+            <figure class="image">
+                <img src="{{asset "docs/images/long-form-content/portrait-ifor-samuel.jpg"}}" alt="Ifor Samuel">
+                <figcaption>Prof Ifor Samuel</figcaption>
+            </figure>
+
+            </div>
+        </div>
+    </div></div>
+</section>
+</code></pre>
