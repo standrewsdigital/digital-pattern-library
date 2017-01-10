@@ -6,6 +6,19 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v0.9.0
+
+Release date: Tuesday 10 January 2017
+
+### Changed
+
+* Updated all patterns to reflect the new layout for examples and code.
+
+
+
+
+---
+
 ## v0.8.12
 
 Release date: Friday 16 December 2016
