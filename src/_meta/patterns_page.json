@@ -141,6 +141,16 @@
             ]
         },
         {
+            "heading": "Form elements",
+            "subheading": "Patterns used to create forms.",
+            "patterns": [
+                { "name": "Form elements",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/form-elements/index.html"
+                }
+            ]
+        },        
+        {
             "heading": "Icons",
             "subheading": "Patterns used to accent elements using icons.",
             "patterns": [
