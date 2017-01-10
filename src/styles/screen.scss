@@ -45,7 +45,7 @@ IMPORTS AND PATTERNS
 @import 'intro/intro';
 @import 'kis-widget/kis-widget';
 @import 'news-updates/news-updates';
-@import 'long-form/long-form';
+@import 'long-form-content/long-form';
 @import 'masonry/masonry';
 @import 'masonry-grid/masonry-grid';
 @import 'navbox/navbox';
@@ -63,7 +63,7 @@ IMPORTS AND PATTERNS
 
 /* Other vendor scripts
    --------------------------------------------------------------------------
-   
+
    @version 1.0.0
    */
 @import 'vendor/jquery.theatre.min';
@@ -88,7 +88,7 @@ GLOBAL CSS RULES
 
 /* Course patterns global rules
    --------------------------------------------------------------------------
-   
+
    @version 1.0.0
    */
 
@@ -118,7 +118,7 @@ GLOBAL CSS RULES
 
 /* Misc global rules
    --------------------------------------------------------------------------
-   Fix for t4 image issues use by adding these two classes to the parent 
+   Fix for t4 image issues use by adding these two classes to the parent
    container of the img in question. Also the hideaway style.
 
    @version 1.0.0
