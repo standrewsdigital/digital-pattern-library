@@ -5,12 +5,15 @@ title: Form elements
 	<h3>File upload</h3>
 
 	<div class="container">
-		<div class="form-group">
-		  <label class="form-label" for="file-input">
-		    Upload a file
-		  </label>
-		  <input type="file" id="file-input">
-		</div>
+		<span class="label label-default">Example</span>
+		<div style="border:1px solid #ddd;padding:10px;margin-bottom:20px">
+			<div class="form-group">
+			  <label class="form-label" for="file-input">
+			    Upload a file
+			  </label>
+			  <input type="file" id="file-input">
+			</div>
+		</div>	
 	</div>
 
 	<div class="container">
@@ -39,18 +42,20 @@ title: Form elements
 	</ul>
 
 	<div class="container">
-
-		<label class="form-label" for="ni-number">
-		  National Insurance number
-		  <span class="help-block">
-		    It's on your National Insurance card, benefit letter, payslip or P60.
-		    <br>
-		    For example, ‘QQ 12 34 56 C’.
-		  </span>
-		</label>
-		<input class="form-control" id="ni-number" type="text">
-
-	</div>		
+		<span class="label label-default">Example</span>
+		<div style="border:1px solid #ddd;padding:10px;margin-bottom:20px">
+			<label class="form-label" for="ni-number">
+			  National Insurance number
+			  <span class="help-block">
+			    It's on your National Insurance card, benefit letter, payslip or P60.
+			    <br>
+			    For example, ‘QQ 12 34 56 C’.
+			  </span>
+			</label>
+			<input class="form-control" id="ni-number" type="text">
+		</div>
+	</div>	
+	
 
 	<div class="container">
 		<span class="label label-default">Code</span>
@@ -77,11 +82,12 @@ title: Form elements
 	</ul>
 
 	<div class="container">
-
-		<label class="form-label" for="full-name-f1">Full name</label>
-		<input class="form-control" id="full-name-f1" type="text">
-
-	</div>		
+		<span class="label label-default">Example</span>
+		<div style="border:1px solid #ddd;padding:10px;margin-bottom:20px">
+			<label class="form-label" for="full-name-f1">Full name</label>
+			<input class="form-control" id="full-name-f1" type="text">
+		</div>
+	</div>
 
 	<div class="container">
 		<span class="label label-default">Code</span>
@@ -106,24 +112,29 @@ title: Form elements
 
 	<h4>Inline radio buttons</h4>
 
-	<form>
-	  <div class="form-group">
-	    <fieldset class="inline">
+	<div class="container">
+		<span class="label label-default">Example</span>
+		<div style="border:1px solid #ddd;padding:10px;margin-bottom:20px">
+			<form>
+			  <div class="form-group">
+			    <fieldset class="inline">
 
-	      <legend class="visually-hidden">Do you already have a personal user account?</legend>
+			      <legend class="visually-hidden">Do you already have a personal user account?</legend>
 
-	      <label class="block-label selection-button-radio" for="radio-inline-1">
-	        <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
-	        Yes
-	      </label>
-	      <label class="block-label selection-button-radio" for="radio-inline-2">
-	        <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
-	        No
-	      </label>
+			      <label class="block-label selection-button-radio" for="radio-inline-1">
+			        <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+			        Yes
+			      </label>
+			      <label class="block-label selection-button-radio" for="radio-inline-2">
+			        <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+			        No
+			      </label>
 
-	    </fieldset>
-	  </div>
-	</form>
+			    </fieldset>
+			  </div>
+			</form>
+		</div>
+	</div>
 
 	<div class="container">
 		<span class="label label-default">Code</span>
@@ -153,29 +164,34 @@ title: Form elements
 
 	<h4>Stacked radio buttons</h4>
 
-<form>
-  <div class="form-group">
-    <fieldset>
+		<div class="container">
+			<span class="label label-default">Example</span>
+			<div style="border:1px solid #ddd;padding:10px;margin-bottom:20px">
+				<form>
+				  <div class="form-group">
+				    <fieldset>
 
-      <legend class="visually-hidden">Where do you live?</legend>
+				      <legend class="visually-hidden">Where do you live?</legend>
 
-      <label class="block-label selection-button-radio" for="radio-1">
-        <input id="radio-1" type="radio" name="radio-group" value="Northern Ireland">
-        Northern Ireland
-      </label>
-      <label class="block-label selection-button-radio" for="radio-2">
-        <input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
-        Isle of Man or the Channel Islands
-      </label>
-      <p class="form-block">or</p>
-      <label class="block-label selection-button-radio" for="radio-3">
-        <input id="radio-3" type="radio" name="radio-group" value="I am a British citizen living abroad">
-        I am a British citizen living abroad
-      </label>
+				      <label class="block-label selection-button-radio" for="radio-1">
+				        <input id="radio-1" type="radio" name="radio-group" value="Northern Ireland">
+				        Northern Ireland
+				      </label>
+				      <label class="block-label selection-button-radio" for="radio-2">
+				        <input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
+				        Isle of Man or the Channel Islands
+				      </label>
+				      <p class="form-block">or</p>
+				      <label class="block-label selection-button-radio" for="radio-3">
+				        <input id="radio-3" type="radio" name="radio-group" value="I am a British citizen living abroad">
+				        I am a British citizen living abroad
+				      </label>
 
-    </fieldset>
-  </div>
-</form>
+				    </fieldset>
+				  </div>
+				</form>
+			</div>
+		</div>
 
 	<div class="container">
 		<span class="label label-default">Code</span>
