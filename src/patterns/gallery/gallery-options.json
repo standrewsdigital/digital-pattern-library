@@ -1,10 +1,125 @@
 {
     "options": [
         {
-            "option-heading": "Gallery",
+            "option-heading": "Single gallery",
+            "option-description": "",
+            "gallery-title": "Title of gallery",
+            "gallery-description": "Gallery description",
+            "gallery-images-class": "lightbox_gallery_images",
+            "gallery-images": [
+                {
+                    "thumbnail":  "docs/images/placeholders/360x240-7.jpg",
+                    "alt":        "alt text for image 1",
+                    "id":         "optional-id2",
+                    "caption":    "Image 1",
+                    "large-img":  "docs/images/placeholders/1280x853-7.jpg",
+                    "lightbox-gallery": "gallery-1"
+                },
+                {
+                    "thumbnail":  "docs/images/placeholders/360x240-8.jpg",
+                    "alt":        "alt text for image 2",
+                    "id":         "optional-id3",
+                    "caption":    "Image 2",
+                    "large-img":  "docs/images/placeholders/1280x853-8.jpg",
+                    "lightbox-gallery": "gallery-1"
+                },
+                {
+                    "thumbnail":  "docs/images/placeholders/360x240-9.jpg",
+                    "alt":        "alt text for image 3",
+                    "id":         "optional-id4",
+                    "caption":    "Image 3",
+                    "large-img":  "docs/images/placeholders/1280x853-9.jpg",
+                    "lightbox-gallery": "gallery-1"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Multiple galleries",
+            "option-description": "Top and bottom row are two separate galleries.",
+            "gallery-title": "Title of gallery",
+            "gallery-description": "Gallery description",
+            "gallery-images-class": "lightbox_gallery_images",
+            "gallery-images": [
+                {
+                    "thumbnail":  "docs/images/placeholders/360x240-7.jpg",
+                    "alt":        "alt text for image 1",
+                    "id":         "optional-id2",
+                    "caption":    "Gallery 1 image 1",
+                    "large-img":  "docs/images/placeholders/1280x853-7.jpg",
+                    "lightbox-gallery": "gallery-2"
+                },
+                {
+                    "thumbnail":  "docs/images/placeholders/360x240-8.jpg",
+                    "alt":        "alt text for image 2",
+                    "id":         "optional-id3",
+                    "caption":    "Gallery 1 image 2",
+                    "large-img":  "docs/images/placeholders/1280x853-8.jpg",
+                    "lightbox-gallery": "gallery-2"
+                },
+                {
+                    "thumbnail":  "docs/images/placeholders/360x240-7.jpg",
+                    "alt":        "alt text for image 3",
+                    "id":         "optional-id4",
+                    "caption":    "Gallery 1 image 3",
+                    "large-img":  "docs/images/placeholders/1280x853-7.jpg",
+                    "lightbox-gallery": "gallery-2"
+                },
+                {
+                    "thumbnail":  "docs/images/placeholders/360x240-8.jpg",
+                    "alt":        "alt text for image 1",
+                    "id":         "optional-id2",
+                    "caption":    "Gallery 1 image 4",
+                    "large-img":  "docs/images/placeholders/1280x853-8.jpg",
+                    "lightbox-gallery": "gallery-2"
+                },
+                {
+                    "thumbnail":  "docs/images/placeholders/360x240-8.jpg",
+                    "alt":        "alt text for image 2",
+                    "id":         "optional-id3",
+                    "caption":    "Gallery 2 image 1",
+                    "large-img":  "docs/images/placeholders/1280x853-8.jpg",
+                    "lightbox-gallery": "gallery-3"
+                },
+                {
+                    "thumbnail":  "docs/images/placeholders/360x240-9.jpg",
+                    "alt":        "alt text for image 3",
+                    "id":         "optional-id4",
+                    "caption":    "Gallery 2 image 2",
+                    "large-img":  "docs/images/placeholders/1280x853-9.jpg",
+                    "lightbox-gallery": "gallery-3"
+                },
+                {
+                    "thumbnail":  "docs/images/placeholders/360x240-8.jpg",
+                    "alt":        "alt text for image 2",
+                    "id":         "optional-id3",
+                    "caption":    "Gallery 2 image 3",
+                    "large-img":  "docs/images/placeholders/1280x853-8.jpg",
+                    "lightbox-gallery": "gallery-3"
+                },
+                {
+                    "thumbnail":  "docs/images/placeholders/360x240-9.jpg",
+                    "alt":        "alt text for image 3",
+                    "id":         "optional-id4",
+                    "caption":    "Gallery 2 image 4",
+                    "large-img":  "docs/images/placeholders/1280x853-9.jpg",
+                    "lightbox-gallery": "gallery-3"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Old-gallery",
             "option-description": "",
             "gallery-title": "Title of gallery",
 		    "gallery-description": "Description",
+            "gallery-images-class": "gallery__images",
 		    "gallery-images": [
 		        {
 		            "thumbnail":  "docs/images/placeholders/360x240-7.jpg",
