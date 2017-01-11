@@ -2,126 +2,316 @@
 title: Form elements
 ---
 
-	<h3>File upload</h3>
+<p>Keep forms as simple as possible.</p>
+<h3>Options</h3>
+<ul>
+	<li><a href="#checkboxes">Checkboxes</a></li>
+	<li><a href="#conditional">Conditionally revealing content</a></li>
+	<li><a href="#file-upload">File upload</a></li>
+	<li><a href="#form-focus-states">Form focus states</a></li>		
+	<li><a href="#hint-text">Hint text</a></li>
+	<li><a href="#labels">Labels</a></li>
+	<li><a href="#radio-buttons">Radio buttons</a></li>
+	<li><a href="#select-boxes">Select boxes</a></li>
+</ul>
 
-	<div class="container">
-		<span class="label label-default">Example</span>
-		<div style="border:1px solid #ddd;padding:10px;margin-bottom:20px">
-			{{> form-elements-upload}}
-		</div>	
-	</div>
+<hr>
 
-	<div class="container">
-		<span class="label label-default">Code</span>
-		<pre>
-			<code class="pattern-source html">
-{{> form-elements-upload}}
-			</code>
-		</pre>
-	</div>
+<h3 id="checkboxes">Checkboxes</h3>
 
-	<hr>
+<ul>
+	<li>Make it clear with words when users can select one or more multiple options.</li>
+</ul>
 
-	<h3>Hint text</h3>
-	
-	<ul>
-		<li>Don’t use placeholder text in form fields, as this will disappear once content is entered into the form field.</li>
-		<li>Use hint text for supporting contextual help, this will always be shown.</li>
-		<li>Hint text should sit above a form field.</li>
-		<li>Ensure hint text can be read correctly by screen readers.</li>
-	</ul>
+<h4>Stacked checkboxes</h4>
 
-	<div class="container">
-		<span class="label label-default">Example</span>
-		<div style="border:1px solid #ddd;padding:10px;margin-bottom:20px">
-			{{> form-elements-hint}}
-		</div>
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-checkboxes-stacked}}
 	</div>	
+</div>
 
-	<div class="container">
-		<span class="label label-default">Code</span>
-		<pre>
-			<code class="pattern-source html">
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre>
+		<code class="pattern-source html">
+{{> form-elements-checkboxes-stacked}}
+		</code>
+	</pre>
+</div>
+
+<hr>
+
+
+
+
+<h4>Inline checkboxes</h4>
+
+<ul>
+	<li>Large hit areas aren’t always appropriate.</li>
+	<li>Only pre-select options if there’s a strong, user-centred reason to.</li>
+</ul>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-checkboxes-inline}}
+	</div>	
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre>
+		<code class="pattern-source html">
+{{> form-elements-checkboxes-inline}}
+		</code>
+	</pre>
+</div>
+
+<hr>
+
+
+
+
+<h3 id="conditional">Conditionally revealing content</h3>
+
+<ul>
+	<li>Reveal additional questions, depending on the context.</li>
+	<li>A left border is used to emphasise this supporting information.</li>
+</ul>
+
+<h4>Radio buttons</h4>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-conditional-radio}}
+	</div>	
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre>
+		<code class="pattern-source html">
+{{> form-elements-conditional-radio}}
+		</code>
+	</pre>
+</div>
+
+<hr>
+
+
+
+
+<h4>Checkboxes</h4>
+
+<p>Click on 'citizen of a different country' to see how this works.</p>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div style="border:1px solid #ddd;padding:10px;margin-bottom:20px">
+		{{> form-elements-conditional-checkbox}}
+	</div>	
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre>
+		<code class="pattern-source html">
+{{> form-elements-conditional-checkbox}}
+		</code>
+	</pre>
+</div>
+
+<hr>
+
+
+
+
+<h3 id="file-upload">File upload</h3>
+
+<p>We recommend using a native input using type="file", rather than a custom implementation.<p>
+
+<p>This is so:</p>
+
+<ul>
+	<li>The control gains focus when tabbing through the page.</li>
+	<li>The control functions using a keyboard.</li>
+	<li>The control functions using assistive technology.</li>
+	<li>The control functions when javascript is not available.</li>
+</ul>
+
+<p>A custom implementation of this control would need to meet the criteria above.</p>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div style="border:1px solid #ddd;padding:10px;margin-bottom:20px">
+		{{> form-elements-file-upload}}
+	</div>	
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre>
+		<code class="pattern-source html">
+{{> form-elements-file-upload}}
+		</code>
+	</pre>
+</div>
+
+<hr>
+
+
+
+
+<h3 id="form-focus-states">Form focus states</h3>
+
+<ul>
+	<li>All elements use the yellow focus style as a highlight, as either a fill or 3px outline.</li>
+	<li>Click on the label “Full name” or inside the form field to show the focus state.</li>
+</ul>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div style="border:1px solid #ddd;padding:10px;margin-bottom:20px">
+		{{> form-elements-focus-states}}
+	</div>
+</div>	
+
+<hr>
+
+
+
+
+<h3 id="hint-text">Hint text</h3>
+
+<ul>
+	<li>Don’t use placeholder text in form fields, as this will disappear once content is entered into the form field.</li>
+	<li>Use hint text for supporting contextual help, this will always be shown.</li>
+	<li>Hint text should sit above a form field.</li>
+	<li>Ensure hint text can be read correctly by screen readers.</li>
+</ul>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div style="border:1px solid #ddd;padding:10px;margin-bottom:20px">
+		{{> form-elements-hint}}
+	</div>
+</div>	
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre>
+		<code class="pattern-source html">
 {{> form-elements-hint}}
-			</code>
-		</pre>
+		</code>
+	</pre>
+</div>
+
+<hr>
+
+
+
+
+<h3 id="labels">Labels</h3>
+
+<ul>
+	<li>All form fields should be given labels.</li>
+	<li>Don’t hide labels, unless the surrounding context makes them unnecessary.</li>
+	<li>Labels should be aligned above their fields.</li>
+	<li>Label text should be short, direct and in sentence case.</li>
+	<li>Avoid colons at the end of labels.</li>
+	<li>labels should be associated with form fields using the <code>for</code> attribute.</li>
+</ul>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div style="border:1px solid #ddd;padding:10px;margin-bottom:20px">
+		{{> form-elements-label}}
 	</div>
+</div>
 
-	<hr>
-
-	<h3>Labels</h3>
-	
-	<ul>
-		<li>All form fields should be given labels.</li>
-		<li>Don’t hide labels, unless the surrounding context makes them unnecessary.</li>
-		<li>Labels should be aligned above their fields.</li>
-		<li>Label text should be short, direct and in sentence case.</li>
-		<li>Avoid colons at the end of labels.</li>
-		<li>labels should be associated with form fields using the <code>for</code> attribute.</li>
-	</ul>
-
-	<div class="container">
-		<span class="label label-default">Example</span>
-		<div style="border:1px solid #ddd;padding:10px;margin-bottom:20px">
-			{{> form-elements-label}}
-		</div>
-	</div>
-
-	<div class="container">
-		<span class="label label-default">Code</span>
-		<pre>
-			<code class="pattern-source html">
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre>
+		<code class="pattern-source html">
 {{> form-elements-label}}
-			</code>
-		</pre>	
+		</code>
+	</pre>	
+</div>
+
+<hr>
+
+
+
+
+<h3 id="radio-buttons">Radio buttons</h3>
+
+<ul>
+	<li>Use these to let users choose a single option from a list.</li>
+	<li>For more than two options, radio buttons should be stacked.</li>
+	<li>Radio buttons with large hit areas are easier to select with a mouse or touch devices.</li>
+</ul>
+
+<h4>Inline radio buttons</h4>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div style="border:1px solid #ddd;padding:10px;margin-bottom:20px">
+		{{> form-elements-radio-inline}}
 	</div>
+</div>
 
-	<hr>
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre>
+		<code class="pattern-source html">	
+{{> form-elements-radio-inline}}
+		</code>
+	</pre>
+</div>
+
+<hr>
 
 
-	<h3>Radio buttons</h3>
 
-	<ul>
-		<li>Use these to let users choose a single option from a list.</li>
-		<li>For more than two options, radio buttons should be stacked.</li>
-		<li>Radio buttons with large hit areas are easier to select with a mouse or touch devices.</li>
-	</ul>
 
-	<h4>Inline radio buttons</h4>
+<h4>Stacked radio buttons</h4>
 
 	<div class="container">
 		<span class="label label-default">Example</span>
 		<div style="border:1px solid #ddd;padding:10px;margin-bottom:20px">
-			{{> form-elements-radio-inline}}
+			{{> form-elements-radio-stacked}}
 		</div>
 	</div>
 
-	<div class="container">
-		<span class="label label-default">Code</span>
-		<pre>
-			<code class="pattern-source html">	
-{{> form-elements-radio-inline}}
-			</code>
-		</pre>
-	</div>
-
-	<hr>
-
-	<h4>Stacked radio buttons</h4>
-
-		<div class="container">
-			<span class="label label-default">Example</span>
-			<div style="border:1px solid #ddd;padding:10px;margin-bottom:20px">
-				{{> form-elements-radio-stacked}}
-			</div>
-		</div>
-
-	<div class="container">
-		<span class="label label-default">Code</span>
-		<pre>
-			<code class="pattern-source html">	
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre>
+		<code class="pattern-source html">	
 {{> form-elements-radio-stacked}}
-			</code>
-		</pre>	
+		</code>
+	</pre>	
+</div>
+
+
+<h3 id="select-boxes">Select boxes</h3>
+
+<p>Avoid using select boxes (drop-down lists). Use radio buttons or checkboxes instead.</p>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div style="border:1px solid #ddd;padding:10px;margin-bottom:20px">
+		{{> form-elements-select-boxes}}
 	</div>
-	
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre>
+		<code class="pattern-source html">	
+{{> form-elements-select-boxes}}
+		</code>
+	</pre>	
+</div>
