@@ -16,6 +16,11 @@ div.map-responsive iframe {
     height:100%;
     width:100%;
     position:absolute;
+    border: none;
+}
+
+iframe div#watermark {
+    display: none !important;
 }
 
 /*********************************/
