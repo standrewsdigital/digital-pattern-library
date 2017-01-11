@@ -2,20 +2,24 @@
 title: Google maps
 ---
 
-<p>Generic Google map with choice for multiple or single location markers. Locations held in local or external JSON data.</p>
+<p>Generic Google map.</p>
+
+<p>Useful resources:
 
 <ul>
-   <li>May be used by any site to show building locations.</li>
-   <li>Populate JSON data with location longitude, latitude and address.</li>
+	<li><a href="https://support.google.com/mymaps/answer/3024925?visit_id=1-636197288074485205-308693475&p=lite_addplaces&rd=1">Add places and search results</a></li>
 </ul>
 
-<p><strong>External JSON file</strong> Need to add <code>$.getJSON</code> command -- <code>$.getJSON( "FILENAME" , function(locations) {</code> to google.maps.js file as shown in comments within code.</p>
+</p>
+
 
 {{#google-maps-options.options}}
 <hr>
 <h3>{{option-heading}}</h3>
 {{{option-description}}}
+</div>
 {{> google-maps}}
+<div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> google-maps}}</code></pre>
 {{/google-maps-options.options}}

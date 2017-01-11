@@ -4,16 +4,30 @@
 
     <div class="container">
         <div class="row">
-        {{#if text}}
-        	<div class="col-sm-4">{{text}}</div>
-        	<div class="col-sm-8">
-                <div id="googleMap"></div>
-            </div>
-        {{else}}
-            <div class="col-sm-12">
-                <div id="googleMap"></div>
-            </div>
-        {{/if}}
+            
+            {{#if column1}}
+
+                <div class="{{column1}}">
+                    <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1D-p7YJVQikShUw0JmMykNQePbMI" width="auto" height="auto"></iframe>
+                    </div>
+                </div>
+                <div class="{{column2}}">
+                    <p>{{text}}</p>
+                </div>
+
+
+            {{else}}
+
+                <div class="col-sm-12">
+                    <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1Phkv5Rp7yNEsP1ZDFe_WgsnwAbg" width="auto" height="auto"></iframe>
+                    </div>
+                    <p>{{text}}</p>
+                </div>
+
+            {{/if}}
+
         </div>
     </div>
 
