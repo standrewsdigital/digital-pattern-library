@@ -221,6 +221,7 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/jquery.theatre.min.js',
                     'src/scripts/vendor/respond.js',
                     'src/scripts/vendor/highlight/highlight.pack.js',
+                    'src/scripts/vendor/lightbox.min.js',
 
                     // Bootstrap JavaScript
                     // Note these scripts should align with the CSS
@@ -267,6 +268,8 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/jquery.replacetext.js',
                     'src/scripts/vendor/jquery.theatre.min.js',
                     'src/scripts/vendor/respond.js',
+                    'src/scripts/vendor/highlight/highlight.pack.js',
+                    'src/scripts/vendor/lightbox.min.js',
 
                     // Bootstrap JavaScript
                     // Note these scripts should align with the CSS
