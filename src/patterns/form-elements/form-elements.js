@@ -1,15 +1,11 @@
 
 /*********************************/
-/* BEGIN Pattern: tile           */
+/* BEGIN Pattern: form-elements  */
 /*********************************/
 
 
-// Use bigTarget to make tile image clickable.
-$(".tile h3 a").bigTarget({
-    clickZone : 'div:eq(1)' // jQuery parent selector
-});
 
 
 /*********************************/
-/* END Pattern: tile             */
+/* END Pattern: form-elements    */
 /*********************************/

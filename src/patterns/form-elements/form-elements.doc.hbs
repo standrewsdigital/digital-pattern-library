@@ -3,12 +3,19 @@ title: Form elements
 ---
 
 <p>Keep forms as simple as possible.</p>
+
+<ul>
+	<li>Only ask for the information you absolutely need.</li>
+	<li>If you do ask for optional information, mark the labels of optional fields with ‘(optional)’.</li>
+	<li>Don’t mark mandatory fields with asterisks.</li>
+</ul>
+
 <h3>Options</h3>
 <ul>
 	<li><a href="#checkboxes">Checkboxes</a></li>
 	<li><a href="#conditional">Conditionally revealing content</a></li>
 	<li><a href="#file-upload">File upload</a></li>
-	<li><a href="#form-focus-states">Form focus states</a></li>		
+	<li><a href="#form-inputs">Input fields</a></li>		
 	<li><a href="#hint-text">Hint text</a></li>
 	<li><a href="#labels">Labels</a></li>
 	<li><a href="#radio-buttons">Radio buttons</a></li>
@@ -34,11 +41,7 @@ title: Form elements
 
 <div class="container">
 	<span class="label label-default">Code</span>
-	<pre>
-		<code class="pattern-source html">
-{{> form-elements-checkboxes-stacked}}
-		</code>
-	</pre>
+	<pre><code class="pattern-source html">{{> form-elements-checkboxes-stacked}}</code></pre>
 </div>
 
 <hr>
@@ -62,11 +65,7 @@ title: Form elements
 
 <div class="container">
 	<span class="label label-default">Code</span>
-	<pre>
-		<code class="pattern-source html">
-{{> form-elements-checkboxes-inline}}
-		</code>
-	</pre>
+	<pre><code class="pattern-source html">{{> form-elements-checkboxes-inline}}</code></pre>
 </div>
 
 <hr>
@@ -92,11 +91,7 @@ title: Form elements
 
 <div class="container">
 	<span class="label label-default">Code</span>
-	<pre>
-		<code class="pattern-source html">
-{{> form-elements-conditional-radio}}
-		</code>
-	</pre>
+	<pre><code class="pattern-source html">{{> form-elements-conditional-radio}}</code></pre>
 </div>
 
 <hr>
@@ -117,11 +112,7 @@ title: Form elements
 
 <div class="container">
 	<span class="label label-default">Code</span>
-	<pre>
-		<code class="pattern-source html">
-{{> form-elements-conditional-checkbox}}
-		</code>
-	</pre>
+	<pre><code class="pattern-source html">{{> form-elements-conditional-checkbox}}</code></pre>
 </div>
 
 <hr>
@@ -153,11 +144,57 @@ title: Form elements
 
 <div class="container">
 	<span class="label label-default">Code</span>
-	<pre>
-		<code class="pattern-source html">
-{{> form-elements-file-upload}}
-		</code>
-	</pre>
+	<pre><code class="pattern-source html">{{> form-elements-file-upload}}</code></pre>
+</div>
+
+<hr>
+
+
+
+<h3 id="inputs">Input fields</h3>
+
+<p>Make field widths proportional to the input they take.</p>
+
+<p>Ensure that users can enter the information they need at smaller screen sizes.</p>
+
+<p>Snap form fields to 100% width at smaller screen sizes.</p>
+
+<h4>Standard input</h4>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-input}}
+	</div>
+</div>	
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-input}}</code></pre>
+</div>
+
+<hr>
+
+
+
+<h4>Input addons</h4>
+
+<p>Addons can be used when the input field is always going to prefixed with a particular value.</p>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4">
+			<span class="label label-default">Example</span>
+			<div class="pattern-example">
+				{{> form-elements-input-addon}}
+			</div>
+		</div>	
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-input-addon}}</code></pre>
 </div>
 
 <hr>
@@ -165,7 +202,49 @@ title: Form elements
 
 
 
-<h3 id="form-focus-states">Form focus states</h3>
+<h4>Textarea</h4>
+
+<p>A longer block of help text that breaks onto a new line and may extend beyond one line.</p>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-input-textarea}}
+	</div>
+</div>	
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-input-textarea}}</code></pre>
+</div>
+
+<hr>
+
+
+
+
+<h4>Spacing</h4>
+
+<p>Use the <code>.form-group</code> class to create spacing when wrapping label and input pairts.</p>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-input-spacing}}
+	</div>
+</div>	
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-input-spacing}}</code></pre>
+</div>
+
+<hr>
+
+
+
+
+<h4>Focused input</h4>
 
 <ul>
 	<li>All elements use the yellow focus style as a highlight, as either a fill or 3px outline.</li>
@@ -201,11 +280,7 @@ title: Form elements
 
 <div class="container">
 	<span class="label label-default">Code</span>
-	<pre>
-		<code class="pattern-source html">
-{{> form-elements-hint}}
-		</code>
-	</pre>
+	<pre><code class="pattern-source html">{{> form-elements-hint}}</code></pre>
 </div>
 
 <hr>
@@ -233,11 +308,7 @@ title: Form elements
 
 <div class="container">
 	<span class="label label-default">Code</span>
-	<pre>
-		<code class="pattern-source html">
-{{> form-elements-label}}
-		</code>
-	</pre>	
+	<pre><code class="pattern-source html">{{> form-elements-label}}</code></pre>	
 </div>
 
 <hr>
@@ -264,11 +335,7 @@ title: Form elements
 
 <div class="container">
 	<span class="label label-default">Code</span>
-	<pre>
-		<code class="pattern-source html">	
-{{> form-elements-radio-inline}}
-		</code>
-	</pre>
+	<pre><code class="pattern-source html">{{> form-elements-radio-inline}}</code></pre>
 </div>
 
 <hr>
@@ -287,11 +354,7 @@ title: Form elements
 
 <div class="container">
 	<span class="label label-default">Code</span>
-	<pre>
-		<code class="pattern-source html">	
-{{> form-elements-radio-stacked}}
-		</code>
-	</pre>	
+	<pre><code class="pattern-source html">{{> form-elements-radio-stacked}}</code></pre>	
 </div>
 
 
@@ -308,9 +371,5 @@ title: Form elements
 
 <div class="container">
 	<span class="label label-default">Code</span>
-	<pre>
-		<code class="pattern-source html">	
-{{> form-elements-select-boxes}}
-		</code>
-	</pre>	
+	<pre><code class="pattern-source html">{{> form-elements-select-boxes}}</code></pre>	
 </div>
