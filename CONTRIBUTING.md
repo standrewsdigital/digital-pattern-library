@@ -45,7 +45,7 @@ Last updated: Tuesday 22 November 2016
 
 ## 1. Introduction
 
-Hurrah! So you want to contribute to the pattern library. That's great news. Here are some helpful guidelines to get you started.
+Hurrah! So you want to contribute to the digital pattern library (DPL). That's great news. Here are some helpful guidelines to get you started.
 
 
 ### 1.1 Set up
@@ -85,7 +85,6 @@ Developers using the DPL should not fork the code in GitHub. No patterns or elem
 New patterns may only be created by developers working directly alongside the digital communications team.
 
 Commit messages must follow the [commit message style guide](https://github.com/standrewsdigital/digital-code-style-guide/blob/master/commit-messages.md).
-
 
 
 ### 1.5 Version numbers
