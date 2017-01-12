@@ -28,7 +28,7 @@ Last updated: Tuesday 22 November 2016
 - [4. How to add a new pattern \(manually\)](#4-how-to-add-a-new-pattern-manually)
     - [4.1 Branch from master](#41-branch-from-master)
     - [4.2 Create a new folder](#42-create-a-new-folder)
-    - [4.3 Create Handlebars files](#43-create-handlebars-files)
+    - [4.3 Create two Handlebars files](#43-create-two-handlebars-files)
     - [4.4 Create a Sass file](#44-create-a-sass-file)
     - [4.5 Add a Sass partial](#45-add-a-sass-partial)
     - [4.6 Add JavaScript \(optional\)](#46-add-javascript-optional)
@@ -295,23 +295,23 @@ In the following example we will use these names:
 
 ### 4.1 Branch from master
 
-Using your preffered Git client create a new branch using your new pattern name.
+Using your preffered Git client, create a new branch using your new pattern name.
 
 
 ### 4.2 Create a new folder
 
-Create the folder `src/patterns/new-feature`. This folder contains the JavaScript, CSS and documentation for the feature.
+Create the folder `src/patterns/new-feature`. This folder contains the HTML, JavaScript, CSS and documentation for the new pattern.
 
 
-### 4.3 Create Handlebars files
+### 4.3 Create two Handlebars files
 
 Create a Handlebars file `src/patterns/new-feature/new-feature.hbs`.
 
-This file contains the source HTML for the pattern in Handlebars format. Being Handlebars means that you can populate dynamic portions of the HTML with Handlebars values. See [Handlebars](http://handlebarsjs.com/) for more info.
+This file contains the source HTML for the pattern in Handlebars format. Being Handlebars means that you can populate dynamic portions of the HTML with Handlebars values. See [Handlebars](http://handlebarsjs.com/) for more information.
 
 Create Handlebars file `src/patterns/new-feature/new-feature.doc.hbs`.
 
-This file is the main documentation for the pattern. The file should begin with YAML font matter (the section beginning and ending in `---`). It then should contain HTML with Handlebars code to build the documentation page. Here's an example:
+This file is the main documentation for the pattern. The file should begin with YAML front matter (the section beginning and ending in `---`). It then should contain HTML with Handlebars code to build the documentation page. Here's an example:
 
 ```html
 
@@ -348,6 +348,8 @@ related:
 ```
 
 The Assemble grunt plugin that builds the documentation populates the Handlebars template below with the variables defined in the YAML front matter.
+
+See [Assemble](http://assemble.io/docs/YAML-front-matter.html) documentation for more information.
 
 
 ### 4.4 Create a Sass file
