@@ -3,24 +3,8 @@
 /* BEGIN Pattern: google-maps    */
 /*********************************/
 
-div.map-responsive {
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+div.google-map {
     margin-bottom: 25px;
-}
-div.map-responsive iframe {
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-    border: none;
-}
-
-iframe div#watermark {
-    display: none !important;
 }
 
 /*********************************/

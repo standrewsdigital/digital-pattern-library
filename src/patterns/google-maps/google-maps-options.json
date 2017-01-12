@@ -1,28 +1,43 @@
 {
     "options": [
         {
-            "option-heading": "Map with content whole",
+            "option-heading": "Multiple point map with content whole",
             "option-description": "<p></p>",
-            "height": "800",
-            "width": "600",
+            "map": "https://www.google.com/maps/d/embed?mid=1Phkv5Rp7yNEsP1ZDFe_WgsnwAbg",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices eu elit id tempor. Fusce at porta lorem, eget porta libero. Ut vitae odio id lacus faucibus ornare at vitae orci. Sed lacus quam."
         },
 
         {
-            "option-heading": "Map with content halves",
+            "option-heading": "Single point map with content halves",
             "option-description": "<p></p>",
-            "height": "500",
-            "width": "400",
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2211.7983783053537!2d-2.783149472495096!3d56.33330903275121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488657eb4b447f4d%3A0x9b073dd5fb229edd!2sAlbany+Park%2C+St+Andrews+KY16+8BP!5e0!3m2!1sen!2suk!4v1484151752542",
             "column1": "col-sm-6",
             "column2": "col-sm-6",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices eu elit id tempor. Fusce at porta lorem, eget porta libero. Ut vitae odio id lacus faucibus ornare at vitae orci. Sed lacus quam."
         },
 
         {
-            "option-heading": "Map with content thirds",
+            "option-heading": "Multiple point map with content halves",
             "option-description": "<p></p>",
-            "height": "700",
-            "width": "600",
+            "map": "https://www.google.com/maps/d/embed?mid=1Phkv5Rp7yNEsP1ZDFe_WgsnwAbg",
+            "column1": "col-sm-6",
+            "column2": "col-sm-6",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices eu elit id tempor. Fusce at porta lorem, eget porta libero. Ut vitae odio id lacus faucibus ornare at vitae orci. Sed lacus quam."
+        },
+
+        {
+            "option-heading": "Single point map with content thirds",
+            "option-description": "<p></p>",
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2211.7983783053537!2d-2.783149472495096!3d56.33330903275121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488657eb4b447f4d%3A0x9b073dd5fb229edd!2sAlbany+Park%2C+St+Andrews+KY16+8BP!5e0!3m2!1sen!2suk!4v1484151752542",
+            "column1": "col-sm-8",
+            "column2": "col-sm-4",
+            "text": ""
+        },
+
+        {
+            "option-heading": "Multiple point map with content thirds",
+            "option-description": "<p></p>",
+            "map": "https://www.google.com/maps/d/embed?mid=1Phkv5Rp7yNEsP1ZDFe_WgsnwAbg",
             "column1": "col-sm-8",
             "column2": "col-sm-4",
             "text": ""

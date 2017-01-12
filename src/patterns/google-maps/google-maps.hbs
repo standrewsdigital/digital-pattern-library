@@ -8,8 +8,8 @@
             {{#if column1}}
 
                 <div class="{{column1}}">
-                    <div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2211.7983783053537!2d-2.783149472495096!3d56.33330903275121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488657eb4b447f4d%3A0x9b073dd5fb229edd!2sAlbany+Park%2C+St+Andrews+KY16+8BP!5e0!3m2!1sen!2suk!4v1484151752542" width="auto" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="embed-responsive embed-responsive-16by9 google-map">
+                        <iframe src="{{map}}" class="embed-responsive-item"></iframe>
                     </div>
                 </div>
                 <div class="{{column2}}">
@@ -20,8 +20,8 @@
             {{else}}
 
                 <div class="col-sm-12">
-                    <div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/d/embed?mid=1Phkv5Rp7yNEsP1ZDFe_WgsnwAbg" width="auto" height="auto"></iframe>
+                    <div class="embed-responsive embed-responsive-16by9 google-map">
+                        <iframe src="{{map}}" class="embed-responsive-item google-map"></iframe>
                     </div>
                     <p>{{text}}</p>
                 </div>
