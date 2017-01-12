@@ -122,18 +122,14 @@ title: Form elements
 
 <h3 id="file-upload">File upload</h3>
 
-<p>We recommend using a native input using type="file", rather than a custom implementation.<p>
-
-<p>This is so:</p>
+<p>Uses the native input using <code>type="file"</code>. This is so:</p>
 
 <ul>
 	<li>The control gains focus when tabbing through the page.</li>
 	<li>The control functions using a keyboard.</li>
 	<li>The control functions using assistive technology.</li>
-	<li>The control functions when javascript is not available.</li>
+	<li>The control functions when JavaScript is not available.</li>
 </ul>
-
-<p>A custom implementation of this control would need to meet the criteria above.</p>
 
 <div class="container">
 	<span class="label label-default">Example</span>
@@ -158,6 +154,8 @@ title: Form elements
 <p>Ensure that users can enter the information they need at smaller screen sizes.</p>
 
 <p>Snap form fields to 100% width at smaller screen sizes.</p>
+
+<p>Use the <code>.form-group</code> class to create spacing when wrapping label and input pairs.</p>
 
 <h4>Default input</h4>
 
@@ -216,27 +214,6 @@ title: Form elements
 <div class="container">
 	<span class="label label-default">Code</span>
 	<pre><code class="pattern-source html">{{> form-elements-input-textarea}}</code></pre>
-</div>
-
-<hr>
-
-
-
-
-<h4>Spacing</h4>
-
-<p>Use the <code>.form-group</code> class to create spacing when wrapping label and input pairts.</p>
-
-<div class="container">
-	<span class="label label-default">Example</span>
-	<div class="pattern-example">
-		{{> form-elements-input-spacing}}
-	</div>
-</div>	
-
-<div class="container">
-	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-elements-input-spacing}}</code></pre>
 </div>
 
 <hr>
