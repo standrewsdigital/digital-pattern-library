@@ -23,7 +23,7 @@ Last updated: Tuesday 22 November 2016
     - [3.1 Branch from master](#31-branch-from-master)
     - [3.2 Duplicate dummy pattern folder](#32-duplicate-dummy-pattern-folder)
     - [3.3 Add Sass partial](#33-add-sass-partial)
-    - [3.4 Add new navigation entry](#34-add-new-navigation-entry)
+    - [3.4 Add to patterns page](#34-add-to-patterns-page)
     - [3.5 Test, commit and continue building...](#35-test-commit-and-continue-building)
 - [4. How to add a new pattern \(manually\)](#4-how-to-add-a-new-pattern-manually)
     - [4.1 Branch from master](#41-branch-from-master)
@@ -249,26 +249,26 @@ Contents of `\new-feature`:
 
 ### 3.3 Add Sass partial
 
-Add the Sass partial for this pattern to the file `src/styles/screen.scss`.
+Add the Sass partial for this pattern to the file `src/styles/screen.scss`. Ensure that the patterns are ordered alphabetically to make them easier to manage.
 
 
-### 3.4 Add new navigation entry
+### 3.4 Add to patterns page
 
-You need to add a new entry in the navigation for this pattern.
+Add this pattern to the correct category on the patterns page.
 
-In the JSON file src/_meta/dpl-nav.json in the items[0].items array, add an item at the appropriate place like so:
+In the JSON file src/_meta/patterns_page.json in the items[0].items array, add an item at the appropriate place like so:
 
 ```
 },
-{
-   "name" : "New feature",
-   "url" : "patterns/new-feature/index.html"
-},
+{ "name": "New feature",
+  "img": "assets/docs/images/patterns/new-feature.jpg",
+  "url": "patterns/new-feature/index.html"
+}
 ```
 
 ### 3.5 Test, commit and continue building...
 
-Now run grunt to build the pattern to make sure that it compiles correctly. Assuming it does, now commit your code and continue building your new pattern.
+Now run Grunt to build the pattern to make sure that it compiles correctly. Assuming it does, now commit your code and continue building your new pattern.
 
 Make sure to read our [Commit message style guide](https://github.com/standrewsdigital/digital-code-style-guide/blob/master/commit-messages.md).
 
