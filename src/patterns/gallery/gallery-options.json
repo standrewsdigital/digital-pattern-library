@@ -3,6 +3,7 @@
         {
             "option-heading": "Single gallery",
             "option-description": "",
+            "option-anchor": "single-gallery",
             "gallery-title": "Title of gallery",
             "gallery-description": "Gallery description",
             "gallery-images-class": "lightbox_gallery_images",
@@ -40,6 +41,7 @@
         {
             "option-heading": "Multiple galleries",
             "option-description": "Top and bottom row are two separate galleries.",
+            "option-anchor": "multiple-galleries",
             "gallery-title": "Title of gallery",
             "gallery-description": "Gallery description",
             "gallery-images-class": "lightbox_gallery_images",
@@ -115,8 +117,9 @@
 
 
         {
-            "option-heading": "Old-gallery",
-            "option-description": "",
+            "option-heading": "Old gallery",
+            "option-description": "This is the deprecated gallery implementation, using the jQuery theatre plugin",
+            "option-anchor": "old-gallery",
             "gallery-title": "Title of gallery",
 		    "gallery-description": "Description",
             "gallery-images-class": "gallery__images",
