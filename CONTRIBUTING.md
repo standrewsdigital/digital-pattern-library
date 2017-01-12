@@ -125,7 +125,7 @@ But the folder that is deployed to on the CDN and for the docs would simply be
 0.5.4
 ```
 
-The reason for having the extra `v` in the Git tag is that it means you can quickly find all the version tags since you may have non-version related tags in your Git repository. There's not really a strong argument for or against the `v`; consistency is the main thing.
+The reason for having the extra `v` in the Git tag is that it means you can quickly find all the version tags since you may have non-version related tags in your Git repository. There's not really a strong argument for or against the `v` – consistency is the main thing.
 
 
 ### 1.6 Change log
