@@ -5,13 +5,13 @@ title: Google maps
 <p>The Google maps pattern has two main variants, the mulitple point 'My Maps' and the standard single point Google map.</p>
 
 <ul>
-	<li>Multiple point - <a href="https://www.google.com/mymaps">My Maps</a> (requires a Google account)</li>
-	<li>Single point - <a href="https://www.google.co.uk/maps">Google Maps</a></li>
+	<li>Multiple point - <a href="https://www.google.com/mymaps">My Maps</a> (requires a Google account).</li>
+	<li>Single point - <a href="https://www.google.co.uk/maps">Google Maps</a>.</li>
 </ul>
 
-<p>
-	<strong>A Google map can only be used within these 3 patterns:</strong>
-</p>
+<p>See <a href="https://support.google.com/mymaps/#topic=3188329">My Maps Help</a> for information on using My Maps. You can use whatever marker icons and colours are on offer (within reason), but <strong>no custom icons allowed</strong>.</p>
+
+<p>An embedded Google map can only be used within these 3 patterns:</p>
 
 <ul>
 	<li><a href="../content-whole/index.html">Content whole</a></li>
@@ -19,16 +19,32 @@ title: Google maps
 	<li><a href="../content-thirds/index.html">Content thirds</a></li>
 </ul>
 
+<p>However, you <strong>CANNOT</strong> use the multiple point My Maps with the 'Content halves' pattern.</p>
 
 
-<p>See <a href="https://support.google.com/mymaps/answer/3024925?visit_id=1-636197288074485205-308693475&p=lite_addplaces&rd=1">Add places and search results</a> for more information on using Google My Maps.<p>
 
+<h4>Essential HTML</h4>
+<p>As part of making the maps responsive, you need to take the 'src' from the embed code given by Google and place within the below HTML:</p>
+
+
+<pre><code class="pattern-source html"><div class="embed-responsive embed-responsive-16by9 google-map">
+	<iframe src="[Embed URL here]" class="embed-responsive-item google-map"></iframe>
+</div>
+</code></pre>
+
+
+<h3>Options available</h3>
+<ul>
+{{#google-maps-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/google-maps-options.options}}
+</ul>
 
 
 
 {{#google-maps-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 </div>
 {{> google-maps}}

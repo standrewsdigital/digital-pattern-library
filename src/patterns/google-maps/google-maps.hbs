@@ -1,45 +1,24 @@
 <!-- Begin pattern: google-maps //-->
-
-<!-- display map here -->
-
-    <div class="container">
-        <div class="row">
-            
-            {{#if column1}}
-
-                <div class="{{column1}}">
-                    <div class="embed-responsive embed-responsive-16by9 google-map">
-                        <iframe src="{{map}}" class="embed-responsive-item"></iframe>
-                    </div>
+<div class="container">
+    <div class="row">
+        {{#if column1}}
+            <div class="{{column1}}">
+                <div class="embed-responsive embed-responsive-16by9 google-map">
+                    <iframe src="{{map}}" class="embed-responsive-item"></iframe>
                 </div>
-
-                {{#if text}}
-                <div class="{{column2}}">
-                    <p>{{text}}</p>
+            </div>
+            <div class="{{column2}}">
+                {{{text}}}
+                {{{sidebar}}}
+            </div>        
+        {{else}}
+            <div class="col-sm-12">
+                <div class="embed-responsive embed-responsive-16by9 google-map">
+                    <iframe src="{{map}}" class="embed-responsive-item google-map"></iframe>
                 </div>
-                {{/if}}
-
-                {{#if sidebar}}
-                    <div class="{{column2}}">
-                        {{{sidebar}}}
-                    </div>
-                {{/if}}
-
-
-            {{else}}
-
-                <div class="col-sm-12">
-                    <div class="embed-responsive embed-responsive-16by9 google-map">
-                        <iframe src="{{map}}" class="embed-responsive-item google-map"></iframe>
-                    </div>
-                    <p>{{text}}</p>
-                </div>
-
-            {{/if}}
-
-        </div>
+                {{{text}}}
+            </div>
+        {{/if}}
     </div>
-
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-
+</div>
 <!-- End pattern: google-maps //-->
