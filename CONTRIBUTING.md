@@ -108,7 +108,7 @@ Whenever you release a new version you must update the version in the source cod
 
 #### 1.5.1 Source code version numbers
 
-The version number is stored in the `package.json` file in the root of the DPL. You must change the version number here to your new version number and then rebuild `core/` and `docs/` with Grunt. When Grunt runs, the version number found in `package.json` is listed at the top of all the JavaScript and CSS core assets and is also output in the footer of the documentation pages.
+The version number is stored in the `package.json` file in the root of the DPL. You must change the version number here to your new version number and then rebuild `core/` and `docs/` with Grunt. When Grunt runs, the version number found in `package.json` is listed at the top of all the JavaScript and CSS core assets and is also output in the title of the documentation pages, and the DPL homepage.
 
 
 #### 1.5.2 Git tags for versions
