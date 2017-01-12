@@ -12,9 +12,18 @@
                         <iframe src="{{map}}" class="embed-responsive-item"></iframe>
                     </div>
                 </div>
+
+                {{#if text}}
                 <div class="{{column2}}">
                     <p>{{text}}</p>
                 </div>
+                {{/if}}
+
+                {{#if sidebar}}
+                    <div class="{{column2}}">
+                        {{{sidebar}}}
+                    </div>
+                {{/if}}
 
 
             {{else}}
