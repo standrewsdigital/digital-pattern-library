@@ -347,7 +347,7 @@ related:
 </ul>
 ```
 
-The Assemble grunt plugin that builds the documentation populates the Handlebars template below with the variables defined in the YAML front matter.
+The Assemble Grunt plugin that builds the documentation populates the Handlebars template below with the variables defined in the YAML front matter.
 
 See [Assemble](http://assemble.io/docs/YAML-front-matter.html) documentation for more information.
 
