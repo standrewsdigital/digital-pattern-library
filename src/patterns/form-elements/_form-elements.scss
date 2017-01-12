@@ -9,7 +9,7 @@
 	margin-bottom:20px;
 	}
 
-input [type~=text] {
+input[type~=text].form-control, select.form-control {
 	height: 46px;
     padding: 10px 16px;
     font-size: 18px;
