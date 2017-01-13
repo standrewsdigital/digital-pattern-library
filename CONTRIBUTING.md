@@ -285,7 +285,7 @@ Contents of `\new-feature`:
 
 ### 3.3 Add a Sass partial
 
-Add the Sass partial for this pattern to the file `src/styles/screen.scss`.
+Add the Sass partial for this pattern to the file `src/styles/screen.scss`. Ensure that the patterns are ordered alphabetically to make them easier to manage.
 
 Adding this line at the appropriate place under `Patterns` (note the patterns are added into `screen.scss) in alphabetical order.
 
