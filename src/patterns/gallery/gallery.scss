@@ -1,3 +1,7 @@
+/*********************************/
+/* BEGIN Pattern: gallery         */
+/*********************************/
+
 .gallery__images, .lightbox_gallery_images {
     @extend .row;
 
@@ -19,3 +23,7 @@
 .lightbox .lb-data .lb-caption {
     font-size: 18px;
 }
+
+/*********************************/
+/* END Pattern: gallery          */
+/*********************************/

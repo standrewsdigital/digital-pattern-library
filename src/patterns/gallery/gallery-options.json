@@ -40,7 +40,7 @@
 
         {
             "option-heading": "Multiple galleries",
-            "option-description": "<p>Top and bottom row are two separate galleries.</p>",
+            "option-description": "<p>Top and bottom row are two separate galleries. Each gallery needs to have a unique <code>data-lightbox='[gallery name]'</code> to group photos together.</p>",
             "option-anchor": "multiple-galleries",
             "gallery-title": "Title of gallery",
             "gallery-description": "Gallery description",
@@ -121,7 +121,7 @@
             "option-description": "<p>This is the deprecated gallery implementation, using the jQuery theatre plugin.</p>",
             "option-anchor": "old-gallery",
             "gallery-title": "Title of gallery",
-		    "gallery-description": "Description",
+		    "gallery-description": "Gallery description",
             "gallery-images-class": "gallery__images",
 		    "gallery-images": [
 		        {

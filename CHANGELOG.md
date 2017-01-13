@@ -6,19 +6,36 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v0.9.1
+
+Release date: Friday 13 January 2017
+
+### Added
+
+* Add lightbox.js with some new examples.
+* Update pattern documentation.
+
+### Changed
+
+* Deprecate jQuery theatre plugin code.
+
+
+---
+
+
 ## v0.9.0
 
 Release date: Tuesday 10 January 2017
 
 ### Added
 
-* Added pattern-options.json to all patterns for the new layout.
-* Added troubleshooting to `SETUP.md`.
+* Add pattern-options.json to all patterns for the new layout.
+* Add troubleshooting to `SETUP.md`.
 
 ### Changed
 
-* Updated all patterns to reflect the new layout for examples and code.
-* Simplified the homepage.
+* Update all patterns to reflect the new layout for examples and code.
+* Simplify the homepage.
 
 ### Removed
 
