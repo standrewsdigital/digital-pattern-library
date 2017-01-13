@@ -8,8 +8,8 @@ title: Google Maps
 
 <ul>
     <li><a href="../content-whole/index.html">Content whole</a></li>
-    <li><a href="../content-halves/index.html">Content halves</a> (single-point map only)</li>
     <li><a href="../content-thirds/index.html">Content thirds</a></li>
+    <li><a href="../content-halves/index.html">Content halves</a> (single-point map only)</li>
 </ul>
 
 <p>The Google Maps pattern has two main variants: multiple-point and single-point maps.</p>
@@ -37,7 +37,7 @@ title: Google Maps
 
 <h3>Embedded map code wrapper</h3>
 
-<p>To ensure that the maps are responsive, and work on all sizes of devices, use the following code:</p>
+<p>To ensure that the maps are responsive and work on all sizes of devices, use the following code:</p>
 
 <pre><code class="pattern-source html"><div class="embed-responsive embed-responsive-16by9 google-map">
 	<iframe src="IFRAME_SRC_URL" class="embed-responsive-item google-map"></iframe>
@@ -51,6 +51,7 @@ title: Google Maps
 
 <hr>
 <h3>Options available</h3>
+{{!-- Note: the Google My Maps example has been created using the digital communications Google account. --}}
 <ul>
 {{#google-maps-options.options}}
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
