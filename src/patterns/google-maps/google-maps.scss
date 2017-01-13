@@ -3,15 +3,8 @@
 /* BEGIN Pattern: google-maps    */
 /*********************************/
 
-#googleMap {
-	height: 450px;
-	width: 100%;
-}
-
-@media (max-width: 750px) {
-	#googleMap {
-		height: 300px;
-	}
+div.google-map {
+    margin-bottom: 25px;
 }
 
 /*********************************/

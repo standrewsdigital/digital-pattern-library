@@ -1,21 +1,70 @@
 ---
-title: Google maps
+title: Google Maps
 ---
 
-<p>Generic Google map with choice for multiple or single location markers. Locations held in local or external JSON data.</p>
+<p>The Google Maps pattern uses a modified <code>iframe</code> embed code from Google, wrapped within a div wrapper with specific classes to ensure that it works as expected on mobile devices.</p>
+
+<p>An embedded Google Map may be used only within these three layout patterns:</p>
 
 <ul>
-   <li>May be used by any site to show building locations.</li>
-   <li>Populate JSON data with location longitude, latitude and address.</li>
+    <li><a href="../content-whole/index.html">Content whole</a></li>
+    <li><a href="../content-thirds/index.html">Content thirds</a></li>
+    <li><a href="../content-halves/index.html">Content halves</a> (single-point map only)</li>
 </ul>
 
-<p><strong>External JSON file</strong> Need to add <code>$.getJSON</code> command -- <code>$.getJSON( "FILENAME" , function(locations) {</code> to google.maps.js file as shown in comments within code.</p>
+<p>The Google Maps pattern has two main variants: multiple-point and single-point maps.</p>
+
+
+<h3>Multiple-point maps</h3>
+
+<p>Multiple-point maps must be created using Google <a href="https://www.google.com/mymaps">My Maps</a>; this requires a Google account.</li> See <a href="https://support.google.com/mymaps/#topic=3188329">My Maps help</a> for more information. </p>
+
+<ul>
+    <li>You may only embed multiple-point maps using 'Content whole' and 'Content thirds' patterns; you may not use the 'Content halves' pattern.</li>
+    <li>You may use whichever marker icons and colours are on offer (within reason), but custom icons must not be used.</li>
+    <li>Google Street View is not currently available using My Maps.</li>
+</ul>
+
+<h3>Single-point maps</h3>
+
+<p>Single-point maps use standard <a href="https://www.google.co.uk/maps">Google Maps</a>; this does not require a Google account.</p>
+
+<ul>
+    <li>Use the default settings: there are no options to customise this map.</li>
+    <li>Single-point maps display only a red marker, no supporting text or pop-up label.</li>
+    <li>Google Street View is currently only available using single-point maps, but only if the user clicks 'View larger map' to open the map in Google Maps.</li>
+</ul>
+
+<h3>Embedded map code wrapper</h3>
+
+<p>To ensure that the maps are responsive and work on all sizes of devices, use the following code:</p>
+
+<pre><code class="pattern-source html"><div class="embed-responsive embed-responsive-16by9 google-map">
+	<iframe src="IFRAME_SRC_URL" class="embed-responsive-item google-map"></iframe>
+</div>
+</code></pre>
+
+<ul>
+    <li>You must replace <code>IFRAME_SRC_URL</code> with the URL from the embed code you copied from Google.</li>
+    <li>You must not include any other attributes in the <code>iframe</code> element, e.g. <code>width</code>, <code>height</code>, <code>frameborder</code>, <code>style</code>, etc.</li>
+</ul>
+
+<hr>
+<h3>Options available</h3>
+{{!-- Note: the Google My Maps example has been created using the digital communications Google account. --}}
+<ul>
+{{#google-maps-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/google-maps-options.options}}
+</ul>
 
 {{#google-maps-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
 {{> google-maps}}
+<div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> google-maps}}</code></pre>
 {{/google-maps-options.options}}
