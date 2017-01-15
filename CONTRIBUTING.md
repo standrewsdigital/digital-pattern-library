@@ -1,47 +1,42 @@
 # Contributing to the digital pattern library
 
-Version 0.3
-Last updated: Friday 13 January 2017
+Version 0.4
+Last updated: Sunday 15 January 2017
 
 <!-- MarkdownTOC -->
 
 - [1. Introduction](#1-introduction)
-  - [1.1 Set up](#11-set-up)
-  - [1.2 Principles](#12-principles)
-  - [1.3 Workflow](#13-workflow)
-  - [1.4 Collaboration with digital communications team](#14-collaboration-with-digital-communications-team)
-  - [1.5 Digital standards](#15-digital-standards)
-  - [1.6 Version numbers](#16-version-numbers)
-    - [1.6.1 Source code version numbers](#161-source-code-version-numbers)
-    - [1.6.2 Git tags for versions](#162-git-tags-for-versions)
-  - [1.7 Change log](#17-change-log)
+    - [1.1 Set up](#11-set-up)
+    - [1.2 Principles](#12-principles)
+    - [1.3 Workflow](#13-workflow)
+    - [1.4 Collaboration with digital communications team](#14-collaboration-with-digital-communications-team)
+    - [1.5 Digital standards](#15-digital-standards)
+    - [1.6 Version numbers](#16-version-numbers)
+        - [1.6.1 Source code version numbers](#161-source-code-version-numbers)
+        - [1.6.2 Git tags for versions](#162-git-tags-for-versions)
+    - [1.7 Change log](#17-change-log)
 - [2. How to build the DPL](#2-how-to-build-the-dpl)
-  - [2.1 Build core and docs](#21-build-core-and-docs)
-    - [2.1.1 Build core only](#211-build-core-only)
-    - [2.1.2 Build docs](#212-build-docs)
-  - [2.2 Grunt watch \(interactive building\)](#22-grunt-watch-interactive-building)
+    - [2.1 Build core and docs](#21-build-core-and-docs)
+        - [2.1.1 Build core only](#211-build-core-only)
+        - [2.1.2 Build docs](#212-build-docs)
+    - [2.2 Grunt watch \(interactive building\)](#22-grunt-watch-interactive-building)
 - [3. How to add a new pattern](#3-how-to-add-a-new-pattern)
-  - [3.1 Anatomy of a pattern](#31-anatomy-of-a-pattern)
-  - [3.2 Name your pattern](#32-name-your-pattern)
-  - [3.3 Branch from master](#33-branch-from-master)
-  - [3.2 Duplicate dummy pattern folder](#32-duplicate-dummy-pattern-folder)
-  - [3.3 Add a Sass partial](#33-add-a-sass-partial)
-  - [3.4 Add to patterns page](#34-add-to-patterns-page)
-  - [3.5 Test, commit and continue building...](#35-test-commit-and-continue-building)
-- [4. How to add a new pattern \(manually\)](#4-how-to-add-a-new-pattern-manually)
-  - [4.1 Branch from master](#41-branch-from-master)
-  - [4.2 Create a new folder](#42-create-a-new-folder)
-  - [4.3 Create the pattern file](#43-create-the-pattern-file)
-  - [4.4 Create the documentation file](#44-create-the-documentation-file)
-  - [4.4 Create a Sass file](#44-create-a-sass-file)
-  - [4.5 Add a Sass partial](#45-add-a-sass-partial)
-  - [4.6 Add JavaScript \(optional\)](#46-add-javascript-optional)
-  - [4.7 Create an examples folder](#47-create-an-examples-folder)
-  - [4.8 Create a data folder](#48-create-a-data-folder)
-  - [4.9 Add pattern to patterns page](#49-add-pattern-to-patterns-page)
-  - [4.10 Run grunt](#410-run-grunt)
-  - [4.11 Commit](#411-commit)
-  - [4.12 Continue building...](#412-continue-building)
+    - [3.1 Anatomy of a pattern](#31-anatomy-of-a-pattern)
+    - [3.2 Name your pattern](#32-name-your-pattern)
+    - [3.3 Branch from master](#33-branch-from-master)
+    - [3.2 Create base files](#32-create-base-files)
+        - [3.2.1 Documentation file \(`*.doc.hbs`\)](#321-documentation-file-dochbs)
+        - [3.2.2 Pattern template file \(`*.hbs`\)](#322-pattern-template-file-hbs)
+        - [3.2.3 Pattern options file \(`*-options.json`\)](#323-pattern-options-file--optionsjson)
+        - [3.2.4 Sass CSS file \(`_*.scss`\)](#324-sass-css-file-_scss)
+        - [3.2.5 JavaScript file \(`*.js`\)](#325-javascript-file-js)
+    - [3.3 Hook your new pattern into the DPL](#33-hook-your-new-pattern-into-the-dpl)
+        - [3.3.1 Add the Sass partial](#331-add-the-sass-partial)
+        - [3.3.2 Add to patterns page](#332-add-to-patterns-page)
+    - [3.4 Run Grunt \(to test\)](#34-run-grunt-to-test)
+    - [3.5 Commit](#35-commit)
+    - [3.6 Continue building...](#36-continue-building)
+- [4.0 How to add an example page](#40-how-to-add-an-example-page)
 
 <!-- /MarkdownTOC -->
 
@@ -85,7 +80,7 @@ We use [GitHub Flow](https://guides.github.com/introduction/flow/) which is a fa
 
 ### 1.4 Collaboration with digital communications team
 
-Developers using the DPL should not fork the code in GitHub.
+Developers using the DPL must not fork the code in GitHub.
 
 No patterns or elements (such as colours) in the DPL may be edited without liaising with the digital communications team. This is the case in both the DPL and in any content management system: patterns should not be modified in any manner. Do not use CSS to overrule DPL elements, patterns, fonts etc.
 
@@ -157,7 +152,7 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 ## 2. How to build the DPL
 
-The DPL takes the source code in `/src/` and builds two collections of components:
+The DPL uses a combination of Node, Grunt, Compass (Sass), Handlebars and various other tools to compile the source code in `/src/` and build two collections of components:
 
 1. `/core/` - Production CSS, JavaScript, fonts and images.
 2. `/docs/` - Documentation about using the patterns in the library and
@@ -241,15 +236,17 @@ Each pattern comprises of the following files (where `pattern` is the name of th
 | `pattern.doc.hbs`          | Documentation about the pattern, including options and source code. |
 | `pattern.hbs`              | HTML for the pattern, in Handlebars format. |
 | `pattern-options.json`     | Data for building the various pattern options. |
-| `_pattern.scss` (optional) | Sass partial that contains the CSS to style the pattern. |
-| `pattern.js` (optional)    | JavaScript partial that adds interactivity to the pattern. |
+| `_pattern.scss`            | Sass partial that contains the CSS to style the pattern. |
+| `pattern.js`               | JavaScript partial that adds interactivity to the pattern. |
 
 There is a dummy pattern in the DPL which may be used as a template when creating a new pattern. You can find this in `/src/patterns/dummy-pattern`.
 
 
 ### 3.2 Name your pattern
 
-Decide the name of your new pattern. Then decide on a computer-friendly version for naming folders and files; it must only consist of lowercase letters and hyphens.
+First, decide the name of your new pattern. Then decide on a computer-friendly version for naming folders and files; it must only consist of lowercase letters and hyphens.
+
+The name should be semantic, descriptive and obvious.
 
 In the following example we will use these names:
 
@@ -267,278 +264,281 @@ Using your preferred Git client, create a new branch using your new pattern name
 FEAT-widget-pattern
 ```
 
-
-### 3.2 Duplicate dummy pattern folder
-
-Duplicate `\digital-pattern-library\src\patterns\dummy-pattern`, renaming it using your new pattern name, in this case we are using `new-feature`. Change all instances of 'dummy-pattern' within these files and filenames to your new pattern name.
-
-Contents of `\new-feature`:
-
-| File / folder              | Description                                     |
-|: ------------------------- |:----------------------------------------------- |
-| `_new-feature.scss`        | Sass partial that contains the CSS to style the pattern |
-| `new-feature.doc.hbs`      | Main documentation for the pattern, including examples and source code |
-| `new-feature.hbs`          | Source HTML for the pattern, in Handlebars format |
-| `new-feature.js`           | JavaScript partial that adds interactivity to the pattern |
-| `new-feature-options.json` | Pattern options data |
+We tend to prefix the branch name with the type of change we are making, e.g. `BREAK`, `DOCS`, `FEAT`, `FIX`, etc. You can find a list of these in the [commit messages style guide](https://github.com/standrewsdigital/digital-code-style-guide/blob/master/commit-messages.md#21-subject-line).
 
 
-### 3.3 Add a Sass partial
+### 3.2 Create base files
 
-Add the Sass partial for this pattern to the file `src/styles/screen.scss`. Ensure that the patterns are ordered alphabetically to make them easier to manage.
+Create a new folder within `\src\patterns\` with your computer-friendly pattern name. In this example it would be `\src\patterns\widget`.
 
-Adding this line at the appropriate place under `Patterns` (note the patterns are added into `screen.scss) in alphabetical order.
+Now within your new folder, create the five basic files you need to create a pattern:
 
-```css
-@import 'navigation-bar/navigation-bar';
-@import 'new-feature/new-feature';          // <<==== ADDED
-@import 'secondary-call/secondary-call';
-```
+* `widget.doc.hbs` - Documentation
+* `widget.hbs` - Pattern template
+* `widget-options.json` - Data detailing pattern options
+* `_widget.scss` - Sass that will be compiled to CSS
+* `widget.js` - JavaScript
 
-
-### 3.4 Add to patterns page
-
-Add this pattern to the correct category on the patterns page.
-
-In the JSON file src/_meta/patterns_page.json in the items[0].items array, add an item at the appropriate place like so:
-
-```
-},
-{ "name": "New feature",
-  "img": "assets/docs/images/patterns/new-feature.jpg",
-  "url": "patterns/new-feature/index.html"
-}
-```
-
-### 3.5 Test, commit and continue building...
-
-Now run Grunt to build the pattern to make sure that it compiles correctly. Assuming it does, now commit your code and continue building your new pattern.
-
-Make sure to read our [Commit message style guide](https://github.com/standrewsdigital/digital-code-style-guide/blob/master/commit-messages.md).
-
-See below for more detailed instructions about how to add a new pattern.
+(This is where the dummy pattern can come in handy, simply copy the contents of `\src\patterns\dummy-pattern` into your new pattern and rename the files using your new pattern name.)
 
 
+#### 3.2.1 Documentation file (`*.doc.hbs`)
 
+The documentation file (in this example `widget.doc.hbs`) is written in a combination of HTML and the logic-less JavaScript templating engine Handlebars, with a small YAML front piece at the top of the document. This title element is used both in the page `<title>` and in the page heading.
+
+The document looks something like this:
+
+```handlebars
 
 ---
-
-## 4. How to add a new pattern (manually)
-
-This is a guide to manually adding a new pattern to the digital pattern library.
-
-First, decide the name of the pattern. Then decide on a computer-friendly version for naming folders and files; it must consist of lowercase letters and hyphens only.
-
-In the following example we will use these names:
-
-| Description            | Value         |
-|: --------------------- |: ------------ |
-| Name of pattern        | New feature   |
-| Computer-friendly name | `new-feature` |
-
-
-### 4.1 Branch from master
-
-Using your preffered Git client, create a new branch using your new pattern name.
-
-
-### 4.2 Create a new folder
-
-Create the folder `src/patterns/new-feature`. This folder contains the HTML, JavaScript, CSS and documentation for the new pattern.
-
-
-### 4.3 Create the pattern file
-
-Create a Handlebars file `src/patterns/new-feature/new-feature.hbs`.
-
-This file contains the source HTML for the pattern in Handlebars format. Being Handlebars means that you can populate dynamic portions of the HTML with Handlebars values. See [Handlebars](http://handlebarsjs.com/) for more information.
-
-
-### 4.4 Create the documentation file
-
-Create a Handlebars file `src/patterns/new-feature/new-feature.doc.hbs`.
-
-This file is the main documentation for the pattern. The file should begin with YAML front matter (the section beginning and ending in `---`). It then should contain HTML with Handlebars code to build the documentation page. Here's an example:
-
-```html
-
----
-title: New feature
+title: Widget
 ---
 
-<p>Several sentence description of the pattern.</p>
+<p>Introduction about what this pattern is...</p>
+
 <ul>
-    <li>When to use.</li>
-    <li>How to use.</li>
-    <li>When not to use.</li>
+    <li>Unordered list of rules.</li>
+    <li>What you may do.</li>
+    <li>What you may not do.</li>
 </ul>
-
 
 <hr>
 <h3>Options available</h3>
 <ul>
-{{#new-feature-options.options}}
+{{#widget-options.options}}
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
-{{/new-feature-options.options}}
+{{/widget-options.options}}
 </ul>
 
-{{#new-feature-options.options}}
+{{#widget-options.options}}
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 </div>
-{{> new-feature}}
+{{> widget}}
 <div class="container">
 <span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> new-feature}}</code></pre>
-{{/new-feature-options.options}}
-
-
-
+<pre><code class="pattern-source html">{{> widget}}</code></pre>
+{{/widget-options.options}}
 ```
 
-The Assemble Grunt plugin that builds the documentation populates the Handlebars template below with the variables defined in the YAML front matter.
+The options available block loops through the `options[]` array in `widget-options.json` to build a table of contents.
 
-See [Assemble](http://assemble.io/docs/YAML-front-matter.html) documentation for more information.
+The second block (`{{#widget-options.options}}`) loops through the options array again in `widget-options.json` to output each of the options. This uses the `widget.hbs` Handlebars partial (`{{> widget}}`) as a template, passing in the data from the options array within the JSON file.
 
-
-### 4.4 Create a Sass file
-
-Create Sass file `src/patterns/new-feature/_new-feature.scss`.
-
-This is the Sass partial that contains the Sass/CSS to implement the pattern. The prefix of an underscore (`_`) is important, without it the Sass processor will not consider it a partial. To start, we create the file with the following content.
-
-```css
-/**********************************************/
-/* BEGIN Pattern: new-feature                 */
-/**********************************************/
-
-// Add your CSS code here.
-
-/**********************************************/
-/* END Pattern: new-feature                   */
-/**********************************************/
-```
-
-
-### 4.5 Add a Sass partial
-
-Add the Sass partial for this pattern to the file `src/styles/screen.scss`.
-
-Adding this line at the appropriate place under `Patterns` (note the patterns are added into `screen.scss) in alphabetical order.
-
-```css
-@import 'navigation-bar/navigation-bar';
-@import 'new-feature/new-feature';          // <<==== ADDED
-@import 'secondary-call/secondary-call';
-```
-
-
-### 4.6 Add JavaScript (optional)
-
-If you need to, add some JavaScript
-
-Create the JavaScript file `src/patterns/new-feature/new-feature.js`. When you run Grunt next time this file will be found automatically.
-
-
-### 4.7 Create an examples folder
-
-Create the folder `src/patterns/new-feature/examples`.
-
-Also a file for each example you have documented in the YAML front matter of `src/patterns/new-feature/new-feature.doc.hbs`. Note that these will be linked up and shown on the documentation page automatically when you build the documentation with the `grunt` command.
-
-In the YAML front matter of `src/patterns/new-feature/new-feature.doc.hbs` we have:
+The second instance of the partial in that block outputs the same code but within a code block:
 
 ```
-...
-+ name: new-feature-1
-+ name: new-feature-2
-...
+<pre><code class="pattern-source html">{{> widget}}</code></pre>
 ```
 
-Each example file should contain Handlebars code to include partial for this pattern and specify the data to populate the partial with. You include Handlebars partials in this format:
+This block has two CSS classes:
 
-```
-{{> partial-name data-file }}
-```
+* The mandatory `pattern-source` class instructs a JavaScript function in the DPL to encode all HTML elements, i.e. change `<` to `&lt;` and `>` to `&gt;` so that the code outputs on the page, rather than renders.
+* The optional `html` class instructs another JavaScript plugin to syntax highlight the code as HTML. (This uses the code pattern.)
 
-So we will create the following files and respective contents.
-
-* File: `src/patterns/new-feature/examples/new-feature1.hbs`
-
-```
-{{> new-feature new-feature-1}}
-```
-
-This includes the Handlebars partial `new-feature` which maps to the file `src/patterns/new-feature/new-feature.hbs` and populates the partial with the JSON data from `new-feature-1` which maps to the file `src/patterns/new-feature/data/new-feature-1.json`. When building the page Assemble (a grunt plugin that generates the HTML files in the documentation) will look in `src/patterns/data.json` for the data to populate the partial with. This will lead us to creating (in the next step) an associated `data/` folder and files.
-
-* File: `src/patterns/new-feature/examples/new-feature-2.hbs`
-
-```
-{{> new-feature new-feature-2}}
-```
-
-Again, this causes Assemble to look for a file named `new-feature-2.json` in the `data` folder to populate the Handlebars partial.
+When Grunt runs, an `index.html` file is created within `/docs/patterns/PATTERN_NAME/`, in this example, `/docs/patterns/widget/`. It wraps your documentation file within the code found in `/src/_layouts/pattern.hbs`.
 
 
-### 4.8 Create a data folder
+#### 3.2.2 Pattern template file (`*.hbs`)
 
-Create the folder `src/patterns/new-feature/data`. And also a JSON file to correspond with each example we've defined (in the previous step).
+The template file must be named after the computer-friendly version of the pattern name, in this example it would be `widget.hbs`.
 
-Now create this file: `src/patterns/new-feature/data/new-feature-1.json` and populate it with this content:
+This file contains the pattern itself, written using a combination of HTML and Handlebars expressions. Using Handlebars means that you can populate dynamic portions of the HTML with Handlebars values; in other words, you can use the same template with multiple options using if... then statements.
 
-```js
+The [assemble-handlebars](https://github.com/assemble/assemble-handlebars) Grunt task builds HTML code using the data from the `*-options.json` file.
+
+For more information see the following for documentation:
+
+* [Handlebars](http://handlebarsjs.com/)
+* [Assemble](http://assemble.io/)
+
+
+#### 3.2.3 Pattern options file (`*-options.json`)
+
+* The options file must have the same filename as the template file, followed by `-options.json`. In this example, this would be `widget-options.json`.
+
+This JSON file contains the following basic information:
+
+```json
 {
-    "first-name": "John",
-    "last-name": "Carter"
+    "options" : [
+        {
+            "option-heading": "Default widget",
+            "option-description": "<p>Information about the option, written in HTML, with no line-breaks.</p>",
+            "option-anchor": "default-widget"
+        }
+    ]
 }
 ```
 
-This JSON code defines the variables that are available to populate the Handlebars partial (`src/patterns/new-feature/new-feature.hbs`).
+Other options are added as required.
 
-And now create this file: `src/patterns/new-feature/data/new-feature-2.json` and populate it with this content:
+* The first three entries are mandatory for each option, even if there is only one. These build the options available table of contents, and headings and descriptions for each of the options on the documentation page.
+* Custom name/value pairs may be created as required.
 
-```js
+
+#### 3.2.4 Sass CSS file (`_*.scss`)
+
+Add the CSS you require for your pattern in this file.
+
+* The filename must begin with an underscore (`_`) – without it the Sass processor will not consider it a partial.
+* The filename must have the same filename as the pattern template file but with a `.scss` suffix; in this example, `widget._scss`
+* The file must begin and end with the following comments:
+
+```css
+
+/*********************************/
+/* BEGIN Pattern: widget         */
+/*********************************/
+
+// Add your CSS/Sass code here.
+
+/*********************************/
+/* END Pattern: widget           */
+/*********************************/
+
+```
+
+This file will be compiled by Compass into CSS and added to `/core/styles/screen.css`.
+
+
+#### 3.2.5 JavaScript file (`*.js`)
+
+Add the JavaScript you require for your pattern in this file.
+
+* You may use jQuery code as well as 'vanilla' JavaScript.
+* The filename must have the same name as the pattern template file but with a `.js` suffix.
+* The file must begin and end with the following code:
+
+```javascript
+
+/*********************************/
+/* BEGIN Pattern: widget         */
+/*********************************/
+
+// Add your JavaScript/jQuery code here.
+
+/*********************************/
+/* END Pattern: widget           */
+/*********************************/
+
+```
+
+When you run Grunt next time this file will be found automatically and included in `/core/scripts/core.js`.
+
+
+### 3.3 Hook your new pattern into the DPL
+
+With the new files in place, you now need to tell the DPL where your new pattern is. You do this in two places:
+
+
+#### 3.3.1 Add the Sass partial
+
+Add your new Sass partial as an `@import` to the file `/src/styles/screen.scss`beneath the `Patterns import` section. For example, in this example you would add `_widget.scss` to:
+
+```css
+@import 'tile/tile';
+@import 'tile-grid/tile-grid';
+@import 'widget/widget';
+```
+
+* You must not include the underscore or file suffix, just the pattern's directory name: the DPL will automatically add those.
+* Make sure you add your new pattern to the list alphabetically; this simply makes the patterns easier to manage later.
+
+
+#### 3.3.2 Add to patterns page
+
+Now add your new pattern to the correct category on the patterns page.
+
+In the file `/src/_meta/patterns_page.json` add an item at the appropriate place, like so:
+
+```json
 {
-    "first-name": "Dejah",
-    "last-name": "Thoris"
+    "heading": "Content",
+    "subheading": "Patterns used to display content in various ways.",
+    "patterns": [
+        { "name": "Accordion",
+          "img": "assets/docs/images/patterns/accordion.jpg",
+          "url": "patterns/accordion/index.html"
+        },
+        {
+            ...
+        },
+        {  "name": "Widget",
+            "img": "assets/docs/images/patterns/widget.jpg",
+            "url": "patterns/widget/index.html"
+        }
+    ]
 }
 ```
 
-The idea is that each example loads different data that configures different variations of the pattern.
+If the pattern doesn't yet have a custom image use the generic `pattern.jpg`, like this:
 
-
-### 4.9 Add pattern to patterns page
-
-If there is not one already, create a patterns page navbox image (`720px × 480px`), with the same name as the pattern (e.g. `new-feature.jpg`), and add it to `src/images-docs/patterns/`.
-
-Add an entry to `src/_meta/patterns_page.json` within the correct category, for instance:
-
-```js
-{
-   "name": "New feature",
-   "img": "assets/docs/images/patterns/new-feature.jpg",
-   "url": "patterns/new-feature/index.html"
-},
+```
+            "img": "assets/docs/images/patterns/pattern.jpg",
 ```
 
-If the custom navbox image for the pattern has not yet been created, you may use the default image: `img: assets/docs/images/patterns/pattern.jpg`.
+
+### 3.4 Run Grunt (to test)
+
+After you've got the pattern created you should run `grunt`. This will build the `core/` folder and the `docs/` folder.
+
+Make sure you don't have any errors. If you open `docs/patterns.html` in your browser you should be able to see your new pattern showing up in the listing. 
+
+You should also be able to visit the documentation page and see the basic examples displayed.
 
 
-### 4.10 Run grunt
+### 3.5 Commit
 
-After you've got the pattern created you should run `grunt`
+Now that we have a working stub of the pattern – perhaps without any working CSS or JavaScript or even maybe the correct HTML – we're ready to create a first commit.
 
-This will build the `core/` folder and the `docs/` folder. Make sure you don't have any errors. If you open `docs/index.html` in your browser you should be able to see your new pattern showing up in the listing. You should also be able to visit the documentation page and see the basic examples wired up.
-
-
-### 4.11 Commit
-
-Now that we have a working stub of the pattern – admittedly without any working CSS or JavaScript or even maybe the correct HTML – we're ready to create a first commit.
-
-Make sure that you've started a new branch for this feature and create a new commit containing the work to create the stub.
+Make sure that you've created a new branch for this feature and create a new commit containing the work to create the new pattern.
 
 
-### 4.12 Continue building...
+### 3.6 Continue building...
 
-You should now be ready to start building the HTML, CSS and JavaScript incrementally to complete the pattern. Remember to commit often!
+You should now be ready to continue working on your pattern.
+
+Remember to commit small changes and often, using the [code style guide](https://github.com/standrewsdigital/digital-code-style-guide/) for guidance on how to write your [HTML](https://github.com/standrewsdigital/digital-code-style-guide/blob/master/html.md), [CSS](https://github.com/standrewsdigital/digital-code-style-guide/blob/master/css.md) and [JavaScript](https://github.com/standrewsdigital/digital-code-style-guide/blob/master/javascript.md) code, and compose your [commit messages](https://github.com/standrewsdigital/digital-code-style-guide/blob/master/commit-messages.md).
+
+
+
+
+## 4.0 How to add an example page
+
+Add example pages to the `/src/examples/*` directory.
+
+Similar to pattern documentation files, these should be written in a combination of HTML with Handlebars and a YAML front piece.
+
+For example:
+
+```handlebars
+
+---
+title: University of St Andrews - Scotland's first university, founded 1413
+---
+
+{{> text-banner prototype-text-banner.university-home}}
+
+{{> header prototype-header}}
+
+{{> navigation-bar prototype-index.navigation-bar}}
+
+{{> hero-banner prototype-hero-banner}}
+
+{{> navbox-grid prototype-navbox-grid}}
+
+{{> tile-grid prototype-tile-grid}}
+
+{{> footer}}
+
+```
+
+Pattern partials may be called directly, as Handlebars partials are global in scope.
+
+You may call Handlebars data from the pattern options JSON files, or create local ones within the `/src/patterns/_data/` directory. The format for this is:
+
+```handlebars
+{{> template-name pattern-options-json-file-name }}
+```
