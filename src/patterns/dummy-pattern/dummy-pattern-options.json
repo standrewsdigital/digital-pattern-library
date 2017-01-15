@@ -1,7 +1,7 @@
 {
     "options" : [
         {
-            "option-header": "Dummy pattern with full details",
+            "option-heading": "Dummy pattern with full details",
             "option-description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorem quos amet deleniti, obcaecati quibusdam consequatur repudiandae similique rem sint harum corporis. Deleniti ipsa, distinctio itaque delectus dolorem nostrum tempora.</p><ul><li>Option 1</li><li>Option 2</li></ul>",
             "image": {
                 "url": "docs/images/placeholders/360x240.jpg",
@@ -20,7 +20,7 @@
 
 
          {
-            "option-header": "Dummy pattern with no image",
+            "option-heading": "Dummy pattern with no image",
             "option-description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>",
             "title": "Title of image",
             "url": "#",
