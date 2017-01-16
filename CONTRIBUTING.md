@@ -46,6 +46,8 @@ Last updated: Sunday 15 January 2017
 
 Hurrah! So you want to contribute to the digital pattern library (DPL)? That's great news! This guide should get you started.
 
+The first thing to do is to make sure you have permission to use and develop the DPL. Details may be found on the [DPL homepage](https://www.st-andrews.ac.uk/dpl/), along with a list of approved developers.
+
 
 ### 1.1 Set up
 
