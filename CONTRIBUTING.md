@@ -98,7 +98,7 @@ Commit messages must follow the [commit message style guide](https://github.com/
 
 ### 1.6 Version numbers
 
-The digital pattern library follows [semantic versioning](http://semver.org/). This means that every version number has three parts:
+The DPL follows [semantic versioning](http://semver.org/). This means that every version number has three parts:
 
 ```
 major.minor.patch
@@ -128,7 +128,7 @@ We follow the convention that for version `0.5.4` the Git tag would be:
 v0.5.4
 ```
 
-But the folder that is deployed to on the CDN and for the docs would simply be
+But the folder that is deployed to on the CDN and for the docs would simply be:
 
 ```
 0.5.4
@@ -143,7 +143,7 @@ We really cannot emphasize this strongly enough: having a human-readable change 
 
 It's best to document changes as you go; that way updates to `CHANGELOG.md` get committed alongside the changes to the code. This can lead to merge conflicts, however, so you may wish to track change log entries in a local file within your patterns while you develop then merge these into master later.
 
-At a minimum, each time you add a Git tag and release a new version of the pattern library the change log should be updated to reflect that new version, the date it was released and the changes that have occured since the last version.
+At a minimum, each time you add a Git tag and release a new version of the pattern library the change log should be updated to reflect that new version, the date it was released and the changes that have occurred since the last version.
 
 See [CHANGELOG.md](CHANGELOG.md).
 
@@ -160,7 +160,7 @@ The DPL uses a combination of Node, Grunt, Compass (Sass), Handlebars and variou
 2. `/docs/` - Documentation about using the patterns in the library and
   other information for developers who use the core assets.
 
-(Docs relies on core for its look-and-feel. In other words, the digital pattern library documentation uses the digital pattern to present itself.)
+(Docs relies on core for its look-and-feel. In other words, the DPL documentation uses the DPL to present itself.)
 
 In the repository, we have the following additional documentation aimed at
 assisting those who contribute and develop the pattern library:
@@ -217,7 +217,7 @@ open to local copies of the docs will reload automatically once `core/` and `doc
 
 This is really helpful when actively developing patterns.
 
-Note: always run `grunt` at least once beforing running `grunt watch` since it only rebuilds the parts that have changed.
+Note: always run `grunt` at least once before running `grunt watch` since it only rebuilds the parts that have changed.
 
 
 
@@ -234,7 +234,7 @@ Individual patterns are stored within subfolders in `/src/patterns/*`.
 Each pattern comprises of the following files (where `pattern` is the name of the pattern):
 
 | File / folder              | Description                                     |
-|: ------------------------- |:----------------------------------------------- |
+|:-------------------------- |:----------------------------------------------- |
 | `pattern.doc.hbs`          | Documentation about the pattern, including options and source code. |
 | `pattern.hbs`              | HTML for the pattern, in Handlebars format. |
 | `pattern-options.json`     | Data for building the various pattern options. |
@@ -253,9 +253,9 @@ The name should be semantic, descriptive and obvious.
 In the following example we will use these names:
 
 | Description            | Value         |
-|: --------------------- |: ------------ |
-| Name of pattern        | Widget   |
-| Computer-friendly name | `widget` |
+|:---------------------- |:------------- |
+| Name of pattern        | Widget        |
+| Computer-friendly name | `widget`      |
 
 
 ### 3.3 Branch from master
@@ -385,7 +385,7 @@ Other options are added as required.
 Add the CSS you require for your pattern in this file.
 
 * The filename must begin with an underscore (`_`) – without it the Sass processor will not consider it a partial.
-* The filename must have the same filename as the pattern template file but with a `.scss` suffix; in this example, `widget._scss`
+* The filename must have the same filename as the pattern template file but with a `.scss` suffix; in this example, `_widget.scss`.
 * The file must begin and end with the following comments:
 
 ```css
@@ -410,8 +410,8 @@ This file will be compiled by Compass into CSS and added to `/core/styles/screen
 Add the JavaScript you require for your pattern in this file.
 
 * You may use jQuery code as well as 'vanilla' JavaScript.
-* The filename must have the same name as the pattern template file but with a `.js` suffix.
-* The file must begin and end with the following code:
+* The filename must have the same name as the pattern template file but with a `.js` suffix; in this example `widget.js`.
+* The file must begin and end with the following comments:
 
 ```javascript
 
