@@ -1,7 +1,7 @@
 # Contributing to the digital pattern library
 
-Version 0.4
-Last updated: Sunday 15 January 2017
+Version 0.5
+Last updated: Tuesday 17 January 2017
 
 <!-- MarkdownTOC -->
 
