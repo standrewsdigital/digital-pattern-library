@@ -138,3 +138,6 @@ img.placeholder_size {
 	height: 85px;
 	width: 85px;
 }
+.alert > p + p {
+    margin-top: 25px;
+}

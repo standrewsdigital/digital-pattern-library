@@ -6,7 +6,18 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
-## v0.9.3
+## v.0.9.6
+
+### Changed
+
+*Added margin to Alert element paragraphs.
+
+
+
+
+---
+
+## v0.9.5
 
 ### Removed
 
@@ -30,6 +41,7 @@ Release date: Tuesday 17 January 2017
 
 
 ---
+
 ## v0.9.3
 
 ### Removed
