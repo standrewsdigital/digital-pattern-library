@@ -24,18 +24,18 @@ Last updated: Sunday 15 January 2017
     - [3.1 Anatomy of a pattern](#31-anatomy-of-a-pattern)
     - [3.2 Name your pattern](#32-name-your-pattern)
     - [3.3 Branch from master](#33-branch-from-master)
-    - [3.2 Create base files](#32-create-base-files)
-        - [3.2.1 Documentation file \(`*.doc.hbs`\)](#321-documentation-file-dochbs)
-        - [3.2.2 Pattern template file \(`*.hbs`\)](#322-pattern-template-file-hbs)
-        - [3.2.3 Pattern options file \(`*-options.json`\)](#323-pattern-options-file--optionsjson)
-        - [3.2.4 Sass CSS file \(`_*.scss`\)](#324-sass-css-file-_scss)
-        - [3.2.5 JavaScript file \(`*.js`\)](#325-javascript-file-js)
-    - [3.3 Hook your new pattern into the DPL](#33-hook-your-new-pattern-into-the-dpl)
-        - [3.3.1 Add the Sass partial](#331-add-the-sass-partial)
-        - [3.3.2 Add to patterns page](#332-add-to-patterns-page)
-    - [3.4 Run Grunt \(to test\)](#34-run-grunt-to-test)
-    - [3.5 Commit](#35-commit)
-    - [3.6 Continue building...](#36-continue-building)
+    - [3.4 Create base files](#34-create-base-files)
+        - [3.4.1 Documentation file \(`*.doc.hbs`\)](#341-documentation-file-dochbs)
+        - [3.4.2 Pattern template file \(`*.hbs`\)](#342-pattern-template-file-hbs)
+        - [3.4.3 Pattern options file \(`*-options.json`\)](#343-pattern-options-file--optionsjson)
+        - [3.4.4 Sass CSS file \(`_*.scss`\)](#344-sass-css-file-_scss)
+        - [3.4.5 JavaScript file \(`*.js`\)](#345-javascript-file-js)
+    - [3.5 Hook your new pattern into the DPL](#35-hook-your-new-pattern-into-the-dpl)
+        - [3.5.1 Add the Sass partial](#351-add-the-sass-partial)
+        - [3.5.2 Add to patterns page](#352-add-to-patterns-page)
+    - [3.6 Run Grunt \(to test\)](#36-run-grunt-to-test)
+    - [3.7 Commit](#37-commit)
+    - [3.8 Continue building...](#38-continue-building)
 - [4.0 How to add an example page](#40-how-to-add-an-example-page)
 
 <!-- /MarkdownTOC -->
@@ -269,7 +269,7 @@ FEAT-widget-pattern
 We tend to prefix the branch name with the type of change we are making, e.g. `BREAK`, `DOCS`, `FEAT`, `FIX`, etc. You can find a list of these in the [commit messages style guide](https://github.com/standrewsdigital/digital-code-style-guide/blob/master/commit-messages.md#21-subject-line).
 
 
-### 3.2 Create base files
+### 3.4 Create base files
 
 Create a new folder within `\src\patterns\` with your computer-friendly pattern name. In this example it would be `\src\patterns\widget`.
 
@@ -284,7 +284,7 @@ Now within your new folder, create the five basic files you need to create a pat
 (This is where the dummy pattern can come in handy, simply copy the contents of `\src\patterns\dummy-pattern` into your new pattern and rename the files using your new pattern name.)
 
 
-#### 3.2.1 Documentation file (`*.doc.hbs`)
+#### 3.4.1 Documentation file (`*.doc.hbs`)
 
 The documentation file (in this example `widget.doc.hbs`) is written in a combination of HTML and the logic-less JavaScript templating engine Handlebars, with a small YAML front piece at the top of the document. This title element is used both in the page `<title>` and in the page heading.
 
@@ -342,7 +342,7 @@ This block has two CSS classes:
 When Grunt runs, an `index.html` file is created within `/docs/patterns/PATTERN_NAME/`, in this example, `/docs/patterns/widget/`. It wraps your documentation file within the code found in `/src/_layouts/pattern.hbs`.
 
 
-#### 3.2.2 Pattern template file (`*.hbs`)
+#### 3.4.2 Pattern template file (`*.hbs`)
 
 The template file must be named after the computer-friendly version of the pattern name, in this example it would be `widget.hbs`.
 
@@ -356,7 +356,7 @@ For more information see the following for documentation:
 * [Assemble](http://assemble.io/)
 
 
-#### 3.2.3 Pattern options file (`*-options.json`)
+#### 3.4.3 Pattern options file (`*-options.json`)
 
 * The options file must have the same filename as the template file, followed by `-options.json`. In this example, this would be `widget-options.json`.
 
@@ -380,7 +380,7 @@ Other options are added as required.
 * Custom name/value pairs may be created as required.
 
 
-#### 3.2.4 Sass CSS file (`_*.scss`)
+#### 3.4.4 Sass CSS file (`_*.scss`)
 
 Add the CSS you require for your pattern in this file.
 
@@ -405,7 +405,7 @@ Add the CSS you require for your pattern in this file.
 This file will be compiled by Compass into CSS and added to `/core/styles/screen.css`.
 
 
-#### 3.2.5 JavaScript file (`*.js`)
+#### 3.4.5 JavaScript file (`*.js`)
 
 Add the JavaScript you require for your pattern in this file.
 
@@ -430,12 +430,12 @@ Add the JavaScript you require for your pattern in this file.
 When you run Grunt next time this file will be found automatically and included in `/core/scripts/core.js`.
 
 
-### 3.3 Hook your new pattern into the DPL
+### 3.5 Hook your new pattern into the DPL
 
 With the new files in place, you now need to tell the DPL where your new pattern is. You do this in two places:
 
 
-#### 3.3.1 Add the Sass partial
+#### 3.5.1 Add the Sass partial
 
 Add your new Sass partial as an `@import` to the file `/src/styles/screen.scss`beneath the `Patterns import` section. For example, in this example you would add `_widget.scss` to:
 
@@ -449,7 +449,7 @@ Add your new Sass partial as an `@import` to the file `/src/styles/screen.scss`b
 * Make sure you add your new pattern to the list alphabetically; this simply makes the patterns easier to manage later.
 
 
-#### 3.3.2 Add to patterns page
+#### 3.5.2 Add to patterns page
 
 Now add your new pattern to the correct category on the patterns page.
 
@@ -482,7 +482,7 @@ If the pattern doesn't yet have a custom image use the generic `pattern.jpg`, li
 ```
 
 
-### 3.4 Run Grunt (to test)
+### 3.6 Run Grunt (to test)
 
 After you've got the pattern created you should run `grunt`. This will build the `core/` folder and the `docs/` folder.
 
@@ -491,14 +491,14 @@ Make sure you don't have any errors. If you open `docs/patterns.html` in your br
 You should also be able to visit the documentation page and see the basic examples displayed.
 
 
-### 3.5 Commit
+### 3.7 Commit
 
 Now that we have a working stub of the pattern – perhaps without any working CSS or JavaScript or even maybe the correct HTML – we're ready to create a first commit.
 
 Make sure that you've created a new branch for this feature and create a new commit containing the work to create the new pattern.
 
 
-### 3.6 Continue building...
+### 3.8 Continue building...
 
 You should now be ready to continue working on your pattern.
 
