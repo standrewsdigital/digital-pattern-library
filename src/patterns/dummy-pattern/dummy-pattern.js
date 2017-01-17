@@ -1,6 +1,6 @@
 
 /*********************************/
-/* BEGIN Pattern: tile           */
+/* BEGIN Pattern: dummy pattern  */
 /*********************************/
 
 // Replace the following with your own JavaScript
@@ -11,5 +11,5 @@ $(".tile h3 a").bigTarget({
 });
 
 /*********************************/
-/* END Pattern: tile             */
+/* END Pattern: dummy pattern    */
 /*********************************/
