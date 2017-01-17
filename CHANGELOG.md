@@ -17,6 +17,30 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v0.9.4
+
+Release date: Tuesday 17 January 2017
+
+### Changed
+
+* Update CONTRIBUTING.md to match the redesign of how the DPL is built.
+* Update dummy pattern to match the redesign of how the DPL is built. 
+
+
+
+
+---
+## v0.9.3
+
+### Removed
+
+* Remove wai aria role from content whole pattern.
+
+
+
+
+---
+
 ## v0.9.2
 
 Release date: Friday 13 January 2017
