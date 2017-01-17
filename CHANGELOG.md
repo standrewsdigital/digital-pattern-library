@@ -6,6 +6,16 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v0.9.3
+
+### Removed
+
+* Remove wai aria role from content whole pattern.
+
+
+
+
+---
 
 ## v0.9.4
 
