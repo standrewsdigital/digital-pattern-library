@@ -7,6 +7,20 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.9.4
+
+Release date: Tuesday 17 January 2017
+
+### Changed
+
+* Update CONTRIBUTING.md to match the redesign of how the DPL is built.
+* Update dummy pattern to match the redesign of how the DPL is built. 
+
+
+
+
+---
+
 ## v0.9.2
 
 Release date: Friday 13 January 2017
