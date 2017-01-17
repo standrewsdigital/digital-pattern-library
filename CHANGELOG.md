@@ -20,6 +20,16 @@ Release date: Tuesday 17 January 2017
 
 
 ---
+## v0.9.3
+
+### Removed
+
+* Remove wai aria role from content whole pattern.
+
+
+
+
+---
 
 ## v0.9.2
 
