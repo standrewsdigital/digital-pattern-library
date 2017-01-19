@@ -1,0 +1,44 @@
+---
+title: Patterns page
+layout: _base.hbs
+core-assets: true
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <h1>Patterns</h1>
+            <p>Patterns are simple, reusable solutions to specific design problems built to support the University of St Andrews website and web applications.</p>
+        </div>
+    </div>
+</div>
+
+{{#each patterns-page.categories}}
+    <div class="container">
+    	<div class="row">
+            <div class="col-md-12 col-sm-12">
+                <h2>{{heading}}</h2>
+                <p>{{subheading}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+                {{#each patterns}}
+                    <div class="col-sm-4">
+                        <!-- Begin pattern: navbox //-->
+                        <div class="navbox ">
+                                <div class="navbox-image">
+                                    <img src="{{img}}" alt="Description">
+                                </div>
+                            <div class="navbox-title">
+                                <p><a href="{{url}}">{{name}}</a></p>
+                            </div>
+                        </div>
+                    <!-- End pattern: navbox //-->
+                    </div>
+                {{/each}}
+        	</div>
+        </div>
+    </div>
+{{/each}}

@@ -1,0 +1,10 @@
+{
+    "option-heading": "University homepage header",
+    "option-description": "<p>Must be used only on the University homepage.</p>",
+    "audience": true,
+    "links": {
+        "Students":"https://www.st-andrews.ac.uk/students/",
+        "Postgraduates":"https://www.st-andrews.ac.uk/pgstudents/",
+        "Staff":"https://www.st-andrews.ac.uk/staff/"
+    }
+}

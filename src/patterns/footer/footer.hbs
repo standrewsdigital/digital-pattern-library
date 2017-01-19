@@ -1,91 +1,63 @@
-
 <!-- Begin pattern: footer //-->
+{{!-- Font Awesome CDN - used for social media icons --}}
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-<footer>
+<footer role="contentinfo">
     {{#if website-footer}}
         <div id="website-footer">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4" id="footer-tools">
-                        {{#if section1}}
-                            {{#section1}}
-                                <h3>{{title}}</h3>
-                                <ul>
-                                    {{#links}}
-                                    <li><a href="{{url}}">{{title}}</a></li>
-                                    {{/links}}
-                                </ul>
-                            {{/section1}}
-                        {{else}}
-                            <h3>Section 1 title</h3>
+                        {{#section1}}
+                            <h3>{{title}}</h3>
                             <ul>
-                                <li><a href="#">Link1</a></li>
-                                <li><a href="#">Link2</a></li>
-                                <li><a href="#">Link3</a></li>
+                                {{#links}}
+                                <li><a href="{{url}}">{{title}}</a></li>
+                                {{/links}}
                             </ul>
-                        {{/if}}
+                        {{/section1}}
 
-                        {{#if section2}}
-                            {{#section2}}
-                                <h3>{{title}}</h3>
-                                <ul>
-                                    {{#links}}
-                                    <li><a href="{{url}}">{{title}}</a></li>
-                                    {{/links}}
-                                </ul>
-                            {{/section2}}
-                        {{else}}
-                            <h3>Section 2 title</h3>
+                        {{#section2}}
+                            <h3>{{title}}</h3>
                             <ul>
-                                <li><a href="#">Link1</a></li>
-                                <li><a href="#">Link2</a></li>
-                                <li><a href="#">Link3</a></li>
+                                {{#links}}
+                                <li><a href="{{url}}">{{title}}</a></li>
+                                {{/links}}
                             </ul>
-                        {{/if}}
+                        {{/section2}}
+
+                        {{#section3}}
+                            <h3>{{title}}</h3>
+                            <ul>
+                                {{#links}}
+                                <li><a href="{{url}}">{{title}}</a></li>
+                                {{/links}}
+                            </ul>
+                        {{/section3}}
                     </div>
 
                     <div class="col-sm-4" id="footer-navigation">
-                        {{#if section3}}
-                            {{#section3}}
-                                <h3>{{title}}</h3>
-                                <ul>
-                                    {{#links}}
-                                    <li><a href="{{url}}">{{title}}</a></li>
-                                    {{/links}}
-                                </ul>
-                            {{/section3}}
-                        {{else}}
-                            <h3>Section 3 title</h3>
+                        {{#section4}}
+                            <h3>{{title}}</h3>
                             <ul>
-                                <li><a href="#">Link1</a></li>
-                                <li><a href="#">Link2</a></li>
-                                <li><a href="#">Link3</a></li>
+                                {{#links}}
+                                <li><a href="{{url}}">{{title}}</a></li>
+                                {{/links}}
                             </ul>
-                        {{/if}}
+                        {{/section4}}
                     </div>
 
                     <div class="col-sm-4" id="footer-contact">
-                        {{#if contact}}
-                            {{#contact}}
-                                <h3><a href="{{url}}">Contact us</a></h3>
-                                <address>
-                                    <p>
-                                        <strong>{{unit}}</strong><br>
-                                        {{{address}}}
-                                    </p>
-                                    <p><strong>Phone:</strong> {{phone}}</p>
-                                </address>
-                            {{/contact}}
-                        {{else}}
-                            <h3><a href="[url]">Contact us</a></h3>
+                        {{#contact}}
+                            <h3><a href="{{url}}">Contact us</a></h3>
                             <address>
                                 <p>
-                                    <strong>[unit]</strong><br>
-                                    Street Address
+                                    <strong>{{unit}}</strong><br>
+                                    {{{address}}}
                                 </p>
-                                <p><strong>Phone:</strong> [phone]</p>
+                                <p><strong>Phone:</strong> {{phone}}</p>
                             </address>
-                        {{/if}}
+                        {{/contact}}
                     </div>
                 </div> <!-- End .row -->
             </div> <!-- End .container -->
@@ -100,22 +72,22 @@
                     <p id="footer-charity" role="contentinfo">&copy; <script>document.write(new Date().getFullYear());</script> University of St Andrews is a charity registered in Scotland, No SC013532.</p>
 
                     <ul id="footer-links">
-                        <li><a href="/terms/">Terms and conditions</a></li>
-                        <li><a href="/help/">Website help</a></li>
+                        <li><a href="http://www.st-andrews.ac.uk/terms/">Terms and conditions</a></li>
+                        <li><a href="http://www.st-andrews.ac.uk/help/">Website help</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-4">
                     <ul id="social">
-                        <li><a href="https://www.facebook.com/uniofsta"><img src="{{asset "core/images/furniture/facebook-logo-svg.svg"}}" alt="Facebook"></a></li>
-                        <li><a href="https://twitter.com/univofstandrews/"><img src="{{asset "core/images/furniture/twitter-logo-svg.svg"}}" alt="Twitter"  /></a></li>
+                        <li><a href="https://www.facebook.com/uniofsta"><i class="fa fa-facebook-official fa-2x" title="Facebook"></i></a></li>
+                        <li><a href="https://twitter.com/univofstandrews/"><i class="fa fa-twitter-square fa-2x" title="Twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/uniofstandrews"><i class="fa fa-instagram fa-2x" title="Instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/uofstandrews"><i class="fa fa-youtube-square fa-2x" title="YouTube"></i></a></li>
                     </ul>
                 </div>
 
             </div> <!-- End .row //-->
         </div> <!-- End .container //-->
     </div> <!-- End #university-footer //-->
-
 </footer>
-
 <!-- End pattern: footer //-->

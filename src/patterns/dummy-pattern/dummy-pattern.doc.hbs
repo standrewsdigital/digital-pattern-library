@@ -1,40 +1,34 @@
 ---
 title: Dummy pattern
-pattern: dummy-pattern
-examples:
-- name: full-details
-- name: no-image
-
 ---
 
-<!--
-INSTRUCTIONS, PT.1
+<p class="alert alert-info">See CONTRIBUTING.md for details on how to create a new pattern.</p>
 
-START HERE...
+<p>The introduction may be several paragraphs long if required. It should introduce the pattern, explain what it is and when and where it may be used.</p>
 
-1. The name of the directory should be the same as the pattern name (in this example `dummy-pattern`), and the name of this file.
-
-2. Give the pattern a title. This should be human-readable and may contain spaces.
-
-3. Change the names of the examples above. These are in the /examples directory. Use descriptive names rather than example-1, example-2, etc. It makes it much easier
-
-Now edit the `dummy-pattern.hbs` file.
--->
-
-<p>Several sentence description of the pattern.</p>
-
-<h2>Usage</h2>
+<p>You may use any formatting as required, such as paragraphs and unordered lists:</p>
 
 <ul>
-   <li>When to use, rule 1</li>
-   <li>How to use, rule 2</li>
-   <li>When not to use, rule 3</li>
+    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+    <li>Aliquam tincidunt mauris eu risus.</li>
+    <li>Dolores tempore enim debitis totam</li>
 </ul>
 
+<p>Documentation should follow the writing for the web guidelines and adhere to the house style guide.</p>
 
-<h2>Options</h2>
-
+<hr>
+<h3>Options available</h3>
 <ul>
-   <li>Option 1</li>
-   <li>Option 2</li>
+{{#dummy-pattern-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/dummy-pattern-options.options}}
 </ul>
+
+{{#dummy-pattern-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+</div>{{>  dummy-pattern}}<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> dummy-pattern}}</code></pre>
+{{/dummy-pattern-options.options}}

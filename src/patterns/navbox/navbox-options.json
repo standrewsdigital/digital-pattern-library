@@ -1,0 +1,55 @@
+{
+    "options": [
+        {
+            "option-heading": "Navbox with image",
+            "option-description": "<p></p>",
+            "image": {
+                "url": "docs/images/placeholders/360x240.jpg",
+                "alt": "Description"
+            },
+            "title": "Study",
+            "url": "/study"
+           
+        },
+
+
+
+
+        {
+            "option-heading": "Navbox without image",
+            "option-description": "<p></p>",
+            "title": "Study",
+            "url": "/study",
+            "text": ""
+           
+        },
+
+
+
+
+        {
+            "option-heading": "Navbox with image and paragraph",
+            "option-description": "<p></p>",
+            "image": {
+                "url": "docs/images/placeholders/360x240.jpg",
+                "alt": "Description"
+            },
+            "title": "Study",
+            "url": "/study",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+           
+        },
+
+
+
+
+        {
+            "option-heading": "Navbox without image and paragraph",
+            "option-description": "<p></p>",
+            "title": "Study",
+            "url": "/study",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+           
+        }        
+    ]
+ }

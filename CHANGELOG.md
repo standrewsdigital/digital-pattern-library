@@ -6,11 +6,312 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v.0.9.6
 
-## v0.9.0 
+### Changed
+
+*Added margin to Alert element paragraphs.
+
+
+
+
+---
+
+## v0.9.5
+
+### Removed
+
+* Remove wai aria role from content whole pattern.
+
+
+
+
+---
+
+## v0.9.4
+
+Release date: Tuesday 17 January 2017
+
+### Changed
+
+* Update CONTRIBUTING.md to match the redesign of how the DPL is built.
+* Update dummy pattern to match the redesign of how the DPL is built. 
+
+
+
+
+---
+
+## v0.9.3
+
+### Removed
+
+* Remove wai aria role from content whole pattern.
+
+
+
+
+---
+
+## v0.9.2
+
+Release date: Friday 13 January 2017
+
+### Added
+
+* Create options to show the use of Google Maps within other patterns.
+
+### Changed
+
+* Instead of using a JSON file for map markers, we now use the default Google and Google My Maps embed code.
+* Update documentation to reflect changes to how pattern works.
+
+### Removed
+
+* Remove the JavaScript file, as this is no longer needed.
+* Remove all CSS styling for the pattern, except one line, as Bootstrap's responsive embed code works fine.
+
+
+
+
+---
+
+## v0.9.1
+
+Release date: Friday 13 January 2017
+
+### Added
+
+* Add lightbox.js with some new examples.
+* Update pattern documentation.
+
+### Changed
+
+* Deprecate jQuery Theatre plugin code.
+
+
+
+
+---
+
+
+## v0.9.0
+
+Release date: Tuesday 10 January 2017
+
+### Added
+
+* Add pattern-options.json to all patterns for the new layout.
+* Add troubleshooting to `SETUP.md`.
+
+### Changed
+
+* Update all patterns to reflect the new layout for examples and code.
+* Simplify the homepage.
+
+### Removed
+
+* Remove the data and example folders from all the patterns, as they were no longer needed.
+
+
+
+
+---
+
+## v0.8.14
+
+Release date: Sunday 8 January 2017
+
+### Added
+
+* Add section number for "Update an existing install" (now section 3).
+* Add section 4 for troubleshooting, and add steps to resolve "Error: handlebars does not support render".
+
+### Fixed
+
+* Correct URL in text-banner on example pages to take users back to the examples homepage.
+
+
+
+
+---
+
+## v0.8.13
+
+Release date: Tuesday 20 December 2016
+
+### Added
+
+* Add navigation to Bootstrap components page.
+
+### Changed
+
+* Reorder (A-Z) and simplify navigation on Bootstrap components - advanced page.
+
+
+
+
+---
+
+## v0.8.12
+
+Release date: Friday 16 December 2016
+
+### Changed
+
+* Rename 'Pattern-pages' to 'Patterns'.
+* Rename 'Example-pages' to 'Examples'. 
+
+
+
+
+---
+
+## v0.8.11
+
+Release date: Friday 16 December 2016
+
+### Fixed
+
+* Fix floating footer on example pages.
+
+
+
+
+---
+
+## v0.8.10
+
+Release date: Friday 16 December 2016
+
+### Added
+
+* New example to the header pattern for a web application header.
+
+
+
+
+---
+
+## v0.8.9
+
+Release date: Thursday 15 December 2016
+
+### Changed
+
+* Update CONTRIBUTING-CHEATSHEET to include specific instructions about updating package.json and CHANGELOG.md before deployment, and tagging releases after deployment.
+* Add day names to CHANGELOG.md to match house style regarding dates.
+
+
+
+
+---
+
+## v0.8.8
+
+Release date: Wednesday 14 December 2016
+
+### Changed 
+
+* Merge `JavaScript dependencies` page into `using the pattern library` page.
+* Merge `using jQuery DataTables` information into the `Tables - DataTables` pattern.
+* Put `using the pattern library` first in the main navigation drop-down.
+* Update `using the pattern library` to include guidance for third-party applications and content management systems.
+
+
+### Removed
+
+* Delete `JavaScript dependencies` page and entry in main navigation.
+* Delete `using jQuery DataTables` page and entry in main navigation.
+
+
+### Fixed
+
+* Add CDN endpoint and package variables to `package.json`.
+
+
+
+
+---
+
+## v0.8.7
+
+Release date: Tuesday 13 December 2016
+
+### Changed
+
+* Update footer pattern documentation.
+* Social media icons within the footer now use [Font Awesome](http://fontawesome.io/) instead of SVG images. 
+* Add new example with deprecated code for the SVG links.
+
+
+
+
+---
+
+## v0.8.6
+
+Release date: Monday 12 December 2016
+
+### Changed 
+
+* Fix bug where search box can't close when screen size expanded.
+* Fix bug where search box position is altered when screen size is expanded.
+
+
+
+
+---
+
+## v0.8.5
+
+Release date: Friday 9 December 2016
+
+### Changed 
+
+* Update header pattern documentation.
+* Fix bug where search box dissapears after closing it in mobile view.
+
+
+
+
+---
+
+## v0.8.4
+
+Release date: Friday 9 December 2016
+
+### Changed
+
+* CONTRIBUTING.md - remove adding to navigation and replace with adding to pattern page.
+
+
+
+
+---
+
+## v0.8.3
  
-Release date: TBC 
+Release date: Thursday 8 December 2016
+
+### Added 
+
+* New example illustrating background colour with content-thirds pattern.
+
+
+### Changed 
  
+* Rename pattern content-updates to news-updates.
+* Update news-updates pattern.
+
+
+
+
+---
+
+## v0.8.2
+ 
+Release date: Wednesday 7 December 2016
  
 ### Added 
 
@@ -19,21 +320,33 @@ Release date: TBC
  
 ### Changed 
  
-* Rename pattern content-full to content-whole 
-* Update content-whole pattern. 
-* Moved .content class from pattern to screen.scss
+* Rename pattern content-full to content-whole.
+* Update content-whole pattern.
+* Move `.content` class from pattern to `screen.scss`.
 * Rename pattern content-2col to content-halves.
-* Update content-halves pattern. 
- 
- 
-### Removed 
- 
+* Update content-halves pattern.
+
+
+
+
+---
+
+## v0.8.1
+
+Release date: Tuesday 6 December 2016
+
+### Changed
+
+* Fix sticky nav click listener that was breaking tab content.
+
+
+
 
 ---
 
 ## v0.8.0
 
-Release date: 2 December 2016
+Release date: Friday 2 December 2016
 
 
 ### Added
@@ -50,14 +363,14 @@ Release date: 2 December 2016
 * Update accordion page.
 * Update breadcrumbs pattern.
 * Update category header.
-* Update CONTRIBUTING.md and merge in ADD-PATTERN.md so all author instructions are together.
-* Update documentation for Colours and Palettes.
-* Update README.md 
+* Update `CONTRIBUTING.md` and merge in `ADD-PATTERN.md` so all author instructions are together.
+* Update documentation for colours and palettes.
+* Update `README.md`.
 
 
 ### Removed
 
-* Remove palletes page (superceded now by colours page).
+* Remove palettes page (superceded now by colours page).
 
 
 
@@ -66,18 +379,18 @@ Release date: 2 December 2016
 
 ## v0.7.0
 
-Release date: 22 November 2016
+Release date: Tuesday 22 November 2016
 
 ### Added
 
-* KIS widget.
-* There is a global_css_fix.css file on the test subject pages e.g. http://www.st-andrews.ac.uk/subject-test/ancient-history/. This needs to be reviewed and code merged into the DPL for the appropriate patterns.
+* Add KIS widget.
+* There is a `global_css_fix.css` file on the test subject pages e.g. http://www.st-andrews.ac.uk/subject-test/ancient-history/. This needs to be reviewed and code merged into the DPL for the appropriate patterns.
 * Content 2 column pattern - add (1/2 + 1/2). Add a new two column content example with optional header and optional full-width background to the Content 2 column pattern.
 * Section header - new pattern for a section header to separate the sections on the subjects page.
-* Build core.js without jQuery so when IT Services developers are already using jQuery they can have use with the DPL without fear of code clashes.
+* Build `core.js` without jQuery so when IT Services developers are already using jQuery they can have use with the DPL without fear of code clashes.
 * Make CHANGELOG accessible in the DPL docs.
 * Featured media - new pattern for a full width background image with text to the left or right with image or video beside it. Used for content such as testimonials and reputation.
-* Add and upgrade datatables.js to DPL - until now it was pulled in manually.
+* Add and upgrade `datatables.js` to DPL - until now it was pulled in manually.
 
 ### Changed
 
@@ -88,11 +401,11 @@ Release date: 22 November 2016
 * Tabs.
 * Update DPL homepage.
 * Research group / panel grid - research group information to be on individual panels arranged in a grid. The panel already exists as part of Bootstrap, but need to decide how to best display research group.
-* Update documentation for ADD-PATTERN.md
+* Update documentation for `ADD-PATTERN.md`.
 
 ### Removed
 
-* Remove IE9 polyfills. DPL uses a couple of JavaScrip polyfills to support media queries in IE9. We no longer support IE9 so we can safely remove these.
+* Remove IE9 polyfills. DPL uses a couple of JavaScript polyfills to support media queries in IE9. We no longer support IE9 so we can safely remove these.
 
 
 
@@ -101,16 +414,16 @@ Release date: 22 November 2016
 
 ## v0.6.0
 
-Release date: 27 October 2016
+Release date: Thursday 27 October 2016
 
 ### Changed
 
-* README.md has had a significant rewrite, as has CONTRIBUTING.md which now incorporates information from ADD-PATTERN.md (now deleted).
+* `README.md` has had a significant rewrite, as has `CONTRIBUTING.md` which now incorporates information from `ADD-PATTERN.md` (now deleted).
 
 
 ### Removed
 
-* ADD-PATTERN.md information has now been merged into CONTRIBUTING.md.
+* Merge `ADD-PATTERN.md` information into `CONTRIBUTING.md`.
 
 
 
@@ -119,7 +432,7 @@ Release date: 27 October 2016
 
 ## v0.5.5
 
-Release date: 4 October 2016
+Release date: Tuesday 4 October 2016
 
 ### Added
 
@@ -139,11 +452,11 @@ Release date: 4 October 2016
 ### Fixed
 
 * Changed the audience header to the correct default header.
-* Corrected the repository URL in package.json (it was still 
+* Corrected the repository URL in `package.json` (it was still 
   set to Bitbucket rather than GitHub).
-* Updated code in DPL change log, documentation, examples, and _layouts
+* Updated code in DPL change log, documentation, examples, and `_layouts`
   to meet house code style and standards.
-* Fixed aside heading (was H2, now H3).
+* Fixed aside heading (was `<h2>`, now `<h3>`).
 * Fixed Bootstrap examples nav bar.
 * Small tweaks and removal of redundant code in various patterns.
 
@@ -154,7 +467,7 @@ Release date: 4 October 2016
 
 ## v0.5.4
 
-Release date: 24 August 2016
+Release date: Wednesday 24 August 2016
 
 ### Added
 
@@ -183,7 +496,7 @@ Release date: 24 August 2016
 
 ## v0.5.3
 
-Release date: 10 June 2016
+Release date: Friday 10 June 2016
 
 ### Added
 
@@ -218,7 +531,7 @@ Release date: 10 June 2016
 
 ## v0.5.2
 
-Release date: 9 February 2016
+Release date: Tuesday 9 February 2016
 
 ### Added
 
@@ -233,7 +546,7 @@ Release date: 9 February 2016
 
 ### Changed
 
-* Updated change log regarding grunt-ftp-deploy destination.
+* Updated change log regarding `grunt-ftp-deploy` destination.
 * Replaced headers throughout the DPL.
 * Increased iFrame height for examples.
 * Updated header with University brand.
@@ -275,7 +588,7 @@ Release date: 9 February 2016
 
 ## v0.5.1
 
-Release date: 16 September 2015
+Release date: Wednesday 16 September 2015
 
 ### Changed
 
@@ -293,7 +606,7 @@ Release date: 16 September 2015
 
 ## v0.5.0
 
-Release date: 27 August 2015
+Release date: Thursday 27 August 2015
 
 ### Added
 
@@ -304,7 +617,7 @@ Release date: 27 August 2015
 * Set up build process to add a text banner with version and date to all 
   compiled CSS and JS.
 * Added minified versions of JavaScript files.
-* Added contributor documentation: CONTRIBUTING.md, SETUP.md, ADD-PATTERN.md.
+* Added contributor documentation: `CONTRIBUTING.md`, `SETUP.md`, `ADD-PATTERN.md`.
 
 
 ### Changed
@@ -312,7 +625,7 @@ Release date: 27 August 2015
 * Restyled the colour swatches in documentation.
 * Adjusted the selected colour variants.
 * Improved documentation about footer pattern.
-* Refactored the README.md file.
+* Refactored the `README.md` file.
 
 
 ### Removed
@@ -326,7 +639,7 @@ Release date: 27 August 2015
 
 ## v0.4.1
 
-Release date: 27 July 2015
+Release date: Monday 27 July 2015
 
 ### Fixed
 
@@ -339,7 +652,7 @@ Release date: 27 July 2015
 
 ## v0.4.0
 
-Release date: 24 July 2015
+Release date: Friday 24 July 2015
 
 ### Added
 * Header-only JavaScript and CSS core files. 
@@ -375,7 +688,7 @@ Release date: 24 July 2015
 
 ## v0.3.2
 
-Release date: 18 June 2015
+Release date: Thursday 18 June 2015
 
 ### Fixed
 
@@ -399,13 +712,13 @@ Release date: 18 June 2015
 
 ## v0.3.1
 
-Release date: 15 June 2015
+Release date: Monday 15 June 2015
 
 ### Changed
 
-* Optimised logo-standard.svg:      69 KB -> 41 KB
-* Optimised logo-foundation.svg:    60 KB -> 33 KB
-* Optimised print-crest.png:        41 KB -> 11 KB
+* Optimised `logo-standard.svg`:      69 KB -> 41 KB
+* Optimised `logo-foundation.svg`:    60 KB -> 33 KB
+* Optimised `print-crest.png`:        41 KB -> 11 KB
 
 
 ### Removed 
@@ -419,11 +732,11 @@ Release date: 15 June 2015
 
 ## v0.3.0
 
-Release date: 10 June 2015
+Release date: Wednesday 10 June 2015
 
 ### Added
 
-* Font aliasing to improve quality of fonts
+* Font aliasing to improve quality of fonts.
 * Classes for implementing navigation in WordPress to support our theme.
 
 
@@ -442,7 +755,7 @@ Release date: 10 June 2015
 
 ## v0.2.0
 
-Release date: 14 April 2015
+Release date: Tuesday 14 April 2015
 
 ### Added
 
@@ -471,7 +784,7 @@ Release date: 14 April 2015
 
 ## v0.1.1
 
-Release date: 12 March 2015
+Release date: Thursday 12 March 2015
 
 ### Added
 

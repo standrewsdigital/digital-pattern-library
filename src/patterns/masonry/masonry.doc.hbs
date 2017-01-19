@@ -1,35 +1,20 @@
 ---
 title: Masonry (deprecated)
-pattern: masonry
-examples:
-- name: example1
-  width: 30%
-related:
-- name: masonry-grid
-
 ---
 
-<div class="alert alert-danger"> 
-  <strong>This pattern is depreciated.</strong> Do not attempt to use this pattern for any new website development. It will be removed in a future update. 
+<div class="alert alert-danger">
+  <strong>This pattern is deprecated.</strong> Do not attempt to use this pattern for any new website developments. It will be removed in a future update.
 </div>
 
-<p>The Masonry pattern shows a title, description, link and optional background image, designed to be combined together into a Masonry grid.</p>
+<p>The masonry pattern shows a title, description, link and optional background image, designed to be combined together into a <a href="../masonry-grid/index.html">masonry grid</a>; masonry elements must never appear outside of a masonry grid.</p>
 
-<h2>Usage</h2>
-
-<ul>
-	<li>Masonry elements never appear outside of a Masonry grid</li>
-</ul>
-
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> masonry}}</div>
-
-
-<h2>Options</h2>
-
-<ul>
-	<li><strong>Portrait</strong><br>
-    By default, masonry elements have a landscape shape, but can be configured to be portrait by adding a <code>portrait</code> class. This is used to help generate Masonry grid layouts.
-    </li>
-</ul>
+{{#masonry-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+<div style="width: 30%;">
+{{>  masonry}}
+</div>
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> masonry}}</code></pre>
+{{/masonry-options.options}}

@@ -1,0 +1,21 @@
+{
+    "options": [
+        {
+            "option-heading": "Default breadcrumbs",
+            "option-description": "<p></p>",
+            "parents": [
+            {
+                "title": "University",
+                "url": "#"
+            },
+            {
+                "title": "Study at St Andrews",
+                "url": "#"
+            }
+            ],
+            "current": {
+                "title": "Undergraduate"
+            }
+        }
+    ]
+ }

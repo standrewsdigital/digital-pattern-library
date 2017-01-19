@@ -1,0 +1,212 @@
+{
+    "categories": [
+        {
+            "heading": "Core",
+            "subheading": "Patterns essential to building a basic University of St Andrews webpage; listed from the top of the page to the bottom.",
+            "patterns": [
+                { "name": "Header",
+                  "img": "assets/docs/images/patterns/header.jpg",
+                  "url": "patterns/header/index.html"
+                },
+                { "name": "Category header",
+                  "img": "assets/docs/images/patterns/category-header.jpg",
+                  "url": "patterns/category-header/index.html"
+                },
+                { "name": "Breadcrumbs",
+                  "img": "assets/docs/images/patterns/breadcrumbs.jpg",
+                  "url": "patterns/breadcrumbs/index.html"
+                },
+                { "name": "Footer",
+                  "img": "assets/docs/images/patterns/footer.jpg",
+                  "url": "patterns/footer/index.html"
+                }
+            ]
+        },
+        {
+            "heading": "Bootstrap framework",
+            "subheading": "Common Bootstrap framework elements that have been styled to match the visual language of the University's digital pattern library.",
+            "patterns": [
+                { "name": "Bootstrap components",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "examples/bootstrap.html"
+                },
+                { "name": "Bootstrap components - advanced",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "examples/bootstrap2.html"
+                }
+            ]
+        },
+        {
+            "heading": "Call to action",
+            "subheading": "Patterns used to bring attention and link to content of importance both on the University website and external.",
+            "patterns": [
+                { "name": "Featured media",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/featured-media/index.html"
+                },
+                { "name": "Hero banner",
+                  "img": "assets/docs/images/patterns/hero-banner.jpg",
+                  "url": "patterns/hero-banner/index.html"
+                },
+                { "name": "KIS widget",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/kis-widget/index.html"
+                },
+                { "name": "Secondary call to action",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/secondary-call/index.html"
+                },
+                { "name": "Text banner",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/text-banner/index.html"
+                },
+                { "name": "Tile",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/tile/index.html"
+                },
+                { "name": "Tile grid",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/tile-grid/index.html"
+                }
+            ]
+        },
+        {
+            "heading": "Content",
+            "subheading": "Patterns used to display content in various ways.",
+            "patterns": [
+                { "name": "Accordion",
+                  "img": "assets/docs/images/patterns/accordion.jpg",
+                  "url": "patterns/accordion/index.html"
+                },
+                { "name": "Code",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/code/index.html"
+                },
+                { "name": "Contact card",
+                  "img": "assets/docs/images/patterns/contact-card.jpg",
+                  "url": "patterns/contact-card/index.html"
+                },
+                { "name": "Content halves",
+                  "img": "assets/docs/images/patterns/content-halves.jpg",
+                  "url": "patterns/content-halves/index.html"
+                },
+                { "name": "Content thirds",
+                  "img": "assets/docs/images/patterns/content-thirds.jpg",
+                  "url": "patterns/content-thirds/index.html"
+                },
+                { "name": "Content whole",
+                  "img": "assets/docs/images/patterns/content-whole.jpg",
+                  "url": "patterns/content-whole/index.html"
+                },
+                { "name": "Gallery",
+                  "img": "assets/docs/images/patterns/gallery.jpg",
+                  "url": "patterns/gallery/index.html"
+                },
+                { "name": "Google maps",
+                  "img": "assets/docs/images/patterns/google-maps.jpg",
+                  "url": "patterns/google-maps/index.html"
+                },
+                { "name": "HTML elements",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "examples/html-elements.html"
+                },
+                { "name": "Intro",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/intro/index.html"
+                },
+                { "name": "News updates",
+                  "img": "assets/docs/images/patterns/news-updates.jpg",
+                  "url": "patterns/news-updates/index.html"
+                },
+                { "name": "Section header",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/section-header/index.html"
+                },
+                { "name": "Staff profile",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/staff-profile/index.html"
+                },
+                { "name": "Tables",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "examples/tables.html"
+                },
+                { "name": "Tables - DataTables",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "examples/datatables.html"
+                },
+                { "name": "Tabs",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/tabs/index.html"
+                }
+            ]
+        },
+        {
+            "heading": "Icons",
+            "subheading": "Patterns used to accent elements using icons.",
+            "patterns": [
+                { "name": "Font Awesome",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/font-awesome/index.html"
+                }
+            ]
+        },
+        {
+            "heading": "Long-form",
+            "subheading": "Patterns used to build long-form content pages.",
+            "patterns": [
+                { "name": "Long-form content",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/long-form-content/index.html"
+                }
+            ]
+        },
+        {
+            "heading": "Navigation",
+            "subheading": "Patterns used to connect content pages across the University of St Andrews website.",
+            "patterns": [
+                { "name": "Navbox",
+                  "img": "assets/docs/images/patterns/navbox.jpg",
+                  "url": "patterns/navbox/index.html"
+                },
+                { "name": "Navbox grid",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/navbox-grid/index.html"
+                },
+                { "name": "Navigation bar",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/navigation-bar/index.html"
+                },
+                { "name": "Panel grid",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/panel-grid/index.html"
+                },
+                { "name": "Sticky nav",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/sticky-nav/index.html"
+                }
+            ]
+        },
+        {
+            "heading": "Deprecated",
+            "subheading": "Patterns that are no longer supported and will be removed in future versions of the pattern library.",
+            "patterns": [
+                { "name": "Info bite (deprecated)",
+                  "img": "assets/docs/images/patterns/info-bite.jpg",
+                  "url": "patterns/info-bite/index.html"
+                },
+                { "name": "Info bite grid (deprecated)",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/info-bite-grid/index.html"
+                },
+                { "name": "Masonry (deprecated)",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/masonry/index.html"
+                },
+                { "name": "Masonry grid (deprecated)",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/masonry-grid/index.html"
+                }
+            ]
+        }
+    ]
+}

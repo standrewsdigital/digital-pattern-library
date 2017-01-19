@@ -1,0 +1,26 @@
+{
+    "options": [
+        {
+            "option-heading": "Example",
+            "option-description": "<p></p>",
+            "nav-link": [
+                { "name":"Courses",
+                  "link":"#"
+                },
+                { "name":"Testimonial",
+                  "link":"#"
+                },
+                { "name":"Another link",
+                  "link":"#"
+                },
+                { "name":"Yet another",
+                  "link":"#"
+                },
+                { "name":"The last one",
+                  "link":"#"
+                }
+            ]
+
+        }
+    ]
+ }

@@ -5,29 +5,9 @@ title: <%= title %>
 
 <div class="container">
 
-    <h1>{{title}}</h1>
+    <h2>{{title}}</h2>
 
     {{>body}}
 
-    {{#if examples}}
-        <h2>Examples</h2>
-        {{#examples}}
-            <div class="example">
-                <h3>{{name}}</h3>
-                <p><a href="" class="example_toggle">View</a> | <a href="#" class="example_toggle">Code</a> | <a href="examples/{{name}}.html" target="_blank">Open in new window</a></p>
-                <iframe src="examples/{{name}}.html" class="view" style="{{#if width}}width:{{width}};{{/if}} {{#if height}}height:{{height}};{{/if}}"></iframe>
-                <div class="code"></div>
-            </div>
-        {{/examples}}
-    {{/if}}
-
-    {{#if related}}
-        <h2>Related patterns</h2>
-        <ul>
-            {{#related}}
-            <li><a href="../{{name}}/index.html">{{name}}</a></li>
-            {{/related}}
-        </ul>
-    {{/if}}
 </div>
 

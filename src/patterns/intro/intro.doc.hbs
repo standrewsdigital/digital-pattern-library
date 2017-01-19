@@ -1,26 +1,14 @@
 ---
 title: Intro
-pattern: intro
-examples:
-- name: intro1
-related:
-- name: external-home
 ---
 
-<p>The Intro pattern presents a centered heading and paragraph. </p>
+<p>The intro pattern presents a centered heading and paragraph. Ideally used in between other full width image-heavy content.</p>
 
-<h2>Usage</h2>
-
-<ul>
-	<li>Ideally used in between other full width image-heavy content.</li>
-</ul>
-
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> intro intro-example}}</div>
-
-<h2>Options</h2>
-
-<ul>
-    <li><em>None</em></li>
-</ul>
+{{#intro-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+{{> intro}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> intro}}</code></pre>
+{{/intro-options.options}}

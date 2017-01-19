@@ -8,27 +8,21 @@
         { "name" : "Documentation",
             "url" : "#",
             "items" : [
-                { "name" : "Colours",
-                  "url" : "colours.html"
-                },
-                { "name" : "JavaScript dependencies",
-                  "url" : "dependencies.html"
-                },
                 { "name" : "Using the pattern library",
                   "url" : "using.html"
                 },
-                { "name" : "Using jQuery DataTables",
-                  "url" : "datatables.html"
+                { "name" : "Colours",
+                  "url" : "colours.html"
                 }
             ]
         },
 
         { "name" : "Patterns",
-            "url" : "/pattern-pages.html"
+            "url" : "/patterns.html"
         },
 
-        { "name" : "Example pages",
-            "url" : "/example-pages.html"
+        { "name" : "Examples",
+            "url" : "/examples.html"
         }
     ]
 }

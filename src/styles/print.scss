@@ -63,7 +63,7 @@ nav.navigation-bar,
     DISPLAY PRINT LOGO
 =================================================*/
 
-#header-logo a {
+#header-logo a, #web-application-header-logo a {
     display: block;
     height: 2cm;
     width: 10cm;
@@ -73,7 +73,7 @@ nav.navigation-bar,
     background-repeat: no-repeat;
 }
 
-#header-logo span {
+#header-logo span, #web-application-header-logo span {
     display: none;
 }
 
@@ -264,6 +264,14 @@ thead {
 }
 
 /*==============================================================================
+    HEADER
+==============================================================================*/
+
+#header-authenticated .btn-group {
+    display: none;
+}
+
+/*==============================================================================
     FEATURED MEDIA
 ==============================================================================*/
 
@@ -399,4 +407,20 @@ aside.parallel-right figure {
 
 .accordion > div {
     display: block !important;
+}
+
+/*==============================================================================
+    NEWS UPDATES
+==============================================================================*/
+
+.news-updates figure {
+    display:none;
+}
+
+.news-updates a.btn {
+    display:none;
+}
+
+.news-updates a {
+    text-decoration: none;
 }

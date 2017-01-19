@@ -1,28 +1,19 @@
 ---
 title: Header
-pattern: header
-examples:
-- name: default-header
-- name: audience-header
-- name: school-header
-- name: authenticated-header
 ---
 
-<p>The Header pattern includes the logo and search. On the homepage, the header also includes audience navigation. </p>
-
-<h2>Usage</h2>
-
+<p>The header pattern includes the logo and search field. On the University homepage, the header also includes audience specific navigation links above the search bar.</p>
 <ul>
-	<li>The header should be included at the top of all pages.</li>
+	<li>The header must be included at the top of all webpages.</li>
+	<li>The University logo used for the header must be the "Founded in 1413" variant in black.</li>
+	<li>The background colour of the header must always be white.</li>
 </ul>
 
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> header}}</div>
-
-<h2>Options</h2>
-
-<ul>
-	<li><em>Audience navigation</em> The audience navigation should only be included on the homepage.</li>
-    <li><em>Authenticated links</em> When authenticated the header should be altered to include the name of the person logged in, any audience-specific links they may have access to in addition to a link to logout.</li>
-</ul>
+{{#header-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+</div>{{>  header}}<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> header}}</code></pre>
+{{/header-options.options}}

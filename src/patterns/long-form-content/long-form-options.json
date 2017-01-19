@@ -1,0 +1,155 @@
+{
+    "options": [
+
+        {
+            "option-heading": "Lead paragraph",
+            "option-description": "<p></p>",
+            "variant": "",
+            "bg-image": "",
+            "lf-content":
+                "<h1>Lorem ipsum dolor</h1><p class='lead'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+        },
+
+
+
+
+        {
+            "option-heading": "Background image white text",
+            "option-description": "<p></p>",
+            "variant": "long-form--inverse long-form--bg-darken",
+            "bg-image": "docs/images/long-form-content/bg-spark.jpg",
+            "lf-content":
+                "<h2>Lorem ipsum dolor</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+        },
+
+
+
+
+       {
+            "option-heading": "Background image dark text",
+            "option-description": "<p></p>",
+            "variant": "long-form--bg-lighten",
+            "bg-image": "docs/images/long-form-content/bg-spark.jpg",
+            "lf-content":
+                "<h2>Lorem ipsum dolor</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+        },
+
+
+
+
+        {
+            "option-heading": "Background light grey",
+            "option-description": "<p></p>",
+            "variant": "long-form--bg-light-grey",
+            "bg-image": "",
+            "lf-content":
+                "<h2>Lorem ipsum dolors</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+        },
+
+
+
+
+        {
+            "option-heading": "Standard",
+            "option-description": "<p></p>",
+            "variant": "",
+            "bg-image": "",
+            "lf-content":
+                "<h1>Lorem ipsum dolor</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><ul><li>Consectetur adipisicing elit</li><li>Sed do eiusmod</li><li>Excepteur sint occaecat</li></ul><blockquote><p>It is a fair, even-handed, noble adjustment of things, that while there is infection in disease and sorrow, there is nothing in the world so irresistibly contagious as laughter and good humour.</p><p><small><cite>A Christmas Carol</cite> by Charles Dickens</small></p></blockquote><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+        },
+
+
+
+
+        {
+            "option-heading": "Full width",
+            "option-description": "<p></p>",
+            "variant": "long-form--width-full",
+            "bg-image": "",
+            "lf-content":
+                "<h3>Lorem ipsum dolor</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+        },
+
+
+
+
+        {
+            "option-heading": "Medium width",
+            "option-description": "<p></p>",
+            "variant": "long-form--width-medium",
+            "bg-image": "",
+            "lf-content":
+                "<h3>Lorem ipsum dolor</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+        },
+
+
+
+
+        {
+            "option-heading": "No padding",
+            "option-description": "<p></p>",
+            "variant": "long-form--padding-none",
+            "bg-image": "",
+            "lf-content":
+                "<h3>Lorem ipsum dolor</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+        },
+
+
+
+
+        {
+            "option-heading": "Asides",
+            "option-description": "<p></p>",
+            "variant": "",
+            "bg-image": "",
+            "lf-content": "<h2>Aside examples</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><aside class='align-centre'><figure class='example'><code>.align-centre</code></figure></aside><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><aside class='align-left'><figure class='example'><code>.align-left</code></figure></aside><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><aside class='align-right'><figure class='example'><code>.align-right</code></figure></aside><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><aside class='extend-left' style='width: 300px;'><figure class='example'><code>.extend-left</code></figure></aside><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><aside class='extend-right' style='width: 300px;'><figure class='example'><code>.extend-right</code></figure></aside><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><aside class='float-left'><figure class='example'><code>.float-left</code></figure></aside><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><aside class='float-right'><figure class='example'><code>.float-right</code></figure></aside><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><aside class='parallel-left'><figure class='example'><code>.parallel-left</code></figure></aside><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><aside class='parallel-right'><figure class='example'><code>.parallel-right</code></figure></aside><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+        },
+
+
+
+
+        {
+            "option-heading": "Pull quote",
+            "option-description": "<p></p>",
+            "variant": "",
+            "bg-image": "",
+            "lf-content": "<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p class='pull-quote' data-quote='...there is nothing in the world so irresistibly contagious as laughter and good humour.'>It is a fair, even-handed, noble adjustment of things, that while there is infection in disease and sorrow, there is nothing in the world so irresistibly contagious as laughter and good humour.</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+        },
+
+
+
+
+        {
+            "option-heading": "Thumbnail gallery",
+            "option-description": "<p></p>",
+            "variant": "",
+            "bg-image": "",
+            "lf-content":
+                "<div class='thumbnail-gallery'><h4 class='thumbnail-gallery__title'>Scientists involved with Light Box</h4><div class='thumbnail-gallery__images'><figure class='image'><img src='../../assets/docs/images/long-form-content/portrait-ifor-samuel.jpg' alt'Professor Ifor Samuel' title='Professor Ifor Samuel'><figcaption>Ifor Samuel<br><em>Physicist</em></figcaption></figure><figure class='image'><img src='../../assets/docs/images/long-form-content/portrait-john-allen.jpg' alt='John Allen' title='Ashu Kumar Bansal'><figcaption>John Allen<br><em>Physicist</em></figcaption></figure><figure class='image'><img src='../../assets/docs/images/long-form-content/portrait-ashu-kumar-bansal.jpg' alt='Ashu Kumar Bansal' title='Ashu Kumar Bansal'><figcaption>Ashu Kumar Bansal<br><em>Optical physicist</em></figcaption></figure><figure class='image'><img src='../../assets/docs/images/long-form-content/portrait-hien-nguyen.jpg' alt='Hien Nguyen' title='Hien Nguyen'><figcaption>Hien Nguyen<br><em>Polymer chemist</em></figcaption></figure><figure class='image'><img src='../../assets/docs/images/long-form-content/portrait-olena-kulyk.jpg' alt='Olena Kulyk' title='Olena Kulyk'><figcaption>Olena Kulyk<br><em>Biomedical electronics engineer</em></figcaption></figure></div></div>"
+        },
+
+
+
+
+        {
+            "option-heading": "End piece",
+            "option-description": "<p></p>",
+            "variant": "",
+            "bg-image": "",
+            "lf-content": "<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p class='end'>28 August 2015</p>"
+        },
+
+
+
+
+        {
+            "option-heading": "Credits",
+            "option-description": "<p></p>",
+            "variant": "long-form--credits",
+            "bg-image": "",
+            "lf-content":
+                "<h3>Credits</h3><p>Graphics and design by the University of St Andrews digital communications team. Content written by Carley Hollis, digital communications team. Video, audio and additional photography by the student-run <a href='http://www.lightboxcreative.me'>Lightbox Creative St Andrews</a>.</p><p>Copyright for portraits, photographs and poems from Light Box remains with Norman McBeath and Robert Crawford.</p><h3>Thanks</h3><p>Robert Crawford and the University of St Andrews School of English.<br>Norman McBeath.<br>Professor Ifor Samuel and the University of St Andrews Organic Semiconductor Optoelectronics research group.<br>University of St Andrews Creative English MLitt students Helen Nicholson, Amanda Merritt and Tristram Fane Saunders.<br>Photographers, Kim Bennett, Gerry Priest and David Ogden.<br>Alice Crawford and the Digital Humanities Project, part of University of St Andrews Library, for digitising Light Box. <br> Rachel Hart and the University of St Andrews Special Collections, for access to Light Box.</p><h3>Sources</h3><ol><li>'A Scottish Assembly', Robert Crawford, 1990, Oxford University Press.</li><li>About the Year of Light. Retrieved May 7, 2015, from <a href='http://www.light2015.org/Home/About.html'>http://www.light2015.org/Home/About.html</a></li></ol><h3>Contact</h3><p>Email: proffice@st-andrews.ac.uk<br>Phone: 01334 46 2108</p>"
+        }
+
+    ]
+}

@@ -1,13 +1,14 @@
 <!-- Begin pattern: navbox-grid //-->
 
 <div class="container">
-    <div class="row">
         {{#if items}}
+            <div class="row">
             {{#items}}
                 <div class="col-sm-4">
                     {{>navbox}}
                 </div>
             {{/items}}
+            </div>
         {{else}}
             {{#if items_masonry}}
                 {{#items_masonry}}
@@ -18,6 +19,7 @@
                     {{#if close}}</div>{{/if}}
                 {{/items_masonry}}
             {{else}}
+            <div class="row">
                 <div class="col-sm-4">
                     {{>navbox}}
                 </div>
@@ -27,9 +29,9 @@
                 <div class="col-sm-4">
                     {{>navbox}}
                 </div>
+            </div>
             {{/if}}
         {{/if}}
-    </div>
 </div>
 
 <!-- End pattern: navbox-grid //-->
