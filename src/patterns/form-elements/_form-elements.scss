@@ -26,37 +26,6 @@ input[type~=text].form-control, select.form-control {
 	}
 }
 
-.radio::before {
-    content: "";
-    border: 2px solid;
-    background: transparent;
-    width: 34px;
-    height: 34px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-}
-
-.radio::after {
-    content: "";
-    border: 10px solid;
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 9px;
-    left: 9px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    zoom: 1;
-    filter: alpha(opacity=0);
-    opacity: 0;
-}
-
-
 /*********************************/
 /* END Pattern: form-elements    */
 /*********************************/
