@@ -14,6 +14,7 @@ title: Form elements
 <ul>
 	<li><a href="#checkboxes">Checkboxes</a></li>
 	<li><a href="#conditional">Conditionally revealing content</a></li>
+	<li><a href="#fieldsets">Fieldsets and legends</a></li>
 	<li><a href="#file-upload">File upload</a></li>
 	<li><a href="#form-inputs">Input fields</a></li>		
 	<li><a href="#hint-text">Hint text</a></li>
@@ -113,6 +114,27 @@ title: Form elements
 <div class="container">
 	<span class="label label-default">Code</span>
 	<pre><code class="pattern-source html">{{> form-elements-conditional-checkbox}}</code></pre>
+</div>
+
+<hr>
+
+
+
+
+<h3 id="fieldsets">Fieldsets and legends</h3>
+
+<p>Use fieldsets to group related form controls. The first element inside a fieldset must be a <code>legend</code> element which describes the group.</p>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-fieldsets}}
+	</div>	
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-fieldsets}}</code></pre>
 </div>
 
 <hr>
