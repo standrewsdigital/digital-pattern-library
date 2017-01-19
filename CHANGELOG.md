@@ -6,6 +6,17 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v.0.9.7
+
+### Added
+
+*Added background colours to the Featured media pattern.
+
+
+
+
+---
+
 ## v.0.9.6
 
 ### Changed
