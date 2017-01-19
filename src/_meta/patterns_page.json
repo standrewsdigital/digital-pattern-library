@@ -147,6 +147,10 @@
                 { "name": "Form elements",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/form-elements/index.html"
+                },
+                { "name": "Form validation",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/form-validation/index.html"
                 }
             ]
         },        
