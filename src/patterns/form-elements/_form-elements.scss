@@ -26,54 +26,19 @@ input[type~=text].form-control, select.form-control {
 	}
 }
 
-// .radio::before {
-//     content: "";
-//     border: 2px solid;
-//     background: transparent;
-//     width: 34px;
-//     height: 34px;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     -webkit-border-radius: 50%;
-//     -moz-border-radius: 50%;
-//     border-radius: 50%;
-// }
-
-// .radio::after {
-//     content: "";
-//     border: 10px solid;
-//     width: 0;
-//     height: 0;
-//     position: absolute;
-//     top: 9px;
-//     left: 9px;
-//     -webkit-border-radius: 50%;
-//     -moz-border-radius: 50%;
-//     border-radius: 50%;
-//     zoom: 1;
-//     filter: alpha(opacity=0);
-//     opacity: 0;
-// }
-
-.radio-stacked, .radio-inline {
+.radio-button, .checkbox-box {
     .container ul {
         list-style: none;
-        height: 100%;
-        width: 100%;
-        margin: 0;
         padding: 0;
     }
 
     ul li {
-        color: black;
-        display: block;
         position: relative;
         float: left;
         width: 100%;
     }
 
-    ul li input[type=radio] {
+    ul li input[type=radio], ul li input[type=checkbox] {
         border: 0;
         clip: rect(0 0 0 0);
         height: 1px;
@@ -85,9 +50,7 @@ input[type~=text].form-control, select.form-control {
     }
 
     ul li label {
-        display: block;
         position: relative;
-        font-weight: 300;
         padding: 5px 25px 25px 60px;
         margin: 10px auto;
         height: 30px;
@@ -97,7 +60,6 @@ input[type~=text].form-control, select.form-control {
     }
 
     ul li .check {
-        display: block;
         position: absolute;
         border: 3px solid black;
         border-radius: 100%;
@@ -111,7 +73,6 @@ input[type~=text].form-control, select.form-control {
     }
 
     ul li .check::before {
-        display: block;
         position: absolute;
         content: '';
         border-radius: 100%;
@@ -128,14 +89,27 @@ input[type~=text].form-control, select.form-control {
         background: black;
     }
 
-    ul li input[type=radio]:focus ~ .check {
+    ul li input[type=radio]:focus ~ .check, ul li input[type=checkbox]:focus ~ .check {
         box-shadow: 0 0 1px 3px #00539b;
     }
 }
 
-.radio-inline ul li {
+.inline ul li {
     display: inline-block;
     width: auto;
+}
+
+.checkbox-box {
+    ul li .check {
+        border-radius: 0;
+    }
+
+    ul li input[type=checkbox]:checked ~ .check::before {
+        color: black;
+        content: '\e013';
+        top: 0;
+        left: 0;
+    }
 }
 
 /*********************************/
