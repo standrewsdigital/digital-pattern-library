@@ -27,13 +27,12 @@ input[type~=text].form-control, select.form-control {
 }
 
 .radio-button, .checkbox-box {
-    .container ul {
+    ul {
         list-style: none;
         padding: 0;
     }
 
     ul li {
-        float: left;
         position: relative;
         width: 100%;
     }
