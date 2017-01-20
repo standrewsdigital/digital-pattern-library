@@ -13,7 +13,6 @@ title: Form elements
 <h3>Options</h3>
 <ul>
 	<li><a href="#checkboxes">Checkboxes</a></li>
-	<li><a href="#conditional">Conditionally revealing content</a></li>
 	<li><a href="#fieldsets">Fieldsets and legends</a></li>
 	<li><a href="#file-upload">File upload</a></li>
 	<li><a href="#form-inputs">Input fields</a></li>
@@ -29,17 +28,13 @@ title: Form elements
 
 <ul>
 	<li>Make it clear with words when users can select one or more multiple options.</li>
+	<li>Only pre-select options if there’s a strong, user-centred reason to.</li>
 </ul>
 
 
 
 
 <h4>Inline checkboxes</h4>
-
-<ul>
-	<li>Large hit areas aren’t always appropriate.</li>
-	<li>Only pre-select options if there’s a strong, user-centred reason to.</li>
-</ul>
 
 <div class="container">
 	<span class="label label-default">Example</span>
@@ -70,32 +65,6 @@ title: Form elements
 <div class="container">
 	<span class="label label-default">Code</span>
 	<pre><code class="pattern-source html">{{> form-elements-checkboxes-stacked}}</code></pre>
-</div>
-
-<hr>
-
-
-
-
-<h3 id="conditional">Conditionally revealing content</h3>
-
-<ul>
-	<li>Reveal additional questions, depending on the context.</li>
-	<li>A left border is used to emphasise this supporting information.</li>
-</ul>
-
-<h4>Radio buttons</h4>
-
-<div class="container">
-	<span class="label label-default">Example</span>
-	<div class="pattern-example">
-		{{> form-elements-conditional-radio}}
-	</div>
-</div>
-
-<div class="container">
-	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-elements-conditional-radio}}</code></pre>
 </div>
 
 <hr>
@@ -303,7 +272,6 @@ title: Form elements
 
 <ul>
 	<li>Use these to let users choose a single option from a list.</li>
-	<li>For more than two options, radio buttons should be stacked.</li>
 	<li>Radio buttons with large hit areas are easier to select with a mouse or touch devices.</li>
 </ul>
 
@@ -328,12 +296,12 @@ title: Form elements
 
 <h4>Stacked radio buttons</h4>
 
-	<div class="container">
-		<span class="label label-default">Example</span>
-		<div class="pattern-example">
-			{{> form-elements-radio-stacked}}
-		</div>
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-radio-stacked}}
 	</div>
+</div>
 
 <div class="container">
 	<span class="label label-default">Code</span>
