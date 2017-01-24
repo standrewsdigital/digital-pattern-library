@@ -1,23 +1,24 @@
 {{#if columns}}
 <div class="container subject course">
     <div class="row">
-        <div class="col-xs-12">
+        <div class="col-md-12">
             <h2>Joint Honours Degrees</h2>
             <p>Students may also apply to study English alongside any of the following subjects:</p>
         </div>
-        {{#columns}}
-            <div class="col-md-4">
-                <ul>
+        <ul>
+            {{#columns}}
+                <div class="col-md-4">
                     {{#courses}}
-                    <li class="honours-degree-item"><a href="#">{{default subject "[subject]"}}</a>
+                    <li class="honours-degree-item">
                         <div class="pull-right">
                             <button type="button" class="btn btn-danger" data-container="body" data-toggle="popover" data-placement="top" data-content="<iframe id='unistats-widget-frame' class='kis-widget' title='Unistats KIS Widget' src='{{default kis-url "[KIS URL]"}}'></iframe>" data-original-title="" data-html="true" title="" data-container=".container.subject">KIS</button>
                         </div>
+                        <a href="#">{{default subject "[subject]"}}</a>
                     </li>
                     {{/courses}}
-                </ul>
-            </div>
-        {{/columns}}
+                </div>
+            {{/columns}}
+        </ul>
     </div>
 </div>
 {{/if}}

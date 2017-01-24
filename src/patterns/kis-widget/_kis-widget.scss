@@ -21,19 +21,25 @@
 }
 
 .honours-degree-item {
+    margin-right: 60px;
     padding-bottom: 4px;
 }
 
 .honours-degree-item button {
     border-radius: 4px;
     font-size: 14px;
-    margin-right: 4em;
     padding: 0 6px;
 }
 
 div.course.kis-widget-red {
     background-color: rgb(221, 49, 44);
     padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .honours-degree-item {
+        margin-right: 20px;
+    }
 }
 
 /*********************************/
