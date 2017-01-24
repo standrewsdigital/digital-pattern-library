@@ -1,0 +1,25 @@
+
+/*********************************/
+/* BEGIN Pattern: subject combo  */
+/*********************************/
+
+.modlangs-plus::after {
+		content: "+";
+		font-size: 70px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	@media screen and (max-width: 600px) {
+		.modlangs-plus::after {
+			content: "+";
+			left: 45%;
+			font-size: 70px;
+			position: inherit;
+		}
+	}
+
+/*********************************/
+/* END Pattern: subject combo    */
+/*********************************/

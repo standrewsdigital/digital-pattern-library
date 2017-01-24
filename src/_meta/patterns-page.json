@@ -56,6 +56,10 @@
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/secondary-call/index.html"
                 },
+                { "name": "Subject combo",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/subject-combo/index.html"
+                },
                 { "name": "Text banner",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/text-banner/index.html"

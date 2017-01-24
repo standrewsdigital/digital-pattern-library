@@ -1,0 +1,14 @@
+{
+    "options": [
+        {
+            "option-heading": "Default",
+            "option-description": "",
+            "option-anchor": "option-one",
+            "title": "Honours modules",
+            "subtext": "You can take this degree as part of a joint Honours degree alongside one of the following subjects from each column.",
+		    "column_1": "<ul><li><a href='#'>Arabic</a></li></ul>",
+            "column_2": "<ul><li><a href='#'>German</a></li><li><a href='#'>French</a></li><li><a href='#'>Americano</a></li><li><a href='#'>Mars bar</a></li><li><a href='#'>Underwater basket weaving</a></li></ul>",
+            "column_3": "<ul><li><a href='#'>Middle eastern studies</a></li><li><a href='#'>Eating around the world</a></li><li><a href='#'>Elvish (Tolkein)</a></li><li><a href='#'>Irn Bru</a></li></ul>"
+        }
+    ]
+ }
