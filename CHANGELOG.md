@@ -6,7 +6,14 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+
 ## v0.9.8
+
+Release date: Tuesday 24 January 2017
+
+### Added
+
+* Add Subject combo pattern for the Modern Languages subject pages.
 
 ### Changed
 
@@ -20,6 +27,8 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ## v0.9.7
 
+Release date: Thursday 19 January 2017
+
 ### Added
 
 *Added background colours to the Featured media pattern.
@@ -31,20 +40,12 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ## v0.9.6
 
+Release date: Tuesday 17 January 2017
+
 ### Changed
 
 *Added margin to Alert element paragraphs.
 
-
-
-
----
-
-## v0.9.5
-
-### Removed
-
-* Remove wai aria role from content whole pattern.
 
 
 
@@ -66,6 +67,8 @@ Release date: Tuesday 17 January 2017
 ---
 
 ## v0.9.3
+
+Release date: Monday 16 January 2017
 
 ### Removed
 
