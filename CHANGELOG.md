@@ -6,7 +6,19 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
-## v.0.9.7
+## v0.9.8
+
+### Changed
+
+* Update KIS widget template structure.
+* Update KIS widget css to move margin-right to the list item instead of the button.
+
+
+
+
+---
+
+## v0.9.7
 
 ### Added
 
@@ -17,7 +29,7 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
-## v.0.9.6
+## v0.9.6
 
 ### Changed
 
