@@ -3,6 +3,17 @@
 /* BEGIN Pattern: form-elements  */
 /*********************************/
 
+// By default, conditional content is hidden
+div.conditional-content {
+    display: none;
+    border-color: #bfc1c3;
+    border-left-style: solid;
+    border-left-width: 5px;
+    margin-top: 10px;
+    padding: 15px 15px 0 15px;
+}
+
+
 .pattern-example {
 	border: 1px solid #ddd;
     margin-bottom: 20px;

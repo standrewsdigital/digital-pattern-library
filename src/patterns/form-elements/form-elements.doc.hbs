@@ -324,3 +324,48 @@ title: Form elements
 	<span class="label label-default">Code</span>
 	<pre><code class="pattern-source html">{{> form-elements-select-boxes}}</code></pre>
 </div>
+
+
+
+
+
+<h3>Conditionally revealing content</h3>
+
+<p>Reveal additional input fields, depending on the context. A left border is applied to emphasise this supporting information.</p>
+<p>For this to work, you have to use the below JavaScript code:</p>
+<pre>
+	<code class="pattern-source js">
+	$(document).ready(function() {
+
+	    $('input.***').change(
+	        function() {
+	            var val = $(this).val();
+
+
+	            if(val === "other") {
+	            	console.log("show");
+	                $("#other").show();
+	            }
+	            else if(val !== "other") {
+	            	console.log("hide");
+	                $("#other").hide();
+	            }
+	        }   
+	    );  
+
+	});
+	</code>
+</pre>
+<p>You need to repace '***' with the class name of the input you wish to affect.</p>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-conditional-content}}
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-conditional-content}}</code></pre>
+</div>
