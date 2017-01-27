@@ -13,9 +13,11 @@ $(document).ready(function() {
 
             if(val === "other") {
                 $(".conditional-content").show();
+                $(".conditional-content").attr("aria-hidden", "false");
             }
             else if(val !== "other") {
                 $(".conditional-content").hide();
+                $(".conditional-content").attr("aria-hidden", "true");
             }
         }   
     );  
