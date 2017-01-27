@@ -6,6 +6,17 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v0.9.9
+
+### Removed
+
+* Remove link to ../fonts/pt-serif-caption/regular/PTZ56F-webfont.woff from `_fonts.scss`.
+
+
+
+
+---
+
 ## v0.9.8
 
 ### Changed
