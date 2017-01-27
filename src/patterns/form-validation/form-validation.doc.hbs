@@ -2,14 +2,52 @@
 title: Form validation
 ---
 
-<p>The introduction may be several paragraphs long if required. It should introduce the pattern, explain what it is and when and where it may be used.</p>
+<h3>Summarise errors at the top of the page</h3>
 
-<p>You may use any formatting as required, such as paragraphs and unordered lists:</p>
+<p>You must:</p>
 
 <ul>
-    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-    <li>Aliquam tincidunt mauris eu risus.</li>
-    <li>Dolores tempore enim debitis totam</li>
+	<li>Show an error summary at the top of the page. The error summary must appear at the top of the page, so it is visible when the page is refreshed and is immediately read out by assistive technology. </li>
+	<li>Include a heading to alert the user to the error.</li>
+	<li>Link to each of the problematic questions.</li>
 </ul>
 
-<p>Documentation should follow the writing for the web guidelines and adhere to the house style guide.</p>
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-validation-radio}}
+	</div>	
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-validation-radio}}</code></pre>
+</div>
+
+<hr>
+
+
+
+
+<h3>Highlight errors in forms</h3>
+
+<p>For each error:</p>
+
+<ul>
+	<li>Write a message that helps the user to understand why the error occurred and what to do about it.</li>
+	<li>Put the message in the <code><label></code> or <code><legend></code> for the question, after the question text, in red.</li>
+	<li>Use a red border to visually connect the message and the question it belongs to.</li>
+	<li>If the error relates to specific text fields within the question, give these a red border as well.</li>
+</ul>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-validation-input}}
+	</div>	
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-validation-input}}</code></pre>
+</div>
