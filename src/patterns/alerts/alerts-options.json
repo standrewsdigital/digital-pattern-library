@@ -1,36 +1,44 @@
 {
     "options" : [
         {
-            "option-heading": "Dummy pattern with full details",
-            "option-description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorem quos amet deleniti, obcaecati quibusdam consequatur repudiandae similique rem sint harum corporis. Deleniti ipsa, distinctio itaque delectus dolorem nostrum tempora.</p><ul><li>Option 1</li><li>Option 2</li></ul>",
-            "option-anchor": "dummy-option-one",
-            "image": {
-                "url": "docs/images/placeholders/360x240.jpg",
-                "alt": "Description"
-            },
-            "title": "Title of image",
-            "url": "#",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
-
-            "date" : "2014-08-21",
-            "date-display" : "21 August 2014",
-            "type" : "Photo of the week"
+            "option-heading": "Success",
+            "option-description": "<p>Use the class <code>.alert-success</code> for a success alert box.</p>",
+            "option-anchor": "alert-success",
+            "alert-class": "alert-success",
+            "alert-message": "<strong>Well done!</strong> You successfully read <a href='#' class='alert-link'>this important alert message</a>."
          },
 
 
 
 
          {
-            "option-heading": "Dummy pattern with no image",
-            "option-description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>",
-            "option-anchor": "dummy-option-two",
-            "title": "Title of image",
-            "url": "#",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+            "option-heading": "Info",
+            "option-description": "<p>Use the class <code>.alert-info</code> for an info alert box.</p>",
+            "option-anchor": "alert-info",
+            "alert-class": "alert-info",
+            "alert-message": "<strong>Heads up!</strong> This alert needs <a href='#' class='alert-link'>your attention</a>, but it's not super important."
+          },
 
-            "date" : "2014-08-21",
-            "date-display" : "21 August 2014",
-            "type" : "Photo of the week"
+
+
+
+         {
+            "option-heading": "Warning",
+            "option-description": "<p>Use the class <code>.alert-warning</code> for a warning alert box.</p>",
+            "option-anchor": "alert-warning",
+            "alert-class": "alert-warning",
+            "alert-message": "<strong>Warning!</strong> Better check yourself, you're <a href='#' class='alert-link'>not looking too good</a>."
+          },
+
+
+
+
+         {
+            "option-heading": "Danger",
+            "option-description": "<p>Use the class <code>.alert-danger</code> for a danger alert box.</p>",
+            "option-anchor": "alert-danger",
+            "alert-class": "alert-danger",
+            "alert-message": "<strong>Oh snap!</strong> Change a few things up and <a href='#' class='alert-link'>try submitting again</a>."
           }
 
 
