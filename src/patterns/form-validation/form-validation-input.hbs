@@ -1,35 +1,26 @@
 <div class="alert alert-danger" role="alert" aria-labelledby="error-summary-heading-example" tabindex="-1">
-
   <h3 id="summary-heading-example">Message to alert the user goes here</h3>
-
   <p>Optional description of errors and how to correct them.</p>
-
   <ul>
     <li><a href="#example-full-name">Descriptive link to the question with an error</a></li>
     <li><a href="#example-telephone-number">Descriptive link to the question with an error</a></li>
   </ul>
-
 </div>
 
 <fieldset><legend>Your personal details</legend>
 
   <div class="form-group has-error">
-
     <label for="example-full-name" id="error-full-name">Full name</label>
     <span class="help-block">As shown on your birth certificate or passport</span>
-    <span class="error-message" id="error-message-full-name">Error message about full name goes here</span>
+    <label class="text-danger" id="error-message-full-name"><strong>Error message about full name goes here</strong></label>
     <input class="form-control " id="example-full-name" type="text" name="fullName" value="" aria-describedby="error-message-full-name">
-
   </div>
 
   <div class="form-group has-error">
-
     <label for="example-telephone-number" id="error-telephone-number">Telephone number</label>
-    <span class="error-message" id="error-message-telephone-number">Enter nessage about telephone number goes here</span>
+    <label class="text-danger" id="error-message-telephone-number"><strong>Error nessage about telephone number goes here</strong></label>
     <input class="form-control has-error" id="example-telephone-number" type="text" name="Telephone" value="" aria-describedby="error-message-telephone-number">
-
   </div>
 
   <input type="submit" value="Continue">
-
 </fieldset>
