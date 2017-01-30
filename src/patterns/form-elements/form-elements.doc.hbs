@@ -85,13 +85,13 @@ title: Form elements
 </ul>
 
 
-<p>Wrap the element you wish to hide until revealed with the following code:</p>
+<p>Wrap the input you wish to hide with the following code:</p>
 
 <pre><code class="pattern-source html"><div class="conditional-content" aria-hidden="true">
 	[Your hidden input]
 </div></code></pre>
 
-<p>Then use the following JavaScript code:</p>
+<p>Then use the following JavaScript code to show/hide the conditional content:</p>
 <pre><code class="pattern-source js">$(document).ready(function() {
     $('input.input-name').change(
         function() {
@@ -103,9 +103,10 @@ title: Form elements
             else if(val !== "option-value") {
                 $(".conditional-content").hide();
             }
-        }   
-    );  
+        }
+    );
 });</code></pre>
+
 <ul>
 	<li>Replace <code>input-name</code> with the class of the input you wish to affect.</li>
 	<li>Replace <code>option-value</code> with the option you wish to show conditional content on.<br />(In the below example, this value is set to 'other').</li>
