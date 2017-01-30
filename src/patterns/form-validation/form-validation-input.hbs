@@ -1,45 +1,35 @@
-<div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
+<div class="alert alert-danger" role="alert" aria-labelledby="error-summary-heading-example" tabindex="-1">
 
-  <h3 class="error-summary-heading" id="error-summary-heading-example-2">
-    Message to alert the user to a problem goes here
-  </h3>
+  <h3 id="summary-heading-example">Message to alert the user goes here</h3>
 
-  <p>Optional description of the errors and how to correct them.</p>
+  <p>Optional description of errors and how to correct them.</p>
 
-  <ul class="error-summary-list">
+  <ul>
     <li><a href="#example-full-name">Descriptive link to the question with an error</a></li>
-    <li><a href="#example-ni-number">Descriptive link to the question with an error</a></li>
+    <li><a href="#example-telephone-number">Descriptive link to the question with an error</a></li>
   </ul>
 
 </div>
 
 <fieldset><legend>Your personal details</legend>
 
-  <div class="form-group error">
+  <div class="form-group has-error">
 
-  <label for="example-full-name" id="error-full-name">
-
-    <span class="form-label-bold">Full name</span>
-    <span class="form-hint">As shown on your birth certificate or passport</span>
+    <label for="example-full-name" id="error-full-name">Full name</label>
+    <span class="help-block">As shown on your birth certificate or passport</span>
     <span class="error-message" id="error-message-full-name">Error message about full name goes here</span>
-
-  </label>
-
-  <input class="form-control" id="example-full-name" type="text" name="fullName" value="" aria-describedby="error-message-full-name">
-  </div>
-
-  <div class="form-group error">
-
-    <label for="example-ni-number" id="error-ni-number">
-      <span class="form-label-bold">National Insurance number</span>
-      <span class="form-hint">It’s on your National Insurance card, benefit letter, payslip or P60.<br>For example, ‘QQ 12 34 56 C’.</span>
-      <span class="error-message" id="error-message-ni-number">Error message about National Insurance number goes here</span>
-    </label>
-
-    <input class="form-control" id="example-ni-number" type="text" name="niNo" value="" aria-describedby="error-message-ni-number">
+    <input class="form-control " id="example-full-name" type="text" name="fullName" value="" aria-describedby="error-message-full-name">
 
   </div>
 
-  <input class="button" type="submit" value="Continue">
+  <div class="form-group has-error">
+
+    <label for="example-telephone-number" id="error-telephone-number">Telephone number</label>
+    <span class="error-message" id="error-message-telephone-number">Enter nessage about telephone number goes here</span>
+    <input class="form-control has-error" id="example-telephone-number" type="text" name="Telephone" value="" aria-describedby="error-message-telephone-number">
+
+  </div>
+
+  <input type="submit" value="Continue">
 
 </fieldset>

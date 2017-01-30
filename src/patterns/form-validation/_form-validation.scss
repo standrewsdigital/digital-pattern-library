@@ -3,7 +3,15 @@
 /* BEGIN Pattern: form-validation */
 /**********************************/
 
+.error-message {
+	display:block;
+	font-weight:bold;
+	color: #c22a22;
+}
 
+.alert h3{
+	margin-top:0;
+}
 
 /**********************************/
 /* BEGIN Pattern: form-validation */

@@ -1,45 +1,40 @@
-<div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
-
-  <h3 class="error-summary-heading" id="error-summary-heading-example-1">
-    Message to alert the user to a problem goes here.
-  </h3>
-
-  <p>Optional description of the errors and how to correct them.</p>
-
-  <ul class="error-summary-list">
-    <li><a href="#example-personal-details">Descriptive link to the question with an error</a></li>
-  </ul>
-
+<div class="alert alert-danger" role="alert" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
+  <h3 id="summary-heading-example-2">Warning!</h3>
+  <p>Optional description of errors and how to correct them.</p>
+  <p><a href="#example-personal-details">Descriptive link to the question with the error</a></p>
 </div>
 
-<h3>Check your personal details</h3>
+<fieldset><legend>Check your personal details</legend>
 
-<p>Look at your name, signature and other details.</p>
+  <form>
 
-<form>
-  <div class="form-group error">
-    <fieldset>
+    <div class="form-group">
 
-      <legend id="example-personal-details">
-
-        <span class="form-label-bold">Are your personal details correct and up-to-date?</span>
+        <p id="example-personal-details">Are your personal details correct and up-to-date?</p>
         <span class="error-message">Error message about personal details goes here</span>
 
-      </legend>
+        <div class="radio-button">
+            <ul>
+                <li>
+                    <input type="radio" id="stacked-option1" name="stacked-selector">
+                    <label for="stacked-option1">Yes, my personal details are correct</label>
 
-      <label class="block-label selection-button-radio" for="personal_details_yes">
-        <input id="personal_details_yes" type="radio" name="personalDetails" value="Yes">
-        Yes, my personal details are correct
-      </label>
+                    <div class="check"></div>
+                </li>
 
-      <label class="block-label selection-button-radio" for="personal_details_no">
-        <input id="personal_details_no" type="radio" name="personalDetails" value="No">
-        No, some details are wrong or have changed
-      </label>
+                <li>
+                    <input type="radio" id="stacked-option2" name="stacked-selector">
+                    <label for="stacked-option2">No, some details are wrong or have changed</label>
 
-    </fieldset>
-  </div>
+                    <div class="check"></div>
+                </li>
 
-  <input class="button" type="submit" value="Continue">
+            </ul>
+        </div>
+    </div>
 
-</form>
+    <input type="submit" value="Continue">
+
+  </form>
+
+</fieldset>
