@@ -151,6 +151,10 @@
                 { "name": "Font Awesome",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/font-awesome/index.html"
+                },
+                { "name": "Glyphicons",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/glyphicons/index.html"
                 }
             ]
         },
