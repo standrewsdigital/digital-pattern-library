@@ -1,0 +1,24 @@
+---
+title: Responsive embed
+---
+
+<p>responsive-embed</p>
+
+<hr>
+<h3>Options available</h3>
+<ul>
+{{#responsive-embed-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/responsive-embed-options.options}}
+</ul>
+
+{{#responsive-embed-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+{{> responsive-embed}}
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> responsive-embed}}</code></pre>
+{{/responsive-embed-options.options}}

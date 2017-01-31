@@ -118,6 +118,10 @@
                   "img": "assets/docs/images/patterns/news-updates.jpg",
                   "url": "patterns/news-updates/index.html"
                 },
+                { "name": "Responsive embed",
+                  "img": "assets/docs/images/patterns/google-maps.jpg",
+                  "url": "patterns/responsive-embed/index.html"
+                },
                 { "name": "Section header",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/section-header/index.html"

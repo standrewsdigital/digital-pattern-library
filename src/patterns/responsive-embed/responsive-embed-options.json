@@ -1,0 +1,16 @@
+{
+    "options": [
+        {
+            "option-heading": "Google map",
+            "option-description": "<p>Created using Google Maps, within the Content whole pattern.</p>",
+            "option-anchor": "googlemapwhole",
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2211.399529804193!2d-2.816029683587382!3d56.34019068071458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488657829e5cbb3f%3A0xc253a6b45fc4cc48!2sAgnes+Blackadder+Hall!5e0!3m2!1sen!2suk!4v1484316949822"
+        },
+        {
+            "option-heading": "YouTube video",
+            "option-description": "<p>Created using Google Maps, within the Content whole pattern.</p>",
+            "option-anchor": "youtubewhole",
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2211.399529804193!2d-2.816029683587382!3d56.34019068071458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488657829e5cbb3f%3A0xc253a6b45fc4cc48!2sAgnes+Blackadder+Hall!5e0!3m2!1sen!2suk!4v1484316949822"
+        }
+    ]
+}
