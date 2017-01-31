@@ -1,0 +1,135 @@
+---
+title: Pagination
+---
+
+<p>Provide pagination links for your site or app with the multi-page pagination component, or the simpler pager alternative.</p>
+
+<h3>Default pagination</h3>
+
+<p>Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.</p>
+
+{{> pagination}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> pagination}}</code></pre>
+
+<h4>Disabled and active states</h4>
+
+<p>Links are customizable for different circumstances. Use <code>.disabled</code> for unclickable links and <code>.active</code> to indicate the current page.
+
+{{> pagination-states}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> pagination-states}}</code></pre>
+
+<p>You can optionally swap out active or disabled anchors for <code><span></code>, or omit the anchor in the case of the previous/next arrows, to remove click functionality while retaining intended styles.</p>
+
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> pagination-states-2}}</code></pre>
+
+<h4>Sizing</h4>
+
+<p>Fancy larger or smaller pagination? Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional sizes.</p>
+
+    <nav>
+      <ul class="pagination pagination-lg">
+        <li><a href="#"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+      </ul>
+    </nav>
+    <nav>
+      <ul class="pagination">
+        <li><a href="#"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+      </ul>
+    </nav>
+    <nav>
+      <ul class="pagination pagination-sm">
+        <li><a href="#"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+      </ul>
+    </nav>
+
+<pre><code class="pattern-source html">
+<nav><ul class="pagination pagination-lg">...</ul></nav>
+<nav><ul class="pagination">...</ul></nav>
+<nav><ul class="pagination pagination-sm">...</ul></nav>
+</code></pre>
+
+
+<h3>Pager</h3>
+
+<p>Quick previous and next links for simple pagination implementations with light markup and styles. It's great for simple sites like blogs or magazines.</p>
+
+<h4>Default example</h4>
+
+<p>By default, the pager centres links.</p>
+
+<nav>
+  <ul class="pager">
+    <li><a href="#">Previous</a></li>
+    <li><a href="#">Next</a></li>
+  </ul>
+</nav>
+
+<pre><code class="pattern-source html">
+<nav>
+  <ul class="pager">
+    <li><a href="#">Previous</a></li>
+    <li><a href="#">Next</a></li>
+  </ul>
+</nav>
+</code></pre>
+
+<h4>Aligned links</h4>
+
+<p>Alternatively, you can align each link to the sides:</p>
+
+<nav>
+  <ul class="pager">
+    <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+    <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+
+<pre><code class="pattern-source html">
+<nav>
+  <ul class="pager">
+    <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+    <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+</code></pre>
+
+<h4>Optional disabled state</h4>
+
+<p>Pager links also use the general .disabled utility class from the pagination.</p>
+
+<nav>
+  <ul class="pager">
+    <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+    <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+
+<pre><code class="pattern-source html">
+<nav>
+  <ul class="pager">
+    <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+    <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+</code></pre>

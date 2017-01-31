@@ -176,6 +176,10 @@
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/navigation-bar/index.html"
                 },
+                { "name": "Pagination",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/pagination/index.html"
+                },
                 { "name": "Panel grid",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/panel-grid/index.html"

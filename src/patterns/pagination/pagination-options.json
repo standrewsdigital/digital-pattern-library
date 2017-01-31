@@ -1,0 +1,38 @@
+{
+    "options" : [
+        {
+            "option-heading": "Dummy pattern with full details",
+            "option-description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorem quos amet deleniti, obcaecati quibusdam consequatur repudiandae similique rem sint harum corporis. Deleniti ipsa, distinctio itaque delectus dolorem nostrum tempora.</p><ul><li>Option 1</li><li>Option 2</li></ul>",
+            "option-anchor": "dummy-option-one",
+            "image": {
+                "url": "docs/images/placeholders/360x240.jpg",
+                "alt": "Description"
+            },
+            "title": "Title of image",
+            "url": "#",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+
+            "date" : "2014-08-21",
+            "date-display" : "21 August 2014",
+            "type" : "Photo of the week"
+         },
+
+
+
+
+         {
+            "option-heading": "Dummy pattern with no image",
+            "option-description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>",
+            "option-anchor": "dummy-option-two",
+            "title": "Title of image",
+            "url": "#",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+
+            "date" : "2014-08-21",
+            "date-display" : "21 August 2014",
+            "type" : "Photo of the week"
+          }
+
+
+    ]
+}
