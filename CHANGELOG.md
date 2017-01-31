@@ -6,6 +6,17 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v0.10.0
+
+### Added
+
+* Added Alerts pattern. 
+
+
+
+
+---
+
 ## v0.9.9
 
 ### Removed
