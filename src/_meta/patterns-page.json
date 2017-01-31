@@ -78,6 +78,10 @@
                   "img": "assets/docs/images/patterns/accordion.jpg",
                   "url": "patterns/accordion/index.html"
                 },
+                { "name": "Alerts",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/alerts/index.html"
+                },
                 { "name": "Code",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/code/index.html"
