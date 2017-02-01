@@ -7,6 +7,24 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.12.0
+
+Release date: Wednesday 1 February 2017
+
+### Added
+
+* Form elements pattern.
+* Form validation pattern. 
+
+### Changed
+
+* Form example page.
+
+
+
+
+---
+
 ## v0.8.14
 
 Release date: Sunday 8 January 2017
