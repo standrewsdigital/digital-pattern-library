@@ -2,14 +2,17 @@
 title: Form validation
 ---
 
-<p>You must:</p>
+<p>The DPL is platform agnostic so we don't provide code for performing validation but have documented  the following design principles.</p>
 
 <ul>
 	<li>Show an error summary at the top of the page so it is visible when the page is refreshed and is immediately read out by assistive technology. Write a message that helps the user to understand why the error occurred and what to do about it.</li>
 	<li>Include a heading in the error summary to alert the user to the error.</li>
 	<li>In the error summary, link to each of the problematic questions.</li>
-	<li>Error message for each invalid answer must appear above the input field.</li>
+	<li>An error message must appear above the input field for each invalid answer.</li>
 </ul>
+
+<hr>
+
 
 <h3>Validation of input fields</h3>
 
@@ -25,6 +28,9 @@ title: Form validation
 	<pre><code class="pattern-source html">{{> form-validation-input}}</code></pre>
 </div>
 
+<hr>
+
+
 <h3>Validation of radio buttons</h3>
 
 <div class="container">
@@ -38,3 +44,5 @@ title: Form validation
 	<span class="label label-default">Code</span>
 	<pre><code class="pattern-source html">{{> form-validation-radio}}</code></pre>
 </div>
+
+<hr>
