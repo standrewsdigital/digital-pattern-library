@@ -132,7 +132,7 @@
                 },
                 { "name": "Tables",
                   "img": "assets/docs/images/patterns/pattern.jpg",
-                  "url": "examples/tables.html"
+                  "url": "patterns/tables/index.html"
                 },
                 { "name": "Tables - DataTables",
                   "img": "assets/docs/images/patterns/pattern.jpg",
@@ -157,7 +157,7 @@
                   "url": "patterns/form-validation/index.html"
                 }
             ]
-        },        
+        },
         {
             "heading": "Icons",
             "subheading": "Patterns used to accent elements using icons.",

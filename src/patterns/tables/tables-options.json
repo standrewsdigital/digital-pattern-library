@@ -1,0 +1,81 @@
+{
+    "options" : [
+        {
+            "option-heading": "Default",
+            "option-description": "",
+            "option-anchor": "default",
+            "table-head": [
+                "Email Address",
+                "Name"
+            ],
+            "table-body": [
+                {
+                    "column-one": "abc@domain.com",
+                    "column-two": "Bob McBoberson"
+                },
+                {
+                    "column-one": "def@domain.com",
+                    "column-two": "Pat McPaterson"
+                },
+                {
+                    "column-one": "ghi@domain.com",
+                    "column-two": "Jo McJoerson"
+                }
+            ]
+         },
+
+
+
+
+        {
+            "option-heading": "Colour headings",
+            "option-description": "<p>You also have the option of these other colours for the table header: </p>",
+            "option-anchor": "colour-headings",
+            "colour-class": "table-primary",
+            "table-head": [
+                "Colour",
+                "Class"
+            ],
+            "table-body": [
+                {
+                    "column-one": "<code>.table-primary</code>",
+                    "column-two": "Primary palette colour."
+                },
+                {
+                    "column-one": "<code>.table-success</code>",
+                    "column-two": "Indicates a success."
+                },
+                {
+                    "column-one": "<code>.table-info</code>",
+                    "column-two": "Indicates neutral information."
+                },
+                {
+                    "column-one": "<code>.table-warning</code>",
+                    "column-two": "Indicates a warning that might need attention."
+                },
+                {
+                    "column-one": "<code>.table-danger</code>",
+                    "column-two": "Indicates a negative."
+                },
+                {
+                    "column-one": "<code>.table-secondary</code>",
+                    "column-two": "Secondary palette colour."
+                },
+                {
+                    "column-one": "<code>.table-tertiary-1</code>",
+                    "column-two": "First tertiary palette colour."
+                },
+                {
+                    "column-one": "<code>.table-tertiary-2</code>",
+                    "column-two": "Second tertiary palette colour."
+                },
+                {
+                    "column-one": "<code>.table-tertiary-3</code>",
+                    "column-two": "Third tertiary palette colour."
+                }
+
+            ]
+        }
+
+    ]
+}
