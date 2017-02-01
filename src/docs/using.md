@@ -30,10 +30,11 @@ A pattern-only version of the JavaScript file, `core-base.js`, does not include 
 * jQuery [Big Target](https://github.com/leevigraham/jquery-bigTarget.js/)
 * jQuery [FitVids](https://github.com/davatron5000/FitVids.js) (v1.1)
 * jQuery [FitTexts](https://github.com/davatron5000/FitText.js) (v1.2)
-* jQuery [Theatre](https://bitbucket.org/st-andrews/jquery-theatre) (v1.0.1)
+* jQuery [Theatre](https://bitbucket.org/st-andrews/jquery-theatre) (v1.0.1) - Deprecated
 * [Bootstrap-Sass](https://github.com/twbs/bootstrap-sass) (v3.3.7)
 * [Enquire.js](https://github.com/WickyNilliams/enquire.js) (v2.1.2)
 * [Hammer.js](http://hammerjs.github.io/) (v.2.0.4)
+* [Lightbox.js](https://github.com/lokesh/lightbox2/) (v2.9.0)
 * [Respond.js](https://github.com/scottjehl/Respond) (v1.4.0)
 
 See the `Gruntfile.js` to determine which additional JavaScript pieces are rolled into `core.js`.

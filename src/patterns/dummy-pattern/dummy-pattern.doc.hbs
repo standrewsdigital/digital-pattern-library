@@ -2,19 +2,7 @@
 title: Dummy pattern
 ---
 
-<!--
-INSTRUCTIONS, PT.1
-
-START HERE...
-
-1. The name of the directory should be the same as the pattern name (in this example `dummy-pattern`), and the name of this file.
-
-2. Give the pattern a title. This should be human-readable and may contain spaces.
-
-3. Change the names of the examples above. These are in the /examples directory. Use descriptive names rather than example-1, example-2, etc. It makes it much easier
-
-Now edit the `dummy-pattern.hbs` file.
--->
+<p class="alert alert-info">See CONTRIBUTING.md for details on how to create a new pattern.</p>
 
 <p>The introduction may be several paragraphs long if required. It should introduce the pattern, explain what it is and when and where it may be used.</p>
 
@@ -28,11 +16,19 @@ Now edit the `dummy-pattern.hbs` file.
 
 <p>Documentation should follow the writing for the web guidelines and adhere to the house style guide.</p>
 
+<hr>
+<h3>Options available</h3>
+<ul>
+{{#dummy-pattern-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/dummy-pattern-options.options}}
+</ul>
+
 {{#dummy-pattern-options.options}}
 <hr>
-<h3>{{option-header}}</h3>
+<h3>{{option-heading}}</h3>
 {{{option-description}}}
-{{> dummy-pattern}}
+</div>{{>  dummy-pattern}}<div class="container">
 <span class="label label-default">Code</span>
-<div class="pattern-source html">{{> dummy-pattern}}</div>
+<pre><code class="pattern-source html">{{> dummy-pattern}}</code></pre>
 {{/dummy-pattern-options.options}}

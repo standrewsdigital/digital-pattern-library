@@ -20,41 +20,33 @@ related:
 date: <%= new Date() %>
 ---
 
-<p>The Long-form content pattern is designed to be used repetitively with a variety of
+<p>The long-form content pattern is designed to be used repetitively with a variety of
 options to achieve an engaging, story-telling experience that still remains
 consistent in look and feel. It is ideally suited to blend longer passages of
-text with images, video and audio. It also carries several subpatterns.</p>
-
-<h2>Usage</h2>
+text with images, video and audio. It also carries several sub-patterns.</p>
 
 <ul>
 	<li>Use a University header and University footer (an abbreviated footer
         is typically acceptable).</li>
-    <li>Use as many Long-form content sections as you want in between.</li>
-    <li>At the end of the story narrative, you should use the End piece
+    <li>Use as many long-form content sections as you want in between.</li>
+    <li>At the end of the story narrative, you should use the end piece
     element to communicate that the story has finished.</li>
-    <li>The page <strong>must</strong> end with a Credits variant, see below.</li>
+    <li>The page <strong>must</strong> end with a credits variant, see below.</li>
 </ul>
 
-<p>Examples for individual variants and subpatterns are below, but you can
+<p>Examples for individual options and sub-patterns are below, but you can
 also see the <a href="../../examples/long-form-content.html">full page example
-</a> to get a sense for how to use the variants and subpatterns together.</p>
+</a> to get a sense for how to use the options and sub-patterns together.</p>
 
 
+<h2>Options</h2>
 
-<h2>Syntax</h2>
-
-<div class="pattern-source">{{> long-form long-form-default }}</div>
-
-
-<h2>Variants</h2>
-
-<p>You can mix and match these variants to get a variety of display options.</p>
+<p>You can mix and match these options to get a variety of display options.</p>
 
 <h3>Text and backgrounds</h3>
 
 <ul>
-    <li><strong>Black and white</strong> (Default)<br>
+    <li><strong>Black and white</strong> (default)<br>
         By default the background is white and the text is black (dark grey).
     </li>
     <li><strong>Inverse text</strong><br>
@@ -76,7 +68,7 @@ also see the <a href="../../examples/long-form-content.html">full page example
         Typically used to make a bright background image usable behind white
         text.
     </li>
-    <li><strong>Ligthened background image</strong><br>
+    <li><strong>Lightened background image</strong><br>
         Modifier class: <code>.long-form--bg-lighten</code><br>
         Adds a semi-transparent white overlay on the background image.
         Typically used to make a dark background image usable behind black
@@ -87,7 +79,7 @@ also see the <a href="../../examples/long-form-content.html">full page example
 <h3>Width</h3>
 
 <ul>
-    <li><strong>Compressed content column</strong> (Default)<br>
+    <li><strong>Compressed content column</strong> (default)<br>
         By default content has a width of 8 grid columns with a 2 grid column
         offset achieving a 2-8-2 pattern.</li>
     <li><strong>Medium content column</strong><br>
@@ -104,7 +96,7 @@ also see the <a href="../../examples/long-form-content.html">full page example
 <h3>Vertical padding</h3>
 
 <ul>
-    <li><strong>Vertical padding</strong> (Default)<br>
+    <li><strong>Vertical padding</strong> (default)<br>
         By default there is generous padding on the top and bottom.
     </li>
     <li><strong>No vertical padding</strong><br>
@@ -118,30 +110,30 @@ also see the <a href="../../examples/long-form-content.html">full page example
 <ul>
     <li><strong>Credits section</strong><br>
         Modifier class: <code>.long-form--credits</code><br>
-        All long-form content pages must end with a credits section. This section has a medium (1-10-1) width, grey background, smaller text, and a St Andrews logo in a watermark effect.
+        All long-form content pages must end with a credits section. This section has a medium (1-10-1) width, grey background, smaller text, and a St&nbsp;Andrews logo in a watermark effect.
     </li>
 </ul>
 
-<h2>Subpatterns</h2>
+<h2>Sub-patterns</h2>
 
-<p>The following subpatterns may be used inside the <code>&lt;div class="long-form__content"&gt;</code> element.</p>
+<p>The following sub-patterns may be used inside the <code>&lt;div class="long-form__content"&gt;</code> element.</p>
 
 <ul>
-    <li>Asides</li>
-    <li>End piece</li>
-    <li>Pull quotes</li>
-    <li>Thumbnail gallery</li>
-    <li>(BETA) Horizontal gallery</li>
+    <li><a href="#asides">Asides</a></li>
+    <li><a href="#end-piece">End piece</a></li>
+    <li><a href="#pull-quotes">Pull quotes</a></li>
+    <li><a href="#thumbnail-gallery">Thumbnail gallery</a></li>
+    <li><a href="#beta-slider-gallery">Slider gallery (beta)</a></li>
 </ul>
 
 
-<h3>Asides</h3>
+<h3 id="asides">Asides</h3>
 
 <p>Standard HTML5 <code>&lt;aside&gt;</code> elements are enhanced with a set of classes to flexibly position them relative to content. This approach removes the need for a dedicated sidebar. The <code>&lt;aside&gt;</code> element is often used to wrap <code>&lt;figure&gt;</code> elements, but can equally wrap any tangential content.</p>
 
 <p><strong>Note:</strong> These asides are only designed to work inside the default compressed content column, not the medium or full-width variants.</p>
 
-<pre><code>&lt;aside class="ALIGNMENT"&gt;
+<pre><code>&lt;aside class="{alignment}"&gt;
     ...
 &lt;/aside&gt;
 </code></pre>
@@ -187,15 +179,15 @@ also see the <a href="../../examples/long-form-content.html">full page example
     </li>
 </ul>
 
-<h3>End piece</h3>
+<h3 id="end-piece">End piece</h3>
 
-<p>Long-form content articles should end with the End piece subpattern. It shows a square box with the date the article was published.</p>
+<p>Long-form content articles should end with the end piece sub-pattern. It shows a square box with the date the article was published.</p>
 
 <pre><code>&lt;p class="end"&gt;{{formatDate date "%A %d %B %Y"}}&lt;/p&gt;
 </code></pre>
 
 
-<h3>Lead paragraph</h3>
+<h3 id="lead-paragraph">Lead paragraph</h3>
 
 <p>The opening <code>&lt;h1&gt;</code> is typically followed by a lead paragraph.</p>
 
@@ -203,7 +195,7 @@ also see the <a href="../../examples/long-form-content.html">full page example
 </code></pre>
 
 
-<h3>Pull quotes</h3>
+<h3 id="pull-quotes">Pull quotes</h3>
 
 <p>Pull quotes are used to quote something from the flow of the article in a larger size to draw the reader into the article. This is different in purpose to a blockquote where you want to include a longish quotation in the flow of the narrative. Additionally, these pull quote elements are automatically populated with links to share on Twitter and Facebook.</p>
 
@@ -214,7 +206,7 @@ also see the <a href="../../examples/long-form-content.html">full page example
 
 <p>You may provide a custom tweet quote using the <code>data-quote</code> attribute. However, if the <code>data-quote</code> attribute is not present — or left blank — then the tweet quote will be created automatically; if required, it will be truncated to fit within 140 characters.</p>
 
-<h3>Thumbnail gallery</h3>
+<h3 id="thumbnail-gallery">Thumbnail gallery</h3>
 
 <p>The thumbnail gallery provides a simple and elegant display of a collection of images in thumbnail format, additionally enhancing them by setting them to open up in the pattern library's theatre viewer for further navigation.</p>
 
@@ -249,6 +241,106 @@ also see the <a href="../../examples/long-form-content.html">full page example
 </code></pre>
 
 
-<h3>(BETA) Slider gallery</h3>
+<h3 id="beta-slider-gallery">Slider gallery (beta)</h3>
 
-<p>The Slider gallery provides an alternative interface for displaying large images in the long-form content pages. Note, this is a conceptual implementation currently and needs further engineering before being used in production situations.</p>
+<p>The slider gallery provides an alternative interface for displaying large images in the long-form content pages. Note, this is a conceptual implementation currently and needs further engineering before being used in production situations.</p>
+
+
+
+{{#long-form-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+{{> long-form}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> long-form}}</code></pre>
+{{/long-form-options.options}}
+
+
+<hr>
+<h3>Slider gallery (beta)</h3>
+
+<section class="long-form long-form--gallery-slider">
+
+    <div class="container"><div class="row">
+
+        <div class="col-md-4 long-form__content">
+
+            <h3>People involved with Light Box</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud ex</p>
+
+        </div>
+
+        <div class="col-md-8 slider-container long-form__content">
+            <div class="slides">
+
+            <figure class="image">
+                <img src="{{asset "docs/images/long-form-content/presentation-aton.png"}}" alt="Lens">
+                <figcaption>Lens</figcaption>
+            </figure>
+
+            <figure class="image">
+                <img src="{{asset "docs/images/long-form-content/support-light-fantastic.jpg"}}" alt="Field">
+                <figcaption>Field</figcaption>
+            </figure>
+
+            <figure class="image">
+                <img src="{{asset "docs/images/long-form-content/portrait-john-allen.jpg"}}" alt="Prof John Allen">
+                <figcaption>Prof John Allen</figcaption>
+            </figure>
+
+            <figure class="image">
+                <img src="{{asset "docs/images/long-form-content/portrait-ifor-samuel.jpg"}}" alt="Ifor Samuel">
+                <figcaption>Prof Ifor Samuel</figcaption>
+            </figure>
+
+            </div>
+
+        </div>
+
+
+    </div></div>
+
+</section>
+
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html"><section class="long-form long-form--gallery-slider">
+    <div class="container"><div class="row">
+        <div class="col-md-4 long-form__content">
+            <h3>People involved with Light Box</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud ex</p>
+        </div>
+
+        <div class="col-md-8 slider-container long-form__content">
+            <div class="slides">
+
+            <figure class="image">
+                <img src="{{asset "docs/images/long-form-content/presentation-aton.png"}}" alt="Lens">
+                <figcaption>Lens</figcaption>
+            </figure>
+
+            <figure class="image">
+                <img src="{{asset "docs/images/long-form-content/support-light-fantastic.jpg"}}" alt="Field">
+                <figcaption>Field</figcaption>
+            </figure>
+
+            <figure class="image">
+                <img src="{{asset "docs/images/long-form-content/portrait-john-allen.jpg"}}" alt="Prof John Allen">
+                <figcaption>Prof John Allen</figcaption>
+            </figure>
+
+            <figure class="image">
+                <img src="{{asset "docs/images/long-form-content/portrait-ifor-samuel.jpg"}}" alt="Ifor Samuel">
+                <figcaption>Prof Ifor Samuel</figcaption>
+            </figure>
+
+            </div>
+        </div>
+    </div></div>
+</section>
+</code></pre>

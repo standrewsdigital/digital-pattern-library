@@ -1,0 +1,46 @@
+{
+    "options" : [
+        {
+            "option-heading": "Success",
+            "option-description": "<p>Use the class <code>.alert-success</code> for a success alert box.</p>",
+            "option-anchor": "alert-success",
+            "alert-class": "alert-success",
+            "alert-message": "<strong>Well done!</strong> You successfully read <a href='#' class='alert-link'>this important alert message</a>."
+         },
+
+
+
+
+         {
+            "option-heading": "Info",
+            "option-description": "<p>Use the class <code>.alert-info</code> for an info alert box.</p>",
+            "option-anchor": "alert-info",
+            "alert-class": "alert-info",
+            "alert-message": "<strong>Heads up!</strong> This alert needs <a href='#' class='alert-link'>your attention</a>, but it's not super important."
+          },
+
+
+
+
+         {
+            "option-heading": "Warning",
+            "option-description": "<p>Use the class <code>.alert-warning</code> for a warning alert box.</p>",
+            "option-anchor": "alert-warning",
+            "alert-class": "alert-warning",
+            "alert-message": "<strong>Warning!</strong> Better check yourself, you're <a href='#' class='alert-link'>not looking too good</a>."
+          },
+
+
+
+
+         {
+            "option-heading": "Danger",
+            "option-description": "<p>Use the class <code>.alert-danger</code> for a danger alert box.</p>",
+            "option-anchor": "alert-danger",
+            "alert-class": "alert-danger",
+            "alert-message": "<strong>Oh snap!</strong> Change a few things up and <a href='#' class='alert-link'>try submitting again</a>."
+          }
+
+
+    ]
+}

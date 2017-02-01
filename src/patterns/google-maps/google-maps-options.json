@@ -1,17 +1,61 @@
 {
     "options": [
         {
-            "option-heading": "No text data",
-            "option-description": "<p></p>",
-            "text": ""
+            "option-heading": "Multiple-point map (Content whole)",
+            "option-description": "<p>Created using My Maps, within the Content whole pattern.</p>",
+            "option-anchor": "mymapwhole",
+            "map": "https://www.google.com/maps/d/embed?mid=167xgAp5IMFyBUp46Vdbw6f21vc0",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices eu elit id tempor. Fusce at porta lorem, eget porta libero. Ut vitae odio id lacus faucibus ornare at vitae orci. Sed lacus quam.</p>"
         },
 
 
 
+
         {
-            "option-heading": "With text data",
-            "option-description": "<p>Map to one side, with column of text.</p>",
-            "text": "<h3>Contact us</h3><h4>School of Bionuclear Poetry</h4><p>University of St Andrews<br />College Gate<br />St Andrews<br />KY16 9AJ<br />Fife, Scotland, United Kingdom</p><h4>General inquiries</h4><p>Telephone: +44 (0)1334 476161</p>"
+            "option-heading": "Multiple-point map (Content thirds)",
+            "option-description": "<p>Created using My Maps, of University of St Andrews halls of residence, within the two-thirds/one-third content pattern.</p>",
+            "option-anchor": "mymapthirds",
+            "map": "https://www.google.com/maps/d/embed?mid=167xgAp5IMFyBUp46Vdbw6f21vc0",
+            "column1": "col-sm-8",
+            "column2": "col-sm-4",
+            "sidebar": " <!-- Begin pattern: navbox //--> <div class='navbox big-target-click-zone'> <div class='navbox-image'> <img src='../../assets/docs/images/placeholders/360x240.jpg' alt='Description'> </div> <div class='navbox-title'> <p><a class='big-target-anchor' href='#'>Accommodation</a></p> </div> </div> <!-- End pattern: navbox //--><h3>Related content</h3><ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>"
+        },
+
+
+
+
+        {
+            "option-heading": "Single-point map (Content whole)",
+            "option-description": "<p>Created using Google Maps, within the Content whole pattern.</p>",
+            "option-anchor": "googlemapwhole",
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2211.399529804193!2d-2.816029683587382!3d56.34019068071458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488657829e5cbb3f%3A0xc253a6b45fc4cc48!2sAgnes+Blackadder+Hall!5e0!3m2!1sen!2suk!4v1484316949822",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices eu elit id tempor. Fusce at porta lorem, eget porta libero. Ut vitae odio id lacus faucibus ornare at vitae orci. Sed lacus quam.</p>"
+        },
+
+
+
+
+        {
+            "option-heading": "Single-point map (Content thirds)",
+            "option-description": "<p>Created using Google Maps, within the Content thirds pattern.</p>",
+            "option-anchor": "googlemapthirds",
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2211.399529804193!2d-2.816029683587382!3d56.34019068071458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488657829e5cbb3f%3A0xc253a6b45fc4cc48!2sAgnes+Blackadder+Hall!5e0!3m2!1sen!2suk!4v1484316949822",
+            "column1": "col-sm-8",
+            "column2": "col-sm-4",
+            "sidebar": " <!-- Begin pattern: navbox //--> <div class='navbox big-target-click-zone'> <div class='navbox-image'> <img src='../../assets/docs/images/placeholders/360x240.jpg' alt='Description'> </div> <div class='navbox-title'> <p><a class='big-target-anchor' href='#'>Accommodation</a></p> </div> </div> <!-- End pattern: navbox //--><h3>Related content</h3><ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>"
+        },
+
+
+
+
+        {
+            "option-heading": "Single-point map (Content halves)",
+            "option-description": "<p>Created using Google Maps, within the Content halves pattern.</p>",
+            "option-anchor": "googlemaphalves",
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2211.399529804193!2d-2.816029683587382!3d56.34019068071458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488657829e5cbb3f%3A0xc253a6b45fc4cc48!2sAgnes+Blackadder+Hall!5e0!3m2!1sen!2suk!4v1484316949822",
+            "column1": "col-sm-6",
+            "column2": "col-sm-6",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices eu elit id tempor. Fusce at porta lorem, eget porta libero. Ut vitae odio id lacus faucibus ornare at vitae orci. Sed lacus quam.</p><p>Fusce at porta lorem, eget porta libero. Ut vitae odio id lacus faucibus ornare at vitae orci. Sed lacus quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices eu elit id tempor. </p>"
         }
     ]
 }

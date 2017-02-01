@@ -1,14 +1,14 @@
 <div class="gallery">
-    
+
     <h2 class="gallery__title">{{gallery-title}}</h2>
 
-    <div class="gallery__description">{{gallery-description}}</div>
+    <div class="gallery__description"><p>{{gallery-description}}</p></div>
 
-    <div class="gallery__images">
+    <div class="{{gallery-images-class}}">
         {{#gallery-images}}
         <figure id="{{id}}">
-            <a href="{{asset large-img}}"><img src="{{asset thumbnail}}" alt="{{alt}}"></a>
-            <figcaption>{{caption}}</figcaption>
+            <a href="{{asset large-img}}" {{#if lightbox-gallery }} data-lightbox="{{lightbox-gallery}}" data-title="{{caption}}" {{/if}}><img src="{{asset thumbnail}}" alt="{{alt}}"></a>
+            {{#unless lightbox-gallery}}<figcaption>{{caption}}</figcaption>{{/unless}}
         </figure>
         {{/gallery-images}}
     </div>

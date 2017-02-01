@@ -25,6 +25,202 @@ Release date: Wednesday 1 February 2017
 
 ---
 
+## v0.11.0
+
+Release date: Tuesday 31 January 2017
+
+### Added
+
+* New pattern for using Glyphicons.
+
+
+
+---
+
+## v0.10.0
+
+Release date: Tuesday 31 January 2017
+
+### Added
+
+* Added Alerts pattern. 
+
+
+
+
+
+---
+
+## v0.9.9
+
+Release date: Friday 27 January 2017
+
+### Removed
+
+* Remove link to ../fonts/pt-serif-caption/regular/PTZ56F-webfont.woff from `_fonts.scss`.
+
+
+
+
+---
+
+## v0.9.8
+
+Release date: Tuesday 24 January 2017
+
+### Changed
+
+* Update KIS widget template structure.
+* Update KIS widget css to move margin-right to the list item instead of the button.
+
+
+
+
+---
+
+## v0.9.7
+
+Release date: Thursday 19 January 2017
+
+### Added
+
+*Added background colours to the Featured media pattern.
+
+
+
+
+---
+
+## v0.9.6
+
+Release date: Tuesday 17 January 2017
+
+### Changed
+
+*Added margin to Alert element paragraphs.
+
+
+
+
+---
+
+## v0.9.5
+
+Release date: Tuesday 17 January 2017
+
+### Removed
+
+* Remove wai aria role from content whole pattern.
+
+
+
+
+---
+
+## v0.9.4
+
+Release date: Tuesday 17 January 2017
+
+### Changed
+
+* Update CONTRIBUTING.md to match the redesign of how the DPL is built.
+* Update dummy pattern to match the redesign of how the DPL is built. 
+
+
+
+
+---
+
+## v0.9.3
+
+Release date: Monday 16 January 2017
+
+### Removed
+
+* Remove wai aria role from content whole pattern.
+* Update dummy pattern to match the redesign of how the DPL is built. 
+
+
+
+
+---
+
+## v0.9.3
+
+### Removed
+
+* Remove wai aria role from content whole pattern.
+
+
+
+
+---
+
+## v0.9.2
+
+Release date: Friday 13 January 2017
+
+### Added
+
+* Create options to show the use of Google Maps within other patterns.
+
+### Changed
+
+* Instead of using a JSON file for map markers, we now use the default Google and Google My Maps embed code.
+* Update documentation to reflect changes to how pattern works.
+
+### Removed
+
+* Remove the JavaScript file, as this is no longer needed.
+* Remove all CSS styling for the pattern, except one line, as Bootstrap's responsive embed code works fine.
+
+
+
+
+---
+
+## v0.9.1
+
+Release date: Friday 13 January 2017
+
+### Added
+
+* Add lightbox.js with some new examples.
+* Update pattern documentation.
+
+### Changed
+
+* Deprecate jQuery Theatre plugin code.
+
+
+
+
+---
+
+
+## v0.9.0
+
+Release date: Tuesday 10 January 2017
+
+### Added
+
+* Add pattern-options.json to all patterns for the new layout.
+* Add troubleshooting to `SETUP.md`.
+
+### Changed
+
+* Update all patterns to reflect the new layout for examples and code.
+* Simplify the homepage.
+
+### Removed
+
+* Remove the data and example folders from all the patterns, as they were no long
+
+
+
+
+---
+
 ## v0.8.14
 
 Release date: Sunday 8 January 2017

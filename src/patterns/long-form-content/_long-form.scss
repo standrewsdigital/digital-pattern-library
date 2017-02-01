@@ -41,17 +41,17 @@
 // }
 
 // Styles for standard HTML elements inside content.
-@import 'long-form/long-form-content';
+@import 'long-form-content/long-form-content';
 
 // Variants of the long-form pattern
-@import 'long-form/long-form-variants';
+@import 'long-form-content/long-form-variants';
 
-// Subpatterns
-@import 'long-form/long-form-asides';
-@import 'long-form/long-form-end-lead';
-@import 'long-form/long-form-pull-quote';
-@import 'long-form/long-form-gallery-thumbnail';
-@import 'long-form/long-form-gallery-slider';
+// Sub-patterns
+@import 'long-form-content/long-form-asides';
+@import 'long-form-content/long-form-end-lead';
+@import 'long-form-content/long-form-pull-quote';
+@import 'long-form-content/long-form-gallery-thumbnail';
+@import 'long-form-content/long-form-gallery-slider';
 
 
 /*********************************/

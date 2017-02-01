@@ -2,17 +2,27 @@
 title: Gallery
 ---
 
-The gallery pattern demonstrates a method of displaying a large number of images on a page and makes use of a jQuery plugin to view the images in an immersive experience.
+<div class="alert alert-info">The gallery pattern is backwards-compatible with previous implementations used on the University of St Andrews website &ndash; see old gallery option below, which used the jQuery theatre plugin. This support will be removed at some point, so please do not use the old gallery markup.</div>
 
+<p>The gallery pattern demonstrates a method of displaying a large number of images on a page and makes use of the <a href="http://lokeshdhakar.com/projects/lightbox2">Lightbox JavaScript library</a> to view the images in an immersive experience.</p>
 
 <ul>
-  <li>Use this pattern whenever you wish to present a large number of images in small form that link to a larger, more immersive experience.</li>
+  <li>Small images should be <code>360px x 240px</code>.</li>
+  <li>Must only be used within the main content of a page.</li>
+  <li>A page can contain multiple galleries.</li>
+  <li>Use <code>data-lightbox="[gallery name]"</code> to group images together for each gallery.</li>
 </ul>
 
+<h3>Options available</h3>
+<ul>
+{{#gallery-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/gallery-options.options}}
+</ul>
 
 {{#gallery-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 {{> gallery}}
 <span class="label label-default">Code</span>
