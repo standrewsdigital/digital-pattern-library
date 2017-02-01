@@ -40,6 +40,10 @@
             "heading": "Call to action",
             "subheading": "Patterns used to bring attention and link to content of importance both on the University website and external.",
             "patterns": [
+                { "name": "Buttons",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/buttons/index.html"
+                },
                 { "name": "Featured media",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/featured-media/index.html"
