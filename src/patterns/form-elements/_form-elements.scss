@@ -38,6 +38,10 @@ input[type~=text].form-control, select.form-control {
 }
 
 .radio-button, .checkbox-box {
+    p {
+        margin-bottom: 0;
+    }
+
     ul {
         list-style: none;
         padding: 0;

@@ -12,18 +12,185 @@ title: Form elements
 
 <h3>Options</h3>
 <ul>
-	<li><a href="#checkboxes">Checkboxes</a></li>
-	<li><a href="#conditional">Conditionally revealing content</a></li>
 	<li><a href="#fieldsets">Fieldsets and legends</a></li>
-	<li><a href="#file-upload">File upload</a></li>
-	<li><a href="#form-inputs">Input fields</a></li>
-	<li><a href="#hint-text">Hint text</a></li>
 	<li><a href="#labels">Labels</a></li>
+	<li><a href="#hint-text">Hint text</a></li>
+	<li><a href="#form-inputs">Input fields</a></li>
+	<li><a href="#file-upload">File upload</a></li>
+	<li><a href="#checkboxes">Checkboxes</a></li>
 	<li><a href="#radio-buttons">Radio buttons</a></li>
+	<li><a href="#conditional">Conditionally revealing content</a></li>
 	<li><a href="#select-boxes">Select boxes</a></li>
 </ul>
 
 <hr>
+
+
+<h3 id="fieldsets">Fieldsets and legends</h3>
+
+<p>Use fieldsets to group related form controls. The first element inside a fieldset must be a <code>legend</code> element which describes the group.</p>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-fieldsets}}
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-fieldsets}}</code></pre>
+</div>
+
+<hr>
+
+
+<h3 id="labels">Labels</h3>
+
+<ul>
+	<li>All form fields must be given labels.</li>
+	<li>Don’t hide labels, unless the surrounding context makes them unnecessary.</li>
+	<li>Labels must be aligned above their fields.</li>
+	<li>Label text should be short, direct and in sentence case.</li>
+	<li>Avoid colons at the end of labels.</li>
+	<li>Labels must be associated with form fields using the <code>for</code> attribute.</li>
+</ul>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-label}}
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-label}}</code></pre>
+</div>
+
+<hr>
+
+
+
+
+<h3 id="hint-text">Hint text</h3>
+
+<ul>
+	<li>Don’t use placeholder text in form fields, as this will disappear once content is entered into the form field. Search fields are the only exception to this, but must have the search icon or text indicating it's usage.</li>
+	<li>Hint text must sit above a form field.</li>
+	<li>Ensure hint text can be read correctly by screen readers.</li>
+</ul>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-hint}}
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-hint}}</code></pre>
+</div>
+
+<hr>
+
+
+
+<h3 id="form-inputs">Input fields</h3>
+	<ul>
+		<li>Ensure that users can enter the information they need at smaller screen sizes.</li>
+		<li>Snap form fields to 100% width at smaller screen sizes.</li>
+		<li>Use the <code>.form-group</code> class to create spacing when wrapping label and input pairs.</li>
+	</ul>
+
+
+<h4>Default input</h4>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-input}}
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-input}}</code></pre>
+</div>
+
+<hr>
+
+
+
+<h4>Input addons</h4>
+
+<p>Addons can be used when the input field is always going to be prefixed with a particular value.</p>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4">
+			<span class="label label-default">Example</span>
+			<div class="pattern-example">
+				{{> form-elements-input-addon}}
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-input-addon}}</code></pre>
+</div>
+
+<hr>
+
+
+
+<h4>Textarea</h4>
+
+<p>Allows for multiple lines of text.</p>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-input-textarea}}
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-input-textarea}}</code></pre>
+</div>
+
+<hr>
+
+
+<h3 id="file-upload">File upload</h3>
+
+<p>Uses the native input using <code>type="file"</code>. This is so:</p>
+
+<ul>
+	<li>The control gains focus when tabbing through the page.</li>
+	<li>The control functions using a keyboard.</li>
+	<li>The control functions using assistive technology.</li>
+	<li>The control functions when JavaScript is not available.</li>
+</ul>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-file-upload}}
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-file-upload}}</code></pre>
+</div>
+
+<hr>
+
 
 <h3 id="checkboxes">Checkboxes</h3>
 
@@ -72,7 +239,48 @@ title: Form elements
 
 <hr>
 
+<h3 id="radio-buttons">Radio buttons</h3>
 
+<ul>
+	<li>Use these to let users choose a single option from a list.</li>
+	<li>Radio buttons with large hit areas are easier to select with a mouse or touch devices.</li>
+</ul>
+
+<h4>Inline radio buttons</h4>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-radio-inline}}
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-radio-inline}}</code></pre>
+</div>
+
+<hr>
+
+
+
+
+<h4>Stacked radio buttons</h4>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-radio-stacked}}
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-radio-stacked}}</code></pre>
+</div>
+
+
+<hr>
 
 
 
@@ -80,7 +288,7 @@ title: Form elements
 
 <ul>
 	<li>Reveal an additional input field, depending on the value selected.</li>
-	<li>May only be used alongside Radio buttons.</li>
+	<li>May only be used alongside radio buttons.</li>
 	<li>A left border is applied to emphasise this newly revealed information.</li>
 </ul>
 
@@ -126,227 +334,6 @@ title: Form elements
 	<pre><code class="pattern-source html">{{> form-elements-conditional-content}}</code></pre>
 </div>
 
-
-
-<hr>
-
-
-
-
-<h3 id="fieldsets">Fieldsets and legends</h3>
-
-<p>Use fieldsets to group related form controls. The first element inside a fieldset must be a <code>legend</code> element which describes the group.</p>
-
-<div class="container">
-	<span class="label label-default">Example</span>
-	<div class="pattern-example">
-		{{> form-elements-fieldsets}}
-	</div>
-</div>
-
-<div class="container">
-	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-elements-fieldsets}}</code></pre>
-</div>
-
-<hr>
-
-
-
-
-<h3 id="file-upload">File upload</h3>
-
-<p>Uses the native input using <code>type="file"</code>. This is so:</p>
-
-<ul>
-	<li>The control gains focus when tabbing through the page.</li>
-	<li>The control functions using a keyboard.</li>
-	<li>The control functions using assistive technology.</li>
-	<li>The control functions when JavaScript is not available.</li>
-</ul>
-
-<div class="container">
-	<span class="label label-default">Example</span>
-	<div class="pattern-example">
-		{{> form-elements-file-upload}}
-	</div>
-</div>
-
-<div class="container">
-	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-elements-file-upload}}</code></pre>
-</div>
-
-<hr>
-
-
-
-<h3 id="inputs">Input fields</h3>
-
-<p>Make field widths proportional to the input they take.</p>
-
-<p>Ensure that users can enter the information they need at smaller screen sizes.</p>
-
-<p>Snap form fields to 100% width at smaller screen sizes.</p>
-
-<p>Use the <code>.form-group</code> class to create spacing when wrapping label and input pairs.</p>
-
-<h4>Default input</h4>
-
-<div class="container">
-	<span class="label label-default">Example</span>
-	<div class="pattern-example">
-		{{> form-elements-input}}
-	</div>
-</div>
-
-<div class="container">
-	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-elements-input}}</code></pre>
-</div>
-
-<hr>
-
-
-
-<h4>Input addons</h4>
-
-<p>Addons can be used when the input field is always going to prefixed with a particular value.</p>
-
-<div class="container">
-	<div class="row">
-		<div class="col-sm-4">
-			<span class="label label-default">Example</span>
-			<div class="pattern-example">
-				{{> form-elements-input-addon}}
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="container">
-	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-elements-input-addon}}</code></pre>
-</div>
-
-<hr>
-
-
-
-
-<h4>Textarea</h4>
-
-<p>A longer block of help text that breaks onto a new line and may extend beyond one line.</p>
-
-<div class="container">
-	<span class="label label-default">Example</span>
-	<div class="pattern-example">
-		{{> form-elements-input-textarea}}
-	</div>
-</div>
-
-<div class="container">
-	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-elements-input-textarea}}</code></pre>
-</div>
-
-<hr>
-
-
-
-
-<h3 id="hint-text">Hint text</h3>
-
-<ul>
-	<li>Don’t use placeholder text in form fields, as this will disappear once content is entered into the form field.</li>
-	<li>Hint text must sit above a form field.</li>
-	<li>Ensure hint text can be read correctly by screen readers.</li>
-</ul>
-
-<div class="container">
-	<span class="label label-default">Example</span>
-	<div class="pattern-example">
-		{{> form-elements-hint}}
-	</div>
-</div>
-
-<div class="container">
-	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-elements-hint}}</code></pre>
-</div>
-
-<hr>
-
-
-
-
-<h3 id="labels">Labels</h3>
-
-<ul>
-	<li>All form fields must be given labels.</li>
-	<li>Don’t hide labels, unless the surrounding context makes them unnecessary.</li>
-	<li>Labels must be aligned above their fields.</li>
-	<li>Label text should be short, direct and in sentence case.</li>
-	<li>Avoid colons at the end of labels.</li>
-	<li>Labels must be associated with form fields using the <code>for</code> attribute.</li>
-</ul>
-
-<div class="container">
-	<span class="label label-default">Example</span>
-	<div class="pattern-example">
-		{{> form-elements-label}}
-	</div>
-</div>
-
-<div class="container">
-	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-elements-label}}</code></pre>
-</div>
-
-<hr>
-
-
-
-
-<h3 id="radio-buttons">Radio buttons</h3>
-
-<ul>
-	<li>Use these to let users choose a single option from a list.</li>
-	<li>Radio buttons with large hit areas are easier to select with a mouse or touch devices.</li>
-</ul>
-
-<h4>Inline radio buttons</h4>
-
-<div class="container">
-	<span class="label label-default">Example</span>
-	<div class="pattern-example">
-		{{> form-elements-radio-inline}}
-	</div>
-</div>
-
-<div class="container">
-	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-elements-radio-inline}}</code></pre>
-</div>
-
-<hr>
-
-
-
-
-<h4>Stacked radio buttons</h4>
-
-<div class="container">
-	<span class="label label-default">Example</span>
-	<div class="pattern-example">
-		{{> form-elements-radio-stacked}}
-	</div>
-</div>
-
-<div class="container">
-	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-elements-radio-stacked}}</code></pre>
-</div>
 
 
 <hr>
