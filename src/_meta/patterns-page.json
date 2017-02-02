@@ -136,7 +136,7 @@
                 },
                 { "name": "Tables - DataTables",
                   "img": "assets/docs/images/patterns/pattern.jpg",
-                  "url": "examples/datatables.html"
+                  "url": "patterns/datatables/index.html"
                 },
                 { "name": "Tabs",
                   "img": "assets/docs/images/patterns/pattern.jpg",

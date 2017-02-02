@@ -1,0 +1,38 @@
+---
+title: DataTables
+---
+
+<blockquote>
+	<p>DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, based upon the foundations of progressive enhancement, and will add advanced interaction controls to any HTML table.</p>
+	<footer>DataTables website</footer>
+</blockquote>
+
+<p>DataTabless are for displaying larger amounts of data across multiple columns, but is suitable for any sized data set.</p>
+<p>To use on your page you must include the following files:</p>
+
+<ul>
+	<li>JavaScript: <code>{{pkg.version}}/scripts/datatables.js</code></li>
+	<li>CSS: <code>{{pkg.version}}/styles/datatables.css</code></li>
+</ul>
+
+<ul>
+    <li>The rows should alternate colour to increase readability.</li>
+    <li>You MUST only use text-based content within tables.</li>
+</ul>
+
+<hr>
+<h3>Options available</h3>
+<ul>
+{{# datatables-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/ datatables-options.options}}
+</ul>
+
+{{# datatables-options.options}}
+<hr>
+<h3 id={{option-anchor}}>{{option-heading}}</h3>
+{{{option-description}}}
+{{> datatables}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> datatables}}</code></pre>
+{{/ datatables-options.options}}
