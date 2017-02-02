@@ -7,7 +7,13 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+
+
+---
+
 ## v0.13.0
+
+Release date: Thursday 2 February 2017
 
 ### Added
 
@@ -21,7 +27,54 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v0.12.0
+
+Release date: Wednesday 1 February 2017
+
+### Added
+
+* Form elements pattern.
+* Form validation pattern. 
+
+### Changed
+
+* Form example page.
+
+
+
+
+---
+
+## v0.11.0
+
+Release date: Tuesday 31 January 2017
+
+### Added
+
+* New pattern for using Glyphicons.
+
+
+
+---
+
+## v0.10.0
+
+Release date: Tuesday 31 January 2017
+
+### Added
+
+* Added Alerts pattern. 
+
+
+
+
+
+
+---
+
 ## v0.9.9
+
+Release date: Friday 27 January 2017
 
 ### Removed
 
@@ -33,6 +86,8 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 ---
 
 ## v0.9.8
+
+Release date: Tuesday 24 January 2017
 
 ### Changed
 
@@ -46,6 +101,8 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ## v0.9.7
 
+Release date: Thursday 19 January 2017
+
 ### Added
 
 * Added background colours to the Featured media pattern.
@@ -57,6 +114,8 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ## v0.9.6
 
+Release date: Tuesday 17 January 2017
+
 ### Changed
 
 * Added margin to Alert element paragraphs.
@@ -67,6 +126,8 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 ---
 
 ## v0.9.5
+
+Release date: Tuesday 17 January 2017
 
 ### Removed
 
@@ -84,6 +145,20 @@ Release date: Tuesday 17 January 2017
 ### Changed
 
 * Update CONTRIBUTING.md to match the redesign of how the DPL is built.
+* Update dummy pattern to match the redesign of how the DPL is built. 
+
+
+
+
+---
+
+## v0.9.3
+
+Release date: Monday 16 January 2017
+
+### Removed
+
+* Remove wai aria role from content whole pattern.
 * Update dummy pattern to match the redesign of how the DPL is built. 
 
 
@@ -160,7 +235,7 @@ Release date: Tuesday 10 January 2017
 
 ### Removed
 
-* Remove the data and example folders from all the patterns, as they were no longer needed.
+* Remove the data and example folders from all the patterns, as they were no long
 
 
 

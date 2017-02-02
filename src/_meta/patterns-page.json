@@ -78,6 +78,10 @@
                   "img": "assets/docs/images/patterns/accordion.jpg",
                   "url": "patterns/accordion/index.html"
                 },
+                { "name": "Alerts",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/alerts/index.html"
+                },
                 { "name": "Code",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/code/index.html"
@@ -118,6 +122,10 @@
                   "img": "assets/docs/images/patterns/news-updates.jpg",
                   "url": "patterns/news-updates/index.html"
                 },
+                { "name": "Responsive embed",
+                  "img": "assets/docs/images/patterns/google-maps.jpg",
+                  "url": "patterns/responsive-embed/index.html"
+                },
                 { "name": "Section header",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/section-header/index.html"
@@ -141,12 +149,30 @@
             ]
         },
         {
+            "heading": "Form elements",
+            "subheading": "Patterns used to create forms.",
+            "patterns": [
+                { "name": "Form elements",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/form-elements/index.html"
+                },
+                { "name": "Form validation",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/form-validation/index.html"
+                }
+            ]
+        },        
+        {
             "heading": "Icons",
             "subheading": "Patterns used to accent elements using icons.",
             "patterns": [
                 { "name": "Font Awesome",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/font-awesome/index.html"
+                },
+                { "name": "Glyphicons",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/glyphicons/index.html"
                 }
             ]
         },
