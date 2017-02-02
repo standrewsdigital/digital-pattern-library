@@ -6,6 +6,21 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+
+## v0.13.0
+
+### Added
+
+* New pattern replacing Bootstrap's pagination example
+* Options for pagination pattern
+* New pattern for Bootstrap's responsive media embed
+* Options for responsive media embed
+
+
+
+
+---
+
 ## v0.9.9
 
 ### Removed
@@ -33,7 +48,7 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ### Added
 
-*Added background colours to the Featured media pattern.
+* Added background colours to the Featured media pattern.
 
 
 
@@ -44,7 +59,7 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ### Changed
 
-*Added margin to Alert element paragraphs.
+* Added margin to Alert element paragraphs.
 
 
 
