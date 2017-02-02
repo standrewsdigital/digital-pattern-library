@@ -7,6 +7,15 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.14.0
+
+Release date: Thursday 2 February 2017
+
+### Added
+
+* New pattern based on Bootstrap's button.
+
+
 
 
 ---
