@@ -7,6 +7,15 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.14.0
+
+### Added
+
+* New pattern for buttons.
+
+
+---
+
 ## v0.11.0
 
 ### Added
