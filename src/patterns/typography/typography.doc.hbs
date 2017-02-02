@@ -2,7 +2,7 @@
 title: Typography
 ---
 
-<p>Words are cool.</p>
+<p>Lorem ipsum.</p>
 
 <ul>
 	<li>List item.</li>
@@ -12,7 +12,10 @@ title: Typography
 <h3>Headers</h3>
 
 <ul>
-	<li>List item.</li>
+	<li>There should be one <code>h1</code> element on a page.</li>
+	<li>There should be one <code>h2</code> element on a page.</li>
+	<li>There can be as many <code>h3</code> elements as required to denote sections of content on a page.</li>
+	<li>There can be as many <code>h4</code> element as required on a page. <code>h4</code> elements will sit within content fields label with a <code>h3</code>.</li>
 </ul>
 
 {{> typography-headings}}
@@ -23,7 +26,13 @@ title: Typography
 <h3>Body text</h3>
 
 <ul>
-	<li>List item.</li>
+	<li>The <code>p</code> tag defines a paragraph.</li>
+	<li>Use bold (<code>strong</code>) to draw attention to words or phrases that cannot be easily frontloaded.</li>
+	<li>Try to keep items in bold as short as possible and refrain from writing entire sentences or paragraphs in a bold typeface.</li>
+	<li>Bold text should not be used as a substitue for headings.</li>
+	<li>Use italics (<code>em</code>) for non-English words that are not in regular use.</li>
+	<li>For accessibility reasons, avoid the excessive use of italics on the web.</li>
+
 </ul>
 
 {{> typography-body-text}}
@@ -31,21 +40,33 @@ title: Typography
 <pre><code class="pattern-source html">{{> typography-body-text}}</code></pre>
 
 <hr>
-<h3>Emphasis classes</h3>
+<h3>Attributed text</h3>
 
 <ul>
-	<li>List item.</li>
+	<li>It is advised that attributed text wrapped around acroynms to breakdown what the initials stand for.</li>
 </ul>
 
-{{> typography-emphasis-classes}}
+{{> typography-attributed-text}}
 <span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> typography-emphasis-classes}}</code></pre>
+<pre><code class="pattern-source html">{{> typography-attributed-text}}</code></pre>
+
+<hr>
+<h3>Paragraph lead</h3>
+
+<ul>
+	<li>Paragraph lead fields are to be used at the top of subject and course pages as an introduction.</li>
+</ul>
+
+{{> typography-paragraph-lead}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> typography-paragraph-lead}}</code></pre>
 
 <hr>
 <h3>Blockquotes - left alignment</h3>
 
 <ul>
-	<li>List item.</li>
+	<li>Blockquotes should be used when emphasising a quotation of relevant context to the body of text.</li>
+	<li>For accessibility reasons, avoid the excessive use of blockquotes on the web.</li>
 </ul>
 
 {{> typography-blockquotes-left}}
@@ -56,9 +77,11 @@ title: Typography
 <h3>Blockquotes - right alignment</h3>
 
 <ul>
-	<li>List item.</li>
+	<li>Right aligned blockquotes are available as a flexible alternative for pages which wrap their text fields around additional content.</li>
 </ul>
 
 {{> typography-blockquotes-right}}
+
+<div class="clear both"></div>
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> typography-blockquotes-right}}</code></pre>
