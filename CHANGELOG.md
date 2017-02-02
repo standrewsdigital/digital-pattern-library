@@ -7,6 +7,26 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+
+
+---
+
+## v0.13.0
+
+Release date: Thursday 2 February 2017
+
+### Added
+
+* New pattern replacing Bootstrap's pagination example
+* Options for pagination pattern
+* New pattern for Bootstrap's responsive media embed
+* Options for responsive media embed
+
+
+
+
+---
+
 ## v0.12.0
 
 Release date: Wednesday 1 February 2017
@@ -49,6 +69,7 @@ Release date: Tuesday 31 January 2017
 
 
 
+
 ---
 
 ## v0.9.9
@@ -84,7 +105,7 @@ Release date: Thursday 19 January 2017
 
 ### Added
 
-*Added background colours to the Featured media pattern.
+* Added background colours to the Featured media pattern.
 
 
 
@@ -97,7 +118,7 @@ Release date: Tuesday 17 January 2017
 
 ### Changed
 
-*Added margin to Alert element paragraphs.
+* Added margin to Alert element paragraphs.
 
 
 
