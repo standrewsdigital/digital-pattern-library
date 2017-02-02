@@ -1,0 +1,39 @@
+---
+title: Responsive embed
+---
+
+<p>Allow browsers to determine video or map dimensions based on the width of their containing block by creating a responsive ratio that will properly scale on any device.</p>
+
+<p>First, give your <code>iframe</code>, <code>embed</code>, <code>video</code> or <code>object</code> element a class of <code>embed-responsive-item</code> then wrap it with the following HTML code:</p>
+
+<pre><code class="pattern-source html"><div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item"></iframe>
+</div>
+</code></pre>
+
+<p>The second class in the parent <code>div</code> decides the video's ratio. There are two choices:</p>
+<ul>
+	<li><strong>16:9</strong> <code>embed-responsive-16by9</code> : use this to show videos, as its much better suited for use with HD media.</li>
+	<li><strong>4:3</strong> <code>embed-responsive-4by3</code> : use this to display maps, in mobile view a smaller ratio makes them hard to view.</li>
+</ul>
+
+<p>You don't need to include <code>frameborder="0"</code> in your <code>iframe</code> as Bootstrap overrides that for you.</p>
+
+<hr>
+<h3>Options available</h3>
+<ul>
+{{#responsive-embed-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/responsive-embed-options.options}}
+</ul>
+
+{{#responsive-embed-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+{{> responsive-embed}}
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> responsive-embed}}</code></pre>
+{{/responsive-embed-options.options}}
