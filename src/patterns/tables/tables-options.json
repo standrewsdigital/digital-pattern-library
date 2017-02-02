@@ -39,39 +39,23 @@
             "table-body": [
                 {
                     "column-one": "<code>.table-primary</code>",
-                    "column-two": "Primary palette colour."
-                },
-                {
-                    "column-one": "<code>.table-success</code>",
-                    "column-two": "Indicates a success."
-                },
-                {
-                    "column-one": "<code>.table-info</code>",
-                    "column-two": "Indicates neutral information."
-                },
-                {
-                    "column-one": "<code>.table-warning</code>",
-                    "column-two": "Indicates a warning that might need attention."
-                },
-                {
-                    "column-one": "<code>.table-danger</code>",
-                    "column-two": "Indicates a negative."
+                    "column-two": "Primary palette colour, to be used on all pages using the primary palette theme."
                 },
                 {
                     "column-one": "<code>.table-secondary</code>",
-                    "column-two": "Secondary palette colour."
+                    "column-two": "Secondary palette colour, to be used on all pages using the secondary palette theme."
                 },
                 {
                     "column-one": "<code>.table-tertiary-1</code>",
-                    "column-two": "First tertiary palette colour."
+                    "column-two": "First tertiary palette colour, to be used on all pages using the tertiary palette theme."
                 },
                 {
                     "column-one": "<code>.table-tertiary-2</code>",
-                    "column-two": "Second tertiary palette colour."
+                    "column-two": "Second tertiary palette colour, to be used on all pages using the tertiary palette theme."
                 },
                 {
                     "column-one": "<code>.table-tertiary-3</code>",
-                    "column-two": "Third tertiary palette colour."
+                    "column-two": "Third tertiary palette colour, to be used on all pages using the tertiary palette theme."
                 }
 
             ]
