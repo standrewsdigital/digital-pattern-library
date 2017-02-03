@@ -14,7 +14,12 @@ Release date: Friday 3 February 2017
 ### Added
 
 * Tables pattern.
-* DataTables pattern. 
+* DataTables pattern.
+
+### Removed
+
+* Bootstrap components and Bootstrap components - advanced.
+* Removed unused example pages and supporting files.
 
 
 
