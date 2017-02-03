@@ -27,7 +27,11 @@
             "subheading": "Common Bootstrap framework elements that have been styled to match the visual language of the University's digital pattern library.",
             "patterns": [
                 { "name": "Bootstrap components",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/bootstrap.jpg",
+                  "url": "examples/bootstrap.html"
+                },
+                { "name": "Bootstrap components - advanced",
+                  "img": "assets/docs/images/patterns/bootstrap.jpg",
                   "url": "examples/bootstrap.html"
                 },
                 { "name": "Bootstrap components - advanced",
@@ -45,7 +49,7 @@
                   "url": "patterns/buttons/index.html"
                 },
                 { "name": "Featured media",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/featured-media.jpg",
                   "url": "patterns/featured-media/index.html"
                 },
                 { "name": "Hero banner",
@@ -53,23 +57,23 @@
                   "url": "patterns/hero-banner/index.html"
                 },
                 { "name": "KIS widget",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/kis-widget.jpg",
                   "url": "patterns/kis-widget/index.html"
                 },
                 { "name": "Secondary call to action",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/secondary-call.jpg",
                   "url": "patterns/secondary-call/index.html"
                 },
                 { "name": "Text banner",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/text-banner.jpg",
                   "url": "patterns/text-banner/index.html"
                 },
                 { "name": "Tile",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/tile.jpg",
                   "url": "patterns/tile/index.html"
                 },
                 { "name": "Tile grid",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/tile-grid.jpg",
                   "url": "patterns/tile-grid/index.html"
                 }
             ]
@@ -115,11 +119,11 @@
                   "url": "patterns/google-maps/index.html"
                 },
                 { "name": "HTML elements",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/html-elements.jpg",
                   "url": "examples/html-elements.html"
                 },
                 { "name": "Intro",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/intro.jpg",
                   "url": "patterns/intro/index.html"
                 },
                 { "name": "News updates",
@@ -147,7 +151,7 @@
                   "url": "examples/datatables.html"
                 },
                 { "name": "Tabs",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/tabs.jpg",
                   "url": "patterns/tabs/index.html"
                 },
                 { "name": "Typography",
