@@ -2,32 +2,46 @@
 title: Typography
 ---
 
-<p>Lorem ipsum.</p>
+<p>Use of appropriate typography should be used in combination with the <a href="http://www.st-andrews.ac.uk/digital-standards/service-manual/house-style/">house style</a>.</p>
 
 <ul>
-	<li>List item.</li>
+	<li><a href="#headers">Headers</a></li>
+	<li><a href="#body-text">Body text</a></li>	
+	<li><a href="#attr">Abbreviated text</a></li>
+	<li><a href="#lead">Paragraph lead</a></li>
+	<li><a href="#blockquotes-left">Blockquotes - left aligned</a></li>
+	<li><a href="#blockquotes-lright">Blockquotes - right aligned</a></li>
 </ul>
 
 <hr>
-<h3>Headers</h3>
+<h3 id="headers">Headers</h3>
+
+<p>It is important to think about the structure of content on a page before choosing the appropriate heading. It is not about choosing the one that looks right, rather to think about where does the heading fit into the overall content hierarchy so that it makes sense.</p>
+
+<p>Keep the implementation consistent across the entire site to maximise usability.</p>
+
+<p>Do not skip headings in the structure e.g. going from heading 2 to heading 4.</p>
 
 <ul>
-	<li>There should be one <code>h1</code> element on a page.</li>
-	<li>There should be one <code>h2</code> element on a page.</li>
-	<li>There can be as many <code>h3</code> elements as required to denote sections of content on a page.</li>
-	<li>There can be as many <code>h4</code> element as required on a page. <code>h4</code> elements will sit within content fields label with a <code>h3</code>.</li>
+	<li>There should be one <code>h1</code> element on a page. This is the top-level heading e.g. University of St Andrews.</li>
+	<li>As many as required <code>h2</code> elements to denote sections on the page.</li>
+	<li>As many as required <code>h3</code> to <code>h4</code> elements to denote sub-sections of content on a page.</li>
 </ul>
 
-{{> typography-headings}}
+<span class="label label-default">Example</span>
+<div class="pattern-example">
+	{{> typography-headings}}
+</div>
+
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> typography-headings}}</code></pre>
 
 <hr>
-<h3>Body text</h3>
+<h3 id="body-text">Body text</h3>
 
 <ul>
 	<li>The <code>p</code> tag defines a paragraph.</li>
-	<li>Use bold (<code>strong</code>) to draw attention to words or phrases that cannot be easily frontloaded.</li>
+	<li>Use bold (<code>strong</code>) to draw attention to words or phrases.</li>
 	<li>Try to keep items in bold as short as possible and refrain from writing entire sentences or paragraphs in a bold typeface.</li>
 	<li>Bold text should not be used as a substitue for headings.</li>
 	<li>Use italics (<code>em</code>) for non-English words that are not in regular use.</li>
@@ -35,52 +49,67 @@ title: Typography
 
 </ul>
 
-{{> typography-body-text}}
+
+<span class="label label-default">Example</span>
+<div class="pattern-example">
+	{{> typography-body-text}}
+</div>
+
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> typography-body-text}}</code></pre>
 
 <hr>
-<h3>Attributed text</h3>
+<h3 id="attr">Abbreviated text</h3>
 
-<ul>
-	<li>It is advised that attributed text wrapped around acroynms to breakdown what the initials stand for.</li>
-</ul>
+<p>The <code>abbr</code> tag is used to define an abbreviation or an ancronym. This can give useful information to browser, translation systems and search engines.</p>
 
-{{> typography-attributed-text}}
+<span class="label label-default">Example</span>
+<div class="pattern-example">
+	{{> typography-abbreviated-text}}
+</div>
+
 <span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> typography-attributed-text}}</code></pre>
+<pre><code class="pattern-source html">{{> typography-abbreviated-text}}</code></pre>
 
 <hr>
-<h3>Paragraph lead</h3>
+<h3 id="lead">Paragraph lead</h3>
 
-<ul>
-	<li>Paragraph lead fields are to be used at the top of subject and course pages as an introduction.</li>
-</ul>
+<p>Paragraph lead fields are to be used to provide an introduction at the top of subject and course pages.</p>
 
-{{> typography-paragraph-lead}}
+
+<span class="label label-default">Example</span>
+<div class="pattern-example">
+	{{> typography-paragraph-lead}}
+</div>
+
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> typography-paragraph-lead}}</code></pre>
 
 <hr>
-<h3>Blockquotes - left alignment</h3>
+<h3 id="blockquotes-left">Blockquotes - left alignment</h3>
 
 <ul>
 	<li>Blockquotes should be used when emphasising a quotation of relevant context to the body of text.</li>
-	<li>For accessibility reasons, avoid the excessive use of blockquotes on the web.</li>
+	<li>For accessibility reasons, avoid the excessive use of blockquotes.</li>
 </ul>
 
-{{> typography-blockquotes-left}}
+<span class="label label-default">Example</span>
+<div class="pattern-example">
+	{{> typography-blockquotes-left}}
+</div>
+
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> typography-blockquotes-left}}</code></pre>
 
 <hr>
-<h3>Blockquotes - right alignment</h3>
+<h3 id="blockquotes-left">Blockquotes - right alignment</h3>
 
-<ul>
-	<li>Right aligned blockquotes are available as a flexible alternative for pages which wrap their text fields around additional content.</li>
-</ul>
+<p>Right aligned blockquotes are available as a flexible alternative for pages which wrap their text fields around additional content.</p>
 
-{{> typography-blockquotes-right}}
+<span class="label label-default">Example</span>
+<div class="pattern-example">
+	{{> typography-blockquotes-right}}
+</div>
 
 <div class="clear both"></div>
 <span class="label label-default">Code</span>
