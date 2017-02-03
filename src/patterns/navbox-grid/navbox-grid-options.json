@@ -204,7 +204,7 @@
 
         {
             "option-heading": "Navbox hidden",
-            "option-description": "<p>Option to disable the no. 2 and 3 or just the no. 3 navboxes using the bootstrap CSS helper class <code>hidden</code></p>.",
+            "option-description": "<p>Option to disable the no. 2 and 3 or just the no. 3 navboxes using the bootstrap CSS helper class <code>hidden</code>.</p>",
             "items": [
                 {
                     "image": {

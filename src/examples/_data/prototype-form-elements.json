@@ -1,0 +1,83 @@
+{
+    "navigation-bar" : {
+        "primary":[
+            {"title": "Study at St Andrews",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Research",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Alumni and donors",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Schools",
+             "url": "#",
+             "selected":false
+            },
+             {"title": "About",
+             "url": "#",
+             "selected":true
+            }
+        ],
+        "secondary":[
+            {"title": "Facts and figures",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Governance",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "History",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Environment",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Professional services",
+             "url": "#",
+             "selected":false
+            },
+             {"title": "The town",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "News and events",
+             "url": "#",
+             "selected":false
+            }
+        ]
+      },
+      "category-header": {
+          "title": "About",
+          "url": "#"
+      },
+      "breadcrumbs": {
+        "parents": [
+          {
+              "title": "University",
+              "url": "#"
+          },
+          {
+              "title": "About",
+              "url": "#"
+          }
+        ],
+        "current": {
+            "title": "Example page",
+            "url": "#"
+        }
+    },
+    "content": {
+        "text" : "<h3>Form elements</h3>",
+        "sidebar" : "<h3>Sidebar</h3>",
+        "col-1": "col-sm-8 content",
+        "col-2": "col-sm-4 content",
+        "role": "complementary"
+    }
+}

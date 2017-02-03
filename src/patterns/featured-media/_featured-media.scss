@@ -17,6 +17,23 @@
     background-color: $sta-blue;
 }
 
+.featured-media.sta-blue-light {
+    background-color: $sta-blue-light;
+}
+
+.featured-media.sta-green {
+    background-color: $sta-green;
+}
+
+.featured-media.sta-burgundy {
+    background-color: $sta-burgundy;
+}
+
+.featured-media.sta-purple {
+    background-color: $sta-purple;
+}
+
+
 @media (max-width: 991px) {
     .featured-media img {
         display: block;

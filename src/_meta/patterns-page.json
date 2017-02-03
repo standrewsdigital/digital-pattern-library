@@ -32,6 +32,10 @@
                 },
                 { "name": "Bootstrap components - advanced",
                   "img": "assets/docs/images/patterns/bootstrap.jpg",
+                  "url": "examples/bootstrap.html"
+                },
+                { "name": "Bootstrap components - advanced",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "examples/bootstrap2.html"
                 }
             ]
@@ -40,6 +44,10 @@
             "heading": "Call to action",
             "subheading": "Patterns used to bring attention and link to content of importance both on the University website and external.",
             "patterns": [
+                { "name": "Buttons",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/buttons/index.html"
+                },
                 { "name": "Featured media",
                   "img": "assets/docs/images/patterns/featured-media.jpg",
                   "url": "patterns/featured-media/index.html"
@@ -77,6 +85,10 @@
                 { "name": "Accordion",
                   "img": "assets/docs/images/patterns/accordion.jpg",
                   "url": "patterns/accordion/index.html"
+                },
+                { "name": "Alerts",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/alerts/index.html"
                 },
                 { "name": "Code",
                   "img": "assets/docs/images/patterns/pattern.jpg",
@@ -118,12 +130,16 @@
                   "img": "assets/docs/images/patterns/news-updates.jpg",
                   "url": "patterns/news-updates/index.html"
                 },
+                { "name": "Responsive embed",
+                  "img": "assets/docs/images/patterns/google-maps.jpg",
+                  "url": "patterns/responsive-embed/index.html"
+                },
                 { "name": "Section header",
-                  "img": "assets/docs/images/patterns/section-header.jpg",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/section-header/index.html"
                 },
                 { "name": "Staff profile",
-                  "img": "assets/docs/images/patterns/staff-profile.jpg",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/staff-profile/index.html"
                 },
                 { "name": "Tables",
@@ -141,12 +157,30 @@
             ]
         },
         {
+            "heading": "Form elements",
+            "subheading": "Patterns used to create forms.",
+            "patterns": [
+                { "name": "Form elements",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/form-elements/index.html"
+                },
+                { "name": "Form validation",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/form-validation/index.html"
+                }
+            ]
+        },        
+        {
             "heading": "Icons",
             "subheading": "Patterns used to accent elements using icons.",
             "patterns": [
                 { "name": "Font Awesome",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/font-awesome/index.html"
+                },
+                { "name": "Glyphicons",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/glyphicons/index.html"
                 }
             ]
         },
@@ -175,6 +209,10 @@
                 { "name": "Navigation bar",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/navigation-bar/index.html"
+                },
+                { "name": "Pagination",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/pagination/index.html"
                 },
                 { "name": "Panel grid",
                   "img": "assets/docs/images/patterns/pattern.jpg",

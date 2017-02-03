@@ -1,28 +1,5 @@
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
-<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
-<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-
-<title>DataTables</title>
-
-<link href="{{asset 'core/styles/screen.css'}}" rel="stylesheet" type="text/css" media="screen" />
-<link href="{{asset 'core/styles/print.css'}}" rel="stylesheet" type="text/css" media="print" />
-<!--[if lt IE 9]><link href="{{asset 'core/styles/ie.css'}}" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
-
-<!-- Favicons -->
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="icon" href="{{asset "core/images/favicon.ico"}}">
-
-  </head>
-  <body>
-    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
    {{> header }}
 
@@ -72,14 +49,11 @@
       </div>
   </div>
 
-    <script src="../assets/core/scripts/jquery.dataTables.min.js"></script>
-
+    
     <link href="../assets/core/styles/datatables.css" rel="stylesheet" type="text/css" media="screen" />
 
-    <script src="../assets/core/scripts/datatables.js"></script>
-
     <script>
-        $(document).ready(function(){
+        window.document.onload = function(e){
 
             $('#unit-users').DataTable({
                 bAutoWidth: false,
@@ -96,7 +70,7 @@
                 ]
             });
 
-        });
+        };
 
     </script>
 
@@ -150,7 +124,7 @@
 
     <h2>Examples</h2>
 
-        <h3>Add dataTable class</h3>
+        <h3>Add DataTable class</h3>
 
         <p>This table is made into a DataTable by the addition of the dataTable class.</p>
 
@@ -429,8 +403,3 @@
         </table>
 
 </div>
-
-
-</body>
-
-</html>
