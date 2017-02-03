@@ -23,24 +23,6 @@
             ]
         },
         {
-            "heading": "Bootstrap framework",
-            "subheading": "Common Bootstrap framework elements that have been styled to match the visual language of the University's digital pattern library.",
-            "patterns": [
-                { "name": "Bootstrap components",
-                  "img": "assets/docs/images/patterns/bootstrap.jpg",
-                  "url": "examples/bootstrap.html"
-                },
-                { "name": "Bootstrap components - advanced",
-                  "img": "assets/docs/images/patterns/bootstrap.jpg",
-                  "url": "examples/bootstrap.html"
-                },
-                { "name": "Bootstrap components - advanced",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
-                  "url": "examples/bootstrap2.html"
-                }
-            ]
-        },
-        {
             "heading": "Call to action",
             "subheading": "Patterns used to bring attention and link to content of importance both on the University website and external.",
             "patterns": [
