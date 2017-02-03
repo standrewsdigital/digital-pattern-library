@@ -38,14 +38,8 @@
             },
 
             lengthChange: false, // disable the num of rows selector
-            pageLength: 15,
-            processing: true,
-            responsive: {
-                details: {
-                    type: "column",
-                    target: -1
-                }
-            }
+            pageLength: 10,
+            processing: true
 
         });
 
@@ -208,7 +202,9 @@
     }
 
     // Auto setup any tables with class 'dataTable'
-    $('.dataTable').DataTable();
+    $('.dataTable').DataTable({
+        responsive: true
+    });
 
 
 })(window, document);

@@ -1,0 +1,28 @@
+---
+title: Tables
+---
+
+<p>The tables pattern is for displaying data.</p>
+
+<ul>
+    <li>MUST not be used for more than two columns. Use the <a href="../datatables/index.html">DataTables pattern</a> for more complex datasets.</li>
+    <li>The rows should alternate colour to increase readability.</li>
+    <li>You MUST only use text-based content within tables.</li>
+</ul>
+
+<hr>
+<h3>Options available</h3>
+<ul>
+{{# tables-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/ tables-options.options}}
+</ul>
+
+{{# tables-options.options}}
+<hr>
+<h3 id={{option-anchor}}>{{option-heading}}</h3>
+{{{option-description}}}
+{{> tables}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> tables}}</code></pre>
+{{/ tables-options.options}}

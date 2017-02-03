@@ -7,6 +7,33 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.16.0
+
+Release date: Friday 3 February 2017
+
+### Added
+
+* Tables pattern.
+* DataTables pattern. 
+
+
+
+
+---
+
+## v0.15.1
+
+Release date: Friday 3 February 2017
+
+### Added
+
+* Pattern specific images for the patterns.html page.
+
+
+
+
+---
+
 ## v0.15.0
 
 Release date: Friday 3 February 2017
@@ -19,8 +46,6 @@ Release date: Friday 3 February 2017
 
 
 ---
-
-* New pattern based on Bootstrap's button.
 
 ## v0.14.0
 
@@ -45,6 +70,7 @@ Release date: Thursday 2 February 2017
 * Options for pagination pattern
 * New pattern for Bootstrap's responsive media embed
 * Options for responsive media embed
+
 
 
 
@@ -88,8 +114,6 @@ Release date: Tuesday 31 January 2017
 ### Added
 
 * Added Alerts pattern. 
-
-
 
 
 

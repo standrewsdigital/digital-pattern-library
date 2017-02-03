@@ -143,12 +143,12 @@
                   "url": "patterns/staff-profile/index.html"
                 },
                 { "name": "Tables",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
-                  "url": "examples/tables.html"
+                  "img": "assets/docs/images/patterns/tables.jpg",
+                  "url": "patterns/tables/index.html"
                 },
                 { "name": "Tables - DataTables",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
-                  "url": "examples/datatables.html"
+                  "img": "assets/docs/images/patterns/tables.jpg",
+                  "url": "patterns/datatables/index.html"
                 },
                 { "name": "Tabs",
                   "img": "assets/docs/images/patterns/tabs.jpg",
@@ -173,7 +173,7 @@
                   "url": "patterns/form-validation/index.html"
                 }
             ]
-        },        
+        },
         {
             "heading": "Icons",
             "subheading": "Patterns used to accent elements using icons.",
