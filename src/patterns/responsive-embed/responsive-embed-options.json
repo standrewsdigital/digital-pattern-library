@@ -1,0 +1,58 @@
+{
+    "options": [
+        {
+            "option-heading": "16:9 (content whole)",
+            "option-description": "<p></p>",
+            "option-anchor": "16by9content-whole",
+            "ratio": "16by9",
+            "iframe": "<iframe src='https://www.youtube.com/embed/Rv9hn4IGofM' class='embed-responsive-item'></iframe>"
+        },
+        {
+            "option-heading": "4:3 (content whole)",
+            "option-description": "<p></p>",
+            "option-anchor": "4by3content-whole",
+            "ratio": "4by3",
+            "iframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2211.399529804193!2d-2.816029683587382!3d56.34019068071458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488657829e5cbb3f%3A0xc253a6b45fc4cc48!2sAgnes+Blackadder+Hall!5e0!3m2!1sen!2suk!4v1484316949822' class='embed-responsive-item'></iframe>"
+        },
+        {
+            "option-heading": "16:9 (content thrids)",
+            "option-description": "<p></p>",
+            "option-anchor": "16by9content-thirds", 
+            "column1": "col-sm-8",
+            "column2": "col-sm-4",
+            "text": " <!-- Begin pattern: navbox //--> <div class='navbox big-target-click-zone'> <div class='navbox-image'> <img src='../../assets/docs/images/placeholders/360x240.jpg' alt='Description'> </div> <div class='navbox-title'> <p><a class='big-target-anchor' href='#'>Accommodation</a></p> </div> </div> <!-- End pattern: navbox //--><h3>Related content</h3><ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>",
+            "ratio": "16by9",
+            "iframe": "<iframe src='https://player.vimeo.com/video/74640134' class='embed-responsive-item'></iframe>"
+        },
+        {
+            "option-heading": "4:3 (content thrids)",
+            "option-description": "<p></p>",
+            "option-anchor": "4by3content-thirds", 
+            "column1": "col-sm-8",
+            "column2": "col-sm-4",
+            "text": " <!-- Begin pattern: navbox //--> <div class='navbox big-target-click-zone'> <div class='navbox-image'> <img src='../../assets/docs/images/placeholders/360x240.jpg' alt='Description'> </div> <div class='navbox-title'> <p><a class='big-target-anchor' href='#'>Accommodation</a></p> </div> </div> <!-- End pattern: navbox //--><h3>Related content</h3><ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>",
+            "ratio": "4by3",
+            "iframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2211.399529804193!2d-2.816029683587382!3d56.34019068071458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488657829e5cbb3f%3A0xc253a6b45fc4cc48!2sAgnes+Blackadder+Hall!5e0!3m2!1sen!2suk!4v1484316949822' class='embed-responsive-item'></iframe>"
+        },
+        {
+            "option-heading": "16:9 (content halves)",
+            "option-description": "<p></p>",
+            "option-anchor": "16by9content-halves", 
+            "column1": "col-sm-6",
+            "column2": "col-sm-6",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices eu elit id tempor. Fusce at porta lorem, eget porta libero. Ut vitae odio id lacus faucibus ornare at vitae orci. Sed lacus quam.</p>",
+            "ratio": "16by9",
+            "iframe": "<iframe src='https://www.youtube.com/embed/Rv9hn4IGofM' class='embed-responsive-item'></iframe>"
+        },
+        {
+            "option-heading": "4:3 (content halves)",
+            "option-description": "<p></p>",
+            "option-anchor": "4by3content-halves", 
+            "column1": "col-sm-6",
+            "column2": "col-sm-6",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices eu elit id tempor. Fusce at porta lorem, eget porta libero. Ut vitae odio id lacus faucibus ornare at vitae orci. Sed lacus quam.</p>",
+            "ratio": "4by3",
+            "iframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2211.399529804193!2d-2.816029683587382!3d56.34019068071458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488657829e5cbb3f%3A0xc253a6b45fc4cc48!2sAgnes+Blackadder+Hall!5e0!3m2!1sen!2suk!4v1484316949822' class='embed-responsive-item'></iframe>"
+        }
+    ]
+}

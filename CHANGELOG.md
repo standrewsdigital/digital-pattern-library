@@ -21,6 +21,62 @@ Release date: Friday 3 February 2017
 
 ---
 
+## v0.15.1
+
+Release date: Friday 3 February 2017
+
+### Added
+
+* Pattern specific images for the patterns.html page.
+
+
+
+
+---
+
+## v0.15.0
+
+Release date: Friday 3 February 2017
+
+### Added
+
+* New typography pattern based on Bootstrap.
+
+
+
+
+---
+
+## v0.14.0
+
+Release date: Thursday 2 February 2017
+
+### Added
+
+* New pattern based on Bootstrap's button.
+
+
+
+
+---
+
+## v0.13.0
+
+Release date: Thursday 2 February 2017
+
+### Added
+
+* New pattern replacing Bootstrap's pagination example
+* Options for pagination pattern
+* New pattern for Bootstrap's responsive media embed
+* Options for responsive media embed
+
+
+
+
+
+---
+
 ## v0.12.0
 
 Release date: Wednesday 1 February 2017
@@ -58,7 +114,6 @@ Release date: Tuesday 31 January 2017
 ### Added
 
 * Added Alerts pattern. 
-
 
 
 
