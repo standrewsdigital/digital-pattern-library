@@ -131,11 +131,11 @@
                   "url": "patterns/staff-profile/index.html"
                 },
                 { "name": "Tables",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/tables.jpg",
                   "url": "patterns/tables/index.html"
                 },
                 { "name": "Tables - DataTables",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/tables.jpg",
                   "url": "patterns/datatables/index.html"
                 },
                 { "name": "Tabs",

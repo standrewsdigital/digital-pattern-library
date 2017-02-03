@@ -7,6 +7,20 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.16.0
+
+Release date: Friday 3 February 2017
+
+### Added
+
+* Tables pattern.
+* DataTables pattern. 
+
+
+
+
+---
+
 ## v0.12.0
 
 Release date: Wednesday 1 February 2017
@@ -84,7 +98,7 @@ Release date: Thursday 19 January 2017
 
 ### Added
 
-*Added background colours to the Featured media pattern.
+* Added background colours to the Featured media pattern.
 
 
 
@@ -97,7 +111,7 @@ Release date: Tuesday 17 January 2017
 
 ### Changed
 
-*Added margin to Alert element paragraphs.
+* Added margin to Alert element paragraphs.
 
 
 

@@ -29,7 +29,7 @@
 
         {
             "option-heading": "Colour headings",
-            "option-description": "<p>You also have the option of these other colours for the table header: </p>",
+            "option-description": "<p>You also have the option of these other colours for the table header, see the <a href='../../colours.html'>colours page</a> for palettes.</p>",
             "option-anchor": "colour-headings",
             "colour-class": "table-primary",
             "table-head": [
