@@ -13,6 +13,7 @@ Release date: Wednesday 8 February 2017
 ### Added
 
 * Long-form gallery pattern.
+* Tabs example for read/shared on blogs.
 
 
 

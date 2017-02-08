@@ -26,6 +26,17 @@
             transition: opacity 0.15s linear;
 }
 
+.read-shared.tabs-container {
+    hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        padding-top: 10px;
+    }
+}
+
 /*********************************/
 /* END Pattern: tabs            */
 /*********************************/
