@@ -6,6 +6,18 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v0.17.0
+
+Release date: Wednesday 8 February 2017
+
+### Added
+
+* Long-form gallery pattern.
+
+
+
+
+---
 
 ## v0.16.0
 
