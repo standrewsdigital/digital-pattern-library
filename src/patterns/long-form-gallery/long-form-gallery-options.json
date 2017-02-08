@@ -1,8 +1,8 @@
 {
     "options": [
         {
-            "option-heading": "Longform gallery",
-            "option-description": "<p>To be used only on the longform pages.</p>",
+            "option-heading": "Long-form gallery",
+            "option-description": "<p>To be used only on the long-form pages.</p>",
             "option-anchor": "longform-gallery",
             "gallery-title": "<h4 class='thumbnail-gallery__title'>Scientists involved with Light Box</h4>",
             "gallery-description": "",
