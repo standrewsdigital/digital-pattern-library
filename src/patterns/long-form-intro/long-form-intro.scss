@@ -7,6 +7,23 @@
     font-size:   30px;
 }
 
+section.long-form.long-form-intro {
+	background-image: url(../../../assets/docs/images/long-form-content/bg-spark.jpg);
+}
+
+// Darkened background image
+.long-form--bg-darken {
+    &:after {
+        background-color: rgba(0,0,0,0.6);
+        content: ' ';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1001;
+    }
+}
+
 @media (min-width: 992px) {
 
     .long-form__content .lead {

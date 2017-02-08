@@ -7,9 +7,9 @@
             "intro-text": "<h1>Lorem ipsum dolor</h1><p class='lead'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
         },
         {
-            "option-heading": "Long-form intro - no subheading",
-            "option-description": "<p>To be used only on the long-form pages.</p>",
-            "option-anchor": "longform-intro-",
+            "option-heading": "Long-form intro - heading and lead only",
+            "option-description": "<p>To be used only on the long-form pages. This is the minimum required content.</p>",
+            "option-anchor": "longform-intro-heading",
             "intro-text": "<h1>Lorem ipsum dolor</h1><p class='lead'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
         }
     ]
