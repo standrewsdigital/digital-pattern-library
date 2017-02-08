@@ -1,0 +1,21 @@
+---
+title: Long-form end piece
+---
+
+<p>The long-form end piece marks the end of a long-form. This pattern MUST be included in a long-form piece.</p>
+
+<h3>Options available</h3>
+<ul>
+{{#long-form-end-piece-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/long-form-end-piece-options.options}}
+</ul>
+
+{{#long-form-end-piece-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+{{> long-form-end-piece}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> long-form-end-piece}}</code></pre>
+{{/long-form-end-piece-options.options}}

@@ -1,0 +1,26 @@
+---
+title: Long-form credits
+---
+
+<p>The long-form credits section wraps up the long-form content and should be the final item before the footer. This pattern MUST be included in a long-form piece.</p>
+
+<ul>
+  <li>You MUST have the credits and contact sections.</li>
+  <li>The thanks and sources sections are optional.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#long-form-credits-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/long-form-credits-options.options}}
+</ul>
+
+{{#long-form-credits-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+{{> long-form-credits}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> long-form-credits}}</code></pre>
+{{/long-form-credits-options.options}}

@@ -1,0 +1,20 @@
+/************************************/
+/* BEGIN Pattern: long-form-intro   */
+/************************************/
+
+.long-form__content .lead {
+    font-family: $font-family-sans-serif;
+    font-size:   30px;
+}
+
+@media (min-width: 992px) {
+
+    .long-form__content .lead {
+        font-size: 36px;
+    }
+
+}
+
+/**********************************/
+/* END Pattern: long-form-intro   */
+/**********************************/

@@ -1,0 +1,27 @@
+---
+title: Long-form intro
+---
+
+<p>The long-form intro pattern is for introducing the long-form. This pattern MUST be included in a long-form piece.</p>
+
+<ul>
+  <li>Only the heading and lead paragraph are required.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#long-form-intro-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/long-form-intro-options.options}}
+</ul>
+
+{{#long-form-intro-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+{{> long-form-intro}}
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> long-form-intro}}</code></pre>
+{{/long-form-intro-options.options}}

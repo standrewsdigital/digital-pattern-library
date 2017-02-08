@@ -1,3 +1,7 @@
+/**************************************/
+/* BEGIN Pattern: long-form-end-piece */
+/**************************************/
+
 // End piece
 // ====================
 
@@ -15,20 +19,9 @@
         margin-left: -8px;
         padding-right: 10px;
     }
-    // -webkit-font-smoothing: antialiased;
 }
 
-// Lead paragraph
-// ====================
-.long-form__content .lead {
-    font-family: $font-family-sans-serif;
-    font-size:   30px;
-}
 
-@media (min-width: 992px) {
-
-    .long-form__content .lead {
-        font-size: 36px;
-    }
-
-}
+/************************************/
+/* END Pattern: long-form-end-piece */
+/************************************/

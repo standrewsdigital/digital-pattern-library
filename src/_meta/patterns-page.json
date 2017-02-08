@@ -178,6 +178,18 @@
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/long-form-content/index.html"
                 },
+                { "name": "Long-form intro",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/long-form-intro/index.html"
+                },
+                { "name": "Long-form end piece",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/long-form-end-piece/index.html"
+                },
+                { "name": "Long-form credits",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/long-form-credits/index.html"
+                },
                 { "name": "Long-form gallery",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/long-form-gallery/index.html"
