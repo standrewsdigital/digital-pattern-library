@@ -6,14 +6,168 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v0.18.0
+
+Release date: Thursday 9 February 2017
+
+### Added
+
+* Added subject combo pattern for the Modern Languages subject pages.
+
+
+
+
+---
+
+
+## v0.17.0
+
+Release date: Wednesday 8 February 2017
+
+### Added
+
+* Long-form gallery pattern.
+* Tabs example for read/shared on blogs.
+
+
+
+
+---
+
+## v0.16.0
+
+Release date: Friday 3 February 2017
+
+### Added
+
+* Tables pattern.
+* DataTables pattern.
+
+### Removed
+
+* Bootstrap components and Bootstrap components - advanced.
+* Removed unused example pages and supporting files.
+
+
+
+
+---
+
+## v0.15.1
+
+Release date: Friday 3 February 2017
+
+### Added
+
+* Pattern specific images for the patterns.html page.
+
+
+
+
+---
+
+## v0.15.0
+
+Release date: Friday 3 February 2017
+
+### Added
+
+* New typography pattern based on Bootstrap.
+
+
+
+
+---
+
+## v0.14.0
+
+Release date: Thursday 2 February 2017
+
+### Added
+
+* New pattern based on Bootstrap's button.
+
+
+
+
+---
+
+## v0.13.0
+
+Release date: Thursday 2 February 2017
+
+### Added
+
+* New pattern replacing Bootstrap's pagination example
+* Options for pagination pattern
+* New pattern for Bootstrap's responsive media embed
+* Options for responsive media embed
+
+
+
+
+
+---
+
+## v0.12.0
+
+Release date: Wednesday 1 February 2017
+
+### Added
+
+* Form elements pattern.
+* Form validation pattern. 
+
+### Changed
+
+* Form example page.
+
+
+
+
+---
+
+## v0.11.0
+
+Release date: Tuesday 31 January 2017
+
+### Added
+
+* New pattern for using Glyphicons.
+
+
+
+---
+
+## v0.10.0
+
+Release date: Tuesday 31 January 2017
+
+### Added
+
+* Added Alerts pattern. 
+
+
+
+
+---
+
+## v0.9.9
+
+Release date: Friday 27 January 2017
+
+### Removed
+
+* Remove link to ../fonts/pt-serif-caption/regular/PTZ56F-webfont.woff from `_fonts.scss`.
+
+
+
+
+---
 
 ## v0.9.8
 
 Release date: Tuesday 24 January 2017
-
-### Added
-
-* Add Subject combo pattern for the Modern Languages subject pages.
 
 ### Changed
 
@@ -31,7 +185,7 @@ Release date: Thursday 19 January 2017
 
 ### Added
 
-*Added background colours to the Featured media pattern.
+* Added background colours to the Featured media pattern.
 
 
 
@@ -44,8 +198,20 @@ Release date: Tuesday 17 January 2017
 
 ### Changed
 
-*Added margin to Alert element paragraphs.
+* Added margin to Alert element paragraphs.
 
+
+
+
+---
+
+## v0.9.5
+
+Release date: Tuesday 17 January 2017
+
+### Removed
+
+* Remove wai aria role from content whole pattern.
 
 
 
@@ -69,6 +235,18 @@ Release date: Tuesday 17 January 2017
 ## v0.9.3
 
 Release date: Monday 16 January 2017
+
+### Removed
+
+* Remove wai aria role from content whole pattern.
+* Update dummy pattern to match the redesign of how the DPL is built. 
+
+
+
+
+---
+
+## v0.9.3
 
 ### Removed
 
@@ -137,7 +315,7 @@ Release date: Tuesday 10 January 2017
 
 ### Removed
 
-* Remove the data and example folders from all the patterns, as they were no longer needed.
+* Remove the data and example folders from all the patterns, as they were no long
 
 
 
