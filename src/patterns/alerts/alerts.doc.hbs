@@ -1,0 +1,29 @@
+---
+title: Alerts
+---
+
+<p>The alert pattern is used to provide contextual feedback messages for typical user actions and convey important information for users.</p>
+
+
+<ul>
+    <li>Wrap any text in <code>.alert</code> and one of the four contextual classes (e.g. <code>.alert-success</code>) for an alert message.</li>
+
+    <li>Use the <code>.alert-link</code> class to quickly provide matching coloured links within any alert.</li>
+</ul>
+
+<hr>
+<h3>Options available</h3>
+<ul>
+{{#alerts-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/alerts-options.options}}
+</ul>
+
+{{#alerts-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+{{>  alerts}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> alerts}}</code></pre>
+{{/alerts-options.options}}

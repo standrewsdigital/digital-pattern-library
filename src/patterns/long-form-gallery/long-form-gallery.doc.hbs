@@ -1,0 +1,29 @@
+---
+title: Long-form gallery
+---
+
+<p>The long-form gallery pattern demonstrates a method of displaying a large number of images on a page and makes use of the <a href="http://lokeshdhakar.com/projects/lightbox2">Lightbox JavaScript library</a> to view the images in an immersive experience.</p>
+
+<ul>
+  <li>Thumbnail images should be <code>170px x 170px</code>.</li>
+  <li>Must only be used within the main content of a long-form page.</li>
+  <li>A page can contain multiple galleries.</li>
+  <li>There should be no more than 10 images in any one gallery.</li>
+  <li>Use <code>data-lightbox="[gallery name]"</code> to group images together for each gallery.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#long-form-gallery-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/long-form-gallery-options.options}}
+</ul>
+
+{{#long-form-gallery-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+{{> gallery}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> gallery}}</code></pre>
+{{/long-form-gallery-options.options}}

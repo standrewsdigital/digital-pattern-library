@@ -215,6 +215,7 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/hammer.js',
                     'src/scripts/vendor/jquery.min.js',
                     'src/scripts/vendor/jquery.bigtarget.js',
+                    'src/scripts/vendor/jquery.dataTables.min.js',
                     'src/scripts/vendor/jquery.fitvids.js',
                     'src/scripts/vendor/jquery.fittext.js',
                     'src/scripts/vendor/jquery.replacetext.js',
@@ -263,6 +264,7 @@ module.exports = function(grunt) {
                     // Update src/docs/using.md if any of these change
                     'src/scripts/vendor/hammer.js',
                     'src/scripts/vendor/jquery.bigtarget.js',
+                    'src/scripts/vendor/jquery.dataTables.min.js',
                     'src/scripts/vendor/jquery.fitvids.js',
                     'src/scripts/vendor/jquery.fittext.js',
                     'src/scripts/vendor/jquery.replacetext.js',

@@ -1,0 +1,32 @@
+<div class="alert alert-danger" role="alert" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
+    <h3 id="summary-heading-example-2">Message to alert the user goes here</h3>
+    <p>Optional description of errors and how to correct them.</p>
+    <ul>
+        <li><a href="#example-personal-details">Descriptive link to the question with the error</a></li>
+    </ul>
+</div>
+
+<fieldset><legend>Check your personal details</legend>
+    <form>
+        <div class="form-group">
+            <p id="example-personal-details">Are your personal details correct and up-to-date?</p>
+            <label class="text-danger"><strong>Error message about personal details goes here</strong></label>
+            <div class="radio-button">
+                <ul>
+                    <li>
+                    <input type="radio" id="stacked-option1" name="stacked-selector">
+                    <label for="stacked-option1">Yes, my personal details are correct</label>
+                    <div class="check"></div>
+                    </li>
+
+                    <li>
+                        <input type="radio" id="stacked-option2" name="stacked-selector">
+                        <label for="stacked-option2">No, some details are wrong or have changed</label>
+                        <div class="check"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <input class="btn btn-primary" type="submit" value="Continue">
+    </form>
+</fieldset>

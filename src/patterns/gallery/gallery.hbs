@@ -1,6 +1,6 @@
 <div class="gallery">
 
-    <h2 class="gallery__title">{{gallery-title}}</h2>
+    {{{gallery-title}}}
 
     <div class="gallery__description"><p>{{gallery-description}}</p></div>
 
@@ -8,7 +8,7 @@
         {{#gallery-images}}
         <figure id="{{id}}">
             <a href="{{asset large-img}}" {{#if lightbox-gallery }} data-lightbox="{{lightbox-gallery}}" data-title="{{caption}}" {{/if}}><img src="{{asset thumbnail}}" alt="{{alt}}"></a>
-            {{#unless lightbox-gallery}}<figcaption>{{caption}}</figcaption>{{/unless}}
+            <figcaption>{{{caption}}}</figcaption>
         </figure>
         {{/gallery-images}}
     </div>

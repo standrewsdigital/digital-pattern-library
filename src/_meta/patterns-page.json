@@ -23,25 +23,15 @@
             ]
         },
         {
-            "heading": "Bootstrap framework",
-            "subheading": "Common Bootstrap framework elements that have been styled to match the visual language of the University's digital pattern library.",
-            "patterns": [
-                { "name": "Bootstrap components",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
-                  "url": "examples/bootstrap.html"
-                },
-                { "name": "Bootstrap components - advanced",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
-                  "url": "examples/bootstrap2.html"
-                }
-            ]
-        },
-        {
             "heading": "Call to action",
             "subheading": "Patterns used to bring attention and link to content of importance both on the University website and external.",
             "patterns": [
-                { "name": "Featured media",
+                { "name": "Buttons",
                   "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/buttons/index.html"
+                },
+                { "name": "Featured media",
+                  "img": "assets/docs/images/patterns/featured-media.jpg",
                   "url": "patterns/featured-media/index.html"
                 },
                 { "name": "Hero banner",
@@ -49,11 +39,11 @@
                   "url": "patterns/hero-banner/index.html"
                 },
                 { "name": "KIS widget",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/kis-widget.jpg",
                   "url": "patterns/kis-widget/index.html"
                 },
                 { "name": "Secondary call to action",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/secondary-call.jpg",
                   "url": "patterns/secondary-call/index.html"
                 },
                 { "name": "Subject combo",
@@ -61,15 +51,15 @@
                   "url": "patterns/subject-combo/index.html"
                 },
                 { "name": "Text banner",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/text-banner.jpg",
                   "url": "patterns/text-banner/index.html"
                 },
                 { "name": "Tile",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/tile.jpg",
                   "url": "patterns/tile/index.html"
                 },
                 { "name": "Tile grid",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/tile-grid.jpg",
                   "url": "patterns/tile-grid/index.html"
                 }
             ]
@@ -81,6 +71,10 @@
                 { "name": "Accordion",
                   "img": "assets/docs/images/patterns/accordion.jpg",
                   "url": "patterns/accordion/index.html"
+                },
+                { "name": "Alerts",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/alerts/index.html"
                 },
                 { "name": "Code",
                   "img": "assets/docs/images/patterns/pattern.jpg",
@@ -111,16 +105,20 @@
                   "url": "patterns/google-maps/index.html"
                 },
                 { "name": "HTML elements",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/html-elements.jpg",
                   "url": "examples/html-elements.html"
                 },
                 { "name": "Intro",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/intro.jpg",
                   "url": "patterns/intro/index.html"
                 },
                 { "name": "News updates",
                   "img": "assets/docs/images/patterns/news-updates.jpg",
                   "url": "patterns/news-updates/index.html"
+                },
+                { "name": "Responsive embed",
+                  "img": "assets/docs/images/patterns/google-maps.jpg",
+                  "url": "patterns/responsive-embed/index.html"
                 },
                 { "name": "Section header",
                   "img": "assets/docs/images/patterns/pattern.jpg",
@@ -131,16 +129,34 @@
                   "url": "patterns/staff-profile/index.html"
                 },
                 { "name": "Tables",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
-                  "url": "examples/tables.html"
+                  "img": "assets/docs/images/patterns/tables.jpg",
+                  "url": "patterns/tables/index.html"
                 },
                 { "name": "Tables - DataTables",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
-                  "url": "examples/datatables.html"
+                  "img": "assets/docs/images/patterns/tables.jpg",
+                  "url": "patterns/datatables/index.html"
                 },
                 { "name": "Tabs",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/tabs.jpg",
                   "url": "patterns/tabs/index.html"
+                },
+                { "name": "Typography",
+                  "img": "assets/docs/images/patterns/typography.jpg",
+                  "url": "patterns/typography/index.html"
+                }
+            ]
+        },
+        {
+            "heading": "Form elements",
+            "subheading": "Patterns used to create forms.",
+            "patterns": [
+                { "name": "Form elements",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/form-elements/index.html"
+                },
+                { "name": "Form validation",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/form-validation/index.html"
                 }
             ]
         },
@@ -151,16 +167,24 @@
                 { "name": "Font Awesome",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/font-awesome/index.html"
+                },
+                { "name": "Glyphicons",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/glyphicons/index.html"
                 }
             ]
         },
         {
             "heading": "Long-form",
-            "subheading": "Patterns used to build long-form content pages.",
+            "subheading": "Patterns used to build long-form content pages. You MUST use the intro, end piece and credits in every long-form piece, and use an assortment of the other long-form patterns that are available.",
             "patterns": [
                 { "name": "Long-form content",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/long-form-content/index.html"
+                },
+                { "name": "Long-form gallery",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/long-form-gallery/index.html"
                 }
             ]
         },
@@ -179,6 +203,10 @@
                 { "name": "Navigation bar",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/navigation-bar/index.html"
+                },
+                { "name": "Pagination",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/pagination/index.html"
                 },
                 { "name": "Panel grid",
                   "img": "assets/docs/images/patterns/pattern.jpg",
