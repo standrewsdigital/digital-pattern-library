@@ -17,6 +17,22 @@
          -o-background-size: cover;
             background-size: cover;
     color: white;
+    position: relative;
+}
+
+.hero-banner.transparent-overlay {
+    // background-color: -dpl-color($palette-default,'secondary','transparent');
+}
+
+.hero-banner.transparent-overlay {
+   &:after {
+       background-color: -dpl-color($palette-default,'secondary','transparent');
+       content: ' ';
+       height: 100%;
+       position: absolute;
+       top: 0;
+       width: 100%;
+   }
 }
 
 .hero-banner .bg {
