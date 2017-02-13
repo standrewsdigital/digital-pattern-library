@@ -1,17 +1,15 @@
 <!-- Begin pattern: hero-banner //-->
 
-<div class="hero-banner transparent-overlay" {{#if bg-image}}style="background-image: url({{asset bg-image}});"{{/if}}>
+<div class="hero-banner {{class}}" {{#if bg-image}}style="background-image: url({{asset bg-image}});"{{/if}}>
     <div class="container">
-        <div class="bg" {{#if bg-image}}style="background-image: url({{asset bg-image}});"{{/if}}></div>
-
         <div class="fg">
             <div class="call-heading">{{default heading "[heading]"}}</div>
                 <p>{{default paragraph "[paragraph]"}}</p>
                 <p>
-                    <a class="btn btn-primary btn-lg" href="{{default action-url "[action-url]"}}">{{default action-text "[action-text]"}}</a>
-                    {{#if action-text-2}}
-                        <a class="btn btn-primary btn-lg" href="{{default action-url "[action-url]"}}">{{default action-text-2 "[action-text-2]"}}</a>
-                    {{/if}}
+                <a class="btn btn-primary btn-lg" href="{{default action-url "[action-url]"}}">{{default action-text "[action-text]"}}</a>
+                {{#if action-text-2}}
+                <a class="btn btn-primary btn-lg" href="{{default action-url "[action-url]"}}">{{default action-text-2 "[action-text-2]"}}</a>
+                {{/if}}
                 </p>
         </div>
     </div>       

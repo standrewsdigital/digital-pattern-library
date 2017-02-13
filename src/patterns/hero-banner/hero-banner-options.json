@@ -7,7 +7,8 @@
             "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
             "action-text": "Study at St Andrews",
             "action-url": "#",
-            "bg-image": "docs/images/cta/cta-example1.jpg"
+            "bg-image": "docs/images/cta/cta-example1.jpg",
+            "class": ""
         },
 
 
@@ -20,7 +21,8 @@
             "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
             "action-text": "Study at St Andrews",
             "action-url": "#",
-            "bg-image": "docs/images/cta/cta-example1.jpg"
+            "bg-image": "docs/images/cta/cta-example1.jpg",
+            "class": "transparent-overlay"
         }
     ]
 }
