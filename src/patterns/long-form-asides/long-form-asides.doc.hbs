@@ -1,0 +1,27 @@
+---
+title: Long-form asides
+---
+
+<p>The long-form asides pattern is for including asides in your long-form story, to provide relevant or related information.</p>
+
+<ul>
+  <li>TODO</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#long-form-asides-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/long-form-asides-options.options}}
+</ul>
+
+{{#long-form-asides-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+{{> long-form-asides}}
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> long-form-asides}}</code></pre>
+{{/long-form-asides-options.options}}

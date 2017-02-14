@@ -194,6 +194,10 @@
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/long-form-credits/index.html"
                 },
+                { "name": "Long-form asides",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/long-form-asides/index.html"
+                },
                 { "name": "Long-form gallery",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/long-form-gallery/index.html"

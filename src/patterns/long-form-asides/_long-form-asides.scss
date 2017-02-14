@@ -1,0 +1,95 @@
+/************************************/
+/* BEGIN Pattern: long-form-asides  */
+/************************************/
+
+aside {
+    display: block;
+}
+
+// Align centre
+.long-form__content aside.align-centre,
+.long-form__content aside.align-center {
+    text-align: center;
+}
+
+// Align left
+.long-form__content aside.align-left {
+    text-align: left;
+}
+
+// Align right
+.long-form__content aside.align-right {
+    text-align: right;
+}
+
+@media (min-width: 992px) {
+
+    // Extend left
+    .long-form__content aside.extend-left {
+        float: left;
+        margin-bottom: 0;
+        margin-left:   -25%;
+        padding: 15px 30px 10px 0;
+    }
+
+    // Extend right
+    .long-form__content aside.extend-right {
+        float: right;
+        margin-right:  -25%;
+        margin-bottom: 0;
+        padding: 15px 0 15px 30px;
+    }
+
+    // Float left
+    .long-form__content aside.float-left {
+        float: left;
+        margin-bottom: 0;
+        padding: 15px 30px 10px 0;
+    }
+
+    // Float right
+    .long-form__content aside.float-right {
+        float: right;
+        margin-bottom: 0;
+        padding: 15px 0 15px 30px;
+    }
+}
+
+// Parallel left
+// Parallel right
+.long-form__content aside.parallel-left,
+.long-form__content aside.parallel-right {
+    max-width: 230px;
+    padding: 10px 0;
+}
+
+@media (min-width: 992px) {
+    .long-form__content aside.parallel-left {
+        padding-top: 10px;
+        position: absolute;
+        left: -170px;
+        width: 150px;
+    }
+
+    .long-form__content aside.parallel-right {
+        padding-top: 10px;
+        position: absolute;
+        right: -170px;
+        width: 150px;
+    }
+}
+
+// A figure for use in examples.
+aside figure.example {
+    background-color: rgb(204, 0, 0);
+    padding: 10px;
+    code {
+        background-color: inherit;
+        color: white;
+        font-size: 15px;
+    }
+}
+
+/**********************************/
+/* END Pattern: long-form-asides  */
+/**********************************/
