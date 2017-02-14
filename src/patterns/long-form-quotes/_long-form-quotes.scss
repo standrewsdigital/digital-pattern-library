@@ -1,0 +1,43 @@
+/************************************/
+/* BEGIN Pattern: long-form-quotes  */
+/************************************/
+
+.long-form--credits {
+    background-color: rgb(240, 240, 240);
+    color: rgb(102, 102, 102);
+    font-size: 16px;
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .long-form__wrapper {
+        @extend .col-md-10;
+        @extend .col-md-offset-1;
+    }
+
+    .long-form__content {
+        padding-bottom: 120px;
+        position: relative; // needed to act as an anchor for the watermark.
+
+        // Watermark logo
+        &:before {
+            background-image:    url(../images/furniture/UStA_Logo_BK.svg);
+            background-repeat:   no-repeat;
+            background-position: -28px bottom; // neg margin because bg image has padding and we want the logo to align with left edge of container.
+            background-size:     250px;
+            content: ' ';
+            height: 250px;
+            opacity: 0.75;
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 250px;
+            z-index: -1;
+        }
+    }
+}
+
+/**********************************/
+/* END Pattern: long-form-quotes  */
+/**********************************/

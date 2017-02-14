@@ -197,6 +197,10 @@
                 { "name": "Long-form gallery",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/long-form-gallery/index.html"
+                },
+                { "name": "Long-form quotes",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/long-form-quotes/index.html"
                 }
             ]
         },

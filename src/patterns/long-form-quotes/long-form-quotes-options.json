@@ -1,0 +1,18 @@
+{
+    "options": [
+        {
+            "option-heading": "Blockquotes",
+            "option-description": "<p>To be used only on the long-form pages.</p>",
+            "option-anchor": "blockquotes"
+        },
+
+
+
+
+        {
+            "option-heading": "Pull quotes",
+            "option-description": "<p>To be used only on the long-form pages.</p>",
+            "option-anchor": "pull-quotes"
+        }
+    ]
+ }
