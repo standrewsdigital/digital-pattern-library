@@ -1,51 +1,51 @@
 // Pull quote
 // ====================
 
-.long-form__content .pull-quote {
-    border-top:    1px solid rgb(240, 240, 240);
-    border-bottom: 1px solid rgb(240, 240, 240);
-    font-size:  28px;
-    font-style: italic;
-    line-height: 1.8;
-    margin: 40px 0;
-    padding: 20px 50px 20px 0px;
-    position: relative;
+// .long-form__content .pull-quote {
+//     border-top:    1px solid rgb(240, 240, 240);
+//     border-bottom: 1px solid rgb(240, 240, 240);
+//     font-size:  28px;
+//     font-style: italic;
+//     line-height: 1.8;
+//     margin: 40px 0;
+//     padding: 20px 50px 20px 0px;
+//     position: relative;
 
-    .pull-quote-share {
-        background-color: white;
-        padding: 0 15px;
-        position: absolute;
-        right: 30px;
-        bottom: -35px;
+//     .pull-quote-share {
+//         background-color: white;
+//         padding: 0 15px;
+//         position: absolute;
+//         right: 30px;
+//         bottom: -35px;
 
-        a {
-            border-bottom: none;
-            text-decoration: none;
-        }
+//         a {
+//             border-bottom: none;
+//             text-decoration: none;
+//         }
 
-        .genericon {
-            color: rgb(170, 170, 170);
-            font-size: 30px;
-            padding-right: 7px;
-        }
-    }
+//         .genericon {
+//             color: rgb(170, 170, 170);
+//             font-size: 30px;
+//             padding-right: 7px;
+//         }
+//     }
 
-    &.pull-quote-right {
-        padding-right: 0;
-        padding-left:  50px;
-        text-align: right;
+//     &.pull-quote-right {
+//         padding-right: 0;
+//         padding-left:  50px;
+//         text-align: right;
 
-        .pull-quote-share {
-            right: auto;
-            left: 30px;
-        }
-    }
-}
+//         .pull-quote-share {
+//             right: auto;
+//             left: 30px;
+//         }
+//     }
+// }
 
-@media (min-width: 992px) {
-    .long-form__content .pull-quote {
-        margin: 40px -20%;
-    }
-}
+// @media (min-width: 992px) {
+//     .long-form__content .pull-quote {
+//         margin: 40px -20%;
+//     }
+// }
 
 

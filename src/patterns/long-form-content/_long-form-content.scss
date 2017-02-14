@@ -20,17 +20,17 @@
         text-transform: uppercase;
     }
 
-    blockquote {
-        border:none;
-        font-size:  22px;
-        font-style: italic;
-        margin: 20px 0 20px 20px;
-        padding: 0;
+    // blockquote {
+    //     border:none;
+    //     font-size:  22px;
+    //     font-style: italic;
+    //     margin: 20px 0 20px 20px;
+    //     padding: 0;
 
-        &:nth-child(1) { // remove top margin when first element.
-            margin-top: 0;
-        }
-    }
+    //     &:nth-child(1) { // remove top margin when first element.
+    //         margin-top: 0;
+    //     }
+    // }
 
     abbr {
         font-family: 'PT Serif Caption', Gerogia, 'Times New Roman', Times, serif;

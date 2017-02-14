@@ -2,41 +2,70 @@
 /* BEGIN Pattern: long-form-quotes  */
 /************************************/
 
-.long-form--credits {
-    background-color: rgb(240, 240, 240);
-    color: rgb(102, 102, 102);
-    font-size: 16px;
+.long-form__content blockquote {
+    border:none;
+    font-size:  22px;
+    font-style: italic;
+    margin: 20px 0 20px 20px;
+    padding: 0;
 
-    h3 {
-        font-size: 20px;
-    }
-
-    .long-form__wrapper {
-        @extend .col-md-10;
-        @extend .col-md-offset-1;
-    }
-
-    .long-form__content {
-        padding-bottom: 120px;
-        position: relative; // needed to act as an anchor for the watermark.
-
-        // Watermark logo
-        &:before {
-            background-image:    url(../images/furniture/UStA_Logo_BK.svg);
-            background-repeat:   no-repeat;
-            background-position: -28px bottom; // neg margin because bg image has padding and we want the logo to align with left edge of container.
-            background-size:     250px;
-            content: ' ';
-            height: 250px;
-            opacity: 0.75;
-            position: absolute;
-            bottom: 10px;
-            left: 0;
-            width: 250px;
-            z-index: -1;
-        }
+    &:nth-child(1) { // remove top margin when first element.
+        margin-top: 0;
     }
 }
+
+@media (min-width: 992px) {
+    .long-form__content blockquote {
+        margin: 60px;
+    }
+}
+
+// .long-form__content .pull-quote {
+//     border-top:    1px solid rgb(240, 240, 240);
+//     border-bottom: 1px solid rgb(240, 240, 240);
+//     font-size:  28px;
+//     font-style: italic;
+//     line-height: 1.8;
+//     margin: 40px 0;
+//     padding: 20px 50px 20px 0px;
+//     position: relative;
+
+//     .pull-quote-share {
+//         background-color: white;
+//         padding: 0 15px;
+//         position: absolute;
+//         right: 30px;
+//         bottom: -35px;
+
+//         a {
+//             border-bottom: none;
+//             text-decoration: none;
+//         }
+
+//         .genericon {
+//             color: rgb(170, 170, 170);
+//             font-size: 30px;
+//             padding-right: 7px;
+//         }
+//     }
+
+//     &.pull-quote-right {
+//         padding-right: 0;
+//         padding-left:  50px;
+//         text-align: right;
+
+//         .pull-quote-share {
+//             right: auto;
+//             left: 30px;
+//         }
+//     }
+// }
+
+// @media (min-width: 992px) {
+//     .long-form__content .pull-quote {
+//         margin: 40px -20%;
+//     }
+// }
 
 /**********************************/
 /* END Pattern: long-form-quotes  */
