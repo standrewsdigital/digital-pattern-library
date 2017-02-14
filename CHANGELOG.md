@@ -6,6 +6,25 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v0.18.0
+
+Release date: Tuesday 14 February 2017
+
+### Added
+
+* Long-form intro pattern.
+* Long-form end-piece pattern.
+* Long-form credits pattern.
+
+### Removed
+
+* Redundant long-form styles and code from the old master pattern.
+
+
+
+
+---
+
 ## v0.17.0
 
 Release date: Wednesday 8 February 2017
