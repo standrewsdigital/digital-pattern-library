@@ -7,6 +7,25 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.19.0
+
+Release date: Tuesday 14 February 2017
+
+### Added
+
+* Long-form intro pattern.
+* Long-form end-piece pattern.
+* Long-form credits pattern.
+
+### Removed
+
+* Redundant long-form styles and code from the old master pattern.
+
+
+
+
+---
+
 ## v0.18.0
 
 Release date: Thursday 9 February 2017
@@ -14,6 +33,7 @@ Release date: Thursday 9 February 2017
 ### Added
 
 * Added subject combo pattern for the Modern Languages subject pages.
+
 
 
 

@@ -176,11 +176,23 @@
         },
         {
             "heading": "Long-form",
-            "subheading": "Patterns used to build long-form content pages. You MUST use the intro, end piece and credits in every long-form piece, and use an assortment of the other long-form patterns that are available.",
+            "subheading": "Patterns used to build long-form content pages. You MUST use the <a href='patterns/long-form-intro/index.html'>intro</a>, <a href='patterns/long-form-end-piece/index.html'>end piece</a> and <a href='patterns/long-form-credits/index.html'>credits</a> in every long-form piece, and use an assortment of the other long-form patterns that are available.",
             "patterns": [
                 { "name": "Long-form content",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/long-form-content/index.html"
+                },
+                { "name": "Long-form intro",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/long-form-intro/index.html"
+                },
+                { "name": "Long-form end piece",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/long-form-end-piece/index.html"
+                },
+                { "name": "Long-form credits",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/long-form-credits/index.html"
                 },
                 { "name": "Long-form gallery",
                   "img": "assets/docs/images/patterns/pattern.jpg",
