@@ -9,6 +9,18 @@ core-assets: true
         <div class="col-md-12 col-sm-12">
             <h1>Patterns</h1>
             <p>Patterns are simple, reusable solutions to specific design problems built to support the University of St Andrews website and web applications.</p>
+            <div class="row">
+                {{#each patterns-page.categories}}
+                <div class="col-md-3">
+                    <p>{{heading}}</p>
+                    <ul>
+                        {{#each patterns}}
+                        <li><a href="{{url}}">{{name}}</a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+                {{/each}}
+            </div>
         </div>
     </div>
 </div>
