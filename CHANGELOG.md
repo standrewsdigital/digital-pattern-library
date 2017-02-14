@@ -6,7 +6,8 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
-## v0.18.0
+
+## v0.19.0
 
 Release date: Tuesday 14 February 2017
 
@@ -25,6 +26,20 @@ Release date: Tuesday 14 February 2017
 
 ---
 
+## v0.18.0
+
+Release date: Thursday 9 February 2017
+
+### Added
+
+* Added subject combo pattern for the Modern Languages subject pages.
+
+
+
+
+
+---
+
 ## v0.17.0
 
 Release date: Wednesday 8 February 2017
@@ -32,6 +47,7 @@ Release date: Wednesday 8 February 2017
 ### Added
 
 * Long-form gallery pattern.
+* Tabs example for read/shared on blogs.
 
 
 
