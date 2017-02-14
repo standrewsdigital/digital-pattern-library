@@ -13,7 +13,8 @@
         {
             "option-heading": "Pull quotes",
             "option-description": "<p>To be used only on the long-form pages.</p>",
-            "option-anchor": "pull-quotes"
+            "option-anchor": "pull-quotes",
+            "quote": "<p class='pull-quote' data-quote='...Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..'>Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<div class='pull-quote-share'><a href='https://twitter.com/intent/tweet?text=&quot;...there is nothing in the world so irresistibly contagious as laughter and good humour.&quot;&amp;url=http://dpl/patterns/long-form-content/index.html' target='_blank'><span class='genericon genericon-twitter'></span></a><a href='https://www.facebook.com/uniofsta' target='_blank'><span class='genericon genericon-facebook'></span></a></div></p><p>"
         }
     ]
  }
