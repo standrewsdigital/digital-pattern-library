@@ -22,12 +22,9 @@
 }
 
 .hero-banner.transparent-overlay {
-    // background-color: -dpl-color($palette-default,'secondary','transparent');
-}
-
-.hero-banner.transparent-overlay {
    &:after {
-       background-color: -dpl-color($palette-default,'secondary','transparent');
+       //* background-color: -dpl-color($palette-default,'secondary','transparent'); *//
+       background-color: rgba(27,116,195,0.4);
        content: ' ';
        height: 100%;
        position: absolute;

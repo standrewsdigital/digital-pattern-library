@@ -4,6 +4,12 @@ title: Hero banner
 
 <p>The hero banner pattern displays a large heading, introductory text and a call to action over an optional, large background image.</p>
 
+<ul>
+    <li>Hero banners should always have an image background.</li>
+    <li>The size of a hero banner image must be <code>1905px &times; 362px</code> and created using the <a href="../../assets/docs/images/cta/hero-banner-photoshop-template.psd">background image Photoshop template</a>.</li>
+    <li>There is no default background image, you will need to supply an image by attaching an inline style on <code>&lt;div class="hero-banner"&gt;</code>. For example: <code>&lt;div class="hero-banner" style="background-image: url(path/to/image.jpg)"&gt;</code>.</li>
+</ul>
+
 <h3>Background image template</h3>
 <p>So it may be positioned reliably across a variety of screen sizes, the background image must use the Photoshop template below.</p>
 <p><img src="{{asset "docs/images/cta/hero-banner-photoshop-template.jpg"}}" style="width:100%; max-width:992px;"></p>
@@ -23,11 +29,6 @@ title: Hero banner
             <li>It is recommended that the main focus should complement the composition.</li>
         </ul>
     </li>
-</ul>
-
-<ul>
-    <li>Background images are optional, but if present should be 1905px &times; 362px and created using the background image template (see above).</li>
-    <li>There is no default background image, you will need to supply an image by attaching an inline style on <code>&lt;div class="hero-banner"&gt;</code>. For example: <code>&lt;div class="hero-banner" style="background-image: url(path/to/image.jpg)"&gt;</code>.</li>
 </ul>
 
 {{#hero-banner-options.options}}
