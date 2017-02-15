@@ -10,7 +10,7 @@
                         "alt": "Description"
                     },
                     "title": "Study at St Andrews",
-                    "url": "/study"
+                    "url": "#"
                 },
                 {
                     "image": {
@@ -18,7 +18,7 @@
                         "alt": "Description"
                     },
                     "title": "Research",
-                    "url": "/research"
+                    "url": "#"
                 },
                 {
                     "image": {
@@ -26,7 +26,7 @@
                         "alt": "Description"
                     },
                     "title": "Alumni and donors",
-                    "url": "/alumni"
+                    "url": "#"
                 }
             ]
 
