@@ -1,5 +1,5 @@
 /************************************/
-/* BEGIN Pattern: long-form-quotes  */
+/* BEGIN Pattern: long-form quotes  */
 /************************************/
 
 .long-form__content blockquote {
@@ -14,12 +14,6 @@
     }
 }
 
-@media (min-width: 992px) {
-    .long-form__content blockquote {
-        margin: 60px;
-    }
-}
-
 .long-form__content .pull-quote {
     border-top:    1px solid rgb(240, 240, 240);
     border-bottom: 1px solid rgb(240, 240, 240);
@@ -29,44 +23,21 @@
     margin: 40px 0;
     padding: 20px 50px 20px 0px;
     position: relative;
-
-    .pull-quote-share {
-        background-color: white;
-        padding: 0 15px;
-        position: absolute;
-        right: 30px;
-        bottom: -35px;
-
-        a {
-            border-bottom: none;
-            text-decoration: none;
-        }
-
-        .genericon {
-            color: rgb(170, 170, 170);
-            font-size: 30px;
-            padding-right: 7px;
-        }
-    }
-
-    &.pull-quote-right {
-        padding-right: 0;
-        padding-left:  50px;
-        text-align: right;
-
-        .pull-quote-share {
-            right: auto;
-            left: 30px;
-        }
-    }
 }
 
 @media (min-width: 992px) {
-    .long-form__content .pull-quote {
-        margin: 40px -20%;
+
+    .long-form__content {
+        blockquote {
+            margin: 60px;
+        }
+
+        .pull-quote {
+            margin: 40px -20%;
+        }
     }
 }
 
 /**********************************/
-/* END Pattern: long-form-quotes  */
+/* END Pattern: long-form quotes  */
 /**********************************/

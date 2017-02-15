@@ -2,7 +2,7 @@
     "options": [
         {
             "option-heading": "Blockquotes",
-            "option-description": "<p>To be used only on the long-form pages.</p>",
+            "option-description": "<p>Blockquotes are used to quote something within the flow of the article.</p><ul><li>This is the long-form specific style for blockquotes and MUST only be used on long-form pages.</li></ul>",
             "option-anchor": "blockquotes",
             "quote": "<blockquote><p>Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><small>Someone famous in <cite title='Source Title'>Source Title</cite></small></blockquote>"
         },
@@ -12,9 +12,9 @@
 
         {
             "option-heading": "Pull quotes",
-            "option-description": "<p>To be used only on the long-form pages.</p>",
+            "option-description": "<p>Pull quotes are used to quote something from the flow of the article in a larger size to draw the reader into the article.</p>",
             "option-anchor": "pull-quotes",
-            "quote": "<p class='pull-quote' data-quote='...Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..'>Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<div class='pull-quote-share'><a href='https://twitter.com/intent/tweet?text=&quot;...there is nothing in the world so irresistibly contagious as laughter and good humour.&quot;&amp;url=http://dpl/patterns/long-form-content/index.html' target='_blank'><span class='genericon genericon-twitter'></span></a><a href='https://www.facebook.com/uniofsta' target='_blank'><span class='genericon genericon-facebook'></span></a></div></p><p>"
+            "quote": "<p class='pull-quote'>Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
         }
     ]
  }
