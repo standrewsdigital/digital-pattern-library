@@ -18,7 +18,7 @@
         {
             "option-anchor": "hero-banner-with-transparent-overlay",
             "option-heading": "Hero banner with transparent overlay",
-            "option-description": "<ul><li>If the chose background image is overly complicated, this option should be used instead of the default.</li><li>The colour of the transparent overlay should not be altered.</ul>",
+            "option-description": "<ul><li>If the chosen background image is overly complicated, this option should be used instead of the default.</li><li>The colour of the transparent overlay should not be altered.</li><li>The colour of the hero banner button should not be altered.</li></ul>",
             "heading":  "Choose St Andrews",
             "paragraph":  "Study at the University of St Andrews and experience world-class teaching, cutting edge research and the flexible degree structure of Scotland’s first university.",
             "action-text": "Search for courses",
