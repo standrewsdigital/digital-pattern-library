@@ -12,9 +12,9 @@ core-assets: true
             <div class="row">
                 <div class="col-xs-12">
                     <h3>Categories</h3>
-                    <ul class="">
+                    <ul class="list-inline">
                     {{#each patterns-page.categories}}
-                        <li><a href="#{{heading}}">{{heading}}</a></li>         
+                        <li><a href="#{{heading}}" class="btn btn-{{class}}">{{heading}}</a></li>         
                     {{/each}}
                     </ul>
                 </div>
