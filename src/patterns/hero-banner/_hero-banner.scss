@@ -32,6 +32,14 @@
        width: 100%;
        z-index: 1;
    }
+   .btn, .btn-primary {
+        background-color: $sta-green;
+        border-color: $sta-green;
+   }
+
+   .btn:hover, .btn:focus {
+        background-color: $sta-green-hover;
+    }
 }
 
 .hero-banner .fg {
