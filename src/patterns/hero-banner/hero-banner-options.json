@@ -1,13 +1,14 @@
 {
     "options": [
         {
+            "option-anchor": "hero-banner",
             "option-heading": "Hero banner",
-            "option-description": "",
+            "option-description": "<ul><li>If the chosen background image is not overly complicated and has strong colours, this option can be used instead of the transparent overlay option.</li></ul>",
             "heading":  "Scotland's first university",
             "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
             "action-text": "Study at St Andrews",
             "action-url": "#",
-            "bg-image": "docs/images/cta/cta-example1.jpg",
+            "bg-image": "docs/images/cta/hero-banner-image-001.jpg",
             "class": ""
         },
 
@@ -15,13 +16,14 @@
 
 
         {
+            "option-anchor": "hero-banner-with-transparent-overlay",
             "option-heading": "Hero banner with transparent overlay",
-            "option-description": "",
-            "heading":  "Scotland's first university",
-            "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
-            "action-text": "Study at St Andrews",
+            "option-description": "<ul><li>If the chose background image is overly complicated, this option should be used instead of the default.</li><li>The colour of the transparent overlay should not be altered.</ul>",
+            "heading":  "Choose St Andrews",
+            "paragraph":  "Study at the University of St Andrews and experience world-class teaching, cutting edge research and the flexible degree structure of Scotland’s first university.",
+            "action-text": "Search for courses",
             "action-url": "#",
-            "bg-image": "docs/images/cta/cta-example1.jpg",
+            "bg-image": "docs/images/cta/hero-banner-image-002.jpg",
             "class": "transparent-overlay"
         }
     ]
