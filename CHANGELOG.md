@@ -7,6 +7,19 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.20.0
+
+Release date: Thursday 16 February 2017
+
+### Changed
+
+* Updated the hero banner pattern, adding more examples. 
+
+
+
+
+---
+
 ## v0.18.0
 
 Release date: Thursday 9 February 2017
