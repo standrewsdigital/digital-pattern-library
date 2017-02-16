@@ -17,10 +17,15 @@ Release date: Thursday 16 February 2017
 
 * Long-form quotes pattern.
 * Long-form asides pattern.
+* Long-form sections pattern.
 
 ### Changed
 
 * Updated the hero banner pattern, adding more examples. 
+
+### Removed
+
+* Long-form content pattern.
 
 
 
