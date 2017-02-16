@@ -30,7 +30,7 @@ A pattern-only version of the JavaScript file, `core-base.js`, does not include 
 * jQuery [Big Target](https://github.com/leevigraham/jquery-bigTarget.js/)
 * jQuery [FitVids](https://github.com/davatron5000/FitVids.js) (v1.1)
 * jQuery [FitTexts](https://github.com/davatron5000/FitText.js) (v1.2)
-* jQuery [Theatre](https://bitbucket.org/st-andrews/jquery-theatre) (v1.0.1) - Deprecated
+* jQuery [Theatre](https://github.com/standrewsdigital/jquery-theatre) (v1.0.1) - Deprecated
 * [Bootstrap-Sass](https://github.com/twbs/bootstrap-sass) (v3.3.7)
 * [Enquire.js](https://github.com/WickyNilliams/enquire.js) (v2.1.2)
 * [Hammer.js](http://hammerjs.github.io/) (v.2.0.4)
@@ -41,7 +41,7 @@ See the `Gruntfile.js` to determine which additional JavaScript pieces are rolle
 
 The following package is supported by not required:
 
-* [jQuery DataTables](http://www.datatables.net/) (v1.10.13) is supported and we provide additional JavaScript and CSS to match the pattern library. See [DataTables](examples/datatables.html) for more information.
+* [jQuery DataTables](https://www.datatables.net/) (v1.10.13) is supported and we provide additional JavaScript and CSS to match the pattern library. See [DataTables](patterns/datatables/index.html) for more information.
 
 
 
