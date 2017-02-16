@@ -212,9 +212,9 @@
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/long-form-quotes/index.html"
                 },
-                { "name": "Long-form text backgrounds",
+                { "name": "Long-form sections",
                   "img": "assets/docs/images/patterns/pattern.jpg",
-                  "url": "patterns/long-form-text-backgrounds/index.html"
+                  "url": "patterns/long-form-sections/index.html"
                 }
             ]
         },

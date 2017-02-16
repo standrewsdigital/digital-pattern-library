@@ -1,0 +1,28 @@
+---
+title: Long-form sections
+---
+
+<p>The long-form section pattern shows the background options that can be used within a long-form story. Different backgrounds help to separate out the different sections of the story.</p>
+
+<ul>
+    <li>MUST only be used within the main content of a long-form page.</li>
+    <li>MUST alternate sections so that same background isn't adjacent to itself.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#long-form-sections-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/long-form-sections-options.options}}
+</ul>
+
+{{#long-form-sections-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+{{> long-form-sections}}
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> long-form-sections}}</code></pre>
+{{/long-form-sections-options.options}}

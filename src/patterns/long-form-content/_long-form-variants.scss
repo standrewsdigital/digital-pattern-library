@@ -1,66 +1,66 @@
-//////////////
-// VARIANTS //
-//////////////
+// //////////////
+// // VARIANTS //
+// //////////////
 
 
-// Text and backgrounds
-// ====================
+// // Text and backgrounds
+// // ====================
 
-// Inverse text
-.long-form--inverse {
-    color: white;
+// // Inverse text
+// .long-form--inverse {
+//     color: white;
 
-    a {
-        border-bottom-color: rgb(200, 200, 200);
-    }
+//     a {
+//         border-bottom-color: rgb(200, 200, 200);
+//     }
 
-    small {
-        color: rgb(230, 230, 230);
-    }
-}
+//     small {
+//         color: rgb(230, 230, 230);
+//     }
+// }
 
-// Background light grey
-.long-form--bg-light-grey {
-    background-color: rgb(240, 240, 240);
-}
+// // Background light grey
+// .long-form--bg-light-grey {
+//     background-color: rgb(240, 240, 240);
+// }
 
 
-// Lightened background image
-.long-form--bg-lighten {
-    &:after {
-        background-color: rgba(255,255,255,0.6);
-        content: ' ';
-        height: 100%;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 1001;
-    }
-}
+// // Lightened background image
+// .long-form--bg-lighten {
+//     &:after {
+//         background-color: rgba(255,255,255,0.6);
+//         content: ' ';
+//         height: 100%;
+//         position: absolute;
+//         top: 0;
+//         width: 100%;
+//         z-index: 1001;
+//     }
+// }
 
-// Width
-// ====================
+// // Width
+// // ====================
 
-// Medium content column
-.long-form--width-medium .long-form__wrapper {
-    @extend .col-md-10;
-    @extend .col-md-offset-1;
-}
+// // Medium content column
+// .long-form--width-medium .long-form__wrapper {
+//     @extend .col-md-10;
+//     @extend .col-md-offset-1;
+// }
 
-// Full-width content column
-.long-form--width-full .long-form__wrapper {
-    @extend .col-md-12;
-    @extend .col-md-offset-0;
-}
+// // Full-width content column
+// .long-form--width-full .long-form__wrapper {
+//     @extend .col-md-12;
+//     @extend .col-md-offset-0;
+// }
 
-// Vertical padding
-// ====================
+// // Vertical padding
+// // ====================
 
-.long-form--padding-none {
-    padding-top:    0px;
-    padding-bottom: 70px;
-}
+// .long-form--padding-none {
+//     padding-top:    0px;
+//     padding-bottom: 70px;
+// }
 
-// Credits
-// ====================
+// // Credits
+// // ====================
 

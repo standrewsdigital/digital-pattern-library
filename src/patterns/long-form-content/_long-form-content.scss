@@ -1,90 +1,90 @@
-.long-form__content {
+// .long-form__content {
 
-    h1, h2, h3, h4, h5, h6 {
-        font-family: $font-family-sans-serif;
-    }
+//     h1, h2, h3, h4, h5, h6 {
+//         font-family: $font-family-sans-serif;
+//     }
 
-    h1 {
-        font-size: 50px;
-    }
+//     h1 {
+//         font-size: 50px;
+//     }
 
-    h2 {
-        font-size: 35px;
-        margin-bottom: 20px;
-    }
+//     h2 {
+//         font-size: 35px;
+//         margin-bottom: 20px;
+//     }
 
-    h5 {
-        color: rgb(119, 119, 119);
-        font-size:   .9em;
-        font-weight: normal;
-        text-transform: uppercase;
-    }
+//     h5 {
+//         color: rgb(119, 119, 119);
+//         font-size:   .9em;
+//         font-weight: normal;
+//         text-transform: uppercase;
+//     }
 
-    // blockquote {
-    //     border:none;
-    //     font-size:  22px;
-    //     font-style: italic;
-    //     margin: 20px 0 20px 20px;
-    //     padding: 0;
+//     // blockquote {
+//     //     border:none;
+//     //     font-size:  22px;
+//     //     font-style: italic;
+//     //     margin: 20px 0 20px 20px;
+//     //     padding: 0;
 
-    //     &:nth-child(1) { // remove top margin when first element.
-    //         margin-top: 0;
-    //     }
-    // }
+//     //     &:nth-child(1) { // remove top margin when first element.
+//     //         margin-top: 0;
+//     //     }
+//     // }
 
-    abbr {
-        font-family: 'PT Serif Caption', Gerogia, 'Times New Roman', Times, serif;
-        font-size:   18px;
-        text-transform: uppercase;
-    }
+//     abbr {
+//         font-family: 'PT Serif Caption', Gerogia, 'Times New Roman', Times, serif;
+//         font-size:   18px;
+//         text-transform: uppercase;
+//     }
 
-    a {
-        border-bottom: 1px solid rgb(68, 68, 68);
-        color: inherit;
-        font-weight: normal;
-        text-decoration: none;
-    }
+//     a {
+//         border-bottom: 1px solid rgb(68, 68, 68);
+//         color: inherit;
+//         font-weight: normal;
+//         text-decoration: none;
+//     }
 
-    p {
-        // This only affects paged media (like print view), and is not very widely supported by browsers yet.
-        orphans: 3;
-        widows: 3;
-    }
+//     p {
+//         // This only affects paged media (like print view), and is not very widely supported by browsers yet.
+//         orphans: 3;
+//         widows: 3;
+//     }
 
-    figure {
-        margin-bottom: 25px; // to match <p> styling.
+//     figure {
+//         margin-bottom: 25px; // to match <p> styling.
 
-        figcaption {
-            font-family: $font-family-sans-serif;
-            font-size:   14px;
-            padding: 8px 0;
-        }
+//         figcaption {
+//             font-family: $font-family-sans-serif;
+//             font-size:   14px;
+//             padding: 8px 0;
+//         }
 
-        &.image {
-            img {
-                width: 100%;
-            }
-        }
-    }
+//         &.image {
+//             img {
+//                 width: 100%;
+//             }
+//         }
+//     }
 
-}
+// }
 
-@media (min-width: 992px) {
-    .long-form__content {
+// @media (min-width: 992px) {
+//     .long-form__content {
 
-        h1 {
-            font-size: 65px;
-        }
+//         h1 {
+//             font-size: 65px;
+//         }
 
-        h2 {
-            font-size: 55px;
-        }
+//         h2 {
+//             font-size: 55px;
+//         }
 
-        blockquote {
-            margin: 60px;
-        }
+//         blockquote {
+//             margin: 60px;
+//         }
 
-    }
+//     }
 
-}
+// }
 
