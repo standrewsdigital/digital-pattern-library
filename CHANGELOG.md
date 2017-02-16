@@ -12,6 +12,12 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 Release date: Thursday 16 February 2017
 
+
+### Added
+
+* Long-form quotes pattern.
+* Long-form asides pattern.
+
 ### Changed
 
 * Updated the hero banner pattern, adding more examples. 
