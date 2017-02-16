@@ -1,0 +1,25 @@
+---
+title: Long-form asides
+---
+
+<p>Standard HTML5 <code>&lt;aside&gt;</code> elements are enhanced with a set of classes to flexibly position them relative to content. This approach removes the need for a dedicated sidebar. The <code>&lt;aside&gt;</code> element is often used to wrap <code>&lt;figure&gt;</code> elements, but can equally wrap any tangential content. These are to be only used on long-form pages.</p>
+
+<p><strong>Note:</strong> These asides are only designed to work inside the default compressed content column, not the medium or full-width variants.</p>
+
+<h3>Options available</h3>
+<ul>
+{{#long-form-asides-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/long-form-asides-options.options}}
+</ul>
+
+{{#long-form-asides-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+{{> long-form-asides}}
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> long-form-asides}}</code></pre>
+{{/long-form-asides-options.options}}
