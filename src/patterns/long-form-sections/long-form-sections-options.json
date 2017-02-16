@@ -1,0 +1,41 @@
+{
+    "options": [
+        {
+            "option-heading": "Dark text on white background (default)",
+            "option-description": "",
+            "option-anchor": "dark-white"
+        },
+
+
+
+
+        {
+            "option-heading": "Dark text on light grey background",
+            "option-description": "<p>Add the class <code>long-form--bg-light-grey</code>. This cannot be used for the section before the <a href='../long-form-credits/index.html'>long-form credits</a> section.</p>",
+            "option-anchor": "dark-grey",
+            "class": "long-form--bg-light-grey"
+        },
+
+
+
+
+        {
+            "option-heading": "Dark text on light image background",
+            "option-description": "<p>Add the class <code>long-form--bg-lighten</code>.</p>",
+            "option-anchor": "dark-light-image",
+            "class": "long-form--bg-lighten",
+            "image-url": "../../assets/docs/images/long-form-content/bg-spark.jpg"
+        },
+
+
+
+
+        {
+            "option-heading": "White text on dark image background",
+            "option-description": "<p>Add the classes <code>long-form--inverse long-form--bg-darken</code>. This MUST be used for the <a href='../long-form-intro/index.html'>long-form intro</a> section.</p>",
+            "option-anchor": "white-dark-image",
+            "class": "long-form--inverse long-form--bg-darken",
+            "image-url": "../../assets/docs/images/long-form-content/bg-spark.jpg"
+        }
+    ]
+ }
