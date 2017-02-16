@@ -2,12 +2,12 @@
 title: Pagination
 ---
 
-<p>Provide pagination links for your site or app with the multi-page pagination component, or the simpler <a href="#pager">pager alternative</a>.</p>
+<p>Pagination links indicate a series of related content exists across multiple pages. Typically these are used where a multi-page approach to long lists of content improves general performance, such as in search results or inboxes.</p>
 
 <hr>
-<h3>Default pagination</h3>
+<h4>Default pagination</h4>
 
-<p>Simple pagination, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.</p>
+<p>Default pagination should be used on galleries that have multiple pages and search results.</p>
 
 {{> pagination}}
 <span class="label label-default">Code</span>
@@ -34,9 +34,9 @@ title: Pagination
 
 
 <hr>
-<h4>Sizing</h4>
+<h4>Small pagination</h4>
 
-<p>Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional sizes.</p>
+<p>Remove <code>.pagination-lg</code> class to revert pagination to a smaller size. This sizing is to be used on internal web applications.</p>
 
 {{> pagination-sizes}}
 <span class="label label-default">Code</span>
@@ -48,51 +48,24 @@ title: Pagination
 <hr>
 <h3 id="pager">Pager</h3>
 
-<p>Quick previous and next links for simple pagination implementations with light markup and styles.</p>
+<p>Simple 'previous' and 'next' links for pagination implementations with light markup and styles. These can be used at the bottom of a blog post to allow the user to proceed to another post.</p>
 
 
 
 
 <hr>
-<h4>Default example</h4>
+<h4>Default pager</h4>
 
-<p>By default, the pager centres links.</p>
+<p></p>
 
-<nav>
-  <ul class="pager">
-    <li><a href="#">Previous</a></li>
-    <li><a href="#">Next</a></li>
-  </ul>
-</nav>
-
-<pre><code class="pattern-source html">
-<nav>
-  <ul class="pager">
-    <li><a href="#">Previous</a></li>
-    <li><a href="#">Next</a></li>
-  </ul>
-</nav>
-</code></pre>
-
-
-
-
-<hr>
-<h4>Aligned links</h4>
-
-<p>Alternatively, you can align each link to the sides:</p>
-
-{{> pager-alignment}}
+{{> pager}}
 <span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> pager-alignment}}</code></pre>
-
-
-
+<pre><code class="pattern-source html">{{> pager}}</code></pre>
 
 <hr>
 <h4>Optional disabled state</h4>
 
-<p>Pager links also use the general <code>.disabled</code> utility class from the pagination.</p>
+<p>Pager links also use the general <code>disabled</code> utility class from the pagination. Disabled links are to be used when there is no preceeding or following pages to navigate to.</p>
 
 {{> pager-disabled}}
 <span class="label label-default">Code</span>
