@@ -33,6 +33,9 @@
     background-color: $sta-purple;
 }
 
+.featured-media.featured-image{
+    background-image: url("../../assets/core/images/secondary-call/9.jpg"); background-size: cover;
+}
 
 @media (max-width: 991px) {
     .featured-media img {
