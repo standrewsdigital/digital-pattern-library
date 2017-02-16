@@ -17,10 +17,35 @@
          -o-background-size: cover;
             background-size: cover;
     color: white;
+    position: relative;
+    z-index: 0;
 }
 
-.hero-banner .bg {
-    display: none;
+.hero-banner.transparent-overlay {
+   &:after {
+       //* background-color: -dpl-color($palette-default,'secondary','transparent'); *//
+       background-color: rgba(27,116,195,0.6);
+       content: ' ';
+       height: 100%;
+       position: absolute;
+       top: 0;
+       width: 100%;
+       z-index: 1;
+   }
+   .btn, .btn-primary {
+        background-color: $sta-green;
+        border-color: $sta-green;
+   }
+
+   .btn:hover, .btn:focus {
+        background-color: $sta-green-hover;
+        border-color: $sta-green-hover;
+    }
+}
+
+.hero-banner .fg {
+    position: relative;
+    z-index: 10;
 }
 
 .hero-banner .call-heading {

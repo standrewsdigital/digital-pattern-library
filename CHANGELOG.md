@@ -12,6 +12,7 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 Release date: Thursday 16 February 2017
 
+
 ### Added
 
 * Long-form quotes pattern.
