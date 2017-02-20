@@ -7,8 +7,19 @@ core-assets: true
 <div class="container">
     <div class="row">
         <div class="col-md-12 col-sm-12">
-            <h1>Patterns</h1>
+            <h2>Patterns</h2>
             <p>Patterns are simple, reusable solutions to specific design problems built to support the University of St Andrews website and web applications.</p>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>Categories</h3>
+                    <ul class="list-inline">
+                    {{#each patterns-page.categories}}
+                        <li><a href="#{{heading}}" class="btn btn-{{class}}">{{heading}}</a></li>         
+                    {{/each}}
+                    </ul>
+                    <hr>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -16,8 +27,8 @@ core-assets: true
 {{#each patterns-page.categories}}
     <div class="container">
     	<div class="row">
-            <div class="col-md-12 col-sm-12">
-                <h2>{{heading}}</h2>
+            <div id="{{heading}}" class="col-md-12 col-sm-12">
+                <h3>{{heading}}</h3>
                 <p>{{{subheading}}}</p>
             </div>
         </div>

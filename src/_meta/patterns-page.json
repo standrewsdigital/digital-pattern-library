@@ -3,6 +3,7 @@
         {
             "heading": "Core",
             "subheading": "Patterns essential to building a basic University of St Andrews webpage; listed from the top of the page to the bottom.",
+            "class": "primary",
             "patterns": [
                 { "name": "Header",
                   "img": "assets/docs/images/patterns/header.jpg",
@@ -25,6 +26,7 @@
         {
             "heading": "Call to action",
             "subheading": "Patterns used to bring attention and link to content of importance both on the University website and external.",
+            "class": "primary",
             "patterns": [
                 { "name": "Buttons",
                   "img": "assets/docs/images/patterns/pattern.jpg",
@@ -67,6 +69,7 @@
         {
             "heading": "Content",
             "subheading": "Patterns used to display content in various ways.",
+            "class": "primary",
             "patterns": [
                 { "name": "Accordion",
                   "img": "assets/docs/images/patterns/accordion.jpg",
@@ -145,6 +148,7 @@
         {
             "heading": "Form elements",
             "subheading": "Patterns used to create forms.",
+            "class": "primary",
             "patterns": [
                 { "name": "Form elements",
                   "img": "assets/docs/images/patterns/pattern.jpg",
@@ -159,6 +163,7 @@
         {
             "heading": "Icons",
             "subheading": "Patterns used to accent elements using icons.",
+            "class": "primary",
             "patterns": [
                 { "name": "Font Awesome",
                   "img": "assets/docs/images/patterns/pattern.jpg",
@@ -173,11 +178,8 @@
         {
             "heading": "Long-form",
             "subheading": "Patterns used to build long-form content pages. You MUST use the <a href='patterns/long-form-intro/index.html'>intro</a>, <a href='patterns/long-form-end-piece/index.html'>end piece</a> and <a href='patterns/long-form-credits/index.html'>credits</a> in every long-form piece, and use an assortment of the other long-form patterns that are available.",
+            "class": "primary",
             "patterns": [
-                { "name": "Long-form content",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
-                  "url": "patterns/long-form-content/index.html"
-                },
                 { "name": "Long-form intro",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/long-form-intro/index.html"
@@ -190,15 +192,28 @@
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/long-form-credits/index.html"
                 },
+                { "name": "Long-form asides",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/long-form-asides/index.html"
+                },
                 { "name": "Long-form gallery",
                   "img": "assets/docs/images/patterns/pattern.jpg",
                   "url": "patterns/long-form-gallery/index.html"
+                },
+                { "name": "Long-form quotes",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/long-form-quotes/index.html"
+                },
+                { "name": "Long-form sections",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/long-form-sections/index.html"
                 }
             ]
         },
         {
             "heading": "Navigation",
             "subheading": "Patterns used to connect content pages across the University of St Andrews website.",
+            "class": "primary",
             "patterns": [
                 { "name": "Navbox",
                   "img": "assets/docs/images/patterns/navbox.jpg",
@@ -229,6 +244,7 @@
         {
             "heading": "Deprecated",
             "subheading": "Patterns that are no longer supported and will be removed in future versions of the pattern library.",
+            "class": "danger",
             "patterns": [
                 { "name": "Info bite (deprecated)",
                   "img": "assets/docs/images/patterns/info-bite.jpg",

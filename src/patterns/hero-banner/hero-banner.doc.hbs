@@ -4,19 +4,37 @@ title: Hero banner
 
 <p>The hero banner pattern displays a large heading, introductory text and a call to action over an optional, large background image.</p>
 
+<h3>Options</h3>
+<ul>
+    <li><a href="#hero-banner">Hero banner</a></li>
+    <li><a href="#hero-banner-with-transparent-overlay">Hero banner with transparent overlay</a></li>
+</ul>
+
+<h3>Image guidelines</h3>
+<ul>
+    <li>Hero banners should always have an image background.</li>
+    <li>The size of a hero banner image must be <code>1905px &times; 362px</code> and created using the <a href="../../assets/docs/images/cta/hero-banner-photoshop-template.psd">background image Photoshop template</a>.</li>
+    <li>There is no default background image, you will need to supply an image by attaching an inline style on <code>&lt;div class="hero-banner"&gt;</code>. For example: <code>&lt;div class="hero-banner" style="background-image: url(path/to/image.jpg)"&gt;</code>.</li>
+    <li>The main focus of this pattern is the call to action text so the background image shouldn't be overly complicated.
+    </li>
+    <li>Using multiple images in a collage is discouraged as they are complicated.</li>
+    <li>Photographs including people are encouraged in the hero banner.</li>
+    <li>Photographs of the St Andrews skyline are encouraged in the hero banner.</li>
+    <li>Close ups of subjects, such as people's faces, are discouraged. The hero banner image should have room to breathe.</li>
+</ul>
+
+<h3>Text guidelines</h3>
+<ul>
+    <li>The hero banner heading must not exceed 40 characters.</li>
+    <li>The hero banner paragraph text must not exceed 230 characters.</li>
+    <li>There should be no more than one paragraph on a hero banner.</li>
+</ul>    
+
 <h3>Background image template</h3>
-<p>So it may be positioned reliably across a variety of screen sizes, the background image must use the Photoshop template below.</p>
+<p>So it may be positioned reliably across a variety of screen sizes, the background image must created using the Photoshop template below.</p>
 <p><img src="{{asset "docs/images/cta/hero-banner-photoshop-template.jpg"}}" style="width:100%; max-width:992px;"></p>
 <p><a href="../../assets/docs/images/cta/hero-banner-photoshop-template.psd">Hero banner Photoshop template</a> (PSD, 4.3 MB)</p>
 <ul>
-    <li><strong>Blurred section</strong>
-        <ul>
-            <li>This area should have a duplicate of the main hero banner image.</li>
-            <li>A layer mask is then applied to this layer. The layer mask has a gradient fill applied for the right side of this layer to become transparent.</li>
-            <li>A gaussian blur smart filter is then applied, set at 5.0px.</li>
-            <li>A darkened layer sits above this image with a mask applied to make call-to-action text.</li>
-        </ul>
-    </li>
     <li><strong>Focus section</strong>
         <ul>
             <li>This area should contain the main focal point of the image.</li>
@@ -25,14 +43,9 @@ title: Hero banner
     </li>
 </ul>
 
-<ul>
-    <li>Background images are optional, but if present should be 1905px &times; 362px and created using the background image template (see above).</li>
-    <li>There is no default background image, you will need to supply an image by attaching an inline style on <code>&lt;div class="hero-banner"&gt;</code>. For example: <code>&lt;div class="hero-banner" style="background-image: url(path/to/image.jpg)"&gt;</code>.</li>
-</ul>
-
 {{#hero-banner-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 </div>{{> hero-banner}}<div class="container">
 <span class="label label-default">Code</span>

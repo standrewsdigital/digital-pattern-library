@@ -1,0 +1,43 @@
+/************************************/
+/* BEGIN Pattern: long-form quotes  */
+/************************************/
+
+.long-form__content blockquote {
+    border: none;
+    font-size:  22px;
+    font-style: italic;
+    margin: 20px 0 20px 20px;
+    padding: 0;
+
+    &:nth-child(1) { // remove top margin when first element.
+        margin-top: 0;
+    }
+}
+
+.long-form__content .pull-quote {
+    border-top:    1px solid rgb(240, 240, 240);
+    border-bottom: 1px solid rgb(240, 240, 240);
+    font-size:  28px;
+    font-style: italic;
+    line-height: 1.8;
+    margin: 40px 0;
+    padding: 20px 50px 20px 0px;
+    position: relative;
+}
+
+@media (min-width: 992px) {
+
+    .long-form__content {
+        blockquote {
+            margin: 60px;
+        }
+
+        .pull-quote {
+            margin: 40px -20%;
+        }
+    }
+}
+
+/**********************************/
+/* END Pattern: long-form quotes  */
+/**********************************/
