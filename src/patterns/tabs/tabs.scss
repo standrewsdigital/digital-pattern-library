@@ -1,6 +1,6 @@
 
 /*********************************/
-/* BEGIN Pattern: tabs          */
+/* BEGIN Pattern: tabs           */
 /*********************************/
 
 .tabs-container {
@@ -26,17 +26,23 @@
             transition: opacity 0.15s linear;
 }
 
-.read-shared.tabs-container {
+.tabs-container .tab-pane {
     hr {
+        border-top: 1px solid #ededed;
+        border-bottom: none;
+        height: 1px;
+        margin: 0 auto;
+        width: 60%;
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     ul {
-        padding-top: 10px;
+        padding: 5px 0 0 20px;
+        margin:0;
     }
 }
 
 /*********************************/
-/* END Pattern: tabs            */
+/* END Pattern: tabs             */
 /*********************************/

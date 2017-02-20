@@ -12,7 +12,7 @@
 
         {
             "option-heading": "Primary",
-            "option-description": "<p>Text is centre-aligned and the background colour is the primary pallete colour (<code>.primary</code>).</p>",
+            "option-description": "<p>Text is centre-aligned and the background colour is the primary palette colour (<code>.primary</code>).</p>",
             "style-type": "primary",
             "message": "The is the beta version of st-andrews.ac.uk. <a href='#'>Leave your feedback</a>."
         },
@@ -22,7 +22,7 @@
 
         {
             "option-heading": "Secondary",
-            "option-description": "<p>Text is centre-aligned and the background colour is the secondary pallete colour (<code>.secondary</code>).</p>",
+            "option-description": "<p>Text is centre-aligned and the background colour is the secondary palette colour (<code>.secondary</code>).</p>",
             "style-type": "secondary",
             "message": "The is the beta version of st-andrews.ac.uk. <a href='#'>Leave your feedback</a>."
         },
@@ -72,7 +72,7 @@
 
         {
             "option-heading": "Primary left",
-            "option-description": "<p>Text is left-aligned (<code>.left</code>) and the background colour is the primary pallete colour (<code>.primary</code>).</p>",
+            "option-description": "<p>Text is left-aligned (<code>.left</code>) and the background colour is the primary palette colour (<code>.primary</code>).</p>",
             "style-type": "primary left",
             "message": "The is the beta version of st-andrews.ac.uk. <a href='#'>Leave your feedback</a>."
         },
@@ -82,7 +82,7 @@
 
         {
             "option-heading": "Primary right",
-            "option-description": "<p>Text is right-aligned (<code>.right</code>) and the background colour is the primary pallete colour (<code>.primary</code>).</p>",
+            "option-description": "<p>Text is right-aligned (<code>.right</code>) and the background colour is the primary palette colour (<code>.primary</code>).</p>",
             "style-type": "primary right",
             "message": "The is the beta version of st-andrews.ac.uk. <a href='#'>Leave your feedback</a>."
         }

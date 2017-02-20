@@ -9,43 +9,43 @@
             "gallery-images-class": "longform_gallery",
             "gallery-images": [
                 {
-                    "thumbnail":  "../../assets/docs/images/long-form-content/portrait-ifor-samuel.jpg",
+                    "thumbnail":  "../assets/docs/images/long-form-content/portrait-ifor-samuel.jpg",
                     "alt":        "alt text for image 1",
                     "id":         "optional-id2",
                     "caption":    "Ifor Samuel <br> <em>Physicist</em>",
-                    "large-img":  "../../assets/docs/images/long-form-content/portrait-ifor-samuel.jpg",
+                    "large-img":  "../assets/docs/images/long-form-content/portrait-ifor-samuel.jpg",
                     "lightbox-gallery": "gallery-longform"
                 },
                 {
-                    "thumbnail":  "../../assets/docs/images/long-form-content/portrait-john-allen.jpg",
+                    "thumbnail":  "../assets/docs/images/long-form-content/portrait-john-allen.jpg",
                     "alt":        "alt text for image 2",
                     "id":         "optional-id3",
                     "caption":    "John Allen<br><em>Physicist</em>",
-                    "large-img":  "../../assets/docs/images/long-form-content/portrait-john-allen.jpg",
+                    "large-img":  "../assets/docs/images/long-form-content/portrait-john-allen.jpg",
                     "lightbox-gallery": "gallery-longform"
                 },
                 {
-                    "thumbnail":  "../../assets/docs/images/long-form-content/portrait-ashu-kumar-bansal.jpg",
+                    "thumbnail":  "../assets/docs/images/long-form-content/portrait-ashu-kumar-bansal.jpg",
                     "alt":        "alt text for image 3",
                     "id":         "optional-id4",
                     "caption":    "Ashu Kumar Bansal<br><em>Optical physicist</em>",
-                    "large-img":  "../../assets/docs/images/long-form-content/portrait-ashu-kumar-bansal.jpg",
+                    "large-img":  "../assets/docs/images/long-form-content/portrait-ashu-kumar-bansal.jpg",
                     "lightbox-gallery": "gallery-longform"
                 },
                 {
-                    "thumbnail":  "../../assets/docs/images/long-form-content/portrait-hien-nguyen.jpg",
+                    "thumbnail":  "../assets/docs/images/long-form-content/portrait-hien-nguyen.jpg",
                     "alt":        "alt text for image 3",
                     "id":         "optional-id4",
                     "caption":    "Hien Nguyen<br><em>Polymer chemist</em>",
-                    "large-img":  "../../assets/docs/images/long-form-content/portrait-hien-nguyen.jpg",
+                    "large-img":  "../assets/docs/images/long-form-content/portrait-hien-nguyen.jpg",
                     "lightbox-gallery": "gallery-longform"
                 },
                 {
-                    "thumbnail":  "../../assets/docs/images/long-form-content/portrait-olena-kulyk.jpg",
+                    "thumbnail":  "../assets/docs/images/long-form-content/portrait-olena-kulyk.jpg",
                     "alt":        "alt text for image 3",
                     "id":         "optional-id4",
                     "caption":    "Olena Kulyk<br><em>Biomedical electronics engineer</em>",
-                    "large-img":  "../../assets/docs/images/long-form-content/portrait-olena-kulyk.jpg",
+                    "large-img":  "../assets/docs/images/long-form-content/portrait-olena-kulyk.jpg",
                     "lightbox-gallery": "gallery-longform"
                 }
             ]
