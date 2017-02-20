@@ -107,10 +107,6 @@
                   "img": "assets/docs/images/patterns/google-maps.jpg",
                   "url": "patterns/google-maps/index.html"
                 },
-                { "name": "HTML elements",
-                  "img": "assets/docs/images/patterns/html-elements.jpg",
-                  "url": "examples/html-elements.html"
-                },
                 { "name": "Intro",
                   "img": "assets/docs/images/patterns/intro.jpg",
                   "url": "patterns/intro/index.html"

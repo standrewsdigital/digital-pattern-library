@@ -10,7 +10,7 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ## v0.20.0
 
-Release date: Thursday 16 February 2017
+Release date: Monday 20 February 2017
 
 
 ### Added
@@ -22,6 +22,7 @@ Release date: Thursday 16 February 2017
 ### Changed
 
 * Updated the hero banner pattern, adding more examples. 
+* Fixes for documentation in many patterns.
 
 ### Removed
 
