@@ -7,6 +7,32 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+
+## v0.20.0
+
+Release date: Monday 20 February 2017
+
+
+### Added
+
+* Long-form quotes pattern.
+* Long-form asides pattern.
+* Long-form sections pattern.
+
+### Changed
+
+* Updated the hero banner pattern, adding more examples. 
+* Fixes for documentation in many patterns.
+
+### Removed
+
+* Long-form content pattern.
+
+
+
+
+---
+
 ## v0.19.0
 
 Release date: Tuesday 14 February 2017
@@ -20,6 +46,7 @@ Release date: Tuesday 14 February 2017
 ### Removed
 
 * Redundant long-form styles and code from the old master pattern.
+
 
 
 

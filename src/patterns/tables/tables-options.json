@@ -1,25 +1,25 @@
 {
     "options" : [
         {
-            "option-heading": "Default",
+            "option-heading": "Default table heading",
             "option-description": "",
             "option-anchor": "default",
             "table-head": [
-                "Email Address",
+                "Email address",
                 "Name"
             ],
             "table-body": [
                 {
-                    "column-one": "abc@domain.com",
-                    "column-two": "Bob McBoberson"
+                    "column-one": "ts12@st-andrews.ac.uk",
+                    "column-two": "Tony Stark"
                 },
                 {
-                    "column-one": "def@domain.com",
-                    "column-two": "Pat McPaterson"
+                    "column-one": "sr34@st-andrews.ac.uk",
+                    "column-two": "Steven Rogers"
                 },
                 {
-                    "column-one": "ghi@domain.com",
-                    "column-two": "Jo McJoerson"
+                    "column-one": "bb56@st-andrews.ac.uk",
+                    "column-two": "Bruce Banner"
                 }
             ]
          },
@@ -28,10 +28,153 @@
 
 
         {
-            "option-heading": "Colour headings",
-            "option-description": "<p>You also have the option of these other colours for the table header, see the <a href='../../colours.html'>colours page</a> for palettes.</p>",
-            "option-anchor": "colour-headings",
+            "option-heading": "Primary table heading",
+            "option-description": "",
+            "option-anchor": "table-primary",
             "colour-class": "table-primary",
+            "table-head": [
+                "Class",
+                "Description"
+            ],
+            "table-body": [
+                {
+                    "column-one": "<code>.table-primary</code>",
+                    "column-two": "Primary palette colour, to be used on all pages using the primary palette theme."
+                },
+                {
+                    "column-one": "<code>.table-secondary</code>",
+                    "column-two": "Secondary palette colour, to be used on all pages using the secondary palette theme."
+                },
+                {
+                    "column-one": "<code>.table-tertiary-1</code>",
+                    "column-two": "First tertiary palette colour, to be used on all pages using the tertiary palette theme."
+                },
+                {
+                    "column-one": "<code>.table-tertiary-2</code>",
+                    "column-two": "Second tertiary palette colour, to be used on all pages using the tertiary palette theme."
+                },
+                {
+                    "column-one": "<code>.table-tertiary-3</code>",
+                    "column-two": "Third tertiary palette colour, to be used on all pages using the tertiary palette theme."
+                }
+
+            ]
+        },
+
+
+        {
+            "option-heading": "Secondary table heading",
+            "option-description": "",
+            "option-anchor": "table-secondary",
+            "colour-class": "table-secondary",
+            "table-head": [
+                "Class",
+                "Description"
+            ],
+            "table-body": [
+                {
+                    "column-one": "<code>.table-primary</code>",
+                    "column-two": "Primary palette colour, to be used on all pages using the primary palette theme."
+                },
+                {
+                    "column-one": "<code>.table-secondary</code>",
+                    "column-two": "Secondary palette colour, to be used on all pages using the secondary palette theme."
+                },
+                {
+                    "column-one": "<code>.table-tertiary-1</code>",
+                    "column-two": "First tertiary palette colour, to be used on all pages using the tertiary palette theme."
+                },
+                {
+                    "column-one": "<code>.table-tertiary-2</code>",
+                    "column-two": "Second tertiary palette colour, to be used on all pages using the tertiary palette theme."
+                },
+                {
+                    "column-one": "<code>.table-tertiary-3</code>",
+                    "column-two": "Third tertiary palette colour, to be used on all pages using the tertiary palette theme."
+                }
+
+            ]
+        },
+
+
+
+        {
+            "option-heading": "Tertiary 1 table heading",
+            "option-description": "",
+            "option-anchor": "table-tertiary-1",
+            "colour-class": "table-tertiary-1",
+            "table-head": [
+                "Class",
+                "Description"
+            ],
+            "table-body": [
+                {
+                    "column-one": "<code>.table-primary</code>",
+                    "column-two": "Primary palette colour, to be used on all pages using the primary palette theme."
+                },
+                {
+                    "column-one": "<code>.table-secondary</code>",
+                    "column-two": "Secondary palette colour, to be used on all pages using the secondary palette theme."
+                },
+                {
+                    "column-one": "<code>.table-tertiary-1</code>",
+                    "column-two": "First tertiary palette colour, to be used on all pages using the tertiary palette theme."
+                },
+                {
+                    "column-one": "<code>.table-tertiary-2</code>",
+                    "column-two": "Second tertiary palette colour, to be used on all pages using the tertiary palette theme."
+                },
+                {
+                    "column-one": "<code>.table-tertiary-3</code>",
+                    "column-two": "Third tertiary palette colour, to be used on all pages using the tertiary palette theme."
+                }
+
+            ]
+        },
+
+
+
+        {
+            "option-heading": "Tertiary 2 table heading",
+            "option-description": "",
+            "option-anchor": "table-tertiary-2",
+            "colour-class": "table-tertiary-2",
+            "table-head": [
+                "Class",
+                "Description"
+            ],
+            "table-body": [
+                {
+                    "column-one": "<code>.table-primary</code>",
+                    "column-two": "Primary palette colour, to be used on all pages using the primary palette theme."
+                },
+                {
+                    "column-one": "<code>.table-secondary</code>",
+                    "column-two": "Secondary palette colour, to be used on all pages using the secondary palette theme."
+                },
+                {
+                    "column-one": "<code>.table-tertiary-1</code>",
+                    "column-two": "First tertiary palette colour, to be used on all pages using the tertiary palette theme."
+                },
+                {
+                    "column-one": "<code>.table-tertiary-2</code>",
+                    "column-two": "Second tertiary palette colour, to be used on all pages using the tertiary palette theme."
+                },
+                {
+                    "column-one": "<code>.table-tertiary-3</code>",
+                    "column-two": "Third tertiary palette colour, to be used on all pages using the tertiary palette theme."
+                }
+
+            ]
+        },
+
+
+
+        {
+            "option-heading": "Tertiary 3 table heading",
+            "option-description": "",
+            "option-anchor": "table-tertiary-3",
+            "colour-class": "table-tertiary-3",
             "table-head": [
                 "Class",
                 "Description"
