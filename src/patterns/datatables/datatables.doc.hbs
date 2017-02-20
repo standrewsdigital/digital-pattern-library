@@ -8,14 +8,19 @@ title: Tables - DataTables
 
 <ul>
     <li>You must use only text-based content within tables.</li>
-    <li>See the <a href="../tables/index.html">Tables</a> pattern for available colour options.</li>
+    <li>See the <a href="../tables/index.html">tables pattern</a> for available colour options.</li>
 </ul>
 
 <h3>How to use</h3>
-<p>Include the following files in the <code>head</code> of the page.</p>
+<p>Include the following file in the <code>head</code> of the page.</p>
+<ul>
+	<li>CSS: <code>{{ pkg.cdn.endpoint }}/{{ pkg.cdn.package }}/{{pkg.version}}/styles/datatables.css</code></li>
+</ul>
+
+<p>Include the following file at the end of <code>body</code> of the page.</p>
+
 <ul>
 	<li>JavaScript: <code>{{ pkg.cdn.endpoint }}/{{ pkg.cdn.package }}/{{pkg.version}}/scripts/datatables.js</code></li>
-	<li>CSS: <code>{{ pkg.cdn.endpoint }}/{{ pkg.cdn.package }}/{{pkg.version}}/styles/datatables.css</code></li>
 </ul>
 
 <p>Add the class <code>dataTable</code> to your table.</p>
