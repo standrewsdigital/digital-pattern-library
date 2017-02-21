@@ -22,10 +22,6 @@
     height: 230px;
 }
 
-.contact-card.student .contact {
-    top: 130px;
-}
-
 .contact-card img {
     border: 1px solid rgb(204, 204, 204);
     float: right;
@@ -36,21 +32,10 @@
 }
 
 .contact-card h3 {
-    @include -dpl-transition();
-    bottom: 0;
     font-size: 1.3em;
     line-height: 1.3em;
     margin: 0;
     width: 100%;
-    z-index: 100;
-}
-
-.contact-card p {
-    font-size: 1em;
-    height: 5em;
-    line-height: 1.2em;
-    margin: 1.5em 0;
-    padding: 0 1em;
 }
 
 .contact-card-links {
@@ -63,23 +48,13 @@
 
 .contact-card .contact {
     position: absolute;
-        top: 170px;
+      bottom: 0;
 }
 
 .contact-card h4 {
     color: $sta-grey;
     font-size:   18px;
     font-weight: bold;
-}
-
-@media (max-width: 767px) and (min-width: 450px) {
-    .contact-card {
-        margin-bottom: 2em;
-    }
-
-    .contact-card p {
-        height: auto;
-    }
 }
 
 @media (max-width: 449px) {

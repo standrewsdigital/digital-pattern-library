@@ -3,6 +3,7 @@
 
 <div class="container">
     <div class="row">
+        {{#each cards}}
         <div class="col-xs-4">
             <article id="{{id}}" class="contact-card {{contract-type}}">
                 <h3>
@@ -10,7 +11,7 @@
                 </h3>
                 <h4>{{title}}</h4>
                 {{#if staff-image}}
-                    <img src="http://portal.st-andrews.ac.uk/staff-photos/{{id}}/small" alt="{{name}}" title="{{name}}" class="profilePhoto">
+                    <img src="/assets/core/images/contact-card-default.gif" alt="{{name}}" title="{{name}}" class="profilePhoto">
                 {{/if}}
                 <div class="contact">
                     <h4>Contact</h4>
@@ -27,6 +28,7 @@
                 </div>
             </article>
         </div>
+        {{/each}}
     </div>
 </div>
 
