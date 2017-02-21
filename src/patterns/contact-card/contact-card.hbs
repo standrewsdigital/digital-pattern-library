@@ -1,18 +1,18 @@
 
 <!-- Begin pattern: contact-card //-->
 
-<div class="container">
+
     <div class="row">
         {{#each cards}}
-        <div class="col-xs-4">
+        <div class="col-xs-12 col-sm-6 col-lg-4">
             <article id="{{id}}" class="contact-card {{contract-type}}">
                 <h3>
                     <a href="https://www.st-andrews.ac.uk/profile/{{id}}">{{name}}</a>
                 </h3>
-                <h4>{{title}}</h4>
                 {{#if staff-image}}
                     <img src="/assets/core/images/contact-card-default.gif" alt="{{name}}" title="{{name}}" class="profilePhoto">
                 {{/if}}
+                <h4>{{title}}</h4>
                 <div class="contact">
                     <h4>Contact</h4>
                     <ul class="contact-card-links">
@@ -30,6 +30,6 @@
         </div>
         {{/each}}
     </div>
-</div>
+
 
 <!-- End pattern: contact-card //-->

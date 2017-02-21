@@ -2,14 +2,18 @@
 title: Contact card
 ---
 
-<p>The contact card pattern is used to display contact information for staff and student. </p>
+<p>The contact card pattern is used to display contact information for staff and students.</p>
 
 
 <ul>
-	<li>Staff name should be linked to their PURE profile for more information.</li>
+	<li>Staff name should be linked to their research profile.</li>
 	<li>Profile image must be 111px by 127px.</li>
+	<li>Staff cards must have a profile image, if an image is not available use the default from below.</li>
 	<li>Student contact cards do not use an image.</li>
+	<li>Contact cards must only be used on people pages in the main content area.</li>
 </ul>
+
+<p>The default staff profile image: <a href="{{ pkg.cdn.endpoint }}/{{ pkg.cdn.package }}/{{ pkg.version }}/images/contact-card-default.gif">contact-card-default.gif</a></p>
 
 <h3>Options available</h3>
 <ul>
@@ -20,7 +24,7 @@ title: Contact card
 
 {{#contact-card-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 {{> contact-card}}
 <span class="label label-default">Code</span>

@@ -9,13 +9,11 @@
        -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
             box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
     clear: both;
-    display: inline-block;
     height: 260px;
     margin: 10px;
     padding: 1em;
     position: relative;
     vertical-align: bottom;
-    width: 360px;
 }
 
 .contact-card.student {
@@ -26,6 +24,7 @@
     border: 1px solid rgb(204, 204, 204);
     float: right;
     height: 127px;
+    margin-top: 10px;
     position: relative;
     width: 111px;
     z-index: 0;
@@ -57,9 +56,10 @@
     font-weight: bold;
 }
 
-@media (max-width: 449px) {
+@media (max-width: 768px) {
     .contact-card, .contact-card.student {
-        width: 285px;
+        max-width: 385px;
+        margin: 10px auto;
     }
 
     .contact-card img {
@@ -67,6 +67,7 @@
         width: 91px;
     }
 }
+
 
 
 /*********************************/
