@@ -4,30 +4,110 @@
             "option-heading": "Single",
             "option-description": "",
             "option-anchor": "single",
-            "title": "Title of image",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
-            "image": {
-                "url": "docs/images/placeholders/360x240.jpg",
-                "alt": "Description"
-            },
-            "date-link" : "2014-08-21",
-         },
+            "news-items": [
+                {
+                    "title": "News story title",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.jpg"
+                    },
+                    "date": "Tuesday 7 February 2017 | <a href='#'>Category</a>"
+                }
+            ],
+            "pagination": false
+        },
 
 
 
 
-         {
-            "option-heading": "Dummy pattern with no image",
-            "option-description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>",
-            "option-anchor": "dummy-option-two",
-            "title": "Title of image",
-            "url": "#",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
-
-            "date" : "2014-08-21",
-            "date-display" : "21 August 2014",
-            "type" : "Photo of the week"
-          }
+        {
+            "option-heading": "Multiple",
+            "option-description": "",
+            "option-anchor": "multiple",
+            "news-items": [
+                {
+                    "title": "New URL shortening service",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.jpg"
+                    },
+                    "date": "Monday 6 February 2017 | <a href='#'>Articles and resources</a>"
+                },
+                {
+                    "title": "How to conduct usability testing",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240-4.jpg"
+                    },
+                    "date": "Monday 24 October 2016 | <a href='#'>Guides</a>"
+                },
+                {
+                    "title": "How to use Track Changes in Word",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240-5.jpg"
+                    },
+                    "date": "Friday 10 February 2017 | <a href='#'>Guides</a>"
+                },
+                {
+                    "title": "New URL shortening service",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.jpg"
+                    },
+                    "date": "Monday 6 February 2017 | <a href='#'>Articles and resources</a>"
+                },
+                {
+                    "title": "How to conduct usability testing",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240-4.jpg"
+                    },
+                    "date": "Monday 24 October 2016 | <a href='#'>Guides</a>"
+                },
+                {
+                    "title": "How to use Track Changes in Word",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240-5.jpg"
+                    },
+                    "date": "Friday 10 February 2017 | <a href='#'>Guides</a>"
+                },
+                {
+                    "title": "New URL shortening service",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.jpg"
+                    },
+                    "date": "Monday 6 February 2017 | <a href='#'>Articles and resources</a>"
+                },
+                {
+                    "title": "How to conduct usability testing",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240-4.jpg"
+                    },
+                    "date": "Monday 24 October 2016 | <a href='#'>Guides</a>"
+                },
+                {
+                    "title": "How to use Track Changes in Word",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240-5.jpg"
+                    },
+                    "date": "Friday 10 February 2017 | <a href='#'>Guides</a>"
+                },
+                {
+                    "title": "How to use Track Changes in Word",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240-5.jpg"
+                    },
+                    "date": "Friday 10 February 2017 | <a href='#'>Guides</a>"
+                }
+            ],
+            "pagination": true
+        }
 
 
     ]
