@@ -7,7 +7,13 @@ title: Gallery
 <p>The gallery pattern demonstrates a method of displaying a large number of images on a page and makes use of the <a href="http://lokeshdhakar.com/projects/lightbox2">Lightbox JavaScript library</a> to view the images in an immersive experience.</p>
 
 <ul>
-  <li>Thumbnail images should be <code>360px x 240px</code>.</li>
+  <li>Gallery images must be in landscape orientation.</li>
+  <li>Gallery image sizes must be <code>1280px &times; 960px</code>. This resolution must never be exceeded.</li>
+  <li>All images must have an aspect ratio of <code>4:3</code>. This is the typically aspect ratio for photographs.</li>
+  <li>If an image's resolution is lower than <code>1280px &times; 960px</code>, then the image must have an aspect ratio of <code>4:3</code> at it's highest native resolution.</li>
+  <li>Thumbnail images are not automatically generated from the full image and must be created separately.</li>
+  <li>Thumbnail images must be <code>360px &times; 240px</code>.</li>
+
   <li>Must only be used within the main content of a page.</li>
   <li>A page can contain multiple galleries.</li>
   <li>Use <code>data-lightbox="[gallery name]"</code> to group images together for each gallery.</li>
