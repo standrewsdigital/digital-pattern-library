@@ -54,25 +54,9 @@
         ]
       },
       "category-header": {
-          "title": "About",
+          "title": "Sample forms",
           "url": "#"
       },
-      "breadcrumbs": {
-        "parents": [
-          {
-              "title": "University",
-              "url": "#"
-          },
-          {
-              "title": "About",
-              "url": "#"
-          }
-        ],
-        "current": {
-            "title": "Example page",
-            "url": "#"
-        }
-    },
     "content": {
         "text" : "<h3>Form elements</h3>",
         "sidebar" : "<h3>Sidebar</h3>",

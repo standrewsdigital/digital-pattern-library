@@ -14,8 +14,13 @@ Release date: Wednesday 22 February 2017
 
 ### Added 
 
-* More-news pattern
+* More-news pattern.
 
+### Changed
+
+* Contact card pattern.
+* Staff profile pattern.
+* Fixed navigation disappearing.
 
 
 
