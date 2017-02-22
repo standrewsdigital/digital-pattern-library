@@ -1,0 +1,30 @@
+---
+title: More news
+---
+
+<p>The more news pattern is for showing a list of news articles or blog posts that provide links to the full article. These are previous posts or articles that are not featured items.</p>
+
+<ul>
+	<li>There must a thumbnail image. Use a placeholder if an image is not available.</li>
+	<li>The thumbnail image must always be on the right.</li>
+	<li>Thumbnail image must be 360px by 240px.</li>
+	<li>There must not be more than 40 words in the excerpt and it must end with the ellipses character <code>&amp;hellip;</code> (&hellip;).</li>
+	<li>If there are more than 10 items on a page it must use <a href="../pagination/index.html#pager">pager pagination</a>.</li>
+</ul>
+
+<hr>
+<h3>Options available</h3>
+<ul>
+{{#more-news-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/more-news-options.options}}
+</ul>
+
+{{#more-news-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+</div>{{>  more-news}}<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> more-news}}</code></pre>
+{{/more-news-options.options}}
