@@ -2,7 +2,7 @@
     "options": [
         {
             "option-heading": "Staff cards",
-            "option-description": "Staff name should link to their research profile. Staff cards must have a profile image 111 by 127 pixels. If an image is not available use the default staff profile image: <a href='{{ pkg.cdn.endpoint }}/{{ pkg.cdn.package }}/{{ pkg.version }}/images/contact-card-default.gif'>contact-card-default.gif</a>",
+            "option-description": "<ul><li>Staff name should link to their research portal profile.</li><li>Staff cards must have a profile image 111 by 127 pixels.</li><li>If an image is not available, use the default staff profile image: <a href='{{ pkg.cdn.endpoint }}/{{ pkg.cdn.package }}/{{ pkg.version }}/images/contact-card-default.gif'>contact-card-default.gif</a></li></ul>",
             "option-anchor": "staff",
 		    "cards": [
 			    {
@@ -68,7 +68,7 @@
 
         {
             "option-heading": "Student cards",
-            "option-description": "Student contact cards do not have an image.",
+            "option-description": "<ul><li>Student contact cards do not have an image.</li></ul>",
             "option-anchor": "student",
 		    "cards": [
 			    {
