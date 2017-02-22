@@ -2,7 +2,7 @@
 title: Form elements
 ---
 
-<p>Keep forms as simple as possible, see <a href="../docs/examples/form.html">form examples</a>.</p>
+<p>Keep forms as simple as possible, see <a href="../../examples/form.html">form example</a>.</p>
 
 <ul>
 	<li>Only ask for the information you absolutely need.</li>
@@ -22,6 +22,7 @@ title: Form elements
 	<li><a href="#labels">Labels</a></li>
 	<li><a href="#radio-buttons">Radio buttons</a></li>
 	<li><a href="#select-boxes">Select boxes</a></li>
+	<li><a href="#submit-button">Submit and reset buttons</a></li>
 </ul>
 
 <hr/>
@@ -322,4 +323,25 @@ title: Form elements
 <div class="container">
 	<span class="label label-default">Code</span>
 	<pre><code class="pattern-source html">{{> form-elements-select-boxes}}</code></pre>
+</div>
+
+<hr>
+
+<h3 id="submit-button">Submit and reset buttons</h3>
+
+<ul>
+	<li>Keep text short and use a verb such as 'submit' or 'continue'.</li>
+	<li>Do not add a reset button. It causes problems for uses who might click on it by mistake and makes it harder for users to see the next step. See Neilsen Norman Group article on <a href="http://www.nngroup.com/articles/reset-and-cancel-buttons/">reset and cancel buttons</a>.</li>
+</ul>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-submit}}
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-submit}}</code></pre>
 </div>
