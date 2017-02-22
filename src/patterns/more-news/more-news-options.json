@@ -2,7 +2,7 @@
     "options" : [
         {
             "option-heading": "Single",
-            "option-description": "",
+            "option-description": "Example of how an article should be set out.",
             "option-anchor": "single",
             "news-items": [
                 {
@@ -22,7 +22,7 @@
 
         {
             "option-heading": "Multiple",
-            "option-description": "",
+            "option-description": "Example of more than 10 articles on a page.",
             "option-anchor": "multiple",
             "news-items": [
                 {
