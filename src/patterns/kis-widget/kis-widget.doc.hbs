@@ -10,9 +10,16 @@ title: KIS widget
     <li>This pattern must be used only on undergraduate course pages.</li>
 </ul>
 
+<h3>Options available</h3>
+<ul>
+{{#kis-widget-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/kis-widget-options.options}}
+</ul>
+
 {{#kis-widget-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 {{> kis-widget}}
 <span class="label label-default">Code</span>

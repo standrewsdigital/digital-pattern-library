@@ -3,6 +3,7 @@
         {
             "option-heading": "Subject list",
             "option-description": "<p>List of undergraduate courses with a button that opens the KIS widget in a pop-up window.</p>",
+            "option-anchor": "subject-list",
             "columns": [
                 {
                     "courses": [
@@ -50,6 +51,7 @@
         {
             "option-heading": "Subject banner",
             "option-description": "<p>KIS widget displayed on its own.</p>",
+            "option-anchor": "subject-banner",
             "kis-banner": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small",
             "example": 2
         },
@@ -60,6 +62,7 @@
         {
             "option-heading": "Subject list and banner",
             "option-description": "<p>KIS widget below a list of undergraduate courses.</p>",
+            "option-anchor": "subject-list-banner",
             "columns": [
                 {
                     "courses": [
