@@ -103,7 +103,7 @@ input[type~=text].form-control, select.form-control {
     }
 
     ul li input[type=radio]:focus ~ .check, ul li input[type=checkbox]:focus ~ .check {
-        box-shadow: 0 0 0 3px $sta-blue;
+        box-shadow: 0 0 0 4px $sta-yellow;
     }
 }
 
