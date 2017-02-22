@@ -6,36 +6,105 @@ title: Form elements page
 
 {{> header}}
 
-{{> category-header prototype-content-example.category-header}}
+{{> category-header prototype-form-elements.category-header}}
 
-{{> navigation-bar prototype-content-example.navigation-bar}}
+{{> navigation-bar prototype-form-elements.navigation-bar}}
 
-{{> breadcrumbs prototype-content-example.breadcrumbs}}
+{{> breadcrumbs prototype-form-elements.breadcrumbs}}
 
 <div class="container">
     <div class="row">
         <div class="col-sm-8 sm">
-            <fieldset><legend>Example</legend>
-                <form>
+            <h2>Example forms</h2>
+            <p>Examples of some of the most commonly used forms on the University website.</p>
 
-                    {{> form-elements-input}}
+            <h3>Options</h3>
+            <ul>
+                <li><a href="#personal">Personal details</a></li>
+                <li><a href="#address">Address</a></li>
+                <li><a href="#signin">Sign in</a></li>
+            </ul>
+            
+            <hr />
 
-                    {{> form-elements-select-boxes}}
-
-                    {{> form-elements-checkboxes-stacked}}
-
-                    {{> form-elements-hint}}
-
-                    {{> form-elements-input-textarea}}
-
-                    {{> form-elements-conditional-content}}
-
-                    {{> form-elements-file-upload}}
+            <form>
+                <fieldset><legend id="personal">Personal details</legend>
+                    <div class="form-group">
+                        <label class="control-label" for="title">Title</label>
+                        <input class="form-control" id="title" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="firstName">First name</label>
+                        <input class="form-control" id="firstName" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="lastName">Last name</label>
+                        <input class="form-control" id="lastName" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="dob">Date of birth</label>
+                        <span class="help-block">Enter your d.o.b in the following format, 'DD/MM/YYYY'.</span>
+                        <input class="form-control" id="dob" type="text">
+                    </div>
 
                     <input class="btn btn-primary" type="submit" value="Submit">
+                    
+                </fieldset>
+            </form>
 
-                    </form>
-            </fieldset>
+            <hr />
+
+            <form>
+                <fieldset><legend id="address">Address</legend>
+
+                    <div class="form-group">
+                        <label class="control-label" for="address1">Address line 1</label>
+                        <input class="form-control" id="address1" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="address2">Address line 2 (optional)</label>
+                        <input class="form-control" id="address2" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="city">City</label>
+                        <input class="form-control" id="city" type="text">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="control-label" for="Postcode">Postcode</label>
+                        <span class="help-block">Enter your postcode without any spaces. For example, 'KY169AL'.</span>
+                        <input class="form-control" id="postcode" type="text">
+                    </div>
+
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                        
+                </fieldset>
+            </form>
+
+            <hr />
+
+            <form>
+                <fieldset><legend id="signin">Sign in</legend>
+
+                    <div class="form-group">
+                        <label class="control-label" for="username">Username or email address</label>
+                        <input class="form-control" id="username" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="password">Password</label>
+                        <input class="form-control" id="password" type="text">
+                    </div>
+
+                    <input class="btn btn-primary" type="submit" value="Sign in">
+                        
+                </fieldset>
+            </form>
+
+
         </div>
     </div>
 </div>
