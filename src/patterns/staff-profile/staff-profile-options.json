@@ -1,23 +1,24 @@
 {
     "options": [
         {
-            "option-heading": "Default profile",
+            "option-heading": "Staff profile - default",
             "option-description": "<p>The call-to-action link is also included in the profile heading.</p>",
-            "person-title":"The Principal and Vice-Chancellor",
-            "person-name":"Professor Sally Mapstone",
-            "bio":"Professor Sally Mapstone is the Principal and Vice-Chancellor. The Principal and Vice-Chancellor is the Chief Executive Officer (CEO) of the University of St Andrews. Since the mid 1800s it has been customary that one person holds two titles: the post of Principal representing the executive function and the post of Vice-Chancellor the ceremonial function.‌",
+            "option-anchor": "profile-default",
+            "person-title": "Vice-Principle (Digital)",
+            "person-name": "Dr Bob McBoberson",
+            "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius lacus et ligula fringilla, at malesuada massa blandit. Etiam nec amet.‌",
             "contact-info":{
-                "email": "example@st-andrews.ac.uk",
-                "phone": "+44 (0)1334 46 2544",
+                "email": "bob231@st-andrews.ac.uk",
+                "phone": "+44 (0)1334 46 xxxx",
                 "fax": "+44 (0)1334 46 xxxx"
             },
             "call-to-action": {
-                "link":"http://www.st-andrews.ac.uk",
-                "text":"Full biography"
+                "link": "#",
+                "text": "Full biography"
             },
             "image": {
-                "url": "docs/images/placeholders/staff-profile.jpg",
-                "alt": "Professor Sally Mapstone"
+                "url": "docs/images/placeholders/200x200.jpg",
+                "alt": "placeholder"
             }
         },
 
@@ -25,19 +26,20 @@
 
 
         {
-            "option-heading": "Profile without call-to-action",
+            "option-heading": "Staff profile without call-to-action",
             "option-description": "<p>Without a call-to-action, there is also no link on the heading.</p>",
-            "person-title":"The Principal and Vice-Chancellor",
-            "person-name":"Professor Sally Mapstone",
-            "bio":"Professor Sally Mapstone is the Principal and Vice-Chancellor. The Principal and Vice-Chancellor is the Chief Executive Officer (CEO) of the University of St Andrews. Since the mid 1800s it has been customary that one person holds two titles: the post of Principal representing the executive function and the post of Vice-Chancellor the ceremonial function.‌",
+            "option-anchor": "without-call",
+            "person-title": "Vice-Principle (Digital)",
+            "person-name": "Dr Bob McBoberson",
+            "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius lacus et ligula fringilla, at malesuada massa blandit. Etiam nec amet.‌",
             "contact-info":{
-                "email": "example@st-andrews.ac.uk",
-                "phone": "+44 (0)1334 46 2544",
+                "email": "bob231@st-andrews.ac.uk",
+                "phone": "+44 (0)1334 46 xxxx",
                 "fax": "+44 (0)1334 46 xxxx"
             },
             "image": {
-                "url": "docs/images/placeholders/staff-profile.jpg",
-                "alt": "Professor Sally Mapstone"
+                "url": "docs/images/placeholders/200x200.jpg",
+                "alt": "placeholder"
             }
         },
 
@@ -45,16 +47,12 @@
 
 
         {
-            "option-heading": "Profile without photo and link to biography",
-            "option-description": "",
-            "person-title":"The Principal and Vice-Chancellor",
-            "person-name":"Professor Sally Mapstone",
-            "bio":"Professor Sally Mapstone is the Principal and Vice-Chancellor. The Principal and Vice-Chancellor is the Chief Executive Officer (CEO) of the University of St Andrews. Since the mid 1800s it has been customary that one person holds two titles: the post of Principal representing the executive function and the post of Vice-Chancellor the ceremonial function.‌",
-            "contact-info":{
-                "email": "example@st-andrews.ac.uk",
-                "phone": "+44 (0)1334 46 2544",
-                "fax": "+44 (0)1334 46 xxxx"
-            }
+            "option-heading": "Staff profile - minimum",
+            "option-description": "<p>This is the minimum required content for a staff profile.</p>",
+            "option-anchor": "profile-minimum",
+            "person-title": "Vice-Principle (Digital)",
+            "person-name": "Dr Bob McBoberson",
+            "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius lacus et ligula fringilla, at malesuada massa blandit. Etiam nec amet.‌"
         }
     ]
  }
