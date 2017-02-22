@@ -1,0 +1,24 @@
+<!-- Begin pattern: more-news //-->
+
+<div class="container archive-page">
+    <div class="row">
+        <div class="col-xs-12">
+            {{#each news-items}}
+            <div class="col-md-9 col-sm-6">
+                <h3><a href="#">{{title}}</a></h3>
+                <p>{{description}} …</p>
+                <p>{{{date}}}</p>
+            </div>
+            <div class="col-md-3 col-sm-6 news-image hidden-xs">
+                <a href="#"><img width="360" height="240" src="{{image.url}}" alt="Placeholder alt tag"></a>
+            </div>
+            <hr>
+            {{/each}}
+            {{#if pagination}}
+                {{> pager-alignment}}
+            {{/if}}
+        </div>
+    </div>
+</div>
+
+<!-- End pattern: more-news //-->
