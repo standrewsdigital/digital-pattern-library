@@ -26,8 +26,8 @@
 
 
         {
-            "option-heading": "Staff profile - without call-to-action",
-            "option-description": "<p>Without a call-to-action, there is also no link on the heading.</p>",
+            "option-heading": "Staff profile - without link to biography",
+            "option-description": "<p>Without a link to a biography, there is also no link on the heading.</p>",
             "option-anchor": "without-call",
             "person-title": "Vice-Principle (Digital)",
             "person-name": "Dr Bob McBoberson",
