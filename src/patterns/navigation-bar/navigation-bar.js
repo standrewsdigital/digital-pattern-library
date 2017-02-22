@@ -10,5 +10,8 @@ $('.toggle-navigation').click( function() {
         $(this).find('i.chevron').removeClass('down');
     }
 
-    $(this).siblings('.navigation-bar-nav').slideToggle();
+    $(this).siblings('.navigation-bar-nav').slideToggle( function(){ 
+        $('.navigation-bar-nav').css("display", ""); 
+        $('.navigation-bar-nav').toggleClass('show-navigation'); 
+    }); 
 });
