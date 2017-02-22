@@ -5,7 +5,7 @@
             "option-description": "<p>Use the class <code>.alert-success</code> for a success alert box. This alert box indicates a successful or positive action.</p>",
             "option-anchor": "alert-success",
             "alert-class": "alert-success",
-            "alert-message": "<strong>Well done!</strong> You successfully read <a href='#' class='alert-link'>this alert message</a>."
+            "alert-message": "Thank you for submitting your details. If you have any questions please email <a href='mailto:#' class='alert-link'>itservicedesk@st-andrews.ac.uk</a>."
          },
 
 
@@ -13,10 +13,10 @@
 
          {
             "option-heading": "Info",
-            "option-description": "<p>Use the class <code>.alert-info</code> for an info alert box. This alert box indicates a neutral informative change or action.</p>",
+            "option-description": "<p>Use the class <code>alert-info</code> for an info alert box. This alert box indicates a neutral informative change or action.</p>",
             "option-anchor": "alert-info",
             "alert-class": "alert-info",
-            "alert-message": "<strong>Heads up!</strong> This alert needs <a href='#' class='alert-link'>your attention</a>, but it's not super important. Probably about a DEFCON 5."
+            "alert-message": "<strong>Heads up!</strong> We recommend that you apply soon for a place on our <a href='#' class='alert-link'>poetry course</a>."
           },
 
 
@@ -24,10 +24,10 @@
 
          {
             "option-heading": "Warning",
-            "option-description": "<p>Use the class <code>.alert-warning</code> for a warning alert box. This alert box indicates a warning that might need attention or carries a time limit, such as impending application deadlines.</p>",
+            "option-description": "<p>Use the class <code>alert-warning</code> for a warning alert box. This alert box indicates a warning that might need attention or carries a time limit, such as impending application deadlines.</p>",
             "option-anchor": "alert-warning",
             "alert-class": "alert-warning",
-            "alert-message": "<strong>Warning!</strong> Something is wrong with the left phalange. In fact, <a href='#' class='alert-link'>there is no phalange</a>."
+            "alert-message": "<strong>Warning!</strong> The deadline for submissions is the end of Semester 2. If you need help, please email <a href='mailt:#' class='alert-link'>itservicedesk@st-andrews.ac.uk</a>."
           },
 
 
@@ -35,10 +35,10 @@
 
          {
             "option-heading": "Danger",
-            "option-description": "<p>Use the class <code>.alert-danger</code> for a danger alert box. This alert box indicates a dangerous or potentially negative action such as closures or expired deadlines.</p>",
+            "option-description": "<p>Use the class <code>alert-danger</code> for a danger alert box. This alert box indicates a dangerous or potentially negative action such as closures or expired deadlines.</p>",
             "option-anchor": "alert-danger",
             "alert-class": "alert-danger",
-            "alert-message": "<strong>Danger!</strong> Will Robinson! Danger! <a href='#' class='alert-link'>Go, Will Robinson! Danger!</a>."
+            "alert-message": "<strong>Warning!</strong> The deadline for submissions has passed. If you need help please email <a href='mailto:#' class='alert-link'>itservicedesk@st-andrews.ac.uk</a>."
           }
 
 
