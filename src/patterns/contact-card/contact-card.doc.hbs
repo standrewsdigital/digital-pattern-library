@@ -2,17 +2,20 @@
 title: Contact card
 ---
 
-<p>The contact card pattern includes a name, title, contact details and image. Student card is also the same but without an image.</p>
+<p>The contact card pattern is used to display contact information for staff and students.</p>
 
+<p>This pattern must only be used on people pages in the main body of the page.</p>
 
+<h3>Options available</h3>
 <ul>
-	<li>Name should be linked to PURE profile for more info.</li>
-	<li>Image must be <code>127px</code> high by <code>111px</code> wide.</li>
+{{#contact-card-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/contact-card-options.options}}
 </ul>
 
 {{#contact-card-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 {{> contact-card}}
 <span class="label label-default">Code</span>
