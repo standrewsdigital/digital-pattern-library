@@ -11,7 +11,7 @@ $('.toggle-navigation').click( function() {
     }
 
     $(this).siblings('.navigation-bar-nav').slideToggle( function(){ 
-        $('.navigation-bar-nav').css("display", ""); 
-        $('.navigation-bar-nav').toggleClass('show-navigation'); 
+        $(this).css("display", ""); 
+        $(this).toggleClass('show-navigation'); 
     }); 
 });
