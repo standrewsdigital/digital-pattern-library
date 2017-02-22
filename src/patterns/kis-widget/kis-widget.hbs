@@ -10,8 +10,8 @@
                 <ul class="honours-degree-column">
                 {{#courses}}
                     <li class="honours-degree-item">
-                        <button type="button" class="btn btn-danger pull-right" data-container="body" data-toggle="popover" data-placement="top" data-content="<iframe id='unistats-widget-frame' class='kis-widget' title='Unistats KIS Widget' src='{{default kis-url "[KIS URL]"}}'></iframe>" data-original-title="" data-html="true" title="" data-container=".container.subject">KIS</button>
-                        <a href="#">{{default subject "[subject]"}}</a>
+                        <button type="button" class="btn btn-danger pull-right" data-container="body" data-toggle="popover" data-placement="top" data-content="<iframe id='unistats-widget-frame' class='kis-widget' title='Unistats KIS Widget' src='{{kis-url}}'></iframe>" data-original-title="" data-html="true" title="" data-container=".container.subject">KIS</button>
+                        <a href="#">{{subject}}</a>
                     </li>
                 {{/courses}}
                 </ul>
@@ -25,7 +25,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <iframe id="unistats-widget-frame" class="kis-widget" title="Unistats KIS Widget" src='{{default kis-banner "[KIS banner URL]"}}'>
+                <iframe id="unistats-widget-frame" class="kis-widget" title="Unistats KIS Widget" src='{{kis-banner}}'>
                 </iframe>
             </div>
         </div>
