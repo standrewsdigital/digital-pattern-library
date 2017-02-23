@@ -3,6 +3,11 @@
 /* BEGIN Pattern: navigation-bar */
 /*********************************/
 
+
+div.container ul.show-navigation { 
+  display: block; 
+} 
+ 
 .navigation-bar {
     border: 0;
     border-radius: 0;
