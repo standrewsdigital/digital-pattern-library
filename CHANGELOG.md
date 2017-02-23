@@ -9,7 +9,7 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ## v0.21.0
 
-Release date: Wednesday 22 February 2017
+Release date: Thursday 23 February 2017
 
 
 ### Added 
@@ -21,6 +21,10 @@ Release date: Wednesday 22 February 2017
 * Contact card pattern.
 * Staff profile pattern.
 * Fixed navigation disappearing.
+* Update the example form page.
+* Update alert pattern documentation.
+* Update gallery documentation.
+
 
 
 
