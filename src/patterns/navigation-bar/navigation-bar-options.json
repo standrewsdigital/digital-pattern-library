@@ -1,8 +1,8 @@
 {
     "options": [
         {
-            "option-heading": "Primary only navigation",
-            "option-description": "<p></p>",
+            "option-heading": "Primary navigation",
+            "option-description": "<p>The primary navigation menu is required on all homepages.</p>",
             "option-anchor": "primary-only",
             "primary":[
                 {
@@ -40,8 +40,8 @@
 
 
         {
-            "option-heading": "Primary and expanded secondary navigation",
-            "option-description": "<p>Secondary navigation is achieved by using the same pattern for primary, but adding a <code>secondary</code> class to the main element.</p>",
+            "option-heading": "Primary and secondary navigation",
+            "option-description": "<p>The secondary navigation bar is required on all webpages apart from a homepage.</p>",
             "option-anchor": "primary-secondary",
             "primary": [
                 {

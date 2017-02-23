@@ -1,4 +1,3 @@
-
 <!-- Begin pattern: navigation-bar //-->
 <nav class="navigation-bar" role="navigation">
 	<div class="container">
@@ -7,40 +6,40 @@
 		</div>
 		<ul class="navigation-bar-nav primary-nav">
 			{{#primary}}
-				<li>
-					{{#if selected}}
-						<span class="currentbranch0">
-					{{/if}}
-					<a href="#">{{title}}</a>
-					{{#if selected}}
-						</span>
-					{{/if}}
-				</li>
+			<li>
+			{{#if selected}}
+				<span class="currentbranch0">
+			{{/if}}
+				<a href="#">{{title}}</a>
+			{{#if selected}}
+				</span>
+			{{/if}}
+			</li>
 			{{/primary}}
 		</ul>
 	</div>
 </nav>
 
 {{#if secondary}}
-	<nav class="navigation-bar subnav" role="navigation">
-		<div class="container">
-			<div class="toggle-navigation secondary-toggle">
-				<a class="navigation-button">Section navigation <i class="chevron left"></i></a>
-			</div>
-			<ul class="navigation-bar-nav secondary-nav">
-				{{#secondary}}
-					<li>
-						{{#if selected}}
-							<span class="currentbranch1">
-						{{/if}}
-						<a href="#">{{title}}</a>
-						{{#if selected}}
-							</span>
-						{{/if}}
-					</li>
-				{{/secondary}}
-			</ul>
+<nav class="navigation-bar subnav" role="navigation">
+	<div class="container">
+		<div class="toggle-navigation secondary-toggle">
+			<a class="navigation-button">Section navigation <i class="chevron left"></i></a>
 		</div>
-	</nav>
+		<ul class="navigation-bar-nav secondary-nav">
+			{{#secondary}}
+			<li>
+				{{#if selected}}
+				<span class="currentbranch1">
+				{{/if}}
+				<a href="#">{{title}}</a>
+				{{#if selected}}
+				</span>
+				{{/if}}
+			</li>
+			{{/secondary}}
+		</ul>
+	</div>
+</nav>
 {{/if}}
 <!-- End pattern: navigation-bar //-->
