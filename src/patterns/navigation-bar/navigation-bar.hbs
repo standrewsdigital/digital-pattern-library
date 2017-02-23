@@ -1,7 +1,5 @@
 
 <!-- Begin pattern: navigation-bar //-->
-{{#if blue}} <div class="accent-blue-study"> {{/if}}
-
 <nav class="navigation-bar" role="navigation">
 	<div class="container">
 		<div class="toggle-navigation primary-toggle">
@@ -13,7 +11,7 @@
 					{{#if selected}}
 						<span class="currentbranch0">
 					{{/if}}
-					<a href="{{url}}">{{title}}</a>
+					<a href="#">{{title}}</a>
 					{{#if selected}}
 						</span>
 					{{/if}}
@@ -35,7 +33,7 @@
 						{{#if selected}}
 							<span class="currentbranch1">
 						{{/if}}
-						<a href="{{url}}">{{title}}</a>
+						<a href="#">{{title}}</a>
 						{{#if selected}}
 							</span>
 						{{/if}}
@@ -45,9 +43,4 @@
 		</div>
 	</nav>
 {{/if}}
-
-
-{{#if blue}} </div> {{/if}}
-<a name="content-begin"></a>
-
 <!-- End pattern: navigation-bar //-->

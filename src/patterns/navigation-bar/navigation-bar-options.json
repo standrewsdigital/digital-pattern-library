@@ -3,28 +3,36 @@
         {
             "option-heading": "Primary only navigation",
             "option-description": "<p></p>",
+            "option-anchor": "primary-only",
             "primary":[
-                {"title": "Undergraduate",
-                 "url": "#",
-                 "selected":true},
-                {"title": "Postgraduate",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Non-degree courses",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Study abroad",
-                 "url": "#",
-                 "selected":false},
-                {"title": "International",
-                 "url": "#",
-                 "selected":false},
-                 {"title": "Access and outreach",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Courses",
-                 "url": "#",
-                 "selected":false}
+                {
+                    "title": "Undergraduate",
+                    "selected": true
+                },
+                {
+                    "title": "Postgraduate",
+                    "selected": false
+                },
+                {
+                    "title": "Non-degree courses",
+                    "selected": false
+                },
+                {
+                    "title": "Study abroad",
+                    "selected": false
+                },
+                {
+                    "title": "International",
+                    "selected": false
+                },
+                {
+                    "title": "Access and outreach",
+                    "selected": false
+                },
+                {
+                    "title": "Courses",
+                    "selected": false
+                }
             ]
         },
 
@@ -34,138 +42,66 @@
         {
             "option-heading": "Primary and expanded secondary navigation",
             "option-description": "<p>Secondary navigation is achieved by using the same pattern for primary, but adding a <code>secondary</code> class to the main element.</p>",
-            "primary":[
-                {"title": "Undergraduate",
-                 "url": "#",
-                 "selected":true},
-                {"title": "Postgraduate",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Non-degree courses",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Study abroad",
-                 "url": "#",
-                 "selected":false},
-                {"title": "International",
-                 "url": "#",
-                 "selected":false},
-                 {"title": "Access and outreach",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Courses",
-                 "url": "#",
-                 "selected":false}
+            "option-anchor": "primary-secondary",
+            "primary": [
+                {
+                    "title": "Undergraduate",
+                    "selected": true
+                },
+                {
+                    "title": "Postgraduate",
+                    "selected": false
+                },
+                {
+                    "title": "Non-degree courses",
+                    "selected": false
+                },
+                {
+                    "title": "Study abroad",
+                    "selected": false
+                },
+                {
+                    "title": "International",
+                    "selected": false
+                },
+                {
+                    "title": "Access and outreach",
+                    "selected": false
+                },
+                {
+                    "title": "Courses",
+                    "selected": false
+                }
             ],
-            "secondary":[
-                {"title": "Study options",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Why St Andrews?",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Fees and funding",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Accommodation",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Your future",
-                 "url": "#",
-                 "selected":false},
-                 {"title": "Meet us",
-                 "url": "#",
-                 "selected":false},
-                {"title": "How to apply",
-                 "url": "#",
-                 "selected":false}
-            ]
-        },
-
-
-
-
-        {
-            "option-heading": "Primary only navigation (study blue)",
-            "option-description": "<p></p>",
-            "blue": true,
-            "primary":[
-                {"title": "Undergraduate",
-                 "url": "#",
-                 "selected":true},
-                {"title": "Postgraduate",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Non-degree courses",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Study abroad",
-                 "url": "#",
-                 "selected":false},
-                {"title": "International",
-                 "url": "#",
-                 "selected":false},
-                 {"title": "Access and outreach",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Courses",
-                 "url": "#",
-                 "selected":false}
-            ]
-        },
-
-
-
-
-        {
-            "option-heading": "Primary and expanded secondary navigation (study blue)",
-            "option-description": "<p>Secondary navigation is achieved by using the same pattern for primary, but adding a <code>secondary</code> class to the main element.</p>",
-            "blue": true,
-            "primary":[
-                {"title": "Undergraduate",
-                 "url": "#",
-                 "selected":true},
-                {"title": "Postgraduate",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Non-degree courses",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Study abroad",
-                 "url": "#",
-                 "selected":false},
-                {"title": "International",
-                 "url": "#",
-                 "selected":false},
-                 {"title": "Access and outreach",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Courses",
-                 "url": "#",
-                 "selected":false}
-            ],
-            "secondary":[
-                {"title": "Study options",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Why St Andrews?",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Fees and funding",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Accommodation",
-                 "url": "#",
-                 "selected":false},
-                {"title": "Your future",
-                 "url": "#",
-                 "selected":false},
-                 {"title": "Meet us",
-                 "url": "#",
-                 "selected":false},
-                {"title": "How to apply",
-                 "url": "#",
-                 "selected":false}
+            "secondary": [
+                {
+                    "title": "Study options",
+                    "selected": false
+                },
+                {
+                    "title": "Why St Andrews?",
+                    "selected": false
+                },
+                {
+                    "title": "Fees and funding",
+                    "selected": false
+                },
+                {
+                    "title": "Accommodation",
+                    "selected": false
+                },
+                {
+                    "title": "Your future",
+                    "selected": false
+                },
+                {
+                    "title": "Meet us",
+                    "selected": false
+                },
+                {
+                    "title": "How to apply",
+                    "selected": false
+                }
             ]
         }
     ]

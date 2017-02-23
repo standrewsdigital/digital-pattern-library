@@ -6,9 +6,16 @@ title: Navigation bar
 
 <p>Each menu should contains 5 to 8 links.</p>
 
+<h3>Options available</h3>
+<ul>
+{{#navigation-bar-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/navigation-bar-options.options}}
+</ul>
+
 {{#navigation-bar-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 </div>{{> navigation-bar}}<div class="container">
 <span class="label label-default">Code</span>
