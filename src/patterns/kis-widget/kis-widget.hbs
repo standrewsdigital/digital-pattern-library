@@ -10,7 +10,8 @@
                 <ul class="honours-degree-column">
                 {{#courses}}
                     <li class="honours-degree-item">
-                        <button type="button" class="btn btn-danger pull-right" data-container="body" data-toggle="popover" data-placement="top" data-content="<iframe id='unistats-widget-frame' class='kis-widget' title='Unistats KIS Widget' src='{{kis-url}}'></iframe>" data-original-title="" data-html="true" title="" data-container=".container.subject">KIS</button>
+                        <button type="button" class="btn btn-danger pull-right hidden-xs" data-container="body" data-toggle="popover" data-placement="top" data-content="<iframe id='unistats-widget-frame' class='kis-widget' title='Unistats KIS Widget' src='https://widget.unistats.ac.uk/Widget/10007803/{{kis-url}}/horizontal/small'></iframe>" data-original-title="" data-html="true" title="" data-container=".container.subject">KIS</button>
+                        <button type="button" class="btn btn-danger pull-right visible-xs" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<iframe id='unistats-widget-frame' class='kis-widget' title='Unistats KIS Widget' src='https://widget.unistats.ac.uk/Widget/10007803/{{kis-url}}/vertical/small'></iframe>" data-original-title="" data-html="true" title="" data-container=".container.subject">KIS</button>
                         <a href="#">{{subject}}</a>
                     </li>
                 {{/courses}}
@@ -24,8 +25,12 @@
 <div class="kis-widget-red course">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <iframe id="unistats-widget-frame" class="kis-widget" title="Unistats KIS Widget" src='{{kis-banner}}'>
+            <div class="col-md-8 col-md-offset-2 hidden-xs">
+                <iframe id="unistats-widget-frame" class="kis-widget" title="Unistats KIS Widget" src='https://widget.unistats.ac.uk/Widget/10007803/{{kis-banner}}/horizontal/small'>
+                </iframe>
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 visible-xs">
+                <iframe id="unistats-widget-frame" class="kis-widget" title="Unistats KIS Widget" src='https://widget.unistats.ac.uk/Widget/10007803/{{kis-banner}}/vertical/small'>
                 </iframe>
             </div>
         </div>

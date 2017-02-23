@@ -8,12 +8,7 @@
     height: 160px;
     margin-top: 15px;
     overflow: hidden;
-    width: 700px;
-}
-
-.subject.course {
-    margin-top:    40px;
-    margin-bottom: 40px;
+    width: 100%;
 }
 
 .subject-popover .popover {
@@ -42,6 +37,14 @@ div.course.kis-widget-red {
 }
 
 @media screen and (max-width: 600px) {
+    .kis-widget {
+        height: 500px;
+    }
+
+    .subject-popover .popover-content {
+        padding: 9px 7px;
+    }
+
     .honours-degree-item {
         margin-right: 20px;
     }

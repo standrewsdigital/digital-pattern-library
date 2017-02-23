@@ -2,18 +2,18 @@
     "options": [
         {
             "option-heading": "Subject list",
-            "option-description": "<p>List of undergraduate courses with a button that opens the KIS widget in a pop-up window.</p>",
+            "option-description": "<ul><li>This lists undergraduate courses with a button that opens the KIS widget in a pop-up window.</li><li>This must be used on subjects offering Joint Honours degrees only.</li></ul>",
             "option-anchor": "subject-list",
             "columns": [
                 {
                     "courses": [
                         {
                             "subject": "Arabic",
-                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFARBJENG/horizontal/small"
+                            "kis-url": "UAHFARBJENG"
                         },
                         {
                             "subject": "Art History",
-                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFAHIJENG/horizontal/small"
+                            "kis-url": "UAHFAHIJENG"
                         }
                     ]
                 },
@@ -21,11 +21,11 @@
                     "courses": [
                         {
                             "subject": "Biblical Studies",
-                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFBLSJENG/horizontal/small"
+                            "kis-url": "UAHFBLSJENG"
                         },
                         {
                             "subject": "Classical Studies",
-                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFCSSJENG/horizontal/small"
+                            "kis-url": "UAHFCSSJENG"
                         }
                     ]
                 },
@@ -33,11 +33,11 @@
                     "courses": [
                         {
                             "subject": "Classics",
-                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFCLSJENG/horizontal/small"
+                            "kis-url": "UAHFCLSJENG"
                         },
                         {
                             "subject": "Comparative Literature",
-                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFCLIJENG/horizontal/small"
+                            "kis-url": "UAHFCLIJENG"
                         }
                     ]
                 }
@@ -50,9 +50,9 @@
 
         {
             "option-heading": "Subject banner",
-            "option-description": "<p>KIS widget displayed on its own.</p>",
+            "option-description": "<ul><li>This shows the KIS widget in a single full width banner.</li><li>This must be used on subjects offering a single Honours degree only.</li></ul>",
             "option-anchor": "subject-banner",
-            "kis-banner": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small",
+            "kis-banner": "UAHFENGSENG",
             "example": 2
         },
 
@@ -61,18 +61,18 @@
 
         {
             "option-heading": "Subject list and banner",
-            "option-description": "<p>KIS widget below a list of undergraduate courses.</p>",
+            "option-description": "<ul><li>This combines the subject list and single subject banner.</li><li>This must be used on subjects offering both a single Honours degree and Joint Honours degrees.</li></ul>",
             "option-anchor": "subject-list-banner",
             "columns": [
                 {
                     "courses": [
                         {
                             "subject": "Arabic",
-                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFARBJENG/horizontal/small"
+                            "kis-url": "UAHFARBJENG"
                         },
                         {
                             "subject": "Art History",
-                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFAHIJENG/horizontal/small"
+                            "kis-url": "UAHFAHIJENG"
                         }
                     ]
                 },
@@ -80,11 +80,11 @@
                     "courses": [
                         {
                             "subject": "Biblical Studies",
-                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFBLSJENG/horizontal/small"
+                            "kis-url": "UAHFBLSJENG"
                         },
                         {
                             "subject": "Classical Studies",
-                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFCSSJENG/horizontal/small"
+                            "kis-url": "UAHFCSSJENG"
                         }
                     ]
                 },
@@ -92,16 +92,16 @@
                     "courses": [
                         {
                             "subject": "Classics",
-                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFCLSJENG/horizontal/small"
+                            "kis-url": "UAHFCLSJENG"
                         },
                         {
                             "subject": "Comparative Literature",
-                            "kis-url": "https://widget.unistats.ac.uk/Widget/10007803/UAHFCLIJENG/horizontal/small"
+                            "kis-url": "UAHFCLIJENG"
                         }
                     ]
                 }
             ],
-            "kis-banner": "https://widget.unistats.ac.uk/Widget/10007803/UAHFENGSENG/horizontal/small",
+            "kis-banner": "UAHFENGSENG",
             "example": 3
         }
     ]
