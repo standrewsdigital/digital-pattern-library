@@ -204,6 +204,24 @@ title: Form elements
 
 <hr>
 
+<h4>Input addons</h4>
+
+<p>Addons can be used when the input field is always going to be prefixed with a particular value such as a &pound;</p>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example col-sm-4">
+		{{> form-elements-input-addon}}
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-input-addon}}</code></pre>
+</div>
+
+<hr>
+
 <h4>Textarea</h4>
 
 <p>Allows for multiple lines of text.</p>
@@ -227,7 +245,8 @@ title: Form elements
 <ul>
 	<li>All form fields must be given labels.</li>
 	<li>Don’t hide labels, unless the surrounding context makes them unnecessary.</li>
-	<li>Labels must be aligned above their fields.</li>
+	<li>Labels must be aligned above input fields.</li>
+	<li>Labels must be positioned to the right of checkboxes and radio buttons.</li>
 	<li>Label text should be short, direct and in sentence case.</li>
 	<li>Avoid colons at the end of labels.</li>
 	<li>Labels must be associated with form fields using the <code>for</code> attribute.</li>
@@ -269,6 +288,7 @@ title: Form elements
 
 <ul>
 	<li>Use these to let users choose a single option from a list.</li>
+	<li>Use a select-box if you need to have more than 10 radio buttons.</li>
 	<li>Radio buttons with large hit areas are easier to select with a mouse or touch devices.</li>
 	<li>Only pre-select options if there’s a strong, user-centred reason to.</li>
 	<li>The label must be clickable by wrapping the label element around the text and including a for attribute that includes the same name as the element id.</li>
