@@ -7,6 +7,26 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.21.0
+
+Release date: Thursday 23 February 2017
+
+
+### Added 
+
+* More-news pattern.
+
+### Changed
+
+* Contact card pattern.
+* Staff profile pattern.
+* Fixed navigation disappearing.
+* Update the example form page.
+* Update alert pattern documentation.
+* Update gallery documentation.
+
+
+---
 
 ## v0.20.0
 
