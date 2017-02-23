@@ -1,28 +1,24 @@
 {
     "items": [
-
-        { "name" : "About",
-            "url" : "/about.html"
+        {
+            "name": "About",
+            "url": "/about.html"
         },
-
-        { "name" : "Documentation",
-            "url" : "#",
-            "items" : [
-                { "name" : "Using the pattern library",
-                  "url" : "using.html"
-                },
-                { "name" : "Colours",
-                  "url" : "colours.html"
-                }
-            ]
+        {
+            "name": "Using the pattern library",
+            "url": "/using.html"
         },
-
-        { "name" : "Patterns",
-            "url" : "/patterns.html"
+        {
+            "name": "Colours",
+            "url": "/colours.html"
         },
-
-        { "name" : "Examples",
-            "url" : "/examples.html"
+        {
+            "name": "Patterns",
+            "url": "/patterns.html"
+        },
+        {
+            "name": "Examples",
+            "url": "/examples.html"
         }
     ]
 }
