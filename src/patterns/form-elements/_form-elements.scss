@@ -32,7 +32,11 @@ input[type~=text].form-control, select.form-control {
 @media (min-width:768px) {
 	.form-control {
 		width: 50%;
-	}
+    }
+
+    .input-group {
+        width: 50%;
+    }
 }
 
 .radio-button, .checkbox-box {
