@@ -2,11 +2,24 @@
 title: Navbox
 ---
 
-<p>The Navbox pattern is used to present feature navigation with an optional background image and description.</p>
+<p>The navbox pattern is used to present featured navigation items with an optional background image and description.</p>
+
+<ul>
+    <li>Must be used within the main body or aside.</li>
+    <li>Must only link to another webpage or web application.</li>
+    <li>Must not have a title of more than two lines of text.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#navbox-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/navbox-options.options}}
+</ul>
 
 {{#navbox-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 <div style="width:30%;">
 {{> navbox}}
