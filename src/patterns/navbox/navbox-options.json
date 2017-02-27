@@ -72,7 +72,7 @@
 
         {
             "option-heading": "Navbox with image and paragraph",
-            "option-description": "",
+            "option-description": "<p>The paragraph must have less than 300 characters.</p>",
             "option-anchor": "image-text",
             "box-size": [
                 {
@@ -92,7 +92,7 @@
 
         {
             "option-heading": "Navbox without image and paragraph",
-            "option-description": "",
+            "option-description": "<p>The paragraph must have less than 300 characters.</p>",
             "option-anchor": "no-image-text",
             "box-size": [
                 {
