@@ -7,15 +7,15 @@
     position: relative;
 }
 
-.navbox-image img {
-	height: auto !important;
-    width: 100% !important;
-}
+// .navbox-image img {
+// 	height: auto !important;
+//     width: 100% !important;
+// }
 
 .navbox-title {
 	background:        $sta-blue-T;
 	background-repeat: repeat;
-	color: white !important;
+	// color: white !important;
 	font-size:   24px;
     font-weight: bold;
 	padding: 15px 15px;
@@ -23,35 +23,35 @@
     bottom: 0;
 	text-shadow: 1px 1px 1px rgb(68, 68, 68);
     width: 100%;
-	@include -dpl-transition();
+	// @include -dpl-transition();
 }
 
 .navbox-title:before {
 	@extend i.chevron;
 	content: '';
 	float: right;
-	height: 35px !important;
-	top: 0 !important;
-    width: 30px !important;
+	height: 35px;
+	top: 0;
+    width: 30px;
 }
 
 .navbox-title a {
-	color: white !important;
+	color: white;
 	margin-right: 4px;
     text-decoration: none;
 }
 
-.navbox:hover{
-	cursor:pointer;
+.navbox:hover {
+	cursor: pointer;
 }
 
 .navbox-title:hover, .navbox:hover .navbox-title{
 	background: $sta-blue-T-hover;
 }
 
-.navbox-title p {
-	margin-bottom: 0;
-}
+// .navbox-title p {
+// 	margin-bottom: 0;
+// }
 
 .navbox-title acronym {
 	display: none;
@@ -86,7 +86,7 @@
         position: relative;
     }
 
-    /* ... and switch to non-transprent background colour. */
+    /* ... and switch to non-transparent background colour. */
 
     .navbox-title {
         background: $sta-blue;
@@ -125,4 +125,4 @@
 
 /*********************************/
 /* END Pattern: navbox           */
-/*********************************/
+/********************************/
