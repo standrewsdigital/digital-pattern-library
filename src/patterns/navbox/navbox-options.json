@@ -11,7 +11,8 @@
                         "alt": "Description"
                     },
                     "title": "Small (&frac13;)",
-                    "column": "col-sm-4"
+                    "column": "col-sm-4",
+                    "row": true
                 },
                 {
                     "image": {
@@ -19,7 +20,8 @@
                         "alt": "Description"
                     },
                     "title": "Medium (&frac12;)",
-                    "column": "col-sm-6"
+                    "column": "col-sm-6",
+                    "row": true
                 },
                 {
                     "image": {
@@ -27,7 +29,8 @@
                         "alt": "Description"
                     },
                     "title": "Large (&frac23;)",
-                    "column": "col-sm-8"
+                    "column": "col-sm-8",
+                    "row": true
                 }
             ]
 
@@ -47,7 +50,8 @@
                         "alt": "Description"
                     },
                     "title": "Study",
-                    "column": "col-sm-4"
+                    "column": "col-sm-4",
+                    "row": true
                 }
             ]
         },
@@ -62,7 +66,8 @@
             "box-size": [
                 {
                     "title": "Study",
-                    "column": "col-sm-4"
+                    "column": "col-sm-4",
+                    "row": true
                 }
             ]
         },
@@ -82,7 +87,8 @@
                     },
                     "title": "Study",
                     "column": "col-sm-4",
-                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    "row": true
                 }
             ]
         },
@@ -98,7 +104,8 @@
                 {
                     "title": "Study",
                     "column": "col-sm-4",
-                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    "row": true
                 }
             ]
         }

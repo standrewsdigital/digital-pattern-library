@@ -1,6 +1,7 @@
 <!-- Begin pattern: navbox //-->
+{{#if grid-row}}<div class="row">{{/if}}
 {{#each box-size}}
-<div class="row">
+{{#if row}}<div class="row">{{/if}}
     <div class="{{column}}">
         <div class="navbox {{#if visible}} {{visible}} {{/if}}">
             {{#if image}}
@@ -16,24 +17,7 @@
         <p>{{text}}</p>
         {{/if}}
     </div>
-</div>
+{{#if row}}</div>{{/if}}
 {{/each}}
-{{!-- {{else}} --}}
-{{!-- <div class="row">
-    <div class="col-sm-4">
-        <div class="navbox {{#if visible}} {{visible}} {{/if}}">
-            {{#if image}}
-            <div class="navbox-image">
-                <img src="{{asset image.url}}" alt="{{image.alt}}">
-            </div>
-            {{/if}}
-            <div class="navbox-title">
-                <a href="#">{{title}}</a>
-            </div>
-        </div>
-        {{#if text}}
-        <p>{{text}}</p>
-        {{/if}}
-    </div>
-</div> --}}
+{{#if grid-row}}</div>{{/if}}
 <!-- End pattern: navbox //-->
