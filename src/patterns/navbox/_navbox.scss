@@ -81,9 +81,14 @@
 @media (max-width: 991px) and (min-width: 768px) {
 
 	/* Make the title show below instead of on top of the image... */
+    .navbox {
+        margin-bottom: 90px;
+    }
+
     .navbox-title {
         font-size: 21px;
-        position: relative;
+        position: absolute;
+        bottom: -59px;
     }
 
     /* ... and switch to non-transparent background colour. */
