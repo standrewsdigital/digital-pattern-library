@@ -110,12 +110,13 @@
 @media (max-width: 767px) {
 
     .navbox {
-		margin-bottom: 2em;
+		margin-bottom: 1.5em;
 	}
 
 	.navbox-image {
-        max-height: 65px;
+        max-height: 100%;
 		overflow: hidden;
+        position: absolute;
   	}
 
   	.navbox-image img {
@@ -123,7 +124,8 @@
   	}
 
   	.navbox-title {
-		top: 0;
+		position: relative;
+        top: 0;
 	}
 
 }
