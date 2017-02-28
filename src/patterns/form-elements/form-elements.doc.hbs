@@ -72,7 +72,7 @@ title: Form elements
 
 <ul>
 	<li>Reveal an additional input field, depending on the value selected.</li>
-	<li>May only be used alongside radio buttons.</li>
+	<li>Must only be used with <a href="#radio-buttons">radio buttons</a> or <a href="#select-boxes">select boxes</a>.</li>
 	<li>A left border is applied to emphasise this newly revealed information.</li>
 </ul>
 
@@ -84,7 +84,7 @@ title: Form elements
 
 	<p>Use the following JavaScript code to show/hide the conditional content. Place this code at the bottom of the page i.e. after the link to <code>core.js</code>:</p>
 <pre><code class="pattern-source js">$(document).ready(function() {
-    $('input.input-name').change(
+    $('.input-name').change(
         function() {
             var val = $(this).val();
 
@@ -96,24 +96,44 @@ title: Form elements
             }
         }
     );
-});</code></pre>
+});</code></pre> 
 
+ 
 <ul>
-	<li>Replace <code>input-name</code> with the class of the input you wish to affect.</li>
+	<li>Replace <code>.input-name</code> with the class of the radio buttons or select box that you wish to affect.</li>
 	<li>Replace <code>option-value</code> with the option you wish to show conditional content on.<br />(In the below example, this value is set to 'other').</li>
 </ul>
+
+<h4>Radio buttons</h4>
 
 <div class="container">
 	<span class="label label-default">Example</span>
 	<div class="pattern-example">
-		{{> form-elements-conditional-content}}
+		{{> form-elements-conditional-content-radio}}
 	</div>
 </div>
 
 <div class="container">
 	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-elements-conditional-content}}</code></pre>
+	<pre><code class="pattern-source html">{{> form-elements-conditional-content-radio}}</code></pre>
 </div>
+
+<hr />
+
+<h4>Select boxes</h4>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-conditional-content-select}}
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-conditional-content-select}}</code></pre>
+</div>
+
 
 <hr>
 

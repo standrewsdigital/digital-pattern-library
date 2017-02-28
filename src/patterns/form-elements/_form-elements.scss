@@ -4,13 +4,20 @@
 /*********************************/
 
 // By default, conditional content is hidden
-div.conditional-content {
+div.conditional-content-select, div.conditional-content-radio, {
     border-color:      rgb(75, 76, 76);
     border-left-style: solid;
     border-left-width: 5px;
     display: none;
     margin-top: 10px;
     padding: 15px 15px 0 15px;
+}
+div.conditional-content-radio {
+    margin-top: 0px !important;
+}
+
+.select-box p {
+    margin-bottom: 5px;
 }
 
 
