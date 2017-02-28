@@ -41,7 +41,7 @@
 
         {
             "option-heading": "Primary and secondary navigation",
-            "option-description": "<p>The secondary navigation bar is required on all webpages apart from a homepage and must use either the secondary or a tertiary palette colour.</p>",
+            "option-description": "<p>The secondary navigation bar is required on all webpages apart from a homepage and must use the secondary palette colour.</p>",
             "option-anchor": "primary-secondary",
             "primary": [
                 {
