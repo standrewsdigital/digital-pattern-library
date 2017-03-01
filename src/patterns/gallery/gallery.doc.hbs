@@ -2,13 +2,19 @@
 title: Gallery
 ---
 
-<div class="alert alert-info">The gallery pattern is backwards-compatible with previous implementations used on the University of St Andrews website &ndash; see old gallery option below, which used the jQuery theatre plugin. This support will be removed at some point, so please do not use the old gallery markup.</div>
+<div class="alert alert-info">This pattern is backwards-compatible with previous implementations of the gallery pattern &ndash; see the old gallery option below, which used the jQuery theatre plugin. Please do not use the old gallery markup because support for this will be removed at some point.</div>
 
 <p>The gallery pattern demonstrates a method of displaying a large number of images on a page and makes use of the <a href="http://lokeshdhakar.com/projects/lightbox2">Lightbox JavaScript library</a> to view the images in an immersive experience.</p>
 
+<p>Rules for the gallery:</p>
 <ul>
-  <li>Thumbnail images should be <code>360px x 240px</code>.</li>
-  <li>Must only be used within the main content of a page.</li>
+  <li>Gallery images must be in landscape orientation.</li>
+  <li>Gallery image sizes must be 1280 by 960 pixels. This resolution must never be exceeded.</li>
+  <li>All images must have an aspect ratio of 4:3. This is the typically aspect ratio for photographs.</li>
+  <li>If an image's resolution is lower than 1280 by 960 pixels, then the image must have an aspect ratio of 4:3 at it's highest native resolution.</li>
+  <li>Thumbnail images are not automatically generated from the full image and must be created separately.</li>
+  <li>Thumbnail images must be 360 by 240 pixels.</li>
+  <li>A gallery must only be used within the main body of a page.</li>
   <li>A page can contain multiple galleries.</li>
   <li>Use <code>data-lightbox="[gallery name]"</code> to group images together for each gallery.</li>
 </ul>

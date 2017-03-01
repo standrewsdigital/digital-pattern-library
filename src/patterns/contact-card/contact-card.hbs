@@ -1,33 +1,37 @@
 
 <!-- Begin pattern: contact-card //-->
 
-<div class="container">
     <div class="row">
-        <div class="col-xs-4">
+        {{#each cards}}
+        <div class="col-xs-12 col-sm-6 col-lg-4">
             <article id="{{id}}" class="contact-card {{contract-type}}">
                 <h3>
-                    <a href="https://www.st-andrews.ac.uk/profile/{{id}}">{{name}}</a>
+                    {{#if staff-image}}
+                        <a href="#">{{name}}</a>
+                    {{else}}
+                        {{name}}
+                    {{/if}}
                 </h3>
-                <h4>{{title}}</h4>
                 {{#if staff-image}}
-                    <img src="http://portal.st-andrews.ac.uk/staff-photos/{{id}}/small" alt="{{name}}" title="{{name}}" class="profilePhoto">
+                    <img src="../../assets/core/images/contact-card-default.gif" alt="{{name}}" title="{{name}}" class="profilePhoto">
                 {{/if}}
+                <h4>{{title}}</h4>
                 <div class="contact">
                     <h4>Contact</h4>
                     <ul class="contact-card-links">
                         {{#if contact-info.phone}}
                             <li>
-                                <a href="tel:{{contact-info.phone}}" data-rel="external">{{contact-info.phone}}</a>
+                                <a href="tel:#" data-rel="external">{{contact-info.phone}}</a>
                             </li>
                         {{/if}}
                         <li>
-                            <a href="mailto:{{contact-info.email}}">{{contact-info.email}}</a>
+                            <a href="mailto:#">{{contact-info.email}}</a>
                         </li>
                     </ul>
                 </div>
             </article>
         </div>
+        {{/each}}
     </div>
-</div>
 
 <!-- End pattern: contact-card //-->

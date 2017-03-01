@@ -2,19 +2,24 @@
 title: KIS widget
 ---
 
-<p>KIS stands for Key Information Set. The KIS is an official overview of comparable information on higher education courses for prospective students. See the <a href="http://unistats.direct.gov.uk/">Unistats website</a> for more information.</p>
+<p>The Key Information Set, or KIS, comprises the items of information that  students have said they find most useful when making choices about which course to study. See the <a href="https://unistats.direct.gov.uk/find-out-more/key-information-set">Unistats</a> website for more information.</p>
 
-<p>The KIS widget is a legal requirement for all of the undergraduate course pages. </p>
+<p>The KIS widget is a legal requirement for all undergraduate course pages and must only be used on these pages.</p>
 
+<h3>Options available</h3>
 <ul>
-   <li>This pattern is only for use on the undergraduate course pages.</li>
+{{#kis-widget-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/kis-widget-options.options}}
 </ul>
 
 {{#kis-widget-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
 {{> kis-widget}}
+<div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> kis-widget}}</code></pre>
 {{/kis-widget-options.options}}

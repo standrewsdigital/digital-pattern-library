@@ -8,26 +8,26 @@
     height: 160px;
     margin-top: 15px;
     overflow: hidden;
-    width: 700px;
-}
-
-.subject.course {
-    margin-bottom: 40px;
-    margin-top: 40px;
+    width: 100%;
 }
 
 .subject-popover .popover {
     max-width: 645px;
 }
 
+.honours-degree-column {
+    margin-bottom: 0;
+}
+
 .honours-degree-item {
-    margin-right: 60px;
+    margin-right: 30px;
     padding-bottom: 4px;
 }
 
 .honours-degree-item button {
     border-radius: 4px;
     font-size: 14px;
+    margin-top: 4px;
     padding: 0 6px;
 }
 
@@ -37,6 +37,14 @@ div.course.kis-widget-red {
 }
 
 @media screen and (max-width: 600px) {
+    .kis-widget {
+        height: 500px;
+    }
+
+    .subject-popover .popover-content {
+        padding: 9px 7px;
+    }
+
     .honours-degree-item {
         margin-right: 20px;
     }

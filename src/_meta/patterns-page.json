@@ -111,6 +111,10 @@
                   "img": "assets/docs/images/patterns/intro.jpg",
                   "url": "patterns/intro/index.html"
                 },
+                { "name": "More news",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/more-news/index.html"
+                },
                 { "name": "News updates",
                   "img": "assets/docs/images/patterns/news-updates.jpg",
                   "url": "patterns/news-updates/index.html"
