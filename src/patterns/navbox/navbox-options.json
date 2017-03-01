@@ -1,15 +1,59 @@
 {
     "options": [
         {
+            "option-heading": "Navbox sizes",
+            "option-description": "",
+            "option-anchor": "sizes",
+            "box-size": [
+                {
+                    "image": {
+                        "url": "http://placehold.it/360x240",
+                        "alt": "Description"
+                    },
+                    "title": "Small (&frac13;)",
+                    "column": "col-sm-4",
+                    "row": true
+                },
+                {
+                    "image": {
+                        "url": "http://placehold.it/555x240",
+                        "alt": "Description"
+                    },
+                    "title": "Medium (&frac12;)",
+                    "column": "col-sm-6",
+                    "row": true
+                },
+                {
+                    "image": {
+                        "url": "http://placehold.it/750x240",
+                        "alt": "Description"
+                    },
+                    "title": "Large (&frac23;)",
+                    "column": "col-sm-8",
+                    "row": true
+                }
+            ]
+
+        },
+
+
+
+
+        {
             "option-heading": "Navbox with image",
-            "option-description": "<p></p>",
-            "image": {
-                "url": "docs/images/placeholders/360x240.jpg",
-                "alt": "Description"
-            },
-            "title": "Study",
-            "url": "/study"
-           
+            "option-description": "",
+            "option-anchor": "image",
+            "box-size": [
+                {
+                    "image": {
+                        "url": "http://placehold.it/360x240",
+                        "alt": "Description"
+                    },
+                    "title": "Study",
+                    "column": "col-sm-4",
+                    "row": true
+                }
+            ]
         },
 
 
@@ -17,11 +61,15 @@
 
         {
             "option-heading": "Navbox without image",
-            "option-description": "<p></p>",
-            "title": "Study",
-            "url": "/study",
-            "text": ""
-           
+            "option-description": "",
+            "option-anchor": "no-image",
+            "box-size": [
+                {
+                    "title": "Study",
+                    "column": "col-sm-4",
+                    "row": true
+                }
+            ]
         },
 
 
@@ -29,15 +77,20 @@
 
         {
             "option-heading": "Navbox with image and paragraph",
-            "option-description": "<p></p>",
-            "image": {
-                "url": "docs/images/placeholders/360x240.jpg",
-                "alt": "Description"
-            },
-            "title": "Study",
-            "url": "/study",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-           
+            "option-description": "<p>The paragraph must not have more than 300 characters.</p>",
+            "option-anchor": "image-text",
+            "box-size": [
+                {
+                    "image": {
+                        "url": "http://placehold.it/360x240",
+                        "alt": "Description"
+                    },
+                    "title": "Study",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    "row": true
+                }
+            ]
         },
 
 
@@ -45,11 +98,16 @@
 
         {
             "option-heading": "Navbox without image and paragraph",
-            "option-description": "<p></p>",
-            "title": "Study",
-            "url": "/study",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-           
-        }        
+            "option-description": "<p>The paragraph must not have more than 300 characters.</p>",
+            "option-anchor": "no-image-text",
+            "box-size": [
+                {
+                    "title": "Study",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    "row": true
+                }
+            ]
+        }
     ]
- }
+}

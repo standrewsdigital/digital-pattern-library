@@ -1,37 +1,5 @@
 <!-- Begin pattern: navbox-grid //-->
 
-<div class="container">
-        {{#if items}}
-            <div class="row">
-            {{#items}}
-                <div class="col-sm-4">
-                    {{>navbox}}
-                </div>
-            {{/items}}
-            </div>
-        {{else}}
-            {{#if items_masonry}}
-                {{#items_masonry}}
-                    {{#if open}}<div class="row">{{/if}}
-                        <div class="col-sm-{{column_size}}">
-                            {{>navbox}}
-                        </div>
-                    {{#if close}}</div>{{/if}}
-                {{/items_masonry}}
-            {{else}}
-            <div class="row">
-                <div class="col-sm-4">
-                    {{>navbox}}
-                </div>
-                <div class="col-sm-4">
-                    {{>navbox}}
-                </div>
-                <div class="col-sm-4">
-                    {{>navbox}}
-                </div>
-            </div>
-            {{/if}}
-        {{/if}}
-</div>
+{{> navbox}}
 
 <!-- End pattern: navbox-grid //-->

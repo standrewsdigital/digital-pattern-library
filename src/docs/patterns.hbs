@@ -12,9 +12,9 @@ core-assets: true
             <div class="row">
                 <div class="col-xs-12">
                     <h3>Categories</h3>
-                    <ul class="list-inline">
+                    <ul class="list-inline dpl-only">
                     {{#each patterns-page.categories}}
-                        <li><a href="#{{heading}}" class="btn btn-{{class}}">{{heading}}</a></li>         
+                        <li><a href="#{{heading}}" class="btn btn-{{class}}">{{heading}}</a></li>
                     {{/each}}
                     </ul>
                     <hr>
@@ -43,7 +43,7 @@ core-assets: true
                             <img src="{{img}}" alt="Description">
                         </div>
                         <div class="navbox-title">
-                            <p><a href="{{url}}">{{name}}</a></p>
+                            <a href="{{url}}">{{name}}</a>
                         </div>
                     </div>
                 <!-- End pattern: navbox //-->

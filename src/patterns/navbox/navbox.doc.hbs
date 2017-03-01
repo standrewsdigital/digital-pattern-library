@@ -2,15 +2,53 @@
 title: Navbox
 ---
 
-<p>The Navbox pattern is used to present feature navigation with an optional background image and description.</p>
+<p>The navbox pattern is used to present featured navigation items with an optional background image and paragraph.</p>
+
+<ul>
+    <li>Must only be used within the main body of the page or within the aside.</li>
+    <li>Must only link to an internal webpage or web application.</li>
+    <li>Must not have a title of more than two lines of text.</li>
+    <li>When using an image, the image must relate to the link destination.</li>
+</ul>
+
+<h3>Navbox sizes</h3>
+<p>Navboxes are available in three different sizes: small (⅓), medium (½) and large (⅔). Available combinations of these sizes can been found on the <a href='../navbox-grid/index.html'>navbox-grid</a> pattern page. If using an image, see the table below for image sizes.</p>
+
+<table class='table table-striped table-primary'>
+    <thead>
+        <tr>
+            <th>Box size</th>
+            <th>Image size</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Small</td>
+            <td>360 x 240 pixels</td>
+        </tr>
+        <tr>
+            <td>Medium</td>
+            <td>555 x 240 pixels</td>
+        </tr>
+        <tr>
+            <td>Large</td>
+            <td>750 x 240 pixels</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Options available</h3>
+<ul>
+{{#navbox-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/navbox-options.options}}
+</ul>
 
 {{#navbox-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
-<div style="width:30%;">
 {{> navbox}}
-</div>
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> navbox}}</code></pre>
 {{/navbox-options.options}}
