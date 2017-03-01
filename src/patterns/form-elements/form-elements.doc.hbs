@@ -2,13 +2,13 @@
 title: Form elements
 ---
 
-<p>Keep forms as simple as possible, see <a href="../../examples/form.html">form example</a>.</p>
+<p>Keep forms as simple as possible, see <a href="../../examples/form.html">form example</a> for more information.</p>
 
 <ul>
-	<li>Only ask for the information you absolutely need.</li>
-	<li>If you do ask for optional information, mark the labels of optional fields with ‘(optional)’.</li>
-	<li>Do not mark mandatory fields with asterisks.</li>
-	<li>Forms must never be used in sidebars.</li>
+	<li>You must only ask for the information you absolutely need.</li>
+	<li>You may ask for optional information, if so you must mark the labels of optional fields with ‘(optional)’.</li>
+	<li>You must not mark mandatory fields with asterisks.</li>
+	<li>You must not use forms in sidebars.</li>
 </ul>
 
 <h3>Options available</h3>
@@ -31,9 +31,9 @@ title: Form elements
 <h3 id="checkboxes">Checkboxes</h3>
 
 <ul>
-	<li>Label clearly when users can select one or more multiple options.</li>
-	<li>Only pre-select options if there’s a strong, user-centred reason to.</li>
-	<li>The label must be clickable by wrapping the label element around the text and including a for attribute that includes the same name as the element id.</li>
+	<li>Clearly label when users can select one or more options.</li>
+	<li>Only pre-select options for the user if there’s a strong, user-centred reason to do this.</li>
+	<li>The label must be clickable.</li>
 </ul>
 
 <h4>Inline checkboxes</h4>
@@ -71,9 +71,9 @@ title: Form elements
 <h3 id="conditional">Conditionally revealing content</h3>
 
 <ul>
-	<li>Reveal an additional input field, depending on the value selected.</li>
-	<li>Must only be used with <a href="#radio-buttons">radio buttons</a> or <a href="#select-boxes">select boxes</a>.</li>
-	<li>A left border is applied to emphasise this newly revealed information.</li>
+	<li>You may reveal an additional input field, depending on the radio button selected.</li>
+	<li>This must only be used with <a href="#radio-buttons">radio buttons</a> or <a href="#select-boxes">select boxes</a>.</li>
+	<li>You must apply a left border to emphasise this newly revealed information.</li>
 </ul>
 
 <p>Wrap the input you wish to hide with the following code:</p>
@@ -82,7 +82,7 @@ title: Form elements
 	//Your hidden input
 </div></code></pre>
 
-	<p>Use the following JavaScript code to show/hide the conditional content. Place this code at the bottom of the page i.e. after the link to <code>core.js</code>:</p>
+	<p>Use the following JavaScript code to show and hide the conditional content. Place this code at the bottom of the page, for example after the link to <code>core.js</code>:</p>
 <pre><code class="pattern-source js">$(document).ready(function() {
     $('.input-name').change(
         function() {
@@ -157,13 +157,12 @@ title: Form elements
 
 <h3 id="file-upload">File upload</h3>
 
-<p>Uses the native input using <code>type="file"</code>. This is so:</p>
+<p>This element uses the native input: <code>type="file"</code>. This is so the element gains focus when tabbing through the page. It also ensures the element functions when:</p>
 
 <ul>
-	<li>The control gains focus when tabbing through the page.</li>
-	<li>The control functions using a keyboard.</li>
-	<li>The control functions using assistive technology.</li>
-	<li>The control functions when JavaScript is not available.</li>
+	<li>using the keyboard</li>
+	<li>using assistive technology</li>
+	<li>JavaScript is not available</li>
 </ul>
 
 <div class="container">
@@ -183,9 +182,9 @@ title: Form elements
 <h3 id="hint-text">Hint text</h3>
 
 <ul>
-	<li>Do not use placeholder text in form fields, as this will disappear once content is entered into the form field. Search fields are the only exception to this, but must have the search icon or text indicating its usage.</li>
+	<li>You must not use placeholder text in form fields, as this will disappear once content is entered into the form field. Search fields are the only exception to this rule, but they must have a search icon or text indicating its usage.</li>
 	<li>Hint text must sit above a form field.</li>
-	<li>Ensure hint text can be read correctly by screen readers.</li>
+	<li>You must ensure hint text can be read correctly by screen readers.</li>
 </ul>
 
 <div class="container">
@@ -203,10 +202,7 @@ title: Form elements
 <hr>
 
 <h3 id="form-inputs">Input fields</h3>
-	<ul>
-		<li>Ensure that users can enter the information they need at smaller screen sizes.</li>
-		<li>Use the <code>.form-group</code> class to create spacing when wrapping label and input pairs.</li>
-	</ul>
+<p>You must use the <code>.form-group</code> class to create spacing when wrapping label and input pairs.</p>
 
 
 <h4>Default input</h4>
@@ -227,7 +223,7 @@ title: Form elements
 
 <h4>Input addons</h4>
 
-<p>Addons can be used when the input field is always going to be prefixed with a particular value such as a &pound;.</p>
+<p>Addons map be used when the input field is always going to be prefixed with a particular value, for example collecting only the username for an <code>@st-andrews.ac.uk</code> email address.</p>
 
 <div class="container">
 	<span class="label label-default">Example</span>
@@ -265,11 +261,11 @@ title: Form elements
 
 <ul>
 	<li>All form fields must be given labels.</li>
-	<li>Don’t hide labels, unless the surrounding context makes them unnecessary.</li>
+	<li>You must not hide labels unless the surrounding context makes them unnecessary.</li>
 	<li>Labels must be aligned above input fields.</li>
 	<li>Labels must be positioned to the right of checkboxes and radio buttons.</li>
-	<li>Label text should be short, direct and in sentence case.</li>
-	<li>Avoid colons at the end of labels.</li>
+	<li>Label text must be short, direct and in sentence case.</li>
+	<li>You must not use colons at the end of labels.</li>
 	<li>Labels must be associated with form fields using the <code>for</code> attribute.</li>
 </ul>
 
@@ -289,7 +285,7 @@ title: Form elements
 
 <h3 id="optional">Optional fields</h3>
 
-<p>If you do ask for optional information, mark the labels of optional fields with ‘(optional)’.</p>
+<p>If you do ask for optional information, you must mark the labels of optional fields with <code>(optional)</code>.</p>
 
 <div class="container">
 	<span class="label label-default">Example</span>
@@ -307,12 +303,13 @@ title: Form elements
 
 <h3 id="radio-buttons">Radio buttons</h3>
 
+<p>These let users choose a single option from a list.</p>
+
 <ul>
-	<li>Use these to let users choose a single option from a list.</li>
-	<li>Use a select-box if you need to have more than 10 radio buttons.</li>
+	<li>You must use a select-box if you have more than 10 radio buttons.</li>
 	<li>Radio buttons with large hit areas are easier to select with a mouse or touch devices.</li>
-	<li>Only pre-select options if there’s a strong, user-centred reason to.</li>
-	<li>The label must be clickable by wrapping the label element around the text and including a for attribute that includes the same name as the element id.</li>
+	<li>You must only pre-select options for the user if there’s a strong, user-centred reason to do this.</li>
+	<li>The label must be clickable.</li>
 </ul>
 
 <h4>Inline radio buttons</h4>
@@ -350,8 +347,8 @@ title: Form elements
 <h3 id="select-boxes">Select boxes</h3>
 
 <ul>
-	<li>If possible, avoid using select boxes (drop-down lists). Use radio buttons or checkboxes instead.</li>
-	<li>Only pre-select options if there’s a strong, user-centred reason to.</li>
+	<li>You should avoid using select boxes (drop-down lists), instead you should use radio buttons or checkboxes.</li>
+	<li>You must only pre-select options for the user if there’s a strong, user-centred reason to do this.</li>
 </ul>
 
 <div class="container">
@@ -371,8 +368,8 @@ title: Form elements
 <h3 id="submit-button">Submit and reset buttons</h3>
 
 <ul>
-	<li>Keep text short and use a verb such as 'submit' or 'continue'.</li>
-	<li>Do not add a reset button. It causes problems for uses who might click on it by mistake and makes it harder for users to see the next step. See Neilsen Norman Group article on <a href="http://www.nngroup.com/articles/reset-and-cancel-buttons/">reset and cancel buttons</a>.</li>
+	<li>You must keep text short and use a verb such as 'submit' or 'continue'.</li>
+	<li>You must not add a reset button. See the Neilsen Norman Group article on <a href="http://www.nngroup.com/articles/reset-and-cancel-buttons/">reset and cancel buttons</a> for more information.</li>
 </ul>
 
 <div class="container">
