@@ -2,25 +2,26 @@
 title: Form errors
 ---
 
-<p>The DPL is platform agnostic so we don't provide code for performing validation but have documented  the following design principles.</p>
+<p>This pattern shows the style for showing form validation errors.</p>
 
 <ul>
-	<li>Show an error summary at the top of the page so it is visible when the page is refreshed and is immediately read out by assistive technology. Write a message that helps the user to understand why the error occurred and what to do about it.</li>
-	<li>Include a heading in the error summary to alert the user to the error.</li>
-	<li>In the error summary, link to each of the problematic questions.</li>
-	<li>An error message must appear above the input field for each invalid answer.</li>
+	<li>The error summary must be at the top of the page.</li>
+	<li>The summary must help the user understand why the error occurred and what to do about it.</li>
+	<li>The summary must include a heading to alert the user of the specific error.</li>
+	<li>The error summary must link to each of the problematic form answers.</li>
+	<li>Additional error text must appear above the input field for each invalid form answer.</li>
 </ul>
 
 <h3>Options available</h3>
 <ul>
-	<li><a href="#input-fields">Validation of input fields</a></li>
-	<li><a href="#radio-buttons">Validation of radio buttons</a></li>
+	<li><a href="#input-fields">Errors on input fields</a></li>
+	<li><a href="#radio-buttons">Errors on radio buttons</a></li>
 </ul>
 
 <hr>
 
 
-<h3 id="input-fields">Validation of input fields</h3>
+<h3 id="input-fields">Errors on input fields</h3>
 
 <div class="container">
 	<span class="label label-default">Example</span>
@@ -37,7 +38,7 @@ title: Form errors
 <hr>
 
 
-<h3 id="radio-buttons">Validation of radio buttons</h3>
+<h3 id="radio-buttons">Errors on radio buttons</h3>
 
 <div class="container">
 	<span class="label label-default">Example</span>
