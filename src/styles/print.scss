@@ -295,8 +295,17 @@ thead {
     KIS WIDGET
 ==============================================================================*/
 
+
 .kis-widget-red {
     display: none;
+}
+
+.honours-degree-column ul {
+    margin-bottom: 0;
+}
+
+.honours-degree-item a {
+    text-decoration: none
 }
 
 .honours-degree-item button {
