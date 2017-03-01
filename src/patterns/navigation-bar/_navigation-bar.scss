@@ -1,19 +1,9 @@
-
 /*********************************/
 /* BEGIN Pattern: navigation-bar */
 /*********************************/
 
-
-div.container ul.show-navigation { 
-  display: block; 
-} 
- 
-.navigation-bar {
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    position: relative;
-    z-index: 999;
+div.container ul.show-navigation {
+  display: block;
 }
 
 .navigation-bar a {
@@ -21,14 +11,11 @@ div.container ul.show-navigation {
 }
 
 .navigation-bar ul.navigation-bar-nav {
-	float: left;
-	margin: 0;
 	padding: 0;
 }
 
 .navigation-bar ul.navigation-bar-nav li {
 	float: left;
-	font-size: 18px;
     list-style: none;
 }
 
@@ -50,14 +37,6 @@ div.container ul.show-navigation {
 
 .navigation-bar ul.navigation-bar-nav li a:hover, .navigation-bar ul.navigation-bar-nav li a:focus {
 	color: white;
-}
-
-// Target select item in T4 and WordPress respectively
-.navigation-bar .currentbranch0 a,
-.navigation-bar .current-menu-item a, .navigation-bar .current-menu-ancestor a {
-}
-
-.subnav {
 }
 
 .toggle-navigation {
@@ -109,10 +88,6 @@ div.container ul.show-navigation {
         width: 100%;
 	}
 
-	.toggle-navigation a:hover, .toggle-navigation a:focus {
-		cursor: pointer;
-	}
-
 	.navigation-bar .container {
 		padding: 0;
 	}
@@ -122,72 +97,69 @@ div.container ul.show-navigation {
 	}
 }
 
-/* Navigation bar colors */
+/* Navigation bar colours */
 
-	/* blue */
-	.navigation-bar {
-		background-color: $sta-blue;
-	}
+/* blue */
+.navigation-bar {
+	background-color: $sta-blue;
+}
 
-	.navigation-bar ul.navigation-bar-nav li a:hover, .navigation-bar ul.navigation-bar-nav li a:focus {
+.navigation-bar ul.navigation-bar-nav li a:hover, .navigation-bar ul.navigation-bar-nav li a:focus {
+	background-color: $sta-blue-hover;
+}
+
+// Target select item in T4 and WordPress respectively
+.navigation-bar .currentbranch0 a,
+.navigation-bar .current-menu-item a, .navigation-bar .current-menu-ancestor a {
+	background-color: $sta-blue-light;
+}
+
+.subnav {
+	background-color: $sta-blue-light;
+}
+
+@media (max-width: 991px) {
+	.toggle-navigation a:hover, .toggle-navigation a:focus {
 		background-color: $sta-blue-hover;
 	}
+}
 
-    // Target select item in T4 and WordPress respectively
-	.navigation-bar .currentbranch0 a,
-    .navigation-bar .current-menu-item a, .navigation-bar .current-menu-ancestor a {
-		background-color: $sta-blue-light;
-	}
+/* blue-study */
+.accent-blue-study .navigation-bar,
+.navigation-bar.blue-study {
+	background-color: $sta-cyan;
+}
 
-	.subnav {
-		background-color: $sta-blue-light;
-	}
+.accent-blue-study .navigation-bar ul.navigation-bar-nav li a:hover,
+.accent-blue-study .navigation-bar ul.navigation-bar-nav li a:focus,
+.navigation-bar.blue-study ul.navigation-bar-nav li a:hover,
+.navigation-bar.blue-study ul.navigation-bar-nav li a:focus {
+	background-color: $sta-cyan-hover;
+}
 
-	@media (max-width: 991px) {
-		.toggle-navigation a:hover, .toggle-navigation a:focus {
-			background-color: $sta-blue-hover;
-			cursor: pointer;
-		}
-	}
+// Target select item in T4 and WordPress respectively
+.accent-blue-study .navigation-bar .currentbranch0 a,
+.navigation-bar.blue-study .currentbranch0 a,
+.accent-blue-study .navigation-bar .current-menu-item a,
+.navigation-bar.blue-study .current-menu-item a,
+.accent-blue-study .navigation-bar .current-menu-ancestor a,
+.navigation-bar.blue-study .current-menu-ancestor a {
+	background-color: $sta-cyan-light;
+}
 
-	/* blue-study */
-	.accent-blue-study .navigation-bar,
-	.navigation-bar.blue-study {
-		background-color: $sta-cyan;
-	}
+.accent-blue-study .subnav,
+.subnav.blue-study {
+	background-color: $sta-cyan-light;
+}
 
-	.accent-blue-study .navigation-bar ul.navigation-bar-nav li a:hover,
-	.accent-blue-study .navigation-bar ul.navigation-bar-nav li a:focus,
-	.navigation-bar.blue-study ul.navigation-bar-nav li a:hover,
-	.navigation-bar.blue-study ul.navigation-bar-nav li a:focus {
+@media (max-width: 991px) {
+	.accent-blue-study .toggle-navigation a:hover,
+	.blue-study .toggle-navigation a:focus,
+	.accent-blue-study .toggle-navigation a:hover,
+	.blue-study .toggle-navigation a:focus {
 		background-color: $sta-cyan-hover;
 	}
-
-    // Target select item in T4 and WordPress respectively
-	.accent-blue-study .navigation-bar .currentbranch0 a,
-	.navigation-bar.blue-study .currentbranch0 a,
-    .accent-blue-study .navigation-bar .current-menu-item a,
-    .navigation-bar.blue-study .current-menu-item a,
-    .accent-blue-study .navigation-bar .current-menu-ancestor a,
-    .navigation-bar.blue-study .current-menu-ancestor a {
-		background-color: $sta-cyan-light;
-	}
-
-	.accent-blue-study .subnav,
-	.subnav.blue-study {
-		background-color: $sta-cyan-light;
-	}
-
-	@media (max-width: 991px) {
-		.accent-blue-study .toggle-navigation a:hover,
-		.blue-study .toggle-navigation a:focus,
-		.accent-blue-study .toggle-navigation a:hover,
-		.blue-study .toggle-navigation a:focus {
-			background-color: $sta-cyan-hover;
-			cursor: pointer;
-		}
-	}
-
+}
 
 /*********************************/
 /* END Pattern: navigation-bar   */

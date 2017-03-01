@@ -1,3 +1,7 @@
+/*********************************/
+/* BEGIN Pattern: navigation bar */
+/*********************************/
+
 $('.toggle-navigation').click( function() {
     var i = $(this).find('i.chevron');
 
@@ -10,8 +14,12 @@ $('.toggle-navigation').click( function() {
         $(this).find('i.chevron').removeClass('down');
     }
 
-    $(this).siblings('.navigation-bar-nav').slideToggle( function(){ 
-        $(this).css("display", ""); 
-        $(this).toggleClass('show-navigation'); 
-    }); 
+    $(this).siblings('.navigation-bar-nav').slideToggle( function(){
+        $(this).css("display", "");
+        $(this).toggleClass('show-navigation');
+    });
 });
+
+/*********************************/
+/* END Pattern: navigation bar   */
+/*********************************/

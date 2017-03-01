@@ -16,14 +16,9 @@ date: <%= new Date() %>
         <header class="header" id="header">
 
             <div class="row">
-               <!-- <div id="header-audience">
-                        <a href="/students/" class="audience">Students</a>
-                        <a href="/pgstudents/" class="audience">Postgraduates</a>
-                        <a href="/staff/" class="audience">Staff</a>
-                    </div> -->
                 <div id="logo-container">
                     <div id="header-logo">
-                        <h1><a href="http://www.st-andrews.ac.uk/"><span>University of St&nbsp;Andrews</span></a></h1>
+                        <h1><a href="http://www.st-andrews.ac.uk/"><span>University of St Andrews</span></a></h1>
                     </div>
                 </div>
                 <div id="header-search" role="search">
@@ -61,44 +56,21 @@ date: <%= new Date() %>
         <!-- End pattern: category-header //-->
 
 
-        <div class="navbar navbar-inverse navbar-static-top">
+        <nav class="navigation-bar" role="navigation">
             <div class="container">
-                <div class="navbar-header">
-                    <!-- <a href="{{rel "index.html"}}" class="navbar-brand">Digital pattern library</a> -->
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                <div class="toggle-navigation primary-toggle">
+                    <a class="navigation-button">Navigation <i class="chevron left"></i></a>
                 </div>
-                <div class="navbar-collapse collapse" id="navbar-main">
-                    <ul class="nav navbar-nav">
-                    {{#each dpl-nav.items}}
-                        {{#if items}}
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="{{rel url}}" id="nav-{{name}}">{{name}}<span class="caret"></span></a>
-                                <ul class="dropdown-menu" aria-labelledby="{{name}}">
-                                    {{#each items}}
-                                    <li><a href="{{rel url}}">{{{name}}}</a></li>
-                                    {{/each}}
-                                </ul>
-                        </li>
-                        {{else}}
-                            <li>
-                                <a href="{{rel url}}">{{name}}</a>
-                            </li>
-                        {{/if}}
-                    {{/each}}
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="http://digitalcommunications.wp.st-andrews.ac.uk/tag/digital-pattern-library/" target="_blank">Blog</a></li>
-                    </ul>
-
-                </div>
+                <ul class="navigation-bar-nav primary-nav">
+                {{#each dpl-nav.items}}
+                    <li>
+                        <a href="{{rel url}}">{{name}}</a>
+                    </li>
+                {{/each}}
+                    <li><a href="http://digitalcommunications.wp.st-andrews.ac.uk/tag/digital-pattern-library/">Blog</a></li>
+                </ul>
             </div>
-        </div>
-
+        </nav>
 
         {{> body  }}
 
@@ -140,7 +112,7 @@ date: <%= new Date() %>
         <script src="{{asset 'core/scripts/doc.js'}}" ></script>
 
 
-        
+
         <!-- Only for use with DataTables -->
         <script src="{{asset '/core/scripts/jquery.dataTables.min.js'}}"></script>
         <script src="{{asset '/core/scripts/datatables.js'}}"></script>

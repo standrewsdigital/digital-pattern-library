@@ -2,13 +2,28 @@
 title: Navigation bar
 ---
 
-<p>The navigation bar pattern displays a primary horizontal and optional secondary navigation.</p>
+<p>The navigation bar pattern displays a horizontal navigation menu for pages related to the current page.</p>
 
-<p>Each menu should contains 5 to 8 links.</p>
+<h3>Rules for the navigation bar</h3>
+
+<ul>
+    <li>Must be present on all webpages, apart from long-form stories.</li>
+    <li>Must come below the category header and above the main body of the page.</li>
+    <li>Must not contain any dropdown menus.</li>
+    <li>Must only contain links to other webpages or web applications.</li>
+    <li>Should contain no more than eight links.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#navigation-bar-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/navigation-bar-options.options}}
+</ul>
 
 {{#navigation-bar-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 </div>{{> navigation-bar}}<div class="container">
 <span class="label label-default">Code</span>
