@@ -2,33 +2,144 @@
 title: Form elements
 ---
 
-<p>Keep forms as simple as possible.</p>
+<p>Keep forms as simple as possible, see <a href="../../examples/form.html">form example</a> for more information.</p>
 
 <ul>
-	<li>Only ask for the information you absolutely need.</li>
-	<li>If you do ask for optional information, mark the labels of optional fields with ‘(optional)’.</li>
-	<li>Don’t mark mandatory fields with asterisks.</li>
+	<li>You must only ask for the information you absolutely need.</li>
+	<li>You may ask for optional information, if so you must mark the labels of optional fields with ‘(optional)’.</li>
+	<li>You must not mark mandatory fields with asterisks.</li>
+	<li>You must not use forms in sidebars.</li>
 </ul>
 
-<h3>Options</h3>
+<h3>Options available</h3>
 <ul>
+	<li><a href="#checkboxes">Checkboxes</a></li>
+	<li><a href="#conditional">Conditionally revealing content</a></li>
 	<li><a href="#fieldsets">Fieldsets and legends</a></li>
-	<li><a href="#labels">Labels</a></li>
+	<li><a href="#file-upload">File upload</a></li>
 	<li><a href="#hint-text">Hint text</a></li>
 	<li><a href="#form-inputs">Input fields</a></li>
-	<li><a href="#file-upload">File upload</a></li>
-	<li><a href="#checkboxes">Checkboxes</a></li>
+	<li><a href="#optional">Optional fields</a></li>
+	<li><a href="#labels">Labels</a></li>
 	<li><a href="#radio-buttons">Radio buttons</a></li>
-	<li><a href="#conditional">Conditionally revealing content</a></li>
 	<li><a href="#select-boxes">Select boxes</a></li>
+	<li><a href="#submit-button">Submit and reset buttons</a></li>
 </ul>
+
+<hr/>
+
+<h3 id="checkboxes">Checkboxes</h3>
+
+<ul>
+	<li>Clearly label when users can select one or more options.</li>
+	<li>Only pre-select options for the user if there’s a strong, user-centred reason to do this.</li>
+	<li>The label must be clickable.</li>
+</ul>
+
+<h4>Inline checkboxes</h4>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-checkboxes-inline}}
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-checkboxes-inline}}</code></pre>
+</div>
 
 <hr>
 
+<h4>Stacked checkboxes</h4>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-checkboxes-stacked}}
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-checkboxes-stacked}}</code></pre>
+</div>
+
+<hr>
+
+<h3 id="conditional">Conditionally revealing content</h3>
+
+<ul>
+	<li>You may reveal an additional input field, depending on the radio button selected.</li>
+	<li>This must only be used with <a href="#radio-buttons">radio buttons</a> or <a href="#select-boxes">select boxes</a>.</li>
+	<li>You must apply a left border to emphasise this newly revealed information.</li>
+</ul>
+
+<p>Wrap the input you wish to hide with the following code:</p>
+
+<pre><code class="pattern-source html"><div class="conditional-content" aria-hidden="true">
+	//Your hidden input
+</div></code></pre>
+
+	<p>Use the following JavaScript code to show and hide the conditional content. Place this code at the bottom of the page, for example after the link to <code>core.js</code>:</p>
+<pre><code class="pattern-source js">$(document).ready(function() {
+    $('.input-name').change(
+        function() {
+            var val = $(this).val();
+
+            if(val === "option-value") {
+                $(".conditional-content").show();
+            }
+            else if(val !== "option-value") {
+                $(".conditional-content").hide();
+            }
+        }
+    );
+});</code></pre> 
+
+ 
+<ul>
+	<li>Replace <code>.input-name</code> with the class of the radio buttons or select box that you wish to affect.</li>
+	<li>Replace <code>option-value</code> with the option you wish to show conditional content on.<br />(In the below example, this value is set to 'other').</li>
+</ul>
+
+<h4>Radio buttons</h4>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-conditional-content-radio}}
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-conditional-content-radio}}</code></pre>
+</div>
+
+<hr />
+
+<h4>Select boxes</h4>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-conditional-content-select}}
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-conditional-content-select}}</code></pre>
+</div>
+
+
+<hr>
 
 <h3 id="fieldsets">Fieldsets and legends</h3>
 
-<p>Use fieldsets to group related form controls. The first element inside a fieldset must be a <code>legend</code> element which describes the group.</p>
+<p>Use fieldsets to group related form controls. The first element inside a fieldset must be a <code>legend</code> element that describes the group.</p>
 
 <div class="container">
 	<span class="label label-default">Example</span>
@@ -44,41 +155,36 @@ title: Form elements
 
 <hr>
 
+<h3 id="file-upload">File upload</h3>
 
-<h3 id="labels">Labels</h3>
+<p>This element uses the native input: <code>type="file"</code>. This is so the element gains focus when tabbing through the page. It also ensures the element functions when:</p>
 
 <ul>
-	<li>All form fields must be given labels.</li>
-	<li>Don’t hide labels, unless the surrounding context makes them unnecessary.</li>
-	<li>Labels must be aligned above their fields.</li>
-	<li>Label text should be short, direct and in sentence case.</li>
-	<li>Avoid colons at the end of labels.</li>
-	<li>Labels must be associated with form fields using the <code>for</code> attribute.</li>
+	<li>using the keyboard</li>
+	<li>using assistive technology</li>
+	<li>JavaScript is not available</li>
 </ul>
 
 <div class="container">
 	<span class="label label-default">Example</span>
 	<div class="pattern-example">
-		{{> form-elements-label}}
+		{{> form-elements-file-upload}}
 	</div>
 </div>
 
 <div class="container">
 	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-elements-label}}</code></pre>
+	<pre><code class="pattern-source html">{{> form-elements-file-upload}}</code></pre>
 </div>
 
 <hr>
 
-
-
-
 <h3 id="hint-text">Hint text</h3>
 
 <ul>
-	<li>Don’t use placeholder text in form fields, as this will disappear once content is entered into the form field. Search fields are the only exception to this, but must have the search icon or text indicating it's usage.</li>
+	<li>You must not use placeholder text in form fields, as this will disappear once content is entered into the form field. Search fields are the only exception to this rule, but they must have a search icon or text indicating its usage.</li>
 	<li>Hint text must sit above a form field.</li>
-	<li>Ensure hint text can be read correctly by screen readers.</li>
+	<li>You must ensure hint text can be read correctly by screen readers.</li>
 </ul>
 
 <div class="container">
@@ -95,14 +201,8 @@ title: Form elements
 
 <hr>
 
-
-
 <h3 id="form-inputs">Input fields</h3>
-	<ul>
-		<li>Ensure that users can enter the information they need at smaller screen sizes.</li>
-		<li>Snap form fields to 100% width at smaller screen sizes.</li>
-		<li>Use the <code>.form-group</code> class to create spacing when wrapping label and input pairs.</li>
-	</ul>
+<p>You must use the <code>.form-group</code> class to create spacing when wrapping label and input pairs.</p>
 
 
 <h4>Default input</h4>
@@ -121,20 +221,14 @@ title: Form elements
 
 <hr>
 
-
-
 <h4>Input addons</h4>
 
-<p>Addons can be used when the input field is always going to be prefixed with a particular value.</p>
+<p>Addons map be used when the input field is always going to be prefixed with a particular value, for example collecting only the username for an <code>@st-andrews.ac.uk</code> email address.</p>
 
 <div class="container">
-	<div class="row">
-		<div class="col-sm-4">
-			<span class="label label-default">Example</span>
-			<div class="pattern-example">
-				{{> form-elements-input-addon}}
-			</div>
-		</div>
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-input-addon}}
 	</div>
 </div>
 
@@ -144,8 +238,6 @@ title: Form elements
 </div>
 
 <hr>
-
-
 
 <h4>Textarea</h4>
 
@@ -165,85 +257,59 @@ title: Form elements
 
 <hr>
 
-
-<h3 id="file-upload">File upload</h3>
-
-<p>Uses the native input using <code>type="file"</code>. This is so:</p>
+<h3 id="labels">Labels</h3>
 
 <ul>
-	<li>The control gains focus when tabbing through the page.</li>
-	<li>The control functions using a keyboard.</li>
-	<li>The control functions using assistive technology.</li>
-	<li>The control functions when JavaScript is not available.</li>
+	<li>All form fields must be given labels.</li>
+	<li>You must not hide labels unless the surrounding context makes them unnecessary.</li>
+	<li>Labels must be aligned above input fields.</li>
+	<li>Labels must be positioned to the right of checkboxes and radio buttons.</li>
+	<li>Label text must be short, direct and in sentence case.</li>
+	<li>You must not use colons at the end of labels.</li>
+	<li>Labels must be associated with form fields using the <code>for</code> attribute.</li>
 </ul>
 
 <div class="container">
 	<span class="label label-default">Example</span>
 	<div class="pattern-example">
-		{{> form-elements-file-upload}}
+		{{> form-elements-label}}
 	</div>
 </div>
 
 <div class="container">
 	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-elements-file-upload}}</code></pre>
+	<pre><code class="pattern-source html">{{> form-elements-label}}</code></pre>
 </div>
 
-<hr>
+<h3>
 
+<h3 id="optional">Optional fields</h3>
 
-<h3 id="checkboxes">Checkboxes</h3>
-
-<ul>
-	<li>Make it clear with words when users can select one or more multiple options.</li>
-	<li>Only pre-select options if there’s a strong, user-centred reason to.</li>
-</ul>
-
-
-
-
-<h4>Inline checkboxes</h4>
+<p>If you do ask for optional information, you must mark the labels of optional fields with <code>(optional)</code>.</p>
 
 <div class="container">
 	<span class="label label-default">Example</span>
 	<div class="pattern-example">
-		{{> form-elements-checkboxes-inline}}
+		{{> form-elements-optional}}
 	</div>
 </div>
 
 <div class="container">
 	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-elements-checkboxes-inline}}</code></pre>
+	<pre><code class="pattern-source html">{{> form-elements-optional}}</code></pre>
 </div>
-
-<hr>
-
-
-
-
-<h4>Stacked checkboxes</h4>
-
-<div class="container">
-	<span class="label label-default">Example</span>
-	<div class="pattern-example">
-		{{> form-elements-checkboxes-stacked}}
-	</div>
-</div>
-
-<div class="container">
-	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-elements-checkboxes-stacked}}</code></pre>
-</div>
-
-
 
 <hr>
 
 <h3 id="radio-buttons">Radio buttons</h3>
 
+<p>These let users choose a single option from a list.</p>
+
 <ul>
-	<li>Use these to let users choose a single option from a list.</li>
+	<li>You must use a select-box if you have more than 10 radio buttons.</li>
 	<li>Radio buttons with large hit areas are easier to select with a mouse or touch devices.</li>
+	<li>You must only pre-select options for the user if there’s a strong, user-centred reason to do this.</li>
+	<li>The label must be clickable.</li>
 </ul>
 
 <h4>Inline radio buttons</h4>
@@ -262,9 +328,6 @@ title: Form elements
 
 <hr>
 
-
-
-
 <h4>Stacked radio buttons</h4>
 
 <div class="container">
@@ -279,69 +342,14 @@ title: Form elements
 	<pre><code class="pattern-source html">{{> form-elements-radio-stacked}}</code></pre>
 </div>
 
-
 <hr>
-
-
-
-<h3 id="conditional">Conditionally revealing content</h3>
-
-<ul>
-	<li>Reveal an additional input field, depending on the value selected.</li>
-	<li>May only be used alongside radio buttons.</li>
-	<li>A left border is applied to emphasise this newly revealed information.</li>
-</ul>
-
-
-<p>Wrap the input you wish to hide with the following code:</p>
-
-<pre><code class="pattern-source html"><div class="conditional-content" aria-hidden="true">
-	[Your hidden input]
-</div></code></pre>
-
-<p>Then use the following JavaScript code to show/hide the conditional content:</p>
-<pre><code class="pattern-source js">$(document).ready(function() {
-    $('input.input-name').change(
-        function() {
-            var val = $(this).val();
-
-            if(val === "option-value") {
-                $(".conditional-content").show();
-            }
-            else if(val !== "option-value") {
-                $(".conditional-content").hide();
-            }
-        }
-    );
-});</code></pre>
-
-<ul>
-	<li>Replace <code>input-name</code> with the class of the input you wish to affect.</li>
-	<li>Replace <code>option-value</code> with the option you wish to show conditional content on.<br />(In the below example, this value is set to 'other').</li>
-</ul>
-
-
-
-<div class="container">
-	<span class="label label-default">Example</span>
-	<div class="pattern-example">
-		{{> form-elements-conditional-content}}
-	</div>
-</div>
-
-<div class="container">
-	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-elements-conditional-content}}</code></pre>
-</div>
-
-
-
-<hr>
-
 
 <h3 id="select-boxes">Select boxes</h3>
 
-<p>If possible, avoid using select boxes (drop-down lists). Use radio buttons or checkboxes instead.</p>
+<ul>
+	<li>You should avoid using select boxes (drop-down lists), instead you should use radio buttons or checkboxes.</li>
+	<li>You must only pre-select options for the user if there’s a strong, user-centred reason to do this.</li>
+</ul>
 
 <div class="container">
 	<span class="label label-default">Example</span>
@@ -355,5 +363,23 @@ title: Form elements
 	<pre><code class="pattern-source html">{{> form-elements-select-boxes}}</code></pre>
 </div>
 
-
 <hr>
+
+<h3 id="submit-button">Submit and reset buttons</h3>
+
+<ul>
+	<li>You must keep text short and use a verb such as 'submit' or 'continue'.</li>
+	<li>You must not add a reset button. See the Neilsen Norman Group article on <a href="http://www.nngroup.com/articles/reset-and-cancel-buttons/">reset and cancel buttons</a> for more information.</li>
+</ul>
+
+<div class="container">
+	<span class="label label-default">Example</span>
+	<div class="pattern-example">
+		{{> form-elements-submit}}
+	</div>
+</div>
+
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> form-elements-submit}}</code></pre>
+</div>

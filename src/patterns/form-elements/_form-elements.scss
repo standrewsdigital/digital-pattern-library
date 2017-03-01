@@ -4,13 +4,20 @@
 /*********************************/
 
 // By default, conditional content is hidden
-div.conditional-content {
+div.conditional-content-select, div.conditional-content-radio, {
     border-color:      rgb(75, 76, 76);
     border-left-style: solid;
     border-left-width: 5px;
     display: none;
     margin-top: 10px;
     padding: 15px 15px 0 15px;
+}
+div.conditional-content-radio {
+    margin-top: -20px !important;
+}
+
+.select-box p {
+    margin-bottom: 5px;
 }
 
 
@@ -32,7 +39,11 @@ input[type~=text].form-control, select.form-control {
 @media (min-width:768px) {
 	.form-control {
 		width: 50%;
-	}
+    }
+
+    .input-group {
+        width: 50%;
+    }
 }
 
 .radio-button, .checkbox-box {
@@ -103,7 +114,7 @@ input[type~=text].form-control, select.form-control {
     }
 
     ul li input[type=radio]:focus ~ .check, ul li input[type=checkbox]:focus ~ .check {
-        box-shadow: 0 0 0 3px $sta-blue;
+        box-shadow: 0 0 0 4px $sta-yellow;
     }
 }
 

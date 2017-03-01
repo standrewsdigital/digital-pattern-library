@@ -36,12 +36,9 @@ title: Form elements page
                         <input class="form-control" id="password" type="text">
                     </div>
 
-                    <input class="btn btn-primary" type="submit" value="Sign in">
-                        
-                </fieldset>
-            </form>
-            
-            <hr />
+                    {{> form-elements-conditional-content-radio}}
+
+                    {{> form-elements-conditional-content-select}}
 
             <form>
                 <fieldset><legend id="personal">Personal details</legend>
