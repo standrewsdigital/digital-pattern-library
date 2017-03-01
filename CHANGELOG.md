@@ -7,7 +7,6 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
-
 ## v0.22.0
 
 Release date: Wednesday 1 March 2017

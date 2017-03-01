@@ -2,28 +2,24 @@
 
 <div class="staff-profile">
     {{#if call-to-action}}
-        <h3><a href="{{call-to-action.link}}">{{default person-title "[title]"}}</a></h3>
+        <h3><a href="#">{{person-title}}</a></h3>
     {{else}}
-        <h3>{{default person-title "[title]"}}</h3>
+        <h3>{{person-title}}</h3>
     {{/if}}
     <div class="row">
         <div class="col-sm-7 staff-details">
-            <h4>{{default person-name "[name]"}}</h4>
-            <p>{{default bio "[bio]"}}</p>
+            <h4>{{person-name}}</h4>
+            <p>{{bio }}</p>
+            {{#if contact-info}}
             <h4>Contact</h4>
             <dl>
-                {{#if contact-info}}
-                    {{#contact-info}}
-                    <dt>Email: </dt><dd><a href="mailto:{{email}}">{{default email "name@domain.com"}}</a></dd>
-                    <dt>Phone: </dt><dd>{{phone}}</dd>
-                    <dt>Fax: </dt><dd>{{fax}}</dd>
-                    {{/contact-info}}
-                {{else}}
-                    <dt>Email: </dt><dd><a href="mailto:[email]">[email]</a></dd>
-                    <dt>Phone: </dt><dd>[phone]</dd>
-                    <dt>Fax: </dt><dd>[fax]</dd>
-                {{/if}}
+                {{#contact-info}}
+                <dt>Email: </dt><dd><a href="mailto:#">{{email}}</a></dd>
+                <dt>Phone: </dt><dd>{{phone}}</dd>
+                <dt>Fax: </dt><dd>{{fax}}</dd>
+                {{/contact-info}}
             </dl>
+            {{/if}}
             <div class="clearfix"></div>
         </div>
         <div class="col-sm-5 text-center">
@@ -31,7 +27,7 @@
                 <img src="{{asset image.url}}" alt="{{image.alt}}">
             {{/if}}
             {{#if call-to-action}}
-                <p><a href="{{call-to-action.link}}" class="btn btn-primary btn-lg">{{call-to-action.text}}</a></p>
+                <p><a href="#" class="btn btn-primary btn-lg">{{call-to-action.text}}</a></p>
             {{/if}}
         </div>
     </div>

@@ -9,48 +9,33 @@
        -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
             box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
     clear: both;
-    display: inline-block;
     height: 260px;
     margin: 10px;
+    margin-bottom: 20px;
     padding: 1em;
     position: relative;
     vertical-align: bottom;
-    width: 360px;
 }
 
 .contact-card.student {
     height: 230px;
 }
 
-.contact-card.student .contact {
-    top: 130px;
-}
-
 .contact-card img {
     border: 1px solid rgb(204, 204, 204);
     float: right;
     height: 127px;
+    margin-top: 10px;
     position: relative;
     width: 111px;
     z-index: 0;
 }
 
 .contact-card h3 {
-    @include -dpl-transition();
-    bottom: 0;
     font-size: 1.3em;
     line-height: 1.3em;
     margin: 0;
     width: 100%;
-    z-index: 100;
-}
-
-.contact-card p {
-    font-size: 1em;
-    height: 5em;
-    line-height: 1.2em;
-    margin: 1.5em 0;
-    padding: 0 1em;
 }
 
 .contact-card-links {
@@ -63,7 +48,7 @@
 
 .contact-card .contact {
     position: absolute;
-        top: 170px;
+      bottom: 0;
 }
 
 .contact-card h4 {
@@ -72,19 +57,10 @@
     font-weight: bold;
 }
 
-@media (max-width: 767px) and (min-width: 450px) {
-    .contact-card {
-        margin-bottom: 2em;
-    }
-
-    .contact-card p {
-        height: auto;
-    }
-}
-
-@media (max-width: 449px) {
+@media (max-width: 768px) {
     .contact-card, .contact-card.student {
-        width: 285px;
+        max-width: 385px;
+        margin: 10px auto;
     }
 
     .contact-card img {
@@ -92,7 +68,6 @@
         width: 91px;
     }
 }
-
 
 /*********************************/
 /* END Pattern: contact-card     */
