@@ -2,24 +2,29 @@
 <link href="../../assets/core/styles/datatables.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-<table id="example" class="table table-primary dataTable no-footer table-hover" cellspacing="0" width="100%" role="grid" aria-describedby="example_info" style="width: 100%;">
+<table id="example" class="dataTable table table-hover table-primary" role="grid" aria-describedby="example_info">
     <thead>
         <tr role="row">
-            <th class="sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 137px;">Name</th>
-            <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 214px;">Position</th>
-            <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 103px;">Office</th>
-            <th class="dt-body-right sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 41px;">Age</th>
-            <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 92px;">Start date</th>
-            <th class="dt-body-right sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 80px;">Salary</th>
+            <th class="sorting_asc" tabindex="0" aria-controls="example" aria-sort="ascending" aria-label="Name: activate to sort column descending">Name</th>
+            <th class="sorting" tabindex="0" aria-controls="example" aria-label="Position: activate to sort column ascending">Position</th>
+            <th class="sorting" tabindex="0" aria-controls="example" aria-label="Office: activate to sort column ascending">Office</th>
+            <th class="sorting" tabindex="0" aria-controls="example" aria-label="Age: activate to sort column ascending">Age</th>
+            <th class="sorting" tabindex="0" aria-controls="example" aria-label="Start date: activate to sort column ascending">Start date</th>
+            <th class="sorting" tabindex="0" aria-controls="example" aria-label="Salary: activate to sort column ascending">Salary</th>
         </tr>
     </thead>
     <tbody>
-        {{#each table-body}}
-            {{{this}}}
+        {{#each table-row}}
+            <tr role='row' class='{{row-class}}'>
+                <td class='sorting_1'>{{name}}</td>
+                <td>{{job-title}}</td>
+                <td>{{city}}</td>
+                <td>{{age}}</td>
+                <td>{{start-date}}</td>
+                <td class="dt-body-right">&pound;{{salary}}</td>
+            </tr>
         {{/each}}
     </tbody>
 </table>
-
-
 
 <!-- End pattern: datatables //-->

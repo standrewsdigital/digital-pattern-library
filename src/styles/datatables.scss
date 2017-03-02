@@ -40,18 +40,18 @@
         padding-right: 15px;
     }
 
-    .sorting { 
+    .sorting {
         background-image: url('../images/datatables/sort.png');
     }
 
-    .sorting_asc { 
+    .sorting_asc {
         background-image: url('../images/datatables/sort_asc.png');
     }
 
-    .sorting_desc { 
+    .sorting_desc {
         background-image: url('../images/datatables/sort_desc.png');
     }
-} 
+}
 
 .dt-bootstrap caption {
     position: absolute;
@@ -79,6 +79,11 @@
     text-align: center;
     font-size: 1em;
     color: $gray-light-medium;
+}
+
+.dt-bootstrap td.dt-body-right {
+    padding-right: 10px;
+    text-align: right;
 }
 
 
@@ -250,7 +255,7 @@
 // }
 
 // div.DTTT_collection_background {
-//     z-index: 2002;  
+//     z-index: 2002;
 // }
 
 // /* TableTools information display */
@@ -305,7 +310,7 @@
 //     background-color: white;
 //     margin-bottom: 0;
 // }
- 
+
 // div.DTFC_RightHeadWrapper table ,
 // div.DTFC_LeftHeadWrapper table {
 //     margin-bottom: 0 !important;
@@ -313,7 +318,7 @@
 //     border-bottom-left-radius: 0 !important;
 //     border-bottom-right-radius: 0 !important;
 // }
- 
+
 // div.DTFC_RightHeadWrapper table thead tr:last-child th:first-child,
 // div.DTFC_RightHeadWrapper table thead tr:last-child td:first-child,
 // div.DTFC_LeftHeadWrapper table thead tr:last-child th:first-child,
@@ -321,20 +326,20 @@
 //     border-bottom-left-radius: 0 !important;
 //     border-bottom-right-radius: 0 !important;
 // }
- 
+
 // div.DTFC_RightBodyWrapper table,
 // div.DTFC_LeftBodyWrapper table {
 //     border-top: none;
 //     margin: 0 !important;
 // }
- 
+
 // div.DTFC_RightBodyWrapper tbody tr:first-child th,
 // div.DTFC_RightBodyWrapper tbody tr:first-child td,
 // div.DTFC_LeftBodyWrapper tbody tr:first-child th,
 // div.DTFC_LeftBodyWrapper tbody tr:first-child td {
 //     border-top: none;
 // }
- 
+
 // div.DTFC_RightFootWrapper table,
 // div.DTFC_LeftFootWrapper table {
 //     border-top: none;
