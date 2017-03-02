@@ -29,7 +29,7 @@
             "class": "primary",
             "patterns": [
                 { "name": "Buttons",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/buttons.jpg",
                   "url": "patterns/buttons/index.html"
                 },
                 { "name": "Featured media",
@@ -76,11 +76,11 @@
                   "url": "patterns/accordion/index.html"
                 },
                 { "name": "Alerts",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/alerts.jpg",
                   "url": "patterns/alerts/index.html"
                 },
                 { "name": "Code",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/code.jpg",
                   "url": "patterns/code/index.html"
                 },
                 { "name": "Contact card",
@@ -112,7 +112,7 @@
                   "url": "patterns/intro/index.html"
                 },
                 { "name": "More news",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/more-news.jpg",
                   "url": "patterns/more-news/index.html"
                 },
                 { "name": "News updates",
@@ -124,11 +124,11 @@
                   "url": "patterns/responsive-embed/index.html"
                 },
                 { "name": "Section header",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/section-header.jpg",
                   "url": "patterns/section-header/index.html"
                 },
                 { "name": "Staff profile",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/staff-profile.jpg",
                   "url": "patterns/staff-profile/index.html"
                 },
                 { "name": "Tables",
@@ -170,11 +170,11 @@
             "class": "primary",
             "patterns": [
                 { "name": "Font Awesome",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/font-awesome.jpg",
                   "url": "patterns/font-awesome/index.html"
                 },
                 { "name": "Glyphicons",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/glyphicons.jpg",
                   "url": "patterns/glyphicons/index.html"
                 }
             ]
@@ -185,31 +185,31 @@
             "class": "primary",
             "patterns": [
                 { "name": "Long-form intro",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/long-form.jpg",
                   "url": "patterns/long-form-intro/index.html"
                 },
                 { "name": "Long-form end piece",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/long-form.jpg",
                   "url": "patterns/long-form-end-piece/index.html"
                 },
                 { "name": "Long-form credits",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/long-form.jpg",
                   "url": "patterns/long-form-credits/index.html"
                 },
                 { "name": "Long-form asides",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/long-form.jpg",
                   "url": "patterns/long-form-asides/index.html"
                 },
                 { "name": "Long-form gallery",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/long-form.jpg",
                   "url": "patterns/long-form-gallery/index.html"
                 },
                 { "name": "Long-form quotes",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/long-form.jpg",
                   "url": "patterns/long-form-quotes/index.html"
                 },
                 { "name": "Long-form sections",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/long-form.jpg",
                   "url": "patterns/long-form-sections/index.html"
                 }
             ]
@@ -224,7 +224,7 @@
                   "url": "patterns/navbox/index.html"
                 },
                 { "name": "Navbox grid",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/navbox-grid.jpg",
                   "url": "patterns/navbox-grid/index.html"
                 },
                 { "name": "Navigation bar",
@@ -232,7 +232,7 @@
                   "url": "patterns/navigation-bar/index.html"
                 },
                 { "name": "Pagination",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/pagination.jpg",
                   "url": "patterns/pagination/index.html"
                 },
                 { "name": "Panel grid",
