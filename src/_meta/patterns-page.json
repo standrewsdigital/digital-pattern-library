@@ -49,7 +49,7 @@
                   "url": "patterns/secondary-call/index.html"
                 },
                 { "name": "Subject combo",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/subject-combo.jpg",
                   "url": "patterns/subject-combo/index.html"
                 },
                 { "name": "Text banner",
@@ -228,7 +228,7 @@
                   "url": "patterns/navbox-grid/index.html"
                 },
                 { "name": "Navigation bar",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/navigation-bar.jpg",
                   "url": "patterns/navigation-bar/index.html"
                 },
                 { "name": "Pagination",
@@ -236,11 +236,11 @@
                   "url": "patterns/pagination/index.html"
                 },
                 { "name": "Panel grid",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/panel-grid.jpg",
                   "url": "patterns/panel-grid/index.html"
                 },
                 { "name": "Sticky nav",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/sticky-nav.jpg",
                   "url": "patterns/sticky-nav/index.html"
                 }
             ]
@@ -255,15 +255,15 @@
                   "url": "patterns/info-bite/index.html"
                 },
                 { "name": "Info bite grid (deprecated)",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/info-bite-grid.jpg",
                   "url": "patterns/info-bite-grid/index.html"
                 },
                 { "name": "Masonry (deprecated)",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/masonry.jpg",
                   "url": "patterns/masonry/index.html"
                 },
                 { "name": "Masonry grid (deprecated)",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/masonry-grid.jpg",
                   "url": "patterns/masonry-grid/index.html"
                 }
             ]
