@@ -18,6 +18,10 @@
 div .table tbody tr td, div .table thead tr th {
 	padding-left: 10px;
 }
+
+.table-hover>tbody>tr:hover {
+    background-color: #f5fcff;
+}
 /*********************************/
 /* END Pattern: datatables       */
 /*********************************/
