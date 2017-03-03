@@ -38,8 +38,10 @@
             },
 
             lengthChange: false, // disable the num of rows selector
+            // lengthMenu: [ [ 10, 25, 50, -1], [ 10, 25, 50, "All"] ],
             pageLength: 10,
-            processing: true
+            processing: true,
+            responsive: true
 
         });
 
@@ -114,7 +116,8 @@
                                 break;
                         }
 
-                        if (btnDisplay) {
+                        // Only show pagination of there is more than one page.
+                        if (btnDisplay && pages > 1) {
                             node = $('<li>', {
                                     'class': classes.sPageButton + ' ' + btnClass,
                                     'aria-controls': settings.sTableId,
@@ -203,8 +206,8 @@
 
     // Auto setup any tables with class 'dataTable'
     $('.dataTable').DataTable({
-        responsive: true
+        lengthChange: true, // disable the num of rows selector
+        lengthMenu: [ [ 10, 25, 50, -1], [ 10, 25, 50, "All"] ]
     });
-
 
 })(window, document);
