@@ -155,11 +155,11 @@
             "class": "primary",
             "patterns": [
                 { "name": "Form elements",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/form-elements.jpg",
                   "url": "patterns/form-elements/index.html"
                 },
                 { "name": "Form errors",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/form-errors.jpg",
                   "url": "patterns/form-errors/index.html"
                 }
             ]
