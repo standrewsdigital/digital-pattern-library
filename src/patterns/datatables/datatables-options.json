@@ -89,7 +89,7 @@
                 {
                     "row-class": "even",
                     "name": "Cedric Kelly",
-                    "job-title": "Senior javascript developer",
+                    "job-title": "Senior JavaScript developer",
                     "city": "Edinburgh",
                     "age": "22",
                     "start-date": "Thursday 29 March 2012",
@@ -107,7 +107,7 @@
                 {
                     "row-class": "even",
                     "name": "Colleen Hurst",
-                    "job-title": "Javascript developer",
+                    "job-title": "JavaScript developer",
                     "city": "San Francisco",
                     "age": "39",
                     "start-date": "Tuesday 15 March 2009",
@@ -269,7 +269,7 @@
                 {
                     "row-class": "even",
                     "name": "Jennifer Acosta",
-                    "job-title": "Junior javascript developer",
+                    "job-title": "Junior JavaScript developer",
                     "city": "Edinburgh",
                     "age": "43",
                     "start-date": "Friday 1 March 2013",
@@ -314,7 +314,7 @@
                 {
                     "row-class": "odd",
                     "name": "Michael Bruce",
-                    "job-title": "Javascript developer",
+                    "job-title": "JavaScript developer",
                     "city": "Singapore",
                     "age": "29",
                     "start-date": "Monday 27 June 2011",
