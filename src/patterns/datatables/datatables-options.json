@@ -1,9 +1,44 @@
 {
     "options" : [
         {
-            "option-heading": "Example",
-            "option-description": "",
+            "option-heading": "Default options",
+            "option-description": "<p>This shows a DataTable with the recommended options enabled; row limit, filter, pagination and current rows indicator.</p>",
             "option-anchor": "default",
+            "table-id": "example1",
+            "table-class": "dataTable",
+            "table-head": [
+                {
+                    "head-class": "sorting_asc",
+                    "aria-sort": "ascending",
+                    "label": "Name: activate to sort column descending",
+                    "heading": "Name"
+                },
+                {
+                    "head-class": "sorting",
+                    "label": "Position: activate to sort column ascending",
+                    "heading": "Position"
+                },
+                {
+                    "head-class": "sorting",
+                    "label": "Office: activate to sort column ascending",
+                    "heading": "Office"
+                },
+                {
+                    "head-class": "sorting",
+                    "label": "Age: activate to sort column ascending",
+                    "heading": "Age"
+                },
+                {
+                    "head-class": "sorting",
+                    "label": "Start date: activate to sort column ascending",
+                    "heading": "Start date"
+                },
+                {
+                    "head-class": "sorting",
+                    "label": "Salary: activate to sort column ascending",
+                    "heading": "Salary"
+                }
+            ],
             "table-row": [
                 {
                     "row-class": "odd",
@@ -517,6 +552,112 @@
                     "age": "56",
                     "start-date": "Friday 1 June 2012",
                     "salary": "115,000"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Minimal options",
+            "option-description": "<p>This shows the minimum options for a DataTable and must only be used when the table contains ten rows or fewer.</p>",
+            "option-anchor": "minimal",
+            "table-id": "example2",
+            "table-class": "dataTable-simplified",
+            "table-head": [
+                {
+                    "head-class": "sorting_asc",
+                    "aria-sort": "ascending",
+                    "label": "Name: activate to sort column descending",
+                    "heading": "Name"
+                },
+                {
+                    "head-class": "sorting",
+                    "label": "Position: activate to sort column ascending",
+                    "heading": "Position"
+                },
+                {
+                    "head-class": "sorting",
+                    "label": "Office: activate to sort column ascending",
+                    "heading": "Office"
+                },
+                {
+                    "head-class": "sorting",
+                    "label": "Salary: activate to sort column ascending",
+                    "heading": "Salary"
+                }
+            ],
+            "table-row": [
+                {
+                    "row-class": "odd",
+                    "name": "Airi Satou",
+                    "job-title": "Accountant",
+                    "city": "Tokyo",
+                    "salary": "162,700"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Angelica Ramos",
+                    "job-title": "Chief executive officer (CEO)",
+                    "city": "London",
+                    "salary": "1,200,000"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Ashton Cox",
+                    "job-title": "Junior technical author",
+                    "city": "San Francisco",
+                    "salary": "86,000"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Bradley Greer",
+                    "job-title": "Software engineer",
+                    "city": "London",
+                    "salary": "132,000"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Brenden Wagner",
+                    "job-title": "Software engineer",
+                    "city": "San Francisco",
+                    "salary": "206,850"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Brielle Williamson",
+                    "job-title": "Integration specialist",
+                    "city": "New York",
+                    "salary": "372,000"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Bruno Nash",
+                    "job-title": "Software engineer",
+                    "city": "London",
+                    "salary": "163,500"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Caesar Vance",
+                    "job-title": "Pre-sales support",
+                    "city": "New York",
+                    "salary": "106,450"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Cara Stevens",
+                    "job-title": "Sales assistant",
+                    "city": "New York",
+                    "salary": "145,600"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Cedric Kelly",
+                    "job-title": "Senior JavaScript developer",
+                    "city": "Edinburgh",
+                    "salary": "433,060"
                 }
             ]
         }
