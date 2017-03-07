@@ -17,9 +17,10 @@ Release date: Tuesday 7 March 2017
 
 ### Changed
 
-* DataTables pattern.
-* Glyphicons pattern.
-* Form elements pattern.
+* Contact card documentation and examples.
+* DataTables examples and options.
+* Glyphicons examples.
+* Form elements examples.
 
 
 
