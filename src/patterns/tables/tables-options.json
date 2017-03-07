@@ -10,15 +10,15 @@
             ],
             "table-body": [
                 {
-                    "column-one": "ts12@st-andrews.ac.uk",
+                    "column-one": "example@st-andrews.ac.uk",
                     "column-two": "Tony Stark"
                 },
                 {
-                    "column-one": "sr34@st-andrews.ac.uk",
+                    "column-one": "example@st-andrews.ac.uk",
                     "column-two": "Steven Rogers"
                 },
                 {
-                    "column-one": "bb56@st-andrews.ac.uk",
+                    "column-one": "example@st-andrews.ac.uk",
                     "column-two": "Bruce Banner"
                 }
             ]

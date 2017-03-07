@@ -7,11 +7,7 @@
             "person-title": "Vice-Principle (Digital)",
             "person-name": "Dr Bob McBoberson",
             "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius lacus et ligula fringilla, at malesuada massa blandit. Etiam nec amet.‌",
-            "contact-info":{
-                "email": "bob231@st-andrews.ac.uk",
-                "phone": "+44 (0)1334 46 xxxx",
-                "fax": "+44 (0)1334 46 xxxx"
-            },
+            "contact-info": true,
             "call-to-action": {
                 "link": "#",
                 "text": "Full biography"
@@ -32,11 +28,7 @@
             "person-title": "Vice-Principle (Digital)",
             "person-name": "Dr Bob McBoberson",
             "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius lacus et ligula fringilla, at malesuada massa blandit. Etiam nec amet.‌",
-            "contact-info":{
-                "email": "bob231@st-andrews.ac.uk",
-                "phone": "+44 (0)1334 46 xxxx",
-                "fax": "+44 (0)1334 46 xxxx"
-            },
+            "contact-info": true,
             "image": {
                 "url": "docs/images/placeholders/200x200.jpg",
                 "alt": "placeholder"
