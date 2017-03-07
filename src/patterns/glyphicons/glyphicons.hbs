@@ -15,37 +15,18 @@
             </div>
         </div>
 
-        <div class="col-md-4">
-            <div class="btn-toolbar" role="toolbar">
-                <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star</button>
-                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star</button>
-                <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star</button>
-                <button type="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star</button>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="alert alert-danger" role="alert">
-                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                <span class="sr-only">Error:</span>
-                Enter a valid email address
-            </div>
-        </div>
-
     </div>
 {{else}}
     <div class="bs-glyphicons">
-        <ul class="bs-glyphicons-list">
-            <div class="row">
+        <div class="row">
+            <ul class="bs-glyphicons-list">
                 {{#each icons}}
-                    <div class="col-md-3 col-sm-4">
-                        <li>
-                            <span class="glyphicon glyphicon-{{this}}" aria-hidden="true"></span>
-                            <span class="glyphicon-class">glyphicon-{{this}}</span>
-                        </li>
-                    </div>
-                {{/each}}
-            </div>
-        </ul>
+                <li class="col-md-3 col-sm-4">
+                    <span class="glyphicon glyphicon-{{this}}" aria-hidden="true"></span>
+                    <span class="glyphicon-class">glyphicon-{{this}}</span>
+                </li>
+                {{/each}}               
+            </ul>
+        </div>
     </div>
 {{/if}}
