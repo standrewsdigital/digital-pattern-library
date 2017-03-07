@@ -2,62 +2,62 @@
     "options": [
         {
             "option-heading": "Staff cards",
-            "option-description": "<ul><li>Staff name should link to their research portal profile.</li><li>Staff cards must have a profile image 111 by 127 pixels.</li><li>If an image is not available, use the default staff profile image: <a href='{{ pkg.cdn.endpoint }}/{{ pkg.cdn.package }}/{{ pkg.version }}/images/contact-card-default.gif'>contact-card-default.gif</a></li></ul>",
+            "option-description": "<ul><li>Staff name should link to their research portal profile.</li><li>Staff cards must have a profile image 111 &times; 127 pixels.</li><li>If an image is not available, use the default staff profile image: <a href='{{ pkg.cdn.endpoint }}/{{ pkg.cdn.package }}/{{ pkg.version }}/images/contact-card-default.gif'>contact-card-default.gif</a></li></ul>",
             "option-anchor": "staff",
 		    "cards": [
 			    {
 			    	"id": "tom123",
-					"name": "Tom McTomerson",
-					"title": "Lecturer",
+					"name": "Sophia Adams",
+					"title": "Professor",
 					"contract-type": "academic",
 					"staff-image": true,
 					"contact-info":{
-						"email": "tmc23@st-andrews.ac.uk",
-						"phone": "01334 46xxxx"
+						"email": "example@st-andrews.ac.uk",
+						"phone": "+44 (0)1334 47 6161"
 					}
 			    },
 			    {
 			    	"id": "bob123",
-					"name": "Bob McBoberson",
-					"title": "Lecturer",
-					"contract-type": "academic",
-					"staff-image": true,
-					"contact-info":{
-						"email": "bmc123@st-andrews.ac.uk",
-						"phone": "01334 46xxxx"
-					}
-			    },
-			    {
-			    	"id": "steve123",
-					"name": "Steve McSteverson",
+					"name": "Jackson Baker",
 					"title": "Emeritus Professor",
 					"contract-type": "academic",
 					"staff-image": true,
 					"contact-info":{
-						"email": "smc123@st-andrews.ac.uk",
-						"phone": "01334 46xxxx"
+						"email": "example@st-andrews.ac.uk",
+						"phone": "+44 (0)1334 47 6161"
+					}
+			    },
+			    {
+			    	"id": "steve123",
+					"name": "Emma Clark",
+					"title": "Reader",
+					"contract-type": "academic",
+					"staff-image": true,
+					"contact-info":{
+						"email": "example@st-andrews.ac.uk",
+						"phone": "+44 (0)1334 47 6161"
 					}
 			    },
 			    {
 			    	"id": "pete123",
-					"name": "Pete McPeterson",
-					"title": "Lecturer",
-					"contract-type": "academic",
-					"staff-image": true,
-					"contact-info":{
-						"email": "pmc123@st-andrews.ac.uk",
-						"phone": "01334 46xxxx"
-					}
-			    },
-			    {
-			    	"id": "sally123",
-					"name": "Sally McSallerson",
+					"name": "Aiden Davis",
 					"title": "Senior Lecturer",
 					"contract-type": "academic",
 					"staff-image": true,
 					"contact-info":{
-						"email": "smc123@st-andrews.ac.uk",
-						"phone": "01334 46xxxx"
+						"email": "example@st-andrews.ac.uk",
+						"phone": "+44 (0)1334 47 6161"
+					}
+			    },
+			    {
+			    	"id": "sally123",
+					"name": "Olivia Evans",
+					"title": "Lecturer",
+					"contract-type": "academic",
+					"staff-image": true,
+					"contact-info":{
+						"email": "example@st-andrews.ac.uk",
+						"phone": "+44 (0)1334 47 6161"
 					}
 			    }
 		    ]
@@ -68,57 +68,57 @@
 
         {
             "option-heading": "Student cards",
-            "option-description": "<ul><li>Student contact cards do not have an image.</li></ul>",
+            "option-description": "<ul><li>Student contact cards must not have an image.</li></ul>",
             "option-anchor": "student",
 		    "cards": [
 			    {
 			    	"id": "tom123",
-					"name": "Tom McTomerson",
+					"name": "Lucas Frank",
 					"title": "PhD student",
 					"contract-type": "student",
 					"staff-image": false,
 					"contact-info":{
-						"email": "tmc23@st-andrews.ac.uk"
+						"email": "example@st-andrews.ac.uk"
 					}
 			    },
 			    {
 			    	"id": "bob123",
-					"name": "Bob McBoberson",
+					"name": "Ava Ghosh",
 					"title": "PhD student",
 					"contract-type": "student",
 					"staff-image": false,
 					"contact-info":{
-						"email": "bmc123@st-andrews.ac.uk"
+						"email": "example@st-andrews.ac.uk"
 					}
 			    },
 			    {
 			    	"id": "steve123",
-					"name": "Steve McSteverson",
+					"name": "Liam Hills",
 					"title": "PhD student",
 					"contract-type": "student",
 					"staff-image": false,
 					"contact-info":{
-						"email": "smc123@st-andrews.ac.uk"
+						"email": "example@st-andrews.ac.uk"
 					}
 			    },
 			    {
 			    	"id": "pete123",
-					"name": "Pete McPeterson",
+					"name": "Mia Irwin",
 					"title": "PhD student",
 					"contract-type": "student",
 					"staff-image": false,
 					"contact-info":{
-						"email": "pmc123@st-andrews.ac.uk"
+						"email": "example@st-andrews.ac.uk"
 					}
 			    },
 			    {
 			    	"id": "sally123",
-					"name": "Sally McSallerson",
+					"name": "Noah Jones",
 					"title": "PhD student",
 					"contract-type": "student",
 					"staff-image": false,
 					"contact-info":{
-						"email": "smc123@st-andrews.ac.uk"
+						"email": "example@st-andrews.ac.uk"
 					}
 			    }
 		    ]
