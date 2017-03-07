@@ -7,6 +7,25 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.23.0
+
+Release date: Tuesday 7 March 2017
+
+### Added
+
+* Pattern page images.
+
+### Changed
+
+* DataTables pattern.
+* Glyphicons pattern.
+* Form elements pattern.
+
+
+
+
+---
+
 ## v0.22.0
 
 Release date: Wednesday 1 March 2017
