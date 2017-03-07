@@ -4,10 +4,11 @@ title: Tables - DataTables
 
 <p><a href="https://datatables.net/">DataTables</a> is a jQuery plugin that adds interactive controls to an HTML table.</p>
 
-<p>DataTables may be used for displaying large amounts of data across multiple columns, but it is suitable for any sized data set. DataTables will enable your tables to be viewable on mobile devices. It does this by hiding columns, starting from the right side, and showing those when you click on the arrow.</p>
+<p>DataTables may be used for displaying large amounts of data across multiple columns, but it is suitable for any sized data set. DataTables will enable your tables to be viewable on mobile devices. It does this by hiding columns, starting from the right side, and showing them when you click on the arrow.</p>
 
+<h3>Rules for DataTables</h3>
 <ul>
-    <li>You must use only text-based content within tables.</li>
+    <li>Must only use text-based content within tables.</li>
     <li>See the <a href="../tables/index.html">tables pattern</a> for available colour options.</li>
 </ul>
 
@@ -23,7 +24,12 @@ title: Tables - DataTables
 	<li>JavaScript: <code>{{ pkg.cdn.endpoint }}/{{ pkg.cdn.package }}/{{pkg.version}}/scripts/datatables.js</code></li>
 </ul>
 
-<p>Add the class <code>dataTable</code> to your table.</p>
+<h3>Options available</h3>
+<ul>
+{{#datatables-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/datatables-options.options}}
+</ul>
 
 {{# datatables-options.options}}
 <hr>

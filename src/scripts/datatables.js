@@ -13,9 +13,9 @@
 
         /* Set the defaults for DataTables initialisation */
         $.extend(true, DataTable.defaults, {
-            dom: "<'row dt-pre'<'col-md-6'<'dt-title'>><'col-md-6 text-right'f>>" +
+            dom: "<'row dt-pre'<'col-md-6'<'dt-title'>l><'col-md-6 text-right'f>>" +
                 "<'row dt-table'<'col-sm-12'tr>>" +
-                "<'row dt-post'<'col-md-6'p><'col-md-6 text-right'il>>",
+                "<'row dt-post'<'col-md-6'p><'col-md-6 text-right'i>>",
             renderer: 'bootstrap',
             preDrawCallback: function(settings) {
                 var container = $(this.api().table().container()),
@@ -36,11 +36,12 @@
                 processing: "Loading...",
                 search: "Filter "
             },
-
-            lengthChange: false, // disable the num of rows selector
+            info: false,
             pageLength: 10,
-            processing: true
-
+            processing: true,
+            responsive: true,
+            searching: false,
+            paging: false
         });
 
 
@@ -114,7 +115,8 @@
                                 break;
                         }
 
-                        if (btnDisplay) {
+                        // Only show pagination of there is more than one page (>10 rows).
+                        if (btnDisplay && pages > 1) {
                             node = $('<li>', {
                                     'class': classes.sPageButton + ' ' + btnClass,
                                     'aria-controls': settings.sTableId,
@@ -203,8 +205,16 @@
 
     // Auto setup any tables with class 'dataTable'
     $('.dataTable').DataTable({
-        responsive: true
+        info: true, // enable the "x to xx of xx rows" text
+        lengthChange: true, // enable the num of rows selector
+        lengthMenu: [ [ 10, 25, 50, 100, -1], [ 10, 25, 50, 100, "All"] ], // Set the row selector values
+        searching: true, // enable the filter
+        paging: true // enable pagination
     });
 
+    // Auto setup bare-bones version of the datatable with any tables with class
+    $('.dataTable-simplified').DataTable({
+
+    });
 
 })(window, document);

@@ -10,55 +10,35 @@
 					"name": "Tom McTomerson",
 					"title": "Lecturer",
 					"contract-type": "academic",
-					"staff-image": true,
-					"contact-info":{
-						"email": "tmc23@st-andrews.ac.uk",
-						"phone": "01334 46xxxx"
-					}
+					"staff-image": true
 			    },
 			    {
 			    	"id": "bob123",
 					"name": "Bob McBoberson",
 					"title": "Lecturer",
 					"contract-type": "academic",
-					"staff-image": true,
-					"contact-info":{
-						"email": "bmc123@st-andrews.ac.uk",
-						"phone": "01334 46xxxx"
-					}
+					"staff-image": true
 			    },
 			    {
 			    	"id": "steve123",
 					"name": "Steve McSteverson",
 					"title": "Emeritus Professor",
 					"contract-type": "academic",
-					"staff-image": true,
-					"contact-info":{
-						"email": "smc123@st-andrews.ac.uk",
-						"phone": "01334 46xxxx"
-					}
+					"staff-image": true
 			    },
 			    {
 			    	"id": "pete123",
 					"name": "Pete McPeterson",
 					"title": "Lecturer",
 					"contract-type": "academic",
-					"staff-image": true,
-					"contact-info":{
-						"email": "pmc123@st-andrews.ac.uk",
-						"phone": "01334 46xxxx"
-					}
+					"staff-image": true
 			    },
 			    {
 			    	"id": "sally123",
 					"name": "Sally McSallerson",
 					"title": "Senior Lecturer",
 					"contract-type": "academic",
-					"staff-image": true,
-					"contact-info":{
-						"email": "smc123@st-andrews.ac.uk",
-						"phone": "01334 46xxxx"
-					}
+					"staff-image": true
 			    }
 		    ]
         },
@@ -76,50 +56,35 @@
 					"name": "Tom McTomerson",
 					"title": "PhD student",
 					"contract-type": "student",
-					"staff-image": false,
-					"contact-info":{
-						"email": "tmc23@st-andrews.ac.uk"
-					}
+					"staff-image": false
 			    },
 			    {
 			    	"id": "bob123",
 					"name": "Bob McBoberson",
 					"title": "PhD student",
 					"contract-type": "student",
-					"staff-image": false,
-					"contact-info":{
-						"email": "bmc123@st-andrews.ac.uk"
-					}
+					"staff-image": false
 			    },
 			    {
 			    	"id": "steve123",
 					"name": "Steve McSteverson",
 					"title": "PhD student",
 					"contract-type": "student",
-					"staff-image": false,
-					"contact-info":{
-						"email": "smc123@st-andrews.ac.uk"
-					}
+					"staff-image": false
 			    },
 			    {
 			    	"id": "pete123",
 					"name": "Pete McPeterson",
 					"title": "PhD student",
 					"contract-type": "student",
-					"staff-image": false,
-					"contact-info":{
-						"email": "pmc123@st-andrews.ac.uk"
-					}
+					"staff-image": false
 			    },
 			    {
 			    	"id": "sally123",
 					"name": "Sally McSallerson",
 					"title": "PhD student",
 					"contract-type": "student",
-					"staff-image": false,
-					"contact-info":{
-						"email": "smc123@st-andrews.ac.uk"
-					}
+					"staff-image": false
 			    }
 		    ]
         }
