@@ -7,6 +7,26 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v0.23.0
+
+Release date: Tuesday 7 March 2017
+
+### Added
+
+* Pattern page images.
+
+### Changed
+
+* Contact card documentation and examples.
+* DataTables examples and options.
+* Glyphicons examples.
+* Form elements examples.
+
+
+
+
+---
+
 ## v0.22.0
 
 Release date: Wednesday 1 March 2017
