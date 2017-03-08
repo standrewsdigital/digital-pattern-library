@@ -5,14 +5,15 @@
 
 div.featured-image img {
 	float: right;
-	padding-left: 30px;
+	margin-left: 30px;
+    margin-bottom:60px;
 }
 
 
 @media (max-width: 720px) {
 	div.featured-image img  {
 		float: left;
-		padding-left: 0px;
+		margin-left: 0;
 		margin-right: 250px;
 		margin-bottom: 20px;
 		clear: right;
