@@ -3,7 +3,21 @@
 /* BEGIN Pattern: featured news  */
 /*********************************/
 
+div.featured-image img {
+	float: right;
+	padding-left: 30px;
+}
 
+
+@media (max-width: 720px) {
+	div.featured-image img  {
+		float: left;
+		padding-left: 0px;
+		margin-right: 250px;
+		margin-bottom: 20px;
+		clear: right;
+	}
+}
 
 /*********************************/
 /* END Pattern: featured news    */
