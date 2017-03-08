@@ -100,7 +100,7 @@
                   "url": "patterns/content-whole/index.html"
                 },
                 { "name": "Featured news",
-                  "img": "assets/docs/images/patterns/more-news.jpg",
+                  "img": "assets/docs/images/patterns/featured-news.jpg",
                   "url": "patterns/featured-news/index.html"
                 },                
                 { "name": "Gallery",
