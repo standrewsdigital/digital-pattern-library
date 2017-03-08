@@ -1,55 +1,36 @@
 <!-- Begin pattern: tile-grid //-->
-
 <div class="tile-grid"{{#if bg-image}} style="background-image: url({{asset bg-image}});"{{/if}}>
-
 	<div class="container">
-
 		<div class="row">
 			<div class="col-md-8">
 				{{#if heading}}
-					<h2>{{{ heading }}}</h2>
+					<h2>{{{heading}}}</h2>
 				{{else}}
-					<h2 class="sta-grey">{{{ heading-dark }}}</h2>
+					<h2 class="sta-grey">{{{heading-dark}}}</h2>
 				{{/if}}
 			</div>
-
 			<div class="col-md-4 read-more read-more-container">
-
-				<a href="{{default call-to-browse-url "call-to-browse-url"}}">{{default call-to-browse-text "call-to-browse-text"}}</a>
-
+				<a href="#">{{call-to-browse-text}}</a>
 			</div>
 		</div>
 
 		<div class="row">
+		{{#each tiles}}
 			<div class="col-sm-6 col-md-4">
-				{{> tile tile-1 }}
+				<article class="tile {{color}}">
+					<div class="tile-image-title">
+						<img src="{{asset image.url}}" alt="{{image.alt}}">
+						<h3><a href="#">{{title}}</a></h3>
+					</div>
+					<p>{{description}}</p>
+					<div class="tile-date">{{date-display}}</div>
+					<div class="tile-type">{{type}}</div>
+					<div class="clear"></div>
+				</article>
 			</div>
-
-			<div class="col-sm-6 col-md-4">
-				{{> tile tile-2}}
-			</div>
-
-			<div class="col-sm-6 col-md-4">
-				{{> tile tile-3}}
-			</div>
-
-			<div class="col-sm-6 col-md-4">
-				{{> tile tile-4}}
-			</div>
-
-			<div class="col-sm-6 col-md-4">
-				{{> tile tile-5}}
-			</div>
-
-			<div class="col-sm-6 col-md-4">
-				{{> tile tile-6}}
-			</div>
-		</div>  <!-- // End .row -->
-
+		{{/each}}
+		</div>
 		<div class="read-more read-more-container-alt"></div>
-
-	</div> <!-- // End .container -->
-
-</div>  <!-- // End .tile-grid -->
-
+	</div>
+</div>
 <!-- End pattern: tile-grid //-->

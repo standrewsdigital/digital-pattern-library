@@ -347,14 +347,6 @@ module.exports = function(grunt) {
                     dest: 'docs/assets/docs/images'
                 }]
             },
-            docs_googlemaps: {
-                files: [{
-                    expand: true,
-                    cwd: 'src/scripts/',
-                    src: ['location-data.js'],
-                    dest: 'docs/patterns/google-maps/examples/'
-                }]
-            },
             docs_datatables: {
                 files: [{
                     expand: true,
@@ -496,7 +488,6 @@ module.exports = function(grunt) {
         'assemble:examples',
         'assemble:docs',
         'copy:docs_core',
-        'copy:docs_images',
-        'copy:docs_googlemaps'
+        'copy:docs_images'
     ]);
 };
