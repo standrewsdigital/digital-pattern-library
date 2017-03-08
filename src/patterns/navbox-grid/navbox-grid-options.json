@@ -1,8 +1,37 @@
 {
     "options": [
         {
-            "option-heading": "Navbox 3 grid",
+            "option-heading": "Two links with images",
             "option-description": "",
+            "option-anchor": "2-grid",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/555x240-002.jpg",
+                        "alt": "Description"
+                    },
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-6"
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/555x240-001.jpg",
+                        "alt": "Description"
+                    },
+                    "title": "Research",
+                    "column": "col-sm-6"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Three links with images",
+            "option-description": "",
+            "option-anchor": "3-grid",
             "grid-row": true,
             "box-size": [
                 {
@@ -36,8 +65,99 @@
 
 
         {
-            "option-heading": "Navbox 4 grid",
+            "option-heading": "Three links with images and paragraphs",
+            "option-description": "<p>Use this when you want to give a brief summary of the destination page.</p>",
+            "option-anchor": "3-grid-paragraph",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240-study.jpg",
+                        "alt": "Description"
+                    },
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240-research.jpg",
+                        "alt": "Description"
+                    },
+                    "title": "Research",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240-alumni.jpg",
+                        "alt": "Description"
+                    },
+                    "title": "Alumni and donors",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Three links without images and paragraphs",
+            "option-description": "",
+            "option-anchor": "3-grid-no-image",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "Research",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "Alumni and donors",
+                    "column": "col-sm-4"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Three links with paragraphs but without images",
+            "option-description": "<p>Use this when you want to give a brief summary of the destination page.</p>",
+            "option-anchor": "3-grid-no-image-paragraph",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Research",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Alumni and donors",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Four links with images",
             "option-description": "<p></p>",
+            "option-anchor": "4-grid",
             "grid-row": true,
             "box-size": [
                 {
@@ -79,8 +199,9 @@
 
 
         {
-            "option-heading": "Navbox 5 grid",
+            "option-heading": "Five links with images",
             "option-description": "<p></p>",
+            "option-anchor": "5-grid",
             "grid-row": true,
             "box-size": [
                 {
@@ -130,8 +251,9 @@
 
 
         {
-            "option-heading": "Navbox 6 grid",
+            "option-heading": "Six links with images",
             "option-description": "<p></p>",
+            "option-anchor": "6-grid",
             "grid-row": true,
             "box-size": [
                 {
@@ -189,58 +311,103 @@
 
 
         {
-            "option-heading": "Navbox hidden",
-            "option-description": "<p>Option to disable the no. 2 and 3 or just the no. 3 navboxes using the bootstrap CSS helper class <code>hidden</code>.</p>",
+            "option-heading": "More than six links without images",
+            "option-description": "<p>Must be used when you have more than six links without a paragraph.</p>",
+            "option-anchor": "3-grid-no-image",
             "grid-row": true,
             "box-size": [
                 {
-                    "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-study.jpg",
-                        "alt": "Description"
-                    },
                     "title": "Study at St Andrews",
                     "column": "col-sm-4"
                 },
                 {
-                    "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-research.jpg",
-                        "alt": "Description"
-                    },
                     "title": "Research",
                     "column": "col-sm-4"
                 },
                 {
-                    "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-alumni.jpg",
-                        "alt": "Description"
-                    },
+                    "title": "About",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "Governance",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "History",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "Sustainability",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "News",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "Visiting",
+                    "column": "col-sm-4"
+                },
+                {
                     "title": "Alumni and donors",
                     "column": "col-sm-4"
-                },
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "More than six links with paragraphs but without images",
+            "option-description": "<p>Must be used when you have more than six links with a paragraph.</p>",
+            "option-anchor": "3-grid-no-image-paragraph",
+            "grid-row": true,
+            "box-size": [
                 {
-                    "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-study.jpg",
-                        "alt": "Description"
-                    },
                     "title": "Study at St Andrews",
-                    "column": "col-sm-4"
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
                 },
                 {
-                    "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-research.jpg",
-                        "alt": "Description"
-                    },
                     "title": "Research",
-                    "column": "col-sm-4"
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                 },
                 {
-                    "visible": "hidden",
-                    "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-research.jpg",
-                        "alt": "Description"
-                    },
-                    "title": "Research",
-                    "column": "col-sm-4"
+                    "title": "Alumni and donors",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "About",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Governance",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                },
+                {
+                    "title": "History",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Sustainability",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "News",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                },
+                {
+                    "title": "Visiting",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
                 }
             ]
         }
