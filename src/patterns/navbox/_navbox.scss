@@ -78,27 +78,24 @@
 	margin-top: -20px;
 }
 
+@media (max-width: 1199px) and (min-width: 992px) {
+    .navbox-image {
+        max-height: 196px;
+        overflow: hidden;
+    }
+}
+
 @media (max-width: 991px) and (min-width: 768px) {
 
 	/* Make the title show below instead of on top of the image... */
-    .navbox {
-        margin-bottom: 90px;
+    .navbox-image {
+        max-height: 145px;
+        overflow: hidden;
     }
 
     .navbox-title {
         font-size: 21px;
         position: absolute;
-        bottom: -59px;
-    }
-
-    /* ... and switch to non-transparent background colour. */
-
-    .navbox-title {
-        background: $sta-blue;
-    }
-
-    .navbox-title:hover, .navbox:hover .navbox-title{
-        background: $sta-blue-hover;
     }
 
     .navbox-title:before {
@@ -132,4 +129,4 @@
 
 /*********************************/
 /* END Pattern: navbox           */
-/********************************/
+/*********************************/
