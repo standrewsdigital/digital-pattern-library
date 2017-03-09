@@ -2,16 +2,18 @@
 <div class="tile-grid"{{#if bg-image}} style="background-image: url({{asset bg-image}});"{{/if}}>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-md-6 col-lg-8">
 				{{#if heading}}
 					<h2>{{{heading}}}</h2>
 				{{else}}
 					<h2 class="sta-grey">{{{heading-dark}}}</h2>
 				{{/if}}
 			</div>
-			<div class="col-md-4 read-more read-more-container">
-				<a href="#">{{call-to-browse-text}}</a>
+			{{#each call-to-action-text}}
+			<div class="{{read-more-size}} read-more read-more-container">
+				<a href="#">{{title}}</a>
 			</div>
+			{{/each}}
 		</div>
 
 		<div class="row">
