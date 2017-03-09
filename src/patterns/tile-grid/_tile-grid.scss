@@ -8,7 +8,6 @@
     -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
        -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
             box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
-    clear: both;
     margin: 0 auto 3em;
     max-width: 360px;
 }
@@ -18,7 +17,6 @@
     -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
        -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
             box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
-    // clear: both;
     margin: 0 auto 2em;
     max-width: 100%;
 }
@@ -31,7 +29,6 @@
     height: auto;
  	position: relative;
     width: 100%;
-    z-index: 0;
 }
 
 .tile h3 {
@@ -44,7 +41,6 @@
     bottom: 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     width: 100%;
-    z-index: 100;
     @include -dpl-transition();
 }
 
@@ -132,7 +128,7 @@
 	        background-size: cover;
 	color: inherit;
 	font-weight: 200;
-	line-height: 2.1428571435;
+	line-height: 2;
 	padding: 30px 0;
 }
 
@@ -164,9 +160,9 @@
 	@extend i.chevron;
 	content: '';
 	float: right;
-	height: 28px !important;
-	top: 10px !important;
-	width: 30px !important;
+	height: 28px;
+	top: 10px;
+	width: 30px;
 }
 
 
@@ -185,7 +181,7 @@
 	}
 
 	.read-more a:before {
-		height: 20px !important;
+		height: 20px;
 	}
 }
 
