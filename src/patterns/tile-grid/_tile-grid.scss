@@ -136,12 +136,12 @@
 	color: white;
 	font-size: 2.5em;
 	margin: 10px 0 20px 0;
-	text-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.5);
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .tile-grid h2.sta-grey {
 	color: $sta-grey;
-	text-shadow: 0 rgba(0, 0, 0, 0);
+	text-shadow: none;
 }
 
 .read-more a {
