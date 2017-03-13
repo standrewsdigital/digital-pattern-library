@@ -3,17 +3,27 @@ title: Content halves
 ---
 
 <p>The content halves pattern contains two equal width content columns. There is the option of a heading above the columns and a full-width background colour.</p>
+
+<h3>Rule for content halves</h3>
+
 <ul>
-	<li>Content must be present in both columns.</li>
-	<li>A video is allowed in the second column.</li>
-	<li>No images are allowed in either column.</li>
-	<li>When using the optional heading above the columns it must use heading 2 with and sub-headings in the content as heading 3.</li>
-	<li>If using a background colour, it must use colours from the DPL palette and comply with accessibility for contrast between text and background: a contrast ratio of 0.8 or above.</li>
+	<li>Must have content in both columns.</li>
+	<li>A video may be used in the right-hand column.</li>
+	<li>Images must not be used in either column.</li>
+	<li>Background must be either white or grey.</li>
+	<li>Accordions may be used in the right-hand column only on the subjects pages.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#content-halves-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/content-halves-options.options}}
 </ul>
 
 {{#content-halves-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 </div>
 {{> content-halves}}
