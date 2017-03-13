@@ -3,6 +3,122 @@
 /* BEGIN Pattern: tile-grid      */
 /*********************************/
 
+.tile {
+    background-color: white;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+       -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+            box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+    margin: 0 auto 3em;
+    max-width: 360px;
+}
+
+.tile.tile-responsive {
+    background-color: white;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+       -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+            box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+    margin: 0 auto 2em;
+    max-width: 100%;
+}
+
+.tile-image-title {
+    position: relative;
+}
+
+.tile img {
+    height: auto;
+ 	position: relative;
+    width: 100%;
+}
+
+.tile h3 {
+    background: $sta-blue-T;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin: 0;
+    padding: .5em .8em;
+    position: absolute;
+    bottom: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    @include -dpl-transition();
+}
+
+.tile:hover {
+    cursor: pointer;
+}
+
+.tile:hover h3 {
+    background: $sta-blue-T-hover;
+}
+
+.tile h3 a {
+    color: white;
+	text-decoration: none;
+}
+
+.tile p {
+    font-size: 1em;
+ 	height: 5em;
+ 	line-height: 1.2em;
+ 	margin: 1.5em 0;
+    overflow: hidden;
+    padding: 0 1em;
+}
+
+.tile-date {
+    color: $sta-grey;
+    float: left;
+    font-size:   15px;
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+.tile-type {
+    color: $sta-grey;
+    float: right;
+    font-size:   15px;
+    font-weight: bold;
+    padding-right: 1em;
+}
+
+/* Colors */
+
+.tile.green h3 {
+    background: $sta-green-T;
+}
+
+.tile.green:hover h3 {
+    background: $sta-green-T-hover;
+}
+
+.tile.purple h3 {
+    background: $sta-purple-T;
+}
+
+.tile.purple:hover h3 {
+    background: $sta-purple-T-hover;
+}
+
+.tile.red h3 {
+    background: $sta-red-T;
+}
+
+.tile.red:hover h3 {
+    background: $sta-red-T-hover;
+}
+
+@media (max-width: 767px) {
+    .tile {
+        margin-bottom: 2em;
+    }
+
+    .tile p {
+        height: auto;
+    }
+}
+
+
 .tile-grid {
 	background-color:        $sta-grey-light;
 	background-position:     center;
@@ -13,7 +129,7 @@
 	        background-size: cover;
 	color: inherit;
 	font-weight: 200;
-	line-height: 2.1428571435;
+	line-height: 2;
 	padding: 30px 0;
 }
 
@@ -21,12 +137,12 @@
 	color: white;
 	font-size: 2.5em;
 	margin: 10px 0 20px 0;
-	text-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.5);
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .tile-grid h2.sta-grey {
 	color: $sta-grey;
-	text-shadow: 0 rgba(0, 0, 0, 0);
+	text-shadow: none;
 }
 
 .read-more a {
@@ -45,9 +161,9 @@
 	@extend i.chevron;
 	content: '';
 	float: right;
-	height: 28px !important;
-	top: 10px !important;
-	width: 30px !important;
+	height: 28px;
+	top: 10px;
+	width: 30px;
 }
 
 
@@ -66,7 +182,7 @@
 	}
 
 	.read-more a:before {
-		height: 20px !important;
+		height: 20px;
 	}
 }
 
