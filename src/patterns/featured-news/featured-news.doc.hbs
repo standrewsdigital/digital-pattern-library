@@ -4,6 +4,7 @@ title: Featured news
 
 <p>Featured news is used to promote a particular item such as a blog post, news article or story at the top of the page.</p>
 
+<h3>Rules for featured news</h3>
 <ul>
     <li>Title must have no more than 125 characters.</li>
     <li>Description must have no more than 300 characters.</li>
@@ -12,9 +13,20 @@ title: Featured news
 	<li>The 'featured item' heading can be changed to the context of the site. For example, featured news, featured story, featured post.</li>
 </ul>
 
+<h3>Options available</h3>
+<ul>
+{{#featured-news-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/featured-news-options.options}}
+</ul>
+
+{{#featured-news-options.options}}
 <hr>
-
-{{> featured-news}}
-
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+	{{> featured-news}}
+<div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> featured-news}}</code></pre>
+{{/featured-news-options.options}}
