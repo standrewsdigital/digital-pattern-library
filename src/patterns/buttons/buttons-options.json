@@ -1,0 +1,104 @@
+{
+    "options" : [
+        {
+            "option-heading": "Primary button",
+            "option-description": "<p>Primary buttons are used on all pages with the primary blue theme.</p>",
+            "option-anchor": "primary-button",
+            "buttons": [
+                {
+                    "type": "primary",
+                    "text": "Primary"
+                }
+            ]
+         },
+
+
+
+
+         {
+            "option-heading": "Secondary and tertiary buttons",
+            "option-description": "<p>Secondary and tertiary buttons are used on pages currently using the secondary and tertiary palette themes.</p>",
+            "option-anchor": "secondary-buttons",
+            "buttons": [
+                {
+                    "type": "secondary",
+                    "text": "Secondary"
+                },
+                {
+                    "type": "tertiary-1",
+                    "text": "Tertiary 1"
+                },
+                {
+                    "type": "tertiary-2",
+                    "text": "Tertiary 2"
+                },
+                {
+                    "type": "tertiary-3",
+                    "text": "Tertiary 3"
+                }
+            ]
+          },
+
+
+
+
+         {
+            "option-heading": "Label buttons",
+            "option-description": "<ul><li>Label buttons must be used only on forms and other tasks that involve a user completing a task.</li><li>For further information on the application of buttons in forms, see the <a href='../../patterns/form-elements/index.html'>form elements</a> pattern.</li></ul>",
+            "option-anchor": "label-buttons",
+            "buttons": [
+                {
+                    "type": "success",
+                    "text": "Success"
+                },
+                {
+                    "type": "info",
+                    "text": "Info"
+                },
+                {
+                    "type": "warning",
+                    "text": "Warning"
+                },
+                {
+                    "type": "danger",
+                    "text": "Danger"
+                }
+            ]
+          },
+
+
+
+
+        {
+            "option-heading": "Icon buttons",
+            "option-description": "<ul><li>An icon button must be used when the button action is to download a file.</li><li>An associated <a href='../font-awesome/index.html'>font awesome</a> icon to the downloadable file must be included in the button.</li></ul>",
+            "option-anchor": "icon-buttons",
+            "buttons": [
+                {
+                    "type": "primary",
+                    "text": "PDF document",
+                    "icon-class": "fa fa-file-pdf-o",
+                    "icon-title": "PDF"
+                },
+                {
+                    "type": "primary",
+                    "text": "ZIP file",
+                    "icon-class": "fa fa-file-zip-o",
+                    "icon-title": "ZIP"
+                },
+                {
+                    "type": "primary",
+                    "text": "Word document",
+                    "icon-class": "fa fa-file-word-o",
+                    "icon-title": "Word"
+                },
+                {
+                    "type": "primary",
+                    "text": "Powerpoint presentation",
+                    "icon-class": "fa fa-file-powerpoint-o",
+                    "icon-title": "Powerpoint"
+                }
+            ]
+        }
+    ]
+}

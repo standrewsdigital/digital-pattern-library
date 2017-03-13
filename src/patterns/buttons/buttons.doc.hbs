@@ -4,44 +4,26 @@ title: Buttons
 
 <p>Buttons are calls to action that are used to direct users to related pages.</p>
 
+<h3>Rules for buttons</h3>
 <ul>
-	<li>These buttons must be used only within main content regions of a page; they must not be used in asides.</li>
+	<li>Buttons must be used only within main body of a page; they must not be used in asides.</li>
 	<li>Buttons must not be used mid-sentence. They must always appear on their own line separated from written content.</li>
+	<li>Buttons linking to downloadable content must use the icon button option.</li>
 </ul>
 
-<hr>
-<h3>Primary button</h3>
-
+<h3>Options available</h3>
 <ul>
-	<li>Primary buttons are used on all pages with the primary blue theme.</li>
+{{#buttons-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/buttons-options.options}}
 </ul>
 
-{{> primary-button}}
-<span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> primary-button}}</code></pre>
-
+{{#buttons-options.options}}
 <hr>
-<h3>Secondary and tertiary buttons</h3>
-
-<ul>
-	<li>Secondary and tertiary buttons are used on pages currently using the secondary and tertiary palette themes.</li>
-	<li>A web page currently using <code>btn-secondary</code> buttons is the main <a href="https://www.st-andrews.ac.uk/study/ug/">undergraduate study</a> landing page.</li>
-	<li>A web page currently using <code>btn-tertiary-1</code> buttons is the main <a href="https://www.st-andrews.ac.uk/study/pg/">postgraduate study</a> landing page.</li>
-	<li>A web page currently using <code>btn-tertiary-3</code> buttons is the main <a href="https://www.st-andrews.ac.uk/study/non-degree/">non-degree study</a> landing page.</li>
-</ul>
-
-{{> secondary-buttons}}
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+{{>  buttons}}
+<br><br>
 <span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> secondary-buttons}}</code></pre>
-
-<hr>
-<h3>Label buttons</h3>
-
-<ul>
-	<li>Label buttons must be used only on forms and other tasks that involve a user completing a task.</li>
-	<li>For further information on the application of buttons in forms, see the '<a href="../../patterns/form-elements/index.html">form elements</a>' pattern.
-</ul>
-
-{{> label-buttons}}
-<span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> label-buttons}}</code></pre>
+<pre><code class="pattern-source html">{{> buttons}}</code></pre>
+{{/buttons-options.options}}
