@@ -3,11 +3,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-lg-8">
-				{{#if heading}}
-					<h2>{{{heading}}}</h2>
-				{{else}}
-					<h2 class="sta-grey">{{{heading-dark}}}</h2>
-				{{/if}}
+			{{#if heading}}
+				<h2>{{{heading}}}</h2>
+			{{else}}
+				<h2 class="sta-grey">{{{heading-dark}}}</h2>
+			{{/if}}
 			</div>
 			{{#each call-to-action-text}}
 			<div class="{{read-more-size}} read-more read-more-container">
@@ -15,14 +15,13 @@
 			</div>
 			{{/each}}
 		</div>
-
 		<div class="row">
 		{{#each tiles}}
 			<div class="col-sm-6 col-md-4">
 				<article class="tile {{color}}">
 					<div class="tile-image-title">
 						<img src="{{asset image.url}}" alt="{{image.alt}}">
-						<h3><a href="#">{{title}}</a></h3>
+						<h3><a href="#" role="button">{{title}}</a></h3>
 					</div>
 					<p>{{description}}</p>
 					<div class="tile-date">{{date-display}}</div>
