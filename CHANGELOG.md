@@ -13,6 +13,7 @@ Release date: Monday 13 March 2017
 ### Added
 
 * Featured news pattern.
+* Form elements added 'dpl-form' class for new style form.
 
 ### Changed
 
@@ -20,6 +21,10 @@ Release date: Monday 13 March 2017
 * Navbox grid add examples and update documentation.
 * Content-halves add examples and update documentation.
 * Buttons, add examples and update documentation.
+
+### Fixed
+
+* Form elements input sizing.
 
 ### Removed
 
