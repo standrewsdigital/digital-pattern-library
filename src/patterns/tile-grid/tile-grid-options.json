@@ -3,7 +3,7 @@
 
         {
             "option-heading": "Tile grid with background image",
-            "option-description": "<p>By default there is no background image. To add a background image, attach the image using an inline style. For example: <code>&lt;div class=&quot;tile-grid&quot; style=&quot;background-image: url(path/to/image.jpg)&quot;&gt;</code>.</p><p>The image will be be set to <code>cover</code> the background, so select a large image. The example image is <code>2100 x 1400</code>.</p><p>All images used for backgrounds must be blurred. This can be done easily in Photoshop.</p>",
+            "option-description": "<p>To add a background image, attach the image using an inline style, e.g. <code>&lt;div class=&quot;tile-grid&quot; style=&quot;background-image: url(path/to/image.jpg)&quot;&gt;</code>.</p><ul><li>Background image must be blurred, this can be done easily in Photoshop.</li><li>Background image must be large, this example is 2100 x 1400 pixels.</li></ul>",
             "option-anchor": "image-background",
             "heading": "What's happening in St Andrews",
             "call-to-action-text": [
@@ -91,7 +91,7 @@
 
 
         {
-            "option-heading": "Tile grid with solid background",
+            "option-heading": "Tile grid with light grey background",
             "option-description": "<p>This is the default background.</p>",
             "option-anchor": "solid-background",
             "heading-dark": "What's happening in St Andrews",
