@@ -1,0 +1,12 @@
+{
+    "options": [
+        {
+            "option-heading": "Default",
+            "option-description": "",
+            "option-anchor": "featured-news",
+            "title": "Featured item title",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula nisi ac odio euismod, quis porta felis interdum. Vestibulum euismod neque felis, at condimentum nisi porttitor bibendum. Ut pellentesque ex non ipsum cursus faucibus. Aliquam id viverra massa. Suspendisse tincidunt sed nisi quis hendrerit. Aenean maximus elementum ligula, et viverra…",
+            "url": "docs/images/placeholders/360x240.jpg"
+        }
+    ]
+ }

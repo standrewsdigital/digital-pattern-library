@@ -95,6 +95,10 @@
                   "img": "assets/docs/images/patterns/content-whole.jpg",
                   "url": "patterns/content-whole/index.html"
                 },
+                { "name": "Featured news",
+                  "img": "assets/docs/images/patterns/featured-news.jpg",
+                  "url": "patterns/featured-news/index.html"
+                },                
                 { "name": "Gallery",
                   "img": "assets/docs/images/patterns/gallery.jpg",
                   "url": "patterns/gallery/index.html"
