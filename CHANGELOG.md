@@ -6,6 +6,29 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v0.24.0
+
+Release date: Monday 13 March 2017
+
+### Added
+
+* Featured news pattern.
+
+### Changed
+
+* Tile grid update documentation and add examples.
+* Navbox grid add examples and update documentation.
+* Content-halves add examples and update documentation.
+* Buttons, add examples and update documentation.
+
+### Removed
+
+* Tile pattern, merged into tile grid.
+
+
+
+
+---
 
 ## v0.23.0
 
