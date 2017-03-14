@@ -230,7 +230,14 @@ title: Form elements
 
 <h4>Textarea with input limit counter</h4>
 
-<p>Allows for multiple lines of text with a character counter. This will warn the user when the limit is exceeded.</p>
+<ul>
+	<li>Allows for multiple lines of text with a character limit counter.</li>
+	<li>There may be multiple textareas with limit counters of varying lengths on one page.</li>
+	<li>Warns the user when the character limit is exceeded.</li>
+	<li>The textarea must have the class <code>limit-counter</code>.</li>
+	<li>The textarea must have the data-attribute <code>data-length="[limit]"</code>, this sets the character limit.</li>
+	<li>There must be an adjacent element <code>&lt;div class="textarea_feedback"&gt;&lt;/div&gt;</code>.</li>
+</ul>
 
 <div class="container dpl-form">
 		{{> form-elements-input-textarea-counter}}
