@@ -4,16 +4,23 @@ title: Content thirds
 
 <p>The content thirds pattern contains a &frac23; width column for the main content and an optional &frac13; width column for related content. There is the option of a heading above the columns and a full-width background colour.</p>
 
+<h3>Rules for content thirds</h3>
 <ul>
     <li>When using the optional heading above the columns it must use heading 2 (<code>&lt;h2&gt;</code>) and sub-headings in the content as heading 3 (<code>&lt;h3&gt;</code>).</li>
     <li>If using a background colour, only the class: <code>sta-grey-light</code> is allowed.</li>
-    <li>The second column (&frac13;) must only contain a navigation box or related content.</li>
+    <li>The second column (&frac13;) must only contain a <a href="../navbox/index.html">navbox </a> or related content, such as text or contact information.</li>
 </ul>
 
+<h3>Options available</h3>
+<ul>
+{{#content-thirds-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/content-thirds-options.options}}
+</ul>
 
 {{#content-thirds-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 </div>
 {{> content-thirds}}
