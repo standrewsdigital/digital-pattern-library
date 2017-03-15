@@ -2,7 +2,8 @@
     "options": [
         {
             "option-heading": "Default",
-            "option-description": "<p>Description here.</p>",
+            "option-description": "",
+            "option-anchor": "default",
             "updates-title": "Updates",
             "featured-update": "Featured update",
             "featured-update-content": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
