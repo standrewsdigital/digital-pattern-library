@@ -3,6 +3,7 @@
 
         {
             "option-heading": "Image background with transparent overlay",
+            "option-anchor": "transparent",
             "option-description": "<p>An image with a transparent colour overlay or a solid colour may be used for the background.</p>",
             "title": "Category title",
             "url": "#"
@@ -13,6 +14,7 @@
 
         {
             "option-heading": "Solid background",
+            "option-anchor": "solid",
             "option-description": "",
             "class": "category-header-solid",
             "title": "Category title",
@@ -24,6 +26,7 @@
 
         {
             "option-heading": "Web application",
+            "option-anchor": "webapp",
             "option-description": "",
             "class": "category-header-solid",
             "title": "Web application",
