@@ -2,7 +2,8 @@
     "options": [
         {
             "option-heading": "Default header",
-            "option-description": "<p>Should be used on all University webpages except the University homepage, School homepages, or web applications.</p>"
+            "option-anchor": "default",
+            "option-description": "<p>Must be used on all University webpages except the University homepage, School homepages, or web applications.</p>"
         },
 
 
@@ -10,6 +11,7 @@
 
         {
             "option-heading": "University homepage header",
+            "option-anchor": "homepage",
             "option-description": "<p>Must be used only on the University homepage.</p>",
             "audience": true,
             "links": {
@@ -24,6 +26,7 @@
 
         {
             "option-heading": "School header",
+            "option-anchor": "school-header",
             "option-description": "<p>Must be used on every page within a School website.</p>",
             "audience": true,
             "links": {
@@ -37,7 +40,8 @@
 
         {
             "option-heading": "Authenticated header",
-            "option-description": "<p>When a user is authenticated, the header should be altered to include the name of the person logged in and display any user-specific links they may have access to in addition to a link to logout.</p>",
+            "option-anchor": "auth-header",
+            "option-description": "<p>When a user is authenticated, the header should be altered to include: <ul><li>The name of the person logged in</li><li>Any user-specific links they may have access to.</li><li>A link to logout.</li></ul></p>",
             "authenticated": {
                 "username": "js73",
                 "first-name": "Josef",
@@ -50,7 +54,8 @@
 
         {
             "option-heading": "Mini authenticated header",
-            "option-description": "<p>This condensed header may be used only on web applications.</p>",
+            "option-anchor": "mini-header",
+            "option-description": "<p>This condensed header must be used only on web applications.</p>",
             "authenticated": {
                 "username": "js73",
                 "first-name": "Josef",
