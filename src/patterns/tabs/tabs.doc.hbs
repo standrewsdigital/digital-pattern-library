@@ -2,18 +2,26 @@
 title: Tabs
 ---
 
-<p>The tabs pattern is a dynamic pattern that shows related content in tabs, but that doesn't need to be seen simultaneously.</p>
+<p>The tabs pattern organises similar pieces of content that do not need to be shown to the user simultaneously. Users can move between tabs to see each piece of content</p>
 
+<h3>Rules for tabs</h3>
 <ul>
-    <li>Use tabs when you want to show content that is related but isn't meant to be compared.</li>
-    <li>There should be between 2 and 5 tabs, as long as there isn't more than 1 row.</li>
-    <li>Tabs are for text content only.</li>
-    <li>This pattern should only be used in the main content container, not in the aside.</li>
+    <li>Use tabs when you want to show content that is related but isn't meant to be compared by the user.</li>
+    <li>There should be between two and five tabs, as long as there isn't more than one row.</li>
+    <li>Tabs must only be used for text-based content.</li>
+    <li>This pattern should only be used in the main body of text, not in the aside.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{# tabs-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/ tabs-options.options}}
 </ul>
 
 {{#tabs-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 {{> tabs}}
 <span class="label label-default">Code</span>
