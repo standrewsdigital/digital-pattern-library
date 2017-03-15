@@ -4,15 +4,21 @@ title: Content whole
 
 <p>The content whole pattern contains a whole-width section for content.</p>
 
+<h3>Rules for content whole</h3>
 <ul>
 	<li>Use sparingly and in consultation with the digital communications team.</li>
-    <li>The example <code>subject-content-whole</code> uses a larger title and should only be used on the subject pages.</li>
 </ul>
 
+<h3>Options available</h3>
+<ul>
+{{#content-whole-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/content-whole-options.options}}
+</ul>
 
 {{#content-whole-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 </div>
 {{> content-whole}}
