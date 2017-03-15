@@ -2,16 +2,24 @@
 title: Text banner
 ---
 
-<p>The text banner pattern is full-width, short message with a background colour.</p>
+<p>The text banner pattern is a full-width, short message with a background colour.</p>
 
+<h3>Rules for the text banner</h3>
 <ul>
-    <li>Must be used only at the very top of a page.</li>
-    <li>May be used to indicate the status of a page, e.g. alpha or beta version, to alert the user that this is an example page, etc.</li>
+    <li>Must only be used at the very top of a page.</li>
+    <li>May be used to indicate the status of a page (e.g. alpha or beta version) to alert the user that this is an example page, etc.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#text-banner-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/text-banner-options.options}}
 </ul>
 
 {{#text-banner-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 </div>
 {{>  text-banner}}

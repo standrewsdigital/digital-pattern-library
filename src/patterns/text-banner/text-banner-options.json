@@ -2,6 +2,7 @@
     "options": [
         {
             "option-heading": "Default",
+            "option-anchor": "default",
             "option-description": "<p>Text is centre-aligned and the background colour is grey.</p>",
             "style-type": "",
             "message": "The is the beta version of st-andrews.ac.uk. <a href='#'>Leave your feedback</a>."
@@ -12,6 +13,7 @@
 
         {
             "option-heading": "Primary",
+            "option-anchor": "primary",
             "option-description": "<p>Text is centre-aligned and the background colour is the primary palette colour (<code>.primary</code>).</p>",
             "style-type": "primary",
             "message": "The is the beta version of st-andrews.ac.uk. <a href='#'>Leave your feedback</a>."
@@ -22,6 +24,7 @@
 
         {
             "option-heading": "Secondary",
+            "option-anchor": "secondary",
             "option-description": "<p>Text is centre-aligned and the background colour is the secondary palette colour (<code>.secondary</code>).</p>",
             "style-type": "secondary",
             "message": "The is the beta version of st-andrews.ac.uk. <a href='#'>Leave your feedback</a>."
@@ -32,6 +35,7 @@
 
         {
             "option-heading": "Success",
+            "option-anchor": "success",
             "option-description": "<p>Text is centre-aligned and the background colour is green (<code>.success</code>).</p>",
             "style-type": "success",
             "message": "The is the beta version of st-andrews.ac.uk. <a href='#'>Leave your feedback</a>."
@@ -42,6 +46,7 @@
 
         {
             "option-heading": "Info",
+            "option-anchor": "info",
             "option-description": "<p>Text is centre-aligned and the background colour is blue (<code>.info</code>).</p>",
             "style-type": "info",
             "message": "The is the beta version of st-andrews.ac.uk. <a href='#'>Leave your feedback</a>."
@@ -52,6 +57,7 @@
 
         {
             "option-heading": "Warning",
+            "option-anchor": "warning",
             "option-description": "<p>Text is centre-aligned and the background colour is yellow (<code>.warning</code>).</p>",
             "style-type": "warning",
             "message": "The is the beta version of st-andrews.ac.uk. <a href='#'>Leave your feedback</a>."
@@ -62,6 +68,7 @@
 
         {
             "option-heading": "Danger",
+            "option-anchor": "danger",
             "option-description": "<p>Text is centre-aligned and the background colour is red (<code>.danger</code>).</p>",
             "style-type": "danger",
             "message": "The is the beta version of st-andrews.ac.uk. <a href='#'>Leave your feedback</a>."
@@ -72,6 +79,7 @@
 
         {
             "option-heading": "Primary left",
+            "option-anchor": "primary-left",
             "option-description": "<p>Text is left-aligned (<code>.left</code>) and the background colour is the primary palette colour (<code>.primary</code>).</p>",
             "style-type": "primary left",
             "message": "The is the beta version of st-andrews.ac.uk. <a href='#'>Leave your feedback</a>."
@@ -82,6 +90,7 @@
 
         {
             "option-heading": "Primary right",
+            "option-anchor": "primary-right",
             "option-description": "<p>Text is right-aligned (<code>.right</code>) and the background colour is the primary palette colour (<code>.primary</code>).</p>",
             "style-type": "primary right",
             "message": "The is the beta version of st-andrews.ac.uk. <a href='#'>Leave your feedback</a>."
