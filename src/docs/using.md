@@ -2,7 +2,7 @@
 title: Using the pattern library
 ---
 
-In order to use the pattern library you have to include the assets. You have to make several decisions about what type of assets to include and where to include the assets from.
+In order to use the pattern library you have to include the assets on each page. You have to make several decisions about what type of assets to include and where to include the assets from.
 
 
 
