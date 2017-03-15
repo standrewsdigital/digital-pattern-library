@@ -41,7 +41,6 @@ if ( $(".limit-counter").length ) {
     $.each(areas, function(){
         var text_max = $(this).attr('data-length');
         var text_warn = Math.floor(text_max*0.1);
-        console.log(text_warn);
         $(this).next(".textarea_feedback").html(text_max + ' characters remaining');
         $(this).keyup(function() {
             var text_length = $(this).val().length;
