@@ -6,37 +6,37 @@
             "panel-1": {
                 "color": "panel-primary",
                 "title": "Primary",
-                "url": "http://www.st-andrews.ac.uk",
+                "url": "#",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
             },
             "panel-2": {
                 "color": "panel-secondary",
                 "title": "Secondary",
-                "url": "http://www.st-andrews.ac.uk",
+                "url": "#",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
             },
             "panel-3": {
                 "color": "panel-tertiary-1",
                 "title": "Tertiary 1",
-                "url": "http://www.st-andrews.ac.uk",
+                "url": "#",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
             },
             "panel-4": {
                 "color": "panel-tertiary-2",
                 "title": "Tertiary 2",
-                "url": "http://www.st-andrews.ac.uk",
+                "url": "#",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
             },
             "panel-5": {
                 "color": "panel-tertiary-3",
                 "title": "Tertiary 3",
-                "url": "http://www.st-andrews.ac.uk",
+                "url": "#",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
             },
             "panel-6": {
                 "color": "panel-primary",
                 "title": "Primary",
-                "url": "http://www.st-andrews.ac.uk",
+                "url": "#",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
             }
         }
