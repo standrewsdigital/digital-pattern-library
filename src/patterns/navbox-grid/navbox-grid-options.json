@@ -313,7 +313,7 @@
         {
             "option-heading": "More than six links without images",
             "option-description": "<p>Must be used when you have more than six links without a paragraph.</p>",
-            "option-anchor": "3-grid-no-image",
+            "option-anchor": "more-no-image",
             "grid-row": true,
             "box-size": [
                 {
@@ -361,7 +361,7 @@
         {
             "option-heading": "More than six links with paragraphs but without images",
             "option-description": "<p>Must be used when you have more than six links with a paragraph.</p>",
-            "option-anchor": "3-grid-no-image-paragraph",
+            "option-anchor": "more-no-image-paragraph",
             "grid-row": true,
             "box-size": [
                 {
