@@ -2,7 +2,7 @@
     "options": [
         {
             "option-heading": "Undergraduate courses list",
-            "option-description": "<ul><li>This lists undergraduate courses with a button that opens the KIS widget in a pop-up window.</li><li>This must only be used on undergraduate course pages offering joint Honours degrees.</li></ul>",
+            "option-description": "<p>This lists undergraduate courses with a button that opens the KIS widget in a pop-up window.</p><ul><li>This must only be used on undergraduate course pages offering joint Honours degrees.</li></ul>",
             "option-anchor": "subject-list",
             "columns": [
                 {
@@ -50,7 +50,7 @@
 
         {
             "option-heading": "Single Honours banner",
-            "option-description": "<ul><li>This shows the KIS widget in a single full width banner.</li><li>This must be used on undergraduate course pages only offering a single Honours degree.</li></ul>",
+            "option-description": "<p>This shows the KIS widget in a single full width banner.</p><ul><li>This must be used on undergraduate course pages only offering a single Honours degree.</li></ul>",
             "option-anchor": "subject-banner",
             "kis-banner": "UAHFENGSENG",
             "example": 2
@@ -61,7 +61,7 @@
 
         {
             "option-heading": "Undergraduate courses list and banner",
-            "option-description": "<ul><li>This combines the undergraduate courses list and single Honours banner.</li><li>This must be used on undergraduate course pages offering both a single Honours degree and joint Honours degrees.</li></ul>",
+            "option-description": "<p>This combines the undergraduate courses list and single Honours banner.</p><ul><li>This must be used on undergraduate course pages offering both a single Honours degree and joint Honours degrees.</li></ul>",
             "option-anchor": "subject-list-banner",
             "columns": [
                 {
