@@ -2,7 +2,7 @@
     "options" : [
         {
             "option-heading": "Primary button",
-            "option-description": "<p>Primary buttons are used on all pages with the primary blue theme.</p>",
+            "option-description": "<p>Primary buttons are used on all pages with the primary blue palette theme.</p>",
             "option-anchor": "primary-button",
             "buttons": [
                 {
@@ -44,7 +44,7 @@
 
          {
             "option-heading": "Label buttons",
-            "option-description": "<ul><li>Label buttons must be used only on forms and other tasks that involve a user completing a task.</li><li>For further information on the application of buttons in forms, see the <a href='../../patterns/form-elements/index.html'>form elements</a> pattern.</li></ul>",
+            "option-description": "<p>Label buttons must be used only on forms and other tasks that involve a user completing a task. For further information on the application of buttons in forms, see the <a href='../../patterns/form-elements/index.html'>form elements</a> pattern.</p>",
             "option-anchor": "label-buttons",
             "buttons": [
                 {
