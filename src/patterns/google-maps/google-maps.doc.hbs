@@ -14,8 +14,15 @@ title: Google Maps
     <li><a href="../content-halves/index.html">Content halves</a> (single-point map only)</li>
 </ul>
 
-<p>The Google Maps pattern has two main variants: multiple-point and single-point maps.</p>
+<h3>Options available</h3>
+{{!-- Note: the Google My Maps example has been created using the digital communications Google account. --}}
+<ul>
+{{#google-maps-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/google-maps-options.options}}
+</ul>
 
+<p>The Google Maps pattern has two main variants: multiple-point and single-point maps.</p>
 
 <h3>Multiple-point maps</h3>
 
@@ -52,13 +59,6 @@ title: Google Maps
 </ul>
 
 <hr>
-<h3>Options available</h3>
-{{!-- Note: the Google My Maps example has been created using the digital communications Google account. --}}
-<ul>
-{{#google-maps-options.options}}
-    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
-{{/google-maps-options.options}}
-</ul>
 
 {{#google-maps-options.options}}
 <hr>
