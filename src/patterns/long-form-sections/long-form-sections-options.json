@@ -32,7 +32,7 @@
 
         {
             "option-heading": "White text on dark image background",
-            "option-description": "<p>Add the classes <code>long-form--inverse long-form--bg-darken</code>. This MUST be used for the <a href='../long-form-intro/index.html'>long-form intro</a> section.</p>",
+            "option-description": "<p>Add the classes <code>long-form--inverse long-form--bg-darken</code>. This must be used for the <a href='../long-form-intro/index.html'>long-form intro</a> section.</p>",
             "option-anchor": "white-dark-image",
             "class": "long-form--inverse long-form--bg-darken",
             "image-url": "../../assets/docs/images/long-form-content/bg-spark.jpg"
