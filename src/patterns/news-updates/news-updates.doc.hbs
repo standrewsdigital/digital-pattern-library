@@ -2,17 +2,25 @@
 title: News updates
 ---
 
-<p>The news updates pattern contains a &frac23; width column for a featured news update and a &frac13; width column for two other updates. Intended for landing pages such as School websites. It provides an entry for articles such as news.</p>
+<p>The news updates pattern contains a &frac23; width column for a featured news update and a &frac13; width column for two other updates. The pattern is intended for landing pages such as School websites and provides a place for articles such as news items.</p>
 
+<h3>Rules for news updates</h3>
 <ul>
 	<li>There must be only one news updates section on a page.</li>
-	<li>Must be used only within main content of the page.</li>
-	<li>Images must be 360 by 240 pixels.</li>
+	<li>Must only be used only within main content of the page.</li>
+	<li>Images must be 360 &times; 240 pixels.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#news-updates-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/news-updates-options.options}}
 </ul>
 
 {{#news-updates-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 {{> news-updates}}
 <span class="label label-default">Code</span>
