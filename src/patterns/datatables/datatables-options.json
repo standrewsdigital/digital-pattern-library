@@ -2,7 +2,7 @@
     "options" : [
         {
             "option-heading": "Default options",
-            "option-description": "<p>This shows a DataTable with the recommended options enabled; row limit, filter, pagination and current rows indicator.</p>",
+            "option-description": "<p>This shows a DataTable with the recommended options enabled: row limit, filter, pagination and current rows indicator.</p>",
             "option-anchor": "default",
             "table-id": "example1",
             "table-class": "dataTable",
