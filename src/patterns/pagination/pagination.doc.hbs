@@ -2,71 +2,25 @@
 title: Pagination
 ---
 
-<p>Pagination links indicate a series of related content exists across multiple pages. Typically these are used where a multi-page approach to long lists of content improves general performance, such as in search results or inboxes.</p>
+<p>Pagination links indicate a series of additional content that exists across multiple pages. Typically these are used where a multi-page approach to long lists of content improves general performance, such as in search results.</p>
 
+<h3>Rules for pagination</h3>
+<ul>
+    <li>Pagination must be used on search results and tables where they have multiple pages, for example, <a href="../datatables/index.html">DataTables</a>.</li>
+    <li>Pager must be use on pages using the <a href="../more-news/index.html">more news</a> pattern.</li>
+</ul>
+<h3>Options available</h3>
+<ul>
+{{#pagination-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/pagination-options.options}}
+</ul>
+
+{{#pagination-options.options}}
 <hr>
-<h4>Default pagination</h4>
-
-<p>Default pagination should be used on galleries that have multiple pages and search results.</p>
-
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
 {{> pagination}}
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> pagination}}</code></pre>
-
-
-
-
-<hr>
-<h4>Disabled and active states</h4>
-
-<p>Links are customisable for different circumstances. Use <code>.disabled</code> for unclickable links and <code>.active</code> to indicate the current page.
-
-{{> pagination-states}}
-<span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> pagination-states}}</code></pre>
-
-<p>You can optionally swap out active or disabled anchors for <code>&lt;span&gt;</code>, or omit the anchor in the case of the previous/next arrows, to remove click functionality while retaining intended styles.</p>
-
-<span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> pagination-states-2}}</code></pre>
-
-
-
-
-<hr>
-<h4>Small pagination</h4>
-
-<p>Remove <code>.pagination-lg</code> class to revert pagination to a smaller size. This sizing is to be used on internal web applications.</p>
-
-{{> pagination-sizes}}
-<span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> pagination-sizes}}</code></pre>
-
-
-
-
-<hr>
-<h3 id="pager">Pager</h3>
-
-<p>Simple 'previous' and 'next' links for pagination implementations with light markup and styles. These can be used at the bottom of a blog post to allow the user to proceed to another post.</p>
-
-
-
-
-<hr>
-<h4>Default pager</h4>
-
-<p></p>
-
-{{> pager}}
-<span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> pager}}</code></pre>
-
-<hr>
-<h4>Optional disabled state</h4>
-
-<p>Pager links also use the general <code>disabled</code> utility class from the pagination. Disabled links are to be used when there is no preceeding or following pages to navigate to.</p>
-
-{{> pager-disabled}}
-<span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> pager-disabled}}</code></pre>
+{{/pagination-options.options}}

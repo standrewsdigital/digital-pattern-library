@@ -6,6 +6,23 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v0.25.0
+
+Release date: Thursday 16 March 2017
+
+### Changed
+
+* Updated virtually all the patterns to comply with our own house style and DPL documentation structure.
+
+### Fixed
+
+* Rebuilt Pagination, Featured news, Form elements and Typography to comply with our structure; ex. pattern-options.json and a single .hbs file.
+
+
+
+
+---
+
 ## v0.24.0
 
 Release date: Monday 13 March 2017

@@ -1,37 +1,40 @@
 ---
 title: Category header
-pattern: category-header
-examples:
-- name: image-background-with-transparent-overlay
-- name: solid-background
-- name: web-application
-- name: old-category-header
 ---
 
 <div class="alert alert-info">The category header pattern has been updated so that the transparent overlay is now added using <code>&lt;div class="transparent-overlay"&gt;</code> rather then using the <code>&lt;h2&gt;</code> element, as it was previously. This support will be removed at some point, so please do not use the old category header markup.</div>
 
 <p>The category header pattern contains the name of the current category or section and a link to it. In the case of <a href="../../examples/web-app.html">web applications</a> the name of the web application is shown in the category header.</p>
 
+<h3>Rules for the category header</h3>
 <ul>
     <li>Must be used directly below the header and before the navigation bar.</li>
     <li>Web applications typically show a solid colour background, rather than the transparent background image.</li>
-    <li>Background images must be <code>1905px &times; 120px</code> and created using the background image template (see above).</li>
+    <li>Background images must be 1905 &times; 120 pixels and created using the background image template (see above).</li>
 </ul>
 
 <h3>Background image template</h3>
 <p>The background image is used to enhance the visual identity of the page. The image must use the Photoshop template below so it can be positioned across a variety of screen sizes.</p>
 <p><img src="{{asset "docs/images/patterns/category-header/category-header-photoshop-template.jpg"}}" alt="St Andrews skyline and view of Dundee" style="width:100%; max-width:992px;"></p>
 <p><a href="../../assets/docs/images/patterns/category-header/category-header-photoshop-template.psd">Category header Photoshop template</a> (PSD, 3.2 MB)</p>
-<p>What background image should I use?</p>
+
+<h3>Suitable background images</h3>
 <ul>
-	<li>The main focus of this pattern is the header text so the background image shouldn't be overly complicated.</li>
+	<li>The background image must not be overly complicated so the main focus is the header text.</li>
 	<li>Photographs of the St Andrews skyline including a view of the horizon are recommended.</li>
 	<li>Photographs including people are discouraged in category headers.</li>
 </ul>
 
+<h3>Options available</h3>
+<ul>
+{{#category-header-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/category-header-options.options}}
+</ul>
+
 {{#category-header-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="option-anchor">{{option-heading}}</h3>
 {{{option-description}}}
 </div>{{>  category-header}}<div class="container">
 <span class="label label-default">Code</span>

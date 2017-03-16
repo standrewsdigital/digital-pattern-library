@@ -1,0 +1,86 @@
+<div class="container dpl-form">
+{{#if select-box}}
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group select-box">
+            <label class="form-label" {{#if id}}for="{{id}}"{{/if}}>{{label-text}}</label>
+            <p>Please select your student status.</p>
+            <select class="{{class}}" {{#if id}}id="{{id}}" name="{{id}}"{{/if}}>
+                <option value="">Please select one of the following…</option>
+                {{#each options}}
+                <option value="{{option-value}}">{{text}}</option>
+                {{/each}}
+            </select>
+			{{#if conditional-id}}
+			<div class="conditional-content-select" aria-hidden="true">
+				<label class="control-label" for="{{conditional-id}}">Other</label>
+				<input class="form-control" id="{{conditional-id}}" type="text">
+			</div>
+			{{/if}}
+        </div>
+    </div>
+</div>
+
+{{else if radio-check}}
+<div class="form-group">
+    <div class="{{class}}">
+	    <label>Options</label>
+	    <p>{{option-text}}</p>
+        <ul>
+        	{{#each option-boxes}}
+            <li>
+                <input {{#if class}}class="{{class}}"{{/if}} type="{{type}}" value="{{option-value}}" id="{{id}}" name="{{name}}">
+                <label for="{{id}}">{{label}}</label>
+                <div class="check {{#if checkbox}}glyphicon glyphicon-ok{{/if}}"></div>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{#if conditional-id}}
+	<div class="conditional-content-radio" aria-hidden="true">
+		<label class="control-label" for="{{conditional-id}}">Other</label>
+		<input class="form-control" id="{{conditional-id}}" name="conditional" type="text">
+	</div>
+	{{/if}}
+</div>
+
+{{else}}
+{{#if field-legend}}
+<fieldset>
+<legend>{{field-legend}}</legend>
+{{/if}}
+{{#each columns}}
+<div class="row">
+	<div class="{{column-size}}">
+		<div class="form-group">
+			{{#if wrapper}}<div class="{{wrapper}}">{{/if}}
+			{{#each input}}
+				<label class="form-label" for="{{input-id}}">{{label-text}}</label>
+				{{#if hint}}<span class="help-block">{{hint}}</span>{{/if}}
+				{{#if input-addon}}<div class="input-group">{{/if}}
+				{{#if addon-before}}<div class='input-group-addon'>{{addon-before}}</div>{{/if}}
+				{{#if textarea}}
+				<textarea class="form-control" rows="3" id="{{input-id}}" name="{{input-id}}"></textarea>
+				{{else}}
+				<input type="{{type}}" id="{{input-id}}" class="{{input-class}}" name="{{input-id}}" value="{{input-value}}">
+				{{/if}}
+				{{#if addon-after}}<div class='input-group-addon'>{{addon-after}}</div>{{/if}}
+				{{#if input-addon}}</div>{{/if}}
+			{{/each}}
+			{{#if wrapper}}</div>{{/if}}	
+		</div>
+	</div>
+</div>
+{{/each}}
+{{#if field-legend}}
+</fieldset>
+{{/if}}
+{{/if}}
+</div>
+{{#if submit-button}}
+<div class="row">
+    <div class="col-md-6">
+		<button type="submit" class="btn btn-lg btn-tertiary-1">Submit</button>
+	</div>
+</div>
+{{/if}}

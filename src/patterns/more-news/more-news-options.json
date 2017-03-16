@@ -106,7 +106,7 @@
                     "date": "Friday 10 February 2017 | <a href='#'>Guides</a>"
                 }
             ],
-            "pagination": true
+            "pager": true
         }
 
 

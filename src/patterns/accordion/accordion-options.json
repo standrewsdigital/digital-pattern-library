@@ -3,6 +3,7 @@
         {
             "option-heading": "Single accordion",
             "option-description": "",
+            "option-anchor": "single",
             "accordion-0": {
                 "accordion-heading":"Divinity",
                 "accordion-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac rutrum tellus, quis porttitor urna. Donec ultricies libero erat, id efficitur risus blandit nec. Donec et ipsum in dui blandit rutrum. Praesent rhoncus lobortis ligula, viverra tincidunt ante lobortis at. Sed vehicula luctus quam sit amet lacinia. Sed eu nulla vel ex tempus accumsan in sit amet metus. Vestibulum a venenatis mi. Ut ac semper arcu.</p>"
@@ -15,6 +16,7 @@
         {
             "option-heading": "Multiple accordions",
             "option-description": "",
+            "option-anchor": "multiple",
             "accordion-0": {
                 "accordion-heading":"Divinity",
                 "accordion-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac rutrum tellus, quis porttitor urna. Donec ultricies libero erat, id efficitur risus blandit nec. Donec et ipsum in dui blandit rutrum. Praesent rhoncus lobortis ligula, viverra tincidunt ante lobortis at. Sed vehicula luctus quam sit amet lacinia. Sed eu nulla vel ex tempus accumsan in sit amet metus. Vestibulum a venenatis mi. Ut ac semper arcu.</p>"

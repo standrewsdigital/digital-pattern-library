@@ -7,7 +7,7 @@
             "box-size": [
                 {
                     "image": {
-                        "url": "http://placehold.it/360x240",
+                        "url": "../../assets/docs/images/placeholders/360x240-study.jpg",
                         "alt": "Description"
                     },
                     "title": "Small (&frac13;)",
@@ -16,7 +16,7 @@
                 },
                 {
                     "image": {
-                        "url": "http://placehold.it/555x240",
+                        "url": "../../assets/docs/images/placeholders/555x240-001.jpg",
                         "alt": "Description"
                     },
                     "title": "Medium (&frac12;)",
@@ -25,7 +25,7 @@
                 },
                 {
                     "image": {
-                        "url": "http://placehold.it/750x240",
+                        "url": "../../assets/docs/images/placeholders/750x240-001.jpg",
                         "alt": "Description"
                     },
                     "title": "Large (&frac23;)",
@@ -46,7 +46,7 @@
             "box-size": [
                 {
                     "image": {
-                        "url": "http://placehold.it/360x240",
+                        "url": "../../assets/docs/images/placeholders/360x240-study.jpg",
                         "alt": "Description"
                     },
                     "title": "Study",
@@ -82,7 +82,7 @@
             "box-size": [
                 {
                     "image": {
-                        "url": "http://placehold.it/360x240",
+                        "url": "../../assets/docs/images/placeholders/360x240-research.jpg",
                         "alt": "Description"
                     },
                     "title": "Study",

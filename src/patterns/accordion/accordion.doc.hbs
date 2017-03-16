@@ -2,23 +2,31 @@
 title: Accordion
 ---
 
-<div class="alert alert-info">The accordion pattern is backwards-compatible with previous implementations used on the Study at St Andrews website &ndash; see old-accordion example, below. This support will be removed at some point, so please do not use the old accordion markup.</div>
+<div class="alert alert-info">The accordion pattern is backwards-compatible with previous implementations used on the Study at St Andrews website &ndash; see <a href="#old-accordion">old-accordion example</a>, below. This support will be removed at some point, so please do not use the old accordion markup.</div>
 
-<p>The accordion pattern presents an expandable and collapsible section of content. Accordions shorten pages and reduce scrolling, but they require users to click on topic headings to find information. Therefore, accordions should be used sparingly and with care. For more information see <a href="https://www.nngroup.com/articles/accordions-complex-content/"> Nielsen Norman Group report on accordion usability</a>.</p>
+<p>The accordion pattern presents an expandable and collapsible section of content. Accordions shorten pages and reduce scrolling, but they require users to click on topic headings to find information. Therefore, accordions should be used sparingly. For more information see the <a href="https://www.nngroup.com/articles/accordions-complex-content/"> Nielsen Norman Group report on accordion usability</a>.</p>
 
+<h3>Rules for accordions</h3>
 <ul>
-	<li>Should not be used when your audience needs most or all of the content on the page to answer their questions. It is better to show all page content at once when the use case supports it. In such cases, do not worry about page length.</li>
+	<li>Must not be used when your audience needs most or all of the content on the page to answer their questions. It is better to show all page content at once when the user case supports it. In such cases, do not worry about page length.</li>
 	<li>May be used when only one option is relevant to the user e.g. UK, Europe, USA.</li>
 	<li>May be used where you want to step a user through a process e.g. step 1, step 2, step 3.</li>
-	<li>Should not have headings in the content.</li>
+	<li>The content within accordions must not contain any headings.</li>
 	<li>May be used anywhere in a content section.</li>
 	<li>Must not be used on a homepage.</li>
 	<li>Must not be used in an aside.</li>
 </ul>
 
+<h3>Options available</h3>
+<ul>
+{{#accordion-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/accordion-options.options}}
+</ul>
+
 {{#accordion-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 {{> accordion}}
 <span class="label label-default">Code</span>
@@ -26,7 +34,7 @@ title: Accordion
 {{/accordion-options.options}}
 
 <hr>
-<h3>Old accordion</h3>
+<h3 id="old-accordion">Old accordion</h3>
 <p>Old accordion pattern used to test backwards-compatibility; do not use this HTML in new sites.</p>
 <div class="accordion">
     <h3><a class="toggleLink" href="#"><i class="chevron"></i>MLitt, MRes, MSc</a></h3>

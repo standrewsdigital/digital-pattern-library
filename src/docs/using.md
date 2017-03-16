@@ -2,7 +2,7 @@
 title: Using the pattern library
 ---
 
-In order to use the pattern library you have to include the assets. You have to make several decisions: _type_ of assets and _where_ to include the assets from.
+In order to use the pattern library you have to include the assets on each page. You have to make several decisions about what type of assets to include and where to include the assets from.
 
 
 
@@ -22,9 +22,9 @@ There are a number of different JavaScript options to choose between.
 `core-nojquery.js` includes all the components of `core.js` without the main jQuery library.
 
 
-### Pattern only JavaScript
+### Pattern-only JavaScript
 
-A pattern-only version of the JavaScript file, `core-base.js`, does not include jQuery, Bootstrap JavaScript and other external JavaScript libraries. If you use that version then you need to include these dependencies manually:
+A pattern-only version of the JavaScript file, `core-base.js`, does not include jQuery, Bootstrap JavaScript and other external JavaScript libraries. If you use this version then you need to include these dependencies manually:
 
 * [jQuery](http://jquery.com/) (v3.1.1)
 * jQuery [Big Target](https://github.com/leevigraham/jquery-bigTarget.js/)
@@ -39,7 +39,7 @@ A pattern-only version of the JavaScript file, `core-base.js`, does not include 
 
 See the `Gruntfile.js` to determine which additional JavaScript pieces are rolled into `core.js`.
 
-The following package is supported by not required:
+The following package is supported but not required:
 
 * [jQuery DataTables](https://www.datatables.net/) (v1.10.13) is supported and we provide additional JavaScript and CSS to match the pattern library. See [DataTables](patterns/datatables/index.html) for more information.
 
@@ -48,7 +48,7 @@ The following package is supported by not required:
 
 ## Type: Patterns or bootstrap-only CSS
 
-There are two flavours of the CSS files that you can choose between. A combined CSS file, `screen.css`, that has all the CSS needed in one file, or a separate Bootstrap-only CSS file, `screen-bootstrap-only.css`. `screen.css` includes CSS for the patterns laid out in the library in addition to the underlying custom Boostrap theme. The `screen-bootstrap-only.css` includes only the Bootstrap theme, meaning that patterns such as the header, footer, etc are not supported.
+There are two flavours of CSS files that you can choose between. A combined CSS file, `screen.css`, that has all the CSS needed in one file, or a separate Bootstrap-only CSS file, `screen-bootstrap-only.css`. `screen.css` which includes CSS for the patterns laid out in the library in addition to the underlying custom Bootstrap theme. The `screen-bootstrap-only.css` includes only the Bootstrap theme, meaning that patterns such as the header, footer, etc are not supported.
 
 
 
@@ -58,7 +58,7 @@ There are two flavours of the CSS files that you can choose between. A combined 
 
 ### Including core files from the CDN
 
-It is preferable to be using a CDN version if possible. This takes advantage of users having already cached a copy of the core assets and also makes your project easier to update in the future.
+It is preferable to be using a CDN version of the cores files if possible. This takes advantage of users having already cached a copy of the core assets and also makes your project easier to update in the future.
 
 Links to the CDN assets have the form:
 
@@ -73,7 +73,7 @@ Links to the CDN assets have the form:
 
 ### Building core files from source
 
-If you'd rather build the core files from source, you can do so by gaining access to the source code through git and then following the [Contributing](https://github.com/standrewsdigital/digital-pattern-library/blob/master/CONTRIBUTING.md) guide to setting up Grunt to build the files. You can then copy the files in the `build` folder into your project.
+If you'd rather build the core files from source, you can do so by gaining access to the source code through git and then following the [contributing](https://github.com/standrewsdigital/digital-pattern-library/blob/master/CONTRIBUTING.md) guide to setting up Grunt to build the files. You can then copy the files in the `build` folder into your project.
 
 
 
@@ -112,7 +112,7 @@ If you want the pattern-only JavaScript file, then include the following at the 
 
 ## Third-party applications
 
-The digital communications team must be consulted when using the pattern library with third-party applications, which often offer limited customisation. It may only be possible to use certain elements of the pattern library such as the header and footer. At the very minimum we would expect the following to be applied to a third-party application:
+The digital communications team must be consulted when using the pattern library with third-party applications, which often offer limited customisation. It may only be possible to use certain elements of the pattern library such as the header and footer. At the very minimum we would expect the following patterns to be applied to a third-party application:
 
 * Header
 * Colours
@@ -122,8 +122,8 @@ The digital communications team must be consulted when using the pattern library
 
 ## Content management systems
 
-The pattern library is agnostic of platform. Integrating the pattern library with a content management system such as WordPress or T4 must use the following principals:
+The pattern library is agnostic of platform. Integrating the pattern library with a content management system such as WordPress or T4 must follow these rules:
 
-* The core CSS and JavaScripts must be referenced from the CDN i.e. a local copy must not be stored within the content management system.
-* Naming conventions for the patterns should be mirrored in the content management system themes and templates. If the name of a pattern were to change, this should be updated in the content management system.
-* The code of a pattern (HTML, CSS, JavaScript) must not be added to or modified, other than to allow the content to be edited e.g. by the addition of tags to indicate editable areas.
+* The core CSS and JavaScripts must be referenced from the CDN, for example, a local copy must not be stored within the content management system.
+* Naming conventions for the patterns must be mirrored in the content management system themes and templates. If the name of a pattern were to change, this must be updated in the content management system.
+* The code of a pattern (HTML, CSS, JavaScript) must not be added to or modified, other than to allow the content to be edited, for example, by the addition of tags to indicate editable areas.

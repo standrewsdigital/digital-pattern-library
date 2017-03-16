@@ -3,7 +3,7 @@
         {
             "option-anchor": "hero-banner",
             "option-heading": "Hero banner",
-            "option-description": "<ul><li>If the chosen background image is not overly complicated and has strong colours, this option can be used instead of the transparent overlay option.</li></ul>",
+            "option-description": "<p>If the chosen background image is not overly complicated and has strong colours, this option may be used instead of the transparent overlay option.</p>",
             "heading":  "Scotland's first university",
             "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
             "action-text": "Study at St Andrews",
@@ -18,7 +18,7 @@
         {
             "option-anchor": "hero-banner-with-transparent-overlay",
             "option-heading": "Hero banner with transparent overlay",
-            "option-description": "<ul><li>If the chosen background image is overly complicated, this option should be used instead of the default.</li><li>The colour of the transparent overlay should not be altered.</li><li>The colour of the hero banner button should not be altered.</li></ul>",
+            "option-description": "<p>If the chosen background image is overly complicated, this option should be used instead of the default hero banner. The colour of the transparent overlay and hero banner button should not be altered.</p>",
             "heading":  "Choose St Andrews",
             "paragraph":  "Study at the University of St Andrews and experience world-class teaching, cutting edge research and the flexible degree structure of Scotland’s first university.",
             "action-text": "Search for courses",
