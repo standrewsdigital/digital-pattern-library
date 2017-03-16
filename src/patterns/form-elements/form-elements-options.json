@@ -477,6 +477,30 @@
                         {
                             "input-id": "textArea",
                             "label-text": "Put additional instructions here",
+                            "class": "form-control",
+                            "textarea": true
+                        }
+                    ]
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Textarea with input limit counter",
+            "option-anchor": "textarea-counter",
+            "option-description": "<ul><li>Allows for multiple lines of text with a character limit counter.<li>There may be multiple textareas with limit counters of varying lengths on one page.<li>Warns the user when the character limit is exceeded.<li>The textarea must have the class <code>limit-counter</code>.<li>The textarea must have the data-attribute <code>data-length='[limit]'</code>, this sets the character limit.<li>There must be an adjacent element <code>&lt;div class='textarea_feedback'>&lt;/div></code>.</ul>",
+            "columns": [
+                {
+                    "column-size": "col-md-6",
+                    "input": [
+                        {
+                            "input-id": "textArea",
+                            "label-text": "Put additional instructions here",
+                            "class": "form-control limit-counter",
+                            "counter": "125",
                             "textarea": true
                         }
                     ]
