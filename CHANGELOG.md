@@ -10,6 +10,10 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 Release date: Thursday 16 March 2017
 
+### Added
+
+* Form elements added textarea content limit counter.
+
 ### Changed
 
 * Updated virtually all the patterns to comply with our own house style and DPL documentation structure.
@@ -17,6 +21,7 @@ Release date: Thursday 16 March 2017
 ### Fixed
 
 * Rebuilt Pagination, Featured news, Form elements and Typography to comply with our structure; ex. pattern-options.json and a single .hbs file.
+* Removed strange character coming from Bootstrap breadcrumps `nbsp;`
 
 
 
