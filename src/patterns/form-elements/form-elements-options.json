@@ -354,9 +354,9 @@
         {
             "option-heading": "Radio buttons stacked with conditional",
             "option-anchor": "radio-stacked-conditional",
-            "option-description": "<p>See the section above on <a href='#conditional-docs'>conditionally revealing content</a> for more information on how to use.</p>",
+            "option-description": "<p>You may reveal an additional input field, depending on the radio button selected.</p>",
             "radio-check": true,
-            "class": "radio-button",
+            "class": "radio-button conditional",
             "option-text": "How many fudge doughnuts would you like?",
             "conditional-id": "conditional-input1",
             "option-boxes": [
@@ -428,7 +428,7 @@
         {
             "option-heading": "Select box with conditional",
             "option-anchor": "select-conditional",
-            "option-description": "<p>See the section above on <a href='#conditional-docs'>conditionally revealing content</a> for more information on how to use.</p>",
+            "option-description": "<p>You may reveal an additional input field, depending on the option selected.</p>",
             "select-box": true,
             "id": "select-conditional",
             "label-text": "Student status",

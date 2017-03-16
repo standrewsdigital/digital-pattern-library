@@ -19,43 +19,6 @@ title: Form elements
 {{/form-elements-options.options}}
 </ul>
 
-
-<h3 id="conditional-docs">Conditionally revealing content</h3>
-
-<ul>
-	<li>You may reveal an additional input field, depending on the radio button selected.</li>
-	<li>This must only be used with <a href="#radio-stacked-conditional">radio buttons with conditional</a> or <a href="#select-conditional">select boxes with conditional</a>.</li>
-	<li>You must apply a left border to emphasise this newly revealed information.</li>
-</ul>
-
-<p>Wrap the input you wish to hide with the following code:</p>
-
-<pre><code class="pattern-source html"><div class="conditional-content" aria-hidden="true">
-	//Your hidden input
-</div></code></pre>
-
-	<p>Use the following JavaScript code to show and hide the conditional content. Place this code at the bottom of the page, for example after the link to <code>core.js</code>:</p>
-<pre><code class="pattern-source js">$(document).ready(function() {
-    $('.input-name').change(
-        function() {
-            var val = $(this).val();
-
-            if(val === "option-value") {
-                $(".conditional-content").show();
-            }
-            else if(val !== "option-value") {
-                $(".conditional-content").hide();
-            }
-        }
-    );
-});</code></pre>
-
-<ul>
-	<li>Replace <code>.input-name</code> with the class of the radio buttons or select box that you wish to affect.</li>
-	<li>Replace <code>option-value</code> with the option you wish to show conditional content on.<br />(In the below example, this value is set to 'other').</li>
-</ul>
-
-
 {{#form-elements-options.options}}
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
