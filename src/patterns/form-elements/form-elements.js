@@ -56,6 +56,9 @@ if ( $(".limit-counter").length ) {
     });
 }
 
+$( "#datepicker" ).datepicker({
+  dateFormat: "DD, dd MM yy"
+});
 /*********************************/
 /* END Pattern: form-elements    */
 /*********************************/

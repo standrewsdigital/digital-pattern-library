@@ -58,14 +58,14 @@
 				<label class="form-label" for="{{input-id}}">{{label-text}}</label>
 				{{#if hint}}<span class="help-block">{{hint}}</span>{{/if}}
 				{{#if input-addon}}<div class="input-group">{{/if}}
-				{{#if addon-before}}<div class='input-group-addon'>{{addon-before}}</div>{{/if}}
+				{{#if addon-before}}<div class='input-group-addon'>{{{addon-before}}}</div>{{/if}}
 				{{#if textarea}}
 				<textarea class="{{class}}" rows="3" id="{{input-id}}" name="{{input-id}}" {{#if counter}}data-length="{{counter}}"{{/if}}></textarea>
 				{{#if counter}}<div class="textarea_feedback"></div>{{/if}}
 				{{else}}
 				<input type="{{type}}" id="{{input-id}}" class="{{input-class}}" name="{{input-id}}" value="{{input-value}}">
 				{{/if}}
-				{{#if addon-after}}<div class='input-group-addon'>{{addon-after}}</div>{{/if}}
+				{{#if addon-after}}<div class='input-group-addon'>{{{addon-after}}}</div>{{/if}}
 				{{#if input-addon}}</div>{{/if}}
 			{{/each}}
 			{{#if wrapper}}</div>{{/if}}	
