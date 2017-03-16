@@ -1,0 +1,12 @@
+{{#each headings}}
+{{{heading}}}
+{{/each}}
+{{#each body-text}}
+<p{{#if class}} class="{{class}}"{{/if}}>{{{text}}}</p>
+{{/each}}
+{{#if blockquote}}
+<blockquote{{#if class}} class="{{class}}"{{/if}}>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    <small>Someone famous in <cite>Source Title</cite></small>
+</blockquote>
+{{/if}}
