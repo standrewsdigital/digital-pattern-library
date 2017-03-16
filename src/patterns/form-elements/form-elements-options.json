@@ -1,0 +1,487 @@
+{
+    "options": [
+        {
+            "option-heading": "Checkboxes inline",
+            "option-anchor": "checkboxes-inline",
+            "option-description": "<ul><li>Clearly label when users can select one or more options.<li>Only pre-select options for the user if there’s a strong, user-centred reason to do this.<li>The label must be clickable.</ul>",
+            "radio-check": true,
+            "class": "checkbox-box inline",
+            "option-text": "Please choose one or more options:",
+            "option-boxes": [
+                {
+                    "id": "option1",
+                    "type": "checkbox",
+                    "label": "One",
+                    "option-value": "default",
+                    "name": "option1-inline",
+                    "checkbox": true
+                },
+                {
+                    "id": "option2",
+                    "type": "checkbox",
+                    "label": "Two",
+                    "option-value": "default",
+                    "name": "option2-inline",
+                    "checkbox": true
+                },
+                {
+                    "id": "option3",
+                    "type": "checkbox",
+                    "label": "Three",
+                    "option-value": "default",
+                    "name": "option2-inline",
+                    "checkbox": true
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Checkboxes stacked",
+            "option-anchor": "checkboxes-stacked",
+            "option-description": "<ul><li>Clearly label when users can select one or more options.<li>Only pre-select options for the user if there’s a strong, user-centred reason to do this.<li>The label must be clickable.</ul>",
+            "radio-check": true,
+            "class": "checkbox-box",
+            "option-text": "Please choose one or more options:",
+            "option-boxes": [
+                {
+                    "id": "option1-stack",
+                    "type": "checkbox",
+                    "label": "One",
+                    "option-value": "default",
+                    "name": "option1-stack",
+                    "checkbox": true
+                },
+                {
+                    "id": "option2-stack",
+                    "type": "checkbox",
+                    "label": "Two",
+                    "option-value": "default",
+                    "name": "option2-stack",
+                    "checkbox": true
+                },
+                {
+                    "id": "option3-stack",
+                    "type": "checkbox",
+                    "label": "Three",
+                    "option-value": "default",
+                    "name": "option3-stack",
+                    "checkbox": true
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Fieldsets and legends",
+            "option-anchor": "fieldsets-legends",
+            "option-description": "<p>Use fieldsets to group related form controls. The first element inside a fieldset must be a <code>legend</code> element that describes the group.</p>",
+            "field-legend": "Personal details",
+            "columns": [
+                {
+                    "column-size": "col-md-6",
+                    "input": [
+                        {
+                            "input-id": "first-name1",
+                            "label-text": "First name",
+                            "type": "text",
+                            "input-class": "form-control"
+                        }
+                    ]
+                },
+                {
+                    "column-size": "col-md-6",
+                    "input": [
+                        {
+                            "input-id": "last-name1",
+                            "label-text": "Last name",
+                            "type": "text",
+                            "input-class": "form-control"
+                        }
+                    ]
+                },
+                {
+                    "column-size": "col-md-6",
+                    "input": [
+                        {
+                            "input-id": "postcode-legend",
+                            "label-text": "Postcode",
+                            "type": "text",
+                            "hint": "Enter your postcode without any spaces. For example, KY169AL.",
+                            "input-class": "form-control"
+                        }
+                    ]
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "File upload",
+            "option-anchor": "file-upload",
+            "option-description": "<p>This element uses the native input: <code>type='file'</code>. This is so the element gains focus when tabbing through the page. It also ensures the element functions when:<ul><li>using the keyboard<li>using assistive technology<li>JavaScript is not available</ul>",
+            "columns": [
+                {
+                    "column-size": "col-md-6",
+                    "input": [
+                        {
+                            "input-id": "file-input",
+                            "label-text": "Upload a file",
+                            "type": "file"
+                        }
+                    ]
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Hint text",
+            "option-anchor": "hint-text",
+            "option-description": "<ul><li>You must not use placeholder text in form fields, as this will disappear once content is entered into the form field. Search fields are the only exception to this rule, but they must have a search icon or text indicating its usage.<li>Hint text must sit above a form field.<li>You must ensure hint text can be read correctly by screen readers.</ul>",
+            "columns": [
+                {
+                    "column-size": "col-md-6",
+                    "input": [
+                        {
+                            "input-id": "postcode-hint",
+                            "label-text": "Postcode",
+                            "hint": "Enter your postcode without any spaces. For example, KY169AL.",
+                            "type": "text",
+                            "input-class": "form-control"
+                        }
+                    ]
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Input addons",
+            "option-anchor": "input-addon-fields",
+            "option-description": "<p>Addons map be used when the input field is always going to be prefixed with a particular value, for example collecting only the username for an <code>@st-andrews.ac.uk</code> email address.</p>",
+            "columns": [
+                {
+                    "column-size": "col-md-6",
+                    "input": [
+                        {
+                            "input-id": "first-name1",
+                            "label-text": "First name",
+                            "type": "text",
+                            "input-class": "form-control",
+                            "addon-before": "£",
+                            "addon-after": ".00",
+                            "input-addon": true
+                        }
+                    ]
+                },
+                {
+                    "column-size": "col-md-6",
+                    "input": [
+                        {
+                            "input-id": "last-name1",
+                            "label-text": "Last name",
+                            "type": "text",
+                            "input-class": "form-control",
+                            "addon-after": "@st-andrews.ac.uk",
+                            "input-addon": true
+                        }
+                    ]
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Input fields",
+            "option-anchor": "default-input-fields",
+            "option-description": "<p>You must use the <code>.form-group</code> class to create spacing when wrapping label and input pairs.</p>",
+            "columns": [
+                {
+                    "column-size": "col-md-6",
+                    "input": [
+                        {
+                            "input-id": "first-name1",
+                            "label-text": "First name",
+                            "type": "text",
+                            "input-class": "form-control"
+                        }
+                    ]
+                },
+                {
+                    "column-size": "col-md-6",
+                    "input": [
+                        {
+                            "input-id": "last-name1",
+                            "label-text": "Last name",
+                            "type": "text",
+                            "input-class": "form-control"
+                        }
+                    ]
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Labels",
+            "option-anchor": "labels",
+            "option-description": "<ul><li>All form fields must be given labels.<li>You must not hide labels unless the surrounding context makes them unnecessary.<li>Labels must be aligned above input fields.<li>Labels must be positioned to the right of checkboxes and radio buttons.<li>Label text must be short, direct and in sentence case.<li>You must not use colons at the end of labels.<li>Labels must be associated with form fields using the <code>for</code> attribute.</ul>",
+            "columns": [
+                {
+                    "column-size": "col-md-6",
+                    "input": [
+                        {
+                            "input-id": "name1",
+                            "label-text": "Name",
+                            "type": "text",
+                            "input-class": "form-control"
+                        }
+                    ]
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Optional fields",
+            "option-anchor": "optional-fields",
+            "option-description": "<p>If you do ask for optional information, you must mark the labels of optional fields with <code>(optional)</code>.</p>",
+            "columns": [
+                {
+                    "column-size": "col-md-6",
+                    "input": [
+                        {
+                            "input-id": "postcode",
+                            "label-text": "Postcode (optional)",
+                            "type": "text",
+                            "input-class": "form-control"
+                        }
+                    ]
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Radio buttons inline",
+            "option-anchor": "radio-inline",
+            "option-description": "<p>These let users choose a single option from a list.<ul><li>You must use a select-box if you have more than 10 radio buttons.<li>Radio buttons with large hit areas are easier to select with a mouse or touch devices.<li>You must only pre-select options for the user if there’s a strong, user-centred reason to do this.<li>The label must be clickable.</ul>",
+            "radio-check": true,
+            "class": "radio-button inline",
+            "option-text": "How many fudge doughnuts would you like?",
+            "option-boxes": [
+                {
+                    "id": "option1-radio-inline",
+                    "type": "radio",
+                    "option-value": "default",
+                    "name": "option-radio-inline",
+                    "label": "One"
+                },
+                {
+                    "id": "option2-radio-inline",
+                    "type": "radio",
+                    "option-value": "default",
+                    "name": "option-radio-inline",
+                    "label": "Two"
+                },
+                {
+                    "id": "option3-radio-inline",
+                    "type": "radio",
+                    "option-value": "default",
+                    "name": "option-radio-inline",
+                    "label": "Three"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Radio buttons stacked",
+            "option-anchor": "radio-stacked",
+            "option-description": "<p>These let users choose a single option from a list.<ul><li>You must use a select-box if you have more than 10 radio buttons.<li>Radio buttons with large hit areas are easier to select with a mouse or touch devices.<li>You must only pre-select options for the user if there’s a strong, user-centred reason to do this.<li>The label must be clickable.</ul>",
+            "radio-check": true,
+            "class": "radio-button",
+            "option-text": "How many fudge doughnuts would you like?",
+            "option-boxes": [
+                {
+                    "id": "option1-radio-stack",
+                    "type": "radio",
+                    "option-value": "default",
+                    "name": "option-radio-stack",
+                    "label": "One"
+                },
+                {
+                    "id": "option2-radio-stack",
+                    "type": "radio",
+                    "option-value": "default",
+                    "name": "option-radio-stack",
+                    "label": "Two"
+                },
+                {
+                    "id": "option3-radio-stack",
+                    "type": "radio",
+                    "option-value": "default",
+                    "name": "option-radio-stack",
+                    "label": "Three"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Radio buttons stacked with conditional",
+            "option-anchor": "radio-stacked-conditional",
+            "option-description": "<p>See the section above on <a href='#conditional-docs'>conditionally revealing content</a> for more information on how to use.</p>",
+            "radio-check": true,
+            "class": "radio-button",
+            "option-text": "How many fudge doughnuts would you like?",
+            "conditional-id": "conditional-input1",
+            "option-boxes": [
+                {
+                    "id": "option1-radio-conditional",
+                    "type": "radio",
+                    "class": "conditional-radio",
+                    "option-value": "default",
+                    "name": "conditional",
+                    "label": "One"
+                },
+                {
+                    "id": "option2-radio-conditional",
+                    "type": "radio",
+                    "class": "conditional-radio",
+                    "option-value": "default",
+                    "name": "conditional",
+                    "label": "Two"
+                },
+                {
+                    "id": "option3-radio-conditional",
+                    "type": "radio",
+                    "class": "conditional-radio",
+                    "option-value": "default",
+                    "name": "conditional",
+                    "label": "Three"
+                },
+                {
+                    "id": "option4-radio-conditional",
+                    "type": "radio",
+                    "class": "conditional-radio",
+                    "option-value": "other",
+                    "name": "conditional",
+                    "label": "Other"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Select box",
+            "option-anchor": "select-box",
+            "option-description": "<ul><li>You should avoid using select boxes (drop-down lists), instead you should use radio buttons or checkboxes.<li>You must only pre-select options for the user if there’s a strong, user-centred reason to do this.</ul>",
+            "select-box": true,
+            "id": "select-box",
+            "label-text": "Student status",
+            "class": "conditional-select form-control",
+            "options": [
+                {
+                    "option-value": "ug",
+                    "text": "Undergraduate"
+                },
+                {
+                    "option-value": "pgr",
+                    "text": "Research postgraduate"
+                },
+                {
+                    "option-value": "pgt",
+                    "text": "Taught postgraduate"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Select box with conditional",
+            "option-anchor": "select-conditional",
+            "option-description": "<p>See the section above on <a href='#conditional-docs'>conditionally revealing content</a> for more information on how to use.</p>",
+            "select-box": true,
+            "id": "select-conditional",
+            "label-text": "Student status",
+            "class": "conditional-select form-control",
+            "conditional-id": "select-conditional-input",
+            "options": [
+                {
+                    "option-value": "ug",
+                    "text": "Undergraduate"
+                },
+                {
+                    "option-value": "pgr",
+                    "text": "Research postgraduate"
+                },
+                {
+                    "option-value": "pgt",
+                    "text": "Taught postgraduate"
+                },
+                {
+                    "option-value": "other",
+                    "text": "Other"
+                }
+            ]
+        },
+
+
+
+        {
+            "option-heading": "Submit buttons",
+            "option-anchor": "submit-buttons",
+            "option-description": "<ul><li>You must keep text short and use a verb such as 'submit' or 'continue'.<li>You must not add a reset button. See the Neilsen Norman Group article on <a href='http://www.nngroup.com/articles/reset-and-cancel-buttons/'>reset and cancel buttons</a> for more information.</ul>",
+            "submit-button": true
+        },
+
+
+
+
+        {
+            "option-heading": "Textarea",
+            "option-anchor": "textarea",
+            "option-description": "<p>Allows for multiple lines of text.</p>",
+            "columns": [
+                {
+                    "column-size": "col-md-6",
+                    "input": [
+                        {
+                            "input-id": "textArea",
+                            "label-text": "Put additional instructions here",
+                            "textarea": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+ }
