@@ -1,6 +1,6 @@
 
 /*********************************/
-/* BEGIN Pattern: sticky-nav         */
+/* BEGIN Pattern: sticky-nav     */
 /*********************************/
 
 
@@ -34,17 +34,10 @@ $('nav a[href*="#"]:not([href="#"])').click(function() {
             $('html,body').animate({
                 scrollTop: target.offset().top - 45
             }, 500);
-            var a = $(this);
-            // a.parent().siblings().removeClass('current-menu-item');
-            // a.parent().addClass('current-menu-item');
-            //return false;
         }
     }
 
 });
-
-
-
 /*********************************/
-/* END Pattern: sticky-nav           */
+/* END Pattern: sticky-nav       */
 /*********************************/

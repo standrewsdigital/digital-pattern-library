@@ -25,13 +25,6 @@
     display: block;
 }
 
-#nav-top.affix {
-    top: 0;
-    width: 100%;
-    z-index: 999;
-    position: fixed;
-}
-
 #nav-top li.active {
     background-color: $sta-blue-hover;
 }
