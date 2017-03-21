@@ -2,6 +2,7 @@
     "options": [
         {
             "option-heading": "Example",
+            "option-anchor": "default",
             "option-description": "<p></p>",
             "nav-link": [
                 { "name":"Courses",
@@ -20,6 +21,17 @@
                   "link":"#"
                 }
             ]
+
+        },
+
+
+
+
+        {
+            "option-heading": "Old style (deprecated)",
+            "option-anchor": "old-nav",
+            "option-description": "<p>See the code below for the old style of building the sticky nav. Do not use this HTML in new sites.</p>",
+            "deprecated-code": "<div id='internal-nav'><div class='affix'id='nav-top'><nav class='navigation-bar'role='navigation'><div class='container'><ul class='navigation-bar-nav'><li><a href='#'>Courses</a><li><a href='#'>Testimonial</a><li><a href='#'>Another link</a><li><a href='#'>Yet another</a><li><a href='#'>The last one</a></ul></div></nav></div></div>"
 
         }
     ]
