@@ -2,16 +2,19 @@
 title: Sticky nav
 ---
 
-<p>The sticky nav is for linking within a page to in-page content only; it appears below the normal navigation bar and will affix to the top as you scroll down to it.</p>
+<div class="alert alert-info">The sticky nav pattern is backwards-compatible with previous implementations used on the St Andrews website &ndash; see <a href="#old-nav">old-sticky nav option</a> below. This support will be removed at some point, so please do not use the old sticky nav markup.</div>
+
+<p>The sticky nav is for linking within a page to in-page content only; it appears below the normal navigation bar and will affix to the top as you scroll down to it. It will also highlight the current section link as you scoll down the page.</p>
 
 <h3>Rules for the sticky nav</h3>
 
 <ul>
-    <li>Must be present on all webpages, apart from long-form stories.</li>
-    <li>Must come below the category header and above the main body of the page.</li>
+    <li>Must add the CSS <code>position: relative;</code> to the <code>body</code> for section highlighting to work.</li>
+    <li>Must only be used on long pages.</li>
+    <li>Must come below the page intro.</li>
     <li>Must not contain any dropdown menus.</li>
-    <li>Must only contain links to other webpages or web applications.</li>
-    <li>Should not contain more than eight links.</li>
+    <li>Must only contain links to in-page content.</li>
+    <li>Should not contain more than eight links, as long as there isn't more than one row.</li>
 </ul>
 
 <h3>Options available</h3>
@@ -23,7 +26,7 @@ title: Sticky nav
 
 {{#sticky-nav-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 </div>{{> sticky-nav}}<div class="container">
 <span class="label label-default">Code</span>

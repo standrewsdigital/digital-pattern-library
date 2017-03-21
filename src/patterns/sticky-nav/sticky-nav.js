@@ -18,6 +18,8 @@ $('#nav-top').affix({
     }
 });
 
+$('body').scrollspy({ target: '#nav-top', offset: 50 });
+
     // Modified version of this smooth scrolling:
     // https://css-tricks.com/snippets/jquery/smooth-scrolling/
 
