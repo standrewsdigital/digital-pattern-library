@@ -1,21 +1,37 @@
-
+{{#if deprecated-code}}
+	{{{deprecated-code}}}
+{{else}}
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<h2>Lorem ipsum</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet sem ac dolor hendrerit sagittis a auctor dolor. Nulla velit metus, sollicitudin eu tristique nec, ultricies nec nisi. Quisque lobortis neque in diam gravida posuere.</p>
+		</div>
+	</div>
+</div>
  <!-- Begin pattern: sticky-nav //-->
-
-<div class="accent-grey" id="internal-nav">
-	<div id="nav-top" class="affix">
-		<nav class="navigation-bar" role="navigation">
+<div class="visible-md-block visible-lg-block" id="internal-nav">
+	<div id="nav-top" class="affix-top">
+		<nav class="navigation-bar nav navbar" role="navigation">
 		    <div class="container">
-		        <div class="toggle-navigation primary-toggle"><a class="navigation-button">Navigation <i class="chevron left"></i></a></div>
-		        <ul class="navigation-bar-nav primary-nav" style="width:100%;">
+		        <ul class="navigation-bar-nav primary-nav">
 					{{#each nav-link}}
-						<li><a href="#{{this.link}}">{{this.name}}</a></li>
+						<li><a href="#{{link}}">{{name}}</a></li>
 					{{/each}}
-			        <li style="float:right;" class="top-link glyphicon glyphicon-chevron-up btn-lg" aria-hidden="true"><a href="#page"></a></li>
 		        </ul>
 		    </div>
 		</nav>
 	</div>
 </div>
-
-
 <!-- End pattern: sticky-nav //-->
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			{{#each nav-link}}
+				<h3 id="{{link}}">{{name}}</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet sem ac dolor hendrerit sagittis a auctor dolor. Nulla velit metus, sollicitudin eu tristique nec, ultricies nec nisi. Quisque lobortis neque in diam gravida posuere. Nunc egestas posuere sem, vitae rhoncus felis scelerisque molestie. Mauris mi massa, iaculis gravida molestie in, facilisis non lorem. Quisque at nunc at nisl gravida sollicitudin. Vestibulum volutpat pretium purus et sodales. Integer sagittis sollicitudin molestie.</p>
+			{{/each}}
+		</div>
+	</div>
+</div>
+{{/if}}

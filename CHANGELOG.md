@@ -6,6 +6,29 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+
+## v0.26.0
+
+Release date: Wednesday 22 March 2017
+
+### Changed
+
+* Update documentation for sticky nav.
+* Correct CSS code for sticky nav.
+
+### Deprecated
+
+* Previous implementation, replacing with new example.
+
+### Fixed
+
+* Bug where sticky nav moves around screen on user-click.
+
+
+
+
+---
+
 ## v0.25.0
 
 Release date: Thursday 16 March 2017
