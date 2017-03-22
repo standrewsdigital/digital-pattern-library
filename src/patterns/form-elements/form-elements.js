@@ -56,8 +56,14 @@ if ( $(".limit-counter").length ) {
     });
 }
 
-$( "#datepicker" ).datepicker({
-  dateFormat: "DD, dd MM yy"
+// $( "#datepicker" ).datepicker({
+//     dateFormat: "DD, dd MM yy"
+// });
+
+$('#datepicker').datepicker({
+    dateFormat: "DD, dd MM yy",
+    changeMonth: true,
+    changeYear: true
 });
 /*********************************/
 /* END Pattern: form-elements    */

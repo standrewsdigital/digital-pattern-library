@@ -99,6 +99,28 @@
 
 
         {
+            "option-heading": "Date picker - selectable year and month",
+            "option-anchor": "date-picker-select",
+            "option-description": "<p>For dates in the distant future or past, use this option.</p>",
+            "columns": [
+                {
+                    "column-size": "col-md-4",
+                    "input": [
+                        {
+                            "input-id": "datepicker-selectable-test",
+                            "label-text": "Pick a date",
+                            "input-class": "form-control",
+                            "type": "date"
+                        }
+                    ]
+                }
+            ]
+        },
+
+
+
+
+        {
             "option-heading": "Fieldsets and legends",
             "option-anchor": "fieldsets-legends",
             "option-description": "<p>Use fieldsets to group related form controls. The first element inside a fieldset must be a <code>legend</code> element that describes the group.</p>",
