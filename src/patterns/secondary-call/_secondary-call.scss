@@ -70,7 +70,7 @@
 
 /* Alternative background images */
 
-@for $i from 1 through 9 {
+@for $i from 0 through 9 {
     .secondary-call-#{$i} {
         background-image: url(../images/secondary-call/#{$i}.jpg);
     }
