@@ -21,14 +21,6 @@
     text-align: center;
 }
 
-.secondary-call.left {
-    text-align: left;
-}
-
-.secondary-call.right {
-    text-align: right;
-}
-
 .secondary-call .call-heading {
     color: white;
     font-size:   24px;
@@ -46,12 +38,12 @@
     width: 85%;
 }
 
-.secondary-call .left p, .secondary-call .left .call-heading {
+.secondary-call.left p, .secondary-call.left .call-heading {
     text-align: left;
     width: 100%;
 }
 
-.secondary-call .right p, .secondary-call .right .call-heading {
+.secondary-call.right p, .secondary-call.right .call-heading {
     text-align: right;
     width: 100%;
 }
