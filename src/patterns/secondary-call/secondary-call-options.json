@@ -39,7 +39,7 @@
 
 
        {
-            "option-heading": "Gardens - text right aligned",
+            "option-heading": "Gardens - text centre aligned",
             "option-description": "",
             "option-anchor": "background-2",
             "heading": "News and events",
@@ -49,7 +49,7 @@
                 "url": "#"
             },
             "action-url": "#",
-            "alignment": "right",
+            "alignment": "center",
             "style": "2"
        },
 
@@ -57,7 +57,7 @@
 
 
        {
-            "option-heading": "St Andrews dusk skyline - text centre aligned",
+            "option-heading": "St Andrews dusk skyline",
             "option-description": "",
             "option-anchor": "background-3",
             "heading": "News and events",
