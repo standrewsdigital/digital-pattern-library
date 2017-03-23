@@ -83,22 +83,10 @@
                   "img": "assets/docs/images/patterns/contact-card.jpg",
                   "url": "patterns/contact-card/index.html"
                 },
-                { "name": "Content halves",
-                  "img": "assets/docs/images/patterns/content-halves.jpg",
-                  "url": "patterns/content-halves/index.html"
-                },
-                { "name": "Content thirds",
-                  "img": "assets/docs/images/patterns/content-thirds.jpg",
-                  "url": "patterns/content-thirds/index.html"
-                },
-                { "name": "Content whole",
-                  "img": "assets/docs/images/patterns/content-whole.jpg",
-                  "url": "patterns/content-whole/index.html"
-                },
                 { "name": "Featured news",
                   "img": "assets/docs/images/patterns/featured-news.jpg",
                   "url": "patterns/featured-news/index.html"
-                },                
+                },               
                 { "name": "Gallery",
                   "img": "assets/docs/images/patterns/gallery.jpg",
                   "url": "patterns/gallery/index.html"
@@ -142,10 +130,6 @@
                 { "name": "Tabs",
                   "img": "assets/docs/images/patterns/tabs.jpg",
                   "url": "patterns/tabs/index.html"
-                },
-                { "name": "Typography",
-                  "img": "assets/docs/images/patterns/typography.jpg",
-                  "url": "patterns/typography/index.html"
                 }
             ]
         },
@@ -164,8 +148,35 @@
                 }
             ]
         },
+                {
+            "heading": "Foundations",
+            "subheading": "These areas of design are the foundations on which the University of St Andrews website is built.",
+            "class": "primary",
+            "patterns": [
+                { "name": "Content halves",
+                  "img": "assets/docs/images/patterns/content-halves.jpg",
+                  "url": "patterns/content-halves/index.html"
+                },
+                { "name": "Content thirds",
+                  "img": "assets/docs/images/patterns/content-thirds.jpg",
+                  "url": "patterns/content-thirds/index.html"
+                },
+                { "name": "Content whole",
+                  "img": "assets/docs/images/patterns/content-whole.jpg",
+                  "url": "patterns/content-whole/index.html"
+                },
+                { "name": "Fonts",
+                  "img": "assets/docs/images/patterns/fonts.jpg",
+                  "url": "patterns/fonts/index.html"
+                },
+                { "name": "Typography",
+                  "img": "assets/docs/images/patterns/typography.jpg",
+                  "url": "patterns/typography/index.html"
+                } 
+            ]
+        },
         {
-            "heading": "Icons",
+            "heading": "Iconography",
             "subheading": "Patterns used to accent elements using icons.",
             "class": "primary",
             "patterns": [
