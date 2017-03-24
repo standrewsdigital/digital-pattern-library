@@ -17,11 +17,31 @@
                   "img": "assets/docs/images/patterns/breadcrumbs.jpg",
                   "url": "patterns/breadcrumbs/index.html"
                 },
+                { "name": "Content halves",
+                  "img": "assets/docs/images/patterns/content-halves.jpg",
+                  "url": "patterns/content-halves/index.html"
+                },
+                { "name": "Content thirds",
+                  "img": "assets/docs/images/patterns/content-thirds.jpg",
+                  "url": "patterns/content-thirds/index.html"
+                },
+                { "name": "Content whole",
+                  "img": "assets/docs/images/patterns/content-whole.jpg",
+                  "url": "patterns/content-whole/index.html"
+                },
+                { "name": "Typefaces",
+                  "img": "assets/docs/images/patterns/typeface.jpg",
+                  "url": "patterns/typeface/index.html"
+                },
+                { "name": "Typography",
+                  "img": "assets/docs/images/patterns/typography.jpg",
+                  "url": "patterns/typography/index.html"
+                },
                 { "name": "Footer",
                   "img": "assets/docs/images/patterns/footer.jpg",
                   "url": "patterns/footer/index.html"
                 }
-            ]
+            ]       
         },
         {
             "heading": "Call to action",
@@ -148,7 +168,7 @@
                 }
             ]
         },
-                {
+        {
             "heading": "Foundations",
             "subheading": "These areas of design are the foundations on which the University of St Andrews website is built.",
             "class": "primary",
