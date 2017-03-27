@@ -43,11 +43,6 @@
     width: 100%;
 }
 
-.secondary-call.right p, .secondary-call.right .call-heading {
-    text-align: right;
-    width: 100%;
-}
-
 .secondary-call .btn {
     background-color: $sta-blue;
 }
@@ -73,7 +68,7 @@
 }
 
 @media (max-width: 991px) {
-    .secondary-call .left p, .secondary-call .left .call-heading, .secondary-call .right p, .secondary-call .right .call-heading {
+    .secondary-call .left p, .secondary-call .left .call-heading {
         text-align: center;
     }
 }
@@ -86,6 +81,12 @@
     .secondary-call p {
         font-size: 18px;
     }
+}
+
+@media (max-width: 451px) { 
+    .secondary-call .call-to-action-buttons .btn { 
+        margin: 30px 15px 15px 0; 
+    } 
 }
 
 /**********************************************/
