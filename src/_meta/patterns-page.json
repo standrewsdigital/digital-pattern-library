@@ -166,16 +166,12 @@
         },
         {
             "heading": "Icons",
-            "subheading": "Patterns used to accent elements using icons.",
+            "subheading": "Supported icons sets.",
             "class": "primary",
             "patterns": [
                 { "name": "Font Awesome",
                   "img": "assets/docs/images/patterns/font-awesome.jpg",
                   "url": "patterns/font-awesome/index.html"
-                },
-                { "name": "Glyphicons",
-                  "img": "assets/docs/images/patterns/glyphicons.jpg",
-                  "url": "patterns/glyphicons/index.html"
                 }
             ]
         },
@@ -265,6 +261,10 @@
                 { "name": "Masonry grid (deprecated)",
                   "img": "assets/docs/images/patterns/masonry-grid.jpg",
                   "url": "patterns/masonry-grid/index.html"
+                },
+                { "name": "Glyphicons (deprecated)",
+                  "img": "assets/docs/images/patterns/glyphicons.jpg",
+                  "url": "patterns/glyphicons/index.html"
                 }
             ]
         }

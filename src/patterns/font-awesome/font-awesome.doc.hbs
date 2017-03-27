@@ -2,30 +2,39 @@
 title: Font Awesome
 ---
 
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
 <blockquote>
 	<p>Font Awesome provides scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.</p>
 	<footer>Font Awesome website</footer>
 </blockquote>
-<p>Use Font Awesome 4.x icons to accent elements on webpages and web applications. See below for examples and the list of approved icons.</p>
 
+<p>Use Font Awesome icons to accent elements on webpages and web applications. See below for examples and the list of approved icons. For more information on the thought process behind the application of icons, please refer to our <a href="http://digitalcommunications.wp.st-andrews.ac.uk/2015/12/19/flaws-in-ux-design-standards-icons/">blog post</a>.</p>
+
+<h3>Rules for Font Awesome</h3>
 <ul>
-    <li>You may use only the approved icons, below.</li>
-    <li>Use icons to accent existing elements.</li>
-    <li>Basic functionality may use only icons.</li>
-    <li>Complex interactions should use text rather than icons.</li>
+    <li>Must only use the approved icons below.</li>
+    <li>May use icons to accent existing elements.</li>
+    <li>Basic functionality may use independent icons.</li>
+    <li>Complex interactions must use text.</li>
+    <li>Complex interactions may use icons to accompany text.</li>
 </ul>
-<p>You may use any of the approved icons with <code>&lt;i class="fa fa-icon-name" title="icon title"&gt;</code>. See the <a href="http://fontawesome.io/">Font Awesome</a> website for more ways to configure the icons.</p>
-<p>In order to use Font Awesome you will need to include a link to the CDN:</p>
-<pre><code>&lt;link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"&gt;</code></pre>
+
+<p>You may use any of the approved icons with <code>&lt;i class="fa fa-icon-name" title="icon title"&gt;</code>. See the <a href="http://fontawesome.io/examples/">Font Awesome</a> website for more ways to configure the icons.</p>
 
 <h3>Requesting more icons</h3>
 <p>If you would like to use an icon that is not on the approved list (below) please contact the <a href="http://digitalcommunications.wp.st-andrews.ac.uk/about/">digital communications team</a>.</p>
 
+
+<h3>Options available</h3>
+<ul>
+{{#font-awesome-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/font-awesome-options.options}}
+</ul>
+
+
 {{#font-awesome-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 {{> font-awesome}}
 <span class="label label-default">Code</span>
