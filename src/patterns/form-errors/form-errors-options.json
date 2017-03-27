@@ -1,0 +1,67 @@
+{
+    "options": [
+        {
+            "option-heading": "Errors on input fields",
+            "option-anchor": "input",
+            "option-description": "",
+            "id": "summary-heading-example-1",
+            "error-message":[
+                {
+                    "link": "#example-full-name",
+                    "text": "Please enter your full name"
+                },
+                {
+                    "link": "#example-telephone-number",
+                    "text": "Please enter a valid telephone number"
+                }
+            ],
+            "legend": "Your personal details",
+            "input-field": [
+                {
+                    "class": "form-group has-error dpl-form",
+                    "id": "example-full-name",
+                    "label-text": "Full name",
+                    "error-id": "error-message-full-name",
+                    "error-text": "Please enter your full name",
+                    "help-block": "As shown on your birth certificate or passport",
+                    "input-name": "fullName"
+                },
+                {
+                    "class": "form-group has-error dpl-form",
+                    "id": "example-telephone-number",
+                    "label-text": "Telephone number",
+                    "error-id": "error-message-telephone-number",
+                    "error-text": "Please enter a valid telephone number using only digits",
+                    "input-name": "telephone"
+                }
+            ]
+        },
+
+
+        {
+            "option-heading": "Errors on radio buttons",
+            "option-anchor": "radio",
+            "option-description": "",
+            "id": "summary-heading-example-2",
+            "error-message":[
+                {
+                    "link": "#example-personal-details",
+                    "text": "Please confirm your personal details are correct and up-to-date."
+                }
+            ],
+            "legend": "Check your personal details",
+            "class": "form-group dpl-form",
+            "radio": true,
+            "radio-buttons": [
+                {
+                    "id": "stacked-option1",
+                    "label-text": "Yes, my personal details are correct"
+                },
+                {
+                    "id": "stacked-option1",
+                    "label-text": "No, some details are wrong or have changed"
+                }
+            ]
+        }
+    ]
+ }
