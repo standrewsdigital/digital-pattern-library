@@ -22,6 +22,7 @@ Release date: Tuesday 28 March 2017
 * Form elements change checkboxes to use font awesome.
 * Header to use font awesome.
 * Font awesome integrated into DPL core.
+* Updated example page partials.
 
 ### Deprecated
 

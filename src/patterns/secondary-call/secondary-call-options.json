@@ -1,8 +1,9 @@
 {
     "options": [
         {
-            "option-heading": "Default",
-            "option-description": "<p>No <code>secondary-call-*</code> class.</p>",
+            "option-heading": "Default - red gowns",
+            "option-description": "",
+            "option-anchor": "default",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
             "action": {
@@ -10,15 +11,16 @@
               "url": "#"
             },
             "alignment": "center",
-            "style":""
+            "style":"0"
        },
 
 
 
 
        {
-            "option-heading": "Background image 1 - left aligned",
+            "option-heading": "Castle and sea - text left aligned",
             "option-description": "",
+            "option-anchor": "background-1",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
             "action": {
@@ -37,8 +39,9 @@
 
 
        {
-            "option-heading": "Background image 2 - right aligned",
+            "option-heading": "Gardens - text centre aligned",
             "option-description": "",
+            "option-anchor": "background-2",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
             "action": {
@@ -46,7 +49,7 @@
                 "url": "#"
             },
             "action-url": "#",
-            "alignment": "right",
+            "alignment": "center",
             "style": "2"
        },
 
@@ -54,8 +57,9 @@
 
 
        {
-            "option-heading": "Background image 3 - centre aligned",
+            "option-heading": "St Andrews dusk skyline",
             "option-description": "",
+            "option-anchor": "background-3",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
             "action": {
@@ -70,15 +74,16 @@
 
 
        {
-            "option-heading": "Background image 4",
+            "option-heading": "Undergraduate pier walk",
             "option-description": "",
+            "option-anchor": "background-4",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
             "action": {
                 "text": "Call to action",
                 "url": "#"
             },
-            "alignment": "left",
+            "alignment": "center",
             "style": "4"
        },
 
@@ -86,15 +91,16 @@
 
 
        {
-            "option-heading": "Background image 5",
+            "option-heading": "St Salvators Chapel",
             "option-description": "",
+            "option-anchor": "background-5",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
             "action": {
                 "text": "Call to action",
                 "url": "#"
             },
-            "alignment": "left",
+            "alignment": "center",
             "style": "5"
        },
 
@@ -102,15 +108,16 @@
 
 
        {
-            "option-heading": "Background image 6",
+            "option-heading": "St Andrews beach at dusk",
             "option-description": "",
+            "option-anchor": "background-6",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
             "action": {
                 "text": "Call to action",
                 "url": "#"
             },
-            "alignment": "left",
+            "alignment": "center",
             "style": "6"
        },
 
@@ -118,8 +125,9 @@
 
 
        {
-            "option-heading": "Background image 7",
+            "option-heading": "St Andrews cathedral",
             "option-description": "",
+            "option-anchor": "background-7",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
             "action": {
@@ -138,15 +146,16 @@
 
 
        {
-            "option-heading": "Background image 8",
+            "option-heading": "Torchlit procession",
             "option-description": "",
+            "option-anchor": "background-8",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
             "action": {
                 "text": "Call to action",
                 "url": "#"
             },
-            "alignment": "left",
+            "alignment": "center",
             "style": "8"
        },
 
@@ -154,15 +163,16 @@
 
 
        {
-            "option-heading": "Background image 9",
+            "option-heading": "St Andrews sunset skyline",
             "option-description": "",
+            "option-anchor": "background-9",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
             "action": {
                 "text": "Call to action",
                 "url": "#"
             },
-            "alignment": "left",
+            "alignment": "center",
             "style": "9"
        }
     ]

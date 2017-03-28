@@ -15,42 +15,16 @@ title: Form errors
 
 <h3>Options available</h3>
 <ul>
-	<li><a href="#input-fields">Errors on input fields</a></li>
-	<li><a href="#radio-buttons">Errors on radio buttons</a></li>
+{{#form-errors-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/form-errors-options.options}}
 </ul>
 
+{{#form-errors-options.options}}
 <hr>
-
-
-<h3 id="input-fields">Errors on input fields</h3>
-
-<div class="container">
-	<span class="label label-default">Example</span>
-	<div class="pattern-example">
-		{{> form-errors-input}}
-	</div>
-</div>
-
-<div class="container">
-	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-errors-input}}</code></pre>
-</div>
-
-<hr>
-
-
-<h3 id="radio-buttons">Errors on radio buttons</h3>
-
-<div class="container">
-	<span class="label label-default">Example</span>
-	<div class="pattern-example">
-		{{> form-errors-radio}}
-	</div>
-</div>
-
-<div class="container">
-	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> form-errors-radio}}</code></pre>
-</div>
-
-<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+{{>  form-errors}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> form-errors}}</code></pre>
+{{/form-errors-options.options}}
