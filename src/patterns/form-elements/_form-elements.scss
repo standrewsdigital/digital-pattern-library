@@ -82,7 +82,7 @@
             z-index: 5;
         }
 
-        ul li .check i::before {
+        ul li .check i::before, ul li .check::before {
             border-radius: 100%;
             content: '';
             height: 13px;
