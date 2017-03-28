@@ -1,18 +1,17 @@
 <!-- Begin pattern: secondary-call //-->
 
-<div class="secondary-call {{default alignment "[alignment]"}} secondary-call-{{default style "[style]"}}">
+<div class="secondary-call {{alignment}} secondary-call-{{style}}">
     <div class="container">
-        <div class="call-heading">{{default heading "[heading]"}}</div>
-        <p>{{default paragraph "[paragraph]"}}</p>
-            <p>
-        {{#if action}}
-                <a class="btn btn-primary btn-lg" href="{{default action.url "[action.url]"}}">{{default action.text "[action.text]"}}</a>
-        {{/if}}
-        {{#if action2}}
-                <a class="btn btn-primary btn-lg" href="{{default action2.url "[action2.url]"}}">{{default action2.text "[action2.text]"}}</a>
-        {{/if}}
-            </p>
-
+        <div class="call-heading">{{heading}}</div>
+        <p>{{paragraph}}</p>
+        <div class="call-to-action-buttons"> 
+            {{#if action}}
+            <a class="btn btn-primary btn-lg" href="{{action.url}}" tabindex="0" role="button">{{action.text}}</a>
+            {{/if}}
+            {{#if action2}}
+            <a class="btn btn-primary btn-lg" href="{{action2.url}}" tabindex="0" role="button">{{action2.text}}</a>
+            {{/if}}
+        </div>
     </div>
 </div>
 
