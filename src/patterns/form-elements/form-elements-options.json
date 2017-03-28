@@ -79,35 +79,13 @@
         {
             "option-heading": "Date picker",
             "option-anchor": "date-picker",
-            "option-description": "",
+            "option-description": "<p>For inputting date elements use this type.</p>",
             "columns": [
                 {
                     "column-size": "col-md-4",
                     "input": [
                         {
-                            "input-id": "datepicker",
-                            "label-text": "Pick a date",
-                            "input-class": "form-control",
-                            "type": "text"
-                        }
-                    ]
-                }
-            ]
-        },
-
-
-
-
-        {
-            "option-heading": "Date picker - selectable year and month",
-            "option-anchor": "date-picker-select",
-            "option-description": "<p>For dates in the distant future or past, use this option.</p>",
-            "columns": [
-                {
-                    "column-size": "col-md-4",
-                    "input": [
-                        {
-                            "input-id": "datepicker-selectable-test",
+                            "input-id": "datepicker-selectable",
                             "label-text": "Pick a date",
                             "input-class": "form-control",
                             "type": "date"

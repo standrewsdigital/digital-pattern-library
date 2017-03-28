@@ -56,15 +56,13 @@ if ( $(".limit-counter").length ) {
     });
 }
 
-// $( "#datepicker" ).datepicker({
-//     dateFormat: "DD, dd MM yy"
-// });
-
-$('#datepicker').datepicker({
-    dateFormat: "DD, dd MM yy",
-    changeMonth: true,
-    changeYear: true
-});
+if ( $(window).width() > 450 ) {
+    $('#datepicker').datepicker({
+        dateFormat: "DD, dd MM yy",
+        changeMonth: true,
+        changeYear: true
+    });    
+}
 /*********************************/
 /* END Pattern: form-elements    */
 /*********************************/
