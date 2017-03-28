@@ -58,7 +58,7 @@
                     "label-text": "Yes, my personal details are correct"
                 },
                 {
-                    "id": "stacked-option1",
+                    "id": "stacked-option2",
                     "label-text": "No, some details are wrong or have changed"
                 }
             ]
