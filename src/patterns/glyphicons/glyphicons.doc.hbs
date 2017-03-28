@@ -1,13 +1,14 @@
 ---
-title: Glyphicons
+title: Glyphicons (deprecated)
 ---
 
-<blockquote>
-	<p>Glyphicons is a library of simple, monochomatic icons and symbols.</p>
-	<footer>Glyphicon website</footer>
-</blockquote>
+<div class="alert alert-danger">
+  <strong>This pattern is depreciated.</strong> Do not attempt to use this pattern for any new website development. It will be removed in a future update.
+</div>
+
 <p>Use glyphicon icons to accent elements on web pages and web applications. See below for examples and the list of approved icons.</p>
 
+<h3>Rules for glyphicons</h3>
 <ul>
     <li>You must use only the approved icons, below.</li>
     <li>Icons are to be used to illustrate accompanying titles (eg. settings, logout).</li>
@@ -18,9 +19,16 @@ title: Glyphicons
 <h3>Use of non-approved icons</h3>
 <p>If you would like to use an icon that is not on the approved list (below) please contact the <a href="http://digitalcommunications.wp.st-andrews.ac.uk/about/">digital communications team</a>.</p>
 
+<h3>Options available</h3>
+<ul>
+{{#glyphicons-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/glyphicons-options.options}}
+</ul>
+
 {{#glyphicons-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 {{> glyphicons}}
 <span class="label label-default">Code</span>

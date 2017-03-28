@@ -31,7 +31,7 @@
             <li>
                 <input {{#if class}}class="{{class}}"{{/if}} type="{{type}}" value="{{option-value}}" id="{{id}}" name="{{name}}">
                 <label for="{{id}}">{{label}}</label>
-                <div class="check {{#if checkbox}}glyphicon glyphicon-ok{{/if}}"></div>
+                <div class="check">{{#if checkbox}}<i class="fa fa-check" title="checked"></i>{{/if}}</div>
             </li>
             {{/each}}
         </ul>

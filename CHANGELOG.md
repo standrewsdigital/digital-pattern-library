@@ -19,6 +19,14 @@ Release date: Tuesday 28 March 2017
 * Rewrite DPL homepage and permissions for use.
 * Updated the secondary call-to-action pattern.
 * Rewrite form errors to meet documentation style.
+* Form elements change checkboxes to use font awesome.
+* Header to use font awesome.
+* Font awesome integrated into DPL core.
+* Updated example page partials.
+
+### Deprecated
+
+* Deprecated Glyphicons pattern.
 
 
 

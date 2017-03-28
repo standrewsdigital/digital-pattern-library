@@ -3,6 +3,7 @@
          {
             "option-heading": "Examples",
             "option-description": "<p>Examples of how we are using some of these icons.</p>",
+            "option-anchor": "examples",
             "example": true
         },
 
@@ -12,6 +13,7 @@
         {
             "option-heading": "Approved icons",
             "option-description": "<p>To use as a class name, prefix the icon name with <code>glyphicon-</code>, e.g. <code>glyphicon-search</code>.</p>",
+            "option-anchor": "approved",
             "icons": [
                 "asterisk",
                 "plus",
