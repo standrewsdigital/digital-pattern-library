@@ -1,0 +1,54 @@
+{
+    "options": [
+        {
+            "option-heading": "PT Sans - regular",
+            "option-anchor": "PT Sans - regular",
+            "class": "pt-sans"
+        },
+
+
+
+
+        {
+            "option-heading": "PT Sans - bold",
+            "option-anchor": "PT Sans - bold",
+            "class": "pt-sans bold"
+        },
+
+
+
+
+        {
+            "option-heading": "PT Sans - italics",
+            "option-anchor": "PT Sans - italics",
+            "class": "pt-sans italic"
+        },
+
+
+
+
+        {
+            "option-heading": "PT Serif - regular",
+            "option-anchor": "PT Serif - regular",
+            "class": "pt-serif"
+        },
+
+
+
+
+        {
+            "option-heading": "PT Serif - bold",
+            "option-anchor": "PT Serif - bold",
+            "class": "pt-serif bold"
+        },
+
+
+
+
+        {
+            "option-heading": "PT Serif - italics",
+            "option-anchor": "PT Serif - italics",
+            "class": "pt-serif italic"
+        }
+    ]
+ }
