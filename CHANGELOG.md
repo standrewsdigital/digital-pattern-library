@@ -18,6 +18,7 @@ Release date: Tuesday 28 March 2017
 
 * Rewrite DPL homepage and permissions for use.
 * Updated the secondary call-to-action pattern.
+* Rewrite form errors to meet documentation style.
 
 
 

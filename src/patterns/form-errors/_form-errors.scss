@@ -1,16 +1,20 @@
 
 /**********************************/
-/* BEGIN Pattern: form-validation */
+/* BEGIN Pattern: form-errors     */
 /**********************************/
 
 .alert h3, .alert h4 {
 	margin-top: 0;
 }
 
-.has-error .text-danger{
+.has-error .text-danger {
 	display: block;
 }
 
+.form-group li {
+	list-style-type: none;
+}
+
 /**********************************/
-/* BEGIN Pattern: form-validation */
+/* BEGIN Pattern: form-errors     */
 /**********************************/
