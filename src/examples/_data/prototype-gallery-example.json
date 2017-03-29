@@ -1,70 +1,75 @@
 {
     "gallery" : {
-        "gallery-title": "Example gallery",
-        "gallery-description": "<p>Selection of images from the University of St Andrews.</p>",
+        "option-heading": "Multiple galleries",
+        "option-description": "<p>The top and bottom row are two separate galleries. Each gallery needs to have a unique <code>data-lightbox='[gallery name]'</code> to group photos together.</p>",
+        "option-anchor": "multiple-galleries",
+        "gallery-title": "<h2 class='gallery__title'>Title of gallery</h2>",
+        "gallery-description": "Gallery description",
+        "gallery-images-class": "lightbox_gallery_images",
         "gallery-images": [
             {
                 "thumbnail":  "docs/images/placeholders/360x240-7.jpg",
                 "alt":        "alt text for image 1",
                 "id":         "optional-id2",
-                "caption":    "Image 1",
-                "large-img":  "docs/images/placeholders/1280x853-7.jpg"
+                "caption":    "image 1",
+                "large-img":  "docs/images/placeholders/1280x853-7.jpg",
+                "lightbox-gallery": "gallery"
             },
             {
                 "thumbnail":  "docs/images/placeholders/360x240-8.jpg",
                 "alt":        "alt text for image 2",
                 "id":         "optional-id3",
-                "caption":    "Image 2",
-                "large-img":  "docs/images/placeholders/1280x853-8.jpg"
+                "caption":    "image 2",
+                "large-img":  "docs/images/placeholders/1280x853-8.jpg",
+                "lightbox-gallery": "gallery"
             },
             {
-                "thumbnail":  "docs/images/placeholders/360x240-9.jpg",
+                "thumbnail":  "docs/images/placeholders/360x240-7.jpg",
                 "alt":        "alt text for image 3",
                 "id":         "optional-id4",
-                "caption":    "Image 3",
-                "large-img":  "docs/images/placeholders/1280x853-9.jpg"
-            },
-            {
-                "thumbnail":  "docs/images/placeholders/360x240-7.jpg",
-                "alt":        "alt text for image 1",
-                "id":         "optional-id5",
-                "caption":    "Image 4",
-                "large-img":  "docs/images/placeholders/1280x853-7.jpg"
+                "caption":    "image 3",
+                "large-img":  "docs/images/placeholders/1280x853-7.jpg",
+                "lightbox-gallery": "gallery"
             },
             {
                 "thumbnail":  "docs/images/placeholders/360x240-8.jpg",
-                "alt":        "alt text for image 2",
-                "id":         "optional-id6",
-                "caption":    "Image 5",
-                "large-img":  "docs/images/placeholders/1280x853-8.jpg"
-            },
-            {
-                "thumbnail":  "docs/images/placeholders/360x240-9.jpg",
-                "alt":        "alt text for image 3",
-                "id":         "optional-id7",
-                "caption":    "Image 6",
-                "large-img":  "docs/images/placeholders/1280x853-9.jpg"
-            },
-            {
-                "thumbnail":  "docs/images/placeholders/360x240-7.jpg",
-                "alt":        "alt text for image 1",
-                "id":         "optional-id8",
-                "caption":    "Image 7",
-                "large-img":  "docs/images/placeholders/1280x853-7.jpg"
+                "alt":        "alt text for image 4",
+                "id":         "optional-id2",
+                "caption":    "image 4",
+                "large-img":  "docs/images/placeholders/1280x853-8.jpg",
+                "lightbox-gallery": "gallery"
             },
             {
                 "thumbnail":  "docs/images/placeholders/360x240-8.jpg",
-                "alt":        "alt text for image 2",
-                "id":         "optional-id9",
-                "caption":    "Image 8",
-                "large-img":  "docs/images/placeholders/1280x853-8.jpg"
+                "alt":        "alt text for image 5",
+                "id":         "optional-id3",
+                "caption":    "image 5",
+                "large-img":  "docs/images/placeholders/1280x853-8.jpg",
+                "lightbox-gallery": "gallery"
             },
             {
                 "thumbnail":  "docs/images/placeholders/360x240-9.jpg",
-                "alt":        "alt text for image 3",
-                "id":         "optional-id10",
-                "caption":    "Image 9",
-                "large-img":  "docs/images/placeholders/1280x853-9.jpg"
+                "alt":        "alt text for image 6",
+                "id":         "optional-id4",
+                "caption":    "image 6",
+                "large-img":  "docs/images/placeholders/1280x853-9.jpg",
+                "lightbox-gallery": "gallery"
+            },
+            {
+                "thumbnail":  "docs/images/placeholders/360x240-8.jpg",
+                "alt":        "alt text for image 7",
+                "id":         "optional-id3",
+                "caption":    "image 7",
+                "large-img":  "docs/images/placeholders/1280x853-8.jpg",
+                "lightbox-gallery": "gallery"
+            },
+            {
+                "thumbnail":  "docs/images/placeholders/360x240-9.jpg",
+                "alt":        "alt text for image 8",
+                "id":         "optional-id4",
+                "caption":    "image 8",
+                "large-img":  "docs/images/placeholders/1280x853-9.jpg",
+                "lightbox-gallery": "gallery"
             }
         ]
     }

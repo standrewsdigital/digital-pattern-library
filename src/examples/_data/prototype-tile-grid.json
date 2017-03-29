@@ -1,84 +1,82 @@
 {
-    "heading": "What's happening in St&nbsp;Andrews",
-    "call-to-browse-text": "See all news",
-    "call-to-browse-url": "http://www.google.com/",
+    "heading": "What's happening in St Andrews",
+    "call-to-action-text": [
+        {
+            "read-more-size": "col-xs-6 col-md-3 col-lg-2",
+            "title": "News"
+        },
+        {
+            "read-more-size": "col-xs-6 col-md-3 col-lg-2",
+            "title": "Events"
+        }
+    ],
     "bg-image": "docs/images/background/bg1.jpg",
-    "tile-1": {
-        "color": "",
-        "image": {
-            "url": "docs/images/placeholders/360x240-1.jpg",
-            "alt": "Description"
+    "tiles": [
+        {
+            "color": "",
+            "image": {
+                "url": "docs/images/placeholders/360x240-1.jpg",
+                "alt": "Description"
+            },
+            "title": "MUSA is going greener",
+            "description": "The Museum of the University of St Andrews (MUSA) has attained the top standard for sustainability from the Green Tourism Business Scheme.",
+            "date-display" : "Wednesday 23 August 2017",
+            "type" : "News"
         },
-        "title": "MUSA is going greener",
-        "url": "#",
-        "description": "The Museum of the University of St Andrews (MUSA) has attained the top standard for sustainability from the Green Tourism Business Scheme.",
-        "date" : "2014-08-26",
-        "date-display" : "26 August 2014",
-        "type" : "News"
-    },
-    "tile-2": {
-        "color": "red",
-        "image": {
-            "url": "docs/images/placeholders/360x240-2.jpg",
-            "alt": "Description"
+        {
+            "color": "red",
+            "image": {
+                "url": "docs/images/placeholders/360x240-2.jpg",
+                "alt": "Description"
+            },
+            "title": "A Rae of artistic sunshine",
+            "description": "The work of one of Scotland's most revered contemporary artists, Barbara Rae, is to go on display in St Andrews.",
+            "date-display" : "Wednesday 16 August 2017",
+            "type" : "Photo of the week"
         },
-        "title": "A Rae of Aristic Sunshine",
-        "url": "#",
-        "description": "The work of one of Scotland's most revered contemporary artists, Barbara Rae, is to go on display in St Andrews.",
-        "date" : "2014-08-21",
-        "date-display" : "21 August 2014",
-        "type" : "Photo of the week"
-    },
-    "tile-3": {
-        "color": "red",
-        "image": {
-            "url": "docs/images/placeholders/360x240-3.jpg",
-            "alt": "Description"
+        {
+            "color": "red",
+            "image": {
+                "url": "docs/images/placeholders/360x240-3.jpg",
+                "alt": "Description"
+            },
+            "title": "World Cup fever at Sandy's Bar",
+            "description": "Hundreds of football fans watched the World Cup final in the newly opened Sandy's Bar at the Students' Association on Sunday.",
+            "date-display" : "Wednesday 12 July 2017",
+            "type" : "Photo of the week"
         },
-        "title": "World Cup fever at Sandy's Bar",
-        "url": "#",
-        "description": "Hundreds of football fans watched the World Cup final in the newly opened Sandy's Bar at the Students' Association on Sunday.",
-        "date" : "2014-07-14",
-        "date-display" : "14 July 2014",
-        "type" : "Photo of the week"
-    },
-    "tile-4": {
-        "color": "",
-        "image": {
-            "url": "docs/images/placeholders/360x240-4.jpg",
-            "alt": "Description"
+        {
+            "color": "",
+            "image": {
+                "url": "docs/images/placeholders/360x240-4.jpg",
+                "alt": "Description"
+            },
+            "title": "All in hand",
+            "description": "Scientists have, for the first time, decoded the meanings of chimpanzee gestures.",
+            "date-display" : "Wednesday 5 July 2017",
+            "type" : "News"
         },
-        "title": "All in hand",
-        "url": "#",
-        "description": "Scientists have, for the first time, decoded the meanings of chimpanzee gestures.",
-        "date" : "2014-07-04",
-        "date-display" : "4 July 2014",
-        "type" : "News"
-    },
-    "tile-5": {
-        "color": "red",
-        "image": {
-            "url": "docs/images/placeholders/360x240-5.jpg",
-            "alt": "Description"
+        {
+            "color": "red",
+            "image": {
+                "url": "docs/images/placeholders/360x240-5.jpg",
+                "alt": "Description"
+            },
+            "title": "Dogrees all round!",
+            "description": "Graduation is a time for all the family but this year one pet dog made its way into the post-ceremony celebrations in the Quad.",
+            "date-display" : "Wednesday 28 June 2017",
+            "type" : "Photo of the week"
         },
-        "title": "Dogrees all round!",
-        "url": "#",
-        "description": "Graduation is a time for all the family but this year one pet dog made its way into the post-ceremony celebrations in the Quad.",
-        "date" : "2014-06-27",
-        "date-display" : "27 June 2014",
-        "type" : "Photo of the week"
-    },
-    "tile-6": {
-        "color": "green",
-        "image": {
-            "url": "docs/images/placeholders/360x240-6.jpg",
-            "alt": "Description"
-        },
-        "title": "Darling: \"We belong together\"",
-        "url": "#",
-        "description": "Alistair Darling to use public address to make the case for Scotland remaining in the UK",
-        "date" : "2014-07-02",
-        "date-display" : "2 July 2014",
-        "type" : "Featured events"
-    }
+        {
+            "color": "green",
+            "image": {
+                "url": "docs/images/placeholders/360x240-6.jpg",
+                "alt": "Description"
+            },
+            "title": "Darling: \"We belong together\"",
+            "description": "Alistair Darling to use public address to make the case for Scotland remaining in the UK",
+            "date-display" : "Wednesday 21 June 2017",
+            "type" : "Featured events"
+        }
+    ]
 }

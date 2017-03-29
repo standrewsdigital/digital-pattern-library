@@ -1,6 +1,6 @@
 
 /*********************************/
-/* BEGIN Pattern: sticky-nav         */
+/* BEGIN Pattern: sticky-nav     */
 /*********************************/
 
 
@@ -18,6 +18,8 @@ $('#nav-top').affix({
     }
 });
 
+$('body').scrollspy({ target: '#nav-top', offset: 50 });
+
     // Modified version of this smooth scrolling:
     // https://css-tricks.com/snippets/jquery/smooth-scrolling/
 
@@ -32,17 +34,10 @@ $('nav a[href*="#"]:not([href="#"])').click(function() {
             $('html,body').animate({
                 scrollTop: target.offset().top - 45
             }, 500);
-            var a = $(this);
-            // a.parent().siblings().removeClass('current-menu-item');
-            // a.parent().addClass('current-menu-item');
-            //return false;
         }
     }
 
 });
-
-
-
 /*********************************/
-/* END Pattern: sticky-nav           */
+/* END Pattern: sticky-nav       */
 /*********************************/

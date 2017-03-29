@@ -1,0 +1,49 @@
+<div class="alert alert-danger" role="alert" aria-labelledby="summary-heading-example-2" tabindex="-1">
+    <h3 id="{{id}}">Incomplete personal details</h3>
+    <p>Optional description of errors and how to correct them.</p>
+    <ul>
+    {{#each error-message}}
+        <li><a href="{{link}}">{{text}}</a></li>
+    {{/each}}
+    </ul>
+</div>
+<div class="dpl-form">
+    <fieldset>
+        <legend>{{legend}}</legend>
+        <div class="row">
+            <div class="col-xs-12">
+                <form>
+                    {{#each input-field}}
+                    <div class="{{class}}">
+                        <label for="{{id}}" id="{{id}}">{{label-text}}</label>
+                        {{#if help-block}}
+                        <span class="help-block">{{help-block}}</span>
+                        {{/if}}
+                        <label class="text-danger" id="{{error-id}}"><strong>{{error-text}}</strong></label>
+                        <input class="form-control has-error" id="{{id}}" type="text" name="{{input-name}}" value="" aria-describedby="{{error-id}}">
+                    </div>
+                    {{/each}}
+                    {{#if radio}}
+                    <div class="{{class}}">
+                        <p id="example-personal-details">Are your personal details 
+                        correct and up-to-date?</p>
+                        <label class="text-danger"><strong>Please select an option</strong></label>
+                        <div class="radio-button">
+                            <ul>
+                                {{#each radio-buttons}}
+                                <li>
+                                <input type="radio" id="{{id}}" name="stacked-selector">
+                                <label for="{{id}}">{{label-text}}</label>
+                                <div class="check"></div>
+                                </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                    {{/if}}
+                    <input class="btn btn-primary" type="submit" value="Continue">
+                </form>
+            </div>
+        </div>
+    </fieldset>
+</div>

@@ -1,11 +1,10 @@
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 {{#if example}}
 
   <div class="container">
       <div class="row">
 
           <div class="col-md-4 fa-examples">
-                <p>Social media icons</p>
+                <h4>Social media icons</h4>
                 <div class="btn-group">
                     <a class="" href="#"><span class="sr-only">Facebook</span>
                         <i class="fa fa-facebook-official fa-2x" title="Facebook"></i>
@@ -27,19 +26,19 @@
           </div>
 
           <div class="col-md-4 fa-examples">
-                <p>File icons</p>
+                <h4>File icons</h4>
                 <p><a href="#">University prospectus <i class="fa fa-file-pdf-o" title="PDF"></i></a></p>
                 <p><a href="#">University email signature <i class="fa fa-file-word-o" title="Word"></i></a></p>
                 <p><a href="#">University PowerPoint <i class="fa fa-file-powerpoint-o" title="PowerPoint"></i></a></p>
           </div>
 
           <div class="col-md-4 fa-examples">
-                <p>Web applications</p>
-                <div class="list-group-item list-group-child" style="display: block;">
+                <h4>Web applications</h4>
+                <div class="list-group-item list-group-child">
                     <a href="#">View records (staff)</a>
                     <a href="#" target="_blank" title="Open in new tab"><i class="fa fa-external-link" aria-hidden="true"></i></a>
                 </div>
-                <div class="list-group-item list-group-child" style="display: block;">
+                <div class="list-group-item list-group-child">
                     <a href="#">Create records (staff)</a>
                     <a href="#" target="_blank" title="Open in new tab"><i class="fa fa-external-link" aria-hidden="true"></i></a>
                 </div>
@@ -51,9 +50,9 @@
     <div class="container fa_icons_example">
         <div class="row">
             {{#each icons}}
-                <div class="col-md-3 col-sm-4">
+                <div class="col-sm-4">
                     <div class="fa_icon">
-                        <i class="fa fa-{{this}}" aria-hidden="true"></i>
+                        <i class="fa fa-{{this}} fa-2x" aria-hidden="true"></i>
                         <span class="sr-only">Example of </span>{{this}}
                     </div>
                 </div>

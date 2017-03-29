@@ -17,11 +17,31 @@
                   "img": "assets/docs/images/patterns/breadcrumbs.jpg",
                   "url": "patterns/breadcrumbs/index.html"
                 },
+                { "name": "Content whole",
+                  "img": "assets/docs/images/patterns/content-whole.jpg",
+                  "url": "patterns/content-whole/index.html"
+                },
+                { "name": "Content halves",
+                  "img": "assets/docs/images/patterns/content-halves.jpg",
+                  "url": "patterns/content-halves/index.html"
+                },
+                { "name": "Content thirds",
+                  "img": "assets/docs/images/patterns/content-thirds.jpg",
+                  "url": "patterns/content-thirds/index.html"
+                },
+                { "name": "Typefaces",
+                  "img": "assets/docs/images/patterns/typeface.jpg",
+                  "url": "patterns/typeface/index.html"
+                },
+                { "name": "Typography",
+                  "img": "assets/docs/images/patterns/typography.jpg",
+                  "url": "patterns/typography/index.html"
+                },
                 { "name": "Footer",
                   "img": "assets/docs/images/patterns/footer.jpg",
                   "url": "patterns/footer/index.html"
                 }
-            ]
+            ]       
         },
         {
             "heading": "Call to action",
@@ -83,22 +103,10 @@
                   "img": "assets/docs/images/patterns/contact-card.jpg",
                   "url": "patterns/contact-card/index.html"
                 },
-                { "name": "Content halves",
-                  "img": "assets/docs/images/patterns/content-halves.jpg",
-                  "url": "patterns/content-halves/index.html"
-                },
-                { "name": "Content thirds",
-                  "img": "assets/docs/images/patterns/content-thirds.jpg",
-                  "url": "patterns/content-thirds/index.html"
-                },
-                { "name": "Content whole",
-                  "img": "assets/docs/images/patterns/content-whole.jpg",
-                  "url": "patterns/content-whole/index.html"
-                },
                 { "name": "Featured news",
                   "img": "assets/docs/images/patterns/featured-news.jpg",
                   "url": "patterns/featured-news/index.html"
-                },                
+                },
                 { "name": "Gallery",
                   "img": "assets/docs/images/patterns/gallery.jpg",
                   "url": "patterns/gallery/index.html"
@@ -142,10 +150,6 @@
                 { "name": "Tabs",
                   "img": "assets/docs/images/patterns/tabs.jpg",
                   "url": "patterns/tabs/index.html"
-                },
-                { "name": "Typography",
-                  "img": "assets/docs/images/patterns/typography.jpg",
-                  "url": "patterns/typography/index.html"
                 }
             ]
         },
@@ -166,16 +170,12 @@
         },
         {
             "heading": "Icons",
-            "subheading": "Patterns used to accent elements using icons.",
+            "subheading": "Supported icons sets.",
             "class": "primary",
             "patterns": [
                 { "name": "Font Awesome",
                   "img": "assets/docs/images/patterns/font-awesome.jpg",
                   "url": "patterns/font-awesome/index.html"
-                },
-                { "name": "Glyphicons",
-                  "img": "assets/docs/images/patterns/glyphicons.jpg",
-                  "url": "patterns/glyphicons/index.html"
                 }
             ]
         },
@@ -250,6 +250,10 @@
             "subheading": "Patterns that are no longer supported and will be removed in future versions of the pattern library.",
             "class": "danger",
             "patterns": [
+                { "name": "Glyphicons (deprecated)",
+                  "img": "assets/docs/images/patterns/glyphicons.jpg",
+                  "url": "patterns/glyphicons/index.html"
+                },
                 { "name": "Info bite (deprecated)",
                   "img": "assets/docs/images/patterns/info-bite.jpg",
                   "url": "patterns/info-bite/index.html"

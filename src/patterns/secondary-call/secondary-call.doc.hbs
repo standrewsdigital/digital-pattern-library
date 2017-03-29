@@ -2,25 +2,27 @@
 title: Secondary call-to-action
 ---
 
-<p>The secondary call-to-action pattern displays a heading, some intro text and a button with a large background image.</p>
+<p>The secondary call-to-action pattern displays a heading, some intro text, call-to-action button and a background image.</p>
 
-<p>Only show at the bottom of the page, immediately above the footer.</p>
-
+<h3>Rules for secondary call to action</h3>
 <ul>
-  	<li><strong>Alignment</strong><br>
-      By adding a class of <code>center</code> (default), <code>right</code>, or <code>left</code>, you can specify how the content should be aligned.
-    </li>
-    <li><strong>Background image</strong><br>
-        By adding a class of the from <code>secondary-call-*</code>, where <code>*</code> is a number between 0 and 9, you may select a preferred background image from additional variants.
-    </li>
-    <li><strong>Multiple calls to action</strong><br>
-        You may include more than more one call to action if needed.
-    </li>
+	<li>Only show at the bottom of the page, immediately above the footer.</li>
+	<li>Maximum of one secondary call to action per page.</li>
+  	<li>You may use the class: <code>center</code> (default), or <code>left</code> to specify how the content should be aligned.</li>
+    <li>To chose a background image, use the class <code>secondary-call-*</code>, where <code>*</code> is a number between 0 and 9. See below for background image options.</li>
+    <li>You must use one call to action button, but not anymore than two.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#secondary-call-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/secondary-call-options.options}}
 </ul>
 
 {{#secondary-call-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 </div>{{> secondary-call}}<div class="container">
 <span class="label label-default">Code</span>

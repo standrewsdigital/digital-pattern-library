@@ -21,14 +21,6 @@
     text-align: center;
 }
 
-.secondary-call.left {
-    text-align: left;
-}
-
-.secondary-call.right {
-    text-align: right;
-}
-
 .secondary-call .call-heading {
     color: white;
     font-size:   24px;
@@ -46,13 +38,8 @@
     width: 85%;
 }
 
-.secondary-call .left p, .secondary-call .left .call-heading {
+.secondary-call.left p, .secondary-call.left .call-heading {
     text-align: left;
-    width: 100%;
-}
-
-.secondary-call .right p, .secondary-call .right .call-heading {
-    text-align: right;
     width: 100%;
 }
 
@@ -70,7 +57,7 @@
 
 /* Alternative background images */
 
-@for $i from 1 through 9 {
+@for $i from 0 through 9 {
     .secondary-call-#{$i} {
         background-image: url(../images/secondary-call/#{$i}.jpg);
     }
@@ -81,7 +68,7 @@
 }
 
 @media (max-width: 991px) {
-    .secondary-call .left p, .secondary-call .left .call-heading, .secondary-call .right p, .secondary-call .right .call-heading {
+    .secondary-call .left p, .secondary-call .left .call-heading {
         text-align: center;
     }
 }
@@ -94,6 +81,12 @@
     .secondary-call p {
         font-size: 18px;
     }
+}
+
+@media (max-width: 451px) { 
+    .secondary-call .call-to-action-buttons .btn { 
+        margin: 30px 15px 15px 0; 
+    } 
 }
 
 /**********************************************/
