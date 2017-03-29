@@ -223,6 +223,7 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/respond.js',
                     'src/scripts/vendor/highlight/highlight.pack.js',
                     'src/scripts/vendor/lightbox.min.js',
+                    'src/scripts/jquery-ui.js',
 
                     // Bootstrap JavaScript
                     // Note these scripts should align with the CSS
@@ -272,6 +273,7 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/respond.js',
                     'src/scripts/vendor/highlight/highlight.pack.js',
                     'src/scripts/vendor/lightbox.min.js',
+                    'src/scripts/jquery-ui.js',
 
                     // Bootstrap JavaScript
                     // Note these scripts should align with the CSS

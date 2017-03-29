@@ -8,11 +8,12 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ## v0.27.0
 
-Release date: Tuesday 28 March 2017
+Release date: Wednesday 29 March 2017
 
 ### Added
 
 * Pattern for typefaces that we use.
+* Example in form elements for a datepicker.
 
 ### Changed
 

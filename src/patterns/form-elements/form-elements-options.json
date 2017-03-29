@@ -77,6 +77,28 @@
 
 
         {
+            "option-heading": "Date picker",
+            "option-anchor": "date-picker",
+            "option-description": "<p>For inputting date elements use this type.</p>",
+            "columns": [
+                {
+                    "column-size": "col-md-4",
+                    "input": [
+                        {
+                            "input-id": "datepicker-selectable",
+                            "label-text": "Pick a date",
+                            "input-class": "form-control",
+                            "type": "date"
+                        }
+                    ]
+                }
+            ]
+        },
+
+
+
+
+        {
             "option-heading": "Fieldsets and legends",
             "option-anchor": "fieldsets-legends",
             "option-description": "<p>Use fieldsets to group related form controls. The first element inside a fieldset must be a <code>legend</code> element that describes the group.</p>",

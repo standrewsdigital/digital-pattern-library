@@ -56,6 +56,13 @@ if ( $(".limit-counter").length ) {
     });
 }
 
+if ( $(window).width() > 450 ) {
+    $('#datepicker').datepicker({
+        dateFormat: "DD, dd MM yy",
+        changeMonth: true,
+        changeYear: true
+    });    
+}
 /*********************************/
 /* END Pattern: form-elements    */
 /*********************************/

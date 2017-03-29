@@ -7,7 +7,7 @@
 
     // By default, conditional content is hidden
     div.conditional-content-select, div.conditional-content-radio, {
-        border-color:      rgb(75, 76, 76);
+        border-color:      rgb(75, 76, 75);
         border-left-style: solid;
         border-left-width: 5px;
         display: none;
@@ -123,6 +123,22 @@
     }
 }
 
+
+
+.ui-datepicker .ui-state-default.ui-state-active {
+    border: 1px solid #00539b;
+    background: #00539b;
+}
+
+.ui-datepicker .ui-datepicker-today a {
+    border: 1px solid #7e7e7e;
+    background: #e0e0e0;
+    color: #454545;
+}
+
+.ui-datepicker .ui-datepicker-today .ui-state-default.ui-state-active {
+    color: #fff;
+}
 /*********************************/
 /* END Pattern: form-elements    */
 /*********************************/
