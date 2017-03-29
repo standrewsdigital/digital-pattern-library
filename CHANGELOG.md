@@ -6,6 +6,56 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v0.27.0
+
+Release date: Wednesday 29 March 2017
+
+### Added
+
+* Pattern for typefaces that we use.
+* Example in form elements for a datepicker.
+
+### Changed
+
+* Rewrite DPL homepage and permissions for use.
+* Updated the secondary call-to-action pattern.
+* Rewrite form errors to meet documentation style.
+* Form elements change checkboxes to use font awesome.
+* Header to use font awesome.
+* Font awesome integrated into DPL core.
+* Updated example page partials.
+
+### Deprecated
+
+* Deprecated Glyphicons pattern.
+
+
+
+
+---
+
+## v0.26.0
+
+Release date: Wednesday 22 March 2017
+
+### Changed
+
+* Update documentation for sticky nav.
+* Correct CSS code for sticky nav.
+
+### Deprecated
+
+* Previous implementation, replacing with new example.
+
+### Fixed
+
+* Bug where sticky nav moves around screen on user-click.
+
+
+
+
+---
+
 ## v0.25.0
 
 Release date: Thursday 16 March 2017
