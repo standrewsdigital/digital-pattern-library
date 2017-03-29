@@ -29,6 +29,10 @@ Release date: Wednesday 29 March 2017
 
 * Deprecated Glyphicons pattern.
 
+### Fixed
+
+* Fix datepicker on desktop.
+
 
 
 

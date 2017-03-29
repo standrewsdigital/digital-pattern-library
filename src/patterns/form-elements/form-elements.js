@@ -57,6 +57,7 @@ if ( $(".limit-counter").length ) {
 }
 
 if ( $(window).width() > 450 ) {
+    $('#datepicker').attr("type","text");
     $('#datepicker').datepicker({
         dateFormat: "DD, dd MM yy",
         changeMonth: true,
