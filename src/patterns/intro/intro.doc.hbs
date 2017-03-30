@@ -2,7 +2,24 @@
 title: Intro
 ---
 
-<p>The intro pattern presents a centred heading and paragraph. Ideally used in between other full width image-heavy content.</p>
+<p>The intro pattern presents a centred heading and a paragraph. It is used as a key strapline on a homepage to provide the user with a brief overview of the website.</p>
+
+<h3>Rules for the intro</h3>
+<ul>
+	<li>Must only be used on the homepage of a website.</li>
+	<li>Must only be used under a <a href="../hero-banner/index.html">hero banner</a>.</li>
+	<li>The header must not exceed 100 characters in length.</li>
+	<li>The paragraph must not exceed 400 characters in length.</li>
+	<li>Must only have one paragraph.</li>
+	<li>Background colour must only be in white.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#intro-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/intro-options.options}}
+</ul>
 
 {{#intro-options.options}}
 <hr>

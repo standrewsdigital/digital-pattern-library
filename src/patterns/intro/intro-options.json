@@ -1,10 +1,11 @@
 {
     "options": [
         {
-            "option-heading": "Default",
+            "option-heading": "Default intro",
             "option-description": "",
-            "heading":	"Seven centuries of academic excellence and groundbreaking&nbsp;research",
-			"paragraph":	"Over the last 600 years, the University of St Andrews has established a reputation as one of the world&rsquo;s leading research and teaching centres. Today, we offer a flexible degree structure based on your choice of subject specialism or research, creating an environment which nurtures inquisitive minds and a culture of shared&nbsp;learning."
+            "option-anchor": "default-intro",
+            "heading": "Seven centuries of academic excellence and groundbreaking research",
+			"paragraph": "Over the last 600 years, the University of St Andrews has established a reputation as one of the world's leading research and teaching centres. Today, we offer a flexible degree structure based on your choice of subject specialism or research, creating an environment which nurtures inquisitive minds and a culture of shared learning."
         }
 	]
 }
