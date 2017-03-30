@@ -6,6 +6,24 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v0.28.0
+
+Release date: Thursday 30 March 2017
+
+### Changed
+
+* Rewrite using the dpl page.
+* Update intro pattern.
+
+### Fixed
+
+* Fix typeface naming.
+
+
+
+
+---
+
 ## v0.27.0
 
 Release date: Wednesday 29 March 2017
