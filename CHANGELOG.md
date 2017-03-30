@@ -14,6 +14,7 @@ Release date: Thursday 30 March 2017
 
 * Rewrite using the dpl page.
 * Update intro pattern.
+* Update example pages.
 
 ### Fixed
 
