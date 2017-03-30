@@ -68,65 +68,69 @@
             "url": "#"
           }
     },
-    "masonry-grid": {
-        "masonry-1": {
-            "shape":"landscape",
+        "content": {
+        "text" : "<h2>Example about page</h2><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>"
+    },
+    "navbox-grid": {
+    "grid-row": true,
+    "box-size": [
+        {
             "image": {
-                "url": "docs/images/prototype/about-tile-wide-1.jpg",
+                "url": "../assets/docs/images/examples/about-image-1.jpg",
                 "alt": "Description"
             },
             "title": "History and heritage",
-            "url": "#",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "column": "col-sm-4"
         },
-        "masonry-2": {
-            "shape":"portrait",
+        {
             "image": {
-                "url": "docs/images/prototype/about-tile-tall-1.jpg",
-                "alt": "Description"
-            },
-            "title": "Facts and figures",
-            "url": "facts-figures/index.html",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
-        },
-        "masonry-3": {
-            "image": {
-                "url": "docs/images/prototype/about-tile-small-1.jpg",
-                "alt": "Description"
-            },
-            "title": "Environment",
-            "url": "#",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
-        },
-        "masonry-4": {
-            "image": {
-                "url": "docs/images/prototype/about-tile-small-2.jpg",
+                "url": "../assets/docs/images/examples/about-image-2.jpg",
                 "alt": "Description"
             },
             "title": "Governance",
-            "url": "#",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "column": "col-sm-4"
         },
-        "masonry-5": {
+        {
             "image": {
-                "url": "docs/images/prototype/about-tile-small-3.jpg",
+                "url": "../assets/docs/images/examples/about-image-3.jpg",
                 "alt": "Description"
             },
-            "title": "The town",
-            "url": "#",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+            "title": "Facts and figures",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "column": "col-sm-4"
         },
-        "masonry-6": {
-            "shape":"landscape",
+        {
             "image": {
-                "url": "docs/images/prototype/about-tile-wide-2.jpg",
+                "url": "../assets/docs/images/examples/about-image-4.jpg",
                 "alt": "Description"
             },
-            "title": "Professional services",
-            "url": "#",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+            "title": "Visiting St Andrews",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "column": "col-sm-4"
+        },
+        {
+            "image": {
+                "url": "../assets/docs/images/examples/about-image-5.jpg",
+                "alt": "Description"
+            },
+            "title": "Community facilites",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "column": "col-sm-4"
+        },
+        {
+            "image": {
+                "url": "../assets/docs/images/examples/about-image-6.jpg",
+                "alt": "Description"
+            },
+            "title": "Sustainability",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "column": "col-sm-4"
         }
-    },
+    ]
+
+},
     "secondary-call": {
         "heading":  "News and events",
         "paragraph":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
