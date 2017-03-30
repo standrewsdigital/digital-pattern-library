@@ -24,7 +24,7 @@ layout: _base.hbs
 <hr>
 
 <h3 id="quick-start">Quick start</h3>
-<p>To quickly get set up and use the DPL, simply include the following lines of code within your web page or application. This code uses the CDN, if you have built your own version of the files, then you can change the paths to link to those files instead.</p>
+<p>To quickly get set up and use the DPL, simply include the following lines of code within your web page or application.</p>
 
 <h4>CSS</h4>
 <p>Link to the CSS files (for screen and print) within <code>&lt;head&gt;</code>.</p>
@@ -36,7 +36,7 @@ layout: _base.hbs
 <h4>JavaScript</h4>
 <p>Link to the JavaScript file at the end of your <code>&lt;body&gt;</code> element.</p>
 
-<pre><code>&lt;script src="{{pkg.cdn.endpoint}}/{{pkg.cdn.package}}/{{pkg.version}}/scripts/core.js" type="text/javascript"&gt;&lt;/script&gt;
+<pre><code>&lt;script src="{{pkg.cdn.endpoint}}/{{pkg.cdn.package}}/{{pkg.version}}/scripts/core.js"&gt;&lt;/script&gt;
 &lt;/body&gt;</code></pre>
 
 <hr>
@@ -64,32 +64,12 @@ build the core files from source, you may gain access to the source code via Git
 
 <hr>
 <h3 id="css">CSS</h3>
-<p>There are two CSS options.</p>
 
-<div class="alert alert-danger" role="alert">What about print CSS? Should these be included in these examples?</div>
-<div class="alert alert-danger" role="alert">When would we use Bootstrap and theme only?</div>
+<p>This contains all the CSS needed to support the DPL: Bootstrap, Bootstrap theme, print styles and all patterns.</p>
 
-<!-- Begin pattern: accordion //-->
-<div class="accordion">
-    <h3>Bootstrap, theme and patterns (default)</h3>
-    <div>
-        <p>This option contains all the CSS needed to support the DPL: Bootstrap, Bootstrap theme and all patterns.</p>
+<pre><code>&lt;link href="{{pkg.cdn.endpoint}}/{{pkg.cdn.package}}/{{pkg.version}}/styles/screen.css" rel="stylesheet" type="text/css" media="screen" /&gt;   
+&lt;link href="{{pkg.cdn.endpoint}}/{{pkg.cdn.package}}/{{pkg.version}}/styles/print.css" rel="stylesheet" type="text/css" media="print" /&gt;</code></pre>
 
-        <pre><code>&lt;link href="{{pkg.cdn.endpoint}}/{{pkg.cdn.package}}/{{pkg.version}}/styles/screen.css" rel="stylesheet" type="text/css" media="screen" /&gt;</code></pre>
-    </div>
-</div>
-<!-- End pattern: accordion //-->
-
-<!-- Begin pattern: accordion //-->
-<div class="accordion">
-    <h3>Bootstrap and theme only</h3>
-    <div>
-        <p>This option includes only the Bootstrap framework and Bootstrap theme, meaning that patterns such as the header, footer, etc are not supported.</p>
-        
-        <pre><code>&lt;link href="{{pkg.cdn.endpoint}}/{{pkg.cdn.package}}/{{pkg.version}}/styles/screen-bootstrap-only.css" rel="stylesheet" type="text/css" media="screen" /&gt;</code></pre>
-    </div>
-</div>
-<!-- End pattern: accordion //-->
 
 <hr>
 <h3 id="js">JavaScript</h3>
