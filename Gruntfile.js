@@ -191,7 +191,6 @@ module.exports = function(grunt) {
                         'src/styles/datatables.scss',
                         'src/styles/doc.scss',
                         'src/styles/print.scss',
-                        'src/styles/screen-bootstrap-only.scss',
                         'src/styles/screen.scss',
                         'src/styles/header-only.scss'
                     ],
