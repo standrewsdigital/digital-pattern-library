@@ -197,8 +197,8 @@
                     "column-size": "col-md-6",
                     "input": [
                         {
-                            "input-id": "first-name1",
-                            "label-text": "First name",
+                            "input-id": "currency",
+                            "label-text": "Currency",
                             "type": "text",
                             "input-class": "form-control",
                             "addon-before": "£",
@@ -211,8 +211,8 @@
                     "column-size": "col-md-6",
                     "input": [
                         {
-                            "input-id": "last-name1",
-                            "label-text": "Last name",
+                            "input-id": "email-address",
+                            "label-text": "Email address",
                             "type": "text",
                             "input-class": "form-control",
                             "addon-after": "@st-andrews.ac.uk",
