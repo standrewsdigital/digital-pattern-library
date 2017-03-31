@@ -2,7 +2,7 @@
     "options": [
         {
             "option-heading": "Staff profile - default",
-            "option-description": "<p>The call to action link is also included in the profile heading.</p>",
+            "option-description": "<p>The call-to-action link is also included in the profile heading.</p>",
             "option-anchor": "profile-default",
             "person-title": "Vice-Principle (Digital)",
             "person-name": "Dr Bob McBoberson",
