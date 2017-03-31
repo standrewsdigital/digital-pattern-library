@@ -2,7 +2,7 @@
 title: About the pattern library
 ---
 
-## Audiences
+### Audiences
 
 The digital pattern library has three main audiences, built around the following user stories:
 

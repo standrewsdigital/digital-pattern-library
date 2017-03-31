@@ -147,7 +147,7 @@
         {
             "option-heading": "File upload",
             "option-anchor": "file-upload",
-            "option-description": "<p>This element uses the native input: <code>type='file'</code>. This is so the element gains focus when tabbing through the page. It also ensures the element functions when:<ul><li>using the keyboard<li>using assistive technology<li>JavaScript is not available</ul>",
+            "option-description": "<p>This element uses the native input: <code>type='file'</code>. This is so the element gains focus when tabbing through the page. It also ensures the element functions when:<ul><li>Using the keyboard<li>Using assistive technology<li>JavaScript is not available</ul>",
             "columns": [
                 {
                     "column-size": "col-md-6",
@@ -198,7 +198,7 @@
                     "input": [
                         {
                             "input-id": "first-name1",
-                            "label-text": "First name",
+                            "label-text": "Price",
                             "type": "text",
                             "input-class": "form-control",
                             "addon-before": "£",
@@ -211,8 +211,8 @@
                     "column-size": "col-md-6",
                     "input": [
                         {
-                            "input-id": "last-name1",
-                            "label-text": "Last name",
+                            "input-id": "email-address",
+                            "label-text": "Email address",
                             "type": "text",
                             "input-class": "form-control",
                             "addon-after": "@st-andrews.ac.uk",
