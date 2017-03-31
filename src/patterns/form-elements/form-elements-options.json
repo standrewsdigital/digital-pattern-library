@@ -211,8 +211,8 @@
                     "column-size": "col-md-6",
                     "input": [
                         {
-                            "input-id": "last-name1",
-                            "label-text": "Email",
+                            "input-id": "email-address",
+                            "label-text": "Email address",
                             "type": "text",
                             "input-class": "form-control",
                             "addon-after": "@st-andrews.ac.uk",
