@@ -3,7 +3,7 @@
 
         {
             "option-heading": "Tile grid with background image",
-            "option-description": "<p>To add a background image, attach the image using an inline style, e.g. <code>&lt;div class=&quot;tile-grid&quot; style=&quot;background-image: url(path/to/image.jpg)&quot;&gt;</code>.</p><ul><li>Background image must be blurred, this can be done easily in Photoshop.</li><li>Background image must be large, this example is 2100 x 1400 pixels.</li></ul>",
+            "option-description": "<p>To add a background image, attach the image using an inline style, for example <code>&lt;div class=&quot;tile-grid&quot; style=&quot;background-image: url(path/to/image.jpg)&quot;&gt;</code>.</p><ul><li>The background image must be blurred, this can be done in Photoshop.</li><li>The background image must be large, this example is 2100 x 1400 pixels.</li></ul>",
             "option-anchor": "image-background",
             "heading": "What's happening in St Andrews",
             "call-to-action-text": [

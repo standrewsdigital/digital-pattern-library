@@ -2,7 +2,7 @@
     "options": [
         {
             "option-heading": "Headings",
-            "option-description": "<p>It is important to think about the structure of content on a page before choosing the appropriate heading. It is not about choosing one that looks nice, rather think about where the heading fits into the overall content hierarchy so that it makes sense.</p><p>Keep the implementation consistent across the entire site to maximise usability.</p><p>Do not skip headings in the structure e.g. going from heading 2 to heading 4.</p><ul><li>There must be only one <code>h1</code> element on a page: the heading University of St Andrews; <code>h1</code> must not be used anywhere else on the page.</li><li>You may use as many <code>h2</code> elements as required to denote new sections on a page.</li><li>You may use as many <code>h3</code> to <code>h4</code> elements as required to denote sub-sections of content on a page.</li><li>You must not use <code>h5</code> or <code>h6</code> elements.</li></ul>",
+            "option-description": "<p>It is important to think about the structure of content on a page before choosing the appropriate heading. It is not about choosing one that looks nice, rather think about where the heading fits into the overall content hierarchy.</p><p>Implement headings consistently across the entire site to maximise usability.</p><p>Do not skip headings in the structure, for example going from heading 2 to heading 4.</p><ul><li>There must be only one <code>h1</code> element on a page: the heading University of St Andrews; <code>h1</code> must not be used anywhere else on the page.</li><li>You may use as many <code>h2</code> elements as required to denote new sections on a page.</li><li>You may use as many <code>h3</code> to <code>h4</code> elements as required to denote sub-sections of content on a page.</li><li>You must not use <code>h5</code> or <code>h6</code> elements.</li></ul>",
             "option-anchor": "headings",
             "headings": [
                 {
@@ -22,7 +22,7 @@
 
         {
             "option-heading": "Body text",
-            "option-description": "<ul><li>The <code>p</code> tag defines a paragraph.</li></ul><h4>Bold and strong</h4><ul><li>The HTML <code>b</code> element defines <b>bold</b> text, without any extra importance.</li><li>The HTML <code>strong</code> element defines <strong>strong</strong> text, with added semantic 'strong' importance.</li><li>Try to keep items in bold and strong as short as possible and refrain from writing entire sentences or paragraphs in a bold or strong typeface.</li><li>Bold and strong text should not be used as a substitute for headings.</li></ul><h4>Italics and emphasis</h4><ul><li>The HTML <code>i</code> element defines <i>italic</i> text, without any extra importance.</li><li>The HTML <code>em</code> element defines <em>emphasized</em> text, with added semantic importance.</li><li>For accessibility reasons, avoid the excessive use of italics and emphasis on the web.</li></ul>",
+            "option-description": "<ul><li>The <code>p</code> tag defines a paragraph.</li></ul><h4>Bold and strong</h4><ul><li>The HTML <code>b</code> element defines <b>bold</b> text, without any extra importance.</li><li>The HTML <code>strong</code> element defines <strong>strong</strong> text, with added semantic 'strong' importance.</li><li>Try to keep items in bold and strong as short as possible and refrain from writing entire sentences or paragraphs in a bold or strong typeface.</li><li>Bold and strong text should not be used as a substitute for headings.</li></ul><h4>Italics and emphasis</h4><ul><li>The HTML <code>i</code> element defines <i>italic</i> text, without any extra importance.</li><li>The HTML <code>em</code> element defines <em>emphasised</em> text, with added semantic importance.</li><li>For accessibility reasons, avoid the excessive use of italics and emphasis on the web.</li></ul>",
             "option-anchor": "body-text",
             "body-text": [
                 {
@@ -48,7 +48,7 @@
 
         {
             "option-heading": "Abbreviated text",
-            "option-description": "<p>The <code>abbr</code> tag is used to define an abbreviation or an acronym. This can give useful information to browser, translation systems, and search engines.</p><p>By deafult in desktop browsers the <code>abbr</code> tag provides a tooltip mouseover.</p><p>Please note, <code>abbr</code> tags are redundent on mobile browsers. In which case it is recommended to write it out abbreviations and acronyms in full, e.g. World Health Organisation (WHO).</p>",
+            "option-description": "<p>The <code>abbr</code> tag is used to define an abbreviation or an acronym. This can give useful information to browser, translation systems, and search engines.</p><p>By default in desktop browsers the <code>abbr</code> tag provides a tooltip.</p><p>Please note, <code>abbr</code> tags are redundant on mobile browsers, so it is recommended to write out abbreviations and acronyms in full, for example World Health Organisation (WHO).</p>",
             "option-anchor": "abbreviated-text",
             "body-text": [
                 {
@@ -77,7 +77,7 @@
 
         {
             "option-heading": "Blockquote - left alignment",
-            "option-description": "<ul><li>Blockquotes should be used when emphasising a quotation of relevant context to the body of text.</li><li>For accessibility reasons, avoid the excessive use of blockquotes.</li></ul>",
+            "option-description": "<ul><li>Blockquotes should be used when emphasising a relevant quotation in the body of text.</li><li>For accessibility reasons, avoid the excessive use of blockquotes.</li></ul>",
             "option-anchor": "blockquote-left",
             "blockquote": true
         },
@@ -87,7 +87,7 @@
 
         {
             "option-heading": "Blockquote - right alignment",
-            "option-description": "<p>Right aligned blockquotes are available as a flexible alternative for pages which wrap their text fields around additional content.</p>",
+            "option-description": "<p>Right-aligned blockquotes are available as a flexible alternative for pages which wrap their text fields around additional content.</p>",
             "option-anchor": "blockquote-right",
             "blockquote": true,
             "class": "pull-right"
