@@ -3,7 +3,7 @@
          {
             "option-heading": "Sample usage",
             "option-anchor": "sample",
-            "option-description": "Examples of how we are using some of these icons.",
+            "option-description": "Here are some example icons.",
             "example": true
         },
 
@@ -13,7 +13,7 @@
         {
             "option-heading": "Approved icons",
             "option-anchor": "approved",
-            "option-description": "<p>To use as a class name, prefix the icon name with <code>fa-</code>, e.g. <code>fa-address-book</code>.</p>",
+            "option-description": "<p>To use as a class name, prefix the icon name with <code>fa-</code>, for example <code>fa-address-book</code>.</p>",
             "icons": [
                 "address-book",
                 "address-card",
