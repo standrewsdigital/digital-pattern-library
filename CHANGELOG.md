@@ -6,6 +6,29 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v1.0.0
+
+Release date: Friday 31 March 2017
+
+### Changed
+
+* Update all the example pages.
+* Update documentation on the About and Using the pattern library pages.
+* Update patterns for final QA of style.
+
+### Fixed
+
+* Fix misc small responsive issues.
+
+### Removed
+
+* Remove redundant examples from examples page.
+
+
+
+
+---
+
 ## v0.28.0
 
 Release date: Thursday 30 March 2017

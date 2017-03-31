@@ -32,7 +32,7 @@ study_palette:
     tertiary2: {color: sta-purple, name: Tertiary 2 (purple)}
 ---
 
-## Palettes
+### Palettes
 
 Palettes are collections of brand colours that are selected to form the colour schemes for webpages. Constraining our design to a few colours helps give a consistent, professional appearance.
 

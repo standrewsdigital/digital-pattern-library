@@ -79,7 +79,7 @@
         {
             "option-heading": "Date picker",
             "option-anchor": "date-picker",
-            "option-description": "<p>For inputting date elements use this type.</p>",
+            "option-description": "<p>Use date picker for inputting date elements.</p>",
             "columns": [
                 {
                     "column-size": "col-md-4",
@@ -147,7 +147,7 @@
         {
             "option-heading": "File upload",
             "option-anchor": "file-upload",
-            "option-description": "<p>This element uses the native input: <code>type='file'</code>. This is so the element gains focus when tabbing through the page. It also ensures the element functions when:<ul><li>using the keyboard<li>using assistive technology<li>JavaScript is not available</ul>",
+            "option-description": "<p>This element uses the native input: <code>type='file'</code>. This is so the element gains focus when tabbing through the page. It also ensures the element functions when:<ul><li>using the keyboard<li>using assistive technology<li>JavaScript is not available.</li></ul>",
             "columns": [
                 {
                     "column-size": "col-md-6",
@@ -176,7 +176,7 @@
                         {
                             "input-id": "postcode-hint",
                             "label-text": "Postcode",
-                            "hint": "Enter your postcode without any spaces. For example, KY169AL.",
+                            "hint": "Enter your postcode without any spaces. For example, KY16 9AL.",
                             "type": "text",
                             "input-class": "form-control"
                         }
@@ -191,14 +191,14 @@
         {
             "option-heading": "Input addons",
             "option-anchor": "input-addon-fields",
-            "option-description": "<p>Addons map be used when the input field is always going to be prefixed with a particular value, for example collecting only the username for an <code>@st-andrews.ac.uk</code> email address.</p>",
+            "option-description": "<p>Addons may be used when the input field is always going to be prefixed with a particular value, for example collecting only the username for an <code>@st-andrews.ac.uk</code> email address.</p>",
             "columns": [
                 {
                     "column-size": "col-md-6",
                     "input": [
                         {
                             "input-id": "first-name1",
-                            "label-text": "First name",
+                            "label-text": "Price",
                             "type": "text",
                             "input-class": "form-control",
                             "addon-before": "£",
@@ -211,8 +211,8 @@
                     "column-size": "col-md-6",
                     "input": [
                         {
-                            "input-id": "last-name1",
-                            "label-text": "Last name",
+                            "input-id": "email-address",
+                            "label-text": "Email address",
                             "type": "text",
                             "input-class": "form-control",
                             "addon-after": "@st-andrews.ac.uk",
