@@ -1,15 +1,19 @@
 <!-- Begin pattern: panel //-->
 
-<article class="panel {{default color "[color]"}}">
+{{#each panels}}
+	<div class="{{column-size}}">
+		<div class="panel {{color}}">
 
-    <div class="panel-heading">
-        <h3 class="panel-title"><a href="{{default url "[url]"}}">{{default title "[title]"}}</a></h3>
-    </div>
+			<div class="panel-heading">
+				<h3 class="panel-title"><a href="#">{{title}}</a></h3>
+			</div>
 
-    <div class="panel-body">
-    <p>{{default description "[description]"}}</p>
-</div>
+			<div class="panel-body">
+				<p>{{description}}</p>
+			</div>
 
-</article>
+		</div>
+	</div>	
+{{/each}}
 
 <!-- End pattern: panel //-->

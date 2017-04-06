@@ -3,42 +3,45 @@
         {
             "option-heading": "Colour options",
             "option-description": "<p>A variety of colours are available, in keeping with the colour palette.</p>",
-            "panel-1": {
-                "color": "panel-primary",
-                "title": "Primary",
-                "url": "#",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
-            },
-            "panel-2": {
-                "color": "panel-secondary",
-                "title": "Secondary",
-                "url": "#",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
-            },
-            "panel-3": {
-                "color": "panel-tertiary-1",
-                "title": "Tertiary 1",
-                "url": "#",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
-            },
-            "panel-4": {
-                "color": "panel-tertiary-2",
-                "title": "Tertiary 2",
-                "url": "#",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
-            },
-            "panel-5": {
-                "color": "panel-tertiary-3",
-                "title": "Tertiary 3",
-                "url": "#",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
-            },
-            "panel-6": {
-                "color": "panel-primary",
-                "title": "Primary",
-                "url": "#",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
-            }
+            "option-anchor": "panel-grid",
+            "panels": [
+                {
+                    "column-size": "col-md-6",
+                    "color": "panel-primary",
+                    "title": "Primary",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                },
+                {
+                    "column-size": "col-md-6",   
+                    "color": "panel-secondary",
+                    "title": "Secondary",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                },
+                {
+                    "column-size": "col-md-6",
+                    "color": "panel-tertiary-1",
+                    "title": "Tertiary 1",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                },
+                {
+                    "column-size": "col-md-6",   
+                    "color": "panel-tertiary-2",
+                    "title": "Tertiary 2",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                },
+                {
+                    "column-size": "col-md-6",
+                    "color": "panel-tertiary-3",
+                    "title": "Tertiary 3",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                },
+                {
+                    "column-size": "col-md-6",   
+                    "color": "panel-primary",
+                    "title": "Primary",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                }
+            ]
         }
     ]
 }

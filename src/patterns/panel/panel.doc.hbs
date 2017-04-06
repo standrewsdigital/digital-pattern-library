@@ -1,25 +1,21 @@
 ---
 title: Panel
-pattern: panel
-examples:
-- name: panel-primary
-- name: panel-secondary
-- name: panel-tertiary-1
-- name: panel-tertiary-2
-- name: panel-tertiary-3
-
 ---
 
 <p>The panel pattern shows a title link, description, and optional background colour, designed to be combined together into a panel grid.</p>
 
-<h2>Usage</h2>
-
+<h3>Rules for the panel</h3>
 <ul>
-   <li>Panel elements never appear outside of a Panel grid.</li>
+	<li>Panel elements never appear outside of a Panel grid.</li>
 </ul>
 
-<h2>Options</h2>
-
-<ul>
-    <li><em>None</em></li>
-</ul>
+{{#panel-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+<div class="row">
+		{{> panel}}
+</div>	
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> panel}}</code></pre>
+{{/panel-options.options}}

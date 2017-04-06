@@ -235,6 +235,10 @@
                   "img": "assets/docs/images/patterns/pagination.jpg",
                   "url": "patterns/pagination/index.html"
                 },
+                { "name": "Panel",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/panel/index.html"
+                },
                 { "name": "Panel grid",
                   "img": "assets/docs/images/patterns/panel-grid.jpg",
                   "url": "patterns/panel-grid/index.html"
