@@ -3,7 +3,6 @@
         {
             "option-heading": "Primary",
             "option-anchor": "panel-primary",
-            "option-description": "<p>Primary</p>",
             "panels": [ 
                 {
                     "column-size": "col-md-4",
@@ -19,7 +18,6 @@
         {
             "option-heading": "Secondary",
             "option-anchor": "panel-secondary",
-            "option-description": "<p>Secondary</p>",
             "panels": [
                 {
                     "column-size": "col-md-4",
@@ -27,6 +25,69 @@
                     "title": "Secondary",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
                 }    
+            ]
+        },
+
+
+
+        {
+            "option-heading": "Tertiary 1",
+            "option-anchor": "panel-tertiary-1",
+            "panels": [ 
+                {
+                    "column-size": "col-md-4",
+                    "color": "panel-tertiary-1",
+                    "title": "Tertiary 1",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                }
+            ]
+        },
+
+
+
+        {
+            "option-heading": "Tertiary 2",
+            "option-anchor": "panel-tertiary-2",
+            "panels": [ 
+                {
+                    "column-size": "col-md-4",
+                    "color": "panel-tertiary-2",
+                    "title": "Tertiary 2",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                }
+            ]
+        },
+
+
+
+        {
+            "option-heading": "Tertiary 3",
+            "option-anchor": "panel-tertiary-3",
+            "panels": [ 
+                {
+                    "column-size": "col-md-4",
+                    "color": "panel-tertiary-3",
+                    "title": "Tertiary 3",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                }
+            ]
+        },
+
+
+
+        {
+            "option-heading": "Panel with image",
+            "option-anchor": "panel-image",
+            "option-description": "<p>A panel with an image must only be used in asides. It is recommended that panels with images include a link in the description text for further context. Images be must 360 &times; 240 pixels in resolution.</p>",
+            "panels": [ 
+                {
+                    "column-size": "col-md-4",
+                    "image": {
+                        "url": "https://t3.ftcdn.net/jpg/01/22/29/10/240_F_122291046_6SMavtxzdLn04qeyAfFPZEqPdmPxiCGf.jpg",
+                        "alt": "placeholder"
+                    },
+                    "description": "Lorem ipsum dolor sit amet, <a href='#'>consectetur adipisicing</a> elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                }
             ]
         }
     ]        

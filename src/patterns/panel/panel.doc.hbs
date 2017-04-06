@@ -2,16 +2,29 @@
 title: Panel
 ---
 
-<p>The panel pattern shows a title link, description, and optional background colour, designed to be combined together into a panel grid.</p>
+<p>The panel pattern shows either a header link with an optional background colour or an image. Both always with a description. Panels are can be used in asides for additional information or combined together to form a <a href="../panel-grid/index.html">panel grid</a>.</p>
 
-<h3>Rules for the panel</h3>
+<h3>Rules for panels</h3>
 <ul>
-	<li>Panel elements never appear outside of a Panel grid.</li>
+	<li>Individual panels must only be used in asides.</li>
+	<li>Multiple panels must not be used in asides.</li>
+	<li>Individual panels must not be used in the main body of pages.</li>
+	<li><a href="../panel-grid/index.html">Panel grid</a> pattern must be used to feature multiple panels on a page.</li>
+	<li>Any combination of coloured of panels can be used on a <a href="../panel-grid/index.html">panel grid</a>.</li>
+	<li>Panels with images must only appear in asides.</li>
+	<li>Images in panels must be 360 &times; 240 pixels.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#panel-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/panel-options.options}}
 </ul>
 
 {{#panel-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 <div class="row">
 		{{> panel}}
