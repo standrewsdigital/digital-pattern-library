@@ -5,7 +5,11 @@
 
 .featured-media {
     color: rgb(255, 255, 255);
-    padding: 40px 0 20px 0;
+    padding: 40px 0;
+}
+
+.featured-media a {
+    text-decoration: none;
 }
 
 .featured-media p a {
@@ -35,7 +39,8 @@
 }
 
 .featured-media.featured-image{
-    background-image: url("../assets/core/images/secondary-call/9.jpg"); background-size: cover;
+    background-image: url(../images/secondary-call/9.jpg); background-size: cover;
+
 }
 
 @media (max-width: 991px) {
