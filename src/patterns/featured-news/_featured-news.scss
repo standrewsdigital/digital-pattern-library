@@ -3,7 +3,7 @@
 /* BEGIN Pattern: featured news  */
 /*********************************/
 
-div.featured-image img {
+#featured-story .featured-image img {
 	float: right;
 	margin-left: 30px;
     margin-bottom:60px;
@@ -11,10 +11,9 @@ div.featured-image img {
 
 
 @media (max-width: 720px) {
-	div.featured-image img  {
+	#featured-story .featured-image img  {
 		float: left;
 		margin-left: 0;
-		margin-right: 250px;
 		margin-bottom: 20px;
 		clear: right;
 	}
