@@ -3,8 +3,10 @@
 /* BEGIN Pattern: buttons        */
 /*********************************/
 
-.btn, .read-more a {
-    margin-bottom: 5px;
+@media (max-width: 600px) {
+    .btn, .read-more a {
+        margin-bottom: 5px;
+    }
 }
 
 

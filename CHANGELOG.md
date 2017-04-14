@@ -3,8 +3,31 @@
 All notable changes to digital pattern library will be documented in this file.
 This project adheres to [semantic versioning](http://semver.org/).
 
-Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
+Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
+
+## v1.1.0
+
+Release date: Friday 14 April 2017
+
+### Added
+
+* Single panel pattern.
+
+### Changed
+
+* Update featured media pattern.
+* Uddate long form intro pattern.
+* Long form end piece date format.
+
+### Fixed
+
+* Fix CSS rules for buttons, featured news and kis widget.
+
+
+
+
+---
 
 ## v1.0.0
 
@@ -193,7 +216,7 @@ Release date: Wednesday 1 March 2017
 
 Release date: Thursday 23 February 2017
 
-### Added 
+### Added
 
 * More-news pattern.
 
@@ -223,7 +246,7 @@ Release date: Monday 20 February 2017
 
 ### Changed
 
-* Updated the hero banner pattern, adding more examples. 
+* Updated the hero banner pattern, adding more examples.
 * Fixes for documentation in many patterns.
 
 ### Removed
@@ -365,7 +388,7 @@ Release date: Wednesday 1 February 2017
 ### Added
 
 * Form elements pattern.
-* Form validation pattern. 
+* Form validation pattern.
 
 ### Changed
 
@@ -394,7 +417,7 @@ Release date: Tuesday 31 January 2017
 
 ### Added
 
-* Added Alerts pattern. 
+* Added Alerts pattern.
 
 
 
@@ -474,7 +497,7 @@ Release date: Tuesday 17 January 2017
 ### Changed
 
 * Update CONTRIBUTING.md to match the redesign of how the DPL is built.
-* Update dummy pattern to match the redesign of how the DPL is built. 
+* Update dummy pattern to match the redesign of how the DPL is built.
 
 
 
@@ -488,7 +511,7 @@ Release date: Monday 16 January 2017
 ### Removed
 
 * Remove wai aria role from content whole pattern.
-* Update dummy pattern to match the redesign of how the DPL is built. 
+* Update dummy pattern to match the redesign of how the DPL is built.
 
 
 
@@ -613,7 +636,7 @@ Release date: Friday 16 December 2016
 ### Changed
 
 * Rename 'Pattern-pages' to 'Patterns'.
-* Rename 'Example-pages' to 'Examples'. 
+* Rename 'Example-pages' to 'Examples'.
 
 
 
@@ -664,7 +687,7 @@ Release date: Thursday 15 December 2016
 
 Release date: Wednesday 14 December 2016
 
-### Changed 
+### Changed
 
 * Merge `JavaScript dependencies` page into `using the pattern library` page.
 * Merge `using jQuery DataTables` information into the `Tables - DataTables` pattern.
@@ -694,7 +717,7 @@ Release date: Tuesday 13 December 2016
 ### Changed
 
 * Update footer pattern documentation.
-* Social media icons within the footer now use [Font Awesome](http://fontawesome.io/) instead of SVG images. 
+* Social media icons within the footer now use [Font Awesome](http://fontawesome.io/) instead of SVG images.
 * Add new example with deprecated code for the SVG links.
 
 
@@ -706,7 +729,7 @@ Release date: Tuesday 13 December 2016
 
 Release date: Monday 12 December 2016
 
-### Changed 
+### Changed
 
 * Fix bug where search box can't close when screen size expanded.
 * Fix bug where search box position is altered when screen size is expanded.
@@ -720,7 +743,7 @@ Release date: Monday 12 December 2016
 
 Release date: Friday 9 December 2016
 
-### Changed 
+### Changed
 
 * Update header pattern documentation.
 * Fix bug where search box dissapears after closing it in mobile view.
@@ -744,16 +767,16 @@ Release date: Friday 9 December 2016
 ---
 
 ## v0.8.3
- 
+
 Release date: Thursday 8 December 2016
 
-### Added 
+### Added
 
 * New example illustrating background colour with content-thirds pattern.
 
 
-### Changed 
- 
+### Changed
+
 * Rename pattern content-updates to news-updates.
 * Update news-updates pattern.
 
@@ -763,16 +786,16 @@ Release date: Thursday 8 December 2016
 ---
 
 ## v0.8.2
- 
+
 Release date: Wednesday 7 December 2016
- 
-### Added 
+
+### Added
 
 * Create pattern content-thirds.
- 
- 
-### Changed 
- 
+
+
+### Changed
+
 * Rename pattern content-full to content-whole.
 * Update content-whole pattern.
 * Move `.content` class from pattern to `screen.scss`.
@@ -898,14 +921,14 @@ Release date: Tuesday 4 October 2016
 ### Changed
 
 * Reordered the navigation to bring About up to the top level.
-* Removed the 'Ex:' prefix from Examples dropdowns. 
+* Removed the 'Ex:' prefix from Examples dropdowns.
 * Improved setup documentation for Windows users.
 
 
 ### Fixed
 
 * Changed the audience header to the correct default header.
-* Corrected the repository URL in `package.json` (it was still 
+* Corrected the repository URL in `package.json` (it was still
   set to Bitbucket rather than GitHub).
 * Updated code in DPL change log, documentation, examples, and `_layouts`
   to meet house code style and standards.
@@ -931,7 +954,7 @@ Release date: Wednesday 24 August 2016
 
 * Various minor CSS updates.
 * Research school updates.
-* Changed how Google Maps are done. Now pulls in external 
+* Changed how Google Maps are done. Now pulls in external
   location data and remove in-file location data.
 * Updated links handlebars.
 
@@ -955,7 +978,7 @@ Release date: Friday 10 June 2016
 
 * Added Google Maps pattern.
 * Added first iteration of hideaway JavaScript code.
-* Added new variants, placeholder images and template to 
+* Added new variants, placeholder images and template to
   the Navbox Grid pattern.
 * Added new light grey background variation to Tile Grid pattern.
 
@@ -1007,9 +1030,9 @@ Release date: Tuesday 9 February 2016
 
 ### Fixed
 
-* Updated Handlebars structure to be mobile first for the 
-  Navboxes and updated SCSS to adjust the changes for the 
-  Navboxes. This fixes the Navbox title spilling out of the 
+* Updated Handlebars structure to be mobile first for the
+  Navboxes and updated SCSS to adjust the changes for the
+  Navboxes. This fixes the Navbox title spilling out of the
   box on mobile devices.
 * Fixed typo in About deliverables.
 * Fixed vertical alignment for chevrons.
@@ -1018,8 +1041,8 @@ Release date: Tuesday 9 February 2016
 * Fixed example 2 in Content 2 column.
 * Removed apostrophes from Gallery options.
 * Fixed T4 responsive images.
-* Fixed grunt-ftp-deploy to point to standrewsdigital.org.uk in light 
-  of change of secondary accounts to TLS/SSL Explicit: changed CDN 
+* Fixed grunt-ftp-deploy to point to standrewsdigital.org.uk in light
+  of change of secondary accounts to TLS/SSL Explicit: changed CDN
   endpoint; changed FTP destination to standrewsdigital.org.uk and fixed
   path to docs/dpl in gruntfile
 * Fixed examples and background images in Info bite grid.
@@ -1031,7 +1054,7 @@ Release date: Tuesday 9 February 2016
 * Fixed inconsistent menu item in Secondary call-to-action.
 * Fixed class, layout and structure in Staff profile pattern.
 * Added Sticky Nav pattern to the DPL navigation (it was missing!)
-* Various minor fixes in Sticky Nav pattern (hbs doc, JavaScript 
+* Various minor fixes in Sticky Nav pattern (hbs doc, JavaScript
   syntax errors).
 
 
@@ -1045,7 +1068,7 @@ Release date: Wednesday 16 September 2015
 
 ### Changed
 
-* Improved documentation about long-form pattern (corrections and 
+* Improved documentation about long-form pattern (corrections and
   clarifications).
 
 ### Fixed
@@ -1067,7 +1090,7 @@ Release date: Thursday 27 August 2015
 * Added ability to easily retrieve Hex and RGB(A) codes for brand colours.
 * Created `.core-stats.txt` file to track filesizes of core assets.
 * Added a summary JSON file into the `core` folder when built.
-* Set up build process to add a text banner with version and date to all 
+* Set up build process to add a text banner with version and date to all
   compiled CSS and JS.
 * Added minified versions of JavaScript files.
 * Added contributor documentation: `CONTRIBUTING.md`, `SETUP.md`, `ADD-PATTERN.md`.
@@ -1108,8 +1131,8 @@ Release date: Monday 27 July 2015
 Release date: Friday 24 July 2015
 
 ### Added
-* Header-only JavaScript and CSS core files. 
-  These will be used in places where only the header and footer styles are 
+* Header-only JavaScript and CSS core files.
+  These will be used in places where only the header and footer styles are
   needed.
 * Added a Gallery pattern.
 * Additional placeholder images for galleries.
@@ -1146,13 +1169,13 @@ Release date: Thursday 18 June 2015
 ### Fixed
 
 * Fixed bug where logo would flash on desktops because the
-  JavaScript had to load before it would switch from standard to foundation 
+  JavaScript had to load before it would switch from standard to foundation
   logo.
-* Fixed bug where both standard and foundation logos were loading. Now CSS 
+* Fixed bug where both standard and foundation logos were loading. Now CSS
   media queries only loads the correct one.
-* Fixed bug where print header was loading even though not showing. Now the 
+* Fixed bug where print header was loading even though not showing. Now the
   print stylesheet loads the correct logo for print.
-* Some minor fixes on print styles. 
+* Some minor fixes on print styles.
 * Improved interactivity of the search box on mobile devices.
 * Improvde spacing of audience links on mobile devices.
 * Reduced size of text in `<figcaption>` elements.
@@ -1174,7 +1197,7 @@ Release date: Monday 15 June 2015
 * Optimised `print-crest.png`:        41 KB -> 11 KB
 
 
-### Removed 
+### Removed
 
 * Unused logos and images.
 
@@ -1212,14 +1235,14 @@ Release date: Tuesday 14 April 2015
 
 ### Added
 
-* Local fallback copies of PT Sans in the event that Google fonts are not 
+* Local fallback copies of PT Sans in the event that Google fonts are not
   available.
 * Web application example page.
 
 
 ### Changed
 
-* A new design for the header was implemented resulting considerable 
+* A new design for the header was implemented resulting considerable
   refactoring of the header pattern.
 
 
@@ -1247,11 +1270,11 @@ Release date: Thursday 12 March 2015
 
 ### Changed
 
-* Table headers now default to grey with additional colors available with 
+* Table headers now default to grey with additional colors available with
   class modifiers.
 * Bootstrap panels now have card-like view, with no border and a subtle drop
   shadow.
-* Improved and standardised documentation of patterns including descriptions, 
+* Improved and standardised documentation of patterns including descriptions,
   usage and options.
 * Re-ordered the navigation in the docs.
 
