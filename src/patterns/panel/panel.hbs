@@ -1,15 +1,23 @@
 <!-- Begin pattern: panel //-->
 
-<article class="panel {{default color "[color]"}}">
-
-    <div class="panel-heading">
-        <h3 class="panel-title"><a href="{{default url "[url]"}}">{{default title "[title]"}}</a></h3>
-    </div>
-
-    <div class="panel-body">
-    <p>{{default description "[description]"}}</p>
-</div>
-
-</article>
+{{#each panels}}
+	<div class="{{column-size}}">
+		{{#if image}}
+		<div class="panel">
+			<div class="panel-image">
+            	<img src="{{image.url}}" alt="{{image.alt}}">
+            </div>	
+		{{else}}
+		<div class="panel {{color}}">
+			<div class="panel-heading">
+				<h3 class="panel-title"><a href="#">{{title}}</a></h3>
+			</div>
+		{{/if}}
+			<div class="panel-body">
+				<p>{{{description}}}</p>
+			</div>
+		</div>
+	</div>	
+{{/each}}
 
 <!-- End pattern: panel //-->
