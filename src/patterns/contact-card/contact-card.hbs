@@ -1,36 +1,34 @@
 <!-- Begin pattern: contact-card //-->
-
-    <div class="row">
-        {{#each cards}}
-        <div class="col-xs-12 col-sm-6 col-lg-4">
-            <article id="{{id}}" class="contact-card {{contract-type}}">
-                <h3>
-                    {{#if staff-image}}
-                        <a href="#">{{name}}</a>
-                    {{else}}
-                        {{name}}
-                    {{/if}}
-                </h3>
+<div class="row">
+    {{#each cards}}
+    <div class="col-xs-12 col-sm-6 col-lg-4">
+        <article id="{{id}}" class="contact-card {{contract-type}}">
+            <h3>
                 {{#if staff-image}}
-                    <img src="../../assets/core/images/contact-card-default.gif" alt="{{name}}" title="{{name}}" class="profilePhoto">
+                <a href="#">{{name}}</a>
+                {{else}}
+                {{name}}
                 {{/if}}
-                <h4>{{title}}</h4>
-                <div class="contact">
-                    <h4>Contact</h4>
-                    <ul class="contact-card-links">
-                        {{#if staff-image}}
-                            <li>
-                                <a href="tel:#" data-rel="external">01334 46xxxx</a>
-                            </li>
-                        {{/if}}
-                        <li>
-                            <a href="mailto:#">example@st-andrews.ac.uk</a>
-                        </li>
-                    </ul>
-                </div>
-            </article>
-        </div>
-        {{/each}}
+            </h3>
+            {{#if staff-image}}
+                <img src="../../assets/core/images/contact-card-default.gif" alt="{{name}}" title="{{name}}" class="profilePhoto">
+            {{/if}}
+            <h4>{{title}}</h4>
+            <div class="contact">
+                <h4>Contact</h4>
+                <ul class="contact-card-links">
+                    {{#if staff-image}}
+                    <li>
+                        <a href="tel:#" data-rel="external">01334 46xxxx</a>
+                    </li>
+                    {{/if}}
+                    <li>
+                        <a href="mailto:#">example@st-andrews.ac.uk</a>
+                    </li>
+                </ul>
+            </div>
+        </article>
     </div>
-
+    {{/each}}
+</div>
 <!-- End pattern: contact-card //-->
