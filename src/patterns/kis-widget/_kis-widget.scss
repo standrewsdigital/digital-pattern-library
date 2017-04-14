@@ -36,9 +36,14 @@ div.course.kis-widget-red {
     padding: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .kis-widget {
         height: 500px;
+        width: 100%;
+    }
+
+    .honours-degree-item button {
+        margin-bottom: 0;
     }
 
     .subject-popover .popover-content {
