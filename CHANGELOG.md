@@ -19,6 +19,8 @@ Release date: Friday 14 April 2017
 * Update featured media pattern.
 * Uddate long form intro pattern.
 * Long form end piece date format.
+* Update spacing in all pattern hbs files.
+* Update header to point to https for gasearch
 
 ### Fixed
 
