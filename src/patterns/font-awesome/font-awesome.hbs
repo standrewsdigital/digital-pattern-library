@@ -1,62 +1,56 @@
 {{#if example}}
-
-  <div class="container">
-      <div class="row">
-
-          <div class="col-md-4 fa-examples">
-                <h4>Social media icons</h4>
-                <div class="btn-group">
-                    <a class="" href="#"><span class="sr-only">Facebook</span>
-                        <i class="fa fa-facebook-official fa-2x" title="Facebook"></i>
-                    </a>
-                    <a class="" href="#"><span class="sr-only">Instagram</span>
-                        <i class="fa fa-instagram fa-2x" title="Instagram"></i>
-                    </a>
-                    <a class="" href="#"><span class="sr-only">Snapchat</span>
-                        <i class="fa fa-snapchat-square fa-2x" title="Snapchat"></i>
-                    </a>
-                    <a class="" href="#"><span class="sr-only">Twitter</span>
-                        <i class="fa fa-twitter-square fa-2x" title="Twitter"></i>
-                    </a>
-                    <a class="" href="#"><span class="sr-only">YouTube</span>
-                        <i class="fa fa-youtube-square fa-2x" title="YouTube"></i>
-                    </a>
-                </div>
-
-          </div>
-
-          <div class="col-md-4 fa-examples">
-                <h4>File icons</h4>
-                <p><a href="#">University prospectus <i class="fa fa-file-pdf-o" title="PDF"></i></a></p>
-                <p><a href="#">University email signature <i class="fa fa-file-word-o" title="Word"></i></a></p>
-                <p><a href="#">University PowerPoint <i class="fa fa-file-powerpoint-o" title="PowerPoint"></i></a></p>
-          </div>
-
-          <div class="col-md-4 fa-examples">
-                <h4>Web applications</h4>
-                <div class="list-group-item list-group-child">
-                    <a href="#">View records (staff)</a>
-                    <a href="#" target="_blank" title="Open in new tab"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                </div>
-                <div class="list-group-item list-group-child">
-                    <a href="#">Create records (staff)</a>
-                    <a href="#" target="_blank" title="Open in new tab"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                </div>
-          </div>
+<div class="container">
+  <div class="row">
+      <div class="col-md-4 fa-examples">
+            <h4>Social media icons</h4>
+            <div class="btn-group">
+                <a class="" href="#"><span class="sr-only">Facebook</span>
+                    <i class="fa fa-facebook-official fa-2x" title="Facebook"></i>
+                </a>
+                <a class="" href="#"><span class="sr-only">Instagram</span>
+                    <i class="fa fa-instagram fa-2x" title="Instagram"></i>
+                </a>
+                <a class="" href="#"><span class="sr-only">Snapchat</span>
+                    <i class="fa fa-snapchat-square fa-2x" title="Snapchat"></i>
+                </a>
+                <a class="" href="#"><span class="sr-only">Twitter</span>
+                    <i class="fa fa-twitter-square fa-2x" title="Twitter"></i>
+                </a>
+                <a class="" href="#"><span class="sr-only">YouTube</span>
+                    <i class="fa fa-youtube-square fa-2x" title="YouTube"></i>
+                </a>
+            </div>
+      </div>
+      <div class="col-md-4 fa-examples">
+            <h4>File icons</h4>
+            <p><a href="#">University prospectus <i class="fa fa-file-pdf-o" title="PDF"></i></a></p>
+            <p><a href="#">University email signature <i class="fa fa-file-word-o" title="Word"></i></a></p>
+            <p><a href="#">University PowerPoint <i class="fa fa-file-powerpoint-o" title="PowerPoint"></i></a></p>
+      </div>
+      <div class="col-md-4 fa-examples">
+            <h4>Web applications</h4>
+            <div class="list-group-item list-group-child">
+                <a href="#">View records (staff)</a>
+                <a href="#" target="_blank" title="Open in new tab"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+            </div>
+            <div class="list-group-item list-group-child">
+                <a href="#">Create records (staff)</a>
+                <a href="#" target="_blank" title="Open in new tab"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+            </div>
       </div>
   </div>
-
+</div>
 {{else}}
-    <div class="container fa_icons_example">
-        <div class="row">
-            {{#each icons}}
-                <div class="col-sm-4">
-                    <div class="fa_icon">
-                        <i class="fa fa-{{this}} fa-2x" aria-hidden="true"></i>
-                        <span class="sr-only">Example of </span>{{this}}
-                    </div>
-                </div>
-            {{/each}}
+<div class="container fa_icons_example">
+    <div class="row">
+        {{#each icons}}
+        <div class="col-sm-4">
+            <div class="fa_icon">
+                <i class="fa fa-{{this}} fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Example of </span>{{this}}
+            </div>
         </div>
+        {{/each}}
     </div>
+</div>
 {{/if}}
