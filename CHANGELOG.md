@@ -8,16 +8,17 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ## v1.1.0
 
-Release date: Thursday 13 April 2017
+Release date: Friday 14 April 2017
 
 ### Added
 
-* Panel and panel grid pattern.
+* Single panel pattern.
 
 ### Changed
 
 * Update featured media pattern.
 * Uddate long form intro pattern.
+* Long form end piece date format.
 
 ### Fixed
 
