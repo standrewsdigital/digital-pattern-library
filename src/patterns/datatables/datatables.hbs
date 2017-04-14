@@ -1,6 +1,5 @@
 <!-- Begin pattern: datatables //-->
 <link href="../../assets/core/styles/datatables.css" rel="stylesheet" type="text/css" media="screen" />
-
 <table id="example" class="{{table-class}} table table-hover table-primary dpl-form" role="grid" aria-describedby="example_info">
     <thead>
         <tr role="row">
@@ -11,14 +10,14 @@
     </thead>
     <tbody>
         {{#each table-row}}
-            <tr role='row' class='{{row-class}}'>
-                <td class='sorting_1'>{{name}}</td>
-                <td>{{job-title}}</td>
-                <td>{{city}}</td>
-                {{#if age}}<td>{{age}}</td>{{/if}}
-                {{#if start-date}}<td>{{start-date}}</td>{{/if}}
-                <td class="dt-body-right">&pound;{{salary}}</td>
-            </tr>
+        <tr role='row' class='{{row-class}}'>
+            <td class='sorting_1'>{{name}}</td>
+            <td>{{job-title}}</td>
+            <td>{{city}}</td>
+            {{#if age}}<td>{{age}}</td>{{/if}}
+            {{#if start-date}}<td>{{start-date}}</td>{{/if}}
+            <td class="dt-body-right">&pound;{{salary}}</td>
+        </tr>
         {{/each}}
     </tbody>
 </table>
