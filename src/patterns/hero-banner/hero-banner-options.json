@@ -9,7 +9,8 @@
             "action-text": "Study at St Andrews",
             "action-url": "#",
             "bg-image": "docs/images/cta/hero-banner-image-001.jpg",
-            "class": ""
+            "class": "",
+            "size": "col-xs-12 col-md-8"
         },
 
 
@@ -24,7 +25,25 @@
             "action-text": "Search for courses",
             "action-url": "#",
             "bg-image": "docs/images/cta/hero-banner-image-002.jpg",
-            "class": "transparent-overlay"
+            "class": "transparent-overlay",
+            "size": "col-xs-12 col-md-8"
+        },
+
+
+
+
+        {
+            "option-anchor": "hero-banner-video",
+            "option-heading": "Hero banner with video",
+            "option-description": "<p></p>",
+            "heading":  "Scotland's first university",
+            "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
+            "action-text": "Study at St Andrews",
+            "action-url": "#",
+            "bg-image": "docs/images/cta/hero-banner-image-001.jpg",
+            "class": "",
+            "size": "col-xs-12 col-md-7",
+            "embed-code": "https://www.youtube.com/embed/JxHfSwpddCU?rel=0&amp;showinfo=0"
         }
     ]
 }

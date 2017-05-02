@@ -61,7 +61,6 @@
     font-size: 23px;
     margin: 10px 0;
     text-shadow: 2px 2px 9px rgba(68, 68, 68, 0.7);
-    width: 70%;
 }
 
 .hero-banner .btn  {
@@ -93,10 +92,6 @@
     .hero-banner .call-heading {
         font-size: 40px;
     }
-
-    .hero-banner p {
-        width: 50%;
-    }
 }
 
 @media (max-width: 991px) {
@@ -106,6 +101,10 @@
              -o-background-position: 70% 0;
                 background-position: 70% 0;
         padding: 20px inherit;
+    }
+
+    .hero-banner .embed-responsive {
+        margin-top: 40px;
     }
 }
 
@@ -129,7 +128,6 @@
 
     .hero-banner p {
         font-size: 20px;
-        width: 60%;
     }
 
     .hero-banner .btn, .hero-banner .btn {
@@ -179,10 +177,6 @@
         padding: 20px 15px;
         position: relative;
         z-index: 100;
-    }
-
-    .hero-banner p {
-        width: 100%;
     }
 }
 
