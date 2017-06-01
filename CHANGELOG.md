@@ -6,6 +6,20 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+## v1.2.0
+
+Release date: Thursday 1 June 2017
+
+### Changed
+
+* Moved datatables.js into core.js
+* Moved datatables.css into screen.css
+
+
+
+
+---
+
 ## v1.1.0
 
 Release date: Friday 14 April 2017
