@@ -224,6 +224,7 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/lightbox.min.js',
                     'src/scripts/jquery-ui.js',
 
+
                     // Bootstrap JavaScript
                     // Note these scripts should align with the CSS
                     'src/scripts/vendor/bootstrap/affix.js',
@@ -242,7 +243,9 @@ module.exports = function(grunt) {
                     // DPL-specific scripts
                     'src/scripts/base.js',
                     'src/scripts/unbreakableSpaces.js',
-                    'src/patterns/*/*.js' // This includes all JS in patterns.
+                    'src/patterns/*/*.js', // This includes all JS in patterns.
+
+                    'src/scripts/datatables.js'
                 ],
                 dest: 'core/scripts/core.js'
             },
@@ -295,7 +298,9 @@ module.exports = function(grunt) {
                     // DPL-specific scripts
                     'src/scripts/base.js',
                     'src/scripts/unbreakableSpaces.js',
-                    'src/patterns/*/*.js' // This includes all JS in patterns.
+                    'src/patterns/*/*.js', // This includes all JS in patterns.
+
+                    'src/scripts/datatables.js'
                 ],
                 dest: 'core/scripts/core-nojquery.js'
             },
@@ -304,12 +309,6 @@ module.exports = function(grunt) {
                     'src/scripts/doc.js',
                 ],
                 dest: 'core/scripts/doc.js'
-            },
-            datatables: {
-                src: [
-                    'src/scripts/datatables.js'
-                ],
-                dest: 'core/scripts/datatables.js'
             }
         }, // END of concat
 
@@ -384,8 +383,6 @@ module.exports = function(grunt) {
                         ['core/scripts/core-nojquery.js'],
                     'core/scripts/core.min.js':
                         ['core/scripts/core.js'],
-                    'core/scripts/datatables.min.js':
-                        ['core/scripts/datatables.js'],
                     'core/scripts/doc.min.js':
                         ['core/scripts/doc.js'],
                     'core/scripts/header-only.min.js':

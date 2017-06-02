@@ -5,10 +5,10 @@
  * Based on the vanilla integration for Bootstrap 3.
  * http://datatables.net/manual/styling/bootstrap
  */
-(function(window, document, undefined) {
+$(document).ready(function(window, document, undefined) {
 
     var factory = function($, DataTable) {
-        "use strict";
+    "use strict";
 
 
         /* Set the defaults for DataTables initialisation */
