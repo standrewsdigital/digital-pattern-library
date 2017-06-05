@@ -1,0 +1,121 @@
+
+/*********************************/
+/* BEGIN Pattern: form-banner    */
+/*********************************/
+
+.form-banner {
+    color: rgb(255, 255, 255);
+    padding: 40px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    color: inherit;
+    font-size:   21px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    margin-top: 0;
+    padding: 30px;
+}
+
+.form-banner .centered-form {
+    text-align: center;
+}
+
+.form-banner .call-heading {
+    color: white;
+    font-size:   24px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 10px auto;
+    width: 85%;
+}
+
+.form-banner h3{
+    color: white;
+    font-size:   24px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.form-banner p {
+    color: white;
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+.form-banner label {
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 10px auto;
+}
+
+.form-banner a {
+    text-decoration: none;
+}
+
+.form-banner p a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.form-banner.sta-blue {
+    background-color: $sta-blue;
+}
+
+.form-banner.sta-blue-light {
+    background-color: $sta-blue-light;
+}
+
+.form-banner.sta-green {
+    background-color: $sta-green;
+}
+
+.form-banner.sta-dkgreen {
+    background-color: $sta-dkgreen;
+}
+
+.form-banner.sta-burgundy {
+    background-color: $sta-burgundy;
+}
+
+.form-banner.sta-purple {
+    background-color: $sta-purple;
+}
+
+@media (max-width: 991px) {
+    .form-banner img {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+
+    .form-banner .left p, .form-banner .left .call-heading {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-banner .btn {
+        font-size: 18px;
+    }
+
+    .form-banner p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 451px) { 
+    .form-banner .call-to-action-buttons .btn { 
+        margin: 30px 15px 15px 0; 
+    } 
+}
+
+/*********************************/
+/* END Pattern: featured media   */
+/*********************************/
