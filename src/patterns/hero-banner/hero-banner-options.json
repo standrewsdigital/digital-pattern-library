@@ -33,8 +33,8 @@
 
 
         {
-            "option-anchor": "hero-banner-video",
-            "option-heading": "Hero banner with video",
+            "option-anchor": "hero-banner-with-video",
+            "option-heading": "Hero banner with embedded video",
             "option-description": "<p></p>",
             "heading":  "Scotland's first university",
             "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
