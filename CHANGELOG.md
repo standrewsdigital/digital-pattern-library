@@ -6,6 +6,20 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+
+## v1.3.0
+
+Release date: Tuesday 6 June 2017
+
+### Changed
+
+* New hero banner option which accommodates video embedding
+
+
+
+
+---
+
 ## v1.2.0
 
 Release date: Thursday 1 June 2017
