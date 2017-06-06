@@ -12,7 +12,7 @@ Release date: Tuesday 6 June 2017
 
 ### Changed
 
-* New hero banner option which accomdates video embedding.
+* New hero banner option which accommodates video embedding.
 
 
 
