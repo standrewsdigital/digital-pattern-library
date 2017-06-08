@@ -1,8 +1,41 @@
 <!-- Begin pattern: form banner //-->
-<div class="form-banner {{align}} {{background}}">
-    <div class="container">
-        {{{column1}}}
-        {{{column2}}}
+<div class="form-banner {{background}}">
+    <div class="container dpl-form">
+
+    	<div class="row">
+		    <div class="text-center call-heading">{{heading}}</div>
+
+		    {{#if top-text}}<p class="text-center">{{top-text}}</p>{{/if}}
+
+		    {{#each column}}
+		    <div class="{{column-size}}">
+		    	<div class="form-group">
+		        	{{#if search}}
+		        		<input id="search" class="form-control" type="text" title="Enter search keywords" maxlength="256" name="Search bar" placeholder="Start typing to see countries..." value="">
+		        	{{/if}}
+		        	{{#if select-box}}
+		        		<div class="form-group select-box">
+            <label class="form-label" for="select-box">{{column-heading}}</label>
+            <select class="conditional-select form-control" id="select-box" name="select-box">
+                <option value="">Please select…</option>
+                	{{#each select-option}}
+                		<option value="{{option-value}}">{{select-option}}</option>
+                	{{/each}}
+            </select>
+        </div>
+		        	{{/if}}
+		    	</div>
+		    </div>
+		    {{/each}}
+
+		    {{#if bottom-text}}<p class="text-center">{{bottom-text}}</p>{{/if}}
+
+		    <div class="country-results">
+		        <div class="row">
+		            <div class="country"></div>
+		        </div>
+		    </div>
+		</div>
     </div>
 </div>
 <!-- End pattern: form banner //-->
