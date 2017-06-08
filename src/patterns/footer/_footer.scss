@@ -50,6 +50,24 @@ footer a:link {
 	color: $sta-grey-light;
 }
 
+#affiliation-banner {
+	background-color: $sta-grey-light;
+	padding: 20px;
+}
+
+.affiliation-logo {
+	float: none;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: -4px; /* <<< this is a magic number and we don't know why.*/
+}
+
+@media (max-width: 768px) {
+	#affiliation-banner {
+		display: none;
+	}
+}	
+
 /*********************************/
 /* END Pattern: footer           */
 /*********************************/
