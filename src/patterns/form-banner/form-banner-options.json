@@ -6,7 +6,7 @@
             "option-anchor": "search-field",
             "background": "sta-blue-light",
             "heading": "Course search",
-            "top-text": "Search for some cool shit",
+            "top-text": "Search for all the courses we offer",
             "column": [
                 {
                     "column-size": "col-md-12",
@@ -23,8 +23,41 @@
             "option-description": "",
             "option-anchor": "newsletter-subscription",
             "background": "sta-dkgreen",
-            "column1": "",
-            "column2": ""
+            "column": [
+                {
+                    "column-size": "col-md-6",
+                    "column-heading": "Interested in Philosophy at St Andrews?",
+                    "column-paragraph": "Subscribe to receive important information including visiting days and other events for prospective students."
+                },
+                {
+                    "column-size": "col-md-6",
+                    "column-form": true,
+                    "radio-button": [
+                        {
+                            "radio-id": "radio-ug",
+                            "radio-option": "Undergraduate"
+                        },
+                        {
+                            "radio-id": "radio-pg",
+                            "radio-option": "Postgraduate"
+                        }
+                    ],
+                    "select-option": [
+                        {
+                            "option-value": "art-history",
+                            "select-option": "Art history"
+                        },
+                        {
+                            "option-value": "biology",
+                            "select-option": "Biology"
+                        },
+                        {
+                            "option-value": "classics",
+                            "select-option": "Classics"
+                        }
+                    ]
+                }
+            ]
         },
 
 
@@ -95,7 +128,7 @@
                     ]
                 }
             ],
-            "bottom-text": "If you are cool then that's nice i guess."
+            "bottom-text": "If you are a Joint honours student, please select both 'subject' and 'joint subject'."
         }
     ]
  }

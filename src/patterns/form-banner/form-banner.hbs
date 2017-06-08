@@ -3,28 +3,71 @@
     <div class="container dpl-form">
 
     	<div class="row">
-		    <div class="text-center call-heading">{{heading}}</div>
+		    {{#if heading}}<div class="text-center call-heading">{{heading}}</div>{{/if}}
 
 		    {{#if top-text}}<p class="text-center">{{top-text}}</p>{{/if}}
 
 		    {{#each column}}
 		    <div class="{{column-size}}">
+		    	<form>
+
+		    	{{#if column-paragraph}}
+		    		<h3>{{column-heading}}</h3>
+		    		<p>{{column-paragraph}}</p>
+		    	{{else if column-form}}
+
+		    	<div class="form-group">
+
+		    			<div class="radio-button inline">
+        <label class="form-label">1. Choose degree level</label>
+        <ul>
+        	{{#each radio-button}}
+	            <li>
+	                <input type="radio" value="default" id="{{radio-id}}" name="option-radio-inline">
+	                <label for="{{radio-id}}">{{radio-option}}</label>
+	                <div class="check"></div>
+	            </li>
+            {{/each}}
+        </ul>
+    </div>
+
+		        		<div class="form-group select-box">
+				            <label class="form-label" for="select-box">2. Choose a subject</label>
+				            <select class="conditional-select form-control" id="select-box" name="select-box">
+				                <option value="">Please select…</option>
+				                	{{#each select-option}}
+				                		<option value="{{option-value}}">{{select-option}}</option>
+				                	{{/each}}
+				            </select>
+				        </div>
+
+						<label class="form-label" for="email">3. Enter your email</label>
+		    			<input id="email" class="form-control" type="email" title="Enter search keywords" maxlength="256" name="email" placeholder="Enter your email address" value="">
+
+		    			<button type="submit" class="btn btn-lg btn-warning">Submit</button>
+
+		    	</div>
+
+		    	{{else}}	
+
 		    	<div class="form-group">
 		        	{{#if search}}
 		        		<input id="search" class="form-control" type="text" title="Enter search keywords" maxlength="256" name="Search bar" placeholder="Start typing to see countries..." value="">
 		        	{{/if}}
 		        	{{#if select-box}}
 		        		<div class="form-group select-box">
-            <label class="form-label" for="select-box">{{column-heading}}</label>
-            <select class="conditional-select form-control" id="select-box" name="select-box">
-                <option value="">Please select…</option>
-                	{{#each select-option}}
-                		<option value="{{option-value}}">{{select-option}}</option>
-                	{{/each}}
-            </select>
-        </div>
+				            <label class="form-label" for="select-box">{{column-heading}}</label>
+				            <select class="conditional-select form-control" id="select-box" name="select-box">
+				                <option value="">Please select…</option>
+				                	{{#each select-option}}
+				                		<option value="{{option-value}}">{{select-option}}</option>
+				                	{{/each}}
+				            </select>
+				        </div>
 		        	{{/if}}
 		    	</div>
+		    	{{/if}}
+		    </form>
 		    </div>
 		    {{/each}}
 
