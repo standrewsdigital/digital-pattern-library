@@ -23,7 +23,9 @@
         margin-bottom: 5px;
     }
 
-    input[type~=text].form-control, select.form-control {
+
+    input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio]).form-control, select.form-control {
+    // input[type~=text].form-control, select.form-control {
     	font-size: 18px;
         height: 46px;
     }
