@@ -10,7 +10,11 @@
             "column": [
                 {
                     "column-size": "col-md-12",
-                    "search": true
+                    "input-box": true,
+                    "input-id": "search",
+                    "input-type": "text",
+                    "input-title": "Search for all the courses we offer",
+                    "input-placeholder": "Start typing to see courses..."
                 }
             ]
         },
@@ -31,7 +35,7 @@
                 },
                 {
                     "column-size": "col-md-6",
-                    "column-form": true,
+                    "radio-label": "1. Choose degree level",
                     "radio-button": [
                         {
                             "radio-id": "radio-ug",
@@ -42,6 +46,9 @@
                             "radio-option": "Postgraduate"
                         }
                     ],
+                    "select-box": true,
+                    "select-label": "2. Choose a subject",
+                    "default-value": "Please select...",
                     "select-option": [
                         {
                             "option-value": "art-history",
@@ -55,7 +62,15 @@
                             "option-value": "classics",
                             "select-option": "Classics"
                         }
-                    ]
+                    ],
+                    "input-box": true,
+                    "input-label": "3. Enter your email",
+                    "input-id": "search",
+                    "input-type": "text",
+                    "input-title": "Search for all the courses we offer",
+                    "input-placeholder": "Start typing to see courses...",
+                    "button": true
+
                 }
             ]
         },
@@ -73,7 +88,8 @@
                 {
                     "column-size": "col-md-4",
                     "select-box": true,
-                    "column-heading": "Subject",
+                    "select-label": "Subject",
+                    "default-value": "Please select...",
                     "select-option": [
                         {
                             "option-value": "art-history",
@@ -92,7 +108,8 @@
                 {
                     "column-size": "col-md-4",
                     "select-box": true,
-                    "column-heading": "Joint subject",
+                    "select-label": "Joint subject",
+                    "default-value": "Please select...",
                     "select-option": [
                         {
                             "option-value": "joint-art-history",
@@ -111,7 +128,8 @@
                 {
                     "column-size": "col-md-4",
                     "select-box": true,
-                    "column-heading": "Country",
+                    "select-label": "Country",
+                    "default-value": "Please select...",
                     "select-option": [
                         {
                             "option-value": "australia",
