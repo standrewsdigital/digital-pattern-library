@@ -79,25 +79,25 @@
 
         {
             "option-heading": "Navigation menu footer with affiliation banner",
-            "option-description": "<ul><li>Test</li></ul>",
+            "option-description": "<ul><li>The navigation menu footer with affiliation banner must only be used on the homepage.</li><li>The affiliation banner is used to display logos of affiliated partners, awards, and certifications.</li><li>Links must be included to the relevant website or webpage for each logo.</li></ul>",
             "option-anchor": "nav-footer-affiliation",
             "website-footer": true,
             "affiliation-banner": true,
             "columns": [
                 {
-                    "image": "https://www.fillmurray.com/360/100.jpg",
+                    "image": "../../assets/docs/images/placeholders/university-of-the-year-for-teaching-quality-2017.png",
                     "image-alt": "",
                     "image-title": "",
                     "image-link": "#"
                 },
                 {
-                    "image": "https://www.fillmurray.com/80/140.jpg",
-                    "image-alt": "",
-                    "image-title": "",
+                    "image": "../../assets/docs/images/placeholders/university-of-the-year-for-teaching-quality-2017.png",
+                    "image-alt": "University of the year for teaching quality 2017",
+                    "image-title": "University of the year for teaching quality 2017",
                     "image-link": "#"
                 },
                 {
-                    "image": "https://www.fillmurray.com/360/100.jpg",
+                    "image": "../../assets/docs/images/placeholders/university-of-the-year-for-teaching-quality-2017.png",
                     "image-alt": "",
                     "image-title": "",
                     "image-link": "#"
