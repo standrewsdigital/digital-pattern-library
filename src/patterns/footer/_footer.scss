@@ -62,6 +62,10 @@ footer a:link {
 	margin-right: -4px; /* <<< this is a magic number and we don't know why.*/
 }
 
+.affiliation-logo img{
+	width: 33%;
+}
+
 @media (max-width: 768px) {
 	#affiliation-banner {
 		display: none;
