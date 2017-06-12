@@ -35,6 +35,7 @@
                 },
                 {
                     "column-size": "col-md-6",
+                    "form": true,
                     "radio-label": "1. Choose degree level",
                     "radio-button": [
                         {

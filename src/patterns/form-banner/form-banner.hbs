@@ -3,14 +3,14 @@
     <div class="container dpl-form">
         <div class="row">
             {{#if heading}}<div class="text-center call-heading">{{heading}}</div>{{/if}}
-            {{#if top-text}}<p class="text-center">{{top-text}}</p>{{/if}}  
-            {{#each column}}
+            {{#if top-text}}<p class="text-center">{{top-text}}</p>{{/if}}
+        {{#each column}}
             <div class="{{column-size}}">
             {{#if column-paragraph}}
                 <h3>{{column-heading}}</h3>
                 <p>{{column-paragraph}}</p>
-            {{/if}}         
-            {{#if form}}<form action="">{{/if}}
+            {{/if}}
+                {{#if form}}<form action="">{{/if}}
             {{#if radio-button}}
                 <div class="form-group">
                     <div class="radio-button inline">
@@ -30,27 +30,27 @@
             {{#if select-box}}
                 <div class="form-group select-box">
                     {{#if select-label}}<label class="form-label" for="select-box">{{select-label}}</label>{{/if}}
-                        <select class="conditional-select form-control" id="select-box" name="select-box">
-                            <option value="">{{default-value}}</option>
-                            {{#each select-option}}
-                            <option value="{{option-value}}">{{select-option}}</option>
-                            {{/each}}
-                        </select>
+                    <select class="conditional-select form-control" id="select-box" name="select-box">
+                        <option value="">{{default-value}}</option>
+                    {{#each select-option}}
+                        <option value="{{option-value}}">{{select-option}}</option>
+                    {{/each}}
+                    </select>
                 </div>
-            {{/if}}  
+            {{/if}}
             {{#if input-box}}
-            <div class="form-group">
-                {{#if input-label}}<label class="form-label" for="{{input-id}}">{{input-label}}</label>{{/if}}
+                <div class="form-group">
+                    {{#if input-label}}<label class="form-label" for="{{input-id}}">{{input-label}}</label>{{/if}}
                     <input id="{{input-id}}" class="form-control" type="{{input-type}}" title="{{input-title}}" maxlength="256" name="{{input-id}}" placeholder="{{input-placeholder}}" value="">
-            </div>
+                </div>
             {{/if}}
             {{#if button}}
-            <button type="submit" class="btn btn-lg btn-warning">Submit</button>
-            {{/if}}    
-            {{#if form}}</form>{{/if}}
+                <button type="submit" class="btn btn-lg btn-warning">Submit</button>
+            {{/if}}
+                {{#if form}}</form>{{/if}}
             </div>
         {{/each}}
-        {{#if bottom-text}}<p class="text-center">{{bottom-text}}</p>{{/if}}
+            {{#if bottom-text}}<p class="text-center">{{bottom-text}}</p>{{/if}}
         </div>
     </div>
 </div>
