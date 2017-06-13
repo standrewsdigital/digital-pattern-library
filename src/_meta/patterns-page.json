@@ -159,7 +159,7 @@
             "class": "primary",
             "patterns": [
                 { "name": "Form banner",
-                  "img": "assets/docs/images/patterns/form-elements.jpg",
+                  "img": "assets/docs/images/patterns/form-banner.jpg",
                   "url": "patterns/form-banner/index.html"
                 },
                 { "name": "Form elements",
