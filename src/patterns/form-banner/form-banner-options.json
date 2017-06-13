@@ -1,6 +1,7 @@
 {
     "options": [
         {
+            "column-whole": true,
             "option-heading": "Search field",
             "option-description": "",
             "option-anchor": "search-field",
@@ -23,6 +24,7 @@
 
 
         {
+            "column-whole": true,
             "option-heading": "Newsletter subscription",
             "option-description": "",
             "option-anchor": "newsletter-subscription",
@@ -80,6 +82,7 @@
 
 
         {
+            "column-whole": true,
             "option-heading": "Filter options",
             "option-description": "",
             "option-anchor": "filter-options",
@@ -148,6 +151,39 @@
                 }
             ],
             "bottom-text": "If you are a Joint honours student, please select both 'subject' and 'joint subject'."
+        },
+
+
+
+
+        {
+            "column-thirds": true,
+            "option-heading": "Search field (content thirds)",
+            "option-description": "",
+            "option-anchor": "search-field-thirds",
+            "column-background": "sta-blue-light",
+            "heading": "Country search",
+            "top-text": "Search for entry requirements in your country",
+            "column": [
+                {
+                    "column-size": "col-md-12",
+                    "input-box": true,
+                    "input-id": "search",
+                    "input-type": "text",
+                    "input-title": "Enter search keywords",
+                    "input-placeholder": "Start typing to see countries..."
+                }
+            ],
+            "box-size": [
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240-study.jpg",
+                        "alt": "Description"
+                    },
+                    "title": "Sidebar",
+                    "column": "col-sm-4"
+                }
+            ]    
         }
     ]
  }
