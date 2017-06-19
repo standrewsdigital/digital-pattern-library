@@ -1,5 +1,18 @@
 <!-- Begin pattern: footer //-->
 <footer role="contentinfo">
+    {{#if affiliation-banner}}
+    <div id="affiliation-banner">
+        <div class="container">
+            <div class="row">
+                {{#each columns}}
+                <div class="col-sm-6 text-center affiliation-logo">
+                    <a href="{{image-link}}"><img src="{{image}}" alt="{{image-alt}}" title="{{image-title}}"></a>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/if}}
     {{#if website-footer}}
     <div id="website-footer">
         <div class="container">
