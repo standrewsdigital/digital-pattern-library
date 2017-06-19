@@ -78,8 +78,8 @@
         },
 
         {
-            "option-heading": "Navigation menu footer with affiliation banner",
-            "option-description": "<ul><li>The navigation menu footer with affiliation banner must only be used on the homepage.</li><li>The affiliation banner is used to display logos of affiliated partners, awards, and certifications.</li><li>Links must be included to the relevant website or webpage for each logo.</li></ul>",
+            "option-heading": "Navigation menu footer with awards and affiliations logo banner",
+            "option-description": "<ul><li>The navigation menu footer with awards and affiliations logo banner must only be used on the homepage.</li><li>The awards and affiliations logo banner is used to display logos of affiliated partners, awards, and certifications.</li><li>Links must be included to the relevant website or webpage for each logo.</li></ul>",
             "option-anchor": "nav-footer-affiliation",
             "website-footer": true,
             "affiliation-banner": true,
