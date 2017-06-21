@@ -7,6 +7,19 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v1.4.1
+
+Release date: Wednesday 21 June 2017
+
+### Fixed
+
+* Moved awards and affiliations logo banner above footer code to make it a standalone option.
+
+
+
+
+---
+
 ## v1.4.0
 
 Release date: Monday 19 June 2017
