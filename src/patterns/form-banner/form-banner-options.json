@@ -15,7 +15,8 @@
                     "input-id": "search",
                     "input-type": "text",
                     "input-title": "Search for all the courses we offer",
-                    "input-placeholder": "Start typing to see courses..."
+                    "input-placeholder": "Start typing to see courses...",
+                    "results": true
                 }
             ]
         },
@@ -168,10 +169,11 @@
                 {
                     "column-size": "col-md-12",
                     "input-box": true,
-                    "input-id": "search",
+                    "input-id": "search-names",
                     "input-type": "text",
                     "input-title": "Enter search keywords",
-                    "input-placeholder": "Start typing to see countries..."
+                    "input-placeholder": "Start typing to see countries...",
+                    "results": true
                 }
             ],
             "box-size": [

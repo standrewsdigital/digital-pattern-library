@@ -44,6 +44,16 @@
                         {{#if input-label}}<label class="form-label" for="{{input-id}}">{{input-label}}</label>{{/if}}
                         <input id="{{input-id}}" class="form-control" type="{{input-type}}" title="{{input-title}}" maxlength="256" name="{{input-id}}" placeholder="{{input-placeholder}}" value="">
                     </div>
+                {{#if results}}
+                    <div class="results">
+                        <div class="row">
+                            <div class="col-md-6 left-column">
+                            </div>
+                            <div class="col-md-6 right-column">
+                            </div>
+                        </div>
+                    </div>
+                {{/if}}        
                 {{/if}}
                 {{#if button}}
                     <button type="submit" class="btn btn-lg btn-warning">Submit</button>
