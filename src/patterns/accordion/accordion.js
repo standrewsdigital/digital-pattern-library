@@ -1,4 +1,3 @@
-
 /*********************************/
 /* BEGIN Pattern: accordion      */
 /*********************************/
@@ -20,10 +19,8 @@ $('body .accordion').each(function() {
         }
     });
 });
-// Hide the <div> element within all accordion classes.
-$('.accordion > div').hide();
 
-// Toggle an  accordion open or closed when <h3> clicked.
+// Toggle an accordion open or closed when <h3> clicked.
 $('.accordion > h3').click(function() {
     // Toggle the accordion.
     $(this).next('div').slideToggle(200, "linear");
