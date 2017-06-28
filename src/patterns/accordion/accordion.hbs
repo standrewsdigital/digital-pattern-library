@@ -1,22 +1,8 @@
+<!-- Begin pattern: accordion //-->
+{{#each accordion}}
 <div class="accordion">
-    <h3>{{{ accordion-0.accordion-heading }}}</h3>
-    <div>{{{ accordion-0.accordion-content }}}</div>
+    <h3 aria-expanded="false" aria-controls="" role="tab" tabindex="0">{{accordion-heading}}</h3>
+    <div id="" aria-hidden="true" role="tabpanel"><p>{{accordion-content}}</p></div>
 </div>
-{{#if accordion-1}}
-<div class="accordion">
-    <h3>{{{ accordion-1.accordion-heading }}}</h3>
-    <div>{{{ accordion-1.accordion-content }}}</div>
-</div>
-{{/if}}
-{{#if accordion-2}}
-<div class="accordion">
-    <h3>{{{ accordion-2.accordion-heading }}}</h3>
-    <div>{{{ accordion-2.accordion-content }}}</div>
-</div>
-{{/if}}
-{{#if accordion-3}}
-<div class="accordion">
-    <h3>{{{ accordion-3.accordion-heading }}}</h3>
-    <div>{{{ accordion-3.accordion-content }}}</div>
-</div>
-{{/if}}
+{{/each}}
+<!-- End pattern: accordion //-->
