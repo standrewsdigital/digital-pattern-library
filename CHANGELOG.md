@@ -11,10 +11,19 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 Release date: Wednesday 28 June 2017
 
+### Added
+
+* Table option for the key info table.
+
 ### Changed
 
 * Reformatted accordion pattern to make it more efficient.
 * Moved code to hide accordions content from JavaScript to CSS, this removes the inline CSS.
+
+### Fixed
+
+* Adjusted table CSS rules on content halves to fix some weirdness.
+* Add media query CSS rules to change how the gallery works on mobile.
 
 
 

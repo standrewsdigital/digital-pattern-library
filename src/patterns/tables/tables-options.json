@@ -4,6 +4,7 @@
             "option-heading": "Default table heading",
             "option-description": "",
             "option-anchor": "default",
+            "colour-class": "table-striped",
             "table-head": [
                 "Email address",
                 "Name"
@@ -31,7 +32,7 @@
             "option-heading": "Primary table heading",
             "option-description": "",
             "option-anchor": "table-primary",
-            "colour-class": "table-primary",
+            "colour-class": "table-striped table-primary",
             "table-head": [
                 "Class",
                 "Description"
@@ -66,7 +67,7 @@
             "option-heading": "Secondary table heading",
             "option-description": "",
             "option-anchor": "table-secondary",
-            "colour-class": "table-secondary",
+            "colour-class": "table-striped table-secondary",
             "table-head": [
                 "Class",
                 "Description"
@@ -102,7 +103,7 @@
             "option-heading": "Tertiary 1 table heading",
             "option-description": "",
             "option-anchor": "table-tertiary-1",
-            "colour-class": "table-tertiary-1",
+            "colour-class": "table-striped table-tertiary-1",
             "table-head": [
                 "Class",
                 "Description"
@@ -138,7 +139,7 @@
             "option-heading": "Tertiary 2 table heading",
             "option-description": "",
             "option-anchor": "table-tertiary-2",
-            "colour-class": "table-tertiary-2",
+            "colour-class": "table-striped table-tertiary-2",
             "table-head": [
                 "Class",
                 "Description"
@@ -174,7 +175,7 @@
             "option-heading": "Tertiary 3 table heading",
             "option-description": "",
             "option-anchor": "table-tertiary-3",
-            "colour-class": "table-tertiary-3",
+            "colour-class": "table-striped table-tertiary-3",
             "table-head": [
                 "Class",
                 "Description"
@@ -201,6 +202,29 @@
                     "column-two": "Third tertiary palette colour, to be used on all pages using the tertiary palette theme."
                 }
 
+            ]
+        },
+
+
+
+        {
+            "option-heading": "Key info table",
+            "option-description": "<p>See the <a href='../content-halves/index.html#key-info'>Content halves</a> pattern for this usage. It must not be used outwith that usage.</p>",
+            "option-anchor": "table-border",
+            "colour-class": "table-bordered",
+            "table-body": [
+                {
+                    "column-one": "SQA Highers",
+                    "column-two": "<p>AAAB, including at least two of the following subjects:</p><ul><li>Mathematics</li><li>Biology</li><li>Chemistry</li><li>Computing Science or equivalent</li><li>Geography</li><li>Geology</li><li>Physics</li><li>Psychology.</li></ul>"
+                },
+                {
+                    "column-one": "GCE A-Levels",
+                    "column-two": "<p>AAA, including at least two of the following subjects:</p><ul><li>Mathematics</li><li>Biology</li><li>Chemistry</li><li>Computing Science or equivalent</li><li>Geography</li><li>Geology</li><li>Physics</li><li>Psychology.</li></ul>"
+                },
+                {
+                    "column-one": "IB points",
+                    "column-two": "38"
+                }
             ]
         }
 
