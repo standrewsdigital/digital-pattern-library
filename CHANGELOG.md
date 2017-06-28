@@ -6,6 +6,82 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+  
+## v1.4.2
+
+Release date: Wednesday 28 June 2017
+
+### Added
+
+* Table option for the key info table.
+
+### Changed
+
+* Reformatted accordion pattern to make it more efficient.
+* Moved code to hide accordions content from JavaScript to CSS, this removes the inline CSS.
+
+### Fixed
+
+* Adjusted table CSS rules on content halves to fix some weirdness.
+* Add media query CSS rules to change how the gallery works on mobile.
+
+
+
+
+---
+
+## v1.4.1
+
+Release date: Wednesday 21 June 2017
+
+### Fixed
+
+* Moved awards and affiliations logo banner above footer code to make it a standalone option.
+
+
+
+
+---
+
+## v1.4.0
+
+Release date: Monday 19 June 2017
+
+### Changed
+
+* New footer option which includes awards and affiliations logo banner.
+
+
+
+---
+
+## v1.3.0
+
+Release date: Tuesday 6 June 2017
+
+### Changed
+
+* New hero banner option which accommodates video embedding
+
+
+
+
+---
+
+## v1.2.0
+
+Release date: Thursday 1 June 2017
+
+### Changed
+
+* Moved datatables.js into core.js
+* Moved datatables.css into screen.css
+
+
+
+
+---
+
 ## v1.1.0
 
 Release date: Friday 14 April 2017
