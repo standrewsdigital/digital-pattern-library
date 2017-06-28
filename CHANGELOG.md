@@ -7,6 +7,20 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v1.4.2
+
+Release date: Wednesday 28 June 2017
+
+### Changed
+
+* Reformatted accordion pattern to make it more efficient.
+* Moved code to hide accordions content from JavaScript to CSS, this removes the inline CSS.
+
+
+
+
+---
+
 ## v1.4.1
 
 Release date: Wednesday 21 June 2017
