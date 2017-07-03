@@ -1,5 +1,5 @@
 /*********************************/
-/* BEGIN Pattern: accordion    */
+/* BEGIN Pattern: accordion      */
 /*********************************/
 
 .accordion > h3 {
@@ -28,7 +28,7 @@
     @include rotate(90deg);
 }
 
-.accordion div {
+.accordion > div {
     display: none;
 }
 
@@ -45,5 +45,5 @@
 }
 
 /*********************************/
-/* END Pattern: accordion      */
+/* END Pattern: accordion        */
 /*********************************/
