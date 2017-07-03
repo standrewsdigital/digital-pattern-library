@@ -3,7 +3,7 @@
         {
             "column-whole": true,
             "option-heading": "Search field",
-            "option-description": "",
+            "option-description": "For this example, search the word 'english' to see how the results are displayed.",
             "option-anchor": "search-field",
             "background": "sta-blue-light",
             "heading": "Course search",
@@ -160,19 +160,19 @@
         {
             "column-thirds": true,
             "option-heading": "Search field (content thirds)",
-            "option-description": "",
+            "option-description": "For this example, search the word 'english' to see how the results are displayed.",
             "option-anchor": "search-field-thirds",
             "column-background": "sta-blue-light",
-            "heading": "Country search",
-            "top-text": "Search for entry requirements in your country",
+            "heading": "Course search",
+            "top-text": "Search for all the courses we offer",
             "column": [
                 {
                     "column-size": "col-md-12",
                     "input-box": true,
                     "input-id": "form-banner-search-names",
                     "input-type": "text",
-                    "input-title": "Enter search keywords",
-                    "input-placeholder": "Start typing to see countries...",
+                    "input-title": "Search for all the courses we offer",
+                    "input-placeholder": "Start typing to see courses...",
                     "results": true
                 }
             ],

@@ -111,33 +111,58 @@ function htmlDecode(value) {
 
     var names = [
         {
-            "name": "Adam",
-            "type": "m",
+            "name": "English MA (Hons)",
+            "type": "ug",
             "link": "#"
         },
         {
-            "name": "David",
-            "type": "m",
+            "name": "Mediaeval Studies MA (Hons)",
+            "type": "ug",
             "link": "#"
         },
         {
-            "name": "Richard",
-            "type": "m",
+            "name": "Biblical Studies MA (Hons)",
+            "type": "ug",
             "link": "#"
         },
         {
-            "name": "Abbie",
-            "type": "f",
+            "name": "Comparative Literature MA (joint degree)",
+            "type": "ug",
             "link": "#"
         },
         {
-            "name": "Sarah",
-            "type": "f",
+            "name": "Classical Studies MA (Hons)",
+            "type": "ug",
             "link": "#"
         },
         {
-            "name": "Katie",
-            "type": "f",
+            "name": "Computer Science Degree (with English Language) (MSc)",
+            "type": "pg",
+            "link": "#"
+        },
+        {
+            "name": "English Language Teaching (MLitt)",
+            "type": "pg",
+            "link": "#"
+        },
+        {
+            "name": "Medieval English (MLitt)",
+            "type": "pg",
+            "link": "#"
+        },
+        {
+            "name": "Shakespeare and Renaissance Literary Culture (MLitt)",
+            "type": "pg",
+            "link": "#"
+        },
+        {
+            "name": "Pre-Masters",
+            "type": "pg",
+            "link": "#"
+        },
+        {
+            "name": "4-week Pre-sessional course",
+            "type": "pg",
             "link": "#"
         }
     ];
@@ -168,7 +193,7 @@ function htmlDecode(value) {
                 var url = names[i].link;
                 link = "<a href='" + url + "'>" + names[i].name + "</a>";
 
-                if ( names[i].type == 'm' ) {
+                if ( names[i].type == 'ug' ) {
                     leftResults.unshift(link);
                 } else {
                     rightResults.unshift(link);
@@ -197,12 +222,12 @@ function htmlDecode(value) {
     }
 
     function add_leftResults_list( list ) {
-        list = "<h2>Boy names</h2>" + list;
+        list = "<h2>Undergraduate courses</h2>" + list;
         $(".results .col-md-6.left-column").html(list);
     }
 
     function add_rightResults_list( list ) {
-        list = "<h2>Girl names</h2>" + list;
+        list = "<h2>Postgraduate courses</h2>" + list;
         $(".results .col-md-6.right-column").html(list);
     }
 
