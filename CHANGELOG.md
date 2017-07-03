@@ -7,6 +7,19 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v1.4.3
+
+Release date: Monday 3 July 2017
+
+### Fixed
+
+* Fixed the CSS rules for the accordion pattern so that divs within accordion content won't be hidden.
+
+
+
+
+---
+
 ## v1.4.2
 
 Release date: Wednesday 28 June 2017
