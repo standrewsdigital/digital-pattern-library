@@ -69,10 +69,10 @@
                     ],
                     "input-box": true,
                     "input-label": "3. Enter your email",
-                    "input-id": "form-banner-search",
-                    "input-type": "text",
-                    "input-title": "Search for all the courses we offer",
-                    "input-placeholder": "Start typing to see courses...",
+                    "input-id": "form-banner-email",
+                    "input-type": "email",
+                    "input-title": "Enter your email address",
+                    "input-placeholder": "Enter your email address...",
                     "button": true
 
                 }
