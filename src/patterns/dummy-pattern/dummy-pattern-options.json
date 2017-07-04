@@ -2,7 +2,7 @@
     "options" : [
         {
             "option-heading": "Success",
-            "option-description": "<p>Use the class <code>.alert-success</code> for a success alert box. This alert box indicates a successful or positive action, such as successfully submitting a form.</p>",
+            "option-description": "<p>Use the class <code>alert-success</code> for a success alert box. This alert box indicates a successful or positive action, such as successfully submitting a form.</p>",
             "option-anchor": "alert-success",
             "alert-class": "alert-success",
             "alert-message": "Thank you for submitting your details. If you have any questions please email <a href='mailto:#' class='alert-link'>example@st-andrews.ac.uk</a>."
