@@ -1,38 +1,22 @@
 {
     "options" : [
         {
-            "option-heading": "Dummy pattern with full details",
-            "option-description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorem quos amet deleniti, obcaecati quibusdam consequatur repudiandae similique rem sint harum corporis. Deleniti ipsa, distinctio itaque delectus dolorem nostrum tempora.</p><ul><li>Option 1</li><li>Option 2</li></ul>",
-            "option-anchor": "dummy-option-one",
-            "image": {
-                "url": "docs/images/placeholders/360x240.jpg",
-                "alt": "Description"
-            },
-            "title": "Title of image",
-            "url": "#",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
-
-            "date" : "2014-08-21",
-            "date-display" : "21 August 2014",
-            "type" : "Photo of the week"
+            "option-heading": "Success",
+            "option-description": "<p>Use the class <code>.alert-success</code> for a success alert box. This alert box indicates a successful or positive action, such as successfully submitting a form.</p>",
+            "option-anchor": "alert-success",
+            "alert-class": "alert-success",
+            "alert-message": "Thank you for submitting your details. If you have any questions please email <a href='mailto:#' class='alert-link'>example@st-andrews.ac.uk</a>."
          },
 
 
 
 
          {
-            "option-heading": "Dummy pattern with no image",
-            "option-description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>",
-            "option-anchor": "dummy-option-two",
-            "title": "Title of image",
-            "url": "#",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
-
-            "date" : "2014-08-21",
-            "date-display" : "21 August 2014",
-            "type" : "Photo of the week"
+            "option-heading": "Info",
+            "option-description": "<p>Use the class <code>alert-info</code> for an info alert box. This alert box indicates neutral information or a neutral action, such as a recommendation or an update.</p>",
+            "option-anchor": "alert-info",
+            "alert-class": "alert-info",
+            "alert-message": "<strong>Heads up!</strong> We recommend that you apply soon for a place on our <a href='#' class='alert-link'>poetry course</a>."
           }
-
-
     ]
 }
