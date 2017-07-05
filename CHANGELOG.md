@@ -7,6 +7,19 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v1.5.0
+
+Release date: Wednesday 5 July 2017
+
+### Changed
+
+* Simplified the dummy pattern
+
+
+
+
+---
+
 ## v1.4.3
 
 Release date: Monday 3 July 2017
