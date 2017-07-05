@@ -1,8 +1,6 @@
-
 /*********************************/
-/* BEGIN Pattern: accordion    */
+/* BEGIN Pattern: accordion      */
 /*********************************/
-
 
 .accordion > h3 {
     @include -dpl-transition();
@@ -30,6 +28,10 @@
     @include rotate(90deg);
 }
 
+.accordion > div {
+    display: none;
+}
+
 // The following styles give us backwards compatibility with the
 // old code for accordions.
 
@@ -42,7 +44,6 @@
     text-decoration: none;
 }
 
-
 /*********************************/
-/* END Pattern: accordion      */
+/* END Pattern: accordion        */
 /*********************************/

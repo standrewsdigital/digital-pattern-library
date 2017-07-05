@@ -7,6 +7,8 @@
 
     figure {
         @extend .col-md-3;
+        @extend .col-sm-4;
+        @extend .col-xs-6;
         margin-bottom: 1.5em;
 
         img {
@@ -24,7 +26,11 @@
     font-size: 18px;
 }
 
-
+@media (max-width: 360px) {
+    .gallery__images figure, .lightbox_gallery_images figure {
+        width: 100%;
+    }
+}
 /*********************************/
 /* END Pattern: gallery          */
 /*********************************/

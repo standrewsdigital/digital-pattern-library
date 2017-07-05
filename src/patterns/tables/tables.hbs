@@ -1,5 +1,5 @@
 <!-- Begin pattern: tables //-->
-<table class="table table-striped {{ colour-class }}">
+<table class="table {{ colour-class }}">
     <thead>
         <tr>
         {{#each table-head}}
@@ -11,7 +11,7 @@
     {{#each table-body}}
         <tr>
             <td>{{{ column-one }}}</td>
-            <td>{{ column-two }}</td>
+            <td>{{{ column-two }}}</td>
         </tr>
     {{/each}}
     </tbody>
