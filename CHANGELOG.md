@@ -11,9 +11,15 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 Release date: Wednesday 5 July 2017
 
+### Added
+
+* Form banner pattern
+
 ### Changed
 
-* Simplified the dummy pattern
+* Updated print.css to hide code on print.
+* Changed form elements to add styling to radio buttons and input fields.
+* Simplified the dummy pattern.
 
 
 
