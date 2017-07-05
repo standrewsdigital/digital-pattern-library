@@ -1,14 +1,10 @@
-
 /*********************************/
 /* BEGIN Pattern: dummy pattern  */
 /*********************************/
 
-// Replace the following with your own JavaScript
-
-// Use bigTarget to make tile image clickable.
-$(".tile h3 a").bigTarget({
-    clickZone : 'div:eq(1)' // jQuery parent selector
-});
+/* Add in any JavaScript/jQuery code for this pattern.
+ * Delete this file if JavaScript isn't required for this pattern.
+ */
 
 /*********************************/
 /* END Pattern: dummy pattern    */

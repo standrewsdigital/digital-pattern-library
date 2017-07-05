@@ -24,6 +24,25 @@ Release date: Wednesday 5 July 2017
 
 ---
 
+## v1.5.0
+
+Release date: Wednesday 5 July 2017
+
+### Added
+
+* Form banner pattern
+
+### Changed
+
+* Updated print.css to hide code on print.
+* Changed form elements to add styling to radio buttons and input fields.
+* Simplified the dummy pattern.
+
+
+
+
+---
+
 ## v1.4.3
 
 Release date: Monday 3 July 2017
