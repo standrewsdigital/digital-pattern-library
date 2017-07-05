@@ -6,6 +6,24 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+## v1.5.0
+
+Release date: Wednesday 5 July 2017
+
+### Added
+
+* Form banner pattern
+
+### Changed
+
+* Updated print.css to hide code on print.
+* Changed form elements to add styling to radio buttons and input fields.
+
+
+
+
+---
+
 ## v1.2.0
 
 Release date: Thursday 1 June 2017
