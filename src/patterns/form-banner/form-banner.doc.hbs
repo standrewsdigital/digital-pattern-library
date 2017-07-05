@@ -1,0 +1,34 @@
+---
+title: Form banner
+---
+
+<p>The form banner pattern allows <a href="../form-elements/index.html">form elements</a> to be used in full-width banner sections.</p>
+
+<h3>Rules for form banner</h3>
+<ul>
+   <li>There must be no more than one form banner on a page.</li>
+   <li>May be used anywhere within the main body of a page.</li>
+   <li>Must not be used in sidebars.</li>
+   <li>Must only be used on '<a href="../content-whole/index.html">content whole</a>' or '<a href="../content-thirds/index.html">content thirds</a>' page layouts.</li>
+   <li>Styling must not deviate from the options provided. This includes colours and form elements.</li>
+   <li>If any other form banner options are required, please contact: <a href="mailto:digtalteam@st-andrews.ac.uk">digtalteam@st-andrews.ac.uk</a>.</li>
+
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#form-banner-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/form-banner-options.options}}
+</ul>
+
+{{#form-banner-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+    {{> form-banner}}
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> form-banner}}</code></pre>
+{{/form-banner-options.options}}

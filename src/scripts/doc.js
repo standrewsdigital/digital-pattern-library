@@ -91,7 +91,7 @@ function htmlDecode(value) {
     //     placement: 'bottom'
     // });
 
-    $('.swatch > *:not(.swatch__title, .clearfix)').append(function ( index ) { 
+    $('.swatch > *:not(.swatch__title, .clearfix)').append(function ( index ) {
         var item = $(this);
         bgcolor = item.css('background-color');
         hexcode = rgbToHex(bgcolor);
@@ -104,5 +104,135 @@ function htmlDecode(value) {
 
         return content;
     });
+
+    /*********************************/
+    /* BEGIN Pattern: form-banner    */
+    /*********************************/
+
+    var names = [
+        {
+            "name": "English MA (Hons)",
+            "type": "ug",
+            "link": "#"
+        },
+        {
+            "name": "Mediaeval Studies MA (Hons)",
+            "type": "ug",
+            "link": "#"
+        },
+        {
+            "name": "Biblical Studies MA (Hons)",
+            "type": "ug",
+            "link": "#"
+        },
+        {
+            "name": "Comparative Literature MA (joint degree)",
+            "type": "ug",
+            "link": "#"
+        },
+        {
+            "name": "Classical Studies MA (Hons)",
+            "type": "ug",
+            "link": "#"
+        },
+        {
+            "name": "Computer Science Degree (with English Language) (MSc)",
+            "type": "pg",
+            "link": "#"
+        },
+        {
+            "name": "English Language Teaching (MLitt)",
+            "type": "pg",
+            "link": "#"
+        },
+        {
+            "name": "Medieval English (MLitt)",
+            "type": "pg",
+            "link": "#"
+        },
+        {
+            "name": "Shakespeare and Renaissance Literary Culture (MLitt)",
+            "type": "pg",
+            "link": "#"
+        },
+        {
+            "name": "Pre-Masters",
+            "type": "pg",
+            "link": "#"
+        },
+        {
+            "name": "4-week Pre-sessional course",
+            "type": "pg",
+            "link": "#"
+        }
+    ];
+
+    $("#form-banner-search, #form-banner-search-names").keyup(function() {
+
+        if ( $(this).val().length > 2 ) {
+            search_cards( $(this).val() );
+            $(".results").slideDown('slow');
+        } else {
+            $(".results").slideUp('slow');
+            $(".results .col-md-6.left-column",".results .col-md-6.right-column").text("");
+        }
+
+    });
+
+    function search_cards( inputVal ) {
+
+        var testVal = inputVal.toLowerCase();
+        var leftResults = [];
+        var rightResults = [];
+
+        // Search for stuff
+        for ( var i = 0; i < names.length; i++ ) {
+            var link;
+
+            if ( names[i].name.toLowerCase().indexOf(testVal) >= 0 ) {
+                var url = names[i].link;
+                link = "<a href='" + url + "'>" + names[i].name + "</a>";
+
+                if ( names[i].type == 'ug' ) {
+                    leftResults.unshift(link);
+                } else {
+                    rightResults.unshift(link);
+                }
+            }
+
+        }
+
+        leftResults = leftResults.join("");
+        rightResults = rightResults.join("");
+
+        $(".results .col-md-6.left-column").html("");
+        $(".results .col-md-6.right-column").html("");
+
+        if ( leftResults.length === 0 && rightResults.length === 0 ) {
+            $(".results .col-md-6.left-column").html("No results found, please try again.");
+        } else {
+            if ( leftResults.length > 0 ) {
+                add_leftResults_list( leftResults );
+            }
+            if ( rightResults.length > 0 ) {
+                add_rightResults_list( rightResults );
+            }
+        }
+
+    }
+
+    function add_leftResults_list( list ) {
+        list = "<h2>Undergraduate courses</h2>" + list;
+        $(".results .col-md-6.left-column").html(list);
+    }
+
+    function add_rightResults_list( list ) {
+        list = "<h2>Postgraduate courses</h2>" + list;
+        $(".results .col-md-6.right-column").html(list);
+    }
+
+/*********************************/
+/* END Pattern: form-banner      */
+/*********************************/
 
 })(jQuery);

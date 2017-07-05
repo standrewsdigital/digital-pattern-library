@@ -1,4 +1,3 @@
-
 /*********************************/
 /* BEGIN Pattern: form-elements  */
 /*********************************/
@@ -23,7 +22,7 @@
         margin-bottom: 5px;
     }
 
-    input[type~=text].form-control, select.form-control {
+    input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio]).form-control, select.form-control {
     	font-size: 18px;
         height: 46px;
     }
@@ -70,6 +69,7 @@
         }
 
         ul li .check {
+            background-color: white;
             border: 3px solid black;
             border-radius: 100%;
             height: 25px;
@@ -123,8 +123,6 @@
     }
 }
 
-
-
 .ui-datepicker .ui-state-default.ui-state-active {
     border: 1px solid #00539b;
     background: #00539b;
@@ -139,6 +137,7 @@
 .ui-datepicker .ui-datepicker-today .ui-state-default.ui-state-active {
     color: #fff;
 }
+
 /*********************************/
 /* END Pattern: form-elements    */
 /*********************************/

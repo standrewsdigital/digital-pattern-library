@@ -1,0 +1,117 @@
+
+/*********************************/
+/* BEGIN Pattern: form-banner    */
+/*********************************/
+
+.form-banner {
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.form-banner-thirds {
+    padding: 20px;
+}
+
+.form-banner .call-heading {
+    color: white;
+    font-size:   24px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.form-banner h3 {
+    color: white;
+    font-size:   24px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.form-banner p {
+    color: white;
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+.form-banner label {
+    color: white;
+}
+
+.form-banner p a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.form-banner.sta-blue {
+    background-color: $sta-blue;
+}
+
+.form-banner.sta-blue-light {
+    background-color: $sta-blue-light;
+}
+
+.form-banner.sta-green {
+    background-color: $sta-green;
+}
+
+.form-banner.sta-dkgreen {
+    background-color: $sta-dkgreen;
+}
+
+.form-banner.sta-burgundy {
+    background-color: $sta-burgundy;
+}
+
+.form-banner.sta-purple {
+    background-color: $sta-purple;
+}
+
+.form-banner .results {
+       background-color: white;
+       margin: 30px auto;
+       padding: 10px 40px;
+       display: none;
+       text-align: left;
+       width: 96%;
+}
+
+.form-banner .results div a {
+       display: inherit;
+       font-size: 18px;
+       line-height: 1.42857;
+       margin-bottom: 15px;
+}
+
+@media (max-width: 991px) {
+    .form-banner img {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .form-banner .left p, .form-banner .left .call-heading {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-banner .btn {
+        font-size: 18px;
+    }
+
+    .form-banner p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 451px) {
+    .form-banner .call-to-action-buttons .btn {
+        margin: 30px 15px 15px 0;
+    }
+}
+
+/*********************************/
+/* END Pattern: form-banner      */
+/*********************************/

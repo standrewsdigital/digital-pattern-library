@@ -158,6 +158,10 @@
             "subheading": "Patterns used to create forms.",
             "class": "primary",
             "patterns": [
+                { "name": "Form banner",
+                  "img": "assets/docs/images/patterns/form-banner.jpg",
+                  "url": "patterns/form-banner/index.html"
+                },
                 { "name": "Form elements",
                   "img": "assets/docs/images/patterns/form-elements.jpg",
                   "url": "patterns/form-elements/index.html"

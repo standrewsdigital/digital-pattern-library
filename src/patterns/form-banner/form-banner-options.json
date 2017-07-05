@@ -1,0 +1,191 @@
+{
+    "options": [
+        {
+            "column-whole": true,
+            "option-heading": "Search field",
+            "option-description": "For this example, search the word 'english' to see how the results are displayed.",
+            "option-anchor": "search-field",
+            "background": "sta-blue-light",
+            "heading": "Course search",
+            "top-text": "Search for all the courses we offer",
+            "column": [
+                {
+                    "column-size": "col-md-12",
+                    "input-box": true,
+                    "input-id": "form-banner-search",
+                    "input-type": "text",
+                    "input-title": "Search for all the courses we offer",
+                    "input-placeholder": "Start typing to see courses...",
+                    "results": true
+                }
+            ]
+        },
+
+
+
+
+        {
+            "column-whole": true,
+            "option-heading": "Newsletter subscription",
+            "option-description": "",
+            "option-anchor": "newsletter-subscription",
+            "background": "sta-dkgreen",
+            "column": [
+                {
+                    "column-size": "col-md-6",
+                    "column-heading": "Interested in Philosophy at St Andrews?",
+                    "column-paragraph": "Subscribe to receive important information including visiting days and other events for prospective students."
+                },
+                {
+                    "column-size": "col-md-6",
+                    "form": true,
+                    "radio-label": "1. Choose degree level",
+                    "radio-button": [
+                        {
+                            "radio-id": "radio-ug",
+                            "radio-option": "Undergraduate"
+                        },
+                        {
+                            "radio-id": "radio-pg",
+                            "radio-option": "Postgraduate"
+                        }
+                    ],
+                    "select-box": true,
+                    "select-label": "2. Choose a subject",
+                    "default-value": "Please select...",
+                    "select-option": [
+                        {
+                            "option-value": "art-history",
+                            "select-option": "Art history"
+                        },
+                        {
+                            "option-value": "biology",
+                            "select-option": "Biology"
+                        },
+                        {
+                            "option-value": "classics",
+                            "select-option": "Classics"
+                        }
+                    ],
+                    "input-box": true,
+                    "input-label": "3. Enter your email",
+                    "input-id": "form-banner-email",
+                    "input-type": "email",
+                    "input-title": "Enter your email address",
+                    "input-placeholder": "Enter your email address...",
+                    "button": true
+
+                }
+            ]
+        },
+
+
+
+
+        {
+            "column-whole": true,
+            "option-heading": "Filter options",
+            "option-description": "",
+            "option-anchor": "filter-options",
+            "background": "sta-blue-light",
+            "heading": "Filter by subjects or country",
+            "column": [
+                {
+                    "column-size": "col-md-4",
+                    "select-box": true,
+                    "select-label": "Subject",
+                    "default-value": "Please select...",
+                    "select-option": [
+                        {
+                            "option-value": "art-history",
+                            "select-option": "Art history"
+                        },
+                        {
+                            "option-value": "biology",
+                            "select-option": "Biology"
+                        },
+                        {
+                            "option-value": "classics",
+                            "select-option": "Classics"
+                        }
+                    ]
+                },
+                {
+                    "column-size": "col-md-4",
+                    "select-box": true,
+                    "select-label": "Joint subject",
+                    "default-value": "Please select...",
+                    "select-option": [
+                        {
+                            "option-value": "joint-art-history",
+                            "select-option": "Art history"
+                        },
+                        {
+                            "option-value": "joint-biology",
+                            "select-option": "Biology"
+                        },
+                        {
+                            "option-value": "joint-classics",
+                            "select-option": "Classics"
+                        }
+                    ]
+                },
+                {
+                    "column-size": "col-md-4",
+                    "select-box": true,
+                    "select-label": "Country",
+                    "default-value": "Please select...",
+                    "select-option": [
+                        {
+                            "option-value": "australia",
+                            "select-option": "Australia"
+                        },
+                        {
+                            "option-value": "canada",
+                            "select-option": "Canada"
+                        },
+                        {
+                            "option-value": "germany",
+                            "select-option": "Germany"
+                        }
+                    ]
+                }
+            ],
+            "bottom-text": "If you are a Joint honours student, please select both 'subject' and 'joint subject'."
+        },
+
+
+
+
+        {
+            "column-thirds": true,
+            "option-heading": "Search field (content thirds)",
+            "option-description": "For this example, search the word 'english' to see how the results are displayed.",
+            "option-anchor": "search-field-thirds",
+            "column-background": "sta-blue-light",
+            "heading": "Course search",
+            "top-text": "Search for all the courses we offer",
+            "column": [
+                {
+                    "column-size": "col-md-12",
+                    "input-box": true,
+                    "input-id": "form-banner-search-names",
+                    "input-type": "text",
+                    "input-title": "Search for all the courses we offer",
+                    "input-placeholder": "Start typing to see courses...",
+                    "results": true
+                }
+            ],
+            "box-size": [
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240-study.jpg",
+                        "alt": "Description"
+                    },
+                    "title": "Sidebar",
+                    "column": "col-sm-4"
+                }
+            ]
+        }
+    ]
+ }
