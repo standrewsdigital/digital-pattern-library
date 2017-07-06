@@ -6,6 +6,19 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+## v1.5.1
+
+Release date: Thursday 6 July 2017
+
+### Fixed
+
+* There was a jQuery warning in the console caused by a misplaced closing bracket.
+
+
+
+
+---
+
 ## v1.5.0
 
 Release date: Wednesday 5 July 2017

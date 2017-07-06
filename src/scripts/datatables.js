@@ -217,4 +217,4 @@ $(document).ready(function(window, document, undefined) {
 
     });
 
-})(window, document);
+}(window, document));
