@@ -5,10 +5,9 @@
         <p>{{paragraph}}</p>
         <div class="call-to-action-buttons">
         {{#if action}}
-            <a class="btn btn-primary btn-lg" href="{{action.url}}" tabindex="0" role="button">{{action.text}}</a>
-            {{/if}}
-            {{#if action2}}
-            <a class="btn btn-primary btn-lg" href="{{action2.url}}" tabindex="0" role="button">{{action2.text}}</a>
+        {{#each action}}
+            <a class="btn btn-primary btn-lg" href="{{url}}" tabindex="0" role="button">{{text}}</a>
+        {{/each}}
         {{/if}}
         </div>
     </div>

@@ -45,10 +45,7 @@
 
 .secondary-call .btn {
     background-color: $sta-blue;
-}
-
-.secondary-call .btn:nth-child(2) {
-    margin-left: 30px;
+    margin: 0 15px;
 }
 
 .secondary-call .btn:hover, .secondary-call .btn:focus {
