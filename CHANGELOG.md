@@ -6,6 +6,19 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+## v1.6.0
+
+Release date: Wednesday 19 July 2017
+
+### Changed
+
+* Added an option to have 3 CTA buttons to the secondary-call-to-action pattern.
+
+
+
+
+---
+
 ## v1.5.1
 
 Release date: Thursday 6 July 2017
