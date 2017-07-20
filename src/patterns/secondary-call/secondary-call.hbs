@@ -1,14 +1,12 @@
 <!-- Begin pattern: secondary-call //-->
-<div class="secondary-call {{alignment}} secondary-call-{{style}}">
+<div class="secondary-call {{classes}} secondary-call-{{style}}">
     <div class="container">
         <div class="call-heading">{{heading}}</div>
         <p>{{paragraph}}</p>
         <div class="call-to-action-buttons">
-        {{#if action}}
         {{#each action}}
             <a class="btn btn-primary btn-lg" href="{{url}}" tabindex="0" role="button">{{text}}</a>
         {{/each}}
-        {{/if}}
         </div>
     </div>
 </div>

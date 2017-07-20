@@ -16,7 +16,7 @@
                     "url": "#"
                 }
             ],
-            "alignment": "center",
+            "classes": "center",
             "style":"0"
        },
 
@@ -43,7 +43,7 @@
                     "url": "#"
                 }
             ],
-            "alignment": "left",
+            "classes": "left",
             "style": "1"
        },
 
@@ -62,7 +62,26 @@
                     "url": "#"
                 }
             ],
-            "alignment": "center",
+            "classes": "center",
+            "style": "2"
+       },
+
+
+
+
+       {
+            "option-heading": "Gardens - transparent overlay",
+            "option-description": "",
+            "option-anchor": "background-2",
+            "heading": "Apply to St Andrews",
+            "paragraph": "Apply early for your best chance at being placed here.",
+            "action": [
+                {
+                    "text": "Start your application",
+                    "url": "#"
+                }
+            ],
+            "classes": "center transparent-overlay",
             "style": "2"
        },
 
@@ -85,7 +104,7 @@
                     "url": "#"
                 }
             ],
-            "alignment": "center",
+            "classes": "center",
             "style": "3"
        },
 
@@ -104,7 +123,7 @@
                     "url": "#"
                 }
             ],
-            "alignment": "center",
+            "classes": "center",
             "style": "4"
        },
 
@@ -127,7 +146,7 @@
                     "url": "#"
                 }
             ],
-            "alignment": "center",
+            "classes": "center",
             "style": "5"
        },
 
@@ -154,7 +173,7 @@
                     "url": "#"
                 }
             ],
-            "alignment": "center",
+            "classes": "center",
             "style": "6"
        },
 
@@ -177,7 +196,7 @@
                     "url": "#"
                 }
             ],
-            "alignment": "center",
+            "classes": "center",
             "style": "7"
        },
 
@@ -196,7 +215,7 @@
                     "url": "#"
                 }
             ],
-            "alignment": "center",
+            "classes": "center",
             "style": "8"
        },
 
@@ -219,7 +238,7 @@
                     "url": "#"
                 }
             ],
-            "alignment": "center",
+            "classes": "center",
             "style": "9"
        }
     ]

@@ -19,6 +19,34 @@
     margin-top: 0;
     padding: 30px;
     text-align: center;
+    position: relative;
+}
+
+.secondary-call.transparent-overlay {
+   &:after {
+       background-color: rgba(27,116,195,0.6);
+       content: ' ';
+       height: 100%;
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       z-index: 1;
+   }
+   .btn, .btn-primary {
+        background-color: $sta-green;
+        border-color: $sta-green;
+   }
+
+   .btn:hover, .btn:focus {
+        background-color: $sta-green-hover;
+        border-color: $sta-green-hover;
+    }
+}
+
+.secondary-call.transparent-overlay .container {
+    position: relative;
+    z-index: 10;
 }
 
 .secondary-call .call-heading {
