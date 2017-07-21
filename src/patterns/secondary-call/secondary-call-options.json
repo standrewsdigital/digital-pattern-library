@@ -24,6 +24,25 @@
 
 
        {
+            "option-heading": "Transparent overlay",
+            "option-description": "",
+            "option-anchor": "transparent",
+            "heading": "Apply to St Andrews",
+            "paragraph": "Apply early for your best chance at being placed here.",
+            "action": [
+                {
+                    "text": "Start your application",
+                    "url": "#"
+                }
+            ],
+            "classes": "center transparent-overlay",
+            "style": "2"
+       },
+
+
+
+
+       {
             "option-heading": "Castle and sea - text left aligned",
             "option-description": "",
             "option-anchor": "background-1",
@@ -63,25 +82,6 @@
                 }
             ],
             "classes": "center",
-            "style": "2"
-       },
-
-
-
-
-       {
-            "option-heading": "Gardens - transparent overlay",
-            "option-description": "",
-            "option-anchor": "background-2",
-            "heading": "Apply to St Andrews",
-            "paragraph": "Apply early for your best chance at being placed here.",
-            "action": [
-                {
-                    "text": "Start your application",
-                    "url": "#"
-                }
-            ],
-            "classes": "center transparent-overlay",
             "style": "2"
        },
 
