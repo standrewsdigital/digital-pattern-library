@@ -8,12 +8,13 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ## v1.6.0
 
-Release date: Wednesday 19 July 2017
+Release date: Wednesday 26 July 2017
 
 ### Added
 
 * Added an option to have 3 CTA buttons to the secondary-call-to-action pattern.
 * Added an option to have a transparent colour overlay to the secondary-call-to-action pattern.
+* Added an option to have a light-grey background for the Form banner pattern.
 
 
 
