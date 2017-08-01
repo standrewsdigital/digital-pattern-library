@@ -8,7 +8,7 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ## v1.6.0
 
-Release date: Wednesday 26 July 2017
+Release date: Tuesday 1 August 2017
 
 ### Added
 
