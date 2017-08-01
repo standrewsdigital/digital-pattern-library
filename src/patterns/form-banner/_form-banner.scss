@@ -3,45 +3,59 @@
 /* BEGIN Pattern: form-banner    */
 /*********************************/
 
-.form-banner {
-    padding: 30px;
-    margin-bottom: 20px;
-}
 
 .form-banner-thirds {
     padding: 20px;
 }
 
-.form-banner .call-heading {
+.form-banner {
+    padding: 30px;
+    margin-bottom: 20px;
     color: white;
-    font-size:   24px;
-    font-weight: bold;
-    line-height: 1.2;
-    margin: 10px auto;
-    text-align: center;
+
+    .call-heading {
+        /*color: white;*/
+        font-size:   24px;
+        font-weight: bold;
+        line-height: 1.2;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    h3 {
+        /*color: white;*/
+        font-size:   24px;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+
+    p {
+        /*color: white;*/
+        font-size: 21px;
+        line-height: 1.5;
+    }
+
+    /*label {
+        color: white;
+    }*/
+
+    p a {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-decoration: underline;
+    }
 }
 
-.form-banner h3 {
-    color: white;
-    font-size:   24px;
-    font-weight: bold;
-    line-height: 1.2;
-}
+.form-banner.sta-grey-light {
+    background-color: $sta-grey-light;
+    color: black;
 
-.form-banner p {
-    color: white;
-    font-size: 21px;
-    line-height: 1.5;
-}
-
-.form-banner label {
-    color: white;
-}
-
-.form-banner p a {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-decoration: underline;
+    .call-heading {
+        color: #202024;
+    }
+    p.text-center {
+        color: #6a6a6b;
+    }
 }
 
 .form-banner.sta-blue {

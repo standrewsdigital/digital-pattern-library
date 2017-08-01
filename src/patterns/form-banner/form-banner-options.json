@@ -23,6 +23,30 @@
 
 
 
+        {
+            "column-whole": true,
+            "option-heading": "Search field - light grey",
+            "option-description": "For this example, search the word 'english' to see how the results are displayed.",
+            "option-anchor": "search-field-grey",
+            "background": "sta-grey-light",
+            "heading": "Course search",
+            "top-text": "Search for all the courses we offer",
+            "column": [
+                {
+                    "column-size": "col-md-12",
+                    "input-box": true,
+                    "input-id": "form-banner-search",
+                    "input-type": "text",
+                    "input-title": "Search for all the courses we offer",
+                    "input-placeholder": "Start typing to see courses...",
+                    "results": true
+                }
+            ]
+        },
+
+
+
+
 
         {
             "column-whole": true,
