@@ -6,6 +6,19 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+## v1.6.1
+
+Release date: Monday 14 August 2017
+
+### Fixed
+
+* Colour of the column headings within the results div of the form banner pattern was set to white text on a white background, corrected to black text.
+
+
+
+
+---
+
 ## v1.6.0
 
 Release date: Tuesday 1 August 2017
