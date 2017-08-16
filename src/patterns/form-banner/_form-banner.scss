@@ -9,12 +9,12 @@
 }
 
 .form-banner {
-    padding: 30px;
-    margin-bottom: 20px;
     color: white;
+    margin-bottom: 20px;
+    padding: 30px;
+
 
     .call-heading {
-        /*color: white;*/
         font-size:   24px;
         font-weight: bold;
         line-height: 1.2;
@@ -23,24 +23,18 @@
     }
 
     h3 {
-        /*color: white;*/
         font-size:   24px;
         font-weight: bold;
         line-height: 1.2;
     }
 
     p {
-        /*color: white;*/
         font-size: 21px;
         line-height: 1.5;
     }
 
-    /*label {
-        color: white;
-    }*/
-
     p a {
-        color: rgb(255, 255, 255);
+        color: white;
         font-weight: bold;
         text-decoration: underline;
     }
@@ -51,10 +45,13 @@
     color: black;
 
     .call-heading {
-        color: #202024;
+        // color: #202024;
+        color: rgb(32, 32, 36);
     }
+
     p.text-center {
-        color: #6a6a6b;
+        // color: #6a6a6b;
+        color: rgb( 106, 106, 107);
     }
 }
 
@@ -84,9 +81,10 @@
 
 .form-banner .results {
        background-color: white;
+       color: black;
+       display: none;
        margin: 30px auto;
        padding: 10px 40px;
-       display: none;
        text-align: left;
        width: 96%;
 }
