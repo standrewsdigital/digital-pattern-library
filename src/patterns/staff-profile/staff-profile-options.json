@@ -4,7 +4,7 @@
             "option-heading": "Staff profile - default",
             "option-description": "<p>The call-to-action link is also included in the profile heading.</p>",
             "option-anchor": "profile-default",
-            "person-title": "Vice-Principle (Digital)",
+            "person-title": "Vice-Principal (Digital)",
             "person-name": "Dr Bob McBoberson",
             "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius lacus et ligula fringilla, at malesuada massa blandit. Etiam nec amet.‌",
             "contact-info": true,
@@ -25,7 +25,7 @@
             "option-heading": "Staff profile - without link to biography",
             "option-description": "<p>Without a link to a biography, there is also no link on the heading.</p>",
             "option-anchor": "without-call",
-            "person-title": "Vice-Principle (Digital)",
+            "person-title": "Vice-Principal (Digital)",
             "person-name": "Dr Bob McBoberson",
             "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius lacus et ligula fringilla, at malesuada massa blandit. Etiam nec amet.‌",
             "contact-info": true,
@@ -42,7 +42,7 @@
             "option-heading": "Staff profile - minimum",
             "option-description": "<p>This is the minimum required content for a staff profile.</p>",
             "option-anchor": "profile-minimum",
-            "person-title": "Vice-Principle (Digital)",
+            "person-title": "Vice-Principal (Digital)",
             "person-name": "Dr Bob McBoberson",
             "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius lacus et ligula fringilla, at malesuada massa blandit. Etiam nec amet.‌"
         }
