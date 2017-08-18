@@ -6,6 +6,20 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+## v1.6.3
+
+Release date: Friday 18 August 2017
+
+### Fixed
+
+* Accordions not appending unique ID's.
+* KIS widget too big for popover box.
+
+
+
+
+---
+
 ## v1.6.2
 
 Release date: Thursday 17 August 2017
