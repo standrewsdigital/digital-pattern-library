@@ -2,10 +2,13 @@
 /* BEGIN Pattern: accordion      */
 /*********************************/
 
-$('body .accordion').each(function() {
+var increment = 0;
+
+$('.accordion').each(function() {
     var $this = $(this);
+    
     // create unique id
-    var id = 'accordion-' + $this.index();
+    var id = 'accordion-' + increment;
     //add WAI ARIA attributes to h3 and make it focusable
     $('h3:first', this).attr({'aria-expanded': 'false', 'aria-controls': id, 'role': 'tab', 'tabindex': 0});
     //add WAI ARIA attributes to panel
@@ -18,6 +21,8 @@ $('body .accordion').each(function() {
             $(this).click();
         }
     });
+
+    increment++;
 });
 
 // Toggle an accordion open or closed when <h3> clicked.
