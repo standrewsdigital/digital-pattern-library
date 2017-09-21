@@ -19,7 +19,7 @@ Release date: Thursday 21 September 2017
 
 * Long-form links were using border-bottom CSS to set the underline colour, they are now using text decoration.
 
-## Fixed
+### Fixed
 
 * Styling for links within lists on the featured media pattern.
 
