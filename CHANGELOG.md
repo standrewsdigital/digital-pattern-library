@@ -6,6 +6,19 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+## v1.7.0
+
+Release date: Thursday 21 September 2017
+
+### Added
+
+* Google Analytics to the DPL docs pages.
+
+
+
+
+---
+
 ## v1.6.3
 
 Release date: Friday 18 August 2017
