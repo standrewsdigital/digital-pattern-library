@@ -91,6 +91,29 @@
             "option-anchor": "blockquote-right",
             "blockquote": true,
             "class": "pull-right"
+        },
+
+
+
+
+        {
+            "option-heading": "Description list",
+            "option-description": "<p>Used to list terms along with their associated description.</p><p>The <code>dl</code> tag is used to define a description list, the <code>dt</code> tag defines a term and the <code>dd</code> tag defines the term's associated description.</p>",
+            "option-anchor": "description-list",
+            "description-list": [
+                {
+                    "term": "Lorem ipsum",
+                    "description": "Dolor sit amet, consectetur adipiscing elit."
+                },
+                {
+                    "term": "Sed maximus nulla",
+                    "description": "nec vehicula vestibulum."
+                },
+                {
+                    "term": "Cras eget elit tincidunt",
+                    "description": "sollicitudin turpis quis, elementum felis."
+                }
+            ]
         }
     ]
 }
