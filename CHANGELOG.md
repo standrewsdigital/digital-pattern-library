@@ -14,6 +14,10 @@ Release date: Thursday 21 September 2017
 
 * Google Analytics to the DPL docs pages.
 
+### Changed
+
+* Long-form links were using border-bottom CSS to set the underline colour, they are now using text decoration.
+
 
 
 

@@ -33,10 +33,6 @@
 .long-form--inverse {
     color: white;
 
-    a {
-        border-bottom-color: rgb(200, 200, 200);
-    }
-
     small {
         color: rgb(230, 230, 230);
     }
@@ -89,10 +85,9 @@
     }
 
     a {
-        border-bottom: 1px solid rgb(68, 68, 68);
         color: inherit;
         font-weight: normal;
-        text-decoration: none;
+        text-decoration: underline;
     }
 
     p {
