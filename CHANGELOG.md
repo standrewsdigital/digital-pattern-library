@@ -26,6 +26,8 @@ Release date: Thursday 21 September 2017
 
 
 
+---
+
 ## v1.6.3
 
 Release date: Friday 18 August 2017
