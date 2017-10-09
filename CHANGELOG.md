@@ -6,6 +6,19 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+## v1.7.2
+
+Release date: Monday 9 October 2017
+
+### Added
+
+* New option for Featured media pattern, centred video
+
+
+
+
+---
+
 ## v1.7.1
 
 Release date: Monday 9 October 2017
