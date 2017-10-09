@@ -6,6 +6,19 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+## v1.7.1
+
+Release date: Monday 9 October 2017
+
+### Added
+
+* Extra rule to typography pattern to make it clear that inline CSS is not allowed.
+
+
+
+
+---
+
 ## v1.7.0
 
 Release date: Thursday 21 September 2017
