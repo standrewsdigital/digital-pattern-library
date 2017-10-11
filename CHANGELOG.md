@@ -6,6 +6,19 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+## v1.7.4
+
+Release date: Wednesday 11 October 2017
+
+### Added
+
+* Global no-margin-bottom rule added to CSS.
+
+
+
+
+---
+
 ## v1.7.3
 
 Release date: Tuesday 10 October 2017
