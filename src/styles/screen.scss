@@ -142,6 +142,11 @@ GLOBAL CSS RULES
    @version 1.0.0
    */
 
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
 .img-responsive.override_image_size img {
 	height: 100% !important;
 	width: 100% !important;
