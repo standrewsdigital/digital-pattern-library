@@ -6,6 +6,20 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+
+## v1.7.5
+
+Release date: Wednesday 08 November 2017
+
+### Changed
+
+* Update staff profile rules to reflect CSA site.
+
+
+
+
+---
+
 ## v1.7.4
 
 Release date: Wednesday 11 October 2017
