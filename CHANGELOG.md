@@ -7,6 +7,19 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v1.7.6
+
+Release date: Thursday 09 November 2017
+
+### Changed
+
+* Further updates to staff profile pattern to reflect CSA site.
+
+
+
+
+---
+
 ## v1.7.5
 
 Release date: Wednesday 08 November 2017
