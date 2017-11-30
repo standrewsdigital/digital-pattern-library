@@ -13,6 +13,20 @@ section.sta-grey-light {
 	background-color: $sta-grey-light;
 }
 
+
+section.sta-blue, 
+section.sta-blue-light, 
+section.sta-green, 
+section.sta-burgundy, 
+section.sta-purple, 
+section.sta-grey-light {
+
+	h2, p {
+		color: white;
+	}
+}
+
+
 /*********************************/
 /* END Pattern: content-thirds     */
 /*********************************/

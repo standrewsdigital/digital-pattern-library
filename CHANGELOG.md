@@ -7,6 +7,23 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v1.7.7
+
+Release date: Thursday 30 November 2017
+
+### Changed
+
+* Rules on background colour usage with content thirds pattern
+
+### Fixed 
+
+* Header no longer wraps around text on content thirds pattern
+* Resolve padding issue with form banner on mobile devices.
+---
+
+
+
+
 ## v1.7.6
 
 Release date: Thursday 09 November 2017
