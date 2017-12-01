@@ -7,6 +7,18 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
 
+## v1.7.8
+
+Release date: Friday 01 December 2017
+
+### Changed
+
+* Removed CSS min-height from col-xs-12 div.
+
+
+
+
+---
 ## v1.7.7
 
 Release date: Thursday 30 November 2017
@@ -19,11 +31,11 @@ Release date: Thursday 30 November 2017
 
 * Header no longer wraps around text on content thirds pattern
 * Resolve padding issue with form banner on mobile devices.
+
+
+
+
 ---
-
-
-
-
 ## v1.7.6
 
 Release date: Thursday 09 November 2017
