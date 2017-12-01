@@ -161,10 +161,12 @@ img.placeholder_size {
 	width: 85px;
 }
 .alert > p + p {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
-
+div.container .row .col-xs-12 {
+  min-height: 0;
+}
 
 /* Global colour rules
   --------------------------------------------------------------------------
