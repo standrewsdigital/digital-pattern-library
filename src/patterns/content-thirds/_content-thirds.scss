@@ -1,6 +1,6 @@
 
 /*********************************/
-/* BEGIN Pattern: content-thirds   */
+/* BEGIN Pattern: content-thirds */
 /*********************************/
 
 /* remove margin of h2 when it's the first element of the content */
@@ -14,17 +14,17 @@ section.sta-grey-light {
 }
 
 
-section.sta-blue, 
-section.sta-blue-light, 
-section.sta-green, 
-section.sta-burgundy, 
+section.sta-blue,
+section.sta-blue-light,
+section.sta-green,
+section.sta-burgundy,
 section.sta-purple {
-	h2, p {
+	h2, h3, ul, p {
 		color: white;
 	}
 }
 
 
 /*********************************/
-/* END Pattern: content-thirds     */
+/* END Pattern: content-thirds   */
 /*********************************/
