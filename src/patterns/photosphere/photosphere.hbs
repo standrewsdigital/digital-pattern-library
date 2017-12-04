@@ -1,24 +1,10 @@
 <!-- Begin pattern: photosphere //-->
-<!--
-1. Enter your HTML in this file. This is the actual pattern.
 
-2. Use Handlebars placeholders to pull in data from the JSON data files. For example, if you have in your JSON file an object called "url" then you would use {{url}}.
+<script src='https://storage.googleapis.com/vrview/2.0/build/vrview.min.js'></script>
 
-For more info see http://handlebarsjs.com/ and http://assemble.io/.
+<div class='embed-responsive embed-responsive-16by9'>
+	<div id='{{id}}'></div>
+</div>
 
-3. It can be useful to create the JSON files first. Use descriptive names for the .json files.
--->
-
-{{> featured-media}}
-
-<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
-<script>
-window.addEventListener('load', onVrViewLoad)
-function onVrViewLoad() {
-  var vrView = new VRView.Player('#{{id}}', {
-    image: 'https://www.st-andrews.ac.uk/assets/university/test/ABH-Bedroom.jpg'
-  });
-}
-</script>
 
 <!-- End pattern: photosphere //-->

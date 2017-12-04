@@ -1,13 +1,10 @@
 {
     "options" : [
         {
-            "option-heading": "Photosphere with Featured media",
+            "option-heading": "Photosphere",
             "option-description": "",
-            "option-anchor": "featured-media",
-            "background": " sta-blue",
-            "id": "media-photo",
-            "column1": "<div class='col-md-7'><p><strong>The School of English at the University of St&nbsp;Andrews enjoys an international reputation as a centre for both academic research and literary creativity.</strong></p><p>The School of English was ranked first in Scotland and second in the UK by the <a href='#'>Guardian University Guide 2017</a>, and first in Scotland and third in the UK by the <a href='#'>Complete University Guide 2016</a>. The <a href='#'>2014 Research Excellence Framework (REF)</a> rated 86% of research from the School as world leading and internationally excellent.</p><p>The University of St&nbsp;Andrews as a whole was voted top for student satisfaction in The National Student Survey 2016 as 94% of St&nbsp;Andrews final years gave the University top marks for the quality of the learning and teaching experience</p></div>",
-            "column2": "<div class='col-md-5'><div class='embed-responsive embed-responsive-16by9'><div id='media-photo'></div></div></div>"
+            "option-anchor": "photosphere-full",
+            "id": "photosphere"
         }
     ]
 }
