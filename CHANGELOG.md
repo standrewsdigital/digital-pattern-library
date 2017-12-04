@@ -6,7 +6,18 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+## v1.7.9
 
+Release date: Monday 04 December 2017
+
+### Fixed
+
+* Text colour for <h3> and <ul> for the content thirds pattern.
+
+
+
+
+---
 ## v1.7.8
 
 Release date: Friday 01 December 2017
