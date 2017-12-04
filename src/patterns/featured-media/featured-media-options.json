@@ -35,7 +35,7 @@
 
         {
             "option-heading": "Image background with photosphere in centre",
-            "option-description": "",
+            "option-description": "For more information, visit the <a href='../photosphere/index.html'>Photosphere</a> pattern.",
             "option-anchor": "photosphere-media",
             "background": "featured-image",
             "column1": "<div class='col-md-8 col-md-offset-2'><h3>What is David Russell Apartments like?</h3></h2><div class='embed-responsive embed-responsive-16by9'><div id='photosphere'></div></div></div>",
