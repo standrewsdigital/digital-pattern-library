@@ -1,0 +1,22 @@
+{
+    "options" : [
+        {
+            "option-heading": "Success",
+            "option-description": "<p>Use the class <code>alert-success</code> for a success alert box. This alert box indicates a successful or positive action, such as successfully submitting a form.</p>",
+            "option-anchor": "alert-success",
+            "alert-class": "alert-success",
+            "alert-message": "Thank you for submitting your details. If you have any questions please email <a href='mailto:#' class='alert-link'>example@st-andrews.ac.uk</a>."
+         },
+
+
+
+
+         {
+            "option-heading": "Info",
+            "option-description": "<p>Use the class <code>alert-info</code> for an info alert box. This alert box indicates neutral information or a neutral action, such as a recommendation or an update.</p>",
+            "option-anchor": "alert-info",
+            "alert-class": "alert-info",
+            "alert-message": "<strong>Heads up!</strong> We recommend that you apply soon for a place on our <a href='#' class='alert-link'>poetry course</a>."
+          }
+    ]
+}
