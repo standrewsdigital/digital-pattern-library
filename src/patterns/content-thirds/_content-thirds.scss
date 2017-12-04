@@ -13,17 +13,26 @@ section.sta-grey-light {
 	background-color: $sta-grey-light;
 }
 
-
 section.sta-blue,
 section.sta-blue-light,
 section.sta-green,
 section.sta-burgundy,
 section.sta-purple {
-	h2, h3, ul, p {
-		color: white;
-	}
-}
 
+    .content {
+        color: white;
+
+        p a, ul a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .navbox .navbox-title p a {
+            text-decoration: none;
+        }
+    }
+
+}
 
 /*********************************/
 /* END Pattern: content-thirds   */
