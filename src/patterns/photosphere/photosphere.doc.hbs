@@ -15,16 +15,18 @@ title: Photosphere
 
 <h3>Options available</h3>
 <ul>
-{{#dummy-pattern-options.options}}
+{{#photosphere-options.options}}
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
-{{/dummy-pattern-options.options}}
+{{/photosphere-options.options}}
 </ul>
 
-{{#dummy-pattern-options.options}}
+{{#photosphere-options.options}}
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
 {{>  photosphere}}
+<div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> photosphere}}</code></pre>
-{{/dummy-pattern-options.options}}
+{{/photosphere-options.options}}

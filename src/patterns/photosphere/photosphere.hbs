@@ -9,7 +9,16 @@ For more info see http://handlebarsjs.com/ and http://assemble.io/.
 3. It can be useful to create the JSON files first. Use descriptive names for the .json files.
 -->
 
-<script src="//storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+{{> featured-media}}
 
-<div id="vrview"></div>
+<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+<script>
+window.addEventListener('load', onVrViewLoad)
+function onVrViewLoad() {
+  var vrView = new VRView.Player('#{{id}}', {
+    image: 'https://www.st-andrews.ac.uk/assets/university/test/ABH-Bedroom.jpg'
+  });
+}
+</script>
+
 <!-- End pattern: photosphere //-->

@@ -235,4 +235,26 @@ function htmlDecode(value) {
 /* END Pattern: form-banner      */
 /*********************************/
 
+
+
+/*********************************/
+/* BEGIN Pattern: Photospheres   */
+/*********************************/
+
+/*
+
+window.addEventListener('load', onVrViewLoad);
+function onVrViewLoad() {
+  var vrView = new VRView.Player('#vrview', {
+    image: 'https://www.st-andrews.ac.uk/assets/university/homepage/images/hero-banner/good-university-guide-2018-hero-banner.jpg'
+  });
+}
+
+*/
+
+/*********************************/
+/* END Pattern: Photospheres     */
+/*********************************/
+
+
 })(jQuery);
