@@ -2,15 +2,22 @@
 title: Photosphere
 ---
 
-<p class="alert alert-info">See CONTRIBUTING.md for details on how to create a new pattern.</p>
+<p>A photosphere is used to showcase a 360&dec; image using <a href="https://developers.google.com/vr/concepts/vrview-web">Google VR view</a>.</p>
 
-<p>The introduction may be several paragraphs long if required. It should introduce the pattern, explain what it is and when and where it may be used.</p>
+<p>This is done via a JavaScript API to manipulate the contents of an <code>&lt;iframe&gt;</code>.</p>
 
-<h3>Rules for the dummy pattern</h3>
+<h3>Rules for photospheres</h3>
 <ul>
-    <li>You may use any formatting as required, such as paragraphs and unordered lists.</li>
-    <li>Documentation should follow the writing for the web guidelines and adhere to the <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/house-style/">house style guide</a>.</li>
-    <li>Code should adhere to the <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/code-standards/">code style and standards guides</a>.</li>
+    <li>Must always be contained within a <a href="../responsive-embed/index.html">responsive embed pattern</a>.</li>
+    <li>Must only be used on the <a href="../content-whole/index.html">content whole</a>, <a href="../content-thirds/index.html">content thirds</a>, <a href="../content-halves/index.html">content halves</a> and <a href="../featured-media/index.html">featured media</a> patterns.</li>
+</ul>
+
+<h3>Image specifications</h3>
+<ul>
+	<li>Images can be stored as png, jpeg, or gif. We recommend you use jpeg for improved compression.</li>
+	<li>For maximum compatibility and performance, image dimensions should be powers of two (e.g. 2048 or 4096).</li>
+	<li>Mono images should be 2:1 aspect ratio (e.g. 4096 x 2048).</li>
+	<li>Stereo images should be 1:1 aspect ratio (e.g. 4096 x 4096).</li>
 </ul>
 
 <h3>Options available</h3>
@@ -24,9 +31,7 @@ title: Photosphere
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
-</div>
 {{>  photosphere}}
-<div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> photosphere}}</code></pre>
 {{/photosphere-options.options}}
