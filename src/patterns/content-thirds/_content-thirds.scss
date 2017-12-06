@@ -19,17 +19,15 @@ section.sta-green,
 section.sta-burgundy,
 section.sta-purple {
 
-    .content {
+    color: white;
+
+    p a, ul a {
         color: white;
+        text-decoration: underline;
+    }
 
-        p a, ul a {
-            color: white;
-            text-decoration: underline;
-        }
-
-        .navbox .navbox-title p a {
-            text-decoration: none;
-        }
+    .navbox .navbox-title p a, .btn {
+        text-decoration: none;
     }
 
 }
