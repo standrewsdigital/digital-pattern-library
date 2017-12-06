@@ -6,6 +6,18 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+## v1.7.10
+
+Release date: Monday 06 December 2017
+
+### Fixed
+
+* Font colours for content thirds and content halves patterns.
+
+
+
+
+---
 ## v1.7.9
 
 Release date: Monday 04 December 2017
