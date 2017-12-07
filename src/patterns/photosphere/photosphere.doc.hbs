@@ -28,13 +28,13 @@ title: Photosphere
 
 <h3>Include VR view script</h3>
 
-<p>A link to the following file is required for a photosphere to work:
+<p>A link to the following file is required for a photosphere to work. Put the code at the bottom of the <code>body</code> section.
 <br /><pre><code class="pattern-source html"><script src='https://storage.googleapis.com/vrview/2.0/build/vrview.min.js'></script></code></pre></p>
 
 
 <h3>HTML code</h3>
 
-<p>To ensure that the photospheres are responsive and work on all sizes of devices, use the following code:</p>
+<p>Use the following code to ensure that the photosphere is responsive and work on all sizes of devices:</p>
 
 <pre><code class="pattern-source html"><div class="embed-responsive embed-responsive-16by9">
 	<div id="Photosphere-ID"></div>
@@ -44,7 +44,12 @@ title: Photosphere
 
 <h3>JavaScript function</h3>
 
-<p>When the page loads you want to register that it has then call the function below:</p>
+<p>Add the following code to the page and amend the following parameters:</p>
+
+<ul>
+	<li><strong>Photosphere-ID:</strong> this is the <code>&lt;div&gt;</code> where the photosphere will be displayed, change this to match the Photosphere-ID you specified in the HTML.</li>
+	<li><strong>Image:</strong> this is the full URL of the image you wish to use, replace <code>path/to/IMAGE/</code> with the desired URL.</li>
+</ul>
 
 <pre><code class="pattern-source js">window.addEventListener('load', onVrViewLoad)
 function onVrViewLoad() {
@@ -52,11 +57,6 @@ function onVrViewLoad() {
 		image: 'path/to/IMAGE/'
 	});
 }</code></pre>
-
-<ul>
-	<li><strong>Photosphere-ID:</strong> this is the <code>&lt;div&gt;</code> where the photosphere will be displayed, change this to match the Photosphere-ID you specified in the HTML.</li>
-	<li><strong>Image:</strong> this is the full URL of the image you wish to use, replace <code>path/to/IMAGE/</code> with the desired URL.</li>
-</ul>
 
 {{#photosphere-options.options}}
 <hr>
