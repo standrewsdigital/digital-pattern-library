@@ -6,13 +6,13 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
-
 ## v1.8.0
 
-Release date: Thursday 07 December 2017
+Release date: Monday 08 January 2018
 
 ### Added
 
+* Timelapse video added to furniture docs.
 * New Photosphere pattern
 
 
@@ -20,6 +20,101 @@ Release date: Thursday 07 December 2017
 
 ---
 
+## v1.7.10
+
+Release date: Monday 06 December 2017
+
+### Fixed
+
+* Font colours for content thirds and content halves patterns.
+
+
+
+
+---
+
+## v1.7.9
+
+Release date: Monday 04 December 2017
+
+### Fixed
+
+* Text colour for <h3> and <ul> for the content thirds pattern.
+
+
+
+
+---
+
+## v1.7.8
+
+Release date: Friday 01 December 2017
+
+### Changed
+
+* Removed CSS min-height from col-xs-12 div.
+
+
+
+
+---
+
+## v1.7.7
+
+Release date: Thursday 30 November 2017
+
+### Changed
+
+* Rules on background colour usage with content thirds pattern
+
+### Fixed 
+
+* Header no longer wraps around text on content thirds pattern
+* Resolve padding issue with form banner on mobile devices.
+
+
+
+
+---
+
+## v1.7.6
+
+Release date: Thursday 09 November 2017
+
+### Changed
+
+* Further updates to staff profile pattern to reflect CSA site.
+
+
+
+
+---
+
+## v1.7.5
+
+Release date: Wednesday 08 November 2017
+
+### Changed
+
+* Update staff profile rules to reflect CSA site.
+
+
+
+
+---
+
+## v1.7.4
+
+Release date: Wednesday 11 October 2017
+
+### Added
+
+* Global no-margin-bottom rule added to CSS.
+
+
+
+
+---
 
 ## v1.7.3
 

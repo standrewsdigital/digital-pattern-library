@@ -135,12 +135,17 @@ GLOBAL CSS RULES
 }
 
 /* Misc global rules
-   --------------------------------------------------------------------------
+  --------------------------------------------------------------------------
    Fix for t4 image issues use by adding these two classes to the parent
    container of the img in question. Also the hideaway style.
 
    @version 1.0.0
    */
+
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
 
 .img-responsive.override_image_size img {
 	height: 100% !important;
@@ -156,5 +161,41 @@ img.placeholder_size {
 	width: 85px;
 }
 .alert > p + p {
-    margin-top: 25px;
+  margin-top: 25px;
+}
+
+div.container .row .col-xs-12 {
+  min-height: 0;
+}
+
+/* Global colour rules
+  --------------------------------------------------------------------------
+  Colours used on various patterns
+
+  @version 1.0.0
+  */
+
+
+.sta-blue {
+    background-color: $sta-blue;
+}
+
+.sta-blue-light {
+    background-color: $sta-blue-light;
+}
+
+.sta-green {
+    background-color: $sta-green;
+}
+
+.sta-burgundy {
+    background-color: $sta-burgundy;
+}
+
+.sta-purple {
+    background-color: $sta-purple;
+}
+
+.sta-grey-light {
+    background-color: $sta-grey-light;
 }
