@@ -1,0 +1,68 @@
+---
+title: Photosphere
+---
+
+<p>A photosphere is used to showcase a 360&deg; image using <a href="https://developers.google.com/vr/concepts/vrview-web">Google VR view</a>. This is done via a JavaScript API to manipulate the contents of an <code>&lt;iframe&gt;</code>.</p>
+
+<h3>Rules for photospheres</h3>
+<ul>
+    <li>Must always be contained within a <a href="../responsive-embed/index.html">responsive embed pattern</a>.</li>
+    <li>Must only be used on the <a href="../content-whole/index.html">content whole</a>, <a href="../content-thirds/index.html">content thirds</a>, <a href="../content-halves/index.html">content halves</a> and <a href="../featured-media/index.html">featured media</a> patterns.</li>
+</ul>
+
+
+<h3>Options available</h3>
+<ul>
+{{#photosphere-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/photosphere-options.options}}
+</ul>
+
+
+<h3>Image specifications</h3>
+<ul>
+	<li>Images can be stored as png, jpeg, or gif. We recommend you use jpeg for improved compression.</li>
+	<li>For maximum compatibility and performance, image dimensions should be powers of two (e.g. 2048 or 4096).</li>
+	<li>Images should be 2:1 aspect ratio (e.g. 4096 x 2048).</li>
+</ul>
+
+<h3>Include VR view script</h3>
+
+<p>A link to the following file is required for a photosphere to work. Put the code at the bottom of the <code>body</code> section.
+<br /><pre><code class="pattern-source html"><script src='https://storage.googleapis.com/vrview/2.0/build/vrview.min.js'></script></code></pre></p>
+
+
+<h3>HTML code</h3>
+
+<p>Use the following code to ensure that the photosphere is responsive and work on all sizes of devices:</p>
+
+<pre><code class="pattern-source html"><div class="embed-responsive embed-responsive-16by9">
+	<div id="Photosphere-ID"></div>
+</div>
+</code></pre>
+
+
+<h3>JavaScript function</h3>
+
+<p>Add the following code to the page and amend the following parameters:</p>
+
+<ul>
+	<li><strong>Photosphere-ID:</strong> this is the <code>&lt;div&gt;</code> where the photosphere will be displayed, change this to match the Photosphere-ID you specified in the HTML.</li>
+	<li><strong>Image:</strong> this is the full URL of the image you wish to use, replace <code>path/to/IMAGE/</code> with the desired URL.</li>
+</ul>
+
+<pre><code class="pattern-source js">window.addEventListener('load', onVrViewLoad)
+function onVrViewLoad() {
+	var vrView = new VRView.Player('#Photosphere-ID', {
+		image: 'path/to/IMAGE/'
+	});
+}</code></pre>
+
+{{#photosphere-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+{{>  photosphere}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> photosphere}}</code></pre>
+{{/photosphere-options.options}}

@@ -235,4 +235,23 @@ function htmlDecode(value) {
 /* END Pattern: form-banner      */
 /*********************************/
 
+
+
+/*********************************/
+/* BEGIN Pattern: Photospheres   */
+/*********************************/
+
+window.addEventListener('load', onVrViewLoad)
+function onVrViewLoad() {
+  var vrView = new VRView.Player('#photosphere', {
+  image: 'https://www.st-andrews.ac.uk/assets/university/test/ABH-Bedroom.jpg'
+  });
+}
+
+
+/*********************************/
+/* END Pattern: Photospheres     */
+/*********************************/
+
+
 })(jQuery);

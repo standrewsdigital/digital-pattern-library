@@ -13,11 +13,13 @@ Release date: Monday 08 January 2018
 ### Added
 
 * Timelapse video added to furniture docs.
+* New Photosphere pattern
 
 
 
 
 ---
+
 ## v1.7.10
 
 Release date: Monday 06 December 2017
@@ -30,6 +32,7 @@ Release date: Monday 06 December 2017
 
 
 ---
+
 ## v1.7.9
 
 Release date: Monday 04 December 2017
@@ -42,6 +45,7 @@ Release date: Monday 04 December 2017
 
 
 ---
+
 ## v1.7.8
 
 Release date: Friday 01 December 2017
@@ -54,6 +58,7 @@ Release date: Friday 01 December 2017
 
 
 ---
+
 ## v1.7.7
 
 Release date: Thursday 30 November 2017
@@ -71,6 +76,7 @@ Release date: Thursday 30 November 2017
 
 
 ---
+
 ## v1.7.6
 
 Release date: Thursday 09 November 2017
