@@ -244,7 +244,7 @@ function htmlDecode(value) {
 window.addEventListener('load', onVrViewLoad)
 function onVrViewLoad() {
   var vrView = new VRView.Player('#photosphere', {
-  image: 'https://www.st-andrews.ac.uk/assets/university/test/ABH-Bedroom.jpg'
+  image: 'https://www.st-andrews.ac.uk/assets/university/study-at-st-andrews/images/accommodation/accommodation-photospheres/DRAFP-Pond.jpg'
   });
 }
 

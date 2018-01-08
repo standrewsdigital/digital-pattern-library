@@ -128,7 +128,7 @@
                   "url": "patterns/news-updates/index.html"
                 },
                 { "name": "Photosphere",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/photosphere.jpg",
                   "url": "patterns/photosphere/index.html"
                 },
                 { "name": "Responsive embed",
