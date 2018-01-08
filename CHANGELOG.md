@@ -6,6 +6,18 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+## v1.8.0
+
+Release date: Monday 08 January 2018
+
+### Added
+
+* Timelapse video added to furniture docs.
+
+
+
+
+---
 ## v1.7.10
 
 Release date: Monday 06 December 2017
