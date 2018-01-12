@@ -17,40 +17,13 @@ core-assets: true
                         <li><a href="#{{heading}}" class="btn btn-{{class}}">{{heading}}</a></li>
                     {{/each}}
                     </ul>
-                    <hr>
-                    <!-- Begin pattern: form banner //-->
-<div class="form-banner sta-blue-light">
-    <div class="container dpl-form">
-        <div class="row">
-            
-                <div class="text-center call-heading">Patterns search</div>
-                <p class="text-center">Search for all the patterns we provide</p>
-                <div class="col-md-12">
-                    
-                    <div class="form-group">
-                        
-                        <input id="form-banner-search" class="form-control" type="text" title="Search for all the patterns we offer" maxlength="256" name="form-banner-search" placeholder="Start typing to see patterns..." value="">
-                    </div>
-                    <div class="results">
-                        <div class="row">
-                            <div class="col-md-6 left-column">
-                            </div>
-                            <div class="col-md-6 right-column">
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-                    </div>   
-    </div>
-</div>
-<!-- End pattern: form banner //-->
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+{{> form-banner patterns-page.options}}
 
 {{#each patterns-page.categories}}
     <div class="container">
