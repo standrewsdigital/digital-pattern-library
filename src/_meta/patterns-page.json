@@ -294,7 +294,7 @@
             {
                 "column-size": "col-md-12",
                 "input-box": true,
-                "input-id": "form-banner-search",
+                "input-id": "form-banner-pattern-search",
                 "input-type": "text",
                 "input-title": "Search for all the patterns we provide",
                 "input-placeholder": "Start typing to see patterns...",
