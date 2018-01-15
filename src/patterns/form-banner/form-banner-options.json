@@ -12,7 +12,7 @@
                 {
                     "column-size": "col-md-12",
                     "input-box": true,
-                    "input-id": "form-banner-search",
+                    "input-id": "form-banner-search-blue",
                     "input-type": "text",
                     "input-title": "Search for all the courses we offer",
                     "input-placeholder": "Start typing to see courses...",
@@ -35,7 +35,7 @@
                 {
                     "column-size": "col-md-12",
                     "input-box": true,
-                    "input-id": "form-banner-search",
+                    "input-id": "form-banner-search-grey",
                     "input-type": "text",
                     "input-title": "Search for all the courses we offer",
                     "input-placeholder": "Start typing to see courses...",

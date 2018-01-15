@@ -105,11 +105,13 @@ function htmlDecode(value) {
         return content;
     });
 
-    /*********************************/
-    /* BEGIN Pattern: form-banner    */
-    /*********************************/
+    /********************************************************************/
+    /* BEGIN Pattern: form-banner                                       */
+    /* This code is also used for the form-banner on the patterns page. */
+    /********************************************************************/
 
-    var names = [
+    // Dummy course data used for the form-banner pattern page.
+    var courses = [
         {
             "name": "English MA (Hons)",
             "type": "ug",
@@ -167,174 +169,158 @@ function htmlDecode(value) {
         }
     ];
 
-    $("#form-banner-search, #form-banner-search-names").keyup(function() {
+    // Data for the patterns page search - get patterns data from the live patterns page (couldn't work out an easier way to do this).
+    var patterns = [];
 
-        if ( $(this).val().length > 2 ) {
-            search_cards( $(this).val() );
-            $(".results").slideDown('slow');
+    $('.navbox').each(function() {
+
+        navbox = $('.navbox-title a', this);
+
+        // Get the navbox title and link.
+        var title = navbox.text();
+        var link = navbox.attr('href');
+
+        // Create an object for the title and link then add it to the patterns array.
+        patterns.push({
+            "name": title,
+            "link": link
+        });
+
+    });
+
+    // Sort the patterns alphabetically by the pattern name, using the compare function below.
+    patterns = patterns.sort(compare);
+
+    function compare(a, b) {
+        if ( a.name > b.name ) {
+            return -1;
+        }
+        return 1;
+    }
+
+    // Clear the search form(s) when the page is loaded.
+    $("#form-banner-search-blue, #form-banner-search-grey, #form-banner-search-names, #form-banner-pattern-search").val('');
+
+    // Search the data using the user text input.
+    $("#form-banner-search-blue, #form-banner-search-grey, #form-banner-search-names, #form-banner-pattern-search").keyup(function() {
+
+        // Set the form id and search term (user input).
+        var form_id = this.id;
+        var search_term = $(this).val().toLowerCase();
+
+        // Set the search data (either patterns or courses) depending on the form id.
+        if ( form_id === 'form-banner-pattern-search' ) {
+            var search_list = patterns;
         } else {
-            $(".results").slideUp('slow');
-            $(".results .col-md-6.left-column",".results .col-md-6.right-column").text("");
+            var search_list = courses;
+        }
+
+        // Wait until the search term length is greater than two characters before starting the search.
+        if ( search_term.length > 2 ) {
+
+            search_data( form_id, search_term, search_list );
+            $(this).parent('.form-group').next('.results').slideDown('slow');
+        } else {
+
+            $(this).parent('.form-group').next('.results').slideUp('slow');
+            $(this).parent('.form-group').next('.results').children('.row').children('.col-md-6.left-column, .col-md-6.right-column').html('');
+
         }
 
     });
 
-    function search_cards( inputVal ) {
+    function search_data( form_id, search_term, search_list ) {
 
-        var testVal = inputVal.toLowerCase();
-        var leftResults = [];
-        var rightResults = [];
+        // Set empty arrays for the left and right results columns.
+        var left_results = [];
+        var right_results = [];
 
         // Search for stuff
-        for ( var i = 0; i < names.length; i++ ) {
-            var link;
+        for ( var i = 0; i < search_list.length; i++ ) {
 
-            if ( names[i].name.toLowerCase().indexOf(testVal) >= 0 ) {
-                var url = names[i].link;
-                link = "<a href='" + url + "'>" + names[i].name + "</a>";
+            var link, link_url, link_text;
 
-                if ( names[i].type == 'ug' ) {
-                    leftResults.unshift(link);
+            if ( search_list[i].name.toLowerCase().indexOf(search_term) >= 0 ) {
+
+                // Build the link
+                link_url = search_list[i].link;
+                link_text = search_list[i].name;
+
+                link = "<a href='" + link_url + "'>" + link_text + "</a>";
+
+                // Sort the results in to columns based on course type (UG or PG). If searching on the patterns page then always place the results into the left column.
+                if ( search_list[i].type === 'ug' || form_id === 'form-banner-pattern-search' ) {
+                    left_results.unshift(link);
                 } else {
-                    rightResults.unshift(link);
+                    right_results.unshift(link);
                 }
             }
 
         }
 
-        leftResults = leftResults.join("");
-        rightResults = rightResults.join("");
+        left_results = left_results.join("");
+        right_results = right_results.join("");
 
-        $(".results .col-md-6.left-column").html("");
-        $(".results .col-md-6.right-column").html("");
+        // Make sure the results div is empty before adding new results.
+        $('#' + form_id).parent('.form-group').next('.results').children('.row').children('.col-md-6.left-column, .col-md-6.right-column').html('');
 
-        if ( leftResults.length === 0 && rightResults.length === 0 ) {
-            $(".results .col-md-6.left-column").html("No results found, please try again.");
+        // Show error message if no results have been found.
+        if ( left_results.length === 0 && right_results.length === 0 ) {
+            $('#' + form_id).parent('.form-group').next('.results').children('.row').children('.col-md-6.left-column').html('No results found, please try again.');
         } else {
-            if ( leftResults.length > 0 ) {
-                add_leftResults_list( leftResults );
+            // Add the results to the left column of the results div.
+            if ( left_results.length > 0 ) {
+                add_left_results_list( form_id, left_results );
             }
-            if ( rightResults.length > 0 ) {
-                add_rightResults_list( rightResults );
+            // Add results to the right column of the results div.
+            if ( right_results.length > 0 ) {
+                add_right_results_list( form_id, right_results );
             }
         }
 
     }
 
-    function add_leftResults_list( list ) {
-        list = "<h2>Undergraduate courses</h2>" + list;
-        $(".results .col-md-6.left-column").html(list);
+    function add_left_results_list( form_id, list ) {
+
+        // Set the column heading based on the form id.
+        if ( form_id === 'form-banner-pattern-search' ) {
+            list = "<h2>Patterns</h2>" + list;
+        } else {
+            list = "<h2>Undergraduate courses</h2>" + list;
+        }
+
+        $('#' + form_id).parent('.form-group').next('.results').children('.row').children('.col-md-6.left-column').html(list);
     }
 
-    function add_rightResults_list( list ) {
+    function add_right_results_list( form_id, list ) {
+
         list = "<h2>Postgraduate courses</h2>" + list;
-        $(".results .col-md-6.right-column").html(list);
-    }
-
-/*********************************/
-/* END Pattern: form-banner      */
-/*********************************/
-
-
-
-
-    /***********************************************/
-    /* BEGIN Pattern: patterns-page-form-banner    */
-    /***********************************************/
-
-    var names = [
-        {
-            "name": "Header",
-            "type": "ug",
-            "link": "patterns/header/index.html"
-        }
-    ];
-
-    $("#form-banner-pattern-search, #form-banner-pattern-search-names").keyup(function() {
-
-        if ( $(this).val().length > 2 ) {
-            search_cards( $(this).val() );
-            $(".results").slideDown('slow');
-        } else {
-            $(".results").slideUp('slow');
-            $(".results .col-md-6.left-column",".results .col-md-6.right-column").text("");
-        }
-
-    });
-
-    function search_cards( inputVal ) {
-
-        var testVal = inputVal.toLowerCase();
-        var leftResults = [];
-        var rightResults = [];
-
-        // Search for stuff
-        for ( var i = 0; i < names.length; i++ ) {
-            var link;
-
-            if ( names[i].name.toLowerCase().indexOf(testVal) >= 0 ) {
-                var url = names[i].link;
-                link = "<a href='" + url + "'>" + names[i].name + "</a>";
-
-                if ( names[i].type == 'ug' ) {
-                    leftResults.unshift(link);
-                } else {
-                    rightResults.unshift(link);
-                }
-            }
-
-        }
-
-        leftResults = leftResults.join("");
-        rightResults = rightResults.join("");
-
-        $(".results .col-md-6.left-column").html("");
-        $(".results .col-md-6.right-column").html("");
-
-        if ( leftResults.length === 0 && rightResults.length === 0 ) {
-            $(".results .col-md-6.left-column").html("No results found, please try again.");
-        } else {
-            if ( leftResults.length > 0 ) {
-                add_leftResults_list( leftResults );
-            }
-            if ( rightResults.length > 0 ) {
-                add_rightResults_list( rightResults );
-            }
-        }
+        $('#' + form_id).parent('.form-group').next('.results').children('.row').children('.col-md-6.right-column').html(list);
 
     }
 
-    function add_leftResults_list( list ) {
-        list = "<h2>Undergraduate courses</h2>" + list;
-        $(".results .col-md-6.left-column").html(list);
+    /*********************************/
+    /* END Pattern: form-banner      */
+    /*********************************/
+
+
+
+
+    /*********************************/
+    /* BEGIN Pattern: Photospheres   */
+    /*********************************/
+
+    window.addEventListener('load', onVrViewLoad)
+    function onVrViewLoad() {
+      var vrView = new VRView.Player('#photosphere', {
+      image: 'https://www.st-andrews.ac.uk/assets/university/study-at-st-andrews/images/accommodation/accommodation-photospheres/DRAFP-Pond.jpg'
+      });
     }
 
-    function add_rightResults_list( list ) {
-        list = "<h2>Postgraduate courses</h2>" + list;
-        $(".results .col-md-6.right-column").html(list);
-    }
 
-/***********************************************/
-/* END Pattern: patterns-page-form-banner      */
-/***********************************************/
-
-
-
-/*********************************/
-/* BEGIN Pattern: Photospheres   */
-/*********************************/
-
-window.addEventListener('load', onVrViewLoad)
-function onVrViewLoad() {
-  var vrView = new VRView.Player('#photosphere', {
-  image: 'https://www.st-andrews.ac.uk/assets/university/study-at-st-andrews/images/accommodation/accommodation-photospheres/DRAFP-Pond.jpg'
-  });
-}
-
-
-/*********************************/
-/* END Pattern: Photospheres     */
-/*********************************/
+    /*********************************/
+    /* END Pattern: Photospheres     */
+    /*********************************/
 
 
 })(jQuery);
