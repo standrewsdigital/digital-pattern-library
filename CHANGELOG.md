@@ -6,6 +6,19 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+## v1.8.1
+
+Release date: Monday 22 January 2018
+
+### Fixed
+
+* Form banner added to patterns page to allow filtering of available patterns.
+
+
+
+
+---
+
 ## v1.8.0
 
 Release date: Monday 08 January 2018

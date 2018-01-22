@@ -284,5 +284,22 @@
                 }
             ]
         }
-    ]
+    ],
+    "options": {
+        "column-whole": true,
+        "background": "sta-blue-light",
+        "heading": "Patterns filter",
+        "top-text": "Search for all the patterns we provide",
+        "column": [
+            {
+                "column-size": "col-md-12",
+                "input-box": true,
+                "input-id": "form-banner-pattern-search",
+                "input-type": "text",
+                "input-title": "Search for all the patterns we provide",
+                "input-placeholder": "Start typing to see patterns...",
+                "results": true
+            }
+        ]
+    }
 }
