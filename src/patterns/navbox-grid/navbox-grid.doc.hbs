@@ -15,12 +15,24 @@ title: Navbox grid
     <li>If a grid without images is used, all of the navboxes in the grid must not include images.</li>
     <li>When using an image you must have between two and six navboxes in a grid.</li>
     <li>Navbox grids that exceed six navboxes must not have images.</li>
+    <li>Navboxes with accompanying paragraph text must provide further context of the page the navigational item links to.</li>
+    <li>Navboxes with accompanying paragraph text must be direct and thorough so as not to be of unnecessary length.</li>
+    <li>Navboxes with accompanying paragraphs must not have more than 300 characters.</li>
+    <li>If a grid with paragraphs is used, all of the navboxes in the grid must include paragraphs.</li>
+    <li>If a grid without paragraphs is used, all of the navboxes in the grid must not include paragraphs.</li>
 </ul>
 
-<p>If there is ever an error with having taller content in the navbox grids, where the layout breaks, you can use <code>&lt;div class="clearfix"&gt;&lt;/div&gt;</code> after the third navbox to correct it.</p>
+<p>If there is ever an error with the navbox grid where the layout breaks you can use <code>&lt;div class="clearfix"&gt;&lt;/div&gt;</code> after the final navbox in a row to correct it.</p>
 
 <h3>Options available</h3>
 <p>Choose the grid option below that matches the number of navigation links required. For information on image sizes, see the <a href="../navbox/index.html">navbox</a> pattern.</p>
+
+<!-- Begin pattern: alerts //-->
+<div class="alert alert-info" role="alert">
+    <p>If there is not an option that caters a requirement, please contact <a href="mailto:digitalcommunications@st-andrews.ac.uk">digitalcommunications@st-andrews.ac.uk</a> for consultation.</p>
+</div>
+<!-- End pattern: alerts //-->
+
 <ul>
 {{#navbox-grid-options.options}}
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
