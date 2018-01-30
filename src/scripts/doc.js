@@ -110,6 +110,8 @@ function htmlDecode(value) {
     /* This code is also used for the form-banner on the patterns page. */
     /********************************************************************/
 
+    $('#form-banner-pattern-search').focus();
+
     // Dummy course data used for the form-banner pattern page.
     var courses = [
         {
