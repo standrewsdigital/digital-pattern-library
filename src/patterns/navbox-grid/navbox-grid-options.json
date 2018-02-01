@@ -117,7 +117,7 @@
                     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                 }
             ],
-            "sidebar": " <!-- Begin pattern: navbox //--> <div class='navbox big-target-click-zone'> <div class='navbox-image'> <img src='../../assets/docs/images/placeholders/360x240.jpg' alt='Description'> </div> <div class='navbox-title'> <p><a class='big-target-anchor' href='#'>Study</a></p> </div> </div> <!-- End pattern: navbox //--><h3>Related content</h3><ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>",
+            "sidebar": "<!-- Begin pattern: navbox //--> <div class='navbox big-target-click-zone'> <div class='navbox-image'> <img src='../../assets/docs/images/placeholders/360x240.jpg' alt='Description'> </div> <div class='navbox-title'> <p><a class='big-target-anchor' href='#'>Study</a></p> </div> </div> <!-- End pattern: navbox //--><h3>Related content</h3><ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>",
             "role": "complementary"
         },
 
@@ -139,7 +139,7 @@
                     "column": "col-sm-4"
                 }
             ],
-            "sidebar": " <!-- Begin pattern: navbox //--> <div class='navbox big-target-click-zone'> <div class='navbox-image'> <img src='../../assets/docs/images/placeholders/360x240.jpg' alt='Description'> </div> <div class='navbox-title'> <p><a class='big-target-anchor' href='#'>Study</a></p> </div> </div> <!-- End pattern: navbox //--><h3>Related content</h3><ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>",
+            "sidebar": "<!-- Begin pattern: navbox //--> <div class='navbox big-target-click-zone'> <div class='navbox-image'> <img src='../../assets/docs/images/placeholders/360x240.jpg' alt='Description'> </div> <div class='navbox-title'> <p><a class='big-target-anchor' href='#'>Study</a></p> </div> </div> <!-- End pattern: navbox //--><h3>Related content</h3><ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>",
             "role": "complementary"
         },
 
