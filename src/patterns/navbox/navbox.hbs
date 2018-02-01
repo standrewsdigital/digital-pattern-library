@@ -1,4 +1,5 @@
 <!-- Begin pattern: navbox //-->
+{{#if sidebar}}<div class="col-md-8">{{/if}}
 {{#if grid-row}}<div class="row">{{/if}}
 {{#each box-size}}
 {{#if row}}<div class="row">{{/if}}
@@ -20,4 +21,10 @@
 {{#if row}}</div>{{/if}}
 {{/each}}
 {{#if grid-row}}</div>{{/if}}
+{{#if sidebar}}
+        </div>
+        <div class="col-sm-4" {{#if role}}role="{{role}}"{{/if}}>
+            {{{sidebar}}}
+        </div>
+    {{/if}}
 <!-- End pattern: navbox //-->
