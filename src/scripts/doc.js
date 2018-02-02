@@ -182,6 +182,7 @@ function htmlDecode(value) {
         // Get the navbox title and link.
         var title = navbox.text();
         var link = navbox.attr('href');
+        title = title.replace(/-/g, ' ');
 
         // Create an object for the title and link then add it to the patterns array.
         patterns.push({
