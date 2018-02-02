@@ -52,7 +52,7 @@ Release date: Monday 04 December 2017
 
 ### Fixed
 
-* Text colour for <h3> and <ul> for the content thirds pattern.
+* Text colour for h3 and ul for the content thirds pattern.
 
 
 
