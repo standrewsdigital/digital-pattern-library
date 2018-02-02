@@ -110,6 +110,7 @@ function htmlDecode(value) {
     /* This code is also used for the form-banner on the patterns page. */
     /********************************************************************/
 
+    // Line below adds auto-focus cursor to the form banner on the main patterns page.
     $('#form-banner-pattern-search').focus();
 
     // Dummy course data used for the form-banner pattern page.

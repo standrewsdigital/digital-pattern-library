@@ -102,7 +102,7 @@
 
         {
             "option-heading": "Two links with paragraphs and sidebar",
-            "option-description": "<p>This option must only be used on <a href='../content-thirds/index.html'>content thirds</a> page layouts.</p>",
+            "option-description": "<p>This option must only be used on <a href='../content-thirds/index.html'>content thirds</a> page layouts. For an example of this option in use, please see the <a href='../../examples/content.html'>content example page</a>.</p>",
             "option-anchor": "2-grid-paragraphs-sidebar",
             "grid-row": true,
             "box-size": [
@@ -126,7 +126,7 @@
 
         {
             "option-heading": "Two links without images or paragraphs and sidebar",
-            "option-description": "<p>This option must only be used on <a href='../content-thirds/index.html'>content thirds</a> page layouts.</p>",
+            "option-description": "<p>This option must only be used on <a href='../content-thirds/index.html'>content thirds</a> page layouts. For an example of this option in use, please see the <a href='../../examples/content.html'>content example page</a>.</p>",
             "option-anchor": "2-grid-blank-sidebar",
             "grid-row": true,
             "box-size": [
