@@ -6,6 +6,29 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+## v1.8.2
+
+Release date: Wednesday 7 February 2018
+
+### Changed
+
+* Rules on usage of staff profile pattern.
+* Rules on usage of hero banner pattern.
+* Rules on usage of content halves pattern.
+* Rules on usage of navbox grid pattern.
+* Rules on usage of navbox pattern.
+* Font awesome share icon replaced with alternative.
+* Content example page now includes two navboxes.
+
+### Fixed
+
+* Auto focus of text cursor added to form banner on patterns page.
+
+
+
+
+---
+
 ## v1.8.1
 
 Release date: Monday 22 January 2018
@@ -52,7 +75,7 @@ Release date: Monday 04 December 2017
 
 ### Fixed
 
-* Text colour for <h3> and <ul> for the content thirds pattern.
+* Text colour for h3 and ul for the content thirds pattern.
 
 
 

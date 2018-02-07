@@ -1,14 +1,44 @@
 {
     "options": [
         {
-            "option-heading": "Two links with images",
+            "option-heading": "Two links with images and paragraphs",
             "option-description": "",
-            "option-anchor": "2-grid",
+            "option-anchor": "2-grid-images-paragraphs",
             "grid-row": true,
             "box-size": [
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/555x240-002.jpg",
+                        "url": "../../assets/docs/images/placeholders/1110x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-6",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/1110x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Research",
+                    "column": "col-sm-6",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Two links with images",
+            "option-description": "",
+            "option-anchor": "2-grid-images",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/1110x480.png",
                         "alt": "Description"
                     },
                     "title": "Study at St Andrews",
@@ -16,11 +46,139 @@
                 },
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/555x240-001.jpg",
+                        "url": "../../assets/docs/images/placeholders/1110x480.png",
                         "alt": "Description"
                     },
                     "title": "Research",
                     "column": "col-sm-6"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Two links with paragraphs",
+            "option-description": "",
+            "option-anchor": "2-grid-paragraphs",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-6",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Research",
+                    "column": "col-sm-6",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Two links without images or paragraphs",
+            "option-description": "",
+            "option-anchor": "2-grid-blank",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-6"
+                },
+                {
+                    "title": "Research",
+                    "column": "col-sm-6"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Two links with paragraphs and sidebar",
+            "option-description": "<p>This option must only be used on the <a href='../content-thirds/index.html'>content thirds</a> page layout. For an example of this option in use, please see the <a href='../../examples/content.html'>content example page</a>.</p>",
+            "option-anchor": "2-grid-paragraphs-sidebar",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-6",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Research",
+                    "column": "col-sm-6",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                }
+            ],
+            "sidebar": "<!-- Begin pattern: navbox //--> <div class='navbox big-target-click-zone'> <div class='navbox-image'> <img src='../../assets/docs/images/placeholders/360x240.jpg' alt='Description'> </div> <div class='navbox-title'> <p><a class='big-target-anchor' href='#'>Study</a></p> </div> </div> <!-- End pattern: navbox //--><h3>Related content</h3><ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>",
+            "role": "complementary"
+        },
+
+
+
+
+        {
+            "option-heading": "Two links without images or paragraphs and sidebar",
+            "option-description": "<p>This option must only be used on the <a href='../content-thirds/index.html'>content thirds</a> page layout. For an example of this option in use, please see the <a href='../../examples/content.html'>content example page</a>.</p>",
+            "option-anchor": "2-grid-blank-sidebar",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-6"
+                },
+                {
+                    "title": "Research",
+                    "column": "col-sm-6"
+                }
+            ],
+            "sidebar": "<!-- Begin pattern: navbox //--> <div class='navbox big-target-click-zone'> <div class='navbox-image'> <img src='../../assets/docs/images/placeholders/360x240.jpg' alt='Description'> </div> <div class='navbox-title'> <p><a class='big-target-anchor' href='#'>Study</a></p> </div> </div> <!-- End pattern: navbox //--><h3>Related content</h3><ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>",
+            "role": "complementary"
+        },
+
+
+
+
+
+        {
+            "option-heading": "Three links with images and paragraphs",
+            "option-description": "",
+            "option-anchor": "3-grid-images-paragraphs",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Research",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Alumni and donors",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                 }
             ]
         },
@@ -31,12 +189,12 @@
         {
             "option-heading": "Three links with images",
             "option-description": "",
-            "option-anchor": "3-grid",
+            "option-anchor": "3-grid-images",
             "grid-row": true,
             "box-size": [
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-study.jpg",
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
                         "alt": "Description"
                     },
                     "title": "Study at St Andrews",
@@ -44,7 +202,7 @@
                 },
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-research.jpg",
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
                         "alt": "Description"
                     },
                     "title": "Research",
@@ -52,7 +210,7 @@
                 },
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-alumni.jpg",
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
                         "alt": "Description"
                     },
                     "title": "Alumni and donors",
@@ -65,48 +223,36 @@
 
 
         {
-            "option-heading": "Three links with images and paragraphs",
-            "option-description": "<p>Use this option when you want to give a brief summary of the destination page.</p>",
-            "option-anchor": "3-grid-paragraph",
-            "grid-row": true,
-            "box-size": [
-                {
-                    "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-study.jpg",
-                        "alt": "Description"
-                    },
-                    "title": "Study at St Andrews",
-                    "column": "col-sm-4",
-                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                },
-                {
-                    "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-research.jpg",
-                        "alt": "Description"
-                    },
-                    "title": "Research",
-                    "column": "col-sm-4",
-                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                },
-                {
-                    "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-alumni.jpg",
-                        "alt": "Description"
-                    },
-                    "title": "Alumni and donors",
-                    "column": "col-sm-4",
-                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                }
-            ]
-        },
-
-
-
-
-        {
-            "option-heading": "Three links without images and paragraphs",
+            "option-heading": "Three links with paragraphs",
             "option-description": "",
-            "option-anchor": "3-grid-no-image",
+            "option-anchor": "3-grid-paragraphs",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Research",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Alumni and donors",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Three links without images or paragraphs",
+            "option-description": "",
+            "option-anchor": "2-grid-blank",
             "grid-row": true,
             "box-size": [
                 {
@@ -128,24 +274,45 @@
 
 
         {
-            "option-heading": "Three links with paragraphs but without images",
-            "option-description": "<p>Use this option when you want to give a brief summary of the destination page.</p>",
-            "option-anchor": "3-grid-no-image-paragraph",
+            "option-heading": "Four links with images and paragraphs",
+            "option-description": "",
+            "option-anchor": "4-grid-images-paragraphs",
             "grid-row": true,
             "box-size": [
                 {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/1110x480.png",
+                        "alt": "Description"
+                    },
                     "title": "Study at St Andrews",
-                    "column": "col-sm-4",
+                    "column": "col-sm-6",
                     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                 },
                 {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/1110x480.png",
+                        "alt": "Description"
+                    },
                     "title": "Research",
-                    "column": "col-sm-4",
+                    "column": "col-sm-6",
                     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                 },
                 {
-                    "title": "Alumni and donors",
-                    "column": "col-sm-4",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/1110x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-6",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/1110x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Why St Andrews",
+                    "column": "col-sm-6",
                     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                 }
             ]
@@ -156,41 +323,158 @@
 
         {
             "option-heading": "Four links with images",
-            "option-description": "<p></p>",
-            "option-anchor": "4-grid",
+            "option-description": "",
+            "option-anchor": "4-grid-images",
             "grid-row": true,
             "box-size": [
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/750x240-001.jpg",
+                        "url": "../../assets/docs/images/placeholders/1110x480.png",
                         "alt": "Description"
                     },
-                    "title": "Why St Andrews",
-                    "column": "col-sm-8"
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-6"
                 },
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-research.jpg",
+                        "url": "../../assets/docs/images/placeholders/1110x480.png",
                         "alt": "Description"
                     },
                     "title": "Research",
-                    "column": "col-sm-4"
+                    "column": "col-sm-6"
                 },
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-alumni.jpg",
+                        "url": "../../assets/docs/images/placeholders/1110x480.png",
                         "alt": "Description"
                     },
-                    "title": "Alumni and donors",
-                    "column": "col-sm-4"
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-6"
                 },
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/750x240-002.jpg",
+                        "url": "../../assets/docs/images/placeholders/1110x480.png",
                         "alt": "Description"
                     },
-                    "title": "The town",
-                    "column": "col-sm-8"
+                    "title": "Why St Andrews",
+                    "column": "col-sm-6"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Four links with paragraphs",
+            "option-description": "",
+            "option-anchor": "4-grid-paragraphs",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-6",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Research",
+                    "column": "col-sm-6",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-6",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Why St Andrews",
+                    "column": "col-sm-6",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Four links without images or paragraphs",
+            "option-description": "",
+            "option-anchor": "4-grid-blank",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-6"
+                },
+                {
+                    "title": "Research",
+                    "column": "col-sm-6"
+                },
+                {
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-6"
+                },
+                {
+                    "title": "Why St Andrews",
+                    "column": "col-sm-6"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Five links with images and paragraphs",
+            "option-description": "",
+            "option-anchor": "5-grid-images-paragraphs",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/1110x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-6",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/1110x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Research",
+                    "column": "col-sm-6",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Why St Andrews",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Subjects",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                 }
             ]
         },
@@ -200,49 +484,184 @@
 
         {
             "option-heading": "Five links with images",
-            "option-description": "<p></p>",
-            "option-anchor": "5-grid",
+            "option-description": "",
+            "option-anchor": "5-grid-images",
             "grid-row": true,
             "box-size": [
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/555x240-001.jpg",
+                        "url": "../../assets/docs/images/placeholders/1110x480.png",
                         "alt": "Description"
                     },
-                    "title": "Undergraduate",
+                    "title": "Study at St Andrews",
                     "column": "col-sm-6"
                 },
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/555x240-002.jpg",
+                        "url": "../../assets/docs/images/placeholders/1110x480.png",
                         "alt": "Description"
                     },
-                    "title": "Postgraduate",
+                    "title": "Research",
                     "column": "col-sm-6"
                 },
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-8.jpg",
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
                         "alt": "Description"
                     },
-                    "title": "Schools",
+                    "title": "Study at St Andrews",
                     "column": "col-sm-4"
                 },
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-1.jpg",
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Why St Andrews",
+                    "column": "col-sm-4"
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Subjects",
+                    "column": "col-sm-4"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Five links with paragraphs",
+            "option-description": "",
+            "option-anchor": "5-grid-paragraphs",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-6",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Research",
+                    "column": "col-sm-6",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Why St Andrews",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Subjects",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Five links without images or paragraphs",
+            "option-description": "",
+            "option-anchor": "5-grid-blank",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-6"
+                },
+                {
+                    "title": "Research",
+                    "column": "col-sm-6"
+                },
+                {
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "Why St Andrews",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "Subjects",
+                    "column": "col-sm-4"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Six links with images and paragraphs",
+            "option-description": "",
+            "option-anchor": "6-grid-images-paragraphs",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Research",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Alumni and donors",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Why St Andrews",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Subjects",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
                         "alt": "Description"
                     },
                     "title": "About",
-                    "column": "col-sm-4"
-                },
-                {
-                    "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-7.jpg",
-                        "alt": "Description"
-                    },
-                    "title": "Contact",
-                    "column": "col-sm-4"
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                 }
             ]
         },
@@ -252,13 +671,13 @@
 
         {
             "option-heading": "Six links with images",
-            "option-description": "<p></p>",
-            "option-anchor": "6-grid",
+            "option-description": "",
+            "option-anchor": "6-grid-images",
             "grid-row": true,
             "box-size": [
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-study.jpg",
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
                         "alt": "Description"
                     },
                     "title": "Study at St Andrews",
@@ -266,7 +685,7 @@
                 },
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-research.jpg",
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
                         "alt": "Description"
                     },
                     "title": "Research",
@@ -274,7 +693,7 @@
                 },
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-alumni.jpg",
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
                         "alt": "Description"
                     },
                     "title": "Alumni and donors",
@@ -282,26 +701,26 @@
                 },
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-1.jpg",
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Why St Andrews",
+                    "column": "col-sm-4"
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Subjects",
+                    "column": "col-sm-4"
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
                         "alt": "Description"
                     },
                     "title": "About",
-                    "column": "col-sm-4"
-                },
-                {
-                    "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-5.jpg",
-                        "alt": "Description"
-                    },
-                    "title": "People",
-                    "column": "col-sm-4"
-                },
-                {
-                    "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-7.jpg",
-                        "alt": "Description"
-                    },
-                    "title": "Contact",
                     "column": "col-sm-4"
                 }
             ]
@@ -311,9 +730,51 @@
 
 
         {
-            "option-heading": "More than six links without images",
-            "option-description": "<p>Must be used when you have more than six links without a paragraph.</p>",
-            "option-anchor": "more-no-image",
+            "option-heading": "Six links with paragraphs",
+            "option-description": "",
+            "option-anchor": "6-grid-paragraphs",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Research",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Alumni and donors",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Why St Andrews",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Subjects",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "About",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Six links without images or paragraphs",
+            "option-description": "",
+            "option-anchor": "6-grid-blank",
             "grid-row": true,
             "box-size": [
                 {
@@ -325,31 +786,19 @@
                     "column": "col-sm-4"
                 },
                 {
-                    "title": "About",
-                    "column": "col-sm-4"
-                },
-                {
-                    "title": "Governance",
-                    "column": "col-sm-4"
-                },
-                {
-                    "title": "History",
-                    "column": "col-sm-4"
-                },
-                {
-                    "title": "Sustainability",
-                    "column": "col-sm-4"
-                },
-                {
-                    "title": "News",
-                    "column": "col-sm-4"
-                },
-                {
-                    "title": "Visiting",
-                    "column": "col-sm-4"
-                },
-                {
                     "title": "Alumni and donors",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "Why St Andrews",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "Subjects",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "About",
                     "column": "col-sm-4"
                 }
             ]
@@ -359,9 +808,9 @@
 
 
         {
-            "option-heading": "More than six links with paragraphs but without images",
-            "option-description": "<p>Must be used when you have more than six links with a paragraph.</p>",
-            "option-anchor": "more-no-image-paragraph",
+            "option-heading": "More than six links with paragraphs",
+            "option-description": "",
+            "option-anchor": "more-grid-paragraphs",
             "grid-row": true,
             "box-size": [
                 {
@@ -380,34 +829,82 @@
                     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                 },
                 {
-                    "title": "About",
+                    "title": "Why St Andrews",
                     "column": "col-sm-4",
                     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                 },
                 {
-                    "title": "Governance",
+                    "title": "Subjects",
                     "column": "col-sm-4",
                     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
                 },
                 {
-                    "title": "History",
-                    "column": "col-sm-4",
-                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                },
-                {
-                    "title": "Sustainability",
+                    "title": "About",
                     "column": "col-sm-4",
                     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                 },
                 {
                     "title": "News",
                     "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    "title": "Events",
+                    "column": "col-sm-4",
                     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
                 },
                 {
-                    "title": "Visiting",
+                    "title": "Contact us",
                     "column": "col-sm-4",
                     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "More than six links without images or paragraphs",
+            "option-description": "",
+            "option-anchor": "more-grid-blank",
+            "grid-row": true,
+            "box-size": [
+                {
+                    "title": "Study at St Andrews",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "Research",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "Alumni and donors",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "Why St Andrews",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "Subjects",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "About",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "News",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "Events",
+                    "column": "col-sm-4"
+                },
+                {
+                    "title": "Contact us",
+                    "column": "col-sm-4"
                 }
             ]
         }

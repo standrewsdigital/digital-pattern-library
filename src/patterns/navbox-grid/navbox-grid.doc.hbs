@@ -7,20 +7,33 @@ title: Navbox grid
 <h3>Rules for the navbox grid</h3>
 <ul>
     <li>Must only be used within the main body of the page.</li>
-    <li>Must only be used on <a href="../content-whole/index.html">whole content</a> columns.</li>
+    <li>The options <a href="#2-grid-paragraphs-sidebar">Two links with paragraphs and sidebar</a> and <a href="#2-grid-blank-sidebar">Two links without images or paragraphs and sidebar</a> must only be used on the <a href="../content-thirds/index.html">content thirds</a> page layout.</li>
+    <li>All other options must only be used on the <a href="../content-whole/index.html">content whole</a> page layout.</li>
     <li>Must only link to an internal webpage or web application.</li>
-    <li>Must not have a title that is longer than two lines of text.</li>
+    <li>Medium navboxes must not have a title that exceeds 88 characters.</li>
+    <li>Small navboxes must not have a title that exceeds 57 characters.</li>
     <li>When using an image, the image must relate to the link destination.</li>
-    <li>If a grid with images is used, all of the navboxes in the grid must include images.</li>
-    <li>If a grid without images is used, all of the navboxes in the grid must not include images.</li>
-    <li>When using an image you must have between two and six navboxes in a grid.</li>
+    <li>If a navbox with an image is used, all of the navboxes in the grid must include images.</li>
+    <li>If a navbox without an image is used, all of the navboxes in the grid must not include images.</li>
+    <li>When using navboxes with images you must have between two and six navboxes in a grid.</li>
     <li>Navbox grids that exceed six navboxes must not have images.</li>
+    <li>Navboxes with accompanying paragraph text must provide further context of the page where the navbox links to.</li>
+    <li>Navboxes with accompanying paragraphs must be concise and must not have more than 300 characters.</li>
+    <li>If a navbox with a paragraph is used, all of the navboxes in the grid must include paragraphs.</li>
+    <li>If a navbox without a paragraph is used, all of the navboxes in the grid must not include paragraphs.</li>
 </ul>
 
-<p>If there is ever an error with having taller content in the navbox grids, where the layout breaks, you can use <code>&lt;div class="clearfix"&gt;&lt;/div&gt;</code> after the third navbox to correct it.</p>
+<p>If there is ever an error with the navbox grid where the rows overlap you can use <code>&lt;div class="clearfix"&gt;&lt;/div&gt;</code> after the final navbox in a row to correct it.</p>
 
 <h3>Options available</h3>
 <p>Choose the grid option below that matches the number of navigation links required. For information on image sizes, see the <a href="../navbox/index.html">navbox</a> pattern.</p>
+
+<!-- Begin pattern: alerts //-->
+<div class="alert alert-info" role="alert">
+    <p>If there is not an option that caters a requirement, please contact <a href="mailto:digitalcommunications@st-andrews.ac.uk">digitalcommunications@st-andrews.ac.uk</a> for consultation.</p>
+</div>
+<!-- End pattern: alerts //-->
+
 <ul>
 {{#navbox-grid-options.options}}
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>

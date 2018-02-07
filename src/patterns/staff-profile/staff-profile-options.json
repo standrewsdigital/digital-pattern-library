@@ -4,8 +4,8 @@
             "option-heading": "Staff profile - default",
             "option-description": "<p>The call-to-action link is also included in the profile heading.</p>",
             "option-anchor": "profile-default",
-            "person-title": "Vice-Principal (Digital)",
-            "person-name": "Dr Bob McBoberson",
+            "person-title": "Team leader",
+            "person-name": "Finn Camacho",
             "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius lacus et ligula fringilla, at malesuada massa blandit. Etiam nec amet.‌",
             "contact-info": true,
             "call-to-action": {
@@ -25,9 +25,9 @@
             "option-heading": "Staff profile - without link to biography",
             "option-description": "<p>Without a link to a biography, there is also no link on the heading.</p>",
             "option-anchor": "without-call",
-            "person-title": "Vice-Principal (Digital)",
-            "person-name": "Dr Bob McBoberson",
-            "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius lacus et ligula fringilla, at malesuada massa blandit. Etiam nec amet.‌",
+            "person-title": "Accountant",
+            "person-name": "Airi Satou",
+            "bio": "Lorem ipsum dolor sit amet, ex wisi detraxit vel, tamquam referrentur at nam, ei wisi omittam dignissim est. Dolore sanctus quo te, ad mea accumsan complectitur, ea his essent dolorem consequuntur. Has choro tincidunt assueverit cu, at delenit vocibus fastidii vix, diam munere abhorreant ut vel. Utinam eripuit corrumpit eu vix. Ea invidunt perpetua eum. Cum quodsi euismod scripserit an, ei vim nisl assentior constituto. Ne mea enim soleat, scripta integre disputationi nec te.",
             "contact-info": true,
             "image": {
                 "url": "docs/images/placeholders/200x200.jpg",
@@ -42,8 +42,8 @@
             "option-heading": "Staff profile - minimum",
             "option-description": "<p>This is the minimum required content for a staff profile.</p>",
             "option-anchor": "profile-minimum",
-            "person-title": "Vice-Principal (Digital)",
-            "person-name": "Dr Bob McBoberson",
+            "person-title": "JavaScript developer",
+            "person-name": "Colleen Hurst",
             "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius lacus et ligula fringilla, at malesuada massa blandit. Etiam nec amet.‌"
         }
     ]

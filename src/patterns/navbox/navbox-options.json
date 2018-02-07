@@ -7,7 +7,7 @@
             "box-size": [
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-study.jpg",
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
                         "alt": "Description"
                     },
                     "title": "Small (&frac13;)",
@@ -16,7 +16,7 @@
                 },
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/555x240-001.jpg",
+                        "url": "../../assets/docs/images/placeholders/1110x480.png",
                         "alt": "Description"
                     },
                     "title": "Medium (&frac12;)",
@@ -25,7 +25,7 @@
                 },
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/750x240-001.jpg",
+                        "url": "../../assets/docs/images/placeholders/1500x480.png",
                         "alt": "Description"
                     },
                     "title": "Large (&frac23;)",
@@ -40,13 +40,34 @@
 
 
         {
+            "option-heading": "Navbox with image and paragraph",
+            "option-description": "",
+            "option-anchor": "image-paragraph",
+            "box-size": [
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Study",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    "row": true
+                }
+            ]
+        },
+
+
+
+
+        {
             "option-heading": "Navbox with image",
             "option-description": "",
             "option-anchor": "image",
             "box-size": [
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-study.jpg",
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
                         "alt": "Description"
                     },
                     "title": "Study",
@@ -60,31 +81,11 @@
 
 
         {
-            "option-heading": "Navbox without image",
+            "option-heading": "Navbox with paragraph",
             "option-description": "",
-            "option-anchor": "no-image",
+            "option-anchor": "paragraph",
             "box-size": [
                 {
-                    "title": "Study",
-                    "column": "col-sm-4",
-                    "row": true
-                }
-            ]
-        },
-
-
-
-
-        {
-            "option-heading": "Navbox with image and paragraph",
-            "option-description": "<p>The paragraph must not have more than 300 characters.</p>",
-            "option-anchor": "image-text",
-            "box-size": [
-                {
-                    "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-research.jpg",
-                        "alt": "Description"
-                    },
                     "title": "Study",
                     "column": "col-sm-4",
                     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -98,13 +99,12 @@
 
         {
             "option-heading": "Navbox without image and paragraph",
-            "option-description": "<p>The paragraph must not have more than 300 characters.</p>",
-            "option-anchor": "no-image-text",
+            "option-description": "",
+            "option-anchor": "blank",
             "box-size": [
                 {
                     "title": "Study",
                     "column": "col-sm-4",
-                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     "row": true
                 }
             ]
