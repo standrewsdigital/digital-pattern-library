@@ -68,6 +68,10 @@
                   "img": "assets/docs/images/patterns/secondary-call.jpg",
                   "url": "patterns/secondary-call/index.html"
                 },
+                { "name": "Share options",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/share-options/index.html"
+                },
                 { "name": "Subject combo",
                   "img": "assets/docs/images/patterns/subject-combo.jpg",
                   "url": "patterns/subject-combo/index.html"
