@@ -2,10 +2,12 @@
 /* BEGIN Pattern: share-options  */
 /*********************************/
 
-/* Add in any CSS/Sass code for this pattern.
- * This file needs to be added to styles/screen.scss.
- */
+#share-options ul li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 5px;
+}
 
-/*********************************/
+/*********************************/ 
 /* END Pattern: share-options    */
-/*********************************/
+/*********************************/ 
