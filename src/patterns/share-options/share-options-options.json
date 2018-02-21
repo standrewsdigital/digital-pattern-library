@@ -1,9 +1,9 @@
 {
     "options" : [
         {
-            "option-heading": "Success",
-            "option-description": "<p>Use the class <code>alert-success</code> for a success alert box. This alert box indicates a successful or positive action, such as successfully submitting a form.</p>",
-            "option-anchor": "alert-success",
+            "option-heading": "Share this story",
+            "option-description": "",
+            "option-anchor": "share",
             "icon": [ 
             	{
             		"title": "Facebook",
