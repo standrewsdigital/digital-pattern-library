@@ -3,11 +3,16 @@
 <div id="share-options"> 
     <ul>
 	{{#icon}}
-		<li><a href="#"><span class="sr-only">{{title}}</span><i class="fa fa-{{class}} fa-2x" title="{{title}}"></i></a></li>
+		<li><a href="#"><span class="sr-only">{{title}}</span><i class="fa fa-{{class}} fa-2x" title="{{title}}" aria-hidden="true"></i></a></li>
 	{{/icon}}
     </ul>
+	
+
+    <!-- FACEBOOK -->
+	<script>
+    document.write('<a class="social-sharing-icon social-sharing-icon-facebook" target="_new" href="http://www.facebook.com/share.php?u=' + window.location.href + '&title' + document.title + '"><i class="fa fa-facebook-square"></i></a>');
+	</script>
+
+
 </div>
-
-
-
 <!-- End pattern: share-options //-->
