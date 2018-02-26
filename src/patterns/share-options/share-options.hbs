@@ -5,5 +5,40 @@
 		<li><a href="#"><span class="sr-only">{{title}}</span><i class="fa fa-{{class}} fa-2x" title="{{title}}" aria-hidden="true"></i></a></li>
 	{{/icon}}
     </ul>
-</div>
+
+
+
+
+ <!-- FACEBOOK --> 
+  <script> 
+
+  document.write('<meta property="og:url" content="http://www.bbc.co.uk/news" />'); 
+  document.write('<meta property="og:title" content="TEST title" />'); 
+  document.write('<meta property="og:description" content="The share options pattern contains a number of social media icons used to share content." />'); 
+ 
+
+// FaceBook Desktop
+  document.write('<a href="http://www.facebook.com/dialog/send?app_id=149610949056949&redirect_uri=https://www.st-andrews.ac.uk/&link=https://www.st-andrews.ac.uk/">Send In Messenger</a>');
+
+
+// FaceBook Mobile
+  document.write('<a href="fb-messenger://share/send?app_id=149610949056949&redirect_uri=https://www.st-andrews.ac.uk/&link=https://www.st-andrews.ac.uk/">Send In Messenger</a>');
+
+
+    document.write('<a target="_new" href="http://www.facebook.com/share.php?u=' + document.querySelector("meta[property='og:url']").getAttribute("content") + '&title' + document.querySelector("meta[property='og:title']").getAttribute("content") + '"><i class="fa fa-facebook-square fa-2x"></i></a>'); 
+ 
+    document.write('<a href="https://twitter.com/intent/tweet?text=' + document.querySelector("meta[property='og:title']").getAttribute("content") + '&url=' + document.querySelector("meta[property='og:url']").getAttribute("content") + '"><i class="fa fa-twitter-square fa-2x"></i></a>'); 
+ 
+    document.write('<a href="https://www.linkedin.com/shareArticle?mini=true&url=' + document.querySelector("meta[property='og:url']").getAttribute("content") + '&title=' + document.querySelector("meta[property='og:title']").getAttribute("content") + '&summary=' + document.querySelector("meta[property='og:description']").getAttribute("content") + '"><i class="fa fa-linkedin-square fa-2x"></i></a>'); 
+ 
+ 
+    document.write('<a href="whatsapp://send?text=' + document.querySelector("meta[property='og:title']").getAttribute("content") + ' - ' + document.querySelector("meta[property='og:url']").getAttribute("content") + '" target="_blank"><i class="fa fa-whatsapp fa-2x"></i></a>'); 
+ 
+   document.write('<a href="mailto:?subject=Shared from University of St Andrews&body=' + document.querySelector("meta[property='og:url']").getAttribute("content") + '"><i class="fa fa-envelope fa-2x"></i></a>'); 
+ 
+  </script> </div>
+
+
+
+
 <!-- End pattern: share-options //-->
