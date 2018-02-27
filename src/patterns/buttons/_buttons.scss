@@ -16,8 +16,9 @@
 	font-weight: bold;
 
 	&:hover {
-		border: 1px solid $sta-grey-hover;
-		color: $sta-blue-hover;
+		background: rgb(238, 238, 238);
+        border-color: rgb(221, 221, 221);
+        color: $sta-blue;
 	}
 }
 
