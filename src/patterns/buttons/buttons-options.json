@@ -7,7 +7,8 @@
             "buttons": [
                 {
                     "type": "primary",
-                    "text": "Primary"
+                    "text": "Primary",
+                    "size": "btn btn-lg"
                 }
             ]
          },
@@ -22,19 +23,23 @@
             "buttons": [
                 {
                     "type": "secondary",
-                    "text": "Secondary"
+                    "text": "Secondary",
+                    "size": "btn btn-lg"
                 },
                 {
                     "type": "tertiary-1",
-                    "text": "Tertiary 1"
+                    "text": "Tertiary 1",
+                    "size": "btn btn-lg"
                 },
                 {
                     "type": "tertiary-2",
-                    "text": "Tertiary 2"
+                    "text": "Tertiary 2",
+                    "size": "btn btn-lg"
                 },
                 {
                     "type": "tertiary-3",
-                    "text": "Tertiary 3"
+                    "text": "Tertiary 3",
+                    "size": "btn btn-lg"
                 }
             ]
           },
@@ -49,19 +54,23 @@
             "buttons": [
                 {
                     "type": "success",
-                    "text": "Success"
+                    "text": "Success",
+                    "size": "btn btn-lg"
                 },
                 {
                     "type": "info",
-                    "text": "Info"
+                    "text": "Info",
+                    "size": "btn btn-lg"
                 },
                 {
                     "type": "warning",
-                    "text": "Warning"
+                    "text": "Warning",
+                    "size": "btn btn-lg"
                 },
                 {
                     "type": "danger",
-                    "text": "Danger"
+                    "text": "Danger",
+                    "size": "btn btn-lg"
                 }
             ]
           },
@@ -78,27 +87,52 @@
                     "type": "primary",
                     "text": "PDF document",
                     "icon-class": "fa fa-file-pdf-o",
-                    "icon-title": "PDF"
+                    "icon-title": "PDF",
+                    "size": "btn btn-lg"
                 },
                 {
                     "type": "primary",
                     "text": "ZIP file",
                     "icon-class": "fa fa-file-zip-o",
-                    "icon-title": "ZIP"
+                    "icon-title": "ZIP",
+                    "size": "btn btn-lg"
                 },
                 {
                     "type": "primary",
                     "text": "Word document",
                     "icon-class": "fa fa-file-word-o",
-                    "icon-title": "Word"
+                    "icon-title": "Word",
+                    "size": "btn btn-lg"
                 },
                 {
                     "type": "primary",
                     "text": "Powerpoint presentation",
                     "icon-class": "fa fa-file-powerpoint-o",
-                    "icon-title": "Powerpoint"
+                    "icon-title": "Powerpoint",
+                    "size": "btn btn-lg"
                 }
             ]
-        }
+        },
+
+
+
+
+        {
+            "option-heading": "News buttons",
+            "option-description": "<p>Must only be used within the News site.</p>",
+            "option-anchor": "news-buttons",
+            "buttons": [
+                {
+                    "type": "news-tag",
+                    "text": "Related news 1",
+                    "size": " btn"
+                },
+                {
+                    "type": "news-tag",
+                    "text": "Related news 2",
+                    "size": " btn"
+                }
+            ]
+          }
     ]
 }

@@ -9,6 +9,18 @@
     }
 }
 
+.btn-news-tag {
+	backgroud: none;
+	border: 1px solid $sta-grey;
+	color: $sta-blue;
+	font-weight: bold;
+
+	&:hover {
+		border: 1px solid $sta-grey-hover;
+		color: $sta-blue-hover;
+	}
+}
+
 
 /*********************************/
 /* END Pattern: buttons          */
