@@ -41,17 +41,22 @@
 		width: 1.8em;
 		height: 1.8em;
 		vertical-align: -3px;
-	}
 
-	svg #Bubble_Shape {
-		fill: rgb(0, 132, 255);
-	}
+		#Bubble_Shape {
+			fill: rgb(0, 132, 255);
+		}
 
-	svg #Bubble_Shape:hover {
-		fill: rgb(106, 106, 106);
+		&:hover {
+			fill: rgb(106, 106, 106);
+		}
 	}
 }
 
+@media (max-width: 767px) {
+	#share-options li.visible-xs {
+    	display: inline !important;
+	}
+}
 
 
 /*********************************/
