@@ -8,6 +8,9 @@
 		list-style-type: none;
 		margin-right: 5px;
 	}
+	a {
+		text-decoration: none;
+	}
 	.fa-facebook-square {
 		color: rgb(59,89,152);
 	}
@@ -26,11 +29,14 @@
 	.fa-facebook-square:hover, .fa-twitter-square:hover, .fa-linkedin-square:hover, .fa-whatsapp:hover, .fa-envelope:hover {
 		color: rgb(106,106,106);
 	}
-	img.facebook-messenger {
-		width: 30.86px; 
-		height: 36px;
-		color: rgb(0, 132, 255)
-		vertical-align: -8px;
+	svg #Bubble_Shape {
+		width: 1.8em; 
+		height: 1.8em;
+		vertical-align: -3px;
+		fill: rgb(0, 132, 255);
+	}
+	svg #Bubble_Shape:hover {
+		fill: rgb(106,106,106);
 	}
 }
 
