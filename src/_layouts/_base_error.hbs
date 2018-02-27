@@ -1,0 +1,124 @@
+---
+date: <%= new Date() %>
+---
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <title >{{ title }} | Digital pattern library v{{pkg.version}}</title >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="{{asset 'core/styles/screen.css'}}" rel="stylesheet" media="screen" />
+        <link href="{{asset 'core/styles/print.css'}}" rel="stylesheet" media="print" />
+        <link href="{{asset 'core/styles/doc.css'}}" rel="stylesheet" media="screen" />
+    </head>
+    <body>
+
+        <header class="header" id="header">
+
+            <div class="row">
+                <div id="logo-container">
+                    <div id="header-logo">
+                        <h1><a href="https://www.st-andrews.ac.uk/"><span>University of St Andrews</span></a></h1>
+                    </div>
+                </div>
+                <div id="header-search" role="search">
+                    <button class="btn btn-link" type="button" value="" name="btnG" id="header-search-trigger"><i class="fa fa-search" title="Search"></i></button>
+
+                    <form action="https://www.st-andrews.ac.uk/search" method="get">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-link" type="button" value="" name="btnG" id="header-search-close"><i class="fa fa-times" title="Close"></i></button>
+                            </span>
+                            <input class="form-control" type="text" title="Enter search keywords" maxlength="256" name="q" placeholder="Search the University website...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="submit" value="Search" name="btnG" id="header-search-submit">
+                                    <i class="fa fa-search" title="Search"></i>
+                                </button>
+                            </span>
+                        </div>
+                        <input type="hidden" value="StAndrews_ITS" name="site">
+                        <input type="hidden" value="xml_no_dtd" name="output">
+                        <input type="hidden" value="StAndrews_ITS" name="client">
+                        <input type="hidden" value="StAndrews_ITS" name="proxystylesheet">
+                    </form>
+                </div>
+              </div>
+        </header>
+
+
+        <!-- Begin pattern: category-header //-->
+        <div id="category-header" class="">
+            <div class="container">
+                <h2><a href="{{rel "index.html"}}">Digital pattern library</a></h2>
+            </div>
+        </div>
+        <!-- End pattern: category-header //-->
+
+
+        <nav class="navigation-bar" role="navigation">
+            <div class="container">
+                <div class="toggle-navigation primary-toggle">
+                    <a class="navigation-button">Navigation <i class="chevron left"></i></a>
+                </div>
+                <ul class="navigation-bar-nav primary-nav">
+                {{#each dpl-nav.items}}
+                    <li>
+                        <a href="{{rel url}}">{{name}}</a>
+                    </li>
+                {{/each}}
+                    <li><a href="https://digitalcommunications.wp.st-andrews.ac.uk/tag/digital-pattern-library/">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        {{> body  }}
+
+        <!-- Begin pattern: footer //-->
+
+        <footer role="contentinfo">
+
+         <div id="university-footer">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8">
+                            <p id="footer-charity" role="contentinfo">© <script>document.write(new Date().getFullYear());</script> University of St&nbsp;Andrews is a charity registered in Scotland, No SC013532.</p>
+
+                            <ul id="footer-links">
+                                <li><a href="https://www.st-andrews.ac.uk/terms/">Terms and conditions</a></li>
+                                <li><a href="https://www.st-andrews.ac.uk/help/">Website help</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <ul id="social">
+                                <li><a href="https://www.facebook.com/uniofsta"><i class="fa fa-facebook-official fa-2x" title="Facebook"></i></a></li>
+                                <li><a href="https://twitter.com/univofstandrews/"><i class="fa fa-twitter-square fa-2x" title="Twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/uniofstandrews"><i class="fa fa-instagram fa-2x" title="Instagram"></i></a></li>
+                                <li><a href="https://www.youtube.com/uofstandrews"><i class="fa fa-youtube-square fa-2x" title="YouTube"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div> <!-- End .row //-->
+                </div> <!-- End .container //-->
+            </div> <!-- End #university-footer //-->
+        </footer>
+        <!-- End pattern: footer //-->
+
+        <script src="http://localhost:35729/livereload.js"></script>
+        <script src="{{asset 'core/scripts/core.min.js'}}" ></script>
+        <script src="{{asset 'core/scripts/doc.js'}}" ></script>
+
+
+        <!-- Google analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-517626-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+    </body>
+</html>
