@@ -8,40 +8,52 @@
 		list-style-type: none;
 		margin-right: 5px;
 	}
+
 	a {
 		text-decoration: none;
 	}
+
 	.fa-facebook-square {
-		color: rgb(59,89,152);
+		color: rgb(59, 89, 152);
 	}
+
 	.fa-twitter-square {
-		color: rgb(29,161,242);
+		color: rgb(29, 161, 242);
 	}
+
 	.fa-linkedin-square {
-		color: rgb(0,119,181);
+		color: rgb(0, 119, 181);
 	}
+
 	.fa-whatsapp {
-		color: rgb(37,211,102);
+		color: rgb(37, 211, 102);
 	}
+
 	.fa-envelope {
-		color: rgb(68,68,68);
+		color: rgb(68, 68, 68);
 	}
+
 	.fa-facebook-square:hover, .fa-twitter-square:hover, .fa-linkedin-square:hover, .fa-whatsapp:hover, .fa-envelope:hover {
-		color: rgb(106,106,106);
+		color: rgb(106, 106, 106);
 	}
-	svg #Bubble_Shape {
-		width: 1.8em; 
+
+	svg {
+		width: 1.8em;
 		height: 1.8em;
 		vertical-align: -3px;
+	}
+
+	svg #Bubble_Shape {
 		fill: rgb(0, 132, 255);
 	}
+
 	svg #Bubble_Shape:hover {
-		fill: rgb(106,106,106);
+		fill: rgb(106, 106, 106);
 	}
 }
 
 
 
-/*********************************/ 
+/*********************************/
 /* END Pattern: share-options    */
-/*********************************/ 
+/*********************************/
