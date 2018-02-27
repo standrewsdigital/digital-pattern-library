@@ -2,12 +2,27 @@
     "options": [
         {
             "option-heading": "Default",
-            "option-description": "",
+            "option-description": "<p>Must only be used only within main content of a page.</p>",
             "option-anchor": "default",
             "updates-title": "Updates",
             "featured-update": "Featured update",
             "featured-update-content": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "photograph-credit": "Photographer credit",
+            "update-2": "Secondary update",
+            "update-3": "Secondary update",
+            "date-2": "10 June 2016",
+            "date-3": "8 June 2016",
+            "thumbnail":  "../../assets/docs/images/placeholders/360x240-10.jpg"
+        },
+
+
+
+
+        {
+            "option-heading": "Aside only",
+            "option-description": "<p>Must only be used in the aside of a page</p>",
+            "option-anchor": "aside",
+            "updates-title": "Top stories",
             "update-2": "Secondary update",
             "update-3": "Secondary update",
             "date-2": "10 June 2016",
