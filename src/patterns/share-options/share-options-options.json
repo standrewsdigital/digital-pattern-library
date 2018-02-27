@@ -6,24 +6,29 @@
             "option-anchor": "share",
             "icon": [ 
             	{
-            		"title": "Facebook",
-            		"class": "facebook-square"
+            		"title": "FaceBook",
+            		"fa-class": "facebook-square"
             	},
             	{
             		"title": "Twitter",
-            		"class": "twitter-square"
+            		"fa-class": "twitter-square"
             	},
+                {
+                    "title": "FaceBook Messenger",
+                    "image": "../../../src/images-core/furniture/messengerIcon.svg",
+                    "class": "facebook-messenger"
+                },
             	{
             		"title": "LinkedIn",
-            		"class": "linkedin-square"
+            		"fa-class": "linkedin-square"
             	},
             	{
             		"title": "WhatsApp",
-            		"class": "whatsapp"
+            		"fa-class": "whatsapp"
             	},
             	{
             		"title": "Email",
-            		"class": "envelope"
+            		"fa-class": "envelope"
             	}
             ]
         }

@@ -2,12 +2,16 @@
 <div id="share-options"> 
     <ul>
 	{{#icon}}
-		<li><a href="#"><span class="sr-only">{{title}}</span><i class="fa fa-{{class}} fa-2x" title="{{title}}" aria-hidden="true"></i></a></li>
+		<li><a href="#"><span class="sr-only">{{title}}</span>
+		{{#if fa-class}}
+			<i class="fa fa-{{fa-class}} fa-2x" title="{{title}}" aria-hidden="true"></i>
+		{{/if}}
+		{{#if image}}
+			<img src="{{image}}" alt="{{title}}" class="{{class}}">
+		{{/if}}
+		</a></li>
 	{{/icon}}
     </ul>
-
-
-
 
  <!-- FACEBOOK --> 
   <script> 
@@ -17,14 +21,15 @@
   document.write('<meta property="og:description" content="The share options pattern contains a number of social media icons used to share content." />'); 
  
 
-// FaceBook Desktop
-  document.write('<a href="http://www.facebook.com/dialog/send?app_id=149610949056949&redirect_uri=https://www.st-andrews.ac.uk/&link=https://www.st-andrews.ac.uk/">Send In Messenger</a>');
+// FaceBook Messenger Desktop
+  document.write('<a href="http://www.facebook.com/dialog/send?app_id=149610949056949&redirect_uri=' + encodeURIComponent('https://www.st-andrews.ac.uk/') + '&link=' + encodeURIComponent('https://www.st-andrews.ac.uk/') + '&display=popup"><img src="../../../src/images-core/furniture/messengerIcon.svg" alt="Send In Messenger "width="30.86px" height="36px"></a>');
 
 
-// FaceBook Mobile
-  document.write('<a href="fb-messenger://share/send?app_id=149610949056949&redirect_uri=https://www.st-andrews.ac.uk/&link=https://www.st-andrews.ac.uk/">Send In Messenger</a>');
+// FaceBook Messenger Mobile
+  document.write('<a href="fb-messenger://share/send?app_id=149610949056949&redirect_uri=https://www.st-andrews.ac.uk/&link=https://www.st-andrews.ac.uk/"><img src="../../../src/images-core/furniture/messengerIcon.svg" alt="Send In Messenger "width="30.86px" height="36px"></a>');
 
 
+// Facebook
     document.write('<a target="_new" href="http://www.facebook.com/share.php?u=' + document.querySelector("meta[property='og:url']").getAttribute("content") + '&title' + document.querySelector("meta[property='og:title']").getAttribute("content") + '"><i class="fa fa-facebook-square fa-2x"></i></a>'); 
  
     document.write('<a href="https://twitter.com/intent/tweet?text=' + document.querySelector("meta[property='og:title']").getAttribute("content") + '&url=' + document.querySelector("meta[property='og:url']").getAttribute("content") + '"><i class="fa fa-twitter-square fa-2x"></i></a>'); 
@@ -36,7 +41,9 @@
  
    document.write('<a href="mailto:?subject=Shared from University of St Andrews&body=' + document.querySelector("meta[property='og:url']").getAttribute("content") + '"><i class="fa fa-envelope fa-2x"></i></a>'); 
  
-  </script> </div>
+  </script>
+
+</div>
 
 
 
