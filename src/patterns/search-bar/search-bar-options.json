@@ -9,12 +9,11 @@
             "placeholder": "Search..."
          },
          {
-            "option-heading": "Search with news tags",
+            "option-heading": "News search with tags",
             "option-description": "",
-            "option-anchor": "search-bar",
+            "option-anchor": "news-search-tags",
             "search-tags": true,
             "background-color": "search-bar-grey",
-            "title": "Search posts",
             "placeholder": "Search..."
          }
     ]
