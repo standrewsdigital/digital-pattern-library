@@ -1,0 +1,9 @@
+{
+    "options" : [
+        {
+            "option-heading": "Aside list",
+            "option-description": "<p></p>",
+            "option-anchor": "aside-list"
+         }
+    ]
+}

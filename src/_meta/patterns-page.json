@@ -41,7 +41,7 @@
                   "img": "assets/docs/images/patterns/footer.jpg",
                   "url": "patterns/footer/index.html"
                 }
-            ]       
+            ]
         },
         {
             "heading": "Call to action",
@@ -126,6 +126,10 @@
                 { "name": "News updates",
                   "img": "assets/docs/images/patterns/news-updates.jpg",
                   "url": "patterns/news-updates/index.html"
+                },
+                { "name": "Numerical list",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/numerical-list/index.html"
                 },
                 { "name": "Photosphere",
                   "img": "assets/docs/images/patterns/photosphere.jpg",
