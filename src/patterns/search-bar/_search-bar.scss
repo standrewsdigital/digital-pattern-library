@@ -1,11 +1,17 @@
 /*********************************/
 /* BEGIN Pattern: search-bar  */
 /*********************************/
-
-/* Add in any CSS/Sass code for this pattern.
- * This file needs to be added to styles/screen.scss.
- */
-
+div#course-search {
+	padding: 50px 0;
+}
+div.search-bar-grey {
+	background-color: rgb(250, 250, 250);
+}
+span.search-bar-title {
+	border: none; 
+	background-color: transparent; 
+	padding-left: 0;
+}
 /*********************************/
 /* END Pattern: search-bar    */
 /*********************************/
