@@ -2,9 +2,45 @@
 /* BEGIN Pattern: numerical list */
 /*********************************/
 
-/* Add in any CSS/Sass code for this pattern.
- * This file needs to be added to styles/screen.scss.
- */
+.list-container {
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        border-bottom: 2px solid $sta-grey-light;
+        list-style: none;
+        padding: 1.5rem 0;
+        position: relative;
+    }
+
+    a {
+        color: rgb(68, 68, 68);
+        font-weight: initial;
+        text-decoration: none;
+
+        &:hover {
+            color: rgb(0, 64, 119);
+            text-decoration: underline;
+        }
+    }
+
+    .list-container__number {
+        color: $sta-blue;
+        font-size: 3rem;
+        font-weight: bold;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .list-container__title {
+        display: block;
+        width: 85%;
+    }
+
+}
 
 /*********************************/
 /* END Pattern: numerical list   */
