@@ -7,6 +7,15 @@
             "background-color": "search-bar-grey",
             "title": "Search posts",
             "placeholder": "Search..."
+         },
+         {
+            "option-heading": "Search with news tags",
+            "option-description": "",
+            "option-anchor": "search-bar",
+            "search-tags": true,
+            "background-color": "search-bar-grey",
+            "title": "Search posts",
+            "placeholder": "Search..."
          }
     ]
 }

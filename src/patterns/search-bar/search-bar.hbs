@@ -1,6 +1,12 @@
 <!-- Begin pattern: search-bar //-->
 
 <div id="course-search" {{#if background-color}} class="{{background-color}}" {{/if}}>
+	{{#if search-tags}}
+	<div id="search-title">
+		<h4>News search</h4>
+		<p>Search through our entire news archive</p>
+	</div>
+	{{/if}}
 	<div class="container">
 	    <form action="">
 	        <div class="input-group input-group-lg">
