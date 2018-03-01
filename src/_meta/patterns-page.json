@@ -136,7 +136,7 @@
                   "url": "patterns/responsive-embed/index.html"
                 },
                 { "name": "Search bar",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/search-bar.jpg",
                   "url": "patterns/search-bar/index.html"
                 },
                 { "name": "Section header",

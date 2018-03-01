@@ -1,19 +1,19 @@
 {
     "options" : [
         {
-            "option-heading": "Search",
+            "option-heading": "Search banner",
             "option-description": "",
-            "option-anchor": "search-bar",
-            "background-color": "search-bar-grey",
+            "option-anchor": "search-banner",
+            "background-color": "search-banner-grey",
             "title": "Search posts",
             "placeholder": "Search..."
          },
          {
-            "option-heading": "News search with tags",
+            "option-heading": "Search banner with tag buttons",
             "option-description": "",
-            "option-anchor": "news-search-tags",
+            "option-anchor": "search-banner-tags",
             "search-tags": true,
-            "background-color": "search-bar-grey",
+            "background-color": "search-banner-grey",
             "placeholder": "Search..."
          }
     ]
