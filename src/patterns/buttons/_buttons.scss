@@ -9,14 +9,14 @@
     }
 }
 
-.btn-news-tag {
+.btn-tag {
 	backgroud: none;
 	border: 1px solid $sta-grey;
 	color: $sta-blue;
 	font-weight: bold;
 
 	&:hover {
-		background: rgb(238, 238, 238);
+		background: $sta-grey-light;
         border-color: $sta-grey;
         color: $sta-blue;
 	}

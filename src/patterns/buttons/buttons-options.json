@@ -118,17 +118,17 @@
 
 
         {
-            "option-heading": "News buttons",
-            "option-description": "<p>Must only be used within the News site.</p>",
+            "option-heading": "Tag buttons",
+            "option-description": "<p>Must only be used when linking to a tag or categories results page.</p>",
             "option-anchor": "news-buttons",
             "buttons": [
                 {
-                    "type": "news-tag",
+                    "type": "tag",
                     "text": "Related news 1",
                     "size": " btn"
                 },
                 {
-                    "type": "news-tag",
+                    "type": "tag",
                     "text": "Related news 2",
                     "size": " btn"
                 }
