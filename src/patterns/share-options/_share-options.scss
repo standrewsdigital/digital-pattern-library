@@ -34,23 +34,25 @@
 	}
 
 	.fa-facebook-square:hover, .fa-twitter-square:hover, .fa-linkedin-square:hover, .fa-whatsapp:hover, .fa-envelope:hover {
-		color: rgb(106, 106, 106);
+		color: $sta-grey;
 	}
 
 	svg {
-		width: 1.8em;
-		height: 1.8em;
-		vertical-align: -3px;
+        width: 1.8em;
+        height: 1.8em;
+        vertical-align: -3px;
 
-		#Bubble_Shape {
-			fill: rgb(0, 132, 255);
-		}
+        #Bubble_Shape {
+            fill: rgb(0, 132, 255);
 
-		&:hover {
-			fill: rgb(106, 106, 106);
-		}
-	}
+            &:hover {
+                fill: $sta-grey;
+            }
+
+        }
+    }
 }
+
 
 @media (max-width: 767px) {
 	#share-options li.visible-xs {
