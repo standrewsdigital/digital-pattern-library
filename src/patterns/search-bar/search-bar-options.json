@@ -5,7 +5,7 @@
             "option-description": "",
             "option-anchor": "search",
             "placeholder": "Search...",
-            "width": "standard"
+            "default": true
         },
         {
             "option-heading": "Search banner",
@@ -14,8 +14,7 @@
             "background-color": "search-banner-grey",
             "full-width": true,
             "title": "Search posts",
-            "placeholder": "Search...",
-            "width": "full-width"
+            "placeholder": "Search..."
          },
          {
             "option-heading": "Search banner with tag buttons",
@@ -24,8 +23,7 @@
             "search-tags": true,
             "full-width": true,
             "background-color": "search-banner-grey",
-            "placeholder": "Search...",
-            "width": "full-width"
+            "placeholder": "Search..."
          }
     ]
 }

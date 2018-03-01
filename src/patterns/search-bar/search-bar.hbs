@@ -8,46 +8,47 @@
 		<p>Search through our entire news archive</p>
 	</div>
 	{{/if}}
+	<div class="container">
+		{{#if default}}
+		<div id="search">
+		{{/if}}
 
-	{{#if default}}
-	<div class="header-search">
-		<div class="row">
-	{{/if}}
-			<div class="container">
-			    <form action="">
-			        <div class="input-group input-group-lg">
-			            {{#if title}}<span class="input-group-addon search-bar-title">{{title}}</span>{{/if}}
-			            <input class="form-control" type="text" title="Enter search keywords" maxlength="256" name="s" placeholder="{{placeholder}}">
-			            <span class="input-group-btn">
-			                <button class="btn btn-primary" value="Search" type="submit">
-			                    <i class="fa fa-search" title="Search"></i>
-			                </button>
-			            </span>
-			        </div>
-			    </form>
-			    {{#if search-tags}}
-			    <div class="row">
-			        <div class="col-sm-12">
-				    	<div id="news-tags">
-				    		<a type="button" class="btn btn-lg btn-secondary" href="#">Related news tag</a>
-							<a type="button" class="btn btn-lg btn-tertiary-1" href="#">Related news tag</a>
-							<a type="button" class="btn btn-lg btn-tertiary-2" href="#">Related news tag</a>
-							<a type="button" class="btn btn-lg btn-tertiary-3" href="#">Related news tag</a>
-							<a type="button" class="btn btn-lg btn-secondary" href="#">Related news tag</a>
-							<a type="button" class="btn btn-lg btn-tertiary-1" href="#">Related news tag</a>
-							<a type="button" class="btn btn-lg btn-tertiary-2" href="#">Related news tag</a>
-							<a type="button" class="btn btn-lg btn-tertiary-3" href="#">Related news tag</a>
-							<a type="button" class="btn btn-lg btn-secondary" href="#">Related news tag</a>
-							<a type="button" class="btn btn-lg btn-tertiary-1" href="#">Related news tag</a>
-							<a type="button" class="btn btn-lg btn-tertiary-2" href="#">Related news tag</a>
-						</div>
+		    <form action="">
+		        <div class="input-group input-group-lg">
+		            {{#if title}}<span class="input-group-addon search-bar-title">{{title}}</span>{{/if}}
+		            <input class="form-control" type="text" title="Enter search keywords" maxlength="256" name="s" placeholder="{{placeholder}}">
+		            <span class="input-group-btn">
+		                <button class="btn btn-primary" value="Search" type="submit">
+		                    <i class="fa fa-search" title="Search"></i>
+		                </button>
+		            </span>
+		        </div>
+		    </form>
+		    {{#if search-tags}}
+		    <div class="row">
+		        <div class="col-sm-12">
+			    	<div id="news-tags">
+			    		<a type="button" class="btn btn-lg btn-secondary" href="#">Related news tag</a>
+						<a type="button" class="btn btn-lg btn-tertiary-1" href="#">Related news tag</a>
+						<a type="button" class="btn btn-lg btn-tertiary-2" href="#">Related news tag</a>
+						<a type="button" class="btn btn-lg btn-tertiary-3" href="#">Related news tag</a>
+						<a type="button" class="btn btn-lg btn-secondary" href="#">Related news tag</a>
+						<a type="button" class="btn btn-lg btn-tertiary-1" href="#">Related news tag</a>
+						<a type="button" class="btn btn-lg btn-tertiary-2" href="#">Related news tag</a>
+						<a type="button" class="btn btn-lg btn-tertiary-3" href="#">Related news tag</a>
+						<a type="button" class="btn btn-lg btn-secondary" href="#">Related news tag</a>
+						<a type="button" class="btn btn-lg btn-tertiary-1" href="#">Related news tag</a>
+						<a type="button" class="btn btn-lg btn-tertiary-2" href="#">Related news tag</a>
 					</div>
 				</div>
-				{{/if}}
 			</div>
-	{{#if default}}
+			{{/if}}
+		{{#if default}}
 		</div>
+		{{/if}}
 	</div>
+	{{#if search-tags}}
+				
 	{{/if}}
 {{#if full-width}}
 </div>

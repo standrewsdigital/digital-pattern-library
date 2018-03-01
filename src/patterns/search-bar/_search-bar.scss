@@ -2,13 +2,15 @@
 /* BEGIN Pattern: search-bar  */
 /*********************************/
 
-#standard {
+#search {
 	width: 44%;
 	margin: 25px 0px 16px;
 }
-#full-width {
+
+#search-bar {
 	padding: 50px 0;
 }
+
 #news-tags {
 	margin-top: 30px;
 		& a{
