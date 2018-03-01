@@ -1,10 +1,15 @@
 /*********************************/
 /* BEGIN Pattern: search-bar  */
 /*********************************/
-div#course-search {
+
+#standard {
+	width: 44%;
+	margin: 25px 0px 16px;
+}
+#full-width {
 	padding: 50px 0;
 }
-div#news-tags {
+#news-tags {
 	margin-top: 30px;
 		& a{
 		margin-top: 10px;
@@ -18,7 +23,7 @@ span.search-bar-title {
 	background-color: transparent; 
 	padding-left: 0;
 }
-div#search-title {
+#search-title {
 	text-align: center;
 }
 /*********************************/

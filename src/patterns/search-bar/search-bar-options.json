@@ -1,20 +1,31 @@
 {
     "options" : [
         {
+            "option-heading": "Search",
+            "option-description": "",
+            "option-anchor": "search",
+            "placeholder": "Search...",
+            "width": "standard"
+        },
+        {
             "option-heading": "Search banner",
             "option-description": "",
             "option-anchor": "search-banner",
             "background-color": "search-banner-grey",
+            "full-width": true,
             "title": "Search posts",
-            "placeholder": "Search..."
+            "placeholder": "Search...",
+            "width": "full-width"
          },
          {
             "option-heading": "Search banner with tag buttons",
             "option-description": "",
             "option-anchor": "search-banner-tags",
             "search-tags": true,
+            "full-width": true,
             "background-color": "search-banner-grey",
-            "placeholder": "Search..."
+            "placeholder": "Search...",
+            "width": "full-width"
          }
     ]
 }
