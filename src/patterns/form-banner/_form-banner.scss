@@ -3,16 +3,10 @@
 /* BEGIN Pattern: form-banner    */
 /*********************************/
 
-
-.form-banner-thirds {
-    padding: 20px;
-}
-
 .form-banner {
     color: white;
     margin-bottom: 20px;
     padding: 30px 0;
-
 
     .call-heading {
         font-size:   24px;
@@ -38,6 +32,10 @@
         font-weight: bold;
         text-decoration: underline;
     }
+
+    .form-banner-thirds {
+        padding: 0 20px;
+    }
 }
 
 .form-banner.sta-grey-light {
@@ -45,12 +43,10 @@
     color: black;
 
     .call-heading {
-        // color: #202024;
         color: rgb(32, 32, 36);
     }
 
     p.text-center {
-        // color: #6a6a6b;
         color: rgb( 106, 106, 107);
     }
 }
