@@ -12,10 +12,10 @@
 		{{#if default}}
 		<div class="col-md-4">
 		{{/if}}
-	    <form action="">
+	    <form class="dpl-form" action="">
 	        <div class="input-group input-group-lg">
 	            {{#if title}}<span class="input-group-addon search-bar-title">{{title}}</span>{{/if}}
-	            <input id="news-search" class="form-control" type="text" title="Enter search keywords" maxlength="256" name="search" placeholder="{{placeholder}}">
+	            <input id="{{input-id}}" class="form-control" type="text" title="Enter search keywords" maxlength="256" name="search" placeholder="{{placeholder}}">
 	            <span class="input-group-btn">
 	                <button class="btn btn-primary" value="Search" type="submit">
 	                    <i class="fa fa-search" title="Search"></i>

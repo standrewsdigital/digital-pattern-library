@@ -1,20 +1,28 @@
 /*********************************/
 /* BEGIN Pattern: search-bar  */
 /*********************************/
-#news-tags {
-	margin-top: 30px;
-		& a{
-		margin-top: 10px;
+#search-bar { 
+	padding: 50px 0;
+	
+	.results {
+		margin-top: 15px;
+		
+		.btn {
+			margin: 5px;
+		}
 	}
-}
+} 
+
 div.search-banner-grey {
 	background-color: $sta-grey-light;
 }
+
 span.search-bar-title {
 	border: none; 
 	background-color: transparent; 
 	padding-left: 0;
 }
+
 #search-title {
 	text-align: center;
 }

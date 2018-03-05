@@ -172,6 +172,96 @@ function htmlDecode(value) {
         }
     ];
 
+
+
+
+ // Dummy tags used for the news search pattern.
+    var news_tags = [
+        {
+            "name": "Brexit",
+            "link": "#"
+        },
+        {
+            "name": "International pizza",
+            "link": "#"
+        },
+        {
+            "name": "International fondue",
+            "link": "#"
+        },
+        {
+            "name": "International problems",
+            "link": "#"
+        },
+        {
+            "name": "International Steve's",
+            "link": "#"
+        },
+        {
+            "name": "International news",
+            "link": "#"
+        },
+        {
+            "name": "International pizza",
+            "link": "#"
+        },
+        {
+            "name": "International fondue",
+            "link": "#"
+        },
+        {
+            "name": "International problems",
+            "link": "#"
+        },
+        {
+            "name": "International 2734949",
+            "link": "#"
+        },
+        {
+            "name": "International fddfdfeeeer",
+            "link": "#"
+        },
+        {
+            "name": "International sss",
+            "link": "#"
+        },
+        {
+            "name": "International 2323",
+            "link": "#"
+        },
+        {
+            "name": "International csdsdddsdfsdfsdfsd",
+            "link": "#"
+        },
+        {
+            "name": "International sdsdsd",
+            "link": "#"
+        },
+        {
+            "name": "International 1",
+            "link": "#"
+        },
+        {
+            "name": "Swiss army knife",
+            "link": "#"
+        },
+        {
+            "name": "Swiss cheese",
+            "link": "#"
+        },
+        {
+            "name": "Swiss chocolate",
+            "link": "#"
+        },
+        {
+            "name": "Swiss roll",
+            "link": "#"
+        }
+    ];
+
+
+
+
     // Data for the patterns page search - get patterns data from the live patterns page (couldn't work out an easier way to do this).
     var patterns = [];
 
@@ -203,10 +293,10 @@ function htmlDecode(value) {
     }
 
     // Clear the search form(s) when the page is loaded.
-    $("#form-banner-search-blue, #form-banner-search-grey, #form-banner-search-names, #form-banner-pattern-search").val('');
+    $("#form-banner-search-blue, #form-banner-search-grey, #form-banner-search-names, #form-banner-pattern-search, #news-search").val('');
 
     // Search the data using the user text input.
-    $("#form-banner-search-blue, #form-banner-search-grey, #form-banner-search-names, #form-banner-pattern-search").keyup(function() {
+    $("#form-banner-search-blue, #form-banner-search-grey, #form-banner-search-names, #form-banner-pattern-search, #news-search").keyup(function() {
 
         // Set the form id and search term (user input).
         var form_id = this.id;
@@ -215,6 +305,8 @@ function htmlDecode(value) {
         // Set the search data (either patterns or courses) depending on the form id.
         if ( form_id === 'form-banner-pattern-search' ) {
             var search_list = patterns;
+        } else if ( form_id === 'news-search' ) {
+            var search_list = news_tags;
         } else {
             var search_list = courses;
         }
@@ -224,11 +316,15 @@ function htmlDecode(value) {
 
             search_data( form_id, search_term, search_list );
             $(this).parent('.form-group').next('.results').slideDown('slow');
+
         } else {
 
             $(this).parent('.form-group').next('.results').slideUp('slow');
-            $(this).parent('.form-group').next('.results').children('.row').children('.col-md-6.left-column, .col-md-6.right-column').html('');
-
+            if (form_id === "news-search") {
+                $(this).parent('.form-group').next('.results').children('.row').children('.col-md-12').html('');
+            } else {
+                $(this).parent('.form-group').next('.results').children('.row').children('.col-md-6.left-column, .col-md-6.right-column').html('');
+            }
         }
 
     });
@@ -237,7 +333,7 @@ function htmlDecode(value) {
 
         // Set empty arrays for the left and right results columns.
         var left_results = [];
-        var right_results = [];
+        var right_results = []; 
 
         // Search for stuff
         for ( var i = 0; i < search_list.length; i++ ) {
@@ -250,10 +346,15 @@ function htmlDecode(value) {
                 link_url = search_list[i].link;
                 link_text = search_list[i].name;
 
-                link = "<a href='" + link_url + "'>" + link_text + "</a>";
+                if ( form_id === "news-search" ) {
+                    link = "<a type='button' class='btn btn-lg btn-secondary' href='" + link_url + "'>" + link_text + "</a>";
+                } else {
+                  link = "<a href='" + link_url + "'>" + link_text + "</a>";
+                }
+
 
                 // Sort the results in to columns based on course type (UG or PG). If searching on the patterns page then always place the results into the left column.
-                if ( search_list[i].type === 'ug' || form_id === 'form-banner-pattern-search' ) {
+                if ( search_list[i].type === 'ug' || form_id === 'form-banner-pattern-search' || form_id === 'news-search') {
                     left_results.unshift(link);
                 } else {
                     right_results.unshift(link);
@@ -289,11 +390,18 @@ function htmlDecode(value) {
         // Set the column heading based on the form id.
         if ( form_id === 'form-banner-pattern-search' ) {
             list = "<h2>Patterns</h2>" + list;
+        } else if ( form_id === 'news-search') {
+            list;
         } else {
             list = "<h2>Undergraduate courses</h2>" + list;
         }
 
-        $('#' + form_id).parent('.form-group').next('.results').children('.row').children('.col-md-6.left-column').html(list);
+        if ( form_id === 'news-search' ) {
+            $('input#' + form_id).parent('.input-group').next('.results').children('.row').children('.col-md-12').html(list).fadeIn('slow');
+        } else {
+            $('#' + form_id).parent('.form-group').next('.results').children('.row').children('.col-md-6.left-column').html(list);
+        }
+
     }
 
     function add_right_results_list( form_id, list ) {

@@ -5,7 +5,8 @@
             "option-description": "",
             "option-anchor": "search",
             "placeholder": "Search...",
-            "default": true
+            "default": true,
+            "input-id": "default-search"
         },
         {
             "option-heading": "Search banner",
@@ -14,7 +15,8 @@
             "background-color": "search-banner-grey",
             "full-width": true,
             "title": "Search posts",
-            "placeholder": "Search..."
+            "placeholder": "Search...",
+            "input-id": "banner-search"
          },
          {
             "option-heading": "Search banner with tag buttons",
@@ -25,7 +27,8 @@
             "background-color": "search-banner-grey",
             "placeholder": "Search...",
             "search-header": "News search",
-            "search-subtext": "Search through our entire news archive"
+            "search-subtext": "Search through our entire news archive",
+            "input-id": "news-search"
          }
     ]
 }
