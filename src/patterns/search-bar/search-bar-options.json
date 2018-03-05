@@ -23,7 +23,9 @@
             "search-tags": true,
             "full-width": true,
             "background-color": "search-banner-grey",
-            "placeholder": "Search..."
+            "placeholder": "Search...",
+            "search-header": "News search",
+            "search-subtext": "Search through our entire news archive"
          }
     ]
 }
