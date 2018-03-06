@@ -315,14 +315,21 @@ function htmlDecode(value) {
         if ( search_term.length > 2 ) {
 
             search_data( form_id, search_term, search_list );
-            $(this).parent('.form-group').next('.results').slideDown('slow');
+            if (form_id === 'news-search') {
+                $(this).parent('.input-group').next('.results').fadeIn('slow');
+            }
+            else {
+                $(this).parent('.form-group').next('.results').slideDown('slow');
+            }
+           
 
         } else {
 
-            $(this).parent('.form-group').next('.results').slideUp('slow');
+            
             if (form_id === "news-search") {
-                $(this).parent('.form-group').next('.results').children('.row').children('.col-md-12').html('');
+                $(this).parent('.input-group').next('.results').fadeOut('slow');
             } else {
+                $(this).parent('.form-group').next('.results').slideUp('slow');
                 $(this).parent('.form-group').next('.results').children('.row').children('.col-md-6.left-column, .col-md-6.right-column').html('');
             }
         }
@@ -390,14 +397,14 @@ function htmlDecode(value) {
         // Set the column heading based on the form id.
         if ( form_id === 'form-banner-pattern-search' ) {
             list = "<h2>Patterns</h2>" + list;
-        } else if ( form_id === 'news-search') {
+        } else if ( form_id === 'news-search' ) {
             list;
         } else {
             list = "<h2>Undergraduate courses</h2>" + list;
         }
 
         if ( form_id === 'news-search' ) {
-            $('input#' + form_id).parent('.input-group').next('.results').children('.row').children('.col-md-12').html(list).fadeIn('slow');
+            $('input#' + form_id).parent('.input-group').next('.results').children('.row').children('.col-md-12').html(list);
         } else {
             $('#' + form_id).parent('.form-group').next('.results').children('.row').children('.col-md-6.left-column').html(list);
         }
