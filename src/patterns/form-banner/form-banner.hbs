@@ -1,8 +1,13 @@
 <!-- Begin pattern: form banner //-->
-{{#if column-whole}}<div class="form-banner {{background}}">{{/if}}
-    <div class="container dpl-form">
+{{#if column-thirds}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+{{/if}}
+<div class="form-banner {{background}} {{column-background}}">
+    {{#if column-whole}}<div class="container dpl-form">{{/if}}
+    {{#if column-thirds}}<div class="dpl-form form-banner-thirds">{{/if}}
         <div class="row">
-            {{#if column-thirds}}<div class="col-sm-8 form-banner {{column-background}}">{{/if}}
                 {{#if heading}}<div class="text-center call-heading">{{heading}}</div>{{/if}}
                 {{#if top-text}}<p class="text-center">{{top-text}}</p>{{/if}}
             {{#each column}}
@@ -47,13 +52,11 @@
                 {{#if results}}
                     <div class="results">
                         <div class="row">
-                            <div class="col-md-6 left-column">
-                            </div>
-                            <div class="col-md-6 right-column">
-                            </div>
+                            <div class="col-md-6 left-column"></div>
+                            <div class="col-md-6 right-column"></div>
                         </div>
                     </div>
-                {{/if}}        
+                {{/if}}
                 {{/if}}
                 {{#if button}}
                     <button type="submit" class="btn btn-lg btn-warning">Submit</button>
@@ -62,10 +65,13 @@
                 </div>
             {{/each}}
                 {{#if bottom-text}}<p class="text-center">{{bottom-text}}</p>{{/if}}
-            {{#if column-thirds}}</div>
-            {{>navbox}}
-            {{/if}}
-        </div>   
+        </div>
     </div>
-{{#if column-whole}}</div>{{/if}}
+</div>
 <!-- End pattern: form banner //-->
+{{#if column-thirds}}
+</div>
+{{>navbox}}
+</div>
+</div>
+{{/if}}
