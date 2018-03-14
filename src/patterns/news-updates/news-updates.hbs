@@ -1,6 +1,7 @@
 <div class="container">
     <h2>{{updates-title}}</h2>
     <div class="row">
+        {{#if featured-update}}
         <div class="col-md-8 news-updates">
             <figure>
                 <img src="{{thumbnail}}" alt="news story">
@@ -10,6 +11,7 @@
             <p>{{featured-update-content}}</p>
             <p><a href="#" class="btn btn-primary">Continue reading</a></p>
         </div>
+        {{/if}}
         <div class="col-md-4">
             <div class="row">
                 <div class="col-xs-6 col-md-12 news-updates news-updates-small">

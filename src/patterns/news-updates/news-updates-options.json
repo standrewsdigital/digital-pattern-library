@@ -2,7 +2,7 @@
     "options": [
         {
             "option-heading": "Default",
-            "option-description": "",
+            "option-description": "<p>Must only be used only within main content of a page.</p>",
             "option-anchor": "default",
             "updates-title": "Updates",
             "featured-update": "Featured update",
@@ -12,7 +12,22 @@
             "update-3": "Secondary update",
             "date-2": "10 June 2016",
             "date-3": "8 June 2016",
-            "thumbnail":  "../../assets/docs/images/placeholders/360x240-10.jpg"
+            "thumbnail":  "../../assets/docs/images/placeholders/720x480.png"
+        },
+
+
+
+
+        {
+            "option-heading": "Aside only",
+            "option-description": "<p>Must only be used in the aside of a page.</p>",
+            "option-anchor": "aside",
+            "updates-title": "Top stories",
+            "update-2": "Secondary update",
+            "update-3": "Secondary update",
+            "date-2": "10 June 2016",
+            "date-3": "8 June 2016",
+            "thumbnail":  "../../assets/docs/images/placeholders/720x480.png"
         }
     ]
  }
