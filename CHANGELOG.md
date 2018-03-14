@@ -6,6 +6,19 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+## v1.8.3
+
+Release date: Wednesday 7 March 2018
+
+### Changed
+
+* Slight restructure to the form banner pattern.
+
+
+
+
+---
+
 ## v1.8.2
 
 Release date: Wednesday 7 February 2018

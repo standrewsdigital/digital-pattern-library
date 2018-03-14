@@ -9,6 +9,19 @@
     }
 }
 
+.btn-tag {
+	backgroud: none;
+	border: 1px solid $sta-grey;
+	color: $sta-blue;
+	font-weight: bold;
+
+	&:hover {
+		background: $sta-grey-light;
+        border-color: $sta-grey;
+        color: $sta-blue;
+	}
+}
+
 
 /*********************************/
 /* END Pattern: buttons          */

@@ -1,0 +1,22 @@
+<!-- Begin pattern: numerical list //-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h3>{{title}}</h3>
+            <div class="list-container">
+                <ul>
+                {{#each news-item}}
+                    <li>
+                        <a href="#">
+                            <span class="list-container__number">1</span>
+                            <span class="list-container__title">{{news-title}}</span>
+                        </a>
+                    </li>
+                {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End pattern: numerical list //-->

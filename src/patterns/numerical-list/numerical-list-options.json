@@ -1,0 +1,42 @@
+{
+    "options" : [
+        {
+            "option-heading": "Aside list",
+            "option-description": "<p></p>",
+            "option-anchor": "aside-list",
+            "title": "Most read",
+            "news-item": [
+                {
+                    "news-title": "Television historian tells the “Story of Us”"
+                },
+                {
+                    "news-title": "Sir James MacMillan reignites the creative power of Christian inspiration"
+                },
+                {
+                    "news-title": "Earth holds the key to detecting life beyond our solar system"
+                },
+                {
+                    "news-title": "Regius Chair in Maths"
+                },
+                {
+                    "news-title": "St Andrews summer sports camps launched"
+                },
+                {
+                    "news-title": "Museum redevelopment will enhance exhibitions at St Andrews"
+                },
+                {
+                    "news-title": "Newly discovered premiere of Debussy children’s ballet to be performed in St Andrews"
+                },
+                {
+                    "news-title": "Rats help each other out just as humans do"
+                },
+                {
+                    "news-title": "Careers are Not Like Ladders: Female academics talk complexity"
+                },
+                {
+                    "news-title": "Killer whale can mimic human speech"
+                }
+            ]
+         }
+    ]
+}

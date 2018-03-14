@@ -41,7 +41,7 @@
                   "img": "assets/docs/images/patterns/footer.jpg",
                   "url": "patterns/footer/index.html"
                 }
-            ]       
+            ]
         },
         {
             "heading": "Call to action",
@@ -131,6 +131,10 @@
                   "img": "assets/docs/images/patterns/news-updates.jpg",
                   "url": "patterns/news-updates/index.html"
                 },
+                { "name": "Numerical list",
+                  "img": "assets/docs/images/patterns/numerical-list.jpg",
+                  "url": "patterns/numerical-list/index.html"
+                },
                 { "name": "Photosphere",
                   "img": "assets/docs/images/patterns/photosphere.jpg",
                   "url": "patterns/photosphere/index.html"
@@ -138,6 +142,10 @@
                 { "name": "Responsive embed",
                   "img": "assets/docs/images/patterns/google-maps.jpg",
                   "url": "patterns/responsive-embed/index.html"
+                },
+                { "name": "Search bar",
+                  "img": "assets/docs/images/patterns/search-bar.jpg",
+                  "url": "patterns/search-bar/index.html"
                 },
                 { "name": "Section header",
                   "img": "assets/docs/images/patterns/section-header.jpg",
