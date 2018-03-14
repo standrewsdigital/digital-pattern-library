@@ -1,0 +1,29 @@
+---
+title: Share options
+---
+
+<p>The share options pattern allows links to be shared across social media platforms with ease.</p>
+
+<h3>Rules for share options</h3>
+<ul>
+	<li>Share links must open in a pop-up window, not in a new tab.</li>
+	<li>WhatsApp must only appear on mobile devices.</li>
+	<li>Facebook Messenger must link to the Messenger app on mobile and to facebook.com on desktop.</li>
+	<li>Must only use the social media platforms listed below.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#share-options-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/share-options-options.options}}
+</ul>
+
+{{#share-options-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+{{>  share-options}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> share-options}}</code></pre>
+{{/share-options-options.options}}
