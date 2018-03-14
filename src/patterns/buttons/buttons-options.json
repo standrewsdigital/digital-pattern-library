@@ -124,12 +124,27 @@
             "buttons": [
                 {
                     "type": "tag",
-                    "text": "Related news 1",
+                    "text": "St Andrews",
                     "size": " btn"
                 },
                 {
                     "type": "tag",
-                    "text": "Related news 2",
+                    "text": "Scotland",
+                    "size": " btn"
+                },
+                {
+                    "type": "tag",
+                    "text": "Digital pattern library",
+                    "size": " btn"
+                },
+                {
+                    "type": "tag",
+                    "text": "Climate change",
+                    "size": " btn"
+                },
+                {
+                    "type": "tag",
+                    "text": "Marine biology",
                     "size": " btn"
                 }
             ]
