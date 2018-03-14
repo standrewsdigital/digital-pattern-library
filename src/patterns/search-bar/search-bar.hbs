@@ -1,0 +1,40 @@
+<!-- Begin pattern: search-bar //-->
+{{#if full-width}}
+<div id="search-bar" {{#if background-color}} class="{{background-color}}" {{/if}}>
+{{/if}}
+	{{#if search-tags}}
+	<div id="search-title">
+		<h4>{{search-header}}</h4>
+		<p>{{search-subtext}}</p>
+	</div>
+	{{/if}}
+	<div class="container">
+		{{#if default}}
+		<div class="col-md-12">
+		{{/if}}
+	    <form class="dpl-form" action="">
+	        <div class="input-group input-group-lg">
+	            {{#if title}}<span class="input-group-addon search-bar-title">{{title}}</span>{{/if}}
+	            <input id="{{input-id}}" class="form-control" type="text" title="Enter search keywords" maxlength="256" name="search" placeholder="{{placeholder}}">
+	            <span class="input-group-btn">
+	                <button class="btn btn-primary" value="Search" type="submit">
+	                    <i class="fa fa-search" title="Search"></i>
+	                </button>
+	            </span>
+	        </div>
+	        {{#if search-tags}}
+	        <div class="results">
+	        	<div class="row">
+	    			<div class="col-md-12"></div>
+	    		</div>
+	        </div>
+	        {{/if}}
+	    </form>
+		{{#if default}}
+		</div>
+		{{/if}}
+	</div>
+{{#if full-width}}
+</div>
+{{/if}}
+<!-- End pattern: search-bar //-->

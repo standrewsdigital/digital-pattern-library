@@ -1,0 +1,34 @@
+{
+    "options" : [
+        {
+            "option-heading": "Search bar",
+            "option-description": "",
+            "option-anchor": "search-bar-default",
+            "placeholder": "Search the University website...",
+            "default": true,
+            "input-id": "default-search"
+        },
+        {
+            "option-heading": "Search banner",
+            "option-description": "",
+            "option-anchor": "search-banner",
+            "background-color": "search-banner-grey",
+            "full-width": true,
+            "title": "Search posts",
+            "placeholder": "Search...",
+            "input-id": "banner-search"
+         },
+         {
+            "option-heading": "Search banner with tag buttons",
+            "option-description": "<ul><li>The search banner with tag buttons option must only pull results from the child pages.</li><li>Only tag buttons must be used with the search banner with tag buttons option.</li></ul>",
+            "option-anchor": "search-banner-tags",
+            "search-tags": true,
+            "full-width": true,
+            "background-color": "search-banner-grey",
+            "placeholder": "Search...",
+            "search-header": "News search",
+            "search-subtext": "Search through our entire news archive",
+            "input-id": "news-search"
+         }
+    ]
+}
