@@ -1,10 +1,10 @@
 {
     "options" : [
         {
-            "option-heading": "Search",
+            "option-heading": "Search bar",
             "option-description": "",
-            "option-anchor": "search",
-            "placeholder": "Search...",
+            "option-anchor": "search-bar-default",
+            "placeholder": "Search the University website...",
             "default": true,
             "input-id": "default-search"
         },
@@ -20,7 +20,7 @@
          },
          {
             "option-heading": "Search banner with tag buttons",
-            "option-description": "",
+            "option-description": "<ul><li>The search banner with tag buttons option must only pull results from the child pages.</li><li>Only tag buttons must be used with the search banner with tag buttons option.</li></ul>",
             "option-anchor": "search-banner-tags",
             "search-tags": true,
             "full-width": true,
