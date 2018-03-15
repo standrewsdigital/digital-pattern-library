@@ -2,7 +2,7 @@
     "options" : [
         {
             "option-heading": "Aside list",
-            "option-description": "<p></p>",
+            "option-description": "<p>Link titles in the numerical list are automated from WordPress post titles.</p>",
             "option-anchor": "aside-list",
             "title": "Most read",
             "news-item": [
