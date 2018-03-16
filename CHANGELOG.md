@@ -6,6 +6,28 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+## v1.9.0
+
+Release date: Friday 16 March 2018
+
+### Added
+
+* New search bar pattern.
+* New numerical list pattern.
+* New share options pattern.
+* New option added to the news updates pattern.
+* New option added to the buttons pattern.
+
+### Changed
+
+* Rules on usage of news updates pattern.
+* Rules on usage of navbox grid pattern.
+
+
+
+
+---
+
 ## v1.8.3
 
 Release date: Wednesday 7 March 2018
