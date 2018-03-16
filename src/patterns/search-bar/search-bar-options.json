@@ -2,7 +2,7 @@
     "options" : [
         {
             "option-heading": "Search bar",
-            "option-description": "",
+            "option-description": "<p>The standalone search bar must only appear as part of the <a href='../header/index.html'>header</a> pattern.</p>",
             "option-anchor": "search-bar-default",
             "placeholder": "Search the University website...",
             "default": true,
@@ -10,7 +10,7 @@
         },
         {
             "option-heading": "Search banner",
-            "option-description": "",
+            "option-description": "<ul><li>The search banner may be used on the body section of a webpage.</li><li>The search banner must not be used directly below the <a href='../navigation-bar/index.html'>navigation bar</a> pattern.</li><li>It is recommended that the search banner appears directly above the <a href='../footer/index.html'>footer</a> pattern if included on the main body of a webpage.</li></ul>",
             "option-anchor": "search-banner",
             "background-color": "search-banner-grey",
             "full-width": true,

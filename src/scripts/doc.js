@@ -354,7 +354,7 @@ function htmlDecode(value) {
                 link_text = search_list[i].name;
 
                 if ( form_id === "news-search" ) {
-                    link = "<a type='button' class='btn btn-lg btn-secondary' href='" + link_url + "'>" + link_text + "</a>";
+                    link = "<a type='button' class='btn btn-tag' href='" + link_url + "'>" + link_text + "</a>";
                 } else {
                   link = "<a href='" + link_url + "'>" + link_text + "</a>";
                 }
