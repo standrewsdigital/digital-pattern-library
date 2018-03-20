@@ -175,86 +175,122 @@ function htmlDecode(value) {
 
 
 
- // Dummy tags used for the news search pattern.
+ // Placeholder tags used for the news search pattern.
     var news_tags = [
         {
-            "name": "Brexit",
+            "name": "Arts",
             "link": "#"
         },
         {
-            "name": "International pizza",
+            "name": "Business",
             "link": "#"
         },
         {
-            "name": "International fondue",
+            "name": "Children",
             "link": "#"
         },
         {
-            "name": "International problems",
+            "name": "Community",
             "link": "#"
         },
         {
-            "name": "International Steve's",
+            "name": "Crime",
             "link": "#"
         },
         {
-            "name": "International news",
+            "name": "Culture",
             "link": "#"
         },
         {
-            "name": "International pizza",
+            "name": "Defence",
             "link": "#"
         },
         {
-            "name": "International fondue",
+            "name": "Economy",
             "link": "#"
         },
         {
-            "name": "International problems",
+            "name": "Education at St Andrews",
             "link": "#"
         },
         {
-            "name": "International 2734949",
+            "name": "Energy",
             "link": "#"
         },
         {
-            "name": "International fddfdfeeeer",
+            "name": "Engineering",
             "link": "#"
         },
         {
-            "name": "International sss",
+            "name": "Enterprise",
             "link": "#"
         },
         {
-            "name": "International 2323",
+            "name": "Environment",
             "link": "#"
         },
         {
-            "name": "International csdsdddsdfsdfsdfsd",
+            "name": "Health and medicine",
             "link": "#"
         },
         {
-            "name": "International sdsdsd",
+            "name": "History of St Andrews",
             "link": "#"
         },
         {
-            "name": "International 1",
+            "name": "Law",
             "link": "#"
         },
         {
-            "name": "Swiss army knife",
+            "name": "Lifestyle at St Andrews",
             "link": "#"
         },
         {
-            "name": "Swiss cheese",
+            "name": "Politics",
             "link": "#"
         },
         {
-            "name": "Swiss chocolate",
+            "name": "Research at St Andrews",
             "link": "#"
         },
         {
-            "name": "Swiss roll",
+            "name": "Science",
+            "link": "#"
+        },
+        {
+            "name": "Security",
+            "link": "#"
+        },
+        {
+            "name": "Society",
+            "link": "#"
+        },
+        {
+            "name": "St Andrews",
+            "link": "#"
+        },
+        {
+            "name": "St Andrews in the news",
+            "link": "#"
+        },
+        {
+            "name": "St Andrews alumni",
+            "link": "#"
+        },
+        {
+            "name": "Technology",
+            "link": "#"
+        },
+        {
+            "name": "Travel",
+            "link": "#"
+        },
+        {
+            "name": "University",
+            "link": "#"
+        },
+        {
+            "name": "World",
             "link": "#"
         }
     ];
