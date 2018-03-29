@@ -1,0 +1,69 @@
+---
+date: <%= new Date() %>
+---
+<!-- Begin pattern: error-pages //-->
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <title>{{{this.heading}}} error</title> 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+        <link rel="canonical" href="http://www.st-andrews.ac.uk">
+        <meta name="copyright" content="Copyright (c) 2018 University of St Andrews" />
+        <meta name="rating" content="general" />
+        <meta name="dc.keywords" content="University"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       
+        <style>
+         {{{ getEmbed './core/styles/error.css'}}}
+        </style>
+
+    </head>
+    <body>
+
+    {{> text-banner examples-text-banner.error}}
+
+    {{> header examples-header}}
+
+    {{> navigation-bar examples-index.navigation-bar}}
+
+    <!-- BODY -->
+ 
+    <div class="hero-banner" >
+      <div class="container">
+        <div class="bg"></div>
+            <div class="fg">
+              <div class="error-heading" style="error_heading">{{{this.heading}}}</div>
+              <div class="error-sub-heading" style="error_sub-heading">{{{this.sub-heading}}}</div>
+             {{#each this.error-text}}
+              <div class="error-text" >{{{this}}}</div>
+              {{/each}}       
+            </div>
+        </div>
+    </div>
+
+    <!-- SEARCH AND CONTACT -->
+    <div class="container" id="[id]">
+      <div class="row">
+        <div class="col-sm-8">
+          <section class="content" role="main">
+            <!--search box -->
+            <h3>Search the university website</h3>
+          </section>
+        </div>
+        <div class="col-sm-4">
+              <!--digitalteam contact -->
+              <h3>Report a problem</h3>
+              <p>Please report any problems to <a href="mailto: example@st-andrews.ac.uk">example@st-andrews.ac.uk</a></p>
+              <br>
+        </div>
+       </div> <!-- row -->
+    </div> <!-- container -->
+
+    <!--- additional body content  --->
+    {{> body}}
+
+    {{> footer examples-footer}}
+    </body>
+</html>
+<!-- End pattern: error-pages //-->

@@ -1,30 +1,34 @@
 ---
-title: Dummy pattern
+title: Error pages
 ---
-
-<p class="alert alert-info">See CONTRIBUTING.md for details on how to create a new pattern.</p>
 
 <p>The introduction may be several paragraphs long if required. It should introduce the pattern, explain what it is and when and where it may be used.</p>
 
-<h3>Rules for the dummy pattern</h3>
+<h3>Rules for the error page</h3>
 <ul>
     <li>You may use any formatting as required, such as paragraphs and unordered lists.</li>
     <li>Documentation should follow the writing for the web guidelines and adhere to the <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/house-style/">house style guide</a>.</li>
     <li>Code should adhere to the <a href="https://www.st-andrews.ac.uk/digital-standards/service-manual/code-standards/">code style and standards guides</a>.</li>
 </ul>
 
-<h3>Options available</h3>
+<h3>Options available - </h3>
 <ul>
-{{#dummy-pattern-options.options}}
-    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
-{{/dummy-pattern-options.options}}
+    <li>See the <a href="../../patterns/header/index.html">header pattern</a> page for more information on configuring the header section.</li>
+    <li>See the <a href="../../patterns/navigation-bar/index.html">navigation bar</a> pattern page for more information on configuring the navigations section. </li>
+    <li>See the <a href="../../patterns/footer/index.html">footer pattern</a> page for more information on configuring the footer section. </li>
 </ul>
 
-{{#dummy-pattern-options.options}}
+<ul>
+{{#error-pages-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/error-pages-options.options}}
+</ul>
+
+{{#error-pages-options.options}}
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
-{{>  dummy-pattern}}
-<span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> dummy-pattern}}</code></pre>
-{{/dummy-pattern-options.options}}
+<div class="container">
+    <a href="../../examples/error-pages/{{option-heading}}.html"  target="_blank" download="{{option-heading}}.html">view the {{option-heading}} error page</a>
+</div>
+{{/error-pages-options.options}}

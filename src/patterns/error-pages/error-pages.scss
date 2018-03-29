@@ -1,0 +1,59 @@
+/**
+ * error page css
+ * Required css for styling all error pages.
+ * Merged into error.css and embedded on the page.
+ * @version     1.0
+ * @author      Nick Mullen <nm215@st-andrews.ac.uk>
+ * @license     http://opensource.org/licenses/gpl-license.php, GNU Public License
+*/
+
+.error-heading{
+    color: #444;
+    font-size: 200px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 9px rgba(68,68,68,0.7);
+    line-height: 1.1;
+}
+
+.error-sub-heading{
+    color: #444; 
+    font-size: 50px; 
+    font-weight: 600; 
+    text-align: center; 
+    text-shadow: 2px 2px 9px rgba(68,68,68,0.7); 
+    line-height: 2;
+}
+
+.error-text{
+    color: #444; 
+    font-size: 25px; 
+    font-weight: 200; 
+    text-align: center; 
+    text-shadow: 2px 2px 9px rgba(68,68,68,0.7); 
+    line-height: 2;
+}
+
+/**
+*     Override css images and fonts with base64 
+**/
+
+.hero-banner{
+    background: inline-image('images-docs/background/error-banner.jpg');
+}
+
+#header-logo a{
+    background: inline-image('images-core/furniture/logo-foundation.svg');
+    background-repeat: no-repeat;
+    height:60px;
+    max-width:325px
+}
+
+@font-face{
+    font-family:'FontAwesome';
+    src:inline-font-files("fonts/font-awesome/fontawesome.otf" , "otf");
+    src:inline-font-files("fonts/font-awesome/fontawesome-webfont.eot", "eot"),
+        inline-font-files("fonts/font-awesome/fontawesome-webfont.woff", "woff"),
+        inline-font-files("fonts/font-awesome/fontawesome-webfont.ttf", "truetype"),
+        inline-font-files("fonts/font-awesome/fontawesome-webfont.svg", "svg");
+    font-weight:normal;font-style:normal}

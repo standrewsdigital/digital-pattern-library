@@ -19,7 +19,7 @@
 
 'use strict';
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
     // == 1. Load task libraries
 
@@ -48,34 +48,46 @@ module.exports = function(grunt) {
     grunt.initConfig({
 
         pkg: grunt.file.readJSON('package.json'),
-
+        err: grunt.file.readJSON('src/patterns/error-pages/error-pages-options.json'),
         // Assemble - Generate documentation about DPL
         // See http://assemble.io/docs/ for more details
         assemble: {
 
             // General options
             options: {
-                pkg:        '<%= pkg %>',
-                now:        '<%= grunt.template.today("isoDateTime") %>',
-                assets:     'docs/assets',
-                layoutdir:  'src/_layouts',
-                partials:   ['src/patterns/*/*.hbs', 'src/_partials/*.hbs'],
-                ext:        '.html',
-                data:       [
-                                'src/_meta/*.json',
-                                'src/patterns/*/*.json',
-                                'src/examples/_data/*.json'
-                            ],
-                helpers:    [
-                                'handlebars-helper-asset',
-                                'handlebars-helper-rel'
-                            ],
-                site:       {
-                                root: "docs",
-                            },
+                pkg: '<%= pkg %>',
+                now: '<%= grunt.template.today("isoDateTime") %>',
+                assets: 'docs/assets',
+                layoutdir: 'src/_layouts',
+                partials: ['src/patterns/*/*.hbs', 'src/_partials/*.hbs'],
+                ext: '.html',
+                data: [
+                    'src/_meta/*.json',
+                    'src/patterns/*/*.json',
+                    'src/examples/_data/*.json'
+                ],
+                helpers: [
+                    'handlebars-helper-asset',
+                    'handlebars-helper-rel'
+                ],
+                site: {
+                    root: "docs",
+                },
             },
 
             // ASSEMBLE SECTIONS
+            // Assemble options for the error pages
+            error_pages: {
+                options: {
+                    layoutdir: 'src/patterns/error-pages/',
+                    layout: 'base-page.hbs',
+                    helpers: ['src/scripts/embed-helper.js'],
+                    pages: '<%= err.options %>',
+                },
+                files: {
+                    'docs/examples/error-pages/': ['!*']
+                }
+            },
 
             // Patterns - uses /src/_layouts/pattern.hbs
             patterns: {
@@ -83,21 +95,21 @@ module.exports = function(grunt) {
                     layout: 'pattern.hbs'
                 },
                 files: [{
-                    expand: true,
-                    cwd:    'src/patterns/',
-                    src:    [
-                                'index.hbs',
-                                '*/*.doc.hbs'
-                            ],
-                    dest:   'docs/patterns',
-                    ext:    '.html',
-                    rename: function(src,dest){
-                                var prefix = 'docs/patterns/',
+                        expand: true,
+                        cwd: 'src/patterns/',
+                        src: [
+                            'index.hbs',
+                            '*/*.doc.hbs'
+                        ],
+                        dest: 'docs/patterns',
+                        ext: '.html',
+                        rename: function (src, dest) {
+                            var prefix = 'docs/patterns/',
                                     pattern = /\/[a-zA-Z0-9_-]+.html$/,
                                     suffix = '/index.html';
-                                return prefix + dest.replace(pattern, suffix);
-                    }
-                }]
+                            return prefix + dest.replace(pattern, suffix);
+                        }
+                    }]
             },
 
             // Example pages - uses /src/_layouts/example.hbs
@@ -106,12 +118,12 @@ module.exports = function(grunt) {
                     layout: 'example.hbs'
                 },
                 files: [{
-                    expand: true,
-                    cwd:    'src/examples/',
-                    src:    ['**/*.hbs'],
-                    dest:   'docs/examples',
-                    ext:    '.html'
-                }]
+                        expand: true,
+                        cwd: 'src/examples/',
+                        src: ['**/*.hbs'],
+                        dest: 'docs/examples',
+                        ext: '.html'
+                    }]
             },
 
             // General guidance pages - uses /src/_layouts/doc.hbs
@@ -120,16 +132,16 @@ module.exports = function(grunt) {
                     layout: 'doc.hbs'
                 },
                 files: [{
-                    expand: true,
-                    cwd:    'src/docs',
-                    src:    [
-                                '*.md',
-                                '*.html',
-                                '**/*.hbs'
-                            ],
-                    ext:    '.html',
-                    dest:   'docs'
-                }]
+                        expand: true,
+                        cwd: 'src/docs',
+                        src: [
+                            '*.md',
+                            '*.html',
+                            '**/*.hbs'
+                        ],
+                        ext: '.html',
+                        dest: 'docs'
+                    }]
             },
 
             // Meta doc(s)
@@ -142,11 +154,11 @@ module.exports = function(grunt) {
                     ext: '.json',
                 },
                 files: [{
-                    expand: true,
-                    cwd: 'src/_meta',
-                    src: ['build.tmpl'],
-                    dest: 'core'
-                }]
+                        expand: true,
+                        cwd: 'src/_meta',
+                        src: ['build.tmpl'],
+                        dest: 'core'
+                    }]
             }
 
         }, // END of assemble
@@ -183,21 +195,27 @@ module.exports = function(grunt) {
 
         // compass - compile compass/sass code to CSS
         compass: {
+            options: {
+                imagesDir: 'src',
+                fontsDir: 'src'
+            },
             dist: {
                 options: {
                     banner: '/*! <%= pkg.name %> v<%= pkg.version %> ' +
-                        '- <%= grunt.template.today("yyyy-mm-dd") %> */\n',
+                            '- <%= grunt.template.today("yyyy-mm-dd") %> */\n',
                     specify: [
                         'src/styles/datatables.scss',
                         'src/styles/doc.scss',
                         'src/styles/print.scss',
                         'src/styles/screen.scss',
-                        'src/styles/header-only.scss'
+                        'src/styles/header-only.scss',
+                        'src/styles/error.scss'
                     ],
                     sassDir: 'src/styles',
                     importPath: 'src/patterns',
                     cssDir: 'core/styles',
                     environment: 'production',
+
                     force: true,
                     trace: true,
                     relativeAssets: true
@@ -223,7 +241,6 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/highlight/highlight.pack.js',
                     'src/scripts/vendor/lightbox.min.js',
                     'src/scripts/jquery-ui.js',
-
 
                     // Bootstrap JavaScript
                     // Note these scripts should align with the CSS
@@ -317,43 +334,43 @@ module.exports = function(grunt) {
         copy: {
             core_images: {
                 files: [{
-                    expand: true,
-                    cwd: 'src/images-core/',
-                    src: ['**/*'],
-                    dest: 'core/images'
-                }]
+                        expand: true,
+                        cwd: 'src/images-core/',
+                        src: ['**/*'],
+                        dest: 'core/images'
+                    }]
             },
             core_fonts: {
                 files: [{
-                    expand: true,
-                    cwd: 'src/fonts/',
-                    src: ['**/*'],
-                    dest: 'core/fonts'
-                }]
+                        expand: true,
+                        cwd: 'src/fonts/',
+                        src: ['**/*'],
+                        dest: 'core/fonts'
+                    }]
             },
             docs_core: {
                 files: [{
-                    expand: true,
-                    cwd: 'core',
-                    src: ['**/*'],
-                    dest: 'docs/assets/core'
-                }]
+                        expand: true,
+                        cwd: 'core',
+                        src: ['**/*'],
+                        dest: 'docs/assets/core'
+                    }]
             },
             docs_images: {
                 files: [{
-                    expand: true,
-                    cwd: 'src/images-docs',
-                    src: ['**/*'],
-                    dest: 'docs/assets/docs/images'
-                }]
+                        expand: true,
+                        cwd: 'src/images-docs',
+                        src: ['**/*'],
+                        dest: 'docs/assets/docs/images'
+                    }]
             },
             docs_datatables: {
                 files: [{
-                    expand: true,
-                    cwd: 'src/scripts/vendor/',
-                    src: ['jquery.dataTables.min.js'],
-                    dest: 'core/scripts/'
-                }]
+                        expand: true,
+                        cwd: 'src/scripts/vendor/',
+                        src: ['jquery.dataTables.min.js'],
+                        dest: 'core/scripts/'
+                    }]
             }
 
         }, // END of copy
@@ -362,10 +379,9 @@ module.exports = function(grunt) {
         // gitinfo – loads info from git into object for grunt to access.
         gitinfo: {},
 
-
         // jshint - check JS files for good style
         jshint: {
-            defaults: ['src/scripts/base.js','src/patterns/*/*.js']
+            defaults: ['src/scripts/base.js', 'src/patterns/*/*.js']
         }, // END of jshint
 
 
@@ -373,20 +389,20 @@ module.exports = function(grunt) {
         uglify: {
             options: {
                 banner: '/*! <%= pkg.name %> v<%= pkg.version %> - ' +
-                    '<%= grunt.template.today("yyyy-mm-dd") %> */\n'
+                        '<%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             core: {
                 files: {
                     'core/scripts/core-base.min.js':
-                        ['core/scripts/core-base.js'],
+                            ['core/scripts/core-base.js'],
                     'core/scripts/core-nojquery.min.js':
-                        ['core/scripts/core-nojquery.js'],
+                            ['core/scripts/core-nojquery.js'],
                     'core/scripts/core.min.js':
-                        ['core/scripts/core.js'],
+                            ['core/scripts/core.js'],
                     'core/scripts/doc.min.js':
-                        ['core/scripts/doc.js'],
+                            ['core/scripts/doc.js'],
                     'core/scripts/header-only.min.js':
-                        ['core/scripts/header-only.js']
+                            ['core/scripts/header-only.js']
                 }
             }
         }, // END of uglify
@@ -486,6 +502,7 @@ module.exports = function(grunt) {
         'assemble:examples',
         'assemble:docs',
         'copy:docs_core',
-        'copy:docs_images'
+        'copy:docs_images',
+        'assemble:error_pages'
     ]);
 };

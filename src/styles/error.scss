@@ -1,0 +1,33 @@
+/**
+ * error-page.scss
+ * Master scss file for assembling the error-page.
+ *
+ *
+ * @version     0.1 22/03/2018
+ * @author      Nick Mullen <nm215@st-andrews.ac.uk>
+*/
+
+/* ==========================================================================
+IMPORTS AND PATTERNS
+========================================================================== */
+
+@charset "utf-8";
+
+@import 'utilities';
+@import 'colors';
+@import 'fonts';
+@import 'bootstrap-custom';
+@import 'icons';
+@import 'vendor/font-awesome';
+
+
+/* Patterns import
+   --------------------------------------------------------------------------
+
+   @version 1.0.0
+   */
+@import 'footer/footer';
+@import 'header/header';
+@import 'navigation-bar/navigation-bar';
+@import 'error-pages/error-pages';
+@import 'text-banner/_text-banner';

@@ -1,22 +1,29 @@
 {
-    "options" : [
-        {
-            "option-heading": "Success",
-            "option-description": "<p>Use the class <code>alert-success</code> for a success alert box. This alert box indicates a successful or positive action, such as successfully submitting a form.</p>",
-            "option-anchor": "alert-success",
-            "alert-class": "alert-success",
-            "alert-message": "Thank you for submitting your details. If you have any questions please email <a href='mailto:#' class='alert-link'>example@st-andrews.ac.uk</a>."
-         },
-
-
-
-
-         {
-            "option-heading": "Info",
-            "option-description": "<p>Use the class <code>alert-info</code> for an info alert box. This alert box indicates neutral information or a neutral action, such as a recommendation or an update.</p>",
-            "option-anchor": "alert-info",
-            "alert-class": "alert-info",
-            "alert-message": "<strong>Heads up!</strong> We recommend that you apply soon for a place on our <a href='#' class='alert-link'>poetry course</a>."
-          }
+    "options": [       
+        {         
+            "option-heading": "404",
+            "option-description": "Resource not found page.",
+            "option-anchor": "404",
+            "filename": "404.zip",
+            "data": {
+                "heading": "404",
+                "sub-heading": "Page not found",
+                "error-text": [
+                    "Sorry, we can't find <strong>http://www.st-andrews.ac.uk:443/404.</strong>",
+                    "That page may never have existed, or it may have been moved or deleted.",
+                    "Or perhaps it floated out to sea. Sorry about that."
+                ]
+            }
+        },
+       {         
+            "option-heading": "403",
+            "option-description": "access denied.",
+            "option-anchor": "403",
+            "filename": "403.zip",
+            "data": {
+                "heading": "403",
+                "sub-heading": "The requested resource requires an authentication."
+            }
+        }
     ]
 }
