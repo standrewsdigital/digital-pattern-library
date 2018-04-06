@@ -3,10 +3,16 @@
 /* BEGIN Pattern: news-updates    */
 /**********************************/
 
-.news-updates figure {
+.news-updates img {
     float: left;
     padding-right: 15px;
     width: 40%;
+
+    @media (max-width: 768px) {
+        float: none;
+        margin-bottom: 10px;
+        width: 100%;
+    }
 }
 
 .news-updates-small {
