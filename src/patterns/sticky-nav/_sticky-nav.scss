@@ -39,6 +39,10 @@
     }
 }
 
+#internal-nav-dep {
+    display: none;
+}
+
 /* A cool hack to get the offset right when linking to internal id's
  * whilst also having a nav bar absolutely positioned on the top.
  * Hat tip -  UCL.
