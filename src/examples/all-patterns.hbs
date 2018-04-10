@@ -2,56 +2,251 @@
 title: All patterns
 ---
 
-{{> header examples-header}}
-{{> accordion examples-patterns.accordion}}
-{{!-- {{> breadcrumbs examples-patterns.breadcrumbs}}
-{{> buttons examples-patterns.buttons}}
-{{> category-header examples-patterns.category-header}}
-{{> code examples-patterns.code}}
-{{> contact-card examples-patterns.contact-card}}
-{{> content-whole examples-patterns.content-whole}}
-{{> content-halves examples-patterns.content-halves}}
-{{> content-thirds examples-patterns.content-thirds}}
-{{> datatables examples-patterns.datatables}}
-{{> featured-media examples-patterns.featured-media}}
-{{> featured-news examples-patterns.featured-news}}
-{{> font-awesome examples-patterns.font-awesome}}
-{{> footer examples-patterns.footer}}
-{{> form-banner examples-patterns.form-banner}}
-{{> form-elements examples-patterns.form-elements}}
-{{> form-errors examples-patterns.form-errors}}
-{{> gallery examples-patterns.gallery}}
-{{> glyphicons examples-patterns.glyphicons}}
-{{> google-maps examples-patterns.google-maps}}
-{{> header examples-patterns.header}}
-{{> hero-banner examples-patterns.hero-banner}}
-{{> info-bite examples-patterns.info-bite}}
-{{> info-bite-grid examples-patterns.info-bite-grid}}
-{{> kis-widget examples-patterns.kis-widget}}
-{{> news-updates examples-patterns.news-updates}}
-{{> long-form-asides examples-patterns.long-form-asides}}
-{{> long-form-credits examples-patterns.long-form-credits}}
-{{> long-form-end-piece examples-patterns.long-form-end-piece}}
-{{> long-form-gallery examples-patterns.long-form-gallery}}
-{{> long-form-intro examples-patterns.long-form-intro}}
-{{> long-form-quotes examples-patterns.long-form-quotes}}
-{{> long-form-sections examples-patterns.long-form-sections}}
-{{> masonry examples-patterns.masonry}}
-{{> masonry-grid examples-patterns.masonry-grid}}
-{{> more-news examples-patterns.more-news}}
-{{> navbox examples-patterns.navbox}}
-{{> navbox-grid examples-patterns.navbox-grid}}
-{{> navigation-bar examples-patterns.navigation-bar}}
-{{> numerical-list examples-patterns.numerical-list}}
-{{> panel examples-patterns.panel}}
-{{> search-bar examples-patterns.search-bar}}
-{{> secondary-call examples-patterns.secondary-call}}
-{{> section-header examples-patterns.section-header}}
-{{> share-options examples-patterns.share-options}}
-{{> staff-profile examples-patterns.staff-profile}}
-{{> sticky-nav examples-patterns.sticky-nav}}
-{{> subject-combo examples-patterns.subject-combo}}
-{{> tabs examples-patterns.tabs}}
-{{> text-banner examples-patterns.text-banner}}
-{{> tile-grid examples-patterns.tile-grid}}
-{{> typefaces examples-patterns.typefaces}} --}}
+<div class="container">
+
+{{#accordion-options.options}}
+    {{> accordion}}
+{{/accordion-options.options}}
+
+{{#alerts-options.options}}
+    {{>  alerts}}
+{{/alerts-options.options}}
+
+{{#breadcrumbs-options.options}}
+    {{> breadcrumbs}}
+{{/breadcrumbs-options.options}}
+
+{{#buttons-options.options}}
+    {{> buttons}}
+{{/buttons-options.options}}
+
+{{#category-header-options.options}}
+    </div>{{>  category-header}}<div class="container">
+{{/category-header-options.options}}
+
+{{!-- {{#code-options.options}}
+    </div>{{>  code}}<div class="container">
+{{/code-options.options}} --}}
+
+{{#contact-card-options.options}}
+    {{> contact-card}}
+{{/contact-card-options.options}}
+
+{{#content-halves-options.options}}
+    </div>{{> content-halves}}<div class="container">
+{{/content-halves-options.options}}
+
+{{#content-thirds-options.options}}
+    </div>{{> content-thirds}}<div class="container">
+{{/content-thirds-options.options}}
+
+{{#content-whole-options.options}}
+    </div>{{> content-whole}}<div class="container">
+{{/content-whole-options.options}}
+
+{{#datatables-options.options}}
+    {{> datatables}}
+{{/datatables-options.options}}
+
+{{#featured-media-options.options}}
+    </div>{{> featured-media}}<div class="container">
+{{/featured-media-options.options}}
+
+{{#featured-news-options.options}}
+    </div>{{> featured-news}}<div class="container">
+{{/featured-news-options.options}}
+
+{{#font-awesome-options.options}}
+    {{> font-awesome}}
+{{/font-awesome-options.options}}
+
+{{#fonts-options.options}}
+    {{> fonts}}
+{{/fonts-options.options}}
+
+{{#footer-options.options}}
+    </div>{{> footer}}<div class="container">
+{{/footer-options.options}}
+
+{{#form-banner-options.options}}
+    </div>{{> form-banner}}<div class="container">
+{{/form-banner-options.options}}
+
+{{#form-elements-options.options}}
+    {{> form-elements}}
+{{/form-elements-options.options}}
+
+{{#form-errors-options.options}}
+    {{>form-errors}}
+{{/form-errors-options.options}}
+
+{{#gallery-options.options}}
+    {{> gallery}}
+{{/gallery-options.options}}
+
+{{!-- {{#glyphicons-options.options}}
+    {{> glyphicons}}
+{{/glyphicons-options.options}} --}}
+
+{{#google-maps-options.options}}
+    </div>{{> google-maps}}<div class="container">
+{{/google-maps-options.options}}
+
+{{#header-options.options}}
+    </div>{{>  header}}<div class="container">
+{{/header-options.options}}
+
+{{#hero-banner-options.options}}
+    </div>{{> hero-banner}}<div class="container">
+{{/hero-banner-options.options}}
+
+{{!-- {{#info-bite-options.options}}
+    {{> info-bite}}
+{{/info-bite-options.options}} --}}
+
+{{!-- {{#info-bite-grid-options.options}}
+    <div style="width:{{#info-bite-grid-options.div-width}};">
+        {{> info-bite-grid}}
+    </div>
+{{/info-bite-grid-options.options}}
+ --}}
+
+{{#intro-options.options}}
+    {{> intro}}
+{{/intro-options.options}}
+
+{{#kis-widget-options.options}}
+    </div>{{> kis-widget}}<div class="container">
+{{/kis-widget-options.options}}
+
+{{#long-form-asides-options.options}}
+    </div>{{> long-form-asides}}<div class="container">
+{{/long-form-asides-options.options}}
+
+{{#long-form-credits-options.options}}
+    </div>{{> long-form-credits}}<div class="container">
+{{/long-form-credits-options.options}}
+
+{{#long-form-end-piece-options.options}}
+    {{> long-form-end-piece}}
+{{/long-form-end-piece-options.options}}
+
+{{#long-form-gallery-options.options}}
+    {{> gallery}}
+{{/long-form-gallery-options.options}}
+
+{{#long-form-intro-options.options}}
+    {{> long-form-intro}}
+{{/long-form-intro-options.options}}
+
+{{#long-form-quotes-options.options}}
+    {{> long-form-quotes}}
+{{/long-form-quotes-options.options}}
+
+{{#long-form-sections-options.options}}
+    {{> long-form-sections}}
+{{/long-form-sections-options.options}}
+
+{{!-- {{#masonry-options.options}}
+    <div style="width: 30%;">
+        {{>  masonry}}
+    </div>
+{{/masonry-options.options}} --}}
+
+{{!-- {{#masonry-grid-options.options}}
+    </div>{{> masonry-grid}}<div class="container">
+{{/masonry-grid-options.options}} --}}
+
+{{#more-news-options.options}}
+    </div>{{> more-news}}<div class="container">
+{{/more-news-options.options}}
+
+{{#navbox-options.options}}
+    {{> navbox}}
+{{/navbox-options.options}}
+
+{{#navbox-grid-options.options}}
+    {{> navbox-grid}}
+{{/navbox-grid-options.options}}
+
+{{#navigation-bar-options.options}}
+    </div>{{> navigation-bar}}<div class="container">
+{{/navigation-bar-options.options}}
+
+{{#news-updates-options.options}}
+    {{> news-updates}}
+{{/news-updates-options.options}}
+
+{{#numerical-list-options.options}}
+    {{>  numerical-list}}
+{{/numerical-list-options.options}}
+
+{{#pagination-options.options}}
+    {{> pagination}}
+{{/pagination-options.options}}
+
+{{#panel-grid-options.options}}
+    {{> panel-grid}}
+{{/panel-grid-options.options}}
+
+{{#photosphere-options.options}}
+    {{> photosphere}}
+{{/photosphere-options.options}}
+
+{{#responsive-embed-options.options}}
+    {{> responsive-embed}}
+{{/responsive-embed-options.options}}
+
+{{#search-bar-options.options}}
+    </div>{{> search-bar}}<div class="container">
+{{/search-bar-options.options}}
+
+{{#secondary-call-options.options}}
+    </div>{{> secondary-call}}<div class="container">
+{{/secondary-call-options.options}}
+
+{{#section-header-options.options}}
+    </div>{{> section-header}}<div class="container">
+{{/section-header-options.options}}
+
+{{#share-options-options.options}}
+    {{> share-options}}
+{{/share-options-options.options}}
+
+{{#staff-profile-options.options}}
+    {{> staff-profile}}
+{{/staff-profile-options.options}}
+
+{{#sticky-nav-options.options}}
+    </div>{{> sticky-nav}}<div class="container">
+{{/sticky-nav-options.options}}
+
+{{#subject-combo-options.options}}
+    {{> subject-combo}}
+{{/subject-combo-options.options}}
+
+{{#tables-options.options}}
+    {{> tables}}
+{{/tables-options.options}}
+
+{{#tabs-options.options}}
+    {{> tabs}}
+{{/tabs-options.options}}
+
+{{#text-banner-options.options}}
+    {{> text-banner}}
+{{/text-banner-options.options}}
+
+{{#tile-grid-options.options}}
+    </div>{{> tile-grid}}<div class="container">
+{{/tile-grid-options.options}}
+
+{{!-- {{#typefaces-options.options}}
+    {{> typefaces}}
+{{/typefaces-options.options}} --}}
+
+{{#typography-options.options}}
+    {{> typography}}
+{{/typography-options.options}}
+
+</div>
