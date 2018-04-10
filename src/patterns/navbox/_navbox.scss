@@ -5,6 +5,11 @@
 .navbox {
 	margin-bottom: 30px;
     position: relative;
+
+    img { 
+        height: auto; 
+        max-width: 100%; 
+   }  
 }
 
 // .navbox-image img {
