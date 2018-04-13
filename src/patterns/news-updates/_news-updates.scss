@@ -3,29 +3,33 @@
 /* BEGIN Pattern: news-updates    */
 /**********************************/
 
-.news-updates img {
-    float: left;
-    padding-right: 15px;
-    width: 40%;
+.news-updates {
 
-    @media (max-width: 768px) {
-        float: none;
-        margin-bottom: 10px;
+    * {
+        padding: 5px 0;
+
+        @media (max-width: 576px) {
+            padding: 2px 0;
+        }
+    }
+
+    img {
+        padding-right: 15px;
         width: 100%;
     }
-}
 
-.news-updates-small {
-	margin-bottom: 25px;
-}
+    h4 {
+        margin-top: 0;
+    }
 
-.news-updates h3 {
-	font-size: 18px;
-	margin-top: 0;
-}
+    &:hover {
+        cursor: pointer;
+    }
 
-.news-updates:hover {
-    cursor: pointer;
+    &.news-updates-secondary {
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
 }
 
 /*********************************/
