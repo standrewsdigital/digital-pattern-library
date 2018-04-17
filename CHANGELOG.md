@@ -23,6 +23,19 @@ Release date: Tuesday 17 April 2018
 
 ---
 
+## v1.9.1
+
+Release date: Friday 6 April 2018
+
+### Fixed
+
+* Removed a line from CSS of the long-form gallery pattern that was breaking pages on the site. 
+
+
+
+
+---
+
 ## v1.9.0
 
 Release date: Friday 16 March 2018
