@@ -3,32 +3,33 @@
 /* BEGIN Pattern: news-updates    */
 /**********************************/
 
-.news-updates figure {
-    float: left;
-    padding-right: 15px;
-    width: 40%;
-}
+.news-updates {
 
-.news-updates-small img {
-	margin-bottom: 25px;
-}
+    * {
+        padding: 5px 0;
 
-.news-updates h3 {
-	font-size: 18px;
-	margin-top: 0;
-}
+        @media (max-width: 576px) {
+            padding: 2px 0;
+        }
+    }
 
-figure {
-    margin: 0;
-}
+    img {
+        padding-right: 15px;
+        width: 100%;
+    }
 
-img {
-    height: auto;
-    max-width: 100%;
-}
+    h4 {
+        margin-top: 0;
+    }
 
-.news-updates:hover {
-    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.news-updates-secondary {
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
 }
 
 /*********************************/

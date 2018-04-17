@@ -20,7 +20,7 @@
          },
          {
             "option-heading": "Search banner with tag buttons",
-            "option-description": "<ul><li>The search banner with tag buttons option must only pull results from the child pages.</li><li>Only tag buttons must be used with the search banner with tag buttons option.</li></ul>",
+            "option-description": "<ul><li>The search banner with tag buttons option must only pull results from the child pages.</li><li>Only tag buttons must be used with the search banner with tag buttons option.</li></ul><p>For this example, search 'St Andrews' to see how the tag buttons are displayed.</p>",
             "option-anchor": "search-banner-tags",
             "search-tags": true,
             "full-width": true,
