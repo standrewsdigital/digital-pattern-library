@@ -6,6 +6,23 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 
+## v1.9.2
+
+Release date: Tuesday 17 April 2018
+
+### Changed
+
+* Restructured the news updates pattern as it was breaking on tablet devices.
+
+### Removed
+
+* 'Continue reading' button from the news updates pattern.
+
+
+
+
+---
+
 ## v1.9.0
 
 Release date: Friday 16 March 2018
