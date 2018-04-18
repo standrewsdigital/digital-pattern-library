@@ -1,20 +1,25 @@
 <!-- Begin pattern: information-panel //-->
-
-<section class="information-panel">
+{{#each panels}}
+<section class="information-panel {{colour}}">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
-				{{!-- {{> navbox}} --}}
+		{{#each columns}}
+			<div class="{{column-size}}">
+				{{#if box-size}}		
+					{{> navbox}}
+				{{/if}}
+				{{#if title}}		
+					<h3>{{title}}</h3>
+					<p>{{paragraph}}</p>
+				{{/if}}	
+				{{#if icon-type}}		
+					<i class="fa fa-{{icon-type}}" aria-hidden="true"></i>
+				{{/if}}		
 			</div>
-			<div class="col-md-6">
-				<h3>Bob Ross Ipsum</h3>
-				<p>This is probably the greatest thing that's ever happened in my life. We don't have anything but happy trees here. Now, we're going to fluff this cloud. You can work and carry-on and put lots of little happy things in here.</p>
-			</div>
-			<div class="col-md-2">
-				<i class="fa fa-rocket fa-4" aria-hidden="true"></i>
-			</div>
+		{{/each}}
 		</div>
 	</div>
 </section>
+{{/each}}
 
 <!-- End pattern: information-panel //-->

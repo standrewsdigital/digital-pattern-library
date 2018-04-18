@@ -1,0 +1,98 @@
+{
+    "options" : [
+        {
+            "option-heading": "Default",
+            "option-description": "<p></p>",
+            "option-anchor": "default",
+            "panels": [
+                {
+                    "colour": "sta-purple-1",
+                    "columns": [
+                        {
+                            "column-size": "col-md-4",
+                            "box-size": [
+                                {
+                                    "image": {
+                                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                                        "alt": "Description"
+                                    },
+                                    "title": "Study",
+                                    "column": "col-sm-12",
+                                    "row": true
+                                }
+                            ]
+                        },
+                        {
+                            "column-size": "col-md-6",
+                            "title": "Bob Ross ipsum",
+                            "paragraph": "This is probably the greatest thing that's ever happened in my life. We don't have anything but happy trees here. Now, we're going to fluff this cloud. You can work and carry-on and put lots of little happy things in here."
+                        },
+                        {
+                            "column-size": "col-md-2",
+                            "icon-type": "rocket"
+                        }
+
+                    ]
+                },
+                {
+                    "colour": "sta-purple-2",
+                    "columns": [
+                        {
+                            "column-size": "col-md-6",
+                            "title": "Bob Ross ipsum",
+                            "paragraph": "This is probably the greatest thing that's ever happened in my life. We don't have anything but happy trees here. Now, we're going to fluff this cloud. You can work and carry-on and put lots of little happy things in here."
+                        },
+                        {
+                            "column-size": "col-md-2",
+                            "icon-type": "rocket"
+                        },
+                        {
+                            "column-size": "col-md-4",
+                            "box-size": [
+                                {
+                                    "image": {
+                                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                                        "alt": "Description"
+                                    },
+                                    "title": "Study",
+                                    "column": "col-sm-12",
+                                    "row": true
+                                }
+                            ]
+                        }
+                        
+                    ]
+                },
+                {
+                    "colour": "sta-purple-3",
+                    "columns": [
+                        {
+                            "column-size": "col-md-4",
+                            "box-size": [
+                                {
+                                    "image": {
+                                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                                        "alt": "Description"
+                                    },
+                                    "title": "Study",
+                                    "column": "col-sm-12",
+                                    "row": true
+                                }
+                            ]
+                        },
+                        {
+                            "column-size": "col-md-6",
+                            "title": "Bob Ross ipsum",
+                            "paragraph": "This is probably the greatest thing that's ever happened in my life. We don't have anything but happy trees here. Now, we're going to fluff this cloud. You can work and carry-on and put lots of little happy things in here."
+                        },
+                        {
+                            "column-size": "col-md-2",
+                            "icon-type": "rocket"
+                        }
+
+                    ]
+                }
+            ]
+        }
+    ]
+}

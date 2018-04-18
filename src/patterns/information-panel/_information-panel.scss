@@ -2,9 +2,27 @@
 /* BEGIN Pattern: information-panel  */
 /*************************************/
 
-/* Add in any CSS/Sass code for this pattern.
- * This file needs to be added to styles/screen.scss.
- */
+.information-panel {
+	color: white;
+
+	&.sta-purple-1 {
+		background-color: #A169BF;
+	}
+
+	&.sta-purple-2 {
+		background-color: #8C59A7;
+	}
+
+	&.sta-purple-3 {
+		background-color: #7B4398;
+	}
+	
+	.fa {
+		font-size: 7em;
+	}
+
+}
+
 
 /*************************************/
 /* END Pattern: information-panel    */
