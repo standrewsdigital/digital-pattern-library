@@ -60,6 +60,10 @@
                   "img": "assets/docs/images/patterns/hero-banner.jpg",
                   "url": "patterns/hero-banner/index.html"
                 },
+                { "name": "Information panel",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/information-panel/index.html"
+                },
                 { "name": "KIS widget",
                   "img": "assets/docs/images/patterns/kis-widget.jpg",
                   "url": "patterns/kis-widget/index.html"
