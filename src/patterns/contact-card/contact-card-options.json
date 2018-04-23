@@ -12,7 +12,8 @@
 					"type": "academic",
 					"image": true,
 					"phone": true,
-					"email": true
+					"email": true,
+					"card-class": "contact"
 			    },
 			    {
 			    	"id": "bob123",
@@ -20,7 +21,8 @@
 					"title": "Emeritus Professor",
 					"type": "academic",
 					"image": true,
-					"phone": true
+					"phone": true,
+					"card-class": "contact"
 			    },
 			    {
 			    	"id": "steve123",
@@ -29,7 +31,8 @@
 					"type": "academic",
 					"image": true,
 					"phone": true,
-					"email": true
+					"email": true,
+					"card-class": "contact"
 			    },
 			    {
 			    	"id": "pete123",
@@ -38,7 +41,8 @@
 					"type": "academic",
 					"image": true,
 					"phone": true,
-					"email": true
+					"email": true,
+					"card-class": "contact"
 			    },
 			    {
 			    	"id": "sally123",
@@ -47,7 +51,8 @@
 					"type": "academic",
 					"image": true,
 					"phone": true,
-					"email": true
+					"email": true,
+					"card-class": "contact"
 			    }
 		    ]
         },
@@ -65,35 +70,40 @@
 					"name": "Lucas Frank",
 					"title": "PhD student",
 					"type": "student",
-					"email": true
+					"email": true,
+					"card-class": "contact"
 			    },
 			    {
 			    	"id": "ava123",
 					"name": "Ava Ghosh",
 					"title": "PhD student",
 					"type": "student",
-					"email": true
+					"email": true,
+					"card-class": "contact"
 			    },
 			    {
 			    	"id": "liam123",
 					"name": "Liam Hills",
 					"title": "PhD student",
 					"type": "student",
-					"email": true
+					"email": true,
+					"card-class": "contact"
 			    },
 			    {
 			    	"id": "mia123",
 					"name": "Mia Irwin",
 					"title": "PhD student",
 					"type": "student",
-					"email": true
+					"email": true,
+					"card-class": "contact"
 			    },
 			    {
 			    	"id": "noah123",
 					"name": "Noah Jones",
 					"title": "PhD student",
 					"type": "student",
-					"email": true
+					"email": true,
+					"card-class": "contact"
 			    }
 		    ]
         },

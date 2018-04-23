@@ -16,12 +16,13 @@
             <h4>{{title}}</h4>
 
 
-
-            {{#if email}}
-            <div class="contact">
+            {{#if areas-expertise}}
+                <h4>Areas of expertise</h4>
+            {{else}}
+            <div class="{{card-class}}">
                 <h4>Contact</h4>
-                <ul class="contact-card-links">
             {{/if}}
+                <ul class="contact-card-links">
                     {{#if phone}}
                     <li>
                         <a href="tel:#" data-rel="external">01334 46xxxx</a>
@@ -32,17 +33,16 @@
                         <a href="mailto:#">example@st-andrews.ac.uk</a>
                     </li>
                     {{/if}}
-                {{#if email}}
+                    {{#each areas-expertise}}
+                    <li>
+                        <a href="#">{{area}}</a>
+                    </li>
+                    {{/each}}
                 </ul>
+            {{#unless areas-expertise}}
             </div>
-            {{/if}}
-            {{#if areas-expertise}}
-            <h4>Areas of expertise</h4>
+            {{/unless}}
             
-            {{#each areas-expertise}}
-            <a href="#">{{area}}</a><br />
-            {{/each}}
-            {{/if}}
         </article>
     </div>
     {{/each}}
