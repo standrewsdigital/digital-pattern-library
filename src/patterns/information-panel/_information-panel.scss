@@ -1,24 +1,27 @@
 /*************************************/
 /* BEGIN Pattern: information-panel  */
 /*************************************/
-
 .information-panel {
 	color: white;
+	padding-top: 30px;
+
 
 	&.sta-purple-1 {
-		background-color: #A169BF;
+		background-color: $sta-purple;
 	}
 
 	&.sta-purple-2 {
-		background-color: #8C59A7;
+		background-color: darken($sta-purple, 7%);
 	}
 
 	&.sta-purple-3 {
-		background-color: #7B4398;
+		background-color: darken($sta-purple, 14%);
 	}
+
 	
 	.fa {
 		font-size: 7em;
+		padding-top: 50px;
 	}
 
 }
