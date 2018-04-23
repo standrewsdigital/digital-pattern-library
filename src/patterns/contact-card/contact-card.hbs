@@ -14,6 +14,9 @@
                 <img src="../../assets/core/images/contact-card-default.gif" alt="{{name}}" title="{{name}}" class="profilePhoto">
             {{/if}}
             <h4>{{title}}</h4>
+
+
+
             {{#if email}}
             <div class="contact">
                 <h4>Contact</h4>
@@ -32,7 +35,15 @@
                 {{#if email}}
                 </ul>
             </div>
-                {{/if}}
+            {{/if}}
+            {{#if areas-expertise.area-1}}
+            <h4>Areas of expertise</h4>
+            {{#if areas-expertise.area-1}}<a href="#">{{areas-expertise.area-1}}</a><br />{{/if}}
+            {{#if areas-expertise.area-2}}<a href="#">{{areas-expertise.area-2}}</a><br />{{/if}}
+            {{#if areas-expertise.area-3}}<a href="#">{{areas-expertise.area-3}}</a><br />{{/if}}
+            {{#if areas-expertise.area-4}}<a href="#">{{areas-expertise.area-4}}</a><br />{{/if}}
+            {{#if areas-expertise.area-5}}<a href="#">{{areas-expertise.area-5}}</a><br />{{/if}}
+            {{/if}}
         </article>
     </div>
     {{/each}}

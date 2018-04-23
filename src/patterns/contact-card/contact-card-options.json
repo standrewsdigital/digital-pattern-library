@@ -110,35 +110,63 @@
 					"name": "Sophia Adams",
 					"title": "Professor",
 					"type": "expert",
-					"image": true
+					"image": true,
+					"areas-expertise":{
+						"area-1": "Aerospace",
+						"area-2": "Beached whales",
+						"area-3": "Blow holes",
+						"area-4": "Defense",
+						"area-5": "Marine Biology"
+					}
 			    },
 			    {
 			    	"id": "jackson123",
 					"name": "Jackson Baker",
 					"title": "PhD student",
 					"type": "expert",
-					"image": true
+					"image": true,
+					"areas-expertise":{
+						"area-1": "Aerospace",
+						"area-2": "Beached whales",
+						"area-3": "Blow holes"
+					}
 			    },
 			    {
 			    	"id": "emma123",
 					"name": "Emma Clark",
 					"title": "PhD student",
 					"type": "expert",
-					"image": true
+					"image": true,
+					"areas-expertise":{
+						"area-1": "Aerospace",
+						"area-2": "Beached whales",
+						"area-3": "Blow holes",
+						"area-4": "Defense"
+					}
 			    },
 			    {
 			    	"id": "aiden123",
 					"name": "Aiden Davis",
 					"title": "PhD student",
 					"type": "expert",
-					"image": true
+					"image": true,
+					"areas-expertise":{
+						"area-1": "Aerospace"
+					}
 			    },
 			    {
 			    	"id": "olivia123",
 					"name": "Olivia Evans",
 					"title": "PhD student",
 					"type": "expert",
-					"image": true
+					"image": true,
+					"areas-expertise":{
+						"area-1": "Aerospace",
+						"area-2": "Beached whales",
+						"area-3": "Blow holes",
+						"area-4": "Defense",
+						"area-5": "Marine Biology"
+					}
 			    }
 		    ]
         }
