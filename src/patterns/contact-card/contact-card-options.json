@@ -122,7 +122,7 @@
 			    {
 			    	"id": "jackson123",
 					"name": "Jackson Baker",
-					"title": "PhD student",
+					"title": "Emeritus Professor",
 					"type": "expert",
 					"image": true,
 					"areas-expertise":{
@@ -134,7 +134,7 @@
 			    {
 			    	"id": "emma123",
 					"name": "Emma Clark",
-					"title": "PhD student",
+					"title": "Reader",
 					"type": "expert",
 					"image": true,
 					"areas-expertise":{
@@ -147,7 +147,7 @@
 			    {
 			    	"id": "aiden123",
 					"name": "Aiden Davis",
-					"title": "PhD student",
+					"title": "Senior Lecturer",
 					"type": "expert",
 					"image": true,
 					"areas-expertise":{
@@ -157,7 +157,7 @@
 			    {
 			    	"id": "olivia123",
 					"name": "Olivia Evans",
-					"title": "PhD student",
+					"title": "Lecturer",
 					"type": "expert",
 					"image": true,
 					"areas-expertise":{
