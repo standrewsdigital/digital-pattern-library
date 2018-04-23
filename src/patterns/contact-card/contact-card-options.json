@@ -9,56 +9,45 @@
 			    	"id": "tom123",
 					"name": "Sophia Adams",
 					"title": "Professor",
-					"contract-type": "academic",
-					"staff-image": true,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk",
-						"phone": "+44 (0)1334 47 6161"
-					}
+					"type": "academic",
+					"image": true,
+					"phone": true,
+					"email": true
 			    },
 			    {
 			    	"id": "bob123",
 					"name": "Jackson Baker",
 					"title": "Emeritus Professor",
-					"contract-type": "academic",
-					"staff-image": true,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk",
-						"phone": "+44 (0)1334 47 6161"
-					}
+					"type": "academic",
+					"image": true,
+					"phone": true
 			    },
 			    {
 			    	"id": "steve123",
 					"name": "Emma Clark",
 					"title": "Reader",
-					"contract-type": "academic",
-					"staff-image": true,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk",
-						"phone": "+44 (0)1334 47 6161"
-					}
+					"type": "academic",
+					"image": true,
+					"phone": true,
+					"email": true
 			    },
 			    {
 			    	"id": "pete123",
 					"name": "Aiden Davis",
 					"title": "Senior Lecturer",
-					"contract-type": "academic",
-					"staff-image": true,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk",
-						"phone": "+44 (0)1334 47 6161"
-					}
+					"type": "academic",
+					"image": true,
+					"phone": true,
+					"email": true
 			    },
 			    {
 			    	"id": "sally123",
 					"name": "Olivia Evans",
 					"title": "Lecturer",
-					"contract-type": "academic",
-					"staff-image": true,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk",
-						"phone": "+44 (0)1334 47 6161"
-					}
+					"type": "academic",
+					"image": true,
+					"phone": true,
+					"email": true
 			    }
 		    ]
         },
@@ -72,54 +61,84 @@
             "option-anchor": "student",
 		    "cards": [
 			    {
-			    	"id": "tom123",
+			    	"id": "lucas123",
 					"name": "Lucas Frank",
 					"title": "PhD student",
-					"contract-type": "student",
-					"staff-image": false,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk"
-					}
+					"type": "student",
+					"email": true
 			    },
 			    {
-			    	"id": "bob123",
+			    	"id": "ava123",
 					"name": "Ava Ghosh",
 					"title": "PhD student",
-					"contract-type": "student",
-					"staff-image": false,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk"
-					}
+					"type": "student",
+					"email": true
 			    },
 			    {
-			    	"id": "steve123",
+			    	"id": "liam123",
 					"name": "Liam Hills",
 					"title": "PhD student",
-					"contract-type": "student",
-					"staff-image": false,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk"
-					}
+					"type": "student",
+					"email": true
 			    },
 			    {
-			    	"id": "pete123",
+			    	"id": "mia123",
 					"name": "Mia Irwin",
 					"title": "PhD student",
-					"contract-type": "student",
-					"staff-image": false,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk"
-					}
+					"type": "student",
+					"email": true
 			    },
 			    {
-			    	"id": "sally123",
+			    	"id": "noah123",
 					"name": "Noah Jones",
 					"title": "PhD student",
-					"contract-type": "student",
-					"staff-image": false,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk"
-					}
+					"type": "student",
+					"email": true
+			    }
+		    ]
+        },
+
+
+
+        {
+            "option-heading": "Expert cards",
+            "option-description": "<ul><li>Contact details for the experts themselves must not be displayed.</li><li>Maximum of 5 areas of expertise to be displayed.</li></ul>",
+            "option-anchor": "student",
+		    "cards": [
+			    {
+			    	"id": "sophia123",
+					"name": "Sophia Adams",
+					"title": "Professor",
+					"type": "expert",
+					"image": true
+			    },
+			    {
+			    	"id": "jackson123",
+					"name": "Jackson Baker",
+					"title": "PhD student",
+					"type": "expert",
+					"image": true
+			    },
+			    {
+			    	"id": "emma123",
+					"name": "Emma Clark",
+					"title": "PhD student",
+					"type": "expert",
+					"image": true
+			    },
+			    {
+			    	"id": "aiden123",
+					"name": "Aiden Davis",
+					"title": "PhD student",
+					"type": "expert",
+					"image": true
+			    },
+			    {
+			    	"id": "olivia123",
+					"name": "Olivia Evans",
+					"title": "PhD student",
+					"type": "expert",
+					"image": true
 			    }
 		    ]
         }
