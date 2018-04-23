@@ -36,13 +36,12 @@
                 </ul>
             </div>
             {{/if}}
-            {{#if areas-expertise.area-1}}
+            {{#if areas-expertise}}
             <h4>Areas of expertise</h4>
-            {{#if areas-expertise.area-1}}<a href="#">{{areas-expertise.area-1}}</a><br />{{/if}}
-            {{#if areas-expertise.area-2}}<a href="#">{{areas-expertise.area-2}}</a><br />{{/if}}
-            {{#if areas-expertise.area-3}}<a href="#">{{areas-expertise.area-3}}</a><br />{{/if}}
-            {{#if areas-expertise.area-4}}<a href="#">{{areas-expertise.area-4}}</a><br />{{/if}}
-            {{#if areas-expertise.area-5}}<a href="#">{{areas-expertise.area-5}}</a><br />{{/if}}
+            
+            {{#each areas-expertise}}
+            <a href="#">{{area}}</a><br />
+            {{/each}}
             {{/if}}
         </article>
     </div>

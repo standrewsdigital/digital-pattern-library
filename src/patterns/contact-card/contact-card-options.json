@@ -111,13 +111,23 @@
 					"title": "Professor",
 					"type": "expert",
 					"image": true,
-					"areas-expertise":{
-						"area-1": "Aerospace",
-						"area-2": "Beached whales",
-						"area-3": "Blow holes",
-						"area-4": "Defense",
-						"area-5": "Marine Biology"
-					}
+					"areas-expertise": [
+						{
+							"area": "Aerospace"
+						},
+						{
+							"area": "Beached whales"
+						},
+						{
+							"area": "Blow holes"
+						},
+						{
+							"area": "Defense"
+						},
+						{
+							"area": "Marine Biology"
+						}				
+					]
 			    },
 			    {
 			    	"id": "jackson123",
@@ -125,11 +135,14 @@
 					"title": "Emeritus Professor",
 					"type": "expert",
 					"image": true,
-					"areas-expertise":{
-						"area-1": "Aerospace",
-						"area-2": "Beached whales",
-						"area-3": "Blow holes"
-					}
+					"areas-expertise": [
+						{
+							"area": "Aerospace"
+						},
+						{
+							"area": "Beached whales"
+						}			
+					]
 			    },
 			    {
 			    	"id": "emma123",
@@ -137,12 +150,17 @@
 					"title": "Reader",
 					"type": "expert",
 					"image": true,
-					"areas-expertise":{
-						"area-1": "Aerospace",
-						"area-2": "Beached whales",
-						"area-3": "Blow holes",
-						"area-4": "Defense"
-					}
+					"areas-expertise": [
+						{
+							"area": "Aerospace"
+						},
+						{
+							"area": "Beached whales"
+						},
+						{
+							"area": "Blow holes"
+						}				
+					]
 			    },
 			    {
 			    	"id": "aiden123",
@@ -150,9 +168,11 @@
 					"title": "Senior Lecturer",
 					"type": "expert",
 					"image": true,
-					"areas-expertise":{
-						"area-1": "Aerospace"
-					}
+					"areas-expertise": [
+						{
+							"area": "Aerospace"
+						}			
+					]
 			    },
 			    {
 			    	"id": "olivia123",
@@ -160,13 +180,23 @@
 					"title": "Lecturer",
 					"type": "expert",
 					"image": true,
-					"areas-expertise":{
-						"area-1": "Aerospace",
-						"area-2": "Beached whales",
-						"area-3": "Blow holes",
-						"area-4": "Defense",
-						"area-5": "Marine Biology"
-					}
+					"areas-expertise": [
+						{
+							"area": "Aerospace"
+						},
+						{
+							"area": "Beached whales"
+						},
+						{
+							"area": "Blow holes"
+						},
+						{
+							"area": "Defense"
+						},
+						{
+							"area": "Marine Biology"
+						}				
+					]
 			    }
 		    ]
         }
