@@ -6,7 +6,7 @@
             "option-anchor": "one",
             "panels": [
                 {
-                    "colour": "sta-purple-1",
+                    "colour": "sta-burgundy-1",
                     "columns": [
                         {
                             "column-size": "col-md-4",
@@ -29,7 +29,7 @@
                         },
                         {
                             "column-size": "col-md-2 column",
-                            "icon-type": "rocket"
+                            "icon-type": "graduation-cap"
                         }
 
                     ]
@@ -42,7 +42,7 @@
             "option-anchor": "two",
             "panels": [
                 {
-                    "colour": "sta-purple-1",
+                    "colour": "sta-dkgreen-1",
                     "columns": [
                         {
                             "column-size": "col-md-4",
@@ -65,13 +65,13 @@
                         },
                         {
                             "column-size": "col-md-2 column",
-                            "icon-type": "rocket"
+                            "icon-type": "pie-chart"
                         }
 
                     ]
                 },
                 {
-                    "colour": "sta-purple-2",
+                    "colour": "sta-dkgreen-2",
                     "columns": [
                         {
                             "column-size": "col-md-6",
@@ -80,7 +80,7 @@
                         },
                         {
                             "column-size": "col-md-2 column",
-                            "icon-type": "rocket"
+                            "icon-type": "flask"
                         },
                         {
                             "column-size": "col-md-4",
@@ -130,7 +130,7 @@
                         },
                         {
                             "column-size": "col-md-2 column",
-                            "icon-type": "rocket"
+                            "icon-type": "trophy"
                         }
 
                     ]
@@ -145,7 +145,7 @@
                         },
                         {
                             "column-size": "col-md-2 column",
-                            "icon-type": "rocket"
+                            "icon-type": "globe"
                         },
                         {
                             "column-size": "col-md-4",
@@ -188,7 +188,7 @@
                         },
                         {
                             "column-size": "col-md-2 column",
-                            "icon-type": "rocket"
+                            "icon-type": "university"
                         }
 
                     ]

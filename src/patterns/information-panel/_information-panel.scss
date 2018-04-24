@@ -6,6 +6,30 @@
 	padding-top: 30px;
 
 
+	&.sta-burgundy-1 {
+		background-color: $sta-burgundy;
+	}
+
+	&.sta-burgundy-2 {
+		background-color: darken($sta-burgundy, 7%);
+	}
+
+	&.sta-burgundy-3 {
+		background-color: darken($sta-burgundy, 14%);
+	}
+
+	&.sta-dkgreen-1 {
+		background-color: $sta-dkgreen;
+	}
+
+	&.sta-dkgreen-2 {
+		background-color: darken($sta-dkgreen, 3.5%);
+	}
+
+	&.sta-dkgreen-3 {
+		background-color: darken($sta-dkgreen, 7%);
+	}
+
 	&.sta-purple-1 {
 		background-color: $sta-purple;
 	}
