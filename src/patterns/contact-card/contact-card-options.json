@@ -110,10 +110,11 @@
 
 
 
+
         {
             "option-heading": "Expert cards",
             "option-description": "<ul><li>Expert cards must not have contact details.</li><li>Maximum of five areas of expertise to be displayed per card.</li></ul>",
-            "option-anchor": "student",
+            "option-anchor": "expert",
 		    "cards": [
 			    {
 			    	"id": "sophia123",
@@ -132,11 +133,11 @@
 							"area": "Blow holes"
 						},
 						{
-							"area": "Defense"
+							"area": "Defence"
 						},
 						{
 							"area": "Marine Biology"
-						}				
+						}
 					]
 			    },
 			    {
@@ -151,7 +152,7 @@
 						},
 						{
 							"area": "Beached whales"
-						}			
+						}
 					]
 			    },
 			    {
@@ -169,7 +170,7 @@
 						},
 						{
 							"area": "Blow holes"
-						}				
+						}
 					]
 			    },
 			    {
@@ -181,7 +182,7 @@
 					"areas-expertise": [
 						{
 							"area": "Aerospace"
-						}			
+						}
 					]
 			    },
 			    {
@@ -201,11 +202,11 @@
 							"area": "Blow holes"
 						},
 						{
-							"area": "Defense"
+							"area": "Defence"
 						},
 						{
 							"area": "Marine Biology"
-						}				
+						}
 					]
 			    }
 		    ]
