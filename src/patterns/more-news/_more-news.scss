@@ -3,8 +3,17 @@
 /* BEGIN Pattern: more-news  */
 /*****************************/
 
-.archive-page hr {
-    border-bottom: none;
+.archive-page {
+
+    hr {
+        border-bottom: none;
+    }
+
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+
 }
 
 /****************************/
