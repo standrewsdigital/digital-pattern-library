@@ -111,6 +111,10 @@
                   "img": "assets/docs/images/patterns/featured-news.jpg",
                   "url": "patterns/featured-news/index.html"
                 },
+                { "name": "Featured people",
+                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "url": "patterns/featured-people/index.html"
+                },
                 { "name": "Gallery",
                   "img": "assets/docs/images/patterns/gallery.jpg",
                   "url": "patterns/gallery/index.html"

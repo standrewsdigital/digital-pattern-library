@@ -1,0 +1,26 @@
+{
+    "options" : [
+        {
+            "option-heading": "Success",
+            "option-description": "<p>Use the class <code>alert-success</code> for a success alert box. This alert box indicates a successful or positive action, such as successfully submitting a form.</p>",
+            "option-anchor": "alert-success",
+            "columns": [
+                {
+                    "name": "Duncan",
+                    "job-title": "professor",
+                    "description": "Don't fiddle with it all day. Just beat the devil out of it. Water's like me. It's laaazy boy, it always looks for the easiest way to do things."
+                },
+                {
+                    "name": "Peter",
+                    "job-title": "professor",
+                    "description": "Don't fiddle with it all day. Just beat the devil out of it. Water's like me. It's laaazy boy, it always looks for the easiest way to do things."
+                },
+                {
+                    "name": "Steve",
+                    "job-title": "professor",
+                    "description": "Don't fiddle with it all day. Just beat the devil out of it. Water's like me. It's laaazy boy, it always looks for the easiest way to do things."
+                }
+            ]
+        }
+    ]
+}
