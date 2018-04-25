@@ -1,15 +1,17 @@
 <!-- Begin pattern: featured people //-->
-<div class="container">
-	<div class="row">
-		<h3>Featured people</h3>
-		{{#each columns}}
-		<div class="col-md-4">
-			<img src='../../assets/core/images/contact-card-default.gif'>
-			<h4>{{name}}</h4>
-			<p>{{title}}</p>
-			<p>{{description}}</p>
+<section class="featured-people">
+	<div class="container">
+		<div class="row">
+			<h3>Featured people</h3>
+			{{#each columns}}
+			<div class="col-md-4">
+				<img src='../../assets/core/images/featured-people.png'>
+				<h4 class="text-center">{{name}}</h4>
+				<p class="text-center">{{title}}</p>
+				<p>{{description}}</p>
+			</div>
+			{{/each}}
 		</div>
-		{{/each}}
 	</div>
-</div>
+</section>
 <!-- End pattern: featured people  //-->
