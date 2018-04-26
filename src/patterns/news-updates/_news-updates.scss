@@ -16,6 +16,14 @@
     img {
         padding-right: 15px;
         width: 100%;
+
+        &.rounded-thumbnail {
+            border-radius:50%;
+
+            @media (min-width: 577px) {
+            padding-left:15px;
+            }
+        }
     }
 
     h4 {
