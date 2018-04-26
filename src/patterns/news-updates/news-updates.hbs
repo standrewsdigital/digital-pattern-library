@@ -1,10 +1,21 @@
 <div class="container">
+    {{#if big-thumbnail}}
+    <div class="row">
+        <div class="col-md-6 col-lg-8">
+            <h2>{{title}}</h2>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4 read-more read-more-container">
+            <a href="#">{{button-text}}</a>
+        </div>
+    </div>
+    {{else}}
     <h3>{{title}}</h3>
-        <div class="row">
+    {{/if}}
+    <div class="row">
         {{#if featured-title}}
-        <div class="{{column-size}} news-updates">
+        <div class="{{column-size-main}} news-updates{{#if big-thumbnail}} case-studies{{/if}}">
             {{#if big-thumbnail}}
-                <a href="#"><img src="{{featured-thumbnail}}" alt="news story"></a>
+                <a href="#"><img src="{{featured-thumbnail}}" alt="news story" class="featured-image"></a>
                 <h4><a href="#">{{featured-title}}</a><br>
                 <small>{{featured-date}}</small></h4>
                 <p>{{featured-content}}</p>
@@ -20,25 +31,19 @@
             {{/if}}
         </div>
         {{/if}}
-        {{#if big-thumbnail}}
-        <div class="col-md-8">
+        <div class="{{column-size-secondary}} news-updates{{#if big-thumbnail}} case-studies{{/if}}">
         {{#each secondary-update}}
-            <div class="col-xs-6 col-md-12 news-updates news-updates-secondary">
-                <div class="col-sm-6 col-md-10">
-                    <h3><a href="#123">{{secondary-title}}</a><br>
-                    <small>{{secondary-date}}</small></h3>
+            <div class="col-xs-6 col-md-12 news-updates-secondary">
+            {{#if rounded-thumbnail}}
+                <div class="col-sm-6 col-md-9">
+                    <h4><a href="#123">{{secondary-title}}</a><br>
+                    <small>{{secondary-date}}</small></h4>
                     <p>{{secondary-content}}</p>
                 </div>
-                <div class="col-sm-6 col-md-2">
+                <div class="col-sm-6 col-md-3">
                         <a href="#123"><img src="{{secondary-thumbnail}}" alt="news story" class="rounded-thumbnail"></a>
                 </div>
-            </div>
-        {{/each}}
-        </div>
-        {{else}}
-        <div class="col-md-4">
-        {{#each secondary-update}}
-            <div class="col-xs-6 col-md-12 news-updates news-updates-secondary">
+             {{else}}
                 <div class="col-sm-6">
                         <a href="#123"><img src="{{secondary-thumbnail}}" alt="news story"></a>
                 </div>
@@ -46,9 +51,9 @@
                     <h4><a href="#123">{{secondary-title}}</a><br>
                     <small>{{secondary-date}}</small></h4>
                 </div>
+            {{/if}}
             </div>
         {{/each}}
         </div>
-        {{/if}}
     </div>
 </div>
