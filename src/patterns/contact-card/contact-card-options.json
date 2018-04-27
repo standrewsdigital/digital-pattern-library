@@ -124,19 +124,19 @@
 					"image": true,
 					"areas-expertise": [
 						{
-							"area": "Aerospace"
+							"area": "Business and finance"
 						},
 						{
-							"area": "Beached whales"
+							"area": "Computer science and informatics"
 						},
 						{
-							"area": "Blow holes"
+							"area": "Engineering"
 						},
 						{
-							"area": "Defence"
+							"area": "Health sciences"
 						},
 						{
-							"area": "Marine Biology"
+							"area": "Law"
 						}
 					]
 			    },
@@ -148,10 +148,10 @@
 					"image": true,
 					"areas-expertise": [
 						{
-							"area": "Aerospace"
+							"area": "Engineering"
 						},
 						{
-							"area": "Beached whales"
+							"area": "Health sciences"
 						}
 					]
 			    },
@@ -163,13 +163,13 @@
 					"image": true,
 					"areas-expertise": [
 						{
-							"area": "Aerospace"
+							"area": "Business and finance"
 						},
 						{
-							"area": "Beached whales"
+							"area": "Computer science and informatics"
 						},
 						{
-							"area": "Blow holes"
+							"area": "Engineering"
 						}
 					]
 			    },
@@ -193,19 +193,19 @@
 					"image": true,
 					"areas-expertise": [
 						{
-							"area": "Aerospace"
+							"area": "Business and finance"
 						},
 						{
-							"area": "Beached whales"
+							"area": "Computer science and informatics"
 						},
 						{
-							"area": "Blow holes"
+							"area": "Engineering"
 						},
 						{
-							"area": "Defence"
+							"area": "Health sciences"
 						},
 						{
-							"area": "Marine Biology"
+							"area": "Law"
 						}
 					]
 			    }
