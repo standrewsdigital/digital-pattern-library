@@ -24,6 +24,11 @@
     	margin: 0 auto;
     	border-radius: 50%;
     	width: 150px;
+    	box-sizing: border-box;
+
+    	&:hover {
+    		border: 3px solid $sta-yellow;
+    	}
 	}
 }
 
