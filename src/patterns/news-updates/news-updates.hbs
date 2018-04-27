@@ -37,8 +37,7 @@
             {{#if rounded-thumbnail}}
                 <div class="col-xs-8 col-sm-9">
                     <h4><a href="#article">{{secondary-title}}</a></h4>
-                    <small>{{secondary-date}}{{#if show-secondary-category}}<br>
-                    <a class="news-updates__category" href="#category">{{secondary-category}}{{/if}}</a></small>
+                    <small>{{secondary-date}}{{#if show-secondary-category}} <a class="news-updates__category news-updates__category--inline" href="#category">{{secondary-category}}{{/if}}</a></small>
                     <p>{{secondary-content}}</p>
                 </div>
                 <div class="col-xs-4 col-sm-3">
