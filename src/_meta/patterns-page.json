@@ -60,10 +60,6 @@
                   "img": "assets/docs/images/patterns/hero-banner.jpg",
                   "url": "patterns/hero-banner/index.html"
                 },
-                { "name": "Information panel",
-                  "img": "assets/docs/images/patterns/information-panel.jpg",
-                  "url": "patterns/information-panel/index.html"
-                },
                 { "name": "KIS widget",
                   "img": "assets/docs/images/patterns/kis-widget.jpg",
                   "url": "patterns/kis-widget/index.html"
@@ -75,6 +71,10 @@
                 { "name": "Share options",
                   "img": "assets/docs/images/patterns/share-options.jpg",
                   "url": "patterns/share-options/index.html"
+                },
+                { "name": "Showcase banner",
+                  "img": "assets/docs/images/patterns/showcase-banner.jpg",
+                  "url": "patterns/showcase-banner/index.html"
                 },
                 { "name": "Subject combo",
                   "img": "assets/docs/images/patterns/subject-combo.jpg",

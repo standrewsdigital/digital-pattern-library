@@ -1,0 +1,29 @@
+---
+title: Showcase banner
+---
+
+<p>This pattern is for showcasing informative headlines, statistics, and other positive content with a full width background. Header and paragraph text is displayed along with a vector icon to explain the noteworthy headline. A navbox is included to act as a reference for further reading.</p>
+
+<h3>Rules for showcase banners</h3>
+<ul>
+    <li>Navboxes must be included on all banners.</li>
+    <li>Icons used must be Font Awesome icons. See '<a href="">Font Awesome</a>' pattern page for approved icons.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#showcase-banner-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/showcase-banner-options.options}}
+</ul>
+
+{{#showcase-banner-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+{{> showcase-banner}}
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> showcase-banner}}</code></pre>
+{{/showcase-banner-options.options}}
