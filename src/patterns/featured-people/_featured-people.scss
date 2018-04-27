@@ -24,7 +24,7 @@
     	margin: 0 auto;
     	border-radius: 50%;
     	width: 150px;
-    	box-sizing: border-box;
+    	border: 3px solid $sta-blue-light;
 
     	&:hover {
     		border: 3px solid $sta-yellow;
