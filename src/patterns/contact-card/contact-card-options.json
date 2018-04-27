@@ -2,63 +2,57 @@
     "options": [
         {
             "option-heading": "Staff cards",
-            "option-description": "<ul><li>Staff name must link to their research portal profile if one is available.</li><li>Staff cards must have a profile image 111 &times; 127 pixels.</li><li>If an image is not available, use the default staff profile image: <a href='../../assets/core/images/contact-card-default.gif'>contact-card-default.gif</a></li></ul>",
+            "option-description": "<ul><li>Staff name must link to their research portal profile if one is available.</li></ul>",
             "option-anchor": "staff",
 		    "cards": [
 			    {
 			    	"id": "tom123",
 					"name": "Sophia Adams",
 					"title": "Professor",
-					"contract-type": "academic",
-					"staff-image": true,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk",
-						"phone": "+44 (0)1334 47 6161"
-					}
+					"type": "academic",
+					"image": true,
+					"phone": true,
+					"email": true,
+					"card-class": "contact"
 			    },
 			    {
 			    	"id": "bob123",
 					"name": "Jackson Baker",
 					"title": "Emeritus Professor",
-					"contract-type": "academic",
-					"staff-image": true,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk",
-						"phone": "+44 (0)1334 47 6161"
-					}
+					"type": "academic",
+					"image": true,
+					"phone": true,
+					"card-class": "contact"
 			    },
 			    {
 			    	"id": "steve123",
 					"name": "Emma Clark",
 					"title": "Reader",
-					"contract-type": "academic",
-					"staff-image": true,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk",
-						"phone": "+44 (0)1334 47 6161"
-					}
+					"type": "academic",
+					"image": true,
+					"phone": true,
+					"email": true,
+					"card-class": "contact"
 			    },
 			    {
 			    	"id": "pete123",
 					"name": "Aiden Davis",
 					"title": "Senior Lecturer",
-					"contract-type": "academic",
-					"staff-image": true,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk",
-						"phone": "+44 (0)1334 47 6161"
-					}
+					"type": "academic",
+					"image": true,
+					"phone": true,
+					"email": true,
+					"card-class": "contact"
 			    },
 			    {
 			    	"id": "sally123",
 					"name": "Olivia Evans",
 					"title": "Lecturer",
-					"contract-type": "academic",
-					"staff-image": true,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk",
-						"phone": "+44 (0)1334 47 6161"
-					}
+					"type": "academic",
+					"image": true,
+					"phone": true,
+					"email": true,
+					"card-class": "contact"
 			    }
 		    ]
         },
@@ -72,54 +66,148 @@
             "option-anchor": "student",
 		    "cards": [
 			    {
-			    	"id": "tom123",
+			    	"id": "lucas123",
 					"name": "Lucas Frank",
 					"title": "PhD student",
-					"contract-type": "student",
-					"staff-image": false,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk"
-					}
+					"type": "student",
+					"email": true,
+					"card-class": "contact"
 			    },
 			    {
-			    	"id": "bob123",
+			    	"id": "ava123",
 					"name": "Ava Ghosh",
 					"title": "PhD student",
-					"contract-type": "student",
-					"staff-image": false,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk"
-					}
+					"type": "student",
+					"email": true,
+					"card-class": "contact"
 			    },
 			    {
-			    	"id": "steve123",
+			    	"id": "liam123",
 					"name": "Liam Hills",
 					"title": "PhD student",
-					"contract-type": "student",
-					"staff-image": false,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk"
-					}
+					"type": "student",
+					"email": true,
+					"card-class": "contact"
 			    },
 			    {
-			    	"id": "pete123",
+			    	"id": "mia123",
 					"name": "Mia Irwin",
 					"title": "PhD student",
-					"contract-type": "student",
-					"staff-image": false,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk"
-					}
+					"type": "student",
+					"email": true,
+					"card-class": "contact"
 			    },
 			    {
-			    	"id": "sally123",
+			    	"id": "noah123",
 					"name": "Noah Jones",
 					"title": "PhD student",
-					"contract-type": "student",
-					"staff-image": false,
-					"contact-info":{
-						"email": "example@st-andrews.ac.uk"
-					}
+					"type": "student",
+					"email": true,
+					"card-class": "contact"
+			    }
+		    ]
+        },
+
+
+
+
+        {
+            "option-heading": "Expert cards",
+            "option-description": "<ul><li>Expert cards must not have contact details.</li><li>Maximum of five areas of expertise to be displayed per card.</li></ul>",
+            "option-anchor": "expert",
+		    "cards": [
+			    {
+			    	"id": "sophia123",
+					"name": "Sophia Adams",
+					"title": "Professor",
+					"type": "expert",
+					"image": true,
+					"areas-expertise": [
+						{
+							"area": "Business and finance"
+						},
+						{
+							"area": "Computer science and informatics"
+						},
+						{
+							"area": "Engineering"
+						},
+						{
+							"area": "Health sciences"
+						},
+						{
+							"area": "Law"
+						}
+					]
+			    },
+			    {
+			    	"id": "jackson123",
+					"name": "Jackson Baker",
+					"title": "Emeritus Professor",
+					"type": "expert",
+					"image": true,
+					"areas-expertise": [
+						{
+							"area": "Engineering"
+						},
+						{
+							"area": "Health sciences"
+						}
+					]
+			    },
+			    {
+			    	"id": "emma123",
+					"name": "Emma Clark",
+					"title": "Reader",
+					"type": "expert",
+					"image": true,
+					"areas-expertise": [
+						{
+							"area": "Business and finance"
+						},
+						{
+							"area": "Computer science and informatics"
+						},
+						{
+							"area": "Engineering"
+						}
+					]
+			    },
+			    {
+			    	"id": "aiden123",
+					"name": "Aiden Davis",
+					"title": "Senior Lecturer",
+					"type": "expert",
+					"image": true,
+					"areas-expertise": [
+						{
+							"area": "Aerospace"
+						}
+					]
+			    },
+			    {
+			    	"id": "olivia123",
+					"name": "Olivia Evans",
+					"title": "Lecturer",
+					"type": "expert",
+					"image": true,
+					"areas-expertise": [
+						{
+							"area": "Business and finance"
+						},
+						{
+							"area": "Computer science and informatics"
+						},
+						{
+							"area": "Engineering"
+						},
+						{
+							"area": "Health sciences"
+						},
+						{
+							"area": "Law"
+						}
+					]
 			    }
 		    ]
         }
