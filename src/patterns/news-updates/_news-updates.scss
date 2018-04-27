@@ -31,14 +31,36 @@
     }
 
     h4 {
-        margin-top: 0;
+        margin: 0;
+    }
+    small {
+        font-size:80%; // override 66% default
+    }
+    .news-updates__category {
+        background: yellow; // DELETE FOR PRODUCTION
+
+        display: inline-block;
+        padding: 5px 10px;
+        margin-left: -10px;
+
+        &.news-updates__category--inline {
+            padding-left:0;
+            margin-left:10px;
+        }
+
+        &.news-updates__category--inline:before {
+            content: "|";
+            font-weight: normal;
+            padding-right:10px;
+        }
+
     }
 
     &:hover {
         cursor: pointer;
     }
 
-    .news-updates-secondary {
+    .news-updates__secondary {
         margin-bottom: 10px;
         padding-left: 0;
     }

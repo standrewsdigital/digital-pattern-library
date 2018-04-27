@@ -10,18 +10,26 @@
             "column-size-main": "col-md-8",
             "column-size-secondary": "col-md-4",
             "featured-date": "8 June 2018",
+            "show-featured-category": true,
+            "featured-category": "News at St Andrews", 
             "featured-content": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "secondary-update": [
                 {
                     "secondary-thumbnail":  "../../assets/docs/images/placeholders/720x480.png",
                     "secondary-title": "Secondary update 1",
-                    "secondary-date": "9 June 2018"
+                    "secondary-date": "9 June 2018", 
+                    "show-secondary-category": true,
+                    "secondary-category": "News at St Andrews",
+                    "column-span-secondary": "col-xs-6" 
 
                 },
                 {
                     "secondary-thumbnail":  "../../assets/docs/images/placeholders/720x480.png",
                     "secondary-title": "Secondary update 2",
-                    "secondary-date": "10 June 2018"
+                    "secondary-date": "10 June 2018", 
+                    "show-secondary-category": true,
+                    "secondary-category": "News at St Andrews",
+                    "column-span-secondary": "col-xs-6" 
                 }
             ]
         },
@@ -38,13 +46,17 @@
                 {
                     "secondary-thumbnail":  "../../assets/docs/images/placeholders/720x480.png",
                     "secondary-title": "Top story 1",
-                    "secondary-date": "14 August 2018"
+                    "secondary-date": "14 August 2018", 
+                    "show-secondary-category": true,
+                    "secondary-category": "News at St Andrews",
+                    "column-span-secondary": "col-xs-6"  
 
                 },
                 {
                     "secondary-thumbnail":  "../../assets/docs/images/placeholders/720x480.png",
                     "secondary-title": "Top story 2",
-                    "secondary-date": "12 August 2018"
+                    "secondary-date": "12 August 2018",
+                    "column-span-secondary": "col-xs-6" 
                 }
             ]
         },
@@ -63,6 +75,8 @@
             "column-size-main": "col-md-5",
             "column-size-secondary": "col-md-7",
             "featured-date": "8 June 2018",
+            "show-featured-category": true,
+            "featured-category": "News at St Andrews", 
             "featured-content": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "secondary-update": [
                 {
@@ -70,7 +84,10 @@
                     "rounded-thumbnail": true,
                     "secondary-title": "Top story 1",
                     "secondary-content": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    "secondary-date": "14 August 2018"
+                    "secondary-date": "14 August 2018", 
+                    "show-secondary-category": true,
+                    "secondary-category": "News at St Andrews",
+                    "column-span-secondary": "col-xs-12" 
 
                 },
                 {
@@ -78,14 +95,19 @@
                     "rounded-thumbnail": true,
                     "secondary-title": "Top story 2",
                     "secondary-content": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    "secondary-date": "12 August 2018"
+                    "secondary-date": "12 August 2018", 
+                    "show-secondary-category": true,
+                    "secondary-category": "News at St Andrews",
+                    "column-span-secondary": "col-xs-12" 
                 },
                 {
                     "secondary-thumbnail":  "../../assets/docs/images/placeholders/200x200.jpg",
                     "rounded-thumbnail": true,
                     "secondary-title": "Top story 3",
                     "secondary-content": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    "secondary-date": "12 August 2018"
+                    "secondary-date": "12 August 2018", 
+                    "secondary-category": "News at St Andrews",
+                    "column-span-secondary": "col-xs-12"  
                 }
             ]
         }
