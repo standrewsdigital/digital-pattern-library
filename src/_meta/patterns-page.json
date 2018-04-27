@@ -112,7 +112,7 @@
                   "url": "patterns/featured-news/index.html"
                 },
                 { "name": "Featured people",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/featured-people.jpg",
                   "url": "patterns/featured-people/index.html"
                 },
                 { "name": "Gallery",
