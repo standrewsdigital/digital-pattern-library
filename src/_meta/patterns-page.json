@@ -61,7 +61,7 @@
                   "url": "patterns/hero-banner/index.html"
                 },
                 { "name": "Information panel",
-                  "img": "assets/docs/images/patterns/pattern.jpg",
+                  "img": "assets/docs/images/patterns/information-panel.jpg",
                   "url": "patterns/information-panel/index.html"
                 },
                 { "name": "KIS widget",
