@@ -6,19 +6,22 @@
             "option-anchor": "alert-success",
             "columns": [
                 {
-                    "name": "Duncan",
-                    "title": "Professor",
-                    "description": "Don't fiddle with it all day. Just beat the devil out of it. Water's like me. It's laaazy boy, it always looks for the easiest way to do things."
+                    "name": "Professor Sophia Adams",
+                    "title": "Structural Biologist",
+                    "link": "#",
+                    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
                 },
                 {
-                    "name": "Peter",
-                    "title": "Professor",
-                    "description": "Don't fiddle with it all day. Just beat the devil out of it. Water's like me. It's laaazy boy, it always looks for the easiest way to do things."
+                    "name": "Aiden Davis",
+                    "title": "School of English",
+                    "link": "#",
+                    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
                 },
                 {
-                    "name": "Steve",
-                    "title": "Professor",
-                    "description": "Don't fiddle with it all day. Just beat the devil out of it. Water's like me. It's laaazy boy, it always looks for the easiest way to do things."
+                    "name": "Olivia Evans",
+                    "title": "Senior Lecturer",
+                    "link": "#",
+                    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
                 }
             ]
         }

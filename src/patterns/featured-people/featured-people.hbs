@@ -5,10 +5,10 @@
 		<div class="row">
 			{{#each columns}}
 			<div class="col-md-4">
-				<img src='../../assets/core/images/featured-people.png'>
-				<h4 class="text-center">{{name}}</h4>
+				<a href="{{link}}"><img src='../../assets/core/images/featured-people.png'></a>
+				<h4 class="text-center"><a href="{{link}}">{{name}}</a></h4>
 				<p class="text-center">{{title}}</p>
-				<p>{{description}}</p>
+				<p class="text-center">{{description}}</p>
 			</div>
 			{{/each}}
 		</div>
