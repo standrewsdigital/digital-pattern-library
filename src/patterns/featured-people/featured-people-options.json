@@ -1,27 +1,92 @@
 {
     "options" : [
         {
-            "option-heading": "Success",
-            "option-description": "<p>Use the class <code>alert-success</code> for a success alert box. This alert box indicates a successful or positive action, such as successfully submitting a form.</p>",
-            "option-anchor": "alert-success",
-            "columns": [
+            "option-heading": "People",
+            "option-description": "<p></p>",
+            "option-anchor": "people",
+            "featured": [
                 {
-                    "name": "Professor Sophia Adams",
-                    "title": "Structural Biologist",
-                    "link": "#",
-                    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
-                },
+                    "colour": "sta-blue-light",
+                    "columns": [
+                        {
+                            "name": "Professor Sophia Adams",
+                            "title": "Structural Biologist",
+                            "link": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
+                        },
+                        {
+                            "name": "Aiden Davis",
+                            "title": "School of English",
+                            "link": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
+                        },
+                        {
+                            "name": "Olivia Evans",
+                            "title": "Senior Lecturer",
+                            "link": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "option-heading": "Academic",
+            "option-description": "<p></p>",
+            "option-anchor": "academic",
+            "featured": [
                 {
-                    "name": "Aiden Davis",
-                    "title": "School of English",
-                    "link": "#",
-                    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
-                },
+                    "colour": "sta-burgundy",
+                    "columns": [
+                        {
+                            "name": "Professor Sophia Adams",
+                            "title": "Structural Biologist",
+                            "link": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
+                        },
+                        {
+                            "name": "Aiden Davis",
+                            "title": "School of English",
+                            "link": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
+                        },
+                        {
+                            "name": "Olivia Evans",
+                            "title": "Senior Lecturer",
+                            "link": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "option-heading": "Purple",
+            "option-description": "<p></p>",
+            "option-anchor": "purple",
+            "featured": [
                 {
-                    "name": "Olivia Evans",
-                    "title": "Senior Lecturer",
-                    "link": "#",
-                    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
+                    "colour": "sta-purple",
+                    "columns": [
+                        {
+                            "name": "Professor Sophia Adams",
+                            "title": "Structural Biologist",
+                            "link": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
+                        },
+                        {
+                            "name": "Aiden Davis",
+                            "title": "School of English",
+                            "link": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
+                        },
+                        {
+                            "name": "Olivia Evans",
+                            "title": "Senior Lecturer",
+                            "link": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
+                        }
+                    ]
                 }
             ]
         }
