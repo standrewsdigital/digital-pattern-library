@@ -11,19 +11,19 @@
                         {
                             "name": "Professor Sophia Adams",
                             "title": "Structural Biologist",
-                            "link": "#",
+                            "link": "1",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
                         },
                         {
                             "name": "Aiden Davis",
                             "title": "School of English",
-                            "link": "#",
+                            "link": "2",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
                         },
                         {
                             "name": "Olivia Evans",
                             "title": "Senior Lecturer",
-                            "link": "#",
+                            "link": "3",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
                         }
                     ]

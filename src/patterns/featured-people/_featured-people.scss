@@ -5,6 +5,10 @@
 .featured-people  {
 	color: white;
 
+	&:hover {
+        cursor: pointer;
+    }
+
 	.sta-blue-light {
     	background-color: $sta-blue-light;
   	}
