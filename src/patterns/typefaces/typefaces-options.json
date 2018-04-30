@@ -1,0 +1,46 @@
+{
+    "options": [
+        {
+            "option-heading": "Primary typeface",
+            "option-anchor": "primary",
+            "option-description": "<p>The University of St Andrews' primary typeface for web is <b>PT Sans</b>. This typeface must be used for body text and headings. The common equivalent typeface available on all computers is Arial. The CSS font stack should look like this:</p><pre style='margin-bottom: 2em;'><code>font-family: 'PT Sans',Helvetica,Arial,sans-serif;</code></pre>",
+            "styles": [
+                {
+                    "name": "PT Sans regular",
+                    "class": "pt-sans"
+                },
+                {
+                    "name": "PT Sans bold",
+                    "class": "pt-sans bold"
+                },
+                {
+                    "name": "PT Sans regular",
+                    "class": "pt-sans italic"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Secondary typeface",
+            "option-anchor": "Secondary",
+            "option-description": "<p>The University of St Andrews' secondary typeface for web is <b>PT Serif</b>. This typeface must be used only for <a href='../category-header/index.html'>category header</a> sections and body text on <a href='../long-form-sections/index.html'>long-form</a> pages. The common equivalent typeface available on all computers is Georgia.  The CSS font stack should look like this:</p><pre style='margin-bottom: 2em;'><code>font-family: 'PT Serif',Georgia,'Times New Roman',Times,serif;</code></pre>",
+            "styles": [
+                {
+                    "name": "PT Serif regular",
+                    "class": "pt-serif"
+                },
+                {
+                    "name": "PT Serif bold",
+                    "class": "pt-serif bold"
+                },
+                {
+                    "name": "PT Serif regular",
+                    "class": "pt-serif italic"
+                }
+            ]
+        }
+    ]
+}
