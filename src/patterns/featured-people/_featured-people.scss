@@ -1,10 +1,21 @@
 /***********************************/
-/* BEGIN Pattern: featured people  */
+/* BEGIN Pattern: featured-people  */
 /***********************************/
 
 .featured-people  {
-	background-color: $sta-blue-light;
 	color: white;
+
+	&.sta-blue-light {
+    	background-color: $sta-blue-light;
+  	}
+
+  	&.sta-purple {
+    	background-color: $sta-pruple;
+  	}
+
+	&.sta-burgundy {
+    	background-color: $sta-burgundy;
+  	}
 
 	a {
 		color: white;
@@ -37,5 +48,5 @@
 }
 
 /***********************************/
-/* END Pattern: featured people    */
+/* END Pattern: featured-people    */
 /***********************************/
