@@ -5,21 +5,36 @@
 
 .news-updates {
 
-    * {
-        padding: 5px 0;
+    .no-gutter { //collapse gutters on nested bootstrap columns
+        padding: 0;
+    }
 
-        @media (max-width: 576px) {
-            padding: 2px 0;
+    .news-updates__article-link { //wrapper for entire link block
+        margin-bottom: 16px;
+        
+        &:not(.sub-link-active){
+            &:hover,
+            &:focus {
+                cursor: pointer;
+
+                h4 {
+                    text-decoration:underline;
+                }
+            }
         }
     }
 
     img {
-        padding-right: 15px;
-        width: 100%;
+        max-width: 100%;
+        padding-bottom: 5px;
+
+        @media (min-width: 768px) { 
+            padding: 0 15px 0 0;
+        }
 
         &.rounded-thumbnail {
             border-radius: 50%;
-            padding-left: 15px;
+            padding: 0 0 0 15px;
         }
 
         &.featured-image {
@@ -27,11 +42,12 @@
         }
     }
 
-    h4 {
-        margin: 0;
+    h4,
+    p {
+        margin: 5px 0;
     }
     small {
-        font-size:80%; // override 66% default
+        font-size: 80%; // override 66% default
     }
     .news-updates__category {
         background: yellow; // DELETE FOR PRODUCTION
@@ -41,31 +57,31 @@
         margin-left: -10px;
 
         &.news-updates__category--inline {
-            padding-left:0;
-            margin-left:10px;
+            padding-left: 0;
+            margin-left: 10px;
         }
 
         &.news-updates__category--inline:before {
             content: "|";
             font-weight: normal;
-            padding-right:10px;
+            padding-right: 10px;
         }
 
     }
 
-    &:hover {
-        cursor: pointer;
-    }
-
     .news-updates__secondary {
-        margin-bottom: 10px;
         padding-left: 0;
+        padding-right: 0;
     }
 
-    &.case-studies {
+    .news-updates--case-studies {
         h4 {
-            font-size:24px;
-            line-height:1.1;
+            font-size: 24px;
+            line-height: 1.1;
+        }
+
+        .news-updates__article-link {
+            margin-bottom: 32px;
         }
     }
 }

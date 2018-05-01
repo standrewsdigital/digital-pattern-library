@@ -1,60 +1,66 @@
-<div class="container">
-    {{#if big-thumbnail}}
-    <div class="row">
-        <div class="col-md-6 col-lg-8">
-            <h2>{{title}}</h2>
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-4 read-more read-more-container">
-            <a href="#all">{{button-text}}</a>
-        </div>
-    </div>
-    {{else}}
-    <h3>{{title}}</h3>
-    {{/if}}
-    <div class="row">
-        {{#if featured-title}}
-        <div class="{{column-size-main}} news-updates{{#if big-thumbnail}} case-studies{{/if}}">
-            {{#if big-thumbnail}}
-                <a href="#article"><img src="{{featured-thumbnail}}" alt="news story" class="featured-image"></a>
-                <h4><a href="#article">{{featured-title}}</a></h4>
-                <p>{{featured-content}}</p>
-                <p>{{featured-date}}{{#if show-featured-category}}<a class="news-updates__category news-updates__category--inline" href="#category">{{featured-category}}</a>{{/if}}</p> 
-            {{else}}
-            <div class="col-sm-4">
-                <a href="#article"><img src="{{featured-thumbnail}}" alt="news story"></a>
+<div class="news-updates">
+    <div class="container">
+        {{#if big-thumbnail}}
+        <div class="row">
+            <div class="col-md-6 col-lg-8">
+                <h2>{{title}}</h2>
             </div>
-            <div class="col-sm-8">
-                <h4><a href="#article">{{featured-title}}</a></h4>
-                <p>{{featured-content}}</p>
-                <p>{{featured-date}}{{#if show-featured-category}}<a class="news-updates__category news-updates__category--inline" href="#category">{{featured-category}}</a>{{/if}}</p> 
+            <div class="col-xs-12 col-md-6 col-lg-4 read-more read-more-container">
+                <a href="#all">{{button-text}}</a>
             </div>
-            {{/if}}
         </div>
+        {{else}}
+        <h3>{{title}}</h3>
         {{/if}}
-        <div class="{{column-size-secondary}} news-updates{{#if big-thumbnail}} case-studies{{/if}}">
-        {{#each secondary-update}}
-            <div class="{{column-span-secondary}} col-md-12 news-updates__secondary">
-            {{#if rounded-thumbnail}}
-                <div class="col-xs-8 col-sm-9">
-                    <h4><a href="#article">{{secondary-title}}</a></h4>
-                    <small>{{secondary-date}}{{#if show-secondary-category}}<a class="news-updates__category news-updates__category--inline" href="#category">{{secondary-category}}{{/if}}</a></small>
-                    <p>{{secondary-content}}</p>
+        <div class="row{{#if big-thumbnail}} news-updates--case-studies{{/if}}">
+            {{#if featured-title}}
+            <div class="{{column-size-main}}">
+                <div class="news-updates__article-link">
+                {{#if big-thumbnail}}
+                    <a href="#article"><img src="{{featured-thumbnail}}" alt="news story" class="featured-image"></a>
+                    <h4><a href="#article">{{featured-title}}</a></h4>
+                    <p>{{featured-content}}</p>
+                    <small>{{featured-date}}{{#if show-featured-category}}<a class="news-updates__category news-updates__category--inline" href="#category">{{featured-category}}</a>{{/if}}</small> 
+                </a>
+                {{else}}
+                    <div class="col-sm-4 no-gutter">
+                        <a href="#article"><img src="{{featured-thumbnail}}" alt="news story"></a>
+                    </div>
+                    <div class="col-sm-8 no-gutter">
+                        <h4><a href="#article">{{featured-title}}</a></h4>
+                        <p>{{featured-content}}</p>
+                        <small>{{featured-date}}{{#if show-featured-category}}<a class="news-updates__category news-updates__category--inline" href="#category">{{featured-category}}</a>{{/if}}</small> 
+                    </div>
+                    <div class="clear"></div>
+                {{/if}}
                 </div>
-                <div class="col-xs-4 col-sm-3">
-                        <a href="#article"><img src="{{secondary-thumbnail}}" alt="news story" class="rounded-thumbnail"></a>
-                </div>
-             {{else}}
-                <div class="col-sm-6">
-                        <a href="#article"><img src="{{secondary-thumbnail}}" alt="news story"></a>
-                </div>
-                <div class="col-sm-6">
-                    <h4><a href="#article">{{secondary-title}}</a></h4>
-                    <small>{{secondary-date}}{{#if show-secondary-category}}<br>
-                    <a class="news-updates__category" href="#category">{{secondary-category}}{{/if}}</a></small>
-                </div>
-            {{/if}}
             </div>
-        {{/each}}
+            {{/if}}
+            <div class="{{column-size-secondary}}">
+            {{#each secondary-update}}
+                <div class="{{column-span-secondary}} col-md-12 news-updates__secondary news-updates__article-link">
+                {{#if rounded-thumbnail}}
+                        <div class="col-xs-8 col-sm-9 no-gutter">
+                            <h4><a href="#article">{{secondary-title}}</a></h4>
+                            <p>{{secondary-content}}</p>
+                            <small>{{secondary-date}}{{#if show-secondary-category}}<a class="news-updates__category news-updates__category--inline" href="#category">{{secondary-category}}</a>{{/if}}</small>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 no-gutter">
+                            <a href="#article"><img src="{{secondary-thumbnail}}" alt="news story" class="rounded-thumbnail"></a>
+                        </div>
+                 {{else}}
+                        <div class="col-sm-6 no-gutter">
+                            <a href="#article"><img src="{{secondary-thumbnail}}" alt="news story"></a>
+                        </div>
+                        <div class="col-sm-6 no-gutter">
+                            <h4><a href="#article">{{secondary-title}}</a></h4>
+                            <small>{{secondary-date}}{{#if show-secondary-category}}<br>
+                            <a class="news-updates__category" href="#category">{{secondary-category}}</a>{{/if}}</small>
+                        </div>
+                {{/if}}
+                </div>
+            {{/each}}
+            </div>
         </div>
     </div>
 </div>
