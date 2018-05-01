@@ -5,7 +5,7 @@
             "option-description": "",
             "option-anchor": "featured-news",
             "title": "Featured item title",
-            "text": "This section of text should not exceed 300 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula nisi ac odio euismod, quis porta felis interdum. Vestibulum euismod neque felis, at condimentum nisi porttitor bibendum. Ut pellentesque ex non ipsum cursus faucibus viverra.",
+            "text": "This section of text should not exceed 400 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula nisi ac odio euismod, quis porta felis interdum. Vestibulum euismod neque felis, at condimentum nisi porttitor bibendum. Ut pellentesque ex non ipsu faucibus viverra. Vestibulum euismod neque felis, at condimentum nisi. Ut pellentesque ex non ipsum cursus faucibus viverras.",
             "featured-date": "12 December 2017",
             "featured-category": "News at St Andrews", 
             "url": "docs/images/placeholders/750x500.png"
