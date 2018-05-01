@@ -5,11 +5,17 @@
 
 .more-news {
 
-    .gutter-xs--l { //collapse left gutters only on nested bootstrap columns
-    	padding: 0 15px 0 0;
+    .gutter-sm--r { //collapse left gutters only on nested bootstrap columns bigger than mobile
+    	padding: 0;
+    	@media (min-width: 768px) {
+    		padding: 0 15px 0 0;
+    	}
     }
-    .gutter-xs--r { //collapse right gutters only on nested bootstrap columns
-    	padding: 0 0 0 15px;
+    .gutter-sm--l { //collapse right gutters only on nested bootstrap columns bigger than mobile
+    	padding: 0;
+    	@media (min-width: 768px) {
+    		padding: 0 0 0 15px;
+    	}
     }
 
     .more-news__article-link { //wrapper for entire link block
@@ -37,7 +43,11 @@
     }
 
 	img {
-		max-width:100%;
+		max-width: 100%;
+
+    	@media (max-width: 767px) {
+			padding-bottom: 15px;
+		}
 	}
 	
 	hr {
@@ -52,7 +62,6 @@
         margin-left: -10px;
 
         &.more-news__category--inline {
-            @media (min-width: 767px) { //make category inline when space available
                 display: inline-block;
                 padding-left: 0;
                 margin-left: 10px;
@@ -62,7 +71,6 @@
                     font-weight: normal;
                     padding-right: 10px;
                 }
-            }
         }
     }
 
