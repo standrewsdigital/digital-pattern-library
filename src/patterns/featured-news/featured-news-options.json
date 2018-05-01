@@ -5,8 +5,10 @@
             "option-description": "",
             "option-anchor": "featured-news",
             "title": "Featured item title",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula nisi ac odio euismod, quis porta felis interdum. Vestibulum euismod neque felis, at condimentum nisi porttitor bibendum. Ut pellentesque ex non ipsum cursus faucibus. Aliquam id viverra massa. Suspendisse tincidunt sed nisi quis hendrerit. Aenean maximus elementum ligula, et viverra…",
-            "url": "docs/images/placeholders/360x240.jpg"
+            "text": "This section of text should not exceed 300 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula nisi ac odio euismod, quis porta felis interdum. Vestibulum euismod neque felis, at condimentum nisi porttitor bibendum. Ut pellentesque ex non ipsum cursus faucibus viverra.",
+            "featured-date": "12 December 2017",
+            "featured-category": "News at St Andrews", 
+            "url": "docs/images/placeholders/750x500.png"
         }
     ]
  }
