@@ -2,10 +2,10 @@
     "options": [
         {
             "option-heading": "Default",
-            "option-description": "<p>The default option contains a &frac23; width column for a featured news update and a &frac13; width column for two other updates. Must only be used only within main content of a page.</p>",
+            "option-description": "<p>The default option contains a &frac23; width column for a featured news update and a &frac13; width column for two other updates. Must only be used only within main content of a page.</p><ul><li>Images for secondary items must be 360 &times; 240 pixels.</li></ul>",
             "option-anchor": "default",
             "title": "More news",
-            "featured-thumbnail":  "../../assets/docs/images/placeholders/720x480.png",
+            "featured-thumbnail":  "../../assets/docs/images/placeholders/750x500.png",
             "featured-title": "Featured update",
             "column-size-main": "col-md-8",
             "column-size-secondary": "col-md-4",
@@ -15,21 +15,23 @@
             "featured-content": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
             "secondary-update": [
                 {
-                    "secondary-thumbnail":  "../../assets/docs/images/placeholders/720x480.png",
+                    "secondary-thumbnail":  "../../assets/docs/images/placeholders/360x240.png",
                     "secondary-title": "Secondary update 1",
                     "secondary-date": "9 June 2018", 
                     "show-secondary-category": true,
                     "secondary-category": "News at St Andrews",
-                    "column-span-secondary": "col-xs-6" 
+                    "column-span-secondary": "col-xs-6",
+                    "column-gutter": " no-gutter--md-r" 
 
                 },
                 {
-                    "secondary-thumbnail":  "../../assets/docs/images/placeholders/720x480.png",
+                    "secondary-thumbnail":  "../../assets/docs/images/placeholders/360x240.png",
                     "secondary-title": "Secondary update 2",
                     "secondary-date": "10 June 2018", 
                     "show-secondary-category": true,
                     "secondary-category": "News at St Andrews",
-                    "column-span-secondary": "col-xs-6" 
+                    "column-span-secondary": "col-xs-6",
+                    "column-gutter": " no-gutter--md-l" 
                 }
             ]
         },
@@ -38,25 +40,27 @@
 
         {
             "option-heading": "Aside only",
-            "option-description": "<p>Must only be used in the aside of a page.</p>",
+            "option-description": "<p>Must only be used in the aside of a page.</p><ul><li>Images must be 360 &times; 240 pixels.</li></ul>",
             "option-anchor": "aside",
             "title": "Top stories",
             "column-size-secondary": "col-md-4",
             "secondary-update": [
                 {
-                    "secondary-thumbnail":  "../../assets/docs/images/placeholders/720x480.png",
+                    "secondary-thumbnail":  "../../assets/docs/images/placeholders/360x240.png",
                     "secondary-title": "Top story 1",
                     "secondary-date": "14 August 2018", 
                     "show-secondary-category": true,
                     "secondary-category": "News at St Andrews",
-                    "column-span-secondary": "col-xs-6"  
+                    "column-span-secondary": "col-xs-6",
+                    "column-gutter": " no-gutter--md-r"
 
                 },
                 {
-                    "secondary-thumbnail":  "../../assets/docs/images/placeholders/720x480.png",
+                    "secondary-thumbnail":  "../../assets/docs/images/placeholders/360x240.png",
                     "secondary-title": "Top story 2",
                     "secondary-date": "12 August 2018",
-                    "column-span-secondary": "col-xs-6" 
+                    "column-span-secondary": "col-xs-6",
+                    "column-gutter": " no-gutter--md-l"
                 }
             ]
         },
@@ -65,12 +69,12 @@
 
         {
             "option-heading": "Case study only",
-            "option-description": "<p>The case study option contains a 5/12 width column for a featured news update and a 7/12 width column for three other updates.</p><ul><li>Must only be used for case studies.</li><li>Images for secondary items must be 200 × 200 pixels.</ul>",
+            "option-description": "<p>The case study option contains a 5/12 width column for a featured news update and a 7/12 width column for three other updates.</p><ul><li>Must only be used for case studies.</li><li>Images for secondary items must be 200 &times; 200 pixels.</li></ul>",
             "option-anchor": "case-study",
             "title": "Case Studies",
             "big-thumbnail": true,
             "button-text": "All case studies",
-            "featured-thumbnail":  "../../assets/docs/images/placeholders/720x480.png",
+            "featured-thumbnail":  "../../assets/docs/images/placeholders/750x500.png",
             "featured-title": "Featured update",
             "column-size-main": "col-md-5",
             "column-size-secondary": "col-md-7",

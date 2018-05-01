@@ -1,9 +1,9 @@
-<div class="news-updates">
+<div class="news-updates{{#if big-thumbnail}} news-updates--case-studies{{/if}}">
     <div class="container">
         {{#if big-thumbnail}}
         <div class="row">
             <div class="col-md-6 col-lg-8">
-                <h2>{{title}}</h2>
+                <h3>{{title}}</h3>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 read-more read-more-container">
                 <a href="#all">{{button-text}}</a>
@@ -12,7 +12,7 @@
         {{else}}
         <h3>{{title}}</h3>
         {{/if}}
-        <div class="row{{#if big-thumbnail}} news-updates--case-studies{{/if}}">
+        <div class="row">
             {{#if featured-title}}
             <div class="{{column-size-main}}">
                 <div class="news-updates__article-link">
@@ -38,9 +38,9 @@
             {{/if}}
             <div class="{{column-size-secondary}}">
             {{#each secondary-update}}
-                <div class="{{column-span-secondary}} col-md-12 news-updates__secondary news-updates__article-link">
+                <div class="{{column-span-secondary}} col-md-12 news-updates__secondary news-updates__article-link{{column-gutter}}">
                 {{#if rounded-thumbnail}}
-                        <div class="col-xs-8 col-sm-9 no-gutter">
+                        <div class="col-xs-8 col-sm-9 no-gutter--l">
                             <h4><a href="#article">{{secondary-title}}</a></h4>
                             <p>{{secondary-content}}</p>
                             <small>{{secondary-date}}{{#if show-secondary-category}}<a class="news-updates__category news-updates__category--inline" href="#category">{{secondary-category}}</a>{{/if}}</small>
@@ -54,7 +54,7 @@
                         </div>
                         <div class="col-sm-6 no-gutter">
                             <h4><a href="#article">{{secondary-title}}</a></h4>
-                            <small>{{secondary-date}}{{#if show-secondary-category}}<br>
+                            <small>{{secondary-date}}{{#if show-secondary-category}}
                             <a class="news-updates__category" href="#category">{{secondary-category}}</a>{{/if}}</small>
                         </div>
                 {{/if}}
