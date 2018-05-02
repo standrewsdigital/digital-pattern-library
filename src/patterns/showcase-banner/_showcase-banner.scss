@@ -44,8 +44,15 @@
 
 	
 	.fa {
-		font-size: 7em;
-		padding-top: 50px;
+		font-size: 5em;
+		padding-top: 70px;
+	}
+
+	@media (min-width: 1200px) {
+		.fa {
+			font-size: 7em;
+			padding-top: 50px;
+		}
 	}
 
 	h3 {
