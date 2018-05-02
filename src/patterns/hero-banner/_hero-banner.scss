@@ -43,6 +43,28 @@
     }
 }
 
+.hero-banner.gradient-overlay {
+   &:after {
+       //* background-color: -dpl-color($palette-default,'secondary','transparent'); *//
+       background: linear-gradient(to right, $sta-red-T , $sta-green-T);
+       content: ' ';
+       height: 100%;
+       position: absolute;
+       top: 0;
+       width: 100%;
+       z-index: 1;
+   }
+   .btn, .btn-primary {
+        background-color: $sta-blue;
+        border-color: $sta-blue;
+   }
+
+   .btn:hover, .btn:focus {
+        background-color: $sta-blue-hover;
+        border-color: $sta-blue-hover;
+    }
+}
+
 .hero-banner .fg {
     position: relative;
     z-index: 10;

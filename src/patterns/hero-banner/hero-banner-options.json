@@ -33,6 +33,22 @@
 
 
         {
+            "option-anchor": "hero-banner-with-gradient-overlay",
+            "option-heading": "Hero banner with gradient overlay",
+            "option-description": "<p>If the chosen background image is overly complicated, this option should be used instead of the default hero banner. The colour of the transparent overlay and hero banner button should not be altered.</p>",
+            "heading":  "Research at St Andrews",
+            "paragraph":  "Study at the University of St Andrews and experience world-class teaching, cutting edge research and the flexible degree structure of Scotland’s first university.",
+            "action-text": "Research impact",
+            "action-url": "#",
+            "bg-image": "docs/images/cta/hero-banner-image-003.jpg",
+            "class": "gradient-overlay",
+            "size": "col-xs-12 col-md-8"
+        },
+
+
+
+
+        {
             "option-anchor": "hero-banner-with-video",
             "option-heading": "Hero banner with embedded video",
             "option-description": "<p></p>",
