@@ -1,7 +1,7 @@
 {
     "options" : [
         {
-            "option-heading": "People",
+            "option-heading": "Three with description",
             "option-description": "<p></p>",
             "option-anchor": "people",
             "featured": [
@@ -11,57 +11,61 @@
                         {
                             "name": "Professor Sophia Adams",
                             "title": "Structural Biologist",
-                            "link": "1",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
+                            "link": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "size": "col-md-4"
+
                         },
                         {
                             "name": "Aiden Davis",
                             "title": "School of English",
-                            "link": "2",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
+                            "link": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "size": "col-md-4"
                         },
                         {
                             "name": "Olivia Evans",
                             "title": "Senior Lecturer",
-                            "link": "3",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
+                            "link": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "size": "col-md-4"
                         }
                     ]
                 }
             ]
         },
         {
-            "option-heading": "Academic",
+            "option-heading": "Three without description",
             "option-description": "<p></p>",
             "option-anchor": "academic",
             "featured": [
                 {
-                    "colour": "sta-burgundy",
+                    "colour": "sta-dkgreen",
                     "columns": [
                         {
                             "name": "Professor Sophia Adams",
                             "title": "Structural Biologist",
                             "link": "#",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
+                            "size": "col-md-4"
                         },
                         {
                             "name": "Aiden Davis",
                             "title": "School of English",
                             "link": "#",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
+                            "size": "col-md-4"
                         },
                         {
                             "name": "Olivia Evans",
                             "title": "Senior Lecturer",
                             "link": "#",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
+                            "size": "col-md-4"
                         }
                     ]
                 }
             ]
         },
         {
-            "option-heading": "Purple",
+            "option-heading": "Two with description",
             "option-description": "<p></p>",
             "option-anchor": "purple",
             "featured": [
@@ -72,19 +76,34 @@
                             "name": "Professor Sophia Adams",
                             "title": "Structural Biologist",
                             "link": "#",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "size": "col-md-6"
                         },
                         {
                             "name": "Aiden Davis",
                             "title": "School of English",
                             "link": "#",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
-                        },
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "size": "col-md-6"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "option-heading": "One with description",
+            "option-description": "<p></p>",
+            "option-anchor": "purple",
+            "featured": [
+                {
+                    "colour": "sta-orange",
+                    "columns": [
                         {
-                            "name": "Olivia Evans",
-                            "title": "Senior Lecturer",
+                            "name": "Professor Sophia Adams",
+                            "title": "Structural Biologist",
                             "link": "#",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis."
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "single": true
                         }
                     ]
                 }

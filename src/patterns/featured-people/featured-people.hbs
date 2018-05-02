@@ -5,12 +5,17 @@
 		<h3>Featured people</h3>
 		<div class="row">
 			{{#each columns}}
-			<div class="col-md-4">
-				<a href="{{link}}"><img src='../../assets/core/images/featured-people.png'></a>
-				<h4 class="text-center">{{name}}</h4>
+			{{#unless single}}
+			<div class="{{size}}">
+			{{/unless}}
+				{{#if single}}<div class="col-md-3">{{/if}}<a class="person" href="{{link}}"><img src='../../assets/core/images/featured-people.png'>{{#if single}}</a></div>{{/if}}
+				{{#if single}}<div class="col-md-9 single-paragraph"><a class="person" href="{{link}}">{{/if}}<h4 class="text-center">{{name}}</h4></a>
 				<p class="text-center">{{title}}</p>
-				<p class="text-center">{{description}}</p>
+				<p class="text-center">{{#if description}}{{description}}{{/if}}</p>
+				{{#if single}}</div>{{/if}}
+			{{#unless single}}	
 			</div>
+			{{/unless}}
 			{{/each}}
 		</div>
 	</div>
