@@ -3,8 +3,32 @@
 All notable changes to digital pattern library will be documented in this file.
 This project adheres to [semantic versioning](http://semver.org/).
 
-Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
-`Removed`, `Fixed`, and `Security`.
+Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
+`Removed`, `Fixed`, and `Security`. 
+ 
+## v1.10.0 
+ 
+Release date: Wednesday 2 May 2018 
+ 
+### Added 
+ 
+* Expert cards option to the contact card pattern. 
+* Lazysizes library to enable lazy load images.
+* New option for 'news updates' pattern. 
+ 
+### Changed 
+ 
+* Colours now match the corporate identity and are AA compliant.
+* Image sizes required for 'more news', 'featured news' and 'news updates' have changed.
+
+### Fixed
+
+* The code for patterns 'more news', 'featured news', and 'news updates' have been reworked to improve stability. 
+ 
+ 
+ 
+ 
+--- 
 
 ## v1.10.0
 
