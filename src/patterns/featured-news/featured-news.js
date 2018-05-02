@@ -11,7 +11,6 @@ $(".featured-news h3 a").bigTarget({
 // Disable hover effect on article link when sub link is the hover/focus
 $(".featured-news__category").hover(function(){
     $(this).closest(".featured-news__article-link").toggleClass('sub-link-active');
-    console.log("hovered");
 });
 
 /*********************************/
