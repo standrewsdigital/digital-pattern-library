@@ -21,10 +21,10 @@
     z-index: 0;
 }
 
-.hero-banner.transparent-overlay {
+.hero-banner.blue-transparent-overlay {
    &:after {
        //* background-color: -dpl-color($palette-default,'secondary','transparent'); *//
-       background-color: rgba(27,116,195,0.6);
+       background-color: rgba( $sta-blue, .6 );
        content: ' ';
        height: 100%;
        position: absolute;
@@ -43,10 +43,32 @@
     }
 }
 
-.hero-banner.gradient-overlay {
+.hero-banner.dkgreen-transparent-overlay {
    &:after {
        //* background-color: -dpl-color($palette-default,'secondary','transparent'); *//
-       background: linear-gradient(to right, $sta-red-T , $sta-green-T);
+       background-color: rgba( $sta-dkgreen, .6 );
+       content: ' ';
+       height: 100%;
+       position: absolute;
+       top: 0;
+       width: 100%;
+       z-index: 1;
+   }
+   .btn, .btn-primary {
+        background-color: $sta-blue;
+        border-color: $sta-blue;
+   }
+
+   .btn:hover, .btn:focus {
+        background-color: $sta-green-hover;
+        border-color: $sta-green-hover;
+    }
+}
+
+.hero-banner.gradient-overlay-red-green {
+   &:after {
+       //* background-color: -dpl-color($palette-default,'secondary','transparent'); *//
+       background: linear-gradient(to right, rgba( $sta-red, .5 ), rgba( $sta-green, .5 ));
        content: ' ';
        height: 100%;
        position: absolute;
@@ -62,6 +84,51 @@
    .btn:hover, .btn:focus {
         background-color: $sta-blue-hover;
         border-color: $sta-blue-hover;
+    }
+}
+
+.hero-banner.gradient-overlay-purple-orange {
+   &:after {
+       //* background-color: -dpl-color($palette-default,'secondary','transparent'); *//
+       background: linear-gradient(to right, rgba( $sta-purple, .5 ), rgba( $sta-orange, .5 ));
+       content: ' ';
+       height: 100%;
+       position: absolute;
+       top: 0;
+       width: 100%;
+       z-index: 1;
+   }
+   .btn, .btn-primary {
+        background-color: $sta-blue;
+        border-color: $sta-blue;
+   }
+
+   .btn:hover, .btn:focus {
+        background-color: $sta-blue-hover;
+        border-color: $sta-blue-hover;
+    }
+}
+
+
+.hero-banner.gradient-overlay-blue-yellow {
+   &:after {
+       //* background-color: -dpl-color($palette-default,'secondary','transparent'); *//
+       background: linear-gradient(to right, rgba( $sta-blue, .5 ), rgba( $sta-yellow, .5 ));
+       content: ' ';
+       height: 100%;
+       position: absolute;
+       top: 0;
+       width: 100%;
+       z-index: 1;
+   }
+   .btn, .btn-primary {
+        background-color: $sta-green;
+        border-color: $sta-green;
+   }
+
+   .btn:hover, .btn:focus {
+        background-color: $sta-green-hover;
+        border-color: $sta-green-hover;
     }
 }
 

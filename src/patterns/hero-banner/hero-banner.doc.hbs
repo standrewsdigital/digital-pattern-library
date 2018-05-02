@@ -4,16 +4,9 @@ title: Hero banner
 
 <p>The hero banner pattern displays a large heading, introductory text and a call-to-action over an optional, large background image.</p>
 
-<h3>Options for the hero banner</h3>
+<h3>Rules for hero banner</h3>
 <ul>
-    <li><a href="#hero-banner">Hero banner</a></li>
-    <li><a href="#hero-banner-with-transparent-overlay">Hero banner with transparent overlay</a></li>
-    <li><a href="#hero-banner-with-video">Hero banner with embedded video</a></li>
-</ul>
-
-<h3>Rules</h3>
-<ul>
-    <li>Hero banners must only be used at the top of a page directly under the <a href='../navigation-bar/index.html'>navigation bar</a>navigation bar.</li>
+    <li>Hero banners must only be used at the top of a page directly under the <a href='../navigation-bar/index.html'>navigation bar</a>.</li>
     <li>Breadcrumbs must not be used on pages featuring a hero banner.</li>
     <li>Hero banners must not be used on content pages, with the exception of long-style pages. For example, the current <a href="https://www.st-andrews.ac.uk/study/accommodation/halls/catered-standard/">halls of residence</a> pages.</li>
 </ul>
@@ -55,6 +48,13 @@ title: Hero banner
             <li>It is recommended that the main focus should complement the composition.</li>
         </ul>
     </li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#hero-banner-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/hero-banner-options.options}}
 </ul>
 
 {{#hero-banner-options.options}}
