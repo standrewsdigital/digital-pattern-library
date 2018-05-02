@@ -6,7 +6,7 @@
             "option-anchor": "one",
             "panels": [
                 {
-                    "colour": "sta-burgundy-1",
+                    "colour": "sta-orange-1",
                     "columns": [
                         {
                             "column-size": "col-sm-6 col-sm-push-4",
