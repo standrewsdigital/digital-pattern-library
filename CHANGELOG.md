@@ -30,6 +30,24 @@ Release date: Wednesday 2 May 2018
  
 --- 
 
+## v1.10.0
+
+Release date: Friday 27 April 2018
+
+### Added
+
+* Expert cards option to the contact card pattern.
+* Lazysizes library to enable lazy load images.
+
+### Changed
+
+* Colours now match the corporate identity and are AA compliant.
+
+
+
+
+---
+
 ## v1.9.2
 
 Release date: Tuesday 17 April 2018

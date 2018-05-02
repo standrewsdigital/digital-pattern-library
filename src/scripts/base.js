@@ -51,3 +51,10 @@ $('.hideaway-reveal').click(function() {
 
     return false;
 });
+
+// LOAD VIDEO ON CLICK
+$('.load-video').click(function(){
+    video = '<iframe src="'+ $(this).attr('data-video') +'" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+    $(this).replaceWith(video);
+    $(".media-wrapper").fitVids();
+});
