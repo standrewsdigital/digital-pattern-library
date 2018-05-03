@@ -27,7 +27,6 @@
                 "bar-chart",
                 "bar-chart-o",
                 "bars",
-                "blind",
                 "bookmark",
                 "bookmark-o",
                 "calendar",
@@ -200,6 +199,23 @@
                 "window-restore",
                 "wordpress",
                 "youtube-square"
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Approved icons for use with showcase banner pattern",
+            "option-anchor": "approved-showcase-banner",
+            "option-description": "<p>These are the approved options that can be used within the <a href='../showcase-banner/index.html'>showcase banner</a> pattern.<p>To use as a class name, prefix the icon name with <code>fa-</code>, for example <code>fa-address-book</code>.</p>",
+            "icons": [
+                "flask",
+                "globe",
+                "graduation-cap",
+                "pie-chart",
+                "trophy",
+                "university"
             ]
         }
    ]
