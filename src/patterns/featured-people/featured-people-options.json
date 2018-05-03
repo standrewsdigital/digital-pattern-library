@@ -1,12 +1,13 @@
 {
     "options" : [
         {
-            "option-heading": "Three with description",
+            "option-heading": "Three profiles with description",
             "option-description": "<p></p>",
-            "option-anchor": "people",
+            "option-anchor": "three-profiles-with-description",
             "featured": [
                 {
                     "colour": "sta-blue-light",
+                    "heading": "Featured academics",
                     "columns": [
                         {
                             "name": "Professor Sophia Adams",
@@ -35,28 +36,29 @@
             ]
         },
         {
-            "option-heading": "Three without description",
+            "option-heading": "Three profiles without description",
             "option-description": "<p></p>",
-            "option-anchor": "academic",
+            "option-anchor": "three-profiles-without-description",
             "featured": [
                 {
-                    "colour": "sta-dkgreen",
+                    "colour": "sta-burgundy",
+                    "heading": "Researches involved",
                     "columns": [
                         {
-                            "name": "Professor Sophia Adams",
-                            "title": "Structural Biologist",
+                            "name": "Dr Garrett Winters",
+                            "title": "School of Biology",
                             "link": "#",
                             "size": "col-md-4"
                         },
                         {
-                            "name": "Aiden Davis",
-                            "title": "School of English",
+                            "name": "Dr Rhona Davidson",
+                            "title": "School of Medicine",
                             "link": "#",
                             "size": "col-md-4"
                         },
                         {
-                            "name": "Olivia Evans",
-                            "title": "Senior Lecturer",
+                            "name": "Brielle Williamson",
+                            "title": "PhD student",
                             "link": "#",
                             "size": "col-md-4"
                         }
@@ -65,23 +67,24 @@
             ]
         },
         {
-            "option-heading": "Two with description",
+            "option-heading": "Two profiles with description",
             "option-description": "<p></p>",
-            "option-anchor": "purple",
+            "option-anchor": "two-profiles-with-description",
             "featured": [
                 {
                     "colour": "sta-purple",
+                    "heading": "Student participants",
                     "columns": [
                         {
-                            "name": "Professor Sophia Adams",
-                            "title": "Structural Biologist",
+                            "name": "Ashton Cox",
+                            "title": "Student",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
                             "size": "col-md-6"
                         },
                         {
-                            "name": "Aiden Davis",
-                            "title": "School of English",
+                            "name": "Olivia Liang",
+                            "title": "Student",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
                             "size": "col-md-6"
@@ -91,16 +94,17 @@
             ]
         },
         {
-            "option-heading": "One with description",
+            "option-heading": "One profile with description",
             "option-description": "<p></p>",
-            "option-anchor": "purple",
+            "option-anchor": "one-profile-with-description",
             "featured": [
                 {
                     "colour": "sta-orange",
+                    "heading": "About the author",
                     "columns": [
                         {
-                            "name": "Professor Sophia Adams",
-                            "title": "Structural Biologist",
+                            "name": "Professor Sonya Frost",
+                            "title": "Theoretical Physicist",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
                             "single": true
