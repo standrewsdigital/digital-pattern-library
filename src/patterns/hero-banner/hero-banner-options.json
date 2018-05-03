@@ -35,15 +35,15 @@
 
 
         {
-            "option-anchor": "hero-banner-with-red-and-green-gradient-overlay-with-embedded-video",
-            "option-heading": "Hero banner with red and green gradient overlay with embedded video",
+            "option-anchor": "hero-banner-with-burgundy-and-orange-gradient-overlay-with-embedded-video",
+            "option-heading": "Hero banner with burgundy and orange gradient overlay with embedded video",
             "option-description": "",
             "heading":  "Visit St Andrews",
             "paragraph":  "Experience St Andrews for yourself by coming to one of our visiting days. Find out more about the town, University, and your subject of choice.",
             "action-text": "Book your place",
             "action-url": "#",
             "bg-image": "docs/images/cta/hero-banner-image-003.jpg",
-            "class": "gradient-overlay-red-green",
+            "class": "gradient-overlay-burgundy-orange",
             "size": "col-xs-12 col-md-7",
             "embed-code": "https://www.youtube.com/embed/JxHfSwpddCU?rel=0&amp;showinfo=0"
         },
@@ -52,7 +52,7 @@
 
 
         {
-            "option-anchor": "hero-banner-with-purple-and-orange-gradient-overlay",
+            "option-anchor": "hero-banner-with-pruple-and-orange-gradient-overlay",
             "option-heading": "Hero banner with purple and orange gradient overlay",
             "option-description": "",
             "heading":  "Choose St Andrews",
@@ -68,15 +68,15 @@
 
 
         {
-            "option-anchor": "hero-banner-with-blue-and-yellow-gradient-overlay",
-            "option-heading": "Hero banner with blue and yellow gradient overlay",
+            "option-anchor": "hero-banner-with-orange-and-yellow-gradient-overlay",
+            "option-heading": "Hero banner with orange and yellow gradient overlay",
             "option-description": "",
             "heading":  "International St Andrews",
             "paragraph":  "You can meet our staff all over the world. We visit schools, attend fairs and run events through the year.",
             "action-text": "Meet us in your country",
             "action-url": "#",
             "bg-image": "docs/images/cta/hero-banner-image-002.jpg",
-            "class": "gradient-overlay-blue-yellow",
+            "class": "gradient-overlay-orange-yellow",
             "size": "col-xs-12 col-md-8"
         },
 

@@ -24,7 +24,7 @@
 .hero-banner.blue-transparent-overlay {
    &:after {
        //* background-color: -dpl-color($palette-default,'secondary','transparent'); *//
-       background-color: rgba( $sta-blue-light, .7 );
+       background-color: rgba( $sta-blue-light, .6 );
        content: ' ';
        height: 100%;
        position: absolute;
@@ -33,20 +33,23 @@
        z-index: 1;
    }
    .btn, .btn-primary {
-        background-color: $sta-green;
-        border-color: $sta-green;
+        background-color: $sta-orange;
+        border: 0;
+        border-bottom: 5px solid $sta-orange-hover;
    }
 
    .btn:hover, .btn:focus {
-        background-color: $sta-green-hover;
-        border-color: $sta-green-hover;
+        background-color: $sta-orange-hover;
+        border: 0;
+        border-bottom: 5px solid $sta-orange-hover;
+
     }
 }
 
 .hero-banner.dkgreen-transparent-overlay {
    &:after {
        //* background-color: -dpl-color($palette-default,'secondary','transparent'); *//
-       background-color: rgba( $sta-dkgreen, .7 );
+       background-color: rgba( $sta-dkgreen, .6 );
        content: ' ';
        height: 100%;
        position: absolute;
@@ -55,20 +58,22 @@
        z-index: 1;
    }
    .btn, .btn-primary {
-        background-color: $sta-blue;
-        border-color: $sta-blue;
+        background-color: $sta-purple;
+        border: 0;
+        border-bottom: 5px solid $sta-purple-hover;
    }
 
    .btn:hover, .btn:focus {
-        background-color: $sta-blue-hover;
-        border-color: $sta-blue-hover;
+        background-color: $sta-purple-hover;
+        border: 0;
+        border-bottom: 5px solid $sta-purple-hover;
     }
 }
 
-.hero-banner.gradient-overlay-red-green {
+.hero-banner.gradient-overlay-burgundy-orange {
    &:after {
        //* background-color: -dpl-color($palette-default,'secondary','transparent'); *//
-       background: linear-gradient(to right, rgba( $sta-red, .7 ), rgba( $sta-green, .7 ));
+       background: linear-gradient(to right, rgba( $sta-burgundy, .6 ), rgba( $sta-orange, .6 ));
        content: ' ';
        height: 100%;
        position: absolute;
@@ -78,12 +83,14 @@
    }
    .btn, .btn-primary {
         background-color: $sta-blue;
-        border-color: $sta-blue;
+        border: 0;
+        border-bottom: 5px solid $sta-blue-hover;
    }
 
    .btn:hover, .btn:focus {
         background-color: $sta-blue-hover;
-        border-color: $sta-blue-hover;
+        border: 0;
+        border-bottom: 5px solid $sta-blue-hover;
     }
 }
 
@@ -101,19 +108,23 @@
    .btn, .btn-primary {
         background-color: $sta-blue;
         border-color: $sta-blue;
+        border: 0;
+        border-bottom: 5px solid $sta-blue-hover;
    }
 
    .btn:hover, .btn:focus {
         background-color: $sta-blue-hover;
         border-color: $sta-blue-hover;
+        border: 0;
+        border-bottom: 5px solid $sta-blue-hover;
     }
 }
 
 
-.hero-banner.gradient-overlay-blue-yellow {
+.hero-banner.gradient-overlay-orange-yellow {
    &:after {
        //* background-color: -dpl-color($palette-default,'secondary','transparent'); *//
-       background: linear-gradient(to right, rgba( $sta-blue-light, .7 ), rgba( $sta-yellow, .7 ));
+       background: linear-gradient(to right, rgba( $sta-orange, .7 ), rgba( $sta-yellow, .7 ));
        content: ' ';
        height: 100%;
        position: absolute;
@@ -124,11 +135,15 @@
    .btn, .btn-primary {
         background-color: $sta-green;
         border-color: $sta-green;
+        border: 0;
+        border-bottom: 5px solid $sta-green-hover;
    }
 
    .btn:hover, .btn:focus {
         background-color: $sta-green-hover;
         border-color: $sta-green-hover;
+        border: 0;
+        border-bottom: 5px solid $sta-green-hover;
     }
 }
 
