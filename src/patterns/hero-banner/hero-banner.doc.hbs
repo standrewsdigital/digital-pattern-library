@@ -2,6 +2,10 @@
 title: Hero banner
 ---
 
+<div class="alert alert-danger">
+  <strong>The 'hero banner with no overlay' and 'hero banner banner with embedded video and no overlay' options are depreciated.</strong> Do not attempt to use these options for any new website development. They will be removed in a future update.
+</div>
+
 <p>The hero banner pattern displays a large heading, introductory text and a call-to-action over an optional, large background image.</p>
 
 <h3>Rules for hero banner</h3>
@@ -9,11 +13,13 @@ title: Hero banner
     <li>Hero banners must only be used at the top of a page directly under the <a href='../navigation-bar/index.html'>navigation bar</a>.</li>
     <li>Breadcrumbs must not be used on pages featuring a hero banner.</li>
     <li>Hero banners must not be used on content pages, with the exception of long-style pages. For example, the current <a href="https://www.st-andrews.ac.uk/study/accommodation/halls/catered-standard/">halls of residence</a> pages.</li>
+    <li>The colours of the transparent overlay, gradient overlay, and button must not be altered.</li>
+    <li>Embedded videos can be included in any option. Some options below show embedded videos as an example.</li>
 </ul>
 <h3>Image guidelines</h3>
 <ul>
     <li>Hero banners must always have an image background.</li>
-    <li>The size of a hero banner image must be 1905 &times; 362 pixels and created using the <a href="../../assets/docs/images/cta/hero-banner-photoshop-template.psd">background image Photoshop template</a> (PSD, 4.3 MB).</li>
+    <li>The size of a hero banner image must be 1905 &times; 362 pixels.</li>
     <li>There is no default background image, you will need to supply an image by attaching an inline style on <code>&lt;div class="hero-banner"&gt;</code>. For example: <code>&lt;div class="hero-banner" style="background-image: url(path/to/image.jpg)"&gt;</code>.</li>
     <li>The main focus of this pattern is the call-to-action text so the background image shouldn't be overly complicated.
     </li>
@@ -35,19 +41,6 @@ title: Hero banner
     <li>Videos embeded on the hero banner must be hosted on either YouTube or Vimeo.</li>
     <li>When sourcing embed code from YouTube, disable "Show suggested videos when the video finishes" and "Show video title and player actions". This will only show the player controls.</li>
     <li>When sourcing embed code from Vimeo, disable "Portrait", "Title", and "Byline".</li>
-</ul>   
-
-<h3>Background image template</h3>
-<p>The background image must created using the Photoshop template below so it can be positioned reliably across a variety of screen sizes.</p>
-<p><img src="{{asset "docs/images/cta/hero-banner-photoshop-template.jpg"}}" style="width:100%; max-width:992px;"></p>
-<p><a href="../../assets/docs/images/cta/hero-banner-photoshop-template.psd">Hero banner Photoshop template</a> (PSD, 4.3 MB)</p>
-<ul>
-    <li><strong>Focus section</strong>
-        <ul>
-            <li>This area should contain the main focal point of the image.</li>
-            <li>It is recommended that the main focus should complement the composition.</li>
-        </ul>
-    </li>
 </ul>
 
 <h3>Options available</h3>

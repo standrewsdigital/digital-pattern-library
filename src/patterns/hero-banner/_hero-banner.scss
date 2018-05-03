@@ -24,7 +24,7 @@
 .hero-banner.blue-transparent-overlay {
    &:after {
        //* background-color: -dpl-color($palette-default,'secondary','transparent'); *//
-       background-color: rgba( $sta-blue, .6 );
+       background-color: rgba( $sta-blue-light, .7 );
        content: ' ';
        height: 100%;
        position: absolute;
@@ -46,7 +46,7 @@
 .hero-banner.dkgreen-transparent-overlay {
    &:after {
        //* background-color: -dpl-color($palette-default,'secondary','transparent'); *//
-       background-color: rgba( $sta-dkgreen, .6 );
+       background-color: rgba( $sta-dkgreen, .7 );
        content: ' ';
        height: 100%;
        position: absolute;
@@ -60,15 +60,15 @@
    }
 
    .btn:hover, .btn:focus {
-        background-color: $sta-green-hover;
-        border-color: $sta-green-hover;
+        background-color: $sta-blue-hover;
+        border-color: $sta-blue-hover;
     }
 }
 
 .hero-banner.gradient-overlay-red-green {
    &:after {
        //* background-color: -dpl-color($palette-default,'secondary','transparent'); *//
-       background: linear-gradient(to right, rgba( $sta-red, .5 ), rgba( $sta-green, .5 ));
+       background: linear-gradient(to right, rgba( $sta-red, .7 ), rgba( $sta-green, .7 ));
        content: ' ';
        height: 100%;
        position: absolute;
@@ -90,7 +90,7 @@
 .hero-banner.gradient-overlay-purple-orange {
    &:after {
        //* background-color: -dpl-color($palette-default,'secondary','transparent'); *//
-       background: linear-gradient(to right, rgba( $sta-purple, .5 ), rgba( $sta-orange, .5 ));
+       background: linear-gradient(to right, rgba( $sta-purple, .7 ), rgba( $sta-orange, .7 ));
        content: ' ';
        height: 100%;
        position: absolute;
@@ -113,7 +113,7 @@
 .hero-banner.gradient-overlay-blue-yellow {
    &:after {
        //* background-color: -dpl-color($palette-default,'secondary','transparent'); *//
-       background: linear-gradient(to right, rgba( $sta-blue, .5 ), rgba( $sta-yellow, .5 ));
+       background: linear-gradient(to right, rgba( $sta-blue-light, .7 ), rgba( $sta-yellow, .7 ));
        content: ' ';
        height: 100%;
        position: absolute;
