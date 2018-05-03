@@ -26,16 +26,16 @@
     	background-color: $sta-orange;
   	}
 
-  	img.link-active {
-  		border: 5px solid $sta-yellow;
-  	}
+  	// img.link-active {
+  	// 	border: 5px solid $sta-yellow;
+  	// }
 
 	a {
 		color: white;
 
-		// &:hover img {
-		// 	border: 5px solid $sta-yellow;
-		// }
+		&:hover img {
+			border: 5px solid $sta-yellow;
+		}
 	}
 
 	h3 {
@@ -56,6 +56,10 @@
 
 	.single-paragraph p, .single-paragraph h4 {
 		text-align: left;
+		
+		@media (max-width: 991px)  {
+			text-align: center;
+		}
 	}
 
 	img {
