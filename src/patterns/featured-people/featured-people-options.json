@@ -72,7 +72,7 @@
             "option-anchor": "two-profiles-with-description",
             "featured": [
                 {
-                    "colour": "sta-purple",
+                    "colour": "sta-orange",
                     "heading": "Student participants",
                     "columns": [
                         {
@@ -99,7 +99,7 @@
             "option-anchor": "one-profile-with-description",
             "featured": [
                 {
-                    "colour": "sta-orange",
+                    "colour": "sta-purple",
                     "heading": "About the author",
                     "columns": [
                         {
