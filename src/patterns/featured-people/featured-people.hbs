@@ -1,0 +1,35 @@
+<!-- Begin pattern: featured people //-->
+{{#each featured}}
+<section class="featured-people {{colour}}">
+	<div class="container">
+		<h3>{{heading}}</h3>
+		<div class="row">
+			{{#each columns}}
+			<div class="{{size}}">
+				{{#if single}}
+				<div class="col-md-3">
+				{{/if}}
+					<a href="{{link}}">
+						<img src='../../assets/core/images/featured-people.png'>
+				{{#if single}}
+					</a>
+				</div>
+				{{/if}}
+				{{#if single}}
+				<div class="col-md-9">
+					<a href="{{link}}">
+				{{/if}}
+						<h4>{{name}}</h4>
+					</a>
+						<small>{{title}}</small>
+						{{#if description}}
+						<p>{{description}}</p>
+						{{/if}}
+				{{#if single}}</div>{{/if}}
+			</div>
+			{{/each}}
+		</div>
+	</div>
+</section>
+{{/each}}
+<!-- End pattern: featured people  //-->

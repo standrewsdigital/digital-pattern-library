@@ -1,0 +1,118 @@
+{
+    "options" : [
+        {
+            "option-heading": "Three profiles with description",
+            "option-description": "<p></p>",
+            "option-anchor": "three-profiles-with-description",
+            "featured": [
+                {
+                    "colour": "sta-blue-light",
+                    "heading": "Featured academics",
+                    "columns": [
+                        {
+                            "name": "Professor Sophia Adams",
+                            "title": "Structural Biologist",
+                            "link": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "size": "col-md-4 featured-people__person"
+
+                        },
+                        {
+                            "name": "Aiden Davis",
+                            "title": "School of English",
+                            "link": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "size": "col-md-4 featured-people__person"
+                        },
+                        {
+                            "name": "Olivia Evans",
+                            "title": "Senior Lecturer",
+                            "link": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "size": "col-md-4 featured-people__person"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "option-heading": "Three profiles without description",
+            "option-description": "<p></p>",
+            "option-anchor": "three-profiles-without-description",
+            "featured": [
+                {
+                    "colour": "sta-burgundy",
+                    "heading": "Researchers involved",
+                    "columns": [
+                        {
+                            "name": "Dr Garrett Winters",
+                            "title": "School of Biology",
+                            "link": "#",
+                            "size": "col-md-4 featured-people__person"
+                        },
+                        {
+                            "name": "Dr Rhona Davidson",
+                            "title": "School of Medicine",
+                            "link": "#",
+                            "size": "col-md-4 featured-people__person"
+                        },
+                        {
+                            "name": "Brielle Williamson",
+                            "title": "PhD student",
+                            "link": "#",
+                            "size": "col-md-4 featured-people__person"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "option-heading": "Two profiles with description",
+            "option-description": "<p></p>",
+            "option-anchor": "two-profiles-with-description",
+            "featured": [
+                {
+                    "colour": "sta-orange",
+                    "heading": "Student participants",
+                    "columns": [
+                        {
+                            "name": "Ashton Cox",
+                            "title": "Student",
+                            "link": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "size": "col-md-6 featured-people__person"
+                        },
+                        {
+                            "name": "Olivia Liang",
+                            "title": "Student",
+                            "link": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "size": "col-md-6 featured-people__person"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "option-heading": "One profile with description",
+            "option-description": "<p></p>",
+            "option-anchor": "one-profile-with-description",
+            "featured": [
+                {
+                    "colour": "sta-purple",
+                    "heading": "About the author",
+                    "columns": [
+                        {
+                            "name": "Professor Sonya Frost",
+                            "title": "Theoretical Physicist",
+                            "link": "#",
+                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "size": "featured-people__person featured-people__person--single",
+                            "single": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

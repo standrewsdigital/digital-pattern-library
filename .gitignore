@@ -7,7 +7,7 @@
 npm-debug.log
 *.sublime-project
 *.sublime-workspace
-
+ 
 # OS generated files #
 ######################
 */.DS_Store
