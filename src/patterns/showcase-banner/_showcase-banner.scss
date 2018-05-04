@@ -1,0 +1,66 @@
+/*************************************/
+/* BEGIN Pattern: showcase-banner  */
+/*************************************/
+.showcase-banner {
+	color: white;
+	padding-top: 30px;
+
+
+	&.sta-orange-1 {
+		background-color: $sta-orange;
+	}
+
+	&.sta-orange-2 {
+		background-color: darken($sta-orange, 7%);
+	}
+
+	&.sta-orange-3 {
+		background-color: darken($sta-orange, 14%);
+	}
+
+	&.sta-dkgreen-1 {
+		background-color: $sta-dkgreen;
+	}
+
+	&.sta-dkgreen-2 {
+		background-color: darken($sta-dkgreen, 3.5%);
+	}
+
+	&.sta-dkgreen-3 {
+		background-color: darken($sta-dkgreen, 7%);
+	}
+
+	&.sta-purple-1 {
+		background-color: $sta-purple;
+	}
+
+	&.sta-purple-2 {
+		background-color: darken($sta-purple, 7%);
+	}
+
+	&.sta-purple-3 {
+		background-color: darken($sta-purple, 14%);
+	}
+
+	
+	.fa {
+		font-size: 5em;
+		padding-top: 70px;
+	}
+
+	@media (min-width: 1200px) {
+		.fa {
+			font-size: 7em;
+			padding-top: 50px;
+		}
+	}
+
+	h3 {
+		margin-top: 0;
+	}
+}
+
+
+/*************************************/
+/* END Pattern: showcase-banner    */
+/*************************************/

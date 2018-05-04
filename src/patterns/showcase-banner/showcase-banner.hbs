@@ -1,0 +1,25 @@
+<!-- Begin pattern: showcase-banner //-->
+{{#each panels}}
+<section class="showcase-banner {{colour}}">
+	<div class="container">
+		<div class="row">
+		{{#each columns}}
+			<div class="{{column-size}}">
+				{{#if box-size}}		
+					{{> navbox}}
+				{{/if}}
+				{{#if title}}		
+					<h3>{{title}}</h3>
+					<p>{{paragraph}}</p>
+				{{/if}}	
+				{{#if icon-type}}		
+					<i class="fa fa-{{icon-type}} hidden-xs" aria-hidden="true"></i>
+				{{/if}}		
+			</div>
+		{{/each}}
+		</div>
+	</div>
+</section>
+{{/each}}
+
+<!-- End pattern: showcase-banner //-->

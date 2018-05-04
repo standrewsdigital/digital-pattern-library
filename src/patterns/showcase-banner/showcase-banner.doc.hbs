@@ -1,0 +1,67 @@
+---
+title: Showcase banner
+---
+
+<p>This pattern is for showcasing informative headlines, statistics, and other positive content with a full width background. Header and paragraph text is displayed along with a vector icon to add context to the headline. A navbox is included to act as a reference link for further reading.</p>
+
+<h3>Rules for showcase banners</h3>
+<ul>
+    <li>Navboxes must be included on all banners.</li>
+    <li>Icons used must be Font Awesome icons. See the <a href="../font-awesome/index.html#approved-showcase-banner">Font Awesome</a> pattern page for a full list of approved icons.</li>
+    <li>If there is a user case to use other icons outwith the Font Awesome selection, the digital communications team must be consulted.</li>
+    <li>Only the colours from the background colour groups shown in the options can be used.</li>
+	<li>Colours from different background colour groups must not be combined when using sequential banners.</li>
+	<li>Background colours must be in numerical order when using sequential banners.</li>
+    <li>For rules on appropriate use of navboxes, please see the <a href="../navbox/index.html">navbox</a> pattern page.</li>
+    <li>The headline character count must not exceed 100 characters.</li>
+    <li>The paragraph character count must not exceed 500 characters.</li>
+</ul>
+
+<h3>CSS classes for approved background colour groups</h3>
+
+<div class="row">
+	<div class="col-sm-4">
+		<h4>Dark green</h4>
+			<ul>
+				<li><code>sta-dkgreen-1</code></li>
+				<li><code>sta-dkgreen-2</code></li>
+				<li><code>sta-dkgreen-3</code></li>
+			</ul>
+	</div>
+
+	<div class="col-sm-4">
+		<h4>Orange</h4>
+			<ul>
+				<li><code>sta-orange-1</code></li>
+				<li><code>sta-orange-2</code></li>
+				<li><code>sta-orange-3</code></li>
+			</ul>
+	</div>
+
+	<div class="col-sm-4">
+		<h4>Purple</h4>
+			<ul>
+				<li><code>sta-purple-1</code></li>
+				<li><code>sta-purple-2</code></li>
+				<li><code>sta-purple-3</code></li>
+			</ul>
+	</div>
+</div>	
+
+<h3>Options available</h3>
+<ul>
+{{#showcase-banner-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/showcase-banner-options.options}}
+</ul>
+
+{{#showcase-banner-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+{{> showcase-banner}}
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> showcase-banner}}</code></pre>
+{{/showcase-banner-options.options}}
