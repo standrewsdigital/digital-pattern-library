@@ -2,15 +2,17 @@
     "options": [
         
         {
-            "option-anchor": "hero-banner-with-blue-transparent-overlay",
-            "option-heading": "Hero banner with blue transparent overlay",
+            "option-anchor": "hero-banner-with-blue-transparent-overlay-and-second-call-to-action",
+            "option-heading": "Hero banner with blue transparent overlay and second call-to-action",
             "option-description": "",
             "heading":  "Scotland’s first university",
             "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
             "action-text": "Search for courses",
             "action-url": "#",
+            "action-text-2": true,
+            "action-text-2": "Entry requirements",
             "bg-image": "docs/images/cta/hero-banner-image-005.jpg",
-            "class": "blue-transparent-overlay",
+            "class": " hero-banner--overlay hero-banner--blue-transparent-overlay",
             "size": "col-xs-12 col-md-8"
         },
 
@@ -26,7 +28,7 @@
             "action-text": "Read full story",
             "action-url": "#",
             "bg-image": "docs/images/cta/hero-banner-image-004.jpg",
-            "class": "dkgreen-transparent-overlay",
+            "class": " hero-banner--overlay hero-banner--dkgreen-transparent-overlay",
             "size": "col-xs-12 col-md-7",
             "embed-code": "https://www.youtube.com/embed/69eAaV9qEYE?rel=0&amp;showinfo=0"
         },
@@ -43,7 +45,7 @@
             "action-text": "Book your place",
             "action-url": "#",
             "bg-image": "docs/images/cta/hero-banner-image-003.jpg",
-            "class": "gradient-overlay-burgundy-orange",
+            "class": " hero-banner--overlay hero-banner--gradient-burgundy-orange-overlay",
             "size": "col-xs-12 col-md-7",
             "embed-code": "https://www.youtube.com/embed/JxHfSwpddCU?rel=0&amp;showinfo=0"
         },
@@ -60,7 +62,7 @@
             "action-text": "Why St Andrews",
             "action-url": "#",
             "bg-image": "docs/images/cta/hero-banner-image-006.jpg",
-            "class": "gradient-overlay-purple-orange",
+            "class": " hero-banner--overlay hero-banner--gradient-purple-orange-overlay",
             "size": "col-xs-12 col-md-8"
         },
 
@@ -76,7 +78,7 @@
             "action-text": "Meet us in your country",
             "action-url": "#",
             "bg-image": "docs/images/cta/hero-banner-image-002.jpg",
-            "class": "gradient-overlay-orange-yellow",
+            "class": " hero-banner--overlay hero-banner--gradient-orange-yellow-overlay",
             "size": "col-xs-12 col-md-8"
         },
 
