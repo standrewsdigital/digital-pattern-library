@@ -97,7 +97,7 @@
             "heading-dark": "What's happening in St Andrews",
             "call-to-action-text": [
                 {
-                    "read-more-size": "col-xs-12 col-md-4",
+                    "read-more-size": "col-xs-12 col-md-6 col-lg-4",
                     "title": "See all news"
                 }
             ],

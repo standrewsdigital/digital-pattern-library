@@ -25,7 +25,7 @@ $sta-blue-S-hover:      darken($sta-blue-S, $hover-darken);
 
 
 /* Blue-light (sta-blue-light) */
-$sta-blue-light:        rgb(27, 116, 195);
+$sta-blue-light:        rgb(0, 123, 194);
 $sta-blue-light-hover:  darken($sta-blue-light, $hover-darken);
 
 $sta-blue-light-T:      transparentize($sta-blue-light,$transparency);
@@ -36,7 +36,7 @@ $sta-blue-light-S-hover:darken($sta-blue-light-S, $hover-darken);
 
 
 /* Red (sta-red) */
-$sta-red:               rgb(194, 42, 34);
+$sta-red:               rgb(234, 26, 19);
 $sta-red-hover:         darken($sta-red, $hover-darken);
 
 $sta-red-T:             transparentize($sta-red,$transparency);
@@ -47,7 +47,7 @@ $sta-red-S-hover:       darken($sta-red-S, $hover-darken);
 
 
 /* Yellow (sta-yellow) */
-$sta-yellow:            rgb(244, 201, 0);
+$sta-yellow:            rgb(255, 223, 0);
 $sta-yellow-hover:      darken($sta-yellow, $hover-darken);
 
 $sta-yellow-T:          transparentize($sta-yellow,$transparency);
@@ -90,7 +90,7 @@ $sta-grey-dark-S-hover: darken($sta-grey-dark-S, $hover-darken);
 
 
 /* Cyan (sta-cyan) */
-$sta-cyan:              rgb(2, 128, 191);
+$sta-cyan:              rgb(0, 127, 175);
 $sta-cyan-hover:        darken($sta-cyan, $hover-darken);
 
 $sta-cyan-T:            transparentize($sta-cyan,$transparency);
@@ -112,7 +112,7 @@ $sta-cyan-light-S-hover:darken($sta-cyan-light-S, $hover-darken);
 
 
 /* Orange (sta-orange) */
-$sta-orange:            rgb(214, 135, 33);
+$sta-orange:            rgb(191, 89, 9);
 $sta-orange-hover:      darken($sta-orange, $hover-darken);
 
 $sta-orange-T:          transparentize($sta-orange,$transparency);
@@ -123,7 +123,7 @@ $sta-orange-S-hover:    darken($sta-orange-S, $hover-darken);
 
 
 /* Green (sta-green) */
-$sta-green:             rgb(96, 135, 56);
+$sta-green:             rgb(0, 133, 63);
 $sta-green-hover:       darken($sta-green, $hover-darken);
 
 $sta-green-T:           transparentize($sta-green,$transparency);
@@ -134,7 +134,7 @@ $sta-green-S-hover:     darken($sta-green-S, $hover-darken);
 
 
 /* Dark Green (sta-dkgreen) */
-$sta-dkgreen:           rgb(4, 77, 72);
+$sta-dkgreen:           rgb(0, 89, 83);
 $sta-dkgreen-hover:     darken($sta-dkgreen, $hover-darken);
 
 $sta-dkgreen-T:         transparentize($sta-dkgreen,$transparency);
@@ -145,7 +145,7 @@ $sta-dkgreen-S-hover:   darken($sta-dkgreen-S, $hover-darken);
 
 
 /* Purple (sta-purple) */
-$sta-purple:            rgb(120, 85, 150);
+$sta-purple:            rgb(123, 67, 154);
 $sta-purple-hover:      darken($sta-purple, $hover-darken);
 
 $sta-purple-T:          transparentize($sta-purple,$transparency);
@@ -156,7 +156,7 @@ $sta-purple-S-hover:    darken($sta-purple-S, $hover-darken);
 
 
 /* Burgundy (sta-burgundy) */
-$sta-burgundy:          rgb(139, 18, 51);
+$sta-burgundy:          rgb(198, 12, 70);
 $sta-burgundy-hover:    darken($sta-burgundy, $hover-darken);
 
 $sta-burgundy-T:        transparentize($sta-burgundy,$transparency);

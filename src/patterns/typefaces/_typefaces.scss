@@ -5,6 +5,14 @@
 .pt-sans,
 .pt-serif {
     font-size: 2.4em;
+
+    &.bold {
+        font-weight: bold;
+    }
+
+    &.italic {
+        font-style: italic;
+    }
 }
 
 .pt-sans {

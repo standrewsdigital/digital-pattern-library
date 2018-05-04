@@ -2,19 +2,20 @@
     "options" : [
         {
             "option-heading": "Single",
-            "option-description": "Example of how an article should be set out.",
+            "option-description": "<p>Example of how an article should be set out.</p>",
             "option-anchor": "single",
             "news-items": [
                 {
                     "title": "News story title",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "description": "This section of text should not exceed 300 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula nisi ac odio euismod, quis porta felis interdum. Vestibulum euismod neque felis, at condimentum nisi porttitor bibendum. Ut pellentesque ex non ipsum cursus faucibus viverra.",
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240.jpg"
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
                     },
-                    "date": "Tuesday 7 February 2017 | <a href='#'>Category</a>"
+                    "date": "7 February 2017",
+                    "category": "News at St Andrews"
                 }
             ],
-            "pagination": false
+            "pager": false
         },
 
 
@@ -22,88 +23,108 @@
 
         {
             "option-heading": "Multiple",
-            "option-description": "Example of more than 10 articles on a page.",
+            "option-description": "<p>Example of more than 10 articles on a page.</p>",
             "option-anchor": "multiple",
             "news-items": [
                 {
                     "title": "New URL shortening service",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "description": "This section of text should not exceed 300 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula nisi ac odio euismod, quis porta felis interdum. Vestibulum euismod neque felis, at condimentum nisi porttitor bibendum. Ut pellentesque ex non ipsum cursus faucibus viverra.",
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240.jpg"
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
                     },
-                    "date": "Monday 6 February 2017 | <a href='#'>Articles and resources</a>"
+                    "date": "6 February 2017",
+                    "category": "Articles and resources",
+                    "not-last": true
                 },
                 {
                     "title": "How to conduct usability testing",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "description": "This section of text should not exceed 300 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula nisi ac odio euismod, quis porta felis interdum. Vestibulum euismod neque felis, at condimentum nisi porttitor bibendum. Ut pellentesque ex non ipsum cursus faucibus viverra.",
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-4.jpg"
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
                     },
-                    "date": "Monday 24 October 2016 | <a href='#'>Guides</a>"
+                    "date": "24 October 2016",
+                    "category": "Guides",
+                    "not-last": true
                 },
                 {
                     "title": "How to use Track Changes in Word",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "description": "This section of text should not exceed 300 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula nisi ac odio euismod, quis porta felis interdum. Vestibulum euismod neque felis, at condimentum nisi porttitor bibendum. Ut pellentesque ex non ipsum cursus faucibus viverra.",
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-5.jpg"
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
                     },
-                    "date": "Friday 10 February 2017 | <a href='#'>Guides</a>"
+                    "date": "10 February 2017",
+                    "category": "Guides",
+                    "not-last": true
                 },
                 {
                     "title": "New URL shortening service",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "description": "This section of text should not exceed 300 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula nisi ac odio euismod, quis porta felis interdum. Vestibulum euismod neque felis, at condimentum nisi porttitor bibendum. Ut pellentesque ex non ipsum cursus faucibus viverra.",
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240.jpg"
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
                     },
-                    "date": "Monday 6 February 2017 | <a href='#'>Articles and resources</a>"
+                    "date": "6 February 2017",
+                    "category": "Articles and resources",
+                    "not-last": true
                 },
                 {
                     "title": "How to conduct usability testing",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "description": "This section of text should not exceed 300 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula nisi ac odio euismod, quis porta felis interdum. Vestibulum euismod neque felis, at condimentum nisi porttitor bibendum. Ut pellentesque ex non ipsum cursus faucibus viverra.",
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-4.jpg"
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
                     },
-                    "date": "Monday 24 October 2016 | <a href='#'>Guides</a>"
+                    "date": "24 October 2016",
+                    "category": "Guides",
+                    "not-last": true
                 },
                 {
                     "title": "How to use Track Changes in Word",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "description": "This section of text should not exceed 300 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula nisi ac odio euismod, quis porta felis interdum. Vestibulum euismod neque felis, at condimentum nisi porttitor bibendum. Ut pellentesque ex non ipsum cursus faucibus viverra.",
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-5.jpg"
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
                     },
-                    "date": "Friday 10 February 2017 | <a href='#'>Guides</a>"
+                    "date": "10 February 2017",
+                    "category": "Guides",
+                    "not-last": true
                 },
                 {
                     "title": "New URL shortening service",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "description": "This section of text should not exceed 300 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula nisi ac odio euismod, quis porta felis interdum. Vestibulum euismod neque felis, at condimentum nisi porttitor bibendum. Ut pellentesque ex non ipsum cursus faucibus viverra.",
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240.jpg"
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
                     },
-                    "date": "Monday 6 February 2017 | <a href='#'>Articles and resources</a>"
+                    "date": "6 February 2017",
+                    "category": "Articles and resources",
+                    "not-last": true
                 },
                 {
                     "title": "How to conduct usability testing",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "description": "This section of text should not exceed 300 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula nisi ac odio euismod, quis porta felis interdum. Vestibulum euismod neque felis, at condimentum nisi porttitor bibendum. Ut pellentesque ex non ipsum cursus faucibus viverra.",
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-4.jpg"
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
                     },
-                    "date": "Monday 24 October 2016 | <a href='#'>Guides</a>"
+                    "date": "24 October 2016",
+                    "category": "Guides",
+                    "not-last": true
                 },
                 {
                     "title": "How to use Track Changes in Word",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "description": "This section of text should not exceed 300 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula nisi ac odio euismod, quis porta felis interdum. Vestibulum euismod neque felis, at condimentum nisi porttitor bibendum. Ut pellentesque ex non ipsum cursus faucibus viverra.",
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-5.jpg"
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
                     },
-                    "date": "Friday 10 February 2017 | <a href='#'>Guides</a>"
+                    "date": "10 February 2017",
+                    "category": "Guides",
+                    "not-last": true
                 },
                 {
                     "title": "How to use Track Changes in Word",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.",
+                    "description": "This section of text should not exceed 300 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula nisi ac odio euismod, quis porta felis interdum. Vestibulum euismod neque felis, at condimentum nisi porttitor bibendum. Ut pellentesque ex non ipsum cursus faucibus viverra.",
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-5.jpg"
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
                     },
-                    "date": "Friday 10 February 2017 | <a href='#'>Guides</a>"
+                    "date": "10 February 2017",
+                    "category": "Guides",
+                    "not-last": true
                 }
             ],
             "pager": true

@@ -1,9 +1,9 @@
 <!-- Begin pattern: hero-banner //-->
-<div class="hero-banner {{class}}" {{#if bg-image}}style="background-image: url({{asset bg-image}});"{{/if}} title="hero banner">
+<section class="hero-banner{{class}}" {{#if bg-image}}style="background-image: url({{asset bg-image}});"{{/if}}>
     <div class="container">
         <div class="fg row">
             <div class="{{size}}">
-                <div class="call-heading">{{default heading "[heading]"}}</div>
+                <h2 class="call-heading">{{default heading "[heading]"}}</h2>
                 <p>{{default paragraph "[paragraph]"}}</p>
                 <p>
                 <a class="btn btn-primary btn-lg" href="{{default action-url "[action-url]"}}">{{default action-text "[action-text]"}}</a>
@@ -19,5 +19,5 @@
             {{/if}}
         </div>
     </div>
-</div>
+</section>
 <!-- End pattern: hero-banner //-->

@@ -1,2 +1,69 @@
-<pre><code class="pattern-source  {{code-language}}">{{{code}}}
+<pre><code class="pattern-source  {{code-language}}">
+	{{#if html}}
+<div class="container">
+    <div class="toggle-navigation primary-toggle"><a class="navigation-button">Navigation <i class="chevron left"></i></a></div>
+    <ul class="navigation-bar-nav primary-nav">
+        <li><a href="/study/">Study at St&nbsp;Andrews</a></li>
+        <li><a href="/research/">Research</a></li>
+        <li><a href="/alumni/">Alumni and donors</a></li>
+        <li><a href="/community/">Community facilities</a></li>
+        <li><a href="/business-services/">Business services</a></li>
+        <li><a href="/about/">About</a></li>
+    </ul>
+</div>
+	{{/if}}
+	{{#if css}}
+pre, pre code.pattern-source {
+    background-color: #23241f;
+}
+pre {
+    max-height: 15em;
+    overflow: auto;
+}
+	{{/if}}
+	{{#if javascript}}
+function $initHighlight(block, cls) {
+  try {
+    if (cls.search(/\bno\-highlight\b/) != -1)
+      return process(block, true, 0x0F) +
+             ` class="${cls}"`;
+  } catch (e) {
+    /* handle exception */
+  }
+  for (var i = 0 / 2; i < classes.length; i++) {
+    if (checkCondition(classes[i]) === undefined)
+      console.log('undefined');
+  }
+}
+
+export  $initHighlight;
+	{{/if}}
+	{{#if json}}
+[
+    {
+        "title": "apples",
+        "count": [12000, 20000],
+        "description": {"text": "...", "sensitive": false}
+    },
+    {
+        "title": "oranges",
+        "count": [17500, null],
+        "description": {"text": "...", "sensitive": false}
+    }
+]
+	{{/if}}
+	{{#if php}}
+function sum($x, $y) {
+    $z = $x + $y;
+    return $z;
+}
+
+while($x <= 5) {
+  echo "The number is: $x <br>";
+  $x++;
+}
+	{{/if}}
 </code></pre>
+
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source {{code-language}}"><pre><code class="pattern-source {{code-language}}">[...]</code></pre></code></pre>

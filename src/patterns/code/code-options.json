@@ -1,4 +1,43 @@
 {
-    "code-language": "{code-language}",
-    "code": "<!-- Insert your code here -->"
+"options" : [
+        {
+            "option-heading": "HTML",
+            "option-description": "<p></p>",
+            "option-anchor": "html",
+            "code-language": "html",
+            "html": true
+	    },
+
+	    {
+	    	"option-heading": "CSS",
+	        "option-description": "<p></p>",
+	        "option-anchor": "css",
+	        "code-language": "css",
+	        "css": true
+	    },
+
+	    {
+	        "option-heading": "JavaScript",
+	        "option-description": "<p></p>",
+	        "option-anchor": "javascript",
+	        "code-language": "javascript",
+	        "javascript": true
+	    },
+
+	    {
+	        "option-heading": "JSON",
+	        "option-description": "<p></p>",
+	        "option-anchor": "json",
+	        "code-language": "json",
+	        "json": true
+	    },
+
+	    {
+	        "option-heading": "PHP",
+	        "option-description": "<p></p>",
+	        "option-anchor": "php",
+	        "code-language": "php",
+	        "php": true
+	    }
+    ]
 }

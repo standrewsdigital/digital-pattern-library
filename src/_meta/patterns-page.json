@@ -72,6 +72,10 @@
                   "img": "assets/docs/images/patterns/share-options.jpg",
                   "url": "patterns/share-options/index.html"
                 },
+                { "name": "Showcase banner",
+                  "img": "assets/docs/images/patterns/showcase-banner.jpg",
+                  "url": "patterns/showcase-banner/index.html"
+                },
                 { "name": "Subject combo",
                   "img": "assets/docs/images/patterns/subject-combo.jpg",
                   "url": "patterns/subject-combo/index.html"
