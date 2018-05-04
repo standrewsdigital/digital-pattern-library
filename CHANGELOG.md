@@ -5,7 +5,31 @@ This project adheres to [semantic versioning](http://semver.org/).
 
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`. 
- 
+
+## v1.11.0
+
+Release date: Friday 4 May 2018
+
+### Added
+
+* New featured people pattern.
+* New showcase banner pattern.
+* New icons for font awesome pattern.
+* New options for hero banner pattern.
+
+### Changed
+
+* Hero banner pattern markup has been altered. 
+
+### Deprecated
+
+* Deprecated two options from hero banner pattern.
+
+
+
+
+---
+
 ## v1.10.0 
  
 Release date: Wednesday 2 May 2018 
@@ -24,25 +48,6 @@ Release date: Wednesday 2 May 2018
 ### Fixed
 
 * The code for patterns 'more news', 'featured news', and 'news updates' have been reworked to improve stability. 
- 
- 
- 
- 
---- 
-
-## v1.10.0
-
-Release date: Friday 27 April 2018
-
-### Added
-
-* Expert cards option to the contact card pattern.
-* Lazysizes library to enable lazy load images.
-
-### Changed
-
-* Colours now match the corporate identity and are AA compliant.
-
 
 
 
