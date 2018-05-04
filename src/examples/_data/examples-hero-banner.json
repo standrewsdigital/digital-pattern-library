@@ -4,6 +4,6 @@
     "action-text": "Study at St Andrews",
     "action-url": "#",
     "bg-image": "docs/images/cta/hero-banner-image-005.jpg",
-    "class": "hero-banner gradient-overlay-purple-orange",
+    "class": " hero-banner--overlay hero-banner--blue-transparent-overlay",
     "size": "col-xs-12 col-md-8"
 }
