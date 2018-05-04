@@ -3,5 +3,7 @@
     "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
     "action-text": "Study at St Andrews",
     "action-url": "#",
-    "bg-image": "docs/images/cta/cta-example1.jpg"
+    "bg-image": "docs/images/cta/hero-banner-image-005.jpg",
+    "class": " hero-banner--overlay hero-banner--blue-transparent-overlay",
+    "size": "col-xs-12 col-md-8"
 }

@@ -3,184 +3,129 @@
 /* BEGIN Pattern: hero-banner    */
 /*********************************/
 
-
-.hero-banner {
-    @extend .jumbotron;
-    background: $sta-blue-T;
-    -webkit-background-position: 80% 0;
-       -moz-background-position: 80% 0;
-         -o-background-position: 80% 0;
-            background-position: 80% 0;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
-    color: white;
-    position: relative;
-    z-index: 0;
-}
-
-.hero-banner.transparent-overlay {
+@mixin hero-banner-overlay ($color-start, $color-end, $color-cta, $color-cta-hover){
    &:after {
-       //* background-color: -dpl-color($palette-default,'secondary','transparent'); *//
-       background-color: rgba(27,116,195,0.6);
-       content: ' ';
-       height: 100%;
-       position: absolute;
-       top: 0;
-       width: 100%;
-       z-index: 1;
+       background: linear-gradient(to right, rgba( $color-start, .6 ), rgba( $color-end, .6 ));
    }
    .btn, .btn-primary {
-        background-color: $sta-green;
-        border-color: $sta-green;
+        background-color: $color-cta;
+        border-bottom: 5px solid $color-cta-hover;
    }
 
    .btn:hover, .btn:focus {
-        background-color: $sta-green-hover;
-        border-color: $sta-green-hover;
+        background-color: $color-cta-hover;
+        border-bottom: 5px solid $color-cta-hover;
     }
 }
 
-.hero-banner .fg {
+.hero-banner {
+    @extend .jumbotron;
+    background: $sta-blue-T; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
     position: relative;
-    z-index: 10;
-}
+    z-index: 0;
 
-.hero-banner .call-heading {
-    color: white;
-    font-size: 58px;
-    font-weight: 600;
-    line-height: 1.1;
-    text-shadow: 2px 2px 9px rgba(68, 68, 68, 0.7);
-}
+    .btn  {
+        background-color: $sta-blue;
+        border-radius: 0;
+        font-size: 28px;
+        line-height: 1.33;
+        margin: 20px 0 0 0;
+        padding: 10px 32px;
+        text-shadow: none;
+        
+        &:first-child {
+            margin-right: 30px;
+        }
 
-.hero-banner p {
-    color: white;
-    font-size: 23px;
-    margin: 10px 0;
-    text-shadow: 2px 2px 9px rgba(68, 68, 68, 0.7);
-}
+        &:hover, &:focus {
+            background-color: $sta-blue-hover;
+        }  
 
-.hero-banner .btn  {
-    background-color: $sta-blue;
-    border-radius: 0;
-    font-size: 28px;
-    line-height: 1.33;
-    margin: 20px 0 0 0;
-    padding: 10px 32px;
-    text-shadow: none;
-}
+        @media (max-width: 767px) {
+            font-size: 18px;
+        } 
+    }
+ 
+    &.hero-banner--overlay {
+       &:after {
+           content: ' ';
+           height: 100%;
+           position: absolute;
+           top: 0;
+           width: 100%;
+           z-index: 1;
+       }
+       .btn, .btn-primary {
+            border: 0;
+       }
 
-.hero-banner .btn:first-child {
-    margin-right: 30px;
-}
-
-.hero-banner .btn:hover, .hero-banner .btn:focus {
-    background-color: $sta-blue-hover;
-}
-
-@media (max-width: 1199px) {
-    .hero-banner {
-        -webkit-background-position: 80% 0;
-           -moz-background-position: 80% 0;
-             -o-background-position: 80% 0;
-                background-position: 80% 0;
+       .btn:hover, .btn:focus {
+            border: 0;
+        }    
     }
 
-    .hero-banner .call-heading {
-        font-size: 40px;
-    }
-}
-
-@media (max-width: 991px) {
-    .hero-banner {
-        -webkit-background-position: 70% 0;
-           -moz-background-position: 70% 0;
-             -o-background-position: 70% 0;
-                background-position: 70% 0;
-        padding: 20px inherit;
+    &.hero-banner--blue-transparent-overlay {
+      @include hero-banner-overlay ($sta-blue-light, $sta-blue-light, $sta-orange, $sta-orange-hover)
     }
 
-    .hero-banner .embed-responsive {
-        margin-top: 40px;
-    }
-}
-
-@media (max-width: 767px) {
-
-    .hero-banner {
-        -webkit-background-position: 70% 0;
-           -moz-background-position: 70% 0;
-             -o-background-position: 70% 0;
-                background-position: 70% 0;
-        padding: 0;
+    &.hero-banner--dkgreen-transparent-overlay {
+      @include hero-banner-overlay ($sta-dkgreen, $sta-dkgreen, $sta-purple, $sta-purple-hover)
     }
 
-    .hero-banner .container {
-        padding: 20px 15px;
+    &.hero-banner--gradient-burgundy-orange-overlay {
+      @include hero-banner-overlay ($sta-burgundy, $sta-orange, $sta-blue, $sta-blue-hover)
     }
 
-    .hero-banner .call-heading {
-        font-size: 32px;
+    &.hero-banner--gradient-purple-orange-overlay {
+      @include hero-banner-overlay ($sta-purple, $sta-orange, $sta-blue, $sta-blue-hover)
     }
 
-    .hero-banner p {
-        font-size: 20px;
+    &.hero-banner--gradient-orange-yellow-overlay {
+      @include hero-banner-overlay ($sta-orange, $sta-yellow, $sta-green, $sta-green-hover)
     }
 
-    .hero-banner .btn, .hero-banner .btn {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .hero-banner {
-        /* Only browsers without filter support see this */
-        -webkit-background-position: left;
-           -moz-background-position: left;
-             -o-background-position: left;
-                background-position: left;
-    }
-
-    .hero-banner .container {
-        padding: 0;
+    .fg {
         position: relative;
+        z-index: 10;
     }
 
-    .hero-banner .bg {
-        background-position: 70% 0;
-        -webkit-background-size: cover;
-           -moz-background-size: cover;
-             -o-background-size: cover;
-                background-size: cover;
-        border-bottom: 10px solid white;
-        display: block;
-        filter: url(../images/blur.svg);
-        -webkit-filter: blur(3px);
-           -moz-filter: blur(3px);
-                filter: blur(3px);
-        overflow: none;
-        position: absolute;
-            top:    0;
-            right:  0;
-            bottom: 0;
-            left:   0;
-        z-index: 99;
+    .call-heading {
+        font-size: 58px;
+        font-weight: 600;
+        line-height: 1.1;
+        margin: 0;
+        text-shadow: 2px 2px 9px rgba(68, 68, 68, 0.7);
+
+        @media (max-width: 1199px){
+            font-size:40px;
+        }
+
+        @media (max-width: 767px){
+            font-size:32px;
+        }
     }
 
-    .hero-banner .fg {
-        background-color: rgba(0,0,0,.1);
-        border-bottom: 10px solid white;
-        padding: 20px 15px;
-        position: relative;
-        z-index: 100;
-        margin-right: 0;
+    p {
+        font-size: 23px;
+        margin: 10px 0;
+        text-shadow: 2px 2px 9px rgba(68, 68, 68, 0.7);
+
+        @media (max-width: 767px) {
+            font-size: 20px;
+        }
     }
+
+    .embed-responsive {
+        @media (max-width: 991px) {
+            margin-top: 30px;
+        }  
+    }
+
 }
-
 
 /*********************************/
 /* END Pattern: hero-banner      */
