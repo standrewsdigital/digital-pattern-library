@@ -4,7 +4,15 @@
 
 .featured-people  {
 	color: white;
+	padding: 20px 0 0 0;
 
+	@media (min-width: 768px){
+		padding: 30px 0 10px 0;
+	}
+
+	@media (min-width: 992px){
+		padding: 50px 0 30px 0;
+	}
 
 	&.sta-blue-light {
     	background-color: $sta-blue-light;
@@ -30,51 +38,68 @@
   	// 	border: 5px solid $sta-yellow;
   	// }
 
+	img {
+    	@include -dpl-transition();
+    	border: 5px solid rgba($sta-yellow, 0);
+    	border-radius: 50%;
+    	display: block;
+    	margin: 0 auto;
+    	width: 200px;
+	}
+
 	a {
 		color: white;
 
-		&:hover img {
-			border: 5px solid $sta-yellow;
+		&:hover,
+		&:focus {
+			img {
+				border-color: rgba($sta-yellow, 1);
+			}
 		}
 	}
 
-	h3 {
-		margin-top: 50px;
-		font-size: 45px;
-		margin-bottom: 30px;
+	h3 { // scale big heading font
+		font-size: 1.5em;
+		margin: 0 0 30px 0;
+
+		@media (min-width: 480px){
+			font-size: 1.8em;
+		}
+
+		@media (min-width: 768px){
+			font-size: 2.5em;
+		}
 	}
 
 	h4 {
-		font-size: 25px;
+		font-size: 24px;
+		margin: 15px 0 0 0;
 	}
 
-	.col-md-3, .col-md-4, .col-md-6, .col-md-9, .col-md-12 {
-		text-align: center;
-		padding: 0 40px;
+	small {
+		font-size: 16px;
+		font-weight: normal;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+
+	p {
+		margin: 15px 0 0 0;
+	}
+
+	.featured-people__person {
+		@include clearfix-alt; // alternate clearfix (utilities)
 		margin-bottom: 30px;
-	}
-
-	.single-paragraph p, .single-paragraph h4 {
-		text-align: left;
+		padding: 0 40px;
+		text-align: center;
 		
-		@media (max-width: 991px)  {
-			text-align: center;
+		&.featured-people__person--single {
+			padding:0;
+			@media (min-width: 992px)  {
+				text-align:left;
+			}
 		}
 	}
-
-	img {
-		display: inline-block;
-    	margin: 0 auto;
-    	border-radius: 50%;
-    	width: 200px;
-    	border: 5px solid rgba(0, 0, 0, 0);
-	}
-
-	// .single {
-	// 	width: 75%;
-	// 	margin: auto;
-	// 	margin-top: 25px;
-	// }
 
 }
 

@@ -14,7 +14,7 @@
                             "title": "Structural Biologist",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
-                            "size": "col-md-4"
+                            "size": "col-md-4 featured-people__person"
 
                         },
                         {
@@ -22,14 +22,14 @@
                             "title": "School of English",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
-                            "size": "col-md-4"
+                            "size": "col-md-4 featured-people__person"
                         },
                         {
                             "name": "Olivia Evans",
                             "title": "Senior Lecturer",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
-                            "size": "col-md-4"
+                            "size": "col-md-4 featured-people__person"
                         }
                     ]
                 }
@@ -48,19 +48,19 @@
                             "name": "Dr Garrett Winters",
                             "title": "School of Biology",
                             "link": "#",
-                            "size": "col-md-4"
+                            "size": "col-md-4 featured-people__person"
                         },
                         {
                             "name": "Dr Rhona Davidson",
                             "title": "School of Medicine",
                             "link": "#",
-                            "size": "col-md-4"
+                            "size": "col-md-4 featured-people__person"
                         },
                         {
                             "name": "Brielle Williamson",
                             "title": "PhD student",
                             "link": "#",
-                            "size": "col-md-4"
+                            "size": "col-md-4 featured-people__person"
                         }
                     ]
                 }
@@ -80,14 +80,14 @@
                             "title": "Student",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
-                            "size": "col-md-6"
+                            "size": "col-md-6 featured-people__person"
                         },
                         {
                             "name": "Olivia Liang",
                             "title": "Student",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
-                            "size": "col-md-6"
+                            "size": "col-md-6 featured-people__person"
                         }
                     ]
                 }
@@ -107,6 +107,7 @@
                             "title": "Theoretical Physicist",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "size": "featured-people__person featured-people__person--single",
                             "single": true
                         }
                     ]
