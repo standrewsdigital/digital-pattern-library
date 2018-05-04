@@ -3,12 +3,10 @@
 /* BEGIN Pattern: featured-people  */
 /***********************************/
 
-// Disable hover effect on article link when sub link is the hover/focus
-$(".person").hover(function(){
-    $(".person").toggleClass('link-active');
+// ensure both image link and text link hover effects always show together
+$(".featured-people__person a").hover(function(){
+    $(this).closest(".featured-people__person").toggleClass('link-active');
 });
-
-
 
 /***********************************/
 /* END Pattern: featured-people    */

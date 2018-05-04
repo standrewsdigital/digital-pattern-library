@@ -94,11 +94,24 @@
 		text-align: center;
 		
 		&.featured-people__person--single {
-			padding:0;
+			@media (min-width: 768px)  {
+				padding:0;
+			}
 			@media (min-width: 992px)  {
 				text-align:left;
 			}
+
+			&.link-active {
+				// ensure disjointed anchor links are linked in style
+				h4 {
+					text-decoration: underline;
+				}
+				img {
+					border-color: rgba($sta-yellow, 1);
+				}
+			}
 		}
+
 	}
 
 }
