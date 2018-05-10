@@ -17,6 +17,7 @@ Release date: Thursday 10 May 2018
 ### Fixed
 
 * Missing image width on long-form pages.
+* Featured news styling fixed.
 
 
 
