@@ -6,6 +6,10 @@ aside {
     display: block;
 }
 
+.long-form img {
+    max-width: 100%;
+}
+
 // Align centre
 .long-form__content aside.align-centre,
 .long-form__content aside.align-center {

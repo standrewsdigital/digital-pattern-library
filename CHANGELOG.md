@@ -6,6 +6,23 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`. 
 
+## v1.11.1
+
+Release date: Thursday 10 May 2018
+
+### Changed
+
+* Feature people title to lower case.
+
+### Fixed
+
+* Missing image width on long-form pages.
+
+
+
+
+---
+
 ## v1.11.0
 
 Release date: Friday 4 May 2018
