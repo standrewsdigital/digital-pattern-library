@@ -106,8 +106,11 @@ GLOBAL CSS RULES
 
 .content {
     margin-top: 20px;
-}
 
+    img {
+      max-width: 100%;
+    }
+}
 
 /* Course patterns global rules
    --------------------------------------------------------------------------
