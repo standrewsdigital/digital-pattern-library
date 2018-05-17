@@ -13,7 +13,7 @@
                             "name": "Professor Sophia Adams",
                             "title": "Structural Biologist",
                             "link": "#",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum eget velit ac ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed est sem. Duis egestas justo hos. ",
                             "size": "col-md-4 featured-people__person"
 
                         },
@@ -21,14 +21,14 @@
                             "name": "Aiden Davis",
                             "title": "School of English",
                             "link": "#",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum eget velit ac ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed est sem. Duis egestas justo hos. ",
                             "size": "col-md-4 featured-people__person"
                         },
                         {
                             "name": "Olivia Evans",
                             "title": "Senior Lecturer",
                             "link": "#",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum eget velit ac ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed est sem. Duis egestas justo hos. ",
                             "size": "col-md-4 featured-people__person"
                         }
                     ]
@@ -79,14 +79,14 @@
                             "name": "Ashton Cox",
                             "title": "Student",
                             "link": "#",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum eget velit ac ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed est sem. Duis egestas justo hos.",
                             "size": "col-md-6 featured-people__person"
                         },
                         {
                             "name": "Olivia Liang",
                             "title": "Student",
                             "link": "#",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum eget velit ac ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed est sem. Duis egestas justo hos.",
                             "size": "col-md-6 featured-people__person"
                         }
                     ]
@@ -106,7 +106,7 @@
                             "name": "Professor Sonya Frost",
                             "title": "Theoretical Physicist",
                             "link": "#",
-                            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.",
+                            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum eget velit ac ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed est sem. Duis egestas justo hos.",
                             "size": "featured-people__person featured-people__person--single",
                             "single": true
                         }
