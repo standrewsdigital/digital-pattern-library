@@ -41,7 +41,12 @@ body {
 }
 
 .bottom-buffer {
-	margin-bottom: 50px;	
+	margin-bottom: 50px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
 }
 
 /* Remove mobile safari default styles */
