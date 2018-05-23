@@ -42,6 +42,10 @@
     background-color: $sta-purple;
 }
 
+.featured-media.transparent-overlay {
+    background-color: rgba($sta-blue,0.75);
+}
+
 .featured-media.featured-image{
     background-image: url(../images/secondary-call/9.jpg); background-size: cover;
 
