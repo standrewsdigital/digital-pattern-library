@@ -8,7 +8,7 @@
                     "column-size": "col-md-4",
                     "color": "panel-primary",
                     "title": "Primary",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                    "description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.</p>"
                 }
             ]
         },
@@ -23,7 +23,7 @@
                     "column-size": "col-md-4",
                     "color": "panel-secondary",
                     "title": "Secondary",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                    "description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.</p>"
                 }    
             ]
         },
@@ -38,7 +38,7 @@
                     "column-size": "col-md-4",
                     "color": "panel-tertiary-1",
                     "title": "Tertiary 1",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                    "description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.</p>"
                 }
             ]
         },
@@ -53,7 +53,7 @@
                     "column-size": "col-md-4",
                     "color": "panel-tertiary-2",
                     "title": "Tertiary 2",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                    "description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.</p>"
                 }
             ]
         },
@@ -68,7 +68,7 @@
                     "column-size": "col-md-4",
                     "color": "panel-tertiary-3",
                     "title": "Tertiary 3",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                    "description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.</p>"
                 }
             ]
         },
@@ -86,7 +86,7 @@
                         "url": "../../assets/docs/images/placeholders/360x240-8.jpg",
                         "alt": "placeholder"
                     },
-                    "description": "Lorem ipsum dolor sit amet, <a href='#'>consectetur adipisicing</a> elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                    "description": "<p>Lorem ipsum dolor sit amet, <a href='#'>consectetur adipisicing</a> elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.</p>"
                 }
             ]
         }
