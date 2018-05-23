@@ -17,7 +17,7 @@
 
     .news-updates__article-link { //wrapper for entire link block
         margin-bottom: 16px;
-        
+
         &:not(.sub-link-active){
             &:hover,
             &:focus {
@@ -34,7 +34,7 @@
         max-width: 100%;
         padding-bottom: 5px;
 
-        @media (min-width: 768px) { 
+        @media (min-width: 768px) {
             padding: 0 15px 0 0;
         }
 
@@ -68,6 +68,7 @@
                 margin-left: 10px;
 
                 &:before {
+                    color: rgb(68, 68, 68);
                     content: "|";
                     font-weight: normal;
                     padding-right: 10px;
@@ -81,7 +82,7 @@
         padding-right: 0;
 
         &.no-gutter--md-r { //right hand gutter on medium and below
-            @media (max-width: 991px) { 
+            @media (max-width: 991px) {
                 padding: 0 15px 0 0;
             }
         }
