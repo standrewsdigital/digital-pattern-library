@@ -120,7 +120,6 @@
 
 
 .tile-grid {
-	background-color:        $sta-grey-light;
 	background-position:     center;
 	background-repeat:       no-repeat;
 	-webkit-background-size: cover;
@@ -131,6 +130,14 @@
 	font-weight: 200;
 	line-height: 2;
 	padding: 30px 0;
+}
+
+.tile-grid.white {
+    background-color: white;
+}
+
+.tile-grid.light-grey {
+    background-color: $sta-grey-light;
 }
 
 .tile-grid h2 {
