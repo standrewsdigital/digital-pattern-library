@@ -36,13 +36,28 @@
         margin-top: 0;
     }
 
-   	h3,
+   	h3 {
+        font-size: 30px;
+
+        @media (max-width: 991px){
+            font-size: 24px;
+        }
+    }
     p {
+        font-size: 24px;
         margin: 5px 0;
+
+        @media (max-width: 991px){
+            font-size: 18px;
+        }
     }
 
     small {
-        font-size: 80%; // override 66% default
+        font-size: 100%; // override 66% default
+
+        @media (max-width: 991px){
+            font-size: 80%; // override 66% default
+        }
     }
 
 	img {
