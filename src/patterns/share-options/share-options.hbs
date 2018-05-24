@@ -1,14 +1,25 @@
 <!-- Begin pattern: share-options //-->
 <div id="share-options">
-    <ul>
-	{{#icon}}
-		<li {{#if mobile-only}} class="visible-xs"{{/if}}><a href="#"><span class="sr-only">{{title}}</span>
-		{{#if fa-class}}
-			<i class="fa fa-{{fa-class}} fa-2x" title="{{title}}" aria-hidden="true"></i>
-		{{/if}}
-		{{#if image}}{{{image}}}{{/if}}
-		</a></li>
-	{{/icon}}
-    </ul>
+	{{#if embed}}
+	<div class="col-md-6">
+	{{/if}}
+		<h3>{{title}}</h3>
+	    <ul>
+		{{#icon}}
+			<li {{#if mobile-only}} class="visible-xs"{{/if}}><a href="#"><span class="sr-only">{{title}}</span>
+			{{#if fa-class}}
+				<i class="fa fa-{{fa-class}} fa-2x" title="{{title}}" aria-hidden="true"></i>
+			{{/if}}
+			{{#if image}}{{{image}}}{{/if}}
+			</a></li>
+		{{/icon}}
+	    </ul>
+	{{#if embed}}
+	</div>
+	<div class="col-md-6 dpl-form">
+		<h3>Embed this video</h3>
+		<textarea class="form-control" rows="3" id="textArea" name="textArea"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JxHfSwpddCU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></textarea>
+	</div>
+	{{/if}}
 </div>
 <!-- End pattern: share-options //-->
