@@ -117,6 +117,54 @@
 
 
         {
+            "option-heading": "Single gallery with download",
+            "option-description": "",
+            "option-anchor": "single-gallery-download",
+            "gallery-title": "<h2 class='gallery__title'>Title of gallery</h2>",
+            "gallery-images-class": "lightbox_gallery_images",
+            "gallery-images": [
+                {
+                    "thumbnail":  "docs/images/placeholders/360x240-7.jpg",
+                    "alt":        "alt text for image 1",
+                    "id":         "optional-id2",
+                    "caption":    "Image 1",
+                    "large-img":  "docs/images/placeholders/1280x853-7.jpg",
+                    "lightbox-gallery": "gallery-4",
+                    "download-button": true
+                },
+                {
+                    "thumbnail":  "docs/images/placeholders/360x240-8.jpg",
+                    "alt":        "alt text for image 2",
+                    "id":         "optional-id3",
+                    "caption":    "Image 2",
+                    "large-img":  "docs/images/placeholders/1280x853-8.jpg",
+                    "lightbox-gallery": "gallery-4",
+                    "download-button": true
+                },
+                {
+                    "thumbnail":  "docs/images/placeholders/360x240-9.jpg",
+                    "alt":        "alt text for image 3",
+                    "id":         "optional-id4",
+                    "caption":    "Image 3",
+                    "large-img":  "docs/images/placeholders/1280x853-9.jpg",
+                    "lightbox-gallery": "gallery-4",
+                    "download-button": true
+                },
+                {
+                    "thumbnail":  "docs/images/placeholders/360x240-7.jpg",
+                    "alt":        "alt text for image 3",
+                    "id":         "optional-id5",
+                    "caption":    "Image 4",
+                    "large-img":  "docs/images/placeholders/1280x853-7.jpg",
+                    "lightbox-gallery": "gallery-4",
+                    "download-button": true
+                }
+            ]
+        },
+
+
+
+        {
             "option-heading": "Old gallery",
             "option-description": "<p>This is the deprecated gallery implementation, using the jQuery theatre plugin.</p>",
             "option-anchor": "old-gallery",

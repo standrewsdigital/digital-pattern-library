@@ -6,6 +6,9 @@
         <figure id="{{id}}">
             <a href="{{asset large-img}}" {{#if lightbox-gallery }} data-lightbox="{{lightbox-gallery}}" data-title="{{caption}}" {{/if}}><img src="{{asset thumbnail}}" alt="{{alt}}"></a>
             <figcaption>{{{caption}}}</figcaption>
+            {{#if download-button}}
+                <a type="button" class="btn btn-lg btn-primary" href="#">Download</a>
+            {{/if}}
         </figure>
         {{/gallery-images}}
     </div>
