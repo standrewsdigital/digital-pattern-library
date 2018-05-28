@@ -12,7 +12,7 @@
     margin: 0 auto 3em;
 }
 
-.panel.big-target-click-zone {
+.panel-heading.big-target-click-zone {
     cursor: pointer;
 }
 
@@ -40,6 +40,16 @@
 
 .panel-body {
     padding: 15px;
+}
+
+.panel-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.panel-body li {
+    margin-bottom: 5px;
 }
 
 .panel h3 {
