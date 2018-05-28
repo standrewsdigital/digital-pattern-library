@@ -118,7 +118,7 @@
 
         {
             "option-heading": "Single gallery with download",
-            "option-description": "",
+            "option-description": "This option must only be used in galleries where images are downloadable. All images must be downloadable in this option.",
             "option-anchor": "single-gallery-download",
             "gallery-title": "<h2 class='gallery__title'>Title of gallery</h2>",
             "gallery-images-class": "lightbox_gallery_images",
@@ -166,7 +166,7 @@
 
         {
             "option-heading": "Video gallery",
-            "option-description": "<p>This does not use Lightbox.</p>",
+            "option-description": "<p>This option does not use Lightbox. All images must link to another page. The pages linked can be directly to the video hosted on YouTube or Vimeo, or to another page where the video is already embedded.</p>",
             "option-anchor": "single-gallery-download",
             "gallery-title": "<h2 class='gallery__title'>Title of gallery</h2>",
             "gallery-images-class": "lightbox_gallery_images",
