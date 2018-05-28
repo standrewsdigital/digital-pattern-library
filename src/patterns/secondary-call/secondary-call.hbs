@@ -1,5 +1,5 @@
 <!-- Begin pattern: secondary-call //-->
-<div class="secondary-call {{classes}} secondary-call-{{style}}">
+<div class="secondary-call {{classes}}" {{#if bg-image}}style="background-image: url({{asset bg-image}});"{{/if}}>
     <div class="container">
         <div class="call-heading">{{heading}}</div>
         <p>{{paragraph}}</p>

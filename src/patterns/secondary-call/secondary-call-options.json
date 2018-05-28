@@ -24,19 +24,27 @@
 
 
        {
-            "option-heading": "Transparent overlay",
+            "option-heading": "Purple transparent overlay",
             "option-description": "",
-            "option-anchor": "transparent",
-            "heading": "Apply to St Andrews",
-            "paragraph": "Apply early for your best chance at being placed here.",
+            "option-anchor": "purple-transparent",
+            "heading": "Research with us",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
             "action": [
                 {
-                    "text": "Start your application",
+                    "text": "Find a collaborator",
+                    "url": "#"
+                },
+                {
+                    "text": "Postgraduate opportunities",
+                    "url": "#"
+                },
+                {
+                    "text": "Current vacancies",
                     "url": "#"
                 }
             ],
             "classes": "center transparent-overlay",
-            "style": "2"
+            "bg-image": "docs/images/cta/hero-banner-image-005.jpg"
        },
 
 

@@ -17,14 +17,14 @@
     font-weight: 200;
     line-height: 2.1428571435;
     margin-top: 0;
-    padding: 30px;
+    padding: 50px 0;
     text-align: center;
     position: relative;
 }
 
 .secondary-call.transparent-overlay {
    &:after {
-       background-color: rgba(27,116,195,0.6);
+       background-color: rgba($sta-purple,0.75);
        content: ' ';
        height: 100%;
        position: absolute;
@@ -35,12 +35,13 @@
    }
    .btn, .btn-primary {
         background-color: $sta-green;
-        border-color: $sta-green;
+        border: 0;
+        border-bottom: 5px solid $sta-green-hover;
+        font-size: 25px;
    }
 
    .btn:hover, .btn:focus {
         background-color: $sta-green-hover;
-        border-color: $sta-green-hover;
     }
 }
 
@@ -51,19 +52,18 @@
 
 .secondary-call .call-heading {
     color: white;
-    font-size:   24px;
+    font-size:   45px;
     font-weight: bold;
     line-height: 1.2;
     margin: 10px auto;
-    width: 85%;
+    text-shadow: 2px 2px 9px rgba(68,68,68,0.7);
 }
 
 .secondary-call p {
     color: white;
     font-size: 21px;
     line-height: 1.5;
-    margin: 10px auto;
-    width: 85%;
+    margin: 20px auto;
 }
 
 .secondary-call.left p, .secondary-call.left .call-heading {
@@ -74,6 +74,7 @@
 .secondary-call .btn {
     background-color: $sta-blue;
     margin: 0 15px;
+    margin-bottom: 30px;
 }
 
 .secondary-call .btn:hover, .secondary-call .btn:focus {
@@ -110,7 +111,8 @@
 
 @media (max-width: 451px) { 
     .secondary-call .call-to-action-buttons .btn { 
-        margin: 30px 15px 15px 0; 
+        margin: 15px 0 15px 0; 
+        font-size: 18px;
     } 
 }
 
