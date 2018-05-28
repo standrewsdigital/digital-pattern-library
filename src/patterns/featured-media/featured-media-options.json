@@ -17,6 +17,7 @@
             "option-description": "",
             "option-anchor": "transparent-overlay",
             "background": "transparent-overlay",
+            "bg-image": "docs/images/cta/hero-banner-image-004.jpg",
             "column1": "<div class='col-md-7 col-xs-12'><h3>What's bad about being good?</h3><p>Research at St Andrews explores effective altruism, a rapidly growing social movement which encourages us to do the most good we can with the money and time available.</p><a type='button' class='btn btn-lg btn-primary' href='#''>Read full story</a></div>",
             "column2": "<div class='col-md-5 col-xs-12'><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>"
         },
@@ -49,6 +50,7 @@
             "option-heading": "Image background with photosphere in centre",
             "option-description": "For more information, visit the <a href='../photosphere/index.html'>Photosphere</a> pattern.",
             "option-anchor": "photosphere-media",
+            "photosphere": true,
             "background": "featured-image",
             "column1": "<div class='col-md-8 col-md-offset-2'><h3>What is David Russell Apartments like?</h3></h2><div class='embed-responsive embed-responsive-16by9'><div id='photosphere'></div></div></div>",
             "column2": ""
