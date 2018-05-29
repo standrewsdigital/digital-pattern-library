@@ -3,186 +3,116 @@
 /* BEGIN Pattern: secondary-call-to-action    */
 /**********************************************/
 
+@mixin secondary-call-overlay ($color-overlay, $color-cta, $color-cta-hover){
+   &:after {
+       background-color: rgba($color-overlay,0.75);
+   }
+   .btn, .btn-primary {
+        background-color: $color-cta;
+        border-bottom: 5px solid $color-cta-hover;
+   }
+
+   .btn:hover, .btn:focus {
+        background-color: $color-cta-hover;
+        border-bottom: 5px solid $color-cta-hover;
+    }
+}
+
 .secondary-call {
-    background: url(../images/secondary-call/0.jpg);
     background-color: $sta-grey;
+    background-image: url(../images/secondary-call/0.jpg); //fallback background image
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
-    color: inherit;
-    font-size:   21px;
-    font-weight: 200;
-    line-height: 2.1428571435;
-    margin-top: 0;
-    padding: 50px 0;
-    text-align: center;
+    background-size: cover;
+    padding: 50px 0 40px 0;
     position: relative;
-}
+    text-align: center;
 
-.secondary-call.purple-transparent-overlay {
-   &:after {
-       background-color: rgba($sta-purple,0.75);
-       content: ' ';
-       height: 100%;
-       position: absolute;
-       top: 0;
-       left: 0;
-       width: 100%;
-       z-index: 1;
-   }
-   .btn, .btn-primary {
-        background-color: $sta-green;
-        border: 0;
-        border-bottom: 5px solid $sta-green-hover;
-        font-size: 25px;
-   }
-
-   .btn:hover, .btn:focus {
-        background-color: $sta-green-hover;
+    &.secondary-call--overlay {
+         &:after {
+             content: ' ';
+             height: 100%;
+             position: absolute;
+                top: 0;
+                left: 0;
+             width: 100%;
+             z-index: 1;
+         }   
     }
-}
 
-.secondary-call.blue-transparent-overlay {
-   &:after {
-       background-color: rgba($sta-blue,0.75);
-       content: ' ';
-       height: 100%;
-       position: absolute;
-       top: 0;
-       left: 0;
-       width: 100%;
-       z-index: 1;
-   }
-   .btn, .btn-primary {
-        background-color: $sta-orange;
-        border: 0;
-        border-bottom: 5px solid $sta-orange-hover;
-        font-size: 25px;
-   }
 
-   .btn:hover, .btn:focus {
-        background-color: $sta-orange-hover;
+    &.secondary-call--purple-transparent-overlay {
+        @include secondary-call-overlay ($sta-purple, $sta-green, $sta-green-hover)
     }
-}
 
-.secondary-call.orange-transparent-overlay {
-   &:after {
-       background-color: rgba($sta-orange,0.75);
-       content: ' ';
-       height: 100%;
-       position: absolute;
-       top: 0;
-       left: 0;
-       width: 100%;
-       z-index: 1;
-   }
-   .btn, .btn-primary {
-        background-color: $sta-green;
-        border: 0;
-        border-bottom: 5px solid $sta-green-hover;
-        font-size: 25px;
-   }
-
-   .btn:hover, .btn:focus {
-        background-color: $sta-green-hover;
+    &.secondary-call--blue-transparent-overlay {
+        @include secondary-call-overlay($sta-blue, $sta-orange, $sta-orange-hover)
     }
-}
 
-.secondary-call.burgundy-transparent-overlay {
-   &:after {
-       background-color: rgba($sta-burgundy,0.75);
-       content: ' ';
-       height: 100%;
-       position: absolute;
-       top: 0;
-       left: 0;
-       width: 100%;
-       z-index: 1;
-   }
-   .btn, .btn-primary {
+    &.secondary-call--orange-transparent-overlay {
+        @include secondary-call-overlay ($sta-orange, $sta-green, $sta-green-hover)
+    }
+
+    &.secondary-call--burgundy-transparent-overlay {
+        @include secondary-call-overlay ($sta-burgundy, $sta-blue, $sta-blue-hover)
+    }
+
+    .container {
+        position: relative;
+        z-index: 10;
+    }
+
+    .call-heading {
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 1.2;
+        margin: 0 auto;
+        text-shadow: 2px 2px 9px rgba(68,68,68,0.7);
+
+        @media (min-width: 480px){
+          font-size: 1.8em;
+        }
+
+        @media (min-width: 768px){
+          font-size: 2.5em;
+        }
+    }
+
+    p {
+        color: white;
+        margin: 20px auto;
+
+        @media (min-width: 768px){
+          font-size: 21px;
+          line-height:1.5;
+        }
+    }
+
+    &.left p, &.left .call-heading {
+        text-align: left;
+        width: 100%;
+
+        @media (max-width: 991px){
+          text-align: center;
+        }
+    }
+
+    .btn {
         background-color: $sta-blue;
         border: 0;
-        border-bottom: 5px solid $sta-blue-hover;
-        font-size: 25px;
-   }
+        margin: 0 15px 20px 15px;
 
-   .btn:hover, .btn:focus {
-        background-color: $sta-blue-hover;
-    }
-}
+        &:hover,
+        &:focus {
+            background-color: $sta-blue-hover;
+        }
 
-.secondary-call .container {
-    position: relative;
-    z-index: 10;
-}
-
-.secondary-call .call-heading {
-    color: white;
-    font-size:   45px;
-    font-weight: bold;
-    line-height: 1.2;
-    margin: 10px auto;
-    text-shadow: 2px 2px 9px rgba(68,68,68,0.7);
-}
-
-.secondary-call p {
-    color: white;
-    font-size: 21px;
-    line-height: 1.5;
-    margin: 20px auto;
-}
-
-.secondary-call.left p, .secondary-call.left .call-heading {
-    text-align: left;
-    width: 100%;
-}
-
-.secondary-call .btn {
-    background-color: $sta-blue;
-    margin: 0 15px;
-    margin-bottom: 30px;
-}
-
-.secondary-call .btn:hover, .secondary-call .btn:focus {
-    background-color: $sta-blue-hover;
-}
-
-/* Alternative background images */
-
-@for $i from 0 through 9 {
-    .secondary-call-#{$i} {
-        background-image: url(../images/secondary-call/#{$i}.jpg);
-    }
-}
-
-.secondary-call-7 {
-    background-position: bottom;
-}
-
-@media (max-width: 991px) {
-    .secondary-call .left p, .secondary-call .left .call-heading {
-        text-align: center;
-    }
-}
-
-@media (max-width: 767px) {
-    .secondary-call .btn {
-        font-size: 18px;
+        @media (min-width: 768px){
+            font-size:25px;
+        }
     }
 
-    .secondary-call p {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 451px) { 
-    .secondary-call .call-to-action-buttons .btn { 
-        margin: 15px 0 15px 0; 
-        font-size: 18px;
-    } 
 }
 
 /**********************************************/
