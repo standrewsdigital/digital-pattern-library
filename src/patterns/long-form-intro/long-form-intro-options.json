@@ -4,7 +4,7 @@
             "option-heading": "Long-form intro",
             "option-description": "<p>To be used only on the long-form pages.</p>",
             "option-anchor": "longform-intro",
-            "intro-text": "<h2>Lorem ipsum dolor</h2><p class='lead'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+            "intro-text": "<h2>Lorem ipsum dolor</h2><p class='lead'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p><a class='btn btn-lg btn-primary' href='# type='button'>Read the full REF submission</a></p>"
         },
         {
             "option-heading": "Long-form intro - heading and lead only",

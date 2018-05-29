@@ -7,6 +7,12 @@
     font-size:   30px;
 }
 
+.long-form__content .btn {
+    font-family: $font-family-sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
 section.long-form.long-form-intro {
 	background-image: url(../images/long-form-content/bg-spark.jpg);
 }
