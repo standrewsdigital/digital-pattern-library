@@ -3,6 +3,21 @@
 /* BEGIN Pattern: featured media */
 /*********************************/
 
+@mixin featured-media-overlay ($color-overlay, $color-cta, $color-cta-hover){
+   &:after {
+       background-color: rgba($color-overlay,0.75);
+   }
+   .btn, .btn-primary {
+        background-color: $color-cta;
+        border-bottom: 5px solid $color-cta-hover;
+   }
+
+   .btn:hover, .btn:focus {
+        background-color: $color-cta-hover;
+        border-bottom: 5px solid $color-cta-hover;
+    }
+}
+
 .featured-media {
     background: rgba($sta-blue,0.75);
     background-repeat: no-repeat;
@@ -11,7 +26,7 @@
     color: white;
     position: relative;
     z-index: 0;
-    padding: 40px 0;
+    padding: 50px 0;
 
     h3 { // scale big heading font
         font-size: 1.5em;
@@ -25,142 +40,87 @@
             font-size: 2.5em;
         }
     }
-}
 
-.featured-media a {
-    text-decoration: none;
-}
-
-.featured-media p a, .featured-media ul a {
-    color: white;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.featured-media .btn {
-    font-size: 25px;
-    border: 0;
-    margin: 0 0 25px;
-}
-
-.featured-media.sta-blue {
-    background-color: $sta-blue;
-}
-
-.featured-media.sta-blue-light {
-    background-color: $sta-blue-light;
-}
-
-.featured-media.sta-green {
-    background-color: $sta-green;
-}
-
-.featured-media.sta-burgundy {
-    background-color: $sta-burgundy;
-}
-
-.featured-media.sta-purple {
-    background-color: $sta-purple;
-}
-
-.featured-media.blue-transparent-overlay {
-
-    &:after {
-        background-color: rgba($sta-blue,0.75);
-        content: ' ';
-        height: 100%;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: -1;
+    &.featured-media--overlay {
+        &:after {
+            content: ' ';
+            height: 100%;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+        }        
     }
-    .btn, .btn-primary {
-        background-color: $sta-orange;
-        border-bottom: 5px solid $sta-orange-hover;
-   }
 
-   .btn:hover, .btn:focus {
-        background-color: $sta-orange-hover;
-    }
-}
-
-.featured-media.orange-transparent-overlay {
-
-    &:after {
-        background-color: rgba($sta-orange,0.75);
-        content: ' ';
-        height: 100%;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: -1;
-    }
-    .btn, .btn-primary {
-        background-color: $sta-green;
-        border-bottom: 5px solid $sta-green-hover;
-   }
-
-   .btn:hover, .btn:focus {
-        background-color: $sta-green-hover;
-    }
-}
-
-.featured-media.burgundy-transparent-overlay {
-
-    &:after {
-        background-color: rgba($sta-burgundy,0.75);
-        content: ' ';
-        height: 100%;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: -1;
-    }
-    .btn, .btn-primary {
+    &.featured-media--sta-blue {
         background-color: $sta-blue;
-        border-bottom: 5px solid $sta-blue-hover;
-   }
-
-   .btn:hover, .btn:focus {
-        background-color: $sta-blue-hover;
     }
-}
 
-.featured-media.purple-transparent-overlay {
-
-    &:after {
-        background-color: rgba($sta-purple,0.75);
-        content: ' ';
-        height: 100%;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: -1;
+    &.featured-media--sta-blue-light {
+        background-color: $sta-blue-light;
     }
-    .btn, .btn-primary {
+
+    &.featured-media--sta-green {
         background-color: $sta-green;
-        border-bottom: 5px solid $sta-green-hover;
-   }
-
-   .btn:hover, .btn:focus {
-        background-color: $sta-green-hover;
     }
-}
 
-.featured-media.featured-image{
-    background-image: url(../images/secondary-call/9.jpg); background-size: cover;
-
-}
-
-@media (max-width: 991px) {
-    .featured-media img {
-        display: block;
-        margin: 0 auto;
-        padding-bottom: 20px;
+    &.featured-media--sta-burgundy {
+        background-color: $sta-burgundy;
     }
+
+    &.featured-media--sta-purple {
+        background-color: $sta-purple;
+    }
+
+    &.featured-media--blue-transparent-overlay {
+        @include featured-media-overlay ($sta-blue, $sta-orange, $sta-orange-hover)
+    }
+
+    &.featured-media--orange-transparent-overlay {
+        @include featured-media-overlay ($sta-orange, $sta-green, $sta-green-hover)
+    }
+
+    &.featured-media--burgundy-transparent-overlay {
+        @include featured-media-overlay ($sta-burgundy, $sta-blue, $sta-blue-hover)
+    }
+
+    &.featured-media--purple-transparent-overlay {
+        @include featured-media-overlay ($sta-purple, $sta-green, $sta-green-hover)
+    }
+
+    &.featured-media--featured-image{
+        background-image: url(../images/secondary-call/9.jpg); background-size: cover;
+    }
+
+    a:not(.btn) {
+        color: white;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .btn {
+        margin-bottom:25px;
+
+        @media (min-width: 768px){
+            font-size:25px;
+            margin-bottom:0;
+        }
+    }
+
+    img {
+        max-width:100%;
+    }
+    /*
+    @media (max-width: 991px) {
+        img {
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
+    }
+    */
+
 }
-
-
 /*********************************/
 /* END Pattern: featured media   */
 /*********************************/
