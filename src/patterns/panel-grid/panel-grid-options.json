@@ -48,8 +48,8 @@
 
 
         {
-            "option-heading": "Three columns option",
-            "option-description": "<p>A variety of colours are available, in keeping with the colour palette.</p>",
+            "option-heading": "Three columns option with links",
+            "option-description": "<p>Links must be used in an unordered list. No more than six links per panel.</p>",
             "option-anchor": "three-column-panel-grid",
             "panels": [
                 {
