@@ -22,7 +22,7 @@
     position: relative;
 }
 
-.secondary-call.transparent-overlay {
+.secondary-call.purple-transparent-overlay {
    &:after {
        background-color: rgba($sta-purple,0.75);
        content: ' ';
@@ -45,7 +45,76 @@
     }
 }
 
-.secondary-call.transparent-overlay .container {
+.secondary-call.blue-transparent-overlay {
+   &:after {
+       background-color: rgba($sta-blue,0.75);
+       content: ' ';
+       height: 100%;
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       z-index: 1;
+   }
+   .btn, .btn-primary {
+        background-color: $sta-orange;
+        border: 0;
+        border-bottom: 5px solid $sta-orange-hover;
+        font-size: 25px;
+   }
+
+   .btn:hover, .btn:focus {
+        background-color: $sta-orange-hover;
+    }
+}
+
+.secondary-call.orange-transparent-overlay {
+   &:after {
+       background-color: rgba($sta-orange,0.75);
+       content: ' ';
+       height: 100%;
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       z-index: 1;
+   }
+   .btn, .btn-primary {
+        background-color: $sta-green;
+        border: 0;
+        border-bottom: 5px solid $sta-green-hover;
+        font-size: 25px;
+   }
+
+   .btn:hover, .btn:focus {
+        background-color: $sta-green-hover;
+    }
+}
+
+.secondary-call.burgundy-transparent-overlay {
+   &:after {
+       background-color: rgba($sta-burgundy,0.75);
+       content: ' ';
+       height: 100%;
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       z-index: 1;
+   }
+   .btn, .btn-primary {
+        background-color: $sta-blue;
+        border: 0;
+        border-bottom: 5px solid $sta-blue-hover;
+        font-size: 25px;
+   }
+
+   .btn:hover, .btn:focus {
+        background-color: $sta-blue-hover;
+    }
+}
+
+.secondary-call .container {
     position: relative;
     z-index: 10;
 }
