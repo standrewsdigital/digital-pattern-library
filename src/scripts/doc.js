@@ -350,14 +350,16 @@ function htmlDecode(value) {
         // Wait until the search term length is greater than two characters before starting the search.
         if ( search_term.length > 2 ) {
 
-            search_data( form_id, search_term, search_list );
+            var results = search_data( form_id, search_term, search_list );
+
             if (form_id === 'news-search') {
-                $(this).parent('.input-group').next('.results').fadeIn('slow');
+                if (results != "") {
+                    $(this).parent('.input-group').next('.results').fadeIn('slow');
+                }
             }
             else {
                 $(this).parent('.form-group').next('.results').slideDown('slow');
             }
-           
 
         } else {
 
@@ -426,7 +428,10 @@ function htmlDecode(value) {
             }
         }
 
+        return left_results;
+
     }
+
 
     function add_left_results_list( form_id, list ) {
 
