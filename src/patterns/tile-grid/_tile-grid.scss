@@ -5,18 +5,18 @@
 
 .tile {
     background-color: white;
-    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
-       -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
-            box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+       -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+            box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
     margin: 0 auto 3em;
     max-width: 360px;
 }
 
 .tile.tile-responsive {
     background-color: white;
-    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
-       -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
-            box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.38);
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+       -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+            box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
     margin: 0 auto 2em;
     max-width: 100%;
 }
@@ -120,7 +120,6 @@
 
 
 .tile-grid {
-	background-color:        $sta-grey-light;
 	background-position:     center;
 	background-repeat:       no-repeat;
 	-webkit-background-size: cover;
@@ -131,6 +130,14 @@
 	font-weight: 200;
 	line-height: 2;
 	padding: 30px 0;
+}
+
+.tile-grid.white {
+    background-color: white;
+}
+
+.tile-grid.light-grey {
+    background-color: $sta-grey-light;
 }
 
 .tile-grid h2 {

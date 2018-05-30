@@ -1,9 +1,10 @@
 <!-- Begin pattern: featured media //-->
-
+{{#if photosphere}}
 <!-- Google VR view code for use with photosphere option -->
 <script src='https://storage.googleapis.com/vrview/2.0/build/vrview.min.js'></script>
+{{/if}}
 
-<div class="featured-media {{background}}">
+<div class="featured-media {{background}}" {{#if bg-image}}style="background-image: url({{asset bg-image}});"{{/if}}>
     <div class="container">
         {{{column1}}}
         {{{column2}}}

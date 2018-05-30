@@ -1,45 +1,97 @@
 {
     "options": [
         {
-            "option-heading": "Colour options",
-            "option-description": "<p>A variety of colours are available, in keeping with the colour palette.</p>",
-            "option-anchor": "panel-grid",
+            "option-heading": "Two columns option with paragraph text",
+            "option-description": "<p>Two column layout must be used when displaying panels with paragraph text. A variety of colours are available, in keeping with the colour palette.</p>",
+            "option-anchor": "two-column-panel-grid",
             "panels": [
                 {
                     "column-size": "col-md-6",
                     "color": "panel-primary",
                     "title": "Primary",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                    "description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.</p>"
                 },
                 {
                     "column-size": "col-md-6",   
                     "color": "panel-secondary",
                     "title": "Secondary",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                    "description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.</p>"
                 },
                 {
                     "column-size": "col-md-6",
                     "color": "panel-tertiary-1",
                     "title": "Tertiary 1",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                    "description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.</p>"
                 },
                 {
                     "column-size": "col-md-6",   
                     "color": "panel-tertiary-2",
                     "title": "Tertiary 2",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                    "description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.</p>"
                 },
                 {
                     "column-size": "col-md-6",
                     "color": "panel-tertiary-3",
                     "title": "Tertiary 3",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                    "description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.</p>"
                 },
                 {
                     "column-size": "col-md-6",   
                     "color": "panel-primary",
                     "title": "Primary",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum."
+                    "description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.</p>"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Three columns option with links",
+            "option-description": "",
+            "option-anchor": "three-column-panel-grid",
+            "panels": [
+                {
+                    "column-size": "col-md-4",
+                    "color": "panel-secondary",
+                    "title": "Research portal",
+                    "description": "<ul><li><a href='#'>Researchers</a></li><li><a href='#'>Publications</a></li><li><a href='#'>Impact</a></li><li><a href='#'>Data</a></li><li><a href='#'>Funded projects</a></li></ul>"
+                },
+                {
+                    "column-size": "col-md-4",   
+                    "color": "panel-tertiary-1",
+                    "title": "Research environment",
+                    "description": "<ul><li><a href='#'>Committees and forums</a></li><li><a href='#'>Equality and diversity</a></li><li><a href='#'>Schools, centres and institutes</a></li><li><a href='#'>Funding</a></li><li><a href='#'>Collaborations</a></li></ul>"
+                },
+                {
+                    "column-size": "col-md-4",
+                    "color": "panel-tertiary-2",
+                    "title": "Research support",
+                    "description": "<ul><li><a href='#'>Knowledge transfer centre</a></li><li><a href='#'>Public engagement</a></li><li><a href='#'>RBDC</a></li><li><a href='#'>Library</a></li><li><a href='#'>Contact us</a></li></ul>"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Two columns option with links",
+            "option-description": "",
+            "option-anchor": "two-column-panel-grid",
+            "panels": [
+                {
+                    "column-size": "col-md-6",
+                    "color": "panel-secondary",
+                    "title": "Research portal",
+                    "description": "<ul><li><a href='#'>Researchers</a></li><li><a href='#'>Publications</a></li><li><a href='#'>Impact</a></li><li><a href='#'>Data</a></li><li><a href='#'>Funded projects</a></li></ul>"
+                },
+                {
+                    "column-size": "col-md-6",   
+                    "color": "panel-tertiary-1",
+                    "title": "Research environment",
+                    "description": "<ul><li><a href='#'>Committees and forums</a></li><li><a href='#'>Equality and diversity</a></li><li><a href='#'>Schools, centres and institutes</a></li><li><a href='#'>Funding</a></li><li><a href='#'>Collaborations</a></li></ul>"
                 }
             ]
         }

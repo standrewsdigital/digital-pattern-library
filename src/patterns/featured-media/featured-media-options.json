@@ -1,10 +1,87 @@
 {
     "options": [
         {
+            "option-heading": "Image background with blue transparent overlay and video",
+            "option-description": "",
+            "option-anchor": "blue-transparent-overlay",
+            "background": "featured-media--overlay featured-media--blue-transparent-overlay",
+            "bg-image": "docs/images/cta/hero-banner-image-001.jpg",
+            "column1": "<div class='col-md-7 col-xs-12'><h3>What's bad about being good?</h3><p>Research at St Andrews explores effective altruism, a rapidly growing social movement which encourages us to do the most good we can with the money and time available.</p><a type='button' class='btn btn-lg btn-primary' href='#''>Read full story</a></div>",
+            "column2": "<div class='col-md-5 col-xs-12'><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>"
+        },
+
+
+
+
+        {
+            "option-heading": "Image background with orange transparent overlay and video",
+            "option-description": "",
+            "option-anchor": "orange-transparent-overlay",
+            "background": "featured-media--overlay featured-media--orange-transparent-overlay",
+            "bg-image": "docs/images/cta/hero-banner-image-002.jpg",
+            "column1": "<div class='col-md-7 col-xs-12'><h3>What's bad about being good?</h3><p>Research at St Andrews explores effective altruism, a rapidly growing social movement which encourages us to do the most good we can with the money and time available.</p><a type='button' class='btn btn-lg btn-primary' href='#''>Read full story</a></div>",
+            "column2": "<div class='col-md-5 col-xs-12'><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>"
+        },
+
+
+
+
+        {
+            "option-heading": "Image background with burgundy transparent overlay and centered video",
+            "option-description": "",
+            "option-anchor": "burgundy-transparent-overlay",
+            "background": "featured-media--overlay featured-media--burgundy-transparent-overlay",
+            "bg-image": "docs/images/cta/hero-banner-image-003.jpg",
+            "column1": "<div class='col-md-8 col-md-offset-2'><h3>What is David Russell Apartments like?</h3></h2><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>",
+            "column2": ""
+        },
+
+
+
+
+        {
+            "option-heading": "Image background with purple transparent overlay and photosphere",
+            "option-description": "For more information, visit the <a href='../photosphere/index.html'>Photosphere</a> pattern.",
+            "option-anchor": "purple-transparent-overlay",
+            "background": "featured-media--overlay featured-media--purple-transparent-overlay",
+            "photosphere": true,
+            "bg-image": "docs/images/cta/hero-banner-image-005.jpg",
+            "column1": "<div class='col-md-8 col-md-offset-2'><h3>What is David Russell Apartments like?</h3></h2><div class='embed-responsive embed-responsive-16by9'><div id='photosphere'></div></div></div>",
+            "column2": ""
+        },
+
+
+
+
+        {
+            "option-heading": "Colour background with image on right",
+            "option-description": "",
+            "option-anchor": "image-right",
+            "background": "featured-media--sta-blue",
+            "column1": "<div class='col-md-7'><h3>Student testimonial</h3><p>&quot;Having originally applied to read English Literature, the chance to take Philosophy modules at sub-honours ignited an interest in that subject and therefore I am now studying a Joint Honours degree. I feel that the flexibility of the degree programmes, and the support for any difficulties you may have along the way, is what makes a degree at St Andrews unlike many others. Students encouraged to embark on an independent journey of academic and self-discovery whilst having access to a network of academic, social and welfare support.&quot;</p><p><strong>Francesca</strong> (Tadworth, Surrey, England)</p></div>",
+            "column2": "<div class='col-md-5'><div class='img-responsive'><img src='../../assets/docs/images/placeholders/750x500.png' alt='Placeholder image'/></div></div>"
+        },
+
+
+
+
+        {
+            "option-heading": "Colour background with image on left",
+            "option-description": "",
+            "option-anchor": "image-left",
+            "background": "featured-media--sta-blue",
+            "column1": "<div class='col-md-5'><div class='img-responsive'><img src='../../assets/docs/images/placeholders/750x500.png' alt='Placeholder image'/></div></div>",
+            "column2": "<div class='col-md-7'><h3>Student testimonial</h3><p>&quot;Having originally applied to read English Literature, the chance to take Philosophy modules at sub-honours ignited an interest in that subject and therefore I am now studying a Joint Honours degree. I feel that the flexibility of the degree programmes, and the support for any difficulties you may have along the way, is what makes a degree at St Andrews unlike many others. Students encouraged to embark on an independent journey of academic and self-discovery whilst having access to a network of academic, social and welfare support.&quot;</p><p><strong>Francesca</strong> (Tadworth, Surrey, England)</p></div>"
+        },
+
+
+
+
+        {
             "option-heading": "Colour background with video on right",
             "option-description": "",
             "option-anchor": "video-right",
-            "background": " sta-blue",
+            "background": "featured-media--sta-blue",
             "column1": "<div class='col-md-7'><p><strong>The School of English at the University of St&nbsp;Andrews enjoys an international reputation as a centre for both academic research and literary creativity.</strong></p><p>The School of English was ranked first in Scotland and second in the UK by the <a href='#'>Guardian University Guide 2017</a>, and first in Scotland and third in the UK by the <a href='#'>Complete University Guide 2016</a>. The <a href='#'>2014 Research Excellence Framework (REF)</a> rated 86% of research from the School as world leading and internationally excellent.</p><p>The University of St&nbsp;Andrews as a whole was voted top for student satisfaction in The National Student Survey 2016 as 94% of St&nbsp;Andrews final years gave the University top marks for the quality of the learning and teaching experience</p></div>",
             "column2": "<div class='col-md-5'><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>"
         },
@@ -13,10 +90,22 @@
 
 
         {
-            "option-heading": "Image background with video on left",
+            "option-heading": "Colour background with button and image on right",
+            "option-description": "",
+            "option-anchor": "image-right",
+            "background": "featured-media--sta-blue",
+            "column1": "<div class='col-md-7'><p>&quot;Having originally applied to read English Literature, the chance to take Philosophy modules at sub-honours ignited an interest in that subject and therefore I am now studying a Joint Honours degree. I feel that the flexibility of the degree programmes, and the support for any difficulties you may have along the way, is what makes a degree at St Andrews unlike many others. Students encouraged to embark on an independent journey of academic and self-discovery whilst having access to a network of academic, social and welfare support.&quot;</p><p><strong>Francesca</strong> (Tadworth, Surrey, England)</p><a type='button' class='btn btn-lg btn-tertiary-1' href='#'>Other student testimonials</a></div>",
+            "column2": "<div class='col-md-5'><div class='img-responsive'><img src='../../assets/docs/images/placeholders/750x500.png' alt='Placeholder image'/></div></div>"
+        },
+
+
+
+
+        {
+            "option-heading": "Image background with video on left (deprecated)",
             "option-description": "",
             "option-anchor": "video-left",
-            "background": "featured-image",
+            "background": "featured-media--featured-image",
             "column1": "<div class='col-md-5'><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>",
             "column2": "<div class='col-md-7'><p><strong>The School of English at the University of St&nbsp;Andrews enjoys an international reputation as a centre for both academic research and literary creativity.</strong></p><p>The School of English was ranked first in Scotland and second in the UK by the <a href='#'>Guardian University Guide 2017</a>, and first in Scotland and third in the UK by the <a href='#'>Complete University Guide 2016</a>. The <a href='#'>2014 Research Excellence Framework (REF)</a> rated 86% of research from the School as world leading and internationally excellent.</p><p>The University of St&nbsp;Andrews as a whole was voted top for student satisfaction in The National Student Survey 2016 as 94% of St&nbsp;Andrews final years gave the University top marks for the quality of the learning and teaching experience</p></div>"
         },
@@ -24,60 +113,35 @@
 
 
         {
-            "option-heading": "Image background with video in centre",
+            "option-heading": "Image background with video in centre (deprecated)",
             "option-description": "",
             "option-anchor": "image-center",
-            "background": "featured-image",
+            "background": "featured-media--featured-image",
             "column1": "<div class='col-md-8 col-md-offset-2'><h3>What is David Russell Apartments like?</h3></h2><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>",
             "column2": ""
         },
 
 
         {
-            "option-heading": "Image background with photosphere in centre",
+            "option-heading": "Image background with photosphere in centre (deprecated)",
             "option-description": "For more information, visit the <a href='../photosphere/index.html'>Photosphere</a> pattern.",
             "option-anchor": "photosphere-media",
-            "background": "featured-image",
+            "photosphere": true,
+            "background": "featured-media--featured-image",
             "column1": "<div class='col-md-8 col-md-offset-2'><h3>What is David Russell Apartments like?</h3></h2><div class='embed-responsive embed-responsive-16by9'><div id='photosphere'></div></div></div>",
             "column2": ""
         },
 
 
 
-        {
-            "option-heading": "Colour background with image on right",
-            "option-description": "",
-            "option-anchor": "image-right",
-            "background": " sta-blue",
-            "column1": "<div class='col-md-7'><p>&quot;Having originally applied to read English Literature, the chance to take Philosophy modules at sub-honours ignited an interest in that subject and therefore I am now studying a Joint Honours degree. I feel that the flexibility of the degree programmes, and the support for any difficulties you may have along the way, is what makes a degree at St Andrews unlike many others. Students encouraged to embark on an independent journey of academic and self-discovery whilst having access to a network of academic, social and welfare support.&quot;</p><p><strong>Francesca</strong> (Tadworth, Surrey, England)</p></div>",
-            "column2": "<div class='col-md-5'><div class='img-responsive'><img src='../../assets/docs/images/placeholders/445x297.jpg' alt='Placeholder image'/></div></div>"
-        },
-
-
-
-
 
         {
-            "option-heading": "Image background with image on left",
+            "option-heading": "Image background with image on left (deprecated)",
             "option-description": "",
             "option-anchor": "image-left",
-            "background": "featured-image",
-            "column1": "<div class='col-md-5'><div class='img-responsive'><img src='../../assets/docs/images/placeholders/445x297.jpg' alt='Placeholder image'/></div></div>",
+            "background": "featured-media--featured-image",
+            "column1": "<div class='col-md-5'><div class='img-responsive'><img src='../../assets/docs/images/placeholders/750x500.png' alt='Placeholder image'/></div></div>",
             "column2": "<div class='col-md-7'><p>&quot;Having originally applied to read English Literature, the chance to take Philosophy modules at sub-honours ignited an interest in that subject and therefore I am now studying a Joint Honours degree. I feel that the flexibility of the degree programmes, and the support for any difficulties you may have along the way, is what makes a degree at St Andrews unlike many others. Students encouraged to embark on an independent journey of academic and self-discovery whilst having access to a network of academic, social and welfare support.&quot;</p><p><strong>Francesca</strong> (Tadworth, Surrey, England)</p></div>"
-        },
-
-
-
-
-
-
-        {
-            "option-heading": "Colour background with button and image on right",
-            "option-description": "",
-            "option-anchor": "image-right",
-            "background": " sta-blue",
-            "column1": "<div class='col-md-7'><p>&quot;Having originally applied to read English Literature, the chance to take Philosophy modules at sub-honours ignited an interest in that subject and therefore I am now studying a Joint Honours degree. I feel that the flexibility of the degree programmes, and the support for any difficulties you may have along the way, is what makes a degree at St Andrews unlike many others. Students encouraged to embark on an independent journey of academic and self-discovery whilst having access to a network of academic, social and welfare support.&quot;</p><p><strong>Francesca</strong> (Tadworth, Surrey, England)</p><a type='button' class='btn btn-lg btn-tertiary-1' href='#'>Other student testimonials</a></div>",
-            "column2": "<div class='col-md-5'><div class='img-responsive'><img src='../../assets/docs/images/placeholders/445x297.jpg' alt='Placeholder image'/></div></div>"
         }
     ]
  }

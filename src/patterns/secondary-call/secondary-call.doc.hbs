@@ -2,17 +2,28 @@
 title: Secondary call-to-action
 ---
 
+<div class="alert alert-danger">
+  <strong>Some options of this pattern are depreciated.</strong> Do not attempt to use these options for any new website development. They will be removed in a future update.
+</div>
+
 <p>The secondary call-to-action pattern displays a heading, some introductory text, a call-to-action button and a background image.</p>
 
 <h3>Rules for secondary call-to-action</h3>
 <ul>
-	<li>Only show at the bottom of the page, immediately above the footer.</li>
 	<li>You must only use one secondary call-to-action per page.</li>
-  	<li>You may use the class: <code>center</code> (default), or <code>left</code> to specify how the content should be aligned.</li>
-    <li>To chose a background image, use the class <code>secondary-call-*</code>, where <code>*</code> is a number between 0 and 9. See below for background image options.</li>
-    <li>You may use a transparent overlay over the background by adding <code>transparent-overlay</code> to the secondary-call div.</li>
+    <li>You may use a transparent overlay over the background by adding <code>secondary-call--overlay</code> followed by the colour selector class <code>secondary-call--color-transparent-overlay</code> to the secondary-call div.</li>
     <li>You must use at least one call-to-action button, but not more than three.</li>
+    <li>Heading text must not exceed 100 characters.</li>
+    <li>Paragraph text must not exceed 350 characters.</li>
 </ul>
+
+<h3>CSS classes for approved background colours</h3>
+    <ul>
+        <li><code>secondary-call--blue-transparent-overlay</code></li>
+        <li><code>secondary-call--orange-transparent-overlay</code></li>
+        <li><code>secondary-call--burgundy-transparent-overlay</code></li>
+        <li><code>secondary-call--purple-transparent-overlay</code></li>
+    </ul>
 
 <h3>Options available</h3>
 <ul>

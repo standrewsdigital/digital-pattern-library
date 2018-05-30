@@ -4,7 +4,65 @@ All notable changes to digital pattern library will be documented in this file.
 This project adheres to [semantic versioning](http://semver.org/).
 
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
-`Removed`, `Fixed`, and `Security`. 
+`Removed`, `Fixed`, and `Security`.
+
+## v1.12.0
+
+Release date: Wednesday 30 May 2018
+
+### Added
+
+* New option for panels pattern.
+* New options for panel grid pattern.
+* New options for secondary call-to-action pattern.
+* New options for featured media pattern.
+* New option for tile grid pattern added.
+* New options for gallery pattern added.
+* New option for share options pattern added.
+
+### Changed
+
+* Styling for box shadows used on various patterns has been altered.
+* Styling for secondary call-to-action pattern has been altered.
+* Styling for featured media pattern has been altered.
+* Styling for featured news pattern has been altered.
+* Character count for paragraph text on featured people pattern has been increased.
+* Tile grid pattern mark up has been altered.
+
+### Fixed
+
+* Button styling on long-form intro pattern has been fixed. 
+* Set CSS height/width for all images.
+* Removed white space that appears when no result is returned on search bar pattern.
+* Padding and margins adjusted for share options pattern.
+
+### Deprecated
+
+* Deprecated two options from secondary call-to-action pattern.
+* Deprecated four options from featured media pattern.
+
+### Removed
+
+* Removed redundant options from secondary call-to-action pattern. 
+
+
+
+
+---
+
+## v1.11.2
+
+Release date: Friday 11 May 2018
+
+
+### Fixed
+
+* All images within content items now re-size correctly.
+
+
+
+
+--- 
 
 ## v1.11.1
 
