@@ -49,7 +49,7 @@
 
         {
             "option-heading": "Three columns option with links",
-            "option-description": "<p>Three column layout must be used when displaying panels with links. Links must be used in an unordered list. No more than six links per panel.</p>",
+            "option-description": "<p>Three column layout must be used when displaying panels with links. Links must be used in an unordered list with no more than six links per panel.</p>",
             "option-anchor": "three-column-panel-grid",
             "panels": [
                 {
