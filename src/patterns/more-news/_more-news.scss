@@ -49,7 +49,7 @@
 			padding-bottom: 15px;
 		}
 	}
-	
+
 	hr {
 		border-bottom: none;
 		height: 0;
@@ -67,6 +67,7 @@
                 margin-left: 10px;
 
                 &:before {
+                    color: rgb(68, 68, 68);
                     content: "|";
                     font-weight: normal;
                     padding-right: 10px;
