@@ -6,19 +6,6 @@
 .featured-news {
     margin:30px 0;
 
-    .gutter-md--l { //collapse left gutters only on nested bootstrap columns over md
-    	padding: 0;
-    	@media (min-width: 992px){
-        	padding-right: 15px;
-    	}
-    }
-    .gutter-md--r { //collapse right gutters only on nested bootstrap columns over md
-    	padding: 0;
-    	@media (min-width: 992px){
-        	padding-left: 15px;
-    	}
-    }
-
     .featured-news__article-link { //wrapper for entire link block
         &:not(.sub-link-active){
             &:hover,
@@ -62,10 +49,6 @@
 
 	img {
 		max-width:100%;
-
-		@media (max-width: 991px){
-			padding-bottom:15px;
-		}
 	}
 
     .featured-news__category {

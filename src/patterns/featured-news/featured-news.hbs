@@ -6,13 +6,15 @@
                 <h2>Featured item</h2>
             </div>
             <div class="col-xs-12 featured-news__article-link">
-                <div class="col-md-4 col-md-push-8 gutter-md--r">
-                    <a href="#article"><img src="{{asset url}}" alt="news story"></a>
-                </div>
-                <div class="col-md-8 col-md-pull-4 gutter-md--l">
-                    <h3><a href="#article">{{title}}</a></h3>
-                    <p>{{text}}</p>
-                    <small>{{featured-date}}<a href="#category" class="featured-news__category featured-news__category--inline">{{featured-category}}</a></small>
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8">
+                        <a href="#article"><img src="{{asset url}}" alt="news story"></a>
+                    </div>
+                    <div class="col-md-8 col-md-pull-4">
+                        <h3><a href="#article">{{title}}</a></h3>
+                        <p>{{text}}</p>
+                        <small>{{featured-date}}<a href="#category" class="featured-news__category featured-news__category--inline">{{featured-category}}</a></small>
+                    </div>
                 </div>
             </div>
         </div>
