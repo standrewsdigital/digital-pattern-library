@@ -1,8 +1,8 @@
 {
     "options": [
         {
-            "option-heading": "Two columns option",
-            "option-description": "<p>A variety of colours are available, in keeping with the colour palette.</p>",
+            "option-heading": "Two columns option with paragraph text",
+            "option-description": "<p>Two column layout must be used when displaying panels with paragraph text. A variety of colours are available, in keeping with the colour palette.</p>",
             "option-anchor": "two-column-panel-grid",
             "panels": [
                 {
@@ -49,7 +49,7 @@
 
         {
             "option-heading": "Three columns option with links",
-            "option-description": "<p>Links must be used in an unordered list. No more than six links per panel.</p>",
+            "option-description": "<p>Three column layout must be used when displaying panels with links. Links must be used in an unordered list. No more than six links per panel.</p>",
             "option-anchor": "three-column-panel-grid",
             "panels": [
                 {
