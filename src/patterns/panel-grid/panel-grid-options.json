@@ -49,7 +49,7 @@
 
         {
             "option-heading": "Three columns option with links",
-            "option-description": "<p>Three column layout must be used when displaying panels with links. Links must be used in an unordered list with no more than six links per panel.</p>",
+            "option-description": "",
             "option-anchor": "three-column-panel-grid",
             "panels": [
                 {
@@ -69,6 +69,29 @@
                     "color": "panel-tertiary-2",
                     "title": "Research support",
                     "description": "<ul><li><a href='#'>Knowledge transfer centre</a></li><li><a href='#'>Public engagement</a></li><li><a href='#'>RBDC</a></li><li><a href='#'>Library</a></li><li><a href='#'>Contact us</a></li></ul>"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Two columns option with links",
+            "option-description": "",
+            "option-anchor": "two-column-panel-grid",
+            "panels": [
+                {
+                    "column-size": "col-md-6",
+                    "color": "panel-secondary",
+                    "title": "Research portal",
+                    "description": "<ul><li><a href='#'>Researchers</a></li><li><a href='#'>Publications</a></li><li><a href='#'>Impact</a></li><li><a href='#'>Data</a></li><li><a href='#'>Funded projects</a></li></ul>"
+                },
+                {
+                    "column-size": "col-md-6",   
+                    "color": "panel-tertiary-1",
+                    "title": "Research environment",
+                    "description": "<ul><li><a href='#'>Committees and forums</a></li><li><a href='#'>Equality and diversity</a></li><li><a href='#'>Schools, centres and institutes</a></li><li><a href='#'>Funding</a></li><li><a href='#'>Collaborations</a></li></ul>"
                 }
             ]
         }
