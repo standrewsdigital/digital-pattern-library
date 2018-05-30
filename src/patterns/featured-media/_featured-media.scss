@@ -16,11 +16,13 @@
     }
    .btn, .btn-primary {
         background-color: $color-cta;
+        border: 0;
         border-bottom: 5px solid $color-cta-hover;
    }
 
    .btn:hover, .btn:focus {
         background-color: $color-cta-hover;
+        border: 0;
         border-bottom: 5px solid $color-cta-hover;
     }
 
