@@ -3,10 +3,17 @@
 /* BEGIN Pattern: featured media */
 /*********************************/
 
-@mixin featured-media-overlay ($color-overlay, $color-cta, $color-cta-hover){
-   &:after {
-       background-color: rgba($color-overlay,0.75);
-   }
+@mixin featured-media-overlay ($color-overlay, $color-cta, $color-cta-hover, $transparent-overlay: null){
+   @if ($transparent-overlay) {
+       &:after {
+           background-color: rgba($color-overlay,0.75);
+       }
+        h3 {
+            text-shadow: 2px 2px 9px rgba(68,68,68,0.7);
+        }
+    } @else {
+        background-color: $color-overlay;
+    }
    .btn, .btn-primary {
         background-color: $color-cta;
         border-bottom: 5px solid $color-cta-hover;
@@ -16,6 +23,7 @@
         background-color: $color-cta-hover;
         border-bottom: 5px solid $color-cta-hover;
     }
+
 }
 
 .featured-media {
@@ -53,39 +61,39 @@
     }
 
     &.featured-media--sta-blue {
-        background-color: $sta-blue;
-    }
-
-    &.featured-media--sta-blue-light {
-        background-color: $sta-blue-light;
-    }
-
-    &.featured-media--sta-green {
-        background-color: $sta-green;
-    }
-
-    &.featured-media--sta-burgundy {
-        background-color: $sta-burgundy;
-    }
-
-    &.featured-media--sta-purple {
-        background-color: $sta-purple;
-    }
-
-    &.featured-media--blue-transparent-overlay {
         @include featured-media-overlay ($sta-blue, $sta-orange, $sta-orange-hover)
     }
 
-    &.featured-media--orange-transparent-overlay {
-        @include featured-media-overlay ($sta-orange, $sta-green, $sta-green-hover)
+    &.featured-media--sta-blue-light {
+        @include featured-media-overlay ($sta-blue-light, $sta-orange, $sta-orange-hover)
     }
 
-    &.featured-media--burgundy-transparent-overlay {
+    &.featured-media--sta-green {
+        @include featured-media-overlay ($sta-green, $sta-orange, $sta-orange-hover)
+    }
+
+    &.featured-media--sta-burgundy {
         @include featured-media-overlay ($sta-burgundy, $sta-blue, $sta-blue-hover)
     }
 
-    &.featured-media--purple-transparent-overlay {
+    &.featured-media--sta-purple {
         @include featured-media-overlay ($sta-purple, $sta-green, $sta-green-hover)
+    }
+
+    &.featured-media--blue-transparent-overlay {
+        @include featured-media-overlay ($sta-blue, $sta-orange, $sta-orange-hover, true)
+    }
+
+    &.featured-media--orange-transparent-overlay {
+        @include featured-media-overlay ($sta-orange, $sta-green, $sta-green-hover, true)
+    }
+
+    &.featured-media--burgundy-transparent-overlay {
+        @include featured-media-overlay ($sta-burgundy, $sta-blue, $sta-blue-hover, true)
+    }
+
+    &.featured-media--purple-transparent-overlay {
+        @include featured-media-overlay ($sta-purple, $sta-green, $sta-green-hover, true)
     }
 
     &.featured-media--featured-image{
@@ -101,24 +109,17 @@
     .btn {
         margin-bottom:25px;
 
-        @media (min-width: 768px){
+        @media (min-width: 992px){
             font-size:25px;
             margin-bottom:0;
         }
     }
 
-    img {
+    img,
+    .embed-responsive {
         max-width:100%;
+        margin-bottom:20px;
     }
-    /*
-    @media (max-width: 991px) {
-        img {
-            display: block;
-            margin: 0 auto;
-            padding-bottom: 20px;
-        }
-    }
-    */
 
 }
 /*********************************/
