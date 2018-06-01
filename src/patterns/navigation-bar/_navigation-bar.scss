@@ -34,6 +34,10 @@ div.container ul.show-navigation {
 // and line the first element up with the .container  edge.
 .navigation-bar ul.navigation-bar-nav:nth-child(2) li:nth-child(1) a {
     margin-left: -15px;
+
+	@media (max-width: 991px) {
+		margin-left: 0;
+	}
 }
 
 .navigation-bar ul.navigation-bar-nav li a:hover, .navigation-bar ul.navigation-bar-nav li a:focus {

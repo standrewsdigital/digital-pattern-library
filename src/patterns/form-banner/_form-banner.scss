@@ -40,7 +40,7 @@
 
 .form-banner.sta-grey-light {
     background-color: $sta-grey-light;
-    color: black;
+    color: #444; 
 
     .call-heading {
         color: rgb(32, 32, 36);
@@ -77,7 +77,7 @@
 
 .form-banner .results {
        background-color: white;
-       color: black;
+       color: #444;
        display: none;
        margin: 30px auto;
        padding: 10px 40px;
