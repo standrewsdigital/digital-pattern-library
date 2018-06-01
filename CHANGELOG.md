@@ -6,6 +6,28 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v1.12.1
+
+Release date: Friday 1 June 2018
+
+### Added
+
+* Margin bottom classes added to screen.scss to use on secondary call-to-action banners.
+
+### Changed
+
+* Form banner results text colour changed to dark grey.
+
+### Fixed
+
+* Navigation bar margin fixed.
+* Featured news grid sizes fixed to correct spacing.
+
+
+
+
+--- 
+
 ## v1.12.0
 
 Release date: Wednesday 30 May 2018
