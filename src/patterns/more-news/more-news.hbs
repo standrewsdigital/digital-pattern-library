@@ -4,10 +4,10 @@
         <div class="row">
             {{#each news-items}}
             <div class="col-xs-12 more-news__article-link">
-                <div class="col-sm-4 col-sm-push-8 col-md-3 col-md-push-9 gutter-sm--l">
+                <div class="col-sm-4 col-md-3 gutter-sm--r">
                     <a href="#article"><img src="{{image.url}}" alt="news story"></a>
                 </div>
-                <div class="col-sm-8 col-sm-pull-4 col-md-9 col-md-pull-3 gutter-sm--r">
+                <div class="col-sm-8 col-md-9 gutter-sm--l">
                     <h3><a href="#article">{{title}}</a></h3>
                     <p>{{description}}</p>
                     <small>{{date}}<a class="more-news__category more-news__category--inline" href="#category">{{category}}</a></small>

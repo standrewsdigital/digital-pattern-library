@@ -6,6 +6,19 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+## v1.12.2
+
+Release date: Tuesday 19 June 2018
+
+### Changed
+
+* Images on the 'More news' pattern are now left-aligned, instead of right-aligned.
+
+
+
+
+---
+
 ## v1.12.1
 
 Release date: Friday 1 June 2018
