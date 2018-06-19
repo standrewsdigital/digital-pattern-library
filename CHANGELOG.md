@@ -6,6 +6,20 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+
+## v1.12.3
+
+Release date: Tuesday 19 June 2018
+
+### Fixed
+
+* The Universities title contained within the 'footer' pattern was only 'University of...' and not 'The University of...'. Corrected this now.
+
+
+
+
+---
+
 ## v1.12.2
 
 Release date: Tuesday 19 June 2018
