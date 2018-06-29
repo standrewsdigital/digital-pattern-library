@@ -4,7 +4,7 @@
             "option-heading": "404",
             "option-description": "Resource not found page.",
             "option-anchor": "404",
-            "filename": "404.zip",
+            "filename": "404",
             "data": {
                 "heading": "404",
                 "sub-heading": "Page not found",
@@ -19,7 +19,7 @@
             "option-heading": "403",
             "option-description": "access denied.",
             "option-anchor": "403",
-            "filename": "403.zip",
+            "filename": "403",
             "data": {
                 "heading": "403",
                 "sub-heading": "The requested resource requires an authentication."
