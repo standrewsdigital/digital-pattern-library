@@ -123,6 +123,10 @@
     }
 }
 
+.ui-datepicker {
+    z-index: 1000 !important;
+}
+
 .ui-datepicker .ui-state-default.ui-state-active {
     border: 1px solid #00539b;
     background: #00539b;
