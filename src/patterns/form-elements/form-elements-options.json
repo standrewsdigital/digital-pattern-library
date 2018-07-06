@@ -85,9 +85,9 @@
                     "column-size": "col-md-4",
                     "input": [
                         {
-                            "input-id": "datepicker",
+                            "input-id": "",
                             "label-text": "Pick a date",
-                            "input-class": "form-control",
+                            "input-class": "form-control datepicker",
                             "type": "date"
                         }
                     ]

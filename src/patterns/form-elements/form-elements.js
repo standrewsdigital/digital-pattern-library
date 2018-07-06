@@ -56,9 +56,20 @@ if ( $(".limit-counter").length ) {
     });
 }
 
+/* Deprecated method targeting id, this should be removed in a future release */
 if ( $(window).width() > 450 ) {
     $('#datepicker').attr("type","text");
     $('#datepicker').datepicker({
+        dateFormat: "DD, dd MM yy",
+        changeMonth: true,
+        changeYear: true
+    });    
+}
+/* End of deprecated method */
+
+if ( $(window).width() > 450 ) {
+    $('.datepicker').attr("type","text");
+    $('.datepicker').datepicker({
         dateFormat: "DD, dd MM yy",
         changeMonth: true,
         changeYear: true
