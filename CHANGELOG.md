@@ -8,6 +8,19 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.12.3
+
+Release date: Wednesday 25 July 2018
+
+### Fixed
+
+* GitHub identified a security vulnerability in some of our dependencies at package-lock.json, Handlebars, markedJS and UglifyJS2 have all been updated to their latest versions.
+
+
+
+
+---
+
 ## v1.12.2
 
 Release date: Tuesday 19 June 2018
