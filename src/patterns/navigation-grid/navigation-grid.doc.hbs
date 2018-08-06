@@ -1,0 +1,32 @@
+---
+title: Navigation grid
+---
+
+<p>The navigation grid pattern displays a grid of simple text links with optional supporting descriptions. This pattern would work best for links that are considered secondary to other items on the page. For links deserving greater visual importance the <a href"../navbox-grid/index.html">navbox grid</a> would be more suitable.</p>
+
+<h3>Rules for the navigation grid</h3>
+
+<ul>
+    <li>Must only be used within the main body of the page and using the <a href="../content-whole/index.html">content whole</a> page layout.</li>
+    <li>Links must only link to an internal webpage or web application.</li>
+    <li>Links should not be longer than 80 chars.</li>
+    <li>Supporting descriptions should not be longer than 160 chars and must be plain text.</li>
+    <li>If a link has an associated supporting description then all other links in the grid must also have supporting descriptions to give visual balance.</li>
+    <li>Supporting descriptions should be used to give further context on where a link navigates to. This is especially important if the link text contains acronyms or other cryptic content.</p>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#navigation-grid-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/navigation-grid-options.options}}
+</ul>
+
+{{#navigation-grid-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>{{> navigation-grid}}<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> navigation-grid}}</code></pre>
+{{/navigation-grid-options.options}}

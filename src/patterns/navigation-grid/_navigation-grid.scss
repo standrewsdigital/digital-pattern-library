@@ -1,0 +1,37 @@
+/*********************************/
+/* BEGIN Pattern: navigation-grid */
+/*********************************/
+
+.navigation-grid {
+
+	.navigation-grid-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.navigation-grid-item {
+		
+		/* 
+		Clear respective items based on the number of columns
+		This should be replaced by CSS grids asap
+		*/
+		&:nth-child(3n+1) {
+			clear:left;
+		}
+
+	}
+
+	.navigation-grid-item__heading {
+		margin-bottom: 0;
+	}
+
+	.navigation-grid-item__description {
+		margin: 0;
+	}
+
+}
+
+/*********************************/
+/* END Pattern: navigation-grid   */
+/*********************************/
