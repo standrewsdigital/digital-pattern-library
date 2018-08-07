@@ -18,7 +18,7 @@ Release date: Tuesday 7 July 2018
 
 ### Added
 
-* New pattern and options for Navigation Grid.
+* New pattern and options for navigation grid.
 
 
 
