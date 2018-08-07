@@ -22,6 +22,14 @@
 		This should be replaced by CSS grids asap
 		*/
 
+		// 1 column margin collapse when stacked
+		@media (max-width: 767px) {
+			margin-top: 20px;
+			&:nth-child(1) {
+				margin-top: 10px;
+			}
+		}
+
 		// 2 columns
 		@media (max-width: 991px) and (min-width: 768px) {
 			&:nth-child(2n+1) {
@@ -47,7 +55,7 @@
 		margin: 0 0 4px 0;
 
 		a {
-			text-decoration:underline $sta-blue-light;
+			text-decoration:underline;
 		}
 	}
 
