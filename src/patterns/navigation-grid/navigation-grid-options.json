@@ -6,32 +6,32 @@
             "option-anchor": "with-descriptions",
             "links":[
                 {
-                    "title": "Undergraduate",
+                    "title": "Admissions",
                     "description-text" : true,
                     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation."
                 },
                 {
-                    "title": "Postgraduate",
+                    "title": "English Language Teaching",
+                    "description-text" : true,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                },
+                {
+                    "title": "Environmental, Health and Safety Services",
                     "description-text" : true,
                     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation."
                 },
                 {
-                    "title": "Non-degree courses",
+                    "title": "Museum Collections",
+                    "description-text" : true,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                },
+                {
+                    "title": "Research and Innovation Services",
                     "description-text" : true,
                     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation."
                 },
                 {
-                    "title": "Study abroad",
-                    "description-text" : true,
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation."
-                },
-                {
-                    "title": "International",
-                    "description-text" : true,
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation."
-                },
-                {
-                    "title": "Access and outreach",
+                    "title": "Student Services",
                     "description-text" : true,
                     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation."
                 }
