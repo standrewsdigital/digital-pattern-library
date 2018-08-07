@@ -36,6 +36,8 @@ body {
 	width: 100%;
 }
 
+$page-gutter: calc(1.3em + 1vw); // scale that changes according to width of viewport
+
 .top-buffer {
 	margin-top: 30px;
 }

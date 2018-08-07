@@ -5,6 +5,36 @@ This project adheres to [semantic versioning](http://semver.org/).
 
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
+---
+
+## v1.13.0
+
+Release date: Tuesday 7 July 2018
+
+### Fixed
+
+* Datepicker was instantiated with id rather than class names which caused issues when multiple datepickers were on the same page. This has been changed to use classes.
+* Datepicker z-index needed adjustment to avoid appearing underneath checkboxes.
+
+### Added
+
+* New pattern and options for Navigation Grid.
+
+
+
+
+---
+
+## v1.12.3
+
+Release date: Wednesday 25 July 2018
+
+### Fixed
+
+* GitHub identified a security vulnerability in some of our dependencies at package-lock.json, Handlebars, markedJS and UglifyJS2 have all been updated to their latest versions.
+
+
+
 
 ---
 
