@@ -1,0 +1,76 @@
+{
+    "options": [
+        {
+            "option-heading": "Links with descriptions",
+            "option-description": "<p>A grid of links with associated descriptions.</p>",
+            "option-anchor": "with-descriptions",
+            "links":[
+                {
+                    "title": "Admissions",
+                    "description-text" : true,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation."
+                },
+                {
+                    "title": "English Language Teaching",
+                    "description-text" : true,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                },
+                {
+                    "title": "Environmental, Health and Safety Services",
+                    "description-text" : true,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation."
+                },
+                {
+                    "title": "Museum Collections",
+                    "description-text" : true,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                },
+                {
+                    "title": "Research and Innovation Services",
+                    "description-text" : true,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation."
+                },
+                {
+                    "title": "Student Services",
+                    "description-text" : true,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation."
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Links only",
+            "option-description": "<p>A simple grid of links.</p>",
+            "option-anchor": "links-only",
+            "links": [
+                {
+                    "title": "Undergraduate",
+                    "description-text" : false
+                },
+                {
+                    "title": "Postgraduate",
+                    "description-text" : false
+                },
+                {
+                    "title": "Non-degree courses",
+                    "description-text" : false
+                },
+                {
+                    "title": "Study abroad",
+                    "description-text" : false
+                },
+                {
+                    "title": "International",
+                    "description-text" : false
+                },
+                {
+                    "title": "Access and outreach",
+                    "description-text" : false
+                }
+            ]
+        }
+    ]
+ }
