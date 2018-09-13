@@ -7,6 +7,19 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 ---
 
+## v1.13.1
+
+Release date: Thursday 13 September 2018
+
+### Fixed
+
+* Increased padding on table data cells to increase legibility of content.
+
+
+
+
+---
+
 ## v1.13.0
 
 Release date: Tuesday 7 July 2018
