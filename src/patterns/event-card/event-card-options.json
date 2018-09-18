@@ -1,0 +1,30 @@
+{
+    "options": [
+
+        {
+            "option-heading": "Event card",
+            "option-description": "",
+            "option-anchor": "event-card",
+            "tiles": [
+                {
+                    "image": {
+                        "url": "docs/images/placeholders/younger-hall-750x500.jpg",
+                        "alt": "Description"
+                    },
+                    "title": "Piano Masterclass",
+                    "date-display" : "Tuesday 18 September 2018",
+                    "event-location" : "Younger Hall"
+                },
+                {
+                    "image": {
+                        "url": "docs/images/placeholders/rectors-cafe-750x500.jpg",
+                        "alt": "Description"
+                    },
+                    "title": "Bike to Work Breakfast",
+                    "date-display" : "Friday 21 September 2018",
+                    "event-location" : "Rector's Café"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+---
+title: Event card
+---
+
+<p>Description</p>
+
+<h3>Rules for event card</h3>
+<ul>
+    <li>Rule</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#event-card-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/event-card-options.options}}
+</ul>
+
+{{#event-card-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/event-card-options.options}}
+</ul>
+
+{{#event-card-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+{{> event-card}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> event-card}}</code></pre>
+{{/event-card-options.options}}

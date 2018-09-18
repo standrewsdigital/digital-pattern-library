@@ -52,6 +52,10 @@
                   "img": "assets/docs/images/patterns/buttons.jpg",
                   "url": "patterns/buttons/index.html"
                 },
+                { "name": "Evemt card",
+                  "img": "assets/docs/images/patterns/event-card.jpg",
+                  "url": "patterns/event-card/index.html"
+                },
                 { "name": "Featured media",
                   "img": "assets/docs/images/patterns/featured-media.jpg",
                   "url": "patterns/featured-media/index.html"

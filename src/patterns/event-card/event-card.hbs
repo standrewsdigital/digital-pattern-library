@@ -1,0 +1,18 @@
+<!-- Begin pattern: event-card //-->
+<div class="event-grid__cards">
+	{{#each tiles}}
+	<div class="featured-event">
+		<a href="#">
+			<div class="featured-event__image">
+		   		<img width="300" height="200" src="{{asset image.url}}" class="attachment-crop360x240 size-crop360x240 wp-post-image" alt="{{image.alt}}" sizes="100vw">
+		   	</div>
+	        	<div class="featured-event__details">
+				<h3 class="featured-event__heading">{{title}}</h3>
+	            	<div class="featured-event__date">{{date-display}}</div>
+	            	<div class="featured-event__location">{{event-location}}</div>		
+		   	</div><!--// .featured-event__details //-->
+		</a>
+	</div>
+	{{/each}}
+</div>
+<!-- End pattern: event-card //-->

@@ -1,0 +1,420 @@
+/*!
+Theme Name: Events
+Theme URI: 
+Author: University of St Andrews
+Author URI: https://www.st-andrews.ac.uk/
+Description: University of St Andrews Events theme,   A child theme of the wp-University-of-St-Andrews theme
+Version: 1.0
+Template: wp-University-of-St-Andrews
+*/
+/* Featured event */
+.hero-banner {
+    margin-bottom: 0;
+    .event-date,
+    .event-location {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-right: 18px;
+        padding-left: 20px;
+        position: relative;
+        @media (min-width: 768px){
+            font-size: 18px;
+            padding-left: 22px;
+            margin-top: 5px;
+        }
+        
+        &:before {
+            font-family: FontAwesome;
+            font-size: inherit; // can't have font-size inherit on line above, so need to override
+            text-rendering: auto; // optimizelegibility throws things off #1094
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-style: normal;
+            font-weight: normal;
+            position: absolute;
+            top: -2px;
+            left: 0;
+        }
+    }
+    .event-date {
+        &:before {
+            content: "\f133";
+        }
+    }
+    .event-location {
+        &:before {
+            content: "\f041";
+            left: 4px;
+        }
+    }
+    
+    // Cancelled style
+    &.cancelled {
+        .col-md-7:before {
+            background: #d7630a;
+            content: 'Cancelled';
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 1.42857; // Same as body
+            margin-bottom:8px;
+            padding: 3px 9px;
+            text-shadow: none;
+            text-transform: uppercase;
+        }
+    }
+}
+/* General card placeholder 
+MOVE TO DPL UTILITIES */
+%card {
+    background-color: white;
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12);
+    -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12);
+    box-sizing: border-box;
+}
+/* Secondary featured events */
+.event-grid__cards {
+    // Make 2 column grid when room to fit
+    @media (min-width: 576px){
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); // 2 column grid
+        grid-gap: 30px;
+    }
+}
+.featured-event {
+    @extend %card;
+    
+    // Add bottom margin when stacked on small displays
+    @media (max-width: 575px){
+        margin-bottom: 30px;
+    }
+    a {
+        background: #fafafa;
+        color: inherit;
+        font-weight: normal;
+        height: 100%;
+        @media (min-width:360px){
+            display: flex;
+            min-height: 120px;
+        }
+        @media (min-width: 576px){
+            min-height: 160px;
+        }
+        .featured-event__image {
+            height: 140px;
+            @media (min-width:360px){
+                height: auto;
+                width: 40%;
+            }
+            position: relative;
+            overflow: hidden;
+            img {
+                position: absolute;
+                -webkit-transition: all .2s ease-in-out;
+                transition: all .2s ease-in-out;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                min-height: 100%;
+                min-width: 100%;
+                display: block;
+                z-index: 0;
+                left: 50%;
+                top: 50%;
+                max-width:none;
+            }
+        }
+        .featured-event__details {
+            padding: 15px;
+            @media (min-width:360px){
+                width: 60%;
+            }
+        }
+        .featured-event__heading {
+            color: inherit;
+            font-size: 18px;
+            @media (min-width: 576px){
+                font-size: 22px;
+            }
+            margin-top: 0;
+        }
+        .featured-event__date,
+        .featured-event__location {
+            font-size: 16px;
+            line-height: 1.4;
+            padding-left: 20px;
+            position: relative;
+            
+            &:before {
+                font-family: FontAwesome;
+                font-size: inherit; // can't have font-size inherit on line above, so need to override
+                text-rendering: auto; // optimizelegibility throws things off #1094
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-style: normal;
+                font-weight: normal;
+                position: absolute;
+                top: -2px;
+                left: 0;
+            }
+        }
+        .featured-event__date {
+            &:before {
+                content: "\f133";
+            }
+        }
+        .featured-event__location {
+            &:before {
+                content: "\f041";
+                left: 4px;
+            }
+        }
+        // Hover styles
+        &:hover,
+        &:focus {
+            background: #f0f0f0;
+            text-decoration: none; // override underline hover effect   
+            .featured-event__heading {
+                color: #00539b;
+                text-decoration: underline;
+            }
+        }
+    }
+    // Cancelled style
+    &.cancelled {
+        .featured-event__details:before {
+            background: #d7630a;
+            color: #fff;
+            content: 'Cancelled';
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 1.42857; // Same as body
+            margin-bottom:8px;
+            padding: 3px 9px;
+            text-shadow: none;
+            text-transform: uppercase;
+        }
+        a {
+            background: repeating-linear-gradient(45deg,#fbefe6,#fbefe6 10px,#FAFAFA 10px,#FAFAFA 20px);
+        }
+    }
+}
+/* SEARCH STYLE OVERRIDE - MOVE TO DPL */
+#search-bar {
+    padding: 30px 0;
+    h4 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 21px;
+    }
+}
+// Remove mixins when moved to DPL
+@mixin rotate($deg) {
+    -webkit-transform:  rotate($deg);
+       -moz-transform:  rotate($deg);
+         -o-transform:  rotate($deg);
+        -ms-transform:  rotate($deg);
+            transform:  rotate($deg);
+}
+@mixin -dpl-transition() {
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+/* Horizontal list and options - can appear under search - MOVE TO DPL */
+.horizontal-list {
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+    &.horizontal-list--right {
+        float: right;
+    }
+    @media (max-width: 767px){
+        display: block;
+        float: none;
+    }
+    h4 {
+        @media (max-width: 767px){
+        // Dropdown toggle on smaller displays
+            @include -dpl-transition();
+            background-color: #00539b;
+            color: white;
+            cursor: pointer;
+            font-size: 24px;
+            margin-bottom: 0;
+            padding: 10px 15px;
+            &:hover {
+                background-color: #004077;
+            }
+            &:before {
+                //@extend i.chevron;
+                position: relative;
+                display: inline-block;
+                -webkit-transition: all 200ms ease-out;
+                -moz-transition: all 200ms ease-out;
+                transition: all 200ms ease-out;
+                top: 2px;
+                height: .9em;
+                width: 0.9em;
+                margin: auto;
+                background: url('https://www.st-andrews.ac.uk/~cdn/dpl/1.12.3/images/furniture/chevron@2x.png') no-repeat;
+                background-size: contain;
+                background-position: left center;
+                // end of hardwired chevron
+                @include rotate(180deg);
+                content: '';
+                float: right;
+                height: 20px !important;
+                top: 3px;
+                width: 17px !important;
+            }
+            &.open:before {
+                @include rotate(90deg);
+            }
+        }
+        @media (min-width: 768px){
+        // Hide on larger displays
+        // Taken from bootstrap sr-only class
+        // Should be moved to utility placeholder in DPL so it can be extended based on media queries
+            
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+    }
+    > ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        @media (max-width: 767px){
+            background: #fff;
+            border: 1px solid rgba(#000,0.15);
+            border-top: none;
+            display: none;
+        }
+        @media (min-width: 768px){
+            display: block !important; // Always visible on large displays
+        }
+        > Li {
+            
+            // Vertical on smaller displays
+            @media (max-width: 767px){
+                a {
+                    border-top: 1px solid rgba(#000,0.15);
+                    display: block;
+                    padding: 10px 15px;
+                    text-align: center;
+                    &:hover,
+                    &:focus {
+                        background-color: #f5f5f5;
+                    }
+                }
+            }
+            // Horizontal on larger displays
+            @media (min-width: 768px){
+                float:left;
+                margin-left: 10px;
+                &:before {
+                    content: '|';
+                    float: left;
+                    margin-right: 10px;
+                    opacity: 0.4;
+                }
+                &:first-child {
+                    margin-left: 0;
+                    &:before {
+                        content: '';
+                        margin-right: 0;
+                    }
+                }
+                a {
+                    color: inherit;
+                    float: left;
+                    font-weight: normal;
+                    text-decoration: underline;
+                }
+            }
+            // Dropdown elements - specific to this pattern
+            &.dropdown-wrapper {
+                display: block;
+                position: relative;
+                
+                // Style for open dropdowns
+                &.open {
+                    .dropdown-toggle {
+                        text-decoration: none;
+                    
+                        .caret {
+                            transform: rotate(180deg); // DPL - move to mixin
+                        }
+                    }
+                }
+            }
+            .dropdown-toggle {
+                .caret {
+                    margin-left: 8px;
+                    
+                    // Discount caret width for centred text on small displays
+                    @media (max-width: 767px){
+                        margin-right: -16px;
+                    }
+                }
+            }
+            .dropdown-menu {
+                @media (max-width: 767px){
+                    float: none;
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                    box-shadow: none;
+                    width: 100%;
+                }
+                @media (min-width: 768px){
+                }
+                    font-size: 16px;
+                    min-width: 260px;
+                    li {
+                        float: none;
+                        margin-left: 0;
+                        a {
+                            float: none;
+                            text-decoration: none;
+                            white-space: normal;
+                            border: none;
+                        }
+                    }
+            }
+            // Right align dropdown on rightmost menu item
+            &:last-child {
+                .dropdown-menu {
+                    left: auto;
+                    right: 0;
+                }
+            }
+            
+        }
+    }
+}
+/* EVENT GRID - MOVE TO DPL */
+.event-grid {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 30px 0;
+    
+    h2 {
+        margin-top: 0;
+    }
+}
+/* UPCOMING EVENTS - CHANGE TO STANDARDISED PADDING OPTIONS IN DPL */
+.upcoming-events {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
