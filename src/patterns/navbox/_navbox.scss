@@ -50,8 +50,13 @@
 	cursor: pointer;
 }
 
+.navbox-image:focus {
+    background-color: #ffbf47;
+    outline: 3px solid #ffbf47;
+}
+
 .navbox-title:hover, .navbox:hover .navbox-title{
-	background: $sta-blue-T-hover;
+	background: $sta-cyan-T;
 }
 
 .navbox-title p {
@@ -73,7 +78,7 @@
 
 .navbox-title:first-child:hover,
 .navbox:hover .navbox-title:first-child{
-	background: $sta-blue-hover;
+	background: $sta-cyan;
 }
 
 /* when a p tag immediately follows a navbox
