@@ -17,6 +17,10 @@
         font-weight: normal;
         text-decoration: none;
     }
+
+    h2 a:hover {
+        text-decoration: underline;
+    }
 }
 
 #category-header .transparent-overlay {
@@ -26,6 +30,7 @@
     h2 {
         font-family: Georgia, serif;
         text-shadow: 1px 1px 1px rgb(68, 68, 68);
+        font-size: 35px;
     }
 }
 

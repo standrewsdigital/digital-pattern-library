@@ -3,7 +3,7 @@
 /*********************************/
 
 .navbox {
-	margin-bottom: 30px;
+	margin-bottom: 60px;
     position: relative;
 
     img { 
@@ -85,7 +85,7 @@
    tighten up the margin a bit. */
 
 .navbox + p {
-	margin-top: -20px;
+	margin-top: -50px;
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
