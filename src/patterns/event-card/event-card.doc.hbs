@@ -1,19 +1,34 @@
 ---
-title: Event card
+title: Event tile grid
 ---
 
-<p>Event cards are used to promote featured events on a homepage.</p>
+<p>Event tiles are used to promote featured events on a homepage.</p>
 
-<h3>Rules for event card</h3>
+<h3>Rules for event tile grid</h3>
 <ul>
-    <li>All featured events must have an associated good quality image.</li>
+    <li>Must have a solid white or light grey background colour.</li>
+    <li>Must have a heading.</li>
+    <li>Option to include a maximum of two call-to-action buttons.</li>
+    <li>Theere must be a maximum of six event tiles in a grid. Consider an alternative pattern if this does not meet your needs.</li>
+    <li>All featured event tiles must have an associated good quality image.</li>
+    <li>Event tile images must be 360px wide by 240px high.</li>
+    <li>Event titles should not exceed 60 characters.</li>
+    <li>The date of the event must be included.</li>
+    <li>The location of the event should be included if known.</li>
+    <li>An event that has been cancelled must have the 'cancelled' tag applied.</li>
 </ul>
 
 {{#event-card-options.options}}
 <hr>
 <h3>{{option-heading}}</h3>
 {{{option-description}}}
+
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
 {{> event-card}}
-<span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> event-card}}</code></pre>
+</div>
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> event-card}}</code></pre>
 {{/event-card-options.options}}

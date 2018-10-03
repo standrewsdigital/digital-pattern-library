@@ -1,18 +1,38 @@
 <!-- Begin pattern: event-card //-->
-<div class="event-grid__cards">
-	{{#each tiles}}
-	<div class="featured-event">
-		<a href="#">
-			<div class="featured-event__image">
-		   		<img width="300" src="{{asset image.url}}"alt="{{image.alt}}">
-		   	</div>
-	        	<div class="featured-event__details">
-				<h3 class="featured-event__heading">{{title}}</h3>
-	            	<div class="featured-event__date">{{date-display}}</div>
-	            	<div class="featured-event__location">{{event-location}}</div>		
-		   	</div><!--// .featured-event__details //-->
-		</a>
+<div class="event-grid{{bg-color}}">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-lg-8">
+				<h2 class="event-grid__heading">{{heading}}</h2>
+			</div>
+			{{#if call-to-action}}
+			{{#each call-to-action-text}}
+			<div class="{{read-more-size}} read-more">
+				<a href="#">{{title}}</a>
+			</div>
+			{{/each}}
+			{{/if}}
+		</div>
+		<div class="event-grid__tiles">
+			{{#each tiles}}
+			<div class="featured-event{{status}}">
+				<a href="#">
+					<div class="featured-event__image">
+					      <img 
+					      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+					      data-src="{{asset image.url-360x240}}"
+					      alt="{{image.alt}}"
+					      class="lazyload">
+				   	</div>
+			        <div class="featured-event__details">
+						<h3 class="featured-event__heading">{{title}}</h3>
+			            <div class="featured-event__date">{{date-display}}</div>
+			            <div class="featured-event__location">{{event-location}}</div>		
+				   	</div>
+				</a>
+			</div>
+			{{/each}}
+		</div>
 	</div>
-	{{/each}}
 </div>
 <!-- End pattern: event-card //-->
