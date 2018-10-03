@@ -18,6 +18,13 @@ title: Event tile grid
     <li>An event that has been cancelled must have the 'cancelled' tag applied.</li>
 </ul>
 
+<h3>Options available</h3>
+<ul>
+{{#event-card-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/event-card-options.options}}
+</ul>
+
 {{#event-card-options.options}}
 <hr>
 <h3>{{option-heading}}</h3>
