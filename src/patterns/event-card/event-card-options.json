@@ -4,7 +4,7 @@
         {
             "option-heading": "Event tile grid",
             "option-description": "",
-            "option-anchor": "event-card",  
+            "option-anchor": "event-tile-grid",  
             "bg-color": "",
             "heading": "Featured events",
             "call-to-action": false,
@@ -35,9 +35,10 @@
         {
             "option-heading": "Event tile grid with light grey background and call-to-action button",
             "option-description": "",
-            "option-anchor": "event-card",  
+            "option-anchor": "event-tile-grid-cta",  
             "bg-color": " light-grey",
             "heading": "Featured events",
+            "single-call-to-action" : true,
             "call-to-action": true,
             "call-to-action-text": [
                 {
@@ -92,17 +93,17 @@
         {
             "option-heading": "Event tile grid with two call-to-action buttons",
             "option-description": "",
-            "option-anchor": "event-card",  
+            "option-anchor": "event-tile-grid-ctas",  
             "bg-color": "",
             "heading": "Latest events",
             "call-to-action": true,
             "call-to-action-text": [
                 {
-                    "read-more-size": "col-xs-6 col-md-3 col-lg-2",
+                    "read-more-size": "col-xs-6 col-md-3",
                     "title": "Featured"
                 },
                 {
-                    "read-more-size": "col-xs-6 col-md-3 col-lg-2",
+                    "read-more-size": "col-xs-6 col-md-3",
                     "title": "Archive"
                 }
             ],
