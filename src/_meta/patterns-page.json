@@ -52,9 +52,9 @@
                   "img": "assets/docs/images/patterns/buttons.jpg",
                   "url": "patterns/buttons/index.html"
                 },
-                { "name": "Event tile",
-                  "img": "assets/docs/images/patterns/event-tile.jpg",
-                  "url": "patterns/event-tile/index.html"
+                { "name": "Event tile grid",
+                  "img": "assets/docs/images/patterns/event-tile-grid.jpg",
+                  "url": "patterns/event-tile-grid/index.html"
                 },
                 { "name": "Featured media",
                   "img": "assets/docs/images/patterns/featured-media.jpg",
