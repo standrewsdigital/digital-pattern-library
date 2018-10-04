@@ -20,12 +20,12 @@ title: Event tile grid
 
 <h3>Options available</h3>
 <ul>
-{{#event-card-options.options}}
+{{#event-tile-options.options}}
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
-{{/event-card-options.options}}
+{{/event-tile-options.options}}
 </ul>
 
-{{#event-card-options.options}}
+{{#event-tile-options.options}}
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
@@ -33,9 +33,9 @@ title: Event tile grid
 	<span class="label label-default">Example</span>
 </div>
 <div class="pattern-wrapper">
-{{> event-card}}
+{{> event-tile}}
 </div>
 <div class="container">
 	<span class="label label-default">Code</span>
-	<pre><code class="pattern-source html">{{> event-card}}</code></pre>
-{{/event-card-options.options}}
+	<pre><code class="pattern-source html">{{> event-tile}}</code></pre>
+{{/event-tile-options.options}}

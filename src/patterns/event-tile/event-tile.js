@@ -1,8 +1,8 @@
 /*********************************/
-/* BEGIN Pattern: event-card-js   */
+/* BEGIN Pattern: event-tile-js  */
 /*********************************/
 
 
 /*********************************/
-/* END Pattern: event-card-js     */
+/* END Pattern: event-tile-js    */
 /*********************************/
