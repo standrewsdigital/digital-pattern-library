@@ -2,22 +2,20 @@
 <div class="tile-grid {{bg-color}}"{{#if bg-image}} style="background-image: url({{asset bg-image}});"{{/if}}>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-lg-8">
+			<div class="col-md-6{{#if single-call-to-action}} col-lg-8{{/if}}">
 			{{#if heading}}
-				<h2>{{{heading}}}</h2>
-			{{else}}
-				<h2 class="sta-grey">{{{heading-dark}}}</h2>
+				<h2 class="tile-grid__heading{{heading-color}}">{{heading}}</h2>
 			{{/if}}
 			</div>
 			{{#each call-to-action-text}}
-			<div class="{{read-more-size}} read-more read-more-container">
+			<div class="{{read-more-size}} read-more">
 				<a href="#">{{title}}</a>
 			</div>
 			{{/each}}
 		</div>
-		<div class="row">
+		<div class="row tile-grid__tiles">
 		{{#each tiles}}
-			<div class="col-sm-6 col-md-4">
+			<div class="col-sm-6 col-md-4 tile-grid__tile">
 				<article class="tile {{color}}">
 					<div class="tile-image-title">
 						<img src="{{asset image.url}}" alt="{{image.alt}}">
@@ -31,7 +29,6 @@
 			</div>
 		{{/each}}
 		</div>
-		<div class="read-more read-more-container-alt"></div>
 	</div>
 </div>
 <!-- End pattern: tile-grid //-->

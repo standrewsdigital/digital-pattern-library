@@ -3,13 +3,116 @@
 /* BEGIN Pattern: tile-grid      */
 /*********************************/
 
+.tile-grid {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: inherit;
+    line-height: 2;
+    padding: $page-gutter 0;
+
+    &.white {
+        background-color: white;
+    }
+
+    &.light-grey {
+        background-color: $sta-grey-light;
+    }
+    
+    .read-more {
+        a {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.tile-grid__heading,
+.tile-grid h2 {
+    color: white;
+    font-size: 2.5em;
+    margin: 0 0 15px 0;
+    padding: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+
+    @media (max-width: 767px) {
+        font-size: 1.8em;
+    }
+
+    @media (max-width: 479px) {
+        font-size: 1.5em;
+    }  
+
+    &.sta-grey {
+        color: inherit;
+        text-shadow: none;
+    } 
+}
+
+// Should be moved to global buttons util
+.read-more a {
+    @extend .btn;
+    @extend .btn-primary;
+    @extend .btn-block;
+    color: white;
+    font-size: 1.5em;
+    line-height: 2em;
+    margin: 0;
+    padding: 0.4em 0.8em 0.2em 0.8em;
+    text-align: left;
+
+    @media (max-width: 767px) {
+        font-size: 1.2em;
+    }
+}
+
+.read-more a:before {
+    @extend i.chevron;
+    content: '';
+    float: right;
+    height: 28px;
+    top: 10px;
+    width: 30px;
+
+    @media (max-width: 767px) {
+        height: 20px;
+    }
+}
+
+.tile-grid__tiles {
+    //Wrapper for tiles - CHANGE TO CSS GRID
+
+    .tile-grid__tile {
+        //New selector for tiles
+        margin-top: 30px;
+
+        // Always remove top margin on first tile
+        &:nth-child(1){
+            margin-top: 0;
+        }
+
+        // Remove top margin on 2nd tile when in 2-up grid
+        @media (min-width: 768px){
+            &:nth-child(2) {
+                margin-top: 0;
+            }   
+        }
+
+        // Remove top margin on 2nd and 3rd tiles when in 3-up grid
+        @media (min-width: 992px){
+            &:nth-child(2),
+            &:nth-child(3) {
+                margin-top: 0;
+            }   
+        }
+    }
+}
+
 .tile {
     background-color: white;
     -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
        -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
             box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
     margin: auto;
-    margin-top: 35px;
     max-width: 360px;
 }
 
@@ -18,8 +121,7 @@
     -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
        -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
             box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-    margin: auto;        
-    margin-top: 35px;
+    margin: auto;       
     max-width: 100%;
 }
 
@@ -111,9 +213,6 @@
 }
 
 @media (max-width: 767px) {
-    .tile {
-        margin-bottom: 2em;
-    }
 
     .tile p {
         height: auto;
@@ -121,86 +220,7 @@
 }
 
 
-.tile-grid {
-	background-position:     center;
-	background-repeat:       no-repeat;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
-	color: inherit;
-	font-weight: 200;
-	line-height: 2;
-	padding: 60px 0;
-}
 
-.tile-grid.white {
-    background-color: white;
-}
-
-.tile-grid.light-grey {
-    background-color: $sta-grey-light;
-}
-
-.tile-grid h2 {
-	color: white;
-	font-size: 2.5em;
-    margin-top: 0;
-	margin-bottom: 30px;
-	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-}
-
-.tile-grid h2.sta-grey {
-	color: inherit;
-	text-shadow: none;
-}
-
-.read-more a {
-	@extend .btn;
-	@extend .btn-primary;
-	@extend .btn-block;
-	color: white;
-	font-size: 1.5em;
-	line-height: 2em;
-	margin: 0;
-	padding: 0.4em 0.8em 0.2em 0.8em;
-	text-align: left;
-}
-
-.read-more a:before {
-	@extend i.chevron;
-	content: '';
-	float: right;
-	height: 28px;
-	top: 10px;
-	width: 30px;
-}
-
-
-@media (max-width: 767px) {
-	.tile-grid {
-		padding-top: 50px;
-	}
-
-	.tile-grid h2 {
-		font-size: 1.8em;
-		margin-bottom: 30px;
-	}
-
-	.read-more a {
-		font-size: 1.2em;
-	}
-
-	.read-more a:before {
-		height: 20px;
-	}
-}
-
-@media (max-width: 479px) {
-	.tile-grid h2 {
-		font-size: 1.5em;
-	}
-}
 
 /*********************************/
 /* END Pattern: tile-grid        */

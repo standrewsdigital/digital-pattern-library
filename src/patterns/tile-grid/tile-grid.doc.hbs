@@ -2,7 +2,7 @@
 title: Tile grid
 ---
 
-<p>The tile grid pattern contains a heading, a call-to-action button and a grid layout of tiles; it is used to show a collection of news and/or events. Each tile is a clickable, single-action item, and includes an image, title and description.</p>
+<p>The tile grid pattern contains a heading, call-to-action buttons and a grid layout of tiles; it is used to show a collection of links to highlighted content such as news articles. Each tile is a clickable link, and includes an image, title and description along with optional date and tag.</p>
 
 <h3>Rules for tile grid</h3>
 <ul>
@@ -10,14 +10,14 @@ title: Tile grid
     <li>Must not use more than six tiles in one grid.</li>
     <li>Must only have one tile grid per page.</li>
     <li>Must only be used within the main body of the page.</li>
-    <li>Must contain one or two call-to-action buttons.</li>
+    <li>Must contain a maximum of two call-to-action buttons.</li>
     <li>Tile images must be 360 x 240 pixels.</li>
-    <li>Tile titles must not be more than two lines.</li>
-    <li>Tile description text should be three to four lines in length, or roughly 80 to 140 characters.</li>
+    <li>Tile titles should not be more than 50 characters, or two lines in length.</li>
+    <li>Tile description text should be between 80 to 140 characters, or roughly three to four lines in length.</li>
 </ul>
 
 <h3>Tile colours</h3>
-<p>Tile colours represent different categories used. For example, in the below options, tile colours represent the following categories:
+<p>Tile colours may be used to represent different categories. For example, in the below options, tile colours represent the following categories:
 <ul>
 	<li><strong>Blue</strong>, primary: News</li>
 	<li><strong>Green</strong>, secondary: Featured event</li>
@@ -36,7 +36,12 @@ title: Tile grid
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
-</div>{{> tile-grid}}<div class="container">
+    <span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+{{> tile-grid}}
+</div>
+<div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> tile-grid}}</code></pre>
 {{/tile-grid-options.options}}
