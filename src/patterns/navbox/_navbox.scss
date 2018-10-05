@@ -12,6 +12,22 @@
    }  
 }
 
+.navbox-grid {
+    padding: $page-gutter 0 $page-gutter-overflow 0; 
+    @include clearfix-alt; // alternate clearfix (utilities) to sort bootstrap floated elements
+
+    .navbox {
+        margin-bottom: 30px; // add bottom padding when part of a grid
+    }
+
+    .navbox + p {
+        margin-top: -15px !important; // reduce gap if followed by a p
+    }
+}
+.panel-grid + .navbox-grid {
+    padding-top: 0; // Remove extra gap when two grids ajoin
+}
+
 // .navbox-image img {
 // 	height: auto !important;
 //     width: 100% !important;

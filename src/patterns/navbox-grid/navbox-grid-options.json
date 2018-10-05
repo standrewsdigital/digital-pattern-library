@@ -5,6 +5,7 @@
             "option-description": "",
             "option-anchor": "2-grid-images-paragraphs",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "image": {
@@ -35,6 +36,7 @@
             "option-description": "",
             "option-anchor": "2-grid-images",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "image": {
@@ -63,6 +65,7 @@
             "option-description": "",
             "option-anchor": "2-grid-paragraphs",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "title": "Study at St Andrews",
@@ -85,6 +88,7 @@
             "option-description": "",
             "option-anchor": "2-grid-blank",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "title": "Study at St Andrews",
@@ -105,6 +109,7 @@
             "option-description": "<p>This option must only be used on the <a href='../content-thirds/index.html'>content thirds</a> page layout. For an example of this option in use, please see the <a href='../../examples/content.html'>content example page</a>.</p>",
             "option-anchor": "2-grid-paragraphs-sidebar",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "title": "Study at St Andrews",
@@ -129,6 +134,7 @@
             "option-description": "<p>This option must only be used on the <a href='../content-thirds/index.html'>content thirds</a> page layout. For an example of this option in use, please see the <a href='../../examples/content.html'>content example page</a>.</p>",
             "option-anchor": "2-grid-blank-sidebar",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "title": "Study at St Andrews",
@@ -152,6 +158,7 @@
             "option-description": "",
             "option-anchor": "3-grid-images-paragraphs",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "image": {
@@ -191,6 +198,7 @@
             "option-description": "",
             "option-anchor": "3-grid-images",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "image": {
@@ -227,6 +235,7 @@
             "option-description": "",
             "option-anchor": "3-grid-paragraphs",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "title": "Study at St Andrews",
@@ -254,6 +263,7 @@
             "option-description": "",
             "option-anchor": "2-grid-blank",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "title": "Study at St Andrews",
@@ -278,6 +288,7 @@
             "option-description": "",
             "option-anchor": "4-grid-images-paragraphs",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "image": {
@@ -326,6 +337,7 @@
             "option-description": "",
             "option-anchor": "4-grid-images",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "image": {
@@ -370,6 +382,7 @@
             "option-description": "",
             "option-anchor": "4-grid-paragraphs",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "title": "Study at St Andrews",
@@ -402,6 +415,7 @@
             "option-description": "",
             "option-anchor": "4-grid-blank",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "title": "Study at St Andrews",
@@ -430,6 +444,7 @@
             "option-description": "",
             "option-anchor": "5-grid-images-paragraphs",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "image": {
@@ -487,6 +502,7 @@
             "option-description": "",
             "option-anchor": "5-grid-images",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "image": {
@@ -539,6 +555,7 @@
             "option-description": "",
             "option-anchor": "5-grid-paragraphs",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "title": "Study at St Andrews",
@@ -576,6 +593,7 @@
             "option-description": "",
             "option-anchor": "5-grid-blank",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "title": "Study at St Andrews",
@@ -608,6 +626,7 @@
             "option-description": "",
             "option-anchor": "6-grid-images-paragraphs",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "image": {
@@ -674,6 +693,7 @@
             "option-description": "",
             "option-anchor": "6-grid-images",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "image": {
@@ -734,6 +754,7 @@
             "option-description": "",
             "option-anchor": "6-grid-paragraphs",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "title": "Study at St Andrews",
@@ -776,6 +797,7 @@
             "option-description": "",
             "option-anchor": "6-grid-blank",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "title": "Study at St Andrews",
@@ -812,6 +834,7 @@
             "option-description": "",
             "option-anchor": "more-grid-paragraphs",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "title": "Study at St Andrews",
@@ -869,6 +892,7 @@
             "option-description": "",
             "option-anchor": "more-grid-blank",
             "grid-row": true,
+            "grid":true,
             "box-size": [
                 {
                     "title": "Study at St Andrews",

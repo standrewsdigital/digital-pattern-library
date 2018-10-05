@@ -73,6 +73,7 @@
     },
     "navbox-grid": {
     "grid-row": true,
+    "grid": true,
     "box-size": [
         {
             "image": {
