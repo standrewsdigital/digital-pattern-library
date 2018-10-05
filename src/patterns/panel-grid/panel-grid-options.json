@@ -4,6 +4,7 @@
             "option-heading": "Two columns option with paragraph text",
             "option-description": "<p>Two column layout must be used when displaying panels with paragraph text. A variety of colours are available, in keeping with the colour palette.</p>",
             "option-anchor": "two-column-panel-grid",
+            "grid": true,
             "panels": [
                 {
                     "column-size": "col-md-6",
@@ -51,6 +52,7 @@
             "option-heading": "Three columns option with links",
             "option-description": "",
             "option-anchor": "three-column-panel-grid",
+            "grid": true,
             "panels": [
                 {
                     "column-size": "col-md-4",
@@ -80,6 +82,7 @@
             "option-heading": "Two columns option with links",
             "option-description": "",
             "option-anchor": "two-column-panel-grid",
+            "grid": true,
             "panels": [
                 {
                     "column-size": "col-md-6",
