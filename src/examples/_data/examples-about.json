@@ -74,6 +74,7 @@
     "navbox-grid": {
     "grid-row": true,
     "grid": true,
+    "grid-padding": " collapse-top",
     "box-size": [
         {
             "image": {
