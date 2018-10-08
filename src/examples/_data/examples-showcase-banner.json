@@ -1,0 +1,88 @@
+{
+            "option-heading": "Three panels",
+            "option-description": "",
+            "option-anchor": "three",
+            "panels": [
+                {
+                    "colour": "sta-purple-1",
+                    "columns": [
+                        {
+                            "column-size": "col-sm-6 col-sm-push-4",
+                            "title": "Lorem ipsum dolor sit amet",
+                            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        },
+                        {
+                            "column-size": "col-sm-2 column col-sm-push-4",
+                            "icon-type": "trophy"
+                        },
+                        {
+                            "column-size": "col-sm-4 col-sm-pull-8",
+                            "box-size": [
+                                {
+                                    "image": {
+                                        "url": "../assets/docs/images/placeholders/750x500.png",
+                                        "alt": "Description"
+                                    },
+                                    "title": "Lorem ipsum dolor sit amet",
+                                    "column": "col-sm-12",
+                                    "row": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "colour": "sta-purple-2",
+                    "columns": [
+                        {
+                            "column-size": "col-sm-8",
+                            "title": "Lorem ipsum dolor sit amet",
+                            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        },
+                        {
+                            "column-size": "col-sm-4",
+                            "box-size": [
+                                {
+                                    "image": {
+                                        "url": "../assets/docs/images/placeholders/750x500.png",
+                                        "alt": "Description"
+                                    },
+                                    "title": "Lorem ipsum dolor sit amet",
+                                    "column": "col-sm-12",
+                                    "row": true
+                                }
+                            ]
+                        }
+                        
+                    ]
+                },
+                {
+                    "colour": "sta-purple-3",
+                    "columns": [
+                        {
+                            "column-size": "col-sm-6 col-sm-push-4",
+                            "title": "Lorem ipsum dolor sit amet",
+                            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        },
+                        {
+                            "column-size": "col-sm-2 column col-sm-push-4",
+                            "icon-type": "university"
+                        },
+                        {
+                            "column-size": "col-sm-4 col-sm-pull-8",
+                            "box-size": [
+                                {
+                                    "image": {
+                                        "url": "../assets/docs/images/placeholders/750x500.png",
+                                        "alt": "Description"
+                                    },
+                                    "title": "Lorem ipsum dolor sit amet",
+                                    "column": "col-sm-12",
+                                    "row": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+}

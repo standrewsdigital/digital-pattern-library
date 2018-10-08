@@ -1,97 +1,19 @@
 {
-    "options": [
-        {
-            "option-heading": "Copyright footer",
-            "option-anchor": "copy-footer",
-            "option-description": ""
-        },
 
-
-
-
-        {
             "option-heading": "Navigation menu footer",
             "option-description": "<ul><li>The navigation menu footer should be used if needed and should contain content relevant to the section of the website where the page is located.</li><li>The navigation menu footer must never be included without the copyright footer below it.</li><li>The third column in the navigation menu footer must be reserved for the contact information.</li><li>Custom icons for social media links must not be added. Unique social media links must use text and can only be added to the navigation menu footer (see example below).</li></ul>",
             "option-anchor": "nav-footer",
             "website-footer": true,
-            "section1": {
-                "title": "Your St Andrews",
-                "links":[
-                    {"title": "Current students",       "url": "#"},
-                    {"title": "Postgraduate",           "url": "#"},
-                    {"title": "Staff",                  "url": "#"},
-                    {"title": "Jobs at St Andrews",     "url": "#"}
-                ]
-            },
-            "section2": {
-                "title": "Navigation",
-                "links":[
-                    {"title": "Study at St Andrews",    "url": "#"},
-                    {"title": "Research",               "url": "#"},
-                    {"title": "Alumni and donors",      "url": "#"},
-                    {"title": "Community facilities",   "url": "#"},
-                    {"title": "Business services",      "url": "#"},
-                    {"title": "About",                  "url": "#"}
-                ]
-            },
-            "section3": {
-                "title": "Social media",
-                "links": [
-                    {"title": "Facebook",               "url": "#"},
-                    {"title": "Twitter",                "url": "#"},
-                    {"title": "Instagram",              "url": "#"},
-                    {"title": "Youtube",                "url": "#"}
-                ]
-            },
-            "section4": {
-                "title": "Subjects",
-                "links":[
-                    {"title": "Art History",                            "url": "#"},
-                    {"title": "Biology",                                "url": "#"},
-                    {"title": "Chemistry",                              "url": "#"},
-                    {"title": "Classics",                               "url": "#"},
-                    {"title": "Computer Science",                       "url": "#"},
-                    {"title": "Divinity",                               "url": "#"},
-                    {"title": "Earth and Environmental Sciences",       "url": "#"},
-                    {"title": "Economics and Finance",                  "url": "#"},
-                    {"title": "English",                                "url": "#"},
-                    {"title": "Film Studies",                           "url": "#"},
-                    {"title": "Geography and Sustainable Development",  "url": "#"},
-                    {"title": "History",                                "url": "#"},
-                    {"title": "International Relations",                "url": "#"},
-                    {"title": "Languages and Comparative Literature",   "url": "#"},
-                    {"title": "Management",                             "url": "#"},
-                    {"title": "Mathematics and Statistics",             "url": "#"},
-                    {"title": "Medicine",                               "url": "#"},
-                    {"title": "Philosophy",                             "url": "#"},
-                    {"title": "Physics and Astronomy",                  "url": "#"},
-                    {"title": "Psychology and Neuroscience",            "url": "#"},
-                    {"title": "Social Anthropology",                    "url": "#"}
-                ]
-            },
-            "contact":{
-                "url": "/contact/",
-                "unit" :"University of St Andrews",
-                "address":"College Gate<br>St Andrews, Fife<br>KY16 9AJ<br>Scotland, UK",
-                "phone":"+44 (0)1334 47 6161"
-            }
-        },
-
-        {
-            "option-heading": "Navigation menu footer with awards and affiliations logo banner",
-            "option-description": "<ul><li>The navigation menu footer with awards and affiliations logo banner must only be used on the homepage.</li><li>The awards and affiliations logo banner is used to display logos of affiliated partners, awards, and certifications.</li><li>Links must be included to the relevant website or webpage for each logo.</li></ul>",
-            "option-anchor": "nav-footer-affiliation",
-            "website-footer": true,
             "affiliation-banner": true,
             "columns": [
                 {
-                    "image": "../../assets/docs/images/placeholders/medal-512.png",
+                    "image": "../assets/docs/images/placeholders/medal-512.png",
                     "image-alt": "Award 1",
                     "image-title": "Award 1",
                     "image-link": "#"
                 },
                 {
-                    "image": "../../assets/docs/images/placeholders/medal2-512.png",
+                    "image": "../assets/docs/images/placeholders/medal2-512.png",
                     "image-alt": "Award 2",
                     "image-title": "Award 2",
                     "image-link": "#"
@@ -159,6 +81,3 @@
                 "phone":"+44 (0)1334 47 6161"
             }
         }
-
-    ]
- }
