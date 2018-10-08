@@ -6,14 +6,14 @@
 		{{#each columns}}
 			<div class="{{column-size}}">
 				{{#if box-size}}		
-					{{> navbox}}
+				{{> navbox}}
 				{{/if}}
 				{{#if title}}		
-					<h3>{{title}}</h3>
-					<p>{{paragraph}}</p>
+				<h3>{{title}}</h3>
+				<p>{{paragraph}}</p>
 				{{/if}}	
 				{{#if icon-type}}		
-					<i class="fa fa-{{icon-type}} hidden-xs" aria-hidden="true"></i>
+				<i class="fa fa-{{icon-type}} hidden-xs" aria-hidden="true"></i>
 				{{/if}}		
 			</div>
 		{{/each}}

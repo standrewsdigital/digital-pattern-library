@@ -1,0 +1,18 @@
+{
+            "grid-row": true,
+            "grid": true,
+            "panels": [
+                {
+                    "column-size": "col-md-6",
+                    "color": "panel-secondary",
+                    "title": "Research portal",
+                    "description": "<ul><li><a href='#'>Researchers</a></li><li><a href='#'>Publications</a></li><li><a href='#'>Impact</a></li><li><a href='#'>Data</a></li><li><a href='#'>Funded projects</a></li></ul>"
+                },
+                {
+                    "column-size": "col-md-6",   
+                    "color": "panel-tertiary-1",
+                    "title": "Research environment",
+                    "description": "<ul><li><a href='#'>Committees and forums</a></li><li><a href='#'>Equality and diversity</a></li><li><a href='#'>Schools, centres and institutes</a></li><li><a href='#'>Funding</a></li><li><a href='#'>Collaborations</a></li></ul>"
+                }
+            ]
+        }
