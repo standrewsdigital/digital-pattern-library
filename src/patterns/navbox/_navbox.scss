@@ -16,6 +16,14 @@
     padding: $page-gutter 0 $page-gutter-overflow 0; 
     @include clearfix-alt; // alternate clearfix (utilities) to sort bootstrap floated elements
 
+    &.collapse-top {
+        padding-top: 0; // Option to remove top padding if required
+    }
+
+    &.collapse-bottom {
+        padding-bottom: 0; // Option to remove bottom padding if required
+    }
+
     .navbox {
         margin-bottom: 30px; // add bottom padding when part of a grid
     }
