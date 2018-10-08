@@ -19,18 +19,6 @@
             "class": "category-header-solid",
             "title": "Category title",
             "url": "#"
-        },
-
-
-
-
-        {
-            "option-heading": "Web application",
-            "option-anchor": "webapp",
-            "option-description": "",
-            "class": "category-header-solid",
-            "title": "Web application",
-            "url": "#"
         }
     ]
 }

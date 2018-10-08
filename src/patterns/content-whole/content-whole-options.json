@@ -13,7 +13,7 @@
 
         {
             "option-heading": "Subjects content whole",
-            "option-description": "Uses a large title and must only be used on the subject pages.",
+            "option-description": "<p>Uses a large title and must only be used on the subject pages.</p>",
             "option-anchor": "subjects",
             "class": "class=subject",
 		    "title": "My subject title",
