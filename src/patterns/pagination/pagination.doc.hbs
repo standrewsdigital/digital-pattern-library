@@ -19,8 +19,15 @@ title: Pagination
 {{#pagination-options.options}}
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
-{{{option-description}}}
+{{{option-description}}}    
+<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+	<div class="container">
 {{> pagination}}
+</div>
+</div>
+<div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> pagination}}</code></pre>
 {{/pagination-options.options}}

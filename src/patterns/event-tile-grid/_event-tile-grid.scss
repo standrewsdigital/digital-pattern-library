@@ -1,0 +1,198 @@
+
+.event-grid {
+    padding: $page-gutter 0;
+
+    &.light-grey {
+        background-color: $sta-grey-light;
+    }
+    
+    // change padding on buttons
+    // INHERITED FROM TILE GRID PATTERN - Separate out to buttons...
+    .read-more {
+        a {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.event-grid__heading {
+    font-size: 2.5em;
+    margin: 0 0 15px 0;
+    padding: 0;
+
+    @media (max-width: 767px) {
+        font-size: 1.8em;
+    }
+
+    @media (max-width: 479px) {
+        font-size: 1.5em;
+    }   
+}
+
+/* Secondary featured events */
+.event-grid__tiles {
+    // Make 2 column grid when room to fit
+    @media (min-width: 992px){
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 30px 1fr; // 2 column grid
+        grid-template-columns: repeat(2, 1fr); // 2 column grid
+        grid-column-gap: 30px;
+    }
+}
+
+.featured-event {
+
+    @extend %card;
+    
+    // Add top margin as row gap not supported in ie11
+    margin-top: 30px;
+    // Always remove top margin on first tile
+    &:nth-child(1){
+        margin-top: 0;
+    }
+
+    // Explicit grid placement for ie11 
+    @media (min-width: 992px){
+        &:nth-child(2){
+            -ms-grid-column: 3;
+            margin-top: 0; // Remove top margin when placed in grid
+        }
+        &:nth-child(3){
+            -ms-grid-row: 3;
+            -ms-grid-column: 1;
+        }
+        &:nth-child(4){
+            -ms-grid-row: 3;
+            -ms-grid-column: 3;
+        }
+        &:nth-child(5){
+            -ms-grid-row: 5;
+            -ms-grid-column: 1;
+        }
+        &:nth-child(6){
+            -ms-grid-row: 5;
+            -ms-grid-column: 3;
+        }
+    }
+    
+    @media (min-width: 992px){
+        max-width: 555px; // Avoid tile filling entire container if only one in a grid
+    }
+
+    a {
+        background: #fafafa;
+        color: inherit;
+        font-weight: normal;
+        height: 100%;
+        @media (min-width:380px){
+            display: flex;
+            min-height: 120px;
+        }
+        @media (min-width: 576px){
+            min-height: 160px;
+        }
+
+        .featured-event__image {
+            height: 140px;
+            @media (min-width:380px){
+                height: auto;
+                width: 40%;
+            }
+            position: relative;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                -webkit-transition: all .2s ease-in-out;
+                transition: all .2s ease-in-out;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                max-width: none;
+                min-height: 100%;
+                min-width: 100%;
+                display: block;
+                z-index: 0;
+                left: 50%;
+                top: 50%;
+            }
+        }
+
+        .featured-event__details {
+            padding: 15px;
+            @media (min-width:380px){
+                width: 60%;
+            }
+        }
+
+        .featured-event__heading {
+            color: inherit;
+            font-size: 18px;
+            @media (min-width: 576px){
+                font-size: 22px;
+            }
+            margin-top: 0;
+        }
+
+        .featured-event__date,
+        .featured-event__location {
+            font-size: 16px;
+            line-height: 1.4;
+            padding-left: 20px;
+            position: relative;
+            
+            &:before {
+                font-family: FontAwesome;
+                font-size: inherit; // can't have font-size inherit on line above, so need to override
+                text-rendering: auto; // optimizelegibility throws things off #1094
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-style: normal;
+                font-weight: normal;
+                position: absolute;
+                top: -2px;
+                left: 0;
+            }
+        }
+        .featured-event__date {
+            &:before {
+                content: "\f133";
+            }
+        }
+        .featured-event__location {
+            &:before {
+                content: "\f041";
+                left: 4px;
+            }
+        }
+
+        // Hover styles
+        &:hover,
+        &:focus {
+            background: #f0f0f0;
+            text-decoration: none; // override underline hover effect   
+
+            .featured-event__heading {
+                color: #00539b;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    // Cancelled style
+    &.cancelled {
+        .featured-event__details:before {
+            background: #ea1a13;
+            color: #fff;
+            content: 'Cancelled';
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.42857; // Same as body
+            margin-bottom:8px;
+            padding: 3px 9px;
+            text-shadow: none;
+            text-transform: none;
+        }
+    }
+}

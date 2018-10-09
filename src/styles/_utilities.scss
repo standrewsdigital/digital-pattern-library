@@ -36,7 +36,16 @@ body {
 	width: 100%;
 }
 
-$page-gutter: calc(1.3em + 1vw); // scale that changes according to width of viewport
+// Spacing
+$base-spacing: 1em;
+$large-spacing: $base-spacing*2;
+$small-spacing: $base-spacing/2;
+
+$page-gutter: calc(3vw + 1em);
+$half-gutter: calc(1.5vw + 1em);
+$third-gutter: calc(1vw + 1em);
+// Gutter transformations
+$page-gutter-overflow: calc((3vw + 1em) - 30px); //Removes fixed size from dynamic gutter
 
 .top-buffer {
 	margin-top: 30px;
@@ -56,4 +65,21 @@ img {
 textarea, input[type~=text], input[type~=submit] {
     -webkit-appearance: none;
     border-radius: 0;
+}
+
+/* PLACEHOLDERS */
+/* General card */
+%card {
+    background-color: white;
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12);
+    -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12);
+    box-sizing: border-box;
+}
+
+/* DPL HELPERS */
+.pattern-wrapper {
+    border-bottom:1px $sta-grey dashed;
+    border-top:1px $sta-grey dashed;
+    margin-bottom: 30px;
 }

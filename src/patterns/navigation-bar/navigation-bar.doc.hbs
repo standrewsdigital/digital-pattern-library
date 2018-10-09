@@ -24,8 +24,13 @@ title: Navigation bar
 {{#navigation-bar-options.options}}
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
-{{{option-description}}}
-</div>{{> navigation-bar}}<div class="container">
+{{{option-description}}}    
+<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+	{{> navigation-bar}}
+</div>
+<div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> navigation-bar}}</code></pre>
 {{/navigation-bar-options.options}}

@@ -27,8 +27,13 @@ title: Navigation grid
 {{#navigation-grid-options.options}}
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
-{{{option-description}}}
-</div>{{> navigation-grid}}<div class="container">
+{{{option-description}}}    
+<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+	{{> navigation-grid}}
+</div>
+<div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> navigation-grid}}</code></pre>
 {{/navigation-grid-options.options}}

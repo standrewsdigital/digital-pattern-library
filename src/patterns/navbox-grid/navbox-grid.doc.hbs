@@ -2,14 +2,13 @@
 title: Navbox grid
 ---
 
-<p>The navbox grid pattern presents a set of <a href="../navbox/index.html">navboxes</a> in various grid layouts.</p>
+<p>The navbox grid pattern presents a set of <a href="../navbox/index.html">navboxes</a> in various grid layouts. For a set of navigation links that are considered secondary in importance the <a href="../navigation-grid/index.html">navigation grid</a> pattern should be used.</p>
 
 <h3>Rules for the navbox grid</h3>
 <ul>
     <li>Must only be used within the main body of the page.</li>
-    <li>The options <a href="#2-grid-paragraphs-sidebar">Two links with paragraphs and sidebar</a> and <a href="#2-grid-blank-sidebar">Two links without images or paragraphs and sidebar</a> must only be used on the <a href="../content-thirds/index.html">content thirds</a> page layout.</li>
-    <li>All other options must only be used on the <a href="../content-whole/index.html">content whole</a> page layout.</li>
     <li>Must only link to an internal webpage or web application.</li>
+    <li>Navbox grids include top and bottom padding as default. This can be removed by assigning the respective classes <code>collapse-top</code> and <code>collapse-bottom</code> to the element with the <code>navbox-grid</code> class.</li>
     <li>Medium navboxes must not have a title that exceeds 88 characters.</li>
     <li>Small navboxes must not have a title that exceeds 57 characters.</li>
     <li>When using an image, the image must relate to the link destination.</li>
@@ -43,7 +42,15 @@ title: Navbox grid
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
-{{> navbox-grid}}
+
+    <span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+    <div class="container">
+    {{> navbox-grid}}
+    </div>
+</div>
+<div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> navbox-grid}}</code></pre>
 {{/navbox-grid-options.options}}

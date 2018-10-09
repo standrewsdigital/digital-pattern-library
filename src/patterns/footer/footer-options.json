@@ -85,15 +85,15 @@
             "affiliation-banner": true,
             "columns": [
                 {
-                    "image": "../../assets/docs/images/placeholders/university-of-the-year-for-teaching-quality-2017.png",
-                    "image-alt": "University of the year for teaching quality 2017",
-                    "image-title": "University of the year for teaching quality 2017",
+                    "image": "../../assets/docs/images/placeholders/medal-512.png",
+                    "image-alt": "Award 1",
+                    "image-title": "Award 1",
                     "image-link": "#"
                 },
                 {
-                    "image": "../../assets/docs/images/placeholders/tef-gold-logo-transparent.gif",
-                    "image-alt": "TEF Gold",
-                    "image-title": "TEF Gold",
+                    "image": "../../assets/docs/images/placeholders/medal2-512.png",
+                    "image-alt": "Award 2",
+                    "image-title": "Award 2",
                     "image-link": "#"
                 }
             ],

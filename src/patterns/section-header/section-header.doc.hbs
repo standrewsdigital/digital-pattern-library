@@ -23,7 +23,12 @@ title: Section header
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
-</div>{{>  section-header}}<div class="container">
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+	{{>  section-header}}
+</div>
+<div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> section-header}}</code></pre>
 {{/section-header-options.options}}

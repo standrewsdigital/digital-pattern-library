@@ -7,6 +7,40 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 ---
 
+## v1.14.0
+
+Release date: Tuesday 9 October 2018
+
+### Added
+
+* New event tile grid pattern.
+
+### Changed
+
+* Category header link now has hover state.
+* Category header font changed to 'PT Serif'.
+* Wrapper applied to footer, navbox grid, panel grid, showcase banner, and tile grid patterns for consistent padding that adapts to viewport.
+* Examples of pattern options now clearly defined and marked with labels.
+* Example homepage updated to reflect up-to-date layout.
+* Bottom margin removed from hero banner.
+* Showcase banner icons are now optional.
+* Call-to-action button widths amended on tile grid pattern.
+
+### Fixed
+* Various typos in documentation.
+* Various formatting issues in documentation.
+
+
+### Removed
+
+* Removed duplicated category header option.
+* Removed navbox options for content thirds as these were combining two distinct patterns so not applicable.
+
+
+
+
+---
+
 ## v1.13.1
 
 Release date: Thursday 13 September 2018

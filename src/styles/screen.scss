@@ -13,8 +13,8 @@ IMPORTS AND PATTERNS
 
 @charset "utf-8";
 
-@import 'utilities';
 @import 'colors';
+@import 'utilities';
 @import 'fonts';
 @import 'bootstrap-custom';
 @import 'icons';
@@ -38,6 +38,7 @@ IMPORTS AND PATTERNS
 @import 'content-halves/content-halves';
 @import 'content-thirds/content-thirds';
 @import 'datatables/datatables';
+@import 'event-tile-grid/event-tile-grid';
 @import 'featured-media/featured-media';
 @import 'featured-news/featured-news';
 @import 'featured-people/featured-people';

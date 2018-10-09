@@ -2,7 +2,7 @@
     "options" : [
         {
             "option-heading": "Share icons",
-            "option-description": "View on mobile to see WhatsApp icon.",
+            "option-description": "<p>View on mobile to see WhatsApp icon.</p>",
             "option-anchor": "share",
             "title": "Share this story",
             "icon": [
@@ -36,7 +36,7 @@
         },
         {
             "option-heading": "Share video",
-            "option-description": "View on mobile to see WhatsApp icon.",
+            "option-description": "<p>View on mobile to see WhatsApp icon.</p>",
             "option-anchor": "share",
             "title": "Share this video",
             "embed": true,

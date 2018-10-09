@@ -11,7 +11,7 @@ footer a:link {
 	background-color: $sta-grey-dark;
 	border-top: 5px solid $sta-grey;
 	color: rgb(170, 170, 170);
-	padding: 20px 0;
+	padding: $third-gutter 0;
 }
 
 #website-footer a, #university-footer a {
@@ -26,7 +26,7 @@ footer a:link {
 	background-color: $sta-grey-dark-hover;
 	border-top: 1px solid $sta-grey-T-hover;
 	color: $sta-grey-light;
-	padding: 10px 0;
+	padding: $third-gutter 0;
 }
 
 #website-footer ul, #university-footer ul {
@@ -52,7 +52,7 @@ footer a:link {
 
 #affiliation-banner {
 	background-color: $sta-grey-light;
-	padding: 20px;
+	padding: $page-gutter 0;
 }
 
 .affiliation-logo {

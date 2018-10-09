@@ -1,82 +1,44 @@
 {
-    "heading": "What's happening in St Andrews",
+    "heading": "Featured news",
     "call-to-action-text": [
         {
-            "read-more-size": "col-xs-6 col-md-3 col-lg-2",
+            "read-more-size": "col-xs-12 col-md-6 col-lg-4",
             "title": "News"
-        },
-        {
-            "read-more-size": "col-xs-6 col-md-3 col-lg-2",
-            "title": "Events"
         }
     ],
-    "bg-image": "docs/images/background/bg1.jpg",
+    "bg-color": "light-grey",
+    "heading-color": " sta-grey",
+    "single-call-to-action" : true,
     "tiles": [
         {
             "color": "",
             "image": {
-                "url": "docs/images/placeholders/360x240-1.jpg",
+                "url": "docs/images/placeholders/750x500.png",
                 "alt": "Description"
             },
-            "title": "MUSA is going greener",
-            "description": "The Museum of the University of St Andrews (MUSA) has attained the top standard for sustainability from the Green Tourism Business Scheme.",
-            "date-display" : "Wednesday 23 August 2017",
+            "title": "Trumpets herald Music Centre",
+            "description": "Trumpeters herald an important milestone in the development of the University's new Laidlaw Music Centre.",
             "type" : "News"
-        },
-        {
-            "color": "red",
-            "image": {
-                "url": "docs/images/placeholders/360x240-2.jpg",
-                "alt": "Description"
-            },
-            "title": "A Rae of artistic sunshine",
-            "description": "The work of one of Scotland's most revered contemporary artists, Barbara Rae, is to go on display in St Andrews.",
-            "date-display" : "Wednesday 16 August 2017",
-            "type" : "Photo of the week"
-        },
-        {
-            "color": "red",
-            "image": {
-                "url": "docs/images/placeholders/360x240-3.jpg",
-                "alt": "Description"
-            },
-            "title": "World Cup fever at Sandy's Bar",
-            "description": "Hundreds of football fans watched the World Cup final in the newly opened Sandy's Bar at the Students' Association on Sunday.",
-            "date-display" : "Wednesday 12 July 2017",
-            "type" : "Photo of the week"
         },
         {
             "color": "",
             "image": {
-                "url": "docs/images/placeholders/360x240-4.jpg",
+                "url": "docs/images/placeholders/750x500.png",
                 "alt": "Description"
             },
-            "title": "All in hand",
-            "description": "Scientists have, for the first time, decoded the meanings of chimpanzee gestures.",
-            "date-display" : "Wednesday 5 July 2017",
+            "title": "Aping our cousins",
+            "description": "St Andrews scientists have found that young children use the same gestures as chimpanzees and gorillas.",
             "type" : "News"
         },
         {
-            "color": "red",
+            "color": "",
             "image": {
-                "url": "docs/images/placeholders/360x240-5.jpg",
+                "url": "docs/images/placeholders/750x500.png",
                 "alt": "Description"
             },
-            "title": "Dogrees all round!",
-            "description": "Graduation is a time for all the family but this year one pet dog made its way into the post-ceremony celebrations in the Quad.",
-            "date-display" : "Wednesday 28 June 2017",
-            "type" : "Photo of the week"
-        },
-        {
-            "color": "green",
-            "image": {
-                "url": "docs/images/placeholders/360x240-6.jpg",
-                "alt": "Description"
-            },
-            "title": "Darling: \"We belong together\"",
-            "description": "Alistair Darling to use public address to make the case for Scotland remaining in the UK",
-            "date-display" : "Wednesday 21 June 2017",
-            "type" : "Featured events"
+            "title": "LGBT+ life at St Andrews",
+            "description": "For over 40 years the University has supported various LGBT groups at St Andrews who work to promote equality for all staff and students.",
+            "type" : "Story"
         }
     ]
 }

@@ -36,7 +36,12 @@ title: Category header
 <hr>
 <h3 id="option-anchor">{{option-heading}}</h3>
 {{{option-description}}}
-</div>{{>  category-header}}<div class="container">
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+	{{>  category-header}}
+</div>
+<div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> category-header}}</code></pre>
 {{/category-header-options.options}}

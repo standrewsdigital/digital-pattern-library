@@ -78,7 +78,7 @@
         {
             "option-heading": "Panel with links",
             "option-anchor": "panel-with-links",
-            "option-description": "<p>A panel must display multiple links in an unordered list with no more than six links and no fewer than three links per panel.",
+            "option-description": "<p>A panel must display multiple links in an unordered list with no more than six links and no fewer than three links per panel.</p>",
             "panels": [ 
                 {
                     "column-size": "col-md-4",

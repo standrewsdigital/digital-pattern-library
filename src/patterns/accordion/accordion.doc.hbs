@@ -28,7 +28,14 @@ title: Accordion
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
-{{> accordion}}
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+	<div class="container">
+	{{> accordion}}
+	</div>
+</div>
+<div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> accordion}}</code></pre>
 {{/accordion-options.options}}
@@ -36,13 +43,19 @@ title: Accordion
 <hr>
 <h3 id="old-accordion">Old accordion</h3>
 <p>Old accordion pattern used to test backwards-compatibility; do not use this HTML in new sites.</p>
-<div class="accordion">
-    <h3><a class="toggleLink" href="#"><i class="chevron"></i>MLitt, MRes, MSc</a></h3>
-    <div class="toggle">
-       <p>Quisque porttitor nisi sed justo posuere, ut sagittis lectus sodales. Proin tempus posuere libero. Quisque mauris ex, commodo vel finibus eu, iaculis id risus. Aenean id lorem vel lectus varius hendrerit vehicula quis sapien. Vestibulum non accumsan ante, et ullamcorper massa. In dictum mauris non accumsan gravida. Aliquam tortor mi, porttitor non feugiat eu, fermentum id magna. Nunc ornare mi risus, a cursus dui commodo at.</p>
-    </div>
+	<span class="label label-default">Example</span>
 </div>
-
+<div class="pattern-wrapper">
+	<div class="container">
+		<div class="accordion">
+		    <h3><a class="toggleLink" href="#"><i class="chevron"></i>MLitt, MRes, MSc</a></h3>
+		    <div class="toggle">
+		       <p>Quisque porttitor nisi sed justo posuere, ut sagittis lectus sodales. Proin tempus posuere libero. Quisque mauris ex, commodo vel finibus eu, iaculis id risus. Aenean id lorem vel lectus varius hendrerit vehicula quis sapien. Vestibulum non accumsan ante, et ullamcorper massa. In dictum mauris non accumsan gravida. Aliquam tortor mi, porttitor non feugiat eu, fermentum id magna. Nunc ornare mi risus, a cursus dui commodo at.</p>
+		    </div>
+		</div>
+	</div>
+</div>
+<div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html"><h3><a class="toggleLink" href="#"><i class="chevron"></i>MLitt, MRes, MSc</a></h3>
 <div class="toggle">

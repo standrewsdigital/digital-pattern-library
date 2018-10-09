@@ -1,0 +1,41 @@
+---
+title: Event tile grid
+---
+
+<p>Event tiles are used to promote featured events on a homepage.</p>
+
+<h3>Rules for event tile grid</h3>
+<ul>
+    <li>Must have a solid white or light grey background colour.</li>
+    <li>Must have a heading.</li>
+    <li>Option to include a maximum of two call-to-action buttons.</li>
+    <li>There must be a maximum of six event tiles in a grid. Consider an alternative pattern if this does not meet your needs.</li>
+    <li>All event tiles must have an associated good quality image.</li>
+    <li>Event tile images must be 360px wide by 240px high.</li>
+    <li>Event titles should not exceed 60 characters.</li>
+    <li>The date of the event must be included.</li>
+    <li>The location of the event should be included if known.</li>
+    <li>An event that has been cancelled must have the 'Cancelled' tag applied. This is achieved by applying the <code>cancelled</code> class to the element with the <code>featured-event</code> class.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#event-tile-grid-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/event-tile-grid-options.options}}
+</ul>
+
+{{#event-tile-grid-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+{{> event-tile-grid}}
+</div>
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> event-tile-grid}}</code></pre>
+{{/event-tile-grid-options.options}}

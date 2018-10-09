@@ -52,6 +52,10 @@
                   "img": "assets/docs/images/patterns/buttons.jpg",
                   "url": "patterns/buttons/index.html"
                 },
+                { "name": "Event tile grid",
+                  "img": "assets/docs/images/patterns/event-tile-grid.jpg",
+                  "url": "patterns/event-tile-grid/index.html"
+                },
                 { "name": "Featured media",
                   "img": "assets/docs/images/patterns/featured-media.jpg",
                   "url": "patterns/featured-media/index.html"

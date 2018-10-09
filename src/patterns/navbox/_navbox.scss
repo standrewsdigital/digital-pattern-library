@@ -3,13 +3,38 @@
 /*********************************/
 
 .navbox {
-	margin-bottom: 30px;
+	margin-bottom: 0;
     position: relative;
 
     img { 
         height: auto; 
         max-width: 100%; 
    }  
+}
+
+.navbox-grid {
+    padding: $page-gutter 0 $page-gutter-overflow 0; 
+    @include clearfix-alt; // alternate clearfix (utilities) to sort bootstrap floated elements
+
+    &.collapse-top {
+        padding-top: 0; // Option to remove top padding if required
+    }
+
+    &.collapse-bottom {
+        padding-bottom: 0; // Option to remove bottom padding if required
+    }
+
+    .navbox {
+        margin-bottom: 30px; // add bottom padding when part of a grid
+    }
+
+    .navbox + p {
+        margin-top: -15px !important; // reduce gap if followed by a p
+    }
+}
+.panel-grid + .navbox-grid,
+.navbox-grid + .navbox-grid {
+    padding-top: 0; // Remove extra gap when two grids ajoin
 }
 
 // .navbox-image img {
@@ -73,14 +98,13 @@
 
 .navbox-title:first-child:hover,
 .navbox:hover .navbox-title:first-child{
-	background: $sta-blue-hover;
+	background: $sta-cyan;
 }
 
-/* when a p tag immediately follows a navbox
-   tighten up the margin a bit. */
+/* when a element immediately follows a navbox add a top margin to it */
 
-.navbox + p {
-	margin-top: -20px;
+.navbox + * {
+	margin-top: 15px !important;
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
@@ -110,10 +134,6 @@
 }
 
 @media (max-width: 767px) {
-
-    .navbox {
-		margin-bottom: 1.5em;
-	}
 
 	.navbox-image {
         max-height: 100%;

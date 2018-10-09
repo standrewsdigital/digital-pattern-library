@@ -28,8 +28,13 @@ title: Sticky nav
 {{#sticky-nav-options.options}}
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
-{{{option-description}}}
-</div>{{> sticky-nav}}<div class="container">
+{{{option-description}}}    
+<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+	{{> sticky-nav}}
+</div>
+<div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> sticky-nav}}</code></pre>
 {{/sticky-nav-options.options}}

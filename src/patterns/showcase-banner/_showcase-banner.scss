@@ -3,7 +3,7 @@
 /*************************************/
 .showcase-banner {
 	color: white;
-	padding-top: 30px;
+	padding: $page-gutter 0;
 
 
 	&.sta-orange-1 {
@@ -57,6 +57,10 @@
 
 	h3 {
 		margin-top: 0;
+	}
+
+	.navbox {
+		margin-bottom:0; // Let the wrapper do the vertical spacing
 	}
 }
 

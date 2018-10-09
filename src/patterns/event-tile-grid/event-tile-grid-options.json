@@ -1,0 +1,175 @@
+{
+    "options": [
+
+        {
+            "option-heading": "Event tile grid",
+            "option-description": "",
+            "option-anchor": "event-tile-grid",  
+            "bg-color": "",
+            "heading": "Featured events",
+            "call-to-action": false,
+            "tiles": [
+                {
+                    "image": {
+                        "url-360x240": "docs/images/placeholders/360x240.png",
+                        "alt": "Description"
+                    },
+                    "title": "Piano Masterclass",
+                    "date-display" : "Tuesday 18 September 2018",
+                    "event-location" : "Younger Hall",
+                    "status" : ""
+                },
+                {
+                    "image": {
+                        "url-360x240": "docs/images/placeholders/360x240.png",
+                        "alt": "Description"
+                    },
+                    "title": "Bike to Work Breakfast",
+                    "date-display" : "Friday 21 September 2018",
+                    "event-location" : "Rector's Café",
+                    "status" : " cancelled"
+                }
+            ]
+        },
+
+        {
+            "option-heading": "Event tile grid with light grey background and call-to-action button",
+            "option-description": "",
+            "option-anchor": "event-tile-grid-cta",  
+            "bg-color": " light-grey",
+            "heading": "Featured events",
+            "single-call-to-action" : true,
+            "call-to-action": true,
+            "call-to-action-text": [
+                {
+                    "read-more-size": "col-xs-12 col-md-6 col-lg-4",
+                    "title": "See all events"
+                }
+            ],
+            "tiles": [
+                {
+                    "image": {
+                        "url-360x240": "docs/images/placeholders/360x240.png",
+                        "alt": "Description"
+                    },
+                    "title": "Piano Masterclass",
+                    "date-display" : "Tuesday 18 September 2018",
+                    "event-location" : "Younger Hall",
+                    "status" : ""
+                },
+                {
+                    "image": {
+                        "url-360x240": "docs/images/placeholders/360x240.png",
+                        "alt": "Description"
+                    },
+                    "title": "Bike to Work Breakfast",
+                    "date-display" : "Friday 21 September 2018",
+                    "event-location" : "Rector's Café",
+                    "status" : " cancelled"
+                },
+                {
+                    "image": {
+                        "url-360x240": "docs/images/placeholders/360x240.png",
+                        "alt": "Description"
+                    },
+                    "title": "Early Career Women Network Meet-up",
+                    "date-display" : "Monday 29 October 2018 to Tuesday 30 October 2018",
+                    "event-location" : "Hebdomadar's Room",
+                    "status" : ""
+                },
+                {
+                    "image": {
+                        "url-360x240": "docs/images/placeholders/360x240.png",
+                        "alt": "Description"
+                    },
+                    "title": "Choral Evensong",
+                    "date-display" : "Wednesday 7 November 2018",
+                    "event-location" : "St Salvator's Chapel",
+                    "status" : ""
+                }
+            ]
+        },
+
+        {
+            "option-heading": "Event tile grid with two call-to-action buttons",
+            "option-description": "",
+            "option-anchor": "event-tile-grid-ctas",  
+            "bg-color": "",
+            "heading": "Latest events",
+            "call-to-action": true,
+            "call-to-action-text": [
+                {
+                    "read-more-size": "col-xs-6 col-md-3",
+                    "title": "Featured"
+                },
+                {
+                    "read-more-size": "col-xs-6 col-md-3",
+                    "title": "Archive"
+                }
+            ],
+            "tiles": [
+                {
+                    "image": {
+                        "url-360x240": "docs/images/placeholders/360x240.png",
+                        "alt": "Description"
+                    },
+                    "title": "Piano Masterclass",
+                    "date-display" : "Tuesday 18 September 2018",
+                    "event-location" : "Younger Hall",
+                    "status" : ""
+                },
+                {
+                    "image": {
+                        "url-360x240": "docs/images/placeholders/360x240.png",
+                        "alt": "Description"
+                    },
+                    "title": "Bike to Work Breakfast",
+                    "date-display" : "Friday 21 September 2018",
+                    "event-location" : "Rector's Café",
+                    "status" : " cancelled"
+                },
+                {
+                    "image": {
+                        "url-360x240": "docs/images/placeholders/360x240.png",
+                        "alt": "Description"
+                    },
+                    "title": "Study Abroad Fair",
+                    "date-display" : "Wednesday 3 October 2018 to Friday 5 October 2018",
+                    "event-location" : "Students' Association",
+                    "status" : ""
+                },
+                {
+                    "image": {
+                        "url-360x240": "docs/images/placeholders/360x240.png",
+                        "alt": "Description"
+                    },
+                    "title": "An Introduction to The Alexander Technique with Heather Coates",
+                    "date-display" : "Saturday 6 October 2018",
+                    "event-location" : "Younger Hall",
+                    "status" : ""
+                },
+                {
+                    "image": {
+                        "url-360x240": "docs/images/placeholders/360x240.png",
+                        "alt": "Description"
+                    },
+                    "title": "Early Career Women Network Meet-up",
+                    "date-display" : "Monday 29 October 2018 to Tuesday 30 October 2018",
+                    "event-location" : "Hebdomadar's Room",
+                    "status" : ""
+                },
+                {
+                    "image": {
+                        "url-360x240": "docs/images/placeholders/360x240.png",
+                        "alt": "Description"
+                    },
+                    "title": "Choral Evensong",
+                    "date-display" : "Wednesday 7 November 2018",
+                    "event-location" : "St Salvator's Chapel",
+                    "status" : ""
+                }
+            ]
+        }
+
+    ]
+}

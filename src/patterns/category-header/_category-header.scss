@@ -17,6 +17,10 @@
         font-weight: normal;
         text-decoration: none;
     }
+
+    h2 a:hover {
+        text-decoration: underline;
+    }
 }
 
 #category-header .transparent-overlay {
@@ -24,15 +28,16 @@
     padding-bottom: 10px;
 
     h2 {
-        font-family: Georgia, serif;
+        font-family: 'PT Serif', georgia, serif;
         text-shadow: 1px 1px 1px rgb(68, 68, 68);
+        font-size: 35px;
     }
 }
 
 // This is for the old implementation of the pattern.
 #category-header > div > h2 {
     background-color: -dpl-color($palette-default,'secondary','transparent');
-    font-family: Georgia, serif;
+    font-family: 'PT Serif', georgia, serif;
     margin: 0 -100%;
     padding: 20px 100%;
     position: relative;

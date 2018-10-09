@@ -5,15 +5,15 @@
             "option-heading": "Tile grid with background image",
             "option-description": "<p>To add a background image, attach the image using an inline style, for example <code>&lt;div class=&quot;tile-grid&quot; style=&quot;background-image: url(path/to/image.jpg)&quot;&gt;</code>.</p><ul><li>The background image must be blurred, this can be done in Photoshop.</li><li>The background image must be large, this example is 2100 x 1400 pixels.</li></ul>",
             "option-anchor": "image-background",
-            "bg-color": "light-grey",
-            "heading": "What's happening in St Andrews",
+            "bg-color": "",
+            "heading": "Recent highlights",
             "call-to-action-text": [
                 {
-                    "read-more-size": "col-xs-6 col-md-3 col-lg-2",
+                    "read-more-size": "col-xs-6 col-md-3 col-lg-3",
                     "title": "News"
                 },
                 {
-                    "read-more-size": "col-xs-6 col-md-3 col-lg-2",
+                    "read-more-size": "col-xs-6 col-md-3 col-lg-3",
                     "title": "Events"
                 }
             ],
@@ -96,7 +96,9 @@
             "option-description": "<p>This is the default background.</p>",
             "option-anchor": "light-grey-background",
             "bg-color": "light-grey",
-            "heading-dark": "What's happening in St Andrews",
+            "heading": "What's happening in St Andrews",
+            "heading-color": " sta-grey",
+            "single-call-to-action" : true,
             "call-to-action-text": [
                 {
                     "read-more-size": "col-xs-12 col-md-6 col-lg-4",
@@ -182,7 +184,9 @@
             "option-description": "",
             "option-anchor": "white-background",
             "bg-color": "white",
-            "heading-dark": "What's happening in St Andrews",
+            "heading": "What's happening in St Andrews",
+            "heading-color": " sta-grey",
+            "single-call-to-action" : true,
             "call-to-action-text": [
                 {
                     "read-more-size": "col-xs-12 col-md-6 col-lg-4",

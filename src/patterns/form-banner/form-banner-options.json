@@ -3,7 +3,7 @@
         {
             "column-whole": true,
             "option-heading": "Search field",
-            "option-description": "For this example, search the word 'english' to see how the results are displayed.",
+            "option-description": "<p>For this example, search the word 'english' to see how the results are displayed.</p>",
             "option-anchor": "search-field",
             "background": "sta-blue-light",
             "heading": "Course search",
@@ -26,7 +26,7 @@
         {
             "column-whole": true,
             "option-heading": "Search field - light grey",
-            "option-description": "For this example, search the word 'english' to see how the results are displayed.",
+            "option-description": "<p>For this example, search the word 'english' to see how the results are displayed.</p>",
             "option-anchor": "search-field-grey",
             "background": "sta-grey-light",
             "heading": "Course search",
@@ -184,7 +184,7 @@
         {
             "column-thirds": true,
             "option-heading": "Search field (content thirds)",
-            "option-description": "For this example, search the word 'english' to see how the results are displayed.",
+            "option-description": "<p>For this example, search the word 'english' to see how the results are displayed.</p>",
             "option-anchor": "search-field-thirds",
             "column-background": "sta-blue-light",
             "heading": "Course search",
