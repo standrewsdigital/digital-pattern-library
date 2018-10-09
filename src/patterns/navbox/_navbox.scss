@@ -75,13 +75,8 @@
 	cursor: pointer;
 }
 
-.navbox-image:focus {
-    background-color: #ffbf47;
-    outline: 3px solid #ffbf47;
-}
-
 .navbox-title:hover, .navbox:hover .navbox-title{
-	background: $sta-cyan-T;
+	background: $sta-blue-T-hover;
 }
 
 .navbox-title p {
