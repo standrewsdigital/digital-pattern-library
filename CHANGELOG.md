@@ -7,6 +7,15 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 `Removed`, `Fixed`, and `Security`.
 ---
 
+## v1.14.1
+
+Release date: Tuesday 9 October 2018
+
+### Fixed
+* GitHub identified a security vulnerability in some of our dependencies at package-lock.json, Randomatic has been updated to the latest version.
+
+---
+
 ## v1.14.0
 
 Release date: Tuesday 9 October 2018
