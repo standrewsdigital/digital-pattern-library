@@ -87,17 +87,17 @@
         height: 100%;
         @media (min-width:380px){
             display: flex;
-            min-height: 120px;
-        }
-        @media (min-width: 576px){
-            min-height: 160px;
         }
 
         .featured-event__image {
             height: 140px;
             @media (min-width:380px){
                 height: auto;
+                min-height: 120px;
                 width: 40%;
+            }
+            @media (min-width: 576px){
+                min-height: 160px;
             }
             position: relative;
             overflow: hidden;
