@@ -1,16 +1,20 @@
-<nav>
+<nav aria-label="{{option-heading}}">
 {{#if pagination}}
-    <ul class="pagination {{ul-class}}">
-        <li {{#if disabled}}class="disabled"{{/if}}><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
-        <li {{#if active-1}}class="active"{{/if}}><a href="#">1</a></li>
+    <ul class="pagination{{ul-class}}">
+        <li{{#if disabled}} class="disabled"{{/if}}><a href="#"><span aria-hidden="true">&laquo;</span><span{{#if hide-button-labels}} class="sr-only"{{/if}}> Previous</span></a></li>
+        <li{{#if active-1}} class="active"{{/if}}><a href="#">1</a></li>
         <li><a href="#">2</a></li>
-        <li {{#if active-3}}class="active"{{/if}}><a href="#">3</a></li>
+        <li{{#if active-3}} class="active"{{/if}}><a href="#">3</a></li>
         <li><a href="#">4</a></li>
         <li><a href="#">5</a></li>
-        <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+        {{#if split-pager}}
+        <li><span>&hellip;</span></li>
+        <li><a href="#">17</a></li>
+        {{/if}}
+        <li><a href="#"><span{{#if hide-button-labels}} class="sr-only"{{/if}}>Next </span><span aria-hidden="true">&raquo;</span></a></li>
 {{else}}
     <ul class="pager">
-        <li {{#if disabled}}class="disabled"{{/if}}><a href="#">Previous</a></li>
+        <li{{#if disabled}} class="disabled"{{/if}}><a href="#">Previous</a></li>
         <li><a href="#">Next</a></li>
     </ul>
 {{/if}}
