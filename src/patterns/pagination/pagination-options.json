@@ -2,10 +2,10 @@
     "options": [
         {
             "option-heading": "Pagination",
-            "option-description": "<p>Pagination must be used on galleries, tables and search results that have multiple pages.</p>",
+            "option-description": "<p>Where space permits the 'Next' and 'Previous' button text should be shown alongside the arrows.</p>",
             "option-anchor": "pagination",
             "pagination": true,
-            "ul-class": "pagination-lg",
+            "ul-class": " pagination-lg",
             "active-3": true
         },
 
@@ -13,10 +13,10 @@
 
         {
             "option-heading": "Pagination with disabled and active states",
-            "option-description": "<p>Links are customisable for different circumstances. Use <code>.disabled</code> for unclickable links and <code>.active</code> to indicate the current page.</p>",
+            "option-description": "",
             "option-anchor": "disabled-active-pagination",
             "pagination": true,
-            "ul-class": "pagination-lg",
+            "ul-class": " pagination-lg",
             "disabled": true,
             "active-1": true
         },
@@ -24,17 +24,31 @@
 
 
         {
-            "option-heading": "Small pagination",
-            "option-description": "<p>This sizing must be used on internal web applications.</p>",
-            "option-anchor": "small-pagination",
-            "pagination": true
+            "option-heading": "Pagination with large number of pages",
+            "option-description": "<p>When there are a large amount of pages <code>&hellip;</code> should be used to signify any page links that are not immediately displayed.</p>",
+            "option-anchor": "large-results-pagination",
+            "pagination": true,
+            "ul-class": " pagination-lg",
+            "disabled": true,
+            "active-1": true,
+            "split-pager": true
+        },
+
+
+
+        {
+            "option-heading": "Compact pagination",
+            "option-description": "<p>A small, more compact, sizing that would be best used on internal web applications and mobile displays.</p>",
+            "option-anchor": "compact-pagination",
+            "pagination": true,
+            "hide-button-labels": true
         },
 
 
 
         {
             "option-heading": "Pager",
-            "option-description": "<p>Simple 'previous' and 'next' links for pagination implementations with light markup and styles. These can be used at the bottom of a blog post or news article to allow the user to proceed to another post.</p>",
+            "option-description": "<p>Simple 'Previous' and 'Next' links for pagination implementation use cases that need a linear navigation through adjoining results. For example these can be used at the bottom of a blog post or news article to allow the user to proceed to another post.</p>",
             "option-anchor": "pager"
         },
 
@@ -42,7 +56,7 @@
 
         {
             "option-heading": "Pager with disabled state",
-            "option-description": "<p>Pager links also use the general <code>disabled</code> utility class from the pagination. Disabled links are to be used when there is no preceeding or following pages to navigate to</p>",
+            "option-description": "<p>Pager links also use the general <code>disabled</code> utility class from the pagination. Disabled links are to be used when there is no preceeding or following pages to navigate to.</p>",
             "option-anchor": "disabled-pager",
             "disabled": true
         }
