@@ -5,6 +5,26 @@ This project adheres to [semantic versioning](http://semver.org/).
 
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
+
+
+---
+
+## v1.14.2
+
+Release date: Wednesday 24 October 2018
+
+### Fixed
+* Fix to padding on tables to set bootstrap variable.
+* Change form hint text to accessible colour contrast.
+* Event tile support for ie11.
+
+### Changed
+* Pagination pattern documentation.
+* Pagination options to include ellipsis and buttons with visible text.
+
+### Removed
+* Removed bottom margin on form banner pattern.
+
 ---
 
 ## v1.14.1
