@@ -138,9 +138,9 @@ $component-active-bg:       -dpl-color($palette-default,'primary','base');
 //## Customizes the `.table` component with basic values, each used across all table variations.
 
 //** Padding for `<th>`s and `<td>`s.
-$table-cell-padding:            4px;
+$table-cell-padding:            15px;
 //** Padding for cells in `.table-condensed`.
-$table-condensed-cell-padding:  2px;
+$table-condensed-cell-padding:  6px;
 
 //** Default background color used for all tables.
 $table-bg:                      transparent;
