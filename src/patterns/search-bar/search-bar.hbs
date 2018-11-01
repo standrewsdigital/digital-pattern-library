@@ -3,17 +3,29 @@
 <div class="search-bar{{#if background-color}} {{background-color}}{{/if}}">
 {{/if}}
 	<div class="container">
+		{{#if constrain-width}}
+		<div class="col-md-8">
+		<div class="row">
+		<div class="search-bar search-bar__constrained{{#if background-color}} {{background-color}}{{/if}}">
+		{{/if}}
 		{{#if search-header}}<h3 class="search-bar__heading">{{search-header}}</h3>{{/if}}
 		{{#if search-subtext}}<p class="search-bar__sub-heading">{{search-subtext}}</p>{{/if}}
 	    <form class="dpl-form" action="">
+	    	{{#if search-button}}
 	        <div class="input-group input-group-lg">
+	        {{/if}}
+            {{#if results}}
+            <div class="form-group">
+	        {{/if}}
 	            {{#if title}}<span class="input-group-addon search-bar__inline-title">{{title}}</span>{{/if}}
 	            <input id="{{input-id}}" class="form-control" type="text" title="Enter search keywords" maxlength="256" name="search" placeholder="{{placeholder}}">
+	        {{#if search-button}}
 	            <span class="input-group-btn">
 	                <button class="btn btn-primary" value="Search" type="submit">
 	                    <i class="fa fa-search" title="Search"></i>
 	                </button>
 	            </span>
+	        {{/if}}
 	        </div>
 	        {{#if search-tags}}
 	        <div class="results">
@@ -22,6 +34,14 @@
 	    		</div>
 	        </div>
 	        {{/if}}
+            {{#if results}}
+            <div class="results results__box">
+            	<div class="row">
+                	<div class="col-md-6 left-column"></div>
+                    <div class="col-md-6 right-column"></div>
+                </div>
+            </div>
+            {{/if}}
 	    </form>
 	    {{#if horizontal-list}}
 	    <div class="horizontal-list">
@@ -56,6 +76,11 @@
 	            <li><a href="#">Advanced search</a></li>
 	        </ul>
     	</div>
+	   {{/if}}
+		{{#if constrain-width}}
+			</div>
+		</div>
+		</div>
 	   {{/if}}
 	</div>
 {{#if full-width}}

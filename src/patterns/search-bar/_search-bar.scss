@@ -12,6 +12,23 @@
 		.btn {
 			margin: 0 $small-spacing $small-spacing 0;
 		}
+
+		&.results__box {
+			// Show results in a box
+			background: #fff;
+			color: $gray-dark; // Ensure it doesn't inherit the white from blue banner
+			padding: $half-gutter;
+
+			// These should change to classes
+			h2 {
+				margin-top: 0;
+			}
+
+			a {
+				display: inherit;
+				margin-bottom: 15px;
+			}
+		}
 	}
 
 	&.search-bar__grey {
@@ -21,6 +38,11 @@
 	&.search-bar__blue {
 		background-color: $sta-blue-light;
 		color: #fff;
+	}
+
+	&.search-bar__constrained {
+		// Now boxed in so change padding
+		padding: $half-gutter;
 	}
 } 
 
