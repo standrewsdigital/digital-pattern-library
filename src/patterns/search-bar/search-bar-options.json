@@ -2,33 +2,91 @@
     "options" : [
         {
             "option-heading": "Search bar",
-            "option-description": "<p>The standalone search bar must only appear as part of the <a href='../header/index.html'>header</a> pattern.</p>",
+            "option-description": "<p>The standalone search bar element is the minimum implementaton for a search form.</p><ul><li>The search bar must only appear as part of the <a href='../header/index.html'>header</a> pattern.</li><li>The placeholder text must indicate the scope of what will be searched.</li></ul>",
             "option-anchor": "search-bar-default",
-            "placeholder": "Search the University website...",
+            "placeholder": "Search the University website",
             "default": true,
             "input-id": "default-search"
         },
         {
             "option-heading": "Search banner",
-            "option-description": "<ul><li>The search banner may be used on the body section of a webpage.</li><li>The search banner must not be used directly below the <a href='../navigation-bar/index.html'>navigation bar</a> pattern.</li><li>It is recommended that the search banner appears directly above the <a href='../footer/index.html'>footer</a> pattern if included on the main body of a webpage.</li></ul>",
+            "option-description": "<p>The search banner is used to prominently feature a search form on the page.</p><ul><li>The search banner may be used on the body section of a webpage.</li><li>The background colour must either be light grey or light blue.</li><li>There must be an associated heading introducing the search.</li><li>An optional sub-heading may also be included to give additional context to the search.</li><li>Placeholder text should be used to indicate the recommended type of search query.</li></ul>",
             "option-anchor": "search-banner",
-            "background-color": "search-banner-grey",
+            "background-color": "search-bar__grey",
             "full-width": true,
-            "title": "Search posts",
-            "placeholder": "Search...",
+            "placeholder": "Search by keyword or phrase",
+            "search-header": "News search",
+            "search-subtext": "Search through our entire news archive",
             "input-id": "banner-search"
+         },
+        {
+            "option-heading": "Search banner (light blue)",
+            "option-description": "<p>The search banner option with the light blue background applied. This is achieved by replacing the class <code>search-bar__grey</code> with  <code>search-bar__blue</code>.</p>",
+            "option-anchor": "search-banner-blue",
+            "background-color": "search-bar__blue",
+            "full-width": true,
+            "placeholder": "Search by keyword or phrase",
+            "search-header": "News search",
+            "search-subtext": "Search through our entire news archive",
+            "input-id": "banner-search-blue"
+         },
+        {
+            "option-heading": "Search banner with additional links",
+            "option-description": "<p>The search banner option can be extended to include additional supporting links, such as a link to an advanced search.</p><ul><li>The links must be associated with the search functionality.</li><li>A suitable heading should be used to introduce the list of links. This will visible to screen readers at all sizes and will also function as a collapsed menu toggle on smaller displays.</li><li>If the number of links wrap on to more than one line consider condensing this list into groups using the <a href=\"#search-banner-group-links\">search banner with additional grouped links</a> option.</ul>",
+            "option-anchor": "search-banner-links",
+            "background-color": "search-bar__grey",
+            "full-width": true,
+            "horizontal-list-links": true,
+            "placeholder": "Search by keyword or phrase",
+            "search-header": "News search",
+            "search-subtext": "Search through our entire news archive",
+            "input-id": "banner-search-links"
+         },
+        {
+            "option-heading": "Search banner with additional grouped links",
+            "option-description": "<p>Additional links can be grouped into categories to limit the number that are initially shown. This is useful in situations where the links would otherwise wrap on to more than one line or some links warrant more importance than others.</p>",
+            "option-anchor": "search-banner-group-links",
+            "background-color": "search-bar__grey",
+            "full-width": true,
+            "horizontal-list": true,
+            "placeholder": "Search by keyword or phrase", 
+            "search-header": "Find an event",
+            "search-subtext": "Search through our entire event calendar",
+            "input-id": "banner-search-group-links"
          },
          {
             "option-heading": "Search banner with tag buttons",
-            "option-description": "<ul><li>The search banner with tag buttons option must only pull results from the child pages.</li><li>Only tag buttons must be used with the search banner with tag buttons option.</li></ul><p>For this example, search 'St Andrews' to see how the tag buttons are displayed.</p>",
+            "option-description": "<ul><li>The search banner with tag buttons option must only pull results from the child pages.</li><li>Only tag buttons must be used with the search banner with tag buttons option.</li><li>There must be an associated heading introducing the search.</li><li>An optional sub-heading may also be included to give additional context to the search.</li><li>Placeholder text should be used to indicate the recommended type of search query.</li></ul><p>For this example, search 'St Andrews' to see how the tag buttons are displayed.</p>",
             "option-anchor": "search-banner-tags",
             "search-tags": true,
             "full-width": true,
-            "background-color": "search-banner-grey",
-            "placeholder": "Search...",
+            "background-color": "search-bar__grey",
+            "placeholder": "Start typing to receive suggested search terms",
             "search-header": "News search",
             "search-subtext": "Search through our entire news archive",
             "input-id": "news-search"
+         },
+         {
+            "option-heading": "Search banner with tag buttons (light blue)",
+            "option-description": "<ul><li>The search banner with tag buttons option must only pull results from the child pages.</li><li>Only tag buttons must be used with the search banner with tag buttons option.</li><li>There must be an associated heading introducing the search.</li><li>An optional sub-heading may also be included to give additional context to the search.</li><li>Placeholder text should be used to indicate the recommended type of search query.</li></ul><p>For this example, search 'St Andrews' to see how the tag buttons are displayed.</p>",
+            "option-anchor": "search-banner-tags-blue",
+            "search-tags": true,
+            "full-width": true,
+            "background-color": "search-bar__blue",
+            "placeholder": "Start typing to receive suggested search terms",
+            "search-header": "News search",
+            "search-subtext": "Search through our entire news archive",
+            "input-id": "news-search"
+         },
+        {
+            "option-heading": "Inline search banner",
+            "option-description": "<ul><li>The inline search banner may be used on the body section of a webpage.</li><li>The inline search banner must not be used directly below the <a href='../navigation-bar/index.html'>navigation bar</a> pattern.</li><li>It is recommended that the inline search banner appears directly above the <a href='../footer/index.html'>footer</a> pattern if included on the main body of a webpage.</li><li>There must be an associated title introducing the search.</li><li>Placeholder text should be used to indicate the recommended type of search query.</li><li>The heading and sub-heading elements must not be used with this option.</li></ul>",
+            "option-anchor": "search-banner-inline",
+            "background-color": "search-bar__grey",
+            "full-width": true,
+            "title": "Search posts",
+            "placeholder": "Search by keyword or phrase",
+            "input-id": "banner-search-inline"
          }
     ]
 }

@@ -1,32 +1,258 @@
 /*********************************/
 /* BEGIN Pattern: search-bar  */
 /*********************************/
-#search-bar { 
-	padding: 50px 0;
+.search-bar { 
+	padding: $page-gutter 0;
+	
 	
 	.results {
-		margin-top: 15px;
+		margin-top: $base-spacing;
 		display: none;
 		
 		.btn {
-			margin: 5px;
+			margin: 0 $small-spacing $small-spacing 0;
 		}
+	}
+
+	&.search-bar__grey {
+		background-color: $sta-grey-light;
+	}
+
+	&.search-bar__blue {
+		background-color: $sta-blue-light;
+		color: #fff;
 	}
 } 
 
-div.search-banner-grey {
-	background-color: $sta-grey-light;
+.search-bar__heading {
+	font-size: 30px;
+	margin-bottom: 6px;
+	margin-top: 0;
 }
 
-span.search-bar-title {
-	border: none; 
-	background-color: transparent; 
-	padding-left: 0;
+.search-bar__sub-heading {
+	font-size: 21px;
 }
 
-#search-title {
-	text-align: center;
+.search-bar__inline-title {
+	background: none;
+	border: none;
+	color: inherit;
 }
+
+// Horizontal list - currently tied to just search banner but should be part of splitting out to smaller components in DPLv2
+.horizontal-list {
+	display: inline-block;
+	float: left;
+	margin-top: 10px;
+
+	&.horizontal-list--right {
+		float: right;
+	}
+
+	@media (max-width: 767px){
+		display: block;
+		float: none;
+	}
+
+	h4 {
+		@media (max-width: 767px){
+		// Dropdown toggle on smaller displays
+
+		  	@include -dpl-transition();
+		    background-color: #00539b;
+		    color: white;
+		    cursor: pointer;
+		    font-size: 24px;
+		    margin-bottom: 0;
+		    padding: 10px 15px;
+
+
+			&:hover {
+			    background-color: #004077;
+			}
+
+			&:before {
+			    //@extend i.chevron;
+				position: relative;
+			    display: inline-block;
+			    -webkit-transition: all 200ms ease-out;
+			    -moz-transition: all 200ms ease-out;
+			    transition: all 200ms ease-out;
+			    top: 2px;
+			    height: .9em;
+			    width: 0.9em;
+			    margin: auto;
+			    background: url('https://www.st-andrews.ac.uk/~cdn/dpl/1.12.3/images/furniture/chevron@2x.png') no-repeat;
+			    background-size: contain;
+			    background-position: left center;
+				// end of hardwired chevron
+
+
+			    @include rotate(180deg);
+			    content: '';
+			    float: right;
+			    height: 20px !important;
+			    top: 3px;
+			    width: 17px !important;
+			}
+
+			&.open:before {
+			    @include rotate(90deg);
+			}
+
+
+		}
+
+		@media (min-width: 768px){
+		// Hide on larger displays
+		// Taken from bootstrap sr-only class
+		// Should be moved to utility placeholder in DPL so it can be extended based on media queries
+			
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			margin: -1px;
+			padding: 0;
+			overflow: hidden;
+			clip: rect(0,0,0,0);
+			border: 0;
+		}
+	}
+
+	> ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		@media (max-width: 767px){
+			background: #fff;
+			border: 1px solid rgba(#000,0.15);
+			border-top: none;
+			display: none;
+		}
+
+		@media (min-width: 768px){
+			display: block !important; // Always visible on large displays
+		}
+
+		> Li {
+			
+			// Vertical on smaller displays
+			@media (max-width: 767px){
+				a {
+					border-top: 1px solid rgba(#000,0.15);
+					display: block;
+					padding: 10px 15px;
+					text-align: center;
+
+					&:hover,
+					&:focus {
+						background-color: #f5f5f5;
+					}
+				}
+			}
+
+			// Horizontal on larger displays
+			@media (min-width: 768px){
+				float:left;
+				margin-left: 10px;
+
+				&:before {
+					content: '|';
+					float: left;
+					margin-right: 10px;
+					opacity: 0.4;
+				}
+
+				&:first-child {
+					margin-left: 0;
+
+					&:before {
+						content: '';
+						margin-right: 0;
+					}
+				}
+
+
+				a {
+					color: inherit;
+					float: left;
+					font-weight: normal;
+					text-decoration: underline;
+				}
+			}
+			// Dropdown elements - specific to this pattern
+
+			&.dropdown-wrapper {
+				display: block;
+				position: relative;
+				
+				// Style for open dropdowns
+				&.open {
+					.dropdown-toggle {
+						text-decoration: none;
+					
+						.caret {
+							transform: rotate(180deg); // DPL - move to mixin
+						}
+					}
+				}
+
+			}
+
+			.dropdown-toggle {
+				.caret {
+					margin-left: 8px;
+					
+					// Discount caret width for centred text on small displays
+					@media (max-width: 767px){
+						margin-right: -16px;
+					}
+				}
+			}
+
+			.dropdown-menu {
+				@media (max-width: 767px){
+					float: none;
+					margin: 0;
+					padding: 0;
+					position: relative;
+					box-shadow: none;
+					width: 100%;
+				}
+				@media (min-width: 768px){
+
+				}
+					font-size: 16px;
+					min-width: 260px;
+
+					li {
+						float: none;
+						margin-left: 0;
+
+						a {
+							float: none;
+							text-decoration: none;
+							white-space: normal;
+							border: none;
+						}
+					}
+			}
+
+			// Right align dropdown on rightmost menu item
+			&:last-child {
+				.dropdown-menu {
+					left: auto;
+					right: 0;
+				}
+			}
+			
+		}
+
+	}
+}
+
 /*********************************/
 /* END Pattern: search-bar    */
 /*********************************/
