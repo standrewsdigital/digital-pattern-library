@@ -1,0 +1,56 @@
+
+/*********************************/
+/* BEGIN Pattern: alerts         */
+/*********************************/
+
+.alert {
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 5px solid transparent;
+    border-radius: 0px;
+}
+
+.alert-success a {
+    color: $sta-green;
+}
+
+.alert-info a {
+    color: $sta-blue-light;
+}
+
+.alert-warning a {
+    color: $sta-orange;
+}
+
+.alert-danger a {
+    color: $sta-red;
+}
+
+.alert-success {
+    background-color: white;
+    border-color: $sta-green;
+    color: #444444;
+}
+
+.alert-info {
+    background-color: white;
+    border-color: $sta-blue-light;
+    color: #444444;
+}
+
+.alert-warning {
+    background-color: white;
+    border-color: $sta-orange;
+    color: #444444;
+}
+
+.alert-danger {
+    background-color: white;
+    border-color: $sta-red;
+    color: #444444;
+}
+
+
+/*********************************/
+/* END Pattern: alerts           */
+/*********************************/

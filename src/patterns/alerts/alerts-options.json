@@ -5,7 +5,7 @@
             "option-description": "<p>Use the class <code>.alert-success</code> for a success alert box. This alert box indicates a successful or positive action, such as successfully submitting a form.</p>",
             "option-anchor": "alert-success",
             "alert-class": "alert-success",
-            "alert-message": "Thank you for submitting your details. If you have any questions please email <a href='mailto:#' class='alert-link'>example@st-andrews.ac.uk</a>."
+            "alert-message": "<h3>Thank you!</h3>Thank you for submitting your details. If you have any questions please email <a href='mailto:#'>example@st-andrews.ac.uk</a>."
          },
 
 
@@ -16,7 +16,7 @@
             "option-description": "<p>Use the class <code>alert-info</code> for an info alert box. This alert box indicates neutral information or a neutral action, such as a recommendation or an update.</p>",
             "option-anchor": "alert-info",
             "alert-class": "alert-info",
-            "alert-message": "<strong>Heads up!</strong> We recommend that you apply soon for a place on our <a href='#' class='alert-link'>poetry course</a>."
+            "alert-message": "<h3>Did you know?</h3>University of St Andrews was founded over 600 years ago? Find out more about the <a href='#'>history of St Andrews</a>."
           },
 
 
@@ -27,7 +27,7 @@
             "option-description": "<p>Use the class <code>alert-warning</code> for a warning alert box. This alert box indicates a warning that might need attention or carries a time limit, such as impending application deadlines.</p>",
             "option-anchor": "alert-warning",
             "alert-class": "alert-warning",
-            "alert-message": "<strong>Warning!</strong> The deadline for submissions is the end of Semester 2. If you need help, please email <a href='mailt:#' class='alert-link'>example@st-andrews.ac.uk</a>."
+            "alert-message": "<h3>Warning!</h3>The deadline for submissions is the end of Semester 2. If you need help, please email <a href='mailt:#'>example@st-andrews.ac.uk</a>."
           },
 
 
@@ -38,7 +38,7 @@
             "option-description": "<p>Use the class <code>alert-danger</code> for a danger alert box. This alert box indicates a dangerous or potentially negative action such as closures or expired deadlines.</p>",
             "option-anchor": "alert-danger",
             "alert-class": "alert-danger",
-            "alert-message": "<strong>Warning!</strong> The deadline for submissions has passed. If you need help please email <a href='mailto:#' class='alert-link'>example@st-andrews.ac.uk</a>."
+            "alert-message": "<h3>Submissions have ended</h3>The deadline for submissions has passed. If you need help please email <a href='mailto:#'>example@st-andrews.ac.uk</a>."
           }
 
 
