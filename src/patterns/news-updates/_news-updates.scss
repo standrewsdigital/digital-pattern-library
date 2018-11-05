@@ -3,7 +3,13 @@
 /* BEGIN Pattern: news-updates    */
 /**********************************/
 
-.news-updates {
+.news-updates {    
+
+    .read-more {
+        a {
+            margin-bottom: 30px;
+        }
+    }
 
     .no-gutter { //collapse gutters on nested bootstrap columns
         padding: 0;
