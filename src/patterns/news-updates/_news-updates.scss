@@ -101,8 +101,13 @@
     }
 
     &.news-updates--case-studies {
+
+        padding: $page-gutter 0; // Add padding to block
+
         h3 {
             font-size: 2.5em;
+            margin: 0 0 15px 0;
+            padding: 0;
 
             @media (max-width: 767px) {
                 font-size: 1.8em;
@@ -118,8 +123,15 @@
             line-height: 1.1;
         }
 
-        .news-updates__article-link {
-            margin-bottom: 32px;
+        .news-updates__secondary {
+            margin: 32px 0 0 0;
+            
+            // Remove top margin when not full width
+            &:first-child {
+                @media (min-width: 992px){
+                    margin-top:0;
+                }
+            }
         }
     }
 }
