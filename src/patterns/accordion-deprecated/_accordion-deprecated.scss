@@ -1,0 +1,49 @@
+/*********************************/
+/* BEGIN Pattern: accordion      */
+/*********************************/
+
+.accordion > h3 {
+    @include -dpl-transition();
+    background-color: $sta-blue;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.accordion > h3:hover {
+    background-color: $sta-blue-hover;
+}
+
+.accordion > h3:before {
+    @extend i.chevron;
+    @include rotate(180deg);
+    content: '';
+    float: right;
+    height: 20px !important;
+    top: 3px;
+    width: 17px !important;
+}
+
+.accordion > h3.open:before {
+    @include rotate(90deg);
+}
+
+.accordion > div {
+    display: none;
+}
+
+// The following styles give us backwards compatibility with the
+// old code for accordions.
+
+.accordion h3 i.chevron {
+    display: none;
+}
+
+.accordion h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*********************************/
+/* END Pattern: accordion        */
+/*********************************/

@@ -1,7 +1,7 @@
 /*********************************/
 /* BEGIN Pattern: accordion      */
 /*********************************/
-/*
+
 var increment = 0;
 
 $('.accordion').each(function() {
@@ -36,7 +36,7 @@ $('.accordion > h3').click(function() {
     $(this).next('div').attr('aria-hidden', !state);
     return false; // disable default event.
 });
-*/
+
 /*********************************/
 /* END Pattern: accordion        */
 /*********************************/

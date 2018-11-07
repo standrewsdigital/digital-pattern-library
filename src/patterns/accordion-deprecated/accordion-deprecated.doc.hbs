@@ -1,0 +1,37 @@
+---
+title: Accordion
+---
+<div class="alert alert-warning"><h3>Attention</h3><p>This old method of implementing the accordion pattern is deprecated and will be removed in a future version of the digital pattern library. Please refer to the <a href"../accordion/index.html">current accordion pattern</a> for the correct method.</p></div>
+<p>The accordion pattern presents an expandable and collapsible section of content. Accordions shorten pages and reduce scrolling, but they require users to click on topic headings to find information. Therefore, accordions should be used sparingly. For more information see the <a href="https://www.nngroup.com/articles/accordions-complex-content/"> Nielsen Norman Group report on accordion usability</a>.</p>
+
+<h3>Rules for accordions</h3>
+<ul>
+	<li>Must not be used when your audience needs most or all of the content on the page to answer their questions. It is better to show all page content at once when the user case supports it. In such cases, do not worry about page length.</li>
+	<li>May be used when only one option is relevant to the user e.g. UK, Europe, USA.</li>
+	<li>May be used where you want to step a user through a process e.g. step 1, step 2, step 3.</li>
+	<li>The content within accordions must not contain any headings.</li>
+	<li>May be used anywhere in a content section.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#accordion-deprecated-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/accordion-deprecated-options.options}}
+</ul>
+
+{{#accordion-deprecated-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+	<div class="container">
+	{{> accordion-deprecated}}
+	</div>
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> accordion-deprecated}}</code></pre>
+{{/accordion-deprecated-options.options}}
