@@ -2,10 +2,28 @@
     "options": [
         {
             "option-heading": "Single accordion",
-            "option-description": "",
+            "option-description": "<p>Consider if the content would be better visible at all times before using a single accordion to hide it from the user.</p>",
             "option-anchor": "single",
             "accordion": [
                 {
+                    "accordion-wrapper-start": "<div class='accordion'>",
+                    "accordion-wrapper-end": "</div>",
+                    "accordion-heading-class":"class='accordion__heading'",
+                    "accordion-heading":"Divinity",
+                    "accordion-content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac rutrum tellus, quis porttitor urna. Donec ultricies libero erat, id efficitur risus blandit nec. Donec et ipsum in dui blandit rutrum. Praesent rhoncus lobortis ligula, viverra tincidunt ante lobortis at. Sed vehicula luctus quam sit amet lacinia. Sed eu nulla vel ex tempus accumsan in sit amet metus. Vestibulum a venenatis mi. Ut ac semper arcu."
+                }
+            ]
+        },
+
+
+        {
+            "option-heading": "Single accordion - deprecated",
+            "option-description": "<div class='alert alert-warning'><h3>Attention</h3><p>This implementation is now deprecated and will be removed in a future release.</p></div><p>Consider if the content would be better visible at all times before using a single accordion to hide it from the user.</p>",
+            "option-anchor": "single-deprecated",
+            "accordion": [
+                {
+                    "accordion-wrapper-start": "<div class='accordion'>",
+                    "accordion-wrapper-end": "</div>",
                     "accordion-heading":"Divinity",
                     "accordion-content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac rutrum tellus, quis porttitor urna. Donec ultricies libero erat, id efficitur risus blandit nec. Donec et ipsum in dui blandit rutrum. Praesent rhoncus lobortis ligula, viverra tincidunt ante lobortis at. Sed vehicula luctus quam sit amet lacinia. Sed eu nulla vel ex tempus accumsan in sit amet metus. Vestibulum a venenatis mi. Ut ac semper arcu."
                 }
@@ -16,23 +34,31 @@
 
 
         {
-            "option-heading": "Multiple accordions",
-            "option-description": "",
-            "option-anchor": "multiple",
+            "option-heading": "Multiple accordions - deprecated",
+            "option-description": "<div class='alert alert-warning'><h3>Attention</h3><p>This implementation is now deprecated and will be removed in a future release.</p></div>",
+            "option-anchor": "multiple-deprecated",
             "accordion": [
                 {
+                    "accordion-wrapper-start": "<div class='accordion'>",
+                    "accordion-wrapper-end": "</div>",
                     "accordion-heading":"Divinity",
                     "accordion-content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac rutrum tellus, quis porttitor urna. Donec ultricies libero erat, id efficitur risus blandit nec. Donec et ipsum in dui blandit rutrum. Praesent rhoncus lobortis ligula, viverra tincidunt ante lobortis at. Sed vehicula luctus quam sit amet lacinia. Sed eu nulla vel ex tempus accumsan in sit amet metus. Vestibulum a venenatis mi. Ut ac semper arcu."
                 },
                 {
+                    "accordion-wrapper-start": "<div class='accordion'>",
+                    "accordion-wrapper-end": "</div>",
                     "accordion-heading":"Geography",
                     "accordion-content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac rutrum tellus, quis porttitor urna. Donec ultricies libero erat, id efficitur risus blandit nec. Donec et ipsum in dui blandit rutrum. Praesent rhoncus lobortis ligula, viverra tincidunt ante lobortis at. Sed vehicula luctus quam sit amet lacinia. Sed eu nulla vel ex tempus accumsan in sit amet metus. Vestibulum a venenatis mi. Ut ac semper arcu."
                 },
                 {
+                    "accordion-wrapper-start": "<div class='accordion'>",
+                    "accordion-wrapper-end": "</div>",
                     "accordion-heading":"History",
                     "accordion-content": "Morbi pellentesque, mauris nec porta laoreet, neque magna tempor eros, eget suscipit tellus purus nec ligula. In accumsan turpis eu porttitor tempus. Praesent rutrum quam id felis consequat, et mattis elit laoreet. Nunc maximus, dui vitae tincidunt elementum, elit tortor mattis quam, ut sodales arcu lectus eu nisi. Phasellus tincidunt at risus nec fringilla. Nunc ultricies nisl sodales, vestibulum nunc in, vulputate nisl. Vestibulum lacinia auctor hendrerit. Sed in lectus dapibus, volutpat justo vel, pellentesque ipsum. Vivamus vitae metus euismod, vestibulum odio eu, elementum quam."
                 },
                 {
+                    "accordion-wrapper-start": "<div class='accordion'>",
+                    "accordion-wrapper-end": "</div>",
                     "accordion-heading":"Physics",
                     "accordion-content": "Quisque porttitor nisi sed justo posuere, ut sagittis lectus sodales. Proin tempus posuere libero. Quisque mauris ex, commodo vel finibus eu, iaculis id risus. Aenean id lorem vel lectus varius hendrerit vehicula quis sapien. Vestibulum non accumsan ante, et ullamcorper massa. In dictum mauris non accumsan gravida. Aliquam tortor mi, porttitor non feugiat eu, fermentum id magna. Nunc ornare mi risus, a cursus dui commodo at.</p><p>Nullam non interdum mauris, quis molestie sem. Proin aliquam purus vel pellentesque mollis. Curabitur vitae augue at velit sollicitudin consequat. Donec id convallis dui. Donec fringilla non justo at hendrerit. Proin dictum viverra cursus. Etiam eu viverra dui, at convallis diam. Donec finibus ut sapien ac dignissim. Nullam pulvinar mollis efficitur."
                 }

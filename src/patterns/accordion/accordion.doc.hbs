@@ -2,8 +2,6 @@
 title: Accordion
 ---
 
-<div class="alert alert-info">The accordion pattern is backwards-compatible with previous implementations used on the Study at St Andrews website &ndash; see <a href="#old-accordion">old-accordion example</a>, below. This support will be removed at some point, so please do not use the old accordion markup.</div>
-
 <p>The accordion pattern presents an expandable and collapsible section of content. Accordions shorten pages and reduce scrolling, but they require users to click on topic headings to find information. Therefore, accordions should be used sparingly. For more information see the <a href="https://www.nngroup.com/articles/accordions-complex-content/"> Nielsen Norman Group report on accordion usability</a>.</p>
 
 <h3>Rules for accordions</h3>
@@ -13,8 +11,6 @@ title: Accordion
 	<li>May be used where you want to step a user through a process e.g. step 1, step 2, step 3.</li>
 	<li>The content within accordions must not contain any headings.</li>
 	<li>May be used anywhere in a content section.</li>
-	<li>Must not be used on a homepage.</li>
-	<li>Must not be used in an aside.</li>
 </ul>
 
 <h3>Options available</h3>
@@ -39,26 +35,3 @@ title: Accordion
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> accordion}}</code></pre>
 {{/accordion-options.options}}
-
-<hr>
-<h3 id="old-accordion">Old accordion</h3>
-<p>Old accordion pattern used to test backwards-compatibility; do not use this HTML in new sites.</p>
-	<span class="label label-default">Example</span>
-</div>
-<div class="pattern-wrapper">
-	<div class="container">
-		<div class="accordion">
-		    <h3><a class="toggleLink" href="#"><i class="chevron"></i>MLitt, MRes, MSc</a></h3>
-		    <div class="toggle">
-		       <p>Quisque porttitor nisi sed justo posuere, ut sagittis lectus sodales. Proin tempus posuere libero. Quisque mauris ex, commodo vel finibus eu, iaculis id risus. Aenean id lorem vel lectus varius hendrerit vehicula quis sapien. Vestibulum non accumsan ante, et ullamcorper massa. In dictum mauris non accumsan gravida. Aliquam tortor mi, porttitor non feugiat eu, fermentum id magna. Nunc ornare mi risus, a cursus dui commodo at.</p>
-		    </div>
-		</div>
-	</div>
-</div>
-<div class="container">
-<span class="label label-default">Code</span>
-<pre><code class="pattern-source html"><h3><a class="toggleLink" href="#"><i class="chevron"></i>MLitt, MRes, MSc</a></h3>
-<div class="toggle">
-   <p>Quisque porttitor nisi sed justo posuere, ut sagittis lectus sodales. Proin tempus posuere libero. Quisque mauris ex, commodo vel finibus eu, iaculis id risus. Aenean id lorem vel lectus varius hendrerit vehicula quis sapien. Vestibulum non accumsan ante, et ullamcorper massa. In dictum mauris non accumsan gravida. Aliquam tortor mi, porttitor non feugiat eu, fermentum id magna. Nunc ornare mi risus, a cursus dui commodo at.</p>
-</div>
-</code></pre>
