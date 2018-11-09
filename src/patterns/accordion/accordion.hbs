@@ -1,8 +1,24 @@
 <!-- Begin pattern: accordion //-->
+{{#if accordion-group}}
+<ul class="accordion-group">
+{{/if}}
 {{#each accordion}}
-{{{accordion-wrapper-start}}}
-    <h3 aria-expanded="false" aria-controls="" role="tab" tabindex="0"{{{accordion-heading-class}}}>{{accordion-heading}}</h3>
-    <div id="" aria-hidden="true" role="tabpanel"><p>{{accordion-content}}</p></div>
-{{{accordion-wrapper-end}}}
+{{{../accordion-item-open}}}
+	<div class="accordion-item__toggle">
+		<h3 class="accordion-item__toggle-title">
+	    	<button class="accordion-item__toggle-button" aria-expanded="false" aria-controls="">{{accordion-heading}}</button>
+	    </h3>
+	    {{#if accordion-intro}}
+	    <p class="accordion-item__toggle-intro">{{accordion-intro}}</p>
+	    {{/if}}	
+	    {{#each accordion-keyfacts}}
+	    <span class="accordion-item__toggle-keyfact"><i class="{{keyfact-icon}}" aria-hidden="true"></i>{{keyfact-text}}</span>
+	    {{/each}}	
+	</div>
+	<div class="accordion-item__content" id="" aria-hidden="true">{{{accordion-content}}}</div>
+{{{../accordion-item-close}}}
 {{/each}}
+{{#if accordion-group}}
+</ul>
+{{/if}}
 <!-- End pattern: accordion //-->
