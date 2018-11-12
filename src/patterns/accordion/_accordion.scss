@@ -3,13 +3,13 @@
 /*********************************/
 
 .accordion-item {
-    background: white;
     border-top: 1px solid $sta-grey;
     border-bottom: 1px solid $sta-grey;
     margin-bottom:25px;
 }
 
 .accordion-group {
+    clear: both;
     list-style: none;
     margin: 0 0 25px 0;
     padding: 0;
@@ -21,6 +21,16 @@
     .accordion-item + .accordion-item {
         border-top: 0;
     }
+}
+
+.accordion-group__toggle {
+    background: none;
+    border: 0;
+    color: $sta-blue;
+    float: right;
+    margin:0 0 10px 0;
+    padding: 0;
+    text-decoration: underline;
 }
 
 .accordion-item__toggle {
