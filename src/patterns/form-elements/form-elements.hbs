@@ -47,39 +47,39 @@
 <fieldset>
 <legend>{{field-legend}}</legend>
 {{/if}}
-{{#each columns}}
-<div class="row">
-	<div class="{{column-size}}">
-		<div class="form-group">
-			{{#if wrapper}}<div class="{{wrapper}}">{{/if}}
-			{{#each input}}
-				<label class="form-label" for="{{input-id}}">{{label-text}}</label>
-				{{#if hint}}<span class="help-block">{{hint}}</span>{{/if}}
-				{{#if input-addon}}<div class="input-group">{{/if}}
-				{{#if addon-before}}<div class='input-group-addon'>{{{addon-before}}}</div>{{/if}}
-				{{#if textarea}}
-				<textarea class="{{class}}" rows="3" id="{{input-id}}" name="{{input-id}}" {{#if counter}}data-length="{{counter}}"{{/if}}></textarea>
-				{{#if counter}}<div class="textarea_feedback"></div>{{/if}}
-				{{else}}
-				<input type="{{type}}" id="{{input-id}}" class="{{input-class}}" name="{{input-id}}" value="{{input-value}}">
-				{{/if}}
-				{{#if addon-after}}<div class='input-group-addon'>{{{addon-after}}}</div>{{/if}}
-				{{#if input-addon}}</div>{{/if}}
-			{{/each}}
-			{{#if wrapper}}</div>{{/if}}
+	{{#each columns}}
+	<div class="row">
+		<div class="{{column-size}}">
+			<div class="form-group">
+				{{#if wrapper}}<div class="{{wrapper}}">{{/if}}
+				{{#each input}}
+					<label class="form-label" for="{{input-id}}">{{label-text}}</label>
+					{{#if hint}}<span class="help-block">{{hint}}</span>{{/if}}
+					{{#if input-addon}}<div class="input-group">{{/if}}
+					{{#if addon-before}}<div class='input-group-addon'>{{{addon-before}}}</div>{{/if}}
+					{{#if textarea}}
+					<textarea class="{{class}}" rows="3" id="{{input-id}}" name="{{input-id}}" {{#if counter}}data-length="{{counter}}"{{/if}}></textarea>
+					{{#if counter}}<div class="textarea_feedback"></div>{{/if}}
+					{{else}}
+					<input type="{{type}}" id="{{input-id}}" class="{{input-class}}" name="{{input-id}}" value="{{input-value}}">
+					{{/if}}
+					{{#if addon-after}}<div class='input-group-addon'>{{{addon-after}}}</div>{{/if}}
+					{{#if input-addon}}</div>{{/if}}
+				{{/each}}
+				{{#if wrapper}}</div>{{/if}}
+			</div>
 		</div>
 	</div>
-</div>
-{{/each}}
+	{{/each}}
 {{#if field-legend}}
 </fieldset>
 {{/if}}
 {{/if}}
-</div>
-{{#if submit-button}}
-<div class="row">
-    <div class="col-md-6">
-		<button type="submit" class="btn btn-lg btn-primary">Submit</button>
+	{{#if submit-button}}
+	<div class="row">
+	    <div class="col-md-6">
+			<button type="submit" class="btn btn-lg btn-primary">Submit</button>
+		</div>
 	</div>
+	{{/if}}
 </div>
-{{/if}}

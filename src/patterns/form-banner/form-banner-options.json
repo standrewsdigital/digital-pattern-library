@@ -2,63 +2,39 @@
     "options": [
         {
             "column-whole": true,
-            "option-heading": "Search field",
-            "option-description": "<p>For this example, search the word 'english' to see how the results are displayed.</p>",
-            "option-anchor": "search-field",
-            "background": "sta-blue-light",
-            "heading": "Course search",
-            "top-text": "Search for all the courses we offer",
+            "option-heading": "Form banner",
+            "option-description": "<p>The simplest implementation places the form underneath a heading and optional sub heading.</p>",
+            "option-anchor": "form-banner",
+            "background": "form-banner__grey",
+            "heading": "Forgotten your library username?",
+            "top-text": "Enter your University email address to receive a secure recovery link.",
             "column": [
                 {
                     "column-size": "col-md-12",
+                    "form": true,
                     "input-box": true,
-                    "input-id": "form-banner-search-blue",
-                    "input-type": "text",
-                    "input-title": "Search for all the courses we offer",
-                    "input-placeholder": "Start typing to see courses...",
-                    "results": true
+                    "input-label": "Email",
+                    "input-id": "form-banner-email",
+                    "input-type": "email",
+                    "input-title": "Enter your email address",
+                    "input-placeholder": "",
+                    "button": true,
+                    "button-colour": " btn-primary"
+
                 }
             ]
         },
-
-
-
         {
             "column-whole": true,
-            "option-heading": "Search field - light grey",
-            "option-description": "<p>For this example, search the word 'english' to see how the results are displayed.</p>",
-            "option-anchor": "search-field-grey",
-            "background": "sta-grey-light",
-            "heading": "Course search",
-            "top-text": "Search for all the courses we offer",
-            "column": [
-                {
-                    "column-size": "col-md-12",
-                    "input-box": true,
-                    "input-id": "form-banner-search-grey",
-                    "input-type": "text",
-                    "input-title": "Search for all the courses we offer",
-                    "input-placeholder": "Start typing to see courses...",
-                    "results": true
-                }
-            ]
-        },
-
-
-
-
-
-        {
-            "column-whole": true,
-            "option-heading": "Newsletter subscription",
-            "option-description": "",
+            "option-heading": "Form banner - side by side",
+            "option-description": "<p>This places the form alongside a column of text content. This option is most suited to simple forms that have an introduction that would wrap over multiple lines. This example shows a basic newsletter subscription implementation.</p><ul><li>The form should have no more than three or four rows of input fields.</li></ul>",
             "option-anchor": "newsletter-subscription",
-            "background": "sta-dkgreen",
+            "background": "form-banner__dkgreen",
             "column": [
                 {
                     "column-size": "col-md-6",
                     "column-heading": "Interested in Philosophy at St Andrews?",
-                    "column-paragraph": "Subscribe to receive important information including visiting days and other events for prospective students."
+                    "column-paragraph": "Subscribe to receive important information including visiting days and other events for prospective students. The University will only use this information to contact your about this specific topic and you may unsubscribe at any time."
                 },
                 {
                     "column-size": "col-md-6",
@@ -76,7 +52,8 @@
                     ],
                     "select-box": true,
                     "select-label": "2. Choose a subject",
-                    "default-value": "Please select...",
+                    "default-value": "Please select from the following",
+                    "input-id": "form-banner2-subject",
                     "select-option": [
                         {
                             "option-value": "art-history",
@@ -93,11 +70,12 @@
                     ],
                     "input-box": true,
                     "input-label": "3. Enter your email",
-                    "input-id": "form-banner-email",
+                    "input-id": "form-banner2-email",
                     "input-type": "email",
                     "input-title": "Enter your email address",
-                    "input-placeholder": "Enter your email address...",
-                    "button": true
+                    "input-placeholder": "",
+                    "button": true,
+                    "button-colour": " btn-warning"
 
                 }
             ]
@@ -108,17 +86,19 @@
 
         {
             "column-whole": true,
-            "option-heading": "Filter options",
-            "option-description": "",
+            "option-heading": "Form banner - inline",
+            "option-description": "<p>This option places the form directly underneath the text content. This example shows a set of filters that can alter a set of results.</p><ul><li>Inline form elements should only be used for filters.</li></ul>",
             "option-anchor": "filter-options",
-            "background": "sta-blue-light",
+            "background": "form-banner__blue",
             "heading": "Filter by subjects or country",
+            "top-text": "If you are a Joint honours student, please select both 'subject' and 'joint subject'.",
             "column": [
                 {
                     "column-size": "col-md-4",
                     "select-box": true,
                     "select-label": "Subject",
-                    "default-value": "Please select...",
+                    "default-value": "Please select from the following",
+                    "input-id": "form-banner3-subject1",
                     "select-option": [
                         {
                             "option-value": "art-history",
@@ -138,7 +118,8 @@
                     "column-size": "col-md-4",
                     "select-box": true,
                     "select-label": "Joint subject",
-                    "default-value": "Please select...",
+                    "default-value": "Please select from the following",
+                    "input-id": "form-banner3-subject2",
                     "select-option": [
                         {
                             "option-value": "joint-art-history",
@@ -158,7 +139,8 @@
                     "column-size": "col-md-4",
                     "select-box": true,
                     "select-label": "Country",
-                    "default-value": "Please select...",
+                    "default-value": "Please select from the following",
+                    "input-id": "form-banner3-country",
                     "select-option": [
                         {
                             "option-value": "australia",
@@ -173,41 +155,6 @@
                             "select-option": "Germany"
                         }
                     ]
-                }
-            ],
-            "bottom-text": "If you are a Joint honours student, please select both 'subject' and 'joint subject'."
-        },
-
-
-
-
-        {
-            "column-thirds": true,
-            "option-heading": "Search field (content thirds)",
-            "option-description": "<p>For this example, search the word 'english' to see how the results are displayed.</p>",
-            "option-anchor": "search-field-thirds",
-            "column-background": "sta-blue-light",
-            "heading": "Course search",
-            "top-text": "Search for all the courses we offer",
-            "column": [
-                {
-                    "column-size": "col-md-12",
-                    "input-box": true,
-                    "input-id": "form-banner-search-names",
-                    "input-type": "text",
-                    "input-title": "Search for all the courses we offer",
-                    "input-placeholder": "Start typing to see courses...",
-                    "results": true
-                }
-            ],
-            "box-size": [
-                {
-                    "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-study.jpg",
-                        "alt": "Description"
-                    },
-                    "title": "Sidebar",
-                    "column": "col-sm-4"
                 }
             ]
         }
