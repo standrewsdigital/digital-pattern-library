@@ -1,0 +1,51 @@
+
+/*********************************/
+/* BEGIN Pattern: alerts         */
+/*********************************/
+
+@mixin alert-status ($status-color) {
+    border-color: $status-color;
+
+    a {
+        color: $status-color;  
+    }
+}
+
+.alert {
+    // Override bootstrap
+    background: white; 
+    border: 5px solid transparent;
+    border-radius: 0px;
+    color: inherit; 
+    margin-bottom: 20px;
+    padding: 25px;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.alert--success {
+    @include alert-status ($sta-green);
+}
+
+.alert--info {
+    @include alert-status ($sta-blue-light);
+}
+
+.alert--warning {
+    @include alert-status ($sta-orange);
+}
+
+.alert--danger {
+    @include alert-status ($sta-red);
+}
+
+.alert__heading {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+/*********************************/
+/* END Pattern: alerts           */
+/*********************************/
