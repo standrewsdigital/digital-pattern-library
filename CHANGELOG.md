@@ -47,6 +47,7 @@ Release date: Tuesday 13 October 2018
 * Added bottom margin to read more button in news updates pattern.
 * Reduce gap between two panel grids when they are siblings.
 * Fixed padding on case studies option of news updates pattern.
+* Showcase banner icon size conflict with navbox chevron.
 
 ---
 

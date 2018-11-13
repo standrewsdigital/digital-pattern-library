@@ -25,19 +25,23 @@
     }
 }
 
-.alert--success {
+.alert--success,
+.alert-success {
     @include alert-status ($sta-green);
 }
 
-.alert--info {
+.alert--info,
+.alert-info {
     @include alert-status ($sta-blue-light);
 }
 
-.alert--warning {
+.alert--warning,
+.alert-warning {
     @include alert-status ($sta-orange);
 }
 
-.alert--danger {
+.alert--danger,
+.alert-danger {
     @include alert-status ($sta-red);
 }
 
