@@ -290,25 +290,9 @@
             "subheading": "Patterns that are no longer supported and will be removed in future versions of the pattern library.",
             "class": "danger",
             "patterns": [
-                { "name": "Glyphicons (deprecated)",
-                  "img": "assets/docs/images/patterns/glyphicons.jpg",
-                  "url": "patterns/glyphicons/index.html"
-                },
-                { "name": "Info bite (deprecated)",
-                  "img": "assets/docs/images/patterns/info-bite.jpg",
-                  "url": "patterns/info-bite/index.html"
-                },
-                { "name": "Info bite grid (deprecated)",
-                  "img": "assets/docs/images/patterns/info-bite-grid.jpg",
-                  "url": "patterns/info-bite-grid/index.html"
-                },
-                { "name": "Masonry (deprecated)",
-                  "img": "assets/docs/images/patterns/masonry.jpg",
-                  "url": "patterns/masonry/index.html"
-                },
-                { "name": "Masonry grid (deprecated)",
-                  "img": "assets/docs/images/patterns/masonry-grid.jpg",
-                  "url": "patterns/masonry-grid/index.html"
+                { "name": "Accordion (old version)",
+                  "img": "assets/docs/images/patterns/accordion.jpg",
+                  "url": "patterns/accordion-deprecated/index.html"
                 }
             ]
         }

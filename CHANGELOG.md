@@ -9,6 +9,47 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.15.0
+
+Release date: Tuesday 13 October 2018
+
+### Added
+* New accordion pattern incorporating new styling.
+* New accordion pattern groups elements within an accordion, with toggle button to open/close all elements.
+* New accordion pattern has additional options for intro text and key facts to summarise the main content of an accordion element.
+* New form banner option for basic implementation.
+* New search bar option with additional links.
+* New search bar option with grouped additional links.
+* New search bar option that is constrained to a column width.
+
+### Changed
+* Accordion (old version) style changed to match new method.
+* Alert pattern style changed to match colour palette.
+* Alert pattern documentation and html updated to move away from Bootstrap defaults.
+* Form banner documentation and examples have been amended to focus on the different implementations rather than exact use cases.
+* DPL pattern search changed from using form banner pattern to search bar pattern.
+* Navbox chevron changed to use Font Awesome icon to bring into line with new accordion.
+* Navbox size reduced on small displays.
+* Read more button chevron changed to use Font Awesome icon.
+* Read more button style code moved to sit alongside general button style definitions and made more consistent with navbox.
+
+### Deprecated
+* Accordion pattern has been deprecated and replaced with new method.
+
+### Removed
+* Removed historical deprecated patterns (Glyphicons, Info bite, Info bite grid, Masonry, Masonry grid).
+* Removed support for old method of accordion in newly deprecated accordion pattern.
+* Removed search options from form banner pattern as these are now consolidated in search bar pattern.
+
+### Fixed
+* Current year was duplicated incorrectly in footer pattern.
+* Fixed invalid markup on form elements pattern.
+* Added bottom margin to read more button in news updates pattern.
+* Reduce gap between two panel grids when they are siblings.
+* Fixed padding on case studies option of news updates pattern.
+
+---
+
 ## v1.14.2
 
 Release date: Wednesday 24 October 2018

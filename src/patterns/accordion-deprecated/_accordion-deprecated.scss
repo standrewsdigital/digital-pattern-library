@@ -1,0 +1,62 @@
+/*********************************/
+/* BEGIN Pattern: accordion      */
+/*********************************/
+
+.accordion {
+    margin-bottom: 25px;
+    border-top: 1px solid $sta-grey;
+    border-bottom: 1px solid $sta-grey;
+}
+
+.accordion > h3 {
+    @include -dpl-transition();
+    background-color: white;
+    color: $sta-blue;
+    cursor: pointer;
+    margin: 0;
+    padding: 15px;
+}
+
+.accordion > h3:hover {
+    background-color: $sta-grey-light;
+}
+
+.accordion > h3:before {
+    @extend .fa;
+    @extend .fa-chevron-down;
+    color: $text-color;
+    float: right;
+    margin-left:15px;
+}
+
+.accordion > h3.open:before {
+    @extend .fa-chevron-up;
+}
+
+.accordion > div {
+    display: none;
+    padding:10px 15px 0 15px;
+}
+
+.accordion + .accordion {
+    // close gaps between adjoining accordions
+    border-top: 0;
+    margin-top:-25px;
+}
+
+/* The following styles give us backwards compatibility with the
+// old code for accordions.
+
+.accordion h3 i.chevron {
+    display: none;
+}
+
+.accordion h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+*/
+
+/*********************************/
+/* END Pattern: accordion        */
+/*********************************/

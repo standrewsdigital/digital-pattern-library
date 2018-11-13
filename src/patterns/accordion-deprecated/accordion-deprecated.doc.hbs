@@ -1,7 +1,7 @@
 ---
-title: Accordion
+title: Accordion (old version)
 ---
-
+<div class="alert alert-warning"><h3>Attention</h3><p>This old method of implementing the accordion pattern is deprecated and will be removed in a future version of the digital pattern library. Please refer to the <a href"../accordion/index.html">current accordion pattern</a> for the correct method.</p></div>
 <p>The accordion pattern presents an expandable and collapsible section of content. Accordions shorten pages and reduce scrolling, but they require users to click on topic headings to find information. Therefore, accordions should be used sparingly. For more information see the <a href="https://www.nngroup.com/articles/accordions-complex-content/"> Nielsen Norman Group report on accordion usability</a>.</p>
 
 <h3>Rules for accordions</h3>
@@ -9,34 +9,29 @@ title: Accordion
 	<li>Must not be used when your audience needs most or all of the content on the page to answer their questions. It is better to show all page content at once when the user case supports it. In such cases, do not worry about page length.</li>
 	<li>May be used when only one option is relevant to the user e.g. UK, Europe, USA.</li>
 	<li>May be used where you want to step a user through a process e.g. step 1, step 2, step 3.</li>
-	<li>The content within accordions must not contain any headings higher than heading 4 level <code>&lt;h4&gt;</code>.</li>
+	<li>The content within accordions must not contain any headings.</li>
 	<li>May be used anywhere in a content section.</li>
-	<li>Must only be used on a white or light grey background.</li>
-	<li>Content may be divided into columns appropriate to the width of the accordion.</li>
-</ul>
-<div class="alert alert--info">
-	<h3>Please note</h3>
-	<p>Additional WAI-ARIA markup is automatically added to the accordions using javascript. Accordion items and their associated groups are also automatically given unique id values using javascript. This is to improve accessibility and to ensure each id is indeed unique.</p>
-</div>
-<h3>Options available</h3>
-<ul>
-{{#accordion-options.options}}
-    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
-{{/accordion-options.options}}
 </ul>
 
-{{#accordion-options.options}}
+<h3>Options available</h3>
+<ul>
+{{#accordion-deprecated-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/accordion-deprecated-options.options}}
+</ul>
+
+{{#accordion-deprecated-options.options}}
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 	<span class="label label-default">Example</span>
 </div>
-<div class="pattern-wrapper{{background-color}}">
+<div class="pattern-wrapper">
 	<div class="container">
-	{{> accordion}}
+	{{> accordion-deprecated}}
 	</div>
 </div>
 <div class="container">
 <span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> accordion}}</code></pre>
-{{/accordion-options.options}}
+<pre><code class="pattern-source html">{{> accordion-deprecated}}</code></pre>
+{{/accordion-deprecated-options.options}}
