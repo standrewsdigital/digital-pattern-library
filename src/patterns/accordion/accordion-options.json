@@ -2,14 +2,14 @@
     "options": [
         {
             "option-heading": "Single accordion",
-            "option-description": "<p>Consider if the content would be better visible at all times before using a single accordion to hide it from the user.</p>",
+            "option-description": "<p>Consider if the content would be better visible at all times before using a single accordion to hide it from the user.</p><p>This example shows a single accordion with content divided between two columns.</p>",
             "option-anchor": "single",
             "accordion-item-open": "<div class='accordion-item'>",
             "accordion-item-close": "</div>",
             "accordion": [
                 {
                     "accordion-heading":"Divinity",
-                    "accordion-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac rutrum tellus, quis porttitor urna. Donec ultricies libero erat, id efficitur risus blandit nec. Donec et ipsum in dui blandit rutrum. Praesent rhoncus lobortis ligula, viverra tincidunt ante lobortis at. Sed vehicula luctus quam sit amet lacinia. Sed eu nulla vel ex tempus accumsan in sit amet metus. Vestibulum a venenatis mi. Ut ac semper arcu.</p>"
+                    "accordion-content": "<div class='row'><div class='col-md-6'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac rutrum tellus, quis porttitor urna. Donec ultricies libero erat, id efficitur risus blandit nec. Donec et ipsum in dui blandit rutrum. Praesent rhoncus lobortis ligula, viverra tincidunt ante lobortis at. Sed vehicula luctus quam sit amet lacinia. Sed eu nulla vel ex tempus accumsan in sit amet metus. Vestibulum a venenatis mi. Ut ac semper arcu.</p></div><div class='col-md-6'><p>Morbi pellentesque, mauris nec porta laoreet, neque magna tempor eros, eget suscipit tellus purus nec ligula. In accumsan turpis eu porttitor tempus. Praesent rutrum quam id felis consequat, et mattis elit laoreet. Nunc maximus, dui vitae tincidunt elementum, elit tortor mattis quam, ut sodales arcu lectus eu nisi. Phasellus tincidunt at risus nec fringilla. Nunc ultricies nisl sodales, vestibulum nunc in, vulputate nisl. Vestibulum lacinia auctor hendrerit. Sed in lectus dapibus, volutpat justo vel, pellentesque ipsum. Vivamus vitae metus euismod, vestibulum odio eu, elementum quam.</p></div></div>"
                 }
             ]
         },
@@ -17,8 +17,9 @@
 
         {
             "option-heading": "Accordion - group",
-            "option-description": "",
+            "option-description": "<p>When an accordion contains more than one item these must be grouped together, using the <code>.accordion-group</code> class. A toggle button, to open or close all items within that group, is used to reduce potential user interaction cost.</p><p>This example shows an accordion group on a light grey background.</p>",
             "option-anchor": "group",
+            "background-color":" sta-grey-light",
             "accordion-group": true,
             "accordion-item-open": "<li class='accordion-item'>",
             "accordion-item-close": "</li>",
@@ -45,7 +46,7 @@
 
         {
             "option-heading": "Accordion with intro - group",
-            "option-description": "",
+            "option-description": "<p>Where it may be beneficial to give additional information about the contents of an accordion, before the requirement to open it, then a short introduction may be included.</p><ul><li>If an accordion item has an intro then all items within that accordion group must also include an intro.</li><li>The length of an intro should be limited to a maximum of 80 characters.</li></ul>",
             "option-anchor": "intro",
             "accordion-group": true,
             "accordion-item-open": "<li class='accordion-item'>",
@@ -72,7 +73,7 @@
 
         {
             "option-heading": "Accordion with key info - group",
-            "option-description": "",
+            "option-description": "<p>Where there are different types of information, that would all benefit being shown immediately, these can be shown in icon / value pairs. The use of icons quickly conveys the meaning of the associated text while keeping space to a minimum.</p><ul><li>Icons must be from the <a href='../font-awesome/index.html'>approved list of Font Awesome icons</a>.</li><li>There must be a maximum number of three icon / value pairs used on an accordion item.</li><li>Icon usage must be consistent within an accordion group.</li></ul>",
             "option-anchor": "intro",
             "accordion-group": true,
             "accordion-item-open": "<li class='accordion-item'>",

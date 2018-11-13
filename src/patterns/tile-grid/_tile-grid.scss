@@ -48,36 +48,6 @@
     } 
 }
 
-// Should be moved to global buttons util
-.read-more a {
-    @extend .btn;
-    @extend .btn-primary;
-    @extend .btn-block;
-    color: white;
-    font-size: 1.5em;
-    line-height: 2em;
-    margin: 0;
-    padding: 0.4em 0.8em 0.2em 0.8em;
-    text-align: left;
-
-    @media (max-width: 767px) {
-        font-size: 1.2em;
-    }
-}
-
-.read-more a:before {
-    @extend i.chevron;
-    content: '';
-    float: right;
-    height: 28px;
-    top: 10px;
-    width: 30px;
-
-    @media (max-width: 767px) {
-        height: 20px;
-    }
-}
-
 .tile-grid__tiles {
     //Wrapper for tiles - CHANGE TO CSS GRID
 
