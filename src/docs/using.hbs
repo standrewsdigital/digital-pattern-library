@@ -75,10 +75,16 @@ build the core files from source, you may gain access to the source code via Git
 <h3 id="js">JavaScript</h3>
 <p>There are three JavaScript options.</p>
 
-<!-- Begin pattern: accordion //-->
-<div class="accordion">
-    <h3>Everything (default)</h3>
-    <div>
+             <!-- Begin pattern: accordion group //-->
+             <button class="accordion-group__toggle" aria-expanded="false">Open all</button>
+<ul class="accordion-group">
+    <li class="accordion-item">
+                <div class="accordion-item__toggle">
+                    <h3 class="accordion-item__toggle-title">
+                        <button class="accordion-item__toggle-button" aria-expanded="false" aria-controls="">Everything (default)</button>
+                    </h3>
+                </div>
+                <div class="accordion-item__content" id="" aria-hidden="true">
         <p>This option includes all the JavaScript needed in one file. It includes:</p>
         <ul>
             <li><strong>jQuery core</strong></li>
@@ -89,13 +95,14 @@ build the core files from source, you may gain access to the source code via Git
 
         <pre><code>&lt;script src="{{pkg.cdn.endpoint}}/{{pkg.cdn.package}}/{{pkg.version}}/scripts/core.js" type="text/javascript"&gt;&lt;/script&gt;</code></pre>
     </div>
-</div>
-<!-- End pattern: accordion //-->
-
-<!-- Begin pattern: accordion //-->
-<div class="accordion">
-    <h3>No jQuery</h3>
-    <div>
+</li>
+   <li class="accordion-item">
+                <div class="accordion-item__toggle">
+                    <h3 class="accordion-item__toggle-title">
+                        <button class="accordion-item__toggle-button" aria-expanded="false" aria-controls="">No jQuery</button>
+                    </h3>
+                </div>
+                <div class="accordion-item__content" id="" aria-hidden="true">
         <p>This option is for those who need to use the DPL within an application that already pulls in the jQuery core library. This version includes:</p>
 
         <ul>
@@ -107,13 +114,14 @@ build the core files from source, you may gain access to the source code via Git
 
         <pre><code>&lt;script src="{{pkg.cdn.endpoint}}/{{pkg.cdn.package}}/{{pkg.version}}/scripts/core-nojquery.js" type="text/javascript"&gt;&lt;/script&gt;</code></pre>
     </div>
-</div>
-<!-- End pattern: accordion //-->
-
-<!-- Begin pattern: accordion //-->
-<div class="accordion">
-    <h3>Patterns only</h3>
-    <div>
+</li>
+<li class="accordion-item">
+                <div class="accordion-item__toggle">
+                    <h3 class="accordion-item__toggle-title">
+                        <button class="accordion-item__toggle-button" aria-expanded="false" aria-controls="">Patterns only</button>
+                    </h3>
+                </div>
+                <div class="accordion-item__content" id="" aria-hidden="true">
         <p>This option includes only the JavaScript required for the patterns. It is for those who need fine control over which elements are included.</p>
 
         <ul>
@@ -146,8 +154,8 @@ build the core files from source, you may gain access to the source code via Git
         <ul>
             <li><a href="https://www.datatables.net/">jQuery DataTables</a> (v1.10.13) is supported and the digital communications team provides additional JavaScript and CSS to match the pattern library. See <a href="patterns/datatables/index.html">DataTables</a> for more information.</li>
         </ul>
-    </div>
-</div>
+    </li>
+</ul>
 <!-- End pattern: accordion //-->
 
 <hr>

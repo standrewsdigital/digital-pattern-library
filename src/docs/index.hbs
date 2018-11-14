@@ -27,10 +27,16 @@ layout: _base.hbs
             <p>If you would like to use the digital pattern library for your own web project the digital communications team can help.</p>
             <p>Please contact the digital communications team by email via <a href="mailto:itservicedesk@st-andrews.ac.uk">itservicedesk@st-andrews.ac.uk</a>.</p>
 
-             <!-- Begin pattern: accordion //-->
-            <div class="accordion">
-                <h3>Kick-off meeting</h3>
-                 <div>
+             <!-- Begin pattern: accordion group //-->
+             <button class="accordion-group__toggle" aria-expanded="false">Open all</button>
+<ul class="accordion-group">
+    <li class="accordion-item">
+                <div class="accordion-item__toggle">
+                    <h3 class="accordion-item__toggle-title">
+                        <button class="accordion-item__toggle-button" aria-expanded="false" aria-controls="">Kick-off meeting</button>
+                    </h3>
+                </div>
+                <div class="accordion-item__content" id="" aria-hidden="true">
                     <p>All developers (including external agencies or partners) who wish to use the DPL to build a product must first organise a kick-off meeting with the digital communications team. It is advisable to do this as soon as possible near the start of your project (within the appraise or define stages).</p>
                     <p>At this meeting, rules, responsibilities and sign-off gateways will be agreed. These include:</p>
                     <ul>
@@ -41,13 +47,14 @@ layout: _base.hbs
                     </ul>
                     <p>At this meeting, we will ask for a clear written commitment that no new product using the DPL will go live without the explicit, written sign-off by the digital communications team.</p>
                 </div>
-            </div>
-            <!-- End pattern: accordion //-->
-
-            <!-- Begin pattern: accordion //-->
-            <div class="accordion">
-                <h3>Developing new patterns</h3>
-                <div>
+            </li>
+    <li class="accordion-item">
+                <div class="accordion-item__toggle">
+                    <h3 class="accordion-item__toggle-title">
+                        <button class="accordion-item__toggle-button" aria-expanded="false" aria-controls="">Developing new patterns</button>
+                    </h3>
+                </div>
+                <div class="accordion-item__content" id="" aria-hidden="true">
                     <p>To ensure design integrity and consistency of experience for our website users we will ask you to agree that:</p>
                     <ul>
                         <li>New patterns must be created only by developers working directly alongside the digital communications team;</li>
@@ -56,18 +63,20 @@ layout: _base.hbs
                         <li>Developers using the DPL must not fork the version controlled repository.</li>
                     </ul>
                 </div>
-            </div>
-
-            <!-- Begin pattern: accordion //-->
-            <div class="accordion">
-                <h3>Going live</h3>
-                <div>
+            </li>
+    <li class="accordion-item">
+                <div class="accordion-item__toggle">
+                    <h3 class="accordion-item__toggle-title">
+                        <button class="accordion-item__toggle-button" aria-expanded="false" aria-controls="">Going live</button>
+                    </h3>
+                </div>
+                <div class="accordion-item__content" id="" aria-hidden="true">
                     <p>Before going live to a production environment with a new website or application, the digital communications team will be involved in a final quality assurance process.</p>
                     <p>Once explicit and written sign-off has been given by the digital communications team the website or web application may be launched, subject to other University deployment guidelines.</p>
                 </div>
-            </div>
-        </div>
-
+            </li>
+        </ul>
+</div>
         <div class="col-md-4 col-sm-6">
             <h3>Current version</h3>
 
