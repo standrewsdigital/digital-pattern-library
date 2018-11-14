@@ -32,6 +32,7 @@ Release date: Tuesday 13 October 2018
 * Navbox size reduced on small displays.
 * Read more button chevron changed to use Font Awesome icon.
 * Read more button style code moved to sit alongside general button style definitions and made more consistent with navbox.
+* DPL documentation changed to use new accordion pattern.
 
 ### Deprecated
 * Accordion pattern has been deprecated and replaced with new method.
