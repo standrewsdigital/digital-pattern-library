@@ -44,6 +44,45 @@
             ]
         },
         {
+            "heading": "Navigation",
+            "subheading": "Patterns used to connect content pages across the University of St Andrews website.",
+            "class": "primary",
+            "patterns": [
+                { "name": "Navbox",
+                  "img": "assets/docs/images/patterns/navbox.jpg",
+                  "url": "patterns/navbox/index.html"
+                },
+                { "name": "Navbox grid",
+                  "img": "assets/docs/images/patterns/navbox-grid.jpg",
+                  "url": "patterns/navbox-grid/index.html"
+                },
+                { "name": "Navigation bar",
+                  "img": "assets/docs/images/patterns/navigation-bar.jpg",
+                  "url": "patterns/navigation-bar/index.html"
+                },
+                { "name": "Navigation grid",
+                  "img": "assets/docs/images/patterns/navigation-grid.jpg",
+                  "url": "patterns/navigation-grid/index.html"
+                },
+                { "name": "Pagination",
+                  "img": "assets/docs/images/patterns/pagination.jpg",
+                  "url": "patterns/pagination/index.html"
+                },
+                { "name": "Panel",
+                  "img": "assets/docs/images/patterns/panel.jpg",
+                  "url": "patterns/panel/index.html"
+                },
+                { "name": "Panel grid",
+                  "img": "assets/docs/images/patterns/panel-grid.jpg",
+                  "url": "patterns/panel-grid/index.html"
+                },
+                { "name": "Sticky nav",
+                  "img": "assets/docs/images/patterns/sticky-nav.jpg",
+                  "url": "patterns/sticky-nav/index.html"
+                }
+            ]
+        },
+        {
             "heading": "Call to action",
             "subheading": "Patterns used to bring attention and link to content of importance both on the University website and external.",
             "class": "primary",
@@ -243,45 +282,6 @@
                 { "name": "Long-form sections",
                   "img": "assets/docs/images/patterns/long-form.jpg",
                   "url": "patterns/long-form-sections/index.html"
-                }
-            ]
-        },
-        {
-            "heading": "Navigation",
-            "subheading": "Patterns used to connect content pages across the University of St Andrews website.",
-            "class": "primary",
-            "patterns": [
-                { "name": "Navbox",
-                  "img": "assets/docs/images/patterns/navbox.jpg",
-                  "url": "patterns/navbox/index.html"
-                },
-                { "name": "Navbox grid",
-                  "img": "assets/docs/images/patterns/navbox-grid.jpg",
-                  "url": "patterns/navbox-grid/index.html"
-                },
-                { "name": "Navigation bar",
-                  "img": "assets/docs/images/patterns/navigation-bar.jpg",
-                  "url": "patterns/navigation-bar/index.html"
-                },
-                { "name": "Navigation grid",
-                  "img": "assets/docs/images/patterns/navigation-grid.jpg",
-                  "url": "patterns/navigation-grid/index.html"
-                },
-                { "name": "Pagination",
-                  "img": "assets/docs/images/patterns/pagination.jpg",
-                  "url": "patterns/pagination/index.html"
-                },
-                { "name": "Panel",
-                  "img": "assets/docs/images/patterns/panel.jpg",
-                  "url": "patterns/panel/index.html"
-                },
-                { "name": "Panel grid",
-                  "img": "assets/docs/images/patterns/panel-grid.jpg",
-                  "url": "patterns/panel-grid/index.html"
-                },
-                { "name": "Sticky nav",
-                  "img": "assets/docs/images/patterns/sticky-nav.jpg",
-                  "url": "patterns/sticky-nav/index.html"
                 }
             ]
         },

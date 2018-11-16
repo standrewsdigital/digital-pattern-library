@@ -1,4 +1,4 @@
-i.icon {
+.icon {
     position: relative;
     display: inline-block;
     -webkit-transition: all 200ms ease-out;
@@ -6,45 +6,23 @@ i.icon {
     transition: all 200ms ease-out;
 }
 
-i.chevron {
-    @extend i.icon;
-    top: 2px;
-    height: .9em;
-    width: 0.9em;
-    margin: auto;
-    background: url('../images/furniture/chevron@2x.png') no-repeat;
-    background-size: contain;
-    background-position: left center;
-}
+.chevron {
+    @extend .fa;
+    @extend .fa-chevron-right;
 
-i.chevron.large {
-    height: 1.4em;
-    width: 1.4em;
-    top: .3em;
-    margin-right: 0;
-}
+    &.large {
+        font-size: 1.4em;
+    }
 
-i.chevron.down {
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
+    &.down {
+        @extend .fa-chevron-down;
+    }
 
-i.chevron.left {
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
-    background-position: right center;
-}
+    &.left {
+        @extend .fa-chevron-left;
+    }
 
-i.chevron.up {
-    -moz-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    -webkit-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg);
+    &.up {
+        @extend .fa-chevron-up;
+    }
 }
