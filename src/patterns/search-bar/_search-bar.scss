@@ -77,7 +77,19 @@
 		float: none;
 	}
 
-	h4 {
+	.horizontal-list__toggle {
+
+		&:before {
+			@extend .fa;
+    		@extend .fa-chevron-down;
+    		display:none;
+		}
+
+		&.open:before {
+			@extend .fa-chevron-up;
+		}
+
+
 		@media (max-width: 767px){
 		// Dropdown toggle on smaller displays
 
@@ -95,35 +107,9 @@
 			}
 
 			&:before {
-			    //@extend i.chevron;
-				position: relative;
-			    display: inline-block;
-			    -webkit-transition: all 200ms ease-out;
-			    -moz-transition: all 200ms ease-out;
-			    transition: all 200ms ease-out;
-			    top: 2px;
-			    height: .9em;
-			    width: 0.9em;
-			    margin: auto;
-			    background: url('https://www.st-andrews.ac.uk/~cdn/dpl/1.12.3/images/furniture/chevron@2x.png') no-repeat;
-			    background-size: contain;
-			    background-position: left center;
-				// end of hardwired chevron
-
-
-			    @include rotate(180deg);
-			    content: '';
-			    float: right;
-			    height: 20px !important;
-			    top: 3px;
-			    width: 17px !important;
+				display: inline-block;
+				float: right;
 			}
-
-			&.open:before {
-			    @include rotate(90deg);
-			}
-
-
 		}
 
 		@media (min-width: 768px){
@@ -140,6 +126,14 @@
 			clip: rect(0,0,0,0);
 			border: 0;
 		}
+	}
+
+	.horizontal-list__toggle-button {
+		// TODO add aria controls and link to expanded list - similar to accordion
+		background: none;
+		border: 0;
+		margin: 0;
+		padding: 0;
 	}
 
 	> ul {
