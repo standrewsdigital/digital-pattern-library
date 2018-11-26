@@ -52,8 +52,14 @@
 	margin-top: 0;
 }
 
+// Add additional margin if no sub-heading
+.search-bar__heading + .dpl-form {
+	margin-top: 15px;
+}
+
 .search-bar__sub-heading {
 	font-size: 21px;
+	margin-bottom: 20px;
 }
 
 .search-bar__inline-title {
