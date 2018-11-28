@@ -11,7 +11,7 @@
         },
         {
             "option-heading": "Search banner",
-            "option-description": "<p>The search banner is used to prominently feature a search form on the page.</p><ul><li>The search banner may be used on the body section of a webpage.</li><li>The background colour must either be light grey or light blue.</li><li>There must be an associated heading introducing the search.</li><li>An optional sub-heading may also be included to give additional context to the search.</li><li>Placeholder text should be used to indicate the recommended type of search query.</li></ul>",
+            "option-description": "<p>The search banner is used to prominently feature a search form on the page.</p><ul><li>The search banner may be used on the body section of a webpage.</li><li>The background colour must either be light grey or light blue. Alternatively a background image with a transparent overlay may be used.</li><li>There must be an associated heading introducing the search.</li><li>An optional sub-heading may also be included to give additional context to the search.</li><li>Placeholder text should be used to indicate the recommended type of search query.</li></ul>",
             "option-anchor": "search-banner",
             "background-color": "search-bar__grey",
             "full-width": true,
@@ -23,13 +23,26 @@
          },
         {
             "option-heading": "Search banner (light blue)",
-            "option-description": "<p>The search banner option with the light blue background applied. This is achieved by replacing the class <code>search-bar__grey</code> with  <code>search-bar__blue</code>. This example does not include the optional sub heading.</p>",
+            "option-description": "<p>The search banner option with the light blue background applied. This is achieved by replacing the class <code>search-bar__grey</code> with <code>search-bar__blue</code>. This example does not include the optional sub heading.</p>",
             "option-anchor": "search-banner-blue",
             "background-color": "search-bar__blue",
             "full-width": true,
             "placeholder": "Search by keyword or phrase",
             "search-header": "News search",
             "input-id": "banner-search-blue",
+            "search-button": true
+         },
+        {
+            "option-heading": "Search banner (background image)",
+            "option-description": "<p>The search banner option with a background image applied. This is achieved by replacing the class <code>search-bar__grey</code> with <code>search-bar__image</code> and applying the background image as an inline style. A dark grey transparent overlay will be automatically applied.</p><ul><li>The size of the background image must be 1905 × 362 pixels.</li><li>The main focus of this pattern is the search form so the background image shouldn't be overly complicated.</li><li>Multiple images must not be used (for example, to form a collage) as they are complicated.</li></ul>",
+            "option-anchor": "search-banner-image",
+            "background-color": "search-bar__image",
+            "bg-image": "docs/images/cta/hero-banner-image-005.jpg",
+            "full-width": true,
+            "placeholder": "Search by keyword or phrase",
+            "search-header": "News search",
+            "search-subtext": "Search through our entire news archive",
+            "input-id": "banner-search-image",
             "search-button": true
          },
         {
