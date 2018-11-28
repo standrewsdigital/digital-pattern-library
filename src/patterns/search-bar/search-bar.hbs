@@ -1,6 +1,6 @@
 <!-- Begin pattern: search-bar //-->
 {{#if full-width}}
-<div class="search-bar{{#if background-color}} {{background-color}}{{/if}}">
+<div class="search-bar{{#if background-color}} {{background-color}}{{/if}}" {{#if bg-image}}style="background-image: url({{asset bg-image}});"{{/if}}>
 {{/if}}
 	<div class="container">
 		{{#if constrain-width}}

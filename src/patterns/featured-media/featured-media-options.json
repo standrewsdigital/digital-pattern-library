@@ -41,7 +41,7 @@
 
         {
             "option-heading": "Image background with purple transparent overlay and photosphere",
-            "option-description": "For more information, visit the <a href='../photosphere/index.html'>Photosphere</a> pattern.",
+            "option-description": "<p>For more information, visit the <a href='../photosphere/index.html'>Photosphere</a> pattern.</p>",
             "option-anchor": "purple-transparent-overlay",
             "background": "featured-media--overlay featured-media--purple-transparent-overlay",
             "photosphere": true,

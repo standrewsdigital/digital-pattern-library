@@ -40,6 +40,30 @@
 		color: #fff;
 	}
 
+	&.search-bar__image {
+		background-color: $sta-grey;
+		background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: cover;
+		color: #fff;
+		position: relative;
+
+		&:after {
+			content: '';
+			background: rgba($sta-grey-dark,0.5);
+			height: 100%;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+		.container {
+			position: relative;
+			z-index: 10;
+		}
+	}
+
 	&.search-bar__constrained {
 		// Now boxed in so change padding
 		padding: $half-gutter;
@@ -52,8 +76,14 @@
 	margin-top: 0;
 }
 
+// Add additional margin if no sub-heading
+.search-bar__heading + .dpl-form {
+	margin-top: 15px;
+}
+
 .search-bar__sub-heading {
 	font-size: 21px;
+	margin-bottom: 20px;
 }
 
 .search-bar__inline-title {
