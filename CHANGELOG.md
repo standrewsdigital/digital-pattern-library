@@ -9,6 +9,24 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.15.1
+
+Release date: Wednesday 28 November 2018
+
+### Added
+* New search bar option with background image.
+
+### Changed
+* Moved navigation pattern category higher up the list of patterns in the DPL documentation.
+
+### Fixed
+* Increased spacing for search bar heading when no sub heading present.
+* Chevron image icon replaced to use Font Awesome icon in various places.
+* Deprecated accordion pattern now inherits background colour rather than being set as white.
+* Documentation layout fixed on featured media pattern.
+
+---
+
 ## v1.15.0
 
 Release date: Tuesday 13 October 2018
