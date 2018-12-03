@@ -17,13 +17,14 @@ title: Buttons
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/buttons-options.options}}
 </ul>
-
 {{#buttons-options.options}}
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+<!--noindex-->
 {{>  buttons}}
 <br><br>
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> buttons}}</code></pre>
+<!--endnoindex-->
 {{/buttons-options.options}}

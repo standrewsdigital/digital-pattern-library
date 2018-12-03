@@ -18,12 +18,13 @@ title: Code
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/code-options.options}}
 </ul>
-
 {{#code-options.options}}
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+<!--noindex-->
 	{{> code}}
+<!--endnoindex-->
 {{/code-options.options}}
 
 <hr>

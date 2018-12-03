@@ -19,10 +19,11 @@ title: Tables - DataTables
 {{/datatables-options.options}}
 </ul>
 
-{{# datatables-options.options}}
+{{#datatables-options.options}}
 <hr>
 <h3 id={{option-anchor}}>{{option-heading}}</h3>
 {{{option-description}}}
+<!--noindex-->
 	<span class="label label-default">Example</span>
 </div>
 <div class="pattern-wrapper">
@@ -33,4 +34,5 @@ title: Tables - DataTables
 <div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> datatables}}</code></pre>
-{{/ datatables-options.options}}
+<!--endnoindex-->
+{{/datatables-options.options}}
