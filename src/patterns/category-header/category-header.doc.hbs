@@ -31,11 +31,11 @@ title: Category header
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/category-header-options.options}}
 </ul>
-
 {{#category-header-options.options}}
 <hr>
 <h3 id="option-anchor">{{option-heading}}</h3>
 {{{option-description}}}
+<!--noindex-->
 	<span class="label label-default">Example</span>
 </div>
 <div class="pattern-wrapper">
@@ -44,4 +44,5 @@ title: Category header
 <div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> category-header}}</code></pre>
+<!--endnoindex-->
 {{/category-header-options.options}}

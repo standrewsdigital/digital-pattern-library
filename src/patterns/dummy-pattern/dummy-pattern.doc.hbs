@@ -23,8 +23,13 @@ title: Dummy pattern
 {{#dummy-pattern-options.options}}
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
+	<span class="label label-default">Example</span>
 {{{option-description}}}
+</div>
+<div class="pattern-wrapper">
 {{>  dummy-pattern}}
+</div>
+<div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> dummy-pattern}}</code></pre>
 {{/dummy-pattern-options.options}}

@@ -24,11 +24,11 @@ title: Accordion
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/accordion-options.options}}
 </ul>
-
 {{#accordion-options.options}}
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+<!--noindex-->
 	<span class="label label-default">Example</span>
 </div>
 <div class="pattern-wrapper{{background-color}}">
@@ -39,4 +39,5 @@ title: Accordion
 <div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> accordion}}</code></pre>
+<!--endnoindex-->
 {{/accordion-options.options}}

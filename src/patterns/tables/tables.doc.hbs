@@ -22,15 +22,16 @@ title: Tables
 <hr>
 <h3>Options available</h3>
 <ul>
-{{# tables-options.options}}
+{{#tables-options.options}}
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
-{{/ tables-options.options}}
+{{/tables-options.options}}
 </ul>
 
-{{# tables-options.options}}
+{{#tables-options.options}}
 <hr>
 <h3 id={{option-anchor}}>{{option-heading}}</h3>
 {{{option-description}}}
+<!--noindex-->
 	<span class="label label-default">Example</span>
 </div>
 <div class="pattern-wrapper">
@@ -41,4 +42,5 @@ title: Tables
 <div class="container">
 <span class="label label-default">Code</span>
 <pre><code class="pattern-source html">{{> tables}}</code></pre>
-{{/ tables-options.options}}
+<!--endnoindex-->
+{{/tables-options.options}}
