@@ -20,6 +20,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4" id="footer-tools">
+                    {{#if footer-image}}
+                    <div class="website-footer__image">
+                        <img src="../../assets/docs/images/placeholders/280x180.png" alt=""/>
+                    </div>
+                    {{/if}}
                     {{#section1}}
                     <h3>{{title}}</h3>
                     <ul>
@@ -36,6 +41,8 @@
                         {{/links}}
                     </ul>
                     {{/section2}}
+                </div>
+                <div class="col-sm-4" id="footer-navigation">
                     {{#section3}}
                     <h3>{{title}}</h3>
                     <ul>
@@ -44,16 +51,6 @@
                         {{/links}}
                     </ul>
                     {{/section3}}
-                </div>
-                <div class="col-sm-4" id="footer-navigation">
-                    {{#section4}}
-                    <h3>{{title}}</h3>
-                    <ul>
-                        {{#links}}
-                        <li><a href="{{url}}">{{title}}</a></li>
-                        {{/links}}
-                    </ul>
-                    {{/section4}}
                 </div>
                 <div class="col-sm-4" id="footer-contact">
                     {{#contact}}

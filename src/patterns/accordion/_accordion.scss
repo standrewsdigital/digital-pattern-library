@@ -21,6 +21,15 @@
     .accordion-item + .accordion-item {
         border-top: 0;
     }
+
+    //Change nested list style to match top level lists
+    ul, ol {
+        list-style-type: disc;
+        
+        ul, ol {
+            list-style-type: circle;
+        }
+    }
 }
 
 .accordion-group__toggle {

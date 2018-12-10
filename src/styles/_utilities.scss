@@ -36,7 +36,7 @@ body {
 	width: 100%;
 }
 
-// Spacing
+// Spacing helpers
 $base-spacing: 1em;
 $large-spacing: $base-spacing*2;
 $small-spacing: $base-spacing/2;
@@ -46,6 +46,24 @@ $half-gutter: calc(1.5vw + 1em);
 $third-gutter: calc(1vw + 1em);
 // Gutter transformations
 $page-gutter-overflow: calc((3vw + 1em) - 30px); //Removes fixed size from dynamic gutter
+
+
+// Spacing classes
+.gutter-top {
+    margin-top: $page-gutter;
+}
+
+.gutter-top--half {
+    margin-top: $half-gutter;
+}
+
+.gutter-bottom {
+    margin-bottom: $page-gutter;
+}
+
+.gutter-bottom--half {
+    margin-bottom: $half-gutter;
+}
 
 .top-buffer {
 	margin-top: 30px;

@@ -15,15 +15,6 @@
             "option-anchor": "nav-footer",
             "website-footer": true,
             "section1": {
-                "title": "Your St Andrews",
-                "links":[
-                    {"title": "Current students",       "url": "#"},
-                    {"title": "Postgraduate",           "url": "#"},
-                    {"title": "Staff",                  "url": "#"},
-                    {"title": "Jobs at St Andrews",     "url": "#"}
-                ]
-            },
-            "section2": {
                 "title": "Navigation",
                 "links":[
                     {"title": "Study at St Andrews",    "url": "#"},
@@ -34,17 +25,16 @@
                     {"title": "About",                  "url": "#"}
                 ]
             },
-            "section3": {
+            "section2": {
                 "title": "Social media",
-                "links": [
-                    {"title": "Facebook",               "url": "#"},
-                    {"title": "Twitter",                "url": "#"},
-                    {"title": "Instagram",              "url": "#"},
-                    {"title": "Youtube",                "url": "#"}
+                "links":[
+                    {"title": "Facebook",       "url": "#"},
+                    {"title": "Twitter",           "url": "#"},
+                    {"title": "YouTube",                  "url": "#"}
                 ]
             },
-            "section4": {
-                "title": "Subjects",
+            "section3": {
+                "title": "School websites",
                 "links":[
                     {"title": "Art History",                            "url": "#"},
                     {"title": "Biology",                                "url": "#"},
@@ -118,16 +108,7 @@
                 ]
             },
             "section3": {
-                "title": "Social media",
-                "links": [
-                    {"title": "Facebook",               "url": "#"},
-                    {"title": "Twitter",                "url": "#"},
-                    {"title": "Instagram",              "url": "#"},
-                    {"title": "Youtube",                "url": "#"}
-                ]
-            },
-            "section4": {
-                "title": "Subjects",
+                "title": "School websites",
                 "links":[
                     {"title": "Art History",                            "url": "#"},
                     {"title": "Biology",                                "url": "#"},
@@ -150,6 +131,31 @@
                     {"title": "Physics and Astronomy",                  "url": "#"},
                     {"title": "Psychology and Neuroscience",            "url": "#"},
                     {"title": "Social Anthropology",                    "url": "#"}
+                ]
+            },
+            "contact":{
+                "url": "/contact/",
+                "unit" :"University of St Andrews",
+                "address":"College Gate<br>St Andrews, Fife<br>KY16 9AJ<br>Scotland, UK",
+                "phone":"+44 (0)1334 47 6161"
+            }
+        },
+
+        {
+            "option-heading": "Navigation menu footer with additional branding",
+            "option-description": "The footer may be used to introduce additional branding that is unique to a particular website.<ul><li>The logo should be placed at the top of the first column.</li><li>Where possible an SVG file type should be used to provide a crisp image at all sizes. If this is not possible then a PNG with transparent background should be used.</li><li>The image should be no larger than 280px wide and 180px high.</li></ul>",
+            "option-anchor": "nav-footer-branding",
+            "website-footer": true,
+            "footer-image": true,
+            "section3": {
+                "title": "Navigation",
+                "links":[
+                    {"title": "Study at St Andrews",    "url": "#"},
+                    {"title": "Research",               "url": "#"},
+                    {"title": "Alumni and donors",      "url": "#"},
+                    {"title": "Community facilities",   "url": "#"},
+                    {"title": "Business services",      "url": "#"},
+                    {"title": "About",                  "url": "#"}
                 ]
             },
             "contact":{
