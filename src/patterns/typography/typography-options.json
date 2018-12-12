@@ -16,8 +16,40 @@
                 }
             ]
         },
+        {
+            "option-heading": "Headings with secondary text",
+            "option-description": "<p>Where a heading would benefit from additional content, that adds context or supplementary information, this can be included by wrapping the text with <code>&lt;small&gt;</code> tags.</p>",
+            "option-anchor": "headings-secondary",
+            "headings": [
+                {
+                    "heading": "<h2>Heading 2<small>This is secondary text</small></h2>"
+                }
+            ]
+        },
 
 
+        {
+            "option-heading": "Other heading sizes",
+            "option-description": "<p>The default heading sizes can be overridden by using one of the following classes.</p><ul><li><code>heading--large</code> for large headings, this should only be used on landing pages and not within content that is less than 60% of the browser width.</li></ul>",
+            "option-anchor": "heading-sizes",
+            "headings": [
+                {
+                    "heading": "<h2 class='heading--large'>This is a large heading</h2>"
+                }
+            ]
+        },
+
+
+        {
+            "option-heading": "Headings with a dividing line",
+            "option-description": "<p>Headings that are followed by content which is wider than the heading itself may benefit from a visual indicator that the heading is related to that content. In these situations adding <code>keyline--bottom</code> to the heading will add a full width dividing line.</p><ul><li>Please discuss your design requirements with the digital communications team before using this option.</li></ul>",
+            "option-anchor": "headings-dividing",
+            "headings": [
+                {
+                    "heading": "<h2 class='keyline--bottom'>Heading of an article</h2>"
+                }
+            ]
+        },
 
 
         {
