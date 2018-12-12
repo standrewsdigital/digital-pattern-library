@@ -9,6 +9,25 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.15.2
+
+Release date: Wednesday 12 December 2018
+
+### Added
+* All examples and code blocks have been wrapped in noindex tags so they are excluded from the University website search.
+* New option for footer pattern to support additional branding.
+* New spacing helper classes.
+* New global class for large headings.
+* New keyline option for headings.
+
+### Changed
+* Secondary text within a heading moved to sit on a new line.
+
+### Fixed
+* Bullet list style now consistent when used within accordion groups.
+
+---
+
 ## v1.15.1
 
 Release date: Wednesday 28 November 2018
