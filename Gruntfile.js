@@ -48,7 +48,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
 
         pkg: grunt.file.readJSON('package.json'),
-
+        err: grunt.file.readJSON('src/patterns/error-pages/error-pages-options.json'),
         // Assemble - Generate documentation about DPL
         // See http://assemble.io/docs/ for more details
         assemble: {
@@ -76,7 +76,18 @@ module.exports = function(grunt) {
             },
 
             // ASSEMBLE SECTIONS
-
+            // Assemble options for the error pages
+            error_pages: {
+                options: {
+                    layoutdir: 'src/patterns/error-pages/',
+                    layout: 'base-page.hbs',
+                    helpers: ['src/scripts/embed-helper.js'],
+                    pages: '<%= err.options %>',
+                },
+                files: {
+                    'docs/examples/error-pages/': ['!*']
+                }
+            },
             // Patterns - uses /src/_layouts/pattern.hbs
             patterns: {
                 options: {
@@ -192,7 +203,8 @@ module.exports = function(grunt) {
                         'src/styles/doc.scss',
                         'src/styles/print.scss',
                         'src/styles/screen.scss',
-                        'src/styles/header-only.scss'
+                        'src/styles/header-only.scss',
+                        'src/styles/error.scss'
                     ],
                     sassDir: 'src/styles',
                     importPath: 'src/patterns',
@@ -488,6 +500,7 @@ module.exports = function(grunt) {
         'assemble:examples',
         'assemble:docs',
         'copy:docs_core',
-        'copy:docs_images'
+        'copy:docs_images',
+        'assemble:error_pages'
     ]);
 };
