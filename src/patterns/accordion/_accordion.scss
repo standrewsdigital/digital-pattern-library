@@ -25,9 +25,11 @@
     //Change nested list style to match top level lists
     ul, ol {
         list-style-type: disc;
+        margin-bottom: 25px;
         
         ul, ol {
             list-style-type: circle;
+            margin-bottom: 0;
         }
     }
 }
