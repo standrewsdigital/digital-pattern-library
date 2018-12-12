@@ -30,7 +30,7 @@
                 },
                 {
                     "accordion-heading":"Geography",
-                    "accordion-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac rutrum tellus, quis porttitor urna. Donec ultricies libero erat, id efficitur risus blandit nec. Donec et ipsum in dui blandit rutrum. Praesent rhoncus lobortis ligula, viverra tincidunt ante lobortis at. Sed vehicula luctus quam sit amet lacinia. Sed eu nulla vel ex tempus accumsan in sit amet metus. Vestibulum a venenatis mi. Ut ac semper arcu.</p>"
+                    "accordion-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac rutrum tellus, quis porttitor urna. Donec ultricies libero erat, id efficitur risus blandit nec. Donec et ipsum in dui blandit rutrum. Praesent rhoncus lobortis ligula, viverra tincidunt ante lobortis at. Sed vehicula luctus quam sit amet lacinia. Sed eu nulla vel ex tempus accumsan in sit amet metus. Vestibulum a venenatis mi. Ut ac semper arcu.</p><ul><li>Vestibulum lacinia auctor hendrerit.</li><li>Vivamus vitae metus euismod, vestibulum odio eu..</li><li>Nullam non interdum mauris, quis molestie sem. Proin aliquam purus vel pellentesque mollis. Curabitur vitae augue at velit sollicitudin consequat.</li></ul>"
                 },
                 {
                     "accordion-heading":"History",

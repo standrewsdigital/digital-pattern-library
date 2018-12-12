@@ -35,6 +35,12 @@ footer a:link {
 	padding: 0;
 }
 
+// Use this for secondary branding such as the library logo
+.website-footer__image {
+	margin-top: 20px;
+	max-width: 280px;
+}
+
 #university-footer ul li {
 	display: inline;
 	list-style-type: none;
