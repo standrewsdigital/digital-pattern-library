@@ -48,23 +48,72 @@ $third-gutter: calc(1vw + 1em);
 $page-gutter-overflow: calc((3vw + 1em) - 30px); //Removes fixed size from dynamic gutter
 
 
-// Spacing classes
-.gutter-top {
+// Spacing helper classes
+.margin-top {
     margin-top: $page-gutter;
+
+    &--overflow {
+        margin-top: $page-gutter-overflow;
+    }
 }
 
-.gutter-top--half {
+.margin-top--half {
     margin-top: $half-gutter;
 }
 
-.gutter-bottom {
+.margin-bottom {
     margin-bottom: $page-gutter;
+
+    &--overflow {
+        margin-bottom: $page-gutter-overflow;
+    }
 }
 
-.gutter-bottom--half {
+.margin-bottom--half {
     margin-bottom: $half-gutter;
 }
 
+.padding-top {
+    padding-top: $page-gutter;
+
+    &--overflow {
+        padding-top: $page-gutter-overflow;
+    }
+}
+
+.padding-top--half {
+    padding-top: $half-gutter;
+}
+
+.padding-bottom {
+    padding-bottom: $page-gutter;
+
+    &--overflow {
+        padding-bottom: $page-gutter-overflow;
+    }
+}
+
+.padding-bottom--half {
+    padding-bottom: $half-gutter;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.no-padding-top {
+    padding-top: 0;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0;
+}
+
+// Old spacing classes
 .top-buffer {
 	margin-top: 30px;
 }
@@ -73,6 +122,7 @@ $page-gutter-overflow: calc((3vw + 1em) - 30px); //Removes fixed size from dynam
 	margin-bottom: 50px;
 }
 
+// Responsive images
 img {
     height: auto;
     max-width: 100%;
