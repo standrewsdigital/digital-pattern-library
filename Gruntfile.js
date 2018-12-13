@@ -194,6 +194,10 @@ module.exports = function(grunt) {
 
         // compass - compile compass/sass code to CSS
         compass: {
+            options: {
+                imagesDir: 'src',
+                fontsDir: 'src'
+            },
             dist: {
                 options: {
                     banner: '/*! <%= pkg.name %> v<%= pkg.version %> ' +
