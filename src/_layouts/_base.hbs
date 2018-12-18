@@ -22,24 +22,20 @@ date: <%= new Date() %>
                     </div>
                 </div>
                 <div id="header-search" role="search">
-                    <button class="btn btn-link" type="button" value="" name="btnG" id="header-search-trigger"><i class="fa fa-search" title="Search"></i></button>
-
+                    <button class="btn btn-link" id="header-search-trigger" name="btnG" type="button" value=""><i class="fa fa-search" title="Search"></i></button>
                     <form action="https://www.st-andrews.ac.uk/search" method="get">
                         <div class="input-group">
                             <span class="input-group-btn">
-                                <button class="btn btn-link" type="button" value="" name="btnG" id="header-search-close"><i class="fa fa-times" title="Close"></i></button>
+                                <button class="btn btn-link" id="header-search-close" name="btnG" type="button" value=""><i class="fa fa-times" title="Close"></i></button>
                             </span>
-                            <input class="form-control" type="text" title="Enter search keywords" maxlength="256" name="q" placeholder="Search the University website...">
+                            <input id="query" class="form-control" name="query" type="text" title="Enter search keywords" maxlength="256" placeholder="Search the University website"/>
                             <span class="input-group-btn">
-                                <button class="btn btn-primary" type="submit" value="Search" name="btnG" id="header-search-submit">
-                                    <i class="fa fa-search" title="Search"></i>
-                                </button>
+                                <button class="btn btn-primary" id="header-search-submit" name="btnG" type="submit" value="Search"><i class="fa fa-search" title="Search"></i></button>
                             </span>
                         </div>
-                        <input type="hidden" value="StAndrews_ITS" name="site">
-                        <input type="hidden" value="xml_no_dtd" name="output">
-                        <input type="hidden" value="StAndrews_ITS" name="client">
-                        <input type="hidden" value="StAndrews_ITS" name="proxystylesheet">
+                        <input type="hidden" name="collection" value="Uosa-meta-global">
+                        <input type="hidden" name="profile" value="_default">
+                        <input type="hidden" name="form" value="partial">
                     </form>
                 </div>
               </div>
