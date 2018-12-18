@@ -6,8 +6,19 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+---
+
+## v1.15.3
+
+Release date: Tuesday 18 December 2018
+
+### Changed
+* Header pattern to reflect new Funnel back search, removing GSA.
 
 ---
+
+
+
 
 ## v1.15.2
 
