@@ -1,0 +1,32 @@
+
+/*********************************/
+/* BEGIN Pattern: paired-values-list */
+/*********************************/
+
+.paired-values-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 15px 1fr; // 2 column grid
+    grid-template-columns: auto 1fr; // 2 column grid
+    grid-column-gap: 15px;
+}
+
+.paired-values-list__name {
+    font-weight: normal;
+    max-width: 200px;
+
+    &.selected {
+    	font-weight: bold;
+    }
+}
+
+.paired-values-list__value {
+
+    &.selected {
+    	font-weight: bold;
+    }
+}
+
+/*********************************/
+/* END Pattern: paired-values-list   */
+/*********************************/

@@ -186,6 +186,10 @@
                   "img": "assets/docs/images/patterns/numerical-list.jpg",
                   "url": "patterns/numerical-list/index.html"
                 },
+                { "name": "Paired values list",
+                  "img": "assets/docs/images/patterns/paired-values-list.jpg",
+                  "url": "patterns/paired-values-list/index.html"
+                },
                 { "name": "Photosphere",
                   "img": "assets/docs/images/patterns/photosphere.jpg",
                   "url": "patterns/photosphere/index.html"

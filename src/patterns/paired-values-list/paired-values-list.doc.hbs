@@ -1,0 +1,35 @@
+---
+title: Paired values list
+---
+
+<p>The paired values list pattern can be used to group together content that consists of a list of name and value pairs. These are displayed in an aligned grid with each pair on a separate line.</p>
+
+<h3>Rules for paired values list</h3>
+<ul>
+    <li>Each item-pair's name should be unique.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#paired-values-list-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/paired-values-list-options.options}}
+</ul>
+
+{{#paired-values-list-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+<!--noindex-->
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+	<div class="container">
+	{{> paired-values-list}}
+	</div>
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> paired-values-list}}</code></pre>
+<!--endnoindex-->
+{{/paired-values-list-options.options}}
