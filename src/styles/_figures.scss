@@ -2,10 +2,6 @@ figure {
     figcaption {
         font-size: 14px;
 	    line-height: 1.5;
-	    margin-top: 5px;
-
-	    &:before {
-	    	content: '- ';
-	    }
+	    padding:8px 0;
     }
 }
