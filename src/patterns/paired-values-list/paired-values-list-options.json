@@ -1,0 +1,76 @@
+{
+    "options": [
+        {
+            "option-heading": "List of days with associated times",
+            "option-description": "<p>A common use of this pattern would be to display the days of the week with associated opening times.</p>",
+            "option-anchor": "day-time-list",
+		    "list": [
+                {
+                    "list-name" : "Monday",
+                    "list-value" : "9.00am to 5.00pm"        
+                },
+                {
+                    "list-name" : "Tuesday",
+                    "list-value" : "9.00am to 5.00pm"        
+                },
+                {
+                    "list-name" : "Wednesday",
+                    "list-value" : "9.00am to 5.00pm"        
+                },
+                {
+                    "list-name" : "Thursday",
+                    "list-value" : "9.00am to 5.00pm"        
+                },
+                {
+                    "list-name" : "Friday",
+                    "list-value" : "9.00am to 5.00pm"        
+                },
+                {
+                    "list-name" : "Saturday",
+                    "list-value" : "Closed"        
+                },
+                {
+                    "list-name" : "Sunday",
+                    "list-value" : "Closed"        
+                }
+            ]
+        },
+
+        {
+            "option-heading": "List of days, with associated times, showing current day",
+            "option-description": "<p>For a repeating weekly list of days it may be beneficial to highlight the current day to aid quick identification of the corresponding time. This example demonstrates how it should display if viewed on a Thursday.</p>",
+            "option-anchor": "day-time-list-current",
+            "list": [
+                {
+                    "list-name" : "Monday",
+                    "list-value" : "9.00am to 5.00pm"        
+                },
+                {
+                    "list-name" : "Tuesday",
+                    "list-value" : "9.00am to 5.00pm"        
+                },
+                {
+                    "list-name" : "Wednesday",
+                    "list-value" : "9.00am to 5.00pm"        
+                },
+                {
+                    "list-name" : "Thursday",
+                    "list-value" : "9.00am to 5.00pm",  
+                    "item-selected": true
+                },
+                {
+                    "list-name" : "Friday",
+                    "list-value" : "9.00am to 5.00pm"        
+                },
+                {
+                    "list-name" : "Saturday",
+                    "list-value" : "Closed"        
+                },
+                {
+                    "list-name" : "Sunday",
+                    "list-value" : "Closed"        
+                }
+            ]
+        }
+    ]
+ }

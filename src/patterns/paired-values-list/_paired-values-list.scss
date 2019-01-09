@@ -1,0 +1,49 @@
+
+/*********************************/
+/* BEGIN Pattern: paired-values-list */
+/*********************************/
+
+.paired-values-list {
+    display: grid;
+    grid-template-columns: auto 1fr; // 2 column grid
+    grid-column-gap: 15px;
+
+    // IE 11 specific fallback as dynamic grids are not supported
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) { 
+        overflow: auto;
+    }
+
+}
+
+.paired-values-list__name {
+    font-weight: normal;
+    max-width: 200px;
+
+    // IE 11 specific fallback as dynamic grids are not supported
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) { 
+        clear: both;
+        float: left;
+        width: 30%;
+    }
+
+    &.selected {
+    	font-weight: bold;
+    }
+}
+
+.paired-values-list__value {
+
+    // IE 11 specific fallback as dynamic grids are not supported
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) { 
+        float: right;
+        width: 60%;
+    }
+
+    &.selected {
+    	font-weight: bold;
+    }
+}
+
+/*********************************/
+/* END Pattern: paired-values-list   */
+/*********************************/

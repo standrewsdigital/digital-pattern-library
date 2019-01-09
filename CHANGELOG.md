@@ -8,12 +8,25 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.15.4
+
+Release date: Wednesday 9 January 2019
+
+### Added
+* New pattern for lists of paired values.
+
+### Changed
+* Figcaption styling and spacing amended.
+* Secondary call to action pattern spacing amended.
+
+---
+
 ## v1.15.3
 
 Release date: Tuesday 18 December 2018
 
 ### Changed
-* Header pattern to reflect new Funnel back search, removing GSA.
+* Header pattern to reflect new Funnelback search, removing GSA.
 
 ---
 
