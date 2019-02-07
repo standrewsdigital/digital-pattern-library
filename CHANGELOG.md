@@ -8,6 +8,19 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.15.5
+
+Release date: Thursday 7 February 2019
+
+### Added
+* Caption option for featured media.
+* Orange background colour option for featured media.
+
+
+
+
+---
+
 ## v1.15.4
 
 Release date: Wednesday 9 January 2019
@@ -19,6 +32,9 @@ Release date: Wednesday 9 January 2019
 * Figcaption styling and spacing amended.
 * Secondary call to action pattern spacing amended.
 
+
+
+
 ---
 
 ## v1.15.3
@@ -28,10 +44,10 @@ Release date: Tuesday 18 December 2018
 ### Changed
 * Header pattern to reflect new Funnelback search, removing GSA.
 
+
+
+
 ---
-
-
-
 
 ## v1.15.2
 
@@ -50,6 +66,9 @@ Release date: Wednesday 12 December 2018
 ### Fixed
 * Bullet list style now consistent when used within accordion groups.
 
+
+
+
 ---
 
 ## v1.15.1
@@ -67,6 +86,9 @@ Release date: Wednesday 28 November 2018
 * Chevron image icon replaced to use Font Awesome icon in various places.
 * Deprecated accordion pattern now inherits background colour rather than being set as white.
 * Documentation layout fixed on featured media pattern.
+
+
+
 
 ---
 
@@ -111,6 +133,9 @@ Release date: Tuesday 13 October 2018
 * Fixed padding on case studies option of news updates pattern.
 * Showcase banner icon size conflict with navbox chevron.
 
+
+
+
 ---
 
 ## v1.14.2
@@ -129,6 +154,9 @@ Release date: Wednesday 24 October 2018
 ### Removed
 * Removed bottom margin on form banner pattern.
 
+
+
+
 ---
 
 ## v1.14.1
@@ -137,6 +165,9 @@ Release date: Tuesday 9 October 2018
 
 ### Fixed
 * GitHub identified a security vulnerability in some of our dependencies at package-lock.json, Randomatic has been updated to the latest version.
+
+
+
 
 ---
 
