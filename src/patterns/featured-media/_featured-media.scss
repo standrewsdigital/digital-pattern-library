@@ -82,6 +82,10 @@
         @include featured-media-overlay ($sta-purple, $sta-green, $sta-green-hover)
     }
 
+    &.featured-media--sta-orange {
+        @include featured-media-overlay ($sta-orange, $sta-green, $sta-green-hover)
+    }
+
     &.featured-media--blue-transparent-overlay {
         @include featured-media-overlay ($sta-blue, $sta-orange, $sta-orange-hover, true)
     }
