@@ -154,6 +154,10 @@
                   "img": "assets/docs/images/patterns/contact-card.jpg",
                   "url": "patterns/contact-card/index.html"
                 },
+                { "name": "Contact card grid",
+                  "img": "assets/docs/images/patterns/contact-card.jpg",
+                  "url": "patterns/contact-card-grid/index.html"
+                },
                 { "name": "Featured news",
                   "img": "assets/docs/images/patterns/featured-news.jpg",
                   "url": "patterns/featured-news/index.html"

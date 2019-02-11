@@ -14,45 +14,6 @@
 					"phone": true,
 					"email": true,
 					"card-class": "contact"
-			    },
-			    {
-			    	"id": "bob123",
-					"name": "Jackson Baker",
-					"title": "Emeritus Professor",
-					"type": "academic",
-					"image": true,
-					"phone": true,
-					"card-class": "contact"
-			    },
-			    {
-			    	"id": "steve123",
-					"name": "Emma Clark",
-					"title": "Reader",
-					"type": "academic",
-					"image": true,
-					"phone": true,
-					"email": true,
-					"card-class": "contact"
-			    },
-			    {
-			    	"id": "pete123",
-					"name": "Aiden Davis",
-					"title": "Senior Lecturer",
-					"type": "academic",
-					"image": true,
-					"phone": true,
-					"email": true,
-					"card-class": "contact"
-			    },
-			    {
-			    	"id": "sally123",
-					"name": "Olivia Evans",
-					"title": "Lecturer",
-					"type": "academic",
-					"image": true,
-					"phone": true,
-					"email": true,
-					"card-class": "contact"
 			    }
 		    ]
         },
@@ -72,38 +33,6 @@
 					"type": "student",
 					"email": true,
 					"card-class": "contact"
-			    },
-			    {
-			    	"id": "ava123",
-					"name": "Ava Ghosh",
-					"title": "PhD student",
-					"type": "student",
-					"email": true,
-					"card-class": "contact"
-			    },
-			    {
-			    	"id": "liam123",
-					"name": "Liam Hills",
-					"title": "PhD student",
-					"type": "student",
-					"email": true,
-					"card-class": "contact"
-			    },
-			    {
-			    	"id": "mia123",
-					"name": "Mia Irwin",
-					"title": "PhD student",
-					"type": "student",
-					"email": true,
-					"card-class": "contact"
-			    },
-			    {
-			    	"id": "noah123",
-					"name": "Noah Jones",
-					"title": "PhD student",
-					"type": "student",
-					"email": true,
-					"card-class": "contact"
 			    }
 		    ]
         },
@@ -116,45 +45,6 @@
             "option-description": "<ul><li>Expert cards must not have contact details.</li><li>Maximum of five areas of expertise to be displayed per card.</li></ul>",
             "option-anchor": "expert",
 		    "cards": [
-			    {
-			    	"id": "sophia123",
-					"name": "Sophia Adams",
-					"title": "Professor",
-					"type": "expert",
-					"image": true,
-					"areas-expertise": [
-						{
-							"area": "Business and finance"
-						},
-						{
-							"area": "Computer science and informatics"
-						},
-						{
-							"area": "Engineering"
-						},
-						{
-							"area": "Health sciences"
-						},
-						{
-							"area": "Law"
-						}
-					]
-			    },
-			    {
-			    	"id": "jackson123",
-					"name": "Jackson Baker",
-					"title": "Emeritus Professor",
-					"type": "expert",
-					"image": true,
-					"areas-expertise": [
-						{
-							"area": "Engineering"
-						},
-						{
-							"area": "Health sciences"
-						}
-					]
-			    },
 			    {
 			    	"id": "emma123",
 					"name": "Emma Clark",
@@ -170,42 +60,6 @@
 						},
 						{
 							"area": "Engineering"
-						}
-					]
-			    },
-			    {
-			    	"id": "aiden123",
-					"name": "Aiden Davis",
-					"title": "Senior Lecturer",
-					"type": "expert",
-					"image": true,
-					"areas-expertise": [
-						{
-							"area": "Aerospace"
-						}
-					]
-			    },
-			    {
-			    	"id": "olivia123",
-					"name": "Olivia Evans",
-					"title": "Lecturer",
-					"type": "expert",
-					"image": true,
-					"areas-expertise": [
-						{
-							"area": "Business and finance"
-						},
-						{
-							"area": "Computer science and informatics"
-						},
-						{
-							"area": "Engineering"
-						},
-						{
-							"area": "Health sciences"
-						},
-						{
-							"area": "Law"
 						}
 					]
 			    }

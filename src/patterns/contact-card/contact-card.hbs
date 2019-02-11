@@ -1,8 +1,6 @@
 <!-- Begin pattern: contact-card //-->
-<div class="row">
 {{#each cards}}
-    <div class="col-xs-12 col-sm-6 col-lg-4">
-        <article id="{{id}}" class="contact-card {{contract-type}}">
+       <div id="{{id}}" class="contact-card {{contract-type}}">
             <h3>
             {{#if image}}
                 <a href="#">{{name}}</a>
@@ -22,7 +20,7 @@
         {{/if}}
                 <ul class="contact-card-links">
                 {{#if phone}}
-                    <li><a href="tel:#" data-rel="external">01334 46xxxx</a></li>
+                    <li><a href="tel:#" data-rel="external">+44 (0)1334 46 1234</a></li>
                 {{/if}}
                 {{#if email}}
                     <li><a href="mailto:#">example@st-andrews.ac.uk</a></li>
@@ -34,8 +32,6 @@
         {{#unless areas-expertise}}
             </div>
         {{/unless}}
-        </article>
-    </div>
+     </div>
 {{/each}}
-</div>
 <!-- End pattern: contact-card //-->

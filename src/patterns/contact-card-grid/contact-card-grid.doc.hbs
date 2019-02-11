@@ -1,0 +1,36 @@
+---
+title: Contact card grid
+---
+
+<p>The contact card grid pattern is used to display information about staff, students and experts.</p>
+
+<h3>Rules for contact card grid</h3>
+<ul>
+	<li>Contact cards must only be used on people pages in the main body or within the experts guide on the news site.</li>
+	<li>Cards with an image must be at the size 111 &times; 127 pixels.</li>
+	<li>If an image is not available, use the default staff profile image: <a href='../../assets/core/images/contact-card-default.gif'>contact-card-default.gif</a></li>
+</ul>
+<h3>Options available</h3>
+<ul>
+{{#contact-card-grid-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/contact-card-grid-options.options}}
+</ul>
+
+{{#contact-card-grid-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+<!--noindex-->
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+	<div class="container">
+	{{> contact-card-grid}}
+	</div>
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> contact-card-grid}}</code></pre>
+<!--endnoindex-->
+{{/contact-card-grid-options.options}}
