@@ -8,6 +8,20 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.15.6
+
+Release date: Wednesday 13 February 2019
+
+### Fixed
+* Contact card height increases at widths where 3 adjoining cards require more space.
+
+### Security
+* Update to lodash version in package.lock.json
+
+
+
+---
+
 ## v1.15.5
 
 Release date: Thursday 7 February 2019

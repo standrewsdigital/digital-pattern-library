@@ -69,6 +69,12 @@
     }
 }
 
+@media only screen and (max-width: 1540px) and (min-width: 768px) {
+  .contact-card {
+    height: 290px;
+  }
+}
+
 /*********************************/
 /* END Pattern: contact-card     */
 /*********************************/
