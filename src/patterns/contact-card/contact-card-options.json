@@ -8,12 +8,46 @@
 			    {
 			    	"id": "tom123",
 					"name": "Sophia Adams",
+					"initials": "SA",
+					"unit": "Unit name",
+					"team": ", Team name",
 					"title": "Professor",
-					"type": "academic",
-					"image": true,
+					"image": "../../assets/docs/images/contact-card-media.jpg",
 					"phone": true,
 					"email": true,
-					"card-class": "contact"
+					"areas-expertise": [
+						{
+							"area": "Business and finance"
+						},
+						{
+							"area": "Computer science and informatics"
+						},
+						{
+							"area": "Engineering"
+						}
+					]
+			    },
+			    {
+			    	"id": "tom123",
+					"name": "Sophia Adams",
+					"initials": "SA",
+					"unit": "Unit name",
+					"team": ", Team name",
+					"title": "Professor",
+					"image": "../../assets/docs/images/contact-card-media.jpg",
+					"phone": true,
+					"email": true,
+					"areas-expertise": [
+						{
+							"area": "Business and finance"
+						},
+						{
+							"area": "Computer science and informatics"
+						},
+						{
+							"area": "Engineering"
+						}
+					]
 			    }
 		    ]
         },
@@ -29,6 +63,7 @@
 			    {
 			    	"id": "lucas123",
 					"name": "Lucas Frank",
+					"initials": "LF",
 					"title": "PhD student",
 					"type": "student",
 					"email": true,
@@ -48,9 +83,10 @@
 			    {
 			    	"id": "emma123",
 					"name": "Emma Clark",
+					"initials": "EC",
 					"title": "Reader",
 					"type": "expert",
-					"image": true,
+					"image": "../../assets/core/images/contact-card-default.gif",
 					"areas-expertise": [
 						{
 							"area": "Business and finance"

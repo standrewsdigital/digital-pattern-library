@@ -1,37 +1,39 @@
 <!-- Begin pattern: contact-card //-->
 {{#each cards}}
-       <div id="{{id}}" class="contact-card {{contract-type}}">
-            <h3>
-            {{#if image}}
-                <a href="#">{{name}}</a>
-            {{else}}
-                {{name}}
-            {{/if}}
-            </h3>
-        {{#if image}}
-            <img src="../../assets/core/images/contact-card-default.gif" alt="{{name}}" title="{{name}}" class="profilePhoto">
+<div id="{{id}}" class="contact-card">
+    {{#if image}}
+    <div class="contact-card__image">
+        <img src="{{image}}" alt="{{name}}" title="{{name}}">
+    </div>
+    {{else}}
+    <div class="contact-card__initials">
+        <abbr title="{{name}}">{{initials}}</abbr>
+    </div>
+    {{/if}}
+    <div class="contact-card__titles">
+        <h3 class="contact-card__title">{{name}}</h3>
+        <h4 class="contact-card__subtitle">{{unit}}{{team}}</h4>
+        <h4 class="contact-card__subtitle">{{title}}</h4>
+    </div>
+    <div class="contact-card__contact">
+        {{#if phone}}
+        <div class="contact-card__contact--phone">
+            <a href="tel:#">+44 (0)1334 46 1234</a>
+        </div>
         {{/if}}
-            <h4>{{title}}</h4>
-        {{#if areas-expertise}}
-            <h4>Areas of expertise</h4>
-        {{else}}
-            <div class="{{card-class}}">
-                <h4>Contact</h4>
+        {{#if email}}
+        <div class="contact-card__contact--email">
+            <a href="mailto:#">example@st-andrews.ac.uk</a>
+        </div>
         {{/if}}
-                <ul class="contact-card-links">
-                {{#if phone}}
-                    <li><a href="tel:#" data-rel="external">+44 (0)1334 46 1234</a></li>
-                {{/if}}
-                {{#if email}}
-                    <li><a href="mailto:#">example@st-andrews.ac.uk</a></li>
-                {{/if}}
-                {{#each areas-expertise}}
-                    <li><a href="#">{{area}}</a></li>
-                {{/each}}
-                </ul>
-        {{#unless areas-expertise}}
-            </div>
-        {{/unless}}
-     </div>
+    </div>
+    {{#if areas-expertise}}
+    <ul class="contact-card__tags">
+        {{#each areas-expertise}}
+        <li class="contact-card__tag"><a class="contact-card__tag-link" href="#">{{area}}</a></li>
+        {{/each}}
+    </ul>
+    {{/if}}
+</div>
 {{/each}}
 <!-- End pattern: contact-card //-->
