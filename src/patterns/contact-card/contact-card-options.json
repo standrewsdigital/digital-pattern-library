@@ -1,20 +1,84 @@
 {
     "options": [
         {
-            "option-heading": "Staff cards",
-            "option-description": "<ul><li>Staff name must link to their research portal profile if one is available.</li></ul>",
+            "option-heading": "Contact card",
+            "option-description": "<p>This example shows all possible content available in the pattern.</p><ul><li>Only the image or initials and the full name are required.</li><li>The list of tags for a card should be no larger than five.</li></ul>",
             "option-anchor": "staff",
 		    "cards": [
 			    {
-			    	"id": "tom123",
+			    	"id": "a1",
 					"name": "Sophia Adams",
 					"initials": "SA",
 					"unit": "Unit name",
 					"team": ", Team name",
 					"title": "Professor",
 					"image": "../../assets/docs/images/contact-card-media.jpg",
-					"phone": true,
-					"email": true,
+					"phone": "+44 (0)1334 46 1234",
+					"email": "example@st-andrews.ac.uk",
+					"areas-expertise": [
+						{
+							"area": "Business and finance"
+						},
+						{
+							"area": "Computer science and informatics"
+						},
+						{
+							"area": "Engineering"
+						}
+					]
+			    }
+		    ]
+        },
+
+
+        {
+            "option-heading": "Linked contact card",
+            "option-description": "<p>Contact cards can also be used to link to further details of the individual. This example opens a lightbox with further details, but the link could also navigate to a new page if desired.</p>",
+            "option-anchor": "staff",
+		    "cards": [
+			    {
+			    	"id": "a1",
+			    	"link": true,
+					"name": "Sophia Adams",
+					"initials": "SA",
+					"unit": "Unit name",
+					"team": ", Team name",
+					"title": "Professor",
+					"image": "../../assets/docs/images/contact-card-media.jpg",
+					"phone": "+44 (0)1334 46 1234",
+					"email": "example@st-andrews.ac.uk",
+					"areas-expertise": [
+						{
+							"area": "Business and finance"
+						},
+						{
+							"area": "Computer science and informatics"
+						},
+						{
+							"area": "Engineering"
+						}
+					]
+			    }
+		    ]
+        },
+
+
+        {
+            "option-heading": "Contact card list",
+            "option-description": "<p>This example shows a list of contact cards that contains a mixture of available information.</p>",
+            "option-anchor": "student",
+		    "cards": [
+			    {
+			    	"id": "a1",
+					"name": "Sophia Adams",
+					"initials": "SA",
+					"link": true,
+					"unit": "Unit name",
+					"team": ", Team name",
+					"title": "Professor",
+					"image": "../../assets/docs/images/contact-card-media.jpg",
+					"phone": "+44 (0)1334 46 1234",
+					"email": "example@st-andrews.ac.uk",
 					"areas-expertise": [
 						{
 							"area": "Business and finance"
@@ -28,15 +92,15 @@
 					]
 			    },
 			    {
-			    	"id": "tom123",
-					"name": "Sophia Adams",
-					"initials": "SA",
+			    	"id": "a2",
+					"name": "Trevor Jenkins",
+					"initials": "TJ",
+					"link": true,
 					"unit": "Unit name",
 					"team": ", Team name",
-					"title": "Professor",
-					"image": "../../assets/docs/images/contact-card-media.jpg",
-					"phone": true,
-					"email": true,
+					"title": "Official job title",
+					"phone": "+44 (0)1334 46 9876",
+					"email": "longerexample@st-andrews.ac.uk",
 					"areas-expertise": [
 						{
 							"area": "Business and finance"
@@ -48,45 +112,20 @@
 							"area": "Engineering"
 						}
 					]
-			    }
-		    ]
-        },
-
-
-
-
-        {
-            "option-heading": "Student cards",
-            "option-description": "<ul><li>Student contact cards must not have an image.</li></ul>",
-            "option-anchor": "student",
-		    "cards": [
+			    },
 			    {
-			    	"id": "lucas123",
-					"name": "Lucas Frank",
-					"initials": "LF",
-					"title": "PhD student",
-					"type": "student",
-					"email": true,
-					"card-class": "contact"
-			    }
-		    ]
-        },
-
-
-
-
-        {
-            "option-heading": "Expert cards",
-            "option-description": "<ul><li>Expert cards must not have contact details.</li><li>Maximum of five areas of expertise to be displayed per card.</li></ul>",
-            "option-anchor": "expert",
-		    "cards": [
+			    	"id": "a3",
+					"name": "Angela Eden",
+					"initials": "AE",
+					"team": "Department name",
+					"title": "Official job title",
+					"phone": "+44 (0)1334 46 9876",
+					"email": "example@st-andrews.ac.uk"
+			    },
 			    {
-			    	"id": "emma123",
-					"name": "Emma Clark",
-					"initials": "EC",
-					"title": "Reader",
-					"type": "expert",
-					"image": "../../assets/core/images/contact-card-default.gif",
+			    	"id": "a4",
+					"name": "William Wilson",
+					"initials": "WW",
 					"areas-expertise": [
 						{
 							"area": "Business and finance"
