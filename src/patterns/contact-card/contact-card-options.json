@@ -37,7 +37,7 @@
             "option-anchor": "staff",
 		    "cards": [
 			    {
-			    	"id": "a1",
+			    	"id": "b1",
 			    	"link": true,
 					"name": "Sophia Adams",
 					"initials": "SA",
@@ -69,7 +69,7 @@
             "option-anchor": "student",
 		    "cards": [
 			    {
-			    	"id": "a1",
+			    	"id": "c1",
 					"name": "Sophia Adams",
 					"initials": "SA",
 					"link": true,
@@ -92,7 +92,7 @@
 					]
 			    },
 			    {
-			    	"id": "a2",
+			    	"id": "c2",
 					"name": "Trevor Jenkins",
 					"initials": "TJ",
 					"link": true,
@@ -114,7 +114,7 @@
 					]
 			    },
 			    {
-			    	"id": "a3",
+			    	"id": "c3",
 					"name": "Angela Eden",
 					"initials": "AE",
 					"team": "Department name",
@@ -123,7 +123,7 @@
 					"email": "example@st-andrews.ac.uk"
 			    },
 			    {
-			    	"id": "a4",
+			    	"id": "c4",
 					"name": "William Wilson",
 					"initials": "WW",
 					"areas-expertise": [

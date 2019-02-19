@@ -1,10 +1,11 @@
 <!-- Begin pattern: contact-card //-->
+{{#if codeblock}}
 {{#each cards}}
-<div id="{{id}}" class="contact-card">
+<div class="contact-card">
     {{#if image}}
     <div class="contact-card__image">
         {{#if link}}
-        <a href="#">
+        <a href="#{{id}}" <!--data-modal-open-->>
         {{/if}}
         <img src="{{image}}" alt="{{name}}" title="{{name}}">
         {{#if link}}
@@ -14,7 +15,7 @@
     {{else}}
     <div class="contact-card__initials">
         {{#if link}}
-        <a href="#">
+        <a href="#{{id}}" <!--data-modal-open-->>
         {{/if}}
         <abbr title="{{name}}">{{initials}}</abbr>
         {{#if link}}
@@ -55,5 +56,104 @@
     </ul>
     {{/if}}
 </div>
+<div id="{{id}}" <!--data-modal-->>
+  <div class="contact-card__full">
+        {{#if image}}
+        <div class="contact-card__image">
+            {{#if link}}
+            <a href="#{{id}}" <!--data-modal-open-->>
+            {{/if}}
+            <img src="{{image}}" alt="{{name}}" title="{{name}}">
+            {{#if link}}
+            </a>
+            {{/if}}
+        </div>
+        {{else}}
+        <div class="contact-card__initials">
+            {{#if link}}
+            <a href="#{{id}}" <!--data-modal-open-->>
+            {{/if}}
+            <abbr title="{{name}}">{{initials}}</abbr>
+            {{#if link}}
+            </a>
+            {{/if}}
+        </div>
+        {{/if}}
+        <h3>{{name}}</h3>
+    </div>
+</div>
 {{/each}}
+{{else}}
+{{#each cards}}
+<div class="contact-card">
+    {{#if image}}
+    <div class="contact-card__image">
+        {{#if link}}
+        <a href="#{{id}}" data-modal-open>
+        {{/if}}
+        <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        {{#if link}}
+        </a>
+        {{/if}}
+    </div>
+    {{else}}
+    <div class="contact-card__initials">
+        {{#if link}}
+        <a href="#{{id}}" data-modal-open>
+        {{/if}}
+        <abbr title="{{name}}">{{initials}}</abbr>
+        {{#if link}}
+        </a>
+        {{/if}}
+    </div>
+    {{/if}}
+    <div class="contact-card__titles">
+        <h3 class="contact-card__title">
+        {{#if link}}
+        <a href="#">
+        {{/if}}
+        {{name}}
+        {{#if link}}
+        </a>
+        {{/if}}
+        </h3>
+        <h4 class="contact-card__subtitle">{{unit}}{{team}}</h4>
+        <h4 class="contact-card__subtitle">{{title}}</h4>
+    </div>
+    <div class="contact-card__contact">
+        {{#if phone}}
+        <div class="contact-card__contact--phone">
+            <a class="contact-card__tag-link" href="tel:#">{{phone}}</a>
+        </div>
+        {{/if}}
+        {{#if email}}
+        <div class="contact-card__contact--email">
+            <a class="contact-card__tag-link" href="mailto:#">{{email}}</a>
+        </div>
+        {{/if}}
+    </div>
+    {{#if areas-expertise}}
+    <ul class="contact-card__tags">
+        {{#each areas-expertise}}
+        <li class="contact-card__tag"><a class="contact-card__tag-link contact-card__tag-link-small" href="#">{{area}}</a></li>
+        {{/each}}
+    </ul>
+    {{/if}}
+</div>
+<div id="{{id}}" data-modal>
+  <div class="contact-details">
+        {{#if image}}
+        <div class="contact-details__image">
+            <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        </div>
+        {{else}}
+        <div class="contact-details__initials">
+            <abbr title="{{name}}">{{initials}}</abbr>
+        </div>
+        {{/if}}
+        <h3>{{name}}</h3>
+    </div>
+</div>
+{{/each}}
+{{/if}}
 <!-- End pattern: contact-card //-->
