@@ -3,8 +3,8 @@
 /* END Pattern: category-header  */
 /*********************************/
 
-// Image background with transparent colour overlay
-#category-header {
+// Deprecated styling
+#category-header{
     background-image: url(../images/header_general.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -13,9 +13,13 @@
     overflow: hidden;
 
     h2 a {
+        font-family: 'PT Serif', georgia, serif;
+        font-size: 35px;
         color: white;
         font-weight: normal;
         text-decoration: none;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     h2 a:hover {
@@ -23,35 +27,37 @@
     }
 }
 
-#category-header .transparent-overlay {
+.transparent-overlay {
     background-color: -dpl-color($palette-default,'secondary','transparent');
-    padding-bottom: 10px;
 
     h2 {
-        font-family: 'PT Serif', georgia, serif;
         text-shadow: 1px 1px 1px rgb(68, 68, 68);
-        font-size: 35px;
     }
 }
 
-// This is for the old implementation of the pattern.
-#category-header > div > h2 {
-    background-color: -dpl-color($palette-default,'secondary','transparent');
-    font-family: 'PT Serif', georgia, serif;
-    margin: 0 -100%;
-    padding: 20px 100%;
-    position: relative;
-    text-shadow: 1px 1px 1px rgb(68, 68, 68);
+// Blue background colour, variant
+#category-header.category-header-blue {
+    background: $sta-blue-light;
 }
 
-// Solid background colour, variant
-#category-header.category-header-solid {
-    background: -dpl-color($palette-default,'secondary','base');
+// Burgundy background colour, variant
+#category-header.category-header-burgundy {
+    background: $sta-burgundy;
+}
 
-    h2 {
-        background: transparent;
-        text-shadow:none;
-    }
+// Orange background colour, variant
+#category-header.category-header-orange {
+    background: $sta-orange;
+}
+
+// Purple background colour, variant
+#category-header.category-header-purple {
+    background: $sta-purple;
+}
+
+// Green background colour, variant
+#category-header.category-header-green {
+    background: $sta-green;
 }
 
 
