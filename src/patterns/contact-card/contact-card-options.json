@@ -7,13 +7,13 @@
 		    "cards": [
 			    {
 			    	"id": "a1",
-					"name": "Sophia Adams",
+					"name": "Mrs Sophia Adams",
 					"initials": "SA",
 					"unit": "Unit name",
 					"team": ", Team name",
-					"title": "Professor",
-					"image": "../../assets/docs/images/contact-card-media.jpg",
-					"phone": "+44 (0)1334 46 1234",
+					"title": "Job Title",
+					"image": "../../assets/docs/images/profile-pictures/female-001.jpg",
+					"phone": "+44 (0)1334 46 xxxx",
 					"email": "example@st-andrews.ac.uk",
 					"areas-expertise": [
 						{
@@ -39,23 +39,23 @@
 			    {
 			    	"id": "b1",
 			    	"link": true,
-					"name": "Sophia Adams",
-					"initials": "SA",
-					"unit": "Unit name",
-					"team": ", Team name",
-					"title": "Professor",
-					"image": "../../assets/docs/images/contact-card-media.jpg",
-					"phone": "+44 (0)1334 46 1234",
+					"name": "Dr Brielle Williamson",
+					"initials": "BW",
+					"unit": "School of Psychology",
+					"team": ", Clinical Counselling",
+					"title": "Research Specialist",
+					"image": "../../assets/docs/images/profile-pictures/female-002.jpg",
+					"phone": "+44 (0)1334 46 xxxx",
 					"email": "example@st-andrews.ac.uk",
 					"areas-expertise": [
 						{
-							"area": "Business and finance"
+							"area": "Clinical Psychology"
 						},
 						{
-							"area": "Computer science and informatics"
+							"area": "Industrial Psychology"
 						},
 						{
-							"area": "Engineering"
+							"area": "Developmental Psychology"
 						}
 					],
 					"bio": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur vel tellus eget vehicula. Mauris gravida ex a elit rutrum, et laoreet turpis egestas. Etiam interdum mattis erat, eget faucibus ipsum varius quis. Quisque quis magna enim. Vivamus commodo, urna a fringilla cursus, nisi felis blandit diam, sit amet venenatis enim tellus in ante. Pellentesque vel magna quis eros mattis porttitor at ut sapien. Curabitur congue ac purus sed posuere. Praesent imperdiet ligula arcu, et varius est suscipit ac.</p><p>Nam id diam id odio facilisis pretium at non sem. In in massa at risus blandit venenatis nec ut enim. Phasellus condimentum fringilla aliquam. Praesent in est in eros bibendum lobortis. Phasellus in elementum erat, eget iaculis nulla. Nam commodo, nunc quis dictum tempus, nisi massa mollis orci, sed sagittis ligula justo et est. Sed ultricies arcu nec nisi finibus, sed dictum neque porttitor. Curabitur ante ante, posuere sit amet ligula eget, blandit tincidunt lacus.</p>"
@@ -71,71 +71,77 @@
 		    "cards": [
 			    {
 			    	"id": "c1",
-					"name": "Sophia Adams",
-					"initials": "SA",
+					"name": "Miss Colleen Hurst",
+					"initials": "CH",
 					"link": true,
-					"unit": "Unit name",
-					"team": ", Team name",
-					"title": "Professor",
-					"image": "../../assets/docs/images/contact-card-media.jpg",
-					"phone": "+44 (0)1334 46 1234",
+					"unit": "St Andrews Sustainability Institute",
+					"team": ", Psychology and Neuroscience",
+					"title": "Academic Liason",
+					"image": "../../assets/docs/images/profile-pictures/female-003.jpg",
+					"phone": "+44 (0)1334 46 xxxx",
 					"email": "example@st-andrews.ac.uk",
 					"areas-expertise": [
 						{
-							"area": "Business and finance"
+							"area": "Crowd behaviour"
 						},
 						{
-							"area": "Computer science and informatics"
+							"area": "Discrimination"
 						},
 						{
-							"area": "Engineering"
+							"area": "Nationalism"
+						},
+						{
+							"area": "Prejudice"
+						},
+						{
+							"area": "Psychology"
 						}
 					]
 			    },
 			    {
 			    	"id": "c2",
-					"name": "Trevor Jenkins",
-					"initials": "TJ",
+					"name": "Mr Howard Hatfield",
+					"initials": "HH",
 					"link": true,
-					"unit": "Unit name",
-					"team": ", Team name",
-					"title": "Official job title",
-					"phone": "+44 (0)1334 46 9876",
+					"unit": "School of Computer Science",
+					"title": "Senior JavaScript Developer",
+					"phone": "+44 (0)1334 46 xxxx",
 					"email": "longerexample@st-andrews.ac.uk",
 					"areas-expertise": [
 						{
-							"area": "Business and finance"
+							"area": "Human-Computer Interaction"
 						},
 						{
-							"area": "Computer science and informatics"
-						},
-						{
-							"area": "Engineering"
+							"area": "Information Management and Data Analytics"
 						}
 					]
 			    },
 			    {
 			    	"id": "c3",
-					"name": "Angela Eden",
-					"initials": "AE",
-					"team": "Department name",
-					"title": "Official job title",
-					"phone": "+44 (0)1334 46 9876",
+					"name": "Dr Olivia Liang",
+					"initials": "OL",
+					"team": "University Court",
+					"title": "Certified Financial Planner",
+					"phone": "+44 (0)1334 46 xxxx",
 					"email": "example@st-andrews.ac.uk"
 			    },
 			    {
 			    	"id": "c4",
-					"name": "William Wilson",
-					"initials": "WW",
+					"name": "Professor Timothy Mooney",
+					"initials": "TM",
+					"title": "Chemical Engineering Professor",
+					"image": "../../assets/docs/images/profile-pictures/male-004.jpg",
+					"phone": "+44 (0)1334 46 xxxx",
+					"email": "example@st-andrews.ac.uk",
 					"areas-expertise": [
 						{
-							"area": "Business and finance"
+							"area": "Finance & Law for Engineers"
 						},
 						{
-							"area": "Computer science and informatics"
+							"area": "Mass, Transfer and Separations"
 						},
 						{
-							"area": "Engineering"
+							"area": "General Reaction Engineering"
 						}
 					]
 			    }
