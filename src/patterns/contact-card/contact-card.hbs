@@ -5,7 +5,7 @@
     {{#if image}}
     <div class="contact-card__image">
         {{#if link}}
-        <a href="#{{id}}" <!--data-modal-open-->>
+        <a href="#{{id}}" data-modal-open-xxREMOVExx>
         {{/if}}
         <img src="{{image}}" alt="{{name}}" title="{{name}}">
         {{#if link}}
@@ -15,7 +15,7 @@
     {{else}}
     <div class="contact-card__initials">
         {{#if link}}
-        <a href="#{{id}}" <!--data-modal-open-->>
+        <a href="#{{id}}" data-modal-open-xxREMOVExx>
         {{/if}}
         <abbr title="{{name}}">{{initials}}</abbr>
         {{#if link}}
@@ -56,30 +56,34 @@
     </ul>
     {{/if}}
 </div>
-<div id="{{id}}" <!--data-modal-->>
-  <div class="contact-card__full">
+<div id="{{id}}"  data-modal-xxREMOVExx>
+    <div class="contact-details">
         {{#if image}}
-        <div class="contact-card__image">
-            {{#if link}}
-            <a href="#{{id}}" <!--data-modal-open-->>
-            {{/if}}
+        <div class="contact-details__image">
             <img src="{{image}}" alt="{{name}}" title="{{name}}">
-            {{#if link}}
-            </a>
-            {{/if}}
         </div>
         {{else}}
-        <div class="contact-card__initials">
-            {{#if link}}
-            <a href="#{{id}}" <!--data-modal-open-->>
-            {{/if}}
+        <div class="contact-details__initials">
             <abbr title="{{name}}">{{initials}}</abbr>
-            {{#if link}}
-            </a>
-            {{/if}}
         </div>
         {{/if}}
-        <h3>{{name}}</h3>
+        <h3 class="contact-details__title">{{name}}</h3>
+        <h4 class="contact-details__subtitle">{{unit}}{{team}}</h4>
+        <h4 class="contact-details__subtitle">{{title}}</h4>
+        <dl class="contact-details__profile">
+            {{#if phone}}
+            <dt class="contact-details__profile-item">Phone</dt>
+            <dd class="contact-details__profile-value">{{phone}}</dd>
+            {{/if}}
+            {{#if email}}
+            <dt class="contact-details__profile-item">Email</dt>
+            <dd class="contact-details__profile-value">{{email}}</dd>
+            {{/if}}
+            {{#if bio}}
+            <dt class="contact-details__profile-item">More information</dt>
+            <dd class="contact-details__profile-value">{{bio}}</dd>
+            {{/if}}
+        </dl>
     </div>
 </div>
 {{/each}}
@@ -141,7 +145,7 @@
     {{/if}}
 </div>
 <div id="{{id}}" data-modal>
-  <div class="contact-details">
+    <div class="contact-details">
         {{#if image}}
         <div class="contact-details__image">
             <img src="{{image}}" alt="{{name}}" title="{{name}}">
@@ -151,7 +155,23 @@
             <abbr title="{{name}}">{{initials}}</abbr>
         </div>
         {{/if}}
-        <h3>{{name}}</h3>
+        <h3 class="contact-details__title">{{name}}</h3>
+        <h4 class="contact-details__subtitle">{{unit}}{{team}}</h4>
+        <h4 class="contact-details__subtitle">{{title}}</h4>
+        <dl class="contact-details__profile">
+            {{#if phone}}
+            <dt class="contact-details__profile-item">Phone</dt>
+            <dd class="contact-details__profile-value">{{phone}}</dd>
+            {{/if}}
+            {{#if email}}
+            <dt class="contact-details__profile-item">Email</dt>
+            <dd class="contact-details__profile-value">{{email}}</dd>
+            {{/if}}
+            {{#if bio}}
+            <dt class="contact-details__profile-item">More information</dt>
+            <dd class="contact-details__profile-value">{{{bio}}}</dd>
+            {{/if}}
+        </dl>
     </div>
 </div>
 {{/each}}
