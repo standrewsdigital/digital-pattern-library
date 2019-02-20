@@ -62,7 +62,7 @@
             "contact":{
                 "url": "/contact/",
                 "unit" :"University of St Andrews",
-                "address":"College Gate<br>St Andrews, Fife<br>KY16 9AJ<br>Scotland, UK",
+                "address":"College Gate<br>St Andrews<br>KY16 9AJ",
                 "phone":"+44 (0)1334 47 6161"
             }
         },
@@ -136,7 +136,7 @@
             "contact":{
                 "url": "/contact/",
                 "unit" :"University of St Andrews",
-                "address":"College Gate<br>St Andrews, Fife<br>KY16 9AJ<br>Scotland, UK",
+                "address":"College Gate<br>St Andrews<br>KY16 9AJ",
                 "phone":"+44 (0)1334 47 6161"
             }
         },
@@ -161,7 +161,7 @@
             "contact":{
                 "url": "/contact/",
                 "unit" :"University of St Andrews",
-                "address":"College Gate<br>St Andrews, Fife<br>KY16 9AJ<br>Scotland, UK",
+                "address":"College Gate<br>St Andrews<br>KY16 9AJ",
                 "phone":"+44 (0)1334 47 6161"
             }
         }
