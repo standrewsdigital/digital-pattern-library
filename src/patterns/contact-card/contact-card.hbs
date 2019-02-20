@@ -161,15 +161,27 @@
         <dl class="contact-details__profile">
             {{#if phone}}
             <dt class="contact-details__profile-item">Phone</dt>
-            <dd class="contact-details__profile-value">{{phone}}</dd>
+            <dd class="contact-details__profile-value content-block"><a href="tel:{{phone}}">{{phone}}</a></dd>
             {{/if}}
             {{#if email}}
             <dt class="contact-details__profile-item">Email</dt>
-            <dd class="contact-details__profile-value">{{email}}</dd>
+            <dd class="contact-details__profile-value content-block"><a href="mailto:{{email}}">{{email}}</a></dd>
+            {{/if}}
+            {{#if room}}
+            <dt class="contact-details__profile-item">Office</dt>
+            <dd class="contact-details__profile-value content-block">{{{room}}}</dd>
             {{/if}}
             {{#if bio}}
             <dt class="contact-details__profile-item">More information</dt>
-            <dd class="contact-details__profile-value">{{{bio}}}</dd>
+            <dd class="contact-details__profile-value content-block">{{{bio}}}</dd>
+            {{/if}}
+            {{#if publications}}
+            <dt class="contact-details__profile-item">Publications</dt>
+            <dd class="contact-details__profile-value content-block"><ul>
+            {{#each publications}}
+                <li><a href="{{link}}">{{title}}</a></li>
+            {{/each}}</ul>
+            </dd>
             {{/if}}
         </dl>
     </div>
