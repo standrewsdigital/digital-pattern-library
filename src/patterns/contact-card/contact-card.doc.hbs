@@ -10,6 +10,7 @@ title: Contact card
 	<li>Photographs must be headshots of the individual named in the card and of professional quality.</li>
 	<li>If a suitable image is not available then the initials of the individual should be used.</li>
 	<li>The full name of the individual must be displayed.</li>
+	<li>Cards may link to additional information on a specific individual but this usage must be consistent within a list of contacts. For example if one card links to a lightbox then all other linked cards in that list must also use the lightbox method.</li>
 </ul>
 <h3>Options available</h3>
 <ul>
@@ -17,7 +18,11 @@ title: Contact card
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/contact-card-options.options}}
 </ul>
-
+<div class="alert alert--warning" role="alert">
+	<h3 class="alert--heading">Use of lightbox to display additional information</h3>
+	<p>If using the code examples that feature the lightbox, please remove the marked comments around the <code>&lt;a&gt;</code> tags. These are only used on this page to prevent the lightbox script converting the raw html as part of its initialisation for the examples.</p>
+	<p>For maximum accessibility the <code>inert</code> polyfill from Google should also be used. This can be loaded by placing the following at the bottom of the page <code>&lt;script src=&quot;https://cdn.rawgit.com/GoogleChrome/inert-polyfill/v0.1.0/inert-polyfill.min.js&quot;&gt;&lt;/script&gt;</code></p>
+</div>
 {{#contact-card-options.options}}
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>

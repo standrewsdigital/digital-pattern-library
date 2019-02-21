@@ -2,8 +2,8 @@
     "options": [
         {
             "option-heading": "Contact card",
-            "option-description": "<p>This example shows all possible content available in the pattern.</p><ul><li>Only the image or initials and the full name are required.</li><li>The list of tags for a card should be no larger than five.</li></ul>",
-            "option-anchor": "staff",
+            "option-description": "<p>This example shows all available content that may be included on a card.</p><ul><li>Only the image or initials and the full name are required.</li><li>The optional secondary headings should be used to specify the organisational position and role of the individual.</li><li>The optional phone and email entries must link to valid phone numbers and email addresses.</li><li>The list of tags can be used to convey additional linked information on an individual.</li><li>The number of tags for a card should be no larger than five.</li><li>The usage of tags should be introduced before the contact cards if the tag values used do not immediately convey their purpose.</li></ul>",
+            "option-anchor": "card",
 		    "cards": [
 			    {
 			    	"id": "a1",
@@ -11,7 +11,7 @@
 					"initials": "SA",
 					"unit": "Unit name",
 					"team": ", Team name",
-					"title": "Job Title",
+					"title": "Job title",
 					"image": "../../assets/docs/images/profile-pictures/female-001.jpg",
 					"phone": "+44 (0)1334 46 xxxx",
 					"email": "example@st-andrews.ac.uk",
@@ -24,6 +24,12 @@
 						},
 						{
 							"area": "Engineering"
+						},
+						{
+							"area": "Artificial intelligence"
+						},
+						{
+							"area": "Mathematics"
 						}
 					]
 			    }
@@ -32,9 +38,9 @@
 
 
         {
-            "option-heading": "Linked contact card",
-            "option-description": "<p>Contact cards can also be used to link to further details of the individual. This example opens a lightbox with further details, but the link could also navigate to a new page if desired.</p>",
-            "option-anchor": "staff",
+            "option-heading": "Linked contact card with lightbox",
+            "option-description": "<p>Contact cards can also be used to link to further details of the individual. This example opens a lightbox with further details, but the link could also navigate to a new page if desired.</p><ul><li>The content shown in the lightbox must, as a minimum, include all the information available from the selected contact card.</li><li>Additional information may be added to the lightbox with appropriate heading labels.</li></ul>",
+            "option-anchor": "linked-card",
 		    "cards": [
 			    {
 			    	"id": "b1",
@@ -81,8 +87,8 @@
 
         {
             "option-heading": "Contact card list",
-            "option-description": "<p>This example shows a list of contact cards that contains a mixture of available information.</p>",
-            "option-anchor": "student",
+            "option-description": "<p>This example shows a list of contact cards that contains a mixture of available information.</p><ul><li>If tags are used in a list of contact cards then their meaning should be consistent. In this example the tags are used to show the areas of expertise of each individual.</li></ul>",
+            "option-anchor": "card-list",
 		    "cards": [
 			    {
 			    	"id": "c1",
@@ -135,19 +141,21 @@
 			    	"id": "c3",
 					"name": "Dr Olivia Liang",
 					"initials": "OL",
+			    	"link": true,
 					"team": "University Court",
 					"title": "Certified Financial Planner",
 					"phone": "+44 (0)1334 46 xxxx",
-					"email": "example@st-andrews.ac.uk"
+					"email": "example@st-andrews.ac.uk",
+					"bio": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur vel tellus eget vehicula. Mauris gravida ex a elit rutrum, et laoreet turpis egestas. Etiam interdum mattis erat, eget faucibus ipsum varius quis. Quisque quis magna enim. Vivamus commodo, urna a fringilla cursus, nisi felis blandit diam, sit amet venenatis enim tellus in ante. Pellentesque vel magna quis eros mattis porttitor at ut sapien. Curabitur congue ac purus sed posuere. Praesent imperdiet ligula arcu, et varius est suscipit ac.</p><p>Nam id diam id odio facilisis pretium at non sem. In in massa at risus blandit venenatis nec ut enim. Phasellus condimentum fringilla aliquam. Praesent in est in eros bibendum lobortis. Phasellus in elementum erat, eget iaculis nulla. Nam commodo, nunc quis dictum tempus, nisi massa mollis orci, sed sagittis ligula justo et est. Sed ultricies arcu nec nisi finibus, sed dictum neque porttitor. Curabitur ante ante, posuere sit amet ligula eget, blandit tincidunt lacus.</p>"
+			    
 			    },
 			    {
 			    	"id": "c4",
 					"name": "Professor Timothy Mooney",
 					"initials": "TM",
+			    	"link": true,
 					"title": "Chemical Engineering Professor",
 					"image": "../../assets/docs/images/profile-pictures/male-004.jpg",
-					"phone": "+44 (0)1334 46 xxxx",
-					"email": "example@st-andrews.ac.uk",
 					"areas-expertise": [
 						{
 							"area": "Finance & Law for Engineers"
