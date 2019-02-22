@@ -314,7 +314,7 @@
 .contact-card__tag-link {
     background: $sta-grey-light-S;
     border: 1px $sta-grey-light-hover solid;
-    color: $sta-grey;
+    color: $sta-grey-dark-S;
     display: inline-block;
     font-size: 16px;
     font-weight: normal;
@@ -323,7 +323,7 @@
     &:hover,
     &:focus {
         background: $sta-grey-light-S-hover;
-        color: $sta-grey-dark;
+        color: $sta-grey-dark-S-hover;
         text-decoration: none;
     }
 
