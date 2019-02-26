@@ -1,41 +1,233 @@
 <!-- Begin pattern: contact-card //-->
-<div class="row">
+{{#if codeblock}}
 {{#each cards}}
-    <div class="col-xs-12 col-sm-6 col-lg-4">
-        <article id="{{id}}" class="contact-card {{contract-type}}">
-            <h3>
-            {{#if image}}
-                <a href="#">{{name}}</a>
-            {{else}}
-                {{name}}
-            {{/if}}
-            </h3>
-        {{#if image}}
-            <img src="../../assets/core/images/contact-card-default.gif" alt="{{name}}" title="{{name}}" class="profilePhoto">
+<div class="contact-card">
+    {{#if image}}
+    <div class="contact-card__image">
+        {{#if link}}
+        <!-- Remove comment tags to use lightbox
+        <a href="#{{id}}" data-modal-open>
+        -->
         {{/if}}
-            <h4>{{title}}</h4>
-        {{#if areas-expertise}}
-            <h4>Areas of expertise</h4>
-        {{else}}
-            <div class="{{card-class}}">
-                <h4>Contact</h4>
+        <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        {{#if link}}
+        <!-- Remove comment tags to use lightbox
+        </a>
+        -->
         {{/if}}
-                <ul class="contact-card-links">
-                {{#if phone}}
-                    <li><a href="tel:#" data-rel="external">01334 46xxxx</a></li>
-                {{/if}}
-                {{#if email}}
-                    <li><a href="mailto:#">example@st-andrews.ac.uk</a></li>
-                {{/if}}
-                {{#each areas-expertise}}
-                    <li><a href="#">{{area}}</a></li>
-                {{/each}}
-                </ul>
-        {{#unless areas-expertise}}
-            </div>
-        {{/unless}}
-        </article>
     </div>
-{{/each}}
+    {{else}}
+    <div class="contact-card__initials">
+        {{#if link}}
+        <!-- Remove comment tags to use lightbox
+        <a href="#{{id}}" data-modal-open>
+        -->
+        {{/if}}
+        <abbr title="{{name}}">{{initials}}</abbr>
+        {{#if link}}
+        <!-- Remove comment tags to use lightbox
+        </a>
+        -->
+        {{/if}}
+    </div>
+    {{/if}}
+    <div class="contact-card__titles">
+        <h3 class="contact-card__title">
+        {{#if link}}
+        <!-- Remove comment tags to use lightbox
+        <a href="#{{id}}" data-modal-open>
+        -->
+        {{/if}}
+        {{name}}
+        {{#if link}}
+        <!-- Remove comment tags to use lightbox
+        </a>
+        -->
+        {{/if}}
+        </h3>
+        <h4 class="contact-card__subtitle">{{unit}}{{team}}</h4>
+        <h4 class="contact-card__subtitle">{{title}}</h4>
+    </div>
+    <div class="contact-card__contact">
+        {{#if phone}}
+        <div class="contact-card__contact--phone">
+            <a class="contact-card__tag-link" href="tel:#">{{phone}}</a>
+        </div>
+        {{/if}}
+        {{#if email}}
+        <div class="contact-card__contact--email">
+            <a class="contact-card__tag-link" href="mailto:#">{{email}}</a>
+        </div>
+        {{/if}}
+    </div>
+    {{#if areas-expertise}}
+    <ul class="contact-card__tags">
+        {{#each areas-expertise}}
+        <li class="contact-card__tag"><a class="contact-card__tag-link contact-card__tag-link-small" href="#">{{area}}</a></li>
+        {{/each}}
+    </ul>
+    {{/if}}
 </div>
+<!-- Remove comment tags to use lightbox
+<div id="{{id}}" data-modal>
+-->
+    <div class="contact-details">
+        {{#if image}}
+        <div class="contact-details__image">
+            <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        </div>
+        {{else}}
+        <div class="contact-details__initials">
+            <abbr title="{{name}}">{{initials}}</abbr>
+        </div>
+        {{/if}}
+        <h3 class="contact-details__title">{{name}}</h3>
+        <h4 class="contact-details__subtitle">{{unit}}{{team}}</h4>
+        <h4 class="contact-details__subtitle">{{title}}</h4>
+        <dl class="contact-details__profile">
+            {{#if phone}}
+            <dt class="contact-details__profile-item">Phone</dt>
+            <dd class="contact-details__profile-value">{{phone}}</dd>
+            {{/if}}
+            {{#if email}}
+            <dt class="contact-details__profile-item">Email</dt>
+            <dd class="contact-details__profile-value">{{email}}</dd>
+            {{/if}}
+            {{#if bio}}
+            <dt class="contact-details__profile-item">More information</dt>
+            <dd class="contact-details__profile-value">{{bio}}</dd>
+            {{/if}}
+            {{#if publications}}
+            <dt class="contact-details__profile-item">Publications</dt>
+            <dd class="contact-details__profile-value content-block"><ul>
+            {{#each publications}}
+                <li><a href="{{link}}">{{title}}</a></li>
+            {{/each}}</ul>
+            </dd>
+            {{/if}}
+            {{#if areas-expertise}}
+            <dt class="contact-details__profile-item">Associated tags heading</dt>
+            <dd class="contact-details__profile-value content-block"><ul>
+                {{#each areas-expertise}}
+                <li><a href="#">{{area}}</a></li>
+                {{/each}}
+            </ul>
+            </dd>
+            {{/if}}
+        </dl>
+    </div>
+<!-- Remove comment tags to use lightbox
+</div>
+-->
+{{/each}}
+{{else}}
+{{#each cards}}
+<div class="contact-card">
+    {{#if image}}
+    <div class="contact-card__image">
+        {{#if link}}
+        <a href="#{{id}}" data-modal-open>
+        {{/if}}
+        <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        {{#if link}}
+        </a>
+        {{/if}}
+    </div>
+    {{else}}
+    <div class="contact-card__initials">
+        {{#if link}}
+        <a href="#{{id}}" data-modal-open>
+        {{/if}}
+        <abbr title="{{name}}">{{initials}}</abbr>
+        {{#if link}}
+        </a>
+        {{/if}}
+    </div>
+    {{/if}}
+    <div class="contact-card__titles">
+        <h3 class="contact-card__title">
+        {{#if link}}
+        <a href="#{{id}}" data-modal-open>
+        {{/if}}
+        {{name}}
+        {{#if link}}
+        </a>
+        {{/if}}
+        </h3>
+        <h4 class="contact-card__subtitle">{{unit}}{{team}}</h4>
+        <h4 class="contact-card__subtitle">{{title}}</h4>
+    </div>
+    <div class="contact-card__contact">
+        {{#if phone}}
+        <div class="contact-card__contact--phone">
+            <a class="contact-card__tag-link" href="tel:#">{{phone}}</a>
+        </div>
+        {{/if}}
+        {{#if email}}
+        <div class="contact-card__contact--email">
+            <a class="contact-card__tag-link" href="mailto:#">{{email}}</a>
+        </div>
+        {{/if}}
+    </div>
+    {{#if areas-expertise}}
+    <ul class="contact-card__tags">
+        {{#each areas-expertise}}
+        <li class="contact-card__tag"><a class="contact-card__tag-link contact-card__tag-link-small" href="#">{{area}}</a></li>
+        {{/each}}
+    </ul>
+    {{/if}}
+</div>
+<div id="{{id}}" data-modal>
+    <div class="contact-details">
+        {{#if image}}
+        <div class="contact-details__image">
+            <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        </div>
+        {{else}}
+        <div class="contact-details__initials">
+            <abbr title="{{name}}">{{initials}}</abbr>
+        </div>
+        {{/if}}
+        <h3 class="contact-details__title">{{name}}</h3>
+        <h4 class="contact-details__subtitle">{{unit}}{{team}}</h4>
+        <h4 class="contact-details__subtitle">{{title}}</h4>
+        <dl class="contact-details__profile">
+            {{#if phone}}
+            <dt class="contact-details__profile-item">Phone</dt>
+            <dd class="contact-details__profile-value content-block"><a href="tel:{{phone}}">{{phone}}</a></dd>
+            {{/if}}
+            {{#if email}}
+            <dt class="contact-details__profile-item">Email</dt>
+            <dd class="contact-details__profile-value content-block"><a href="mailto:{{email}}">{{email}}</a></dd>
+            {{/if}}
+            {{#if room}}
+            <dt class="contact-details__profile-item">Office</dt>
+            <dd class="contact-details__profile-value content-block">{{{room}}}</dd>
+            {{/if}}
+            {{#if bio}}
+            <dt class="contact-details__profile-item">Biography</dt>
+            <dd class="contact-details__profile-value content-block">{{{bio}}}</dd>
+            {{/if}}
+            {{#if publications}}
+            <dt class="contact-details__profile-item">Publications</dt>
+            <dd class="contact-details__profile-value content-block"><ul>
+            {{#each publications}}
+                <li><a href="{{link}}">{{title}}</a></li>
+            {{/each}}</ul>
+            </dd>
+            {{/if}}
+            {{#if areas-expertise}}
+            <dt class="contact-details__profile-item">Associated tags heading</dt>
+            <dd class="contact-details__profile-value content-block"><ul>
+                {{#each areas-expertise}}
+                <li><a href="#">{{area}}</a></li>
+                {{/each}}
+            </ul>
+            </dd>
+            {{/if}}
+        </dl>
+    </div>
+</div>
+{{/each}}
+{{/if}}
 <!-- End pattern: contact-card //-->

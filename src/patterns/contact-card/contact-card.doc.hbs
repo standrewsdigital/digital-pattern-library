@@ -2,13 +2,15 @@
 title: Contact card
 ---
 
-<p>The contact card pattern is used to display information about staff, students and experts.</p>
+<p>The contact card pattern is used to display information about an individual.</p>
 
 <h3>Rules for contact cards</h3>
 <ul>
-	<li>Contact cards must only be used on people pages in the main body or within the experts guide on the news site.</li>
-	<li>Cards with an image must be at the size 111 &times; 127 pixels.</li>
-	<li>If an image is not available, use the default staff profile image: <a href='../../assets/core/images/contact-card-default.gif'>contact-card-default.gif</a></li>
+	<li>Contact cards may appear solo or grouped as a stacked list.</li>
+	<li>Photographs must be headshots of the individual named in the card and of professional quality.</li>
+	<li>If a suitable image is not available then the initials of the individual should be used.</li>
+	<li>The full name of the individual must be displayed.</li>
+	<li>Cards may link to additional information on a specific individual but this usage must be consistent within a list of contacts. For example if one card links to a lightbox then all other linked cards in that list must also use the lightbox method.</li>
 </ul>
 <h3>Options available</h3>
 <ul>
@@ -16,7 +18,11 @@ title: Contact card
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/contact-card-options.options}}
 </ul>
-
+<div class="alert alert--warning" role="alert">
+	<h3 class="alert--heading">Use of lightbox to display additional information</h3>
+	<p>If using the code examples that feature the lightbox, please remove the marked comments from either side of the relevant tags before using. These are only included in the code examples to prevent interaction with the lightbox script on page load, resulting in changes to the displayed html.</p>
+	<p>For maximum accessibility the <code>inert</code> polyfill from Google should also be used. This can be loaded by placing the following at the bottom of the page <code>&lt;script src=&quot;https://cdn.rawgit.com/GoogleChrome/inert-polyfill/v0.1.0/inert-polyfill.min.js&quot;&gt;&lt;/script&gt;</code></p>
+</div>
 {{#contact-card-options.options}}
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
@@ -26,11 +32,13 @@ title: Contact card
 </div>
 <div class="pattern-wrapper">
 	<div class="container">
-	{{> contact-card}}
+	{{> contact-card codeblock=false}}
 	</div>
 </div>
 <div class="container">
 <span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> contact-card}}</code></pre>
+<pre><code class="pattern-source html">{{> contact-card codeblock=true}}</code></pre> 
 <!--endnoindex-->
 {{/contact-card-options.options}}
+
+<script src="https://cdn.rawgit.com/GoogleChrome/inert-polyfill/v0.1.0/inert-polyfill.min.js"></script>

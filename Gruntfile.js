@@ -211,6 +211,7 @@ module.exports = function(grunt) {
             core: {
                 src: [
                     // Update src/docs/using.md if any of these change
+                    'src/scripts/vendor/a11y-modal.js',
                     'src/scripts/vendor/hammer.js',
                     'src/scripts/vendor/jquery.min.js',
                     'src/scripts/vendor/jquery.bigtarget.js',
@@ -266,6 +267,7 @@ module.exports = function(grunt) {
             nojquery: {
                 src: [
                     // Update src/docs/using.md if any of these change
+                    'src/scripts/vendor/a11y-modal.js',
                     'src/scripts/vendor/hammer.js',
                     'src/scripts/vendor/jquery.bigtarget.js',
                     'src/scripts/vendor/jquery.dataTables.min.js',

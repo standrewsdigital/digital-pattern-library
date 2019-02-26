@@ -58,3 +58,4 @@ $('.load-video').click(function(){
     $(this).replaceWith(video);
     $(".media-wrapper").fitVids();
 });
+
