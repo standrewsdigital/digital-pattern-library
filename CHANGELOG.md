@@ -8,6 +8,24 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.16.0
+
+Release date: Tuesday 26 February 2019
+
+### Added
+* Accessible modal window script.
+
+### Changed
+* Contact card pattern has been completely redesigned to work better responsively and cope with different amounts of content.
+* Contact card makes use of new modal window feature to provide additional information for a contact.
+* Main colour for body text changed to match colour palette dark grey.
+
+### Fixed
+* Address examples for footer pattern now meet house style.
+
+
+---
+
 ## v1.15.6
 
 Release date: Wednesday 13 February 2019
