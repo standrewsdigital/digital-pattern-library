@@ -1,6 +1,13 @@
-// MODAL STYLE - move to standalone once accepted
+//Accessible modal window
 
-//*,*:after,*:before{box-sizing:border-box;}
+//Fix outline bug in Edge
+@supports (-ms-ime-align: auto) {
+    .js [data-modal]:focus,
+    .a11y-modal:focus {
+          outline: none;
+          outline-offset: 0;
+    }
+}
 
 /**
  * Including the at-only style with the dialog CSS as it is required

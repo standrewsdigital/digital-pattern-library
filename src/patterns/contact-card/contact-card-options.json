@@ -2,7 +2,7 @@
     "options": [
         {
             "option-heading": "Contact card",
-            "option-description": "<p>This example shows all available content that may be included on a card.</p><ul><li>Only the image or initials and the full name are required.</li><li>The optional secondary headings should be used to specify the organisational position and role of the individual.</li><li>The optional phone and email entries must link to valid phone numbers and email addresses.</li><li>The list of tags can be used to convey additional linked information on an individual.</li><li>The number of tags for a card should be no larger than five.</li><li>The usage of tags should be introduced before the contact cards if the tag values used do not immediately convey their purpose.</li></ul>",
+            "option-description": "<p>This example shows all available content that may be included on a card.</p><ul><li>Only the image or initials and the full name are required.</li><li>The optional secondary headings should be used to specify the organisational position and role of the individual.</li><li>The optional phone and email entries must link to valid phone numbers and email addresses.</li><li>The list of tags can be used to convey additional linked information on an individual.</li><li>The number of tags for a card should be no larger than five.</li><li>The usage of tags should be introduced before the contact cards, if the tag values used do not immediately convey their purpose.</li></ul>",
             "option-anchor": "card",
 		    "cards": [
 			    {

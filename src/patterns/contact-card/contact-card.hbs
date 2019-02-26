@@ -11,7 +11,9 @@
         {{/if}}
         <img src="{{image}}" alt="{{name}}" title="{{name}}">
         {{#if link}}
+        <!-- Remove comment tags to use lightbox
         </a>
+        -->
         {{/if}}
     </div>
     {{else}}
@@ -23,7 +25,9 @@
         {{/if}}
         <abbr title="{{name}}">{{initials}}</abbr>
         {{#if link}}
+        <!-- Remove comment tags to use lightbox
         </a>
+        -->
         {{/if}}
     </div>
     {{/if}}
@@ -36,7 +40,9 @@
         {{/if}}
         {{name}}
         {{#if link}}
+        <!-- Remove comment tags to use lightbox
         </a>
+        -->
         {{/if}}
         </h3>
         <h4 class="contact-card__subtitle">{{unit}}{{team}}</h4>
@@ -62,7 +68,9 @@
     </ul>
     {{/if}}
 </div>
-<div id="{{id}}" [data-modal]>
+<!-- Remove comment tags to use lightbox
+<div id="{{id}}" data-modal>
+-->
     <div class="contact-details">
         {{#if image}}
         <div class="contact-details__image">
@@ -108,7 +116,9 @@
             {{/if}}
         </dl>
     </div>
+<!-- Remove comment tags to use lightbox
 </div>
+-->
 {{/each}}
 {{else}}
 {{#each cards}}
