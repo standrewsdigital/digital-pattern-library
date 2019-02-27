@@ -35,6 +35,40 @@
 			    }
 		    ]
         },
+        {
+            "option-heading": "Contact card with initials",
+            "option-description": "<p>This example shows the alternative display of initials if an image is not available.</p><ul><li>The initials must be a maximum length of two characters.</li></ul>",
+            "option-anchor": "card-initials",
+		    "cards": [
+			    {
+			    	"id": "b1",
+					"name": "Mrs Sophia Adams",
+					"initials": "SA",
+					"unit": "Unit name",
+					"team": ", Team name",
+					"title": "Job title",
+					"phone": "+44 (0)1334 46 xxxx",
+					"email": "example@st-andrews.ac.uk",
+					"areas-expertise": [
+						{
+							"area": "Business and finance"
+						},
+						{
+							"area": "Computer science and informatics"
+						},
+						{
+							"area": "Engineering"
+						},
+						{
+							"area": "Artificial intelligence"
+						},
+						{
+							"area": "Mathematics"
+						}
+					]
+			    }
+		    ]
+        },
 
 
         {
@@ -43,7 +77,7 @@
             "option-anchor": "linked-card",
 		    "cards": [
 			    {
-			    	"id": "b1",
+			    	"id": "c1",
 			    	"link": true,
 					"name": "Dr Brielle Williamson",
 					"initials": "BW",
@@ -91,7 +125,7 @@
             "option-anchor": "card-list",
 		    "cards": [
 			    {
-			    	"id": "c1",
+			    	"id": "d1",
 					"name": "Miss Colleen Hurst",
 					"initials": "CH",
 					"link": true,
@@ -120,7 +154,7 @@
 					]
 			    },
 			    {
-			    	"id": "c2",
+			    	"id": "d2",
 					"name": "Mr Howard Hatfield",
 					"initials": "HH",
 					"link": true,
@@ -138,7 +172,7 @@
 					]
 			    },
 			    {
-			    	"id": "c3",
+			    	"id": "d3",
 					"name": "Dr Olivia Liang",
 					"initials": "OL",
 			    	"link": true,
@@ -150,7 +184,7 @@
 			    
 			    },
 			    {
-			    	"id": "c4",
+			    	"id": "d4",
 					"name": "Professor Timothy Mooney",
 					"initials": "TM",
 			    	"link": true,
@@ -167,6 +201,121 @@
 							"area": "General Reaction Engineering"
 						}
 					]
+			    }
+		    ]
+        },
+
+
+        {
+            "option-heading": "Contact card list with lazyload",
+            "option-description": "<p>This example shows a list of contact cards that makes use of the available lazyload feature to only load the images when they are about to be viewed. This reduces the amount of data downloaded by the browser, thus improving performance, and would be useful for lengthy contact card lists that may contain a large number of images.</p>",
+            "option-anchor": "card-list-lazyload",
+		    "cards": [
+			    {
+			    	"id": "e1",
+					"name": "Miss Colleen Hurst",
+					"initials": "CH",
+					"link": true,
+					"lazy": true,
+					"unit": "St Andrews Sustainability Institute",
+					"team": ", Psychology and Neuroscience",
+					"title": "Academic Liason",
+					"image": "../../assets/docs/images/profile-pictures/female-003.jpg",
+					"phone": "+44 (0)1334 46 xxxx",
+					"email": "example@st-andrews.ac.uk"
+			    },
+			    {
+			    	"id": "e2",
+					"name": "Mr Howard Hatfield",
+					"initials": "HH",
+					"link": true,
+					"lazy": true,
+					"unit": "School of Computer Science",
+					"title": "Senior JavaScript Developer",
+					"image": "../../assets/docs/images/profile-pictures/male-001.jpg",
+					"phone": "+44 (0)1334 46 xxxx",
+					"email": "longerexample@st-andrews.ac.uk"
+			    },
+			    {
+			    	"id": "e3",
+					"name": "Dr Brielle Williamson",
+					"initials": "BW",
+					"link": true,
+					"lazy": true,
+					"unit": "School of Psychology",
+					"team": ", Clinical Counselling",
+					"title": "Research Specialist",
+					"image": "../../assets/docs/images/profile-pictures/female-002.jpg",
+					"phone": "+44 (0)1334 46 xxxx",
+					"email": "example@st-andrews.ac.uk",
+					"room": "Room D17, Bute medical building",
+					"areas-expertise": [
+						{
+							"area": "Clinical Psychology"
+						},
+						{
+							"area": "Industrial Psychology"
+						},
+						{
+							"area": "Developmental Psychology"
+						}
+					],
+					"publications": [
+						{
+							"title": "Publication title",
+							"link": "#"
+						},
+						{
+							"title": "Publication title",
+							"link": "#"
+						},
+						{
+							"title": "Publication title",
+							"link": "#"
+						}
+					],
+					"bio": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur vel tellus eget vehicula. Mauris gravida ex a elit rutrum, et laoreet turpis egestas. Etiam interdum mattis erat, eget faucibus ipsum varius quis. Quisque quis magna enim. Vivamus commodo, urna a fringilla cursus, nisi felis blandit diam, sit amet venenatis enim tellus in ante. Pellentesque vel magna quis eros mattis porttitor at ut sapien. Curabitur congue ac purus sed posuere. Praesent imperdiet ligula arcu, et varius est suscipit ac.</p><p>Nam id diam id odio facilisis pretium at non sem. In in massa at risus blandit venenatis nec ut enim. Phasellus condimentum fringilla aliquam. Praesent in est in eros bibendum lobortis. Phasellus in elementum erat, eget iaculis nulla. Nam commodo, nunc quis dictum tempus, nisi massa mollis orci, sed sagittis ligula justo et est. Sed ultricies arcu nec nisi finibus, sed dictum neque porttitor. Curabitur ante ante, posuere sit amet ligula eget, blandit tincidunt lacus.</p>"
+			    },
+			    {
+			    	"id": "e4",
+					"name": "Professor Timothy Mooney",
+					"initials": "TM",
+			    	"link": true,
+					"lazy": true,
+					"title": "Chemical Engineering Professor",
+					"image": "../../assets/docs/images/profile-pictures/male-004.jpg"
+			    },
+			    {
+			    	"id": "e5",
+					"name": "Mrs Sophia Adams",
+					"initials": "SA",
+			    	"link": true,
+					"lazy": true,
+					"team": "University Court",
+					"title": "Certified Financial Planner",
+					"image": "../../assets/docs/images/profile-pictures/female-001.jpg",
+					"phone": "+44 (0)1334 46 xxxx",
+					"email": "example@st-andrews.ac.uk",
+					"bio": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur vel tellus eget vehicula. Mauris gravida ex a elit rutrum, et laoreet turpis egestas. Etiam interdum mattis erat, eget faucibus ipsum varius quis. Quisque quis magna enim. Vivamus commodo, urna a fringilla cursus, nisi felis blandit diam, sit amet venenatis enim tellus in ante. Pellentesque vel magna quis eros mattis porttitor at ut sapien. Curabitur congue ac purus sed posuere. Praesent imperdiet ligula arcu, et varius est suscipit ac.</p><p>Nam id diam id odio facilisis pretium at non sem. In in massa at risus blandit venenatis nec ut enim. Phasellus condimentum fringilla aliquam. Praesent in est in eros bibendum lobortis. Phasellus in elementum erat, eget iaculis nulla. Nam commodo, nunc quis dictum tempus, nisi massa mollis orci, sed sagittis ligula justo et est. Sed ultricies arcu nec nisi finibus, sed dictum neque porttitor. Curabitur ante ante, posuere sit amet ligula eget, blandit tincidunt lacus.</p>"
+			    
+			    },
+			    {
+			    	"id": "e6",
+					"name": "Mr Chris Bogglesworth",
+					"initials": "CB",
+			    	"link": true,
+					"lazy": true,
+					"title": "Associate Entertainment Specialist",
+					"image": "../../assets/docs/images/profile-pictures/male-002.jpg"
+			    },
+			    {
+			    	"id": "e7",
+					"name": "Dr Timothy Shah",
+					"initials": "TS",
+			    	"link": true,
+					"lazy": true,
+					"title": "Director of Research",
+					"image": "../../assets/docs/images/profile-pictures/male-003.jpg"
 			    }
 		    ]
         }

@@ -9,7 +9,11 @@
         <a href="#{{id}}" data-modal-open>
         -->
         {{/if}}
+        {{#if lazy}}
+        <img data-src="{{image}}" alt="{{name}}" title="{{name}}" class="lazyload">
+        {{else}}
         <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        {{/if}}
         {{#if link}}
         <!-- Remove comment tags to use lightbox
         </a>
@@ -68,13 +72,18 @@
     </ul>
     {{/if}}
 </div>
+{{#if link}}
 <!-- Remove comment tags to use lightbox
 <div id="{{id}}" data-modal>
 -->
     <div class="contact-details">
         {{#if image}}
         <div class="contact-details__image">
-            <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        {{#if lazy}}
+        <img data-src="{{image}}" alt="{{name}}" title="{{name}}" class="lazyload">
+        {{else}}
+        <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        {{/if}}
         </div>
         {{else}}
         <div class="contact-details__initials">
@@ -119,6 +128,7 @@
 <!-- Remove comment tags to use lightbox
 </div>
 -->
+{{/if}}
 {{/each}}
 {{else}}
 {{#each cards}}
@@ -128,7 +138,11 @@
         {{#if link}}
         <a href="#{{id}}" data-modal-open>
         {{/if}}
+        {{#if lazy}}
+        <img data-src="{{image}}" alt="{{name}}" title="{{name}}" class="lazyload">
+        {{else}}
         <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        {{/if}}
         {{#if link}}
         </a>
         {{/if}}
@@ -177,11 +191,16 @@
     </ul>
     {{/if}}
 </div>
+{{#if link}}
 <div id="{{id}}" data-modal>
     <div class="contact-details">
         {{#if image}}
         <div class="contact-details__image">
-            <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        {{#if lazy}}
+        <img data-src="{{image}}" alt="{{name}}" title="{{name}}" class="lazyload">
+        {{else}}
+        <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        {{/if}}
         </div>
         {{else}}
         <div class="contact-details__initials">
@@ -228,6 +247,7 @@
         </dl>
     </div>
 </div>
+{{/if}}
 {{/each}}
 {{/if}}
 <!-- End pattern: contact-card //-->
