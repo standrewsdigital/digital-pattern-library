@@ -9,7 +9,11 @@
         <a href="#{{id}}" data-modal-open>
         -->
         {{/if}}
+        {{#if lazy}}
+        <img data-src="{{image}}" alt="{{name}}" title="{{name}}" class="lazyload">
+        {{else}}
         <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        {{/if}}
         {{#if link}}
         <!-- Remove comment tags to use lightbox
         </a>
@@ -45,8 +49,12 @@
         -->
         {{/if}}
         </h3>
+        {{#if unit}}
         <h4 class="contact-card__subtitle">{{unit}}{{team}}</h4>
+        {{/if}}
+        {{#if title}}
         <h4 class="contact-card__subtitle">{{title}}</h4>
+        {{/if}}
     </div>
     <div class="contact-card__contact">
         {{#if phone}}
@@ -68,13 +76,18 @@
     </ul>
     {{/if}}
 </div>
+{{#if link}}
 <!-- Remove comment tags to use lightbox
 <div id="{{id}}" data-modal>
 -->
     <div class="contact-details">
         {{#if image}}
         <div class="contact-details__image">
-            <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        {{#if lazy}}
+        <img data-src="{{image}}" alt="{{name}}" title="{{name}}" class="lazyload">
+        {{else}}
+        <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        {{/if}}
         </div>
         {{else}}
         <div class="contact-details__initials">
@@ -82,8 +95,12 @@
         </div>
         {{/if}}
         <h3 class="contact-details__title">{{name}}</h3>
+        {{#if unit}}
         <h4 class="contact-details__subtitle">{{unit}}{{team}}</h4>
+        {{/if}}
+        {{#if title}}
         <h4 class="contact-details__subtitle">{{title}}</h4>
+        {{/if}}
         <dl class="contact-details__profile">
             {{#if phone}}
             <dt class="contact-details__profile-item">Phone</dt>
@@ -119,6 +136,7 @@
 <!-- Remove comment tags to use lightbox
 </div>
 -->
+{{/if}}
 {{/each}}
 {{else}}
 {{#each cards}}
@@ -128,7 +146,11 @@
         {{#if link}}
         <a href="#{{id}}" data-modal-open>
         {{/if}}
+        {{#if lazy}}
+        <img data-src="{{image}}" alt="{{name}}" title="{{name}}" class="lazyload">
+        {{else}}
         <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        {{/if}}
         {{#if link}}
         </a>
         {{/if}}
@@ -154,8 +176,12 @@
         </a>
         {{/if}}
         </h3>
+        {{#if unit}}
         <h4 class="contact-card__subtitle">{{unit}}{{team}}</h4>
+        {{/if}}
+        {{#if title}}
         <h4 class="contact-card__subtitle">{{title}}</h4>
+        {{/if}}
     </div>
     <div class="contact-card__contact">
         {{#if phone}}
@@ -177,11 +203,16 @@
     </ul>
     {{/if}}
 </div>
+{{#if link}}
 <div id="{{id}}" data-modal>
     <div class="contact-details">
         {{#if image}}
         <div class="contact-details__image">
-            <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        {{#if lazy}}
+        <img data-src="{{image}}" alt="{{name}}" title="{{name}}" class="lazyload">
+        {{else}}
+        <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        {{/if}}
         </div>
         {{else}}
         <div class="contact-details__initials">
@@ -189,8 +220,12 @@
         </div>
         {{/if}}
         <h3 class="contact-details__title">{{name}}</h3>
+        {{#if unit}}
         <h4 class="contact-details__subtitle">{{unit}}{{team}}</h4>
+        {{/if}}
+        {{#if title}}
         <h4 class="contact-details__subtitle">{{title}}</h4>
+        {{/if}}
         <dl class="contact-details__profile">
             {{#if phone}}
             <dt class="contact-details__profile-item">Phone</dt>
@@ -228,6 +263,7 @@
         </dl>
     </div>
 </div>
+{{/if}}
 {{/each}}
 {{/if}}
 <!-- End pattern: contact-card //-->

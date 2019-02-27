@@ -1,3 +1,4 @@
+
 # Change log
 
 All notable changes to digital pattern library will be documented in this file.
@@ -5,6 +6,19 @@ This project adheres to [semantic versioning](http://semver.org/).
 
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
+
+---
+
+## v1.16.1
+
+Release date: Wednesday 27 February 2019
+
+### Added
+* Lazyload example to contact card pattern.
+
+### Changed
+* Style amends to contact card pattern.
+* Documentation for contact card pattern.
 
 ---
 
