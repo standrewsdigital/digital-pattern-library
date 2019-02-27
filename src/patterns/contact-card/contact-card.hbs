@@ -49,8 +49,12 @@
         -->
         {{/if}}
         </h3>
+        {{#if unit}}
         <h4 class="contact-card__subtitle">{{unit}}{{team}}</h4>
+        {{/if}}
+        {{#if title}}
         <h4 class="contact-card__subtitle">{{title}}</h4>
+        {{/if}}
     </div>
     <div class="contact-card__contact">
         {{#if phone}}
@@ -91,8 +95,12 @@
         </div>
         {{/if}}
         <h3 class="contact-details__title">{{name}}</h3>
+        {{#if unit}}
         <h4 class="contact-details__subtitle">{{unit}}{{team}}</h4>
+        {{/if}}
+        {{#if title}}
         <h4 class="contact-details__subtitle">{{title}}</h4>
+        {{/if}}
         <dl class="contact-details__profile">
             {{#if phone}}
             <dt class="contact-details__profile-item">Phone</dt>
@@ -168,8 +176,12 @@
         </a>
         {{/if}}
         </h3>
+        {{#if unit}}
         <h4 class="contact-card__subtitle">{{unit}}{{team}}</h4>
+        {{/if}}
+        {{#if title}}
         <h4 class="contact-card__subtitle">{{title}}</h4>
+        {{/if}}
     </div>
     <div class="contact-card__contact">
         {{#if phone}}
@@ -208,8 +220,12 @@
         </div>
         {{/if}}
         <h3 class="contact-details__title">{{name}}</h3>
+        {{#if unit}}
         <h4 class="contact-details__subtitle">{{unit}}{{team}}</h4>
+        {{/if}}
+        {{#if title}}
         <h4 class="contact-details__subtitle">{{title}}</h4>
+        {{/if}}
         <dl class="contact-details__profile">
             {{#if phone}}
             <dt class="contact-details__profile-item">Phone</dt>
