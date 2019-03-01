@@ -30,7 +30,7 @@
             	},
             	{
             		"title": "Email",
-            		"fa-class": "envelope"
+            		"fa-class": "envelope-square"
             	}
             ]
         },
@@ -65,7 +65,7 @@
                 },
                 {
                     "title": "Email",
-                    "fa-class": "envelope"
+                    "fa-class": "envelope-square"
                 }
             ]
         }
