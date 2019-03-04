@@ -2,70 +2,68 @@
     "options" : [
         {
             "option-heading": "Share icons",
-            "option-description": "<p>View on mobile to see WhatsApp icon.</p>",
+            "option-description": "<p>This example shows all share options that should be displayed (view on a mobile sized window to see WhatsApp icon).</p>",
             "option-anchor": "share",
             "title": "Share this story",
             "icon": [
             	{
             		"title": "Facebook",
-            		"fa-class": "facebook-square"
+            		"class": "fab fa-facebook-square"
             	},
             	{
             		"title": "Twitter",
-            		"fa-class": "twitter-square"
+            		"class": "fab fa-twitter-square"
             	},
                 {
                     "title": "Facebook Messenger",
-                    "image": "<svg version=\"1.1\" id=\"Messenger_Mark\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 1000 1000\" xml:space=\"preserve\"><path id=\"Bubble_Shape\" class=\"st0\" d=\"M501,0C227.6,0,6,207.2,6,462.8c0,145.4,71.7,275.2,183.9,360V1000l168.9-93.7 c45,12.6,92.8,19.4,142.2,19.4c273.4,0,495-207.2,495-462.8S774.3,0,501,0z M553.1,620.7l-128-133L178.5,624l270.3-286.8l128,133 l246.5-136.3L553.1,620.7z\"/></svg>",
-                    "class": "facebook-messenger"
+                    "class": "fab fa-facebook-messenger"
                 },
             	{
             		"title": "LinkedIn",
-            		"fa-class": "linkedin-square"
+            		"class": "fab fa-linkedin"
             	},
             	{
             		"title": "WhatsApp",
-            		"fa-class": "whatsapp",
+            		"class": "fab fa-whatsapp",
                     "mobile-only": true
             	},
             	{
             		"title": "Email",
-            		"fa-class": "envelope-square"
+            		"class": "fas fa-envelope-square"
             	}
             ]
         },
         {
             "option-heading": "Share video",
-            "option-description": "<p>View on mobile to see WhatsApp icon.</p>",
-            "option-anchor": "share",
+            "option-description": "<p>This example includes a method to provide users with embed code for a video (view on a mobile sized window to see WhatsApp icon).</p>",
+            "option-anchor": "share-video",
             "title": "Share this video",
             "embed": true,
             "icon": [
                 {
                     "title": "Facebook",
-                    "fa-class": "facebook-square"
+                    "class": "fab fa-facebook-square"
                 },
                 {
                     "title": "Twitter",
-                    "fa-class": "twitter-square"
+                    "class": "fab fa-twitter-square"
                 },
                 {
                     "title": "Facebook Messenger",
-                    "image": "<svg version=\"1.1\" id=\"Messenger_Mark\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 1000 1000\" xml:space=\"preserve\"><path id=\"Bubble_Shape\" class=\"st0\" d=\"M501,0C227.6,0,6,207.2,6,462.8c0,145.4,71.7,275.2,183.9,360V1000l168.9-93.7 c45,12.6,92.8,19.4,142.2,19.4c273.4,0,495-207.2,495-462.8S774.3,0,501,0z M553.1,620.7l-128-133L178.5,624l270.3-286.8l128,133 l246.5-136.3L553.1,620.7z\"/></svg>",
-                    "class": "facebook-messenger"
+                    "class": "fab fa-facebook-messenger"
                 },
                 {
                     "title": "LinkedIn",
-                    "fa-class": "linkedin-square"
+                    "class": "fab fa-linkedin"
                 },
                 {
                     "title": "WhatsApp",
-                    "fa-class": "whatsapp",
+                    "class": "fab fa-whatsapp",
                     "mobile-only": true
                 },
                 {
                     "title": "Email",
-                    "fa-class": "envelope-square"
+                    "class": "fas fa-envelope-square"
                 }
             ]
         }
