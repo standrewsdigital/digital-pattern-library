@@ -297,6 +297,10 @@
                 { "name": "Accordion (old version)",
                   "img": "assets/docs/images/patterns/accordion.jpg",
                   "url": "patterns/accordion-deprecated/index.html"
+                },
+                { "name": "Hero banner (old version)",
+                  "img": "assets/docs/images/patterns/hero-banner.jpg",
+                  "url": "patterns/hero-banner-deprecated/index.html"
                 }
             ]
         }
