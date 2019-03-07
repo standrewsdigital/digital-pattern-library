@@ -225,6 +225,7 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/lightbox.min.js',
                     'src/scripts/jquery-ui.js',
                     'src/scripts/vendor/lazysizes.min.js',
+                    'src/scripts/vendor/picturefill.min.js',
 
 
                     // Bootstrap JavaScript
@@ -280,6 +281,7 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/lightbox.min.js',
                     'src/scripts/jquery-ui.js',
                     'src/scripts/vendor/lazysizes.min.js',
+                    'src/scripts/vendor/picturefill.min.js',
 
                     // Bootstrap JavaScript
                     // Note these scripts should align with the CSS

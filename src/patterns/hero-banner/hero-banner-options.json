@@ -2,117 +2,17 @@
     "options": [
         
         {
-            "option-anchor": "hero-banner-with-blue-transparent-overlay-and-second-call-to-action",
-            "option-heading": "Hero banner with blue transparent overlay and second call-to-action",
+            "option-anchor": "hero-banner",
+            "option-heading": "Hero banner",
             "option-description": "",
             "heading":  "Scotland’s first university",
             "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
             "action-text": "Search for courses",
             "action-url": "#",
-            "action-text-2": true,
             "action-text-2": "Entry requirements",
-            "bg-image": "docs/images/cta/hero-banner-image-005.jpg",
-            "class": " hero-banner--overlay hero-banner--blue-transparent-overlay",
-            "size": "col-xs-12 col-md-8"
-        },
-
-
-
-
-        {
-            "option-anchor": "hero-banner-with-dark-green-transparent-overlay-with-embedded-video",
-            "option-heading": "Hero banner with dark green transparent overlay with embedded video",
-            "option-description": "",
-            "heading":  "Discovering the Chanka",
-            "paragraph":  "Who were the Chanka? Dr Sabine Hyland from the Department of Social Anthropology has conducted ethnohistorical and ethnographic research on the Chanka people of Peru.",
-            "action-text": "Read full story",
-            "action-url": "#",
-            "bg-image": "docs/images/cta/hero-banner-image-004.jpg",
-            "class": " hero-banner--overlay hero-banner--dkgreen-transparent-overlay",
-            "size": "col-xs-12 col-md-7",
-            "embed-code": "https://www.youtube.com/embed/69eAaV9qEYE?rel=0&amp;showinfo=0"
-        },
-
-
-
-
-        {
-            "option-anchor": "hero-banner-with-burgundy-and-orange-gradient-overlay-with-embedded-video",
-            "option-heading": "Hero banner with burgundy and orange gradient overlay with embedded video",
-            "option-description": "",
-            "heading":  "Visit St Andrews",
-            "paragraph":  "Experience St Andrews for yourself by coming to one of our visiting days. Find out more about the town, University, and your subject of choice.",
-            "action-text": "Book your place",
-            "action-url": "#",
-            "bg-image": "docs/images/cta/hero-banner-image-003.jpg",
-            "class": " hero-banner--overlay hero-banner--gradient-burgundy-orange-overlay",
-            "size": "col-xs-12 col-md-7",
-            "embed-code": "https://www.youtube.com/embed/JxHfSwpddCU?rel=0&amp;showinfo=0"
-        },
-
-
-
-
-        {
-            "option-anchor": "hero-banner-with-pruple-and-orange-gradient-overlay",
-            "option-heading": "Hero banner with purple and orange gradient overlay",
-            "option-description": "",
-            "heading":  "Choose St Andrews",
-            "paragraph":  "Study at the University of St Andrews and experience world-class teaching, cutting edge research and the flexible degree structure of Scotland’s first university.",
-            "action-text": "Why St Andrews",
-            "action-url": "#",
-            "bg-image": "docs/images/cta/hero-banner-image-006.jpg",
-            "class": " hero-banner--overlay hero-banner--gradient-purple-orange-overlay",
-            "size": "col-xs-12 col-md-8"
-        },
-
-
-
-
-        {
-            "option-anchor": "hero-banner-with-orange-and-yellow-gradient-overlay",
-            "option-heading": "Hero banner with orange and yellow gradient overlay",
-            "option-description": "",
-            "heading":  "International St Andrews",
-            "paragraph":  "You can meet our staff all over the world. We visit schools, attend fairs and run events through the year.",
-            "action-text": "Meet us in your country",
-            "action-url": "#",
-            "bg-image": "docs/images/cta/hero-banner-image-002.jpg",
-            "class": " hero-banner--overlay hero-banner--gradient-orange-yellow-overlay",
-            "size": "col-xs-12 col-md-8"
-        },
-
-
-
-
-        {
-            "option-anchor": "hero-banner-with-no-overlay",
-            "option-heading": "Hero banner with no overlay (deprecated)",
-            "option-description": "<div class='alert alert-danger'><strong>This option is depreciated.</strong> Do not attempt to use this option for any new website development. It will be removed in a future update.</div>",
-            "heading":  "Scotland's first university",
-            "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
-            "action-text": "Study at St Andrews",
-            "action-url": "#",
-            "bg-image": "docs/images/cta/hero-banner-image-001.jpg",
-            "class": "",
-            "size": "col-xs-12 col-md-8"
-        },
-
-
-
-
-        {
-            "option-anchor": "hero-banner-with-embedded-video-and-no-overlay",
-            "option-heading": "Hero banner with embedded video and no overlay (deprecated)",
-            "option-description": "<div class='alert alert-danger'><strong>This option is depreciated.</strong> Do not attempt to use this option for any new website development. It will be removed in a future update.</div>",
-            "heading":  "Scotland's first university",
-            "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
-            "action-text": "Study at St Andrews",
-            "action-url": "#",
-            "bg-image": "docs/images/cta/hero-banner-image-001.jpg",
-            "class": "",
-            "size": "col-xs-12 col-md-7",
-            "embed-code": "https://www.youtube.com/embed/JxHfSwpddCU?rel=0&amp;showinfo=0"
+            "bg-image": "docs/images/cta/",
+            "test": "test1",
+            "button-style": "btn btn-primary btn-lg"
         }
     ]
 }
