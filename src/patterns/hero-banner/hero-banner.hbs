@@ -1,14 +1,14 @@
 <!-- Begin pattern: hero-banner //-->
   <ul class="nav nav-tabs" role="tablist">
-                    <li class="active in" role="presentation"><a href="#tab-1" data-toggle="tab" aria-controls="home" role="tab">Image 1</a></li>
-                    <li class="" role="presentation"><a href="#tab-2" data-toggle="tab" aria-controls="home" role="tab">Image 2</a></li>
-                    <li class="" role="presentation"><a href="#tab-3" data-toggle="tab" aria-controls="home" role="tab">Image 3</a></li>
-                    <li class="" role="presentation"><a href="#tab-4" data-toggle="tab" aria-controls="home" role="tab">Image 4</a></li>
-                    <li class="" role="presentation"><a href="#tab-5" data-toggle="tab" aria-controls="home" role="tab">Image 5</a></li>
+                    <li class="active in" role="presentation"><a href="#tab-1{{option-anchor}}" data-toggle="tab" aria-controls="home" role="tab">Image 1</a></li>
+                    <li class="" role="presentation"><a href="#tab-2{{option-anchor}}" data-toggle="tab" aria-controls="home" role="tab">Image 2</a></li>
+                    <li class="" role="presentation"><a href="#tab-3{{option-anchor}}" data-toggle="tab" aria-controls="home" role="tab">Image 3</a></li>
+                    <li class="" role="presentation"><a href="#tab-4{{option-anchor}}" data-toggle="tab" aria-controls="home" role="tab">Image 4</a></li>
+                    <li class="" role="presentation"><a href="#tab-5{{option-anchor}}" data-toggle="tab" aria-controls="home" role="tab">Image 5</a></li>
                 </ul>
 
                 <div class="tab-content">
-                    <div class="tab-pane fade active in" id="tab-1" role="tabpanel" style="padding:0;border:0;">
+                    <div class="tab-pane fade active in" id="tab-1{{option-anchor}}" role="tabpanel" style="padding:0;border:0;">
                     
 <section class="hero-section {{test}}">
     <figure>
@@ -16,11 +16,16 @@
       <source srcset="{{asset bg-image}}hero1/1920x600.jpg" media="(min-width: 640px)">
       <img src="{{asset bg-image}}hero1/750x500.jpg" alt="">
     </picture>
-    <figcaption>Caption is optional</figcaption>
+    {{#if caption}}
+    <figcaption>{{caption}}</figcaption>
+    {{/if}}
     </figure>
     <div class="container">
         <div class="hero-section__content">
             <h2 class="hero-section__heading">{{default heading "[heading]"}}</h2>
+            {{#if group-buttons}}
+            <div class="hero-section__content-group">
+            {{/if}}
             <p class="hero-section__intro">{{default paragraph "[paragraph]"}}</p>
             {{#if action-text}}
             <a class="{{button-style}}" href="{{default action-url "[action-url]"}}">{{default action-text "[action-text]"}}</a>
@@ -28,12 +33,15 @@
             {{#if action-text-2}}
             <a class="{{button-style}}" href="{{default action-url "[action-url]"}}">{{default action-text-2 "[action-text-2]"}}</a>
             {{/if}}
+            {{#if group-buttons}}
+            </div>
+            {{/if}}
         </div>
     </div>
 </section>
 
 </div>
-<div class="tab-pane fade" id="tab-2" role="tabpanel" style="padding:0;border:0;">
+<div class="tab-pane fade" id="tab-2{{option-anchor}}" role="tabpanel" style="padding:0;border:0;">
                     
 <section class="hero-section {{test}}">
     <figure>
@@ -41,11 +49,16 @@
       <source srcset="{{asset bg-image}}hero2/1920x600.jpg" media="(min-width: 640px)">
       <img src="{{asset bg-image}}hero2/750x500.jpg" alt="">
     </picture>
-    <figcaption>Caption is optional</figcaption>
+    {{#if caption}}
+    <figcaption>{{caption}}</figcaption>
+    {{/if}}
     </figure>
     <div class="container">
         <div class="hero-section__content">
             <h2 class="hero-section__heading">{{default heading "[heading]"}}</h2>
+            {{#if group-buttons}}
+            <div class="hero-section__content-group">
+            {{/if}}
             <p class="hero-section__intro">{{default paragraph "[paragraph]"}}</p>
             {{#if action-text}}
             <a class="{{button-style}}" href="{{default action-url "[action-url]"}}">{{default action-text "[action-text]"}}</a>
@@ -53,12 +66,15 @@
             {{#if action-text-2}}
             <a class="{{button-style}}" href="{{default action-url "[action-url]"}}">{{default action-text-2 "[action-text-2]"}}</a>
             {{/if}}
+            {{#if group-buttons}}
+            </div>
+            {{/if}}
         </div>
     </div>
 </section>
 
 </div>
-<div class="tab-pane fade" id="tab-3" role="tabpanel" style="padding:0;border:0;">
+<div class="tab-pane fade" id="tab-3{{option-anchor}}" role="tabpanel" style="padding:0;border:0;">
                     
 <section class="hero-section {{test}}">
     <figure>
@@ -66,11 +82,16 @@
       <source srcset="{{asset bg-image}}hero3/1920x600.jpg" media="(min-width: 640px)">
       <img src="{{asset bg-image}}hero3/750x500.jpg" alt="">
     </picture>
-    <figcaption>Caption is optional</figcaption>
+    {{#if caption}}
+    <figcaption>{{caption}}</figcaption>
+    {{/if}}
     </figure>
     <div class="container">
         <div class="hero-section__content">
             <h2 class="hero-section__heading">{{default heading "[heading]"}}</h2>
+            {{#if group-buttons}}
+            <div class="hero-section__content-group">
+            {{/if}}
             <p class="hero-section__intro">{{default paragraph "[paragraph]"}}</p>
             {{#if action-text}}
             <a class="{{button-style}}" href="{{default action-url "[action-url]"}}">{{default action-text "[action-text]"}}</a>
@@ -78,12 +99,15 @@
             {{#if action-text-2}}
             <a class="{{button-style}}" href="{{default action-url "[action-url]"}}">{{default action-text-2 "[action-text-2]"}}</a>
             {{/if}}
+            {{#if group-buttons}}
+            </div>
+            {{/if}}
         </div>
     </div>
 </section>
 
 </div>
-<div class="tab-pane fade" id="tab-4" role="tabpanel" style="padding:0;border:0;">
+<div class="tab-pane fade" id="tab-4{{option-anchor}}" role="tabpanel" style="padding:0;border:0;">
                     
 <section class="hero-section {{test}}">
     <figure>
@@ -91,11 +115,16 @@
       <source srcset="{{asset bg-image}}hero4/1920x600.jpg" media="(min-width: 640px)">
       <img src="{{asset bg-image}}hero4/750x500.jpg" alt="">
     </picture>
-    <figcaption>Caption is optional</figcaption>
+    {{#if caption}}
+    <figcaption>{{caption}}</figcaption>
+    {{/if}}
     </figure>
     <div class="container">
         <div class="hero-section__content">
             <h2 class="hero-section__heading">{{default heading "[heading]"}}</h2>
+            {{#if group-buttons}}
+            <div class="hero-section__content-group">
+            {{/if}}
             <p class="hero-section__intro">{{default paragraph "[paragraph]"}}</p>
             {{#if action-text}}
             <a class="{{button-style}}" href="{{default action-url "[action-url]"}}">{{default action-text "[action-text]"}}</a>
@@ -103,12 +132,15 @@
             {{#if action-text-2}}
             <a class="{{button-style}}" href="{{default action-url "[action-url]"}}">{{default action-text-2 "[action-text-2]"}}</a>
             {{/if}}
+            {{#if group-buttons}}
+            </div>
+            {{/if}}
         </div>
     </div>
 </section>
 
 </div>
-<div class="tab-pane fade" id="tab-5" role="tabpanel" style="padding:0;border:0;">
+<div class="tab-pane fade" id="tab-5{{option-anchor}}" role="tabpanel" style="padding:0;border:0;">
                     
 <section class="hero-section {{test}}">
     <figure>
@@ -116,17 +148,25 @@
       <source srcset="{{asset bg-image}}hero5/1920x600.jpg" media="(min-width: 640px)">
       <img src="{{asset bg-image}}hero5/750x500.jpg" alt="">
     </picture>
-    <figcaption>Caption is optional</figcaption>
+    {{#if caption}}
+    <figcaption>{{caption}}</figcaption>
+    {{/if}}
     </figure>
     <div class="container">
         <div class="hero-section__content">
             <h2 class="hero-section__heading">{{default heading "[heading]"}}</h2>
+            {{#if group-buttons}}
+            <div class="hero-section__content-group">
+            {{/if}}
             <p class="hero-section__intro">{{default paragraph "[paragraph]"}}</p>
             {{#if action-text}}
             <a class="{{button-style}}" href="{{default action-url "[action-url]"}}">{{default action-text "[action-text]"}}</a>
             {{/if}}
             {{#if action-text-2}}
             <a class="{{button-style}}" href="{{default action-url "[action-url]"}}">{{default action-text-2 "[action-text-2]"}}</a>
+            {{/if}}
+            {{#if group-buttons}}
+            </div>
             {{/if}}
         </div>
     </div>

@@ -2,7 +2,7 @@
     "options": [
         
         {
-            "option-anchor": "hero-banner",
+            "option-anchor": "hero-banner1",
             "option-heading": "Hero banner",
             "option-description": "",
             "heading":  "Scotland’s first university",
@@ -13,6 +13,84 @@
             "bg-image": "docs/images/cta/",
             "test": "test1",
             "button-style": "btn btn-primary btn-lg"
+        },
+
+        
+        {
+            "option-anchor": "hero-banner2",
+            "option-heading": "Hero banner with drop shadow",
+            "option-description": "",
+            "heading":  "Scotland’s first university",
+            "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
+            "action-text": "Search for courses",
+            "action-url": "#",
+            "action-text-2": "Entry requirements",
+            "bg-image": "docs/images/cta/",
+            "test": "test1 drop-shadow",
+            "button-style": "btn btn-primary btn-lg"
+        },
+
+        
+        {
+            "option-anchor": "hero-banner3",
+            "option-heading": "Hero banner with inverse box",
+            "option-description": "",
+            "heading":  "Scotland’s first university",
+            "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
+            "action-text": "Search for courses",
+            "action-url": "#",
+            "action-text-2": "Entry requirements",
+            "bg-image": "docs/images/cta/",
+            "test": "test2",
+            "button-style": "btn btn-primary btn-lg"
+        },
+
+        
+        {
+            "option-anchor": "hero-banner4",
+            "option-heading": "Hero banner with separated heading",
+            "option-description": "",
+            "heading":  "Scotland’s first university",
+            "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
+            "action-text": "Search for courses",
+            "action-url": "#",
+            "action-text-2": "Entry requirements",
+            "bg-image": "docs/images/cta/",
+            "test": "test3",
+            "button-style": "btn btn-primary btn-lg",
+            "group-buttons": true
+        },
+
+        
+        {
+            "option-anchor": "hero-banner5",
+            "option-heading": "Hero banner with separated serif heading",
+            "option-description": "",
+            "heading":  "Scotland’s first university",
+            "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
+            "action-text": "Search for courses",
+            "action-url": "#",
+            "action-text-2": "Entry requirements",
+            "bg-image": "docs/images/cta/",
+            "test": "test4",
+            "button-style": "btn btn-primary btn-lg",
+            "group-buttons": true
+        },
+
+        
+        {
+            "option-anchor": "hero-banner6",
+            "option-heading": "Hero banner with separated serif heading - colour variation",
+            "option-description": "",
+            "heading":  "Scotland’s first university",
+            "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
+            "action-text": "Search for courses",
+            "action-url": "#",
+            "action-text-2": "Entry requirements",
+            "bg-image": "docs/images/cta/",
+            "test": "test5",
+            "button-style": "btn btn-primary btn-lg",
+            "group-buttons": true
         }
     ]
 }

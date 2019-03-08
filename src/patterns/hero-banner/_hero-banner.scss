@@ -46,9 +46,9 @@ figcaption {
 }
 
 
-// TEST 1
+// TEST 1 
 // Heading / intro / cta
-// Constrained within semi opaque white box
+// Constrained within semi opaque white box with additional option for box shadow
 .test1 {
 
   .hero-section__content {
@@ -73,9 +73,22 @@ figcaption {
     line-height: 1;
     background: $sta-blue-light;
     border-bottom: 5px solid $sta-blue-light-hover;
+
+    &:hover,
+    &:focus {
+      background:$sta-blue-light-hover;
+    }
   }  
 
 @media (min-width:768px){
+
+
+  // Option with drop shadow on box
+  &.drop-shadow .hero-section__content {
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.2);
+  }
+
+
     .hero-section__content {
       background: rgba(#fff,0.9);
       border: 1px solid #fff;
@@ -105,6 +118,345 @@ figcaption {
 
 }
 
+
+
+
+// TEST 2
+// Heading / intro / cta
+// Constrained within semi opaque dark box (inverse of test 1)
+.test2 {
+
+  .hero-section__content {
+    padding: 20px 0 30px 0;
+  }
+
+  .hero-section__heading {
+    margin: 0;
+    padding: 0;
+
+    line-height: 1;
+  }
+
+  .hero-section__intro {
+    margin: 15px 0 0 0;
+    padding: 0;
+  }
+
+  .btn {
+    margin: 15px 10px 0 0;
+    font-weight: bold;
+    line-height: 1;
+    background: $sta-blue-light;
+    border-bottom: 5px solid $sta-blue-light-hover;
+
+    &:hover,
+    &:focus {
+      background:$sta-blue-light-hover;
+    }
+  }  
+
+@media (min-width:768px){
+
+    .hero-section__content {
+      background: rgba($sta-grey-dark,0.7);
+      border: 1px solid $sta-grey-dark;
+      position: absolute;
+      bottom: $half-gutter;
+      left: 15px;
+      max-width: 500px;
+      padding: 30px;
+      margin-left: -30px;
+    }
+
+  .hero-section__heading {
+    color: white;
+    font-size: 50px;
+    line-height: 1;
+  }
+
+  .hero-section__intro {
+    color: white;
+  }
+
+  .btn {
+    font-size: 1.2em;
+    line-height: 1;
+  }   
+
+}
+
+}
+
+
+
+
+
+// TEST 3
+// Heading / intro / cta
+// Heading is standalone with accent colour
+.test3 {
+
+  .hero-section__content {
+    padding: 20px 0 30px 0;
+  }
+
+  .hero-section__heading {
+    margin: 0;
+    padding: 0;
+
+    line-height: 1;
+  }
+
+  .hero-section__intro {
+    margin: 15px 0 0 0;
+    padding: 0;
+  }
+
+  .btn {
+    margin: 15px 10px 0 0;
+    font-weight: bold;
+    line-height: 1;
+    background: $sta-blue-light;
+    border-bottom: 5px solid $sta-blue-light-hover;
+
+    &:hover,
+    &:focus {
+      background:$sta-blue-light-hover;
+    }
+  }  
+
+@media (min-width:768px){
+
+    .hero-section__content {
+      position: absolute;
+      bottom: $half-gutter;
+      left: 15px;
+      max-width: 500px;
+      padding: 0;
+    }
+
+  .hero-section__heading {
+    display:inline;
+    background: $sta-burgundy;
+    box-shadow: 30px 0 0 $sta-burgundy, -30px 0 0 $sta-burgundy;
+    -webkit-box-decoration-break: clone;
+    -ms-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: white;
+    font-size: 64px;
+    line-height: 1;
+  }
+
+  .hero-section__content-group {
+    background: rgba(white,0.9);
+    padding:30px;
+    margin-left: -30px;
+    margin-top:20px;
+  }
+    .hero-section__intro {
+    margin: 0;
+    padding: 0;
+  }
+
+  .btn {
+    font-size: 1.2em;
+    line-height: 1;
+    margin-top:25px;
+  }   
+
+}
+
+}
+
+
+
+// TEST 4
+// Heading / intro / cta
+// Heading is standalone with accent colour in serif font width slightly larger intro font size
+.test4 {
+
+  .hero-section__content {
+    padding: 20px 0 30px 0;
+  }
+
+  .hero-section__heading {
+    margin: 0;
+    padding: 0;
+
+    line-height: 1;
+  }
+
+  .hero-section__intro {
+    margin: 15px 0 0 0;
+    padding: 0;
+  }
+
+  .btn {
+    margin: 15px 10px 0 0;
+    font-weight: bold;
+    line-height: 1;
+    background: $sta-blue-light;
+    position:relative;
+    padding:15px 45px 15px 15px;
+
+    &:before {
+      @extend .fa;
+      @extend .fa-chevron-right;
+      font-size: 30px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 15px;
+    }
+
+    &:hover,
+    &:focus {
+      background:$sta-blue-light-hover;
+    }
+  }  
+
+@media (min-width:768px){
+
+    .hero-section__content {
+      position: absolute;
+      bottom: $half-gutter;
+      left: 15px;
+      max-width: 580px;
+      padding: 0;
+    }
+
+  .hero-section__heading {
+    display:inline;
+    background: $sta-burgundy;
+    box-shadow: 30px 0 0 $sta-burgundy, -30px 0 0 $sta-burgundy;
+    -webkit-box-decoration-break: clone;
+    -ms-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: white;
+    font-size: 64px;
+    line-height: 1.1;
+    font-family: 'PT Serif',georgia,serif;
+    font-style: italic;
+  }
+
+  .hero-section__content-group {
+    background: rgba(white,0.9);
+    padding:30px;
+    margin-left: -30px;
+    margin-top:20px;
+  }
+    .hero-section__intro {
+    margin: 0;
+    padding: 0;
+    font-size:1.2em;
+  }
+
+  .btn {
+    font-size: 1.2em;
+    line-height: 1;
+    margin-top:25px;
+  }   
+
+}
+
+}
+
+
+
+
+// TEST 5
+// Heading / intro / cta
+// Test 4 with different colour option
+.test5 {
+
+  .hero-section__content {
+    padding: 20px 0 30px 0;
+  }
+
+  .hero-section__heading {
+    margin: 0;
+    padding: 0;
+
+    line-height: 1;
+  }
+
+  .hero-section__intro {
+    margin: 15px 0 0 0;
+    padding: 0;
+  }
+
+  .btn {
+    margin: 15px 10px 0 0;
+    font-weight: bold;
+    line-height: 1;
+    background: $sta-blue-light;
+    position:relative;
+    padding:15px 45px 15px 15px;
+
+    &:before {
+      @extend .fa;
+      @extend .fa-chevron-right;
+      font-size: 30px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 15px;
+    }
+
+    &:hover,
+    &:focus {
+      background:$sta-blue-light-hover;
+    }
+  }  
+
+@media (min-width:768px){
+
+    .hero-section__content {
+      position: absolute;
+      bottom: $half-gutter;
+      left: 15px;
+      max-width: 580px;
+      padding: 0;
+    }
+
+  .hero-section__heading {
+    display:inline;
+    background: $sta-purple;
+    box-shadow: 30px 0 0 $sta-purple, -30px 0 0 $sta-purple;
+    -webkit-box-decoration-break: clone;
+    -ms-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: white;
+    font-size: 64px;
+    line-height: 1.1;
+    font-family: 'PT Serif',georgia,serif;
+    font-style: italic;
+  }
+
+  .hero-section__content-group {
+    background: rgba(white,0.9);
+    padding:30px;
+    margin-left: -30px;
+    margin-top:20px;
+  }
+    .hero-section__intro {
+    margin: 0;
+    padding: 0;
+    font-size:1.2em;
+  }
+
+  .btn {
+    font-size: 1.2em;
+    line-height: 1;
+    margin-top:25px;
+  }   
+
+}
+
+}
 /*********************************/
 /* END Pattern: hero-banner      */
 /*********************************/
