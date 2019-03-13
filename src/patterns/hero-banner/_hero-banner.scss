@@ -11,20 +11,40 @@
   }
 
   .hero-section__heading {
-    margin: 0;
-    padding: 0;
-    display:inline;
-    background: $sta-burgundy;
-    box-shadow: 15px 0 0 $sta-burgundy, -15px 0 0 $sta-burgundy;
+    background: $sta-blue;
+    box-shadow: 15px 0 0 $sta-blue, -15px 0 0 $sta-blue;
     -webkit-box-decoration-break: clone;
     -ms-box-decoration-break: clone;
     -o-box-decoration-break: clone;
     box-decoration-break: clone;
     color: white;
+    display:inline;
     font-size: 36px;
-    line-height: 1.1;
     font-family: 'PT Serif',georgia,serif;
     font-style: italic;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+
+    &--burgundy {
+      background: $sta-burgundy;
+      box-shadow: 15px 0 0 $sta-burgundy, -15px 0 0 $sta-burgundy;
+    }
+
+    &--orange {
+      background: $sta-orange;
+      box-shadow: 15px 0 0 $sta-orange, -15px 0 0 $sta-orange;
+    }
+
+    &--green {
+      background: $sta-green;
+      box-shadow: 15px 0 0 $sta-green, -15px 0 0 $sta-green;
+    }
+
+    &--purple {
+      background: $sta-purple;
+      box-shadow: 15px 0 0 $sta-purple, -15px 0 0 $sta-purple;
+    }
   }
 
   .hero-section__intro {
@@ -33,12 +53,13 @@
   }
 
   .btn {
-    margin: 15px 10px 0 0;
+    background: $sta-blue-light;
+    border-bottom: 3px $sta-blue-hover solid;
     font-weight: bold;
     line-height: 1;
-    background: $sta-blue-light;
+    margin: 15px 10px 0 0;
     position:relative;
-    padding:15px 45px 15px 15px;
+    padding:15px 45px 12px 15px;
 
     &:before {
       @extend .fa;
@@ -56,18 +77,9 @@
     }
   }  
 
-figcaption {
-  position: absolute;
-  bottom: 0;
-  right:0;
-  font-size:13px;
-  background:rgba(white,0.9);
-  padding:10px 15px;
-}
 
 @media (min-width:768px){
-
-  position: relative;
+  position:relative;
   overflow: hidden;
   height: 480px;
 
@@ -98,17 +110,37 @@ figcaption {
 
   .hero-section__heading {
     display:inline;
-    background: $sta-burgundy;
-    box-shadow: 30px 0 0 $sta-burgundy, -30px 0 0 $sta-burgundy;
+    background: rgba($sta-blue,0.9);
+    box-shadow: 30px 0 0 rgba($sta-blue,0.9), -30px 0 0 rgba($sta-blue,0.9);
     -webkit-box-decoration-break: clone;
     -ms-box-decoration-break: clone;
     -o-box-decoration-break: clone;
     box-decoration-break: clone;
     color: white;
-    font-size: 64px;
+    font-size: 56px;
     line-height: 1.1;
     font-family: 'PT Serif',georgia,serif;
     font-style: italic;
+
+    &--burgundy {
+      background: $sta-burgundy;
+      box-shadow: 30px 0 0 $sta-burgundy, -30px 0 0 $sta-burgundy;
+    }
+
+    &--orange {
+      background: $sta-orange;
+      box-shadow: 30px 0 0 $sta-orange, -30px 0 0 $sta-orange;
+    }
+
+    &--green {
+      background: $sta-green;
+      box-shadow: 30px 0 0 $sta-green, -30px 0 0 $sta-green;
+    }
+
+    &--purple {
+      background: $sta-purple;
+      box-shadow: 30px 0 0 $sta-purple, -30px 0 0 $sta-purple;
+    }
   }
 
   .hero-section__content-group {
@@ -117,22 +149,36 @@ figcaption {
     margin-left: -30px;
     margin-top:20px;
   }
-    .hero-section__intro {
+  
+  .hero-section__intro {
     margin: 0;
     padding: 0;
-    font-size:1.2em;
+    font-size: 1.2em;
   }
 
+  // Increase size of button
   .btn {
     font-size: 1.2em;
     line-height: 1;
     margin-top:25px;
+    border-bottom-width: 5px;
+    padding-bottom: 10px;
+    padding-right: 50px;
 
     &:before {
       font-size: 30px;
+      transform: translateY(-50%) translateY(3px);
     }
   }   
 
+}
+
+
+@media (min-width:992px){
+  .hero-section__heading {
+    font-size: 64px;
+    line-height: 1.1;
+  }
 }
 
 @media (min-width:1200px){
@@ -146,418 +192,6 @@ figcaption {
 
 }
 
-
-// TEST 1 
-// Heading / intro / cta
-// Constrained within semi opaque white box with additional option for box shadow
-.test1 {
-
-  .hero-section__content {
-    padding: 20px 0 30px 0;
-  }
-
-  .hero-section__heading {
-    margin: 0;
-    padding: 0;
-
-    line-height: 1;
-  }
-
-  .hero-section__intro {
-    margin: 15px 0 0 0;
-    padding: 0;
-  }
-
-  .btn {
-    margin: 15px 10px 0 0;
-    font-weight: bold;
-    line-height: 1;
-    background: $sta-blue-light;
-    border-bottom: 5px solid $sta-blue-light-hover;
-
-    &:hover,
-    &:focus {
-      background:$sta-blue-light-hover;
-    }
-  }  
-
-@media (min-width:768px){
-
-
-  // Option with drop shadow on box
-  &.drop-shadow .hero-section__content {
-    box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.2);
-  }
-
-
-    .hero-section__content {
-      background: rgba(#fff,0.9);
-      border: 1px solid #fff;
-      position: absolute;
-      bottom: $half-gutter;
-      left: 15px;
-      max-width: 500px;
-      padding: 30px;
-      margin-left: -30px;
-    }
-
-  .hero-section__heading {
-    font-size: 50px;
-    line-height: 1;
-  }
-
-  .hero-section__intro {
-
-  }
-
-  .btn {
-    font-size: 1.2em;
-    line-height: 1;
-  }   
-
-}
-
-}
-
-
-
-
-// TEST 2
-// Heading / intro / cta
-// Constrained within semi opaque dark box (inverse of test 1)
-.test2 {
-
-  .hero-section__content {
-    padding: 20px 0 30px 0;
-  }
-
-  .hero-section__heading {
-    margin: 0;
-    padding: 0;
-
-    line-height: 1;
-  }
-
-  .hero-section__intro {
-    margin: 15px 0 0 0;
-    padding: 0;
-  }
-
-  .btn {
-    margin: 15px 10px 0 0;
-    font-weight: bold;
-    line-height: 1;
-    background: $sta-blue-light;
-    border-bottom: 5px solid $sta-blue-light-hover;
-
-    &:hover,
-    &:focus {
-      background:$sta-blue-light-hover;
-    }
-  }  
-
-@media (min-width:768px){
-
-    .hero-section__content {
-      background: rgba($sta-grey-dark,0.7);
-      border: 1px solid $sta-grey-dark;
-      position: absolute;
-      bottom: $half-gutter;
-      left: 15px;
-      max-width: 500px;
-      padding: 30px;
-      margin-left: -30px;
-    }
-
-  .hero-section__heading {
-    color: white;
-    font-size: 50px;
-    line-height: 1;
-  }
-
-  .hero-section__intro {
-    color: white;
-  }
-
-  .btn {
-    font-size: 1.2em;
-    line-height: 1;
-  }   
-
-}
-
-}
-
-
-
-
-
-// TEST 3
-// Heading / intro / cta
-// Heading is standalone with accent colour
-.test3 {
-
-  .hero-section__content {
-    padding: 20px 0 30px 0;
-  }
-
-  .hero-section__heading {
-    margin: 0;
-    padding: 0;
-
-    line-height: 1;
-  }
-
-  .hero-section__intro {
-    margin: 15px 0 0 0;
-    padding: 0;
-  }
-
-  .btn {
-    margin: 15px 10px 0 0;
-    font-weight: bold;
-    line-height: 1;
-    background: $sta-blue-light;
-    border-bottom: 5px solid $sta-blue-light-hover;
-
-    &:hover,
-    &:focus {
-      background:$sta-blue-light-hover;
-    }
-  }  
-
-@media (min-width:768px){
-
-    .hero-section__content {
-      position: absolute;
-      bottom: $half-gutter;
-      left: 15px;
-      max-width: 500px;
-      padding: 0;
-    }
-
-  .hero-section__heading {
-    display:inline;
-    background: $sta-burgundy;
-    box-shadow: 30px 0 0 $sta-burgundy, -30px 0 0 $sta-burgundy;
-    -webkit-box-decoration-break: clone;
-    -ms-box-decoration-break: clone;
-    -o-box-decoration-break: clone;
-    box-decoration-break: clone;
-    color: white;
-    font-size: 64px;
-    line-height: 1;
-  }
-
-  .hero-section__content-group {
-    background: rgba(white,0.9);
-    padding:30px;
-    margin-left: -30px;
-    margin-top:20px;
-  }
-    .hero-section__intro {
-    margin: 0;
-    padding: 0;
-  }
-
-  .btn {
-    font-size: 1.2em;
-    line-height: 1;
-    margin-top:25px;
-  }   
-
-}
-
-}
-
-
-
-// TEST 4
-// Heading / intro / cta
-// Heading is standalone with accent colour in serif font width slightly larger intro font size
-.test4 {
-
-  .hero-section__content {
-    padding: 20px 0 30px 0;
-  }
-
-  .hero-section__heading {
-    margin: 0;
-    padding: 0;
-
-    line-height: 1;
-  }
-
-  .hero-section__intro {
-    margin: 15px 0 0 0;
-    padding: 0;
-  }
-
-  .btn {
-    margin: 15px 10px 0 0;
-    font-weight: bold;
-    line-height: 1;
-    background: $sta-blue-light;
-    position:relative;
-    padding:15px 45px 15px 15px;
-
-    &:before {
-      @extend .fa;
-      @extend .fa-chevron-right;
-      font-size: 30px;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 15px;
-    }
-
-    &:hover,
-    &:focus {
-      background:$sta-blue-light-hover;
-    }
-  }  
-
-@media (min-width:768px){
-
-    .hero-section__content {
-      position: absolute;
-      bottom: $half-gutter;
-      left: 15px;
-      max-width: 580px;
-      padding: 0;
-    }
-
-  .hero-section__heading {
-    display:inline;
-    background: $sta-burgundy;
-    box-shadow: 30px 0 0 $sta-burgundy, -30px 0 0 $sta-burgundy;
-    -webkit-box-decoration-break: clone;
-    -ms-box-decoration-break: clone;
-    -o-box-decoration-break: clone;
-    box-decoration-break: clone;
-    color: white;
-    font-size: 64px;
-    line-height: 1.1;
-    font-family: 'PT Serif',georgia,serif;
-    font-style: italic;
-  }
-
-  .hero-section__content-group {
-    background: rgba(white,0.9);
-    padding:30px;
-    margin-left: -30px;
-    margin-top:20px;
-  }
-    .hero-section__intro {
-    margin: 0;
-    padding: 0;
-    font-size:1.2em;
-  }
-
-  .btn {
-    font-size: 1.2em;
-    line-height: 1;
-    margin-top:25px;
-  }   
-
-}
-
-}
-
-
-
-
-// TEST 5
-// Heading / intro / cta
-// Test 4 with different colour option
-.test5 {
-
-  .hero-section__content {
-    padding: 20px 0 30px 0;
-  }
-
-  .hero-section__heading {
-    margin: 0;
-    padding: 0;
-
-    line-height: 1;
-  }
-
-  .hero-section__intro {
-    margin: 15px 0 0 0;
-    padding: 0;
-  }
-
-  .btn {
-    margin: 15px 10px 0 0;
-    font-weight: bold;
-    line-height: 1;
-    background: $sta-blue-light;
-    position:relative;
-    padding:15px 45px 15px 15px;
-
-    &:before {
-      @extend .fa;
-      @extend .fa-chevron-right;
-      font-size: 30px;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 15px;
-    }
-
-    &:hover,
-    &:focus {
-      background:$sta-blue-light-hover;
-    }
-  }  
-
-@media (min-width:768px){
-
-    .hero-section__content {
-      position: absolute;
-      bottom: $half-gutter;
-      left: 15px;
-      max-width: 580px;
-      padding: 0;
-    }
-
-  .hero-section__heading {
-    display:inline;
-    background: $sta-purple;
-    box-shadow: 30px 0 0 $sta-purple, -30px 0 0 $sta-purple;
-    -webkit-box-decoration-break: clone;
-    -ms-box-decoration-break: clone;
-    -o-box-decoration-break: clone;
-    box-decoration-break: clone;
-    color: white;
-    font-size: 64px;
-    line-height: 1.1;
-    font-family: 'PT Serif',georgia,serif;
-    font-style: italic;
-  }
-
-  .hero-section__content-group {
-    background: rgba(white,0.9);
-    padding:30px;
-    margin-left: -30px;
-    margin-top:20px;
-  }
-    .hero-section__intro {
-    margin: 0;
-    padding: 0;
-    font-size:1.2em;
-  }
-
-  .btn {
-    font-size: 1.2em;
-    line-height: 1;
-    margin-top:25px;
-  }   
-
-}
-
-}
 /*********************************/
 /* END Pattern: hero-banner      */
 /*********************************/

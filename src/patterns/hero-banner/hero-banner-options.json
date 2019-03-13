@@ -3,46 +3,68 @@
         
         {
             "option-anchor": "hero-banner1",
-            "option-heading": "Hero banner",
-            "option-description": "",
+            "option-heading": "Hero banner with introduction and two call-to-action buttons",
+            "option-description": "<p>This example uses the default heading colour and includes all possible types of content.</p>",
             "heading":  "Scotland’s first university",
             "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
             "action-text": "Search for courses",
             "action-url": "#",
             "action-text-2": "Entry requirements",
-            "bg-image": "docs/images/cta/hero1/",
+            "bg-image": "docs/images/cta/hero5/",
             "button-style": "btn btn-primary btn-lg",
-            "colour": "sta-burgundy",
-            "intro-buttons": true
+            "intro-buttons": true,
+            "caption": "Image details"
         },
+
 
         
         {
             "option-anchor": "hero-banner2",
-            "option-heading": "Hero banner",
-            "option-description": "",
-            "heading":  "Visit the University",
-            "paragraph":  "Join us on a visiting day to meet with academic staff, talk to current students, see the town and ask any questions you have about applying. Book your visit today.",
-            "colour": "sta-burgundy",
-            "bg-image": "docs/images/cta/hero2/",
-            "button-style": "btn btn-primary btn-lg",
-            "intro-buttons": true
-        },
-
-        
-        {
-            "option-anchor": "hero-banner2",
-            "option-heading": "Hero banner",
-            "option-description": "",
+            "option-heading": "Hero banner with introduction and one call-to-action button",
+            "option-description": "<p>This example uses an alternate heading colour and features only one button.</p>",
             "heading":  "Accommodation at St Andrews",
+            "heading-colour": " hero-section__heading--burgundy",
             "paragraph":  "St Andrews has more than 4,000 bed spaces and a fantastic variety of accommodation to suit all tastes and budgets. Prospective students can be sure that they will find suitable accommodation during their studies.",
-            "action-text": "Search for courses",
-            "action-url": "#",
-            "action-text-2": "Entry requirements",
-            "bg-image": "docs/images/cta/hero3/",
+            "bg-image": "docs/images/cta/hero2/",
+            "intro-buttons": true,
             "button-style": "btn btn-primary btn-lg",
-            "colour": "sta-burgundy",
-            "caption": "A suitable caption for the hero image. A suitable caption for the hero image. A suitable caption for the hero image."
+            "action-text": "See the halls of residence",
+            "action-url": "#",
+            "caption": "Image details"
+        },
+        
+        {
+            "option-anchor": "hero-banner3",
+            "option-heading": "Hero banner with introduction",
+            "option-description": "<p>This examples uses an alternate heading colour and features no call-to-actions.</p>",
+            "heading":  "Visit the University",
+            "heading-colour": " hero-section__heading--orange",
+            "paragraph":  "Join us on a visiting day to meet with academic staff, talk to current students, see the town and ask any questions you have about applying. Book your visit today.",
+            "bg-image": "docs/images/cta/hero4/",
+            "intro-buttons": true,
+            "caption": "Image details"
+        },
+
+        
+        {
+            "option-anchor": "hero-banner4",
+            "option-heading": "Hero banner with heading only",
+            "option-description": "<p>This example uses an alternate heading colour and only includes a heading.</p>",
+            "heading":  "Accommodation at St Andrews",
+            "heading-colour": " hero-section__heading--purple",
+            "bg-image": "docs/images/cta/hero6/",
+            "caption": "Image details"
+        },
+
+        
+        {
+            "option-anchor": "hero-banner5",
+            "option-heading": "Hero banner with heading only - art direction",
+            "option-description": "<p>This example shows how a cropped in version of the image is used for the mobile scaled size to focus on the key essence of the image.</p>",
+            "heading":  "Accommodation at St Andrews",
+            "heading-colour": " hero-section__heading--green",
+            "bg-image": "docs/images/cta/hero7/",
+            "caption": "Image details"
         }
     ]
 }

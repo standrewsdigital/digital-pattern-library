@@ -1,17 +1,12 @@
 <!-- Begin pattern: hero-banner //-->                                  
 <section class="hero-section">
-    <figure>
-    <picture>
+    <picture class="hero-section__image">
       <source srcset="{{asset bg-image}}1920x600.jpg" media="(min-width: 640px)">
-      <img src="{{asset bg-image}}750x500.jpg" alt="">
+      <img src="{{asset bg-image}}750x500.jpg" alt="{{caption}}">
     </picture>
-    {{#if caption}}
-    <figcaption>{{caption}}</figcaption>
-    {{/if}}
-    </figure>
     <div class="container">
         <div class="hero-section__content">
-            <h2 class="hero-section__heading">{{default heading "[heading]"}}</h2>
+            <h2 class="hero-section__heading{{heading-colour}}">{{default heading "[heading]"}}</h2>
         {{#if intro-buttons}}
             <div class="hero-section__content-group">
             <p class="hero-section__intro">{{default paragraph "[paragraph]"}}</p>
