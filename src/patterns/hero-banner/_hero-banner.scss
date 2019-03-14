@@ -175,18 +175,29 @@
 
 
 @media (min-width:992px){
+  height: 530px;
   .hero-section__heading {
-    font-size: 64px;
+    font-size: 60px;
     line-height: 1.1;
   }
 }
 
 @media (min-width:1200px){
+  height: 540px;
+}
+
+@media (min-width:1400px){
   height: 580px;
 }
 
-@media (min-width:1600px){
+// Supersize on big screens
+@media (min-width:1601px){
   height: 680px;
+
+  .hero-section__heading {
+    font-size: 64px;
+    line-height: 1.1;
+  }
 }
 
 
