@@ -3,9 +3,9 @@
             "paragraph":  "Study at the University of St Andrews and experience world-class teaching, cutting edge research and the flexible structure of our degree programmes.",
             "action-text": "Why St Andrews",
             "action-url": "#",
-            "bg-image": "docs/images/cta/hero5/",
+            "bg-image": "docs/images/cta/hero9/",
             "button-style": "btn btn-primary btn-lg",
-            "heading-colour": " hero-section__heading--burgundy",
+            "heading-colour": "",
             "intro-buttons": true,
             "caption": "West Sands St Andrews"
 }
