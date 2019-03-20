@@ -1,22 +1,23 @@
-<!-- Begin pattern: hero-banner //-->
-<section class="hero-banner{{class}}" {{#if bg-image}}style="background-image: url({{asset bg-image}});"{{/if}}>
+<!-- Begin pattern: hero-banner //-->                                  
+<section class="hero-section">
+    <picture class="hero-section__image">
+      <source srcset="{{asset bg-image}}1920x600.jpg" media="(min-width: 640px)">
+      <img src="{{asset bg-image}}750x500.jpg" alt="{{caption}}">
+    </picture>
     <div class="container">
-        <div class="fg row">
-            <div class="{{size}}">
-                <h2 class="call-heading">{{default heading "[heading]"}}</h2>
-                <p>{{default paragraph "[paragraph]"}}</p>
-                <p>
-                <a class="btn btn-primary btn-lg" href="{{default action-url "[action-url]"}}">{{default action-text "[action-text]"}}</a>
-                {{#if action-text-2}}
-                <a class="btn btn-primary btn-lg" href="{{default action-url "[action-url]"}}">{{default action-text-2 "[action-text-2]"}}</a>
-                {{/if}}
-                </p>
-            </div>
-            {{#if embed-code}}
-            <div class="col-xs-12 col-md-5">
-                <div class="embed-responsive embed-responsive-16by9"><iframe src="{{embed-code}}" allowfullscreen=""></iframe></div>
-            </div>
+        <div class="hero-section__content">
+            <h2 class="hero-section__heading{{heading-colour}}">{{default heading "[heading]"}}</h2>
+        {{#if intro-buttons}}
+            <div class="hero-section__content-group">
+            <p class="hero-section__intro">{{default paragraph "[paragraph]"}}</p>
+            {{#if action-text}}
+            <a class="{{button-style}}" href="{{default action-url "[action-url]"}}">{{default action-text "[action-text]"}}</a>
             {{/if}}
+            {{#if action-text-2}}
+            <a class="{{button-style}}" href="{{default action-url "[action-url]"}}">{{default action-text-2 "[action-text-2]"}}</a>
+            {{/if}}
+            </div>
+        {{/if}}
         </div>
     </div>
 </section>

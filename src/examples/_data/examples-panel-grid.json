@@ -5,14 +5,14 @@
                 {
                     "column-size": "col-md-6",
                     "color": "panel-secondary",
-                    "title": "Research portal",
-                    "description": "<ul><li><a href='#'>Researchers</a></li><li><a href='#'>Publications</a></li><li><a href='#'>Impact</a></li><li><a href='#'>Data</a></li><li><a href='#'>Funded projects</a></li></ul>"
+                    "title": "Choose St Andrews",
+                    "description": "<ul><li><a href='#'>Tuition fees</a></li><li><a href='#'>Scholarships</a></li><li><a href='#'>Accommodation</a></li><li><a href='#'>How to apply</a></li><li><a href='#'>Visiting days</a></li></ul>"
                 },
                 {
                     "column-size": "col-md-6",   
                     "color": "panel-tertiary-1",
-                    "title": "Research environment",
-                    "description": "<ul><li><a href='#'>Committees and forums</a></li><li><a href='#'>Equality and diversity</a></li><li><a href='#'>Schools, centres and institutes</a></li><li><a href='#'>Funding</a></li><li><a href='#'>Collaborations</a></li></ul>"
+                    "title": "Current students",
+                    "description": "<ul><li><a href='#'>MySaint</a></li><li><a href='#'>Moodle</a></li><li><a href='#'>Library</a></li><li><a href='#'>MMS</a></li><li><a href='#'>Semester dates</a></li></ul>"
                 }
             ]
         }

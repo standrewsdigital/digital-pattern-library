@@ -1,0 +1,65 @@
+---
+title: Hero banner (old version)
+---
+<div class="alert alert--warning"><h3>Attention</h3><p>This old method of implementing the hero banner pattern is deprecated and will be removed in a future version of the digital pattern library. Please refer to the <a href="../hero-banner/index.html">current hero banner pattern</a> for the correct method.</p></div>
+
+<p>The hero banner pattern displays a large heading, introductory text and a call-to-action over a large background image.</p>
+
+<h3>Rules for hero banner</h3>
+<ul>
+    <li>Hero banners must only be used at the top of a page directly under the <a href='../navigation-bar/index.html'>navigation bar</a>.</li>
+    <li>Breadcrumbs must not be used on pages featuring a hero banner.</li>
+    <li>Hero banners must not be used on content pages, with the exception of long-style pages. For example, the current <a href="https://www.st-andrews.ac.uk/study/accommodation/halls/catered-standard/">halls of residence</a> pages.</li>
+    <li>The colours of the transparent overlay, gradient overlay, and button must not be altered.</li>
+    <li>Embedded videos can be included in any option. Some options below show embedded videos as an example.</li>
+    <li>A second optional call-to-action can be included if required.</li>
+</ul>
+<h3>Image guidelines</h3>
+<ul>
+    <li>Hero banners must always have an image background.</li>
+    <li>The size of a hero banner image must be 1905 &times; 362 pixels.</li>
+    <li>There is no default background image, you will need to supply an image by attaching an inline style on <code>&lt;div class="hero-banner"&gt;</code>. For example: <code>&lt;div class="hero-banner" style="background-image: url(path/to/image.jpg)"&gt;</code>.</li>
+    <li>The main focus of this pattern is the call-to-action text so the background image shouldn't be overly complicated.</li>
+    <li>Multiple images must not be used (for example, to form a collage) as they are complicated.</li>
+    <li>Photographs including people are encouraged in the hero banner.</li>
+    <li>Photographs of the St Andrews skyline are encouraged in the hero banner.</li>
+    <li>Close ups of subjects, such as people's faces, are discouraged. The hero banner image should have room to breathe.</li>
+</ul>
+
+<h3>Text guidelines</h3>
+<ul>
+    <li>The hero banner heading must not exceed 40 characters.</li>
+    <li>The hero banner paragraph text must not exceed 230 characters.</li>
+    <li>There must only be one paragraph on a hero banner.</li>
+</ul>
+
+<h3>Video guidelines</h3>
+<ul>
+    <li>Videos embeded on the hero banner must be hosted on either YouTube or Vimeo.</li>
+    <li>When sourcing embed code from YouTube, disable "Show suggested videos when the video finishes" and "Show video title and player actions". This will only show the player controls.</li>
+    <li>When sourcing embed code from Vimeo, disable "Portrait", "Title", and "Byline".</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#hero-banner-deprecated-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/hero-banner-deprecated-options.options}}
+</ul>
+
+{{#hero-banner-deprecated-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+<div class='alert alert--warning'><h3>Attention</h3><p>This implementation is now deprecated and will be removed in a future release.</p></div>
+{{{option-description}}}
+<!--noindex-->
+    <span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+    {{> hero-banner-deprecated}}
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> hero-banner-deprecated}}</code></pre>
+<!--endnoindex-->
+{{/hero-banner-deprecated-options.options}}

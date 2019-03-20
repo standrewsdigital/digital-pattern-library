@@ -1,9 +1,11 @@
 {
-    "heading":  "Scotland's first university",
-    "paragraph":  "Discover what it’s like to study at St Andrews. Search undergraduate courses, explore postgraduate opportunities or find flexible study options.",
-    "action-text": "Study at St Andrews",
-    "action-url": "#",
-    "bg-image": "docs/images/cta/hero-banner-image-005.jpg",
-    "class": " hero-banner--overlay hero-banner--blue-transparent-overlay",
-    "size": "col-xs-12 col-md-8"
+            "heading":  "Scotland’s first university",
+            "paragraph":  "Study at the University of St Andrews and experience world-class teaching, cutting edge research and the flexible structure of our degree programmes.",
+            "action-text": "Why St Andrews",
+            "action-url": "#",
+            "bg-image": "docs/images/cta/hero9/",
+            "button-style": "btn btn-primary btn-lg",
+            "heading-colour": "",
+            "intro-buttons": true,
+            "caption": "West Sands St Andrews"
 }

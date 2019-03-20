@@ -1,0 +1,12 @@
+{
+    "option-heading": "Search banner with results",
+    "option-description": "<p>The search banner can also be amended to include the results immediately rather than navigating to another page.</p><ul><li>This must follow the guidelines of the <a href=\"#search-banner\">search banner</a> option.</li><li>Placeholder text should be used to indicate the recommended type of search query and that results will be shown.</li><li>The submit button must not be shown as the search form is automatically triggered as text is entered.</li></ul><p>For this example, search the word 'english' to see how the results are displayed.</p>",
+    "option-anchor": "search-banner-results",
+    "background-color": "search-bar__grey",
+    "full-width": true,
+    "results": true,
+    "search-header": "Course search",
+    "search-subtext": "Search for all the courses we offer",
+    "placeholder": "Start typing to see courses",
+    "input-id": "form-banner-search-grey"
+}

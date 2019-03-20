@@ -3,128 +3,203 @@
 /* BEGIN Pattern: hero-banner    */
 /*********************************/
 
-@mixin hero-banner-overlay ($color-start, $color-end, $color-cta, $color-cta-hover){
-   &:after {
-       background: linear-gradient(to right, rgba( $color-start, .6 ), rgba( $color-end, .6 ));
-   }
-   .btn, .btn-primary {
-        background-color: $color-cta;
-        border-bottom: 5px solid $color-cta-hover;
-   }
+.hero-section {
 
-   .btn:hover, .btn:focus {
-        background-color: $color-cta-hover;
-        border-bottom: 5px solid $color-cta-hover;
+ .hero-section__content {
+    padding: 0 0 30px 0;
+    margin-top: -10px;
+  }
+
+  .hero-section__heading {
+    background: $sta-blue;
+    box-shadow: 15px 0 0 $sta-blue, -15px 0 0 $sta-blue;
+    -webkit-box-decoration-break: clone;
+    -ms-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: white;
+    display:inline;
+    font-size: 36px;
+    font-family: 'PT Serif',georgia,serif;
+    font-style: italic;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+
+    &--burgundy {
+      background: $sta-burgundy;
+      box-shadow: 15px 0 0 $sta-burgundy, -15px 0 0 $sta-burgundy;
     }
+
+    &--orange {
+      background: $sta-orange;
+      box-shadow: 15px 0 0 $sta-orange, -15px 0 0 $sta-orange;
+    }
+
+    &--green {
+      background: $sta-green;
+      box-shadow: 15px 0 0 $sta-green, -15px 0 0 $sta-green;
+    }
+
+    &--purple {
+      background: $sta-purple;
+      box-shadow: 15px 0 0 $sta-purple, -15px 0 0 $sta-purple;
+    }
+  }
+
+  .hero-section__intro {
+    margin: 15px 0 0 0;
+    padding: 0;
+  }
+
+  .btn {
+    background: $sta-blue-light;
+    border-bottom: 3px $sta-blue-hover solid;
+    font-weight: bold;
+    line-height: 1;
+    margin: 15px 10px 0 0;
+    position:relative;
+    padding:15px 45px 12px 15px;
+
+    &:before {
+      @extend .fa;
+      @extend .fa-chevron-right;
+      font-size: 24px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 15px;
+    }
+
+    &:hover,
+    &:focus {
+      background:$sta-blue-light-hover;
+    }
+  }  
+
+
+@media (min-width:768px){
+  position:relative;
+  overflow: hidden;
+  height: 480px;
+
+  img {
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     -webkit-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+     max-width: none;
+     min-height: 100%;
+     min-width: 100%;
+  }
+
+  .container {
+    height: 100%;
+    position: relative;
+    z-index: 100;
+  }  
+
+    .hero-section__content {
+      position: absolute;
+      bottom: $half-gutter;
+      left: 15px;
+      max-width: 580px;
+      padding: 0;
+    }
+
+  .hero-section__heading {
+    display:inline;
+    background: rgba($sta-blue,0.9);
+    box-shadow: 30px 0 0 rgba($sta-blue,0.9), -30px 0 0 rgba($sta-blue,0.9);
+    -webkit-box-decoration-break: clone;
+    -ms-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: white;
+    font-size: 56px;
+    line-height: 1.1;
+    font-family: 'PT Serif',georgia,serif;
+    font-style: italic;
+
+    &--burgundy {
+      background: $sta-burgundy;
+      box-shadow: 30px 0 0 $sta-burgundy, -30px 0 0 $sta-burgundy;
+    }
+
+    &--orange {
+      background: $sta-orange;
+      box-shadow: 30px 0 0 $sta-orange, -30px 0 0 $sta-orange;
+    }
+
+    &--green {
+      background: $sta-green;
+      box-shadow: 30px 0 0 $sta-green, -30px 0 0 $sta-green;
+    }
+
+    &--purple {
+      background: $sta-purple;
+      box-shadow: 30px 0 0 $sta-purple, -30px 0 0 $sta-purple;
+    }
+  }
+
+  .hero-section__content-group {
+    background: rgba(white,0.9);
+    padding:30px;
+    margin-left: -30px;
+    margin-top:20px;
+  }
+  
+  .hero-section__intro {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+  }
+
+  // Increase size of button
+  .btn {
+    font-size: 1.2em;
+    line-height: 1;
+    margin-top:25px;
+    border-bottom-width: 5px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+
+    &:before {
+      font-size: 30px;
+      transform: translateY(-50%) translateY(3px);
+    }
+  }   
+
 }
 
-.hero-banner {
-    @extend .jumbotron;
-    background: $sta-blue-T; 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    margin-bottom: 0; // override jumbotron
-    position: relative;
-    z-index: 0;
 
-    .btn  {
-        background-color: $sta-blue;
-        border-radius: 0;
-        font-size: 28px;
-        line-height: 1.33;
-        margin: 20px 0 0 0;
-        padding: 10px 32px;
-        text-shadow: none;
-        
-        &:first-child {
-            margin-right: 30px;
-        }
+@media (min-width:992px){
+  height: 530px;
+  .hero-section__heading {
+    font-size: 60px;
+    line-height: 1.1;
+  }
+}
 
-        &:hover, &:focus {
-            background-color: $sta-blue-hover;
-        }  
+@media (min-width:1200px){
+  height: 540px;
+}
 
-        @media (max-width: 767px) {
-            font-size: 18px;
-        } 
-    }
- 
-    &.hero-banner--overlay {
-       &:after {
-           content: ' ';
-           height: 100%;
-           position: absolute;
-           top: 0;
-           width: 100%;
-           z-index: 1;
-       }
-       .btn, .btn-primary {
-            border: 0;
-       }
+@media (min-width:1400px){
+  height: 580px;
+}
 
-       .btn:hover, .btn:focus {
-            border: 0;
-        }    
-    }
+// Supersize on big screens
+@media (min-width:1601px){
+  height: 680px;
 
-    &.hero-banner--blue-transparent-overlay {
-      @include hero-banner-overlay ($sta-blue-light, $sta-blue-light, $sta-orange, $sta-orange-hover)
-    }
+  .hero-section__heading {
+    font-size: 64px;
+    line-height: 1.1;
+  }
+}
 
-    &.hero-banner--dkgreen-transparent-overlay {
-      @include hero-banner-overlay ($sta-dkgreen, $sta-dkgreen, $sta-purple, $sta-purple-hover)
-    }
-
-    &.hero-banner--gradient-burgundy-orange-overlay {
-      @include hero-banner-overlay ($sta-burgundy, $sta-orange, $sta-blue, $sta-blue-hover)
-    }
-
-    &.hero-banner--gradient-purple-orange-overlay {
-      @include hero-banner-overlay ($sta-purple, $sta-orange, $sta-blue, $sta-blue-hover)
-    }
-
-    &.hero-banner--gradient-orange-yellow-overlay {
-      @include hero-banner-overlay ($sta-orange, $sta-yellow, $sta-green, $sta-green-hover)
-    }
-
-    .fg {
-        position: relative;
-        z-index: 10;
-    }
-
-    .call-heading {
-        font-size: 58px;
-        font-weight: 600;
-        line-height: 1.1;
-        margin: 0;
-        text-shadow: 2px 2px 9px rgba(68, 68, 68, 0.7);
-
-        @media (max-width: 1199px){
-            font-size:40px;
-        }
-
-        @media (max-width: 767px){
-            font-size:32px;
-        }
-    }
-
-    p {
-        font-size: 23px;
-        margin: 10px 0;
-        text-shadow: 2px 2px 9px rgba(68, 68, 68, 0.7);
-
-        @media (max-width: 767px) {
-            font-size: 20px;
-        }
-    }
-
-    .embed-responsive {
-        @media (max-width: 991px) {
-            margin-top: 30px;
-        }  
-    }
 
 }
 
