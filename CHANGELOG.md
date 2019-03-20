@@ -9,6 +9,29 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.17.0
+
+Release date: Wednesday 20 March 2019
+
+### Changed
+* Hero banner pattern replaced with new design.
+* Font Awesome updated from version 4 to version 5.
+* Amend icons to use new options provided by version 5 of Font Awesome.
+
+### Fixed
+* Additional grouped links colour with blue background.
+* Photosphere example now showing in DPL documentaton.
+* Datatables code example now showing correct raw markup.
+* Long form end piece no longer requires font icon.
+
+### Removed
+* Genericons files as no longer used.
+
+### Deprecated
+* Previous hero banner pattern.
+
+---
+
 ## v1.16.1
 
 Release date: Wednesday 27 February 2019
