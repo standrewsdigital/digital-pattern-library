@@ -203,8 +203,8 @@ $(document).ready(function(window, document, undefined) {
         factory(jQuery, jQuery.fn.dataTable);
     }
 
-    // Auto setup any tables with class 'dataTable'
-    $('.dataTable').DataTable({
+    // Auto setup any tables with class 'dataTable' that arent within a class 'pattern-source'
+    $(".dataTable").not(".pattern-source > .dataTable").DataTable({
         info: true, // enable the "x to xx of xx rows" text
         lengthChange: true, // enable the num of rows selector
         lengthMenu: [ [ 10, 25, 50, 100, -1], [ 10, 25, 50, 100, "All"] ], // Set the row selector values
@@ -213,7 +213,7 @@ $(document).ready(function(window, document, undefined) {
     });
 
     // Auto setup bare-bones version of the datatable with any tables with class
-    $('.dataTable-simplified').DataTable({
+    $(".dataTable-simplified").not(".pattern-source > .dataTable-simplified").DataTable({
 
     });
 

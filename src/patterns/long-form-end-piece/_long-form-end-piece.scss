@@ -6,14 +6,17 @@
     font-family: $font-family-sans-serif;
     font-size:   18px;
     margin: 40px 0;
+    padding-left: 2.4em;
+    position: relative;
 
     &:before {
-        @extend .genericon;
-        content: '\f449';
-        font-size: 36px;
-        margin-top:  -5px;
-        margin-left: -8px;
-        padding-right: 10px;
+        background: $sta-grey-dark;
+        content: ' ';
+        height: 1.4em;
+        width: 1.4em;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
 

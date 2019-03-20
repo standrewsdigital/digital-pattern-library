@@ -467,7 +467,8 @@ function htmlDecode(value) {
 
 
     /*********************************/
-    /* BEGIN Pattern: Photospheres  
+    /* BEGIN Pattern: Photospheres   */
+    /*********************************/
 
     window.addEventListener('load', onVrViewLoad)
     function onVrViewLoad() {
