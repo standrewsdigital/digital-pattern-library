@@ -83,7 +83,7 @@
                     "accordion-heading":"Main library",
                     "accordion-keyfacts": [
                         {
-                            "keyfact-icon": "fa fa-clock-o",
+                            "keyfact-icon": "fa fa-clock",
                             "keyfact-text": "8.00am to 2.00am"            
                         },
                         {
@@ -97,7 +97,7 @@
                     "accordion-heading":"St Mary's College Library",
                     "accordion-keyfacts": [
                         {
-                            "keyfact-icon": "fa fa-clock-o",
+                            "keyfact-icon": "fa fa-clock",
                             "keyfact-text": "9.00am to 7.45pm"            
                         },
                         {
@@ -111,7 +111,7 @@
                     "accordion-heading":"History",
                     "accordion-keyfacts": [
                         {
-                            "keyfact-icon": "fa fa-clock-o",
+                            "keyfact-icon": "fa fa-clock",
                             "keyfact-text": "9.00am to 9.45pm"            
                         },
                         {
