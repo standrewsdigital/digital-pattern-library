@@ -239,6 +239,10 @@
             <dt class="contact-details__profile-item">Office</dt>
             <dd class="contact-details__profile-value content-block">{{{room}}}</dd>
             {{/if}}
+            {{#if hours}}
+            <dt class="contact-details__profile-item">Office hours</dt>
+            <dd class="contact-details__profile-value content-block">{{{hours}}}</dd>
+            {{/if}}
             {{#if bio}}
             <dt class="contact-details__profile-item">Biography</dt>
             <dd class="contact-details__profile-value content-block">{{{bio}}}</dd>
@@ -259,6 +263,14 @@
                 {{/each}}
             </ul>
             </dd>
+            {{/if}}
+            {{#if personal-link}}
+            <dt class="contact-details__profile-item">Personal web address</dt>
+            <dd class="contact-details__profile-value content-block"><a href="{{personal-link}}">{{personal-link}}</a></dd>
+            {{/if}}
+            {{#if pure}}
+            <dt class="contact-details__profile-item">PURE profile</dt>
+            <dd class="contact-details__profile-value content-block"><a href="{{pure}}">{{pure}}</a></dd>
             {{/if}}
         </dl>
     </div>
