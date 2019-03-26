@@ -25,7 +25,7 @@
             "heading":  "Accommodation at St Andrews",
             "heading-colour": " hero-section__heading--burgundy",
             "paragraph":  "St Andrews has more than 4,000 bed spaces and a fantastic variety of accommodation to suit all tastes and budgets. Prospective students can be sure that they will find suitable accommodation during their studies.",
-            "bg-image": "docs/images/cta/hero2/",
+            "bg-image": "docs/images/cta/hero12/",
             "intro-buttons": true,
             "button-style": "btn btn-primary btn-lg",
             "action-text": "See the halls of residence",
@@ -50,7 +50,7 @@
             "option-anchor": "hero-banner4",
             "option-heading": "Hero banner with heading only",
             "option-description": "<p>This example uses an alternate heading colour and only includes a heading.</p>",
-            "heading":  "Accommodation at St Andrews",
+            "heading":  "Academic excellence at St Andrews",
             "heading-colour": " hero-section__heading--purple",
             "bg-image": "docs/images/cta/hero6/",
             "caption": "Image details"
@@ -61,7 +61,7 @@
             "option-anchor": "hero-banner5",
             "option-heading": "Hero banner with heading only - art direction",
             "option-description": "<p>This example shows how a cropped in version of the image is used for the mobile scaled size to focus on the key essence of the image.</p>",
-            "heading":  "Accommodation at St Andrews",
+            "heading":  "Class of 2020",
             "heading-colour": " hero-section__heading--green",
             "bg-image": "docs/images/cta/hero7/",
             "caption": "Image details"
