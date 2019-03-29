@@ -4,49 +4,67 @@
 <div class="contact-card">
     {{#if image}}
     <div class="contact-card__image">
-        {{#if link}}
+        {{#if modal}}
         <!-- Remove comment tags to use lightbox
         <a href="#{{id}}" data-modal-open>
         -->
+        {{/if}}
+        {{#if link}}
+        <a href="{{link}}">
         {{/if}}
         {{#if lazy}}
         <img data-src="{{image}}" alt="{{name}}" title="{{name}}" class="lazyload">
         {{else}}
         <img src="{{image}}" alt="{{name}}" title="{{name}}">
         {{/if}}
-        {{#if link}}
+        {{#if modal}}
         <!-- Remove comment tags to use lightbox
         </a>
         -->
+        {{/if}}
+        {{#if link}}
+        </a>
         {{/if}}
     </div>
     {{else}}
     <div class="contact-card__initials">
-        {{#if link}}
+        {{#if modal}}
         <!-- Remove comment tags to use lightbox
         <a href="#{{id}}" data-modal-open>
         -->
         {{/if}}
-        <abbr title="{{name}}">{{initials}}</abbr>
         {{#if link}}
+        <a href="{{link}}">
+        {{/if}}
+        <abbr title="{{name}}">{{initials}}</abbr>
+        {{#if modal}}
         <!-- Remove comment tags to use lightbox
         </a>
         -->
+        {{/if}}
+        {{#if link}}
+        </a>
         {{/if}}
     </div>
     {{/if}}
     <div class="contact-card__titles">
         <h3 class="contact-card__title">
-        {{#if link}}
+        {{#if modal}}
         <!-- Remove comment tags to use lightbox
         <a href="#{{id}}" data-modal-open>
         -->
         {{/if}}
-        {{name}}
         {{#if link}}
+        <a href="{{link}}">
+        {{/if}}
+        {{name}}
+        {{#if modal}}
         <!-- Remove comment tags to use lightbox
         </a>
         -->
+        {{/if}}
+        {{#if link}}
+        </a>
         {{/if}}
         </h3>
         {{#if unit}}
@@ -76,7 +94,7 @@
     </ul>
     {{/if}}
 </div>
-{{#if link}}
+{{#if modal}}
 <!-- Remove comment tags to use lightbox
 <div id="{{id}}" data-modal>
 -->
@@ -143,13 +161,19 @@
 <div class="contact-card">
     {{#if image}}
     <div class="contact-card__image">
-        {{#if link}}
+        {{#if modal}}
         <a href="#{{id}}" data-modal-open>
+        {{/if}}
+        {{#if link}}
+        <a href="{{link}}">
         {{/if}}
         {{#if lazy}}
         <img data-src="{{image}}" alt="{{name}}" title="{{name}}" class="lazyload">
         {{else}}
         <img src="{{image}}" alt="{{name}}" title="{{name}}">
+        {{/if}}
+        {{#if modal}}
+        </a>
         {{/if}}
         {{#if link}}
         </a>
@@ -157,10 +181,16 @@
     </div>
     {{else}}
     <div class="contact-card__initials">
-        {{#if link}}
+        {{#if modal}}
         <a href="#{{id}}" data-modal-open>
         {{/if}}
+        {{#if link}}
+        <a href="{{link}}">
+        {{/if}}
         <abbr title="{{name}}">{{initials}}</abbr>
+        {{#if modal}}
+        </a>
+        {{/if}}
         {{#if link}}
         </a>
         {{/if}}
@@ -168,10 +198,16 @@
     {{/if}}
     <div class="contact-card__titles">
         <h3 class="contact-card__title">
-        {{#if link}}
+        {{#if modal}}
         <a href="#{{id}}" data-modal-open>
         {{/if}}
+        {{#if link}}
+        <a href="{{link}}">
+        {{/if}}
         {{name}}
+        {{#if modal}}
+        </a>
+        {{/if}}
         {{#if link}}
         </a>
         {{/if}}
@@ -203,7 +239,7 @@
     </ul>
     {{/if}}
 </div>
-{{#if link}}
+{{#if modal}}
 <div id="{{id}}" data-modal>
     <div class="contact-details">
         {{#if image}}
