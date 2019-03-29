@@ -4,7 +4,7 @@
                     "id": "e11",
                     "name": "Angelica Ramos",
                     "initials": "AR",
-                    "link": true,
+                    "modal": true,
                     "lazy": true,
                     "title": "PhD student",
                     "email": "example@st-andrews.ac.uk"
@@ -13,7 +13,7 @@
                     "id": "e12",
                     "name": "Bruno Nash",
                     "initials": "BN",
-                    "link": true,
+                    "modal": true,
                     "lazy": true,
                     "title": "PhD student",
                     "email": "example@st-andrews.ac.uk"
@@ -22,7 +22,7 @@
                     "id": "e13",
                     "name": "Sakura Yamamoto",
                     "initials": "SY",
-                    "link": true,
+                    "modal": true,
                     "lazy": true,
                     "title": "PhD student",
                     "email": "example@st-andrews.ac.uk"
