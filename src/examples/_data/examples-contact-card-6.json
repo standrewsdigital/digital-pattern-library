@@ -1,0 +1,57 @@
+{
+            "option-heading": "Contact card list with lazyload",
+            "option-description": "<p>This example shows a list of contact cards that makes use of the available lazyload feature to only load the images when they are about to be viewed. This reduces the amount of data downloaded by the browser, thus improving performance, and would be useful for lengthy contact card lists that may contain a large number of images.</p>",
+            "option-anchor": "card-list-lazyload",
+            "cards": [
+                {
+                    "id": "e8",
+                    "name": "Professor Michael Bruce",
+                    "initials": "MB",
+                    "link": true,
+                    "lazy": true,
+                    "unit": "School of Computer Science",
+                    "title": "Emeritus Professor",
+                    "image": "../assets/docs/images/profile-pictures/male-004.jpg",
+                    "phone": "+44 (0)1334 46 xxxx",
+                    "email": "example@st-andrews.ac.uk"
+                },
+                {
+                    "id": "e9",
+                    "name": "Professor Zorita Serrano",
+                    "initials": "ZS",
+                    "link": true,
+                    "lazy": true,
+                    "unit": "School of Computer Science",
+                    "title": "Honorary Professor",
+                    "phone": "+44 (0)1334 46 xxxx",
+                    "email": "longerexample@st-andrews.ac.uk"
+                },
+                {
+                    "id": "e10",
+                    "name": "Dr Prescott Bartlett-Byrd",
+                    "initials": "PB-B",
+                    "link": true,
+                    "lazy": true,
+                    "unit": "School of Computer Science",
+                    "title": "Honorary Reader",
+                    "image": "../assets/docs/images/profile-pictures/male-002.jpg",
+                    "phone": "+44 (0)1334 46 xxxx",
+                    "email": "example@st-andrews.ac.uk",
+                    "publications": [
+                        {
+                            "title": "Publication title",
+                            "link": "#"
+                        },
+                        {
+                            "title": "Publication title",
+                            "link": "#"
+                        },
+                        {
+                            "title": "Publication title",
+                            "link": "#"
+                        }
+                    ],
+                    "bio": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur vel tellus eget vehicula. Mauris gravida ex a elit rutrum, et laoreet turpis egestas. Etiam interdum mattis erat, eget faucibus ipsum varius quis. Quisque quis magna enim. Vivamus commodo, urna a fringilla cursus, nisi felis blandit diam, sit amet venenatis enim tellus in ante. Pellentesque vel magna quis eros mattis porttitor at ut sapien. Curabitur congue ac purus sed posuere. Praesent imperdiet ligula arcu, et varius est suscipit ac.</p><p>Nam id diam id odio facilisis pretium at non sem. In in massa at risus blandit venenatis nec ut enim. Phasellus condimentum fringilla aliquam. Praesent in est in eros bibendum lobortis. Phasellus in elementum erat, eget iaculis nulla. Nam commodo, nunc quis dictum tempus, nisi massa mollis orci, sed sagittis ligula justo et est. Sed ultricies arcu nec nisi finibus, sed dictum neque porttitor. Curabitur ante ante, posuere sit amet ligula eget, blandit tincidunt lacus.</p>"
+                }
+            ]
+        }
