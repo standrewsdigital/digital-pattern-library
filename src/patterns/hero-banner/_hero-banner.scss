@@ -13,8 +13,6 @@
     background: rgba($sta-blue,1);
     color: white;
     font-size: 36px;
-    font-family: 'PT Serif',georgia,serif;
-    //font-style: italic;
     line-height: 1.1;
     margin: 0 -15px;
     padding: 10px 15px;
@@ -43,6 +41,7 @@
 
   .btn {
     background: $sta-blue-light;
+    border: none;
     border-color: $sta-blue-light;
     border-bottom: 3px $sta-blue-hover solid;
     font-weight: bold;
@@ -107,7 +106,7 @@
     }
 
   .hero-section__heading {
-    background: rgba($sta-blue,0.8);
+    background: rgba($sta-blue,0.9);
     color: white;
     font-size: 48px;
     line-height: 1.1;
@@ -115,24 +114,24 @@
     padding: 20px 30px; 
 
     &--burgundy {
-      background: rgba($sta-burgundy,0.8);
+      background: rgba($sta-burgundy,0.9);
     }
 
     &--orange {
-      background: rgba($sta-orange,0.8);
+      background: rgba($sta-orange,0.9);
     }
 
     &--green {
-      background: rgba($sta-green,0.8);
+      background: rgba($sta-green,0.9);
     }
 
     &--purple  {
-      background: rgba($sta-purple,0.8);
+      background: rgba($sta-purple,0.9);
     }
   }
 
   .hero-section__content-group {
-    background: rgba(white,0.9);
+    background: rgba(white,0.95);
     padding:30px;
     margin-left: -30px;
   }
