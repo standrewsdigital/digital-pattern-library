@@ -14,7 +14,7 @@
     color: white;
     font-size: 36px;
     font-family: 'PT Serif',georgia,serif;
-    font-style: italic;
+    //font-style: italic;
     line-height: 1.1;
     margin: 0 -15px;
     padding: 10px 15px;
@@ -109,7 +109,7 @@
   .hero-section__heading {
     background: rgba($sta-blue,0.8);
     color: white;
-    font-size: 50px;
+    font-size: 48px;
     line-height: 1.1;
     margin: 0 0 0 -30px;
     padding: 20px 30px; 
@@ -164,7 +164,7 @@
 @media (min-width:992px){
   height: 530px;
   .hero-section__heading {
-    font-size: 56px;
+    font-size: 52px;
     line-height: 1.1;
   }
 }
@@ -182,7 +182,7 @@
   height: 600px;
 
   .hero-section__heading {
-    font-size: 60px;
+    font-size: 56px;
     line-height: 1.1;
   }
 
