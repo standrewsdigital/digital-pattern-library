@@ -2,7 +2,7 @@
     "options": [
         {
             "option-heading": "Contact card",
-            "option-description": "<p>This example shows all available content that may be included on a card.</p><ul><li>Only the image or initials and the full name are required.</li><li>The optional secondary headings should be used to specify the organisational position and role of the individual.</li><li>The optional phone and email entries must link to valid phone numbers and email addresses.</li><li>The list of tags can be used to convey additional linked information on an individual.</li><li>The number of tags for a card should be no larger than five.</li><li>The usage of tags should be introduced before the contact cards, if the tag values used do not immediately convey their purpose.</li></ul>",
+            "option-description": "<p>This example shows all available content that may be included on a card.</p><ul><li>Only the image or initials and the full name are required.</li><li>The optional secondary headings should be used to specify the organisational position and role of the individual.</li><li>The optional phone and email entries must link to valid phone numbers and email addresses.</li><li>The list of tags can be used to convey additional information on an individual which can be linked or not.</li><li>The number of tags for a card should be no larger than five.</li><li>The usage of tags should be introduced before the contact cards, if the tag values used do not immediately convey their purpose.</li></ul>",
             "option-anchor": "card",
 		    "cards": [
 			    {
@@ -51,19 +51,24 @@
 					"email": "example@st-andrews.ac.uk",
 					"areas-expertise": [
 						{
-							"area": "Business and finance"
+							"area": "Business and finance",
+							"tag-link": true
 						},
 						{
-							"area": "Computer science and informatics"
+							"area": "Computer science and informatics",
+							"tag-link": true
 						},
 						{
-							"area": "Engineering"
+							"area": "Engineering",
+							"tag-link": true
 						},
 						{
-							"area": "Artificial intelligence"
+							"area": "Artificial intelligence",
+							"tag-link": true
 						},
 						{
-							"area": "Mathematics"
+							"area": "Mathematics",
+							"tag-link": true
 						}
 					]
 			    }
@@ -90,13 +95,16 @@
 					"room": "Room D17, Bute medical building",
 					"areas-expertise": [
 						{
-							"area": "Clinical Psychology"
+							"area": "Clinical Psychology",
+							"tag-link": true
 						},
 						{
-							"area": "Industrial Psychology"
+							"area": "Industrial Psychology",
+							"tag-link": true
 						},
 						{
-							"area": "Developmental Psychology"
+							"area": "Developmental Psychology",
+							"tag-link": true
 						}
 					],
 					"publications": [
@@ -137,19 +145,24 @@
 					"email": "example@st-andrews.ac.uk",
 					"areas-expertise": [
 						{
-							"area": "Crowd behaviour"
+							"area": "Crowd behaviour",
+							"tag-link": true
 						},
 						{
-							"area": "Discrimination"
+							"area": "Discrimination",
+							"tag-link": true
 						},
 						{
-							"area": "Nationalism"
+							"area": "Nationalism",
+							"tag-link": true
 						},
 						{
-							"area": "Prejudice"
+							"area": "Prejudice",
+							"tag-link": true
 						},
 						{
-							"area": "Psychology"
+							"area": "Psychology",
+							"tag-link": true
 						}
 					]
 			    },
@@ -192,13 +205,16 @@
 					"image": "../../assets/docs/images/profile-pictures/male-004.jpg",
 					"areas-expertise": [
 						{
-							"area": "Finance & Law for Engineers"
+							"area": "Finance & Law for Engineers",
+							"tag-link": true
 						},
 						{
-							"area": "Mass, Transfer and Separations"
+							"area": "Mass, Transfer and Separations",
+							"tag-link": true
 						},
 						{
-							"area": "General Reaction Engineering"
+							"area": "General Reaction Engineering",
+							"tag-link": true
 						}
 					]
 			    }
