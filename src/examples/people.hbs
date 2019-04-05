@@ -1,0 +1,50 @@
+---
+title: Example content page
+---
+
+{{> text-banner examples-text-banner.content}}
+
+{{> header}}
+
+{{> category-header examples-content-example.category-header}}
+
+{{> navigation-bar examples-content-example.navigation-bar}}
+
+{{> breadcrumbs examples-content-example.breadcrumbs}}
+
+<!-- Begin pattern: tabs //-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+        	<h2>People</h2>
+        	<p>The English Language Teaching team&nbsp;comprises academic staff, emeritus and honorary staff, PhD students, and support staff.</p>
+            <div class="tabs-container ">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="active in" role="presentation"><a href="#tab-1" data-toggle="tab" aria-controls="home" role="tab">Academic staff</a></li>
+                    <li class="" role="presentation"><a href="#tab-2" data-toggle="tab" aria-controls="home" role="tab">Emeritus and honorary staff</a></li>
+                    <li class="" role="presentation"><a href="#tab-3" data-toggle="tab" aria-controls="home" role="tab">PhD students</a></li>
+                    <li class="" role="presentation"><a href="#tab-4" data-toggle="tab" aria-controls="home" role="tab">Support staff</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade active in" id="tab-1" role="tabpanel">
+                        {{> contact-card examples-contact-card-1}}
+                    </div>
+                    <div class="tab-pane fade " id="tab-2" role="tabpanel">
+                        {{> contact-card examples-contact-card-2}}
+                    </div>
+                    <div class="tab-pane fade " id="tab-3" role="tabpanel">
+                        {{> contact-card examples-contact-card-3}}
+                    </div>
+                    <div class="tab-pane fade " id="tab-4" role="tabpanel">
+                        {{> contact-card examples-contact-card-4}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End pattern: tabs //-->
+</div>
+
+{{> footer footer-1}}

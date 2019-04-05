@@ -1,0 +1,31 @@
+{
+            "cards": [
+                {
+                    "id": "e11",
+                    "name": "Angelica Ramos",
+                    "initials": "AR",
+                    "modal": true,
+                    "lazy": true,
+                    "title": "PhD student",
+                    "email": "example@st-andrews.ac.uk"
+                },
+                {
+                    "id": "e12",
+                    "name": "Bruno Nash",
+                    "initials": "BN",
+                    "modal": true,
+                    "lazy": true,
+                    "title": "PhD student",
+                    "email": "example@st-andrews.ac.uk"
+                },
+                {
+                    "id": "e13",
+                    "name": "Sakura Yamamoto",
+                    "initials": "SY",
+                    "modal": true,
+                    "lazy": true,
+                    "title": "PhD student",
+                    "email": "example@st-andrews.ac.uk"
+                }
+            ]
+        }
