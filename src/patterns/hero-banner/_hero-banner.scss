@@ -7,43 +7,30 @@
 
  .hero-section__content {
     padding: 0 0 30px 0;
-    margin-top: -20px;
   }
 
   .hero-section__heading {
-    background: $sta-blue;
-    box-shadow: 15px 0 0 $sta-blue, -15px 0 0 $sta-blue;
-    -webkit-box-decoration-break: clone;
-    -ms-box-decoration-break: clone;
-    -o-box-decoration-break: clone;
-    box-decoration-break: clone;
+    background: rgba($sta-blue,1);
     color: white;
-    display:inline;
     font-size: 36px;
-    font-family: 'PT Serif',georgia,serif;
-    font-style: italic;
-    line-height: 1.3;
-    margin: 0;
-    padding: 0;
+    line-height: 1.1;
+    margin: 0 -15px;
+    padding: 10px 15px;
 
     &--burgundy {
-      background: $sta-burgundy;
-      box-shadow: 15px 0 0 $sta-burgundy, -15px 0 0 $sta-burgundy;
+      background: rgba($sta-burgundy,1);
     }
 
     &--orange {
-      background: $sta-orange;
-      box-shadow: 15px 0 0 $sta-orange, -15px 0 0 $sta-orange;
+      background: rgba($sta-orange,1);
     }
 
     &--green {
-      background: $sta-green;
-      box-shadow: 15px 0 0 $sta-green, -15px 0 0 $sta-green;
+      background: rgba($sta-green,1);
     }
 
     &--purple  {
-      background: $sta-purple;
-      box-shadow: 15px 0 0 $sta-purple, -15px 0 0 $sta-purple;
+      background: rgba($sta-purple,1);
     }
   }
 
@@ -54,6 +41,7 @@
 
   .btn {
     background: $sta-blue-light;
+    border: none;
     border-color: $sta-blue-light;
     border-bottom: 3px $sta-blue-hover solid;
     font-weight: bold;
@@ -85,6 +73,7 @@
   }
 }
 
+// Position content over image
 @media (min-width:768px){
   position:relative;
   overflow: hidden;
@@ -117,38 +106,34 @@
     }
 
   .hero-section__heading {
+    background: rgba($sta-blue,0.9);
     color: white;
-    font-size: 56px;
-    line-height: 1.3;
-    margin: 0;
-    box-shadow: 30px 0 0 $sta-blue, -30px 0 0 $sta-blue;
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 0 0 0 -30px;
+    padding: 20px 30px; 
 
     &--burgundy {
-      background: $sta-burgundy;
-      box-shadow: 30px 0 0 $sta-burgundy, -30px 0 0 $sta-burgundy;
+      background: rgba($sta-burgundy,0.9);
     }
 
     &--orange {
-      background: $sta-orange;
-      box-shadow: 30px 0 0 $sta-orange, -30px 0 0 $sta-orange;
+      background: rgba($sta-orange,0.9);
     }
 
     &--green {
-      background: $sta-green;
-      box-shadow: 30px 0 0 $sta-green, -30px 0 0 $sta-green;
+      background: rgba($sta-green,0.9);
     }
 
     &--purple  {
-      background: $sta-purple;
-      box-shadow: 30px 0 0 $sta-purple, -30px 0 0 $sta-purple;
+      background: rgba($sta-purple,0.9);
     }
   }
 
   .hero-section__content-group {
-    background: rgba(white,0.9);
+    background: rgba(white,0.95);
     padding:30px;
     margin-left: -30px;
-    margin-top:20px;
   }
   
   .hero-section__intro {
@@ -178,8 +163,8 @@
 @media (min-width:992px){
   height: 530px;
   .hero-section__heading {
-    font-size: 60px;
-    line-height: 1.3;
+    font-size: 52px;
+    line-height: 1.1;
   }
 }
 
@@ -193,11 +178,11 @@
 
 // Supersize on big screens
 @media (min-width:1601px){
-  height: 640px;
+  height: 600px;
 
   .hero-section__heading {
-    font-size: 64px;
-    line-height: 1.3;
+    font-size: 56px;
+    line-height: 1.1;
   }
 
 }
