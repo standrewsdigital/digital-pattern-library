@@ -307,8 +307,8 @@
     }
 
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important; // to avoid inheriting tabbed container rules
+    padding: 0 !important; // to avoid inheriting tabbed container rules
 }
 
 .contact-card__tag {
@@ -316,7 +316,8 @@
     margin: 0.5em 0.5em 0 0;
 }
 
-.contact-card__tag-link {
+.contact-card__tag-link,
+.contact-card__tag-label {
     background: $sta-grey-light-S;
     border: 1px $sta-grey-light-hover solid;
     color: $sta-grey-dark-S;
@@ -325,6 +326,12 @@
     font-weight: normal;
     padding: 0.4em 0.5em;
 
+    &-small {
+        font-size:14px;
+    }
+}
+
+.contact-card__tag-link {
     &:hover,
     &:focus {
         background: $sta-grey-light-S-hover;
@@ -332,9 +339,6 @@
         text-decoration: none;
     }
 
-    &-small {
-        font-size:14px;
-    }
 }
 
 // Contact details - modal popup content
@@ -372,8 +376,8 @@
     @extend %contact-details-media;
 
     img {
-        max-height:60px;
-        max-width:60px;
+        //max-height:60px;
+        //max-width:60px;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -381,13 +385,13 @@
         transform: translate(-50%, -50%);
 
         @media (min-width: 576px){
-            max-height:80px;
-            max-width:80px;
+            //max-height:80px;
+            //max-width:80px;
         } 
 
         @media (min-width: 768px){
-            max-height:120px;
-            max-width:120px;
+            //max-height:120px;
+           // max-width:120px;
         } 
     }
 }
