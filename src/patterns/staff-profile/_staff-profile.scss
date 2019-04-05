@@ -60,7 +60,12 @@
 	    grid-row-start: 1;
 	    grid-row-end: 3;
 	    margin: 0;
+	    width: 150px;
 	}
+
+    @media (min-width: 768px){
+    	width: 200px;
+    }
 }
 
 .staff-profile__heading {
