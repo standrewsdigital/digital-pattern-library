@@ -9,7 +9,7 @@ $(".more-news h3 a").bigTarget({
 });
 
 // Disable hover effect on article link when sub link is the hover/focus
-$(".more-news__category").hover(function(){
+$(".more-news__sub-link").hover(function(){
     $(this).closest(".more-news__article-link").toggleClass('sub-link-active');
 });
 
