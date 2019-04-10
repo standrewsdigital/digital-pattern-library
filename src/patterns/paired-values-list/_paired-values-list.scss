@@ -23,7 +23,7 @@
     @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) { 
         clear: both;
         float: left;
-        width: 30%;
+        margin-right: 15px;
     }
 
     &.selected {
@@ -35,8 +35,7 @@
 
     // IE 11 specific fallback as dynamic grids are not supported
     @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) { 
-        float: right;
-        width: 60%;
+        float: left;
     }
 
     &.selected {
