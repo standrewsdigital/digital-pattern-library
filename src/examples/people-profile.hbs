@@ -1,12 +1,11 @@
 --- title: Example content page --- {{> text-banner examples-text-banner.content}} {{> header}} {{> category-header examples-content-example.category-header}} {{> navigation-bar examples-content-example.navigation-bar}} {{> breadcrumbs examples-content-example.breadcrumbs}}
 
 <div class="container">
-            <div class="contact-details">
-                <div class="contact-details__image">
-                    <img src="../assets/docs/images/profile-pictures/female-003.jpg" alt="Colleen Hurst" title="Colleen Hurst">
-                </div>
-                <h3 class="contact-details__title">Dr Colleen Hurst</h3>
-                <h4 class="contact-details__subtitle">Lecturer</h4>
+    <div class="row margin-bottom">
+        <div class="col-md-4">
+                <div class="staff-profile__image-wrapper"><img src="../assets/docs/images/profile-pictures/female-003.jpg" alt="Colleen Hurst" title="Colleen Hurst"></div>
+                <h3 class="staff-profile__heading">Dr Colleen Hurst</h3>
+                <h4 class="staff-profile__subheading">Lecturer</h4>
                 <dl class="contact-details__profile">
                     <dt class="contact-details__profile-item">Phone</dt>
                     <dd class="contact-details__profile-value"><a href="tel:#">+44 (0)1334 46 xxxx</a></dd>
@@ -26,40 +25,39 @@
                             <dd class="paired-values-list__value">Out of office </dd>
                         </dl>
                     </dd>
-                    <dt class="contact-details__profile-item">Biography</dt>
-                    <dd class="contact-details__profile-value">
+                </dl>
+            </div>
+            <div class="col-md-8">
+                    <h3>Biography</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur vel tellus eget vehicula. Mauris gravida ex a elit rutrum, et laoreet turpis egestas. Etiam interdum mattis erat, eget faucibus ipsum varius quis. Quisque quis magna enim. Vivamus commodo, urna a fringilla cursus, nisi felis blandit diam, sit amet venenatis enim tellus in ante. Pellentesque vel magna quis eros mattis porttitor at ut sapien. Curabitur congue ac purus sed posuere. Praesent imperdiet ligula arcu, et varius est suscipit ac.</p>
 
                         <p>Nam id diam id odio facilisis pretium at non sem. In in massa at risus blandit venenatis nec ut enim. Phasellus condimentum fringilla aliquam. Praesent in est in eros bibendum lobortis. Phasellus in elementum erat, eget iaculis nulla. Nam commodo, nunc quis dictum tempus, nisi massa mollis orci, sed sagittis ligula justo et est. Sed ultricies arcu nec nisi finibus, sed dictum neque porttitor. Curabitur ante ante, posuere sit amet ligula eget, blandit tincidunt lacus.</p>
-                    </dd>
-                    <dt class="contact-details__profile-item">Researcher profile</dt>
-                    <dd class="contact-details__profile-value"><a href="#">Link to risweb</a></dd>
-                    <dt class="contact-details__profile-item">Personal web address</dt>
-                    <dd class="contact-details__profile-value"><a href="#">Link to personal site</a></dd>
-                    <dt class="contact-details__profile-item">Publication</dt>
-                    <dd class="contact-details__profile-value content-block">
+                
+                    <p><a href="#" class="btn btn-primary">Specific call to action link</a></p>
+                    <h3>List of link headings</h3>
+                    <ul>
+                        <li><a href="#">Link to personal site</a></li>
+                        <li><a href="#">Link to researcher portfolio</a></li>
+                    </ul>
+                    <h3>Publication</h3>
                         <ul>
                             <li><a href="#">Publication title</a></li>
                             <li><a href="#">Publication title</a></li>
                             <li><a href="#">Publication title</a></li>
                         </ul>
-                    </dd>
 
-                    <dd class="contact-details__profile-value">Other information
-                    </dd>
-                    <dd class="contact-details__profile-value content-block">
+                    <h3>Other information</h3>
                         <ul>
                             <li>Magnetic field evolution as the driver of solar eruptions</li>
                             <li>Simulating the coronal evolution and eruption of bipolar active regions</li>
                             <li>Member of the NASA Heliospheric Grants Panels (External organisation)</li>
-                            <li>Observational Studies of Flux ropes: Formation, Evolution &amp;amp; Eruption</li>
+                            <li>Observational Studies of Flux ropes: Formation, Evolution &amp; Eruption</li>
                             <li>SA313 Central American Discovery, MS Saga Sapphire, Guest Lecturer</li>
                             <li>MS Fred. Olsen Black Watch, Wonders of the World (W1801), Guest Lecturer</li>
-                            <li>Fred. Olsen MS Braemar, Norwegian Fjords &amp;amp; Scenic Waterfalls (M1812), Guest Lecturer</li>
+                            <li>Fred. Olsen MS Braemar, Norwegian Fjords &amp; Scenic Waterfalls (M1812), Guest Lecturer</li>
                         </ul>
-                    </dd>
-
-                </dl>
+                    </div>
+                </div>
 </div>
 
 {{> footer footer-1}}
