@@ -9,6 +9,28 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.17.1
+
+Release date: Wednesday 10 April 2019
+
+### Added
+* New page examples for people listings.
+* New page example for full staff profile.
+
+### Changed
+* Hero banner pattern styling.
+* Hero banner pattern documentation.
+* Staff profile pattern redesigned to use CSS Grid.
+* Homepage example updated to use new hero banner and closer match the current live site.
+* Example listings page navboxes simplified to remove images.
+* Contact card pattern amended to allow tags that are not linked.
+* More news pattern category links hover state now not tied to other styling for greater flexibility.
+
+### Fixed
+* Issues with floating hr.
+
+---
+
 ## v1.17.0
 
 Release date: Wednesday 20 March 2019
