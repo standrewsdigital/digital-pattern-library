@@ -28,6 +28,7 @@ Release date: Wednesday 10 April 2019
 
 ### Fixed
 * Issues with floating hr.
+* Paired values list improved for IE11.
 
 ---
 
