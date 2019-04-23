@@ -73,6 +73,9 @@
         {{#if title}}
         <h4 class="contact-card__subtitle">{{title}}</h4>
         {{/if}}
+        {{#if summary}}
+        <p class="contact-card__summary">{{summary}}</p>
+        {{/if}}
     </div>
     <div class="contact-card__contact">
         {{#if phone}}
@@ -221,6 +224,9 @@
         {{/if}}
         {{#if title}}
         <h4 class="contact-card__subtitle">{{title}}</h4>
+        {{/if}}
+        {{#if summary}}
+        <p class="contact-card__summary">{{summary}}</p>
         {{/if}}
     </div>
     <div class="contact-card__contact">
