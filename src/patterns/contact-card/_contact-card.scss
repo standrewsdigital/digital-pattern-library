@@ -71,8 +71,8 @@
     @extend %contact-card-media;
 
     img {
-        max-height:50px;
-        max-width:50px;
+        //max-height:50px;
+        //max-width:50px;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -80,13 +80,13 @@
         transform: translate(-50%, -50%);
 
         @media (min-width: 576px){
-            max-height:70px;
-            max-width:70px;
+           // max-height:70px;
+           // max-width:70px;
         } 
 
         @media (min-width: 768px){
-            max-height:80px;
-            max-width:80px;
+           // max-height:80px;
+           // max-width:80px;
         } 
     }
 
@@ -200,6 +200,12 @@
         font-weight: normal;
         text-decoration: underline;
     }
+}
+
+.contact-card__summary {
+    font-size: 16px;
+    line-height: inherit;
+    margin: 5px 0 0 0;
 }
 
 .contact-card__contact {
