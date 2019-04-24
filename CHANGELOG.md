@@ -9,6 +9,27 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.17.2
+
+Release date: Wednesday 24 April 2019
+
+### Added
+* Open access logo for publications on staff profiles
+* New summary text field added to contact card pattern
+
+### Changed
+* Category header pattern amended to remove background image
+* Heading sizes adjusted
+* Padding amended on KIS widget ahead of cookie control implementation
+
+### Fixed
+* Grid fix for staff profile pattern
+
+### Deprecated
+* Category header pattern with background image
+
+---
+
 ## v1.17.1
 
 Release date: Wednesday 10 April 2019
