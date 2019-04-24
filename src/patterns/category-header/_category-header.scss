@@ -3,81 +3,29 @@
 /* END Pattern: category-header  */
 /*********************************/
 
-// Image background with transparent colour overlay
-#category-header {
-    background-image: url(../images/header_general.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 0px;
-    overflow: hidden;
-
-    h2 a {
-        color: white;
-        font-weight: normal;
-        text-decoration: none;
-    }
-
-    h2 a:hover {
-        text-decoration: underline;
-    }
-}
-
-#category-header .transparent-overlay {
-    background-color: -dpl-color($palette-default,'secondary','transparent');
-    padding-bottom: 10px;
+// Deprecated styling
+#category-header{
+    background: $sta-blue-light;
 
     h2 {
-        font-family: 'PT Serif', georgia, serif;
-        text-shadow: 1px 1px 1px rgb(68, 68, 68);
-        font-size: 35px;
+        a {
+            font-family: 'PT Serif', georgia, serif;
+            color: white;
+            font-weight: normal;
+            text-decoration: none;
+
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+            }
+        }
+
+
+        @media (max-width: 767px) {
+            font-size: 24px;
+        }
     }
 }
-
-// This is for the old implementation of the pattern.
-#category-header > div > h2 {
-    background-color: -dpl-color($palette-default,'secondary','transparent');
-    font-family: 'PT Serif', georgia, serif;
-    margin: 0 -100%;
-    padding: 20px 100%;
-    position: relative;
-    text-shadow: 1px 1px 1px rgb(68, 68, 68);
-}
-
-// Solid background colour, variant
-#category-header.category-header-solid {
-    background: -dpl-color($palette-default,'secondary','base');
-
-    h2 {
-        background: transparent;
-        text-shadow:none;
-    }
-}
-
-
-/* DISABLED, but saved here for historical reference.
- * This psuedo element creates the oblique angle after the
- * heading and had a neat implementation.
- *
- *    #category-header h2:after {
- *        content: "";
- *        position: absolute;
- *        top: 0;
- *        right: -37px;
- *        width: 0;
- *        height: 0;
- *        border-top: 100px solid $sta-blue-light;
- *        border-top-color: $sta-blue-light-T;
- *        border-right: 37px solid transparent;
- *      }
- */
-
-// @media (max-width: 767px) {
-//     #category-header h2 {
-//         display: block;
-//     }
-// }
-
 
 /*********************************/
 /* END Pattern: category-header  */

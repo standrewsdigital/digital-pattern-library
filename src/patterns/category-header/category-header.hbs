@@ -1,9 +1,13 @@
 <!-- Begin pattern: category-header //-->
 <div {{#if class}}class="{{class}}"{{/if}} id="category-header">
-    <div class="transparent-overlay">
-        <div class="container">
-            <h2><a href="{{url}}">{{title}}</a></h2>
-        </div>
+	{{#if transparent}}<div class="transparent-overlay">
+    	<div class="container">
+        	<h2><a href="{{url}}">{{title}}</a></h2>
+    	</div>
     </div>
+    {{else}}
+    <div class="container">
+        <h2><a href="{{url}}">{{title}}</a></h2>
+    </div>{{/if}}
 </div>
 <!-- End pattern: category-header //-->

@@ -1,22 +1,19 @@
 {
     "options": [
 
-        {
-            "option-heading": "Image background with transparent overlay",
-            "option-anchor": "transparent",
-            "option-description": "<p>An image with a transparent colour overlay or a solid colour may be used for the background.</p>",
+{
+            "option-heading": "Blue background - default",
+            "option-anchor": "blue",
+            "option-description": "<p>The blue colour option is to be used by default.</p>",
             "title": "Category title",
             "url": "#"
         },
 
-
-
-
         {
-            "option-heading": "Solid background",
-            "option-anchor": "solid",
-            "option-description": "",
-            "class": "category-header-solid",
+            "option-heading": "Image background with transparent overlay - deprecated",
+            "option-anchor": "transparent",
+            "option-description": "<div class='alert alert--warning'><h3>Attention</h3><p>This implementation is now deprecated and will be removed in a future release.</p></div>",
+            "transparent": true,
             "title": "Category title",
             "url": "#"
         }
