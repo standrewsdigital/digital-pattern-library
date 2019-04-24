@@ -10,7 +10,7 @@
         },
 
         {
-            "option-heading": "Image background with transparent overlay",
+            "option-heading": "Image background with transparent overlay - deprecated",
             "option-anchor": "transparent",
             "option-description": "<div class='alert alert--warning'><h3>Attention</h3><p>This implementation is now deprecated and will be removed in a future release.</p></div>",
             "transparent": true,
