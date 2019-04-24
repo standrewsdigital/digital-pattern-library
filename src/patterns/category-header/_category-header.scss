@@ -7,15 +7,22 @@
 #category-header{
     background: $sta-blue-light;
 
-    h2 a {
-        font-family: 'PT Serif', georgia, serif;
-        color: white;
-        font-weight: normal;
-        text-decoration: none;
+    h2 {
+        a {
+            font-family: 'PT Serif', georgia, serif;
+            color: white;
+            font-weight: normal;
+            text-decoration: none;
 
-        &:hover,
-        &:focus {
-            text-decoration: underline;
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+            }
+        }
+
+
+        @media (max-width: 767px) {
+            font-size: 24px;
         }
     }
 }
