@@ -5,12 +5,7 @@
 
 // Deprecated styling
 #category-header{
-    background-image: url(../images/header_general.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 0px;
-    overflow: hidden;
+    background: $sta-blue-light;
 
     h2 a {
         font-family: 'PT Serif', georgia, serif;
@@ -20,70 +15,13 @@
         text-decoration: none;
         margin-top: 0;
         margin-bottom: 0;
-    }
 
-    h2 a:hover {
-        text-decoration: underline;
-    }
-}
-
-.transparent-overlay {
-    background-color: -dpl-color($palette-default,'secondary','transparent');
-
-    h2 {
-        text-shadow: 1px 1px 1px rgb(68, 68, 68);
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
     }
 }
-
-// Blue background colour, variant
-#category-header.category-header-blue {
-    background: $sta-blue-light;
-}
-
-// Burgundy background colour, variant
-#category-header.category-header-burgundy {
-    background: $sta-burgundy;
-}
-
-// Orange background colour, variant
-#category-header.category-header-orange {
-    background: $sta-orange;
-}
-
-// Purple background colour, variant
-#category-header.category-header-purple {
-    background: $sta-purple;
-}
-
-// Green background colour, variant
-#category-header.category-header-green {
-    background: $sta-green;
-}
-
-
-/* DISABLED, but saved here for historical reference.
- * This psuedo element creates the oblique angle after the
- * heading and had a neat implementation.
- *
- *    #category-header h2:after {
- *        content: "";
- *        position: absolute;
- *        top: 0;
- *        right: -37px;
- *        width: 0;
- *        height: 0;
- *        border-top: 100px solid $sta-blue-light;
- *        border-top-color: $sta-blue-light-T;
- *        border-right: 37px solid transparent;
- *      }
- */
-
-// @media (max-width: 767px) {
-//     #category-header h2 {
-//         display: block;
-//     }
-// }
-
 
 /*********************************/
 /* END Pattern: category-header  */

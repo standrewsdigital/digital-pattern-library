@@ -2,54 +2,9 @@
     "options": [
 
 {
-            "option-heading": "Blue background",
+            "option-heading": "Blue background - default",
             "option-anchor": "blue",
             "option-description": "<p>The blue colour option is to be used by default.</p>",
-            "class": "category-header-blue",
-            "title": "Category title",
-            "url": "#"
-        },
-
-
-
-        {
-            "option-heading": "Burgundy background",
-            "option-anchor": "burgundy",
-            "option-description": "<p>The burgundy colour option must only be used on websites and applications related to the Faculty of Art.</p>",
-            "class": "category-header-burgundy",
-            "title": "Category title",
-            "url": "#"
-        },
-
-
-
-        {
-            "option-heading": "Orange background",
-            "option-anchor": "orange",
-            "option-description": "<p>The orange colour option must only be used on websites and applications related to the Faculty of Medicine.</p>",
-            "class": "category-header-orange",
-            "title": "Category title",
-            "url": "#"
-        },
-
-
-
-        {
-            "option-heading": "Purple background",
-            "option-anchor": "purple",
-            "option-description": "<p>The purple colour option must only be used on websites and applications related to the Faculty of Divinity.</p>",
-            "class": "category-header-purple",
-            "title": "Category title",
-            "url": "#"
-        },
-
-
-
-        {
-            "option-heading": "Green background",
-            "option-anchor": "green",
-            "option-description": "<p>The green colour option must only be used on websites and applications related to the Faculty of Science.</p>",
-            "class": "category-header-green",
             "title": "Category title",
             "url": "#"
         },
@@ -57,7 +12,7 @@
         {
             "option-heading": "Image background with transparent overlay",
             "option-anchor": "transparent",
-            "option-description": "<div class='alert alert-danger'><strong>This option is depreciated.</strong> Do not attempt to use this option for any new website development. It will be removed in a future update.</div>",
+            "option-description": "<div class='alert alert--warning'><h3>Attention</h3><p>This implementation is now deprecated and will be removed in a future release.</p></div>",
             "transparent": true,
             "title": "Category title",
             "url": "#"
