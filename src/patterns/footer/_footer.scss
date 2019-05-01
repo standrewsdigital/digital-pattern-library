@@ -6,8 +6,8 @@
 
 #website-footer {
 	background-color: $sta-grey-dark;
-	border-top: 5px solid $sta-grey;
-	color: rgb(170, 170, 170);
+	border-top: 5px solid $sta-grey-T-hover;
+	color: $sta-grey-light;
 	padding: $third-gutter 0;
 }
 
@@ -24,12 +24,12 @@
 #university-footer {
 	background-color: $sta-grey-dark-hover;
 	border-top: 1px solid $sta-grey-T-hover;
-	color: rgb(170, 170, 170);
+	color: $sta-grey-light;
 	padding: $third-gutter 0;
 }
 
 #university-footer a { 
-	color: rgb(170, 170, 170);
+	color: $sta-grey-light;
 	cursor: pointer;
 	font-weight: normal;
 	text-decoration: underline;
@@ -37,7 +37,7 @@
 
 	&:hover,
 	&:focus {
-		color: $sta-grey-light;
+		color: $sta-grey-light-hover;
 	}
 }
 
@@ -62,6 +62,31 @@
 #university-footer p, #university-footer ul {
 	margin: 0 0 5px 0;
 }
+
+.feedback-footer {
+	background: $sta-grey-light;
+	border-top: 5px solid $sta-grey-light-hover;
+	padding: $third-gutter 0;
+
+	.btn {
+		margin-right: 5px;
+	}
+}
+
+.feedback-footer__heading {
+	margin-right: 10px;
+	@media (max-width: 400px) {
+		// Force buttons on to new line
+		display: block;
+		margin-bottom: 5px;
+	}
+}
+
+.feedback-footer + #website-footer {
+	border-top: 1px solid $sta-grey-T-hover;
+}
+
+/* SORT THIS BIT OUT, SHOULD BE OWN PATTERN */
 
 #affiliation-banner {
 	background-color: $sta-grey-light;
