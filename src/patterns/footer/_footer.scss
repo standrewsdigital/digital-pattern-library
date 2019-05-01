@@ -3,9 +3,6 @@
 /* BEGIN Pattern: footer         */
 /*********************************/
 
-footer a:link {
-   font-weight: bold;
-}
 
 #website-footer {
 	background-color: $sta-grey-dark;
@@ -14,23 +11,38 @@ footer a:link {
 	padding: $third-gutter 0;
 }
 
-#website-footer a, #university-footer a {
+#website-footer a{
 	color: $sta-cyan-light;
-}
+	cursor: pointer;
 
-#website-footer a:hover, #university-footer a:hover {
-  	color: $sta-cyan-light-hover;
+	&:hover,
+	&:focus {
+		color: $sta-cyan-light-hover;
+	}
 }
 
 #university-footer {
 	background-color: $sta-grey-dark-hover;
 	border-top: 1px solid $sta-grey-T-hover;
-	color: $sta-grey-light;
+	color: rgb(170, 170, 170);
 	padding: $third-gutter 0;
 }
 
+#university-footer a { 
+	color: rgb(170, 170, 170);
+	cursor: pointer;
+	font-weight: normal;
+	text-decoration: underline;
+	white-space: nowrap;
+
+	&:hover,
+	&:focus {
+		color: $sta-grey-light;
+	}
+}
+
 #website-footer ul, #university-footer ul {
-	list-style-type: none;
+	list-style: none;
 	margin: 0;
 	padding: 0;
 }
@@ -43,17 +55,12 @@ footer a:link {
 
 #university-footer ul li {
 	display: inline;
-	list-style-type: none;
-	margin: 0 10px 0 0;
+	margin: 0 15px 0 0;
 	padding: 0;
 }
 
 #university-footer p, #university-footer ul {
-	margin: 0 0 10px 0;
-}
-
-#university-footer #social a {
-	color: $sta-grey-light;
+	margin: 0 0 5px 0;
 }
 
 #affiliation-banner {
@@ -75,6 +82,10 @@ footer a:link {
 @media (max-width: 768px) {
 	#affiliation-banner {
 		display: none;
+	}
+
+	#social {
+		margin: 15px 0 0 0 !important;
 	}
 }	
 
