@@ -332,3 +332,31 @@ address {
   font-style: normal;
   line-height: $line-height-base;
 }
+
+
+// MODULAR SCALE classes
+// These overwrite existing sizes
+.font-scale-minus-1 {
+  @include ms-respond(font-size,-1);
+}
+.font-scale-0 {
+  @include ms-respond(font-size,0);
+}
+.font-scale-1 {
+  @include ms-respond(font-size,1);
+}
+.font-scale-2 {
+  @include ms-respond(font-size,2);
+}
+.font-scale-3 {
+  @include ms-respond(font-size,3);
+}
+.font-scale-4 {
+  @include ms-respond(font-size,4);
+}
+.font-scale-5 {
+  @include ms-respond(font-size,5);
+}
+.font-scale-6 {
+  @include ms-respond(font-size,6);
+}

@@ -1,0 +1,14 @@
+
+/*********************************/
+/* BEGIN Pattern: page-intro     */
+/*********************************/
+
+.page-intro {}
+
+.page-intro__heading {
+	@include ms-respond(font-size, 5);
+}
+
+/*********************************/
+/* END Pattern: page-intro       */
+/*********************************/

@@ -1,0 +1,36 @@
+---
+title: Page intro
+---
+
+<p>The footer pattern presents the information that should be found at the bottom of all pages.</p>
+
+<h3>Rules for the footer</h3>
+<p>There are two components of the footer: the <code>copyright-footer</code> and navigation menu footer.</p> 
+<ul>
+	<li>The <code>copyright-footer</code> must appear at the bottom of all pages without any modification. It contains copyright information, legal information and social media links.</li>
+	<li>The current year can be included automatically using the following javascript <code>&lt;script&gt;document.write(new Date().getFullYear());&lt;/script&gt;</code>
+	<li>The <code>navigation-menu-footer</code> contains links and contact information relevant to the website.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#page-intro-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/page-intro-options.options}}
+</ul>
+
+{{#page-intro-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+<!--noindex-->
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+	{{> page-intro}}
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> page-intro}}</code></pre>
+<!--endnoindex-->
+{{/page-intro-options.options}}

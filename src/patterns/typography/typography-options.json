@@ -146,6 +146,38 @@
                     "description": "sollicitudin turpis quis, elementum felis."
                 }
             ]
+        },
+
+{
+            "option-heading": "Headings - responsive sizes",
+            "option-description": "<p>These headings use a typographic scale to ensure consistent sizing across different sizes of display.</p>",
+            "option-anchor": "headings",
+            "headings": [
+                {
+                    "heading": "<h2 class=\"font-scale-minus-1\">Heading - small</h2>"
+                },
+                {
+                    "heading": "<h2 class=\"font-scale-0\">Heading - default size</h2>"
+                },
+                {
+                    "heading": "<h2 class=\"font-scale-1\">Heading - scale 1</h2>"
+                },
+                {
+                    "heading": "<h2 class=\"font-scale-2\">Heading - scale 2</h2>"
+                },
+                {
+                    "heading": "<h2 class=\"font-scale-3\">Heading - scale 3</h2>"
+                },
+                {
+                    "heading": "<h2 class=\"font-scale-4\">Heading - scale 4</h2>"
+                },
+                {
+                    "heading": "<h2 class=\"font-scale-5\">Heading - scale 5</h2>"
+                },
+                {
+                    "heading": "<h2 class=\"font-scale-6\">Heading - scale 6</h2>"
+                }
+            ]
         }
     ]
 }

@@ -186,6 +186,10 @@
                   "img": "assets/docs/images/patterns/numerical-list.jpg",
                   "url": "patterns/numerical-list/index.html"
                 },
+                { "name": "Page intro",
+                  "img": "assets/docs/images/patterns/page-intro.jpg",
+                  "url": "patterns/page-intro/index.html"
+                },
                 { "name": "Paired values list",
                   "img": "assets/docs/images/patterns/paired-values-list.jpg",
                   "url": "patterns/paired-values-list/index.html"
