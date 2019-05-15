@@ -5,8 +5,18 @@
 
 .page-intro {}
 
+.page-intro__text {
+	max-width: 43.333em; // 780px max to match bootstrap 8-col
+}
+
 .page-intro__heading {
 	@include ms-respond(font-size, 5);
+	line-height:1.1;
+}
+
+.page-intro__heading--large {
+	@include ms-respond(font-size, 6);
+	line-height: 1;
 }
 
 /*********************************/

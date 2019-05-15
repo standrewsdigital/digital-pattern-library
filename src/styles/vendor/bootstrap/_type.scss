@@ -91,18 +91,11 @@ h6, .h6 { font-size: $font-size-h6; }
 // Body text
 // -------------------------
 
-p {
-  margin: 0 0 ($line-height-computed / 2);
-}
-
 .lead {
-  margin-bottom: $line-height-computed;
-  font-size: floor(($font-size-base * 1.15));
-  font-weight: 300;
-  line-height: 1.4;
-
-  @media (min-width: $screen-sm-min) {
-    font-size: ($font-size-base * 1.5);
+  @include ms-respond(font-size,1);
+  
+  @media (min-width: 576px){
+    @include ms-respond(font-size,2); // move up the scale on larger displays
   }
 }
 
@@ -338,25 +331,33 @@ address {
 // These overwrite existing sizes
 .font-scale-minus-1 {
   @include ms-respond(font-size,-1);
+  line-height:$line-height-base;
 }
 .font-scale-0 {
   @include ms-respond(font-size,0);
+  line-height:$line-height-base;
 }
 .font-scale-1 {
   @include ms-respond(font-size,1);
+  line-height:$line-height-base;
 }
 .font-scale-2 {
   @include ms-respond(font-size,2);
+  line-height:$line-height-base;
 }
 .font-scale-3 {
   @include ms-respond(font-size,3);
+  line-height:1.3;
 }
 .font-scale-4 {
   @include ms-respond(font-size,4);
+  line-height: 1.2;
 }
 .font-scale-5 {
   @include ms-respond(font-size,5);
+  line-height: 1.1;
 }
 .font-scale-6 {
   @include ms-respond(font-size,6);
+  line-height: 1;
 }

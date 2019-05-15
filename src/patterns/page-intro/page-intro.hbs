@@ -1,22 +1,16 @@
 <!-- Begin pattern: page intro //-->
 
-{{#if affiliasstion-banner}}
-<div id="affiliation-banner">
-    <div class="container">
-        <div class="row">
-            {{#each columns}}
-            <div class="col-sm-6 text-center affiliation-logo">
-                <a href="{{image-link}}"><img src="{{image}}" alt="{{image-alt}}" title="{{image-title}}"></a>
-            </div>
-            {{/each}}
-        </div>
-    </div>
-</div>
-{{/if}}
-
 <div class="container">
     <div class="page-intro">
-        <h1 class="page-intro__heading">This is the heading</h1>
+        <div class="page-intro__text">
+            <h1 class="page-intro__heading{{golarge}}">{{heading}}</h1>
+            {{#if lead}}
+            {{{lead}}}
+            {{/if}}
+            {{#if bodytext}}
+            {{{bodytext}}}
+            {{/if}}
+        </div>
     </div>
 </div>
 

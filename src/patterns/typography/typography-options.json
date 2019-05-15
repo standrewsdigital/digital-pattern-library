@@ -149,33 +149,41 @@
         },
 
 {
-            "option-heading": "Headings - responsive sizes",
+            "option-heading": "Font size override classes",
             "option-description": "<p>These headings use a typographic scale to ensure consistent sizing across different sizes of display.</p>",
-            "option-anchor": "headings",
-            "headings": [
+            "option-anchor": "font-sizes",
+            "body-text": [
                 {
-                    "heading": "<h2 class=\"font-scale-minus-1\">Heading - small</h2>"
+                    "class": "font-scale-minus-1",
+                    "text": "font-scale-minus-1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 },
                 {
-                    "heading": "<h2 class=\"font-scale-0\">Heading - default size</h2>"
+                    "class": "font-scale-0",
+                    "text": "font-scale-0Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 },
                 {
-                    "heading": "<h2 class=\"font-scale-1\">Heading - scale 1</h2>"
+                    "class": "font-scale-1",
+                    "text": "font-scale-1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 },
                 {
-                    "heading": "<h2 class=\"font-scale-2\">Heading - scale 2</h2>"
+                    "class": "font-scale-2",
+                    "text": "font-scale-2Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 },
                 {
-                    "heading": "<h2 class=\"font-scale-3\">Heading - scale 3</h2>"
+                    "class": "font-scale-3",
+                    "text": "font-scale-3Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 },
                 {
-                    "heading": "<h2 class=\"font-scale-4\">Heading - scale 4</h2>"
+                    "class": "font-scale-4",
+                    "text": "font-scale-4Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 },
                 {
-                    "heading": "<h2 class=\"font-scale-5\">Heading - scale 5</h2>"
+                    "class": "font-scale-5",
+                    "text": "font-scale-5Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 },
                 {
-                    "heading": "<h2 class=\"font-scale-6\">Heading - scale 6</h2>"
+                    "class": "font-scale-6",
+                    "text": "font-scale-6Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 }
             ]
         }

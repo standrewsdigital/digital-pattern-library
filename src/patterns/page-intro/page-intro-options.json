@@ -1,70 +1,23 @@
 {
     "options": [
         {
-            "option-heading": "Copyright footer",
-            "option-anchor": "copy-footer",
-            "option-description": ""
+            "option-heading": "Page intro - default",
+            "option-anchor": "page-intro",
+            "option-description": "",
+            "heading": "This is the heading of the page",
+            "lead": "<p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt. Mauris sodales eleifend sodales. Nunc aliquam blandit ipsum ac rutrum. Pellentesque sapien erat, consectetur sed dui nec, rutrum congue sem.</p>",
+            "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat. Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor. Etiam elementum neque erat, in interdum lacus accumsan sit amet.</p><p>Donec congue vulputate massa, vitae pharetra orci vulputate eget. Vestibulum sagittis eros id mauris blandit tincidunt. Sed in pellentesque orci, fermentum tincidunt enim. Morbi a dictum nunc. Nulla a metus ut erat euismod auctor. Fusce finibus arcu sit amet tortor blandit, sed tempus ipsum faucibus. Cras ut lectus iaculis, pellentesque leo nec, accumsan purus. Vivamus nec nunc maximus lorem dapibus volutpat.</p>"
         },
 
 
-
-
-        {
-            "option-heading": "Navigation menu footer",
-            "option-description": "<ul><li>The navigation menu footer should be used if needed and should contain content relevant to the section of the website where the page is located.</li><li>The navigation menu footer must never be included without the copyright footer below it.</li><li>The third column in the navigation menu footer must be reserved for the contact information.</li><li>Custom icons for social media links must not be added. Unique social media links must use text and can only be added to the navigation menu footer (see example below).</li></ul>",
-            "option-anchor": "nav-footer",
-            "website-footer": true,
-            "section1": {
-                "title": "Navigation",
-                "links":[
-                    {"title": "Study at St Andrews",    "url": "#"},
-                    {"title": "Research",               "url": "#"},
-                    {"title": "Alumni and donors",      "url": "#"},
-                    {"title": "Community facilities",   "url": "#"},
-                    {"title": "Business services",      "url": "#"},
-                    {"title": "About",                  "url": "#"}
-                ]
-            },
-            "section2": {
-                "title": "Social media",
-                "links":[
-                    {"title": "Facebook",       "url": "#"},
-                    {"title": "Twitter",           "url": "#"},
-                    {"title": "YouTube",                  "url": "#"}
-                ]
-            },
-            "section3": {
-                "title": "School websites",
-                "links":[
-                    {"title": "Art History",                            "url": "#"},
-                    {"title": "Biology",                                "url": "#"},
-                    {"title": "Chemistry",                              "url": "#"},
-                    {"title": "Classics",                               "url": "#"},
-                    {"title": "Computer Science",                       "url": "#"},
-                    {"title": "Divinity",                               "url": "#"},
-                    {"title": "Earth and Environmental Sciences",       "url": "#"},
-                    {"title": "Economics and Finance",                  "url": "#"},
-                    {"title": "English",                                "url": "#"},
-                    {"title": "Film Studies",                           "url": "#"},
-                    {"title": "Geography and Sustainable Development",  "url": "#"},
-                    {"title": "History",                                "url": "#"},
-                    {"title": "International Relations",                "url": "#"},
-                    {"title": "Languages and Comparative Literature",   "url": "#"},
-                    {"title": "Management",                             "url": "#"},
-                    {"title": "Mathematics and Statistics",             "url": "#"},
-                    {"title": "Medicine",                               "url": "#"},
-                    {"title": "Philosophy",                             "url": "#"},
-                    {"title": "Physics and Astronomy",                  "url": "#"},
-                    {"title": "Psychology and Neuroscience",            "url": "#"},
-                    {"title": "Social Anthropology",                    "url": "#"}
-                ]
-            },
-            "contact":{
-                "url": "/contact/",
-                "unit" :"University of St Andrews",
-                "address":"College Gate<br>St Andrews<br>KY16 9AJ",
-                "phone":"+44 (0)1334 47 6161"
-            }
+{
+            "option-heading": "Page intro - larger heading",
+            "option-anchor": "page-intro",
+            "option-description": "",
+            "heading": "This a larger heading for the section",
+            "golarge": "--large",
+            "lead": "<p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt. Mauris sodales eleifend sodales. Nunc aliquam blandit ipsum ac rutrum. Pellentesque sapien erat, consectetur sed dui nec, rutrum congue sem.</p>",
+            "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat. Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor. Etiam elementum neque erat, in interdum lacus accumsan sit amet.</p><p>Donec congue vulputate massa, vitae pharetra orci vulputate eget. Vestibulum sagittis eros id mauris blandit tincidunt. Sed in pellentesque orci, fermentum tincidunt enim. Morbi a dictum nunc. Nulla a metus ut erat euismod auctor. Fusce finibus arcu sit amet tortor blandit, sed tempus ipsum faucibus. Cras ut lectus iaculis, pellentesque leo nec, accumsan purus. Vivamus nec nunc maximus lorem dapibus volutpat.</p>"
         }
 
     ]
