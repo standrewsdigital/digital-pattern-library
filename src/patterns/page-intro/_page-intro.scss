@@ -4,7 +4,7 @@
 /*********************************/
 
 .page-intro__wrapper {
-	margin: calc(3vw + 1em) 0 calc(3vw + 1em - 1.5625rem) 0; // page gutter / half gutter - 25px in rem @ 16px
+	margin: calc(1.5vw + 1em) 0 calc(1.5vw + 1em - 1.5625rem) 0; // page gutter / half gutter - 25px in rem @ 16px
 }
 
 .page-intro {
@@ -21,14 +21,14 @@
 	}
 	
 	@media (min-width: 992px) and (max-width:1199px){
-		-ms-grid-columns: 30px minmax(30em,60%) 1fr 30px;
+		-ms-grid-columns: 15px minmax(30em,80%) 1fr 15px;
 		-ms-grid-rows: auto;
-		grid-template-columns: 30px minmax(30em,60%) 1fr 30px;
+		grid-template-columns: 15px minmax(30em,80%) 1fr 15px;
 		grid-template-rows: auto;
 
 		&--has-media {
-			-ms-grid-columns: 30px minmax(20em,45%) 1fr 30px;
-			grid-template-columns: 30px minmax(20em,45%) 1fr 30px; //reduce text column width to leave space for media
+			-ms-grid-columns: 15px minmax(20em,45%) 1fr 15px;
+			grid-template-columns: 15px minmax(20em,45%) 1fr 15px; //reduce text column width to leave space for media
 		}
 	}
 	
@@ -62,6 +62,9 @@
 	grid-column-end: 3;
 	grid-row-start: 1;
 	grid-row-end: 2;
+	@media (max-width: 991px){
+		max-width: 48em; // limit width of text to help readability
+	}
 }
 
 .page-intro__media {
@@ -86,13 +89,13 @@
 
 	.page-intro__media-wrapper {
 		max-width:600px;
+		margin-bottom: 1.5625rem; // 25px @ 16
 
 		@media (min-width: 992px) {
-			margin: 0 15px 0 $half-gutter;
+			margin: 0 15px 1.5625rem $half-gutter;
 		}
 
 		figcaption {
-			margin-bottom: 1.5625rem; // 25px @ 16
 			padding-bottom: 0;
 		}
 	}
