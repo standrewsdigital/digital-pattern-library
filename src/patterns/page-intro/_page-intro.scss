@@ -3,20 +3,110 @@
 /* BEGIN Pattern: page-intro     */
 /*********************************/
 
-.page-intro {}
+.page-intro__wrapper {
+	margin: calc(3vw + 1em) 0 calc(3vw + 1em - 1.5625rem) 0; // page gutter / half gutter - 25px in rem @ 16px
+}
+
+.page-intro {
+	display: -ms-grid;
+	display: grid;
+
+	-ms-grid-columns: 15px auto 15px;
+	grid-template-columns: 15px auto 15px;
+	grid-template-rows: auto;
+
+	&--has-media {
+		-ms-grid-rows: auto auto;
+		grid-template-rows: auto auto; //2nd grid row for media
+	}
+	
+	@media (min-width: 992px) and (max-width:1199px){
+		-ms-grid-columns: 30px minmax(30em,60%) 1fr 30px;
+		-ms-grid-rows: auto;
+		grid-template-columns: 30px minmax(30em,60%) 1fr 30px;
+		grid-template-rows: auto;
+
+		&--has-media {
+			-ms-grid-columns: 30px minmax(20em,45%) 1fr 30px;
+			grid-template-columns: 30px minmax(20em,45%) 1fr 30px; //reduce text column width to leave space for media
+		}
+	}
+	
+	@media (min-width: 1200px){
+		-ms-grid-columns: 1fr 750px 390px 1fr;
+		-ms-grid-rows: auto;
+		grid-template-columns: 1fr 750px 390px 1fr;
+		grid-template-rows: auto;
+
+		&-has-media {
+			-ms-grid-columns: 1fr 700px 440px 1fr;
+			grid-template-columns: 1fr 700px 440px 1fr; //reduce text column width to leave space for media
+		}
+	}
+
+	.btn-important {
+		margin-right: ms(2);
+	}
+
+	.search-bar {
+		margin-bottom: 1.5625rem; // 25px @ 16
+	}
+	
+}
 
 .page-intro__text {
-	max-width: 43.333em; // 780px max to match bootstrap 8-col
+	-ms-grid-column:2;
+	-ms-grid-row:1;
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.page-intro__media {
+	-ms-grid-column:2;
+	-ms-grid-row:2;
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+	@media (min-width: 992px) { //Move up alongside text when there is enough space
+		-ms-grid-column:3;
+		-ms-grid-row:1;
+		-ms-grid-column-span: 2;
+
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+
+	.page-intro__media-wrapper {
+		max-width:600px;
+
+		@media (min-width: 992px) {
+			margin: 0 15px 0 $half-gutter;
+		}
+
+		figcaption {
+			margin-bottom: 1.5625rem; // 25px @ 16
+			padding-bottom: 0;
+		}
+	}
 }
 
 .page-intro__heading {
 	@include ms-respond(font-size, 5);
 	line-height:1.1;
-}
+	margin: 0 0 ms(-5) 0;
 
-.page-intro__heading--large {
-	@include ms-respond(font-size, 6);
-	line-height: 1;
+	&--large {
+		@include ms-respond(font-size, 6);
+		line-height: 1;
+	}
 }
 
 /*********************************/

@@ -20,7 +20,7 @@
 // Use ems
 $modularscale: (
   base: 1em, //16px
-  ratio: 1,
+  ratio: $minor-third, //1.2
   36em: ( // 576px bootstrap xsmall
     base: 1em, //18px
     ratio: $minor-third //1.2 

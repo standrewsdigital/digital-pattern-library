@@ -1,7 +1,6 @@
 <!-- Begin pattern: page intro //-->
-
-<div class="container">
-    <div class="page-intro">
+<div class="page-intro__wrapper">
+    <div class="page-intro{{#if image}} page-intro--has-media{{/if}}{{#if video}} page-intro--has-media{{/if}}">
         <div class="page-intro__text">
             <h1 class="page-intro__heading{{golarge}}">{{heading}}</h1>
             {{#if lead}}
@@ -10,8 +9,41 @@
             {{#if bodytext}}
             {{{bodytext}}}
             {{/if}}
+            {{#if form}}
+            <div class="search-bar search-bar__constrained search-bar__blue">
+                <h3 class="search-bar__heading">Search this section</h3>
+                <form class="dpl-form" action="">
+                    <div class="input-group input-group-lg">                        
+                        <input id="banner-search-constrained" class="form-control" type="text" title="Enter search keywords" maxlength="256" name="search" placeholder="Search by keyword or phrase">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" value="Search" type="submit">
+                                <i class="fa fa-search" title="Search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+            {{/if}}
+            {{#if cta}}
+            <p><a class="btn btn-important" href="#">Call to action</a><a class="btn btn-important" href="#">Another call to action</a></p>
+            {{/if}}
         </div>
+        {{#if image}}
+        <div class="page-intro__media">
+            <figure class="page-intro__media-wrapper">
+                <img src="{{image}}" />
+                {{{caption}}}
+            </figure>
+        </div>
+        {{/if}}
+        {{#if video}}
+        <div class="page-intro__media">
+            <figure class="page-intro__media-wrapper">
+                {{{video}}}
+                {{{caption}}}
+            </figure>
+        </div>
+        {{/if}}
     </div>
 </div>
-
 <!-- End pattern: page intro //-->

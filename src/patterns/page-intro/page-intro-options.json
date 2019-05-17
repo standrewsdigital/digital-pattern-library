@@ -1,23 +1,86 @@
 {
     "options": [
         {
-            "option-heading": "Page intro - default",
+            "option-heading": "Page intro - basic requirements",
             "option-anchor": "page-intro",
-            "option-description": "",
+            "option-description": "<p>The simplest implementation must include a heading and some introduction text.</p>",
             "heading": "This is the heading of the page",
-            "lead": "<p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt. Mauris sodales eleifend sodales. Nunc aliquam blandit ipsum ac rutrum. Pellentesque sapien erat, consectetur sed dui nec, rutrum congue sem.</p>",
             "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat. Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor. Etiam elementum neque erat, in interdum lacus accumsan sit amet.</p><p>Donec congue vulputate massa, vitae pharetra orci vulputate eget. Vestibulum sagittis eros id mauris blandit tincidunt. Sed in pellentesque orci, fermentum tincidunt enim. Morbi a dictum nunc. Nulla a metus ut erat euismod auctor. Fusce finibus arcu sit amet tortor blandit, sed tempus ipsum faucibus. Cras ut lectus iaculis, pellentesque leo nec, accumsan purus. Vivamus nec nunc maximus lorem dapibus volutpat.</p>"
         },
-
-
-{
+        {
+            "option-heading": "Page intro - lead paragraph",
+            "option-anchor": "page-intro-lead",
+            "option-description": "<p>If the first paragraph provides a short summary of the page then it is recommended that this has the <code>lead</code> class applied to give it greater visual importance.</p><ul><li>Only the first paragraph can be made a lead paragraph.</li></ul>",
+            "heading": "This is the heading of the page",
+            "lead": "<p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt. Mauris sodales eleifend sodales.</p>",
+            "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat. Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor. Etiam elementum neque erat, in interdum lacus accumsan sit amet.</p>"
+        },
+        {
             "option-heading": "Page intro - larger heading",
-            "option-anchor": "page-intro",
-            "option-description": "",
+            "option-anchor": "page-intro-large",
+            "option-description": "<p>This should be used to designate the page has greater importance over others. Example uses could be include a homepage, a section top-level page or a standalone landing page.</p>",
             "heading": "This a larger heading for the section",
-            "golarge": "--large",
+            "golarge": " page-intro__heading--large",
+            "lead": "<p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt. Mauris sodales eleifend sodales. Nunc aliquam blandit ipsum ac rutrum.</p>",
+            "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat.</p>"
+        },
+        {
+            "option-heading": "Page intro - call-to-actions",
+            "option-anchor": "page-intro-cta",
+            "option-description": "<p>One or two call-to-action buttons may be used to link to the primary goals of the page.</p>",
+            "cta": true,
+            "heading": "This is the heading of the page",
+            "lead": "<p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt. Mauris sodales eleifend sodales. </p>",
+            "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget.</p>"
+        },
+        {
+            "option-heading": "Page intro - search",
+            "option-anchor": "page-intro-extend",
+            "option-description": "<p>The <a href=\"../search-bar/index.html#search-banner-constrained\">Search banner (constrained)</a> pattern may be used to provide a search function.</p>",
+            "form": true,
+            "heading": "This is the heading of the page",
+            "lead": "<p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt. Mauris sodales eleifend sodales. </p>",
+            "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget.</p>"
+        },
+        {
+            "option-heading": "Page intro - image",
+            "option-anchor": "page-intro-image",
+            "option-description": "<p>An image may be included to provide a visual introduction to the page content and support the text. This example shows a landscape formatted image with large heading text.</p><ul><li>The image must be larger than the minimum dimentsions of 300px wide and 300px high.</li><li>The image can be any ratio.</li><li>The image should be no larger than 750px wide and 500px high.</li></ul>",
+            "golarge": " page-intro__heading--large",
+            "heading": "This a larger heading for the section",
             "lead": "<p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt. Mauris sodales eleifend sodales. Nunc aliquam blandit ipsum ac rutrum. Pellentesque sapien erat, consectetur sed dui nec, rutrum congue sem.</p>",
-            "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat. Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor. Etiam elementum neque erat, in interdum lacus accumsan sit amet.</p><p>Donec congue vulputate massa, vitae pharetra orci vulputate eget. Vestibulum sagittis eros id mauris blandit tincidunt. Sed in pellentesque orci, fermentum tincidunt enim. Morbi a dictum nunc. Nulla a metus ut erat euismod auctor. Fusce finibus arcu sit amet tortor blandit, sed tempus ipsum faucibus. Cras ut lectus iaculis, pellentesque leo nec, accumsan purus. Vivamus nec nunc maximus lorem dapibus volutpat.</p>"
+            "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat. Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor. Etiam elementum neque erat, in interdum lacus accumsan sit amet. Donec congue vulputate massa, vitae pharetra orci vulputate eget.</p>",
+            "image": "../../assets/docs/images/placeholders/750x500.png"
+        },
+        {
+            "option-heading": "Page intro - image with caption",
+            "option-anchor": "page-intro-image-caption",
+            "option-description": "<p>Images may be further enhanced with a caption to provide additional details. This example shows an image with square ratio.</p>",
+            "heading": "This is the heading of the page",
+            "lead": "<p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt. Mauris sodales eleifend sodales. Nunc aliquam blandit ipsum ac rutrum. Pellentesque sapien erat, consectetur sed dui nec, rutrum congue sem.</p>",
+            "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat. Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor. Etiam elementum neque erat, in interdum lacus accumsan sit amet. Donec congue vulputate massa, vitae pharetra orci vulputate eget.</p>",
+            "image": "../../assets/docs/images/placeholders/500x500.jpg",
+            "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
+        },
+        {
+            "option-heading": "Page intro - video",
+            "option-anchor": "page-intro-video",
+            "option-description": "<p>A YouTube embedded video may also be used in place of an image.</p>",
+            "heading": "This is the heading of the page",
+            "lead": "<p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt. Mauris sodales eleifend sodales. Nunc aliquam blandit ipsum ac rutrum. Pellentesque sapien erat, consectetur sed dui nec, rutrum congue sem.</p>",
+            "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat. Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor. Etiam elementum neque erat, in interdum lacus accumsan sit amet.</p><p>Donec congue vulputate massa, vitae pharetra orci vulputate eget. Vestibulum sagittis eros id mauris blandit tincidunt. Sed in pellentesque orci, fermentum tincidunt enim. Morbi a dictum nunc. Nulla a metus ut erat euismod auctor. Fusce finibus arcu sit amet tortor blandit, sed tempus ipsum faucibus. Cras ut lectus iaculis, pellentesque leo nec, accumsan purus. Vivamus nec nunc maximus lorem dapibus volutpat.</p>",
+            "video": "<div class=\"embed-responsive embed-responsive-16by9 youtube-embed\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube-nocookie.com/embed/pscNTzAGVnk\"></iframe></div>"
+        },
+        {
+            "option-heading": "Page intro - video with caption",
+            "option-anchor": "page-intro-video-caption",
+            "option-description": "<p>Videos should also have a caption to provide additional details, this could also include a link to a video transcript to aid accessibility.</p>",
+            "golarge": " page-intro__heading--large",
+            "heading": "This a larger heading for the section",
+            "lead": "<p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt. Mauris sodales eleifend sodales. Nunc aliquam blandit ipsum ac rutrum. Pellentesque sapien erat, consectetur sed dui nec, rutrum congue sem.</p>",
+            "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat. Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor. Etiam elementum neque erat, in interdum lacus accumsan sit amet.</p><p>Donec congue vulputate massa, vitae pharetra orci vulputate eget. Vestibulum sagittis eros id mauris blandit tincidunt. Sed in pellentesque orci, fermentum tincidunt enim. Morbi a dictum nunc. Nulla a metus ut erat euismod auctor. Fusce finibus arcu sit amet tortor blandit, sed tempus ipsum faucibus. Cras ut lectus iaculis, pellentesque leo nec, accumsan purus. Vivamus nec nunc maximus lorem dapibus volutpat.</p>",
+            "video": "<div class=\"embed-responsive embed-responsive-16by9 youtube-embed\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube-nocookie.com/embed/pscNTzAGVnk\"></iframe></div>",
+            "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt <a href=\"#\">view transcript</a>.</figcaption>"
         }
 
     ]
