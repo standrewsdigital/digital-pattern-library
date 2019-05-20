@@ -112,6 +112,15 @@
 	}
 }
 
+// Overwrite heading sizes if following hero banner so always a smaller size
+.hero-section + .page-intro__wrapper {
+	.page-intro__heading,
+	.page-intro__heading--large {
+	  @include ms-respond(font-size,4);
+	  line-height: 1.2;
+	}
+}
+
 /*********************************/
 /* END Pattern: page-intro       */
 /*********************************/

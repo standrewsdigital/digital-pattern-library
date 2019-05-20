@@ -1,8 +1,13 @@
 <!-- Begin pattern: page intro //-->
+{{#if follow-hero}}
+    <!-- Thie inclusion of the hero-secion is for example purposes only and is only here to show how the heading sizes change when used in this situation-->
+    <section class="hero-section hidden"><code>Hero banner would appear here</code></section>
+    <!-- Copy code from beyond this point -->
+{{/if}}
 <div class="page-intro__wrapper">
     <div class="page-intro{{#if image}} page-intro--has-media{{/if}}{{#if video}} page-intro--has-media{{/if}}">
         <div class="page-intro__text">
-            <h1 class="page-intro__heading{{golarge}}">{{heading}}</h1>
+            <h{{#if follow-hero}}2{{else}}1{{/if}} class="page-intro__heading{{golarge}}">{{heading}}</h{{#if follow-hero}}2{{else}}1{{/if}}>
             {{#if lead}}
             {{{lead}}}
             {{/if}}

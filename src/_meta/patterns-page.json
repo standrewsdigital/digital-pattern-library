@@ -170,10 +170,6 @@
                   "img": "assets/docs/images/patterns/google-maps.jpg",
                   "url": "patterns/google-maps/index.html"
                 },
-                { "name": "Intro",
-                  "img": "assets/docs/images/patterns/intro.jpg",
-                  "url": "patterns/intro/index.html"
-                },
                 { "name": "More news",
                   "img": "assets/docs/images/patterns/more-news.jpg",
                   "url": "patterns/more-news/index.html"
@@ -305,6 +301,10 @@
                 { "name": "Hero banner (old version)",
                   "img": "assets/docs/images/patterns/hero-banner.jpg",
                   "url": "patterns/hero-banner-deprecated/index.html"
+                },
+                { "name": "Intro",
+                  "img": "assets/docs/images/patterns/intro.jpg",
+                  "url": "patterns/intro/index.html"
                 }
             ]
         }
