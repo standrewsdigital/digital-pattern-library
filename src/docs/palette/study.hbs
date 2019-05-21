@@ -12,24 +12,23 @@ context:
     warning: {color: sta-orange, name: Warning (orange)}
     danger: {color: sta-red, name: Danger (red)}
 ---
-
-
-<div class="container">
-
-	<h2>{{title}}</h2>
-
-	<div class="alert alert-danger">
-		<strong>This palette is deprecated.</strong> Do not attempt to use this palette for any new website development.
-	</div>
-
-	<p>This is the colour palette that is used on the study at St Andrews section of the University website.</p>
-
+<div class="page-intro__wrapper">
+    <div class="page-intro">
+        <div class="page-intro__text">	
+        	<div class="alert alert-danger">
+				<strong>This palette is deprecated.</strong> Do not attempt to use this palette for any new website development.
+			</div>
+            <h1 class="page-intro__heading">{{title}}</h1>
+            <p class="lead">This is the colour palette that is used on the study at St Andrews section of the University website.</p>
 	<ul>
 		<li><strong>Primary</strong> - used for navigation bar, calls to action.</li>
 		<li><strong>Secondary</strong> - used for secondary navigation bar.</li>
 		<li><strong>Tertiary</strong> - used, usually all together, to add style and differentiate between items in a set (for example, tiles).</li>
 	</ul>
-
+        </div>
+    </div>
+</div>
+<div class="container">
 	{{> swatch default.primary}}
 	{{> swatch default.secondary}}
 	{{> swatch default.tertiary1}}

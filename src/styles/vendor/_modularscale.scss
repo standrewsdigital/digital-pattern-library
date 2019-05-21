@@ -30,3 +30,38 @@ $modularscale: (
     ratio: $major-third //1.25 
   )
 );
+
+// Modular scale
+// These overwrite existing sizes
+%font-scale-minus-1 {
+  @include ms-respond(font-size,-1);
+  line-height:inherit;
+}
+%font-scale-0 {
+  @include ms-respond(font-size,0);
+  line-height:inherit;
+}
+%font-scale-1 {
+  @include ms-respond(font-size,1);
+  line-height:inherit;
+}
+%font-scale-2 {
+  @include ms-respond(font-size,2);
+  line-height:inherit;
+}
+%font-scale-3 {
+  @include ms-respond(font-size,3);
+  line-height:1.3;
+}
+%font-scale-4 {
+  @include ms-respond(font-size,4);
+  line-height: 1.2;
+}
+%font-scale-5 {
+  @include ms-respond(font-size,5);
+  line-height: 1.1;
+}
+%font-scale-6 {
+  @include ms-respond(font-size,6);
+  line-height: 1;
+}

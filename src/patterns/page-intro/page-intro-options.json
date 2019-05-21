@@ -18,7 +18,7 @@
         {
             "option-heading": "Page intro - larger heading",
             "option-anchor": "page-intro-large",
-            "option-description": "<p>This should be used to designate the page has greater importance over others. Example uses could be include a homepage, a section top-level page or a standalone landing page.</p>",
+            "option-description": "<p>This should be used to designate the page has greater importance over others. Example uses could be include a homepage, a section top-level page or a standalone landing page.</p><ul><li>If the larger heading is followed by a lead paragraph, then the paragraph font size is automatically increased to add visual balance.</li></ul>",
             "heading": "This a larger heading for the section",
             "golarge": " page-intro__heading--large",
             "lead": "<p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt. Mauris sodales eleifend sodales. Nunc aliquam blandit ipsum ac rutrum.</p>",

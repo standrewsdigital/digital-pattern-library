@@ -29,18 +29,20 @@
 .tile-grid__heading,
 .tile-grid h2 {
     color: white;
-    font-size: 2.5em;
+    //font-size: 2.5em;
+    @extend %font-scale-4;
     margin: 0 0 15px 0;
     padding: 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 
+    /*
     @media (max-width: 767px) {
         font-size: 1.8em;
     }
 
     @media (max-width: 479px) {
         font-size: 1.5em;
-    }  
+    }  */
 
     &.sta-grey {
         color: inherit;

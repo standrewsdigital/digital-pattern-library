@@ -102,13 +102,11 @@
 }
 
 .page-intro__heading {
-	@include ms-respond(font-size, 5);
-	line-height:1.1;
+	@extend %font-scale-5;
 	margin: 0 0 ms(-5) 0;
 
 	&--large {
-		@include ms-respond(font-size, 6);
-		line-height: 1;
+		@extend %font-scale-6;
 	}
 }
 
@@ -116,9 +114,13 @@
 .hero-section + .page-intro__wrapper {
 	.page-intro__heading,
 	.page-intro__heading--large {
-	  @include ms-respond(font-size,4);
-	  line-height: 1.2;
+		@extend %font-scale-4;
 	}
+}
+
+// Increase size of lead paragraph if following large heading
+.page-intro__heading--large + .lead {
+  @extend %font-scale-2;
 }
 
 /*********************************/

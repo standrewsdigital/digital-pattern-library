@@ -68,35 +68,29 @@ margin-bottom: ($line-height-computed / 2);
   }
 }
 
-h1, .h1 { font-size: $font-size-h1; }
-h2, .h2 { font-size: $font-size-h2; }
-h3, .h3 { font-size: $font-size-h3; }
-h4, .h4 { font-size: $font-size-h4; }
-h5, .h5 { font-size: $font-size-h5; }
-h6, .h6 { font-size: $font-size-h6; }
+h1, .h1 { @extend %font-scale-5; }
+h2, .h2 { @extend %font-scale-3; }
+h3, .h3 { @extend %font-scale-2; }
+h4, .h4 { @extend %font-scale-1; }
+h5, .h5 { @extend %font-scale-0; }
+h6, .h6 { @extend %font-scale-0; }
 
 // Override default heading sizes (may become default)
 .heading--large {
-  font-size: 2.5em;
-
-  @media (max-width: 767px) {
-    font-size: 1.8em;
-  }
-
-  @media (max-width: 479px) {
-    font-size: 1.5em;
-  } 
+  @extend %font-scale-6; 
 }
 
+// Clear top margin of everything inc. headings when at top of content block
+.content {
+  *:first-child {
+    margin-top:0;
+  }
+}
 // Body text
 // -------------------------
 
 .lead {
-  @include ms-respond(font-size,1);
-  
-  @media (min-width: 576px){
-    @include ms-respond(font-size,2); // move up the scale on larger displays
-  }
+  @extend %font-scale-1;
 }
 
 
@@ -330,34 +324,26 @@ address {
 // MODULAR SCALE classes
 // These overwrite existing sizes
 .font-scale-minus-1 {
-  @include ms-respond(font-size,-1);
-  line-height:$line-height-base;
+  @extend %font-scale-minus-1;
 }
 .font-scale-0 {
-  @include ms-respond(font-size,0);
-  line-height:$line-height-base;
+  @extend %font-scale-0;
 }
 .font-scale-1 {
-  @include ms-respond(font-size,1);
-  line-height:$line-height-base;
+  @extend %font-scale-1;
 }
 .font-scale-2 {
-  @include ms-respond(font-size,2);
-  line-height:$line-height-base;
+  @extend %font-scale-2;
 }
 .font-scale-3 {
-  @include ms-respond(font-size,3);
-  line-height:1.3;
+  @extend %font-scale-3;
 }
 .font-scale-4 {
-  @include ms-respond(font-size,4);
-  line-height: 1.2;
+  @extend %font-scale-4;
 }
 .font-scale-5 {
-  @include ms-respond(font-size,5);
-  line-height: 1.1;
+  @extend %font-scale-5;
 }
 .font-scale-6 {
-  @include ms-respond(font-size,6);
-  line-height: 1;
+  @extend %font-scale-6;
 }
