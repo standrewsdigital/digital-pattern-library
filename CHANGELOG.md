@@ -9,24 +9,51 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.18.0
+
+Release date: Wednesday 22 May 2019
+
+### Added
+* Feedback footer option.
+* Page intro pattern.
+* Event list pattern.
+* Landing page example.
+* Responsive typography added to create a consistent set of complimentary font sizes.
+
+### Changed
+* Updated footer style.
+* Container now fills entire width of browser on any width lower than its maximum (1200px).
+* Breadcrumbs margin now applies to entire full width block element to allow for collapsible margins.
+* DPL docmentation updated to include new page intro pattern.
+* H1 now recommended for page title (see page intro pattern).
+* Headings and body text now using responsive typography with em and rem units rather than px.
+
+### Fixed
+* Event tile grid layout copes better with more flexible width container.
+
+### Deprecated
+* Intro pattern is now replaced with new page intro pattern.
+
+---
+
 ## v1.17.2
 
 Release date: Wednesday 24 April 2019
 
 ### Added
-* Open access logo for publications on staff profiles
-* New summary text field added to contact card pattern
+* Open access logo for publications on staff profiles.
+* New summary text field added to contact card pattern.
 
 ### Changed
-* Category header pattern amended to remove background image
-* Heading sizes adjusted
-* Padding amended on KIS widget ahead of cookie control implementation
+* Category header pattern amended to remove background image.
+* Heading sizes adjusted.
+* Padding amended on KIS widget ahead of cookie control implementation.
 
 ### Fixed
-* Grid fix for staff profile pattern
+* Grid fix for staff profile pattern.
 
 ### Deprecated
-* Category header pattern with background image
+* Category header pattern with background image.
 
 ---
 
