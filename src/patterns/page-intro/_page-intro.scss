@@ -105,8 +105,12 @@
 	@extend %font-scale-5;
 	margin: 0 0 ms(-5) 0;
 
-	&--large {
-		@extend %font-scale-6;
+	@media (min-width: 576px) {
+		// Increase size of heading (when larger than mobile 576px)
+		&--large {
+			@include ms-respond(font-size,6);
+  			line-height: 1;
+		}
 	}
 }
 
@@ -118,10 +122,12 @@
 	}
 }
 
-// Increase size of lead paragraph if following large heading
-.page-intro__heading--large + .lead {
-  @extend %font-scale-2;
-}
+	@media (min-width: 576px) {
+		// Increase size of lead paragraph if following large heading (when larger than mobile 576px)
+		.page-intro__heading--large + .lead {
+  			@include ms-respond(font-size,2);
+		}
+	}
 
 /*********************************/
 /* END Pattern: page-intro       */

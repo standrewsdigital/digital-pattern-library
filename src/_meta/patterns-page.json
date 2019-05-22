@@ -91,6 +91,10 @@
                   "img": "assets/docs/images/patterns/buttons.jpg",
                   "url": "patterns/buttons/index.html"
                 },
+                { "name": "Event list",
+                  "img": "assets/docs/images/patterns/event-list.jpg",
+                  "url": "patterns/event-list/index.html"
+                },
                 { "name": "Event tile grid",
                   "img": "assets/docs/images/patterns/event-tile-grid.jpg",
                   "url": "patterns/event-tile-grid/index.html"

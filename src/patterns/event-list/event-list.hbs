@@ -1,0 +1,13 @@
+<!-- Begin pattern: event-list //-->
+			{{#each events}}
+			<div class="event-listing{{status}}">
+				{{{linkblock-start}}}
+					<h3 class="event-listing__heading">{{title}}</h3>
+			        {{#if date-display}}<div class="event-listing__date">{{date-display}}</div>{{/if}}
+			        {{#if time-display}}<div class="event-listing__time">{{time-display}}</div>{{/if}}
+			        {{#if event-location}}<div class="event-listing__location">{{event-location}}</div>{{/if}}	
+			        {{#if event-description}}<div class="event-listing__description">{{event-description}}</div>{{/if}}	
+				{{{linkblock-end}}}
+			</div>
+			{{/each}}
+<!-- End pattern: event-list //-->

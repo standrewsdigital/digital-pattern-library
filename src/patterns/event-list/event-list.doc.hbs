@@ -1,0 +1,42 @@
+---
+title: Event list
+---
+
+<p>Events can be displayed as a list of individual events.</p>
+
+<h2>Rules for event list</h2>
+<ul>
+    <li>Event titles should not exceed 60 characters.</li>
+    <li>The date of the event must be included.</li>
+    <li>The time of the event should be included if known.</li>
+    <li>The location of the event should be included if known.</li>
+    <li>An event that has been cancelled must have the 'Cancelled' tag applied. This is achieved by applying the <code>cancelled</code> class to the element with the <code>event-listing</code> class.</li>
+    <li>An optional description may be used to provide additional key information about the event.</li>
+    <li>The optional description must be plain text only and contain no additional formatting or links.</li>
+    <li>The optional description should have a maximum length of 160 characters. If additional details are required this should be added to a different page and linked to from the event listing.</li>
+</ul>
+
+<h2>Options available</h2>
+<ul>
+{{#event-list-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/event-list-options.options}}
+</ul>
+
+{{#event-list-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+<!--noindex-->
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+    <div class="container">
+    {{> event-list}}
+    </div>
+</div>
+<div class="container">
+	<span class="label label-default">Code</span>
+	<pre><code class="pattern-source html">{{> event-list}}</code></pre>
+<!--endnoindex-->
+{{/event-list-options.options}}
