@@ -91,6 +91,10 @@
                   "img": "assets/docs/images/patterns/buttons.jpg",
                   "url": "patterns/buttons/index.html"
                 },
+                { "name": "Event list",
+                  "img": "assets/docs/images/patterns/event-list.jpg",
+                  "url": "patterns/event-list/index.html"
+                },
                 { "name": "Event tile grid",
                   "img": "assets/docs/images/patterns/event-tile-grid.jpg",
                   "url": "patterns/event-tile-grid/index.html"
@@ -170,10 +174,6 @@
                   "img": "assets/docs/images/patterns/google-maps.jpg",
                   "url": "patterns/google-maps/index.html"
                 },
-                { "name": "Intro",
-                  "img": "assets/docs/images/patterns/intro.jpg",
-                  "url": "patterns/intro/index.html"
-                },
                 { "name": "More news",
                   "img": "assets/docs/images/patterns/more-news.jpg",
                   "url": "patterns/more-news/index.html"
@@ -185,6 +185,10 @@
                 { "name": "Numerical list",
                   "img": "assets/docs/images/patterns/numerical-list.jpg",
                   "url": "patterns/numerical-list/index.html"
+                },
+                { "name": "Page intro",
+                  "img": "assets/docs/images/patterns/page-intro.jpg",
+                  "url": "patterns/page-intro/index.html"
                 },
                 { "name": "Paired values list",
                   "img": "assets/docs/images/patterns/paired-values-list.jpg",
@@ -301,6 +305,10 @@
                 { "name": "Hero banner (old version)",
                   "img": "assets/docs/images/patterns/hero-banner.jpg",
                   "url": "patterns/hero-banner-deprecated/index.html"
+                },
+                { "name": "Intro",
+                  "img": "assets/docs/images/patterns/intro.jpg",
+                  "url": "patterns/intro/index.html"
                 }
             ]
         }

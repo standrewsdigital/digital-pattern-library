@@ -1,0 +1,96 @@
+
+
+
+.event-listing {
+
+    @extend %card;
+    
+
+    .event-listing__details { 
+        background: #fafafa;
+        color: inherit;
+        display: block;
+        font-weight: normal;
+        height: 100%;
+        padding: 1em;
+
+        .event-listing__heading {
+            color: inherit;
+            @extend %font-scale-1;
+            margin: 0 0 0.25rem;
+        }
+
+        .event-listing__description {
+            margin-top:0.25rem;
+            max-width: 48em;  // limit width of text to help readability
+        }
+
+        .event-listing__date,
+        .event-listing__location,
+        .event-listing__time  {
+            font-size: 1rem; // Don't scale up on larger displays
+            font-weight: bold; // Bold to match up bolder iconset
+            margin-bottom:0.25rem;
+            padding-left: ms(1);
+            position: relative;
+            
+            &:before {
+                font-family: "Font Awesome 5 Free";
+                font-size: inherit; // can't have font-size inherit on line above, so need to override
+                text-rendering: auto; // optimizelegibility throws things off #1094
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-style: normal;
+                font-weight: 900;
+                position: absolute;
+                top: -2px;
+                left: 0;
+            }
+        }
+        .event-listing__date {
+            &:before {
+                content: "\f073";
+            }
+        }
+        .event-listing__location {
+            &:before {
+                content: "\f3c5";
+            }
+        }
+        .event-listing__time {
+            &:before {
+                content: "\f017";
+            }
+        }
+    }
+
+    a.event-listing__details {
+        // Hover styles
+        &:hover,
+        &:focus {
+            background: #f0f0f0;
+            text-decoration: none; // override underline hover effect   
+
+            .event-listing__heading {
+                color: #00539b;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    // Cancelled style
+    &.cancelled {
+        .event-listing__details:before {
+            background: #ea1a13;
+            color: #fff;
+            content: 'Cancelled';
+            display: inline-block;
+            @extend %font-scale-minus-1;
+            font-weight: bold;
+            margin-bottom:0.5rem;
+            padding: 3px 9px;
+            text-shadow: none;
+            text-transform: none;
+        }
+    }
+}

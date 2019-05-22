@@ -9,13 +9,13 @@
 
 .container {
   @include container-fixed;
-
+/*
   @media (min-width: $screen-sm-min) {
     width: $container-sm;
   }
   @media (min-width: $screen-md-min) {
     width: $container-md;
-  }
+  }*/ // Kill off fixed width containers 
   @media (min-width: $screen-lg-min) {
     width: $container-lg;
   }

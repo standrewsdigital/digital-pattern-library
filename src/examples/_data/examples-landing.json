@@ -1,0 +1,154 @@
+{
+    "navigation-bar" : {
+        "primary":[
+            {"title": "Study at St Andrews",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Research",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Alumni and donors",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Schools",
+             "url": "#",
+             "selected":false
+            },
+             {"title": "About",
+             "url": "#",
+             "selected":true
+            }
+        ],
+        "secondary":[
+            {"title": "Facts and figures",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Governance",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "History",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Environment",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Professional services",
+             "url": "#",
+             "selected":false
+            },
+             {"title": "The town",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "News and events",
+             "url": "#",
+             "selected":false
+            }
+      ]
+    },
+    "category-header": {
+        "title": "About",
+        "url": "#"
+    },
+    "breadcrumbs": {
+        "parents": [
+            {"title": "University",
+             "url": "#"
+            }
+        ],
+        "current": {
+            "title": "About",
+            "url": "#"
+          }
+    },
+        "intro": {
+                "heading": "Example landing page heading that offers additional information",
+                "lead": "<p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt. Mauris sodales eleifend sodales. Nunc aliquam blandit ipsum ac rutrum.</p>",
+                "bodytext": "<p>Donec congue vulputate massa, vitae pharetra orci vulputate eget. Vestibulum sagittis eros id mauris blandit tincidunt. Sed in pellentesque orci, fermentum tincidunt enim. Morbi a dictum nunc. Nulla a metus ut erat euismod auctor. Fusce finibus arcu sit amet tortor blandit, sed tempus ipsum faucibus. Cras ut lectus iaculis, pellentesque leo nec, accumsan purus. Vivamus nec nunc maximus lorem dapibus volutpat.</p>"        
+              },
+    "navbox-grid": {
+    "grid-row": true,
+    "grid": true,
+    "grid-padding": " collapse-top",
+    "box-size": [
+        {
+            "image": {
+                "url": "../assets/docs/images/examples/about-image-1.jpg",
+                "alt": "Description"
+            },
+            "title": "History and heritage",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "column": "col-sm-4"
+        },
+        {
+            "image": {
+                "url": "../assets/docs/images/examples/about-image-2.jpg",
+                "alt": "Description"
+            },
+            "title": "Governance",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "column": "col-sm-4"
+        },
+        {
+            "image": {
+                "url": "../assets/docs/images/examples/about-image-3.jpg",
+                "alt": "Description"
+            },
+            "title": "Facts and figures",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "column": "col-sm-4"
+        },
+        {
+            "image": {
+                "url": "../assets/docs/images/examples/about-image-4.jpg",
+                "alt": "Description"
+            },
+            "title": "Visiting St Andrews",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "column": "col-sm-4"
+        },
+        {
+            "image": {
+                "url": "../assets/docs/images/examples/about-image-5.jpg",
+                "alt": "Description"
+            },
+            "title": "Community facilites",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "column": "col-sm-4"
+        },
+        {
+            "image": {
+                "url": "../assets/docs/images/examples/about-image-6.jpg",
+                "alt": "Description"
+            },
+            "title": "Sustainability",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "column": "col-sm-4"
+        }
+    ]
+
+},
+    "secondary-call": {
+        "heading":  "News and events",
+        "paragraph":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "action": [
+                {
+                    "text": "News",
+                    "url": "#"
+                },
+                {
+                    "text": "Events",
+                    "url": "#"
+                }
+            ],
+            "classes": "secondary-call--overlay secondary-call--blue-transparent-overlay",
+            "bg-image": "docs/images/cta/hero-banner-image-001.jpg"
+    }
+}

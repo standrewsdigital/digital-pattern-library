@@ -1,0 +1,102 @@
+{
+    "options": [
+
+        {
+            "option-heading": "Single event",
+            "option-description": "<p>A list can consist of a single event.</p>",
+            "option-anchor": "event-list-single",  
+            "bg-color": "",
+            "events": [
+                {
+                    "title": "Piano Masterclass",
+                    "date-display" : "Tuesday 18 September 2018",
+                    "time-display" : "7.30pm to 9.00pm",
+                    "event-location" : "Younger Hall",
+                    "linkblock-start": "<div class=\"event-listing__details\">",
+                    "linkblock-end": "</div>",
+                    "status" : ""
+                }
+            ]
+        },
+
+        {
+            "option-heading": "Single event - linking to further details",
+            "option-description": "<p>An event can link to further details of that event.</p>",
+            "option-anchor": "event-list-link",  
+            "bg-color": "",
+            "events": [
+                {
+                    "title": "Piano Masterclass",
+                    "date-display" : "Tuesday 18 September 2018",
+                    "time-display" : "7.30pm to 9.00pm",
+                    "event-location" : "Younger Hall",
+                    "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
+                    "linkblock-end": "</a>",
+                    "status" : ""
+                }
+            ]
+        },
+
+        {
+            "option-heading": "Event list",
+            "option-description": "<p>Events can be combined to make a list. This example shows a list of events with a variety of available information.</p><ul><li>Events should be ordered in a list by date.</li><li>If an event in a list is linked then all other events must also be linked.</li></ul>",
+            "option-anchor": "event-list",  
+            "bg-color": "",
+            "events": [
+                {
+                    "title": "Piano Masterclass",
+                    "date-display" : "Tuesday 18 September 2018",
+                    "time-display" : "7.30pm to 9.00pm",
+                    "event-location" : "Younger Hall",
+                    "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
+                    "linkblock-end": "</a>",
+                    "status" : ""
+                },
+                {
+                    "title": "Bike to Work Breakfast",
+                    "date-display" : "Friday 21 September 2018",
+                    "time-display" : "8.00am to 9.00am",
+                    "event-location" : "Rector's Café",
+                    "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
+                    "linkblock-end": "</a>",
+                    "status" : " cancelled"
+                },
+                {
+                    "title": "Study Abroad Fair",
+                    "date-display" : "Wednesday 3 October 2018 to Friday 5 October 2018",
+                    "event-location" : "Students' Association",
+                    "event-description" : "Are you in second year and thinking about studying abroad in 2019-2020? If so, come along to our Study Abroad Fair where there will be a presentation followed by a fair during which you can meet other students who have studied abroad.",
+                    "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
+                    "linkblock-end": "</a>",
+                    "status" : ""
+                },
+                {
+                    "title": "An Introduction to The Alexander Technique with Heather Coates",
+                    "date-display" : "Saturday 6 October 2018",
+                    "event-location" : "Younger Hall",
+                    "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
+                    "linkblock-end": "</a>",
+                    "status" : ""
+                },
+                {
+                    "title": "Early Career Women Network Meet-up",
+                    "date-display" : "Monday 29 October 2018 to Tuesday 30 October 2018",
+                    "event-location" : "Hebdomadar's Room",
+                    "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
+                    "linkblock-end": "</a>",
+                    "status" : ""
+                },
+                {
+                    "title": "Choral Evensong",
+                    "date-display" : "Wednesday 7 November 2018",
+                    "time-display" : "7.45pm",
+                    "event-location" : "St Salvator's Chapel",
+                    "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
+                    "linkblock-end": "</a>",
+                    "status" : ""
+                }
+            ]
+        }
+
+    ]
+}

@@ -1,0 +1,134 @@
+
+/*********************************/
+/* BEGIN Pattern: page-intro     */
+/*********************************/
+
+.page-intro__wrapper {
+	margin: calc(1.5vw + 1em) 0 calc(1.5vw + 1em - 1.5625rem) 0; // page gutter / half gutter - 25px in rem @ 16px
+}
+
+.page-intro {
+	display: -ms-grid;
+	display: grid;
+
+	-ms-grid-columns: 15px auto 15px;
+	grid-template-columns: 15px auto 15px;
+	grid-template-rows: auto;
+
+	&--has-media {
+		-ms-grid-rows: auto auto;
+		grid-template-rows: auto auto; //2nd grid row for media
+	}
+	
+	@media (min-width: 992px) and (max-width:1199px){
+		-ms-grid-columns: 15px minmax(30em,80%) 1fr 15px;
+		-ms-grid-rows: auto;
+		grid-template-columns: 15px minmax(30em,80%) 1fr 15px;
+		grid-template-rows: auto;
+
+		&--has-media {
+			-ms-grid-columns: 15px minmax(20em,45%) 1fr 15px;
+			grid-template-columns: 15px minmax(20em,45%) 1fr 15px; //reduce text column width to leave space for media
+		}
+	}
+	
+	@media (min-width: 1200px){
+		-ms-grid-columns: 1fr 750px 390px 1fr;
+		-ms-grid-rows: auto;
+		grid-template-columns: 1fr 750px 390px 1fr;
+		grid-template-rows: auto;
+
+		&-has-media {
+			-ms-grid-columns: 1fr 700px 440px 1fr;
+			grid-template-columns: 1fr 700px 440px 1fr; //reduce text column width to leave space for media
+		}
+	}
+
+	.btn-important {
+		margin-right: ms(2);
+	}
+
+	.search-bar {
+		margin-bottom: 1.5625rem; // 25px @ 16
+	}
+	
+}
+
+.page-intro__text {
+	-ms-grid-column:2;
+	-ms-grid-row:1;
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	@media (max-width: 991px){
+		max-width: 48em; // limit width of text to help readability
+	}
+}
+
+.page-intro__media {
+	-ms-grid-column:2;
+	-ms-grid-row:2;
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+	@media (min-width: 992px) { //Move up alongside text when there is enough space
+		-ms-grid-column:3;
+		-ms-grid-row:1;
+		-ms-grid-column-span: 2;
+
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+
+	.page-intro__media-wrapper {
+		max-width:600px;
+		margin-bottom: 1.5625rem; // 25px @ 16
+
+		@media (min-width: 992px) {
+			margin: 0 15px 1.5625rem $half-gutter;
+		}
+
+		figcaption {
+			padding-bottom: 0;
+		}
+	}
+}
+
+.page-intro__heading {
+	@extend %font-scale-5;
+	margin: 0 0 ms(-5) 0;
+
+	@media (min-width: 576px) {
+		// Increase size of heading (when larger than mobile 576px)
+		&--large {
+			@include ms-respond(font-size,6);
+  			line-height: 1;
+		}
+	}
+}
+
+// Overwrite heading sizes if following hero banner so always a smaller size
+.hero-section + .page-intro__wrapper {
+	.page-intro__heading,
+	.page-intro__heading--large {
+		@extend %font-scale-4;
+	}
+}
+
+	@media (min-width: 576px) {
+		// Increase size of lead paragraph if following large heading (when larger than mobile 576px)
+		.page-intro__heading--large + .lead {
+  			@include ms-respond(font-size,2);
+		}
+	}
+
+/*********************************/
+/* END Pattern: page-intro       */
+/*********************************/

@@ -2,9 +2,12 @@
     "options": [
         {
             "option-heading": "Headings",
-            "option-description": "<p>It is important to think about the structure of content on a page before choosing the appropriate heading. It is not about choosing one that looks nice, rather think about where the heading fits into the overall content hierarchy.</p><p>Implement headings consistently across the entire site to maximise usability.</p><p>Do not skip headings in the structure, for example going from heading 2 to heading 4.</p><ul><li>There must be only one <code>h1</code> element on a page: the heading University of St Andrews; <code>h1</code> must not be used anywhere else on the page.</li><li>You may use as many <code>h2</code> elements as required to denote new sections on a page.</li><li>You may use as many <code>h3</code> to <code>h4</code> elements as required to denote sub-sections of content on a page.</li><li>You must not use <code>h5</code> or <code>h6</code> elements.</li></ul>",
+            "option-description": "<p>It is important to think about the structure of content on a page before choosing the appropriate heading. It is not about choosing one that looks nice, rather think about where the heading fits into the overall content hierarchy.</p><p>Implement headings consistently across the entire site to maximise usability.</p><p>Do not skip headings in the structure, for example going from heading 2 to heading 4.</p><ul><li>There must be only one <code>h1</code> element on a page.</li><li>You may use as many <code>h2</code> elements as required to denote new sections on a page.</li><li>You may use as many <code>h3</code> to <code>h4</code> elements as required to denote sub-sections of content on a page.</li><li>You must not use <code>h5</code> or <code>h6</code> elements.</li></ul>",
             "option-anchor": "headings",
             "headings": [
+                {
+                    "heading": "<h1>Heading 1</h1>"
+                },
                 {
                     "heading": "<h2>Heading 2</h2>"
                 },
@@ -144,6 +147,46 @@
                 {
                     "term": "Cras eget elit tincidunt",
                     "description": "sollicitudin turpis quis, elementum felis."
+                }
+            ]
+        },
+
+{
+            "option-heading": "Font size override classes",
+            "option-description": "<p>These headings use a typographic scale to ensure consistent sizing across different sizes of display.</p>",
+            "option-anchor": "font-sizes",
+            "body-text": [
+                {
+                    "class": "font-scale-minus-1",
+                    "text": "font-scale-minus-1"
+                },
+                {
+                    "class": "font-scale-0",
+                    "text": "font-scale-0"
+                },
+                {
+                    "class": "font-scale-1",
+                    "text": "font-scale-1"
+                },
+                {
+                    "class": "font-scale-2",
+                    "text": "font-scale-2"
+                },
+                {
+                    "class": "font-scale-3",
+                    "text": "font-scale-3"
+                },
+                {
+                    "class": "font-scale-4",
+                    "text": "font-scale-4"
+                },
+                {
+                    "class": "font-scale-5",
+                    "text": "font-scale-5"
+                },
+                {
+                    "class": "font-scale-6",
+                    "text": "font-scale-6"
                 }
             ]
         }

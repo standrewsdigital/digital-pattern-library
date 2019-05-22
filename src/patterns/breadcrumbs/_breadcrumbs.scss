@@ -24,6 +24,20 @@
     }
 }
 
+// This will override above settings to allow for collapsing margins with subsequent content blocks
+.breadcrumbs--wrapper {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    .content {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .breadcrumbs {
+        margin-bottom: 0;
+    }
+}
 
 /*********************************/
 /* END Pattern: breadcrumbs      */

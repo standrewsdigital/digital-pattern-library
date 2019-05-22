@@ -8,7 +8,8 @@
     background: $sta-blue-light;
 
     h2 {
-        margin: 0.6em 0;
+        @extend %font-scale-2;
+        margin: ms(-3) 0;
 
         a {
             font-family: 'PT Serif', georgia, serif;
@@ -22,10 +23,6 @@
             }
         }
 
-
-        @media (max-width: 767px) {
-            font-size: 24px;
-        }
     }
 }
 

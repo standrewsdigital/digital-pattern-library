@@ -13,6 +13,7 @@ IMPORTS AND PATTERNS
 
 @charset "utf-8";
 
+@import 'vendor/modularscale';
 @import 'colors';
 @import 'utilities';
 @import 'fonts';
@@ -40,6 +41,7 @@ IMPORTS AND PATTERNS
 @import 'content-halves/content-halves';
 @import 'content-thirds/content-thirds';
 @import 'datatables/datatables';
+@import 'event-list/event-list';
 @import 'event-tile-grid/event-tile-grid';
 @import 'featured-media/featured-media';
 @import 'featured-news/featured-news';
@@ -69,6 +71,7 @@ IMPORTS AND PATTERNS
 @import 'navigation-grid/navigation-grid';
 @import 'navigation-bar/navigation-bar';
 @import 'numerical-list/numerical-list';
+@import 'page-intro/page-intro';
 @import 'paired-values-list/paired-values-list';
 @import 'panel/panel';
 @import 'search-bar/search-bar';

@@ -20,13 +20,16 @@
 // Body reset
 
 html {
-  font-size: 10px;
+  //font-size: 10px; Remove reset, let the browser default behaviour be used to switch to ems
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 body {
   font-family: $font-family-base;
-  font-size: $font-size-base;
+  font-size: 100%; // Ignore bootstrap and set to use browser default
+  @media (min-width: 576px){
+    font-size: 112.5%; //increase base font to 18px;
+  }
   line-height: $line-height-base;
   color: $text-color;
   background-color: $body-bg;

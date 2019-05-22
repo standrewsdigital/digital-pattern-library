@@ -3,6 +3,10 @@
       "style-type": "success",
       "message": "Example University home page. <a href='../examples.html'>Back to example pages</a>."
     },
+    "landing-page": {
+      "style-type": "success",
+      "message": "Example landing page. <a href='../examples.html'>Back to example pages</a>."
+    },
     "about": {
       "style-type": "success",
       "message": "Example about page. <a href='../examples.html'>Back to example pages</a>."
