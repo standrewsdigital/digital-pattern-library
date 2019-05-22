@@ -71,8 +71,7 @@
         "intro": {
                 "heading": "Example landing page heading that offers additional information",
                 "lead": "<p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt. Mauris sodales eleifend sodales. Nunc aliquam blandit ipsum ac rutrum.</p>",
-                "bodytext": "<p>Donec congue vulputate massa, vitae pharetra orci vulputate eget. Vestibulum sagittis eros id mauris blandit tincidunt. Sed in pellentesque orci, fermentum tincidunt enim. Morbi a dictum nunc. Nulla a metus ut erat euismod auctor. Fusce finibus arcu sit amet tortor blandit, sed tempus ipsum faucibus. Cras ut lectus iaculis, pellentesque leo nec, accumsan purus. Vivamus nec nunc maximus lorem dapibus volutpat.</p>",
-                "follow-hero": true        
+                "bodytext": "<p>Donec congue vulputate massa, vitae pharetra orci vulputate eget. Vestibulum sagittis eros id mauris blandit tincidunt. Sed in pellentesque orci, fermentum tincidunt enim. Morbi a dictum nunc. Nulla a metus ut erat euismod auctor. Fusce finibus arcu sit amet tortor blandit, sed tempus ipsum faucibus. Cras ut lectus iaculis, pellentesque leo nec, accumsan purus. Vivamus nec nunc maximus lorem dapibus volutpat.</p>"        
               },
     "navbox-grid": {
     "grid-row": true,
