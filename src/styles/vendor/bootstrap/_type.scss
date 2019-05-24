@@ -68,7 +68,7 @@ margin-bottom: ($line-height-computed / 2);
   }
 }
 
-h1, .h1 { @extend %font-scale-5; }
+h1, .h1 { @extend %font-scale-4; }
 h2, .h2 { @extend %font-scale-3; }
 h3, .h3 { @extend %font-scale-2; }
 h4, .h4 { @extend %font-scale-1; }
