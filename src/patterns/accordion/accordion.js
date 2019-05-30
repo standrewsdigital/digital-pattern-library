@@ -34,7 +34,8 @@ $('.accordion-group').each(function() {
 
 
 // Toggle an accordion open or closed when toggle wrapper is clicked.
-$('.accordion-item__toggle').click(function() {
+//$('.accordion-item__toggle').click(function() {
+$(document).on('click', '.accordion-item__toggle', function(){
     // Toggle the accordion.
     $(this).next('.accordion-item__content').slideToggle(200, "linear");
     $(this).toggleClass( "open" ); // add class for styling.
@@ -76,7 +77,8 @@ $('.accordion-item__toggle').click(function() {
 });
 
 // Toggle all accordions in a group when group toggle is clicked.
-$('.accordion-group__toggle').click(function() {
+//$('.accordion-group__toggle').click(function() {
+$(document).on('click', '.accordion-group__toggle', function(){
 
     // Swap the current state of the toggle button
     var state = $(this).attr('aria-expanded') === 'false' ? true : false;
