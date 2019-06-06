@@ -9,6 +9,16 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.18.1
+
+Release date: Thursday 6 June 2019
+
+### Fixed
+* Security dependencies.
+* Change scope of how accordion is selected in jquery.
+
+---
+
 ## v1.18.0
 
 Release date: Wednesday 22 May 2019
