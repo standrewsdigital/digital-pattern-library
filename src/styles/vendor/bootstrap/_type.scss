@@ -32,7 +32,10 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-h1, .h1,
+h1, .h1 {
+  margin: 0 0 ms(-5) 0;
+}
+
 h2, .h2,
 h3, .h3 {
 
@@ -80,12 +83,7 @@ h6, .h6 { @extend %font-scale-0; }
   @extend %font-scale-6; 
 }
 
-// Clear top margin of everything inc. headings when at top of content block
-.content {
-  *:first-child {
-    margin-top:0;
-  }
-}
+
 // Body text
 // -------------------------
 
@@ -346,4 +344,13 @@ address {
 }
 .font-scale-6 {
   @extend %font-scale-6;
+}
+
+// Wrapper class to control CMS body text
+.content {
+/* Clear top margin of everything inc. headings when at top of content block
+  *:first-child {
+    margin-top:0;
+  }
+  */
 }

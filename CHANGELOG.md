@@ -9,6 +9,18 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.18.2
+
+Release date: Tuesday 11 June 2019
+
+### Fixed
+* Security dependencies.
+
+### Changed
+* Minor amends to navigation grid pattern.
+
+---
+
 ## v1.18.1
 
 Release date: Thursday 6 June 2019
