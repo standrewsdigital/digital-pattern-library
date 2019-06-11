@@ -4,6 +4,8 @@
             "option-heading": "Links with descriptions",
             "option-description": "<p>A grid of links with associated descriptions.</p>",
             "option-anchor": "with-descriptions",
+            "heading": "Heading label",
+            "sr-only": " sr-only",
             "links":[
                 {
                     "title": "Admissions",
@@ -45,6 +47,44 @@
             "option-heading": "Links only",
             "option-description": "<p>A simple grid of links.</p>",
             "option-anchor": "links-only",
+            "heading": "Heading label",
+            "sr-only": " sr-only",
+            "links": [
+                {
+                    "title": "Undergraduate",
+                    "description-text" : false
+                },
+                {
+                    "title": "Postgraduate",
+                    "description-text" : false
+                },
+                {
+                    "title": "Non-degree courses",
+                    "description-text" : false
+                },
+                {
+                    "title": "Study abroad",
+                    "description-text" : false
+                },
+                {
+                    "title": "International",
+                    "description-text" : false
+                },
+                {
+                    "title": "Access and outreach",
+                    "description-text" : false
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "With visible heading",
+            "option-description": "<p>While the heading label should always be provided for screen reader users it may also be appropriate to display it.</p>",
+            "option-anchor": "visible-heading",
+            "heading": "Heading label",
             "links": [
                 {
                     "title": "Undergraduate",

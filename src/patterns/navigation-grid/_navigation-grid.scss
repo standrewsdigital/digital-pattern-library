@@ -7,15 +7,28 @@
 	// Dynamic padding based on size of viewport
 	padding: $page-gutter 0;
 
+	// Options to collapse padding
+	&.collapse-top {
+		padding-top: 0;
+	}
+	&.collapse-bottom {
+		padding-bottom: 0;
+	}
+
 	.navigation-grid-list {
 		list-style: none;
 		margin: 0;
 		padding: 0;
 	}
 
+.navigation-grid__heading {
+	@extend %font-scale-3; 
+	margin-top:0;
+}
+
 	.navigation-grid-item {
 
-		margin: 10px 0;
+		margin: 0;
 		
 		/* 
 		Clear respective items based on the number of columns
@@ -47,12 +60,9 @@
 	}
 
 	.navigation-grid-item__heading {
-		// Replace with dynamic font sizes
-		font-size: 18px;
-		@media (min-width: 576px) {
-			font-size: 22px;
-		}
-		margin: 0 0 4px 0;
+		
+		@extend %font-scale-1; 
+		margin-bottom:0.25rem; // - 4px in rem @ 16px
 
 		a {
 			text-decoration:underline;
@@ -60,11 +70,7 @@
 	}
 
 	.navigation-grid-item__description {
-		// Replace with dynamic font sizes
-		font-size: 14px;
-		@media (min-width: 576px) {
-			font-size: 16px;
-		}
+		font-size: 1rem;
 		margin: 0;
 	}
 
