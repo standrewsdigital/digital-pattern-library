@@ -41,11 +41,11 @@ $base-spacing: 1em;
 $large-spacing: $base-spacing*2;
 $small-spacing: $base-spacing/2;
 
-$page-gutter: calc(3vw + 1em);
-$half-gutter: calc(1.5vw + 1em);
-$third-gutter: calc(1vw + 1em);
+$page-gutter: calc(3vw + 1rem);
+$half-gutter: calc(1.5vw + 1rem);
+$third-gutter: calc(1vw + 1rem);
 // Gutter transformations
-$page-gutter-overflow: calc((3vw + 1em) - 30px); //Removes fixed size from dynamic gutter
+$page-gutter-overflow: calc((3vw + 1rem) - 30px); //Removes fixed size from dynamic gutter
 
 
 // Spacing helper classes

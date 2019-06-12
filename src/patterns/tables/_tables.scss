@@ -4,7 +4,20 @@
 /*********************************/
 
 .table {
-    margin-bottom: $page-gutter;
+    margin-bottom: $half-gutter;
+}
+
+// Make table look like normal grid of text
+table.course-list {
+	margin-bottom: 1.5625rem; // 25px in rem @ 16px
+
+	tr:nth-child(odd) {
+    background-color: transparent;
+	}
+
+	td {
+	    padding: 5px 0;
+	}
 }
 
 /*********************************/

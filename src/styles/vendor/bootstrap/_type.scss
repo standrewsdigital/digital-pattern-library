@@ -346,6 +346,11 @@ address {
   @extend %font-scale-6;
 }
 
+// Page heading - main h1 of a page
+.page-heading {
+  margin-top: $half-gutter;
+}
+
 // Wrapper class to control CMS body text
 .content {
 /* Clear top margin of everything inc. headings when at top of content block
@@ -353,4 +358,8 @@ address {
     margin-top:0;
   }
   */
+
+  .page-heading {
+    margin-top: 0;
+  }
 }
