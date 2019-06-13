@@ -2,7 +2,7 @@
     "options" : [
         {
             "option-heading": "Search bar",
-            "option-description": "<p>The standalone search bar element is the minimum implementaton for a search form.</p><ul><li>The search bar must only appear as part of the <a href='../header/index.html'>header</a> pattern.</li><li>The placeholder text must indicate the scope of what will be searched.</li></ul>",
+            "option-description": "<p>The standalone search bar element is the minimum implementaton for a search form.</p><ul><li>The placeholder text must indicate the scope of what will be searched.</li></ul>",
             "option-anchor": "search-bar-default",
             "placeholder": "Search the University website",
             "default": true,
@@ -30,7 +30,8 @@
             "placeholder": "Search by keyword or phrase",
             "search-header": "News search",
             "input-id": "banner-search-blue",
-            "search-button": true
+            "search-button": true,
+            "clear-button-type": " clear-icon__resubmit"
          },
         {
             "option-heading": "Search banner (background image)",
@@ -94,7 +95,8 @@
             "search-header": "News search",
             "search-subtext": "Search through our entire news archive",
             "input-id": "news-search",
-            "search-button": true
+            "search-button": true,
+            "clear-button-type": " clear-icon__results"
          },
          {
             "option-heading": "Search banner with tag buttons (light blue)",
@@ -107,7 +109,8 @@
             "search-header": "News search",
             "search-subtext": "Search through our entire news archive",
             "input-id": "news-search",
-            "search-button": true
+            "search-button": true,
+            "clear-button-type": " clear-icon__results"
          },
         {
             "option-heading": "Search banner with results",
@@ -116,10 +119,12 @@
             "background-color": "search-bar__grey",
             "full-width": true,
             "results": true,
+            "nosubmit": " form-nosubmit",
             "search-header": "Course search",
             "search-subtext": "Search for all the courses we offer",
             "placeholder": "Start typing to see courses",
-            "input-id": "form-banner-search-grey"
+            "input-id": "form-banner-search-grey",
+            "clear-button-type": " clear-icon__results"
          },
         {
             "option-heading": "Search banner with results (light blue)",
@@ -128,10 +133,12 @@
             "background-color": "search-bar__blue",
             "full-width": true,
             "results": true,
+            "nosubmit": " form-nosubmit",
             "search-header": "Course search",
             "search-subtext": "Search for all the courses we offer",
             "placeholder": "Start typing to see courses",
-            "input-id": "form-banner-search-blue"
+            "input-id": "form-banner-search-blue",
+            "clear-button-type": " clear-icon__results"
          },
         {
             "option-heading": "Inline search banner",

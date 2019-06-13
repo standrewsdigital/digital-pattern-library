@@ -60,9 +60,8 @@
 
         ul li label {
             cursor: pointer;
-            height: 30px;
             margin: 10px auto;
-            padding: 5px 25px 25px 60px;
+            padding: 5px 25px 5px 60px;
             position: relative;
             -webkit-transition: all 0.25s linear;
                     transition: all 0.25s linear;
@@ -75,7 +74,7 @@
             border-radius: 100%;
             height: 25px;
             position: absolute;
-            top:  15px;
+            top:  13px;
             left: 20px;
             width: 25px;
             -webkit-transition: border .25s linear;
@@ -103,6 +102,25 @@
         ul li input[type=radio]:focus ~ .check, ul li input[type=checkbox]:focus ~ .check {
             box-shadow: 0 0 0 4px $sta-yellow;
         }
+
+        // Smaller condensed size
+        &--small {
+            ul li label {
+                font-size: 1rem;
+                font-weight: normal;
+                margin: 0 auto;
+                padding: 8px 25px 8px 40px;
+            }
+
+            ul li .check {
+                border-width:2px;
+                height: 15px;
+                width: 15px;
+                font-size:10px;
+                top: 11px;
+                left: 15px;
+            }
+        }
     }
 
     .inline ul li {
@@ -121,6 +139,62 @@
             top: 1px;
             left: 1px;
         }
+    }
+
+    // Search field with clear button
+    // Remove on Edge
+    input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+    input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+    .search-box {
+        padding-right:60px;
+    }
+
+    .clear-icon {
+        border:none;
+        background-color: transparent;
+        display: inline-block;
+        vertical-align: middle;
+        outline: 0;
+        cursor: pointer;
+        position:absolute;
+        top:0;
+        bottom:0;
+        right: 50px;
+        z-index:10;
+        margin: 0;
+        padding: 0;
+    }
+    .clear-icon:after {
+        color: #202024;
+        content: "X";
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        background-color: transparent;
+        z-index:10;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border-radius: 50%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        line-height:40px;
+    }
+
+        .clear-icon:hover:after,
+        .clear-icon:focus:after {
+            background-color: $sta-grey-light;
+        }
+    .search-box:not(:valid) ~ .clear-icon {
+        display: none;
+    }
+
+    .input-group-btn ~ .clear-icon {
+        right:100px;
     }
 }
 

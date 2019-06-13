@@ -329,10 +329,26 @@ function htmlDecode(value) {
     }
 
     // Clear the search form(s) when the page is loaded.
-    $("#form-banner-search-blue, #form-banner-search-grey, #form-banner-search-names, #form-banner-pattern-search, #news-search").val('');
+    $("#form-banner-search-blue, #form-banner-search-grey, #form-banner-search-names, #form-banner-pattern-search, #news-search, .search-box").val('');
+
+    // Avoid submitting search that only produces on page results using entered keywords
+    $(".form-nosubmit").submit(function(e) {
+        e.preventDefault();
+    });
+
+    // Clear button not only resets form but resubmits it. Useful if you want to wipe any shown results.
+    $(".clear-icon__resubmit").click(function(){
+        $(this.form).next(".search-box").val('');
+        $(this.form).submit();
+    });
+
+    // Clear button that cleans up suggested results
+    $(".clear-icon__results").click(function(){
+        $(this).parent('.input-group').next('.results').fadeOut('fast');
+    });
 
     // Search the data using the user text input.
-    $("#form-banner-search-blue, #form-banner-search-grey, #form-banner-search-names, #form-banner-pattern-search, #news-search").keyup(function() {
+    $("#form-banner-search-blue, #form-banner-search-grey, #form-banner-search-names, #form-banner-pattern-search, #news-search, .search-box").keyup(function() {
 
         // Set the form id and search term (user input).
         var form_id = this.id;
@@ -358,7 +374,7 @@ function htmlDecode(value) {
                 }
             }
             else {
-                $(this).parent('.form-group').next('.results').slideDown('slow');
+                $(this).parent('.input-group').next('.results').slideDown('slow');
             }
 
         } else {
@@ -367,8 +383,8 @@ function htmlDecode(value) {
             if (form_id === "news-search") {
                 $(this).parent('.input-group').next('.results').fadeOut('slow');
             } else {
-                $(this).parent('.form-group').next('.results').slideUp('slow');
-                $(this).parent('.form-group').next('.results').children('.row').children('.col-md-6.left-column, .col-md-6.right-column').html('');
+                $(this).parent('.input-group').next('.results').slideUp('slow');
+                $(this).parent('.input-group').next('.results').children('.row').children('.col-md-6.left-column, .col-md-6.right-column').html('');
             }
         }
 
@@ -412,11 +428,11 @@ function htmlDecode(value) {
         right_results = right_results.join("");
 
         // Make sure the results div is empty before adding new results.
-        $('#' + form_id).parent('.form-group').next('.results').children('.row').children('.col-md-6.left-column, .col-md-6.right-column').html('');
+        $('#' + form_id).parent('.input-group').next('.results').children('.row').children('.col-md-6.left-column, .col-md-6.right-column').html('');
 
         // Show error message if no results have been found.
         if ( left_results.length === 0 && right_results.length === 0 ) {
-            $('#' + form_id).parent('.form-group').next('.results').children('.row').children('.col-md-6.left-column').html('No results found, please try again.');
+            $('#' + form_id).parent('.input-group').next('.results').children('.row').children('.col-md-6.left-column').html('No results found, please try again.');
         } else {
             // Add the results to the left column of the results div.
             if ( left_results.length > 0 ) {
@@ -447,7 +463,7 @@ function htmlDecode(value) {
         if ( form_id === 'news-search' ) {
             $('input#' + form_id).parent('.input-group').next('.results').children('.row').children('.col-md-12').html(list);
         } else {
-            $('#' + form_id).parent('.form-group').next('.results').children('.row').children('.col-md-6.left-column').html(list);
+            $('#' + form_id).parent('.input-group').next('.results').children('.row').children('.col-md-6.left-column').html(list);
         }
 
     }
@@ -455,7 +471,7 @@ function htmlDecode(value) {
     function add_right_results_list( form_id, list ) {
 
         list = "<h2>Postgraduate courses</h2>" + list;
-        $('#' + form_id).parent('.form-group').next('.results').children('.row').children('.col-md-6.right-column').html(list);
+        $('#' + form_id).parent('.input-group').next('.results').children('.row').children('.col-md-6.right-column').html(list);
 
     }
 
