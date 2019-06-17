@@ -336,6 +336,13 @@ function htmlDecode(value) {
         e.preventDefault();
     });
 
+    // Move clear button further left if appearing alongside a search button
+    $(".clear-icon").each(function() {
+        if($(this).next().hasClass('input-group-btn')) { 
+            $(this).addClass('clear-icon--indent'); 
+        }
+    });
+
     // Clear button not only resets form but resubmits it. Useful if you want to wipe any shown results.
     $(".clear-icon__resubmit").click(function(){
         $(this.form).next(".search-box").val('');

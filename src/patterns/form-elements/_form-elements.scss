@@ -147,7 +147,7 @@
     input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
 
     .search-box {
-        padding-right:60px;
+        padding-right:50px;
     }
 
     .clear-icon {
@@ -164,10 +164,16 @@
         z-index:10;
         margin: 0;
         padding: 0;
+        
+        // Jquery adds this class if a search button is on the same row
+        &--indent {
+            right: 100px;
+        }
     }
     .clear-icon:after {
         color: #202024;
-        content: "X";
+        font-family: "Font Awesome 5 Free";
+        content: '\f00d';
         display: block;
         width: 40px;
         height: 40px;
@@ -189,12 +195,8 @@
         .clear-icon:focus:after {
             background-color: $sta-grey-light;
         }
-    .search-box:not(:valid) ~ .clear-icon {
+    .search-box:invalid ~ .clear-icon {
         display: none;
-    }
-
-    .input-group-btn ~ .clear-icon {
-        right:100px;
     }
 }
 
