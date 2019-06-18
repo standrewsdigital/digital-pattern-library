@@ -200,6 +200,45 @@
     }
 }
 
+// Standalone checkbox icon because the Font Awesome one is solid colour only
+.checkbox-icon {
+    background-color: white;
+    border: 3px solid $sta-grey-dark;
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    width: 25px;
+
+    &--selected:after {
+        color: $sta-grey-dark;
+        content: '\f00c';
+        font-family: "Font Awesome 5 Free";
+        font-size:16px;
+        position:absolute;
+        top: -3px;
+        left: 0;
+    }
+}
+
+.checkbox-icon__small {
+    background-color: white;
+    border: 2px solid $sta-grey-dark;
+    display: inline-block;
+    height: 15px;
+    position: relative;
+    width: 15px;
+
+    &--selected:after {
+        color: $sta-grey-dark;
+        content: '\f00c';
+        font-family: "Font Awesome 5 Free";
+        font-size:11px;
+        position:absolute;
+        top: -3px;
+        left: 0;
+    }
+}
+
 .ui-datepicker {
     z-index: 1000 !important;
 }
