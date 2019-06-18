@@ -322,28 +322,36 @@ address {
 // MODULAR SCALE classes
 // These overwrite existing sizes
 .font-scale-minus-1 {
-  @extend %font-scale-minus-1;
+  @include ms-respond(font-size,-1,$ms-important: true);
+  line-height:inherit !important;
 }
 .font-scale-0 {
-  @extend %font-scale-0;
+  @include ms-respond(font-size,0,$ms-important: true);
+  line-height:inherit !important;
 }
 .font-scale-1 {
-  @extend %font-scale-1;
+  @include ms-respond(font-size,1,$ms-important: true);
+  line-height:inherit !important;
 }
 .font-scale-2 {
-  @extend %font-scale-2;
+  @include ms-respond(font-size,2,$ms-important: true);
+  line-height:inherit !important;
 }
 .font-scale-3 {
-  @extend %font-scale-3;
+  @include ms-respond(font-size,3,$ms-important: true);
+  line-height:1.3 !important;
 }
 .font-scale-4 {
-  @extend %font-scale-4;
+  @include ms-respond(font-size,4,$ms-important: true);
+  line-height: 1.2 !important;
 }
 .font-scale-5 {
-  @extend %font-scale-5;
+  @include ms-respond(font-size,5,$ms-important: true);
+  line-height: 1.1 !important;
 }
 .font-scale-6 {
-  @extend %font-scale-6;
+  @include ms-respond(font-size,6,$ms-important: true);
+  line-height: 1 !important;
 }
 
 // Page heading - main h1 of a page

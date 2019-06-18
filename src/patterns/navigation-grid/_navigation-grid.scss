@@ -28,7 +28,7 @@
 
 	.navigation-grid-item {
 
-		margin: 0;
+		margin: 0.625rem 0 0 0; // 10px in rem @ 16px
 		
 		/* 
 		Clear respective items based on the number of columns
@@ -37,9 +37,8 @@
 
 		// 1 column margin collapse when stacked
 		@media (max-width: 767px) {
-			margin-top: 20px;
 			&:nth-child(1) {
-				margin-top: 10px;
+				margin-top: 0;
 			}
 		}
 
@@ -48,6 +47,10 @@
 			&:nth-child(2n+1) {
 				clear:left;
 			}
+			&:nth-child(1),
+			&:nth-child(2) {
+				margin-top: 0;
+			}
 		}
 		
 		// 3 columns
@@ -55,14 +58,19 @@
 			&:nth-child(3n+1) {
 				clear:left;
 			}
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3) {
+				margin-top: 0;
+			}
 		}
 
 	}
 
 	.navigation-grid-item__heading {
-		
-		@extend %font-scale-1; 
-		margin-bottom:0.25rem; // - 4px in rem @ 16px
+  		@include ms-respond(font-size,1);
+  		line-height: 1.3em;
+		margin: 0;
 
 		a {
 			text-decoration:underline;
