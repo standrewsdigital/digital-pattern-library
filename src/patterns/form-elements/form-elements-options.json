@@ -146,15 +146,6 @@
         },
 
 
-
-        {
-            "option-heading": "Checkbox icons",
-            "option-anchor": "checkbox-icons",
-            "option-description": "<p>A selection of checkbox icons that can be used outside of a form context.</p>",
-            "checkbox-icons": true
-        },
-
-
         {
             "option-heading": "Date picker",
             "option-anchor": "date-picker",
