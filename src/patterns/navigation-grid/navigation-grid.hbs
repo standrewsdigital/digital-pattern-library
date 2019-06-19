@@ -2,16 +2,16 @@
 <nav class="navigation-grid" role="navigation" aria-labelledby="{{option-anchor}}">
 	<div class="container">
 		<h2 id="{{option-anchor}}" class="navigation-grid__heading{{sr-only}}">{{heading}}</h2>
-		<div class="row">
+		<ul class="navigation-grid__items{{vertical}}">
 		{{#links}}
-			<div class="navigation-grid-item col-sm-6 col-md-4">
+			<li class="navigation-grid-item">
 				<h3 class="navigation-grid-item__heading"><a href="#">{{title}}</a></h3>
 				{{#if description-text}}
 				<p class="navigation-grid-item__description">{{description}}</p>
 				{{/if}}
-			</div>
+			</li>
 		{{/links}}
-		</div>
+		</ul>
 	</div>
 </nav>
 <!-- End pattern: navigation-grid //-->

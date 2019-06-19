@@ -39,10 +39,6 @@
                 }
             ]
         },
-
-
-
-
         {
             "option-heading": "Links only",
             "option-description": "<p>A simple grid of links.</p>",
@@ -85,6 +81,7 @@
             "option-description": "<p>While the heading label should always be provided for screen reader users it may also be appropriate to display it.</p>",
             "option-anchor": "visible-heading",
             "heading": "Heading label",
+            "vertical": " navigation-grid__items--vertical",
             "links": [
                 {
                     "title": "Undergraduate",
@@ -109,6 +106,92 @@
                 {
                     "title": "Access and outreach",
                     "description-text" : false
+                }
+            ]
+        },
+        {
+            "option-heading": "Ordered vertically by column",
+            "option-description": "<p>The default placement of navigation items is horizontally, with an remaining moving onto the subsequent rows. However it is possible to change this ordering to a vertical by column order by adding the class <code>.navigation-grid__items--vertical</code>.</p>",
+            "option-anchor": "vertical-order",
+            "heading": "Heading label",
+            "sr-only": " sr-only",
+            "vertical": " navigation-grid__items--vertical",
+            "links":[
+                {
+                    "title": "Admissions",
+                    "description-text" : true,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation."
+                },
+                {
+                    "title": "English Language Teaching",
+                    "description-text" : true,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                },
+                {
+                    "title": "Environmental, Health and Safety Services",
+                    "description-text" : true,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation."
+                },
+                {
+                    "title": "Museum Collections",
+                    "description-text" : true,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                },
+                {
+                    "title": "Research and Innovation Services",
+                    "description-text" : true,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation."
+                },
+                {
+                    "title": "Student Services",
+                    "description-text" : true,
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation."
+                }
+            ]
+        },
+        {
+            "option-heading": "Test",
+            "option-description": "<p>The default placement of navigation items is horizontally, with an remaining moving onto the subsequent rows. However it is possible to change this ordering to a vertical by column order by adding the class <code>.navigation-grid__items--vertical</code>.</p>",
+            "option-anchor": "test",
+            "heading": "Heading label",
+            "sr-only": " sr-only",
+            "vertical": " navigation-grid__items--vertical",
+            "links":[
+                {
+                    "title": "1"
+                },
+               {
+                    "title": "2"
+                },
+                 {
+                    "title": "3"
+                },
+                 {
+                    "title": "4"
+                },
+                 {
+                    "title": "5"
+                },
+                 {
+                    "title": "6"
+                },
+                 {
+                    "title": "7"
+                },
+                 {
+                    "title": "8"
+                },
+                 {
+                    "title": "9"
+                },
+                 {
+                    "title": "10"
+                },
+                 {
+                    "title": "11"
+                },
+                 {
+                    "title": "12"
                 }
             ]
         }
