@@ -1,5 +1,5 @@
-<div class="container dpl-form">
 {{#if select-box}}
+<div class="container dpl-form">
 <div class="row">
     <div class="col-md-6">
         <div class="form-group select-box">
@@ -20,7 +20,9 @@
         </div>
     </div>
 </div>
+</div>
 {{else if radio-check}}
+<div class="container dpl-form">
 <div class="form-group">
     <div class="{{class}}">
 	    <label>Options</label>
@@ -42,8 +44,10 @@
 	</div>
 	{{/if}}
 </div>
+</div>
 {{else}}
 {{#if field-legend}}
+<div class="container dpl-form">
 <fieldset>
 <legend>{{field-legend}}</legend>
 {{/if}}
@@ -73,13 +77,15 @@
 	{{/each}}
 {{#if field-legend}}
 </fieldset>
+</div>
 {{/if}}
 {{/if}}
 	{{#if submit-button}}
+	<div class="container dpl-form">
 	<div class="row">
 	    <div class="col-md-6">
 			<button type="submit" class="btn btn-lg btn-primary">Submit</button>
 		</div>
 	</div>
-	{{/if}}
 </div>
+	{{/if}}

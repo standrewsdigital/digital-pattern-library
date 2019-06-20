@@ -15,54 +15,21 @@
 		padding-bottom: 0;
 	}
 
-	.navigation-grid-list {
-		list-style: none;
-		margin: 0;
+	.navigation-grid__heading {
+		@extend %font-scale-3; 
+		margin-top: 0;
+	}
+
+	// Reset grid items
+	.navigation-grid-item {
+		margin: 0 0 ms(-1) 0;
 		padding: 0;
 	}
 
-.navigation-grid__heading {
-	@extend %font-scale-3; 
-	margin-top:0;
-}
-
-	.navigation-grid-item {
-
-		margin: 0;
-		
-		/* 
-		Clear respective items based on the number of columns
-		This should be replaced by CSS grids asap
-		*/
-
-		// 1 column margin collapse when stacked
-		@media (max-width: 767px) {
-			margin-top: 20px;
-			&:nth-child(1) {
-				margin-top: 10px;
-			}
-		}
-
-		// 2 columns
-		@media (max-width: 991px) and (min-width: 768px) {
-			&:nth-child(2n+1) {
-				clear:left;
-			}
-		}
-		
-		// 3 columns
-		@media (min-width: 992px) {
-			&:nth-child(3n+1) {
-				clear:left;
-			}
-		}
-
-	}
-
 	.navigation-grid-item__heading {
-		
-		@extend %font-scale-1; 
-		margin-bottom:0.25rem; // - 4px in rem @ 16px
+  		@include ms-respond(font-size,1);
+  		line-height: 1.3em;
+		margin: 0;
 
 		a {
 			text-decoration:underline;
@@ -72,6 +39,118 @@
 	.navigation-grid-item__description {
 		font-size: 1rem;
 		margin: 0;
+		padding-bottom: ms(-2); //extra space under descriptions
+	}
+
+	.navigation-grid__items {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		// Grid layout that changes based on width
+		
+		@media (max-width: 991px) and (min-width: 768px) {
+			// 2 columns
+			// Fallback support if grid not supported
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			.navigation-grid-item {
+				width: calc(50% - 20px);
+			}
+
+			@supports (display: grid) {
+				display:grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-column-gap: 30px;
+				grid-row-gap: 1em;
+				grid-template-rows: auto;
+
+				.navigation-grid-item {
+					width: auto; // Reset as grid handles this
+					margin-bottom: 0;
+				}
+			}
+
+		}
+
+		@media (min-width: 992px) {
+			// 3 columns
+			// Fallback support if grid not supported
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			.navigation-grid-item {
+				width: calc(33.33333% - 20px);
+			}
+
+			@supports (display: grid) {
+				display:grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-column-gap: 30px;
+				grid-row-gap: 1em;
+				grid-template-rows: auto;
+
+				.navigation-grid-item {
+					width: auto; // Reset as grid handles this
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		// Vertical grid
+		&--vertical{
+			--rows2: 20; // Large default to stack if js fails
+			--rows3: 20; // Large default to stack if js fails
+
+			.navigation-grid-item {
+				width: auto;
+				-webkit-column-break-inside: avoid;
+          		page-break-inside: avoid;
+               	break-inside: avoid;
+			}
+
+			@media (max-width: 991px) and (min-width: 768px) {
+				display:block;
+				column-count: 2;
+
+				@supports (display: grid) {
+					display:grid;
+					grid-template-rows: repeat(var(--rows2), auto);
+					grid-auto-flow: column;
+				}
+			}
+			@media (min-width: 992px) {
+				display:block;
+				column-count: 3;
+				@supports (display: grid) {
+					display:grid;
+					grid-template-rows: repeat(var(--rows3), auto);
+					grid-auto-flow: column;
+				}
+			}
+		}
+		
+		// Vertical flow in columns
+		&--vertical-flow {
+			.navigation-grid-item {
+				margin-bottom: ms(-1);
+				width: auto;
+				-webkit-column-break-inside: avoid;
+          		page-break-inside: avoid;
+               	break-inside: avoid;
+			}	
+			@media (max-width: 991px) and (min-width: 768px) {
+				display:block;
+				column-count: 2;
+			}
+			@media (min-width: 992px) {
+				display:block;
+				column-count: 3;
+			}
+		}
 	}
 
 }

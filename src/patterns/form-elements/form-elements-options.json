@@ -72,8 +72,78 @@
                 }
             ]
         },
+        {
+            "option-heading": "Checkboxes inline (small)",
+            "option-anchor": "checkboxes-inline-small",
+            "option-description": "<p>Smaller checkboxes can be used when these elements need to be less visually prominent.</p>",
+            "radio-check": true,
+            "class": "checkbox-box checkbox-box--small inline",
+            "option-text": "Please choose one or more options:",
+            "option-boxes": [
+                {
+                    "id": "option1-inline-small",
+                    "type": "checkbox",
+                    "label": "One",
+                    "option-value": "default",
+                    "name": "option1-inline-small",
+                    "checkbox": true
+                },
+                {
+                    "id": "option2-inline-small",
+                    "type": "checkbox",
+                    "label": "Two",
+                    "option-value": "default",
+                    "name": "option2-inline-small",
+                    "checkbox": true
+                },
+                {
+                    "id": "option3-inline-small",
+                    "type": "checkbox",
+                    "label": "Three",
+                    "option-value": "default",
+                    "name": "option2-inline-small",
+                    "checkbox": true
+                }
+            ]
+        },
 
 
+
+
+        {
+            "option-heading": "Checkboxes stacked (small)",
+            "option-anchor": "checkboxes-stacked-small",
+            "option-description": "<p>Smaller checkboxes can be used when these elements need to be less visually prominent.</p>",
+            "radio-check": true,
+            "class": "checkbox-box checkbox-box--small",
+            "option-text": "Please choose one or more options:",
+            "option-boxes": [
+                {
+                    "id": "option1-stack-small",
+                    "type": "checkbox",
+                    "label": "One",
+                    "option-value": "default",
+                    "name": "option1-stack-small",
+                    "checkbox": true
+                },
+                {
+                    "id": "option2-stack-small",
+                    "type": "checkbox",
+                    "label": "Two",
+                    "option-value": "default",
+                    "name": "option2-stack-small",
+                    "checkbox": true
+                },
+                {
+                    "id": "option3-stack-small",
+                    "type": "checkbox",
+                    "label": "Three",
+                    "option-value": "default",
+                    "name": "option3-stack-small",
+                    "checkbox": true
+                }
+            ]
+        },
 
 
         {

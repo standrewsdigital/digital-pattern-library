@@ -39,10 +39,6 @@
                 }
             ]
         },
-
-
-
-
         {
             "option-heading": "Links only",
             "option-description": "<p>A simple grid of links.</p>",
@@ -85,6 +81,7 @@
             "option-description": "<p>While the heading label should always be provided for screen reader users it may also be appropriate to display it.</p>",
             "option-anchor": "visible-heading",
             "heading": "Heading label",
+            "vertical": " navigation-grid__items--vertical",
             "links": [
                 {
                     "title": "Undergraduate",
@@ -109,6 +106,224 @@
                 {
                     "title": "Access and outreach",
                     "description-text" : false
+                }
+            ]
+        },
+        {
+            "option-heading": "Ordered vertically by column",
+            "option-description": "<p>The default placement of navigation items is horizontally by row, with any remaining items moving onto the subsequent row. However it is possible to change this ordering to a vertical order by column by adding the class <code>.navigation-grid__items--vertical</code>.</p>",
+            "option-anchor": "vertical-order",
+            "heading": "Policy categories",
+            "sr-only": " sr-only",
+            "vertical": " navigation-grid__items--vertical",
+            "links":[
+                {
+                    "title": "Academic policies",
+                    "description-text" : true,
+                    "description": "Documents related to the University’s taught programmes, including assessment, curriculum development, good academic practice, timetabling and more."
+                },
+                {
+                    "title": "Estate",
+                    "description-text" : true,
+                    "description": "Estate policies and procedures governing the University’s environment management, facilities, safety and security, and space planning."
+                },
+                {
+                    "title": "External relations",
+                    "description-text" : true,
+                    "description": "Documents relating to University relationships with key stakeholders such as alumni, the public, donors and other relevant parties."
+                },
+                {
+                    "title": "Extra-curricular services",
+                    "description-text" : true,
+                    "description": "The provision through which the extra-curricular services are delivered and managed, such as the Library, Careers etc."
+                },
+                {
+                    "title": "Financial matters",
+                    "description-text" : true,
+                    "description": "Financial resources policies and procedures, including asset management, charitable donations, expenses and claims, budget management and more."
+                },
+                {
+                    "title": "Health and safety",
+                    "description-text" : true,
+                    "description": "The measures and controls through which the University aims to provide a safe environment."
+                },
+                {
+                    "title": "Information governance and management",
+                    "description-text" : true,
+                    "description": "The measures and controls to provide individuals with their rights over personal data and access to information and management of University records."
+                },
+                {
+                    "title": "Information technology",
+                    "description-text" : true,
+                    "description": "Standards for establishing, monitoring and maintaining information technology, such as website development and network connection."
+                },
+                {
+                    "title": "Purchasing and procurement",
+                    "description-text" : true,
+                    "description": "Procurement policies and procedures including tendering for a supplier and purchasing goods or services from external parties."
+                },
+                {
+                    "title": "Research",
+                    "description-text" : true,
+                    "description": "Academic research policies and guidance around conduct and ethics, quality assurance of research, promoting research outputs in useable forms, and more."
+                },
+                {
+                    "title": "Staff",
+                    "description-text" : true,
+                    "description": "Staff management policies including performance and progression, equality and diversity, health and wellbeing, pay and benefits, recruitment, and more."
+                },
+                {
+                    "title": "Student administration",
+                    "description-text" : true,
+                    "description": "Policies and procedures relating to student contracts, admissions, fees and finance, matriculation and discipline."
+                },
+                {
+                    "title": "Student support",
+                    "description-text" : true,
+                    "description": "Documents related to a welfare and support service for all matriculated students, including emotional support, mental health and visa advice."
+                },
+                {
+                    "title": "University governance",
+                    "description-text" : true,
+                    "description": "Mechanisms by which the University will be directed and controlled, including the structures of the Court and Senate along with other oversight operations."
+                }
+            ]
+        },
+        {
+            "option-heading": "Ordered vertically by column - ignore grid",
+            "option-description": "<p>The vertical ordering into columns has a second option that ignores the grid layout and positions the items evenly underneath each other into columns. Use instead the class <code>.navigation-grid__items--vertical-flow</code> for this variant of vertical layout.</p><ul><li>This option must only be used for navigation grids that do not include descriptions. If items make use of descriptions then they must follow either a horizontal or vertical grid.</li></ul>",
+            "option-anchor": "vertical-flow",
+            "heading": "Subjects",
+            "vertical": " navigation-grid__items--vertical-flow",
+            "links":[
+                {
+                    "title": "Ancient History" 
+                },
+                {
+                    "title": "Arabic" 
+                },
+                {
+                    "title": "Archaeology" 
+                },
+                {
+                    "title": "Art History" 
+                },
+                {
+                    "title": "Biology" 
+                },
+                {
+                    "title": "Chemistry" 
+                },
+                {
+                    "title": "Classics and Classical Studies" 
+                },
+                {
+                    "title": "Comparative Literature" 
+                },
+                {
+                    "title": "Computer Science" 
+                },
+                {
+                    "title": "Creative Writing" 
+                },
+                {
+                    "title": "Divinity" 
+                },
+                {
+                    "title": "Earth and Environmental Sciences" 
+                },
+                {
+                    "title": "Economics and Finance" 
+                },
+                {
+                    "title": "English" 
+                },
+                {
+                    "title": "English Language Teaching" 
+                },
+                {
+                    "title": "Film Studies" 
+                },
+                {
+                    "title": "French" 
+                },
+                {
+                    "title": "Geography" 
+                },
+                {
+                    "title": "German" 
+                },
+                {
+                    "title": "Greek" 
+                },
+                {
+                    "title": "History" 
+                },
+                {
+                    "title": "Interdisciplinary Studies" 
+                },
+                {
+                    "title": "International Relations" 
+                },
+                {
+                    "title": "Italian" 
+                },
+                {
+                    "title": "Latin" 
+                },
+                {
+                    "title": "Management" 
+                },
+                {
+                    "title": "Marine Biology" 
+                },
+                {
+                    "title": "Mathematics" 
+                },
+                {
+                    "title": "Mediaeval Studies" 
+                },
+                {
+                    "title": "Medicine" 
+                },
+                {
+                    "title": "Middle East Studies" 
+                },
+                {
+                    "title": "Music" 
+                },
+                {
+                    "title": "Neuroscience" 
+                },
+                {
+                    "title": "Persian" 
+                },
+                {
+                    "title": "Philosophy" 
+                },
+                {
+                    "title": "Physics and Astronomy" 
+                },
+                {
+                    "title": "Psychology" 
+                },
+                {
+                    "title": "Russian" 
+                },
+                {
+                    "title": "Social Anthropology" 
+                },
+                {
+                    "title": "Spanish" 
+                },
+                {
+                    "title": "Statistics" 
+                },
+                {
+                    "title": "Sustainable Development" 
+                },
+                {
+                    "title": "Teaching English to Speakers of Other Languages (TESOL)" 
                 }
             ]
         }

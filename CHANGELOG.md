@@ -9,6 +9,29 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.18.3
+
+Release date: Thursday 20 June 2019
+
+### Added
+* Clear search button for search bar pattern.
+* Vertical ordering options added to navigation grid pattern.
+* Small checkbox sizes.
+
+### Fixed
+* Security dependencies.
+* Fontawesome free regular icons now supported.
+* Styling for some instances of tables when shown on course pages.
+* Spacing for page headings on DPL documentation.
+
+### Changed
+* Navigation grid pattern changed to use grid layout with fallback support.
+
+### Removed
+* All references to Glyphicons fonts from Bootstrap.
+
+---
+
 ## v1.18.2
 
 Release date: Tuesday 11 June 2019

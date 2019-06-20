@@ -320,6 +320,7 @@
             "search-header": "Find a pattern",
             "search-subtext": "Search through all available patterns",
             "placeholder": "Start typing to see patterns",
-            "input-id": "form-banner-pattern-search"
+            "input-id": "form-banner-pattern-search",
+            "clear-button-type": " clear-icon__results"
     }
 }
