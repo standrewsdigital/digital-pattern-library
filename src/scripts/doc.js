@@ -331,28 +331,6 @@ function htmlDecode(value) {
     // Clear the search form(s) when the page is loaded.
     $("#form-banner-search-blue, #form-banner-search-grey, #form-banner-search-names, #form-banner-pattern-search, #news-search, .search-box").val('');
 
-    // Avoid submitting search that only produces on page results using entered keywords
-    $(".form-nosubmit").submit(function(e) {
-        e.preventDefault();
-    });
-
-    // Move clear button further left if appearing alongside a search button
-    $(".clear-icon").each(function() {
-        if($(this).next().hasClass('input-group-btn')) { 
-            $(this).addClass('clear-icon--indent'); 
-        }
-    });
-
-    // Clear button not only resets form but resubmits it. Useful if you want to wipe any shown results.
-    $(".clear-icon__resubmit").click(function(){
-        $(this.form).next(".search-box").val('');
-        $(this.form).submit();
-    });
-
-    // Clear button that cleans up suggested results
-    $(".clear-icon__results").click(function(){
-        $(this).parent('.input-group').next('.results').fadeOut('fast');
-    });
 
     // Search the data using the user text input.
     $("#form-banner-search-blue, #form-banner-search-grey, #form-banner-search-names, #form-banner-pattern-search, #news-search, .search-box").keyup(function() {
