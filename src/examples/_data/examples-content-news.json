@@ -1,0 +1,26 @@
+{
+    "navigation-bar" : {
+        "primary":[
+            {"title": "News room",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Media centre",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Archive",
+             "url": "#",
+             "selected":true
+            },
+            {"title": "Stories",
+             "url": "#",
+             "selected":false
+            }
+        ]
+      },
+      "category-header": {
+          "title": "News",
+          "url": "#"
+      }
+}

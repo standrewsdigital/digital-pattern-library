@@ -1,0 +1,41 @@
+
+/*********************************/
+/* BEGIN Pattern: post-header    */
+/*********************************/
+
+.post-header {
+	margin-bottom: 20px;
+}
+
+.post-header::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.post-header h1 {
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.post-header .post-header__post-date {
+    padding-left: 0;
+}
+
+.post-header .post-header__share-options {
+    padding: 10px 0 0 0;
+}
+
+@media (min-width: 992px) {
+
+    .post-header .post-header__share-options {
+    	padding-top: 0;
+   	}
+    .post-header .post-header__share-options > div {
+        float: right;
+    }
+}
+
+/*********************************/
+/* END Pattern: post-header      */
+/*********************************/
