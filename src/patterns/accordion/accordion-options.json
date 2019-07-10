@@ -26,7 +26,7 @@
             "accordion": [
                 {
                     "accordion-heading":"Divinity",
-                    "accordion-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac rutrum tellus, quis porttitor urna. Donec ultricies libero erat, id efficitur risus blandit nec. Donec et ipsum in dui blandit rutrum. Praesent rhoncus lobortis ligula, viverra tincidunt ante lobortis at. Sed vehicula luctus quam sit amet lacinia. Sed eu nulla vel ex tempus accumsan in sit amet metus. Vestibulum a venenatis mi. Ut ac semper arcu.</p>"
+                    "accordion-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac rutrum tellus, quis porttitor urna. Donec ultricies libero erat, id efficitur risus blandit nec. Donec et ipsum in dui blandit rutrum. Praesent rhoncus lobortis ligula, viverra tincidunt ante lobortis at. Sed vehicula luctus quam sit amet lacinia. Sed eu nulla vel ex tempus accumsan in sit amet metus. Vestibulum a venenatis mi. Ut ac semper arcu.</p><ul><li>Accordions can also contain unordered lists.</li><li>Another list item</li><li>Another list item<ul><li>This a an unordered sub-list</li></ul></li><li>Another list item<ol><li>This a an ordered sub-list</li></ol></li></ul><ol><li>Numbered lists may also be used</li><li>Another list item</li><li>Another list item<ul><li>This a an unordered sub-list</li></ul></li><li>Another list item<ol><li>This a an ordered sub-list</li></ol></li></ol>"
                 },
                 {
                     "accordion-heading":"Geography",
