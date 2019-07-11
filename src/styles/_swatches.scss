@@ -1,0 +1,103 @@
+.swatch {
+    // cursor: pointer;
+    position: relative;
+    // max-width: 600px;
+    display: block;
+    padding: 0;
+    margin: 0 0 25px;
+
+        .swatch__title {
+            padding: 0.5em;
+            color: white;
+            font-weight: bold;
+        }
+
+
+        .swatch__base,
+        .swatch__selected,
+        .swatch__transparent,
+        .swatch__base-hover,
+        .swatch__selected-hover,
+        .swatch__transparent-hover {
+
+            padding: 0.5em;
+            margin: 0;
+
+            width: 33.333%;
+            color: white;
+            float: left;
+        }
+
+        .swatch__base,
+        .swatch__selected,
+        .swatch__transparent {
+            height: 150px;
+        }
+
+        .swatch__base-hover,
+        .swatch__selected-hover,
+        .swatch__transparent-hover {
+            height: 150px;
+        }
+
+        // Populate elements with appropriate colors.
+
+        @each $name, $color,$color-hover,$color-T,$color-T-hover,$color-S,$color-S-hover in $palette-sta {
+
+            &.#{$name} .swatch__title,
+            &.#{$name} .swatch__base {
+                background-color: $color;
+            }
+            &.#{$name} .swatch__base-hover {
+                background-color: $color-hover;
+            }
+
+            &.#{$name} .swatch__transparent  {
+                background-color: $color-T;
+            }
+            &.#{$name} .swatch__transparent-hover {
+                background-color: $color-T-hover;
+            }
+            &.#{$name} .swatch__selected  {
+                background-color: $color-S;
+            }
+            &.#{$name} .swatch__selected-hover {
+                background-color: $color-S-hover;
+            }
+        }
+
+}
+
+.palette_swatch {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+
+    @each $name, $color in $palette-sta {
+
+        &.#{$name} {
+            background-color: $color;
+        }
+
+    }
+}
+
+#palettes_container ul li {
+    margin-bottom: 20px;
+}
+.swatch.contrast_text > * {
+    color: #444;
+}
+
+ul.dpl-only li {
+    margin-top: 10px;
+}
+
+#internal-nav-dep {
+    display: none;
+}
+
+body {
+    position: relative;
+}

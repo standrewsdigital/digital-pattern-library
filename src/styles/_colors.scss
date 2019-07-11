@@ -166,6 +166,47 @@ $sta-burgundy-S:        lighten($sta-burgundy,$select-lightness);
 $sta-burgundy-S-hover:  darken($sta-burgundy-S, $hover-darken);
 
 
+
+/* ST ANDREWS COLORS FOR PRINT */
+
+/* Blue (sta-blue-print) */
+.sta-blue-print         {background-color: rgb(0, 83, 155);}
+
+/* Red (sta-red-print) */
+.sta-red-print          {background-color: rgb(238, 49, 42);}
+
+/* Yellow (sta-yellow-print) */
+.sta-yellow-print       {background-color: rgb(255, 223, 0);}
+
+/* Black (sta-black-print) */
+.sta-black-print        {background-color: rgb(35, 31, 32);}
+
+/* Light Blue (sta-blue-light-print) */
+.sta-blue-light-print   {background-color: rgb(0, 174, 239);}
+
+/* Mid Blue (sta-blue-mid-print) */
+.sta-blue-mid-print     {background-color: rgb(0, 125, 197);}
+
+/* Burgundy (sta-burgundy-print) */
+.sta-burgundy-print     {background-color: rgb(198, 12, 70);}
+
+/* Purple (sta-purple-print) */
+.sta-purple-print       {background-color: rgb(123, 67, 154);}
+
+/* Orange (sta-orange-print) */
+.sta-orange-print       {background-color: rgb(245, 132, 43);}
+
+/* Green (sta-green-print) */
+.sta-green-print        {background-color: rgb(84, 185, 72);}
+
+/* Mid Green (sta-green-mid-print) */
+.sta-green-mid-print    {background-color: rgb(0, 133, 63);}
+
+/* Dark Green (sta-green-dark-print) */
+.sta-green-dark-print   {background-color: rgb(0, 89, 83);}
+
+
+
 /* PALETTES */
 
 /**
