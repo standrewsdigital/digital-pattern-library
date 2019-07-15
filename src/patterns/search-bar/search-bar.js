@@ -38,8 +38,6 @@ $('.horizontal-list__toggle').click(function() {
 
     // Hide clear button if input field is empty
     $(".search-box").keyup(function () {
-    	console.log($(this).val());
-    	console.log($(this).nextAll(".clear-icon").first());
 	    if( $(this).val() ) {
 	        $(this.form).find(".clear-icon").show();
 	    } else {
