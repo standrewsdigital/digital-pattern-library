@@ -450,9 +450,14 @@
 }
 
 .contact-details__open-access {
-    display: inline-block;
-    margin-left: 7px;
-    width: 12px;
+        background: url('../images/furniture/open-access-logo.svg') no-repeat;
+        background-position: center left;
+        background-size: 12px 19px;
+        content: '';
+        display: inline-block;
+        margin-left: 10px;
+        width: 15px;
+        height: 19px;
 }
 
 /*********************************/
