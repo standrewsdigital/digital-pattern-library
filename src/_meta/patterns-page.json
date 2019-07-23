@@ -206,6 +206,10 @@
                   "img": "assets/docs/images/patterns/search-bar.jpg",
                   "url": "patterns/search-bar/index.html"
                 },
+                { "name": "Search results",
+                  "img": "assets/docs/images/patterns/.jpg",
+                  "url": "patterns/search-results/index.html"
+                },
                 { "name": "Section header",
                   "img": "assets/docs/images/patterns/section-header.jpg",
                   "url": "patterns/section-header/index.html"

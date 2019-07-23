@@ -1,0 +1,105 @@
+{
+    "options": [
+        {
+            "option-heading": "Simple results",
+            "option-anchor": "simple",
+            "option-description": "<p>The simplest implementation must include a heading for each result that links to the corresponding resource. This could be a web page, file or URL.</p>",
+            "search-results": [
+                {
+                    "heading": "This is the heading of the web page"
+                },
+                {
+                    "heading": "This is the name of a document"
+                }
+            ]
+        },
+
+        {
+            "option-heading": "Standard results",
+            "option-anchor": "standard",
+            "option-description": "<p>The standard implementation may include an optional path to the result, an optional short descriptive summary and also a heading label for secondary information.</p><ul><li>The short summary should be no longer than 160 characters.</li></ul>",
+            "group-heading": "Heading for the results group",
+            "search-results": [
+                {
+                    "heading": "This is the heading of the web page",
+                    "url": "https://www.st-andrews.ac.uk/path/to/page/",
+                    "description": "This is a short description for the web page where any matching <strong>search term</strong> is highlighted.",
+                    "heading-label": "Password protected"
+                },
+                {
+                    "heading": "This is the name of a document",
+                    "url": "https://www.st-andrews.ac.uk/path-to-file/<strong>search-term</strong>",
+                    "description": "This is a short description for the document where any matching <strong>search term</strong> is highlighted.",
+                    "heading-label": "PDF (525k)"
+                }
+            ]
+        },
+
+        {
+            "option-heading": "Additional metadata",
+            "option-anchor": "standard",
+            "option-description": "<p>Results can also include metadata to provide quick key information about a resource. These consist of a series of type and value pairs, with icons representing the type of metadata. Metadata may either span the width of the result listing or be displayed as an inline list.</p><ul><li>Full width metadata items must appear above any others.</li><li>Metadata should be used sparingly to avoid creating visual clutter.</li></ul>",
+            "group-heading": "Heading for the results group",
+            "search-results": [
+                {
+                    "heading": "This is the heading of the web page",
+                    "url": "https://www.st-andrews.ac.uk/path/to/page/",
+                    "description": "This is a short description for the web page where any matching <strong>search term</strong> is highlighted.",
+                    "heading-label": "Password protected",
+                    "metadata": [
+                    	{
+                    		"full": true,
+                    		"icon": "fas fa-folder-open",
+                    		"term": "File location",
+                    		"definition": "This is a full width metadata field that can be used for prominent or longer values"
+                    	},	
+                    	{
+                    		"icon": "fas fa-calendar-alt",
+                    		"term": "Published date",
+                    		"definition": "18 July 2019"
+                    	},	
+                    	{
+                    		"icon": "fas fa-file-alt",
+                    		"term": "Document type",
+                    		"definition": "Guidance"
+                    	},	
+                    	{
+                    		"icon": "fas fa-user",
+                    		"term": "Scope (applies to)",
+                    		"definition": "All staff"
+                    	}
+                    ]
+                },
+                {
+                    "heading": "This is the name of a document",
+                    "url": "https://www.st-andrews.ac.uk/path-to-file/<strong>search-term</strong>",
+                    "description": "This is a short description for the document where any matching <strong>search term</strong> is highlighted.",
+                    "heading-label": "PDF (525k)",
+                    "metadata": [
+                    	{
+                    		"icon": "fas fa-calendar-alt",
+                    		"term": "Published date",
+                    		"definition": "21 April 2019"
+                    	},	
+                    	{
+                    		"icon": "fas fa-file-alt",
+                    		"term": "Document type",
+                    		"definition": "Guidance"
+                    	},	
+                    	{
+                    		"icon": "fas fa-user",
+                    		"term": "Scope (applies to)",
+                    		"definition": "All staff"
+                    	},	
+                    	{
+                    		"icon": "fa fa-map-marker",
+                    		"term": "Location",
+                    		"definition": "London, UK"
+                    	}
+                    ]
+                }
+            ]
+        }
+
+    ]
+ }
