@@ -11,6 +11,7 @@
 
 .search-result {
  	margin-bottom: 1.5625rem; // 25px @ 16
+ 	overflow: auto;
 	
 	a {
 		text-decoration: none;
@@ -75,18 +76,16 @@
 	margin-bottom: 0;
 }
 
+.search-result__thumbnail {
+	float:left;
+	margin-top: 0.5em;
+	margin-right: 1em;
+	max-width: 140px; // Make smaller on small screens
 
-
-
-.search-result-count {
-  color: #6a6a6a;
-  margin-bottom: 25px;
+	@media (min-width: 576px){
+		max-width: 180px;
+	}
 }
-
-.search-spelling {
-  font-size: 24px;
-}
-
 
 .search-result__meta {
 margin:0;
