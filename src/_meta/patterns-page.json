@@ -207,7 +207,7 @@
                   "url": "patterns/search-bar/index.html"
                 },
                 { "name": "Search results",
-                  "img": "assets/docs/images/patterns/.jpg",
+                  "img": "assets/docs/images/patterns/search-results.jpg",
                   "url": "patterns/search-results/index.html"
                 },
                 { "name": "Section header",

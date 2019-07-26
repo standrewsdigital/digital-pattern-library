@@ -102,7 +102,7 @@
         },
 
         {
-            "option-heading": "Image with result",
+            "option-heading": "Image within result",
             "option-anchor": "thumbnail",
             "option-description": "<p>It may also be beneficial to include a thumbnail image to give additional context to a search result.</p><ul><li>Thumbnail images must be 360px wide and 240px high.</li></ul>",
             "group-heading": "Heading for the results group",
