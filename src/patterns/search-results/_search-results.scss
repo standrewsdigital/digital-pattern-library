@@ -1,0 +1,135 @@
+
+/*********************************/
+/* BEGIN Pattern: search-results */
+/*********************************/
+
+
+.search-results {
+	list-style: none;
+	padding-left: 0;
+}
+
+.search-result {
+ 	margin-bottom: 1.5625rem; // 25px @ 16
+ 	overflow: auto;
+	
+	a {
+		text-decoration: none;
+		
+		.search-result__heading {
+			color: $sta-blue-light; // TEST LINK COLOUR CHANGE / BEHAVIOUR
+			text-decoration: underline;
+		}
+
+		&:active {
+			.search-result__heading {
+				text-decoration: none;
+			}
+		}
+
+		&:hover {
+			.search-result__heading {
+				color: $sta-blue-light-hover;
+			}
+		}
+
+		&:focus {
+			outline: 0; // disable default focus
+
+			.search-result__heading {
+				outline: 2px dotted $sta-orange;
+				outline-offset: 0;
+				background: lighten($sta-orange,50%);
+			}
+		}
+	}
+}
+
+.search-result__heading {
+	@include ms-respond(font-size, 1);
+	display: inline;
+	line-height: 1.1;
+  	margin: 0;
+}
+
+.search-result__label {
+	color: $sta-grey;
+	display: inline;
+	font-size: 1rem;
+	font-weight: normal;
+	
+	&:before {
+		content:' - ';
+	}
+}
+
+.search-result__url {
+  color: $sta-green;
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  text-transform:lowercase;
+  word-break: break-all;
+}
+
+.search-result__summary {
+	margin-bottom: 0;
+}
+
+.search-result__thumbnail {
+	float:left;
+	margin-top: 0.5em;
+	margin-right: 1em;
+	max-width: 140px; // Make smaller on small screens
+
+	@media (min-width: 576px){
+		max-width: 180px;
+	}
+}
+
+.search-result__meta {
+margin:0;
+font-size:16px;
+color: #6a6a6a;
+overflow:auto;
+}
+
+.search-result__meta dd,
+.search-result__meta dt {
+  display:inline-block;
+  margin:5px 0 0 0;
+}
+.search-result__meta dt {
+  width: 22px;
+}
+.search-result__meta dd {
+  margin:5px 20px 0 0;
+}
+
+@media (max-width:540px){
+  .search-result__meta dt {
+  clear:left;
+  float:left;
+  width:22px;
+  display:block;
+  }
+  .search-result__meta dd {
+  margin-right:0;
+  display:block;
+  }
+}
+
+.search-result__meta dt.search-result__meta--full {
+  clear:left;
+  float:left;
+  width:22px;
+  display:block;
+}
+.search-result__meta dd.search-result__meta--full {
+  margin-right:0;
+  display:block;
+}
+
+/*********************************/
+/* END Pattern: search-results   */
+/*********************************/
