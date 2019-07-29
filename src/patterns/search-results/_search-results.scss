@@ -11,7 +11,7 @@
 
 .search-result {
  	margin-bottom: 1.5625rem; // 25px @ 16
- 	overflow: auto;
+  	@include clearfix;
 	
 	a {
 		text-decoration: none;
@@ -36,7 +36,8 @@
 		&:focus {
 			outline: 0; // disable default focus
 
-			.search-result__heading {
+			.search-result__heading,
+			.search-result__thumbnail {
 				outline: 2px dotted $sta-orange;
 				outline-offset: 0;
 				background: lighten($sta-orange,50%);

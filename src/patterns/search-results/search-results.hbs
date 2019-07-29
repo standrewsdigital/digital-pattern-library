@@ -7,8 +7,8 @@
             <h4 class="search-result__heading">{{heading}}</h4>
             {{#if heading-label}}<span class="search-result__label">{{heading-label}}</span>{{/if}}
             {{#if url}}<cite class="search-result__url">{{{url}}}</cite>{{/if}}
-            {{#if thumbnail}}<img class="search-result__thumbnail" src="../../assets/docs/images/placeholders/360x240.png" alt="Alt text for image">{{/if}}
         </a>
+        {{#if thumbnail}}<a href="{{{url}}}" title="{{heading}}"><img class="search-result__thumbnail" src="../../assets/docs/images/placeholders/360x240.png" alt="Alt text for image"></a>{{/if}}
         {{#if description}}<p class="search-result__summary">{{{description}}}</p>{{/if}}
         {{#if metadata}}
         <dl class="search-result__meta">

@@ -9,6 +9,23 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.18.4
+
+Release date: Monday 29 July 2019
+
+### Added
+* Disclaimer notice for limited support for Photosphere pattern.
+* Browser support documentation.
+* Search results pattern.
+
+### Fixed
+* Safari browser fixes for clear search button.
+* Security dependencies.
+* List stying within accordions.
+* Open access icon display in IE 11.
+
+---
+
 ## v1.18.3
 
 Release date: Thursday 20 June 2019
