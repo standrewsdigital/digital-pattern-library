@@ -10,7 +10,7 @@
 }
 
 .search-result {
- 	margin-bottom: 1.5625rem; // 25px @ 16
+ 	margin-bottom: $third-gutter; 
   	@include clearfix;
 	
 	a {
