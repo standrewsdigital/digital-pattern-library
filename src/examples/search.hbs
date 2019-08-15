@@ -1,0 +1,514 @@
+---
+title: Example search page
+---
+
+{{> text-banner examples-text-banner.search}}
+
+{{> header examples-header}}
+
+{{> category-header examples-search.category-header}}
+
+
+    <style>
+
+
+.item-label span {
+  font-weight: bold;
+}
+
+
+.facet-clear {
+  display:inline-block;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 8px 0 8px 15px;
+  text-decoration: underline;
+}
+
+.facet-clear i {
+  margin-right: 5px;
+}
+
+.collapse-trigger {
+  cursor:pointer;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.collapse-trigger:after {
+    content: ' Less';
+}
+
+.collapse-trigger.collapsed:after {
+    content: ' More';
+}
+
+.collapse-trigger:before {
+    content: '\f068';
+    font-family: 'Font Awesome 5 Free';
+font-weight: 900;
+}
+.collapse-trigger.collapsed:before {
+    content: '\f067';
+}
+
+</style>
+
+{{> search-bar examples-search.searchbanner}}
+
+
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+  <div class="margin-top--half margin-bottom">
+    <div class="row">
+    
+
+      <div class="col-md-9 col-md-push-3">
+
+          <div class="filter-box">
+
+              <a class="filter-box__clear" href="?form=partial&amp;profile=_default&amp;query=%21nullquery&amp;collection=uosa-meta-policy" title="Remove all refinements">
+                <i class="fa fa-times" aria-hidden="true"></i>Clear all filters
+              </a>
+            <h3 class="filter-box__label font-scale-1">Filtered by:</h3>
+                <ul class="filter-box__list filter-box__list-group">
+                  <li class="contact-card__tag"><a class="contact-card__tag-link contact-card__tag-link-small" href="#" title="Remove all 'Category' refinements">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    Category
+                  </a></li>
+
+                    <li class="contact-card__tag"><a class="contact-card__tag-link contact-card__tag-link-small" href="#" title="Remove 'Category: Academic policies'">
+                      
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                      Academic policies
+                    </a></li>
+                </ul>
+                <ul class="filter-box__list filter-box__list-group">
+                  <li class="contact-card__tag"><a class="contact-card__tag-link contact-card__tag-link-small" href="#" title="Remove all 'Scope (applies to)' refinements">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    Scope (applies to)
+                  </a></li>
+
+                    <li class="contact-card__tag"><a class="contact-card__tag-link contact-card__tag-link-small" href="#" title="Remove 'Scope (applies to): All students'">
+                      
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                      All students
+                    </a></li>
+                </ul>
+          </div>
+
+        <p>
+            <span id="search-page-start">1</span> -
+            <span id="search-page-end">10</span> of
+            <span id="search-total-matching">19</span>
+            documents.
+
+        </p>
+
+
+
+
+{{> search-results examples-search.results}}
+
+
+      
+
+        <div class="text-center hidden-print">
+          <ul class="pagination pagination-lg">
+            
+            
+
+
+
+<li class="active"><a href="#">1</a></li>
+
+<li><a href="#">2</a></li>
+
+            <li><a href="#" rel="next"><span>Next</span> <span aria-hidden="true">»</span></a></li>
+          </ul>
+        </div>
+
+      </div>
+
+        <div class="col-md-3 col-md-pull-9 hidden-print">
+          <h2 class="font-scale-1" style="float:left;margin:0;">Filter</h2>
+
+          <button class="accordion-group__toggle" aria-expanded="false" aria-controls="accordion-group-1">Open all</button>
+          <ul class="accordion-group" id="accordion-group-1" aria-hidden="true">
+            <li class="accordion-item">
+
+              <div class="accordion-item__toggle open">
+              <h3 class="accordion-item__toggle-title font-scale-0">
+                  <button class="accordion-item__toggle-button" aria-expanded="true" aria-controls="facet-1">Category</button>
+                </h3>
+              </div>
+             <div class="accordion-item__content remove-outer-padding" id="facet-1" aria-hidden="false" style="display:block;">
+                <a href="#" class="facet-clear" title="Remove all 'Category' refinements">
+                  <i class="fa fa-times" aria-hidden="true"></i>Clear all
+                </a>
+              
+              <div class="list-group list-group--remove-outer-border list-group--border-top remove-margin-bottom panel-collapse collapse in">
+                
+                <a class="list-group-item selected-single_drill_down " href="#" title="Remove 'Category: Academic policies'">
+                  <span class="item-label font-scale-minus-1">
+                      
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                    Academic policies
+                  </span>
+                  
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Category: Assessment, examination and award'">
+                  <span class="item-label font-scale-minus-1">
+                    Assessment, examination and award
+                  </span>
+                  <span class="badge">12</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Category: Curriculum'">
+                  <span class="item-label font-scale-minus-1">
+                    Curriculum
+                  </span>
+                  <span class="badge">1</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Category: Learning and teaching'">
+                  <span class="item-label font-scale-minus-1">
+                    Learning and teaching
+                  </span>
+                  <span class="badge">3</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Category: Student progression'">
+                  <span class="item-label font-scale-minus-1">
+                    Student progression
+                  </span>
+                  <span class="badge">3</span>
+                </a>
+                
+              </div>
+
+              </div>
+            </li><li class="accordion-item">
+
+              <div class="accordion-item__toggle open">
+              <h3 class="accordion-item__toggle-title font-scale-0">
+                  <button class="accordion-item__toggle-button" aria-expanded="true" aria-controls="facet-2">Scope (applies to)</button>
+                </h3>
+              </div>
+             <div class="accordion-item__content remove-outer-padding" id="facet-2" aria-hidden="false" style="display:block;">
+                <a href="#" class="facet-clear" title="Remove all 'Scope (applies to)' refinements">
+                  <i class="fa fa-times" aria-hidden="true"></i>Clear all
+                </a>
+              
+              <div class="list-group list-group--remove-outer-border list-group--border-top remove-margin-bottom panel-collapse collapse in">
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Scope (applies to): Academic staff'">
+                  <span class="item-label font-scale-minus-1">
+                      <span class="facet-control"><i class="far fa-square" aria-hidden="true"></i></span>
+                    Academic staff
+                  </span>
+                  <span class="badge">26</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Scope (applies to): All schools'">
+                  <span class="item-label font-scale-minus-1">
+                      <span class="facet-control"><i class="far fa-square" aria-hidden="true"></i></span>
+                    All schools
+                  </span>
+                  <span class="badge">29</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Scope (applies to): All staff'">
+                  <span class="item-label font-scale-minus-1">
+                      <span class="facet-control"><i class="far fa-square" aria-hidden="true"></i></span>
+                    All staff
+                  </span>
+                  <span class="badge">25</span>
+                </a>
+                
+                
+                <a class="list-group-item selected-checkbox " href="#" title="Remove 'Scope (applies to): All students'">
+                  <span class="item-label font-scale-minus-1">
+                      <span class="facet-control"><i class="far fa-check-square" aria-hidden="true"></i></span>
+                    All students
+                  </span>
+                  
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Scope (applies to): PGR only'">
+                  <span class="item-label font-scale-minus-1">
+                      <span class="facet-control"><i class="far fa-square" aria-hidden="true"></i></span>
+                    PGR only
+                  </span>
+                  <span class="badge">31</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Scope (applies to): PGT only'">
+                  <span class="item-label font-scale-minus-1">
+                      <span class="facet-control"><i class="far fa-square" aria-hidden="true"></i></span>
+                    PGT only
+                  </span>
+                  <span class="badge">20</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Scope (applies to): Professional staff'">
+                  <span class="item-label font-scale-minus-1">
+                      <span class="facet-control"><i class="far fa-square" aria-hidden="true"></i></span>
+                    Professional staff
+                  </span>
+                  <span class="badge">20</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Scope (applies to): Public'">
+                  <span class="item-label font-scale-minus-1">
+                      <span class="facet-control"><i class="far fa-square" aria-hidden="true"></i></span>
+                    Public
+                  </span>
+                  <span class="badge">20</span>
+                </a>
+                
+                <div id="facet-list-2" class="collapse">
+                <a class="list-group-item  " href="#" title="Refine by 'Scope (applies to): Staff and students'">
+                  <span class="item-label font-scale-minus-1">
+                      <span class="facet-control"><i class="far fa-square" aria-hidden="true"></i></span>
+                    Staff and students
+                  </span>
+                  <span class="badge">35</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Scope (applies to): UG and PGT students'">
+                  <span class="item-label font-scale-minus-1">
+                      <span class="facet-control"><i class="far fa-square" aria-hidden="true"></i></span>
+                    UG and PGT students
+                  </span>
+                  <span class="badge">32</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Scope (applies to): Undergraduate students'">
+                  <span class="item-label font-scale-minus-1">
+                      <span class="facet-control"><i class="far fa-square" aria-hidden="true"></i></span>
+                    Undergraduate students
+                  </span>
+                  <span class="badge">23</span>
+                </a>
+                
+                  </div>
+                  <a class="list-group-item collapse-trigger collapsed" data-target="#facet-list-2" data-toggle="collapse"></a>
+              </div>
+
+              </div>
+            </li><li class="accordion-item">
+
+              <div class="accordion-item__toggle">
+              <h3 class="accordion-item__toggle-title font-scale-0">
+                  <button class="accordion-item__toggle-button" aria-expanded="false" aria-controls="facet-3">Academic year of entry</button>
+                </h3>
+              </div>
+                <div class="accordion-item__content remove-outer-padding" id="facet-3" aria-hidden="true">
+              
+              <div class="list-group list-group--remove-outer-border list-group--border-top remove-margin-bottom panel-collapse collapse in">
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Academic year of entry: 2018-2019'">
+                  <span class="item-label font-scale-minus-1">
+                      <span class="facet-control"><i class="far fa-square" aria-hidden="true"></i></span>
+                    2018-2019
+                  </span>
+                  <span class="badge">1</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Academic year of entry: 2019-2020'">
+                  <span class="item-label font-scale-minus-1">
+                      <span class="facet-control"><i class="far fa-square" aria-hidden="true"></i></span>
+                    2019-2020
+                  </span>
+                  <span class="badge">1</span>
+                </a>
+                
+              </div>
+
+              </div>
+            </li><li class="accordion-item">
+
+              <div class="accordion-item__toggle">
+              <h3 class="accordion-item__toggle-title font-scale-0">
+                  <button class="accordion-item__toggle-button" aria-expanded="false" aria-controls="facet-4">Alphabetical</button>
+                </h3>
+              </div>
+                <div class="accordion-item__content remove-outer-padding" id="facet-4" aria-hidden="true">
+              
+              <div class="list-group list-group--remove-outer-border list-group--border-top remove-margin-bottom panel-collapse collapse in">
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Alphabetical: A'">
+                  <span class="item-label font-scale-minus-1">
+                    A
+                  </span>
+                  <span class="badge">5</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Alphabetical: C'">
+                  <span class="item-label font-scale-minus-1">
+                    C
+                  </span>
+                  <span class="badge">1</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Alphabetical: E'">
+                  <span class="item-label font-scale-minus-1">
+                    E
+                  </span>
+                  <span class="badge">1</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Alphabetical: F'">
+                  <span class="item-label font-scale-minus-1">
+                    F
+                  </span>
+                  <span class="badge">2</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Alphabetical: G'">
+                  <span class="item-label font-scale-minus-1">
+                    G
+                  </span>
+                  <span class="badge">2</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Alphabetical: L'">
+                  <span class="item-label font-scale-minus-1">
+                    L
+                  </span>
+                  <span class="badge">4</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Alphabetical: P'">
+                  <span class="item-label font-scale-minus-1">
+                    P
+                  </span>
+                  <span class="badge">4</span>
+                </a>
+                
+              </div>
+
+              </div>
+            </li><li class="accordion-item">
+
+              <div class="accordion-item__toggle">
+              <h3 class="accordion-item__toggle-title font-scale-0">
+                  <button class="accordion-item__toggle-button" aria-expanded="false" aria-controls="facet-5">Publish date</button>
+                </h3>
+              </div>
+                <div class="accordion-item__content remove-outer-padding" id="facet-5" aria-hidden="true">
+              
+              <div class="list-group list-group--remove-outer-border list-group--border-top remove-margin-bottom panel-collapse collapse in">
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Publish date: Today'">
+                  <span class="item-label font-scale-minus-1">
+                    Today
+                  </span>
+                  <span class="badge">1</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Publish date: Past week'">
+                  <span class="item-label font-scale-minus-1">
+                    Past week
+                  </span>
+                  <span class="badge">1</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Publish date: Past fortnight'">
+                  <span class="item-label font-scale-minus-1">
+                    Past fortnight
+                  </span>
+                  <span class="badge">2</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Publish date: Past month'">
+                  <span class="item-label font-scale-minus-1">
+                    Past month
+                  </span>
+                  <span class="badge">8</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Publish date: Past 3 months'">
+                  <span class="item-label font-scale-minus-1">
+                    Past 3 months
+                  </span>
+                  <span class="badge">19</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Publish date: Past 6 months'">
+                  <span class="item-label font-scale-minus-1">
+                    Past 6 months
+                  </span>
+                  <span class="badge">19</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Publish date: Past year'">
+                  <span class="item-label font-scale-minus-1">
+                    Past year
+                  </span>
+                  <span class="badge">19</span>
+                </a>
+                
+                
+                <a class="list-group-item  " href="#" title="Refine by 'Publish date: 2019'">
+                  <span class="item-label font-scale-minus-1">
+                    2019
+                  </span>
+                  <span class="badge">19</span>
+                </a>
+                
+              </div>
+
+              </div>
+          </li></ul>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</div></div>
+
+
+
+
+
+
+
+
+{{> footer examples-footer}}

@@ -1,0 +1,37 @@
+---
+title: Filter box
+---
+
+<p>The filter box pattern is used to display a series of filter 'tags' that have been applied to the content. A typical use would be on a filtered search results page.</p>
+
+<h2>Rules for filter box</h2>
+<ul>
+	<li>Each filter can be individually removed by clicking it's tag.</li>
+	<li>A 'clear all' filter option reduces the number of required clicks.</li>
+	<li>A heading should be used to introduce the filter tags.</li>
+</ul>
+
+<h2>Options available</h2>
+<ul>
+{{#filter-box-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/filter-box-options.options}}
+</ul>
+
+{{#filter-box-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+<!--noindex-->
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+<div class="container">
+	{{> filter-box}}
+</div>
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> filter-box}}</code></pre>
+<!--endnoindex-->
+{{/filter-box-options.options}}

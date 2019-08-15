@@ -120,6 +120,10 @@
 .accordion-item__content {
     display: none;
     padding: 15px;
+
+    &.remove-outer-padding {
+        padding: 0;
+    }
 }
 
 /*********************************/

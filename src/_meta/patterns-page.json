@@ -166,6 +166,10 @@
                   "img": "assets/docs/images/patterns/featured-people.jpg",
                   "url": "patterns/featured-people/index.html"
                 },
+                { "name": "Filter box",
+                  "img": "assets/docs/images/patterns/filter-box.jpg",
+                  "url": "patterns/filter-box/index.html"
+                },
                 { "name": "Gallery",
                   "img": "assets/docs/images/patterns/gallery.jpg",
                   "url": "patterns/gallery/index.html"
