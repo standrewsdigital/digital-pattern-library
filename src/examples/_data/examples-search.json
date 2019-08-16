@@ -24,6 +24,33 @@
             "search-button": true,
             "clear-button-type": " clear-icon__resubmit"
     },
+    "filters": {
+            "filter-heading": "Filtered by:",
+            "filters-list": [
+                {
+                "filters-list-drilldown": true,
+                "filters-list-group": [
+                    {
+                        "label": "Category"
+                    },
+                    {
+                        "label": "Academic policies"
+                    }
+                ]
+                },
+                {
+                "filters-list-drilldown": true,
+                "filters-list-group": [
+                    {
+                        "label": "Scope (applies to)"
+                    },
+                    {
+                        "label": "All students"
+                    }
+                ]
+                }
+            ]
+        },
     "results": {
             "group-heading": "Fully matching results",
             "search-results": [

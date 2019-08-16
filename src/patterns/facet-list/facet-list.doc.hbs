@@ -1,27 +1,22 @@
 ---
-title: Page intro
+title: Facet list
 ---
 
-<p>The page intro pattern can be used at the top of any full width page layout to display the key information in a format that aids readability. It can also be used at the top of full width page layouts as an alternative to the <a href='../hero-banner/index.html'>hero banner</a> pattern where a video or captioned image is needed or there is a need for more text.</p>
+<p>The facet list pattern</p>
 
 <h2>Rules for page intro</h2>
 <ul>
-	<li>The page intro can only be used on a full width page layout.</li>
-	<li>The page intro must only be used once on a page.</li>
-	<li>The page intro must appear at the top of the page content, directly under the breadcrumbs (if used) or otherwise directly under the <a href='../navigation-bar/index.html'>navigation bar</a>.</li>
-	<li>In some situations it may also be used directly under the hero banner pattern rather than as a replacement for it.</li>
-	<li>When used on a top-level landing page the <a href="#page-intro-large" title="Option with larger heading size">larger heading size</a> should be used.</li>
-	<li>The heading is required and must be the only <code>h1</code> on the page. It should provide a descriptive title for the main purpose of the page.</p>
+	<li></li>
 </ul>
 
 <h2>Options available</h2>
 <ul>
-{{#page-intro-options.options}}
+{{#facet-list-options.options}}
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
-{{/page-intro-options.options}}
+{{/facet-list-options.options}}
 </ul>
 
-{{#page-intro-options.options}}
+{{#facet-list-options.options}}
 <hr>
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
@@ -29,10 +24,16 @@ title: Page intro
 	<span class="label label-default">Example</span>
 </div>
 <div class="pattern-wrapper">
-	{{> page-intro}}
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-3">
+	{{> facet-list}}
+			</div>
+		</div>
+	</div>
 </div>
 <div class="container">
 <span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> page-intro}}</code></pre>
+<pre><code class="pattern-source html">{{> facet-list}}</code></pre>
 <!--endnoindex-->
-{{/page-intro-options.options}}
+{{/facet-list-options.options}}

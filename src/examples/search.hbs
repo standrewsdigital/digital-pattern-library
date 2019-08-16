@@ -8,52 +8,6 @@ title: Example search page
 
 {{> category-header examples-search.category-header}}
 
-
-    <style>
-
-
-.item-label span {
-  font-weight: bold;
-}
-
-
-.facet-clear {
-  display:inline-block;
-  font-weight: normal;
-  font-size: 14px;
-  margin: 8px 0 8px 15px;
-  text-decoration: underline;
-}
-
-.facet-clear i {
-  margin-right: 5px;
-}
-
-.collapse-trigger {
-  cursor:pointer;
-  font-weight: normal;
-  font-size: 14px;
-}
-
-.collapse-trigger:after {
-    content: ' Less';
-}
-
-.collapse-trigger.collapsed:after {
-    content: ' More';
-}
-
-.collapse-trigger:before {
-    content: '\f068';
-    font-family: 'Font Awesome 5 Free';
-font-weight: 900;
-}
-.collapse-trigger.collapsed:before {
-    content: '\f067';
-}
-
-</style>
-
 {{> search-bar examples-search.searchbanner}}
 
 
@@ -66,37 +20,7 @@ font-weight: 900;
 
       <div class="col-md-9 col-md-push-3">
 
-          <div class="filter-box">
-
-              <a class="filter-box__clear" href="?form=partial&amp;profile=_default&amp;query=%21nullquery&amp;collection=uosa-meta-policy" title="Remove all refinements">
-                <i class="fa fa-times" aria-hidden="true"></i>Clear all filters
-              </a>
-            <h3 class="filter-box__label font-scale-1">Filtered by:</h3>
-                <ul class="filter-box__list filter-box__list-group">
-                  <li class="contact-card__tag"><a class="contact-card__tag-link contact-card__tag-link-small" href="#" title="Remove all 'Category' refinements">
-                    <i class="fa fa-times" aria-hidden="true"></i>
-                    Category
-                  </a></li>
-
-                    <li class="contact-card__tag"><a class="contact-card__tag-link contact-card__tag-link-small" href="#" title="Remove 'Category: Academic policies'">
-                      
-                      <i class="fa fa-times" aria-hidden="true"></i>
-                      Academic policies
-                    </a></li>
-                </ul>
-                <ul class="filter-box__list filter-box__list-group">
-                  <li class="contact-card__tag"><a class="contact-card__tag-link contact-card__tag-link-small" href="#" title="Remove all 'Scope (applies to)' refinements">
-                    <i class="fa fa-times" aria-hidden="true"></i>
-                    Scope (applies to)
-                  </a></li>
-
-                    <li class="contact-card__tag"><a class="contact-card__tag-link contact-card__tag-link-small" href="#" title="Remove 'Scope (applies to): All students'">
-                      
-                      <i class="fa fa-times" aria-hidden="true"></i>
-                      All students
-                    </a></li>
-                </ul>
-          </div>
+{{> filter-box examples-search.filters}}
 
         <p>
             <span id="search-page-start">1</span> -
