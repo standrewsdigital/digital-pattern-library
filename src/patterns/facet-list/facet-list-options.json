@@ -7,7 +7,7 @@
             "facet-title": "Filter",
             "facet-list":[
                 {
-                    "facet-list-name": "Category name",
+                    "facet-list-name": "Category name 1",
                     "facet-list-selected": false,
                     "facet-list-id": "a1",
                     "facet-list-type-text": true,
@@ -31,7 +31,7 @@
             "facet-accordion": true,
             "facet-list":[
                 {
-                    "facet-list-name": "Category name",
+                    "facet-list-name": "Category name 2",
                     "facet-list-selected": true,
                     "facet-list-id": "b1",
                     "facet-list-type-text": true,
@@ -46,7 +46,7 @@
                     ]
                 },
                 {
-                    "facet-list-name": "Category name",
+                    "facet-list-name": "Category name 3",
                     "facet-list-selected": false,
                     "facet-list-id": "b2",
                     "facet-list-type-text": true,
@@ -70,7 +70,7 @@
             "facet-accordion": true,
             "facet-list":[
                 {
-                    "facet-list-name": "Category name",
+                    "facet-list-name": "Category name 4",
                     "facet-list-selected": false,
                     "facet-list-id": "c1",
                     "facet-list-type-checkbox": true,
@@ -84,7 +84,7 @@
                     ]
                 },
                 {
-                    "facet-list-name": "Category name",
+                    "facet-list-name": "Category name 5",
                     "facet-list-selected": false,
                     "facet-list-id": "c2",
                     "facet-list-type-text": true,
@@ -99,7 +99,7 @@
                     ]
                 },
                 {
-                    "facet-list-name": "Category name",
+                    "facet-list-name": "Category name 6",
                     "facet-list-selected": false,
                     "facet-list-id": "c3",
                     "facet-list-type-radio": true,
