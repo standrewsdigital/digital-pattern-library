@@ -11,7 +11,7 @@
 .facet-clear {
   display:inline-block;
   font-weight: normal;
-  font-size: 14px;
+  @include ms-respond(font-size, -1);
   margin: 8px 0 8px 15px;
   text-decoration: underline;
 }

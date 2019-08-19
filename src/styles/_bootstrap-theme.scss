@@ -265,7 +265,7 @@ table.table-tertiary-3 th {
     }
 
     &--border-top {
-        .list-group-item {
+        .list-group-item:first-child  {
             border-top: 1px #dedede solid;
         }
     }

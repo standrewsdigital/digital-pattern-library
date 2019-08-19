@@ -27,13 +27,13 @@
                 <div class="accordion-item__content remove-outer-padding" id="facet-{{facet-list-id}}" aria-hidden="true">
                 {{/if}}
               
-              <div class="list-group list-group--remove-outer-border list-group--border-top remove-margin-bottom panel-collapse collapse in">
+              <div class="list-group list-group--remove-outer-border list-group--border-top remove-margin-bottom{{#if facet-list-has-collapsed}} panel-collapse collapse in{{/if}} font-scale-minus-1">
               {{#each facet-list-items}}
                 {{#if facet-list-collapsed}}<div id="facet-list-{{../facet-list-id}}" class="collapse">{{/if}}
                 <a class="list-group-item" href="#">
-                  <span class="item-label font-scale-minus-1">
+                  <span class="item-label">
                     {{#if ../facet-list-type-radio}}
-                      <span class="facet-control">{{#if facet-list-item-selected}}&#128280;{{else}}&#9711;{{/if}}</span>
+                      <span class="facet-control">{{#if facet-list-item-selected}}<i class="far fa-dot-circle" aria-hidden="true"></i>{{else}}<i class="far fa-circle" aria-hidden="true"></i>{{/if}}</span>
                     {{/if}}
                     {{#if ../facet-list-type-checkbox}}
                       <span class="facet-control">{{#if facet-list-item-selected}}<i class="far fa-check-square" aria-hidden="true"></i>{{else}}<i class="far fa-square" aria-hidden="true"></i>{{/if}}</span>
@@ -69,13 +69,13 @@
         <i class="fa fa-times" aria-hidden="true"></i>Clear all
     </a>
     {{/if}}
-    <div class="list-group panel-collapse collapse in">
+    <div class="list-group{{#if facet-list-has-collapsed}} panel-collapse collapse in{{/if}} font-scale-minus-1">
               {{#each facet-list-items}}
                 {{#if facet-list-collapsed}}<div id="facet-list-{{../facet-list-id}}" class="collapse">{{/if}}
                 <a class="list-group-item" href="#">
-                  <span class="item-label font-scale-minus-1">
+                  <span class="item-label">
                     {{#if ../facet-list-type-radio}}
-                      <span class="facet-control">{{#if facet-list-item-selected}}&#128280;{{else}}&#9711;{{/if}}</span>
+                      <span class="facet-control">{{#if facet-list-item-selected}}<i class="far fa-dot-circle" aria-hidden="true"></i>{{else}}<i class="far fa-circle" aria-hidden="true"></i>{{/if}}</span>
                     {{/if}}
                     {{#if ../facet-list-type-checkbox}}
                       <span class="facet-control">{{#if facet-list-item-selected}}<i class="far fa-check-square" aria-hidden="true"></i>{{else}}<i class="far fa-square" aria-hidden="true"></i>{{/if}}</span>
