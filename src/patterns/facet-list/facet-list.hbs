@@ -29,7 +29,7 @@
               
               <div class="list-group list-group--remove-outer-border list-group--border-top remove-margin-bottom{{#if facet-list-has-collapsed}} panel-collapse collapse in{{/if}} font-scale-minus-1">
               {{#each facet-list-items}}
-                {{#if facet-list-collapsed}}<div id="facet-list-{{../facet-list-id}}" class="collapse">{{/if}}
+                {{#if facet-list-collapsed-start}}<div id="facet-list-{{../../facet-list-id}}" class="collapse">{{/if}}
                 <a class="list-group-item" href="#">
                   <span class="item-label">
                     {{#if ../facet-list-type-radio}}
@@ -39,16 +39,14 @@
                       <span class="facet-control">{{#if facet-list-item-selected}}<i class="far fa-check-square" aria-hidden="true"></i>{{else}}<i class="far fa-square" aria-hidden="true"></i>{{/if}}</span>
                     {{/if}}
                     {{#if ../facet-list-type-text}}
-                    {{#if facet-list-item-selected}}
-                      {{#if ../facet-list-type-drilldown}}<span style="margin-left: {{facet-list-item-margin}}px" class="facet-control">&#8627;</span>{{/if}}
-                      <i class="fa fa-times" aria-hidden="true"></i>
-                    {{/if}}
+                    {{#if facet-list-type-drilldown}}<span style="margin-left: {{facet-list-item-margin}}px" class="facet-control">&#8627;</span>{{/if}}
+                    {{#if facet-list-item-selected}}<i class="fa fa-times" aria-hidden="true"></i>{{/if}}
                     {{/if}}
                     {{facet-list-item-value}}
                   </span>
                   {{#if facet-list-item-badge}}<span class="badge">{{facet-list-item-badge}}</span>{{/if}}
                 </a>
-                {{#if facet-list-collapsed}}
+                {{#if facet-list-collapsed-end}}
                   </div>
                 {{/if}}
               {{/each}}
@@ -71,7 +69,7 @@
     {{/if}}
     <div class="list-group{{#if facet-list-has-collapsed}} panel-collapse collapse in{{/if}} font-scale-minus-1">
               {{#each facet-list-items}}
-                {{#if facet-list-collapsed}}<div id="facet-list-{{../facet-list-id}}" class="collapse">{{/if}}
+                {{#if facet-list-collapsed-start}}<div id="facet-list-{{../../facet-list-id}}" class="collapse">{{/if}}
                 <a class="list-group-item" href="#">
                   <span class="item-label">
                     {{#if ../facet-list-type-radio}}
@@ -81,16 +79,14 @@
                       <span class="facet-control">{{#if facet-list-item-selected}}<i class="far fa-check-square" aria-hidden="true"></i>{{else}}<i class="far fa-square" aria-hidden="true"></i>{{/if}}</span>
                     {{/if}}
                     {{#if ../facet-list-type-text}}
-                    {{#if facet-list-item-selected}}
-                      {{#if ../facet-list-type-drilldown}}<span style="margin-left: {{facet-list-item-margin}}px" class="facet-control">&#8627;</span>{{/if}}
-                      <i class="fa fa-times" aria-hidden="true"></i>
-                    {{/if}}
+                    {{#if facet-list-type-drilldown}}<span style="margin-left: {{facet-list-item-margin}}px" class="facet-control">&#8627;</span>{{/if}}
+                    {{#if facet-list-item-selected}}<i class="fa fa-times" aria-hidden="true"></i>{{/if}}
                     {{/if}}
                     {{facet-list-item-value}}
                   </span>
                   {{#if facet-list-item-badge}}<span class="badge">{{facet-list-item-badge}}</span>{{/if}}
                 </a>
-                {{#if facet-list-collapsed}}
+                {{#if facet-list-collapsed-end}}
                   </div>
                 {{/if}}
               {{/each}}

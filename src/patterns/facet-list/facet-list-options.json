@@ -196,7 +196,7 @@
         {
             "option-heading": "Drilldown nested categories",
             "option-anchor": "drilldown",
-            "option-description": "<p>This is used for nested options where the next level of choices are shown once their parent option has been selected.</p>",
+            "option-description": "<p>This is used for nested options where the next level of choices are shown once their parent option has been selected.</p><ul><li>Clicking on a selected option will remove its selection and that of any selected options that are contained underneath it.</li><li>Clicking on the 'Clear all' link should reset the filter and remove all selections of this filter.</li></ul>",
             "facet-title": "Filter",
             "facet-list":[
                 {
@@ -204,20 +204,22 @@
                     "facet-list-selected": true,
                     "facet-list-id": "d1",
                     "facet-list-type-text": true,
-                    "facet-list-type-drilldown": true,
                     "facet-list-items": [
                         {
                             "facet-list-item-value": "Category level 1",
-                            "facet-list-item-selected": true
+                            "facet-list-item-selected": true,
+                            "facet-list-item-margin": "0"
                         },
                         {
                             "facet-list-item-value": "Category level 2",
                             "facet-list-item-selected": true,
+                             "facet-list-type-drilldown": true,
                             "facet-list-item-margin": "10"
                         },
                         {
                             "facet-list-item-value": "Category level 3",
                             "facet-list-item-selected": true,
+                             "facet-list-type-drilldown": true,
                             "facet-list-item-margin": "20"
                         },
                         {
@@ -236,40 +238,59 @@
                 }
             ]
         },
-
         {
-            "option-heading": "List of facets",
-            "option-anchor": "list",
-            "option-description": "<p>A group of different lists</p>",
+            "option-heading": "Collapsed lists",
+            "option-anchor": "collapse",
+            "option-description": "<p>A long list of options can be shortened by hiding a number of items in a collapsing panel that is toggled by a button.</p><ul><li>Options that are within the collapsed panel are not as visible as those above, so this technique should only be used when strictly necessary.</li><li>If applicable, consider placing the most frequently used options above the collapsed options.</li></ul>",
             "facet-title": "Filter",
-            "facet-accordion": true,
             "facet-list":[
                 {
-                    "facet-list-name": "Category name 2",
-                    "facet-list-selected": true,
-                    "facet-list-id": "b1",
-                    "facet-list-type-text": true,
-                    "facet-list-items": [
-                        {
-                            "facet-list-item-value": "Item 1",
-                            "facet-list-item-selected": true
-                        },
-                        {
-                            "facet-list-item-value": "Item 2"
-                        }
-                    ]
-                },
-                {
-                    "facet-list-name": "Category name 3",
+                    "facet-list-name": "Collaosed list",
                     "facet-list-selected": false,
-                    "facet-list-id": "b2",
+                    "facet-list-id": "e1",
                     "facet-list-type-text": true,
+                    "facet-list-has-collapsed": true,
                     "facet-list-items": [
                         {
-                            "facet-list-item-value": "Item 1"
+                            "facet-list-item-value": "Option 1"
                         },
                         {
-                            "facet-list-item-value": "Item 2"
+                            "facet-list-item-value": "Option 2"
+                        },
+                        {
+                            "facet-list-item-value": "Option 3"
+                        },
+                        {
+                            "facet-list-item-value": "Option 4"
+                        },
+                        {
+                            "facet-list-item-value": "Option 5"
+                        },
+                        {
+                            "facet-list-item-value": "Option 6"
+                        },
+                        {
+                            "facet-list-item-value": "Option 7"
+                        },
+                        {
+                            "facet-list-item-value": "Option 8"
+                        },
+                        {
+                            "facet-list-item-value": "Option 9",
+                            "facet-list-collapsed-start": true
+                        },
+                        {
+                            "facet-list-item-value": "Option 10"
+                        },
+                        {
+                            "facet-list-item-value": "Option 11"
+                        },
+                        {
+                            "facet-list-item-value": "Option 12"
+                        },
+                        {
+                            "facet-list-item-value": "Option 13",
+                            "facet-list-collapsed-end": true
                         }
                     ]
                 }
@@ -277,52 +298,179 @@
         },
 
         {
-            "option-heading": "List of facets",
-            "option-anchor": "list",
-            "option-description": "<p>A group of different lists</p>",
+            "option-heading": "Group of facets",
+            "option-anchor": "group",
+            "option-description": "<p>A group of different lists can be combined using the <a href=\"../accordion/index.html\">accordion group</a> pattern to form a complex series of filters. The following example shows two different types of filter combined into a single filter tool.</p><ul><li>The default state of all facet lists within an accordion group is collapsed.</li></ul>",
             "facet-title": "Filter",
             "facet-accordion": true,
             "facet-list":[
                 {
-                    "facet-list-name": "Category name 4",
+                    "facet-list-name": "Category type 1",
                     "facet-list-selected": false,
-                    "facet-list-id": "c1",
-                    "facet-list-type-checkbox": true,
-                    "facet-list-items": [
-                        {
-                            "facet-list-item-value": "Item 1"
-                        },
-                        {
-                            "facet-list-item-value": "Item 2"
-                        }
-                    ]
-                },
-                {
-                    "facet-list-name": "Category name 5",
-                    "facet-list-selected": false,
-                    "facet-list-id": "c2",
+                    "facet-list-id": "f1",
                     "facet-list-type-text": true,
-                    "facet-list-type-drilldown": true,
                     "facet-list-items": [
                         {
-                            "facet-list-item-value": "Item 1"
+                            "facet-list-item-value": "Option 1"
                         },
                         {
-                            "facet-list-item-value": "Item 2"
+                            "facet-list-item-value": "Option 2"
+                        },
+                        {
+                            "facet-list-item-value": "Option 3"
+                        },
+                        {
+                            "facet-list-item-value": "Option 4"
+                        },
+                        {
+                            "facet-list-item-value": "Option 5"
+                        },
+                        {
+                            "facet-list-item-value": "Option 6"
                         }
                     ]
                 },
                 {
-                    "facet-list-name": "Category name 6",
+                    "facet-list-name": "Category type 2",
                     "facet-list-selected": false,
-                    "facet-list-id": "c3",
+                    "facet-list-id": "f2",
                     "facet-list-type-radio": true,
                     "facet-list-items": [
                         {
-                            "facet-list-item-value": "Item 1"
+                            "facet-list-item-value": "Option 1"
+                        },
+                        {
+                            "facet-list-item-value": "Option 2"
+                        },
+                        {
+                            "facet-list-item-value": "Option 3"
+                        },
+                        {
+                            "facet-list-item-value": "Option 4"
+                        },
+                        {
+                            "facet-list-item-value": "Option 5"
+                        },
+                        {
+                            "facet-list-item-value": "Option 6"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "option-heading": "Group of facets - selected",
+            "option-anchor": "group-selected",
+            "option-description": "<p>The following example shows a group of different lists with the first two lists containing selected items.</p><ul><li>If a facet contains selected items then the list should initially be opened within the accordion group.</li></ul>",
+            "facet-title": "Filter",
+            "facet-accordion": true,
+            "facet-list":[
+                {
+                    "facet-list-name": "Category type 1",
+                    "facet-list-selected": true,
+                    "facet-list-id": "g1",
+                    "facet-list-type-checkbox": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Item 1",
+                            "facet-list-item-selected": true
                         },
                         {
                             "facet-list-item-value": "Item 2"
+                        },
+                        {
+                            "facet-list-item-value": "Item 3"
+                        },
+                        {
+                            "facet-list-item-value": "Item 4"
+                        }
+                    ]
+                },
+                {
+                    "facet-list-name": "Category type 2",
+                    "facet-list-selected": true,
+                    "facet-list-id": "g2",
+                    "facet-list-type-text": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Category level 1",
+                            "facet-list-item-selected": true,
+                            "facet-list-item-margin": "0"
+                        },
+                        {
+                            "facet-list-item-value": "Category level 2",
+                            "facet-list-item-selected": true,
+                             "facet-list-type-drilldown": true,
+                            "facet-list-item-margin": "10"
+                        },
+                        {
+                            "facet-list-item-value": "Category level 3",
+                            "facet-list-item-selected": true,
+                             "facet-list-type-drilldown": true,
+                            "facet-list-item-margin": "20"
+                        },
+                        {
+                            "facet-list-item-value": "Option 1"
+                        },
+                        {
+                            "facet-list-item-value": "Option 2"
+                        },
+                        {
+                            "facet-list-item-value": "Option 3"
+                        },
+                        {
+                            "facet-list-item-value": "Option 4"
+                        }
+                    ]
+                },
+                {
+                    "facet-list-name": "Category type 3",
+                    "facet-list-selected": false,
+                    "facet-list-id": "g3",
+                    "facet-list-type-text": true,
+                    "facet-list-has-collapsed": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Option 1"
+                        },
+                        {
+                            "facet-list-item-value": "Option 2"
+                        },
+                        {
+                            "facet-list-item-value": "Option 3"
+                        },
+                        {
+                            "facet-list-item-value": "Option 4"
+                        },
+                        {
+                            "facet-list-item-value": "Option 5"
+                        },
+                        {
+                            "facet-list-item-value": "Option 6"
+                        },
+                        {
+                            "facet-list-item-value": "Option 7"
+                        },
+                        {
+                            "facet-list-item-value": "Option 8"
+                        },
+                        {
+                            "facet-list-item-value": "Option 9",
+                            "facet-list-collapsed-start": true
+                        },
+                        {
+                            "facet-list-item-value": "Option 10"
+                        },
+                        {
+                            "facet-list-item-value": "Option 11"
+                        },
+                        {
+                            "facet-list-item-value": "Option 12"
+                        },
+                        {
+                            "facet-list-item-value": "Option 13",
+                            "facet-list-collapsed-end": true
                         }
                     ]
                 }
