@@ -100,7 +100,11 @@
 	margin-right: -4px; /* <<< this is a magic number and we don't know why.*/
 }
 
-.affiliation-logo img{
+.affiliation-logo.col-sm-4 img{
+	width: 50%;
+}
+
+.affiliation-logo.col-sm-6 img{
 	width: 25%;
 }
 
