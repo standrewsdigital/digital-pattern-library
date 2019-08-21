@@ -28,27 +28,42 @@
   font-weight: bold;
 }
 
-.collapse-trigger {
-  cursor:pointer;
-  font-weight: normal;
-  font-size: 14px;
-}
+.facet {
 
-.collapse-trigger:after {
-  content: ' Less';
-}
+  // Flexbox support for badges in list-group items
+  .list-group-item:not(.collapse-trigger) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 
-.collapse-trigger.collapsed:after {
-  content: ' More';
-}
+  .badge {
+    margin-top: 0;
+  }
 
-.collapse-trigger:before {
-  content: '\f068';
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-}
-.collapse-trigger.collapsed:before {
-  content: '\f067';
+  // Facet specific overrides to collapse
+  .collapse-trigger {
+    cursor:pointer;
+    font-weight: normal;
+    font-size: 14px;
+  }
+
+  .collapse-trigger:after {
+    content: ' Less';
+  }
+
+  .collapse-trigger.collapsed:after {
+    content: ' More';
+  }
+
+  .collapse-trigger:before {
+    content: '\f068';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+  }
+  .collapse-trigger.collapsed:before {
+    content: '\f067';
+  }
 }
 
 /*********************************/

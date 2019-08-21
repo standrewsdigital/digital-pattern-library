@@ -51,6 +51,82 @@
                 }
             ]
         },
+    "facets": {
+            "facet-title": "Filter",
+            "facet-accordion": true,
+            "facet-list":[
+                {
+                    "facet-list-name": "Category",
+                    "facet-list-selected": true,
+                    "facet-list-id": "a1",
+                    "facet-list-type-text": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Academic policies",
+                            "facet-list-item-selected": true
+                        },
+                        {
+                            "facet-list-item-value": "Assessment, examination and award",
+                            "facet-list-item-badge": "12"
+                        },
+                        {
+                            "facet-list-item-value": "Curriculum",
+                            "facet-list-item-badge": "1"
+                        },
+                        {
+                            "facet-list-item-value": "Learning and teaching",
+                            "facet-list-item-badge": "3"
+                        },
+                        {
+                            "facet-list-item-value": "Student progression",
+                            "facet-list-item-badge": "3"
+                        }
+                    ]
+                },
+                {
+                    "facet-list-name": "Scope (applies to)",
+                    "facet-list-selected": true,
+                    "facet-list-id": "a2",
+                    "facet-list-type-checkbox": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Academic staff",
+                            "facet-list-item-badge": "26"
+                        },
+                        {
+                            "facet-list-item-value": "All schools",
+                            "facet-list-item-badge": "29"
+                        },
+                        {
+                            "facet-list-item-value": "All staff",
+                            "facet-list-item-badge": "25"
+                        },
+                        {
+                            "facet-list-item-value": "All students",
+                            "facet-list-item-selected": true
+                        },
+                        {
+                            "facet-list-item-value": "PGR only",
+                            "facet-list-item-badge": "31"
+                        }
+                    ]
+                },
+                {
+                    "facet-list-name": "Academic year of entry",
+                    "facet-list-selected": false,
+                    "facet-list-id": "a3",
+                    "facet-list-type-radio": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "2018-2019"
+                        },
+                        {
+                            "facet-list-item-value": "2018-2019"
+                        }
+                    ]
+                }
+            ]
+    },    
     "results": {
             "group-heading": "Fully matching results",
             "search-results": [

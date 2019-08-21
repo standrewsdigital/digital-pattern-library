@@ -27,7 +27,7 @@
                 <div class="accordion-item__content remove-outer-padding" id="facet-{{facet-list-id}}" aria-hidden="true">
                 {{/if}}
               
-              <div class="list-group list-group--remove-outer-border list-group--border-top remove-margin-bottom{{#if facet-list-has-collapsed}} panel-collapse collapse in{{/if}} font-scale-minus-1">
+              <div class="list-group list-group--remove-outer-border list-group--border-top remove-margin-bottom{{#if facet-list-has-collapsed}} panel-collapse collapse in{{/if}} font-scale-minus-1 facet">
               {{#each facet-list-items}}
                 {{#if facet-list-collapsed-start}}<div id="facet-list-{{../../facet-list-id}}" class="collapse">{{/if}}
                 <a class="list-group-item" href="#">
@@ -72,7 +72,7 @@
         <i class="fa fa-times" aria-hidden="true"></i>Clear all
     </a>
     {{/if}}
-    <div class="list-group{{#if facet-list-has-collapsed}} panel-collapse collapse in{{/if}} font-scale-minus-1">
+    <div class="list-group{{#if facet-list-has-collapsed}} panel-collapse collapse in{{/if}} font-scale-minus-1 facet">
               {{#each facet-list-items}}
                 {{#if facet-list-collapsed-start}}<div id="facet-list-{{../../facet-list-id}}" class="collapse">{{/if}}
                 <a class="list-group-item" href="#">
