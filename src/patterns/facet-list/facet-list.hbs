@@ -1,5 +1,5 @@
 <!-- Begin pattern: facet list //-->
-{{#if facet-title}}<h2 class="font-scale-1" style="{{#if facet-accordion}}float:left;margin-bottom:0;{{/if}}margin-top:0;">{{facet-title}}</h2>{{/if}}
+{{#if facet-title}}<h2 class="font-scale-1 facet-title{{#if facet-accordion}} facet-title--group{{/if}}">{{facet-title}}</h2>{{/if}}
 
 {{#if facet-accordion}}
           <button class="accordion-group__toggle" aria-expanded="false">Open all</button>
@@ -43,6 +43,11 @@
                     {{#if facet-list-item-selected}}<i class="fa fa-times" aria-hidden="true"></i>{{/if}}
                     {{/if}}
                     {{facet-list-item-value}}
+                    {{#if ../facet-list-type-radio}}
+                    {{#if facet-list-item-selected}} <span class="sr-only">(Current)</span>{{/if}}
+                    {{else}}
+                    {{#if facet-list-item-selected}} <span class="sr-only">(Selected)</span>{{/if}}
+                    {{/if}}
                   </span>
                   {{#if facet-list-item-badge}}<span class="badge">{{facet-list-item-badge}}</span>{{/if}}
                 </a>
@@ -83,6 +88,11 @@
                     {{#if facet-list-item-selected}}<i class="fa fa-times" aria-hidden="true"></i>{{/if}}
                     {{/if}}
                     {{facet-list-item-value}}
+                    {{#if ../facet-list-type-radio}}
+                    {{#if facet-list-item-selected}} <span class="sr-only">(Current)</span>{{/if}}
+                    {{else}}
+                    {{#if facet-list-item-selected}} <span class="sr-only">(Selected)</span>{{/if}}
+                    {{/if}}
                   </span>
                   {{#if facet-list-item-badge}}<span class="badge">{{facet-list-item-badge}}</span>{{/if}}
                 </a>
@@ -91,7 +101,7 @@
                 {{/if}}
               {{/each}}
                 {{#if facet-list-has-collapsed}}
-                  <a class="list-group-item collapse-trigger collapsed" data-target="#facet-list-{{../facet-list-id}}" data-toggle="collapse"></a>
+                  <button class="list-group-item collapse-trigger collapsed" data-target="#facet-list-{{../facet-list-id}}" data-toggle="collapse" aria-expanded="false" aria-controls="facet-list-{{../facet-list-id}}"></button>
                 {{/if}}
               </div>
 

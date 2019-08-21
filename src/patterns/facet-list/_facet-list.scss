@@ -3,10 +3,14 @@
 /* BEGIN Pattern: facet-list     */
 /*********************************/
 
-.item-label span {
-  font-weight: bold;
-}
+.facet-title {
+  margin-top: 0;
 
+  &--group {
+    float: left;
+    margin-bottom: 0;
+  }
+}
 
 .facet-clear {
   display:inline-block;
@@ -14,10 +18,14 @@
   @include ms-respond(font-size, -1);
   margin: 8px 0 8px 15px;
   text-decoration: underline;
+
+  i {
+    margin-right: 5px;
+  }
 }
 
-.facet-clear i {
-  margin-right: 5px;
+.facet-control {
+  font-weight: bold;
 }
 
 .collapse-trigger {
@@ -27,20 +35,20 @@
 }
 
 .collapse-trigger:after {
-    content: ' Less';
+  content: ' Less';
 }
 
 .collapse-trigger.collapsed:after {
-    content: ' More';
+  content: ' More';
 }
 
 .collapse-trigger:before {
-    content: '\f068';
-    font-family: 'Font Awesome 5 Free';
-font-weight: 900;
+  content: '\f068';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
 }
 .collapse-trigger.collapsed:before {
-    content: '\f067';
+  content: '\f067';
 }
 
 /*********************************/
