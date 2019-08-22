@@ -16,7 +16,7 @@
           }
     },
     "searchbanner": {
-            "background-color": "search-bar__grey",
+            "background-color": "search-bar__blue",
             "full-width": true,
             "placeholder": "Search by keyword or phrase",
             "search-header": "Document search",
