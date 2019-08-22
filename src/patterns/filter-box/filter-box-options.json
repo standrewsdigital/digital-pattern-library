@@ -1,0 +1,92 @@
+{
+    "options": [
+        {
+            "option-heading": "Filter box",
+            "option-anchor": "filter-box",
+            "option-description": "<p>A series of filters that are not related to one another.</p>",
+            "filter-heading": "Filtered by:",
+            "filters-list": [
+                {    
+                "filters-list-group": [
+                    {
+                        "label": "Filter A"
+                    },
+                    {
+                        "label": "Filter B"
+                    },
+                    {
+                        "label": "Filter C"
+                    }
+                ]
+                }
+            ]
+        },
+        {
+            "option-heading": "Filter box with grouped filters",
+            "option-anchor": "filter-box",
+            "option-description": "<p>Where filters are reliant on others they should be grouped together. This is typical for a 'drilldown' style filter where a filter selection reveals subsequent filter options.</p><ul><li>Only the top level filter tag of the group is bold. This should shown the name of the filter group.</li><li>Clearing a filter by clicking on it's tag will clear any of its lower level filter tags.</li><li>Groups of filters should appear on a new line.</li></ul>",
+            "filter-heading": "Filtered by:",
+            "filters-list": [
+                {
+                "filters-list-drilldown": true,
+                "filters-list-group": [
+                    {
+                        "label": "Filter group A"
+                    },
+                    {
+                        "label": "Top level filter"
+                    },
+                    {
+                        "label": "Second level filter",
+                        "icon": "<span>&#8627;</span>"
+                    }
+                ]
+                },
+                {
+                "filters-list-drilldown": true,
+                "filters-list-group": [
+                    {
+                        "label": "Filter group B"
+                    },
+                    {
+                        "label": "Top level filter"
+                    }
+                ]
+                }
+            ]
+        },
+        {
+            "option-heading": "Filter box with mix of filter types",
+            "option-anchor": "filter-box",
+            "option-description": "<p>Filter groups and individual filters may appear together.</p><ul><li>Groups of filters should appear on a new line.</li></ul>",
+            "filter-heading": "Filtered by:",
+            "filters-list": [
+                {
+                "filters-list-drilldown": true,
+                "filters-list-group": [
+                    {
+                        "label": "Filter group A"
+                    },
+                    {
+                        "label": "Top level filter"
+                    },
+                    {
+                        "label": "Second level filter",
+                        "icon": "<span>&#8627;</span>"
+                    }
+                ]
+                },
+                {
+                "filters-list-group": [
+                    {
+                        "label": "Filter B"
+                    },
+                    {
+                        "label": "Filter C"
+                    }
+                ]
+                }
+            ]
+        }
+    ]
+ }

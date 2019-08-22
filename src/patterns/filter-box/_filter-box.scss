@@ -1,0 +1,43 @@
+
+/*********************************/
+/* BEGIN Pattern: filter-box     */
+/*********************************/
+
+.filter-box {
+  background: rgb(240,240,240);
+  padding: 1.5625rem;
+  margin-bottom: 1.5625rem;
+}
+
+.filter-box__label {
+  margin:0;
+}
+
+.filter-box__list {
+  margin: 0;
+  padding: 0;
+
+  li a {
+  	font-weight: bold; // Possibly change to manage on tag itself
+  }
+}
+
+.filter-box__list-group {
+	li:not(:first-child) a {
+		font-weight: normal;
+	}
+}
+
+.filter-box__clear {
+  float:right;
+  font-weight: normal;
+  text-decoration: underline;
+
+  i {
+	  margin-right: 5px;
+	}
+}
+
+/*********************************/
+/* END Pattern: filter-box       */
+/*********************************/

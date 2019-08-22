@@ -10,11 +10,15 @@ $('.accordion-item').each(function() {
     
     // create unique id
     var id = 'accordion-item-' + accordion_increment;
-    //add WAI ARIA attributes to button
-    $(this).find('.accordion-item__toggle-button').attr({'aria-expanded': 'false', 'aria-controls': id});
-    //add WAI ARIA attributes to panel
-    $('.accordion-item__content', this).attr({'id': id, 'aria-hidden': true});
-
+    // If ARIA attributes not manually set then add
+    var manualaria = $(this).find('.accordion-item__toggle-button').get(0).hasAttribute('aria-expanded');
+    if(!manualaria){
+        //add WAI ARIA attributes to button
+        $(this).find('.accordion-item__toggle-button').attr({'aria-expanded': 'false', 'aria-controls': id});
+        //add WAI ARIA attributes to panel
+        $('.accordion-item__content', this).attr({'id': id, 'aria-hidden': true});
+    }
+    
     accordion_increment++;
 });
 
@@ -24,11 +28,11 @@ var accordion_group_increment = 0;
 $('.accordion-group').each(function() {    
     // create unique id
     var id = 'accordion-group-' + accordion_group_increment;
-    //add WAI ARIA attributes to toggle button
-    $(this).prev('.accordion-group__toggle').attr({'aria-expanded': 'false', 'aria-controls': id});
-    //add WAI ARIA attributes to group
-    $(this).attr({'id': id, 'aria-hidden': true});
-
+    var manualaria = $(this).prev('.accordion-group__toggle').get(0).hasAttribute('aria-expanded');
+    if(!manualaria){
+        //add WAI ARIA attributes to toggle button
+        $(this).prev('.accordion-group__toggle').attr({'aria-expanded': 'false', 'aria-controls': id});
+    }
     accordion_group_increment++;
 });
 
@@ -64,13 +68,11 @@ $(document).on('click', '.accordion-item__toggle', function(){
     if(items_open == accordion_size){
         group_toggle_button.attr('aria-expanded', true);
         group_toggle_button.text('Close all');
-        $(this).closest('.accordion-group').attr('aria-hidden', false);
     }
     // If all closed then change to open all
     if(items_closed == accordion_size){
         group_toggle_button.attr('aria-expanded', false);
         group_toggle_button.text('Open all');
-        $(this).closest('.accordion-group').attr('aria-hidden', true);
     }
 
     return false; // disable default event.
@@ -86,11 +88,9 @@ $(document).on('click', '.accordion-group__toggle', function(){
     if(state) {
         // If open change text to 'close all'
         $(this).text('Close all');
-        $(this).next('.accordion-group').attr('aria-hidden', !state);
     } else {
         // If closed change text to 'open all'
         $(this).text('Open all');
-        $(this).next('.accordion-group').attr('aria-hidden', state);
     }
 
     // Find the next accordion group and loop through each item

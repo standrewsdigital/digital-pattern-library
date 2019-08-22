@@ -158,6 +158,10 @@
                   "img": "assets/docs/images/patterns/contact-card.jpg",
                   "url": "patterns/contact-card/index.html"
                 },
+                { "name": "Facet list",
+                  "img": "assets/docs/images/patterns/facet-list.jpg",
+                  "url": "patterns/facet-list/index.html"
+                },
                 { "name": "Featured news",
                   "img": "assets/docs/images/patterns/featured-news.jpg",
                   "url": "patterns/featured-news/index.html"
@@ -165,6 +169,10 @@
                 { "name": "Featured people",
                   "img": "assets/docs/images/patterns/featured-people.jpg",
                   "url": "patterns/featured-people/index.html"
+                },
+                { "name": "Filter box",
+                  "img": "assets/docs/images/patterns/filter-box.jpg",
+                  "url": "patterns/filter-box/index.html"
                 },
                 { "name": "Gallery",
                   "img": "assets/docs/images/patterns/gallery.jpg",

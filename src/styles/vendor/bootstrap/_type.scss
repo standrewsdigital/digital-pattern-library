@@ -95,10 +95,10 @@ h6, .h6 { @extend %font-scale-0; }
 // Emphasis & misc
 // -------------------------
 
-// Ex: (12px small font / 14px base font) * 100% = about 85%
+// Move one down one the scale
 small,
 .small {
-  font-size: floor((100% * $font-size-small / $font-size-base));
+  font-size: ms(-1);
 }
 
 mark,

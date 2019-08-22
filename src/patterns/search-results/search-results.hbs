@@ -13,7 +13,7 @@
         {{#if metadata}}
         <dl class="search-result__meta">
             {{#each metadata}}
-            <dt{{#if full}} class="search-result__meta--full"{{/if}}><i class="{{icon}}" aria-hidden="true" title="{{term}}"></i><span class="sr-only">{{term}}</span></dt><dd{{#if full}} class="search-result__meta--full"{{/if}}>{{definition}}</dd>
+            <dt{{#if full}} class="search-result__meta--full"{{/if}}><i class="{{icon}}" aria-hidden="true" title="{{term}}"></i><span class="sr-only">{{term}}</span></dt><dd{{#if full}} class="search-result__meta--full"{{/if}}>{{{definition}}}</dd>
             {{/each}}
         </dl>
         {{/if}}
