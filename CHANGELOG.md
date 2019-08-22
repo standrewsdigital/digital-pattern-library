@@ -9,6 +9,34 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.19.0
+
+Release date: Thursday 22 August 2019
+
+### Added
+* Facet list pattern.
+* Filter box pattern.
+* Three logos in awards and affiliations footer banner now supported.
+
+### Fixed
+* Documentation typos.
+* ARIA roles in accordions pattern.
+* Search result spacing.
+* List group stylings.
+* Example update for search pattern.
+* Layout fixes.
+
+
+### Changed
+* Image sizes referenced across DPL now standardised.
+* Functionality for accordions to be open on page load.
+
+### Removed
+* Transparent colour options on colours page.
+
+
+---
+
 ## v1.18.4
 
 Release date: Monday 29 July 2019
