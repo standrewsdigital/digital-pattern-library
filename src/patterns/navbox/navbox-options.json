@@ -7,10 +7,10 @@
             "box-size": [
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "url": "../../assets/docs/images/placeholders/750x500.png",
                         "alt": "Description"
                     },
-                    "title": "Small (&frac13;)",
+                    "title": "Regular (&frac13;)",
                     "column": "col-sm-4",
                     "row": true
                 },
@@ -19,17 +19,8 @@
                         "url": "../../assets/docs/images/placeholders/1110x480.png",
                         "alt": "Description"
                     },
-                    "title": "Medium (&frac12;)",
+                    "title": "Large (&frac12;)",
                     "column": "col-sm-6",
-                    "row": true
-                },
-                {
-                    "image": {
-                        "url": "../../assets/docs/images/placeholders/1500x480.png",
-                        "alt": "Description"
-                    },
-                    "title": "Large (&frac23;)",
-                    "column": "col-sm-8",
                     "row": true
                 }
             ]
@@ -46,7 +37,7 @@
             "box-size": [
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "url": "../../assets/docs/images/placeholders/750x500.png",
                         "alt": "Description"
                     },
                     "title": "Study",
@@ -67,7 +58,7 @@
             "box-size": [
                 {
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "url": "../../assets/docs/images/placeholders/750x500.png",
                         "alt": "Description"
                     },
                     "title": "Study",

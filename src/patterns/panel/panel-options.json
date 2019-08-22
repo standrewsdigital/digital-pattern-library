@@ -94,12 +94,12 @@
         {
             "option-heading": "Panel with image",
             "option-anchor": "panel-image",
-            "option-description": "<p>A panel with an image must only be used in asides. It is recommended that panels with images include a link in the description text for further context. Images be must 360 &times; 240 pixels in resolution.</p>",
+            "option-description": "<p>A panel with an image must only be used in asides. It is recommended that panels with images include a link in the description text for further context. Images be must 750 &times; 500 pixels in resolution.</p>",
             "panels": [ 
                 {
                     "column-size": "col-md-4",
                     "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240-8.jpg",
+                        "url": "../../assets/docs/images/placeholders/750x500.png",
                         "alt": "placeholder"
                     },
                     "description": "<p>Lorem ipsum dolor sit amet, <a href='#'>consectetur adipisicing</a> elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.</p>"
