@@ -42,8 +42,8 @@ $body-bg:                white;
 $text-color:             $sta-grey-dark;
 
 //** Global textual link color.
-$link-color:             -dpl-color($palette-default,'primary','base');
-$link-hover-color:       -dpl-color($palette-default,'primary','base-hover');
+$link-color:             -dpl-color($palette-default,'secondary','base');
+$link-hover-color:       -dpl-color($palette-default,'secondary','base-hover');
 $link-hover-decoration:  underline;
 
 
