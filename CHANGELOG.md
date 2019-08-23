@@ -9,6 +9,19 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.19.1
+
+Release date: Friday 23 August 2019
+
+### Changed
+* DPL documentation styling.
+* Link colour now greater contrast to main font colour.
+
+### Removed
+* Ligature and font smoothing browser settings.
+
+---
+
 ## v1.19.0
 
 Release date: Thursday 22 August 2019
@@ -25,7 +38,6 @@ Release date: Thursday 22 August 2019
 * List group stylings.
 * Example update for search pattern.
 * Layout fixes.
-
 
 ### Changed
 * Image sizes referenced across DPL now standardised.
