@@ -25,13 +25,14 @@ $('.accordion-item').each(function() {
 // Set aria controls for every accordion group and toggle
 var accordion_group_increment = 0;
 
-$('.accordion-group').each(function() {    
+$('.accordion-group__toggle-container').each(function() {    
     // create unique id
     var id = 'accordion-group-' + accordion_group_increment;
     var manualaria = $(this).prev('.accordion-group__toggle').get(0).hasAttribute('aria-expanded');
     if(!manualaria){
         //add WAI ARIA attributes to toggle button
         $(this).prev('.accordion-group__toggle').attr({'aria-expanded': 'false', 'aria-controls': id});
+        $(this).attr({'id': id});
     }
     accordion_group_increment++;
 });
@@ -49,11 +50,11 @@ $(document).on('click', '.accordion-item__toggle', function(){
     $(this).next('.accordion-item__content').attr('aria-hidden', !state);
 
     // Check to see if group toggle needs amended based on this item being toggled
-    var accordion_size = $(this).closest('.accordion-group').children('.accordion-item').length;
+    var accordion_size = $(this).closest('.accordion-group__toggle-container').children('.accordion-item').length;
     var items_open = 0;
     var items_closed = 0;
     // Loop through all items in this accordion totalling up states
-    $(this).closest('.accordion-group').children('.accordion-item').each(function () {
+    $(this).closest('.accordion-group__toggle-container').children('.accordion-item').each(function () {
         if($(this).find('.accordion-item__toggle-button').attr('aria-expanded') === 'false'){
             items_closed++; 
         } else {
@@ -64,7 +65,7 @@ $(document).on('click', '.accordion-item__toggle', function(){
 
     // If either total matches accordion total then toggle the groups button state
     // If all open then change to close all
-    var group_toggle_button = $(this).closest('.accordion-group').prev('.accordion-group__toggle');
+    var group_toggle_button = $(this).closest('.accordion-group__toggle-container').prev('.accordion-group__toggle');
     if(items_open == accordion_size){
         group_toggle_button.attr('aria-expanded', true);
         group_toggle_button.text('Close all');
@@ -94,7 +95,7 @@ $(document).on('click', '.accordion-group__toggle', function(){
     }
 
     // Find the next accordion group and loop through each item
-    $(this).next('.accordion-group').children('.accordion-item').each(function () {
+    $(this).next('.accordion-group__toggle-container').children('.accordion-item').each(function () {
         // Check what the state is of the item and open or close if required - based on the state of the group toggle
         // Get item state and convert to boolean
         var state_item = $(this).find('.accordion-item__toggle-button').attr('aria-expanded') === 'false' ? false : true;

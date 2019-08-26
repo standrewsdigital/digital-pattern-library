@@ -1,7 +1,9 @@
 <!-- Begin pattern: accordion //-->
-{{#if accordion-group}}
+{{#if accordion-group-toggle}}
 <button class="accordion-group__toggle">Open all</button>
-<ul class="accordion-group">
+{{/if}}
+{{#if accordion-group}}
+<ul class="accordion-group{{#if accordion-group-toggle}} accordion-group__toggle-container{{/if}}">
 {{/if}}
 {{#each accordion}}
 {{{../accordion-item-open}}}

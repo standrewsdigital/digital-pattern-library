@@ -2,8 +2,8 @@
 {{#if facet-title}}<h2 class="font-scale-1 facet-title{{#if facet-accordion}} facet-title--group{{/if}}">{{facet-title}}</h2>{{/if}}
 
 {{#if facet-accordion}}
-          <button class="accordion-group__toggle" aria-expanded="false">Open all</button>
-          <ul class="accordion-group">
+          <button class="accordion-group__toggle">Open all</button>
+          <ul class="accordion-group accordion-group__toggle-container">
           {{#each facet-list}}
 
             <li class="accordion-item">
