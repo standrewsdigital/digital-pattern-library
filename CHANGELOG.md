@@ -9,6 +9,16 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.19.2
+
+Release date: Monday 26 August 2019
+
+### Changed
+* Accordion group toggle button now optional rather than required.
+* Light cyan colour changed for improved accessibility.
+
+---
+
 ## v1.19.1
 
 Release date: Friday 23 August 2019
