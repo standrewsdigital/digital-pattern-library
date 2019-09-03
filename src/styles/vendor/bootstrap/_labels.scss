@@ -42,7 +42,8 @@ a.label {
 // Contextual variations (linked labels get darker on :hover)
 
 .label-default {
-  @include label-variant($label-default-bg);
+  //@include label-variant(#6a6a6b);
+  background:#6a6a6b;
 }
 
 .label-primary {
