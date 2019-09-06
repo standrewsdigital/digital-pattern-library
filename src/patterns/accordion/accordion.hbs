@@ -1,13 +1,15 @@
 <!-- Begin pattern: accordion //-->
+{{#if accordion-group-toggle}}
+<button class="accordion-group__toggle">Open all</button>
+{{/if}}
 {{#if accordion-group}}
-<button class="accordion-group__toggle" aria-expanded="false">Open all</button>
-<ul class="accordion-group">
+<ul class="accordion-group{{#if accordion-group-toggle}} accordion-group__toggle-container{{/if}}">
 {{/if}}
 {{#each accordion}}
 {{{../accordion-item-open}}}
 	<div class="accordion-item__toggle">
 		<h3 class="accordion-item__toggle-title">
-	    	<button class="accordion-item__toggle-button" aria-expanded="false" aria-controls="">{{accordion-heading}}</button>
+	    	<button class="accordion-item__toggle-button">{{accordion-heading}}</button>
 	    </h3>
 	    {{#if accordion-intro}}
 	    <p class="accordion-item__toggle-intro">{{accordion-intro}}</p>
@@ -16,7 +18,7 @@
 	    <span class="accordion-item__toggle-keyfact"><i class="{{keyfact-icon}}" aria-hidden="true"></i>{{keyfact-text}}</span>
 	    {{/each}}	
 	</div>
-	<div class="accordion-item__content" id="" aria-hidden="true">{{{accordion-content}}}</div>
+	<div class="accordion-item__content">{{{accordion-content}}}</div>
 {{{../accordion-item-close}}}
 {{/each}}
 {{#if accordion-group}}

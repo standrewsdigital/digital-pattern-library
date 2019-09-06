@@ -248,12 +248,72 @@ table.table-tertiary-3 th {
 // LIST GROUP MODIFICATIONS
 // ====================================================
 
+.list-group {
+    &--remove-outer-border {
+        .list-group-item {
+            border-left:0;
+            border-right:0;
+
+            &:first-child {
+                border-top:0;
+            }
+
+            &:last-child {
+                border-bottom:0;
+            }
+        }
+    }
+
+    &--border-top {
+        .list-group-item:first-child  {
+            border-top: 1px #dedede solid;
+        }
+    }
+
+    &--remove-outer-padding {
+        .list-group-item {
+            padding-left:0;
+            padding-right:0;
+
+            &:first-child {
+                padding-top:0;
+            }
+
+            &:last-child {
+                padding-bottom:0;
+            }
+        }
+    }
+
+    &.remove-margin-bottom {
+        margin-bottom:0;
+    }
+}
+
 a.list-group-item {
     font-weight: normal;
         .list-group-item-heading {
             font-weight: bold;
     }
 }
+
+.list-group-item {
+    border-color: #dedede;
+    overflow: auto;
+
+    &:hover,
+    &:focus {
+        background: #ebebeb;
+    }
+    
+    .badge {
+      background: rgb(240,240,240);
+      color: inherit;
+      font-weight: bold;
+      margin: 2px 0 0 10px;
+    }
+}
+
 
 
 // INPUT GROUP MODIFICATIONS

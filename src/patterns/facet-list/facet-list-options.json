@@ -1,0 +1,520 @@
+{
+    "options": [
+        {
+            "option-heading": "Single category option",
+            "option-anchor": "single",
+            "option-description": "<p>A single list of options is shown and only one option should be selected at a time. Once an item is selected all other choices are hidden.</p>",
+            "facet-title": "Filter",
+            "facet-list":[
+                {
+                    "facet-list-name": "Single selection",
+                    "facet-list-selected": false,
+                    "facet-list-id": "a1",
+                    "facet-list-type-text": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Option 1"
+                        },
+                        {
+                            "facet-list-item-value": "Option 2"
+                        },
+                        {
+                            "facet-list-item-value": "Option 3"
+                        },
+                        {
+                            "facet-list-item-value": "Option 4"
+                        },
+                        {
+                            "facet-list-item-value": "Option 5"
+                        },
+                        {
+                            "facet-list-item-value": "Option 6"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "option-heading": "Single category option - selected",
+            "option-anchor": "single-selected",
+            "option-description": "<p>This example shows 'Option 1' selected with all other options hidden.</p><ul><li>Clicking on either the 'Clear all' link or selected option should reset the filter and show all original options.</li></ul>",
+            "facet-title": "Filter",
+            "facet-list":[
+                {
+                    "facet-list-name": "Single selection",
+                    "facet-list-selected": true,
+                    "facet-list-id": "a1-selected",
+                    "facet-list-type-text": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Option 1",
+                            "facet-list-item-selected": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "option-heading": "Multiple category options",
+            "option-anchor": "multiple",
+            "option-description": "<p>More than one option can be selected at a time with checkbox controls to denote which options are selected.</p>",
+            "facet-title": "Filter",
+            "facet-list":[
+                {
+                    "facet-list-name": "Multiple selection",
+                    "facet-list-selected": false,
+                    "facet-list-id": "b1",
+                    "facet-list-type-checkbox": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Option 1"
+                        },
+                        {
+                            "facet-list-item-value": "Option 2"
+                        },
+                        {
+                            "facet-list-item-value": "Option 3"
+                        },
+                        {
+                            "facet-list-item-value": "Option 4"
+                        },
+                        {
+                            "facet-list-item-value": "Option 5"
+                        },
+                        {
+                            "facet-list-item-value": "Option 6"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "option-heading": "Multiple category options - selected",
+            "option-anchor": "multiple-selected",
+            "option-description": "<p>This example shows 'Option 1' and 'Option 4' selected.</p><ul><li>Clicking on the 'Clear all' link should reset the filter and remove all selected filter options.</li><li>Clicking on an individual option should toggle its state.</li></ul>",
+            "facet-title": "Filter",
+            "facet-list":[
+                {
+                    "facet-list-name": "Multiple selection",
+                    "facet-list-selected": true,
+                    "facet-list-id": "b1-selected",
+                    "facet-list-type-checkbox": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Option 1",
+                            "facet-list-item-selected": true
+                        },
+                        {
+                            "facet-list-item-value": "Option 2"
+                        },
+                        {
+                            "facet-list-item-value": "Option 3"
+                        },
+                        {
+                            "facet-list-item-value": "Option 4",
+                            "facet-list-item-selected": true
+                        },
+                        {
+                            "facet-list-item-value": "Option 5"
+                        },
+                        {
+                            "facet-list-item-value": "Option 6"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "option-heading": "Toggle between category options",
+            "option-anchor": "toggle",
+            "option-description": "<p>This facet type only allows one item from the list to be selected at a time but all remaining non-selected options are still shown.</p>",
+            "facet-title": "Filter",
+            "facet-list":[
+                {
+                    "facet-list-name": "Toggle selection",
+                    "facet-list-selected": false,
+                    "facet-list-id": "c1",
+                    "facet-list-type-radio": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Option 1"
+                        },
+                        {
+                            "facet-list-item-value": "Option 2"
+                        },
+                        {
+                            "facet-list-item-value": "Option 3"
+                        },
+                        {
+                            "facet-list-item-value": "Option 4"
+                        },
+                        {
+                            "facet-list-item-value": "Option 5"
+                        },
+                        {
+                            "facet-list-item-value": "Option 6"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "option-heading": "Toggle between category options - selected",
+            "option-anchor": "multiple-selected",
+            "option-description": "<p>This example shows 'Option 2' selected.</p><ul><li>Clicking on the 'Clear all' link should reset the filter and remove the selected filter option.</li></ul>",
+            "facet-title": "Filter",
+            "facet-list":[
+                {
+                    "facet-list-name": "Toggle selection",
+                    "facet-list-selected": true,
+                    "facet-list-id": "c1-selected",
+                    "facet-list-type-radio": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Option 1"
+                        },
+                        {
+                            "facet-list-item-value": "Option 2",
+                            "facet-list-item-selected": true
+                        },
+                        {
+                            "facet-list-item-value": "Option 3"
+                        },
+                        {
+                            "facet-list-item-value": "Option 4"
+                        },
+                        {
+                            "facet-list-item-value": "Option 5"
+                        },
+                        {
+                            "facet-list-item-value": "Option 6"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "option-heading": "Drilldown nested category options",
+            "option-anchor": "drilldown",
+            "option-description": "<p>This is used for nested options where the next level of choices are shown once their parent option has been selected. This example shows the options available within 'Category level 3' which has been selected from 'Category level 2' which in turn has been selected from 'Category level 1'.</p><ul><li>Clicking on a selected option will remove its selection and that of any selected options that are contained underneath it.</li><li>Clicking on the 'Clear all' link should reset the filter and remove all selections of this filter. The original 'top level' options will then be shown.</li></ul>",
+            "facet-title": "Filter",
+            "facet-list":[
+                {
+                    "facet-list-name": "Drilldown",
+                    "facet-list-selected": true,
+                    "facet-list-id": "d1",
+                    "facet-list-type-text": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Category level 1",
+                            "facet-list-item-selected": true,
+                            "facet-list-item-margin": "0"
+                        },
+                        {
+                            "facet-list-item-value": "Category level 2",
+                            "facet-list-item-selected": true,
+                             "facet-list-type-drilldown": true,
+                            "facet-list-item-margin": "10"
+                        },
+                        {
+                            "facet-list-item-value": "Category level 3",
+                            "facet-list-item-selected": true,
+                             "facet-list-type-drilldown": true,
+                            "facet-list-item-margin": "20"
+                        },
+                        {
+                            "facet-list-item-value": "Option 1"
+                        },
+                        {
+                            "facet-list-item-value": "Option 2"
+                        },
+                        {
+                            "facet-list-item-value": "Option 3"
+                        },
+                        {
+                            "facet-list-item-value": "Option 4"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "option-heading": "Collapsed list of options",
+            "option-anchor": "collapse",
+            "option-description": "<p>A long list of options can be shortened by hiding a number of items in a collapsing panel that is toggled by a button.</p><ul><li>Options that are within the collapsed panel are not as visible as those above, so this technique should only be used when strictly necessary.</li><li>If applicable, consider placing the most frequently used options above the collapsed options.</li></ul>",
+            "facet-title": "Filter",
+            "facet-list":[
+                {
+                    "facet-list-name": "Collaosed list",
+                    "facet-list-selected": false,
+                    "facet-list-id": "e1",
+                    "facet-list-type-text": true,
+                    "facet-list-has-collapsed": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Option 1"
+                        },
+                        {
+                            "facet-list-item-value": "Option 2"
+                        },
+                        {
+                            "facet-list-item-value": "Option 3"
+                        },
+                        {
+                            "facet-list-item-value": "Option 4"
+                        },
+                        {
+                            "facet-list-item-value": "Option 5"
+                        },
+                        {
+                            "facet-list-item-value": "Option 6"
+                        },
+                        {
+                            "facet-list-item-value": "Option 7"
+                        },
+                        {
+                            "facet-list-item-value": "Option 8"
+                        },
+                        {
+                            "facet-list-item-value": "Option 9",
+                            "facet-list-collapsed-start": true
+                        },
+                        {
+                            "facet-list-item-value": "Option 10"
+                        },
+                        {
+                            "facet-list-item-value": "Option 11"
+                        },
+                        {
+                            "facet-list-item-value": "Option 12"
+                        },
+                        {
+                            "facet-list-item-value": "Option 13",
+                            "facet-list-collapsed-end": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "option-heading": "Options showing number of results",
+            "option-anchor": "badges",
+            "option-description": "<p>A 'badge' denoting how many results will appear, if an option is selected, is helpful to set users' expectations.</p><ul><li>This should only be applied to options that have not yet been selected.</li></ul>",
+            "facet-title": "Filter",
+            "facet-list":[
+                {
+                    "facet-list-name": "Numbered options",
+                    "facet-list-selected": true,
+                    "facet-list-id": "h1",
+                    "facet-list-type-text": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Option 1",
+                            "facet-list-item-badge": "21"
+                        },
+                        {
+                            "facet-list-item-value": "Option 2",
+                            "facet-list-item-selected": true
+                        },
+                        {
+                            "facet-list-item-value": "Option 3",
+                            "facet-list-item-badge": "9"
+                        },
+                        {
+                            "facet-list-item-value": "Option 4",
+                            "facet-list-item-badge": "104"
+                        },
+                        {
+                            "facet-list-item-value": "Option 5",
+                            "facet-list-item-selected": true
+                        },
+                        {
+                            "facet-list-item-value": "Option 6",
+                            "facet-list-item-badge": "67"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "option-heading": "Group of facets",
+            "option-anchor": "group",
+            "option-description": "<p>A group of different lists can be combined using the <a href=\"../accordion/index.html\">accordion group</a> pattern to form a complex series of filters. The following example shows two different types of filter combined into a single filter tool.</p><ul><li>The default state of all facet lists within an accordion group is collapsed.</li></ul>",
+            "facet-title": "Filter",
+            "facet-accordion": true,
+            "facet-list":[
+                {
+                    "facet-list-name": "Category type 1",
+                    "facet-list-selected": false,
+                    "facet-list-id": "f1",
+                    "facet-list-type-text": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Option 1"
+                        },
+                        {
+                            "facet-list-item-value": "Option 2"
+                        },
+                        {
+                            "facet-list-item-value": "Option 3"
+                        },
+                        {
+                            "facet-list-item-value": "Option 4"
+                        },
+                        {
+                            "facet-list-item-value": "Option 5"
+                        },
+                        {
+                            "facet-list-item-value": "Option 6"
+                        }
+                    ]
+                },
+                {
+                    "facet-list-name": "Category type 2",
+                    "facet-list-selected": false,
+                    "facet-list-id": "f2",
+                    "facet-list-type-radio": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Option 1"
+                        },
+                        {
+                            "facet-list-item-value": "Option 2"
+                        },
+                        {
+                            "facet-list-item-value": "Option 3"
+                        },
+                        {
+                            "facet-list-item-value": "Option 4"
+                        },
+                        {
+                            "facet-list-item-value": "Option 5"
+                        },
+                        {
+                            "facet-list-item-value": "Option 6"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "option-heading": "Group of facets - selected",
+            "option-anchor": "group-selected",
+            "option-description": "<p>The following example shows a group of different lists with the first two lists containing selected items.</p><ul><li>If a facet contains selected items then the list should initially be opened within the accordion group.</li></ul>",
+            "facet-title": "Filter",
+            "facet-accordion": true,
+            "facet-list":[
+                {
+                    "facet-list-name": "Category type 1",
+                    "facet-list-selected": true,
+                    "facet-list-id": "g1",
+                    "facet-list-type-checkbox": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Item 1",
+                            "facet-list-item-selected": true
+                        },
+                        {
+                            "facet-list-item-value": "Item 2"
+                        },
+                        {
+                            "facet-list-item-value": "Item 3"
+                        },
+                        {
+                            "facet-list-item-value": "Item 4"
+                        }
+                    ]
+                },
+                {
+                    "facet-list-name": "Category type 2",
+                    "facet-list-selected": true,
+                    "facet-list-id": "g2",
+                    "facet-list-type-text": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Category level 1",
+                            "facet-list-item-selected": true,
+                            "facet-list-item-margin": "0"
+                        },
+                        {
+                            "facet-list-item-value": "Category level 2",
+                            "facet-list-item-selected": true,
+                             "facet-list-type-drilldown": true,
+                            "facet-list-item-margin": "10"
+                        },
+                        {
+                            "facet-list-item-value": "Category level 3",
+                            "facet-list-item-selected": true,
+                             "facet-list-type-drilldown": true,
+                            "facet-list-item-margin": "20"
+                        },
+                        {
+                            "facet-list-item-value": "Option 1"
+                        },
+                        {
+                            "facet-list-item-value": "Option 2"
+                        },
+                        {
+                            "facet-list-item-value": "Option 3"
+                        },
+                        {
+                            "facet-list-item-value": "Option 4"
+                        }
+                    ]
+                },
+                {
+                    "facet-list-name": "Category type 3",
+                    "facet-list-selected": false,
+                    "facet-list-id": "g3",
+                    "facet-list-type-text": true,
+                    "facet-list-has-collapsed": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Option 1"
+                        },
+                        {
+                            "facet-list-item-value": "Option 2"
+                        },
+                        {
+                            "facet-list-item-value": "Option 3"
+                        },
+                        {
+                            "facet-list-item-value": "Option 4"
+                        },
+                        {
+                            "facet-list-item-value": "Option 5"
+                        },
+                        {
+                            "facet-list-item-value": "Option 6"
+                        },
+                        {
+                            "facet-list-item-value": "Option 7"
+                        },
+                        {
+                            "facet-list-item-value": "Option 8"
+                        },
+                        {
+                            "facet-list-item-value": "Option 9",
+                            "facet-list-collapsed-start": true
+                        },
+                        {
+                            "facet-list-item-value": "Option 10"
+                        },
+                        {
+                            "facet-list-item-value": "Option 11"
+                        },
+                        {
+                            "facet-list-item-value": "Option 12"
+                        },
+                        {
+                            "facet-list-item-value": "Option 13",
+                            "facet-list-collapsed-end": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+ }

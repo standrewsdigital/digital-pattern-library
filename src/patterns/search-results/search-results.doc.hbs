@@ -1,0 +1,36 @@
+---
+title: Search results
+---
+
+<p>The search results pattern is used to present a list of links typically from a search service. Different types of results may require different content to be featured, so this pattern has a number of options to provide for this.</p>
+
+<h2>Rules for search results</h2>
+<ul>
+	<li>A list of search results can use any combination of search result layout options.</li>
+	<li>Large lists of search results should be split accross multiple pages.</li>
+</ul>
+
+<h2>Options available</h2>
+<ul>
+{{#search-results-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/search-results-options.options}}
+</ul>
+
+{{#search-results-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+<!--noindex-->
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+<div class="container">
+	{{> search-results}}
+</div>
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> search-results}}</code></pre>
+<!--endnoindex-->
+{{/search-results-options.options}}

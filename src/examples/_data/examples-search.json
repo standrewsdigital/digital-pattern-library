@@ -1,0 +1,418 @@
+{
+   
+    "category-header": {
+        "title": "Search",
+        "url": "#"
+    },
+    "breadcrumbs": {
+        "parents": [
+            {"title": "University",
+             "url": "#"
+            }
+        ],
+        "current": {
+            "title": "Search",
+            "url": "#"
+          }
+    },
+    "searchbanner": {
+            "background-color": "search-bar__blue",
+            "full-width": true,
+            "placeholder": "Search by keyword or phrase",
+            "search-header": "Document search",
+            "input-id": "banner-search-grey",
+            "search-button": true,
+            "clear-button-type": " clear-icon__resubmit"
+    },
+    "filters": {
+            "filter-heading": "Filtered by:",
+            "filters-list": [
+                {
+                "filters-list-drilldown": true,
+                "filters-list-group": [
+                    {
+                        "label": "Category"
+                    },
+                    {
+                        "label": "Academic policies"
+                    }
+                ]
+                },
+                {
+                "filters-list-drilldown": true,
+                "filters-list-group": [
+                    {
+                        "label": "Scope (applies to)"
+                    },
+                    {
+                        "label": "All students"
+                    }
+                ]
+                }
+            ]
+        },
+    "facets": {
+            "facet-title": "Filter",
+            "facet-accordion": true,
+            "facet-list":[
+                {
+                    "facet-list-name": "Category",
+                    "facet-list-selected": true,
+                    "facet-list-id": "a1",
+                    "facet-list-type-text": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Academic policies",
+                            "facet-list-item-selected": true
+                        },
+                        {
+                            "facet-list-item-value": "Assessment, examination and award",
+                            "facet-list-item-badge": "12"
+                        },
+                        {
+                            "facet-list-item-value": "Curriculum",
+                            "facet-list-item-badge": "1"
+                        },
+                        {
+                            "facet-list-item-value": "Learning and teaching",
+                            "facet-list-item-badge": "3"
+                        },
+                        {
+                            "facet-list-item-value": "Student progression",
+                            "facet-list-item-badge": "3"
+                        }
+                    ]
+                },
+                {
+                    "facet-list-name": "Scope (applies to)",
+                    "facet-list-selected": true,
+                    "facet-list-id": "a2",
+                    "facet-list-type-checkbox": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "Academic staff",
+                            "facet-list-item-badge": "26"
+                        },
+                        {
+                            "facet-list-item-value": "All schools",
+                            "facet-list-item-badge": "29"
+                        },
+                        {
+                            "facet-list-item-value": "All staff",
+                            "facet-list-item-badge": "25"
+                        },
+                        {
+                            "facet-list-item-value": "All students",
+                            "facet-list-item-selected": true
+                        },
+                        {
+                            "facet-list-item-value": "PGR only",
+                            "facet-list-item-badge": "31"
+                        }
+                    ]
+                },
+                {
+                    "facet-list-name": "Academic year of entry",
+                    "facet-list-selected": false,
+                    "facet-list-id": "a3",
+                    "facet-list-type-radio": true,
+                    "facet-list-items": [
+                        {
+                            "facet-list-item-value": "2018-2019"
+                        },
+                        {
+                            "facet-list-item-value": "2018-2019"
+                        }
+                    ]
+                }
+            ]
+    },    
+    "results": {
+            "group-heading": "Fully matching results",
+            "search-results": [
+                {
+                    "heading": "Postgraduate senate regulations 2019-20",
+                    "url": "https://www.st-andrews.ac.uk/policy/academic-policies-assessment-examination-and-award-pg-senate-regulations/2019-2020/internal/pg-senate-regs.pdf",
+                    "description": "Senate regulations governing all postgraduate degrees.",
+                    "heading-label": "Password protected",
+                    "metadata": [
+                      {
+                        "full": true,
+                        "icon": "fas fa-folder-open",
+                        "term": "File location",
+                        "definition": "Academic policies &gt; Assessment, examination and award &gt; PG Senate regulations"
+                      },  
+                      {
+                        "icon": "fas fa-calendar-alt",
+                        "term": "Published date",
+                        "definition": "31 July 2019"
+                      },  
+                      {
+                        "icon": "fas fa-file-alt",
+                        "term": "Document type",
+                        "definition": "Policy"
+                      },  
+                      {
+                        "icon": "fas fa-user",
+                        "term": "Scope (applies to)",
+                        "definition": "All students"
+                      }
+                    ]
+                },
+                {
+                    "heading": "Academic adjustments for disabled students",
+                    "url": "https://www.st-andrews.ac.uk/policy/academic-policies-assessment-examination-and-award-assessing-students-with-disabilities/academic-adjustments-for-disabled-students.doc.pdf",
+                    "description": "This policy outlines the processes and procedures through which disabled students can request reasonable academic adjustments to both teaching and assessment.",
+                    "metadata": [
+                        {
+                            "full": true,
+                            "icon": "fas fa-folder-open",
+                            "term": "File location",
+                            "definition": "Academic policies &gt; Assessment, examination and award &gt; Assessing students with disabilities"
+                        },  
+                      {
+                        "icon": "fas fa-calendar-alt",
+                        "term": "Published date",
+                        "definition": "14 August 2019"
+                      },  
+                      {
+                        "icon": "fas fa-file-alt",
+                        "term": "Document type",
+                        "definition": "Policy"
+                      },  
+                      {
+                        "icon": "fas fa-user",
+                        "term": "Scope (applies to)",
+                        "definition": "All students"
+                      }
+                    ]
+                },
+                {
+                    "heading": "Fitness to study",
+                    "url": "https://www.st-andrews.ac.uk/policy/academic-policies-student-progression-fitness-to-study/fitness-to-study.pdf",
+                    "description": "This policy relates to concerns about a student's health or behaviour which is seriously impacting the student and/or others.",
+                    "metadata": [
+                        {
+                            "full": true,
+                            "icon": "fas fa-folder-open",
+                            "term": "File location",
+                            "definition": "Academic policies &gt; Student progression &gt; Fitness to study"
+                        },  
+                      {
+                        "icon": "fas fa-calendar-alt",
+                        "term": "Published date",
+                        "definition": "16 July 2019"
+                      },  
+                      {
+                        "icon": "fas fa-file-alt",
+                        "term": "Document type",
+                        "definition": "Policy"
+                      },  
+                      {
+                        "icon": "fas fa-user",
+                        "term": "Scope (applies to)",
+                        "definition": "All students"
+                      }
+                    ]
+                },
+                {
+                    "heading": "Postgraduate Senate Regulations 2018/19",
+                    "url": "https://www.st-andrews.ac.uk/policy/academic-policies-assessment-examination-and-award-pg-senate-regulations/2018-2019/internal/pg-senate-regs.pdf",
+                    "description": "Senate regulations governing all postgraduate degrees.",
+                    "heading-label": "Password protected",
+                    "metadata": [
+                        {
+                            "full": true,
+                            "icon": "fas fa-folder-open",
+                            "term": "File location",
+                            "definition": "Academic policies &gt; Assessment, examination and award &gt; PG Senate regulations"
+                        },  
+                      {
+                        "icon": "fas fa-calendar-alt",
+                        "term": "Published date",
+                        "definition": "27 June 2019"
+                      },  
+                      {
+                        "icon": "fas fa-file-alt",
+                        "term": "Document type",
+                        "definition": "Policy"
+                      },  
+                      {
+                        "icon": "fas fa-user",
+                        "term": "Scope (applies to)",
+                        "definition": "All students"
+                      }
+                    ]
+                },
+                {
+                    "heading": "Examination rules",
+                    "url": "https://www.st-andrews.ac.uk/policy/academic-policies-assessment-examination-and-award-examination-rules/examination-rules.pdf",
+                    "description": "These Examination Rules govern all University examinations and students are advised to read and understand these Rules before sitting examinations.",
+                    "metadata": [
+                        {
+                            "full": true,
+                            "icon": "fas fa-folder-open",
+                            "term": "File location",
+                            "definition": "Academic policies &gt; Assessment, examination and award &gt; Examination rules"
+                        },  
+                      {
+                        "icon": "fas fa-calendar-alt",
+                        "term": "Published date",
+                        "definition": "28 June 2019"
+                      },  
+                      {
+                        "icon": "fas fa-file-alt",
+                        "term": "Document type",
+                        "definition": "Procedure"
+                      },  
+                      {
+                        "icon": "fas fa-user",
+                        "term": "Scope (applies to)",
+                        "definition": "All students"
+                      }
+                    ]
+                },
+                {
+                    "heading": "Award of posthumous qualifications",
+                    "url": "https://www.st-andrews.ac.uk/policy/academic-policies-assessment-examination-and-award-posthumous-qualification/posthumous-qualifications.pdf",
+                    "description": "This policy relates to the award of a posthumous qualification in the event of a student's death.",
+                    "metadata": [
+                        {
+                            "full": true,
+                            "icon": "fas fa-folder-open",
+                            "term": "File location",
+                            "definition": "Academic policies &gt; Assessment, examination and award &gt; Posthumous qualification"
+                        },  
+                      {
+                        "icon": "fas fa-calendar-alt",
+                        "term": "Published date",
+                        "definition": "28 June 2019"
+                      },  
+                      {
+                        "icon": "fas fa-file-alt",
+                        "term": "Document type",
+                        "definition": "Policy"
+                      },  
+                      {
+                        "icon": "fas fa-user",
+                        "term": "Scope (applies to)",
+                        "definition": "All students"
+                      }
+                    ]
+                },
+                {
+                    "heading": "Good academic practice",
+                    "url": "https://www.st-andrews.ac.uk/policy/academic-policies-assessment-examination-and-award-good-academic-practice/good-academic-practice.pdf",
+                    "description": "This policy concerns all matters relating to Good Academic Practice including current principles, procedures and sanctions for specific cases of misconduct.",
+                    "metadata": [
+                        {
+                            "full": true,
+                            "icon": "fas fa-folder-open",
+                            "term": "File location",
+                            "definition": "Academic policies &gt; Assessment, examination and award &gt; Good academic practice"
+                        },  
+                      {
+                        "icon": "fas fa-calendar-alt",
+                        "term": "Published date",
+                        "definition": "23 July 2019"
+                      },  
+                      {
+                        "icon": "fas fa-file-alt",
+                        "term": "Document type",
+                        "definition": "Policy"
+                      },  
+                      {
+                        "icon": "fas fa-user",
+                        "term": "Scope (applies to)",
+                        "definition": "All students"
+                      }
+                    ]
+                },
+                {
+                    "heading": "Credits and grade conversions for study abroad",
+                    "url": "https://www.st-andrews.ac.uk/policy/academic-policies-assessment-examination-and-award-credits-and-grade-conversion-for-study-abroad/credits-and-grade-conversions-for-study-abroad.pdf",
+                    "description": "This policy sets out procedures relating to the acquisition and conversion of credits and grades at institutions other than St Andrews, in the course of a St Andrews degree programme.",
+                    "metadata": [
+                        {
+                            "full": true,
+                            "icon": "fas fa-folder-open",
+                            "term": "File location",
+                            "definition": "Academic policies &gt; Assessment, examination and award &gt; Credits and grade conversion for study abroad"
+                        },  
+                      {
+                        "icon": "fas fa-calendar-alt",
+                        "term": "Published date",
+                        "definition": "9 July 2019"
+                      },  
+                      {
+                        "icon": "fas fa-file-alt",
+                        "term": "Document type",
+                        "definition": "Policy"
+                      },  
+                      {
+                        "icon": "fas fa-user",
+                        "term": "Scope (applies to)",
+                        "definition": "All students"
+                      }
+                    ]
+                },
+                {
+                    "heading": "Location of studies",
+                    "url": "https://www.st-andrews.ac.uk/policy/academic-policies-learning-and-teaching-location-of-studies/location-of-studies.pdf",
+                    "description": "This policy relates to the expectation that all students reside at a term address within a commutable distance. The policy excludes Distance Learning students.",
+                    "metadata": [
+                        {
+                            "full": true,
+                            "icon": "fas fa-folder-open",
+                            "term": "File location",
+                            "definition": "Academic policies &gt; Learning and teaching &gt; Location of studies"
+                        },  
+                      {
+                        "icon": "fas fa-calendar-alt",
+                        "term": "Published date",
+                        "definition": "28 June 2019"
+                      },  
+                      {
+                        "icon": "fas fa-file-alt",
+                        "term": "Document type",
+                        "definition": "Policy"
+                      },  
+                      {
+                        "icon": "fas fa-user",
+                        "term": "Scope (applies to)",
+                        "definition": "All students"
+                      }
+                    ]
+                },
+                {
+                    "heading": "Final module in a PGT programme",
+                    "url": "https://www.st-andrews.ac.uk/policy/academic-policies-curriculum-final-module-in-a-pgt-programme/final-module-in-a-pgt-programme.pdf",
+                    "description": "This policy relates to teaching, supervision and assessment of the final modules (normally 60 credits) of all Taught Postgraduate Masters programmes.",
+                    "metadata": [
+                        {
+                            "full": true,
+                            "icon": "fas fa-folder-open",
+                            "term": "File location",
+                            "definition": "Academic policies &gt; Curriculum &gt; Final module in a PGT programme"
+                        },  
+                      {
+                        "icon": "fas fa-calendar-alt",
+                        "term": "Published date",
+                        "definition": "28 June 2019"
+                      },  
+                      {
+                        "icon": "fas fa-file-alt",
+                        "term": "Document type",
+                        "definition": "Policy"
+                      },  
+                      {
+                        "icon": "fas fa-user",
+                        "term": "Scope (applies to)",
+                        "definition": "All students"
+                      }
+                    ]
+                }
+            ]
+        }
+        
+}

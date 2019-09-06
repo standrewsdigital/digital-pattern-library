@@ -11,7 +11,7 @@
 .accordion > h3 {
     @include -dpl-transition();
     background-color: inherit;
-    color: $sta-blue;
+    color: $sta-blue-light;
     cursor: pointer;
     margin: 0;
     padding: 15px;

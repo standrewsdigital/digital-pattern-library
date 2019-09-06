@@ -1,0 +1,71 @@
+
+/*********************************/
+/* BEGIN Pattern: facet-list     */
+/*********************************/
+
+.facet-title {
+  margin-top: 0;
+
+  &--group {
+    float: left;
+    margin-bottom: 0;
+  }
+}
+
+.facet-clear {
+  display:inline-block;
+  font-weight: normal;
+  @include ms-respond(font-size, -1);
+  margin: 8px 0 8px 15px;
+  text-decoration: underline;
+
+  i {
+    margin-right: 5px;
+  }
+}
+
+.facet-control {
+  font-weight: bold;
+}
+
+.facet {
+
+  // Flexbox support for badges in list-group items
+  .list-group-item:not(.collapse-trigger) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .badge {
+    margin-top: 0;
+  }
+
+  // Facet specific overrides to collapse
+  .collapse-trigger {
+    cursor:pointer;
+    font-weight: normal;
+    font-size: 14px;
+  }
+
+  .collapse-trigger:after {
+    content: ' Less';
+  }
+
+  .collapse-trigger.collapsed:after {
+    content: ' More';
+  }
+
+  .collapse-trigger:before {
+    content: '\f068';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+  }
+  .collapse-trigger.collapsed:before {
+    content: '\f067';
+  }
+}
+
+/*********************************/
+/* END Pattern: facet-list       */
+/*********************************/

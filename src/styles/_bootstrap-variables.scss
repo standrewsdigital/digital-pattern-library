@@ -42,8 +42,8 @@ $body-bg:                white;
 $text-color:             $sta-grey-dark;
 
 //** Global textual link color.
-$link-color:             -dpl-color($palette-default,'primary','base');
-$link-hover-color:       -dpl-color($palette-default,'primary','base-hover');
+$link-color:             -dpl-color($palette-default,'secondary','base');
+$link-hover-color:       -dpl-color($palette-default,'secondary','base-hover');
 $link-hover-decoration:  underline;
 
 
@@ -571,7 +571,7 @@ $tooltip-arrow-color:         $tooltip-bg;
 //##
 
 //** Default label background color
-$label-default-bg:            $gray-light;
+$label-default-bg:            #6a6a6b;
 //** Primary label background color
 $label-primary-bg:            $brand-primary;
 //** Success label background color
@@ -677,7 +677,7 @@ $progress-bar-info-bg:        $brand-info;
 //** Background color on `.list-group-item`
 $list-group-bg:                 white;
 //** `.list-group-item` border color
-$list-group-border:             #ddd;
+$list-group-border:             #dedede;
 //** List group border radius
 $list-group-border-radius:      $border-radius-base;
 

@@ -1,0 +1,44 @@
+---
+title: Example search page
+---
+
+{{> text-banner examples-text-banner.search}}
+
+{{> header examples-header}}
+
+{{> search-bar examples-search.searchbanner}}
+
+
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+  <div class="margin-top--half margin-bottom">
+    <div class="row">
+    <div class="col-md-9 col-md-push-3">
+
+{{> filter-box examples-search.filters}}
+    <p><span id="search-page-start">1</span> - <span id="search-page-end">10</span> of <span id="search-total-matching">19</span> documents.</p>
+
+{{> search-results examples-search.results}}
+    
+    <div class="text-center hidden-print">
+      <ul class="pagination pagination-lg">
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#" rel="next"><span>Next</span> <span aria-hidden="true">»</span></a></li>
+      </ul>
+    </div>
+
+    </div>
+
+    <div class="col-md-3 col-md-pull-9 hidden-print">
+{{> facet-list examples-search.facets}}
+    </div>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+{{> footer examples-footer}}

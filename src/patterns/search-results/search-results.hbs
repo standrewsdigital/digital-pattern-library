@@ -1,0 +1,24 @@
+<!-- Begin pattern: search results //-->
+<ol class="search-results">
+    {{#if group-heading}}<li class="search-results__group-heading"><h3 class="sr-only">{{group-heading}}</h3></li>{{/if}}
+    {{#each search-results}}
+    <li class="search-result">
+        <a href="{{{url}}}" title="{{heading}}">
+            <h4 class="search-result__heading">{{heading}}</h4>
+            {{#if heading-label}}<span class="search-result__label">{{heading-label}}</span>{{/if}}
+            {{#if url}}<cite class="search-result__url">{{{url}}}</cite>{{/if}}
+        </a>
+        {{#if thumbnail}}<a href="{{{url}}}" title="{{heading}}"><img class="search-result__thumbnail" src="../../assets/docs/images/placeholders/360x240.png" alt="Alt text for image"></a>{{/if}}
+        {{#if description}}<p class="search-result__summary">{{{description}}}</p>{{/if}}
+        {{#if metadata}}
+        <dl class="search-result__meta">
+            {{#each metadata}}
+            <dt{{#if full}} class="search-result__meta--full"{{/if}}><i class="{{icon}}" aria-hidden="true" title="{{term}}"></i><span class="sr-only">{{term}}</span></dt><dd{{#if full}} class="search-result__meta--full"{{/if}}>{{{definition}}}</dd>
+            {{/each}}
+        </dl>
+        {{/if}}
+    </li>
+    {{/each}}
+</ol>
+
+<!-- End pattern: search results //-->

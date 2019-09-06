@@ -34,5 +34,9 @@
     "form-elements": {
       "style-type": "success",
       "message": "Example form elements. <a href='../examples.html'>Back to example pages</a>."
+    },
+    "search": {
+      "style-type": "success",
+      "message": "Example search page. <a href='../examples.html'>Back to example pages</a>."
     }
 }

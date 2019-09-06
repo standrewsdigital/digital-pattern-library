@@ -9,6 +9,73 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.19.2
+
+Release date: Monday 26 August 2019
+
+### Changed
+* Accordion group toggle button now optional rather than required.
+* Light cyan colour changed for improved accessibility.
+
+---
+
+## v1.19.1
+
+Release date: Friday 23 August 2019
+
+### Changed
+* DPL documentation styling.
+* Link colour now greater contrast to main font colour.
+
+### Removed
+* Ligature and font smoothing browser settings.
+
+---
+
+## v1.19.0
+
+Release date: Thursday 22 August 2019
+
+### Added
+* Facet list pattern.
+* Filter box pattern.
+* Three logos in awards and affiliations footer banner now supported.
+
+### Fixed
+* Documentation typos.
+* ARIA roles in accordions pattern.
+* Search result spacing.
+* List group stylings.
+* Example update for search pattern.
+* Layout fixes.
+
+### Changed
+* Image sizes referenced across DPL now standardised.
+* Functionality for accordions to be open on page load.
+
+### Removed
+* Transparent colour options on colours page.
+
+
+---
+
+## v1.18.4
+
+Release date: Monday 29 July 2019
+
+### Added
+* Disclaimer notice for limited support for Photosphere pattern.
+* Browser support documentation.
+* Search results pattern.
+
+### Fixed
+* Safari browser fixes for clear search button.
+* Security dependencies.
+* List stying within accordions.
+* Open access icon display in IE 11.
+
+---
+
 ## v1.18.3
 
 Release date: Thursday 20 June 2019
