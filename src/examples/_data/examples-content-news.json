@@ -22,5 +22,38 @@
       "category-header": {
           "title": "News",
           "url": "#"
-      }
+      },
+      "article-header": {
+            "heading": "An audience with Lulu",
+            "date": "Wednesday 26 June 2019",
+            "share" : {
+                "icon": [
+                    {
+                        "title": "Share this with Facebook",
+                        "class": "fab fa-facebook-square"
+                    },
+                    {
+                        "title": "Share this with Twitter",
+                        "class": "fab fa-twitter-square"
+                    },
+                    {
+                        "title": "Share this with Facebook Messenger",
+                        "class": "fab fa-facebook-messenger"
+                    },
+                    {
+                        "title": "Share this with LinkedIn",
+                        "class": "fab fa-linkedin"
+                    },
+                    {
+                        "title": "Share this with WhatsApp",
+                        "class": "fab fa-whatsapp",
+                        "mobile-only": true
+                    },
+                    {
+                        "title": "Share this with Email",
+                        "class": "fas fa-envelope-square"
+                    }
+                ]
+            }
+        }
 }

@@ -4,7 +4,7 @@
 	<div class="row">
 		<div class="col-md-6">
 	{{/if}}
-		<h3>{{title}}</h3>
+		{{#if title}}<h3>{{title}}</h3>{{/if}}
 	    <ul>
 		{{#icon}}
 			<li {{#if mobile-only}} class="visible-xs"{{/if}}><a href="#"><span class="sr-only">{{title}}</span>
