@@ -1,8 +1,8 @@
 ---
-title: Example content page
+title: Example news article page
 ---
 
-{{> text-banner examples-text-banner.content}}
+{{> text-banner examples-text-banner.news}}
 
 {{> header}}
 
@@ -12,14 +12,14 @@ title: Example content page
 
 {{> breadcrumbs examples-content-news.breadcrumbs}}
 
-<div class="container">
+<div class="container margin-bottom">
     <div class="row">
-        <article class="col-md-8 margin-bottom">
+        <article class="col-md-8">
 
 {{> article-header examples-content-news.article-header}}
 
-            <p><img class="size-full wp-image-19220 aligncenter" src="https://news.st-andrews.ac.uk/wp-content/uploads/2019/06/graduation-dog-main.jpg" alt="" width="750" height="500" srcset="https://news.st-andrews.ac.uk/wp-content/uploads/2019/06/graduation-dog-main.jpg 750w, https://news.st-andrews.ac.uk/wp-content/uploads/2019/06/graduation-dog-main-360x240.jpg 360w, https://news.st-andrews.ac.uk/wp-content/uploads/2019/06/graduation-dog-main-445x297.jpg 445w" sizes="(max-width: 750px) 100vw, 750px"></p>
-<p>A Californian poodle-mix called Lulu crossed the stage of the University of St&nbsp;Andrews’ Younger Hall this afternoon, making history as the first emotional support dog to take part in a graduation ceremony at Scotland’s first University.</p>
+            <p><img src="../assets/docs/images/examples/graduation-dog-main.jpg" alt="Mika and Lulu"></p>
+<p class="lead">A Californian poodle-mix called Lulu crossed the stage of the University of St&nbsp;Andrews’ Younger Hall this afternoon, making history as the first emotional support dog to take part in a graduation ceremony at Scotland’s first University.</p>
 <p>Lulu the dog (age 7) provides Mika Schmeling (age 22) with emotional stability and support, and Mika credits Lulu with helping her achieve her degree in Computer Science and Management. During her time in St&nbsp;Andrews Lulu has accompanied Mika on many adventures and joined in unique St&nbsp;Andrews traditions including: walks through the Lade Braes, a trip to Eilean Donan Castle, and the annual Gaudie procession.</p>
 <p>Mika said:&nbsp;“There were a lot of inconsistencies in my life, coming to St&nbsp;Andrews from the US, it was very different in the UK. I felt I was almost living two lives. However, when the University said they were willing to have her, and my accommodation was willing to have her, it gave me a lot more security and structure. She’s really made things better. She comes to almost every event and breaks tension when I don’t know what to say to people.</p>
 <p>“Friends have spent a significant amount of time cuddling Lulu, and in the Library they always love her. She’s helped us all through exam stress.”</p>
@@ -27,36 +27,36 @@ title: Example content page
 <p>Recent research reveals the extent of student mental health issues across the UK, with over 15,000 first-year students reporting a mental health problem in 2015/16, compared to approximately 3000 in 2006.</p>
 <p>By listening to student concerns, and working with them to provide personalised refinements and early interventions, the University hopes to support the best educational outcomes as well as an evidence base for what works to improve long-term wellbeing.</p>
 <p>Head of Equality and Diversity, Sukhi Bains, said: “Our ambition is to be a beacon of inclusivity and that means adapting to meet students’ emotional support needs, as well as their physical needs. Depression and anxiety can be a barrier for students trying to navigate academic life, and we want to make sure we’re responsive to the mental health challenges that can affect our students. We welcomed Lulu to St&nbsp;Andrews as the newest recruit to our culture of care, tolerance and resilience.”</p>
-<p><img class="size-full wp-image-19221 aligncenter" src="https://news.st-andrews.ac.uk/wp-content/uploads/2019/06/graduation-dog-main-002.jpg" alt="" width="750" height="525"></p>
+<p><img src="../assets/docs/images/examples/graduation-dog-main-2.jpg" alt="Mika holding Lulu's paw"></p>
 <p>On the same day the University of St&nbsp;Andrews also made a sign language interpreter available to translate the graduation ceremony, marking another first and a milestone in its efforts to put diversity and inclusion at the heart of the St&nbsp;Andrews experience.</p>
 <p>Students in St&nbsp;Andrews can look forward to seeing Lulu around, as Mika will be taking up post as Director of Events and Services at the Students’ Association this year.</p>
 
+{{> share-options examples-content-news.share}}
 
-<!-- Begin pattern: share-options //-->
-<div class="share-options">
-        <h3>Share this story</h3>
-        <ul>
-            <li><a href="#"><span class="sr-only">Facebook</span>
-                <i class="fab fa-facebook-square fa-2x" title="Facebook" aria-hidden="true"></i>
-            </a></li>
-            <li><a href="#"><span class="sr-only">Twitter</span>
-                <i class="fab fa-twitter-square fa-2x" title="Twitter" aria-hidden="true"></i>
-            </a></li>
-            <li><a href="#"><span class="sr-only">Facebook Messenger</span>
-                <i class="fab fa-facebook-messenger fa-2x" title="Facebook Messenger" aria-hidden="true"></i>
-            </a></li>
-            <li><a href="#"><span class="sr-only">LinkedIn</span>
-                <i class="fab fa-linkedin fa-2x" title="LinkedIn" aria-hidden="true"></i>
-            </a></li>
-            <li class="visible-xs"><a href="#"><span class="sr-only">WhatsApp</span>
-                <i class="fab fa-whatsapp fa-2x" title="WhatsApp" aria-hidden="true"></i>
-            </a></li>
-            <li><a href="#"><span class="sr-only">Email</span>
-                <i class="fas fa-envelope-square fa-2x" title="Email" aria-hidden="true"></i>
-            </a></li>
-        </ul>
-</div>
+
         </article>
+        <aside class="col-md-4">
+			<section>
+				<h3>Top posts</h3>
+				<div class="news-updates">
+						<div class="news-updates__secondary news-updates__article-link ">
+                        	<div class="big-target-click-zone">
+                        		<h4><a href="https://news.st-andrews.ac.uk/archive/grey-seals-copy-human-speech-and-music/" class="big-target-anchor">Grey seals copy human speech and music</a></h4>
+                        		<small>20 June 2019</small>
+                    		</div>
+                		</div>
+                		<div class="news-updates__secondary news-updates__article-link ">
+                        	<div class="big-target-click-zone">
+                        		<h4><a href="https://news.st-andrews.ac.uk/archive/staff-and-students-help-st-andrews-to-league-table-first/" class="big-target-anchor">Staff and students help St&nbsp;Andrews to league table first</a></h4>
+                        		<small>7 June 2019</small>
+                    		</div>
+                		</div>
+            	</div>
+            </section>
+<hr>
+{{> numerical-list examples-content-news.numerical-list}}
+            
+        </aside>
     </div>
 </div>
 

@@ -38,5 +38,9 @@
     "search": {
       "style-type": "success",
       "message": "Example search page. <a href='../examples.html'>Back to example pages</a>."
+    },
+    "news": {
+      "style-type": "success",
+      "message": "Example news article page. <a href='../examples.html'>Back to example pages</a>."
     }
 }
