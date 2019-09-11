@@ -42,5 +42,9 @@
     "news": {
       "style-type": "success",
       "message": "Example news article page. <a href='../examples.html'>Back to example pages</a>."
+    },
+    "blog": {
+      "style-type": "success",
+      "message": "Example blog post page. <a href='../examples.html'>Back to example pages</a>."
     }
 }

@@ -1,0 +1,69 @@
+---
+title: Example news article page
+---
+
+{{> text-banner examples-text-banner.blog}}
+
+{{> header}}
+
+{{> category-header examples-content-blog.category-header}}
+
+{{> navigation-bar examples-content-blog.navigation-bar}}
+
+<div class="container margin-bottom">
+    <div class="row">
+        <article class="col-md-8">
+
+{{> article-header examples-content-blog.article-header}}
+
+ <p class="lead">Subtitles are transcripts of a video’s dialogue or audio contained in SubRip (SRT) files that are attached to videos. They provide context and clarity to video content.</p>
+<p>Subtitles differ from captions that are meant to provide better accessibility for hearing-impaired users, though you may often hear them mentioned interchangeably.</p>
+<p>Subtitles display only what is spoken. They are intended for users who can hear but prefer to have the dialogue displayed in text format.</p>
+<p>Captions provide a way for users with hearing impairments to have equal access to video content. They include dialogue, sound and musical cues.</p>
+<p>There are two main methods of captioning for videos:</p>
+<h2>Closed captions (soft)</h2>
+<p>Closed captions will appear as separate selectable tracks in a video. These can be enabled and disabled as required by the user. They can also, on some platforms, be translated to any language automatically.</p>
+<p>If closed captioning support exists for the video platform you are creating content for, please use it. It is important for users who are deaf or hard of hearing to rely on accessibility support that content creators can quickly provide.</p>
+<h2>Open captions (hard burned)</h2>
+<p>Open captions mean the text is written on top of the image permanently. This is sometimes referred to as hard burned. They cannot be turned on or off. They only support one language per video. This was the old method for internationally distributing film that did not include voice dubbing.</p>
+<p>For TV and film media, this is often the preference for the deaf or hard of hearing community as it is the most inclusive and they don’t have to rely on <a href="https://www.dolby.com/us/en/professional/cinema/products/captiview.html">bespoke hardware in cinemas</a>.</p>
+<p>However, there are accessibility issues surrounding open captions. Open captions on a video is the equivalent of saving a word file as a JPEG image. It cannot be interacted with once rendered and cannot be identified by accessibility tools. They cannot be automatically translated either. This restricts international audiences who prefer or require captions in an alternative language.</p>
+<p>We recommend against open captions for online videos since they are not accessible, and their language cannot be changed. Also, there is something to be said for respecting the users’ preferences.</p>
+<p>Only use open captions for when closed captioning is not supported.</p>
+<p>There has been a renaissance of open captions on social media in recent years. This was used as a workaround for video content before the major platforms supported closed captioning solutions.</p>
+<p>Though it is still used by major players, <a href="https://twitter.com/BBC/status/1140650582115569664">such as the BBC</a>, even though solutions exist for closed captions on these platforms.</p>
+<p>Speaking of which, let’s dive into what four of the major social media platforms have to offer regarding accessible captioning.</p>
+<h2>Subtitles on Facebook</h2>
+<p>Videos on Facebook can support closed captions. SRT files of what is spoken or heard can be uploaded to a video.</p>
+<p>Facebook videos also support a feature to always display closed captions for videos that have them.</p>
+<p>You need to make sure your SRT files are correctly named and formatted on Facebook for this to work. SubRip files must be named with the following format to be recognised correctly:</p>
+<blockquote><p>name-of-file.en_GB.srt</p></blockquote>
+<p>Note the inclusion of the regional language spoken before the file type suffix. Facebook cannot translate the subtitles into other languages automatically. These will have to be uploaded by the content owner as individual SRT files per language.</p>
+<p>Facebook video captions can automatically play in a users preferred default language if they have been included.</p>
+<p>To learn more about best practices for formatting SRT files on Facebook, <a href="https://www.facebook.com/help/849140998552596?helpref=faq_content">see Facebook’s support pages</a>.</p>
+<h2>Twitter subtitles</h2>
+<p>Twitter has started supporting the addition of closed captioning on their video content for web, iOS, and Android as of March 2019.</p>
+<p>Closed captions for videos on Twitter can be maintained through the <a href="https://studio.twitter.com">Twitter Media Studio</a>. Similarly to Facebook, SRT files can be uploaded to videos within your media library after selecting the language that they are in.</p>
+<p>The video on Twitter will now have a closed caption icon button, which can be turned on and off for users.</p>
+<h2>Instagram subtitles</h2>
+<p>Instagram does not currently support closed captioning for video content. Open captions must be added before uploading the video to Instagram.</p>
+<p>Dear Instagram. Please support closed captions. It is 2019. Thank you.</p>
+<h2>YouTube subtitles</h2>
+<p>YouTube is by far the most versatile for closed captions of the major social media platforms and <a href="https://support.google.com/youtube/answer/2734796?hl=en-GB">also the easiest for users to cater for</a>.</p>
+<p>When uploading a video, a spoken language can be selected, and YouTube will use automatic speech recognition to generate a transcript of the video.</p>
+<p>Just like that.</p>
+<p>It’s not always entirely accurate, however. The YouTube robot can’t quite interpret when words are spoken in quick succession or mumbled. I’ve found it’s pretty accurate for Scottish accents, <a href="https://youtu.be/sAz_UvnUeuU">which is a blessing</a>.</p>
+<p>Text transcripts of what is said in a video can be uploaded alongside the video without any inclusion of time codes. <a href="https://youtu.be/CfuchTRTLGU">This is where YouTube works its magic</a>. By adding a transcript of what is spoken in a video, YouTube can automatically sync when each word is spoken. This is the easiest option to get accurate closed captions added to a video.</p>
+<p>YouTube support has some <a href="https://support.google.com/youtube/answer/2734799?hl=en-GB&amp;ref_topic=7296214">great tips for creating transcript files</a>.</p>
+<p>The real benefit is once the transcript has been uploaded and the spoken language selected, YouTube can automatically translate these captions into any language. This allows us to be inclusive of international audiences by making our video content more accessible.</p>
+<p>I also discovered while writing this blog post that YouTube’s closed captions can be moved around the video by dragging on them with a mouse. This allows the user to choose where the captions sit — bonus points.</p>
+
+{{> share-options examples-content-blog.share}}
+
+        </article>
+    </div>
+</div>
+
+<!-- Comments section -->
+
+{{> footer examples-footer}}
