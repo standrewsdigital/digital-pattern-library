@@ -57,7 +57,7 @@ a.article-header__meta-image {
 	}
 
 	&:focus {
-		box-shadow: 0px 0px 0px 2px $sta-orange;
+		box-shadow: 0px 0px 0px 2px $sta-orange-highlight;
 	}
 }
 
@@ -76,7 +76,7 @@ a.article-header__meta-image {
 		}
 
 		&:focus {
-			outline: 2px dotted $sta-orange;
+			outline: 2px dotted $sta-orange-highlight;
 			outline-offset: 0;
 			background: lighten($sta-orange,50%);
 		}

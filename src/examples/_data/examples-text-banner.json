@@ -46,5 +46,9 @@
     "blog": {
       "style-type": "success",
       "message": "Example blog post page. <a href='../examples.html'>Back to example pages</a>."
+    },
+    "search-mixed": {
+      "style-type": "success",
+      "message": "Example search page with mixed result types. <a href='../examples.html'>Back to example pages</a>."
     }
 }

@@ -150,6 +150,10 @@
                   "img": "assets/docs/images/patterns/alerts.jpg",
                   "url": "patterns/alerts/index.html"
                 },
+                { "name": "Article header",
+                  "img": "assets/docs/images/patterns/article-header.jpg",
+                  "url": "patterns/article-header/index.html"
+                },
                 { "name": "Code",
                   "img": "assets/docs/images/patterns/code.jpg",
                   "url": "patterns/code/index.html"

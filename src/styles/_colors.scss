@@ -165,6 +165,9 @@ $sta-burgundy-T-hover:  darken($sta-burgundy-T, $hover-darken);
 $sta-burgundy-S:        lighten($sta-burgundy,$select-lightness);
 $sta-burgundy-S-hover:  darken($sta-burgundy-S, $hover-darken);
 
+/* Additional colours - AA Compliant for UI & Graphical elements only*/
+$sta-orange-highlight: #EF6E0B;
+$sta-grey-highlight: #949494;
 
 
 /* ST ANDREWS COLORS FOR PRINT */
