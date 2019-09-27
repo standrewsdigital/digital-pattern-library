@@ -58,6 +58,10 @@ button.list-group-item {
     color: inherit;
     background-color: $list-group-hover-bg;
   }
+
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 button.list-group-item {

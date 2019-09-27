@@ -1,17 +1,10 @@
 <!-- Begin pattern: numerical list //-->
 
             <h3>{{title}}</h3>
-            <div class="list-container">
-                <ul>
+                <div class="list-group numerical-list">
                 {{#each news-item}}
-                    <li>
-                        <a href="#">
-                            <span class="list-container__number">1</span>
-                            <span class="list-container__title">{{news-title}}</span>
-                        </a>
-                    </li>
+                <a class="list-group-item" href="#">{{news-title}}</a>
                 {{/each}}
-                </ul>
-            </div>
+                </div>
 
 <!-- End pattern: numerical list //-->
