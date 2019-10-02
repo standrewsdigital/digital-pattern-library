@@ -71,12 +71,6 @@
 #header-logo, #web-application-header-logo {
     margin: 13px 0;
 
-    h1 {
-        height: 50px;
-        margin: 0;
-        padding: 0;
-    }
-
     a {
         background-image:    url(../images/furniture/logo-standard.svg);
         background-position: left center;
@@ -99,10 +93,6 @@
 
 #web-application-header-logo {
     margin: 0;
-
-    h1 {
-        height: 38px;
-    }
 
     a {
         // Logo - crest only.
@@ -182,10 +172,6 @@
 
     #header-logo {
         margin: 25px 0px 16px;
-
-        h1 {
-            height: 65px;
-        }
 
         a {
             background-image: url(../images/furniture/logo-foundation.svg);
