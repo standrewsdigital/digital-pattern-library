@@ -4,7 +4,6 @@
 /*********************************/
 
 .featured-news {
-    margin:30px 0;
 
     .featured-news__article-link { //wrapper for entire link block
         &:not(.sub-link-active){
@@ -12,44 +11,64 @@
             &:focus {
                 cursor: pointer;
 
-                h3 {
+                .featured-news__article-heading a {
                     text-decoration:underline;
                 }
             }
         }
     }
 
-    h2 {
-        margin-top: 0;
-    }
-
-   	h3 {
-        font-size: 30px;
-
-        @media (max-width: 991px){
-            font-size: 24px;
+    // Links focus state
+    a:focus {
+        //image
+        .featured-news__image {
+            outline: 2px solid $sta-orange-highlight;
+            outline-offset: 0;
         }
     }
+    .featured-news__article-heading a:focus {
+        outline: 2px dotted $sta-orange-highlight;
+        outline-offset: 0;
+        background: lighten($sta-orange,50%);
+    }
+    // Links active state 
+    .featured-news__article-heading a:active {
+        text-decoration: none;
+    }
+    
     p {
-        font-size: 24px;
-        margin: 5px 0;
-
-        @media (max-width: 991px){
-            font-size: 18px;
-        }
+        margin-bottom:5px;
     }
 
     small {
-        font-size: 100%; // override 66% default
+        font-size: 1rem; // override 66% default
+        color: $sta-grey;
 
-        @media (max-width: 991px){
-            font-size: 80%; // override 66% default
+        a {
+            color: $sta-grey;
+            font-weight: normal;
+            text-decoration: underline;
+
+            &:hover {
+                color: $sta-grey-hover;
+            }
+
+            &:focus {
+                outline: 2px dotted $sta-orange-highlight;
+                outline-offset: 0;
+                background: lighten($sta-orange,50%);
+            }
+            &:active {
+                text-decoration: none;
+            }
         }
     }
 
-	img {
-		max-width:100%;
-	}
+    img {
+        @media (max-width:767px){
+            margin-bottom:1rem;
+        }
+    }
 
     .featured-news__category {
         display: block;
@@ -63,7 +82,7 @@
                 margin-left: 10px;
 
                 &:before {
-                    color: rgb(68, 68, 68);
+                    color: $sta-grey;
                     content: "|";
                     font-weight: normal;
                     padding-right: 10px;
@@ -72,6 +91,11 @@
         }
     }
 
+}
+
+.featured-news__article-heading {
+    @extend %font-scale-4;
+    margin: 0 0 ms(-5) 0;
 }
 
 /*********************************/

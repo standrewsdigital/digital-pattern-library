@@ -5,137 +5,138 @@
 
 .news-updates {    
 
-    .read-more {
-        a {
-            margin-bottom: 30px;
-        }
-    }
-
-    .no-gutter { //collapse gutters on nested bootstrap columns
-        padding: 0;
-    }
-    .no-gutter--l { //collapse left gutters on nested bootstrap columns
-        padding-left: 0;
-    }
-    .no-gutter--r { //collapse left gutters on nested bootstrap columns
-        padding-right: 0;
-    }
-
     .news-updates__article-link { //wrapper for entire link block
-        margin-bottom: 16px;
 
         &:not(.sub-link-active){
-            &:hover,
+            &:hover {
+                cursor: pointer;
+
+                .news-updates__heading a {
+                    text-decoration:underline;
+                }
+            }
             &:focus {
                 cursor: pointer;
 
-                h4 {
+                .news-updates__heading a {
                     text-decoration:underline;
+                    outline: 2px dotted $sta-orange-highlight;
+                    outline-offset: 0;
+                    background: lighten($sta-orange,50%);
                 }
             }
         }
     }
 
-    img {
-        max-width: 100%;
-        padding-bottom: 5px;
-
-        @media (min-width: 768px) {
-            padding: 0 15px 0 0;
-        }
-
-        &.rounded-thumbnail {
-            border-radius: 50%;
-            float:right;
-            padding: 0;
-        }
-
-        &.featured-image {
-            padding: 0 0 15px 0;
+     // Links focus state
+    a:focus {
+        //image
+        .news-updates__image {
+            outline: 2px solid $sta-orange-highlight;
+            outline-offset: 0;
         }
     }
+    .news-updates__heading a:focus {
+        outline: 2px dotted $sta-orange-highlight;
+        outline-offset: 0;
+        background: lighten($sta-orange,50%);
+    }
+    // Links active state 
+    .news-updates__heading a:active {
+        text-decoration: none;
+    }
 
-    h4,
+    img {
+        margin-bottom: 5px;
+    }
+
     p {
         margin: 5px 0;
     }
     small {
-        font-size: 80%; // override 66% default
+        font-size: 1rem; // override 66% default
+        color: $sta-grey;
+
+        a {
+            color: $sta-grey;
+            font-weight: normal;
+            text-decoration: underline;
+
+            &:hover {
+                color: $sta-grey-hover;
+            }
+
+            &:focus {
+                outline: 2px dotted $sta-orange-highlight;
+                outline-offset: 0;
+                background: lighten($sta-orange,50%);
+            }
+        }
     }
+}
+
+.news-updates__secondary {
+    margin-top: ms(2);
+
+    // remove top margin on first item when not stacked
+    @media (min-width:992px){
+        &:first-child {
+            margin-top:0;
+        }
+    }
+}
+
+// adjust top margins when in aside
+.news-updates__aside {
+    .news-updates__secondary {
+        &:first-child {
+            margin-top:0;
+        }
+        @media (max-width:991px){
+            &:nth-child(2){
+                margin-top:0;
+            }
+        }
+    }
+}
+
+
+.news-updates__heading {
+    @include ms-respond(font-size,1);
+    line-height: 1.2;
+    margin: 5px 0;
+}
+
+.news-updates__heading--large {
+    @media (min-width:992px){
+        @include ms-respond(font-size,2);
+        line-height: 1.2;
+    }
+}
+
+.news-updates__heading--small {
+    @include ms-respond(font-size,0);
+    line-height: 1.25;
+}
+
     .news-updates__category {
         display: block;
         padding: 5px 10px;
         margin-left: -10px;
 
         &.news-updates__category--inline {
-            @media (min-width: 480px) { //make category inline when space available
                 display: inline-block;
                 padding-left: 0;
                 margin-left: 10px;
 
                 &:before {
-                    color: rgb(68, 68, 68);
+                    color: $sta-grey;
                     content: "|";
                     font-weight: normal;
                     padding-right: 10px;
                 }
-            }
         }
     }
-
-    .news-updates__secondary {
-        padding-left: 0;
-        padding-right: 0;
-
-        &.no-gutter--md-r { //right hand gutter on medium and below
-            @media (max-width: 991px) {
-                padding: 0 15px 0 0;
-            }
-        }
-
-        &.no-gutter--md-l {
-            @media (max-width: 991px) { //left hand gutter on medium and below
-                padding: 0 0 0 15px;
-            }
-        }
-    }
-
-    &.news-updates--case-studies {
-
-        padding: $page-gutter 0; // Add padding to block
-
-        h3 {
-            font-size: 2.5em;
-            margin: 0 0 15px 0;
-            padding: 0;
-
-            @media (max-width: 767px) {
-                font-size: 1.8em;
-            }
-
-            @media (max-width: 479px) {
-                font-size: 1.5em;
-            }
-        }
-
-        h4 {
-            font-size: 24px;
-            line-height: 1.1;
-        }
-
-        .news-updates__secondary {
-            margin: 32px 0 0 0;
-            
-            // Remove top margin when not full width
-            &:first-child {
-                @media (min-width: 992px){
-                    margin-top:0;
-                }
-            }
-        }
-    }
-}
-
 /*********************************/
 /* END Pattern: news-updates     */
 /*********************************/
