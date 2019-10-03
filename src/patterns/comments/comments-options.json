@@ -1,0 +1,90 @@
+{
+    "options": [
+        {
+            "option-heading": "Comment",
+            "option-anchor": "comment",
+            "option-description": "<p></p>",
+            "comments":[
+                {
+                "date": "31 September 2018",
+                "name": "Sophia Adams",
+                "comment-main":true,
+                "image": "../../assets/docs/images/profile-pictures/female-001-small.jpg",
+                "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cium.</p>"
+                }
+            ]
+        },
+        {
+            "option-heading": "Comment with linked author",
+            "option-anchor": "comment-linked",
+            "option-description": "<p></p>",
+            "comments":[
+                {
+                "date": "31 September 2018",
+                "name": "Sophia Adams",
+                "comment-main":true,
+                "image-link": true,
+                "image": "../../assets/docs/images/profile-pictures/female-001-small.jpg",
+                "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cium.</p>"
+                }
+            ]
+        },
+        {
+            "option-heading": "Comments list",
+            "option-anchor": "comment-linked",
+            "option-description": "<p></p>",
+            "comments":[
+                {
+                "date": "31 September 2018",
+                "name": "Sophia Adams",
+                "image-link": true,
+                "comment-main":true,
+                "image": "../../assets/docs/images/profile-pictures/female-001-small.jpg",
+                "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cium.</p>"
+                },
+                {
+                "date": "31 September 2018",
+                "name": "Sophia Adams",
+                "image-link": true,
+                "comment-reply-first":true,
+                "comment-reply":true,
+                "image": "../../assets/docs/images/profile-pictures/female-001-small.jpg",
+                "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cium.</p>"
+                },
+                {
+                "date": "31 September 2018",
+                "name": "Sophia Adams",
+                "image-link": true,
+                "comment-reply":true,
+                "comment-reply-last":true,
+                "image": "../../assets/docs/images/profile-pictures/female-001-small.jpg",
+                "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cium.</p>"
+                },
+                {
+                "date": "31 September 2018",
+                "name": "Sophia Adams",
+                "image-link": true,
+                "comment-main":true,
+                "image": "../../assets/docs/images/profile-pictures/female-001-small.jpg",
+                "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cium.</p>"
+                },
+                {
+                "date": "31 September 2018",
+                "name": "Sophia Adams",
+                "image-link": true,
+                "comment-main":true,
+                "image": "../../assets/docs/images/profile-pictures/female-001-small.jpg",
+                "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cium.</p>"
+                },
+                {
+                "date": "31 September 2018",
+                "name": "Sophia Adams",
+                "image-link": true,
+                "comment-main":true,
+                "image": "../../assets/docs/images/profile-pictures/female-001-small.jpg",
+                "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cium.</p>"
+                }
+            ]
+        }
+    ]
+ }

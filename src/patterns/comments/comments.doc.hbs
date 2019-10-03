@@ -1,0 +1,39 @@
+---
+title: Comments
+---
+
+<p class="lead">The comments pattern should be used to present feedback for a news article or blog post.</p>
+
+<h2>Rules for comments</h2>
+<ul>
+	<li></li>
+</ul>
+
+<h2>Options available</h2>
+<ul>
+{{#comments-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/comments-options.options}}
+</ul>
+
+{{#comments-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+<!--noindex-->
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+			{{> comments}}
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> comments}}</code></pre>
+<!--endnoindex-->
+{{/comments-options.options}}
