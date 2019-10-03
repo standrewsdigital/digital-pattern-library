@@ -41,22 +41,11 @@
 	&.sta-purple-3 {
 		background-color: darken($sta-purple, 14%);
 	}
-
 	
-	.showcase-banner__icon {
-		font-size: 5em;
-		padding-top: 70px;
-
-		@media (min-width: 1200px) {
-			font-size: 7em;
-			padding-top: 50px;
+	@media (max-width:767px){
+		h2, h3 {
+			margin-top: 0;
 		}
-
-	}
-
-
-	h3 {
-		margin-top: 0;
 	}
 
 	.navbox {

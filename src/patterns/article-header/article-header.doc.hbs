@@ -1,0 +1,41 @@
+---
+title: Article header
+---
+
+<p class="lead">The article header pattern should be used at the top of the main content for a news article or blog post.</p>
+
+<h2>Rules for article header</h2>
+<ul>
+	<li>Must only be used once on a page.</li>
+	<li>Photographs should be headshots of the individual named as the author and of professional quality.</li>
+	<li>Images should be cropped square at 72px wide and 72px high.</li>
+</ul>
+
+<h2>Options available</h2>
+<ul>
+{{#article-header-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/article-header-options.options}}
+</ul>
+
+{{#article-header-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+<!--noindex-->
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+			{{> article-header}}
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> article-header}}</code></pre>
+<!--endnoindex-->
+{{/article-header-options.options}}

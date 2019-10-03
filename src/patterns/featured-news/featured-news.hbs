@@ -1,19 +1,16 @@
 <!-- Begin pattern: featured news //-->
-<div class="featured-news">
+<div class="featured-news margin-top margin-bottom--half">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-                <h2>Featured item</h2>
-            </div>
             <div class="col-xs-12 featured-news__article-link">
                 <div class="row">
-                    <div class="col-md-4 col-md-push-8">
-                        <a href="#article"><img src="{{asset url}}" alt="news story"></a>
+                    <div class="col-sm-5 col-sm-push-7">
+                        <a href="#article"><img class="featured-news__image" src="{{asset url}}" alt="news story"></a>
                     </div>
-                    <div class="col-md-8 col-md-pull-4">
-                        <h3><a href="#article">{{title}}</a></h3>
-                        <p>{{text}}</p>
-                        <small>{{featured-date}}<a href="#category" class="featured-news__category featured-news__category--inline">{{featured-category}}</a></small>
+                    <div class="col-sm-7 col-sm-pull-5">
+                        <h2 class="featured-news__article-heading"><a href="#article">{{title}}</a></h2>
+                        <p class="lead">{{text}}</p>
+                        <small>{{featured-date}}<span class="featured-news__category featured-news__category--inline"><a href="#category">{{featured-category}}</a></span></small>
                     </div>
                 </div>
             </div>

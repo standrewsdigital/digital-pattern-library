@@ -1,26 +1,19 @@
 <!-- Begin pattern: more-news //-->
-<div class="more-news">
-    <div class="container">
-        <div class="row">
+<div class="more-news row">
             {{#each news-items}}
-            <div class="col-xs-12 more-news__article-link">
-                <div class="col-sm-4 col-md-3 gutter-sm--r">
-                    <a href="#article"><img src="{{image.url}}" alt="news story"></a>
+            <div class="more-news__article-link">
+                <div class="col-sm-4 col-md-3">
+                    <a href="#article"><img src="{{image.url}}" alt="news story" class="more-news__image"></a>
                 </div>
-                <div class="col-sm-8 col-md-9 gutter-sm--l">
-                    <h3><a href="#article">{{title}}</a></h3>
+                <div class="col-sm-8 col-md-9">
+                    <h3 class="more-news__article-heading"><a href="#article">{{title}}</a></h3>
                     <p>{{description}}</p>
-                    <small>{{date}}<a class="more-news__category more-news__category--inline more-news__sub-link" href="#category">{{category}}</a></small>
+                    <small>{{date}}<span class="more-news__category more-news__category--inline more-news__sub-link"><a href="#category">{{category}}</a></span></small>
                 </div>
             </div>
-            {{#if not-last}}
-            <hr>
-            {{/if}}
             {{/each}}
             {{#if pager}}
                 {{> pagination}}
             {{/if}}
-        </div>
-    </div>
 </div>
 <!-- End pattern: more-news //-->

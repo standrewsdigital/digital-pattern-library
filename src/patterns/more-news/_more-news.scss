@@ -5,55 +5,70 @@
 
 .more-news {
 
-    .gutter-sm--r { //collapse left gutters only on nested bootstrap columns bigger than mobile
-    	padding: 0;
-    	@media (min-width: 768px) {
-    		padding: 0 15px 0 0;
-    	}
-    }
-    .gutter-sm--l { //collapse right gutters only on nested bootstrap columns bigger than mobile
-    	padding: 0;
-    	@media (min-width: 768px) {
-    		padding: 0 0 0 15px;
-    	}
-    }
-
     .more-news__article-link { //wrapper for entire link block
-    	margin-bottom: 15px;
+    	margin-bottom: ms(2);
+        @include clearfix-alt;
 
         &:not(.sub-link-active){
             &:hover,
             &:focus {
                 cursor: pointer;
 
-                h3 {
+                .more-news__article-heading a {
                     text-decoration:underline;
                 }
             }
         }
     }
 
-   	h3,
+     // Links focus state
+    a:focus {
+        //image
+        .more-news__image {
+            outline: 2px solid $sta-orange-highlight;
+            outline-offset: 0;
+        }
+    }
+    .more-news__article-heading a:focus {
+        outline: 2px dotted $sta-orange-highlight;
+        outline-offset: 0;
+        background: lighten($sta-orange,50%);
+    }
+    // Links active state 
+    .more-news__article-heading a:active {
+        text-decoration: none;
+    }
+
     p {
         margin: 5px 0;
     }
 
     small {
-        font-size: 80%; // override 66% default
+        font-size: 1rem; // override 66% default
+        color: $sta-grey;
+
+        a {
+            color: $sta-grey;
+            font-weight: normal;
+            text-decoration: underline;
+
+            &:hover {
+                color: $sta-grey-hover;
+            }
+
+            &:focus {
+                outline: 2px dotted $sta-orange-highlight;
+                outline-offset: 0;
+                background: lighten($sta-orange,50%);
+            }
+        }
     }
 
 	img {
-		max-width: 100%;
 
     	@media (max-width: 767px) {
-			padding-bottom: 15px;
+			margin-bottom: 5px;
 		}
-	}
-
-	hr {
-		border-bottom: none;
-		height: 0;
-		margin: 0 auto 15px auto;
 	}
 
     .more-news__category {
@@ -67,7 +82,7 @@
                 margin-left: 10px;
 
                 &:before {
-                    color: rgb(68, 68, 68);
+                    color: $sta-grey;
                     content: "|";
                     font-weight: normal;
                     padding-right: 10px;
@@ -75,6 +90,11 @@
         }
     }
 
+}
+
+.more-news__article-heading {
+    @include ms-respond(font-size,1);
+    margin: 5px 0;
 }
 
 /****************************/

@@ -6,31 +6,31 @@
             "option-anchor": "share",
             "title": "Share this story",
             "icon": [
-            	{
-            		"title": "Facebook",
-            		"class": "fab fa-facebook-square"
-            	},
-            	{
-            		"title": "Twitter",
-            		"class": "fab fa-twitter-square"
-            	},
-                {
-                    "title": "Facebook Messenger",
-                    "class": "fab fa-facebook-messenger"
-                },
-            	{
-            		"title": "LinkedIn",
-            		"class": "fab fa-linkedin"
-            	},
-            	{
-            		"title": "WhatsApp",
-            		"class": "fab fa-whatsapp",
-                    "mobile-only": true
-            	},
-            	{
-            		"title": "Email",
-            		"class": "fas fa-envelope-square"
-            	}
+                    {
+                        "title": "Share this with Facebook",
+                        "class": "fab fa-facebook-square"
+                    },
+                    {
+                        "title": "Share this with Twitter",
+                        "class": "fab fa-twitter-square"
+                    },
+                    {
+                        "title": "Share this with Facebook Messenger",
+                        "class": "fab fa-facebook-messenger"
+                    },
+                    {
+                        "title": "Share this with LinkedIn",
+                        "class": "fab fa-linkedin"
+                    },
+                    {
+                        "title": "Share this with WhatsApp",
+                        "class": "fab fa-whatsapp",
+                        "mobile-only": true
+                    },
+                    {
+                        "title": "Share this with Email",
+                        "class": "fas fa-envelope-square"
+                    }
             ]
         },
         {
@@ -40,31 +40,31 @@
             "title": "Share this video",
             "embed": true,
             "icon": [
-                {
-                    "title": "Facebook",
-                    "class": "fab fa-facebook-square"
-                },
-                {
-                    "title": "Twitter",
-                    "class": "fab fa-twitter-square"
-                },
-                {
-                    "title": "Facebook Messenger",
-                    "class": "fab fa-facebook-messenger"
-                },
-                {
-                    "title": "LinkedIn",
-                    "class": "fab fa-linkedin"
-                },
-                {
-                    "title": "WhatsApp",
-                    "class": "fab fa-whatsapp",
-                    "mobile-only": true
-                },
-                {
-                    "title": "Email",
-                    "class": "fas fa-envelope-square"
-                }
+                    {
+                        "title": "Share this with Facebook",
+                        "class": "fab fa-facebook-square"
+                    },
+                    {
+                        "title": "Share this with Twitter",
+                        "class": "fab fa-twitter-square"
+                    },
+                    {
+                        "title": "Share this with Facebook Messenger",
+                        "class": "fab fa-facebook-messenger"
+                    },
+                    {
+                        "title": "Share this with LinkedIn",
+                        "class": "fab fa-linkedin"
+                    },
+                    {
+                        "title": "Share this with WhatsApp",
+                        "class": "fab fa-whatsapp",
+                        "mobile-only": true
+                    },
+                    {
+                        "title": "Share this with Email",
+                        "class": "fas fa-envelope-square"
+                    }
             ]
         }
     ]

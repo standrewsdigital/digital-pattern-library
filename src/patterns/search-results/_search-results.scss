@@ -13,9 +13,9 @@
  	margin-bottom: $third-gutter; 
   	@include clearfix;
 	
-	a {
+	.search-result__link {
 		text-decoration: none;
-		
+
 		.search-result__heading {
 			color: $sta-blue-light; // TEST LINK COLOUR CHANGE / BEHAVIOUR
 			text-decoration: underline;
@@ -36,13 +36,22 @@
 		&:focus {
 			outline: 0; // disable default focus
 
-			.search-result__heading,
-			.search-result__thumbnail {
-				outline: 2px dotted $sta-orange;
+			.search-result__heading {
+				outline: 2px dotted $sta-orange-highlight;
 				outline-offset: 0;
 				background: lighten($sta-orange,50%);
 			}
+
+			.search-result__thumbnail {
+				outline: 2px solid $sta-orange-highlight;
+				outline-offset: 0;
+			}
 		}
+	}
+
+	//Collapse padding on contact-card when included in search results
+	.contact-card {
+		padding: 0;
 	}
 }
 
@@ -90,9 +99,29 @@
 
 .search-result__meta {
 margin:0;
-font-size:16px;
+font-size:1rem;
 color: #6a6a6a;
 overflow:auto;
+
+	a {
+		color: #6a6a6a;
+		font-weight: normal;
+		text-decoration: underline;
+
+		&:hover {
+			color: $sta-grey-dark;
+		}
+
+		&:active {
+			text-decoration: none;
+		}
+
+		&:focus {
+			outline: 2px dotted $sta-orange-highlight;
+			outline-offset: 0;
+			background: lighten($sta-orange,50%);
+		}
+	}
 }
 
 .search-result__meta dd,

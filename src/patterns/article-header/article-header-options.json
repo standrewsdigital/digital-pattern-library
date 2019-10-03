@@ -1,0 +1,86 @@
+{
+    "options": [
+        {
+            "option-heading": "Article header",
+            "option-anchor": "article-header",
+            "option-description": "<p>The simplest implementation incorporates a heading and the date of publication.</p>",
+            "heading": "Designing web pages for users of screen readers",
+            "date": "Wednesday 31 September 2018"
+        },
+        {
+            "option-heading": "Article header with author's name",
+            "option-anchor": "article-header-author",
+            "option-description": "<p>Adding the name of the author to an article gives it a personal touch and sense of authority.</p>",
+            "heading": "Designing web pages for users of screen readers",
+            "date": "Wednesday 31 September 2018",
+            "name": "Sophia Adams"
+        },
+        {
+            "option-heading": "Article header with linked author's name",
+            "option-anchor": "article-header-author-linked",
+            "option-description": "<p>The author's name can link to further details about the person.</p>",
+            "heading": "Designing web pages for users of screen readers",
+            "date": "Wednesday 31 September 2018",
+            "image-link": true,
+            "name": "Sophia Adams"
+        },
+        {
+            "option-heading": "Article header with author's name and image",
+            "option-anchor": "article-header-image",
+            "option-description": "<p>Using a photograph of the author adds a sense of authenticity and trust to the article.</p>",
+            "heading": "Designing web pages for users of screen readers",
+            "date": "Wednesday 31 September 2018",
+            "name": "Sophia Adams",
+            "image": "../../assets/docs/images/profile-pictures/female-001-small.jpg"
+        },
+        {
+            "option-heading": "Article header with linked author's name and image",
+            "option-anchor": "article-header-linked",
+            "option-description": "<ul><li>If linking to further details about the author, then both the image and name must be links.</li></ul>",
+            "heading": "Designing web pages for users of screen readers",
+            "date": "Wednesday 31 September 2018",
+            "name": "Sophia Adams",
+            "image-link": true,
+            "image": "../../assets/docs/images/profile-pictures/female-001-small.jpg"
+        },
+        {
+            "option-heading": "Article header with sharing options",
+            "option-anchor": "article-header-share",
+            "option-description": "<p>The <a href=\"../share-options/index.html\">share options</a> pattern can be uncluded to provide a quick method for people to share the article.</p>",
+            "heading": "Designing web pages for users of screen readers",
+            "date": "Wednesday 31 September 2018",
+            "name": "Sophia Adams",
+            "image-link": true,
+            "image": "../../assets/docs/images/profile-pictures/female-001-small.jpg",
+            "share" : {
+                "icon": [
+                    {
+                        "title": "Share this with Facebook",
+                        "class": "fab fa-facebook-square"
+                    },
+                    {
+                        "title": "Share this with Twitter",
+                        "class": "fab fa-twitter-square"
+                    },
+                    {
+                        "title": "Share this with Facebook Messenger",
+                        "class": "fab fa-facebook-messenger"
+                    },
+                    {
+                        "title": "Share this with LinkedIn",
+                        "class": "fab fa-linkedin"
+                    },
+                    {
+                        "title": "Share this with WhatsApp",
+                        "class": "fab fa-whatsapp",
+                        "mobile-only": true
+                    },
+                    {
+                        "title": "Share this with Email",
+                        "class": "fas fa-envelope-square"
+                    }
+                ]
+            }
+        }
+    ]
+ }

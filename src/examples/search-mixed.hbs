@@ -1,0 +1,41 @@
+---
+title: Example search page with mixed result types
+---
+
+{{> text-banner examples-text-banner.search-mixed}}
+
+{{> header examples-header}}
+
+{{> search-bar examples-search.searchbanner}}
+
+
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+  <div class="margin-top--half margin-bottom">
+    <div class="row">
+    <div class="col-md-9">
+    <p>Page 1 of 332 search results found for <b>lorum ipsum</b>.</p>
+
+{{> search-results examples-search.results-mixed}}
+    
+    <div class="text-center hidden-print">
+      <ul class="pagination pagination-lg">
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#" rel="next"><span>Next</span> <span aria-hidden="true">»</span></a></li>
+      </ul>
+    </div>
+
+    </div>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+{{> footer examples-footer}}

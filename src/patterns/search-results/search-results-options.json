@@ -6,10 +6,12 @@
             "option-description": "<p>The simplest implementation must include a heading for each result that links to the corresponding resource. This could be a web page, file or URL.</p>",
             "search-results": [
                 {
-                    "heading": "This is the heading of the web page"
+                    "heading": "This is the heading of the web page",
+                    "link-class": " class=\"search-result__link\""
                 },
                 {
-                    "heading": "This is the name of a document"
+                    "heading": "This is the name of a document",
+                    "link-class": " class=\"search-result__link\""
                 }
             ]
         },
@@ -24,13 +26,15 @@
                     "heading": "This is the heading of the web page",
                     "url": "https://www.st-andrews.ac.uk/path/to/page/",
                     "description": "This is a short description for the web page where any matching <strong>search term</strong> is highlighted.",
-                    "heading-label": "Password protected"
+                    "heading-label": "Password protected",
+                    "link-class": " class=\"search-result__link\""
                 },
                 {
                     "heading": "This is the name of a document",
                     "url": "https://www.st-andrews.ac.uk/path-to-file/<strong>search-term</strong>",
                     "description": "This is a short description for the document where any matching <strong>search term</strong> is highlighted.",
-                    "heading-label": "PDF (525k)"
+                    "heading-label": "PDF (525k)",
+                    "link-class": " class=\"search-result__link\""
                 }
             ]
         },
@@ -38,7 +42,7 @@
         {
             "option-heading": "Additional result metadata",
             "option-anchor": "metadata",
-            "option-description": "<p>Results can also include metadata to provide quick key information about a resource. These consist of a series of type and value pairs, with icons representing the type of metadata. Metadata may either span the width of the result listing or be displayed as an inline list.</p><ul><li>Full width metadata items must appear above any others.</li><li>Metadata should be used sparingly to avoid creating visual clutter.</li></ul>",
+            "option-description": "<p>Results can also include metadata to provide quick key information about a resource. These consist of a series of type and value pairs, with icons representing the type of metadata. Metadata may either span the width of the result listing or be displayed as an inline list.</p><ul><li>Full width metadata items must appear above any others.</li><li>Metadata should be used sparingly to avoid creating visual clutter.</li><li>Metadata may contain links.</li></ul>",
             "group-heading": "Heading for the results group",
             "search-results": [
                 {
@@ -68,7 +72,8 @@
                     		"term": "Scope (applies to)",
                     		"definition": "All staff"
                     	}
-                    ]
+                    ],
+                    "link-class": " class=\"search-result__link\""
                 },
                 {
                     "heading": "This is the name of a document",
@@ -92,11 +97,13 @@
                     		"definition": "All staff"
                     	},	
                     	{
-                    		"icon": "fa fa-map-marker",
-                    		"term": "Location",
-                    		"definition": "London, UK"
+                    		"icon": "fa fa-envelope",
+                    		"term": "Email",
+                    		"definition": "help@st-andrews.ac.uk",
+                            "link": true
                     	}
-                    ]
+                    ],
+                    "link-class": " class=\"search-result__link\""
                 }
             ]
         },
@@ -104,7 +111,7 @@
         {
             "option-heading": "Image within result",
             "option-anchor": "thumbnail",
-            "option-description": "<p>It may also be beneficial to include a thumbnail image to give additional context to a search result.</p><ul><li>Thumbnail images must be 360px wide and 240px high.</li></ul>",
+            "option-description": "<div class=\"alert alert--warning\"><h3 class=\"alert__heading\">Mixed result types</h3><p>A set of results should not contain different styles of results in a single list. It is recommended that different styles are contained within different tabs.</p></div><p>It may also be beneficial to include a thumbnail image to give additional context to a search result.</p><ul><li>Thumbnail images must be 360px wide and 240px high.</li></ul>",
             "group-heading": "Heading for the results group",
             "search-results": [
                 {
@@ -118,7 +125,9 @@
                             "definition": "18 July 2019"
                         }
                     ],
-                    "thumbnail": true
+                    "thumbnail": true,
+                    "thumbnail-src": "../../assets/docs/images/placeholders/360x240.png",
+                    "link-class": " class=\"search-result__link\""
                 },
                                 {
                     "heading": "This is a headline of a news article",
@@ -131,7 +140,88 @@
                             "definition": "18 July 2019"
                         }
                     ],
-                    "thumbnail": true
+                    "thumbnail": true,
+                    "thumbnail-src": "../../assets/docs/images/placeholders/360x240.png",
+                    "link-class": " class=\"search-result__link\""
+                }
+            ]
+        },
+
+        {
+            "option-heading": "Contact details within results",
+            "option-anchor": "contact",
+            "option-description": "<div class=\"alert alert--warning\"><h3 class=\"alert__heading\">Mixed result types</h3><p>A set of results should not contain different styles of results in a single list. It is recommended that different styles are contained within different tabs.</p></div><p>The <a href=\"../contact-card/index.html\">contact card</a> pattern can be used to show contact information of a person within search results.</p><ul><li>The result must either link to further details about a person or provide their email or phone number as a minumum.</li></ul>",
+            "group-heading": "Heading for the results group",
+            "search-results": [
+                {
+                    "contact": true,
+                    "card": {
+                        "cards": [
+                            {
+                                "id": "e1",
+                                "name": "Miss Colleen Hurst",
+                                "initials": "CH",
+                                "unit": "St Andrews Sustainability Institute",
+                                "team": ", Psychology and Neuroscience",
+                                "title": "Academic Liason",
+                                "image": "../../assets/docs/images/profile-pictures/female-003.jpg",
+                                "phone": "+44 (0)1334 46 xxxx",
+                                "email": "example@st-andrews.ac.uk"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "contact": true,
+                    "card": {
+                        "cards": [
+                            {
+                                "id": "e2",
+                                "name": "Mr Howard Hatfield",
+                                "initials": "HH",
+                                "link": "#",
+                                "unit": "School of Computer Science",
+                                "title": "Senior JavaScript Developer",
+                                "image": "../../assets/docs/images/profile-pictures/male-001.jpg",
+                                "phone": "+44 (0)1334 46 xxxx",
+                                "email": "longerexample@st-andrews.ac.uk"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "contact": true,
+                    "card": {
+                        "cards": [
+                            {
+                                "id": "e3",
+                                "name": "Dr Brielle Williamson",
+                                "initials": "BW",
+                                "link": "#",
+                                "unit": "School of Psychology",
+                                "team": ", Clinical Counselling",
+                                "title": "Research Specialist",
+                                "image": "../../assets/docs/images/profile-pictures/female-002.jpg",
+                                "phone": "+44 (0)1334 46 xxxx",
+                                "email": "example@st-andrews.ac.uk"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "contact": true,
+                    "card": {
+                        "cards": [
+                            {
+                                "id": "e4",
+                                "name": "Professor Timothy Mooney",
+                                "initials": "TM",
+                                "link": "#",
+                                "title": "Chemical Engineering Professor",
+                                "image": "../../assets/docs/images/profile-pictures/male-004.jpg"
+                            }
+                        ]
+                    }
                 }
             ]
         }

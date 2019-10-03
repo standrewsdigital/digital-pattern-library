@@ -2,7 +2,7 @@
     "options": [
         {
             "option-heading": "Contact card",
-            "option-description": "<p>This example shows all available content that may be included on a card.</p><ul><li>Only the image or initials and the full name are required.</li><li>The optional secondary headings should be used to specify the organisational position and role of the individual.</li><li>The optional short paragraph of supporting text can be used to provide additional context for the individual - to help a user identify the correct person to contact.<li>The optional phone and email entries must link to valid phone numbers and email addresses.</li><li>The list of tags can be used to convey additional information on an individual which can be linked or not.</li><li>The number of tags for a card should be no larger than five.</li><li>The usage of tags should be introduced before the contact cards, if the tag values used do not immediately convey their purpose.</li></ul>",
+            "option-description": "<p>This example shows all available content that may be included on a card.</p><ul><li>Only the image or initials and the full name are required.</li><li>The optional secondary headings should be used to specify the organisational position and role of the individual.</li><li>The optional short paragraph of supporting text can be used to provide additional context for the individual - to help a user identify the correct person to contact.<li>The optional phone and email entries must link to valid phone numbers and email addresses.</li><li>The list of linked tags can be used to convey additional information on an individual.</li><li>The number of tags for a card should be no larger than five.</li><li>The usage of tags should be introduced before the contact cards, if the tag values used do not immediately convey their purpose.</li></ul>",
             "option-anchor": "card",
 		    "cards": [
 			    {
@@ -18,19 +18,24 @@
 					"summary": "This is a short paragraph of text that can be used to provide supporting information about a contact that may aid in the identification of the correct person to contact.",
 					"areas-expertise": [
 						{
-							"area": "Business and finance"
+							"area": "Business and finance",
+							"tag-link": true
 						},
 						{
-							"area": "Computer science and informatics"
+							"area": "Computer science and informatics",
+							"tag-link": true
 						},
 						{
-							"area": "Engineering"
+							"area": "Engineering",
+							"tag-link": true
 						},
 						{
-							"area": "Artificial intelligence"
+							"area": "Artificial intelligence",
+							"tag-link": true
 						},
 						{
-							"area": "Mathematics"
+							"area": "Mathematics",
+							"tag-link": true
 						}
 					]
 			    }

@@ -304,6 +304,7 @@ a.list-group-item {
     &:hover,
     &:focus {
         background: #ebebeb;
+        text-decoration: underline;
     }
     
     .badge {

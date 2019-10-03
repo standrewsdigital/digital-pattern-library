@@ -7,13 +7,9 @@
                     "colour": "sta-purple-1",
                     "columns": [
                         {
-                            "column-size": "col-sm-6 col-sm-push-4",
-                            "title": "Lorem ipsum dolor sit amet",
-                            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                        },
-                        {
-                            "column-size": "col-sm-2 column col-sm-push-4",
-                            "icon-type": "trophy"
+                            "column-size": "col-sm-8 col-sm-push-4",
+                            "title": "St Andrews top in the UK for student satisfaction",
+                            "paragraph": "The University of St Andrews is top in the UK for student academic experience in the National Student Survey (NSS) 2019."
                         },
                         {
                             "column-size": "col-sm-4 col-sm-pull-8",
@@ -23,7 +19,7 @@
                                         "url": "../assets/docs/images/placeholders/750x500.png",
                                         "alt": "Description"
                                     },
-                                    "title": "Lorem ipsum dolor sit amet",
+                                    "title": "Top for student satisfaction",
                                     "column": "col-sm-12",
                                     "row": true
                                 }
@@ -36,8 +32,8 @@
                     "columns": [
                         {
                             "column-size": "col-sm-8",
-                            "title": "Lorem ipsum dolor sit amet",
-                            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            "title": "Equality and diversity",
+                            "paragraph": "The University of St Andrews is committed to advancing gender equality representation, progression and success in higher education and research."
                         },
                         {
                             "column-size": "col-sm-4",
@@ -47,7 +43,7 @@
                                         "url": "../assets/docs/images/placeholders/750x500.png",
                                         "alt": "Description"
                                     },
-                                    "title": "Lorem ipsum dolor sit amet",
+                                    "title": "Athena SWAN Bronze Award",
                                     "column": "col-sm-12",
                                     "row": true
                                 }
@@ -60,13 +56,9 @@
                     "colour": "sta-purple-3",
                     "columns": [
                         {
-                            "column-size": "col-sm-6 col-sm-push-4",
-                            "title": "Lorem ipsum dolor sit amet",
-                            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                        },
-                        {
-                            "column-size": "col-sm-2 column col-sm-push-4",
-                            "icon-type": "university"
+                            "column-size": "col-sm-8 col-sm-push-4",
+                            "title": "Best in Scotland and second best in the UK",
+                            "paragraph": "The University of St Andrews has once again been ranked the best university in Scotland and second in the UK behind Cambridge, according to the Guardian University Guide 2020."
                         },
                         {
                             "column-size": "col-sm-4 col-sm-pull-8",
@@ -76,7 +68,7 @@
                                         "url": "../assets/docs/images/placeholders/750x500.png",
                                         "alt": "Description"
                                     },
-                                    "title": "Lorem ipsum dolor sit amet",
+                                    "title": "St Andrews among UK’s best",
                                     "column": "col-sm-12",
                                     "row": true
                                 }
