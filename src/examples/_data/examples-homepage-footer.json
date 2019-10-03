@@ -8,12 +8,14 @@
             "columns": [
                 {
                     "image": "../assets/docs/images/placeholders/medal-512.png",
+                    "column-size": "6",
                     "image-alt": "Award 1",
                     "image-title": "Award 1",
                     "image-link": "#"
                 },
                 {
                     "image": "../assets/docs/images/placeholders/medal2-512.png",
+                    "column-size": "6",
                     "image-alt": "Award 2",
                     "image-title": "Award 2",
                     "image-link": "#"

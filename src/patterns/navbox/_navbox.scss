@@ -46,30 +46,22 @@
 	background: $sta-blue-T;
 	background-repeat: repeat;
 	color: white;
-	font-size: 24px;
+	@include ms-respond(font-size,1);
     font-weight: bold;
 	padding: 15px 35px 15px 15px;
     position: absolute;
     bottom: 0;
     width: 100%;
-
-    @media (max-width: 767px) {
-        font-size: 20px;
-    }
 }
 
 .navbox-title:before {
     @extend .fa;
     @extend .fa-chevron-right;
-    font-size: 30px;
+    @include ms-respond(font-size,2);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 15px;
-
-    @media (max-width: 767px) {
-        font-size: 24px;
-    }
+    right: 1rem;
 }
 
 .navbox-title a {
@@ -116,7 +108,6 @@
 
 @media (max-width: 1199px) and (min-width: 992px) {
     .navbox-image {
-        max-height: 196px;
         overflow: hidden;
     }
 }
@@ -125,7 +116,6 @@
 
 	/* Make the title show below instead of on top of the image... */
     .navbox-image {
-        max-height: 145px;
         overflow: hidden;
     }
 
