@@ -158,6 +158,10 @@
                   "img": "assets/docs/images/patterns/code.jpg",
                   "url": "patterns/code/index.html"
                 },
+                { "name": "Comments",
+                  "img": "assets/docs/images/patterns/comments.jpg",
+                  "url": "patterns/comments/index.html"
+                },
                 { "name": "Contact card",
                   "img": "assets/docs/images/patterns/contact-card.jpg",
                   "url": "patterns/contact-card/index.html"

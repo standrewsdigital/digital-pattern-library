@@ -9,6 +9,31 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.20.0
+
+Release date: Friday 4 October 2019
+
+### Added
+* Article header pattern.
+* Comments pattern.
+* Examples for blog and news pages.
+
+### Changed
+* More news pattern layout and code improved.
+* Featured news pattern layout and code improved.
+* News updates pattern layout and code improved.
+* Header logo now no longer h1.
+* Tags on contact cards must now be linked.
+* Numerical list pattern style changes.
+* Showcase banner style changes and removal of icon option.
+* Focus states and colour contrast improvements for accessibility.
+* Navbox typography now using responsive scale.
+
+### Fixed
+* Styling being applied for table CSS classes.
+
+---
+
 ## v1.19.2
 
 Release date: Monday 26 August 2019

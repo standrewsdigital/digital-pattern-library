@@ -36,6 +36,9 @@ $small-spacing: $base-spacing/2;
 $page-gutter: calc(3vw + 1rem);
 $half-gutter: calc(1.5vw + 1rem);
 $third-gutter: calc(1vw + 1rem);
+$negative-page-gutter: calc(-1 * (3vw + 1rem));
+$negative-half-gutter: calc(-1 * (1.5vw + 1rem));
+$negative-third-gutter: calc(-1 * (1vw + 1rem));
 // Gutter transformations
 $page-gutter-overflow: calc((3vw + 1rem) - 30px); //Removes fixed size from dynamic gutter
 

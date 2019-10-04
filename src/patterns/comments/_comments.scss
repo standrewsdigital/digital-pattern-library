@@ -1,0 +1,122 @@
+
+/*********************************/
+/* BEGIN Pattern: comments    */
+/*********************************/
+
+.comment-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+// Add additional space at top if following a heading
+h2 + .comment-list,
+h3 + .comment-list {
+	margin-top: $third-gutter;
+}
+
+.comment {
+	margin-bottom: $page-gutter;
+}
+
+.comment__replies {
+	list-style: none;
+	margin: $negative-half-gutter 0 0 0;
+	padding: 0;
+
+	@media (min-width:768px){
+		margin-left: 48px;
+	}
+}
+
+.comment--reply {
+	padding: 1rem;
+	background: $sta-grey-light;
+	&:not(:last-child) {
+		margin-bottom: $half-gutter;
+	}
+}
+
+.article-header {
+	border-bottom: 1px $sta-grey-light-hover solid;
+	margin-bottom: $half-gutter;
+}
+
+.comment__meta {
+	align-items: center;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	// add bottom margin to each element
+	& > * {
+		margin-bottom: 1rem;
+	}
+}
+
+// Wrapper for multi line items that take up remaining space
+.comment__meta-group {
+	flex: 1 1 auto;
+}
+
+.comment__image {
+    border-radius: 50%;
+	height: 48px;
+	width: 48px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 1rem;
+
+	img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+	}
+
+}
+
+a.comment__image {
+	outline: 0; // disable default focus
+
+	&:active {
+		background: lighten($sta-orange,30%);
+	}
+
+	&:hover {
+		img {
+			opacity: 0.6;
+		}
+	}
+
+	&:focus {
+		box-shadow: 0px 0px 0px 2px $sta-orange-highlight;
+	}
+}
+
+.comment__meta-author,
+.comment__meta-date {
+	font-size: 1rem;
+    margin-right: 1rem;
+
+    a {
+		&:active {
+			text-decoration: none;
+		}
+
+		&:hover {
+			color: $sta-blue-light-hover;
+		}
+
+		&:focus {
+			outline: 2px dotted $sta-orange-highlight;
+			outline-offset: 0;
+			background: lighten($sta-orange,50%);
+		}
+    }
+}
+
+/*********************************/
+/* END Pattern: comments.        */
+/*********************************/

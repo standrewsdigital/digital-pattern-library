@@ -1,0 +1,41 @@
+---
+title: Comments
+---
+
+<p class="lead">The comments pattern should be used to present feedback and discussion about a news article or blog post.</p>
+<p>Comments consist of an author's profile image and name, the date the comment was made and the comment itself. Top level comments also have a reply button that should provide a method of responding to a specific comment.</p>
+<h2>Rules for comments</h2>
+<ul>
+	<li>The profile image must be 72 pixels wide and 72 pixels high.</li>
+	<li>A placeholder image should be used when an author does not have a profile image.</li>
+	<li>Replies should be limited to the first level of comments only.</li>
+</ul>
+
+<h2>Options available</h2>
+<ul>
+{{#comments-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/comments-options.options}}
+</ul>
+
+{{#comments-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+<!--noindex-->
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+			{{> comments}}
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> comments}}</code></pre>
+<!--endnoindex-->
+{{/comments-options.options}}

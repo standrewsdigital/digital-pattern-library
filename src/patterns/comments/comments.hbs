@@ -1,0 +1,33 @@
+<!-- Begin pattern: comments //-->
+<ul class="comment-list">
+	{{#each comments}}
+	{{#if comment-main}}<li class="comment">{{/if}}
+	{{#if comment-reply-first}}
+		<ul class="comment__replies">
+	{{/if}}
+	{{#if comment-reply}}<li class="comment comment--reply">{{/if}}
+	    <div class="comment__meta">
+			{{#if image}}
+		    {{#if image-link}}<a class="comment__image" href=""><img src="{{image}}" alt="{{name}}"></a>{{else}}<div class="comment__image"><img src="{{image}}" alt="{{name}}"></div>{{/if}}
+		    {{/if}}
+		    <div class="comment__meta-group">
+			    {{#if name}}<div class="comment__meta-author">{{#if image-link}}<a href="#">{{name}}</a>{{else}}{{name}}{{/if}}</div>{{/if}}
+			    <div class="comment__meta-date">{{date}}</div>
+			</div>
+		</div>
+		<div class="comment__content">
+			{{{comment}}}
+		</div>
+		{{#if comment-reply}}
+			</li>
+		{{else}}
+		<a href="#" class="btn btn-tag">Reply</a>
+		{{/if}}
+	{{#if comment-reply-last}}
+		</ul>
+	{{/if}}
+	{{#if comment-main}}</li>{{/if}}
+	{{/each}}
+</ul>
+
+<!-- End pattern: comments //-->
