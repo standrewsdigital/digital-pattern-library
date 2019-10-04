@@ -119,5 +119,42 @@
                     "news-title": "Killer whale can mimic human speech"
                 }
             ]
-         }
+         },
+         "comments":{
+            "comments":[
+                {
+                "date": "31 September 2018",
+                "name": "Professor Timothy Mooney",
+                "image-link": true,
+                "comment-main":true,
+                "image": "../assets/docs/images/profile-pictures/male-004-small.jpg",
+                "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cium.</p>"
+                },
+                {
+                "date": "3 October 2018",
+                "name": "Trevor Main",
+                "comment-main":true,
+                "image": "../assets/core/images/profile-small.jpg",
+                "comment": "<p>Etiam mollis ipsum est, ac lobortis tellus consectetur ut. Integer at convallis purus. Donec et urna eu est mollis fringilla at id urna. Maecenas erat nulla, scelerisque at ornare imperdiet, varius a mauris.</p>"
+                },
+                {
+                "date": "4 October 2018",
+                "name": "Mia Sikorski",
+                "image-link": true,
+                "comment-main":true,
+                "image": "../assets/core/images/profile-small.jpg",
+                "comment": "<p>Integer ut enim vel metus maximus molestie. In felis magna, porttitor quis placerat vel, pharetra sit amet nulla. Cras sed sodales lectus. Fusce luctus condimentum neque et commodo. Suspendisse congue dui quis congue aliquet. Cras finibus, odio vitae finibus rutrum, tellus urna ullamcorper diam, at interdum augue lacus sit amet nunc.</p>"
+                },
+                {
+                "date": "11 October 2018",
+                "name": "Sophia Adams",
+                "image-link": true,
+                "comment-reply-first":true,
+                "comment-reply":true,
+                "comment-reply-last":true,
+                "image": "../assets/docs/images/profile-pictures/female-001-small.jpg",
+                "comment": "<p>Mauris eget leo quis dui condimentum consectetur eget in lorem. Quisque rutrum ultrices ligula, vitae tincidunt justo faucibus nec. Donec in odio tristique, rhoncus ipsum eu, imperdiet dui. Mauris a risus nec arcu lacinia auctor a sed nisi. Cras sed risus a ligula viverra auctor quis eget tellus. Vestibulum ut lacinia velit, ultrices finibus felis. Mauris iaculis nisl velit, eget gravida nisi varius nec. Donec vel lorem libero. Fusce at scelerisque sapien.</p>"
+                }
+            ]
+        }
 }

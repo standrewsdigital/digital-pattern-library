@@ -9,6 +9,12 @@
 	padding: 0;
 }
 
+// Add additional space at top if following a heading
+h2 + .comment-list,
+h3 + .comment-list {
+	margin-top: $third-gutter;
+}
+
 .comment {
 	margin-bottom: $page-gutter;
 }
