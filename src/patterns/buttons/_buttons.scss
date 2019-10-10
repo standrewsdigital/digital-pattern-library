@@ -3,12 +3,6 @@
 /* BEGIN Pattern: buttons        */
 /*********************************/
 
-@media (max-width: 600px) {
-    .btn, .read-more a {
-        margin-bottom: 5px;
-    }
-}
-
 .btn-tag {
 	background: white;
 	border: 1px solid $sta-grey;
@@ -17,8 +11,8 @@
 
 	&:hover {
 		background: $sta-grey-light;
-        border-color: $sta-grey;
-        color: $sta-blue;
+    border-color: $sta-grey;
+    color: $sta-blue;
 	}
 }
 
@@ -80,6 +74,11 @@
       color: white;
     }
   }  
+
+  // Include small bottom margin when buttons span multiple lines
+.btn, .read-more a {
+  margin-bottom: 5px;
+}
 
 /*********************************/
 /* END Pattern: buttons          */

@@ -6,21 +6,47 @@
 .breadcrumbs {
     margin: 0 0 1em 0;
     padding: 0;
+    font-size: 1rem;
+
+    a {
+        font-weight:normal;
+        text-decoration: underline;
+    }
 
     li {
-        display: inline;
-        padding-right: 0.35em;
+        display: inline-block;
+        position: relative;
+        margin-bottom: ms(-2);
+        margin-left: 0.8rem;
+        padding-left: 1.3rem;
+        float: left;
     }
 
     // Add 'greater than' before each element, except first.
-    li:before {
-        content: ">";
-        padding-right: 0.35em;
+    li:before {content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -0.17rem; //offset due to rotation and only half the shape being shown
+        width: 0.5rem;
+        height: 0.5rem;
+        margin: auto 0;
+        transform: rotate(45deg);
+        border: solid;
+        border-width: 1px 1px 0 0;
+        border-color: #777778;
+    }
+
+    li:first-child {
+        margin-left:0;
+        padding-left:0;
     }
 
     li:first-child:before {
         content: "";
-        padding-right: 0;
+        border: 0;
+        padding: 0;
     }
 }
 

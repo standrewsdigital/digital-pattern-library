@@ -6,7 +6,7 @@
             "option-anchor": "blue-transparent-overlay",
             "background": "featured-media--overlay featured-media--blue-transparent-overlay",
             "bg-image": "docs/images/cta/hero-banner-image-001.jpg",
-            "column1": "<div class='col-md-7 col-xs-12'><h3>What's bad about being good?</h3><p>Research at St Andrews explores effective altruism, a rapidly growing social movement which encourages us to do the most good we can with the money and time available.</p><a type='button' class='btn btn-lg btn-primary' href='#''>Read full story</a></div>",
+            "column1": "<div class='col-md-7 col-xs-12'><h2>What's bad about being good?</h2><p>Research at St Andrews explores effective altruism, a rapidly growing social movement which encourages us to do the most good we can with the money and time available.</p><a type='button' class='btn btn-lg btn-primary' href='#''>Read full story</a></div>",
             "column2": "<div class='col-md-5 col-xs-12'><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>"
         },
 
@@ -19,7 +19,7 @@
             "option-anchor": "orange-transparent-overlay",
             "background": "featured-media--overlay featured-media--orange-transparent-overlay",
             "bg-image": "docs/images/cta/hero-banner-image-002.jpg",
-            "column1": "<div class='col-md-7 col-xs-12'><h3>What's bad about being good?</h3><p>Research at St Andrews explores effective altruism, a rapidly growing social movement which encourages us to do the most good we can with the money and time available.</p><a type='button' class='btn btn-lg btn-primary' href='#''>Read full story</a></div>",
+            "column1": "<div class='col-md-7 col-xs-12'><h2>What's bad about being good?</h2><p>Research at St Andrews explores effective altruism, a rapidly growing social movement which encourages us to do the most good we can with the money and time available.</p><a type='button' class='btn btn-lg btn-primary' href='#''>Read full story</a></div>",
             "column2": "<div class='col-md-5 col-xs-12'><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>"
         },
 
@@ -32,7 +32,7 @@
             "option-anchor": "burgundy-transparent-overlay",
             "background": "featured-media--overlay featured-media--burgundy-transparent-overlay",
             "bg-image": "docs/images/cta/hero-banner-image-003.jpg",
-            "column1": "<div class='col-md-8 col-md-offset-2'><h3>What is David Russell Apartments like?</h3></h2><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>",
+            "column1": "<div class='col-md-8 col-md-offset-2'><h2>What is David Russell Apartments like?</h2><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>",
             "column2": ""
         },
 
@@ -46,7 +46,7 @@
             "background": "featured-media--overlay featured-media--purple-transparent-overlay",
             "photosphere": true,
             "bg-image": "docs/images/cta/hero-banner-image-005.jpg",
-            "column1": "<div class='col-md-8 col-md-offset-2'><h3>What is David Russell Apartments like?</h3></h2><div class='embed-responsive embed-responsive-16by9'><div id='photosphere'></div></div></div>",
+            "column1": "<div class='col-md-8 col-md-offset-2'><h2>What is David Russell Apartments like?</h2><div class='embed-responsive embed-responsive-16by9'><div id='photosphere'></div></div></div>",
             "column2": ""
         },
 
@@ -58,7 +58,7 @@
             "option-description": "",
             "option-anchor": "image-right",
             "background": "featured-media--sta-blue",
-            "column1": "<div class='col-md-7'><h3>Student testimonial</h3><p>&quot;Having originally applied to read English Literature, the chance to take Philosophy modules at sub-honours ignited an interest in that subject and therefore I am now studying a Joint Honours degree. I feel that the flexibility of the degree programmes, and the support for any difficulties you may have along the way, is what makes a degree at St Andrews unlike many others. Students encouraged to embark on an independent journey of academic and self-discovery whilst having access to a network of academic, social and welfare support.&quot;</p><p><strong>Francesca</strong> (Tadworth, Surrey, England)</p></div>",
+            "column1": "<div class='col-md-7'><h2>Student testimonial</h2><p>&quot;Having originally applied to read English Literature, the chance to take Philosophy modules at sub-honours ignited an interest in that subject and therefore I am now studying a Joint Honours degree. I feel that the flexibility of the degree programmes, and the support for any difficulties you may have along the way, is what makes a degree at St Andrews unlike many others. Students encouraged to embark on an independent journey of academic and self-discovery whilst having access to a network of academic, social and welfare support.&quot;</p><p><strong>Francesca</strong> (Tadworth, Surrey, England)</p></div>",
             "column2": "<div class='col-md-5'><div class='img-responsive'><figure><img src='../../assets/docs/images/placeholders/750x500.png' alt='Placeholder image'/><figcaption>Lorem ipsum dolor sit amet</figcaption></figure></div></div>"
         },
 
@@ -71,7 +71,7 @@
             "option-anchor": "image-left",
             "background": "featured-media--sta-burgundy",
             "column1": "<div class='col-md-5'><div class='img-responsive'><figure><img src='../../assets/docs/images/placeholders/750x500.png' alt='Placeholder image'/><figcaption>Lorem ipsum dolor sit amet</figcaption></figure></div></div>",
-            "column2": "<div class='col-md-7'><h3>Student testimonial</h3><p>&quot;Having originally applied to read English Literature, the chance to take Philosophy modules at sub-honours ignited an interest in that subject and therefore I am now studying a Joint Honours degree. I feel that the flexibility of the degree programmes, and the support for any difficulties you may have along the way, is what makes a degree at St Andrews unlike many others. Students encouraged to embark on an independent journey of academic and self-discovery whilst having access to a network of academic, social and welfare support.&quot;</p><p><strong>Francesca</strong> (Tadworth, Surrey, England)</p></div>"
+            "column2": "<div class='col-md-7'><h2>Student testimonial</h2><p>&quot;Having originally applied to read English Literature, the chance to take Philosophy modules at sub-honours ignited an interest in that subject and therefore I am now studying a Joint Honours degree. I feel that the flexibility of the degree programmes, and the support for any difficulties you may have along the way, is what makes a degree at St Andrews unlike many others. Students encouraged to embark on an independent journey of academic and self-discovery whilst having access to a network of academic, social and welfare support.&quot;</p><p><strong>Francesca</strong> (Tadworth, Surrey, England)</p></div>"
         },
 
 
@@ -117,7 +117,7 @@
             "option-description": "",
             "option-anchor": "image-center",
             "background": "featured-media--featured-image",
-            "column1": "<div class='col-md-8 col-md-offset-2'><h3>What is David Russell Apartments like?</h3></h2><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>",
+            "column1": "<div class='col-md-8 col-md-offset-2'><h2>What is David Russell Apartments like?</h2><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>",
             "column2": ""
         },
 
@@ -128,7 +128,7 @@
             "option-anchor": "photosphere-media",
             "photosphere": true,
             "background": "featured-media--featured-image",
-            "column1": "<div class='col-md-8 col-md-offset-2'><h3>What is David Russell Apartments like?</h3></h2><div class='embed-responsive embed-responsive-16by9'><div id='photosphere'></div></div></div>",
+            "column1": "<div class='col-md-8 col-md-offset-2'><h2>What is David Russell Apartments like?</h2><div class='embed-responsive embed-responsive-16by9'><div id='photosphere'></div></div></div>",
             "column2": ""
         },
 
