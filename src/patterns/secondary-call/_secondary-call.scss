@@ -64,30 +64,17 @@
 
     .call-heading {
         color: white;
-        font-size: 1.5em;
+        @include ms-respond(font-size,4);
         font-weight: bold;
-        line-height: 1.2;
         margin: 0 auto;
         text-shadow: 2px 2px 9px rgba(68,68,68,0.7);
-
-        @media (min-width: 480px){
-          font-size: 1.8em;
-        }
-
-        @media (min-width: 768px){
-          font-size: 2.5em;
-        }
     }
 
     p {
         color: white;
         margin: 20px auto;
         max-width: 40em;
-
-        @media (min-width: 768px){
-          font-size: 21px;
-          line-height:1.5;
-        }
+        @include ms-respond(font-size,1);
     }
 
     &.left p, &.left .call-heading {
@@ -103,15 +90,13 @@
         background-color: $sta-blue;
         border: 0;
         margin: 0 15px 25px 15px;
+        @include ms-respond(font-size,1);
 
         &:hover,
         &:focus {
             background-color: $sta-blue-hover;
         }
 
-        @media (min-width: 768px){
-            font-size:25px;
-        }
     }
 
 }

@@ -8,7 +8,7 @@
        &:after {
            background-color: rgba($color-overlay,0.75);
        }
-        h3 {
+        .featured-media__heading {
             text-shadow: 2px 2px 9px rgba(68,68,68,0.7);
         }
     } @else {
@@ -36,7 +36,7 @@
     color: white;
     position: relative;
     z-index: 0;
-    padding: 50px 0;
+    padding: $page-gutter 0;
 
     &.featured-media--overlay {
         &:after {
@@ -103,7 +103,6 @@
         margin-bottom:25px;
 
         @media (min-width: 992px){
-            font-size:25px;
             margin-bottom:0;
         }
     }
@@ -114,6 +113,12 @@
         margin-bottom:20px;
     }
 
+    .featured-media__heading {
+        @include ms-respond(font-size,4);
+        @media (max-width:767px){
+            margin-top: 0;
+        }
+    }
 }
 /*********************************/
 /* END Pattern: featured media   */

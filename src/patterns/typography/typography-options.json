@@ -32,18 +32,6 @@
 
 
         {
-            "option-heading": "Other heading sizes",
-            "option-description": "<p>The default heading sizes can be overridden by using one of the following classes.</p><ul><li><code>heading--large</code> for large headings, this should only be used on landing pages and not within content that is less than 60% of the browser width.</li></ul>",
-            "option-anchor": "heading-sizes",
-            "headings": [
-                {
-                    "heading": "<h2 class='heading--large'>This is a large heading</h2>"
-                }
-            ]
-        },
-
-
-        {
             "option-heading": "Headings with a dividing line",
             "option-description": "<p>Headings that are followed by content which is wider than the heading itself may benefit from a visual indicator that the heading is related to that content. In these situations adding <code>keyline--bottom</code> to the heading will add a full width dividing line.</p><ul><li>Please discuss your design requirements with the digital communications team before using this option.</li></ul>",
             "option-anchor": "headings-dividing",
@@ -97,7 +85,7 @@
 
         {
             "option-heading": "Paragraph lead",
-            "option-description": "<p>Due to the current styling, paragraph lead fields are only to be used as an introduction at the top of subject and course pages.</p>",
+            "option-description": "<p>A lead paragraph displays in a larger font that the normal body text. This can be used at the top of a page to provide a short summary of that page's key points.</p><ul><li>Should only. be used at the top of a block of content.</li></ul>",
             "option-anchor": "paragraph-lead",
             "body-text": [
                 {
@@ -133,7 +121,7 @@
 
         {
             "option-heading": "Description list",
-            "option-description": "<p>Used to list terms along with their associated description.</p><p>The <code>dl</code> tag is used to define a description list, the <code>dt</code> tag defines a term and the <code>dd</code> tag defines the term's associated description.</p>",
+            "option-description": "<p>Used to list terms along with their associated description. You may also wish to consider the <a href='../paired-values-list/index.html'>Paired values list</a> pattern.</p><p>The <code>dl</code> tag is used to define a description list, the <code>dt</code> tag defines a term and the <code>dd</code> tag defines the term's associated description.</p>",
             "option-anchor": "description-list",
             "description-list": [
                 {

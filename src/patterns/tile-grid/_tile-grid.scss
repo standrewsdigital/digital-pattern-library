@@ -8,7 +8,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: inherit;
-    line-height: 2;
     padding: $page-gutter 0;
 
     &.white {
@@ -86,6 +85,7 @@
             box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
     margin: auto;
     max-width: 360px;
+    @include clearfix-alt;
 }
 
 .tile.tile-responsive {
@@ -109,10 +109,9 @@
 
 .tile h3 {
     background: $sta-blue-T;
-    font-size: 1.3em;
-    line-height: 1.3em;
+    @include ms-respond(font-size,1);
     margin: 0;
-    padding: .5em .8em;
+    padding: .8rem 1rem;
     position: absolute;
     bottom: 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
@@ -134,28 +133,42 @@
 }
 
 .tile p {
-    font-size: 1em;
- 	height: 5em;
- 	line-height: 1.2em;
- 	margin: 1.5em 0;
+ 	height: 7rem;
+ 	margin: 1rem 0;
     overflow: hidden;
-    padding: 0 1em;
+    padding: 0 1rem;
 }
 
 .tile-date {
     color: $sta-grey;
     float: left;
-    font-size:   15px;
-    font-weight: bold;
-    padding-left: 1em;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0 0.5rem 0.8rem 1rem;
 }
 
 .tile-type {
     color: $sta-grey;
     float: right;
-    font-size:   15px;
-    font-weight: bold;
-    padding-right: 1em;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0 1rem 0.8rem 0.5rem;
+
+    a {
+        color: $sta-grey;
+        font-weight: normal;
+        text-decoration: underline;
+
+        &:hover {
+            color: $sta-grey-hover;
+        }
+
+        &:focus {
+            outline: 2px dotted $sta-orange-highlight;
+            outline-offset: 0;
+            background: lighten($sta-orange,50%);
+        }
+    }
 }
 
 /* Colors */

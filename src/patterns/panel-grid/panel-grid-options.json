@@ -50,26 +50,29 @@
 
         {
             "option-heading": "Three columns option with links",
-            "option-description": "",
-            "option-anchor": "three-column-panel-grid",
+            "option-description": "<p>This example has the panel headings linked.</p>",
+            "option-anchor": "three-column-panel-grid-links",
             "grid": true,
             "panels": [
                 {
                     "column-size": "col-md-4",
                     "color": "panel-secondary",
                     "title": "Research portal",
+                    "link": true,
                     "description": "<ul><li><a href='#'>Researchers</a></li><li><a href='#'>Publications</a></li><li><a href='#'>Impact</a></li><li><a href='#'>Data</a></li><li><a href='#'>Funded projects</a></li></ul>"
                 },
                 {
                     "column-size": "col-md-4",   
                     "color": "panel-tertiary-1",
                     "title": "Research environment",
+                    "link": true,
                     "description": "<ul><li><a href='#'>Committees and forums</a></li><li><a href='#'>Equality and diversity</a></li><li><a href='#'>Schools, centres and institutes</a></li><li><a href='#'>Funding</a></li><li><a href='#'>Collaborations</a></li></ul>"
                 },
                 {
                     "column-size": "col-md-4",
                     "color": "panel-tertiary-2",
                     "title": "Research support",
+                    "link": true,
                     "description": "<ul><li><a href='#'>Knowledge transfer centre</a></li><li><a href='#'>Public engagement</a></li><li><a href='#'>RBDC</a></li><li><a href='#'>Library</a></li><li><a href='#'>Contact us</a></li></ul>"
                 }
             ]
@@ -81,7 +84,7 @@
         {
             "option-heading": "Two columns option with links",
             "option-description": "",
-            "option-anchor": "two-column-panel-grid",
+            "option-anchor": "two-column-panel-grid-links",
             "grid": true,
             "panels": [
                 {

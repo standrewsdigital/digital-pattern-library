@@ -7,7 +7,6 @@
 	background: white;
 	border: 1px solid $sta-grey;
 	color: $sta-blue;
-	font-weight: bold;
 
 	&:hover {
 		background: $sta-grey-light;
@@ -20,48 +19,42 @@
     @extend .btn;
     @extend .btn-primary;
     @extend .btn-block;
+    font-weight: bold;
     color: white;
-    font-size: 24px;
+    @include ms-respond(font-size,1);
     margin: 0;
-    padding: 15px 35px 15px 15px;
+    padding: 0.8rem 3rem 0.8rem 1rem;
     position: relative;
     text-align: left;
-
-    @media (max-width: 767px) {
-        font-size: 20px;
-    }
 
     &:before {
 	    @extend .fa;
 	    @extend .fa-chevron-right;
-	    font-size: 30px;
+      @include ms-respond(font-size,1);
 	    position: absolute;
 	    top: 50%;
 	    transform: translateY(-50%);
 	    right: 15px;
-
-	    @media (max-width: 767px) {
-	        font-size: 24px;
-	    }
     }
 }
 
   .btn-important {
     background: $sta-blue-light;
     border: none;
+    @include ms-respond(font-size,1);
     border-color: $sta-blue-light;
     border-bottom: 3px $sta-blue-hover solid;
     color: white;
     font-weight: bold;
     line-height: 1;
     position:relative;
-    padding:15px 45px 12px 15px;
+    padding:0.8rem 2.5rem 0.8rem 1rem;
     text-align: left;
 
     &:before {
       @extend .fa;
       @extend .fa-chevron-right;
-      font-size: 24px;
+      @include ms-respond(font-size,1);
       position: absolute;
       top: 50%;
       transform: translateY(-50%) translateY(1px);

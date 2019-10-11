@@ -40,8 +40,13 @@ div.container ul.show-navigation {
 	}
 }
 
-.navigation-bar ul.navigation-bar-nav li a:hover, .navigation-bar ul.navigation-bar-nav li a:focus {
+.navigation-bar ul.navigation-bar-nav li a:hover {
 	color: white;
+}
+
+.navigation-bar ul.navigation-bar-nav li a:focus {
+	color: white;
+	text-decoration: underline;
 }
 
 .toggle-navigation {
@@ -80,7 +85,7 @@ div.container ul.show-navigation {
     .toggle-navigation {
     	border-bottom: solid 0px white;
         display: block;
-        font-size: 20px;
+        @include ms-respond(font-size,1);
         text-align: center;
     }
 

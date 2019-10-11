@@ -48,7 +48,7 @@
 	color: white;
 	@include ms-respond(font-size,1);
     font-weight: bold;
-	padding: 15px 35px 15px 15px;
+	padding: 0.8rem 3rem 0.8rem 1rem;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -57,7 +57,7 @@
 .navbox-title:before {
     @extend .fa;
     @extend .fa-chevron-right;
-    @include ms-respond(font-size,2);
+    @include ms-respond(font-size,1);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

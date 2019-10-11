@@ -29,9 +29,9 @@
         .event-listing__location,
         .event-listing__time  {
             font-size: 1rem; // Don't scale up on larger displays
-            font-weight: bold; // Bold to match up bolder iconset
+            font-weight: normal; 
             margin-bottom:0.25rem;
-            padding-left: ms(1);
+            padding-left: 1.3rem;
             position: relative;
             
             &:before {
@@ -85,8 +85,8 @@
             color: #fff;
             content: 'Cancelled';
             display: inline-block;
-            @extend %font-scale-minus-1;
-            font-weight: bold;
+            font-size: 1rem;
+            font-weight: normal;
             margin-bottom:0.5rem;
             padding: 3px 9px;
             text-shadow: none;

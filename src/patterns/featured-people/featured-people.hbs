@@ -2,30 +2,31 @@
 {{#each featured}}
 <section class="featured-people {{colour}}">
 	<div class="container">
-		<h3>{{heading}}</h3>
+		{{#if heading}}<h2>{{heading}}</h2>{{/if}}
 		<div class="row">
 			{{#each columns}}
 			<div class="{{size}}">
+				<div class="row">
 				{{#if single}}
 				<div class="col-md-3">
 				{{/if}}
-					<a href="{{link}}">
+					{{#if link}}<a href="{{link}}">{{/if}}
 						<img src='../../assets/core/images/featured-people.png'>
 				{{#if single}}
-					</a>
+					{{#if link}}</a>{{/if}}
 				</div>
 				{{/if}}
 				{{#if single}}
 				<div class="col-md-9">
-					<a href="{{link}}">
+					{{#if link}}<a href="{{link}}">{{/if}}
 				{{/if}}
-						<h4>{{name}}</h4>
-					</a>
-						<small>{{title}}</small>
+						<h4>{{name}} <small>{{title}}</small></h4>
+					{{#if link}}</a>{{/if}}
 						{{#if description}}
 						<p>{{description}}</p>
 						{{/if}}
 				{{#if single}}</div>{{/if}}
+				</div>
 			</div>
 			{{/each}}
 		</div>

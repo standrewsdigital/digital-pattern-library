@@ -78,7 +78,7 @@ h4, .h4 { @extend %font-scale-1; }
 h5, .h5 { @extend %font-scale-0; }
 h6, .h6 { @extend %font-scale-0; }
 
-// Override default heading sizes (may become default)
+// KEEP AS MAY BE IN USE - preferred method is specific font scale override classes
 .heading--large {
   @extend %font-scale-6; 
 }
