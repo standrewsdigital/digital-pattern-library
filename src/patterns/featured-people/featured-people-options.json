@@ -1,12 +1,11 @@
 {
     "options" : [
         {
-            "option-heading": "Three profiles with description",
+            "option-heading": "Three profiles with descriptions",
             "option-description": "<p></p>",
             "option-anchor": "three-profiles-with-description",
             "featured": [
                 {
-                    "colour": "sta-blue-light",
                     "heading": "Featured academics",
                     "columns": [
                         {
@@ -14,7 +13,7 @@
                             "title": "Structural Biologist",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum eget velit ac ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed est sem. Duis egestas justo hos. ",
-                            "size": "col-md-4 featured-people__person"
+                            "size": "col-md-4"
 
                         },
                         {
@@ -22,54 +21,68 @@
                             "title": "School of English",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum eget velit ac ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed est sem. Duis egestas justo hos. ",
-                            "size": "col-md-4 featured-people__person"
+                            "size": "col-md-4"
                         },
                         {
                             "name": "Olivia Evans",
                             "title": "Senior Lecturer",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum eget velit ac ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed est sem. Duis egestas justo hos. ",
-                            "size": "col-md-4 featured-people__person"
+                            "size": "col-md-4"
                         }
                     ]
                 }
             ]
         },
         {
-            "option-heading": "Three profiles without description or links",
-            "option-description": "<p>This example shows featured people without linking to further information.</p>",
+            "option-heading": "Grid of profiles",
+            "option-description": "<p>This example shows a grid of featured people without linking to further information.</p>",
             "option-anchor": "three-profiles-without-description",
             "featured": [
                 {
-                    "colour": "sta-burgundy",
-                    "heading": "Researchers involved",
+                    "colour": "sta-grey-light",
                     "columns": [
                         {
                             "name": "Dr Garrett Winters",
                             "title": "School of Biology",
-                            "size": "col-md-4 featured-people__person"
+                            "size": "col-md-4"
                         },
                         {
                             "name": "Dr Rhona Davidson",
                             "title": "School of Medicine",
-                            "size": "col-md-4 featured-people__person"
+                            "size": "col-md-4"
                         },
                         {
                             "name": "Brielle Williamson",
                             "title": "PhD student",
-                            "size": "col-md-4 featured-people__person"
+                            "size": "col-md-4"
+                        },
+                        {
+                            "name": "Professor Sophia Adams",
+                            "title": "Structural Biologist",
+                            "size": "col-md-4"
+
+                        },
+                        {
+                            "name": "Aiden Davis",
+                            "title": "School of English",
+                            "size": "col-md-4"
+                        },
+                        {
+                            "name": "Olivia Evans",
+                            "title": "Senior Lecturer",
+                            "size": "col-md-4"
                         }
                     ]
                 }
             ]
         },
         {
-            "option-heading": "Two profiles with description",
-            "option-description": "<p></p>",
+            "option-heading": "Two profiles with indented descriptions",
+            "option-description": "<p>The descriptions can be indented by adding the class <code>featured-people__person--indented</code>.</p><ul><li>This class must only be used when a person has a description.</li><li>If used then all persons in the current block must also have indented descriptions.</li><li>Must not be used when more than two Featured People are on a single row.</li></ul>",
             "option-anchor": "two-profiles-with-description",
             "featured": [
                 {
-                    "colour": "sta-green",
                     "heading": "Student participants",
                     "columns": [
                         {
@@ -77,34 +90,36 @@
                             "title": "Student",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum eget velit ac ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed est sem. Duis egestas justo hos.",
-                            "size": "col-md-6 featured-people__person"
+                            "size": "col-md-6",
+                            "indent": true
                         },
                         {
                             "name": "Olivia Liang",
                             "title": "Student",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum eget velit ac ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed est sem. Duis egestas justo hos.",
-                            "size": "col-md-6 featured-people__person"
+                            "size": "col-md-6",
+                            "indent": true
                         }
                     ]
                 }
             ]
         },
         {
-            "option-heading": "One profile with description and no heading",
-            "option-description": "<p></p>",
+            "option-heading": "One profile with indented description and no heading",
+            "option-description": "<p>This inherits the same guidance from 'Two profiles with indended descriptions'.</p>",
             "option-anchor": "one-profile-with-description",
             "featured": [
                 {
-                    "colour": "sta-purple",
+                    "colour": "sta-grey-light",
                     "columns": [
                         {
                             "name": "Professor Sonya Frost",
                             "title": "Theoretical Physicist",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum eget velit ac ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed est sem. Duis egestas justo hos.",
-                            "size": "col-xs-12 featured-people__person featured-people__person--single",
-                            "single": true
+                            "size": "col-xs-12",
+                            "indent": true
                         }
                     ]
                 }
