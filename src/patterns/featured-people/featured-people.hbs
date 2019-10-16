@@ -1,6 +1,6 @@
 <!-- Begin pattern: featured people //-->
 {{#each featured}}
-<section class="featured-people {{colour}}">
+<section class="featured-people{{padding}}{{colour}}">
 	<div class="container">
 		{{#if heading}}<h2>{{heading}}</h2>{{/if}}
 		<div class="row">
@@ -8,7 +8,7 @@
 			<div class="{{size}}">
 				<div class="featured-people__person{{#if indent}} featured-people__person--indent{{/if}}">
 					{{#if link}}<a href="{{link}}" class="featured-people__image">{{else}}<div class="featured-people__image">{{/if}}	
-						<img src='../../assets/core/images/featured-people.png' alt="{{name}}">
+						<img src='{{#if image}}{{image}}{{else}}../../assets/core/images/featured-people.png{{/if}}' alt="{{name}}">
 					{{#if link}}</a>{{else}}</div>{{/if}}
 					<div class="featured-people__person--group">
 						<h3 class="featured-people__name">{{#if link}}<a href="{{link}}">{{/if}}{{name}}{{#if link}}</a>{{/if}}</h3>

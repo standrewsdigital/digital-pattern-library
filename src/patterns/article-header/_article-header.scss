@@ -26,9 +26,10 @@
 }
 
 .article-header__meta-image {
+    border: 2px solid $sta-grey-light-S;
     border-radius: 50%;
-	height: 48px;
-	width: 48px;
+	height: 50px;
+	width: 50px;
     overflow: hidden;
     position: relative;
     margin-right: 1rem;
@@ -47,12 +48,12 @@ a.article-header__meta-image {
 	outline: 0; // disable default focus
 
 	&:active {
-		background: lighten($sta-orange,30%);
+			box-shadow: 0px 0px 0px 2px $sta-orange;
 	}
 
 	&:hover {
 		img {
-			opacity: 0.6;
+			opacity: 0.8;
 		}
 	}
 
@@ -67,6 +68,8 @@ a.article-header__meta-image {
     margin-right: 1rem;
 
     a {
+		outline: 0; // disable default focus
+		text-decoration: underline;
 		&:active {
 			text-decoration: none;
 		}
@@ -76,9 +79,9 @@ a.article-header__meta-image {
 		}
 
 		&:focus {
-			outline: 2px dotted $sta-orange-highlight;
-			outline-offset: 0;
+			border-bottom: 2px dashed $sta-orange-highlight;
 			background: lighten($sta-orange,50%);
+			text-decoration: none;
 		}
     }
 }

@@ -3,11 +3,6 @@
 /***********************************/
 
 .featured-people  {
-	padding: $page-gutter 0 0 0;
-
-	&.sta-grey-light {
-    	background-color: $sta-grey-light;
-  	}
 
   	// heading is now optional
   	h2 {
@@ -37,8 +32,15 @@
 		}
 
 		p {
-			margin: 1rem 0 0 0;
+			margin: 1em 0 0 0;
 			max-width: 70ch;
+		}
+
+		@media (min-width: 576px){
+		    // Reduce top margin if indent is set and appearing directly under name/title
+		    &.featured-people__person--indent p {
+			    margin-top: 0.5em;
+		    }
 		}
 
 		margin-bottom: $page-gutter;
@@ -52,7 +54,8 @@
 	    grid-row-end: 2;
 	    -ms-grid-column: 1;
 	    -ms-grid-row: 1;
-
+		
+		border: 2px solid $sta-grey-light-S;
 	    border-radius: 50%;
 		height: 50px;
 		width: 50px;
@@ -89,7 +92,7 @@
 	a.featured-people__image {
 		outline: 0; // disable default focus
 		&:active {
-			box-shadow: 0px 0px 0px 5px $sta-orange;
+			box-shadow: 0px 0px 0px 2px $sta-orange;
 		}
 		&:hover {
 			img {
@@ -97,7 +100,7 @@
 			}
 		}
 		&:focus {
-			box-shadow: 0px 0px 0px 5px $sta-orange-highlight;
+			box-shadow: 0px 0px 0px 2px $sta-orange-highlight;
 		}
 	}
 
@@ -140,19 +143,27 @@
 			outline: 0; // disable default focus
 			text-decoration: underline;
 
-	        &:hover {
-	            text-decoration: none;
+	        &:active {
+				text-decoration: none;
 	        }
 
-	        &:focus,
-	        &:active {
-	            //outline: 2px dotted $sta-orange-highlight;
-	            //outline-offset: 0;
-	            color: $sta-grey-dark;
-	            background: $sta-orange-highlight;
-	            box-shadow: 0 2px $sta-grey-dark;
-	            text-decoration: none;
+	        &:hover {
+				color: $sta-blue-light-hover;
 	        }
+
+	        &:focus {
+            	border-bottom: 2px dashed $sta-orange-highlight;
+            	background: lighten($sta-orange,50%);
+				text-decoration: none;
+	        }
+		}
+
+
+		@media (min-width: 576px){
+		    // Add top margin if indent is set
+		    .featured-people__person--indent & {
+			    margin-top: 1em;
+		    }
 		}
 	}
 
