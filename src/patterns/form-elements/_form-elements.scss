@@ -24,7 +24,7 @@
     }
 
     input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio]).form-control, select.form-control {
-    	font-size: 18px;
+    	font-size: 1em;
         height: 46px;
     }
 
@@ -70,7 +70,7 @@
 
         ul li .check {
             background-color: white;
-            border: 3px solid black;
+            border: 3px solid $sta-grey-dark;
             border-radius: 100%;
             height: 25px;
             position: absolute;
@@ -96,11 +96,11 @@
         }
 
         ul li input[type=radio]:checked ~ .check::before {
-            background: black;
+            background: $sta-grey-dark;
         }
 
         ul li input[type=radio]:focus ~ .check, ul li input[type=checkbox]:focus ~ .check {
-            box-shadow: 0 0 0 4px $sta-yellow;
+            box-shadow: 0 0 0 2px $sta-orange-highlight;
         }
 
         // Smaller condensed size

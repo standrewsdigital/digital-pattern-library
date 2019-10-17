@@ -100,6 +100,11 @@
 	background: $sta-cyan;
 }
 
+// Add focus state to entire box
+.navbox:focus-within {
+    outline: 2px solid $sta-orange-highlight;
+}
+
 /* when a element immediately follows a navbox add a top margin to it */
 
 .navbox + * {

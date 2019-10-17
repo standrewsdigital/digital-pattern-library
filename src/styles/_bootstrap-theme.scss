@@ -32,6 +32,22 @@ a {
     -moz-transition: all 200ms ease-out;
     transition: all 200ms ease-out;
     font-weight: 700;
+    text-decoration: underline;
+    outline: 0;
+
+    &:active {
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: $sta-blue-light-hover;
+    }
+
+    &:focus {
+        border-bottom: 2px solid $sta-orange-highlight;
+        background: lighten($sta-orange,50%);
+        text-decoration: none;
+    }        
 }
 
 

@@ -158,6 +158,12 @@ output {
   // [converter] extracted textarea& to textarea.form-control
 }
 
+  // Set validation states also for addons
+  .input-group-addon {
+    color: $text-color;
+    border-color: $input-border !important;
+  }
+
 // Reset height for `textarea`s
 textarea.form-control {
   height: auto;

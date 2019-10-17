@@ -79,7 +79,7 @@ a.article-header__meta-image {
 		}
 
 		&:focus {
-			border-bottom: 2px dashed $sta-orange-highlight;
+			border-bottom: 2px solid $sta-orange-highlight;
 			background: lighten($sta-orange,50%);
 			text-decoration: none;
 		}

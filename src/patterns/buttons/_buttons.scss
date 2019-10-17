@@ -73,6 +73,14 @@
   margin-bottom: 5px;
 }
 
+// Add focus states to buttons
+.btn {
+  &:focus {
+    outline: 2px solid $sta-orange-highlight;
+  }
+
+}
+
 /*********************************/
 /* END Pattern: buttons          */
 /*********************************/

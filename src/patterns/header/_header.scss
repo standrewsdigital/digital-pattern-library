@@ -84,6 +84,13 @@
            -moz-transition: none;
                 transition: none;
         width: 100%;
+
+        &:focus {
+            background-color: transparent;
+            border: none;
+            outline: 2px solid $sta-orange-highlight;
+            outline-offset: 2px;
+        }
     }
 
     span {
