@@ -17,9 +17,12 @@
             font-weight: normal;
             text-decoration: none;
 
-            &:hover,
-            &:focus {
+            &:hover {
                 text-decoration: underline;
+            }
+
+            &:focus {
+                color: $sta-grey-dark;
             }
         }
 
