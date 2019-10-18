@@ -42,11 +42,12 @@ div.container ul.show-navigation {
 
 .navigation-bar ul.navigation-bar-nav li a:hover {
 	color: white;
+	text-decoration: underline;
 }
 
 .navigation-bar ul.navigation-bar-nav li a:focus {
-	color: white;
-	text-decoration: underline;
+	outline:3px solid $sta-orange-highlight;
+	background-color: inherit
 }
 
 .toggle-navigation {
@@ -115,7 +116,7 @@ div.container ul.show-navigation {
 	background-color: $sta-blue;
 }
 
-.navigation-bar ul.navigation-bar-nav li a:hover, .navigation-bar ul.navigation-bar-nav li a:focus {
+.navigation-bar ul.navigation-bar-nav li a:hover {
 	background-color: $sta-blue-hover;
 }
 
@@ -130,7 +131,7 @@ div.container ul.show-navigation {
 }
 
 @media (max-width: 991px) {
-	.toggle-navigation a:hover, .toggle-navigation a:focus {
+	.toggle-navigation a:hover {
 		background-color: $sta-blue-hover;
 	}
 }
@@ -142,9 +143,7 @@ div.container ul.show-navigation {
 }
 
 .accent-blue-study .navigation-bar ul.navigation-bar-nav li a:hover,
-.accent-blue-study .navigation-bar ul.navigation-bar-nav li a:focus,
-.navigation-bar.blue-study ul.navigation-bar-nav li a:hover,
-.navigation-bar.blue-study ul.navigation-bar-nav li a:focus {
+.navigation-bar.blue-study ul.navigation-bar-nav li a:hover {
 	background-color: $sta-cyan-hover;
 }
 
@@ -164,10 +163,7 @@ div.container ul.show-navigation {
 }
 
 @media (max-width: 991px) {
-	.accent-blue-study .toggle-navigation a:hover,
-	.blue-study .toggle-navigation a:focus,
-	.accent-blue-study .toggle-navigation a:hover,
-	.blue-study .toggle-navigation a:focus {
+	.accent-blue-study .toggle-navigation a:hover {
 		background-color: $sta-cyan-hover;
 	}
 }

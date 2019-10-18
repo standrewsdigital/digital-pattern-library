@@ -11,13 +11,14 @@
 	padding: $third-gutter 0;
 }
 
-#website-footer a{
+#website-footer a {
 	color: $sta-cyan-light;
-	cursor: pointer;
 
-	&:hover,
-	&:focus {
+	&:hover {
 		color: $sta-cyan-light-hover;
+	}
+	&:focus {
+		color: $sta-grey-dark;
 	}
 }
 
@@ -30,14 +31,15 @@
 
 #university-footer a { 
 	color: $sta-grey-light;
-	cursor: pointer;
 	font-weight: normal;
-	text-decoration: underline;
 	white-space: nowrap;
 
-	&:hover,
-	&:focus {
+	&:hover {
 		color: $sta-grey-light-hover;
+	}
+	
+	&:focus {
+		color: $sta-grey-dark;
 	}
 }
 
@@ -45,6 +47,10 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+#website-footer ul li {
+	margin:0 0 5px 0;
 }
 
 // Use this for secondary branding such as the library logo
@@ -86,7 +92,18 @@
 	border-top: 1px solid $sta-grey-T-hover;
 }
 
-/* SORT THIS BIT OUT, SHOULD BE OWN PATTERN */
+#social {
+	a {
+
+		&:focus {
+			box-shadow: none;
+			background-color: transparent;
+			outline:3px solid $sta-orange-highlight;
+			outline-offset: 2px;
+			color: $sta-grey-light-hover;
+		}
+	}
+}
 
 #affiliation-banner {
 	background-color: $sta-grey-light;
@@ -101,6 +118,15 @@
 
 	img {
 		max-width: 200px;
+	}
+
+	a {
+		&:focus {
+			box-shadow: none;
+			background-color: transparent;
+			outline:3px solid $sta-orange-highlight;
+			outline-offset: 2px;
+		}
 	}
 }
 

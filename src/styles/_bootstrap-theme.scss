@@ -51,8 +51,7 @@ a {
     &:focus {
         // Apply contrast 
         color: $sta-grey-dark;
-        //border-bottom: 2px solid $sta-grey-dark;
-        box-shadow: 0 -2px #ff9900, 0 3px $sta-grey-dark;
+        box-shadow: 0 -3px #ff9900, 0 3px $sta-grey-dark;
         background: $sta-orange-highlight;
         text-decoration: none;
     }        

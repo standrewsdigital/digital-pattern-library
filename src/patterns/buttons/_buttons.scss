@@ -79,6 +79,7 @@
 
 // Add focus states to buttons
 .btn {
+  text-decoration:none;
   &:focus {
     outline: 3px solid $sta-orange-highlight;
     box-shadow: none;

@@ -68,6 +68,10 @@
 	color: inherit;
 	margin-right: 4px;
     text-decoration: none;
+
+    &:focus {
+        color: $sta-grey-dark;
+    }
 }
 
 .navbox:hover {
@@ -103,6 +107,11 @@
 // Add focus state to entire box
 .navbox:focus-within {
     outline: 2px solid $sta-orange-highlight;
+
+    .navbox-title {
+        background:$sta-orange-highlight;
+        color: $sta-grey-dark;
+    }
 }
 
 /* when a element immediately follows a navbox add a top margin to it */
