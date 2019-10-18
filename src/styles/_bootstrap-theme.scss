@@ -27,7 +27,9 @@ hr {
 
 // Add variants for secondary, tertiary-1, tertiary-2 and tertiary-3.
 
+// GLOBAL LINK STYLE - needs overwritten on specifc patterns
 a {
+    // Blue link with underline
     -webkit-transition: all 200ms ease-out;
     -moz-transition: all 200ms ease-out;
     transition: all 200ms ease-out;
@@ -36,16 +38,22 @@ a {
     outline: 0;
 
     &:active {
-        text-decoration: none;
+        // Contrast colour (orange) to show active link
+        color: $sta-orange;
     }
 
     &:hover {
+        // Remove underline when hovered
+        text-decoration: none;
         color: $sta-blue-light-hover;
     }
 
     &:focus {
-        border-bottom: 2px solid $sta-orange-highlight;
-        background: lighten($sta-orange,50%);
+        // Apply contrast 
+        color: $sta-grey-dark;
+        //border-bottom: 2px solid $sta-grey-dark;
+        box-shadow: 0 -2px #ff9900, 0 3px $sta-grey-dark;
+        background: $sta-orange-highlight;
         text-decoration: none;
     }        
 }

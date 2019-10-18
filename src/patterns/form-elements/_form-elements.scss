@@ -100,7 +100,7 @@
         }
 
         ul li input[type=radio]:focus ~ .check, ul li input[type=checkbox]:focus ~ .check {
-            box-shadow: 0 0 0 2px $sta-orange-highlight;
+            box-shadow: 0 0 0 3px $sta-orange-highlight;
         }
 
         // Smaller condensed size

@@ -35,32 +35,32 @@
 
     .btn {
         border-bottom: none;
-        -webkit-transition: none;
-           -moz-transition: none;
-                transition: none;
-        z-index: 1001;
     }
 
     .open .btn {
-        background-color: white;
-        border:        1px solid rgba(0,0,0,0.15);
-        border-bottom: none;
+        //background-color: white;
+        //border:        1px solid rgba(0,0,0,0.15);
+        //border-bottom: none;
+        color: $sta-orange;
     }
 
     .dropdown-menu {
-        margin-top: -1px;
         right: 0;
         left:  auto;
+        margin: 0;
+        
+        // override default link style to avoid box shadow appearing under divider line
+        &>li>a {
+            &:focus {
+                box-shadow: 0 -2px $sta-orange-highlight, inset 0 -3px $sta-grey-dark;
+            }
+        }
     }
 }
 
 // Set the logo and authenticated button to be on the same line.
 .web-application-header {
     float: none !important;
-
-    a {
-        padding-left: 0;
-    }
 }
 
 #logo-container {
@@ -80,15 +80,13 @@
         display: inline-block;
         height: 50px;
         max-width: 205px;
-        -webkit-transition: none;
-           -moz-transition: none;
-                transition: none;
         width: 100%;
 
         &:focus {
             background-color: transparent;
             border: none;
-            outline: 2px solid $sta-orange-highlight;
+            box-shadow: none;
+            outline: 3px solid $sta-orange-highlight;
             outline-offset: 2px;
         }
     }
@@ -227,7 +225,7 @@
          * with a 'position' attribute which should be the containing
          * row. This means we can align it to the right. */
         position: absolute;
-        top:   18px;  // Note: this is a 'magic' number.
+        top:   22px;
         right: 0;
     }
 }

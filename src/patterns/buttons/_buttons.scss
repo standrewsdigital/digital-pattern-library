@@ -73,10 +73,15 @@
   margin-bottom: 5px;
 }
 
+.btn.dropdown-toggle {
+  margin-bottom:0;
+}
+
 // Add focus states to buttons
 .btn {
   &:focus {
-    outline: 2px solid $sta-orange-highlight;
+    outline: 3px solid $sta-orange-highlight;
+    box-shadow: none;
   }
 
 }
