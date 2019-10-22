@@ -154,6 +154,10 @@
                   "img": "assets/docs/images/patterns/article-header.jpg",
                   "url": "patterns/article-header/index.html"
                 },
+                { "name": "Blockquote",
+                  "img": "assets/docs/images/patterns/blockquote.jpg",
+                  "url": "patterns/blockquote/index.html"
+                },
                 { "name": "Code",
                   "img": "assets/docs/images/patterns/code.jpg",
                   "url": "patterns/code/index.html"
