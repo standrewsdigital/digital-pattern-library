@@ -28,28 +28,168 @@
 
 }
 
+.featured-media__wrapper {
+    padding: calc(1.5vw + 1rem) 0 calc(1.5vw + 1rem - 1.5625rem) 0; // half gutter / half gutter - 25px in rem @ 16px
+}
+
 .featured-media {
-    background: rgba($sta-blue,0.75);
+
+    &--right,
+    &--left {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 15px auto 15px;
+        grid-template-columns: 15px auto 15px;
+        -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto; //2nd grid row for media
+    }
+    
+    @media (min-width: 992px) and (max-width:1199px){
+        &--right {
+            -ms-grid-columns: 15px minmax(20em,45%) 1fr 15px;
+            -ms-grid-rows: auto;
+            grid-template-columns: 15px minmax(20em,45%) 1fr 15px; 
+            grid-template-rows: auto;
+        }
+
+        &--left {
+            -ms-grid-columns: 15px 1fr minmax(20em,45%) 15px;
+            -ms-grid-rows: auto;
+            grid-template-columns: 15px 1fr minmax(20em,45%) 15px; 
+            grid-template-rows: auto;
+        }
+    }
+    
+    @media (min-width: 1200px){
+        &--right {
+            -ms-grid-columns: 1fr 700px 440px 1fr;
+            -ms-grid-rows: auto;
+            grid-template-columns: 1fr 700px 440px 1fr;
+            grid-template-rows: auto;
+        }
+
+        &--left {
+            -ms-grid-columns: 1fr 440px 700px 1fr;
+            -ms-grid-rows: auto;
+            grid-template-columns: 1fr 440px 700px 1fr;
+            grid-template-rows: auto;
+        }
+    }
+
+}
+
+.featured-media__text {
+
+    .featured-media--left &,
+    .featured-media--right & {
+        -ms-grid-column:2;
+        -ms-grid-row:1;
+
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    @media (min-width: 992px) {
+        .featured-media--left & {
+            -ms-grid-column:3;
+            -ms-grid-row:1;
+
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+    }
+
+    @media (max-width: 991px){
+        max-width: 48em; // limit width of text to help readability
+    }
+}
+
+.featured-media__media {
+    .featured-media--left &,
+    .featured-media--right & {
+    -ms-grid-column:2;
+    -ms-grid-row:2;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    }
+
+    @media (min-width: 992px) { //Move up alongside text when there is enough space
+        .featured-media--right & {
+            -ms-grid-column:3;
+            -ms-grid-row:1;
+            -ms-grid-column-span: 2;
+
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .featured-media--left & {
+            -ms-grid-column:1;
+            -ms-grid-row:1;
+            -ms-grid-column-span: 2;
+
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+    }
+
+    .featured-media__media-wrapper {
+        .featured-media--right &,
+        .featured-media--left & {
+            max-width:600px; // No size restriction when centred media (aka big vid)
+        }
+        margin-bottom: 1.5625rem; // 25px @ 16
+
+        @media (min-width: 992px) {
+            .featured-media--right & {
+                margin: 0 15px 1.5625rem 30px;
+            }
+            .featured-media--left & {
+                margin: 0 30px 1.5625rem auto;
+                padding-left: 15px;    
+            }
+        }
+
+        figcaption {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.featured-media__heading {
+    margin-top:0;
+
+    .featured-media--left &,
+    .featured-media--right & {
+        @media (min-width: 992px) {
+            margin-top: 1rem;
+        }
+    }
+}
+
+
+
+
+
+.featured-media--background {
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     color: white;
     position: relative;
     z-index: 0;
-    padding: 50px 0;
-
-    h3 { // scale big heading font
-        font-size: 1.5em;
-        margin: 0 0 20px 0;
-
-        @media (min-width: 480px){
-            font-size: 1.8em;
-        }
-
-        @media (min-width: 768px){
-            font-size: 2.5em;
-        }
-    }
 
     &.featured-media--overlay {
         &:after {
@@ -110,21 +250,6 @@
         color: white;
         font-weight: bold;
         text-decoration: underline;
-    }
-
-    .btn {
-        margin-bottom:25px;
-
-        @media (min-width: 992px){
-            font-size:25px;
-            margin-bottom:0;
-        }
-    }
-
-    img,
-    .embed-responsive {
-        max-width:100%;
-        margin-bottom:20px;
     }
 
 }
