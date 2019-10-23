@@ -16,8 +16,8 @@ hr {
     height: 8px;
     margin: 0 auto;
     width: 60%;
-    margin-top: 1.5625rem; // 25px @ 16px
-    margin-bottom: 1.5625rem; // 25px @ 16px
+    margin-top: $page-gutter; // 25px @ 16px
+    margin-bottom: $page-gutter; // 25px @ 16px
 }
 
 

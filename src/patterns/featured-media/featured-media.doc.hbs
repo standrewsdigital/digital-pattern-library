@@ -2,20 +2,25 @@
 title: Featured media
 ---
 
-<div class="alert alert-danger">
-  <strong>Some options of this pattern are depreciated.</strong> Do not attempt to use these options for any new website development. They will be removed in a future update.
-</div>
 
-<p class="lead">This pattern is for displaying featured content, such as testimonials, videos, or other media embeds, in a full width banner.</p>
+<p class="lead">This pattern is for displaying featured content that includes media such as an image or video.</p>
 
-<h3>Rules for featured media</h3>
+<h2>Rules for featured media</h2>
 <ul>
    <li>When using a two column layout, one column must contain text and the other column must contain an image or a video.</li>
    <li>Images must be sized 750 &times; 500 pixels.</li>
-   <li>The background must be either an image with a colour overlay or a solid blue coloured background.</li>
-   <li>If using a coloured background all text, including links, must be white and links must be underlined.</li>
+   <li>The featured media may benefit from a caption explaining it in further detail.</li>
+   <li>The transparent (white) background can be replaced by either an image with a colour overlay or a solid blue coloured background.</li>
+   <li>If using an optional coloured background, all text and links must be white and links must be underlined.</li>
+   <li>The heading may be linked.</li>
+   <li>A button can be used to feature a prominent call-to-action.</li>
 </ul>
-
+<h2>Helper classes</h2>
+<h3>CSS classes for positioning the media alongside the text on larger displays</h3>
+    <ul>
+        <li><code>featured-media--left</code></li>
+        <li><code>featured-media--right</code></li>
+    </ul>
 <h3>CSS classes for approved transparent overlay colours</h3>
     <ul>
         <li><code>featured-media--blue-transparent-overlay</code></li>
@@ -29,7 +34,7 @@ title: Featured media
         <li><code>featured-media--sta-blue</code></li>
     </ul>
 
-<h3>Options available</h3>
+<h2>Options available</h2>
 <ul>
 {{#featured-media-options.options}}
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
