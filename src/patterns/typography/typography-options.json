@@ -107,30 +107,6 @@
             ]
         },
 
-
-
-
-        {
-            "option-heading": "Blockquote - left alignment",
-            "option-description": "<ul><li>Blockquotes should be used when emphasising a relevant quotation in the body of text.</li><li>For accessibility reasons, avoid the excessive use of blockquotes.</li></ul>",
-            "option-anchor": "blockquote-left",
-            "blockquote": true
-        },
-
-
-
-
-        {
-            "option-heading": "Blockquote - right alignment",
-            "option-description": "<p>Right-aligned blockquotes are available as a flexible alternative for pages which wrap their text fields around additional content.</p>",
-            "option-anchor": "blockquote-right",
-            "blockquote": true,
-            "class": "pull-right"
-        },
-
-
-
-
         {
             "option-heading": "Description list",
             "option-description": "<p>Used to list terms along with their associated description.</p><p>The <code>dl</code> tag is used to define a description list, the <code>dt</code> tag defines a term and the <code>dd</code> tag defines the term's associated description.</p>",
