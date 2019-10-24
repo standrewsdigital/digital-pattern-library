@@ -6,6 +6,19 @@ This project adheres to [semantic versioning](http://semver.org/).
 
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
+---
+
+## v1.21.0
+
+Release date: Thursday 24 October 2019
+
+### Added
+* Blockquote pattern.
+
+### Changed
+* Featured media pattern.
+* Increased vertical spacing on <hr> element.
+
 
 ---
 
