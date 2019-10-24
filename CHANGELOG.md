@@ -17,7 +17,7 @@ Release date: Thursday 24 October 2019
 
 ### Changed
 * Featured media pattern.
-* Increased vertical spacing on <hr> element.
+* Increased vertical spacing on hr element.
 
 
 ---
