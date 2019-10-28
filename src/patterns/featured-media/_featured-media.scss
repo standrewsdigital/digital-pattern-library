@@ -62,16 +62,16 @@
     
     @media (min-width: 1200px){
         &--right {
-            -ms-grid-columns: 1fr 700px 440px 1fr;
+            -ms-grid-columns: 1fr 750px 390px 1fr;
             -ms-grid-rows: auto;
-            grid-template-columns: 1fr 700px 440px 1fr;
+            grid-template-columns: 1fr 750px 390px 1fr;
             grid-template-rows: auto;
         }
 
         &--left {
-            -ms-grid-columns: 1fr 440px 700px 1fr;
+            -ms-grid-columns: 1fr 390px 750px 1fr;
             -ms-grid-rows: auto;
-            grid-template-columns: 1fr 440px 700px 1fr;
+            grid-template-columns: 1fr 390px 750px 1fr;
             grid-template-rows: auto;
         }
     }

@@ -310,8 +310,9 @@ a.list-group-item {
     .badge {
       background: rgb(240,240,240);
       color: inherit;
+      @include ms-respond(font-size,-1);
       font-weight: bold;
-      margin: 2px 0 0 10px;
+      margin: 0 0 0 1rem;
     }
 }
 

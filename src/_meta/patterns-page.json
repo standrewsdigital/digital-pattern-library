@@ -29,6 +29,10 @@
                   "img": "assets/docs/images/patterns/content-thirds.jpg",
                   "url": "patterns/content-thirds/index.html"
                 },
+                { "name": "Heading with section",
+                  "img": "assets/docs/images/patterns/heading-section.jpg",
+                  "url": "patterns/heading-section/index.html"
+                },
                 { "name": "Typefaces",
                   "img": "assets/docs/images/patterns/typefaces.jpg",
                   "url": "patterns/typefaces/index.html"

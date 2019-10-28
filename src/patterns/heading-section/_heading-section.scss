@@ -1,0 +1,30 @@
+
+/*********************************/
+/* BEGIN Pattern: heading section */
+/*********************************/
+
+.heading-section__heading {
+    
+    @media (min-width: 992px){
+        margin-top: 0;
+
+        &::before {
+            background-color: $sta-grey;
+            content: '';
+            display: block;
+            height: 5px;
+            width: 5rem;
+            margin: 0 0  0.5em 0;
+        }
+    }
+}
+
+// Add spacing when two sections meet
+
+.heading-section + .heading-section {
+    margin-top: $page-gutter;
+}
+
+/*********************************/
+/* END Pattern: heading section   */
+/*********************************/
