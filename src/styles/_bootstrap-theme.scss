@@ -300,12 +300,6 @@ a.list-group-item {
 .list-group-item {
     border-color: #dedede;
     overflow: auto;
-
-    &:hover,
-    &:focus {
-        background: #ebebeb;
-        text-decoration: underline;
-    }
     
     .badge {
       background: rgb(240,240,240);
@@ -313,6 +307,14 @@ a.list-group-item {
       @include ms-respond(font-size,-1);
       font-weight: bold;
       margin: 0 0 0 1rem;
+    }
+}
+a.list-group-item {
+    // Only affect linked items
+    &:hover,
+    &:focus {
+        background: #ebebeb;
+        text-decoration: underline;
     }
 }
 
