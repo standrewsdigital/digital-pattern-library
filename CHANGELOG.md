@@ -6,6 +6,20 @@ This project adheres to [semantic versioning](http://semver.org/).
 
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
+
+---
+
+## v1.21.1
+
+Release date: tuesday 29 October 2019
+
+### Added
+* Heading with section pattern.
+
+### Changed
+* Removed top margin on headings.
+* Anend other pattern's margins to handle new heading margins.
+
 ---
 
 ## v1.21.0
