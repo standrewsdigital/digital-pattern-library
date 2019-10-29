@@ -7,13 +7,13 @@
         <div class="row"><div class="col-xs-12 col-sm-8"><h2>{{heading}}</h2></div></div>
         {{/if}}
         <div class="row">
-            <div class="col-sm-8 content">
+            <div class="col-sm-8">
             {{#if text}}
                  {{{text}}}
             {{/if}}
             </div>
             {{#if sidebar}}
-            <div class="col-sm-4 content" {{#if role}}role="{{role}}"{{/if}}>
+            <div class="col-sm-4" {{#if role}}role="{{role}}"{{/if}}>
                 {{{sidebar}}}
             </div>
             {{/if}}

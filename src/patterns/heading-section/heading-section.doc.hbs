@@ -1,0 +1,49 @@
+---
+title: Heading with section
+---
+
+
+<p class="lead">This pattern is for displaying a prominent heading alongside content, on a full width page.</p>
+
+<h2>Rules for heading with section</h2>
+<ul>
+   <li>The heading for a section can be <code>h2</code> or <code>h3</code> level.</li>
+   <li>Other headings within a section must be at a lower level than that section's main heading.</li>
+   <li>Heading / section blocks can be grouped together.</li>
+   <li>If grouped together all main headings must use the same heading level.</li>
+   <li>Content for a section may be displayed in one or two columns.</li>
+   <li>Content for a section can include the following elements:
+   	<ul>
+   		<li>Text and sub-headings</li>
+   		<li>Accordions</li>
+   		<li>Videos</li>
+   		<li>Tables</li>
+   		<li>Images.</li>
+   	</ul>
+   	To discuss use of this pattern please contact the digital communications team - <a href="mailto:digitalcommunications@st-andrews.ac.uk">digitalcommunications@st-andrews.ac.uk</a></li>
+</ul>
+
+<h2>Options available</h2>
+<ul>
+{{#heading-section-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/heading-section-options.options}}
+</ul>
+
+{{#heading-section-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+<!--noindex-->
+  <span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+  <div class="container">
+	{{> heading-section}}
+</div>
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> heading-section}}</code></pre>
+<!--endnoindex-->
+{{/heading-section-options.options}}

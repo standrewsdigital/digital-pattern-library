@@ -97,7 +97,7 @@
 
         {
             "option-heading": "Paragraph lead",
-            "option-description": "<p>Due to the current styling, paragraph lead fields are only to be used as an introduction at the top of subject and course pages.</p>",
+            "option-description": "",
             "option-anchor": "paragraph-lead",
             "body-text": [
                 {

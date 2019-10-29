@@ -1,0 +1,22 @@
+<!-- Begin pattern: heading section //-->
+{{#sections}}
+<section class="heading-section row">
+    <div class="col-md-4">
+        <h2 class="heading-section__heading">{{section-heading}}</h2>
+    </div>
+    <div class="col-md-8">
+    {{{section-content}}}
+    {{#if section-accordion}}
+    <div class="accordion-item">
+    <div class="accordion-item__toggle">
+        <h3 class="accordion-item__toggle-title">
+            <button class="accordion-item__toggle-button" aria-expanded="false" aria-controls="accordion-item-1">Accordion</button>
+        </h3>
+    </div>
+    <div class="accordion-item__content" id="accordion-item-1" aria-hidden="true"><div class="row"><div class="col-md-6"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac rutrum tellus, quis porttitor urna. Donec ultricies libero erat, id efficitur risus blandit nec. Donec et ipsum in dui blandit rutrum. Praesent rhoncus lobortis ligula, viverra tincidunt ante lobortis at. Sed vehicula luctus quam sit amet lacinia. Sed eu nulla vel ex tempus accumsan in sit amet metus. Vestibulum a venenatis mi. Ut ac semper arcu.</p></div><div class="col-md-6"><p>Morbi pellentesque, mauris nec porta laoreet, neque magna tempor eros, eget suscipit tellus purus nec ligula. In accumsan turpis eu porttitor tempus. Praesent rutrum quam id felis consequat, et mattis elit laoreet. Nunc maximus, dui vitae tincidunt elementum, elit tortor mattis quam, ut sodales arcu lectus eu nisi. Phasellus tincidunt at risus nec fringilla. Nunc ultricies nisl sodales, vestibulum nunc in, vulputate nisl. Vestibulum lacinia auctor hendrerit. Sed in lectus dapibus, volutpat justo vel, pellentesque ipsum. Vivamus vitae metus euismod, vestibulum odio eu, elementum quam.</p></div></div></div>
+</div>
+{{/if}}
+    </div>
+</section>
+{{/sections}}
+<!-- End pattern: heading section //-->
