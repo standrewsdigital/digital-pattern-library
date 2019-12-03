@@ -13,7 +13,7 @@
 	    <form class="dpl-form{{nosubmit}}" action="">
 	        <div class="input-group input-group-lg">
 	            {{#if title}}<span class="input-group-addon search-bar__inline-title">{{title}}</span>{{/if}}
-	            <input id="{{input-id}}" class="form-control search-box" required type="text" title="Enter search keywords" maxlength="256" name="search" placeholder="{{placeholder}}">
+	            <input id="{{input-id}}" class="form-control search-box{{autocomplete}}" required type="text" title="Enter search keywords" maxlength="256" name="search" placeholder="{{placeholder}}">
 	            <button class="clear-icon{{clear-button-type}}" type="reset" aria-label="Reset" value="Reset"></button>
 	        {{#if search-button}}
 	            <span class="input-group-btn">

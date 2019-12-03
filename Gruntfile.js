@@ -313,6 +313,10 @@ module.exports = function(grunt) {
             doc: {
                 src: [
                     'src/scripts/doc.js',
+                    // Autocomplete scripts for Funnelback search
+                    'src/scripts/vendor/typeahead.bundle-0.11.1.min.js',
+                    'src/scripts/vendor/handlebars-4.0.5.min.js',
+                    'src/scripts/vendor/funnelback.autocompletion-2.6.0.js'
                 ],
                 dest: 'core/scripts/doc.js'
             }

@@ -9,9 +9,19 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.21.2
+
+Release date: Tuesday 3 December 2019
+
+### Added
+* Autocomplete styling to screen.css
+* Autocomplete example to search bar pattern.
+
+---
+
 ## v1.21.1
 
-Release date: tuesday 29 October 2019
+Release date: Tuesday 29 October 2019
 
 ### Added
 * Heading with section pattern.
