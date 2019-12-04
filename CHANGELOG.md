@@ -9,12 +9,22 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.21.3
+
+Release date: Wednesday 4 December 2019
+
+### Changed
+* More news pattern made more compact on small displays.
+* Minor amends to featured news and news updates patterns to match more news spacing.
+
+---
+
 ## v1.21.2
 
 Release date: Tuesday 3 December 2019
 
 ### Added
-* Autocomplete styling to screen.css
+* Autocomplete styling to screen.css.
 * Autocomplete example to search bar pattern.
 
 ---
