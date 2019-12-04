@@ -1,19 +1,17 @@
 <!-- Begin pattern: more-news //-->
-<div class="more-news row">
-            {{#each news-items}}
-            <div class="more-news__article-link">
-                <div class="col-sm-4 col-md-3">
-                    <a href="#article"><img src="{{image.url}}" alt="news story" class="more-news__image"></a>
-                </div>
-                <div class="col-sm-8 col-md-9">
-                    <h3 class="more-news__article-heading"><a href="#article">{{title}}</a></h3>
-                    <p>{{description}}</p>
-                    <small>{{date}}<span class="more-news__category more-news__category--inline more-news__sub-link"><a href="#category">{{category}}</a></span></small>
-                </div>
-            </div>
-            {{/each}}
-            {{#if pager}}
-                {{> pagination}}
-            {{/if}}
+{{#each news-items}}
+<div class="more-news__link">
+    <div class="more-news__image">
+        <a href="#article"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{image.url}}" alt="{{title}}" class="lazyload"></a>
+    </div>
+    <div class="more-news__snippet">
+        <h3 class="more-news__heading"><a href="#article">{{title}}</a></h3>
+        <p class="more-news__description">{{description}}</p>
+        <small>{{date}}<span class="more-news__category more-news__category--inline more-news__sub-link"><a href="#category">{{category}}</a></span></small>
+    </div>
 </div>
+{{/each}}
+{{#if pager}}
+{{> pagination}}
+{{/if}}
 <!-- End pattern: more-news //-->
