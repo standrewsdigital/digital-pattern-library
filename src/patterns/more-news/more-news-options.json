@@ -2,7 +2,7 @@
     "options" : [
         {
             "option-heading": "Single",
-            "option-description": "<p>Example of how an article should be set out.</p>",
+            "option-description": "<p>Example of how an article should be set out, with the description overridden to show at all screen widths.</p>",
             "option-anchor": "single",
             "news-items": [
                 {
@@ -12,6 +12,7 @@
                         "url": "../../assets/docs/images/placeholders/360x240.png"
                     },
                     "date": "7 February 2017",
+                    "publication": " publication",
                     "category": "News at St Andrews"
                 }
             ],
