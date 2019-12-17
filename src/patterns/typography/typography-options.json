@@ -85,7 +85,7 @@
 
         {
             "option-heading": "Paragraph lead",
-            "option-description": "<p>A lead paragraph displays in a larger font that the normal body text. This can be used at the top of a page to provide a short summary of that page's key points.</p><ul><li>Should only. be used at the top of a block of content.</li></ul>",
+            "option-description": "",
             "option-anchor": "paragraph-lead",
             "body-text": [
                 {
@@ -94,30 +94,6 @@
                 }
             ]
         },
-
-
-
-
-        {
-            "option-heading": "Blockquote - left alignment",
-            "option-description": "<ul><li>Blockquotes should be used when emphasising a relevant quotation in the body of text.</li><li>For accessibility reasons, avoid the excessive use of blockquotes.</li></ul>",
-            "option-anchor": "blockquote-left",
-            "blockquote": true
-        },
-
-
-
-
-        {
-            "option-heading": "Blockquote - right alignment",
-            "option-description": "<p>Right-aligned blockquotes are available as a flexible alternative for pages which wrap their text fields around additional content.</p>",
-            "option-anchor": "blockquote-right",
-            "blockquote": true,
-            "class": "pull-right"
-        },
-
-
-
 
         {
             "option-heading": "Description list",

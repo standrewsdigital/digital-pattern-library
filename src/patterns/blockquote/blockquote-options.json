@@ -1,0 +1,32 @@
+{
+    "options" : [
+        {
+            "option-heading": "Blockquote",
+            "option-description": "<p>An example of a blockquote with an attributed author along with their photograph and place of origin.</p>",
+            "option-anchor": "blockquote",
+            "quote": "<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare maximus risus at rhoncus. Etiam sagittis, neque eu condimentum suscipit, justo neque aliquam eros, id porta ligula orci id elit. Nullam maximus erat sed sem vulputate vehicula. Sed dictum lectus ligula, ac gravida ex tempor ac.&rdquo;</p>",
+            "author-image": "../../assets/docs/images/profile-pictures/male-001-medium.jpg",
+            "author-name": "Dr Garrett Winters",
+            "author-source": "School of Biology"    
+        },
+        {
+            "option-heading": "Blockquote with citation",
+            "option-description": "<p>An example of a blockquote where the author has cited their publication and provided a url for further details.</p>",
+            "option-anchor": "blockquote-cite",
+            "quote": "<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare maximus risus at rhoncus. Etiam sagittis, neque eu condimentum suscipit, justo neque aliquam eros, id porta ligula orci id elit. Nullam maximus erat sed sem vulputate vehicula.</p><p>Integer at congue libero. Ut placerat ullamcorper efficitur. Cras elementum pharetra enim in egestas. Pellentesque sed turpis pulvinar, rhoncus felis vel, condimentum elit. Integer tempus efficitur dolor. Donec vitae sem scelerisque, sollicitudin nisi sed, faucibus nisl. Cras feugiat ligula a consectetur lacinia.Integer at congue libero. Ut placerat ullamcorper efficitur. Cras elementum pharetra enim in egestas. Pellentesque sed turpis pulvinar, rhoncus felis vel, condimentum elit. Integer tempus efficitur dolor. Donec vitae sem scelerisque, sollicitudin nisi sed, faucibus nisl. Cras feugiat ligula a consectetur lacinia.&rdquo;</p>",
+            "author-name": "Professor Sonya Frost",
+            "author-source": "School of English, <cite>Publication title</cite>",
+            "cite": " cite=\"http://www.st-andrews.ac.uk\""    
+        },
+        {
+            "option-heading": "Blockquote - full width",
+            "option-description": "<p>An example of a blockquote on a full width page.</p><ul><li>The maximum number of characters for this type of quote should be no larger than 300.</li></ul>",
+            "option-anchor": "blockquote-wide",
+            "pull": " blockquote--pull",
+            "quote": "<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare maximus risus at rhoncus. Etiam sagittis, neque eu condimentum suscipit, justo neque aliquam eros, id porta ligula orci id elit. Nullam maximus erat sed sem vulputate vehicula. Sed dictum lectus ligula, ac gravida ex tempor ac.&rdquo;</p>",
+            "author-image": "../../assets/docs/images/profile-pictures/female-002-medium.jpg",
+            "author-name": "Olivia Liang",
+            "author-source": "Colorado, USA"    
+        }
+    ]
+}

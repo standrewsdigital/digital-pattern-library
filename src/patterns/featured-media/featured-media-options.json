@@ -1,147 +1,66 @@
 {
     "options": [
         {
-            "option-heading": "Image background with blue transparent overlay and video",
-            "option-description": "",
-            "option-anchor": "blue-transparent-overlay",
-            "background": "featured-media--overlay featured-media--blue-transparent-overlay",
-            "bg-image": "docs/images/cta/hero-banner-image-001.jpg",
-            "column1": "<div class='col-md-7 col-xs-12'><h2 class='featured-media__heading'>What's bad about being good?</h2><p>Research at St Andrews explores effective altruism, a rapidly growing social movement which encourages us to do the most good we can with the money and time available.</p><a type='button' class='btn btn-lg btn-primary' href='#''>Read full story</a></div>",
-            "column2": "<div class='col-md-5 col-xs-12'><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>"
+            "option-heading": "Featured media with image",
+            "option-description": "<p>This example includes a button to promote a prominent call-to-action and a caption for the image.</p>",
+            "option-anchor": "featured-image",
+           "heading": "This is the heading of the section",
+           "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat.</p><p>Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor.</p>",
+            "image": "../../assets/docs/images/placeholders/750x500.png",
+            "cta": true,
+            "media-alignment": " featured-media--right",
+            "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
         },
-
-
-
-
+        {
+            "option-heading": "Featured media with video on left",
+            "option-description": "",
+            "option-anchor": "featured-video-left",
+           "heading": "This is the heading of the section",
+           "heading-link": true,
+           "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat.</p><p>Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor.</p>",
+            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe class='embed-responsive-item' src='https://www.youtube-nocookie.com/embed/pscNTzAGVnk'></iframe></div>",
+            "media-alignment": " featured-media--left",
+            "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
+        },
+        {
+            "option-heading": "Centered video with caption",
+            "option-description": "<p>If a preferred side is not specified then the media is placed in the centre and more prominently on larger displays.</p>",
+            "option-anchor": "featured-video-centre",
+            "media-alignment": " container",
+            "video": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div>",
+            "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
+        },
+        {
+            "option-heading": "Blue background and video",
+            "option-description": "<p>This example includes a linked heading.</p>",
+            "option-anchor": "blue-background",
+            "background": " featured-media--background featured-media--sta-blue",
+            "heading": "What's bad about being good?",
+            "heading-link": true,
+            "media-alignment": " featured-media--right",
+            "bodytext": "<p>Research at St Andrews explores effective altruism, a rapidly growing social movement which encourages us to do the most good we can with the money and time available.</p>",
+            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe class='embed-responsive-item' src='https://www.youtube-nocookie.com/embed/JxHfSwpddCU'></iframe></div>"
+        },
         {
             "option-heading": "Image background with orange transparent overlay and video",
             "option-description": "",
             "option-anchor": "orange-transparent-overlay",
-            "background": "featured-media--overlay featured-media--orange-transparent-overlay",
+            "background": " featured-media--background featured-media--overlay featured-media--orange-transparent-overlay",
             "bg-image": "docs/images/cta/hero-banner-image-002.jpg",
-            "column1": "<div class='col-md-7 col-xs-12'><h2 class='featured-media__heading'>What's bad about being good?</h2><p>Research at St Andrews explores effective altruism, a rapidly growing social movement which encourages us to do the most good we can with the money and time available.</p><a type='button' class='btn btn-lg btn-primary' href='#''>Read full story</a></div>",
-            "column2": "<div class='col-md-5 col-xs-12'><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>"
+            "heading": "What's bad about being good?",
+            "media-alignment": " featured-media--left",
+            "bodytext": "<p>Research at St Andrews explores effective altruism, a rapidly growing social movement which encourages us to do the most good we can with the money and time available.</p>",
+            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe class='embed-responsive-item' src='https://www.youtube-nocookie.com/embed/JxHfSwpddCU'></iframe></div>"
         },
-
-
-
-
         {
             "option-heading": "Image background with burgundy transparent overlay and centered video",
             "option-description": "",
             "option-anchor": "burgundy-transparent-overlay",
-            "background": "featured-media--overlay featured-media--burgundy-transparent-overlay",
+            "background": " featured-media--background featured-media--overlay featured-media--burgundy-transparent-overlay",
             "bg-image": "docs/images/cta/hero-banner-image-003.jpg",
-            "column1": "<div class='col-md-8 col-md-offset-2'><h2 class='featured-media__heading'>What is David Russell Apartments like?</h2><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>",
-            "column2": ""
-        },
-
-
-
-
-        {
-            "option-heading": "Image background with purple transparent overlay and photosphere",
-            "option-description": "<p>For more information, visit the <a href='../photosphere/index.html'>Photosphere</a> pattern.</p>",
-            "option-anchor": "purple-transparent-overlay",
-            "background": "featured-media--overlay featured-media--purple-transparent-overlay",
-            "photosphere": true,
-            "bg-image": "docs/images/cta/hero-banner-image-005.jpg",
-            "column1": "<div class='col-md-8 col-md-offset-2'><h2 class='featured-media__heading'>What is David Russell Apartments like?</h2><div class='embed-responsive embed-responsive-16by9'><div id='photosphere'></div></div></div>",
-            "column2": ""
-        },
-
-
-
-
-        {
-            "option-heading": "Colour background with image on right",
-            "option-description": "",
-            "option-anchor": "image-right",
-            "background": "featured-media--sta-blue",
-            "column1": "<div class='col-md-7'><h2 class='featured-media__heading'>Student testimonial</h2><p>&quot;Having originally applied to read English Literature, the chance to take Philosophy modules at sub-honours ignited an interest in that subject and therefore I am now studying a Joint Honours degree. I feel that the flexibility of the degree programmes, and the support for any difficulties you may have along the way, is what makes a degree at St Andrews unlike many others. Students encouraged to embark on an independent journey of academic and self-discovery whilst having access to a network of academic, social and welfare support.&quot;</p><p><strong>Francesca</strong> (Tadworth, Surrey, England)</p></div>",
-            "column2": "<div class='col-md-5'><div class='img-responsive'><figure><img src='../../assets/docs/images/placeholders/750x500.png' alt='Placeholder image'/><figcaption>Lorem ipsum dolor sit amet</figcaption></figure></div></div>"
-        },
-
-
-
-
-        {
-            "option-heading": "Colour background with image on left",
-            "option-description": "",
-            "option-anchor": "image-left",
-            "background": "featured-media--sta-burgundy",
-            "column1": "<div class='col-md-5'><div class='img-responsive'><figure><img src='../../assets/docs/images/placeholders/750x500.png' alt='Placeholder image'/><figcaption>Lorem ipsum dolor sit amet</figcaption></figure></div></div>",
-            "column2": "<div class='col-md-7'><h2 class='featured-media__heading'>Student testimonial</h2><p>&quot;Having originally applied to read English Literature, the chance to take Philosophy modules at sub-honours ignited an interest in that subject and therefore I am now studying a Joint Honours degree. I feel that the flexibility of the degree programmes, and the support for any difficulties you may have along the way, is what makes a degree at St Andrews unlike many others. Students encouraged to embark on an independent journey of academic and self-discovery whilst having access to a network of academic, social and welfare support.&quot;</p><p><strong>Francesca</strong> (Tadworth, Surrey, England)</p></div>"
-        },
-
-
-
-
-        {
-            "option-heading": "Colour background with video on right",
-            "option-description": "",
-            "option-anchor": "video-right",
-            "background": "featured-media--sta-green",
-            "column1": "<div class='col-md-7'><p><strong>The School of English at the University of St&nbsp;Andrews enjoys an international reputation as a centre for both academic research and literary creativity.</strong></p><p>The School of English was ranked first in Scotland and second in the UK by the <a href='#'>Guardian University Guide 2017</a>, and first in Scotland and third in the UK by the <a href='#'>Complete University Guide 2016</a>. The <a href='#'>2014 Research Excellence Framework (REF)</a> rated 86% of research from the School as world leading and internationally excellent.</p><p>The University of St&nbsp;Andrews as a whole was voted top for student satisfaction in The National Student Survey 2016 as 94% of St&nbsp;Andrews final years gave the University top marks for the quality of the learning and teaching experience</p></div>",
-            "column2": "<div class='col-md-5'><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>"
-        },
-
-
-
-
-        {
-            "option-heading": "Colour background with button and image on right",
-            "option-description": "",
-            "option-anchor": "image-right",
-            "background": "featured-media--sta-orange",
-            "column1": "<div class='col-md-7'><p>&quot;Having originally applied to read English Literature, the chance to take Philosophy modules at sub-honours ignited an interest in that subject and therefore I am now studying a Joint Honours degree. I feel that the flexibility of the degree programmes, and the support for any difficulties you may have along the way, is what makes a degree at St Andrews unlike many others. Students encouraged to embark on an independent journey of academic and self-discovery whilst having access to a network of academic, social and welfare support.&quot;</p><p><strong>Francesca</strong> (Tadworth, Surrey, England)</p><a type='button' class='btn btn-lg btn-tertiary-1' href='#'>Other student testimonials</a></div>",
-            "column2": "<div class='col-md-5'><div class='img-responsive'><figure><img src='../../assets/docs/images/placeholders/750x500.png' alt='Placeholder image'/><figcaption>Lorem ipsum dolor sit amet</figcaption></figure></div></div>"
-        },
-
-
-
-
-        {
-            "option-heading": "Image background with video on left (deprecated)",
-            "option-description": "",
-            "option-anchor": "video-left",
-            "background": "featured-media--featured-image",
-            "column1": "<div class='col-md-5'><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>",
-            "column2": "<div class='col-md-7'><p><strong>The School of English at the University of St&nbsp;Andrews enjoys an international reputation as a centre for both academic research and literary creativity.</strong></p><p>The School of English was ranked first in Scotland and second in the UK by the <a href='#'>Guardian University Guide 2017</a>, and first in Scotland and third in the UK by the <a href='#'>Complete University Guide 2016</a>. The <a href='#'>2014 Research Excellence Framework (REF)</a> rated 86% of research from the School as world leading and internationally excellent.</p><p>The University of St&nbsp;Andrews as a whole was voted top for student satisfaction in The National Student Survey 2016 as 94% of St&nbsp;Andrews final years gave the University top marks for the quality of the learning and teaching experience</p></div>"
-        },
-
-
-
-        {
-            "option-heading": "Image background with video in centre (deprecated)",
-            "option-description": "",
-            "option-anchor": "image-center",
-            "background": "featured-media--featured-image",
-            "column1": "<div class='col-md-8 col-md-offset-2'><h2 class='featured-media__heading'>What is David Russell Apartments like?</h2><div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div></div>",
-            "column2": ""
-        },
-
-
-        {
-            "option-heading": "Image background with photosphere in centre (deprecated)",
-            "option-description": "For more information, visit the <a href='../photosphere/index.html'>Photosphere</a> pattern.",
-            "option-anchor": "photosphere-media",
-            "photosphere": true,
-            "background": "featured-media--featured-image",
-            "column1": "<div class='col-md-8 col-md-offset-2'><h2 class='featured-media__heading'>What is David Russell Apartments like?</h2><div class='embed-responsive embed-responsive-16by9'><div id='photosphere'></div></div></div>",
-            "column2": ""
-        },
-
-
-
-
-        {
-            "option-heading": "Image background with image on left (deprecated)",
-            "option-description": "",
-            "option-anchor": "image-left",
-            "background": "featured-media--featured-image",
-            "column1": "<div class='col-md-5'><div class='img-responsive'><img src='../../assets/docs/images/placeholders/750x500.png' alt='Placeholder image'/></div></div>",
-            "column2": "<div class='col-md-7'><p>&quot;Having originally applied to read English Literature, the chance to take Philosophy modules at sub-honours ignited an interest in that subject and therefore I am now studying a Joint Honours degree. I feel that the flexibility of the degree programmes, and the support for any difficulties you may have along the way, is what makes a degree at St Andrews unlike many others. Students encouraged to embark on an independent journey of academic and self-discovery whilst having access to a network of academic, social and welfare support.&quot;</p><p><strong>Francesca</strong> (Tadworth, Surrey, England)</p></div>"
+            "media-alignment": " container",
+            "heading": "What is David Russell Apartments like?",
+            "video": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div>"
         }
     ]
  }

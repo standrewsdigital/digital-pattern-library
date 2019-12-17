@@ -10,6 +10,16 @@
             "search-button": true
         },
         {
+            "option-heading": "Search with autocomplete",
+            "option-description": "<p>Suggested search terms can be displayed as a user types keyterms. The basic autocomplete suggests a range of alternate search terms.</p><p>This example uses an autocomplete script that is linked to the University's main search service. For this example, start typing to see suggestions based on your entered text.</p>",
+            "option-anchor": "search-bar-autocomplete",
+            "placeholder": "Search the University website",
+            "default": true,
+            "input-id": "autocomplete-search",
+            "autocomplete": " form-control--autocomplete",
+            "search-button": true
+        },
+        {
             "option-heading": "Search banner",
             "option-description": "<p>The search banner is used to prominently feature a search form on the page.</p><ul><li>The search banner may be used on the body section of a webpage.</li><li>The background colour must either be light grey or light blue. Alternatively a background image with a transparent overlay may be used.</li><li>There must be an associated heading introducing the search.</li><li>An optional sub-heading may also be included to give additional context to the search.</li><li>Placeholder text should be used to indicate the recommended type of search query.</li></ul>",
             "option-anchor": "search-banner",

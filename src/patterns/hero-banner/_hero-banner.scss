@@ -96,7 +96,7 @@
   .container {
     height: 100%;
     position: relative;
-    z-index: 100;
+    z-index: 90; // Moved down from 100 so search autocomplete will sit above it.
   }  
 
     .hero-section__content {

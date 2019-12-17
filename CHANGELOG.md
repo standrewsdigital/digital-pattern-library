@@ -9,6 +9,53 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.21.3
+
+Release date: Wednesday 4 December 2019
+
+### Changed
+* More news pattern made more compact on small displays.
+* Minor amends to featured news and news updates patterns to match more news spacing.
+
+---
+
+## v1.21.2
+
+Release date: Tuesday 3 December 2019
+
+### Added
+* Autocomplete styling to screen.css.
+* Autocomplete example to search bar pattern.
+
+---
+
+## v1.21.1
+
+Release date: Tuesday 29 October 2019
+
+### Added
+* Heading with section pattern.
+
+### Changed
+* Removed top margin on headings.
+* Anend other pattern's margins to handle new heading margins.
+
+---
+
+## v1.21.0
+
+Release date: Thursday 24 October 2019
+
+### Added
+* Blockquote pattern.
+
+### Changed
+* Featured media pattern.
+* Increased vertical spacing on hr element.
+
+
+---
+
 ## v1.20.0
 
 Release date: Friday 4 October 2019

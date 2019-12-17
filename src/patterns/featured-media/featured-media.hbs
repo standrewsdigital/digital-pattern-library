@@ -3,13 +3,33 @@
 <!-- Google VR view code for use with photosphere option -->
 <script src='https://storage.googleapis.com/vrview/2.0/build/vrview.min.js'></script>
 {{/if}}
-
-<div class="featured-media {{background}}" {{#if bg-image}}style="background-image: url({{asset bg-image}});"{{/if}}>
-    <div class="container">
-    	<div class="row">
-        {{{column1}}}
-        {{{column2}}}
-    	</div>
+<div class="featured-media__wrapper{{background}}"{{#if bg-image}} style="background-image: url({{asset bg-image}});"{{/if}}>
+<div class="featured-media{{media-alignment}}">
+       <div class="featured-media__text">
+            <h2 class="featured-media__heading">{{#if heading-link}}<a href="#">{{/if}}{{heading}}{{#if heading-link}}</a>{{/if}}</h2>
+            {{#if bodytext}}
+            {{{bodytext}}}
+            {{/if}}
+            {{#if cta}}
+            <p><a class="btn btn-lg btn-primary" href="#">Call to action</a></p>
+            {{/if}}
+        </div>
+        {{#if image}}
+        <div class="featured-media__media">
+            <figure class="featured-media__media-wrapper">
+                <img src="{{image}}" />
+                {{{caption}}}
+            </figure>
+        </div>
+        {{/if}}
+        {{#if video}}
+        <div class="featured-media__media">
+            <figure class="featured-media__media-wrapper">
+                {{{video}}}
+                {{{caption}}}
+            </figure>
+        </div>
+        {{/if}}
     </div>
 </div>
 <!-- End pattern: featured media //-->

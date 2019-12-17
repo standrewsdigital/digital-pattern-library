@@ -1,0 +1,41 @@
+---
+title: Blockquote
+---
+
+<p class="lead">The blockquote pattern is used to display a quote from a person or written excerpt.</p>
+
+<h2>Rules for blockquote</h2>
+<ul>
+    <li>Should be used for quotes within content that are typically larger than a sentence. Shorter quotes should use the <code>&lt;q&gt;</code> tag instead.</li>
+    <li>Can be used for standalone quotes on full width page layouts.</li>
+    <li>An author must be associated with a quote.</li>
+    <li>An image of the author and additional information about them are optional.</li>
+    <li>Author images must be 120 by 120 pixels.</li>
+    <li>Author images must be a high quality portraiture headshot of the named person.</li>
+    <li>Citations can be added alongside the author, with a link to a citation added as an attribute to the <code>&lt;blockquote&gt;</code> element.</li>
+</ul>
+
+<h2>Options available</h2>
+<ul>
+{{#blockquote-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/blockquote-options.options}}
+</ul>
+
+{{#blockquote-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+<!--noindex-->
+    <span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+    <div class="container"> 
+    {{> blockquote}}
+    </div>
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> blockquote}}</code></pre>
+<!--endnoindex-->
+{{/blockquote-options.options}}

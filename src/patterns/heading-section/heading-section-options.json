@@ -1,0 +1,35 @@
+{
+    "options": [
+        {
+            "option-heading": "Single section",
+            "option-description": "<p>A simple example with heading and one column of text.</p>",
+            "option-anchor": "single",
+            "sections": [
+            {
+                "section-heading": "This is the topic heading",
+                "section-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tellus leo, pharetra et quam et, finibus mattis eros. Aliquam lorem sapien, placerat sit amet pharetra quis, lobortis sit amet mi. Nulla a risus commodo, fermentum sem ut, tempus ipsum. Sed eu sem varius, gravida nunc eget, aliquet metus. Etiam eu justo convallis magna tincidunt commodo id id elit.</p><p>Pellentesque non blandit ipsum. Mauris semper, diam et accumsan elementum, dolor ligula suscipit ex, aliquet congue justo sem in lorem. Fusce eu sem lacus. Donec sapien diam, tempor eu orci ut, mattis interdum mi. Pellentesque vel tincidunt metus. Suspendisse a malesuada turpis. Nam et libero quis nibh lobortis suscipit. Etiam faucibus nunc id felis hendrerit, eget auctor nibh gravida. Integer convallis, urna eget tristique cursus, metus massa euismod massa, facilisis interdum enim ante ac dui. Suspendisse eu neque turpis. Donec sit amet egestas sem, non tincidunt elit.</p>"
+            }
+            ]
+          },
+        {
+            "option-heading": "Multiple sections",
+            "option-description": "<p>A group of sections containing different types of content spanning one or two columns.</p>",
+            "option-anchor": "multiple",
+            "sections": [
+            {
+                "section-heading": "This is the topic heading",
+                "section-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tellus leo, pharetra et quam et, finibus mattis eros. Aliquam lorem sapien, placerat sit amet pharetra quis, lobortis sit amet mi. Nulla a risus commodo, fermentum sem ut, tempus ipsum. Sed eu sem varius, gravida nunc eget, aliquet metus. Etiam eu justo convallis magna tincidunt commodo id id elit.</p><p>Pellentesque non blandit ipsum. Mauris semper, diam et accumsan elementum, dolor ligula suscipit ex, aliquet congue justo sem in lorem. Fusce eu sem lacus. Donec sapien diam, tempor eu orci ut, mattis interdum mi. Pellentesque vel tincidunt metus. Suspendisse a malesuada turpis. Nam et libero quis nibh lobortis suscipit. Etiam faucibus nunc id felis hendrerit, eget auctor nibh gravida. Integer convallis, urna eget tristique cursus, metus massa euismod massa, facilisis interdum enim ante ac dui. Suspendisse eu neque turpis. Donec sit amet egestas sem, non tincidunt elit.</p>"
+            },
+            {
+                "section-heading": "Another topic",
+                "section-content": "<div class=\"row\"><div class=\"col-sm-6\"><h3>Sub heading</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tellus leo, pharetra et quam et, finibus mattis eros. <strong>Aliquam lorem sapien</strong>, placerat sit amet pharetra quis, lobortis sit amet mi.</p><p>Nulla a risus commodo, fermentum sem ut, tempus ipsum. Sed eu sem varius, gravida nunc eget, aliquet metus. Etiam eu justo convallis magna tincidunt commodo id id elit.</p></div><div class=\"col-sm-6\"><p>Pellentesque non blandit ipsum. Mauris semper, diam et accumsan elementum, dolor ligula suscipit ex, aliquet congue justo sem in lorem.</p><h3>Sub heading</h3><p>Fusce eu sem lacus. Donec sapien diam, tempor eu orci ut, mattis interdum mi. Pellentesque vel tincidunt metus. Suspendisse a malesuada turpis. Nam et libero quis nibh lobortis suscipit. Etiam faucibus nunc id felis hendrerit, eget auctor nibh gravida. Integer convallis, urna eget tristique cursus, metus massa euismod massa, facilisis interdum enim ante ac dui.</p></div></div>"
+            },
+            {
+                "section-heading": "A third heading",
+                "section-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tellus leo, pharetra et quam et, finibus mattis eros. Aliquam lorem sapien, placerat sit amet pharetra quis, lobortis sit amet mi. Nulla a risus commodo, fermentum sem ut, tempus ipsum.</p>",
+                "section-accordion": true
+            }
+            ]
+          }
+    ]
+ }

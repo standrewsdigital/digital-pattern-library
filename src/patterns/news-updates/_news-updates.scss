@@ -104,7 +104,7 @@
 .news-updates__heading {
     @include ms-respond(font-size,1);
     line-height: 1.2;
-    margin: 5px 0;
+    margin: 0 0 5px 0;
 }
 
 .news-updates__heading--large {
@@ -121,8 +121,6 @@
 
     .news-updates__category {
         display: block;
-        padding: 5px 10px;
-        margin-left: -10px;
 
         &.news-updates__category--inline {
                 display: inline-block;

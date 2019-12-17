@@ -485,3 +485,23 @@ function htmlDecode(value) {
 
 
 })(jQuery);
+
+// Autocomplete code for Funnelback
+  jQuery(document).ready(function() {
+    jQuery('.form-control--autocomplete').autocompletion({
+      datasets: {
+        organic: {
+          collection: 'Uosa-meta-global',
+          profile : '_default',
+          program: 'https://www.st-andrews.ac.uk/s/suggest.json',
+          format: 'extended',
+          alpha: '0.5',
+          show: '8',
+          sort: '0',
+          group: true
+        },
+      },
+      typeahead: {hint: true},
+      length: 3
+    });
+  });

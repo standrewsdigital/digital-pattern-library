@@ -1,0 +1,77 @@
+/***********************************/
+/* BEGIN Pattern: blockquote  */
+/***********************************/
+
+.blockquote {
+	background: $sta-grey-light;
+	border-left:5px solid $sta-grey;
+	margin: 0 0 1.5625rem 0; // 25px
+	padding: 1em ms(1);
+	@include clearfix-alt;
+
+	> blockquote {
+		border: 0;
+		margin: 0;
+		font-size: inherit;
+		padding: 0;
+	}
+}
+
+.blockquote__author {
+	font-size: 1rem;
+	font-style: normal;
+	line-height: inherit;
+	padding: 1.5625rem 0 0 0;
+	display: flex;
+	align-items: center;
+
+	@media (min-width: 576px){
+		float: right;
+	}
+}
+
+.blockquote__author-thumbnail {
+	border: 2px solid $sta-grey-light-S;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+	position: relative;
+	margin-right: 1rem;
+
+	@media (min-width: 576px){
+		height: 80px;
+		width: 80px;
+	}
+
+	img {
+		position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    -webkit-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+	}
+}
+
+// Alternate layout for full width pages
+.blockquote--pull {
+	background: none;
+	border-left: 0;
+	@include ms-respond(font-size,1);
+	margin: 0 auto;
+	max-width: 70ch;
+	padding: 0 1em;
+
+	&::before {
+		background-color: $sta-grey;
+		content: '';
+		display: block;
+		height: 5px;
+		width: 5rem;
+		margin: 0 0 1em 0;
+	}
+}
+
+/***********************************/
+/* END Pattern: featured-people    */
+/***********************************/
