@@ -1,0 +1,39 @@
+---
+title: Article list
+---
+
+<p class="lead">The article list pattern is for showing a list of different types of content - providing links to their further details. This can be used for a wide range of content such as news articles, blog articles or events.</p>
+
+<h3>Rules for article list</h3>
+<ul>
+	<li>There must be a thumbnail image. Use a placeholder if an image is not available.</li>
+    <li>The description must be no more than 220 characters.</li>
+	<li>Thumbnail image must be 360px by 240px.</li>
+	<li>If there are more than ten items on a page, then the page should use <a href="../pagination/index.html#pager">pager pagination</a>.</li>
+	<li>On small screen widths the description text is removed, this behaviour can be overridden by adding the class <code>show-all</code> alongside the <code>article-list__description</code> class.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#article-list-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/article-list-options.options}}
+</ul>
+
+{{#article-list-options.options}}
+<hr>
+<h3>{{option-heading}}</h3>
+{{{option-description}}}
+<!--noindex-->
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+	<div class="container">
+	{{> article-list}}
+</div>
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> article-list}}</code></pre>
+<!--endnoindex-->
+{{/article-list-options.options}}
