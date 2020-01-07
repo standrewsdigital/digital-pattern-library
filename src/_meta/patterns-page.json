@@ -202,6 +202,10 @@
                   "img": "assets/docs/images/patterns/google-maps.jpg",
                   "url": "patterns/google-maps/index.html"
                 },
+                { "name": "Metadata list",
+                  "img": "assets/docs/images/patterns/metadata-list.jpg",
+                  "url": "patterns/metadata-list/index.html"
+                },
                 { "name": "News updates",
                   "img": "assets/docs/images/patterns/news-updates.jpg",
                   "url": "patterns/news-updates/index.html"

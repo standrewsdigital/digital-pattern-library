@@ -42,7 +42,7 @@
         {
             "option-heading": "Additional result metadata",
             "option-anchor": "metadata",
-            "option-description": "<p>Results can also include metadata to provide quick key information about a resource. These consist of a series of type and value pairs, with icons representing the type of metadata. Metadata may either span the width of the result listing or be displayed as an inline list.</p><ul><li>Full width metadata items must appear above any others.</li><li>Metadata should be used sparingly to avoid creating visual clutter.</li><li>Metadata may contain links.</li></ul>",
+            "option-description": "<p>Results can also include metadata to provide quick key information about a resource. This uses the <a href=\"../metadata-list/index.html\">metadata list</a> pattern.</p>",
             "group-heading": "Heading for the results group",
             "search-results": [
                 {

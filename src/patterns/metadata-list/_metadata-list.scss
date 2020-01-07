@@ -1,0 +1,80 @@
+
+/*********************************/
+/* BEGIN Pattern: metadata-list */
+/*********************************/
+
+.metadata-list {
+margin:0;
+font-size:1rem;
+color: $sta-grey;
+overflow:auto;
+
+    a {
+        color: $sta-grey;
+        font-weight: normal;
+        text-decoration: underline;
+
+        &:hover {
+            color: $sta-grey-dark;
+        }
+
+        &:active {
+            text-decoration: none;
+        }
+
+        &:focus {
+            outline: 2px dotted $sta-orange-highlight;
+            outline-offset: 0;
+            background: lighten($sta-orange,50%);
+        }
+    }
+}
+
+.metadata-list dd,
+.metadata-list dt {
+  display:inline-block;
+  margin:5px 0 0 0;
+}
+.metadata-list dt {
+  width: ms(2);
+}
+.metadata-list dd {
+  margin:5px 20px 0 0;
+}
+
+@media (max-width:540px){
+  .metadata-list dt {
+  clear:left;
+  float:left;
+  width:ms(2);
+  display:block;
+  }
+  .metadata-list dd {
+  margin-right:0;
+  display:block;
+  }
+}
+
+.metadata-list dt.metadata-list--no-icon {
+    margin-right: 0.5rem;
+    width: auto !important;
+
+    &:after {
+        content: ':';
+    }
+}
+
+.metadata-list dt.metadata-list--full {
+  clear:left;
+  float:left;
+  width:ms(2);
+  display:block;
+}
+.metadata-list dd.metadata-list--full {
+  margin-right:0;
+  display:block;
+}
+
+/*********************************/
+/* END Pattern: metadata-list   */
+/*********************************/

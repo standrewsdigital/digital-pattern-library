@@ -2,15 +2,18 @@
 title: Article list
 ---
 
-<p class="lead">The article list pattern is for showing a list of different types of content - providing links to their further details. This can be used for a wide range of content such as news articles, blog articles or events.</p>
+<p class="lead">The article list pattern shows key information about a particular article or item, linking to further details. This can be used for a wide range of content such as news articles, blog posts, publications or events.</p>
 
 <h3>Rules for article list</h3>
 <ul>
-	<li>There must be a thumbnail image. Use a placeholder if an image is not available.</li>
+	<li>An article list item can be used standalone or combined with others to form a list.</li>
+	<li>While the thumbnail is not strictly required, if used in a list where the majority of items are missing suitable images then consider using a different pattern such as <a href="../search-results/index.html">search results</a>.</li>
     <li>The description must be no more than 220 characters.</li>
-	<li>Thumbnail image must be 360px by 240px.</li>
-	<li>If there are more than ten items on a page, then the page should use <a href="../pagination/index.html#pager">pager pagination</a>.</li>
-	<li>On small screen widths the description text is removed, this behaviour can be overridden by adding the class <code>show-all</code> alongside the <code>article-list__description</code> class.</li>
+	<li>The recommended thumbnail image size is 360px wide by 240px high.</li>
+	<li>Thumbnails in a list of items should use the same consistent image size.</li>
+	<li>The <a href="../metadata-list/index.html">metadata list</a> pattern is used to provide additional supporting information.</li>
+	<li>If there are more than ten items in a list, then <a href="../pagination/index.html">pagination</a> should be used.</li>
+	<li>On small screen widths the description text is removed, this behaviour can be overridden by adding the class <code>article-list__description--show-always</code> alongside the <code>article-list__description</code> class.</li>
 </ul>
 
 <h3>Options available</h3>

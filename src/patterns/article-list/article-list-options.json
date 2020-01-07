@@ -1,13 +1,13 @@
 {
     "options" : [
         {
-            "option-heading": "Single",
-            "option-description": "<p>Example of how an article should be set out, with the description overridden to show at all screen widths.</p>",
-            "option-anchor": "single",
+            "option-heading": "Article (event example)",
+            "option-description": "<p>This example includes metadata that would typically feature on an event. The description is hidden on smaller widths while the image make use of lazyloading.</p>",
+            "option-anchor": "event",
             "article-items": [
                 {
                     "wrapper": "article",
-                    "title": "Event headline",
+                    "title": "Event title",
                     "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
                     "image": {
                         "url": "../../assets/docs/images/placeholders/360x240.png"
@@ -34,155 +34,282 @@
             ]
         },
         {
-            "option-heading": "Single",
-            "option-description": "<p>Example of how an article should be set out, with the description overridden to show at all screen widths.</p>",
-            "option-anchor": "single",
+            "option-heading": "Article with description always visible (publication example)",
+            "option-description": "<p>This example has the description set to show at all screen widths and includes metadata that would typically describe a publication. The image is also a different size as a portrait aspect ratio is better suited to book covers.</p>",
+            "option-anchor": "publication",
             "article-items": [
                 {
                     "wrapper": "article",
-                    "title": "Event headline",
+                    "title": "Title of publication",
+                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x540.png"
+                    },
+                    "show-all": " article-list__description--show-always",
+                    "metadata": [
+                        {
+                            "full": true,
+                            "term": "Author",
+                            "no-icon": " metadata-list--no-icon",
+                            "definition": "John Smith"
+                        },  
+                        {
+                            "full": true,
+                            "term": "Published by",
+                            "no-icon": " metadata-list--no-icon",
+                            "definition": "Profile Books",
+                            "link": true
+                        },  
+                        {
+                            "full": true,
+                            "term": "Publication date",
+                            "no-icon": " metadata-list--no-icon",
+                            "definition": "3 October 2019"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "option-heading": "Article with minimal metadata (news example)",
+            "option-description": "<p>This example only has basic metadata so the labels are only visible to screen readers. The content is typical for that of a news article.</p>",
+            "option-anchor": "news",
+            "article-items": [
+                {
+                    "wrapper": "article",
+                    "title": "News headline",
                     "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
                     "image": {
                         "url": "../../assets/docs/images/placeholders/360x240.png"
                     },
                     "metadata": [
                         {
-                            "full": true,
+                            "term": "Date",
+                            "no-icon": "sr-only",
+                            "definition": "18 July 2019"
+                        }
+                    ]
+                }
+            ]
+        },
+
+
+        {
+            "option-heading": "List of articles (blog example)",
+            "option-description": "<p>When article list items are placed in a list a dividing line is automatically shown between each. This example shows the maximum of ten items with pagination underneath.</p>",
+            "option-anchor": "blog",
+            "pager": true,
+            "article-items": [
+                {
+                    "wrapper": "article",
+                    "title": "This is the title of the blog",
+                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
+                    },
+                    "metadata": [
+                        {
                             "icon": "far fa-calendar-alt",
                             "term": "Date",
                             "definition": "18 July 2019"
                         },  
                         {
-                            "full": true,
-                            "icon": "far fa-clock",
-                            "term": "Time",
-                            "definition": "8.00am to 10.00am"
-                        },  
-                        {
-                            "full": true,
-                            "icon": "fas fa-map-marker-alt",
-                            "term": "Location",
-                            "definition": "Byre Theatre",
+                            "icon": "fas fa-folder-open",
+                            "term": "Category",
+                            "definition": "Blog category",
                             "link": true
                         }
                     ]
-                }
-            ]
-        },
-
-        {
-            "option-heading": "Single",
-            "option-description": "<p>Example of how an article should be set out, with the description overridden to show at all screen widths.</p>",
-            "option-anchor": "single",
-            "article-items": [
+                },
                 {
                     "wrapper": "article",
-                    "title": "Event headline",
+                    "title": "This is the title of the blog",
                     "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
                     "image": {
                         "url": "../../assets/docs/images/placeholders/360x240.png"
                     },
                     "metadata": [
                         {
-                            "full": true,
+                            "icon": "far fa-calendar-alt",
                             "term": "Date",
-                            "no-icon": " no-icon",
                             "definition": "18 July 2019"
                         },  
                         {
-                            "full": true,
-                            "term": "Time",
-                            "no-icon": " no-icon",
-                            "definition": "8.00am to 10.00am"
-                        },  
-                        {
-                            "full": true,
-                            "term": "Location",
-                            "no-icon": " no-icon",
-                            "definition": "Byre Theatre",
+                            "icon": "fas fa-folder-open",
+                            "term": "Category",
+                            "definition": "Blog category",
                             "link": true
                         }
                     ]
-                }
-            ]
-        },
-
-        {
-            "option-heading": "Single",
-            "option-description": "<p>Example of how an article should be set out, with the description overridden to show at all screen widths.</p>",
-            "option-anchor": "single",
-            "article-items": [
+                },
                 {
                     "wrapper": "article",
-                    "title": "Event headline",
+                    "title": "This is the title of the blog",
                     "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
                     "image": {
                         "url": "../../assets/docs/images/placeholders/360x240.png"
                     },
                     "metadata": [
                         {
+                            "icon": "far fa-calendar-alt",
                             "term": "Date",
-                            "hidden": " sr-only",
-                            "no-icon": " no-icon",
                             "definition": "18 July 2019"
                         },  
                         {
-                            "term": "Time",
-                            "hidden": " sr-only",
-                            "no-icon": " no-icon",
-                            "definition": "8.00am to 10.00am"
-                        },  
-                        {
-                            "term": "Location",
-                            "hidden": " sr-only",
-                            "no-icon": " no-icon",
-                            "definition": "Byre Theatre",
+                            "icon": "fas fa-folder-open",
+                            "term": "Category",
+                            "definition": "Blog category",
                             "link": true
                         }
                     ]
-                }
-            ]
-        },
-
-
-
-        {
-            "option-heading": "Multiple",
-            "option-description": "<p>Example of more than 10 articles on a page.</p>",
-            "option-anchor": "multiple",
-            "article-items": [
-                {
-                    "wrapper": "article",
-                    "title": "New URL shortening service",
-                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
-                    "image": {
-                        "url": "../../assets/docs/images/placeholders/360x240.png"
-                    },
-                    "date": "6 February 2017",
-                    "category": "Articles and resources",
-                    "not-last": true
                 },
                 {
                     "wrapper": "article",
-                    "title": "How to conduct usability testing",
+                    "title": "This is the title of the blog",
                     "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
                     "image": {
                         "url": "../../assets/docs/images/placeholders/360x240.png"
                     },
-                    "date": "24 October 2016",
-                    "category": "Guides",
-                    "not-last": true
+                    "metadata": [
+                        {
+                            "icon": "far fa-calendar-alt",
+                            "term": "Date",
+                            "definition": "18 July 2019"
+                        },  
+                        {
+                            "icon": "fas fa-folder-open",
+                            "term": "Category",
+                            "definition": "Blog category",
+                            "link": true
+                        }
+                    ]
                 },
                 {
                     "wrapper": "article",
-                    "title": "How to use Track Changes in Word",
+                    "title": "This is the title of the blog",
                     "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
                     "image": {
                         "url": "../../assets/docs/images/placeholders/360x240.png"
                     },
-                    "date": "10 February 2017",
-                    "category": "Guides",
-                    "not-last": true
+                    "metadata": [
+                        {
+                            "icon": "far fa-calendar-alt",
+                            "term": "Date",
+                            "definition": "18 July 2019"
+                        },  
+                        {
+                            "icon": "fas fa-folder-open",
+                            "term": "Category",
+                            "definition": "Blog category",
+                            "link": true
+                        }
+                    ]
+                },
+                {
+                    "wrapper": "article",
+                    "title": "This is the title of the blog",
+                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
+                    },
+                    "metadata": [
+                        {
+                            "icon": "far fa-calendar-alt",
+                            "term": "Date",
+                            "definition": "18 July 2019"
+                        },  
+                        {
+                            "icon": "fas fa-folder-open",
+                            "term": "Category",
+                            "definition": "Blog category",
+                            "link": true
+                        }
+                    ]
+                },
+                {
+                    "wrapper": "article",
+                    "title": "This is the title of the blog",
+                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
+                    },
+                    "metadata": [
+                        {
+                            "icon": "far fa-calendar-alt",
+                            "term": "Date",
+                            "definition": "18 July 2019"
+                        },  
+                        {
+                            "icon": "fas fa-folder-open",
+                            "term": "Category",
+                            "definition": "Blog category",
+                            "link": true
+                        }
+                    ]
+                },
+                {
+                    "wrapper": "article",
+                    "title": "This is the title of the blog",
+                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
+                    },
+                    "metadata": [
+                        {
+                            "icon": "far fa-calendar-alt",
+                            "term": "Date",
+                            "definition": "18 July 2019"
+                        },  
+                        {
+                            "icon": "fas fa-folder-open",
+                            "term": "Category",
+                            "definition": "Blog category",
+                            "link": true
+                        }
+                    ]
+                },
+                {
+                    "wrapper": "article",
+                    "title": "This is the title of the blog",
+                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
+                    },
+                    "metadata": [
+                        {
+                            "icon": "far fa-calendar-alt",
+                            "term": "Date",
+                            "definition": "18 July 2019"
+                        },  
+                        {
+                            "icon": "fas fa-folder-open",
+                            "term": "Category",
+                            "definition": "Blog category",
+                            "link": true
+                        }
+                    ]
+                },
+                {
+                    "wrapper": "article",
+                    "title": "This is the title of the blog",
+                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
+                    },
+                    "metadata": [
+                        {
+                            "icon": "far fa-calendar-alt",
+                            "term": "Date",
+                            "definition": "18 July 2019"
+                        },  
+                        {
+                            "icon": "fas fa-folder-open",
+                            "term": "Category",
+                            "definition": "Blog category",
+                            "link": true
+                        }
+                    ]
                 }
             ]
         }

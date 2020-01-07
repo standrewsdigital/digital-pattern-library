@@ -8,9 +8,9 @@
         <h3 class="article-list__heading"><a href="#article">{{title}}</a></h3>
         <p class="article-list__description{{show-all}}">{{description}}</p>
         {{#if metadata}}
-        <dl class="search-result__meta">
+        <dl class="metadata-list">
             {{#each metadata}}
-            <dt class="{{#if full}}search-result__meta--full{{/if}}{{hidden}}{{no-icon}}">{{#if no-icon}}<span>{{term}}</span>{{else}}<i class="{{icon}}" aria-hidden="true" title="{{term}}"></i><span class="sr-only">{{term}}</span>{{/if}}</dt><dd{{#if full}} class="search-result__meta--full"{{/if}}>{{#if link}}<a href="#">{{/if}}{{{definition}}}{{#if link}}</a>{{/if}}</dd>
+            <dt class="{{#if full}}metadata-list--full{{/if}}{{no-icon}}">{{#if no-icon}}{{term}}{{else}}<i class="{{icon}}" aria-hidden="true" title="{{term}}"></i><span class="sr-only">{{term}}</span>{{/if}}</dt><dd{{#if full}} class="metadata-list--full"{{/if}}>{{#if link}}<a href="#">{{/if}}{{{definition}}}{{#if link}}</a>{{/if}}</dd>
             {{/each}}
         </dl>
         {{/if}}

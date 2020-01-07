@@ -1,0 +1,105 @@
+{
+    "options" : [
+        {
+            "option-heading": "Icons - inline",
+            "option-description": "<p>Metadata items default layout is in a single line. This example uses icons to represent each type of metadata.</p>",
+            "option-anchor": "inline",
+                    "metadata": [
+                        {
+                            "icon": "far fa-calendar-alt",
+                            "term": "Date",
+                            "definition": "18 July 2019"
+                        },  
+                        {
+                            "icon": "far fa-clock",
+                            "term": "Time",
+                            "definition": "8.00am to 10.00am"
+                        },  
+                        {
+                            "icon": "fas fa-map-marker-alt",
+                            "term": "Location",
+                            "definition": "Byre Theatre",
+                            "link": true
+                        }
+                    ]
+        },
+        {
+            "option-heading": "Icons - full width",
+            "option-description": "<p>Metadata items can be changed to each occupy a single line by adding the <code>metadata-list--full</code> class. This example uses icons to represent each type of metadata.</p>",
+            "option-anchor": "full-width",
+                    "metadata": [
+                        {
+                            "full": true,
+                            "icon": "far fa-calendar-alt",
+                            "term": "Date",
+                            "definition": "18 July 2019"
+                        },  
+                        {
+                            "full": true,
+                            "icon": "far fa-clock",
+                            "term": "Time",
+                            "definition": "8.00am to 10.00am"
+                        },  
+                        {
+                            "full": true,
+                            "icon": "fas fa-map-marker-alt",
+                            "term": "Location",
+                            "definition": "Byre Theatre",
+                            "link": true
+                        }
+                    ]
+        },
+
+        {
+            "option-heading": "Text labels",
+            "option-description": "<p>Using text labels may be more appropriate if icons are unable to clearly represent each type of metadata. Add the class <code>metadata-list--no-icon</code> to remove the additional layout styling used for icons. This example places each metadata item on its own line.</p><ul><li>Caution should be used when using inline layout and text based labels as this will become harder to read when spanning multiple lines.</li></ul>",
+            "option-anchor": "text",
+                    "metadata": [
+                        {
+                            "full": true,
+                            "term": "Date",
+                            "no-icon": " metadata-list--no-icon",
+                            "definition": "18 July 2019"
+                        },  
+                        {
+                            "full": true,
+                            "term": "Time",
+                            "no-icon": " metadata-list--no-icon",
+                            "definition": "8.00am to 10.00am"
+                        },  
+                        {
+                            "full": true,
+                            "term": "Location",
+                            "no-icon": " metadata-list--no-icon",
+                            "definition": "Byre Theatre",
+                            "link": true
+                        }
+                    ]
+        },
+
+        {
+            "option-heading": "Hidden labels",
+            "option-description": "<p>Labels can be hidden entirely using the <code>sr-only</code> class. These are still made available for screen reader users so the label text should still be provided. This example places the metadata inline.</p>",
+            "option-anchor": "hidden",
+                    "metadata": [
+                        {
+                            "term": "Date",
+                            "no-icon": " sr-only",
+                            "definition": "18 July 2019"
+                        },  
+                        {
+                            "term": "Time",
+                            "no-icon": " sr-only",
+                            "definition": "8.00am to 10.00am"
+                        },  
+                        {
+                            "term": "Location",
+                            "no-icon": " sr-only",
+                            "definition": "Byre Theatre",
+                            "link": true
+                        }
+                    ]
+        }
+
+    ]
+}

@@ -18,10 +18,6 @@
         width: 25%;
     }
 
-    img {
-        max-height:300px;
-    }
-
     // Focus state for image
     a:focus {
         img {
@@ -66,7 +62,7 @@
 
 .article-list__description {
     margin: 0 0 5px 0;
-    &:not(.show-all){
+    &:not(.article-list__description--show-always){
         @media (max-width: 539px){
             display: none; // Hide description text on small displays
         }
