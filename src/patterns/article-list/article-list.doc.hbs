@@ -7,6 +7,7 @@ title: Article list
 <h2>Rules for article list</h2>
 <ul>
 	<li>An article list item can be used standalone or combined with others to form a list.</li>
+	<li>Must be at least half the width of the available screen space.</li>
 	<li>While the thumbnail is not strictly required, if used in a list where the majority of items are missing suitable images then consider using a different pattern such as <a href="../search-results/index.html">search results</a>.</li>
     <li>The description must be no more than 220 characters.</li>
 	<li>The recommended thumbnail image size is 360px wide by 240px high.</li>
@@ -25,7 +26,7 @@ title: Article list
 
 {{#article-list-options.options}}
 <hr>
-<h3>{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
 <!--noindex-->
 	<span class="label label-default">Example</span>

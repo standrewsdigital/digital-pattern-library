@@ -2,16 +2,17 @@
     "options" : [
         {
             "option-heading": "Article (event example)",
-            "option-description": "<p>This example includes metadata that would typically feature on an event. The description is hidden on smaller widths while the image makes use of lazyloading.</p>",
+            "option-description": "<p>This example includes metadata that would typically feature on an event, as the metadata could be seen as greater importance than the description it has been placed above it and overridden the lighter grey text colour by using the <code>inherit--colour</code> class. The description is hidden on smaller widths while the image makes use of lazyloading.</p>",
             "option-anchor": "event",
             "article-items": [
                 {
                     "wrapper": "article",
                     "title": "Event title",
-                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "description2": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
                     "image": {
                         "url": "../../assets/docs/images/placeholders/360x240.png"
                     },
+                    "inherit": " inherit--colour",
                     "metadata": [
                         {
                             "icon": "far fa-calendar-alt",
@@ -26,8 +27,7 @@
                         {
                             "icon": "fas fa-map-marker-alt",
                             "term": "Location",
-                            "definition": "Byre Theatre",
-                            "link": true
+                            "definition": "Byre Theatre"
                         }
                     ]
                 }

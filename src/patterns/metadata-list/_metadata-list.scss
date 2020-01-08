@@ -6,8 +6,11 @@
 .metadata-list {
 margin:0;
 font-size:1rem;
-color: $sta-grey;
 overflow:auto;
+}
+
+.metadata-list:not(.inherit--colour){
+  color: $sta-grey;
 
     a {
         color: $sta-grey;
@@ -33,13 +36,13 @@ overflow:auto;
 .metadata-list dd,
 .metadata-list dt {
   display:inline-block;
-  margin:5px 0 0 0;
+  margin:0;
 }
 .metadata-list dt {
   width: ms(2);
 }
 .metadata-list dd {
-  margin:5px 20px 0 0;
+  margin:0 20px 5px 0;
 }
 
 @media (max-width:540px){
