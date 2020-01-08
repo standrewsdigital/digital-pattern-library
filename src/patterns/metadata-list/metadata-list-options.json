@@ -30,18 +30,21 @@
                     "metadata": [
                         {
                             "full": true,
+                            "dtclass": " class=\"metadata-list--full\"",
                             "icon": "far fa-calendar-alt",
                             "term": "Date",
                             "definition": "18 July 2019"
                         },  
                         {
                             "full": true,
+                            "dtclass": " class=\"metadata-list--full\"",
                             "icon": "far fa-clock",
                             "term": "Time",
                             "definition": "8.00am to 10.00am"
                         },  
                         {
                             "full": true,
+                            "dtclass": " class=\"metadata-list--full\"",
                             "icon": "fas fa-map-marker-alt",
                             "term": "Location",
                             "definition": "Byre Theatre",
@@ -58,19 +61,22 @@
                         {
                             "full": true,
                             "term": "Date",
-                            "no-icon": " metadata-list--no-icon",
+                            "dtclass": " class=\"metadata-list--full metadata-list--no-icon\"",
+                            "no-icon": true,
                             "definition": "18 July 2019"
                         },  
                         {
                             "full": true,
                             "term": "Time",
-                            "no-icon": " metadata-list--no-icon",
+                            "dtclass": " class=\"metadata-list--full metadata-list--no-icon\"",
+                            "no-icon": true,
                             "definition": "8.00am to 10.00am"
                         },  
                         {
                             "full": true,
                             "term": "Location",
-                            "no-icon": " metadata-list--no-icon",
+                            "dtclass": " class=\"metadata-list--full metadata-list--no-icon\"",
+                            "no-icon": true,
                             "definition": "Byre Theatre",
                             "link": true
                         }
@@ -84,17 +90,20 @@
                     "metadata": [
                         {
                             "term": "Date",
-                            "no-icon": "sr-only",
+                            "dtclass": " class=\"sr-only\"",
+                            "no-icon": true,
                             "definition": "18 July 2019"
                         },  
                         {
                             "term": "Time",
-                            "no-icon": "sr-only",
+                            "dtclass": " class=\"sr-only\"",
+                            "no-icon": true,
                             "definition": "8.00am to 10.00am"
                         },  
                         {
                             "term": "Location",
-                            "no-icon": "sr-only",
+                            "dtclass": " class=\"sr-only\"",
+                            "no-icon": true,
                             "definition": "Byre Theatre",
                             "link": true
                         }

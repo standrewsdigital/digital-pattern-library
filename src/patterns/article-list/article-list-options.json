@@ -2,7 +2,7 @@
     "options" : [
         {
             "option-heading": "Article (event example)",
-            "option-description": "<p>This example includes metadata that would typically feature on an event. The description is hidden on smaller widths while the image make use of lazyloading.</p>",
+            "option-description": "<p>This example includes metadata that would typically feature on an event. The description is hidden on smaller widths while the image makes use of lazyloading.</p>",
             "option-anchor": "event",
             "article-items": [
                 {
@@ -50,20 +50,23 @@
                         {
                             "full": true,
                             "term": "Author",
-                            "no-icon": " metadata-list--no-icon",
+                            "dtclass": " class=\"metadata-list--full metadata-list--no-icon\"",
+                            "no-icon": true,
                             "definition": "John Smith"
                         },  
                         {
                             "full": true,
                             "term": "Published by",
-                            "no-icon": " metadata-list--no-icon",
+                            "dtclass": " class=\"metadata-list--full metadata-list--no-icon\"",
+                            "no-icon": true,
                             "definition": "Profile Books",
                             "link": true
                         },  
                         {
                             "full": true,
                             "term": "Publication date",
-                            "no-icon": " metadata-list--no-icon",
+                            "dtclass": " class=\"metadata-list--full metadata-list--no-icon\"",
+                            "no-icon": true,
                             "definition": "3 October 2019"
                         }
                     ]
@@ -86,7 +89,8 @@
                     "metadata": [
                         {
                             "term": "Date",
-                            "no-icon": "sr-only",
+                            "dtclass": " class=\"sr-only\"",
+                            "no-icon": true,
                             "definition": "18 July 2019"
                         }
                     ]
