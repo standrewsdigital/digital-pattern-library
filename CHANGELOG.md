@@ -19,6 +19,7 @@ Release date: Wednesday 8 January 2020
 
 ### Fixed
 * Typos in documentation.
+* IE11 navbox chevron sizing.
 
 ### Changed
 * News landing page example replaced more news pattern with article list pattern.
