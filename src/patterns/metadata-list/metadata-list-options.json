@@ -84,17 +84,17 @@
                     "metadata": [
                         {
                             "term": "Date",
-                            "no-icon": " sr-only",
+                            "no-icon": "sr-only",
                             "definition": "18 July 2019"
                         },  
                         {
                             "term": "Time",
-                            "no-icon": " sr-only",
+                            "no-icon": "sr-only",
                             "definition": "8.00am to 10.00am"
                         },  
                         {
                             "term": "Location",
-                            "no-icon": " sr-only",
+                            "no-icon": "sr-only",
                             "definition": "Byre Theatre",
                             "link": true
                         }

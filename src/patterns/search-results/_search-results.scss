@@ -97,6 +97,7 @@
 	}
 }
 
+/* REMOVE THIS META STYLE AS NOW USING metadata-list PATTERN */
 .search-result__meta {
 margin:0;
 font-size:1rem;
@@ -168,6 +169,8 @@ overflow:auto;
   margin-right:0;
   display:block;
 }
+
+/* REMOVE UP TO HERE */
 
 // Group heading (inherited from Funnelback) is used to separate results based on match score
 
