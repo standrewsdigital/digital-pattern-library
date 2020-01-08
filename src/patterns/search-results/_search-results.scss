@@ -97,6 +97,7 @@
 	}
 }
 
+/* REMOVE THIS META STYLE AS NOW USING metadata-list PATTERN */
 .search-result__meta {
 margin:0;
 font-size:1rem;
@@ -149,6 +150,15 @@ overflow:auto;
   }
 }
 
+.search-result__meta dt.no-icon {
+	margin-right: 5px;
+  	width: auto !important;
+
+  	&:after {
+  		content: ':';
+  	}
+}
+
 .search-result__meta dt.search-result__meta--full {
   clear:left;
   float:left;
@@ -158,6 +168,15 @@ overflow:auto;
 .search-result__meta dd.search-result__meta--full {
   margin-right:0;
   display:block;
+}
+
+/* REMOVE UP TO HERE */
+
+// Group heading (inherited from Funnelback) is used to separate results based on match score
+
+// If not first child then add margin to top
+.search-results__group-heading:not(:first-child) {
+	margin-top: 3em;
 }
 
 /*********************************/

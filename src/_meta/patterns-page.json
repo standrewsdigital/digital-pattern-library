@@ -158,6 +158,10 @@
                   "img": "assets/docs/images/patterns/article-header.jpg",
                   "url": "patterns/article-header/index.html"
                 },
+                { "name": "Article list",
+                  "img": "assets/docs/images/patterns/article-list.jpg",
+                  "url": "patterns/article-list/index.html"
+                },
                 { "name": "Blockquote",
                   "img": "assets/docs/images/patterns/blockquote.jpg",
                   "url": "patterns/blockquote/index.html"
@@ -198,9 +202,9 @@
                   "img": "assets/docs/images/patterns/google-maps.jpg",
                   "url": "patterns/google-maps/index.html"
                 },
-                { "name": "More news",
-                  "img": "assets/docs/images/patterns/more-news.jpg",
-                  "url": "patterns/more-news/index.html"
+                { "name": "Metadata list",
+                  "img": "assets/docs/images/patterns/metadata-list.jpg",
+                  "url": "patterns/metadata-list/index.html"
                 },
                 { "name": "News updates",
                   "img": "assets/docs/images/patterns/news-updates.jpg",
@@ -337,6 +341,10 @@
                 { "name": "Intro",
                   "img": "assets/docs/images/patterns/intro.jpg",
                   "url": "patterns/intro/index.html"
+                },
+                { "name": "More news",
+                  "img": "assets/docs/images/patterns/more-news.jpg",
+                  "url": "patterns/more-news/index.html"
                 }
             ]
         }

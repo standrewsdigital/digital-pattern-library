@@ -1,0 +1,42 @@
+---
+title: Metadata list
+---
+
+<p class="lead">The metadata list pattern can be used to provide additional information about a particular item of content such as a search result, news article, event or publication. A metadata list consists of a number of label and value pairs.</p>
+
+<h2>Rules for metadata list</h2>
+<ul>
+    <li>Full width metadata items must appear above any others.</li>
+    <li>Metadata items should be used sparingly to avoid creating visual clutter.</li>
+    <li>Each text label should be no longer than 20 characters.</li>
+    <li>Icons may be used to represent the types of metadata being shown.</li>
+    <li>If icons are used then all similar items, that use this pattern, must also have icons.</li>
+    <li>Icons must be visually distinct from one another.</li>
+    <li>A metadata item's value may be a link.</li>
+    <li>Metadata is styled in a lighter grey colour unless the <code>inherit-colour</code> class is added.</li>
+</ul>
+
+<h2>Options available</h2>
+<ul>
+{{#metadata-list-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/metadata-list-options.options}}
+</ul>
+
+{{#metadata-list-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+<!--noindex-->
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+	<div class="container">
+	{{> metadata-list}}
+	</div>
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> metadata-list}}</code></pre>
+<!--endnoindex-->
+{{/metadata-list-options.options}}

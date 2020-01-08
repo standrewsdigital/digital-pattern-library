@@ -57,7 +57,7 @@
 .navbox-title:before {
     @extend .fa;
     @extend .fa-chevron-right;
-    @include ms-respond(font-size,2);
+    font-size: 125%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
