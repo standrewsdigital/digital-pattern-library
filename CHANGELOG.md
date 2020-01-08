@@ -9,6 +9,28 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.22.0
+
+Release date: Wednesday 8 January 2020
+
+### Added
+* Article list pattern to replace more news pattern with more flexibility.
+* Metadata list pattern to be used in various other patterns.
+
+### Fixed
+* Typos in documentation.
+
+### Changed
+* News landing page example replaced more news pattern with article list pattern.
+* Featured news pattern now uses metadata list pattern.
+* News updates pattern now uses metadata list pattern.
+
+### Deprecated
+* More news pattern replaced by article list pattern.
+* Search results metadata replaced by metadata list pattern.
+
+---
+
 ## v1.21.3
 
 Release date: Wednesday 4 December 2019
