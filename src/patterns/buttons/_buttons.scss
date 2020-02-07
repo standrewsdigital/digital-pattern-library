@@ -52,6 +52,7 @@
     }
 }
 
+// REMOVE THIS DUPLICATE
   .btn-important {
     background: $sta-blue-light;
     border: none;
@@ -80,6 +81,112 @@
       color: white;
     }
   }  
+  // END 
+
+.btn-action {
+    background: $sta-blue-light;
+    border: none;
+    border-color: $sta-blue-light;
+    border-bottom: 3px $sta-blue-hover solid;
+    font-weight: bold;
+    @include ms-respond(font-size,1);
+    color: white;
+    line-height: 1;
+    position:relative;
+    padding:15px 45px 12px 15px;
+    text-align: left;
+
+    &:before {
+      @extend .fa;
+      @extend .fa-chevron-right;
+      font-size: 1.5rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) translateY(1px);
+      right: 15px;
+    }
+
+    &:hover,
+    &:focus {
+      background:$sta-blue-light-hover;
+      color: white;
+    }
+}
+
+.btn-small-tag {
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0 0;
+    background: $sta-grey-light-S;
+    border: 1px $sta-grey-highlight solid;
+    color: $sta-grey-dark-S;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0.4rem 0.5rem;
+
+    &:hover,
+    &:focus {
+        background: $sta-grey-light-S-hover;
+        color: $sta-grey-dark-S-hover;
+        text-decoration: none;
+    }
+}
+
+.btn-xsmall-tag {
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0 0;
+    background: $sta-grey-light-S;
+    border: 1px $sta-grey-highlight solid;
+    color: $sta-grey-dark-S;
+    @include ms-respond(font-size,-1);
+    font-weight: normal;
+    padding: 0.4rem 0.5rem;
+
+    &:hover,
+    &:focus {
+        background: $sta-grey-light-S-hover;
+        color: $sta-grey-dark-S-hover;
+        text-decoration: none;
+    }
+}
+
+// DROPDOWN STYLES - replace this with own dropdown util
+.dropdown-menu {
+  margin:0;
+  padding:0;
+
+  > li > a {
+    color: $sta-grey-dark-S;
+    padding: 10px 15px;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        background: $sta-grey-light-S-hover;
+        color: $sta-grey-dark-S-hover;
+        text-decoration: none;
+    }
+  }
+}
+
+// Reduce size of dropdown to match smaller button
+.btn-small-tag + .dropdown-menu {
+  font-size: 1rem;
+
+  > li > a {
+    padding: 0.4rem 0.5rem;
+  }
+}
+
+// Specific to sort dropdowns
+@media (min-width: 768px){
+  .pull-right-sm .btn-small-tag {
+    margin:0 0 0 0.5rem;
+  }
+  .pull-right-sm .dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+}
 
 /*********************************/
 /* END Pattern: buttons          */

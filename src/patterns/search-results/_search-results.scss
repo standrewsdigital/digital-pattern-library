@@ -86,6 +86,11 @@
 	margin-bottom: 0;
 }
 
+// Add space if metadata follows the summary
+.search-result__summary + .metadata-list {
+	margin-top: 5px;
+}
+
 .search-result__thumbnail {
 	float:left;
 	margin-top: 0.5em;

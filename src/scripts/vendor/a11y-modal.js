@@ -1,4 +1,4 @@
-;(function ( w, doc, undefined ) {
+var allyModal = (function ( w, doc, undefined ) {
 	'use strict';
 
 	/**
@@ -15,11 +15,11 @@
 	ARIAmodal.LICENSE = 'https://github.com/scottaohara/accessible_modal_window/blob/master/LICENSE';
 
 	var activeClass = 'modal-open';
-	var body = doc.body;
-	var main = doc.getElementsByTagName('main')[0] || body;
+	var body;
+	var main;
 
-	var modal = doc.querySelectorAll('[data-modal]');
-	var children = doc.querySelectorAll('body > *:not([data-modal])');
+	var modal;
+	var children;
 
 	var initialTrigger;
 	var activeModal;
@@ -725,18 +725,25 @@
 	 * Initialize modal functions.
 	 * If expanding this script, put
 	 * additional initialize functions here.
-	 */
-	ARIAmodal.init = function () {
-		ARIAmodal.organizeDOM();
-		ARIAmodal.setupTrigger();
-		ARIAmodal.setupModal();
-		ARIAmodal.autoLoad();
-	};
+	*/
 
+	return {
+		init: function() {
+			// Set document at point of init
+			body = document.body;
+			main = doc.getElementsByTagName('main')[0] || body;
 
-	/**
-	 * Go go JavaScript!
-	 */
-	ARIAmodal.init();
+			modal = doc.querySelectorAll('[data-modal]');
+			children = doc.querySelectorAll('body > *:not([data-modal])');
+
+			ARIAmodal.organizeDOM();
+			ARIAmodal.setupTrigger();
+			ARIAmodal.setupModal();
+			ARIAmodal.autoLoad();
+		}
+	}
 
 })( window, document );
+
+allyModal.init();
+

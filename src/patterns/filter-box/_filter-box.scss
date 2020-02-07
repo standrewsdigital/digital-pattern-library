@@ -16,9 +16,14 @@
 .filter-box__list {
   margin: 0;
   padding: 0;
+  list-style: none;
 
-  li a {
-  	font-weight: bold; // Possibly change to manage on tag itself
+  li {
+    display: inline-block;
+
+    a {
+      font-weight: bold;
+    }
   }
 }
 
@@ -29,13 +34,17 @@
 }
 
 .filter-box__clear {
-  float:right;
   font-weight: normal;
   text-decoration: underline;
 
   i {
 	  margin-right: 5px;
 	}
+}
+
+// Add top margin to button if used.
+.filter-box__list + .btn {
+  margin: 1rem 0 0 0;
 }
 
 /*********************************/

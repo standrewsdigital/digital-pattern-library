@@ -13,8 +13,18 @@
             ]
          },
 
-
-
+        {
+            "option-heading": "Action button",
+            "option-description": "<p>Action buttons are used to signify the most prominent call to action on a page.</p>",
+            "option-anchor": "action-button",
+            "buttons": [
+                {
+                    "type": "action",
+                    "text": "Action",
+                    "size": "btn btn-lg"
+                }
+            ]
+         },
 
          {
             "option-heading": "Secondary and tertiary buttons",
@@ -55,22 +65,22 @@
                 {
                     "type": "success",
                     "text": "Success",
-                    "size": "btn btn-lg"
+                    "size": "btn btn-lg "
                 },
                 {
                     "type": "info",
                     "text": "Info",
-                    "size": "btn btn-lg"
+                    "size": "btn btn-lg "
                 },
                 {
                     "type": "warning",
                     "text": "Warning",
-                    "size": "btn btn-lg"
+                    "size": "btn btn-lg "
                 },
                 {
                     "type": "danger",
                     "text": "Danger",
-                    "size": "btn btn-lg"
+                    "size": "btn btn-lg "
                 }
             ]
           },
@@ -88,28 +98,28 @@
                     "text": "PDF document",
                     "icon-class": "fa fa-file-pdf-o",
                     "icon-title": "PDF",
-                    "size": "btn btn-lg"
+                    "size": "btn btn-lg "
                 },
                 {
                     "type": "primary",
                     "text": "ZIP file",
                     "icon-class": "fa fa-file-zip-o",
                     "icon-title": "ZIP",
-                    "size": "btn btn-lg"
+                    "size": "btn btn-lg "
                 },
                 {
                     "type": "primary",
                     "text": "Word document",
                     "icon-class": "fa fa-file-word-o",
                     "icon-title": "Word",
-                    "size": "btn btn-lg"
+                    "size": "btn btn-lg "
                 },
                 {
                     "type": "primary",
                     "text": "Powerpoint presentation",
                     "icon-class": "fa fa-file-powerpoint-o",
                     "icon-title": "Powerpoint",
-                    "size": "btn btn-lg"
+                    "size": "btn btn-lg "
                 }
             ]
         },
@@ -125,29 +135,106 @@
                 {
                     "type": "tag",
                     "text": "St Andrews",
-                    "size": " btn"
+                    "size": "btn "
                 },
                 {
                     "type": "tag",
                     "text": "Scotland",
-                    "size": " btn"
+                    "size": "btn "
                 },
                 {
                     "type": "tag",
                     "text": "Digital pattern library",
-                    "size": " btn"
+                    "size": "btn "
                 },
                 {
                     "type": "tag",
                     "text": "Climate change",
-                    "size": " btn"
+                    "size": "btn "
                 },
                 {
                     "type": "tag",
                     "text": "Marine biology",
-                    "size": " btn"
+                    "size": "btn "
                 }
             ]
+          },
+
+
+
+        {
+            "option-heading": "Small tag buttons",
+            "option-description": "<p>Must only be used when linking to a tag or categories results page.</p>",
+            "option-anchor": "small-tag-buttons",
+            "buttons": [
+                {
+                    "type": "small-tag",
+                    "text": "St Andrews",
+                    "size": "btn "
+                },
+                {
+                    "type": "small-tag",
+                    "text": "Scotland",
+                    "size": "btn "
+                },
+                {
+                    "type": "small-tag",
+                    "text": "Digital pattern library",
+                    "size": "btn "
+                },
+                {
+                    "type": "small-tag",
+                    "text": "Climate change",
+                    "size": "btn "
+                },
+                {
+                    "type": "small-tag",
+                    "text": "Marine biology",
+                    "size": "btn "
+                }
+            ]
+          },
+
+
+
+        {
+            "option-heading": "Extra small tag buttons",
+            "option-description": "<p>Must only be used when linking to a tag or categories results page.</p>",
+            "option-anchor": "xsmall-tag-buttons",
+            "buttons": [
+                {
+                    "type": "xsmall-tag",
+                    "text": "St Andrews",
+                    "size": "btn "
+                },
+                {
+                    "type": "xsmall-tag",
+                    "text": "Scotland",
+                    "size": "btn "
+                },
+                {
+                    "type": "xsmall-tag",
+                    "text": "Digital pattern library",
+                    "size": "btn "
+                },
+                {
+                    "type": "xsmall-tag",
+                    "text": "Climate change",
+                    "size": "btn "
+                },
+                {
+                    "type": "xsmall-tag",
+                    "text": "Marine biology",
+                    "size": "btn "
+                }
+            ]
+          },
+
+        {
+            "option-heading": "Dropdown buttons",
+            "option-description": "<p>Can be used to show multiple options in a single dropdown list. The button to open and close the dropdown can have any button style applied. This example shows both the primary and the small tag style of buttons, with the dropdown menu adjusting to match its parent button font size and padding.</p>",
+            "option-anchor": "dropdown-buttons",
+            "dropdown": true
           }
     ]
 }

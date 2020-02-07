@@ -41,7 +41,7 @@
 	    </form>
 	    {{#if horizontal-list}}
 	    <div class="horizontal-list">
-	        <h4 class="horizontal-list__toggle">
+	        <h4 class="horizontal-list__toggle" aria-expanded="false">
 	        	<button class="horizontal-list__toggle-button">Popular searches</button>
 	        </h4>
 	        <ul>
@@ -51,8 +51,8 @@
 	            <li><a href="#">This month</a></li>
 	            <li><a href="#">All events</a></li>
 	            <li class="dropdown-wrapper">
-	              <a class="dropdown-toggle" data-toggle="dropdown" href="#">More options<span class="caret"></span></a>
-	                <ul class="dropdown-menu">
+	              <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-controls="more-options">More options<span class="caret"></span></a>
+	                <ul class="dropdown-menu" id="more-options">
 	                    <li><a href="#">Events open to the public</a></li>
 	                    <li><a href="#">Events for staff and students</a></li>
 	                    <li><a href="#">Lectures</a></li>
@@ -69,7 +69,7 @@
 	   {{/if}}
 	    {{#if horizontal-list-links}}
 	    <div class="horizontal-list">
-	        <h4 class="horizontal-list__toggle">
+	        <h4 class="horizontal-list__toggle" aria-expanded="false">
 	        	<button class="horizontal-list__toggle-button">Additional options</button>
 	        </h4>
 	        <ul>
