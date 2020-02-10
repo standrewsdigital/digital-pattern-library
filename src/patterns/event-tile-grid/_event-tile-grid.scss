@@ -159,7 +159,9 @@
             }
         }
         .featured-event__date {
+            margin-bottom: 0.25rem;
             &:before {
+                font-weight: 400;
                 content: "\f073";
             }
         }

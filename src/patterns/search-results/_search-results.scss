@@ -91,17 +91,6 @@
 	margin-top: 5px;
 }
 
-.search-result__thumbnail {
-	float:left;
-	margin-top: 0.5em;
-	margin-right: 1em;
-	max-width: 140px; // Make smaller on small screens
-
-	@media (min-width: 576px){
-		max-width: 180px;
-	}
-}
-
 /* REMOVE THIS META STYLE AS NOW USING metadata-list PATTERN */
 .search-result__meta {
 margin:0;
