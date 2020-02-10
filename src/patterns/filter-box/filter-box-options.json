@@ -87,40 +87,6 @@
                 ]
                 }
             ]
-        },
-        {
-            "option-heading": "Filter box with button",
-            "option-anchor": "filter-box-button",
-            "option-description": "<p>This example shows a button which can be used to access filter content.</p>",
-            "filter-heading": "Filtered by:",
-            "button": true,
-            "filters-list": [
-                {
-                "filters-list-drilldown": true,
-                "filters-list-group": [
-                    {
-                        "label": "Filter group A"
-                    },
-                    {
-                        "label": "Top level filter"
-                    },
-                    {
-                        "label": "Second level filter",
-                        "icon": "<span>&#8627;</span>"
-                    }
-                ]
-                },
-                {
-                "filters-list-group": [
-                    {
-                        "label": "Filter B"
-                    },
-                    {
-                        "label": "Filter C"
-                    }
-                ]
-                }
-            ]
         }
     ]
  }

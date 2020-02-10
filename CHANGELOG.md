@@ -9,6 +9,26 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.22.1
+
+Release date: Tuesday 11 February 2020
+
+### Added
+* Dropdown button style example.
+* Tag button style examples.
+* Responsive helper classes.
+* Fade effect for lazyloaded images.
+
+### Changed
+* Spacing and font sizing changes to search bar pattern.
+* Consistent use of font icons for event based examples.
+* Modal window script can now be called at any time.
+
+### Deprecated
+* Photosphere pattern.
+
+---
+
 ## v1.22.0
 
 Release date: Wednesday 8 January 2020
