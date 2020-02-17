@@ -1,3 +1,27 @@
 {{#each buttons}}
-<a type="button" class="{{size}} btn-{{type}}" href="#">{{text}}{{#if icon-class}} <i class="{{icon-class}}" title="{{icon-title}}"></i>{{/if}}</a>
+<a type="button" class="{{size}}btn-{{type}}" href="#">{{text}}{{#if icon-class}} <i class="{{icon-class}}" title="{{icon-title}}"></i>{{/if}}</a>
 {{/each}}
+{{#if dropdown}}
+<div class="dropdown">
+  <button id="dropdown-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-primary">
+    Dropdown trigger
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-primary">
+	<li><a href="">Dropdown option 1</a></li>
+	<li><a href="">Dropdown option 2</a></li>
+	<li><a href="">Dropdown option 3</a></li>
+  </ul>
+</div>
+<div class="dropdown">
+  <button id="dropdown-small" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-small-tag">
+    Dropdown trigger
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-small">
+	<li><a href="">Dropdown option 1</a></li>
+	<li><a href="">Dropdown option 2</a></li>
+	<li><a href="">Dropdown option 3</a></li>
+  </ul>
+</div>
+{{/if}}

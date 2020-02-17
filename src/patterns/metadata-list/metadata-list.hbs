@@ -1,0 +1,9 @@
+<!-- Begin pattern: metadata-list //-->
+        {{#if metadata}}
+        <dl class="metadata-list{{inherit}}">
+            {{#each metadata}}
+            <dt{{{dtclass}}}>{{#if no-icon}}{{term}}{{else}}<i class="{{icon}}" aria-hidden="true" title="{{term}}"></i><span class="sr-only">{{term}}</span>{{/if}}</dt><dd{{#if full}} class="metadata-list--full"{{/if}}>{{#if link}}<a href="#">{{/if}}{{{definition}}}{{#if link}}</a>{{/if}}</dd>
+            {{/each}}
+        </dl>
+        {{/if}}
+<!-- End pattern: metadata-list //-->

@@ -29,9 +29,14 @@
         .event-listing__location,
         .event-listing__time  {
             font-size: 1rem; // Don't scale up on larger displays
+<<<<<<< HEAD
             font-weight: normal; 
             margin-bottom:0.25rem;
             padding-left: 1.3rem;
+=======
+            margin-bottom:0.25rem;
+            padding-left: ms(2);
+>>>>>>> master
             position: relative;
             
             &:before {
@@ -49,6 +54,7 @@
         }
         .event-listing__date {
             &:before {
+                font-weight: 400;
                 content: "\f073";
             }
         }
@@ -59,6 +65,7 @@
         }
         .event-listing__time {
             &:before {
+                font-weight: 400;
                 content: "\f017";
             }
         }

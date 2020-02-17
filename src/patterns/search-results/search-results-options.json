@@ -42,7 +42,7 @@
         {
             "option-heading": "Additional result metadata",
             "option-anchor": "metadata",
-            "option-description": "<p>Results can also include metadata to provide quick key information about a resource. These consist of a series of type and value pairs, with icons representing the type of metadata. Metadata may either span the width of the result listing or be displayed as an inline list.</p><ul><li>Full width metadata items must appear above any others.</li><li>Metadata should be used sparingly to avoid creating visual clutter.</li><li>Metadata may contain links.</li></ul>",
+            "option-description": "<p>Results can also include metadata to provide quick key information about a resource. This uses the <a href=\"../metadata-list/index.html\">metadata list</a> pattern.</p>",
             "group-heading": "Heading for the results group",
             "search-results": [
                 {
@@ -53,22 +53,22 @@
                     "metadata": [
                     	{
                     		"full": true,
-                    		"icon": "fas fa-folder-open",
+                    		"icon": "far fa-folder-open",
                     		"term": "File location",
                     		"definition": "This is a full width metadata field that can be used for prominent or longer values"
                     	},	
                     	{
-                    		"icon": "fas fa-calendar-alt",
+                    		"icon": "far fa-calendar-alt",
                     		"term": "Published date",
                     		"definition": "18 July 2019"
                     	},	
                     	{
-                    		"icon": "fas fa-file-alt",
+                    		"icon": "far fa-file-alt",
                     		"term": "Document type",
                     		"definition": "Guidance"
                     	},	
                     	{
-                    		"icon": "fas fa-user",
+                    		"icon": "far fa-user",
                     		"term": "Scope (applies to)",
                     		"definition": "All staff"
                     	}
@@ -82,146 +82,28 @@
                     "heading-label": "PDF (525k)",
                     "metadata": [
                     	{
-                    		"icon": "fas fa-calendar-alt",
+                    		"icon": "far fa-calendar-alt",
                     		"term": "Published date",
                     		"definition": "21 April 2019"
                     	},	
                     	{
-                    		"icon": "fas fa-file-alt",
+                    		"icon": "far fa-file-alt",
                     		"term": "Document type",
                     		"definition": "Guidance"
                     	},	
                     	{
-                    		"icon": "fas fa-user",
+                    		"icon": "far fa-user",
                     		"term": "Scope (applies to)",
                     		"definition": "All staff"
                     	},	
                     	{
-                    		"icon": "fa fa-envelope",
+                    		"icon": "far fa-envelope",
                     		"term": "Email",
                     		"definition": "help@st-andrews.ac.uk",
                             "link": true
                     	}
                     ],
                     "link-class": " class=\"search-result__link\""
-                }
-            ]
-        },
-
-        {
-            "option-heading": "Image within result",
-            "option-anchor": "thumbnail",
-            "option-description": "<div class=\"alert alert--warning\"><h3 class=\"alert__heading\">Mixed result types</h3><p>A set of results should not contain different styles of results in a single list. It is recommended that different styles are contained within different tabs.</p></div><p>It may also be beneficial to include a thumbnail image to give additional context to a search result.</p><ul><li>Thumbnail images must be 360px wide and 240px high.</li></ul>",
-            "group-heading": "Heading for the results group",
-            "search-results": [
-                {
-                    "heading": "This is a headline of a news article",
-                    "url": "https://www.st-andrews.ac.uk/path/to/page/",
-                    "description": "This is the maximum number of characters that can be used in a search result summary giving a clear indication of what the result is and supporting the heading.",
-                    "metadata": [ 
-                        {
-                            "icon": "fas fa-calendar-alt",
-                            "term": "Published date",
-                            "definition": "18 July 2019"
-                        }
-                    ],
-                    "thumbnail": true,
-                    "thumbnail-src": "../../assets/docs/images/placeholders/360x240.png",
-                    "link-class": " class=\"search-result__link\""
-                },
-                                {
-                    "heading": "This is a headline of a news article",
-                    "url": "https://www.st-andrews.ac.uk/path/to/page/",
-                    "description": "This is the maximum number of characters that can be used in a search result summary giving a clear indication of what the result is and supporting the heading.",
-                    "metadata": [ 
-                        {
-                            "icon": "fas fa-calendar-alt",
-                            "term": "Published date",
-                            "definition": "18 July 2019"
-                        }
-                    ],
-                    "thumbnail": true,
-                    "thumbnail-src": "../../assets/docs/images/placeholders/360x240.png",
-                    "link-class": " class=\"search-result__link\""
-                }
-            ]
-        },
-
-        {
-            "option-heading": "Contact details within results",
-            "option-anchor": "contact",
-            "option-description": "<div class=\"alert alert--warning\"><h3 class=\"alert__heading\">Mixed result types</h3><p>A set of results should not contain different styles of results in a single list. It is recommended that different styles are contained within different tabs.</p></div><p>The <a href=\"../contact-card/index.html\">contact card</a> pattern can be used to show contact information of a person within search results.</p><ul><li>The result must either link to further details about a person or provide their email or phone number as a minumum.</li></ul>",
-            "group-heading": "Heading for the results group",
-            "search-results": [
-                {
-                    "contact": true,
-                    "card": {
-                        "cards": [
-                            {
-                                "id": "e1",
-                                "name": "Miss Colleen Hurst",
-                                "initials": "CH",
-                                "unit": "St Andrews Sustainability Institute",
-                                "team": ", Psychology and Neuroscience",
-                                "title": "Academic Liason",
-                                "image": "../../assets/docs/images/profile-pictures/female-003.jpg",
-                                "phone": "+44 (0)1334 46 xxxx",
-                                "email": "example@st-andrews.ac.uk"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "contact": true,
-                    "card": {
-                        "cards": [
-                            {
-                                "id": "e2",
-                                "name": "Mr Howard Hatfield",
-                                "initials": "HH",
-                                "link": "#",
-                                "unit": "School of Computer Science",
-                                "title": "Senior JavaScript Developer",
-                                "image": "../../assets/docs/images/profile-pictures/male-001.jpg",
-                                "phone": "+44 (0)1334 46 xxxx",
-                                "email": "longerexample@st-andrews.ac.uk"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "contact": true,
-                    "card": {
-                        "cards": [
-                            {
-                                "id": "e3",
-                                "name": "Dr Brielle Williamson",
-                                "initials": "BW",
-                                "link": "#",
-                                "unit": "School of Psychology",
-                                "team": ", Clinical Counselling",
-                                "title": "Research Specialist",
-                                "image": "../../assets/docs/images/profile-pictures/female-002.jpg",
-                                "phone": "+44 (0)1334 46 xxxx",
-                                "email": "example@st-andrews.ac.uk"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "contact": true,
-                    "card": {
-                        "cards": [
-                            {
-                                "id": "e4",
-                                "name": "Professor Timothy Mooney",
-                                "initials": "TM",
-                                "link": "#",
-                                "title": "Chemical Engineering Professor",
-                                "image": "../../assets/docs/images/profile-pictures/male-004.jpg"
-                            }
-                        ]
-                    }
                 }
             ]
         }

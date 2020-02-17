@@ -131,58 +131,129 @@
                     "secondary-title": "Students take part in traditional St Andrews Pier Walk",
                     "secondary-content": "Hundreds of students take part in the traditional Pier Walk along the harbour wall of St Andrews before the start of the new academic year.",
                     "secondary-date": "9 September 2019", 
+                    "show-secondary-category": true,
                     "alternate-layout": true,
                     "secondary-category": "Student experience",
                     "column-span-secondary": "col-xs-12"  
                 }
             ]
         },
-        "more-news":{
-            "news-items": [
+        "article-list":{
+            "article-items": [
                 {
+                    "wrapper": "div",
                     "title": "Apes possess human-like “theory of mind”",
                     "description": "Apes understand what others see and believe, a skill previously believed to be unique to humans, according to new research.",
                     "image": {
                         "url": "../assets/docs/images/examples/news-5.jpg"
                     },
-                    "date": "30 September 2019",
-                    "category": "Research"
+                    "metadata": [
+                        {
+                            "dtclass": " class=\"sr-only\"",
+                            "no-icon": true,
+                            "term": "Date",
+                            "definition": "30 September 2019"
+                        },  
+                        {
+                            "dtclass": " class=\"sr-only\"",
+                            "no-icon": true,
+                            "term": "Category",
+                            "definition": "Research",
+                            "link": true
+                        }
+                    ]
                 },
                 {
+                    "wrapper": "div",
                     "title": "Early diagnosis key to survival",
                     "description": "A new institute has been created to help improve earlier diagnosis of cancer, cardiovascular disease, mental health and infection.",
                     "image": {
                         "url": "../assets/docs/images/examples/news-6.jpg"
                     },
-                    "date": "24 September 2019",
-                    "category": "University news"
+                    "metadata": [
+                        {
+                            "dtclass": " class=\"sr-only\"",
+                            "no-icon": true,
+                            "term": "Date",
+                            "definition": "24 September 2019"
+                        },  
+                        {
+                            "dtclass": " class=\"sr-only\"",
+                            "no-icon": true,
+                            "term": "Category",
+                            "definition": "University news",
+                            "link": true
+                        }
+                    ]
                 },
                 {
+                    "wrapper": "div",
                     "title": "Climate change protest",
                     "description": "Newly arrived Visiting Global Fellow, Glen MacDonald, was awestruck by the massive turnout in St Andrews for the Climate Change Strike.",
                     "image": {
                         "url": "../assets/docs/images/examples/news-7.jpg"
                     },
-                    "date": "23 September 2019",
-                    "category": "University news"
+                    "metadata": [
+                        {
+                            "dtclass": " class=\"sr-only\"",
+                            "no-icon": true,
+                            "term": "Date",
+                            "definition": "23 September 2019"
+                        },  
+                        {
+                            "dtclass": " class=\"sr-only\"",
+                            "no-icon": true,
+                            "term": "Category",
+                            "definition": "University news",
+                            "link": true
+                        }
+                    ]
                 },
                 {
+                    "wrapper": "div",
                     "title": "Killing Strangers – How Violence Became Modern",
                     "description": "Dr Tim Wilson takes a fresh look at the origins of our contemporary terrorism crisis in a lecture to mark the 25th anniversary of the CSTPV.",
                     "image": {
                         "url": "../assets/docs/images/examples/news-8.jpg"
                     },
-                    "date": "21 September 2019",
-                    "category": "University news"
+                    "metadata": [
+                        {
+                            "dtclass": " class=\"sr-only\"",
+                            "no-icon": true,
+                            "term": "Date",
+                            "definition": "21 September 2019"
+                        },  
+                        {
+                            "dtclass": " class=\"sr-only\"",
+                            "no-icon": true,
+                            "term": "Category",
+                            "definition": "University news",
+                            "link": true
+                        }
+                    ]
                 },
                 {
+                    "wrapper": "div",
                     "title": "Ancient volcanoes reveal Earth’s recycled crust",
                     "description": "Ancient volcanoes could provide new insights into how the Earth’s surface is recycled, according to St Andrews scientists.",
                     "image": {
                         "url": "../assets/docs/images/examples/news-9.jpg"
                     },
-                    "date": "24 October 2016",
-                    "category": "Research"
+                    "metadata": [
+                        {
+                            "dtclass": " class=\"sr-only\"",
+                            "no-icon": true,
+                            "term": "Date",
+                            "definition": "24 August 2019"
+                        },  
+                        {
+                            "dtclass": " class=\"sr-only\"",
+                            "no-icon": true,
+                            "term": "Category",
+                            "definition": "Research",
+                            "link": true
+                        }
+                    ]
                 }
             ]
         }

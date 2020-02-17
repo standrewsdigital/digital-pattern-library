@@ -10,7 +10,10 @@
                     <div class="col-sm-7 col-sm-pull-5">
                         <h2 class="featured-news__article-heading"><a href="#article">{{title}}</a></h2>
                         <p class="lead">{{text}}</p>
-                        <small>{{featured-date}}<span class="featured-news__category featured-news__category--inline"><a href="#category">{{featured-category}}</a></span></small>
+                         <dl class="metadata-list">
+                            <dt class="sr-only">Date</dt><dd>{{featured-date}}</dd>
+                            <dt class="sr-only">Category</dt><dd><a href="#" class="featured-news__category">{{featured-category}}</a></dd>
+                        </dl>
                     </div>
                 </div>
             </div>

@@ -3,15 +3,18 @@
     <a class="filter-box__clear" href="" title="Remove all refinements">
         <i class="fa fa-times" aria-hidden="true"></i>Clear all filters
     </a>
-    <h3 class="filter-box__label font-scale-1">{{filter-heading}}</h3>
+    <h3 class="sr-only">{{filter-heading}}</h3>
     {{#each filters-list}}
     <ul class="filter-box__list{{#if filters-list-drilldown}} filter-box__list-group{{/if}}">
         {{#each filters-list-group}}
-        <li class="contact-card__tag">
-            <a class="contact-card__tag-link contact-card__tag-link-small" href="#">{{#if icon}}{{{icon}}}{{/if}}<i class="fa fa-times" aria-hidden="true"></i><span class="sr-only">Clear</span> {{label}}</a>
+        <li>
+            <a class="btn-xsmall-tag" href="#">{{#if icon}}{{{icon}}}{{/if}}<i class="fa fa-times" aria-hidden="true"></i><span class="sr-only">Clear</span> {{label}}</a>
         </li>
         {{/each}}
     </ul>
     {{/each}}
+    {{#if button}}
+    <button class="btn btn-primary">View filters</button>
+    {{/if}}
 </div>
 <!-- End pattern: filter box //-->
