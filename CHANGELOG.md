@@ -11,7 +11,7 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ## v1.22.1
 
-Release date: Tuesday 11 February 2020
+Release date: Monday 17 February 2020
 
 ### Added
 * Dropdown button style example.
@@ -23,6 +23,9 @@ Release date: Tuesday 11 February 2020
 * Spacing and font sizing changes to search bar pattern.
 * Consistent use of font icons for event based examples.
 * Modal window script can now be called at any time.
+
+### Removed
+* Margin under sticky nav.
 
 ### Deprecated
 * Photosphere pattern.
