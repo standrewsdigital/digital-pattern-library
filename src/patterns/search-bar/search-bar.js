@@ -1,4 +1,6 @@
-$('.horizontal-list__toggle').click(function() {
+//$('.horizontal-list__toggle').click(function() {
+
+$(document).on('click', '.horizontal-list__toggle', function(){
 	$(this).next('ul').slideToggle(200, "linear");
     $(this).toggleClass( "open" ); // add class for styling.
     // Set the aria properties.

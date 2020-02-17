@@ -86,15 +86,9 @@
 	margin-bottom: 0;
 }
 
-.search-result__thumbnail {
-	float:left;
-	margin-top: 0.5em;
-	margin-right: 1em;
-	max-width: 140px; // Make smaller on small screens
-
-	@media (min-width: 576px){
-		max-width: 180px;
-	}
+// Add space if metadata follows the summary
+.search-result__summary + .metadata-list {
+	margin-top: 5px;
 }
 
 /* REMOVE THIS META STYLE AS NOW USING metadata-list PATTERN */

@@ -13,7 +13,7 @@
 }
 
 .article-list__image {
-    width: 40%;
+    width: 30%;
     @media (min-width: 540px) {
         width: 25%;
     }
@@ -28,7 +28,7 @@
 }
 
 .article-list__snippet {
-    width: 60%;
+    width: 70%;
     padding-left: 1em;
     @media (min-width: 540px) {
         padding-left: 30px; // Double bootstrap gutter
