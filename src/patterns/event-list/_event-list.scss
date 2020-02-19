@@ -29,14 +29,9 @@
         .event-listing__location,
         .event-listing__time  {
             font-size: 1rem; // Don't scale up on larger displays
-<<<<<<< HEAD
             font-weight: normal; 
             margin-bottom:0.25rem;
             padding-left: 1.3rem;
-=======
-            margin-bottom:0.25rem;
-            padding-left: ms(2);
->>>>>>> master
             position: relative;
             
             &:before {
@@ -72,14 +67,21 @@
     }
 
     a.event-listing__details {
+        text-decoration: none;
+
+        .event-listing__heading {
+            color: $sta-blue-light;
+            text-decoration: underline;
+        }
+
         // Hover styles
         &:hover,
         &:focus {
-            background: #f0f0f0;
+            background: $sta-grey-light;
             text-decoration: none; // override underline hover effect   
 
             .event-listing__heading {
-                color: #00539b;
+                color: $sta-blue-light-hover;
                 text-decoration: underline;
             }
         }

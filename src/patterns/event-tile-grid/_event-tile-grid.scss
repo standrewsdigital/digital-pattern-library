@@ -85,6 +85,7 @@
         color: inherit;
         font-weight: normal;
         height: 100%;
+        text-decoration: none;
         @media (min-width:380px){
             display: flex;
         }
@@ -130,7 +131,7 @@
         }
 
         .featured-event__heading {
-            color: inherit;
+            color: $sta-blue-light;
             @include ms-respond(font-size,1);
             margin-top: 0;
         }
@@ -172,10 +173,9 @@
         &:hover,
         &:focus {
             background: #f0f0f0;
-            text-decoration: none; // override underline hover effect   
 
             .featured-event__heading {
-                color: #00539b;
+                color: $sta-blue-light-hover;
                 text-decoration: underline;
             }
         }

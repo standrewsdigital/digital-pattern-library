@@ -48,7 +48,7 @@ a.article-header__meta-image {
 	outline: 0; // disable default focus
 
 	&:active {
-			box-shadow: 0px 0px 0px 2px $sta-orange;
+			box-shadow: 0px 0px 0px 3px $sta-orange-highlight;
 	}
 
 	&:hover {
@@ -58,7 +58,7 @@ a.article-header__meta-image {
 	}
 
 	&:focus {
-		box-shadow: 0px 0px 0px 2px $sta-orange-highlight;
+		box-shadow: 0px 0px 0px 3px $sta-orange-highlight;
 	}
 }
 
@@ -66,24 +66,6 @@ a.article-header__meta-image {
 .article-header__meta-date {
 	font-size: 1rem;
     margin-right: 1rem;
-
-    a {
-		outline: 0; // disable default focus
-		text-decoration: underline;
-		&:active {
-			text-decoration: none;
-		}
-
-		&:hover {
-			color: $sta-blue-light-hover;
-		}
-
-		&:focus {
-			border-bottom: 2px solid $sta-orange-highlight;
-			background: lighten($sta-orange,50%);
-			text-decoration: none;
-		}
-    }
 }
 
 .article-header__meta-share {

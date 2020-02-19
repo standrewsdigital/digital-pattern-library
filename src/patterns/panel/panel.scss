@@ -37,18 +37,36 @@
     font-weight: bold;
 
     a {
+        display: block;
+        text-decoration: none;
+        margin: -0.8rem -3rem -0.8rem -1rem;
+        padding: 0.8rem 3rem 0.8rem 1rem;
+
+        &:hover {
+            background: inherit;
+            color: inherit;
+            text-decoration: underline;
+        }
+        &:focus {
+            background: inherit;
+            color: inherit;
+            text-decoration: underline;
+            outline: 3px solid $sta-orange-highlight;
+        }
+        &:active {
+            background:$sta-orange-highlight;
+            color: $sta-grey-dark;
+        }
+
         &:before{
             @extend .fa;
             @extend .fa-chevron-right;
             @include ms-respond(font-size,1);
+            display:inline-block;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
             right: 1rem;
-        }
-
-        &:hover,
-        &:focus {
             text-decoration: none;
         }
     }

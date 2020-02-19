@@ -10,7 +10,19 @@
 
 .text-banner a {
     color: white;
-    font-weight: bold;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:focus {
+        // Apply contrast 
+        color: $sta-grey-dark;
+        background: $sta-orange-highlight;
+        box-shadow: 0 3px $sta-orange-highlight;
+        text-decoration: underline;
+        outline: 3px solid $sta-orange-highlight; 
+    } 
 }
 
 .text-banner p {

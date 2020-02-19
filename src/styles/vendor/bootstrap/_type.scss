@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6,
   }
 
   &.keyline--bottom {
-    border-bottom: 2px solid $sta-grey-light;
+    border-bottom: 2px solid $headings-small-color;
     padding-bottom: ($line-height-computed / 2);
   }
 }

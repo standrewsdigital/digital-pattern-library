@@ -52,7 +52,12 @@
         // override default link style to avoid box shadow appearing under divider line
         &>li>a {
             &:focus {
-                box-shadow: 0 -2px $sta-orange-highlight, inset 0 -3px $sta-grey-dark;
+                text-decoration: underline;
+            }
+
+            &:active {
+                color: $sta-grey-dark;
+                background: $sta-orange-highlight;
             }
         }
     }

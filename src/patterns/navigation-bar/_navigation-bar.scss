@@ -47,7 +47,13 @@ div.container ul.show-navigation {
 
 .navigation-bar ul.navigation-bar-nav li a:focus {
 	outline:3px solid $sta-orange-highlight;
-	background-color: inherit
+	background-color: inherit;
+	text-decoration: underline;
+}
+
+.navigation-bar ul.navigation-bar-nav li a:active {
+	color: $sta-grey-dark;
+	background-color: $sta-orange-highlight !important;
 }
 
 .toggle-navigation {

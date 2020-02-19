@@ -28,20 +28,10 @@
 .tile-grid__heading,
 .tile-grid h2 {
     color: white;
-    //font-size: 2.5em;
     @extend %font-scale-4;
     margin: 0 0 15px 0;
     padding: 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-
-    /*
-    @media (max-width: 767px) {
-        font-size: 1.8em;
-    }
-
-    @media (max-width: 479px) {
-        font-size: 1.5em;
-    }  */
 
     &.sta-grey {
         color: inherit;
@@ -111,12 +101,11 @@
     background: $sta-blue-T;
     @include ms-respond(font-size,1);
     margin: 0;
-    padding: .8rem 1rem;
+    padding: 0;
     position: absolute;
     bottom: 0;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     width: 100%;
-    @include -dpl-transition();
 }
 
 .tile:hover {
@@ -130,6 +119,25 @@
 .tile h3 a {
     color: white;
 	text-decoration: none;
+    padding: .8rem 1rem;
+    display: block;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:focus {
+        text-decoration: underline;
+        background: none;
+        outline: 3px solid $sta-orange-highlight; 
+    }
+    &:active {
+        // Apply contrast 
+        color: $sta-grey-dark;
+        background: $sta-orange-highlight;
+        box-shadow: 0 3px $sta-orange-highlight;
+        text-decoration: underline;
+        text-shadow: none;
+        outline: 3px solid $sta-orange-highlight; 
+    }
 }
 
 .tile p {
@@ -161,12 +169,16 @@
 
         &:hover {
             color: $sta-grey-hover;
+            text-decoration: none;
         }
 
         &:focus {
-            outline: 2px dotted $sta-orange-highlight;
-            outline-offset: 0;
-            background: lighten($sta-orange,50%);
+        // Apply contrast 
+        color: $sta-grey-dark;
+        background: $sta-orange-highlight;
+        box-shadow: 0 3px $sta-orange-highlight;
+        text-decoration: underline;
+        outline: 3px solid $sta-orange-highlight; 
         }
     }
 }

@@ -8,7 +8,8 @@
 	border: 1px solid $sta-grey;
 	color: $sta-blue;
 
-	&:hover {
+	&:focus,
+  &:hover {
 		background: $sta-grey-light;
     border-color: $sta-grey;
     color: $sta-blue;
@@ -73,7 +74,6 @@
 .btn-action {
     background: $sta-blue-light;
     border: none;
-    border-color: $sta-blue-light;
     border-bottom: 3px $sta-blue-hover solid;
     font-weight: bold;
     @include ms-respond(font-size,1);
@@ -97,6 +97,10 @@
     &:focus {
       background:$sta-blue-light-hover;
       color: white;
+    }
+
+    &:active {
+      border-bottom: 3px transparent solid;
     }
 }
 
@@ -152,6 +156,12 @@
         color: $sta-grey-dark-S-hover;
         text-decoration: none;
     }
+
+    &:active {
+      background: $sta-orange-highlight;
+      color: $sta-grey-dark;
+      box-shadow: 0 3px $sta-orange-highlight;
+    }
   }
 }
 
@@ -184,12 +194,17 @@
   margin-bottom:0;
 }
 
-// Add focus states to buttons
+// Add focus and active states to buttons
 .btn {
   text-decoration:none;
   &:focus {
     outline: 3px solid $sta-orange-highlight;
-    box-shadow: none;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $sta-grey-dark;
+    background: $sta-orange-highlight;
   }
 
 }

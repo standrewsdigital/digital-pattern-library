@@ -67,6 +67,18 @@
         },
 
 
+        {
+            "option-heading": "Links",
+            "option-description": "<p>The default styling of a link is bold-weighted blue text with an underline.</p>",
+            "option-anchor": "links",
+            "body-text": [
+                {
+                    "text": "<a href='#'>This is a link</a>."
+                }
+            ]
+        },
+
+
 
 
         {

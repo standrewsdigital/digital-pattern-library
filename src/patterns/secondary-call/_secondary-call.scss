@@ -9,12 +9,19 @@
    }
    .btn, .btn-primary {
         background-color: $color-cta;
-        border-bottom: 5px solid $color-cta-hover;
+        border-color: $color-cta-hover;
    }
 
    .btn:hover, .btn:focus {
         background-color: $color-cta-hover;
-        border-bottom: 5px solid $color-cta-hover;
+        border-color: $color-cta-hover;
+    }
+
+    .btn:active {
+      background: $sta-orange-highlight;
+      color: $sta-grey-dark;
+      box-shadow: 0 3px $sta-orange-highlight;
+      border-color: transparent;
     }
 }
 
@@ -24,7 +31,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: $page-gutter 0 $page-gutter-overflow 0;
+    padding: $page-gutter 0;
     position: relative;
     text-align: center;
 
@@ -84,19 +91,6 @@
         @media (max-width: 991px){
           text-align: center;
         }
-    }
-
-    .btn {
-        background-color: $sta-blue;
-        border: 0;
-        margin: 0 15px 25px 15px;
-        @include ms-respond(font-size,1);
-
-        &:hover,
-        &:focus {
-            background-color: $sta-blue-hover;
-        }
-
     }
 
 }

@@ -5,16 +5,16 @@
 {{#each box-size}}
 {{#if row}}<div class="row">{{/if}}
     <div class="{{column}}">
-        <div class="navbox {{#if visible}} {{visible}} {{/if}}">
+        <a href="#" class="navbox {{#if visible}} {{visible}} {{/if}}">
             {{#if image}}
             <div class="navbox-image">
                 <img src="{{image.url}}" alt="{{image.alt}}">
             </div>
             {{/if}}
-            <div class="navbox-title" role="button">
-                <a href="#">{{{title}}}</a>
+            <div class="navbox-title">
+                {{{title}}}
             </div>
-        </div>
+        </a>
         {{#if text}}
         <p>{{text}}</p>
         {{/if}}

@@ -46,7 +46,16 @@
     }
     &:focus {
       box-shadow: none;
-      outline: 3px solid #ff9900;
+      outline: 3px solid #FFB400;
+      text-decoration: underline;
+    }
+    &:active {
+      background: #FFB400;
+      box-shadow: none;
+      border-color:transparent;
+      color: rgb(32, 32, 36);
+      outline: 3px solid #FFB400;
+      text-decoration: underline;
     }
   }
 

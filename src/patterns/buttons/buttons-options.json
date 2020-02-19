@@ -8,7 +8,7 @@
                 {
                     "type": "primary",
                     "text": "Primary",
-                    "size": "btn btn-lg"
+                    "size": "btn btn-lg "
                 }
             ]
          },
@@ -21,7 +21,7 @@
                 {
                     "type": "action",
                     "text": "Action",
-                    "size": "btn btn-lg"
+                    "size": "btn btn-lg "
                 }
             ]
          },
@@ -34,22 +34,22 @@
                 {
                     "type": "secondary",
                     "text": "Secondary",
-                    "size": "btn btn-lg"
+                    "size": "btn btn-lg "
                 },
                 {
                     "type": "tertiary-1",
                     "text": "Tertiary 1",
-                    "size": "btn btn-lg"
+                    "size": "btn btn-lg "
                 },
                 {
                     "type": "tertiary-2",
                     "text": "Tertiary 2",
-                    "size": "btn btn-lg"
+                    "size": "btn btn-lg "
                 },
                 {
                     "type": "tertiary-3",
                     "text": "Tertiary 3",
-                    "size": "btn btn-lg"
+                    "size": "btn btn-lg "
                 }
             ]
           },

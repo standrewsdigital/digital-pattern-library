@@ -3,6 +3,7 @@
 /*********************************/
 
 .navbox {
+    display: block;
 	margin-bottom: 0;
     position: relative;
 
@@ -43,31 +44,34 @@
 // }
 
 .navbox-title {
-	background: $sta-blue-T;
-	background-repeat: repeat;
+	background: $sta-blue-light-T;
 	color: white;
 	@include ms-respond(font-size,1);
     font-weight: bold;
 	padding: 0.8rem 3rem 0.8rem 1rem;
     position: absolute;
     bottom: 0;
+    text-decoration: none;
     width: 100%;
+
+    // Fallback support for old markup
+    a {
+        color: white;
+    }
 }
 
 .navbox-title:before {
     @extend .fa;
     @extend .fa-chevron-right;
-<<<<<<< HEAD
     @include ms-respond(font-size,1);
-=======
-    font-size: 125%;
->>>>>>> master
+    display: inline-block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    text-decoration: none;
     right: 1rem;
 }
-
+/*
 .navbox-title a {
 	color: inherit;
 	margin-right: 4px;
@@ -81,11 +85,11 @@
 .navbox:hover {
 	cursor: pointer;
 }
-
 .navbox-title:hover, .navbox:hover .navbox-title{
 	background: $sta-blue-T-hover;
 }
 
+*/
 .navbox-title p {
 	margin-bottom: 0;
 }
@@ -98,20 +102,33 @@
 	 .navbox-image is not showing (i.e. not present). */
 
 .navbox-title:first-child {
-	background: $sta-blue;
+	background: $sta-blue-light;
 	position: relative;
 	bottom: auto;
 }
-
+/*
 .navbox-title:first-child:hover,
 .navbox:hover .navbox-title:first-child{
 	background: $sta-cyan;
 }
+*/
+.navbox:hover {
+    .navbox-title {
+        text-decoration: underline;
+    }
+}
 
 // Add focus state to entire box
+.navbox:focus,
 .navbox:focus-within {
-    outline: 2px solid $sta-orange-highlight;
+    outline: 3px solid $sta-orange-highlight;
 
+    .navbox-title {
+        text-decoration: underline;
+    }
+}
+// Add active state
+.navbox:active {
     .navbox-title {
         background:$sta-orange-highlight;
         color: $sta-grey-dark;

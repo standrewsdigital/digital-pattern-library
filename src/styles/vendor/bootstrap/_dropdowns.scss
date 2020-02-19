@@ -36,6 +36,7 @@
   display: none; // none by default, but block on "open" of the menu
   float: left;
   min-width: 160px;
+  max-width:100%;
   padding: 0;
   margin: 2px 0 0; // override default ul
   list-style: none;
@@ -70,7 +71,7 @@
     font-weight: normal;
     line-height: $line-height-base;
     color: $dropdown-link-color;
-    white-space: nowrap; // prevent links from randomly breaking onto new lines
+    //white-space: nowrap; // prevent links from randomly breaking onto new lines
   }
 }
 

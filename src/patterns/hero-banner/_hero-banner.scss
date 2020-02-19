@@ -40,35 +40,9 @@
     padding: 0;
     @include ms-respond(font-size,1);
   }
-
-  .btn {
-    background: $sta-blue-light;
-    border: none;
-    border-color: $sta-blue-light;
-    border-bottom: 3px $sta-blue-hover solid;
-    font-weight: bold;
-    @include ms-respond(font-size,1);
-    line-height: 1;
+.btn {
     margin: 15px 10px 0 0;
-    position:relative;
-    padding: 0.8rem 3rem 0.8rem 1rem;
-    text-align: left;
-
-    &:before {
-      @extend .fa;
-      @extend .fa-chevron-right;
-      @include ms-respond(font-size,1);
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 1rem;
-    }
-
-    &:hover,
-    &:focus {
-      background:$sta-blue-light-hover;
-    }
-  }  
+}
 
 @media (max-width:540px){
   .btn {

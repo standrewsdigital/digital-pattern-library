@@ -18,11 +18,9 @@
 //
 // Lines modified or added are commented.
 @mixin button-variant($color,
-$background,
-$border) {
+$background) {
     color: $color;
     background-color: $background;
-    border-color: $border;
     & {
         transition: all 200ms ease-out; // ADDED
     }
@@ -36,7 +34,6 @@ $border) {
         background-color: darken($background, $hover-darken);
         -webkit-transition: all 200ms ease-out; // ADDED
         -moz-transition: all 200ms ease-out; // ADDED
-        border-color: darken($border, $hover-darken);
     }
     &:active,
     &.active,
@@ -48,7 +45,6 @@ $border) {
     fieldset[disabled] & {
         &, &:hover, &:focus, &.focus, &:active, &.active {
             background-color: $background;
-            border-color: $border;
         }
     }
     .badge {
