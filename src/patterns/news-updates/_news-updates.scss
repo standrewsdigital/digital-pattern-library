@@ -5,45 +5,14 @@
 
 .news-updates {    
 
-    .news-updates__article-link { //wrapper for entire link block
-
-        &:not(.sub-link-active){
-            &:hover {
-                cursor: pointer;
-
-                .news-updates__heading a {
-                    text-decoration:underline;
-                }
-            }
-            &:focus {
-                cursor: pointer;
-
-                .news-updates__heading a {
-                    text-decoration:underline;
-                    outline: 2px dotted $sta-orange-highlight;
-                    outline-offset: 0;
-                    background: lighten($sta-orange,50%);
-                }
-            }
-        }
-    }
 
      // Links focus state
     a:focus {
         //image
         .news-updates__image {
-            outline: 2px solid $sta-orange-highlight;
+            outline: 3px solid $sta-orange-highlight;
             outline-offset: 0;
         }
-    }
-    .news-updates__heading a:focus {
-        outline: 2px dotted $sta-orange-highlight;
-        outline-offset: 0;
-        background: lighten($sta-orange,50%);
-    }
-    // Links active state 
-    .news-updates__heading a:active {
-        text-decoration: none;
     }
 
     img {
@@ -52,26 +21,6 @@
 
     p {
         margin: 5px 0;
-    }
-    small {
-        font-size: 1rem; // override 66% default
-        color: $sta-grey;
-
-        a {
-            color: $sta-grey;
-            font-weight: normal;
-            text-decoration: underline;
-
-            &:hover {
-                color: $sta-grey-hover;
-            }
-
-            &:focus {
-                outline: 2px dotted $sta-orange-highlight;
-                outline-offset: 0;
-                background: lighten($sta-orange,50%);
-            }
-        }
     }
 }
 

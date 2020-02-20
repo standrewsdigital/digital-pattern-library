@@ -169,3 +169,8 @@ textarea, input[type~=text], input[type~=submit] {
     opacity: 1;
     transition: opacity 300ms;
 }
+
+/* Big target - use pointer */
+.big-target-click-zone {
+    cursor: pointer;
+}

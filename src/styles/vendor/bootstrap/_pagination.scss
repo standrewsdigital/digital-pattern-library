@@ -45,6 +45,7 @@
       border-color: $pagination-hover-border;
     }
     &:focus {
+      z-index: 4;
       box-shadow: none;
       outline: 3px solid #FFB400;
       text-decoration: underline;

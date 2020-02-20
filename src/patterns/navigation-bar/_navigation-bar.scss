@@ -43,12 +43,14 @@ div.container ul.show-navigation {
 .navigation-bar ul.navigation-bar-nav li a:hover {
 	color: white;
 	text-decoration: underline;
+	z-index: 3;
 }
 
 .navigation-bar ul.navigation-bar-nav li a:focus {
 	outline:3px solid $sta-orange-highlight;
 	background-color: inherit;
 	text-decoration: underline;
+	z-index: 5; //Focus has highest priority
 }
 
 .navigation-bar ul.navigation-bar-nav li a:active {

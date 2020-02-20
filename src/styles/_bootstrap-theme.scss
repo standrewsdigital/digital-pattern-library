@@ -59,6 +59,18 @@ a {
     }        
 }
 
+// Remove background on image links as transparency will show
+figure {
+   a:focus {
+        background: none;  
+   }     
+   // Put background back for captions and blockquotes
+   figcaption a:focus,
+   blockquote a:focus {
+        background: $sta-orange-highlight;
+   }
+}
+
 
 // NAVBAR MODIFICATIONS
 // ====================================================
@@ -306,6 +318,7 @@ table.table-tertiary-3 th {
 
 a.list-group-item {
     font-weight: normal;
+    text-decoration: none;
         .list-group-item-heading {
             font-weight: bold;
     }
@@ -328,7 +341,27 @@ a.list-group-item {
     &:hover,
     &:focus {
         background: #ebebeb;
-        text-decoration: underline;
+        text-decoration: none;
+        
+        .item-label {
+            text-decoration: underline;
+        }
+        .badge {
+            text-decoration: none;
+        }
+    }
+    &:focus {
+        z-index: 5;
+    }
+    &:active {
+        color: $sta-grey-dark;
+        background: $sta-orange-highlight;
+
+        .badge {
+          background: $sta-grey-dark;
+          color: white;
+        }
+
     }
 }
 

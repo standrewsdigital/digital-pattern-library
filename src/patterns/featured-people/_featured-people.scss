@@ -91,8 +91,9 @@
 
 	a.featured-people__image {
 		outline: 0; // disable default focus
+    	border: 2px solid $sta-grey-light-S;
 		&:active {
-			box-shadow: 0px 0px 0px 2px $sta-orange;
+			box-shadow: 0px 0px 0px 3px $sta-orange-highlight;
 		}
 		&:hover {
 			img {
@@ -100,7 +101,7 @@
 			}
 		}
 		&:focus {
-			box-shadow: 0px 0px 0px 2px $sta-orange-highlight;
+			box-shadow: 0px 0px 0px 3px $sta-orange-highlight;
 		}
 	}
 
@@ -142,20 +143,6 @@
 		a {
 			outline: 0; // disable default focus
 			text-decoration: underline;
-
-	        &:active {
-				text-decoration: none;
-	        }
-
-	        &:hover {
-				color: $sta-blue-light-hover;
-	        }
-
-	        &:focus {
-            	border-bottom: 2px solid $sta-orange-highlight;
-            	background: lighten($sta-orange,50%);
-				text-decoration: none;
-	        }
 		}
 
 

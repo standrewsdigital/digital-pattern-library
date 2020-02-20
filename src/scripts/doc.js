@@ -303,10 +303,10 @@ function htmlDecode(value) {
 
     $('.navbox').each(function() {
 
-        navbox = $('.navbox-title a', this);
+        navbox = $(this);
 
         // Get the navbox title and link.
-        var title = navbox.text();
+        var title = navbox.find('.navbox-title').text();
         var link = navbox.attr('href');
         title = title.replace(/-/g, ' ');
 

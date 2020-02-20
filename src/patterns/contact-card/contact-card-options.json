@@ -183,10 +183,12 @@
 					"email": "longerexample@st-andrews.ac.uk",
 					"areas-expertise": [
 						{
-							"area": "Human-Computer Interaction"
+							"area": "Human-Computer Interaction",
+							"tag-link": true
 						},
 						{
-							"area": "Information Management and Data Analytics"
+							"area": "Information Management and Data Analytics",
+							"tag-link": true
 						}
 					]
 			    },

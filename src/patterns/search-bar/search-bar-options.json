@@ -32,8 +32,8 @@
             "search-button": true
          },
         {
-            "option-heading": "Search banner (light blue)",
-            "option-description": "<p>The search banner option with the light blue background applied. This is achieved by replacing the class <code>search-bar__grey</code> with <code>search-bar__blue</code>. This example does not include the optional sub heading.</p>",
+            "option-heading": "Search banner (blue)",
+            "option-description": "<p>The search banner option with a blue background applied. This is achieved by replacing the class <code>search-bar__grey</code> with <code>search-bar__blue</code>. This example does not include the optional sub heading.</p>",
             "option-anchor": "search-banner-blue",
             "background-color": "search-bar__blue",
             "full-width": true,

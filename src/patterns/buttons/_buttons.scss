@@ -113,12 +113,18 @@
     font-size: 1rem;
     font-weight: normal;
     padding: 0.4rem 0.5rem;
+    text-decoration: none;
 
     &:hover,
     &:focus {
         background: $sta-grey-light-S-hover;
         color: $sta-grey-dark-S-hover;
         text-decoration: none;
+    }
+    &:active {
+      background: $sta-orange-highlight;
+      color: $sta-grey-dark;
+      box-shadow: 0 3px $sta-orange-highlight;
     }
 }
 
@@ -131,12 +137,18 @@
     @include ms-respond(font-size,-1);
     font-weight: normal;
     padding: 0.4rem 0.5rem;
+    text-decoration: none;
 
     &:hover,
     &:focus {
         background: $sta-grey-light-S-hover;
         color: $sta-grey-dark-S-hover;
         text-decoration: none;
+    }
+    &:active {
+      background: $sta-orange-highlight;
+      color: $sta-grey-dark;
+      box-shadow: 0 3px $sta-orange-highlight;
     }
 }
 
