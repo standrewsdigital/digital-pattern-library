@@ -59,15 +59,23 @@ a {
     }        
 }
 
-// Remove background on image links as transparency will show
+// Remove background on image links as transparency will show - place on image tag instead
 figure {
    a:focus {
-        background: none;  
+        background: none;
+        box-shadow: none;
+        outline: none;  
+
+        img {
+            outline: 3px solid $sta-orange-highlight; 
+        }
    }     
    // Put background back for captions and blockquotes
    figcaption a:focus,
    blockquote a:focus {
         background: $sta-orange-highlight;
+        box-shadow: 0 3px $sta-orange-highlight;
+        outline: 3px solid $sta-orange-highlight; 
    }
 }
 

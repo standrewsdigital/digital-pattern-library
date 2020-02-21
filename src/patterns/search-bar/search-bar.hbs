@@ -24,14 +24,14 @@
 	        {{/if}}
 	        </div>
 	        {{#if search-tags}}
-	        <div class="results">
+	        <div class="results" aria-live="polite">
 	        	<div class="row">
 	    			<div class="col-md-12"></div>
 	    		</div>
 	        </div>
 	        {{/if}}
             {{#if results}}
-            <div class="results results__box">
+            <div class="results results__box" aria-live="polite">
             	<div class="row">
                 	<div class="col-md-6 left-column"></div>
                     <div class="col-md-6 right-column"></div>
@@ -41,8 +41,8 @@
 	    </form>
 	    {{#if horizontal-list}}
 	    <div class="horizontal-list">
-	        <h4 class="horizontal-list__toggle" aria-expanded="false">
-	        	<button class="horizontal-list__toggle-button">Popular searches</button>
+	        <h4 class="horizontal-list__toggle">
+	        	<button class="horizontal-list__toggle-button" aria-expanded="false">Popular searches</button>
 	        </h4>
 	        <ul>
 	            <li><a href="#">Upcoming events</a></li>

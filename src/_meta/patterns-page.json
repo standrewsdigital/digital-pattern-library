@@ -234,10 +234,6 @@
                   "img": "assets/docs/images/patterns/search-results.jpg",
                   "url": "patterns/search-results/index.html"
                 },
-                { "name": "Section header",
-                  "img": "assets/docs/images/patterns/section-header.jpg",
-                  "url": "patterns/section-header/index.html"
-                },
                 { "name": "Staff profile",
                   "img": "assets/docs/images/patterns/staff-profile.jpg",
                   "url": "patterns/staff-profile/index.html"

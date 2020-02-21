@@ -17,34 +17,35 @@
 		text-decoration: none;
 
 		.search-result__heading {
-			color: $sta-blue-light; // TEST LINK COLOUR CHANGE / BEHAVIOUR
 			text-decoration: underline;
 		}
 
 		&:active {
+			color: inherit;
 			.search-result__heading {
 				text-decoration: none;
 			}
 		}
 
 		&:hover {
+			color: inherit;
 			.search-result__heading {
-				color: $sta-blue-light-hover;
+				text-decoration: none;
+        		color: $sta-blue-light-hover;
 			}
 		}
 
-		&:focus {
-			outline: 0; // disable default focus
-
+		&:focus {		
+			color: inherit;
+			background: none;
+			box-shadow: none;
+			outline: none;
 			.search-result__heading {
-				outline: 2px dotted $sta-orange-highlight;
-				outline-offset: 0;
-				background: lighten($sta-orange,50%);
-			}
-
-			.search-result__thumbnail {
-				outline: 2px solid $sta-orange-highlight;
-				outline-offset: 0;
+		        color: $sta-grey-dark;
+		        background: $sta-orange-highlight;
+		        box-shadow: 0 3px $sta-orange-highlight;
+		        text-decoration: underline;
+		        outline: 3px solid $sta-orange-highlight; 
 			}
 		}
 	}

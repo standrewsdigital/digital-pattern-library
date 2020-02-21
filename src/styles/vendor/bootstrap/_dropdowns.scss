@@ -24,7 +24,7 @@
 
 // Prevent the focus on the dropdown toggle when closing dropdowns
 .dropdown-toggle:focus {
-  outline: 0;
+  //outline: 0;
 }
 
 // The dropdown menu (ul)
@@ -43,8 +43,7 @@
   font-size: $font-size-base;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   background-color: $dropdown-bg;
-  border: 1px solid $dropdown-fallback-border; // IE8 fallback
-  border: 1px solid $dropdown-border;
+  border: 1px solid $sta-grey;
   border-radius: $border-radius-base;
   @include box-shadow(0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12));
   background-clip: padding-box;

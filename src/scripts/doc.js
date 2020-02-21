@@ -395,7 +395,7 @@ function htmlDecode(value) {
                 if ( form_id === "news-search" ) {
                     link = "<a type='button' class='btn btn-tag' href='" + link_url + "'>" + link_text + "</a>";
                 } else {
-                  link = "<a href='" + link_url + "'>" + link_text + "</a>";
+                  link = "<li class=\"search-result\"><a href='" + link_url + "'>" + link_text + "</a></li>";
                 }
 
 
@@ -442,7 +442,7 @@ function htmlDecode(value) {
         } else if ( form_id === 'news-search' ) {
             list;
         } else {
-            list = "<h2>Undergraduate courses</h2>" + list;
+            list = "<h2>Undergraduate courses</h2><ul class=\"search-results\">" + list + "</ul>";
         }
 
         if ( form_id === 'news-search' ) {
@@ -455,7 +455,7 @@ function htmlDecode(value) {
 
     function add_right_results_list( form_id, list ) {
 
-        list = "<h2>Postgraduate courses</h2>" + list;
+        list = "<h2>Postgraduate courses</h2><ul class=\"search-results\">" + list + "</ul>";
         $('#' + form_id).parent('.input-group').next('.results').children('.row').children('.col-md-6.right-column').html(list);
 
     }

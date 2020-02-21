@@ -3,12 +3,12 @@
         <div class="row">
             {{#if featured-title}}
             <div class="{{column-size-main}}">
-                <div class="news-updates__article-link">
+                <article class="news-updates__article-link">
                 {{#if big-thumbnail}}
                 <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-md-12">
-                    <a href="#article"><img src="{{featured-thumbnail}}" alt="news story" class="news-updates__image news-updates__image--featured"></a>
-                    </div>
+                    <figure class="col-xs-12 col-sm-4 col-md-12">
+                    <a href="#article" tabindex="-1"><img src="{{featured-thumbnail}}" alt="news story" class="news-updates__image news-updates__image--featured"></a>
+                    </figure>
                     <div class="col-xs-12 col-sm-8 col-md-12">
                     <h4 class="news-updates__heading news-updates__heading--large"><a href="#article">{{featured-title}}</a></h4>
                     <p>{{featured-content}}</p>
@@ -20,9 +20,9 @@
                 </div>
                 {{else}}
                 <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-md-5">
-                        <a href="#article"><img src="{{featured-thumbnail}}" alt="news story" class="news-updates__image"></a>
-                    </div>
+                    <figure class="col-xs-12 col-sm-4 col-md-5">
+                        <a href="#article" tabindex="-1"><img src="{{featured-thumbnail}}" alt="news story" class="news-updates__image"></a>
+                    </figure>
                     <div class="col-xs-12 col-sm-8 col-md-7">
                         <h4 class="news-updates__heading"><a href="#article">{{featured-title}}</a></h4>
                         <p>{{featured-content}}</p>
@@ -33,18 +33,18 @@
                     </div>
                 </div>
                 {{/if}}
-                </div>
+                </article>
             </div>
             {{/if}}
             <div class="{{column-size-secondary}}">
             <div class="row">
             {{#each secondary-update}}
-                <div class="{{column-span-secondary}} col-md-12 news-updates__secondary news-updates__article-link">
+                <article class="{{column-span-secondary}} col-md-12 news-updates__secondary news-updates__article-link">
                     <div class="row">
                 {{#if alternate-layout}}
-                        <div class="col-xs-12 col-sm-4">
-                            <a href="#article"><img src="{{secondary-thumbnail}}" alt="news story" class="news-updates__image"></a>
-                        </div>
+                        <figure class="col-xs-12 col-sm-4">
+                            <a href="#article" tabindex="-1"><img src="{{secondary-thumbnail}}" alt="news story" class="news-updates__image"></a>
+                        </figure>
                         <div class="col-xs-12 col-sm-8">
                             <h4 class="news-updates__heading"><a href="#article">{{secondary-title}}</a></h4>
                             <p>{{secondary-content}}</p>
@@ -55,9 +55,9 @@
                         </div>
                  {{else}}
                     {{#if secondary-thumbnail}}
-                        <div class="col-sm-5">
-                            <a href="#article"><img src="{{secondary-thumbnail}}" alt="news story" class="news-updates__image"></a>
-                        </div>
+                        <figure class="col-sm-5">
+                            <a href="#article" tabindex="-1"><img src="{{secondary-thumbnail}}" alt="news story" class="news-updates__image"></a>
+                        </figure>
                         <div class="col-sm-7">
                     {{else}}
                         <div class="col-xs-12">
@@ -70,7 +70,7 @@
                         </div>
                 {{/if}}
                     </div>
-                </div>
+                </article>
             {{/each}}
             </div>
             </div>

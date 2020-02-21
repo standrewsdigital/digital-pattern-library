@@ -1,9 +1,9 @@
 <!-- Begin pattern: article-list //-->
 {{#each article-items}}
 <{{wrapper}} class="article-list">
-    <div class="article-list__image">
-        <a href="#article"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{image.url}}" alt="{{title}}" class="lazyload"></a>
-    </div>
+    <figure class="article-list__image">
+        <a href="#article" tabindex="-1"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{image.url}}" alt="{{title}}" class="lazyload"></a>
+    </figure>
     <div class="article-list__snippet">
         <h3 class="article-list__heading"><a href="#article">{{title}}</a></h3>
         {{#if description}}<p class="article-list__description{{show-all}}">{{description}}</p>{{/if}}

@@ -16,17 +16,20 @@
 		&.results__box {
 			// Show results in a box
 			background: #fff;
-			color: $gray-dark; // Ensure it doesn't inherit the white from blue banner
+			color: $sta-grey-dark; // Ensure it doesn't inherit the white from blue banner
 			padding: $half-gutter;
 
 			// These should change to classes
 			h2 {
 				margin-top: 0;
 			}
+			
+			.search-result {
+				margin-bottom:0.5em;
+			}
 
 			a {
-				display: inherit;
-				margin-bottom: 15px;
+				display: inline-block;
 			}
 		}
 	}
@@ -124,16 +127,32 @@
 		// Dropdown toggle on smaller displays
 
 		  	@include -dpl-transition();
-		    background-color: #00539b;
+		    background-color: $sta-blue-light;
 		    color: white;
 		    cursor: pointer;
 		    @include ms-respond(font-size,1);
 		    margin-bottom: 0;
 		    padding: 10px 15px;
 
-
 			&:hover {
-			    background-color: #004077;
+			    background-color: $sta-blue-light-hover;
+			}
+
+			&:focus,
+			&:focus-within {
+    			outline: 3px solid $sta-orange-highlight;
+    			.horizontal-list__toggle-button {
+    				text-decoration: underline;
+    			}
+			}
+
+			&:active {
+				background: $sta-orange-highlight;
+				color: $sta-grey-dark;
+    			outline: 3px solid $sta-orange-highlight;
+    			.horizontal-list__toggle-button {
+    				text-decoration: underline;
+    			}
 			}
 
 			&:before {
@@ -143,26 +162,16 @@
 		}
 
 		@media (min-width: 768px){
-		// Hide on larger displays
-		// Taken from bootstrap sr-only class
-		// Should be moved to utility placeholder in DPL so it can be extended based on media queries
-			
-			position: absolute;
-			width: 1px;
-			height: 1px;
-			margin: -1px;
-			padding: 0;
-			overflow: hidden;
-			clip: rect(0,0,0,0);
-			border: 0;
+			// Hide button on larger displays
+			display:none;
 		}
 	}
 
 	.horizontal-list__toggle-button {
-		// TODO add aria controls and link to expanded list - similar to accordion
 		background: none;
 		border: 0;
 		margin: 0;
+		outline: none;
 		padding: 0;
 	}
 
@@ -173,7 +182,7 @@
 
 		@media (max-width: 767px){
 			background: #fff;
-			border: 1px solid rgba(#000,0.15);
+			border: 1px solid $sta-grey;
 			border-top: none;
 			display: none;
 		}
@@ -187,12 +196,16 @@
 			// Vertical on smaller displays
 			@media (max-width: 767px){
 				a {
-					border-top: 1px solid rgba(#000,0.15);
+					border-top: 1px solid $sta-grey;
+					color: inherit;
 					display: block;
+					font-weight: normal;
 					padding: 10px 15px;
+					text-decoration: none;
 
 					&:hover,
 					&:focus {
+						text-decoration: underline;
 						background-color: #f5f5f5;
 					}
 				}
@@ -265,6 +278,7 @@
 					position: relative;
 					box-shadow: none;
 					width: 100%;
+					border: 0;
 				}
 				@media (min-width: 768px){
 
@@ -277,10 +291,17 @@
 						margin-left: 0;
 
 						a {
+							color: inherit;
 							float: none;
+							font-weight: normal;
 							text-decoration: none;
 							white-space: normal;
 							border: none;
+
+							&:hover,
+							&:focus {
+								text-decoration: underline;
+							}
 						}
 					}
 			}

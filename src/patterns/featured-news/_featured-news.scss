@@ -4,15 +4,6 @@
 /*********************************/
 
 .featured-news {
-
-    // Links focus state
-    a:focus {
-        //image
-        .featured-news__image {
-            outline: 3px solid $sta-orange-highlight;
-            outline-offset: 0;
-        }
-    }
     
     p {
         margin-bottom:5px;
