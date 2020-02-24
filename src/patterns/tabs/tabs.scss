@@ -3,6 +3,53 @@
 /* BEGIN Pattern: tabs           */
 /*********************************/
 
+
+// Give the tabs something to sit on
+.nav-tabs {
+  border-bottom: 1px solid $sta-grey;
+  > li {
+    float: left;
+    // Make the list-items overlay the bottom border
+    margin-bottom: -2px;
+
+    // Actual tabs (as links)
+    > a {
+        background: none;
+        margin-right: 3px;
+        border: 1px solid transparent;
+        border-bottom: none;
+        border-radius: 0;
+        padding: 10px 15px 8px 15px;
+
+      &:hover {
+        background: $sta-grey-light;
+      }
+    }
+
+    // Active state, and its :hover to override normal :hover
+    &.active > a {
+        padding-bottom: 10px;
+
+      &,
+      &:hover,
+      &:focus {
+        background-color: white;
+        border: 1px solid $sta-grey;
+        border-bottom: none;
+        box-shadow: 0 -5px $sta-grey;
+        color: $sta-grey-dark;
+        cursor: default;
+        text-decoration: none;
+      }
+    }
+  }
+  // pulling this in mainly for less shorthand
+  &.nav-justified {
+    @extend .nav-justified;
+    @extend .nav-tabs-justified;
+  }
+}
+
 .tabs-container {
     margin-bottom: 20px;
 }
@@ -38,6 +85,7 @@
         margin:0;
     }
 }
+
 
 /*********************************/
 /* END Pattern: tabs             */

@@ -438,7 +438,7 @@ function htmlDecode(value) {
 
         // Set the column heading based on the form id.
         if ( form_id === 'form-banner-pattern-search' ) {
-            list = "<h2>Patterns</h2>" + list;
+            list = "<h2>Patterns</h2><ul class=\"search-results\">" + list + "</ul>";
         } else if ( form_id === 'news-search' ) {
             list;
         } else {
