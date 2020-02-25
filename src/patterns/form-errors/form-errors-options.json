@@ -50,7 +50,7 @@
                 }
             ],
             "legend": "Check your personal details",
-            "class": "form-group dpl-form",
+            "class": "form-group has-error dpl-form",
             "radio": true,
             "radio-buttons": [
                 {

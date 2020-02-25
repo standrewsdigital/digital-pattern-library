@@ -204,7 +204,8 @@
                             "label-text": "Postcode",
                             "type": "text",
                             "hint": "Enter your postcode without any spaces. For example, KY169AL.",
-                            "input-class": "form-control"
+                            "input-class": "form-control form-control--auto-width",
+                            "size": "size=\"8\""
                         }
                     ]
                 }
@@ -248,7 +249,8 @@
                             "label-text": "Postcode",
                             "hint": "Enter your postcode without any spaces. For example, KY16 9AL.",
                             "type": "text",
-                            "input-class": "form-control"
+                            "input-class": "form-control form-control--auto-width",
+                            "size": "size=\"8\""
                         }
                     ]
                 }
@@ -363,7 +365,8 @@
                             "input-id": "postcode",
                             "label-text": "Postcode (optional)",
                             "type": "text",
-                            "input-class": "form-control"
+                            "input-class": "form-control form-control--auto-width",
+                            "size": "size=\"8\""
                         }
                     ]
                 }

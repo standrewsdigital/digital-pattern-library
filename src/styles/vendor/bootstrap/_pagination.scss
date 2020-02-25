@@ -34,6 +34,13 @@
         @include border-right-radius($border-radius-base);
       }
     }
+    // Target nested link when container list element also has tabindex=0
+    &:focus {
+      outline: none;
+    }
+    &:focus a {
+      outline: 3px solid #FFB400;
+    }
   }
 
   > li > a,

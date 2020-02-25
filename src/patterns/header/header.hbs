@@ -1,6 +1,6 @@
 <!-- Begin pattern: header //-->
-<div class="sr-only"><a href="#content-begin">Skip to content</a></div>
-<header id="header" class="{{#audience}}header--audience{{/audience}}" role="banner">
+<nav class="sr-only" aria-label="Accessibility links"><a href="#content-begin">Skip to content</a></nav>
+<header id="header" class="{{#audience}}header--audience{{/audience}}">
     <div class="row" >
     {{#audience}}
         <div id="header-audience">
@@ -35,16 +35,16 @@
         <div id="logo-container">
             <div id="header-logo"><a href="https://www.st-andrews.ac.uk/"><span>University of St Andrews</span></a></div>
         </div>
-        <div id="header-search" role="search">
-            <button class="btn btn-link" id="header-search-trigger" name="btnG" type="button" value=""><i class="fa fa-search" title="Search"></i></button>
-            <form action="https://www.st-andrews.ac.uk/search" method="get">
+        <div id="header-search">
+            <button class="btn btn-link" id="header-search-trigger" name="btnG" aria-label="Toggle search" value=""><i class="fa fa-search" title="Search"></i></button>
+            <form action="https://www.st-andrews.ac.uk/search" method="get" role="search">
                 <div class="input-group">
                     <span class="input-group-btn">
-                        <button class="btn btn-link" id="header-search-close" name="btnG" type="button" value=""><i class="fa fa-times" title="Close"></i></button>
+                        <button class="btn btn-link" id="header-search-close" name="btnG" value="" aria-label="Hide search"><i class="fa fa-times" title="Close"></i></button>
                     </span>
                     <input id="query" class="form-control" name="query" type="text" title="Enter search keywords" maxlength="256" placeholder="Search the University website"/>
                     <span class="input-group-btn">
-                        <button class="btn btn-primary" id="header-search-submit" name="btnG" type="submit" value="Search"><i class="fa fa-search" title="Search"></i></button>
+                        <button class="btn btn-primary" id="header-search-submit" name="btnG" type="submit" value="Search" aria-label="Submit"><i class="fa fa-search" title="Search"></i></button>
                     </span>
                 </div>
                 <input type="hidden" name="collection" value="Uosa-meta-global">

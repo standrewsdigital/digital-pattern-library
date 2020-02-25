@@ -144,7 +144,34 @@ div.container ul.show-navigation {
 	}
 }
 
-/* blue-study */
+// Toggle buttons
+.navigation-button {
+	background: transparent;
+	border: none;
+	color: white;
+	font-weight: bold;
+	outline: none;
+    padding: 10px 15px;
+	width: 100%;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&:focus {
+        outline: 3px solid $sta-orange-highlight; 
+	}
+
+	&:active {
+		background: $sta-orange-highlight;
+		color: $sta-grey-dark;
+        outline: 3px solid $sta-orange-highlight; 
+        text-decoration: underline;
+	}
+}
+
+/*
+/* blue-study 
 .accent-blue-study .navigation-bar,
 .navigation-bar.blue-study {
 	background-color: $sta-cyan;
@@ -175,6 +202,7 @@ div.container ul.show-navigation {
 		background-color: $sta-cyan-hover;
 	}
 }
+*/
 
 /*********************************/
 /* END Pattern: navigation-bar   */

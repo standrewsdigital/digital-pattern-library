@@ -21,6 +21,10 @@
 .dt-bootstrap .dt-title {
     }
 
+.dataTables_filter .form-control {
+  font-weight: normal;
+}
+
 
 .dt-bootstrap table {
     background-color: white;
@@ -38,6 +42,16 @@
         background-position: center right;
         background-repeat: no-repeat;
         padding-right: 15px;
+        text-decoration: underline;
+        text-underline-offset: 0.15em;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &:focus {
+          outline:3px solid $sta-orange-highlight;
+        }
     }
 
     .sorting {
@@ -60,16 +74,6 @@
     font-weight: bold;
     color: $text-color;
 }
-
-.dt-bootstrap .dataTables_info {
-    color: $gray-light-medium;
-}
-
-.dt-bootstrap .dataTables_filter {
-    color: $gray-light;
-    font-weight: normal;
-}
-
 
 .dt-bootstrap .dataTables_processing {
     position: absolute;
@@ -142,6 +146,9 @@ table.dataTable tr.child span.dtr-title {
   display: inline-block;
   min-width: 75px;
   font-weight: bold;
+}
+table.dataTable tr td:focus {
+  outline: 3px solid $sta-orange-highlight;
 }
 
 

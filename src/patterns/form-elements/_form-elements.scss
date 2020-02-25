@@ -28,6 +28,11 @@
         height: 46px;
     }
 
+    // Helper class to prevent 100% width
+    .form-control--auto-width {
+        width: auto;
+    }
+
     .help-block {
     	margin-top: 0;
     }

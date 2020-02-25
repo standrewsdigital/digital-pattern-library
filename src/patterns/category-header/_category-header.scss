@@ -23,6 +23,10 @@
 
             &:focus {
                 color: $sta-grey-dark;
+                text-decoration: underline;
+            }
+
+            &:active {
                 text-decoration: none;
             }
         }

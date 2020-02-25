@@ -69,7 +69,7 @@
 
         {
             "option-heading": "Links",
-            "option-description": "<p>The default styling of a link is bold-weighted blue text with an underline.</p>",
+            "option-description": "<p>The default styling of a link is bold-weighted blue text with an underline.</p><h4>Focus states</h4><p>To provide clear distinction of links, for user's navigating by keyboard, a contrasting yellow background is applied.</p>",
             "option-anchor": "links",
             "body-text": [
                 {

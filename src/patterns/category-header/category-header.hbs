@@ -1,5 +1,5 @@
 <!-- Begin pattern: category-header //-->
-<div {{#if class}}class="{{class}}"{{/if}} id="category-header">
+<nav {{#if class}}class="{{class}}"{{/if}} id="category-header" aria-label="Category header">
 	{{#if transparent}}<div class="transparent-overlay">
     	<div class="container">
         	<h2><a href="{{url}}">{{title}}</a></h2>
@@ -9,5 +9,5 @@
     <div class="container">
         <h2><a href="{{url}}">{{title}}</a></h2>
     </div>{{/if}}
-</div>
+</nav>
 <!-- End pattern: category-header //-->

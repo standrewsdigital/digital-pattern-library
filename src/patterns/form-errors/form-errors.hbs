@@ -19,7 +19,7 @@
                         {{#if help-block}}
                         <span class="help-block">{{help-block}}</span>
                         {{/if}}
-                        <label class="text-danger" id="{{error-id}}"><strong>{{error-text}}</strong></label>
+                        <span class="text-danger" id="{{error-id}}"><strong>{{error-text}}</strong></span>
                         <input class="form-control has-error" id="{{id}}" type="text" name="{{input-name}}" value="" aria-describedby="{{error-id}}">
                     </div>
                     {{/each}}
@@ -27,7 +27,7 @@
                     <div class="{{class}}">
                         <p id="example-personal-details">Are your personal details 
                         correct and up-to-date?</p>
-                        <label class="text-danger"><strong>Please select an option</strong></label>
+                        <span class="text-danger"><strong>Please select an option</strong></span>
                         <div class="radio-button">
                             <ul>
                                 {{#each radio-buttons}}

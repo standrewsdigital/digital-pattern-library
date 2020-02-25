@@ -1,8 +1,8 @@
 <!-- Begin pattern: navigation-bar //-->
-<nav class="navigation-bar" role="navigation">
+<nav class="navigation-bar" aria-label="Main menu">
 	<div class="container">
 		<div class="toggle-navigation primary-toggle">
-			<a class="navigation-button">Navigation <i class="chevron down"></i></a>
+			<button class="navigation-button">Navigation <i class="chevron down"></i></button>
 		</div>
 		<ul class="navigation-bar-nav primary-nav">
 		{{#primary}}
@@ -20,10 +20,10 @@
 	</div>
 </nav>
 {{#if secondary}}
-<nav class="navigation-bar subnav" role="navigation">
+<nav class="navigation-bar subnav" aria-label="Section menu">
 	<div class="container">
 		<div class="toggle-navigation secondary-toggle">
-			<a class="navigation-button">Section navigation <i class="chevron down"></i></a>
+			<button class="navigation-button">Section navigation <i class="chevron down"></i></button>
 		</div>
 		<ul class="navigation-bar-nav secondary-nav">
 		{{#secondary}}

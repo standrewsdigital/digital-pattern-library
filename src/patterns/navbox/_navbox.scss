@@ -99,6 +99,11 @@
 	display: none;
 }
 
+// Put shadow on text when image behind
+.navbox-image + .navbox-title {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
 /* .navbox-title is the first child of .navbox when
 	 .navbox-image is not showing (i.e. not present). */
 
@@ -134,6 +139,7 @@
     .navbox-title {
         background:$sta-orange-highlight;
         color: $sta-grey-dark;
+        text-shadow: none;
     }
 }
 // Fallback support for old markup
