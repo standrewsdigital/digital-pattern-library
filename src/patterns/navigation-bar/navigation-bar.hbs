@@ -2,9 +2,9 @@
 <nav class="navigation-bar" aria-label="Main menu">
 	<div class="container">
 		<div class="toggle-navigation primary-toggle">
-			<button class="navigation-button">Navigation <i class="chevron down"></i></button>
+			<button class="navigation-button" aria-expanded="false" aria-controls="primary-nav">Navigation <i class="chevron down"></i></button>
 		</div>
-		<ul class="navigation-bar-nav primary-nav">
+		<ul class="navigation-bar-nav primary-nav" id="primary-nav">
 		{{#primary}}
 			<li>
 			{{#if selected}}
@@ -23,9 +23,9 @@
 <nav class="navigation-bar subnav" aria-label="Section menu">
 	<div class="container">
 		<div class="toggle-navigation secondary-toggle">
-			<button class="navigation-button">Section navigation <i class="chevron down"></i></button>
+			<button class="navigation-button" aria-expanded="false" aria-controls="secondary-nav">Section navigation <i class="chevron down"></i></button>
 		</div>
-		<ul class="navigation-bar-nav secondary-nav">
+		<ul class="navigation-bar-nav secondary-nav" id="secondary-nav">
 		{{#secondary}}
 			<li>
 				{{#if selected}}

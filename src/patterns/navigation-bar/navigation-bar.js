@@ -18,6 +18,9 @@ $('.toggle-navigation').click( function() {
         $(this).css("display", "");
         $(this).toggleClass('show-navigation');
     });
+
+    var state = $(this).find('.navigation-button').attr('aria-expanded') === 'false' ? true : false;
+    $(this).find('.navigation-button').attr('aria-expanded', state);
 });
 
 /*********************************/
