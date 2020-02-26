@@ -3,6 +3,14 @@
 /* BEGIN Pattern: buttons        */
 /*********************************/
 
+button {
+  outline:none;
+  
+  &:focus {
+      outline: 3px solid $sta-orange-highlight; 
+  }
+}
+
 .btn-tag {
 	background: white;
 	border: 1px solid $sta-grey;

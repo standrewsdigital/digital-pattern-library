@@ -98,7 +98,7 @@
 }
 
 .tile h3 {
-    background: $sta-blue-T;
+    background: $sta-blue-light-T;
     @include ms-respond(font-size,1);
     margin: 0;
     padding: 0;
@@ -113,7 +113,7 @@
 }
 
 .tile:hover h3 {
-    background: $sta-blue-T-hover;
+    background: $sta-blue-light-T-hover;
 }
 
 .tile h3 a {

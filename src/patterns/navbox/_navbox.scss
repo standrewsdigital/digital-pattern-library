@@ -2,16 +2,285 @@
 /* BEGIN Pattern: navbox         */
 /*********************************/
 
-.navbox {
+
+// Exclude big-target-click-zone as Fallback for older markup which may be hardwired
+.navbox:not(.big-target-click-zone) {
     display: block;
-	margin-bottom: 0;
+    margin-bottom: 0;
     position: relative;
 
     img { 
         height: auto; 
         max-width: 100%; 
    }  
+
+    .navbox-title {
+    	background: $sta-blue-light-T;
+    	color: white;
+    	@include ms-respond(font-size,1);
+        font-weight: bold;
+        text-decoration: none;
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            span {
+                background: $sta-blue-light-T;
+                display: block;
+                padding: 0.8rem 3rem 0.8rem 1rem;
+                position: absolute;
+                    bottom: 0;
+                width: 100%;
+
+                // Chevron
+                &:before {
+                    @extend .fa;
+                    @extend .fa-chevron-right;
+                    @include ms-respond(font-size,1);
+                    display: inline-block;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    text-decoration: none;
+                    right: 1rem;
+                }
+            }
+
+            // Make link fill container to cover image and button
+            &:before {
+                bottom: 0;
+                content: "";
+                left: 0;
+                overflow: hidden;
+                position: absolute;
+                right: 0;
+                top: 0;
+                white-space: nowrap;
+                z-index: 1;
+            }
+
+            &:hover {
+                &,
+                span {
+                    text-decoration: underline;
+                }
+                span {
+                    background: $sta-blue-light-T-hover;
+                }
+            }
+
+            &:focus {
+                background: none;
+                box-shadow: none;
+                outline: none;
+
+                span {
+                    text-decoration: underline;
+                }
+            }
+            &:active span {
+                background:$sta-orange-highlight;
+                color: $sta-grey-dark;
+                text-shadow: none;
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        acronym {
+            display: none;
+        }
+
+    /* .navbox-title is the first child of .navbox when
+         .navbox-image is not showing (i.e. not present). */
+        &:first-child {
+            background: $sta-blue-light;
+
+            a span {
+               position: relative;
+               bottom: auto;
+            }
+        }
+
+    }
+
+    // Put shadow on text when image behind
+    .navbox-image + .navbox-title {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+
+
+// Add focus state to entire box
+   &:focus-within,
+   &:focus {
+        outline: 3px solid $sta-orange-highlight;
+    }
+
+@media (max-width: 991px) and (min-width: 768px) {
+
+    .navbox-title {
+        //position: absolute;
+        text-shadow: none;
+
+        a span {
+            position: relative;
+                bottom: auto;
+        }
+    }
+
 }
+
+@media (max-width: 767px) {
+
+    .navbox-image {
+        max-height: 100%;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+    
+        img {
+            margin-top: -20%;
+            width: 100%;
+        }
+    }
+
+    .navbox-title {
+        a span {
+            position: relative;
+                bottom: auto;
+        }
+    }
+
+}
+
+
+
+} //.navbox
+
+
+// Fallback for old markup that uses big target - SHOULD BE REMOVED AND EVERYTHING USING CONTENT TYPES IN T4
+.navbox.big-target-click-zone { 
+    margin-bottom: 0;
+    position: relative;
+
+    img { 
+        height: auto; 
+        max-width: 100%; 
+   }  
+
+    .navbox-title {
+        background: $sta-blue-light-T;
+        background-repeat: repeat;
+        color: white;
+        @include ms-respond(font-size,1);
+        font-weight: bold;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        
+        &:before {
+            @extend .fa;
+            @extend .fa-chevron-right;
+            font-size: 125%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 1rem;
+        }
+
+        a {
+            color: inherit;
+            display: block;
+            padding: 0.8rem 3rem 0.8rem 1rem;
+            text-decoration: none;
+
+            &:hover {
+                background: $sta-blue-light-T-hover;
+                text-decoration: underline;
+            }            
+
+            &:focus {
+                background: transparent;
+                box-shadow: none;
+                color: white;
+                outline: 3px solid $sta-orange-highlight;
+                text-decoration: underline;
+            }
+
+            &:active {
+                background:transparent;
+                color: white;
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        acronym {
+            display: none;
+        }       
+
+        /* .navbox-title is the first child of .navbox when .navbox-image is not showing (i.e. not present). */
+
+        &:first-child {
+            background: $sta-blue-light;
+            position: relative;
+            bottom: auto;
+        }
+    }
+
+    // Put shadow on text when image behind
+    .navbox-image + .navbox-title {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 1199px) and (min-width: 992px) {
+        .navbox-image {
+            overflow: hidden;
+        }
+    }
+
+    @media (max-width: 991px) and (min-width: 768px) {
+
+        /* Make the title show below instead of on top of the image... */
+        .navbox-image {
+            overflow: hidden;
+        }
+
+        .navbox-title {
+            position: absolute;
+        }
+
+    }
+
+    @media (max-width: 767px) {
+
+        .navbox-image {
+            max-height: 100%;
+            overflow: hidden;
+            position: absolute;
+            width: 100%;
+        }
+
+        .navbox-image img {
+            margin-top: -20%;
+            width: 100%;
+        }
+
+        .navbox-title {
+            position: relative;
+            top: 0;
+        }
+
+    }
+
+}
+
+
 
 .navbox-grid {
     padding: $page-gutter 0 $page-gutter-overflow 0; 
@@ -33,170 +302,18 @@
         margin-top: -15px !important; // reduce gap if followed by a p
     }
 }
+
 .panel-grid + .navbox-grid,
 .navbox-grid + .navbox-grid {
     padding-top: 0; // Remove extra gap when two grids ajoin
 }
 
-// .navbox-image img {
-// 	height: auto !important;
-//     width: 100% !important;
-// }
-
-.navbox-title {
-	background: $sta-blue-light-T;
-	color: white;
-	@include ms-respond(font-size,1);
-    font-weight: bold;
-	padding: 0.8rem 3rem 0.8rem 1rem;
-    position: absolute;
-    bottom: 0;
-    text-decoration: none;
-    width: 100%;
-
-    // Fallback support for old markup
-    a {
-        color: white;
-        text-decoration: none;
-    }
-}
-
-.navbox-title:before {
-    @extend .fa;
-    @extend .fa-chevron-right;
-    @include ms-respond(font-size,1);
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-decoration: none;
-    right: 1rem;
-}
-/*
-.navbox-title a {
-	color: inherit;
-	margin-right: 4px;
-    text-decoration: none;
-
-    &:focus {
-        color: $sta-grey-dark;
-    }
-}
-
-.navbox:hover {
-	cursor: pointer;
-}
-.navbox-title:hover, .navbox:hover .navbox-title{
-	background: $sta-blue-T-hover;
-}
-
-*/
-.navbox-title p {
-	margin-bottom: 0;
-}
-
-.navbox-title acronym {
-	display: none;
-}
-
-// Put shadow on text when image behind
-.navbox-image + .navbox-title {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-/* .navbox-title is the first child of .navbox when
-	 .navbox-image is not showing (i.e. not present). */
-
-.navbox-title:first-child {
-	background: $sta-blue-light;
-	position: relative;
-	bottom: auto;
-}
-/*
-.navbox-title:first-child:hover,
-.navbox:hover .navbox-title:first-child{
-	background: $sta-cyan;
-}
-*/
-.navbox:hover {
-    .navbox-title {
-        text-decoration: underline;
-    }
-}
-
-// Add focus state to entire box
-.navbox:focus,
-.navbox:focus-within {
-    outline: 3px solid $sta-orange-highlight;
-
-    .navbox-title {
-        text-decoration: underline;
-
-    }
-}
-// Add active state
-.navbox:active {
-    .navbox-title {
-        background:$sta-orange-highlight;
-        color: $sta-grey-dark;
-        text-shadow: none;
-    }
-}
-// Fallback support for old markup
-.navbox-title a:focus {
-    background: none;
-    box-shadow: none;
-    outline: none;
-} 
-.navbox-title a:active {
-    color: $sta-grey-dark;
-} 
-
 /* when a element immediately follows a navbox add a top margin to it */
-
 .navbox + * {
 	margin-top: 15px !important;
 }
 
-@media (max-width: 1199px) and (min-width: 992px) {
-    .navbox-image {
-        overflow: hidden;
-    }
-}
 
-@media (max-width: 991px) and (min-width: 768px) {
-
-	/* Make the title show below instead of on top of the image... */
-    .navbox-image {
-        overflow: hidden;
-    }
-
-    .navbox-title {
-        position: absolute;
-    }
-
-}
-
-@media (max-width: 767px) {
-
-	.navbox-image {
-        max-height: 100%;
-		overflow: hidden;
-        position: absolute;
-        width: 100%;
-  	}
-
-  	.navbox-image img {
-  		margin-top: -20%;
-        width: 100%;
-  	}
-
-  	.navbox-title {
-		position: relative;
-        top: 0;
-	}
-
-}
 
 /*********************************/
 /* END Pattern: navbox           */
