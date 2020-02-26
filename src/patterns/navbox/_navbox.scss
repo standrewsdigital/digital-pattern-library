@@ -14,7 +14,7 @@
         max-width: 100%; 
    }  
 
-    .navbox-title {
+    .navbox__title {
     	background: $sta-blue-light-T;
     	color: white;
     	@include ms-respond(font-size,1);
@@ -108,7 +108,7 @@
     }
 
     // Put shadow on text when image behind
-    .navbox-image + .navbox-title {
+    .navbox__image + .navbox__title {
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     }
 
@@ -121,7 +121,7 @@
 
 @media (max-width: 991px) and (min-width: 768px) {
 
-    .navbox-title {
+    .navbox__title {
         //position: absolute;
         text-shadow: none;
 
@@ -135,7 +135,7 @@
 
 @media (max-width: 767px) {
 
-    .navbox-image {
+    .navbox__image {
         max-height: 100%;
         overflow: hidden;
         position: absolute;
@@ -147,7 +147,7 @@
         }
     }
 
-    .navbox-title {
+    .navbox__title {
         a span {
             position: relative;
                 bottom: auto;

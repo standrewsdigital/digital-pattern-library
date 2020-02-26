@@ -10,6 +10,10 @@ div.container ul.show-navigation {
     font-weight: normal;
 }
 
+.navigation-bar .container {
+	padding: 0; // Collapse padding and let link padding align items instead
+}
+
 .navigation-bar ul.navigation-bar-nav {
 	padding: 0;
 	margin: 0;
@@ -26,18 +30,6 @@ div.container ul.show-navigation {
     padding: 10px 15px;
     position: relative;
 	text-decoration: none;
-}
-
-// This rule compensates for the padding added to the a tag.
-// This rule pulls the first <li> <a> to left by 15px
-// to compensate for the padding added to all <li> <a>'s
-// and line the first element up with the .container  edge.
-.navigation-bar ul.navigation-bar-nav:nth-child(2) li:nth-child(1) a {
-    margin-left: -15px;
-
-	@media (max-width: 991px) {
-		margin-left: 0;
-	}
 }
 
 .navigation-bar ul.navigation-bar-nav li a:hover {

@@ -306,8 +306,8 @@ function htmlDecode(value) {
         navbox = $(this);
 
         // Get the navbox title and link.
-        var title = navbox.find('.navbox-title').text();
-        var link = navbox.attr('href');
+        var title = navbox.find('.navbox__title').text();
+        var link = navbox.find('.navbox__title a').attr('href');
         title = title.replace(/-/g, ' ');
 
         // Create an object for the title and link then add it to the patterns array.

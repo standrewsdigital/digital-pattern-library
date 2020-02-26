@@ -81,7 +81,7 @@
     }
 
     a {
-        background: #fafafa;
+        background: white;
         color: inherit;
         font-weight: normal;
         height: 100%;
@@ -172,7 +172,8 @@
         // Hover styles
         &:hover,
         &:focus {
-            background: #f0f0f0;
+            background: white;
+            box-shadow: none;
 
             .featured-event__heading {
                 color: $sta-blue-light-hover;

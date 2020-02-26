@@ -99,6 +99,27 @@
                     "row": true
                 }
             ]
+        },
+
+
+
+
+        {
+            "option-heading": "Navbox (old version)",
+            "option-description": "<div class=\"alert alert--warning\"><h3>Attention</h3><p>This old method of implementing the navbox pattern is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
+            "option-anchor": "old",
+            "box-size": [
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/750x500.png",
+                        "alt": "Description"
+                    },
+                    "title": "Study",
+                    "column": "col-sm-4",
+                    "row": true,
+                    "deprecated":true
+                }
+            ]
         }
     ]
 }
