@@ -33,7 +33,6 @@
     background-size: cover;
     padding: $page-gutter 0;
     position: relative;
-    text-align: center;
 
     &.secondary-call--overlay {
          &:after {
@@ -72,25 +71,19 @@
     .call-heading {
         color: white;
         @include ms-respond(font-size,4);
-        font-weight: bold;
-        margin: 0 auto;
-        text-shadow: 2px 2px 9px rgba(68,68,68,0.7);
+        margin: 0 0 0.25em 0;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     }
 
     p {
         color: white;
-        margin: 20px auto;
         max-width: 40em;
         @include ms-respond(font-size,1);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     }
 
-    &.left p, &.left .call-heading {
-        text-align: left;
-        width: 100%;
-
-        @media (max-width: 991px){
-          text-align: center;
-        }
+    .btn {
+      margin-right:10px;
     }
 
 }
