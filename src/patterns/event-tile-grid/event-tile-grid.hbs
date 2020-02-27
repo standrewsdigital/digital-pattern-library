@@ -16,7 +16,7 @@
 		<div class="event-grid__tiles">
 			{{#each tiles}}
 			<div class="featured-event{{status}}">
-				<a href="#">
+				<div class="expanded-link-wrapper">
 					<div class="featured-event__image">
 					      <img 
 					      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
@@ -25,11 +25,13 @@
 					      class="lazyload">
 				   	</div>
 			        <div class="featured-event__details">
-						<h3 class="featured-event__heading">{{title}}</h3>
-			            <div class="featured-event__date">{{date-display}}</div>
-			            <div class="featured-event__location">{{event-location}}</div>		
+						<a href="#"><h3 class="featured-event__heading">{{title}}</h3></a>
+			            <dl class="metadata-list inherit--colour">
+				            <dt class="metadata-list--full"><i class="far fa-calendar-alt" aria-hidden="true" title="Date"></i><span class="sr-only">Date</span></dt><dd class="metadata-list--full">{{date-display}}</dd>
+				            <dt class="metadata-list--full"><i class="fas fa-map-marker-alt" aria-hidden="true" title="Location"></i><span class="sr-only">Location</span></dt><dd class="metadata-list--full">{{event-location}}</dd>
+				        </dl>
 				   	</div>
-				</a>
+				</div>
 			</div>
 			{{/each}}
 		</div>

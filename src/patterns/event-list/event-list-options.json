@@ -32,7 +32,7 @@
                     "event-location" : "Younger Hall",
                     "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
                     "linkblock-end": "</a>",
-                    "status" : ""
+                    "status" : " expanded-link-wrapper"
                 }
             ]
         },
@@ -50,7 +50,7 @@
                     "event-location" : "Younger Hall",
                     "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
                     "linkblock-end": "</a>",
-                    "status" : ""
+                    "status" : " expanded-link-wrapper"
                 },
                 {
                     "title": "Bike to Work Breakfast",
@@ -59,7 +59,7 @@
                     "event-location" : "Rector's Café",
                     "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
                     "linkblock-end": "</a>",
-                    "status" : " cancelled"
+                    "status" : " cancelled expanded-link-wrapper"
                 },
                 {
                     "title": "Study Abroad Fair",
@@ -68,7 +68,7 @@
                     "event-description" : "Are you in second year and thinking about studying abroad in 2019-2020? If so, come along to our Study Abroad Fair where there will be a presentation followed by a fair during which you can meet other students who have studied abroad.",
                     "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
                     "linkblock-end": "</a>",
-                    "status" : ""
+                    "status" : " expanded-link-wrapper"
                 },
                 {
                     "title": "An Introduction to The Alexander Technique with Heather Coates",
@@ -76,7 +76,7 @@
                     "event-location" : "Younger Hall",
                     "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
                     "linkblock-end": "</a>",
-                    "status" : ""
+                    "status" : " expanded-link-wrapper"
                 },
                 {
                     "title": "Early Career Women Network Meet-up",
@@ -84,7 +84,7 @@
                     "event-location" : "Hebdomadar's Room",
                     "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
                     "linkblock-end": "</a>",
-                    "status" : ""
+                    "status" : " expanded-link-wrapper"
                 },
                 {
                     "title": "Choral Evensong",
@@ -93,7 +93,7 @@
                     "event-location" : "St Salvator's Chapel",
                     "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
                     "linkblock-end": "</a>",
-                    "status" : ""
+                    "status" : " expanded-link-wrapper"
                 }
             ]
         }

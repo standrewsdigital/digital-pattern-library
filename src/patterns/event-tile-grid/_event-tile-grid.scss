@@ -19,14 +19,6 @@
     @extend %font-scale-4;
     margin: 0 0 15px 0;
     padding: 0;
-/*
-    @media (max-width: 767px) {
-        font-size: 1.8em;
-    }
-
-    @media (max-width: 479px) {
-        font-size: 1.5em;
-    }   */
 }
 
 /* Secondary featured events */
@@ -80,7 +72,7 @@
         max-width: 555px; // Avoid tile filling entire container if only one in a grid
     }
 
-    a {
+    .expanded-link-wrapper {
         background: white;
         color: inherit;
         font-weight: normal;
@@ -88,6 +80,27 @@
         text-decoration: none;
         @media (min-width:380px){
             display: flex;
+        }
+
+        a {
+            // Reset link styles
+            box-shadow: none;
+            font-weight: normal;
+            outline: none;
+            text-decoration: none;
+
+            // Make link fill container to cover card
+            &:before {
+                bottom: 0;
+                content: "";
+                left: 0;
+                overflow: hidden;
+                position: absolute;
+                right: 0;
+                top: 0;
+                white-space: nowrap;
+                z-index: 1;
+            }
         }
 
         .featured-event__image {
@@ -133,9 +146,11 @@
         .featured-event__heading {
             color: $sta-blue-light;
             @include ms-respond(font-size,1);
+            margin-bottom: 0.25em;
             margin-top: 0;
         }
 
+/*
         .featured-event__date,
         .featured-event__location {
             font-size: 1rem;
@@ -168,33 +183,67 @@
                 content: "\f3c5";
             }
         }
-
+*/
         // Hover styles
-        &:hover,
-        &:focus {
-            background: white;
+        a:hover {
+            .featured-event__heading {
+                color: $sta-blue-light-hover;
+                text-decoration: underline;
+                &:before {
+                    text-decoration: none;
+                }
+            }        
+        }
+        
+        a:focus {
+            background: none;
             box-shadow: none;
+            outline: none;            
 
             .featured-event__heading {
                 color: $sta-blue-light-hover;
                 text-decoration: underline;
+                &:before {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &:focus-within,
+        &:focus {
+            box-shadow: none;
+            outline: 3px solid $sta-orange-highlight;
+
+            .featured-event__heading {
+                color: $sta-blue-light-hover;
+                text-decoration: underline;
+                &:before {
+                    text-decoration: none;
+                }
             }
         }
     }
 
     // Cancelled style
     &.cancelled {
-        .featured-event__details:before {
-            background: #ea1a13;
-            color: #fff;
-            content: 'Cancelled';
-            display: inline-block;
-            font-size: 1rem;
-            font-weight: normal;
-            margin-bottom:0.5rem;
-            padding: 3px 9px;
-            text-shadow: none;
-            text-transform: none;
+        .featured-event__heading{
+            position: relative;
+            padding-top: 1.5em;
+
+            &:before {
+                background: #ea1a13;
+                color: #fff;
+                content: 'Cancelled';
+                display: inline-block;
+                font-size: 1rem;
+                font-weight: normal;
+                padding: 3px 9px;
+                text-shadow: none;
+                text-transform: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
         }
     }
 }
