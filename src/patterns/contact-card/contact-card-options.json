@@ -137,6 +137,7 @@
             "option-heading": "Contact card list",
             "option-description": "<p>This example shows a list of contact cards that contains a mixture of available information. These contact cards link to a different url rather than opening a lightbox.</p><ul><li>If tags are used in a list of contact cards then their meaning should be consistent. In this example the tags are used to show the areas of expertise of each individual.</li></ul>",
             "option-anchor": "card-list",
+            "main-col": true,
 		    "cards": [
 			    {
 			    	"id": "d1",
