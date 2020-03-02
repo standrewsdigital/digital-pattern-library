@@ -50,12 +50,14 @@ layout: _base.hbs
 
 <p>Links to the CDN assets have the form: <code>&lt;endpoint&gt;/&lt;package&gt;/&lt;version&gt;/&lt;path-to-asset&gt;/</code>.</p>
 
-<table style="margin-bottom: 1em;">
-    <tr><th>endpoint</th><td><code>{{ pkg.cdn.endpoint }}</code></td></tr>
-    <tr><th>package</th><td><code>{{ pkg.cdn.package }}</code></td></tr>
-    <tr><th>version</th><td><code>{{ pkg.version }}</code></td></tr>
-</table>
-
+<dl class="paired-values-list">
+    <dt class="paired-values-list__name">Endpoint</dt>
+    <dd class="paired-values-list__value"><code>{{ pkg.cdn.endpoint }}</code></dd>
+    <dt class="paired-values-list__name">Package</dt>
+    <dd class="paired-values-list__value"><code>{{ pkg.cdn.package }}</code></dd>
+    <dt class="paired-values-list__name">Version</dt>
+    <dd class="paired-values-list__value"><code>{{ pkg.version }}</code></dd>
+</dl>
 <p>The most up-to-date version of the DPL can be found at:</p>
 
 <pre><code class="pattern-source html">{{ pkg.cdn.endpoint }}/{{ pkg.cdn.package }}/{{ pkg.version }}/</code></pre>

@@ -91,12 +91,13 @@ function htmlDecode(value) {
     //     placement: 'bottom'
     // });
 
-    $('.swatch > *:not(.swatch__title, .clearfix)').append(function ( index ) {
-        var item = $(this);
-        bgcolor = item.css('background-color');
+    $('.swatch > .swatch__details').append(function ( index ) {
+        var item = $(this).parent();
+        bgcolor = item.find('.swatch__colour').css('background-color');
+        console.log('color '+bgcolor);
         hexcode = rgbToHex(bgcolor);
         bgcolor = bgcolor.replace("0.74902","0.75");
-        content = "<br><p><strong>RGB:</strong> " + bgcolor ;
+        content = "<p><strong>RGB:</strong> " + bgcolor ;
         if (hexcode) {
             content += "<br><strong>Hex:</strong> " + hexcode;
         }

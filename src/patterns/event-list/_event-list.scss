@@ -13,8 +13,15 @@
             outline: none;
             text-decoration: none;
 
-            // Make link fill container to cover card
-            &:before {
+        .event-listing__heading {
+            color: inherit;
+            @extend %font-scale-1;
+            margin: 0 0 0.25rem;
+        }
+    }
+
+     // Make link fill container to cover card when link
+            a.event-listing__details:before {
                 bottom: 0;
                 content: "";
                 left: 0;
@@ -25,13 +32,6 @@
                 white-space: nowrap;
                 z-index: 1;
             }
-
-        .event-listing__heading {
-            color: inherit;
-            @extend %font-scale-1;
-            margin: 0 0 0.25rem;
-        }
-    }
 
         .event-listing__description {
             margin-top:0.25rem;
