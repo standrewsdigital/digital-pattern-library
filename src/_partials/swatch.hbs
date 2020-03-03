@@ -1,6 +1,9 @@
 
 <div class="swatch {{ color }}">
     <div class="swatch__colour"></div>
-    <h4 class="swatch__heading">{{ name }}</h4>
+    <div class="swatch-group">
+    	<h4 class="swatch__heading">{{ name }}{{#if variant}}<small>{{ variant }}</small>{{/if}}</h4>
+    	{{#if desc}}<p>{{ desc }}</p>{{/if}}
+	</div>
     <div class="swatch__details"></div>
 </div>

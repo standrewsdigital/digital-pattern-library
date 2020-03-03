@@ -91,7 +91,7 @@ function htmlDecode(value) {
     //     placement: 'bottom'
     // });
 
-    $('.swatch > .swatch__details').append(function ( index ) {
+    $('.swatch > .swatch__details').prepend(function ( index ) {
         var item = $(this).parent();
         bgcolor = item.find('.swatch__colour').css('background-color');
         console.log('color '+bgcolor);
