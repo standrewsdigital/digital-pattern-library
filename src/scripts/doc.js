@@ -10,6 +10,20 @@ function htmlDecode(value) {
 
 (function($) {
 
+    // Toggle button for Colour Contrast table
+    $("#toggle-colours-button").click(function() {
+        // Check button state
+        var state = $(this).attr('aria-pressed') === 'false' ? true : false;
+        // If true then change state and remove colours
+        if(!state){
+            $(this).attr('aria-pressed', state);
+            $('.table-contrast').toggleClass("table-contrast--hide-colours");
+        } else {
+            $(this).attr('aria-pressed', state);
+            $('.table-contrast').toggleClass("table-contrast--hide-colours");
+        }
+    });
+
     $(".pattern-source").each(function() {
         var t = $(this)
         t.html(htmlEncode(t.html()));

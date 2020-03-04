@@ -114,23 +114,236 @@ context:
 {{> swatch context.warning}}
 {{> swatch context.danger}}
 </div>
+
 <hr>
 <h2>Accessible colours</h2>
-<p>You must make sure that the contrast ratio of text and interactive elements in your web site or application meets level AA of the <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">Web Content Accessibility Guidelines (WCAG 2.1)</a>. The following table shows how the colour palettes contrast against the common text colours and backgrounds. You can use this <a href="https://webaim.org/resources/contrastchecker/">colour contrast checking tool</a> by WebAIM to test other combinations.</p>
-<table class="table table-striped">
+<p>You must make sure that the contrast ratio of text and interactive elements in your web site or application meets level AA of the <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">Web Content Accessibility Guidelines (WCAG 2.1)</a>.</p><p>The following table shows how the palette colours contrast as background against the common text colours (dark grey #202020 and white #ffffff) and used as a graphical UI element such as a border against a white background. You can use this <a href="https://webaim.org/resources/contrastchecker/">colour contrast checking tool</a> by WebAIM to test other combinations.</p>
+<p><button class="btn btn-small-tag" id="toggle-colours-button" aria-pressed="false">Show colours</button></p>
+<table class="table table-bordered table-contrast table-contrast--hide-colours">
 <thead>
 <tr>
 <th>Colour</th>
-<th>Dark text #202024</th>
-<th>Light text #ffffff</th>
+<th>Dark text<br><small>#202024</small></th>
+<th>Light text<br><small>#ffffff</small></th>
+<th>UI element</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><strong>Blue</strong> (Primary)<br><small>#00539b</small></td>
+<td style="background:#00539b;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td style="background:#00539b;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#00539b" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Blue</strong> (25% tint)<br><small>#407eb4</small></td>
+<td style="background:#407eb4;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#407eb4;color:#fff;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#407eb4" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Blue</strong> (50% tint)<br><small>#80a9cd</small></td>
+<td style="background:#80a9cd;color:#202024;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#80a9cd;color:#fff;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td><div style="color:#80a9cd" class="font-scale-1"><i class="fas fa-times"></i></div>Fail</td>
+</tr>
+<tr>
+<td><strong>Blue</strong> (25% shade)<br><small>#003e74</small></td>
+<td style="background:#003e74;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td style="background:#003e74;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#003e74" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Light blue</strong> (Primary)<br><small>#007bc2</small></td>
+<td style="background:#007bc2;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#007bc2;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#007bc2" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Light blue</strong> (25% tint)<br><small>#409cd1</small></td>
+<td style="background:#409cd1;color:#202024;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#409cd1;color:#fff;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#409cd1" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Light blue</strong> (50% tint)<br><small>#80bde1</small></td>
+<td style="background:#80bde1;color:#202024;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#80bde1;color:#fff;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td><div style="color:#80bde1" class="font-scale-1"><i class="fas fa-times"></i></div>Fail</td>
+</tr>
+<tr>
+<td><strong>Light blue</strong> (25% shade)<br><small>#005c92</small></td>
+<td style="background:#005c92;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td style="background:#005c92;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#005c92" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Red</strong> (Primary)<br><small>#ea1a13</small></td>
+<td style="background:#ea1a13;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#ea1a13;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#ea1a13" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Red</strong> (25% tint)<br><small>#ef534e</small></td>
+<td style="background:#ef534e;color:#202024;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#ef534e;color:#fff;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#ef534e" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Red</strong> (50% tint)<br><small>#f58d89</small></td>
+<td style="background:#f58d89;color:#202024;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#f58d89;color:#fff;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td><div style="color:#f58d89" class="font-scale-1"><i class="fas fa-times"></i></div>Fail</td>
+</tr>
+<tr>
+<td><strong>Red</strong> (25% shade)<br><small>#b0140e</small></td>
+<td style="background:#b0140e;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td style="background:#b0140e;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#b0140e" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Dark grey</strong> (Primary)<br><small>#202024</small></td>
+<td style="background:#202024;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td style="background:#202024;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#202024" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Grey</strong><br><small>#6a6a6b</small></td>
+<td style="background:#6a6a6b;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#6a6a6b;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#6a6a6b" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Mid grey</strong><br><small>#949494</small></td>
+<td style="background:#949494;color:#202024;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#949494;color:#fff;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#949494" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Mid grey 2</strong><br><small>#dedede</small></td>
+<td style="background:#dedede;color:#202024;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#dedede;color:#fff;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td><div style="color:#dedede" class="font-scale-1"><i class="fas fa-times"></i></div>Fail</td>
+</tr>
+<tr>
+<td><strong>Light grey</strong><br><small>#f0f0f0</small></td>
+<td style="background:#f0f0f0;color:#202024;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#f0f0f0;color:#fff;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td><div style="color:#f0f0f0" class="font-scale-1"><i class="fas fa-times"></i></div>Fail</td>
+</tr>
+<tr>
+<td><strong>Dark grey 2</strong><br><small>#0f0f11</small></td>
+<td style="background:#0f0f11;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td style="background:#0f0f11;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#0f0f11" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Orange</strong> (Primary)<br><small>#ffb400</small></td>
+<td style="background:#ffb400;color:#202024;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#ffb400;color:#fff;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td><div style="color:#ffb400" class="font-scale-1"><i class="fas fa-times"></i></div>Fail</td>
+</tr>
+<tr>
+<td><strong>Dark orange</strong><br><small>#bf5909</small></td>
+<td style="background:#bf5909;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#bf5909;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#bf5909" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Green</strong> (Primary)<br><small>#00853f</small></td>
+<td style="background:#00853f;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#00853f;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#00853f" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Green</strong> (25% tint)<br><small>#40a46f</small></td>
+<td style="background:#40a46f;color:#202024;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#40a46f;color:#fff;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#40a46f" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Green</strong> (50% tint)<br><small>#80c29f</small></td>
+<td style="background:#80c29f;color:#202024;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#80c29f;color:#fff;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td><div style="color:#80c29f" class="font-scale-1"><i class="fas fa-times"></i></div>Fail</td>
+</tr>
+<tr>
+<td><strong>Green</strong> (25% shade)<br><small>#00642f</small></td>
+<td style="background:#00642f;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td style="background:#00642f;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#00642f" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Purple</strong> (Primary)<br><small>#7b439a</small></td>
+<td style="background:#7b439a;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td style="background:#7b439a;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#7b439a" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Purple</strong> (25% tint)<br><small>#9c72b3</small></td>
+<td style="background:#9c72b3;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#9c72b3;color:#fff;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#9c72b3" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Purple</strong> (50% tint)<br><small>#bda1cd</small></td>
+<td style="background:#bda1cd;color:#202024;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#bda1cd;color:#fff;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td><div style="color:#bda1cd" class="font-scale-1"><i class="fas fa-times"></i></div>Fail</td>
+</tr>
+<tr>
+<td><strong>Purple</strong> (25% shade)<br><small>#5c3274</small></td>
+<td style="background:#5c3274;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td style="background:#5c3274;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#5c3274" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Burgundy</strong> (Primary)<br><small>#c60c46</small></td>
+<td style="background:#c60c46;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td style="background:#c60c46;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#c60c46" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Burgundy</strong> (25% tint)<br><small>#d44974</small></td>
+<td style="background:#d44974;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#d44974;color:#fff;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#d44974" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Burgundy</strong> (50% tint)<br><small>#e386a3</small></td>
+<td style="background:#e386a3;color:#202024;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#e386a3;color:#fff;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td><div style="color:#e386a3" class="font-scale-1"><i class="fas fa-times"></i></div>Fail</td>
+</tr>
+<tr>
+<td><strong>Burgundy</strong> (25% shade)<br><small>#950935</small></td>
+<td style="background:#950935;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td style="background:#950935;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#950935" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Success</strong><br><small>#00853f</small></td>
+<td style="background:#00853f;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#00853f;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#00853f" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Information</strong> (25% tint)<br><small>#007bc2</small></td>
+<td style="background:#007bc2;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#007bc2;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#007bc2" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Warning</strong> (50% tint)<br><small>#bf5909</small></td>
+<td style="background:#bf5909;color:#202024;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#bf5909;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#bf5909" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+</tr>
+<tr>
+<td><strong>Danger</strong> (25% shade)<br><small>#ea1a13</small></td>
+<td style="background:#ea1a13;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#ea1a13;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#ea1a13" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
 </tr>
 </tbody>
 </table>

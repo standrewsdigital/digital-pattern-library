@@ -33,3 +33,23 @@ ul.dpl-only li {
 body {
     position: relative;
 }
+
+.table-contrast {
+	td {
+		vertical-align: middle;
+	}
+	td + td {
+		text-align: center;
+	}
+	div {
+		font-weight: bold;
+	}
+
+	&.table-contrast--hide-colours {
+		td,
+		div {
+			background: #fff !important;
+			color: #202024 !important;
+		}
+	}
+}
