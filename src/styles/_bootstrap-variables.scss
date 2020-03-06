@@ -24,11 +24,11 @@ $gray-lighter:           lighten($gray-base, 93.5%); // #eee
 $gray-lightest:          lighten($gray-base, 97.5%); // #f8f8f8
 
 
-$brand-primary:          -dpl-color($palette-default,'primary','base');
-$brand-success:          -dpl-color($palette-context,'success','base');
-$brand-info:             -dpl-color($palette-context,'info','base');
-$brand-warning:          -dpl-color($palette-context,'warning','base');
-$brand-danger:           -dpl-color($palette-context,'danger','base');
+$brand-primary:          $sta-blue;
+$brand-success:          $sta-green;
+$brand-info:             $sta-blue;
+$brand-warning:          $sta-orange;
+$brand-danger:           $sta-red;
 
 
 //== Scaffolding
@@ -42,8 +42,8 @@ $body-bg:                white;
 $text-color:             $sta-grey-dark;
 
 //** Global textual link color.
-$link-color:             -dpl-color($palette-default,'secondary','base');
-$link-hover-color:       -dpl-color($palette-default,'secondary','base-hover');
+$link-color:             $sta-blue-light;
+$link-hover-color:       $sta-blue-light-shade25;
 $link-hover-decoration:  underline;
 
 
@@ -145,13 +145,13 @@ $table-condensed-cell-padding:  6px;
 //** Default background color used for all tables.
 $table-bg:                      transparent;
 //** Background color used for `.table-striped`.
-$table-bg-accent:               #f9f9f9;
+$table-bg-accent:               $sta-grey-light;
 //** Background color used for `.table-hover`.
-$table-bg-hover:                $gray-lightest;
+$table-bg-hover:                $sta-grey-mid2;
 $table-bg-active:               $table-bg-hover;
 
 //** Border color for table and cell borders.
-$table-border-color:            #ccc;
+$table-border-color:            $sta-grey-highlight;
 
 
 //== Buttons
@@ -245,7 +245,7 @@ $input-border-focus: $sta-orange-highlight;
 //** Dropdown menu `border-color` **for IE8**.
 // $dropdown-fallback-border:       #ccc
 //** Divider color for between dropdown items.
-// $dropdown-divider-bg:            #e5e5e5
+ $dropdown-divider-bg:            $sta-grey-mid2;
 
 //** Dropdown link text color.
 // $dropdown-link-color:            $gray-dark
@@ -456,19 +456,19 @@ $nav-pills-active-link-hover-color:         $component-active-color;
 
 $pagination-color:                     $link-color;
 $pagination-bg:                        #fff;
-$pagination-border:                    #ddd;
+$pagination-border:                    $sta-grey-highlight;
 
 $pagination-hover-color:               $link-hover-color;
-$pagination-hover-bg:                  $gray-lighter;
-$pagination-hover-border:              #ddd;
+$pagination-hover-bg:                  $sta-grey-light;
+$pagination-hover-border:              $sta-grey-highlight;
 
 $pagination-active-color:              #fff;
 $pagination-active-bg:                 $brand-primary;
 $pagination-active-border:             $brand-primary;
 
-$pagination-disabled-color:            $gray-light-medium;
+$pagination-disabled-color:            $sta-grey;
 $pagination-disabled-bg:               #fff;
-$pagination-disabled-border:           #ddd;
+$pagination-disabled-border:           $sta-grey-highlight;
 
 
 //== Pager
@@ -699,9 +699,9 @@ $list-group-disabled-bg:         $gray-lighter;
 //** Text color for content within disabled list items
 $list-group-disabled-text-color: $list-group-disabled-color;
 
-$list-group-link-color:         -dpl-color($palette-default,'primary','base');
-$list-group-link-hover-color:   $list-group-link-color;
-$list-group-link-heading-color: -dpl-color($palette-default,'primary','base');
+$list-group-link-color:         $sta-blue-light;
+$list-group-link-hover-color:   $sta-blue-light-shade25;
+$list-group-link-heading-color: $sta-grey-dark;
 
 
 //== Panels
@@ -715,12 +715,12 @@ $panel-footer-padding:        $panel-heading-padding;
 $panel-border-radius:         $border-radius-base;
 
 //** Border color for elements within panels
-$panel-inner-border:          #ddd;
-$panel-footer-bg:             #f5f5f5;
+$panel-inner-border:          $sta-grey-mid2;
+$panel-footer-bg:             white;
 
 $panel-default-text:          $gray-dark;
-$panel-default-border:        #ddd;
-$panel-default-heading-bg:    #f5f5f5;
+$panel-default-border:        $sta-grey-mid2;
+$panel-default-heading-bg:    white;
 
 $panel-primary-text:          white;
 $panel-primary-border:        $brand-primary;
@@ -777,7 +777,7 @@ $thumbnail-border-radius:     $border-radius-base;
 $badge-color:                 white;
 //** Linked badge text color on hover
 $badge-link-hover-color:      white;
-$badge-bg:                    -dpl-color($palette-default, 'primary', 'base');
+$badge-bg:                    $sta-blue;
 
 //** Badge text color in active nav link
 $badge-active-color:          $link-color;

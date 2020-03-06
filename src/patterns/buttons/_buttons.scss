@@ -14,13 +14,13 @@ button {
 .btn-tag {
 	background: white;
 	border: 1px solid $sta-grey;
-	color: $sta-blue;
+	color: $sta-grey-dark;
 
 	&:focus,
   &:hover {
 		background: $sta-grey-light;
     border-color: $sta-grey;
-    color: $sta-blue;
+    color: $sta-grey-dark;
 	}
 }
 
@@ -53,7 +53,7 @@ button {
     border: none;
     @include ms-respond(font-size,1);
     border-color: $sta-blue-light;
-    border-bottom: 3px $sta-blue-hover solid;
+    border-bottom: 3px $sta-blue-light-shade25 solid;
     color: white;
     font-weight: bold;
     line-height: 1;
@@ -73,7 +73,7 @@ button {
 
     &:hover,
     &:focus {
-      background:$sta-blue-light-hover;
+      background:$sta-blue-light-shade25;
       color: white;
     }
   }  
@@ -82,7 +82,7 @@ button {
 .btn-action {
     background: $sta-blue-light;
     border: none;
-    border-bottom: 3px $sta-blue-hover solid;
+    border-bottom: 3px $sta-blue-light-shade25 solid;
     font-weight: bold;
     @include ms-respond(font-size,1);
     color: white;
@@ -103,7 +103,7 @@ button {
 
     &:hover,
     &:focus {
-      background:$sta-blue-light-hover;
+      background:$sta-blue-light-shade25;
       color: white;
     }
 
@@ -115,9 +115,9 @@ button {
 .btn-small-tag {
     display: inline-block;
     margin: 0.5rem 0.5rem 0 0;
-    background: $sta-grey-light-S;
+    background: white;
     border: 1px $sta-grey-highlight solid;
-    color: $sta-grey-dark-S;
+    color: $sta-grey-dark;
     font-size: 1rem;
     font-weight: normal;
     padding: 0.4rem 0.5rem;
@@ -125,8 +125,8 @@ button {
 
     &:hover,
     &:focus {
-        background: $sta-grey-light-S-hover;
-        color: $sta-grey-dark-S-hover;
+        background: $sta-grey-light;
+        color: $sta-grey-dark;
         text-decoration: none;
     }
     &:active {
@@ -139,9 +139,9 @@ button {
 .btn-xsmall-tag {
     display: inline-block;
     margin: 0.5rem 0.5rem 0 0;
-    background: $sta-grey-light-S;
+    background: white;
     border: 1px $sta-grey-highlight solid;
-    color: $sta-grey-dark-S;
+    color: $sta-grey-dark;
     @include ms-respond(font-size,-1);
     font-weight: normal;
     padding: 0.4rem 0.5rem;
@@ -149,9 +149,12 @@ button {
 
     &:hover,
     &:focus {
-        background: $sta-grey-light-S-hover;
-        color: $sta-grey-dark-S-hover;
+        background: $sta-grey-light;
+        color: $sta-grey-dark;
         text-decoration: none;
+    }
+    &:focus {
+      text-decoration: underline;
     }
     &:active {
       background: $sta-orange-highlight;
@@ -166,14 +169,14 @@ button {
   padding:0;
 
   > li > a {
-    color: $sta-grey-dark-S;
+    color: $sta-grey-dark;
     padding: 10px 15px;
     text-decoration: none;
 
     &:hover,
     &:focus {
-        background: $sta-grey-light-S-hover;
-        color: $sta-grey-dark-S-hover;
+        background: $sta-grey-light;
+        color: $sta-grey-dark;
         text-decoration: none;
     }
 
@@ -181,6 +184,7 @@ button {
       background: $sta-orange-highlight;
       color: $sta-grey-dark;
       box-shadow: 0 3px $sta-orange-highlight;
+      text-decoration: underline;
     }
   }
 }

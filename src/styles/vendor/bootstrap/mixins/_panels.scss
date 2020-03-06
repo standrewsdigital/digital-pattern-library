@@ -8,6 +8,10 @@
     background-color: $heading-bg-color;
     border-color: $heading-border;
 
+    a:hover {
+      background: mix(black,$heading-bg-color,25%);
+    }
+
     + .panel-collapse > .panel-body {
       border-top-color: $border;
     }

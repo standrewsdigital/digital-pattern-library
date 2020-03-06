@@ -117,7 +117,7 @@ div.container ul.show-navigation {
 }
 
 .navigation-bar ul.navigation-bar-nav li a:hover {
-	background-color: $sta-blue-hover;
+	background-color: $sta-blue-shade25;
 }
 
 // Target select item in T4 and WordPress respectively
@@ -132,7 +132,7 @@ div.container ul.show-navigation {
 
 @media (max-width: 991px) {
 	.toggle-navigation a:hover {
-		background-color: $sta-blue-hover;
+		background-color: $sta-blue-shade25;
 	}
 }
 

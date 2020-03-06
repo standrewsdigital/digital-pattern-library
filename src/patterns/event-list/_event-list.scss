@@ -6,6 +6,10 @@
     @extend %card;
     padding: 1em;
 
+    &.expanded-link-wrapper:hover {
+        background: $sta-grey-light;
+    }
+
     .event-listing__details { 
         // Reset link styles
             box-shadow: none;
@@ -83,7 +87,7 @@
      // Hover styles
         a:hover {
             .event-listing__heading {
-                color: $sta-blue-light-hover;
+                color: $sta-blue-light-shade25;
                 text-decoration: underline;
                 &:before {
                     text-decoration: none;
@@ -97,7 +101,7 @@
             outline: none;            
 
             .event-listing__heading {
-                color: $sta-blue-light-hover;
+                color: $sta-blue-light-shade25;
                 text-decoration: underline;
                 &:before {
                     text-decoration: none;
@@ -112,7 +116,7 @@
             z-index: 5;
 
             .event-listing__heading {
-                color: $sta-blue-light-hover;
+                color: $sta-blue-light-shade25;
                 text-decoration: underline;
                 &:before {
                     text-decoration: none;
@@ -127,7 +131,7 @@
             padding-top: 1.5em;
 
             &:before {
-                background: #ea1a13;
+                background: $sta-red;
                 color: #fff;
                 content: 'Cancelled';
                 display: inline-block;

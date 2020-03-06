@@ -2,11 +2,12 @@
 title: Alerts
 ---
 
-<p class="lead">The alert pattern is used to convey important information to users.</p>
-
-
-<h3>Rules for alerts</h3>
+<p class="lead">The alert pattern is used to convey important information to users with two different levels of importance.</p>
+<h2>Alert box</h2>
+<p>This should be used to announce information that takes precedence over all other page content. The inclusion of <code>role="alert"</code> will assist screen readers in announcing this content ahead of other information, so it should be used with caution.</p>
+<h3>Rules for alert boxes</h3>
 <ul>
+    <li>There should only be one alert box on a page at a time.</li>
     <li>Must not appear before the <a href="../header/index.html">header</a>, <a href="../category-header/index.html">category header</a>, <a href="../navigation-bar/index.html">main navigation</a>, <a href="../breadcrumbs/index.html">breadcrumbs</a> or <a href="../hero-banner/index.html">hero banner</a> patterns.</li>
     <li>Wrap text with a <code>div</code> with a class of <code>alert</code> plus one of the four option classes:
     	<ul>
@@ -19,9 +20,27 @@ title: Alerts
     <li>Use the different option classes to convey different types of message.</li>
     <li>Must have a heading introducing the type of message.</li>
 </ul>
+<h2>Callout</h2>
+<p>This should be used to promote inline content that is of greater importance than the surrounding content. This can be used as a visually more prominent option over using bold text, but where the information is not sufficiently important to use an alert box.</p>
+</ul>
+<h3>Rules for callouts</h3>
+<ul>
+    <li>Using too many callouts on a page will lower the visual impact of each and reduce their effectiveness.</li>
+    <li>Must not appear before the <a href="../header/index.html">header</a>, <a href="../category-header/index.html">category header</a>, <a href="../navigation-bar/index.html">main navigation</a>, <a href="../breadcrumbs/index.html">breadcrumbs</a> or <a href="../hero-banner/index.html">hero banner</a> patterns.</li>
+    <li>Wrap text with a <code>div</code> with a class of <code>callout</code> plus one of the four option classes:
+        <ul>
+            <li><code>callout--success</code></li>
+            <li><code>callout--info</code></li>
+            <li><code>callout--warning</code></li>
+            <li><code>callout--danger</code></li>
+        </ul>
+    </li>
+    <li>Use the different option classes to convey different types of message.</li>
+    <li>Must have a heading introducing the type of message.</li>
+</ul>
 
 <hr>
-<h3>Options available</h3>
+<h2>Options available</h2>
 <ul>
 {{#alerts-options.options}}
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>

@@ -14,6 +14,7 @@ sta-red-tint25: {color: sta-red-tint25, name: Red, variant: 25% tint}
 sta-red-shade25: {color: sta-red-shade25, name: Red, variant: 25% shade}
 sta-grey: {color: sta-grey, name: Grey}
 sta-grey-light: {color: sta-grey-light, name: Light grey}
+sta-grey-light2: {color: sta-grey-light2, name: Light grey 2}
 sta-grey-mid2: {color: sta-grey-mid2, name: Mid grey 2}
 sta-grey-highlight: {color: sta-grey-highlight, name: Mid grey, desc: Use for visible interactive graphical UI elements.}
 sta-grey-dark: {color: sta-grey-dark, name: Dark grey, variant: Primary, desc: Use for main text. }
@@ -38,7 +39,7 @@ sta-burgundy-tint25: {color: sta-burgundy-tint25, name: Burgundy, variant: 25% t
 sta-burgundy-shade25: {color: sta-burgundy-shade25, name: Burgundy, variant: 25% shade}
 context:
     success: {color: sta-green, name: Success}
-    info: {color: sta-blue-light, name: Information}
+    info: {color: sta-blue, name: Information}
     warning: {color: sta-orange, name: Warning}
     danger: {color: sta-red, name: Danger}
 ---
@@ -78,6 +79,7 @@ context:
 {{> swatch sta-grey-highlight }}
 {{> swatch sta-grey-mid2 }}
 {{> swatch sta-grey-light }}
+{{> swatch sta-grey-light2 }}
 {{> swatch sta-grey-dark2 }}
 </div>
 <div class="colour-palette">
@@ -232,6 +234,12 @@ context:
 <td><div style="color:#f0f0f0" class="font-scale-1"><i class="fas fa-times"></i></div>Fail</td>
 </tr>
 <tr>
+<td><strong>Light grey 2</strong><br><small>#fafafa</small></td>
+<td style="background:#fafafa;color:#202024;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td style="background:#fafafa;color:#fff;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td><div style="color:#fafafa" class="font-scale-1"><i class="fas fa-times"></i></div>Fail</td>
+</tr>
+<tr>
 <td><strong>Dark grey 2</strong><br><small>#0f0f11</small></td>
 <td style="background:#0f0f11;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
 <td style="background:#0f0f11;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
@@ -328,19 +336,19 @@ context:
 <td><div style="color:#00853f" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
 </tr>
 <tr>
-<td><strong>Information</strong> (25% tint)<br><small>#007bc2</small></td>
-<td style="background:#007bc2;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
-<td style="background:#007bc2;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
-<td><div style="color:#007bc2" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
+<td><strong>Information</strong><br><small>#00539b</small></td>
+<td style="background:#00539b;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Fail</div></td>
+<td style="background:#00539b;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
+<td><div style="color:#00539b" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
 </tr>
 <tr>
-<td><strong>Warning</strong> (50% tint)<br><small>#bf5909</small></td>
+<td><strong>Warning</strong><br><small>#bf5909</small></td>
 <td style="background:#bf5909;color:#202024;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
 <td style="background:#bf5909;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
 <td><div style="color:#bf5909" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>
 </tr>
 <tr>
-<td><strong>Danger</strong> (25% shade)<br><small>#ea1a13</small></td>
+<td><strong>Danger</strong><br><small>#ea1a13</small></td>
 <td style="background:#ea1a13;color:#202024;">Normal: Fail<div class="font-scale-1">Large: Pass</div></td>
 <td style="background:#ea1a13;color:#fff;">Normal: Pass<div class="font-scale-1">Large: Pass</div></td>
 <td><div style="color:#ea1a13" class="font-scale-1"><i class="fas fa-check"></i></div>Pass</td>

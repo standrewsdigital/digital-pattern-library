@@ -26,8 +26,8 @@
     border: 5px solid transparent;
     border-radius: 0px;
     color: inherit; 
-    margin-bottom: 20px;
-    padding: 25px;
+    margin: 0 0 1.5625rem 0; // 25px
+    padding: 1em ms(1);
 
     a {
         text-decoration: underline;
@@ -50,7 +50,7 @@
 
 .alert--info,
 .alert-info {
-    @include alert-status ($sta-blue-light);
+    @include alert-status ($sta-blue);
 }
 
 .alert--warning,
@@ -65,6 +65,43 @@
 
 .alert__heading {
     margin-top: 0;
+}
+
+.callout {
+    margin: 0 0 1.5625rem 0; // 25px
+    padding: 1em ms(1);
+    border-left: 5px solid $sta-grey;
+ 
+    &.no-siblings {
+        margin-bottom: 0;
+    }
+ 
+    h4,
+    .callout__heading {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    *:last-child {
+        margin-bottom: 0;
+    }
+
+    &.callout-success,
+    &.callout--success {
+        @include alert-status ($sta-green);
+    }
+    &.callout-info,
+    &.callout--info {
+        @include alert-status ($sta-blue);
+    }
+    &.callout-warning,
+    &.callout--warning {
+        @include alert-status ($sta-orange);
+    }
+    &.callout-danger,
+    &.callout--danger {
+        @include alert-status ($sta-red);
+    }
 }
 
 /*********************************/

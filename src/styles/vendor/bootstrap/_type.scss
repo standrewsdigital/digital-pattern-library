@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6,
     display: block;
     font-weight: normal;
     line-height: 1;
-    color: $headings-small-color;
+    color: #6a6a6b;
 
     a {
       font-weight: normal;
@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6,
   }
 
   &.keyline--bottom {
-    border-bottom: 2px solid $headings-small-color;
+    border-bottom: 2px solid #949494;
     padding-bottom: ($line-height-computed / 2);
   }
 }

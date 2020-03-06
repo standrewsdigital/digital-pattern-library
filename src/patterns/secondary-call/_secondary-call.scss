@@ -3,18 +3,18 @@
 /* BEGIN Pattern: secondary-call-to-action    */
 /**********************************************/
 
-@mixin secondary-call-overlay ($color-overlay, $color-cta, $color-cta-hover){
+@mixin secondary-call-overlay ($color-overlay, $color-cta){
    &:after {
        background-color: rgba($color-overlay,0.75);
    }
    .btn, .btn-primary {
         background-color: $color-cta;
-        border-color: $color-cta-hover;
+        border-color: mix(black, $color-cta, 25%);
    }
 
    .btn:hover, .btn:focus {
-        background-color: $color-cta-hover;
-        border-color: $color-cta-hover;
+        background-color: mix(black, $color-cta, 25%);
+        border-color: mix(black, $color-cta, 25%);
     }
 
     .btn:active {
@@ -48,19 +48,19 @@
 
 
     &.secondary-call--purple-transparent-overlay {
-        @include secondary-call-overlay ($sta-purple, $sta-green, $sta-green-hover)
+        @include secondary-call-overlay ($sta-purple, $sta-green)
     }
 
     &.secondary-call--blue-transparent-overlay {
-        @include secondary-call-overlay($sta-blue, $sta-orange, $sta-orange-hover)
+        @include secondary-call-overlay($sta-blue, $sta-orange)
     }
 
     &.secondary-call--orange-transparent-overlay {
-        @include secondary-call-overlay ($sta-orange, $sta-green, $sta-green-hover)
+        @include secondary-call-overlay ($sta-orange, $sta-green)
     }
 
     &.secondary-call--burgundy-transparent-overlay {
-        @include secondary-call-overlay ($sta-burgundy, $sta-blue, $sta-blue-hover)
+        @include secondary-call-overlay ($sta-burgundy, $sta-blue)
     }
 
     .container {

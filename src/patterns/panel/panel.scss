@@ -49,6 +49,7 @@
         }
         &:focus {
             background: inherit;
+            box-shadow: none;
             color: inherit;
             text-decoration: underline;
             outline: 3px solid $sta-orange-highlight;
@@ -84,29 +85,6 @@
 
 .panel-body li {
     margin-bottom: 5px;
-}
-
-
-/* Colors */
-
-.panel-primary {
-    border-color: $sta-blue;
-}
-
-.panel-secondary {
-    border-color: $sta-cyan-light;
-}
-
-.panel-tertiary-1 {
-    border-color: $sta-green;
-}
-
-.panel-tertiary-2 {
-    border-color: $sta-burgundy;
-}
-
-.panel-tertiary-3 {
-    border-color: $sta-purple;
 }
 
 /*********************************/

@@ -11,7 +11,7 @@
 .accordion-group {
     clear: both;
     list-style: none;
-    margin: 0 0 30px 0;
+    margin: 0 0 ms(1) 0;
     padding: 0;
     
     .accordion-item {
@@ -44,7 +44,7 @@
     border: 0;
     color: $sta-blue-light;
     float: right;
-    margin:0 0 10px 0;
+    margin:0 0 0.5rem 0;
     outline: none;
     padding: 0;
     text-decoration: underline;
@@ -52,7 +52,7 @@
     &:hover {
         // Remove underline when hovered
         text-decoration: none;
-        color: $sta-blue-light-hover;
+        color: $sta-blue-light-shade25;
     }
 
     &:focus {
@@ -67,7 +67,7 @@
 
 .accordion-item__toggle {
     cursor: pointer;
-    padding: 15px 45px 15px 15px; // Additional padding on right to accommodate chevron
+    padding: 15px 3em 15px 15px; // Additional padding on right to accommodate chevron
     position: relative;
 
     &:hover,
@@ -92,11 +92,11 @@
         @extend .fa;
         @extend .fa-chevron-down;
         color: $text-color;
-        font-size: 24px;
+        @include ms-respond(font-size,1);
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 15px;
+        right: 1rem;
     }
 
     &.open:before {
@@ -119,7 +119,7 @@
     &:hover {
         // Add underline when hovered
         text-decoration: underline;
-        color: $sta-blue-light-hover;
+        color: $sta-blue-light-shade25;
     }
 
     &:focus {
@@ -138,22 +138,22 @@
 }
 
 .accordion-item__toggle-intro {
-    margin: 5px 0 0 0;
+    margin: 0.25rem 0 0 0;
 }
 
 .accordion-item__toggle-keyfact {
     display: inline-block;
-    margin: 5px 20px 0 0;
+    margin: 0.25rem 1em 0 0;
 
     .fa {
-        margin-right:5px;
+        margin-right:0.5rem;
     }
 
     @media (max-width: 400px) {
         // Stack keyfacts on small displays
         display: block;
         margin-right: 0;
-        padding-left: 1.2em;
+        padding-left: ms(2);
         position: relative;
 
         .fa {

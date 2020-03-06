@@ -10,23 +10,23 @@
   &:focus,
   &.focus {
     color: $color;
-    background-color: darken($background, 10%);
+    background-color: mix(black, $background, 25%);
   }
   &:hover {
     color: $color;
-    background-color: darken($background, 10%);
+    background-color: mix(black, $background, 25%);
   }
   &:active,
   &.active,
   .open > &.dropdown-toggle {
     color: $color;
-    background-color: darken($background, 10%);
+    background-color: mix(black, $background, 25%);
 
     &:hover,
     &:focus,
     &.focus {
       color: $color;
-      background-color: darken($background, 17%);
+      background-color: mix(black, $background, 25%);
     }
   }
   &:active,

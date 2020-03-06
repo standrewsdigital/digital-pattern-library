@@ -6,7 +6,7 @@
 
 #website-footer {
 	background-color: $sta-grey-dark;
-	border-top: 5px solid $sta-grey-T-hover;
+	border-top: 5px solid $sta-grey;
 	color: $sta-grey-light;
 	padding: $third-gutter 0;
 }
@@ -23,8 +23,8 @@
 }
 
 #university-footer {
-	background-color: $sta-grey-dark-hover;
-	border-top: 1px solid $sta-grey-T-hover;
+	background-color: $sta-grey-dark2;
+	border-top: 1px solid $sta-grey;
 	color: $sta-grey-light;
 	padding: $third-gutter 0;
 }
@@ -35,7 +35,7 @@
 	white-space: nowrap;
 
 	&:hover {
-		color: $sta-grey-light-hover;
+		color: $sta-grey-mid2;
 	}
 	
 	&:focus {
@@ -71,7 +71,7 @@
 
 .feedback-footer {
 	background: $sta-grey-light;
-	border-top: 5px solid $sta-grey-light-hover;
+	border-top: 5px solid $sta-grey-mid2;
 	padding: $third-gutter 0;
 
 	.btn {
@@ -89,7 +89,7 @@
 }
 
 .feedback-footer + #website-footer {
-	border-top: 1px solid $sta-grey-T-hover;
+	border-top: 1px solid $sta-grey;
 }
 
 #social {
@@ -100,7 +100,7 @@
 			background-color: transparent;
 			outline:3px solid $sta-orange-highlight;
 			outline-offset: 2px;
-			color: $sta-grey-light-hover;
+			color: $sta-grey-mid2;
 		}
 	}
 }

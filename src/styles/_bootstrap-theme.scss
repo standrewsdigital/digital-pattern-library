@@ -46,7 +46,7 @@ a {
     &:hover {
         // Remove underline when hovered
         text-decoration: none;
-        color: $sta-blue-light-hover;
+        color: $sta-blue-light-shade25;
     }
 
     &:focus {
@@ -103,13 +103,14 @@ table {
 }
 
 thead > th, thead > tr th {
-    background-color: $gray-light;
+    background-color: $sta-grey;
     color: #fff;
 }
 
+/*
 tr:nth-child(odd) {
     background-color: lighten($gray, 80%);
-}
+}*/
 
 table.table-primary th {
     background-color: $brand-primary;
@@ -132,19 +133,19 @@ table.table-danger th {
 }
 
 table.table-secondary th {
-    background-color: -dpl-color($palette-default,'secondary','base');
+    background-color: $sta-blue-light;
 }
 
 table.table-tertiary-1 th {
-   background-color: -dpl-color($palette-default,'tertiary-1','base');
+   background-color: $sta-green;
 }
 
 table.table-tertiary-2 th {
-    background-color: -dpl-color($palette-default,'tertiary-2','base');
+    background-color: $sta-burgundy;
 }
 
 table.table-tertiary-3 th {
-    background-color: -dpl-color($palette-default,'tertiary-3','base');
+    background-color: $sta-purple;
 }
 
 
@@ -167,21 +168,21 @@ table.table-tertiary-3 th {
 
 // Additional variations for secondary and tertiary colors
 .label-secondary {
-    $bg-color: -dpl-color($palette-default,'secondary','base');
-    $bg-color: adjust-saturation($bg-color, -30%);
-    $bg-color: adjust-lightness($bg-color, 5%);
+    $bg-color: $sta-blue-light;
+    //$bg-color: adjust-saturation($bg-color, -30%);
+    //$bg-color: adjust-lightness($bg-color, 5%);
     @include label-variant($bg-color);
 }
 .label-tertiary-1 {
-    $bg-color: -dpl-color($palette-default,'tertiary-1','base');
+    $bg-color: $sta-green;
     @include label-variant($bg-color);
 }
 .label-tertiary-2 {
-    $bg-color: -dpl-color($palette-default,'tertiary-2','base');
+    $bg-color: $sta-burgundy;
     @include label-variant($bg-color);
 }
 .label-tertiary-3 {
-    $bg-color: -dpl-color($palette-default,'tertiary-3','base');
+    $bg-color: $sta-purple;
     @include label-variant($bg-color);
 }
 
@@ -206,20 +207,16 @@ table.table-tertiary-3 th {
  * the standard Bootstrap 'default', 'primary', 'success', ...
  */
 .btn-secondary {
-    $bg-color: -dpl-color($palette-default,'secondary','base');
-    @include button-variant(white, $bg-color);
+    @include button-variant(white, $sta-grey);
 }
 .btn-tertiary-1 {
-    $bg-color: -dpl-color($palette-default,'tertiary-1','base');
-    @include button-variant(white, $bg-color);
+    @include button-variant(white, $sta-green);
 }
 .btn-tertiary-2 {
-    $bg-color: -dpl-color($palette-default,'tertiary-2','base');
-    @include button-variant(white, $bg-color);
+    @include button-variant(white, $sta-burgundy);
 }
 .btn-tertiary-3 {
-    $bg-color: -dpl-color($palette-default,'tertiary-3','base');
-    @include button-variant(white, $bg-color);
+    @include button-variant(white, $sta-purple);
 }
 .btn-link {
     font-weight: bold; /* To match standard link styling */
@@ -337,7 +334,7 @@ a.list-group-item {
     overflow: auto;
     
     .badge {
-      background: rgb(240,240,240);
+      background: $sta-grey-light;
       color: inherit;
       @include ms-respond(font-size,-1);
       font-weight: bold;
@@ -348,26 +345,26 @@ a.list-group-item {
     // Only affect linked items
     &:hover,
     &:focus {
-        background: #ebebeb;
+        background: $sta-grey-light;
         text-decoration: none;
-        
-        .item-label {
-            text-decoration: underline;
-        }
+
         .badge {
             text-decoration: none;
         }
     }
     &:focus {
         z-index: 5;
+        
+        .item-label {
+            text-decoration: underline;
+        }
     }
     &:active {
         color: $sta-grey-dark;
         background: $sta-orange-highlight;
 
         .badge {
-          background: $sta-grey-dark;
-          color: white;
+          background: transparent;
         }
 
     }

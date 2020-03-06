@@ -26,7 +26,7 @@
             text-decoration: none;
 
             span {
-                background: $sta-blue-light-T;
+                background: rgba($sta-blue-light,0.9);
                 display: block;
                 padding: 0.8rem 3rem 0.8rem 1rem;
                 position: absolute;
@@ -66,7 +66,7 @@
                     text-decoration: underline;
                 }
                 span {
-                    background: $sta-blue-light-T-hover;
+                    background: rgba($sta-blue-light-shade25,0.9);
                 }
             }
 
@@ -172,7 +172,7 @@
    }  
 
     .navbox-title {
-        background: $sta-blue-light-T;
+        background: rgba($sta-blue-light,0.9);
         background-repeat: repeat;
         color: white;
         @include ms-respond(font-size,1);
@@ -198,7 +198,7 @@
             text-decoration: none;
 
             &:hover {
-                background: $sta-blue-light-T-hover;
+                background: rgba($sta-blue-light-shade25,0.9);
                 text-decoration: underline;
             }            
 

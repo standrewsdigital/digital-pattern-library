@@ -12,8 +12,6 @@
   .hero-section__heading {
     background: rgba($sta-blue,1);
     color: white;
-    //font-size: 36px;
-    //line-height: 1.1;
     @include ms-respond(font-size,5);
     margin: 0 -15px;
     padding: 10px 15px;

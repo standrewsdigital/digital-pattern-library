@@ -18,12 +18,23 @@
       background-color: $pager-bg;
       border: 1px solid $pager-border;
       border-radius: $pager-border-radius;
+      text-decoration: none;
     }
 
-    > a:hover,
-    > a:focus {
+    > a:hover {
+      color: $link-hover-color;
       text-decoration: none;
       background-color: $pager-hover-bg;
+    }
+
+    > a:focus {
+      text-decoration: underline;
+      background-color: $pager-hover-bg;
+    }
+
+    > a:active {
+      background: $sta-orange-highlight;
+      text-decoration: underline;
     }
   }
 

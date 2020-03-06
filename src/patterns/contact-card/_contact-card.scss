@@ -28,7 +28,7 @@
 }
 
 .contact-card + .contact-card {
-    border-top: 1px $sta-grey-light-hover solid;
+    border-top: 1px $sta-grey-mid2 solid;
 }
 
 %contact-card-media {
@@ -38,7 +38,7 @@
     grid-row-end: 2;
     -ms-grid-column: 1;
     -ms-grid-row: 1;
-    border: 2px solid $sta-grey-light-S;
+    border: 2px solid $sta-grey-mid2;
     border-radius: 50%;
     height: 50px;
     font-size: 1.2em;
@@ -327,9 +327,9 @@
 
 .contact-card__tag-link,
 .contact-card__tag-label {
-    background: $sta-grey-light-S;
+    background: white;
     border: 1px $sta-grey-highlight solid;
-    color: $sta-grey-dark-S;
+    color: $sta-grey-dark;
     display: inline-block;
     font-size: 1rem;
     font-weight: normal;
@@ -344,8 +344,8 @@
 .contact-card__tag-link {
     &:hover,
     &:focus {
-        background: $sta-grey-light-S-hover;
-        color: $sta-grey-dark-S-hover;
+        background: $sta-grey-light;
+        color: $sta-grey-dark;
         text-decoration: none;
     }
 
@@ -446,7 +446,7 @@
     padding: 0;
 
     .contact-details__profile-item {
-        border-top: 1px $sta-grey-light-hover solid;
+        border-top: 1px $sta-grey-mid2 solid;
         color: $sta-grey;
         font-weight: normal;
         margin: 12px 0 0 0;
