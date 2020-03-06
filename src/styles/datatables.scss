@@ -28,7 +28,7 @@
 
 .dt-bootstrap table {
     background-color: white;
-    border-top: 1px solid rgba(255,255,255,0.2);
+    border-top: none;
 }
 
 .dt-bootstrap table thead {
@@ -99,18 +99,20 @@ table.dataTable.dtr-inline.collapsed tbody th:first-child {
 }
 table.dataTable.dtr-inline.collapsed tbody td:first-child:before,
 table.dataTable.dtr-inline.collapsed tbody th:first-child:before {
-  top: 8px;
-  left: 4px;
-  height: 16px;
-  width: 16px;
+  top: 16px;
+  left: 6px;
+  height: 1rem;
+  width: 1rem;
   display: block;
   position: absolute;
-  color: #6a6a6b;
+  color: inherit;
   text-align: center;
-  line-height: 18px;
+  line-height: 1rem;
   box-sizing: content-box;
   content: "\f054";
-  font: normal normal normal 14px/1 FontAwesome;
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-size: 1rem;
 }
 table.dataTable.dtr-inline.collapsed tbody tr.parent td:first-child:before,
 table.dataTable.dtr-inline.collapsed tbody tr.parent th:first-child:before {
@@ -127,13 +129,13 @@ table.dataTable tr.child:hover {
   background: transparent !important;
 }
 table.dataTable tr.child ul {
-  display: inline-block;
+  display: block;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 table.dataTable tr.child ul li {
-  border-bottom: 1px solid #efefef;
+  border-bottom: 1px solid $sta-grey-highlight;
   padding: 0.5em 0;
 }
 table.dataTable tr.child ul li:first-child {
@@ -151,4 +153,15 @@ table.dataTable tr td:focus {
   outline: 3px solid $sta-orange-highlight;
 }
 
+// Fix alignment on small displays
 
+@media (max-width: 767px){
+  .dt-bootstrap {
+    .dataTables_length select {
+      float: left;
+    }
+    .text-right {
+      text-align: left;
+    }
+  }
+}

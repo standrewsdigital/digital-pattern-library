@@ -3,16 +3,25 @@
 /* BEGIN Pattern: datatables     */
 /*********************************/
 
+.dt-bootstrap .dataTables_filter {
+	color: inherit;
+}
+
+.dataTable td.sorting_1 {
+	border-left: 3px $sta-grey-highlight solid;
+	border-right: 3px $sta-grey-highlight solid;
+}
+
 .dataTable .even td.sorting_1 {
-	background-color: #f9f9f9;
+	background-color: $sta-grey-light;
 }
 
 .dataTable .odd td.sorting_1 {
-	background-color: #f1f1f1;
+	background-color: $sta-grey-mid2;
 }
 
 .dataTable tr.odd {
-	background-color: #f9f9f9;
+	background-color: $sta-grey-light;
 }
 
 div .table tbody tr td, div .table thead tr th {
@@ -20,7 +29,71 @@ div .table tbody tr td, div .table thead tr th {
 }
 
 .table-hover>tbody>tr:hover {
-    background-color: #f5fcff;
+    background-color: tint($sta-grey,70%);
+
+	&.even td.sorting_1 {
+		background-color: tint($sta-grey,60%);
+	}
+
+	&.odd td.sorting_1 {
+		background-color: tint($sta-grey,50%);
+	}
+
+}
+.table-hover.table-primary>tbody>tr:hover {
+    background-color: tint($sta-blue,70%);
+
+	&.even td.sorting_1 {
+		background-color: tint($sta-blue,60%);
+	}
+
+	&.odd td.sorting_1 {
+		background-color: tint($sta-blue,50%);
+	}
+}
+.table-hover.table-secondary>tbody>tr:hover {
+    background-color: tint($sta-blue-light,70%);
+
+	&.even td.sorting_1 {
+		background-color: tint($sta-blue-light,60%);
+	}
+
+	&.odd td.sorting_1 {
+		background-color: tint($sta-blue-light,50%);
+	}
+}
+.table-hover.table-tertiary-1>tbody>tr:hover {
+    background-color: tint($sta-green,70%);
+
+	&.even td.sorting_1 {
+		background-color: tint($sta-green,60%);
+	}
+
+	&.odd td.sorting_1 {
+		background-color: tint($sta-green,50%);
+	}
+}
+.table-hover.table-tertiary-2>tbody>tr:hover {
+    background-color: tint($sta-burgundy,70%);
+
+	&.even td.sorting_1 {
+		background-color: tint($sta-burgundy,60%);
+	}
+
+	&.odd td.sorting_1 {
+		background-color: tint($sta-burgundy,50%);
+	}
+}
+.table-hover.table-tertiary-3>tbody>tr:hover {
+    background-color: tint($sta-purple,70%);
+
+	&.even td.sorting_1 {
+		background-color: tint($sta-purple,60%);
+	}
+
+	&.odd td.sorting_1 {
+		background-color: tint($sta-purple,50%);
+	}
 }
 /*********************************/
 /* END Pattern: datatables       */
