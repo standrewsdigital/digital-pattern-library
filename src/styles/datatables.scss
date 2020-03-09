@@ -153,13 +153,17 @@ table.dataTable tr td:focus {
   outline: 3px solid $sta-orange-highlight;
 }
 
-// Fix alignment on small displays
-
+// Fix alignment on small/medium displays
 @media (max-width: 767px){
   .dt-bootstrap {
     .dataTables_length select {
       float: left;
     }
+  }
+}
+
+@media (max-width: 991px){
+  .dt-bootstrap {
     .text-right {
       text-align: left;
     }

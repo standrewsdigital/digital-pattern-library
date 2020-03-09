@@ -4,19 +4,21 @@
 
 
 .dpl-form {
+    
+    // Remove styling from legend, style content inside instead
+    legend {
+        border: none;
+        color: inherit;
+        font-size: 1em;
+        margin: 0;
+    }
 
     // By default, conditional content is hidden
     div.conditional-content-select, div.conditional-content-radio, {
-        border-color:      rgb(75, 76, 75);
-        border-left-style: solid;
-        border-left-width: 5px;
         display: none;
         margin-top: 10px;
-        padding: 15px 15px 0 15px;
-    }
-
-    div.conditional-content-radio {
-        margin-top: -20px;
+        padding: 1em ms(1);
+        border-left: 5px solid $sta-grey;
     }
 
     .select-box p {
@@ -35,6 +37,7 @@
 
     .help-block {
     	margin-top: 0;
+        color: $sta-grey;
     }
 
     .radio-button, .checkbox-box {
@@ -176,7 +179,7 @@
         }
     }
     .clear-icon:after {
-        color: #202024;
+        color: $sta-grey-dark;
         font-family: "Font Awesome 5 Free";
         content: '\f00d';
         display: block;
@@ -249,15 +252,20 @@
     z-index: 1000 !important;
 }
 
+.ui-datepicker .ui-state-default {
+    border: 1px solid $sta-grey-highlight;
+}
+
 .ui-datepicker .ui-state-default.ui-state-active {
-    border: 1px solid #00539b;
-    background: #00539b;
+    border: 1px solid $sta-orange-highlight;
+    background: $sta-orange-highlight;
+    color: $sta-grey-dark;
 }
 
 .ui-datepicker .ui-datepicker-today a {
-    border: 1px solid #7e7e7e;
-    background: #e0e0e0;
-    color: #454545;
+    border: 1px solid $sta-grey-highlight;
+    background: $sta-grey-mid2;
+    color: $sta-grey-dark;
 }
 
 .ui-datepicker .ui-datepicker-today .ui-state-default.ui-state-active {

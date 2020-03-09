@@ -1,5 +1,17 @@
 // MODIFICATIONS TO BOOTSTRAP FOR OUR THEME
 
+// Font weights
+// ====================================================
+
+.font-weight {
+    &--bold {
+        font-weight: bold;
+    }
+    &--normal {
+        font-weight: normal;
+    }
+}
+
 
 // Block level elements
 // ====================================================

@@ -10,7 +10,7 @@
   > li {
     float: left;
     // Make the list-items overlay the bottom border
-    margin-bottom: -2px;
+    margin-bottom: -1px;
 
     // Actual tabs (as links)
     > a {
@@ -71,7 +71,7 @@
 
 .tabs-container .tab-pane {
     hr {
-        border-top: 1px solid #ededed;
+        border-top: 1px solid $sta-grey-highlight;
         border-bottom: none;
         height: 1px;
         margin: 0 auto;
