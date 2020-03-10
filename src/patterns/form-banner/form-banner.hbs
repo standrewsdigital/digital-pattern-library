@@ -1,14 +1,12 @@
 <!-- Begin pattern: form banner //-->
-{{#if column-thirds}}
-<div class="container">
-    <div class="row">
-        <div class="col-md-8">
-{{/if}}
+
 <div class="form-banner {{background}} {{column-background}}">
     {{#if column-whole}}<div class="container dpl-form">{{/if}}
     {{#if column-thirds}}<div class="dpl-form form-banner-thirds">{{/if}}
-                {{#if heading}}<h3 class="form-banner__heading">{{heading}}</h3>{{/if}}
-                {{#if top-text}}<p class="form-banner__sub-heading">{{top-text}}</p>{{/if}}
+{{#if form}}<form action="">{{/if}}
+    <fieldset{{#if top-text}} aria-describedby="help-text-{{option-anchor}}"{{/if}}>
+                {{#if heading}}<legend><h3 class="form-banner__heading">{{heading}}</h3></legend>{{/if}}
+                {{#if top-text}}<p class="form-banner__sub-heading" id="help-text-{{option-anchor}}">{{top-text}}</p>{{/if}}
         <div class="row">
             {{#each column}}
                 <div class="{{column-size}}">
@@ -16,11 +14,10 @@
                     <h3 class="form-banner__heading">{{column-heading}}</h3>
                     <p class="form-banner__sub-heading">{{column-paragraph}}</p>
                 {{/if}}
-                    {{#if form}}<form action="">{{/if}}
                 {{#if radio-button}}
                     <div class="form-group">
-                        <div class="radio-button inline">
-                            {{#if radio-label}}<label class="form-label">{{radio-label}}</label>{{/if}}
+                        <fieldset class="radio-button inline">
+                            {{#if radio-label}}<legend><span class="font-weight--bold">{{radio-label}}</span></legend>{{/if}}
                             <ul>
                             {{#each radio-button}}
                                 <li>
@@ -30,13 +27,13 @@
                                 </li>
                             {{/each}}
                             </ul>
-                        </div>
+                        </fieldset>
                     </div>
                 {{/if}}
                 {{#if select-box}}
                     <div class="form-group select-box">
-                        {{#if select-label}}<label class="form-label" for="{{input-id}}">{{select-label}}</label>{{/if}}
-                        <select class="conditional-select form-control" id="{{input-id}}" name="select-box">
+                        {{#if select-label}}<label class="form-label" for="{{select-id}}">{{select-label}}</label>{{/if}}
+                        <select class="conditional-select form-control" id="{{select-id}}" name="select-box">
                             <option value="">{{default-value}}</option>
                         {{#each select-option}}
                             <option value="{{option-value}}">{{select-option}}</option>
@@ -53,16 +50,11 @@
                 {{#if button}}
                     <button type="submit" class="btn btn-lg{{button-colour}}">Submit</button>
                 {{/if}}
-                    {{#if form}}</form>{{/if}}
                 </div>
             {{/each}}
         </div>
     </div>
+</fieldset>
+{{#if form}}</form>{{/if}}
 </div>
 <!-- End pattern: form banner //-->
-{{#if column-thirds}}
-</div>
-{{>navbox}}
-</div>
-</div>
-{{/if}}

@@ -48,6 +48,7 @@
         ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         ul li {
@@ -108,7 +109,9 @@
         }
 
         ul li input[type=radio]:focus ~ .check, ul li input[type=checkbox]:focus ~ .check {
-            box-shadow: 0 0 0 3px $sta-orange-highlight;
+            box-shadow: 0 0 0 2px $sta-grey-dark;
+            outline: 3px $sta-orange-highlight solid;
+            outline-offset: 2px;
         }
 
         // Smaller condensed size

@@ -49,16 +49,18 @@
         {
             "option-heading": "Input fields",
             "option-anchor": "default-input-fields",
-            "option-description": "<p>You must use the <code>.form-group</code> class to create spacing when wrapping label and input pairs.</p>",
+            "option-description": "<ul><li>You must use the <code>.form-group</code> class to create spacing when wrapping label and input pairs.</li><li>Use the <code>required</code> attribute to tell the browser when input is needed for a field.</li></ul><h4>Input types</h4><ul><li><strong>Text</strong><br>The default value using the <code>type=\"text\"</code> attribute.</li><li><strong>Email addresses</strong><br>This will only accept valid email formats and when focussed will display an optimised keyboard on many devices. Use the <code>type=\"email\"</code> attribute.</li><li><strong>Telephone numbers</strong><br>This will display an optimised keyboard on many devices. Use the <code>type=\"tel\"</code> attribute.</li><li><strong>Passwords</strong><br>This will hide the contents of the field as it is entered. Use the <code>type=\"password\"</code> attribute.</li><li><strong>Numbers</strong><br>This will display an optimised keyboard on many devices. For better accessibility support please use the <code>inputmode=\"numeric\" pattern=\"[0-9]*\"</code> attributes rather than <code>type=\"number\"</code>.</li></ul>",
             "columns": [
                 {
                     "column-size": "col-md-6",
                     "input": [
                         {
-                            "input-id": "first-name1",
-                            "label-text": "First name",
+                            "input-id": "full-name1",
+                            "label-text": "Full name",
                             "type": "text",
-                            "input-class": "form-control"
+                            "input-class": "form-control",
+                            "required": " required",
+                            "hint": "Example text input type."
                         }
                     ]
                 },
@@ -66,10 +68,53 @@
                     "column-size": "col-md-6",
                     "input": [
                         {
-                            "input-id": "last-name1",
-                            "label-text": "Last name",
+                            "input-id": "Email1",
+                            "label-text": "Email",
+                            "type": "email",
+                            "input-class": "form-control",
+                            "required": " required",
+                            "hint": "Example email input type."
+                        }
+                    ]
+                },
+                {
+                    "column-size": "col-md-6",
+                    "input": [
+                        {
+                            "input-id": "Telephone1",
+                            "label-text": "Telephone",
+                            "type": "tel",
+                            "input-class": "form-control",
+                            "required": " required",
+                            "hint": "Example telephone input type."
+                        }
+                    ]
+                },
+                {
+                    "column-size": "col-md-6",
+                    "input": [
+                        {
+                            "input-id": "Number1",
+                            "label-text": "Spaces required",
                             "type": "text",
-                            "input-class": "form-control"
+                            "input-class": "form-control form-control--auto-width",
+                            "size": "size=\"4\"",
+                            "required": " required",
+                            "number": " inputmode=\"numeric\" pattern=\"[0-9]*\"",
+                            "hint": "Example numeric input type."
+                        }
+                    ]
+                },
+                {
+                    "column-size": "col-md-6",
+                    "input": [
+                        {
+                            "input-id": "Password1",
+                            "label-text": "Password",
+                            "type": "password",
+                            "input-class": "form-control",
+                            "required": " required",
+                            "hint": "Example password input type."
                         }
                     ]
                 }
@@ -82,7 +127,7 @@
         {
             "option-heading": "Labels",
             "option-anchor": "labels",
-            "option-description": "<ul><li>All form fields must be given labels.<li>You must not hide labels unless the surrounding context makes them unnecessary.<li>Labels must be aligned above input fields.<li>Labels must be positioned to the right of checkboxes and radio buttons.<li>Label text must be short, direct and in sentence case.<li>You must not use colons at the end of labels.<li>Labels must be associated with form fields using the <code>for</code> attribute.</ul>",
+            "option-description": "<ul><li>All form fields must be given labels.</li><li>You must not hide labels unless the surrounding context makes them unnecessary.</li><li>Labels must be aligned above input fields.</li><li>Labels must be positioned to the right of checkboxes and radio buttons.</li><li>Label text must be short, direct and in sentence case.</li><li>You must not use colons at the end of labels.</li><li>Labels must be associated with form fields using the <code>for</code> attribute.</li></ul>",
             "columns": [
                 {
                     "column-size": "col-md-6",
@@ -150,7 +195,7 @@
         {
             "option-heading": "Submit buttons",
             "option-anchor": "submit-buttons",
-            "option-description": "<ul><li>You must keep text short and use a verb such as 'submit' or 'continue'.<li>You must not add a reset button. See the Neilsen Norman Group article on <a href='http://www.nngroup.com/articles/reset-and-cancel-buttons/'>reset and cancel buttons</a> for more information.</ul>",
+            "option-description": "<ul><li>You must keep text short and use a verb such as 'submit' or 'continue'.</li><li>You must not add a reset button. See the Neilsen Norman Group article on <a href='http://www.nngroup.com/articles/reset-and-cancel-buttons/'>reset and cancel buttons</a> for more information.</li></ul>",
             "submit-button": true
         },
 
@@ -182,7 +227,7 @@
         {
             "option-heading": "Textarea with input limit counter",
             "option-anchor": "textarea-counter",
-            "option-description": "<ul><li>Allows for multiple lines of text with a character limit counter.<li>There may be multiple textareas with limit counters of varying lengths on one page.<li>Warns the user when the character limit is exceeded.<li>The textarea must have the class <code>limit-counter</code>.<li>The textarea must have the attribute <code>maxlength='[limit]'</code>, this sets the character limit.<li>There must be an adjacent element with the class <code>.textarea_feedback</code>.</ul>",
+            "option-description": "<ul><li>Allows for multiple lines of text with a character limit counter.</li><li>There may be multiple textareas with limit counters of varying lengths on one page.</li><li>Warns the user when the character limit is exceeded.</li><li>The textarea must have the class <code>limit-counter</code>.</li><li>The textarea must have the attribute <code>maxlength='[limit]'</code>, this sets the character limit.</li><li>There must be an adjacent element with the class <code>.textarea_feedback</code>.</li></ul>",
             "columns": [
                 {
                     "column-size": "col-md-6",
@@ -202,7 +247,7 @@
         {
             "option-heading": "Checkboxes inline",
             "option-anchor": "checkboxes-inline",
-            "option-description": "<ul><li>Clearly label when users can select one or more options.<li>Only pre-select options for the user if there’s a strong, user-centred reason to do this.<li>The label must be clickable.</ul>",
+            "option-description": "<ul><li>Clearly label when users can select one or more options.</li><li>Only pre-select options for the user if there’s a strong, user-centred reason to do this.</li><li>The label must be clickable.</li></ul>",
             "radio-check": true,
             "class": "checkbox-box inline",
             "option-text": "What colours do you like?",
@@ -241,7 +286,7 @@
         {
             "option-heading": "Checkboxes stacked",
             "option-anchor": "checkboxes-stacked",
-            "option-description": "<ul><li>Clearly label when users can select one or more options.<li>Only pre-select options for the user if there’s a strong, user-centred reason to do this.<li>The label must be clickable.</ul>",
+            "option-description": "<ul><li>Clearly label when users can select one or more options.</li><li>Only pre-select options for the user if there’s a strong, user-centred reason to do this.</li><li>The label must be clickable.</li></ul>",
             "radio-check": true,
             "class": "checkbox-box",
             "option-text": "What colours do you like?",
@@ -546,7 +591,7 @@
                     "column-size": "col-md-4",
                     "input": [
                         {
-                            "input-id": "",
+                            "input-id": "calendar",
                             "label-text": "Pick a date",
                             "input-class": "form-control datepicker",
                             "type": "date"
@@ -589,7 +634,7 @@
                     "column-size": "col-md-6",
                     "input": [
                         {
-                            "input-id": "first-name1",
+                            "input-id": "price",
                             "label-text": "Price",
                             "type": "text",
                             "input-class": "form-control",
@@ -606,6 +651,7 @@
                             "input-id": "email-address",
                             "label-text": "Email address",
                             "type": "text",
+                            "hint": "Enter only the username part of your email address. For example, kt123.",
                             "input-class": "form-control",
                             "addon-after": "@st-andrews.ac.uk",
                             "input-addon": true

@@ -61,7 +61,7 @@
 					<textarea {{#if hint}}aria-describedby="help-{{input-id}}"{{/if}} class="{{class}}" rows="3" id="{{input-id}}" name="{{input-id}}" {{#if counter}}maxlength="{{counter}}"{{/if}}></textarea>
 					{{#if counter}}<div class="textarea_feedback"></div>{{/if}}
 					{{else}}
-					<input {{#if hint}}aria-describedby="help-{{input-id}}"{{/if}} type="{{type}}" id="{{input-id}}" class="{{input-class}}" name="{{input-id}}" value="{{input-value}}"{{{size}}}>
+					<input {{#if hint}}aria-describedby="help-{{input-id}}"{{/if}} type="{{type}}" id="{{input-id}}" class="{{input-class}}" name="{{input-id}}"{{{size}}}{{required}}{{{number}}}>
 					{{/if}}
 					{{#if addon-after}}<div class='input-group-addon'>{{{addon-after}}}</div>{{/if}}
 					{{#if input-addon}}</div>{{/if}}

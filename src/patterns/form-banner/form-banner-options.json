@@ -2,6 +2,7 @@
     "options": [
         {
             "column-whole": true,
+                    "form": true,
             "option-heading": "Form banner",
             "option-description": "<p>The simplest implementation places the form underneath a heading and optional sub heading.</p>",
             "option-anchor": "form-banner",
@@ -11,7 +12,6 @@
             "column": [
                 {
                     "column-size": "col-md-12",
-                    "form": true,
                     "input-box": true,
                     "input-label": "Email",
                     "input-id": "form-banner-email",
@@ -26,6 +26,7 @@
         },
         {
             "column-whole": true,
+                    "form": true,
             "option-heading": "Form banner - side by side",
             "option-description": "<p>This places the form alongside a column of text content. This option is most suited to simple forms that have an introduction that would wrap over multiple lines. This example shows a basic newsletter subscription implementation.</p><ul><li>The form should have no more than three or four rows of input fields.</li></ul>",
             "option-anchor": "newsletter-subscription",
@@ -38,7 +39,6 @@
                 },
                 {
                     "column-size": "col-md-6",
-                    "form": true,
                     "radio-label": "1. Choose degree level",
                     "radio-button": [
                         {
@@ -53,7 +53,7 @@
                     "select-box": true,
                     "select-label": "2. Choose a subject",
                     "default-value": "Please select from the following",
-                    "input-id": "form-banner2-subject",
+                    "select-id": "form-banner2-subject",
                     "select-option": [
                         {
                             "option-value": "art-history",
@@ -86,6 +86,7 @@
 
         {
             "column-whole": true,
+                    "form": true,
             "option-heading": "Form banner - inline",
             "option-description": "<p>This option places the form directly underneath the text content. This example shows a set of filters that can alter a set of results.</p><ul><li>Inline form elements should only be used for filters.</li></ul>",
             "option-anchor": "filter-options",
@@ -98,7 +99,7 @@
                     "select-box": true,
                     "select-label": "Subject",
                     "default-value": "Please select from the following",
-                    "input-id": "form-banner3-subject1",
+                    "select-id": "form-banner3-subject1",
                     "select-option": [
                         {
                             "option-value": "art-history",
@@ -119,7 +120,7 @@
                     "select-box": true,
                     "select-label": "Joint subject",
                     "default-value": "Please select from the following",
-                    "input-id": "form-banner3-subject2",
+                    "select-id": "form-banner3-subject2",
                     "select-option": [
                         {
                             "option-value": "joint-art-history",
@@ -140,7 +141,7 @@
                     "select-box": true,
                     "select-label": "Country",
                     "default-value": "Please select from the following",
-                    "input-id": "form-banner3-country",
+                    "select-id": "form-banner3-country",
                     "select-option": [
                         {
                             "option-value": "australia",
