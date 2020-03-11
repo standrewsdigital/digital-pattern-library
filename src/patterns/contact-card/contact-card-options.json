@@ -276,13 +276,16 @@
 					"room": "Room D17, Bute medical building",
 					"areas-expertise": [
 						{
-							"area": "Clinical Psychology"
+							"area": "Clinical Psychology",
+							"tag-link": true
 						},
 						{
-							"area": "Industrial Psychology"
+							"area": "Industrial Psychology",
+							"tag-link": true
 						},
 						{
-							"area": "Developmental Psychology"
+							"area": "Developmental Psychology",
+							"tag-link": true
 						}
 					],
 					"publications": [

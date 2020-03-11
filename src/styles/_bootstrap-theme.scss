@@ -42,9 +42,9 @@ hr {
 // GLOBAL LINK STYLE - needs overwritten on specifc patterns
 a {
     // Blue link with underline
-    -webkit-transition: all 200ms ease-out;
-    -moz-transition: all 200ms ease-out;
-    transition: all 200ms ease-out;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
     font-weight: 700;
     text-decoration: underline;
     text-underline-offset: 0.15em; // Only works in FF and Safari

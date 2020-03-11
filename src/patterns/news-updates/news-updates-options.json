@@ -20,7 +20,8 @@
                     "secondary-date": "9 June 2018", 
                     "show-secondary-category": true,
                     "secondary-category": "News at St Andrews",
-                    "column-span-secondary": "col-xs-6"
+                    "column-span-secondary": "col-xs-6",
+                    "heading-size": " news-updates__heading--small"
 
                 },
                 {
@@ -29,7 +30,8 @@
                     "secondary-date": "10 June 2018", 
                     "show-secondary-category": true,
                     "secondary-category": "News at St Andrews",
-                    "column-span-secondary": "col-xs-6"
+                    "column-span-secondary": "col-xs-6",
+                    "heading-size": " news-updates__heading--small"
                 }
             ]
         },

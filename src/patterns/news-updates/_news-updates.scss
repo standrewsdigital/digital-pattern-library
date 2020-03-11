@@ -52,7 +52,7 @@
 
 .news-updates__heading {
     @include ms-respond(font-size,1);
-    line-height: 1.25;
+    line-height: 1.35;
     margin: 0 0 5px 0;
 }
 
@@ -65,7 +65,7 @@
 
 .news-updates__heading--small {
     @include ms-respond(font-size,0);
-    line-height: 1.25;
+    line-height: 1.35;
 }
 
     .news-updates__category {

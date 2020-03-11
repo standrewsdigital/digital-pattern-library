@@ -4,50 +4,98 @@
 /*********************************/
 
 
-// Give the tabs something to sit on
-.nav-tabs {
-  border-bottom: 1px solid $sta-grey;
-  > li {
-    float: left;
-    // Make the list-items overlay the bottom border
-    margin-bottom: -1px;
+// Horizontal tabs
+  .nav-tabs {
+    border-bottom: 1px solid $sta-grey-highlight;
+    > li {
+      float: left;
+      // Make the list-items overlay the bottom border
+      margin-bottom: -1px;
 
-    // Actual tabs (as links)
-    > a {
-        background: none;
-        margin-right: 3px;
-        border: 1px solid transparent;
-        border-bottom: none;
-        border-radius: 0;
-        padding: 10px 15px 8px 15px;
+      // Actual tabs (as links)
+      > a {
+          background: none;
+          margin-right: 3px;
+          border: 1px solid transparent;
+          border-bottom: none;
+          border-radius: 0;
+          padding: 10px 15px 8px 15px;
 
-      &:hover {
-        background: $sta-grey-light;
+        &:hover {
+          background: $sta-grey-light;
+        }
+
+        &:focus {
+          z-index: 5;
+        }
+      }
+
+      // Active state, and its :hover to override normal :hover
+      &.active > a {
+          padding-bottom: 10px;
+
+        &,
+        &:hover,
+        &:focus {
+          background-color: white;
+          border: 1px solid $sta-grey-highlight;
+          border-bottom: none;
+          color: $sta-grey-dark;
+          cursor: default;
+          text-decoration: none;
+        }
       }
     }
-
-    // Active state, and its :hover to override normal :hover
-    &.active > a {
-        padding-bottom: 10px;
-
-      &,
-      &:hover,
-      &:focus {
-        background-color: white;
-        border: 1px solid $sta-grey;
-        border-bottom: none;
-        box-shadow: 0 -5px $sta-grey;
-        color: $sta-grey-dark;
-        cursor: default;
-        text-decoration: none;
-      }
+    // pulling this in mainly for less shorthand
+    &.nav-justified {
+      @extend .nav-justified;
+      @extend .nav-tabs-justified;
     }
-  }
-  // pulling this in mainly for less shorthand
-  &.nav-justified {
-    @extend .nav-justified;
-    @extend .nav-tabs-justified;
-  }
+
+  // Stack tabs on small widths except when using .nav-tabs--full-width
+
+  @media (max-width: 575px){
+    &:not(.nav-tabs--full-width){
+      > li {
+        float: none;
+        margin: 0;
+
+        &:last-child {
+          margin-bottom: -1px;
+          border-bottom: 1px solid $sta-grey-highlight;
+        }
+
+        // Actual tabs (as links)
+        > a {
+            background: $sta-grey-light2;
+            margin-right: 0;
+            border: 1px solid transparent;
+            padding: 10px 15px;
+
+          &:hover {
+            background: $sta-grey-light;
+          }
+        }
+
+        // Active state, and its :hover to override normal :hover
+        &.active > a {
+           // padding-bottom: 10px;
+
+          &,
+          &:hover,
+          &:focus {
+            background-color: white;
+            border: 1px solid $sta-grey-highlight;
+            //border-bottom: none;
+            color: $sta-grey-dark;
+            cursor: default;
+            text-decoration: none;
+          }
+        }
+      }
+    }  
+  }  
+
 }
 
 .tabs-container {
@@ -55,7 +103,7 @@
 }
 
 .tab-pane {
-    border: 1px solid $sta-grey;
+    border: 1px solid $sta-grey-highlight;
     border-top: none;
     padding: 15px;
     // padding-bottom: 0;
@@ -71,11 +119,10 @@
 
 .tabs-container .tab-pane {
     hr {
-        border-top: 1px solid $sta-grey-highlight;
+        border-top: 1px solid $sta-grey-light2;
         border-bottom: none;
         height: 1px;
         margin: 0 auto;
-        width: 60%;
         margin-top: 10px;
         margin-bottom: 5px;
     }
