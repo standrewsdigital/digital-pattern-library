@@ -7,7 +7,7 @@
     padding: 1em;
 
     &.expanded-link-wrapper:hover {
-        background: $sta-grey-light;
+        background: $sta-grey-light2;
     }
 
     .event-listing__details { 
@@ -151,4 +151,5 @@
 // Reduce borders when two adjoin
 .event-listing + .event-listing {
     margin-top: -1px;
+    border-top: 1px solid $sta-grey-mid2;
 }

@@ -11,6 +11,7 @@
   @include clearfix;
   li {
     display: inline;
+    margin: 0;
     > a,
     > span {
       display: inline-block;

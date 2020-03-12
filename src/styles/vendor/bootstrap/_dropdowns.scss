@@ -62,6 +62,11 @@
     margin: 0;
   }
 
+  // Menu items
+  > li {
+    margin-bottom: 0;
+  }
+
   // Links within the dropdown menu
   > li > a {
     display: block;

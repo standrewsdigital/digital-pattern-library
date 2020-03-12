@@ -20,6 +20,17 @@ p, ul, ol {
     margin: 0 0 1.5625rem; // 25px @ 16px
 }
 
+ul > li,
+ol > li {
+    margin-bottom: 0.3125rem; //5px @ 16px
+}
+
+ol ol,
+ol ul,
+ul ul,
+ul ol {
+    margin-top: 0.3125rem; //5px @ 16px
+}
 
 hr {
     border-top: 1px solid #ededed;

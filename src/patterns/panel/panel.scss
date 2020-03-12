@@ -35,6 +35,7 @@
 .panel-title {
     @include ms-respond(font-size,1);
     font-weight: bold;
+    line-height: inherit;
 
     a {
         display: block;
@@ -45,7 +46,7 @@
         &:hover {
             background: inherit;
             color: inherit;
-            text-decoration: underline;
+            text-decoration: none;
         }
         &:focus {
             background: inherit;
@@ -81,10 +82,6 @@
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-.panel-body li {
-    margin-bottom: 5px;
 }
 
 /*********************************/
