@@ -54,7 +54,8 @@ Release date: Monday 16 March 2020
 ### Removed
 * Transition effect on links.
 * Example page for search with different styled adjacent results.
-* Support for <b> and <i> tags is instead handled by CSS.
+* Support for &lt;b&gt; and &lt;i&gt; tags is instead handled by CSS.
+* Section header pattern.
 
 ### Fixed
 * Images now displaying on Long-form example page and Vimeo video removed.
