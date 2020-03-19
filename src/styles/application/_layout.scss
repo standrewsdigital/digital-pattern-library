@@ -1,0 +1,94 @@
+#app-wrapper {
+    display: -ms-grid;
+    display: grid;
+
+    grid-template-areas: "header header" "sidebar content" "footer footer";
+
+    -ms-grid-columns: $sidebar-width-collapsed 1fr;
+    grid-template-columns: $sidebar-width-collapsed 1fr;
+    -ms-grid-rows: $navbar-height 1fr auto;
+    grid-template-rows: $navbar-height 1fr auto;
+    min-height: 100vh;
+
+    &[aria-expanded="true"] {
+        -ms-grid-columns: $sidebar-width-expanded 1fr;
+        grid-template-columns: $sidebar-width-expanded 1fr;
+    }
+
+    #app-nav {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+        grid-area: header;
+    }
+
+    #app-sidebar {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+        grid-area: sidebar;
+    }
+
+    #app-content {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+        grid-area: content;
+        overflow: auto;
+    }
+
+    #app-footer {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+        grid-area: footer;
+    }
+
+    // Hopefully this could be included in DPL as standard....
+    .container-fluid {
+        max-width: 98%;
+    }
+}
+
+// Padding utility classes (Experimental)
+.app--padding {
+    padding: 1rem;
+}
+
+/*
+    If you want to exclude the sidebar on a public facing login page you can set the width of the sidebar to 0
+    You just need to add something that identifies this instance of app-wrapper as being on that page...
+*/
+/*
+<identifier for the page with no sidebar> #app-wrapper,
+<identifier for the page with no sidebar> #app-wrapper[aria-expanded="true"] {
+    -ms-grid-columns: 0 1fr;
+    grid-template-columns: 0 1fr;
+}
+
+ */
+
+/* Stupid IE11 doesn't assign the correct minimum height to the overall container on shorter pages
+   The below should specifically set a reasonable min-height for the main content area
+ */
+_:-ms-fullscreen, :root #app-content {
+    min-height: calc(100vh - 210px);
+}
+
+@media (max-width: 979px) {
+    // On mobile disable scrolling on background when menu open
+    body {
+        &.expanded {
+            overflow: hidden;
+        }
+    }
+
+    #app-wrapper {
+        /* Sidebar is entirely hidden on mobile */
+        -ms-grid-columns: 0 1fr;
+        grid-template-columns: 0 1fr;
+
+        &[aria-expanded="true"] {
+            -ms-grid-columns: 0 1fr;
+            grid-template-columns: 0 1fr;
+        }
+    }
+}

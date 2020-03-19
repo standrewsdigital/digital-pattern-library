@@ -1,0 +1,186 @@
+.app-sidebar__nav {
+    width: inherit;
+    font-size: 1rem;
+}
+
+.app-sidebar__nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        margin: 0;
+        
+        // Style for active menu item
+        &.active {
+            background-color: #dedede;
+        }
+    }
+}
+
+.app-sidebar__nav-divider {
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+// Utility class that sets content to only show when menu is expanded
+.app-sidebar__expanded-only {
+    display: none;
+}
+
+.app-sidebar__nav-item {
+    padding: 0.5rem 1rem;
+
+    // Style plain text links - Will be reviewed in upcoming DPL updates
+    a {        
+        color: inherit;
+        font-weight: normal;
+        text-decoration: underline;
+
+        &:hover,
+        &:focus {
+            color: $sta-blue;
+        }
+    }
+}
+
+// Position icon in wrapper to line up with burger menu
+.app-sidebar__nav-icon {
+    width: 3rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+.app-sidebar__nav-text {
+    display:none;
+    line-height:1.25;
+}
+
+// Additional styling when item is a icon/value link
+.app-sidebar__nav-item--link {
+    color: #202024;
+    display: flex;
+    text-decoration: none;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 3.5rem;
+
+    &:hover,
+    &:focus {
+        background-color: #dedede;
+        color:inherit;
+        text-decoration: none;
+    }
+
+    &:focus {
+        background-color: #dedede;
+
+        .app-sidebar__nav-text {
+            text-decoration: underline;
+        }
+    }
+
+    // Reduce left hand padding to line up icons with burger menu
+    @media (max-width: 568px) {
+        padding-left: 0.5em;
+    }
+}
+
+
+#app-wrapper[aria-expanded="true"] {
+    .app-sidebar__nav-text {
+        display: inline-block;
+    }
+
+    .app-sidebar__expanded-only {
+        display: block;
+    }
+}
+
+/* Only here to stop IE from messing up the layout - should be ignored in favour of min-height */
+_:-ms-fullscreen, :root #app-sidebar #app-sidebar-nav ul li a {
+    height: 3vh;
+}
+
+@media (min-width: 979px) {
+    #app-wrapper {
+        &[aria-expanded="true"] {
+            #app-sidebar {
+                width: $sidebar-width-expanded;
+            }
+        }
+
+        .app-sidebar {
+            background: #fafafa;
+            border-right: 1px solid rgba(0,0,0,0.2);
+        }
+
+        .app-sidebar__nav {
+            position: sticky;
+            top: $navbar-height;
+        }
+    }
+}
+
+@media (max-width: 979px) {
+    .app-sidebar {
+        background-color: rgba(68, 68, 68, 0.4);
+        z-index: 1000;
+    }
+    
+    .app-sidebar__nav {
+        background-color: #fafafa;
+        width: 60vw;
+        height: 100vh;
+        transform: translateX(-60vw) translateZ(0);
+        transition: transform 0.35s;
+        padding: 0;
+    }
+    
+// Mobile view for sidebar must look at something other than [aria-expanded='true'] so we can always default to collapsed on page first load
+    #app-wrapper {
+        &.expanded {
+            
+            .app-sidebar {
+                position: fixed;
+                width: 100vw; // Change to vw to show scrim background on Safari
+                height: 100%;
+                top: $navbar-height;
+            }
+            
+            .app-sidebar__nav {
+                    transform: translateX(0) translateZ(0);
+                    border-bottom: $navbar-height solid; // Hack - Offset top position of wrapper so bottom can still be accessed
+                    overflow-y: auto !important; // Help users scroll menus that span below height of screen
+                }
+
+            #app-sidebar-scrim {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    // Increase width of mobile menu on smaller displays
+   
+    .app-sidebar__nav {
+        width: 80vw;
+        transform: translateX(-80vw) translateZ(0);
+    }
+    
+    #app-wrapper {
+        &.expanded {
+            .app-sidebar__nav {
+                    transform: translateX(0) translateZ(0);
+                }
+        }
+    }
+}

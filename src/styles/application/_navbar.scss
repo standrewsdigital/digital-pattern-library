@@ -1,0 +1,116 @@
+.app-navbar {
+    background: #fff;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+    height: $navbar-height;
+    width: 100%;
+    padding: 0 1rem;
+
+    &.app-navbar--fixed {
+        position: fixed; // Position sticky does weird things on iOS Safari
+        top: 0;
+        z-index: 1000;
+    }
+}
+
+.app-navbar__container {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    align-items: center;
+}
+
+.app-navbar__menu-toggle {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    &:focus {
+        background-color: $sta-grey-mid2;
+        outline: none;
+    }
+    &:focus {
+        box-shadow: 0px 0px 0px 3px $sta-orange-highlight;
+    }
+    &:active {
+        background-color: $sta-orange-highlight;
+    }
+}
+    
+.app-brand {
+
+    .app-brand__link {
+        display: flex;
+        align-items: center;
+        height: inherit;
+        flex-grow: 1;
+        text-decoration: none;
+        color: $sta-grey-dark;
+
+        &:focus {
+            background: none;
+            box-shadow: none;
+            outline-offset: 2px;
+        }
+    }
+        
+    .app-brand__logo {
+        background-image: url(../images/crest.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        height: 40px;
+        width: 40px;
+    }
+
+    .app-brand__title {
+        display: block;
+        margin-left: 7px;
+        border-left: 1px solid $sta-grey-dark;
+        padding-left: 10px;
+        @include ms-respond(font-size, 1);
+        line-height: 1.2;
+        font-weight: normal;
+    }
+}
+
+// Add left margin to branding when proceeded by the sidebar toggle
+.app-navbar__menu-toggle + .app-brand {
+    margin-left: 1rem;
+}
+
+.app-logged-in {
+    flex-grow: 1;
+    font-size: 1rem;
+    margin-left: 1rem;
+    text-align: right;
+
+    @media (max-width: 568px) {
+        .app-logged-in__info {
+            display:none;
+        }
+    }
+
+    a {
+        font-weight: normal;
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 568px) {
+    .app-navbar {
+        padding-left: 0.5rem;
+    }
+    .app-navbar__menu-toggle + .app-brand {
+        margin-left: 0.5rem;
+    }
+}
