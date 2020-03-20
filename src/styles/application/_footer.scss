@@ -1,6 +1,6 @@
 .app-footer {
-    background: #fafafa;
-    border-top: 1px solid rgba(0,0,0,0.2);
+    background: $sta-grey-light2;
+    border-top: 1px solid $sta-grey-mid2;
     padding: 1rem;
     font-size: 1rem;
 
@@ -22,11 +22,13 @@
     a {
         color: inherit;
         font-weight: normal;
-        text-decoration: underline;
 
-        &:hover,
+        &:hover {
+            color: $sta-blue-light-shade25;
+        }
+
         &:focus {
-            color: $sta-blue;
+            color: inherit;
         }
     }
 }

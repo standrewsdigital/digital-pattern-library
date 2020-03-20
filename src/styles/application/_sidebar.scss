@@ -13,13 +13,13 @@
         
         // Style for active menu item
         &.active {
-            background-color: #dedede;
+            background-color: $sta-grey-mid2;
         }
     }
 }
 
 .app-sidebar__nav-divider {
-    border-top: 1px solid rgba(0,0,0,0.2);
+    border-top: 1px solid $sta-grey-mid2;
 }
 
 // Utility class that sets content to only show when menu is expanded
@@ -34,11 +34,13 @@
     a {        
         color: inherit;
         font-weight: normal;
-        text-decoration: underline;
 
-        &:hover,
+        &:hover {
+            color: $sta-blue-light-shade25;
+        }
+
         &:focus {
-            color: $sta-blue;
+            color: inherit;
         }
     }
 }
@@ -60,7 +62,7 @@
 
 // Additional styling when item is a icon/value link
 .app-sidebar__nav-item--link {
-    color: #202024;
+    color: $sta-grey-dark;
     display: flex;
     text-decoration: none;
     -ms-flex-align: center;
@@ -69,17 +71,23 @@
 
     &:hover,
     &:focus {
-        background-color: #dedede;
+        background-color: $sta-grey-mid2;
         color:inherit;
         text-decoration: none;
     }
 
     &:focus {
-        background-color: #dedede;
+        background-color: $sta-grey-mid2;
+        box-shadow: 0 0 0 3px inset $sta-orange-highlight;
+        outline: none;
 
         .app-sidebar__nav-text {
             text-decoration: underline;
         }
+    }
+
+    &:active {
+        background: $sta-orange-highlight;
     }
 
     // Reduce left hand padding to line up icons with burger menu
@@ -113,8 +121,8 @@ _:-ms-fullscreen, :root #app-sidebar #app-sidebar-nav ul li a {
         }
 
         .app-sidebar {
-            background: #fafafa;
-            border-right: 1px solid rgba(0,0,0,0.2);
+            background: $sta-grey-light2;
+            border-right: 1px solid $sta-grey-mid2;
         }
 
         .app-sidebar__nav {
@@ -131,7 +139,7 @@ _:-ms-fullscreen, :root #app-sidebar #app-sidebar-nav ul li a {
     }
     
     .app-sidebar__nav {
-        background-color: #fafafa;
+        background-color: $sta-grey-light2;
         width: 60vw;
         height: 100vh;
         transform: translateX(-60vw) translateZ(0);
