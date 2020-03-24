@@ -66,7 +66,7 @@
                     text-decoration: none;
                 }
                 span {
-                    background: rgba($sta-blue-light-shade25,0.9);
+                    background: rgba($sta-blue-light-shade25,1);
                 }
             }
 
@@ -119,6 +119,7 @@
         outline: 3px solid $sta-orange-highlight;
     }
 
+/*
 @media (max-width: 991px) and (min-width: 768px) {
 
     .navbox__title {
@@ -132,11 +133,13 @@
     }
 
 }
+*/
 
 @media (max-width: 767px) {
 
     .navbox__image {
-        max-height: 100%;
+        display: none;
+        /*max-height: 100%;
         overflow: hidden;
         position: absolute;
         width: 100%;
@@ -144,10 +147,11 @@
         img {
             margin-top: -20%;
             width: 100%;
-        }
+        }*/
     }
 
     .navbox__title {
+        text-shadow: none !important;
         a span {
             position: relative;
                 bottom: auto;
@@ -198,7 +202,7 @@
             text-decoration: none;
 
             &:hover {
-                background: rgba($sta-blue-light-shade25,0.9);
+                background: rgba($sta-blue-light-shade25,1);
                 text-decoration: underline;
             }            
 
@@ -244,9 +248,10 @@
         }
     }
 
+/*
     @media (max-width: 991px) and (min-width: 768px) {
 
-        /* Make the title show below instead of on top of the image... */
+        // Make the title show below instead of on top of the image... 
         .navbox-image {
             overflow: hidden;
         }
@@ -256,22 +261,27 @@
         }
 
     }
+    */
 
     @media (max-width: 767px) {
 
         .navbox-image {
-            max-height: 100%;
+
+        display: none;
+            /*max-height: 100%;
             overflow: hidden;
             position: absolute;
             width: 100%;
-        }
 
-        .navbox-image img {
+            img {
             margin-top: -20%;
             width: 100%;
+            }
+            */
         }
 
         .navbox-title {
+            text-shadow: none !important;
             position: relative;
             top: 0;
         }
