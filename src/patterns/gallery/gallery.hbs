@@ -6,7 +6,7 @@
     <div class="{{gallery-images-class}}">
         {{#gallery-images}}
         <figure id="{{id}}">
-            <a href="{{large-img}}" {{#if lightbox-gallery }} data-lightbox="{{lightbox-gallery}}" data-title="{{caption}}"{{/if}}{{#if title}} tabindex="-1"{{/if}}><img src="{{asset thumbnail}}" alt="{{alt}}"></a>
+            <a href="{{asset large-img}}" {{#if lightbox-gallery }} data-lightbox="{{lightbox-gallery}}" data-title="{{caption}}"{{/if}}{{#if title}} tabindex="-1"{{/if}}><img src="{{asset thumbnail}}" alt="{{alt}}"></a>
             {{#if download-button}}
                 <a type="button" class="btn btn-lg btn-primary" href="{{large-img}}" download>Download</a>
             {{/if}}

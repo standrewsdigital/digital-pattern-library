@@ -11,7 +11,7 @@
                 "alt":        "alt text for image 1",
                 "id":         "optional-id2",
                 "caption":    "image 1",
-                "large-img":  "../../docs/assets/docs/images/placeholders/1280x853-7.jpg",
+                "large-img":  "docs/images/placeholders/1280x853-7.jpg",
                 "lightbox-gallery": "gallery"
             },
             {
@@ -19,7 +19,7 @@
                 "alt":        "alt text for image 2",
                 "id":         "optional-id3",
                 "caption":    "image 2",
-                "large-img":  "../../docs/assets/docs/images/placeholders/1280x853-8.jpg",
+                "large-img":  "docs/images/placeholders/1280x853-8.jpg",
                 "lightbox-gallery": "gallery"
             },
             {
@@ -27,7 +27,7 @@
                 "alt":        "alt text for image 3",
                 "id":         "optional-id4",
                 "caption":    "image 3",
-                "large-img":  "../../docs/assets/docs/images/placeholders/1280x853-7.jpg",
+                "large-img":  "docs/images/placeholders/1280x853-7.jpg",
                 "lightbox-gallery": "gallery"
             },
             {
@@ -35,7 +35,7 @@
                 "alt":        "alt text for image 4",
                 "id":         "optional-id2",
                 "caption":    "image 4",
-                "large-img":  "../../docs/assets/docs/images/placeholders/1280x853-8.jpg",
+                "large-img":  "docs/images/placeholders/1280x853-8.jpg",
                 "lightbox-gallery": "gallery"
             },
             {
@@ -43,7 +43,7 @@
                 "alt":        "alt text for image 5",
                 "id":         "optional-id3",
                 "caption":    "image 5",
-                "large-img":  "../../docs/assets/docs/images/placeholders/1280x853-8.jpg",
+                "large-img":  "docs/images/placeholders/1280x853-8.jpg",
                 "lightbox-gallery": "gallery"
             },
             {
@@ -51,7 +51,7 @@
                 "alt":        "alt text for image 6",
                 "id":         "optional-id4",
                 "caption":    "image 6",
-                "large-img":  "../../docs/assets/docs/images/placeholders/1280x853-9.jpg",
+                "large-img":  "docs/images/placeholders/1280x853-9.jpg",
                 "lightbox-gallery": "gallery"
             },
             {
@@ -59,7 +59,7 @@
                 "alt":        "alt text for image 7",
                 "id":         "optional-id3",
                 "caption":    "image 7",
-                "large-img":  "../../docs/assets/docs/images/placeholders/1280x853-8.jpg",
+                "large-img":  "docs/images/placeholders/1280x853-8.jpg",
                 "lightbox-gallery": "gallery"
             },
             {
@@ -67,7 +67,7 @@
                 "alt":        "alt text for image 8",
                 "id":         "optional-id4",
                 "caption":    "image 8",
-                "large-img":  "../../docs/assets/docs/images/placeholders/1280x853-9.jpg",
+                "large-img":  "docs/images/placeholders/1280x853-9.jpg",
                 "lightbox-gallery": "gallery"
             }
         ]
