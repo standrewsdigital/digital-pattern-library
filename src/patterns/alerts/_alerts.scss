@@ -65,6 +65,7 @@
 
 .alert__heading {
     margin-top: 0;
+    @include ms-respond(font-size,1);
 }
 
 .callout {
@@ -80,6 +81,7 @@
     .callout__heading {
         margin-top: 0;
         margin-bottom: 5px;
+        @include ms-respond(font-size,1);
     }
 
     *:last-child {

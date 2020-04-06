@@ -2,23 +2,15 @@
 title: Photosphere
 ---
 <div class="alert alert--warning">
-	<h3 class="alert__heading">Attention</h3>
+	<h2 class="alert__heading">This pattern is no longer supported</h2>
 	<p>This pattern is deprecated and will be removed in a future version of the digital pattern library.</p>
 </div>
 <p class="lead">A photosphere is used to showcase a 360&deg; image using <a href="https://developers.google.com/vr/concepts/vrview-web">Google VR view</a>. This is done via a JavaScript API to manipulate the contents of an <code>&lt;iframe&gt;</code>.</p>
 
-<h3>Rules for photospheres</h3>
+<h2>Rules for photospheres</h2>
 <ul>
     <li>Must always be contained within a <a href="../responsive-embed/index.html">responsive embed pattern</a>.</li>
     <li>Must only be used on the <a href="../content-whole/index.html">content whole</a>, <a href="../content-thirds/index.html">content thirds</a>, <a href="../content-halves/index.html">content halves</a> and <a href="../featured-media/index.html">featured media</a> patterns.</li>
-</ul>
-
-
-<h3>Options available</h3>
-<ul>
-{{#photosphere-options.options}}
-    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
-{{/photosphere-options.options}}
 </ul>
 
 
@@ -61,9 +53,17 @@ function onVrViewLoad() {
 	});
 }</code></pre>
 
+
+
+<h2>Options available</h2>
+<ul>
+{{#photosphere-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/photosphere-options.options}}
+</ul>
 {{#photosphere-options.options}}
 <hr>
-<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3><div class='alert alert--warning'><h4 class="alert__heading">This option is no longer supported</h4><p>This implementation is now deprecated and will be removed in a future release.</p></div>
 {{{option-description}}}
 <!--noindex-->
 	<span class="label label-default">Example</span>

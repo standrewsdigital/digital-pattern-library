@@ -4,14 +4,14 @@ title: Pagination
 
 <p class="lead">Pagination links should be used as a method of navigating a set of content that is divided between multiple pages or views. Typical use of this pattern would be when a large set of results requires to be split for performance reasons, or when the ability to access a specific listings page is a user requirement.</p>
 
-<h3>Rules for pagination</h3>
+<h2>Rules for pagination</h2>
 <ul>
     <li>Pagination must be used on search results and tables where they have multiple pages, for example, <a href="../datatables/index.html">DataTables</a>.</li>
     <li>Pagination must have a wrapping <code>&lt;nav&gt;</code> element to identify it as a navigation section to screen readers and other assistive technologies.</li>
     <li>As pages likely have more than one such navigation section, it’s advisable to provide a descriptive aria-label for the <code>&lt;nav&gt;</code> to reflect its purpose.</li> 
     <li>Links are customisable for different circumstances. Use <code>.disabled</code> for unclickable links and <code>.active</code> to indicate the current page.</li>
 </ul>
-<h3>Options available</h3>
+<h2>Options available</h2>
 <ul>
 {{#pagination-options.options}}
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>

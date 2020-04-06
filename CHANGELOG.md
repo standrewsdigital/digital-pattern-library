@@ -56,6 +56,7 @@ Release date: Monday 16 March 2020
 * Example page for search with different styled adjacent results.
 * Support for &lt;b&gt; and &lt;i&gt; tags is instead handled by CSS.
 * Section header pattern.
+* KIS widget.
 
 ### Fixed
 * Images now displaying on Long-form example page and Vimeo video removed.

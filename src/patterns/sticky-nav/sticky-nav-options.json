@@ -28,9 +28,9 @@
 
 
         {
-            "option-heading": "Old style (deprecated)",
+            "option-heading": "Old style - deprecated",
             "option-anchor": "old-nav",
-            "option-description": "<p>See the code below for the old sticky nav markup. Do not use this HTML in new sites.</p>",
+            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This old method of implementing the navbox pattern is deprecated and will be removed in a future version of the digital pattern library.</p></div><p>See the code below for the old sticky nav markup. Do not use this HTML in new sites.</p>",
             "deprecated-code": "<div class='accent-grey'id='internal-nav-dep'><div class='affix'id='nav-top'><nav class='navigation-bar'role='navigation'><div class='container'><div class='primary-toggle toggle-navigation'><a class='navigation-button'>Navigation <i class='chevron left'></i></a></div><ul class='navigation-bar-nav primary-nav'style='width:100%'><li><a href='##'>Courses</a><li><a href='##'>Testimonial</a><li><a href='##'>Another link</a><li><a href='##'>Yet another</a><li><a href='##'>The last one</a><li aria-hidden='true'class='btn-lg glyphicon glyphicon-chevron-up top-link'style='float:right'><a href='#page'></a></ul></div></nav></div></div>"
 
         }

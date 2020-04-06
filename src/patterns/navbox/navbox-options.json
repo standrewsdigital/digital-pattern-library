@@ -105,8 +105,8 @@
 
 
         {
-            "option-heading": "Navbox (old version)",
-            "option-description": "<div class=\"alert alert--warning\"><h3>Attention</h3><p>This old method of implementing the navbox pattern is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
+            "option-heading": "Navbox (old version) - deprecated",
+            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This old method of implementing the navbox pattern is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
             "option-anchor": "old",
             "box-size": [
                 {

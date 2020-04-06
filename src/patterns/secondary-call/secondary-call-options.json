@@ -89,8 +89,8 @@
 
 
        {
-            "option-heading": "Default text center aligned (deprecated)",
-            "option-description": "<div class='alert alert-danger'><strong>This option is depreciated.</strong> Do not attempt to use this option for any new website development. It will be removed in a future update.</div>",
+            "option-heading": "Default text center aligned - deprecated",
+            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This old method of implementation is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
             "option-anchor": "default",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
@@ -112,8 +112,8 @@
 
 
        {
-            "option-heading": "Text left aligned (deprecated)",
-            "option-description": "<div class='alert alert-danger'><strong>This option is depreciated.</strong> Do not attempt to use this option for any new website development. It will be removed in a future update.</div>",
+            "option-heading": "Text left aligned - deprecated",
+            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This old method of implementation is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
             "option-anchor": "background-1",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",

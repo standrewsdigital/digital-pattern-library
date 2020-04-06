@@ -1,7 +1,7 @@
 {
     "options": [
         {
-            "option-heading": "Default breadcrumbs",
+            "option-heading": "Breadcrumbs",
             "option-anchor": "default",
             "option-description": "<p></p>",
             "deprecated": false,
@@ -20,9 +20,9 @@
             }
         },
         {
-            "option-heading": "Breadcrumbs - old version",
+            "option-heading": "Breadcrumbs (old version) - deprecated",
             "option-anchor": "old",
-            "option-description": "<div class=\"alert alert--warning\"><h3>Attention</h3><p>This implementation is now deprecated and will be removed in a future release.</p><p>This does not include the <code>breadcrumbs--wrapper</code> class which is required to add collapsible margins.</p></div>",
+            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This implementation is now deprecated and will be removed in a future release. This does not include the <code>breadcrumbs--wrapper</code> class which is required to add collapsible margins.</p></div>",
             "deprecated": true,
             "parents": [
             {

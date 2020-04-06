@@ -96,7 +96,7 @@
         {
             "option-heading": "Panel with image - deprecated",
             "option-anchor": "panel-image",
-            "option-description": "<div class='alert alert--warning'><h3 class='alert__heading'>Attention</h3><p>The panel with image option is deprecated and will be removed in a future release.</p></div><p>A panel with an image must only be used in asides. It is recommended that panels with images include a link in the description text for further context. Images be must 750 &times; 500 pixels in resolution.</p>",
+            "option-description": "<div class='alert alert--warning'><h4 class='alert__heading'>This option is no longer supported</h4><p>The panel with image option is deprecated and will be removed in a future release.</p></div><p>A panel with an image must only be used in asides. It is recommended that panels with images include a link in the description text for further context. Images be must 750 &times; 500 pixels in resolution.</p>",
             "panels": [ 
                 {
                     "column-size": "col-md-4",
