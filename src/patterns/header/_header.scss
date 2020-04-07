@@ -132,7 +132,7 @@
 }
 
 #header-search-trigger {
-    font-size: 22px;
+    @include ms-respond(font-size, 1);
     margin-top: -5px;
 }
 

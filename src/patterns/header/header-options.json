@@ -53,9 +53,9 @@
 
 
         {
-            "option-heading": "Mini authenticated header",
+            "option-heading": "Mini authenticated header - deprecated",
             "option-anchor": "mini-header",
-            "option-description": "<p>This condensed header must be used only on web applications.</p>",
+            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This pattern is deprecated and will be removed in a future version of the digital pattern library.</p></div><p>This condensed header must be used only on web applications.</p>",
             "authenticated": {
                 "username": "js73",
                 "first-name": "Josef",

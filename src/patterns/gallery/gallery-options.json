@@ -177,7 +177,8 @@
                     "id":         "optional-id2",
                     "title": "Video 1",
                     "date": "12 June 2018",
-                    "large-img": "#"
+                    "large-img": "#",
+                    "video": true
                 },
                 {
                     "thumbnail":  "docs/images/placeholders/360x240-8.jpg",
@@ -185,7 +186,8 @@
                     "id":         "optional-id3",
                     "title": "Video 2",
                     "date": "19 May 2018",
-                    "large-img": "#"
+                    "large-img": "#",
+                    "video": true
                 },
                 {
                     "thumbnail":  "docs/images/placeholders/360x240-9.jpg",
@@ -193,7 +195,8 @@
                     "id":         "optional-id4",
                     "title": "Video 3",
                     "date": "25 March 2018",
-                    "large-img": "#"
+                    "large-img": "#",
+                    "video": true
                 },
                 {
                     "thumbnail":  "docs/images/placeholders/360x240-7.jpg",
@@ -201,7 +204,8 @@
                     "id":         "optional-id5",
                     "title": "Video 4",
                     "date": "5 January 2018",
-                    "large-img": "#"
+                    "large-img": "#",
+                    "video": true
                 }
             ]
         },

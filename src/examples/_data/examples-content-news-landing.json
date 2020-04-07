@@ -138,6 +138,54 @@
                 }
             ]
         },
+        "tile-grid":{
+            "bg-color": "",
+            "heading": "What's happening in St Andrews",
+            "heading-color": " sta-grey",
+            "single-call-to-action" : true,
+            "call-to-action-text": [
+                {
+                    "read-more-size": "col-xs-12 col-md-6 col-lg-4",
+                    "title": "See all news"
+                }
+            ],
+            "bg-image": "",
+            "tiles": [
+                {
+                    "color": "",
+                    "image": {
+                        "url": "docs/images/placeholders/360x240-1.jpg",
+                        "alt": "Description"
+                    },
+                    "title": "MUSA is going greener",
+                    "description": "The Museum of the University of St Andrews (MUSA) has attained the top standard for sustainability from the Green Tourism Business Scheme.",
+                    "date-display" : "23 August 2017",
+                    "type" : "Awards"
+                },
+                {
+                    "color": "",
+                    "image": {
+                        "url": "docs/images/placeholders/360x240-2.jpg",
+                        "alt": "Description"
+                    },
+                    "title": "A Rae of artistic sunshine",
+                    "description": "The work of one of Scotland's most revered contemporary artists, Barbara Rae, is to go on display in St Andrews.",
+                    "date-display" : "16 August 2017",
+                    "type" : "Events"
+                },
+                {
+                    "color": "",
+                    "image": {
+                        "url": "docs/images/placeholders/360x240-3.jpg",
+                        "alt": "Description"
+                    },
+                    "title": "World Cup fever at Sandy's Bar",
+                    "description": "Hundreds of football fans watched the World Cup final in the newly opened Sandy's Bar at the Students' Association on Sunday.",
+                    "date-display" : "12 July 2017",
+                    "type" : "News"
+                }
+            ]
+        },
         "article-list":{
             "article-items": [
                 {
