@@ -9,6 +9,7 @@
 
     h2 {
         @extend %font-scale-2;
+        line-height: 1.35;
         margin: ms(-3) 0;
 
         a {
@@ -17,9 +18,17 @@
             font-weight: normal;
             text-decoration: none;
 
-            &:hover,
-            &:focus {
+            &:hover {
                 text-decoration: underline;
+            }
+
+            &:focus {
+                color: $sta-grey-dark;
+                text-decoration: underline;
+            }
+
+            &:active {
+                text-decoration: none;
             }
         }
 

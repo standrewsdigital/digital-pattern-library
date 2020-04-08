@@ -9,6 +9,7 @@
 
   > li {
     display: inline; // Remove list-style and block-level defaults
+    margin: 0;
     > a,
     > span {
       position: relative;
@@ -34,16 +35,36 @@
         @include border-right-radius($border-radius-base);
       }
     }
+    // Target nested link when container list element also has tabindex=0
+    &:focus {
+      outline: none;
+    }
+    &:focus a {
+      outline: 3px solid #FFB400;
+    }
   }
 
   > li > a,
   > li > span {
-    &:hover,
-    &:focus {
+    &:hover {
       z-index: 2;
       color: $pagination-hover-color;
       background-color: $pagination-hover-bg;
       border-color: $pagination-hover-border;
+    }
+    &:focus {
+      z-index: 4;
+      box-shadow: none;
+      outline: 3px solid #FFB400;
+      text-decoration: underline;
+    }
+    &:active {
+      background: #FFB400;
+      box-shadow: none;
+      border-color:transparent;
+      color: rgb(32, 32, 36);
+      outline: 3px solid #FFB400;
+      text-decoration: underline;
     }
   }
 

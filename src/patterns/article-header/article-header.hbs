@@ -3,7 +3,7 @@
 	<h1 class="article-header__heading page-heading">{{heading}}</h1>
 	<div class="article-header__meta">
 		{{#if image}}
-	    {{#if image-link}}<a class="article-header__meta-image" href=""><img src="{{image}}" alt="{{name}}"></a>{{else}}<div class="article-header__meta-image"><img src="{{image}}" alt="{{name}}"></div>{{/if}}
+	    {{#if image-link}}<a class="article-header__meta-image" href="" tabindex="-1"><img src="{{image}}" alt="{{name}}"></a>{{else}}<div class="article-header__meta-image"><img src="{{image}}" alt="{{name}}"></div>{{/if}}
 	    {{/if}}
 	    <div class="article-header__meta--group">
 		    {{#if name}}<div class="article-header__meta-author">{{#if image-link}}<a href="#">{{name}}</a>{{else}}{{name}}{{/if}}</div>{{/if}}

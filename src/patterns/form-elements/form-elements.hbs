@@ -1,11 +1,11 @@
+<div class="dpl-form">
 {{#if select-box}}
-<div class="container dpl-form">
 <div class="row">
     <div class="col-md-6">
         <div class="form-group select-box">
             <label class="form-label" {{#if id}}for="{{id}}"{{/if}}>{{label-text}}</label>
-            <p>Please select your student status.</p>
-            <select class="{{class}}" {{#if id}}id="{{id}}" name="{{id}}"{{/if}}>
+            <p class="help-block" id="help-{{option-anchor}}">Please select your student status.</p>
+            <select class="{{class}}" {{#if id}}id="{{id}}" name="{{id}}"{{/if}} aria-describedby="help-{{option-anchor}}">
                 <option value="">Please select one of the following…</option>
                 {{#each options}}
                 <option value="{{option-value}}">{{text}}</option>
@@ -20,13 +20,11 @@
         </div>
     </div>
 </div>
-</div>
 {{else if radio-check}}
-<div class="container dpl-form">
 <div class="form-group">
-    <div class="{{class}}">
-	    <label>Options</label>
-	    <p>{{option-text}}</p>
+    <fieldset class="{{class}}" aria-describedby="help-{{option-anchor}}">
+	    <legend><span class="font-weight--bold">{{option-text}}</span></legend>
+	    <p class="help-block" id="help-{{option-anchor}}">{{option-text-help}}</p>
         <ul>
         	{{#each option-boxes}}
             <li>
@@ -36,7 +34,7 @@
             </li>
             {{/each}}
         </ul>
-    </div>
+    </fieldset>
     {{#if conditional-id}}
 	<div class="conditional-content-radio" aria-hidden="true">
 		<label class="control-label" for="{{conditional-id}}">Other</label>
@@ -44,12 +42,10 @@
 	</div>
 	{{/if}}
 </div>
-</div>
 {{else}}
 {{#if field-legend}}
-<div class="container dpl-form">
 <fieldset>
-<legend>{{field-legend}}</legend>
+<legend><h3>{{field-legend}}</h3></legend>
 {{/if}}
 	{{#each columns}}
 	<div class="row">
@@ -58,14 +54,14 @@
 				{{#if wrapper}}<div class="{{wrapper}}">{{/if}}
 				{{#each input}}
 					<label class="form-label" for="{{input-id}}">{{label-text}}</label>
-					{{#if hint}}<span class="help-block">{{hint}}</span>{{/if}}
+					{{#if hint}}<span class="help-block" id="help-{{input-id}}">{{hint}}</span>{{/if}}
 					{{#if input-addon}}<div class="input-group">{{/if}}
 					{{#if addon-before}}<div class='input-group-addon'>{{{addon-before}}}</div>{{/if}}
 					{{#if textarea}}
-					<textarea class="{{class}}" rows="3" id="{{input-id}}" name="{{input-id}}" {{#if counter}}data-length="{{counter}}"{{/if}}></textarea>
+					<textarea {{#if hint}}aria-describedby="help-{{input-id}}"{{/if}} class="{{class}}" rows="3" id="{{input-id}}" name="{{input-id}}" {{#if counter}}maxlength="{{counter}}"{{/if}}></textarea>
 					{{#if counter}}<div class="textarea_feedback"></div>{{/if}}
 					{{else}}
-					<input type="{{type}}" id="{{input-id}}" class="{{input-class}}" name="{{input-id}}" value="{{input-value}}">
+					<input {{#if hint}}aria-describedby="help-{{input-id}}"{{/if}} type="{{type}}" id="{{input-id}}" class="{{input-class}}" name="{{input-id}}"{{{size}}}{{required}}{{{number}}}>
 					{{/if}}
 					{{#if addon-after}}<div class='input-group-addon'>{{{addon-after}}}</div>{{/if}}
 					{{#if input-addon}}</div>{{/if}}
@@ -77,15 +73,13 @@
 	{{/each}}
 {{#if field-legend}}
 </fieldset>
-</div>
 {{/if}}
 {{/if}}
 	{{#if submit-button}}
-	<div class="container dpl-form">
 	<div class="row">
 	    <div class="col-md-6">
 			<button type="submit" class="btn btn-lg btn-primary">Submit</button>
 		</div>
 	</div>
-</div>
 	{{/if}}
+</div>

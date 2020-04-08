@@ -23,7 +23,7 @@ IMPORTS AND PATTERNS
 @import 'jquery-ui-datepicker';
 @import 'vendor/font-awesome';
 @import 'datatables';
-@import 'swatches';
+//@import 'swatches';
 
 /* Patterns import
    --------------------------------------------------------------------------
@@ -86,7 +86,6 @@ IMPORTS AND PATTERNS
 @import 'search-bar/search-bar';
 @import 'search-results/search-results';
 @import 'secondary-call/secondary-call';
-@import 'section-header/section-header';
 @import 'share-options/share-options';
 @import 'showcase-banner/showcase-banner';
 @import 'staff-profile/staff-profile';
@@ -97,6 +96,9 @@ IMPORTS AND PATTERNS
 @import 'text-banner/text-banner';
 @import 'tile-grid/tile-grid';
 @import 'typefaces/typefaces';
+
+/* Application - to be split off */
+@import 'application/application';
 
 /* Other vendor scripts
    --------------------------------------------------------------------------
@@ -122,7 +124,7 @@ GLOBAL CSS RULES
    */
 
 .content {
-    margin-top: $half-gutter;
+    margin-top: $third-gutter;
 
     img {
       max-width: 100%;

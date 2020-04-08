@@ -10,120 +10,17 @@ Last Updated    6 January 2017
 
 @import 'colors';
 
-
-/*
-.pattern-source, .code {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-    max-height: 14em;
-    overflow: auto;
-    padding: 10px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-
-code {
-    word-wrap: break-word;
-}
-*/
-
-
-// Swatches
-// This is quite elaborate to achieve a specific grouping
-// of the base color and 5 variants for each of the st andrews colours.
-
 .swatch {
-    // cursor: pointer;
-    position: relative;
-    // max-width: 600px;
-    display: block;
-    padding: 0;
-    margin: 0 0 25px;
-
-        .swatch__title {
-            padding: 0.5em;
-            color: white;
-            font-weight: bold;
-        }
-
-
-        .swatch__base,
-        .swatch__selected,
-        .swatch__transparent,
-        .swatch__base-hover,
-        .swatch__selected-hover,
-        .swatch__transparent-hover {
-
-            padding: 0.5em;
-            margin: 0;
-
-            width: 33.333%;
-            color: white;
-            float: left;
-        }
-
-        .swatch__base,
-        .swatch__selected,
-        .swatch__transparent {
-            height: 150px;
-        }
-
-        .swatch__base-hover,
-        .swatch__selected-hover,
-        .swatch__transparent-hover {
-            height: 150px;
-        }
-
-        // Populate elements with appropriate colors.
-
-        @each $name, $color,$color-hover,$color-T,$color-T-hover,$color-S,$color-S-hover in $palette-sta {
-
-            &.#{$name} .swatch__title,
-            &.#{$name} .swatch__base {
-                background-color: $color;
-            }
-            &.#{$name} .swatch__base-hover {
-                background-color: $color-hover;
-            }
-
-            &.#{$name} .swatch__transparent  {
-                background-color: $color-T;
-            }
-            &.#{$name} .swatch__transparent-hover {
-                background-color: $color-T-hover;
-            }
-            &.#{$name} .swatch__selected  {
-                background-color: $color-S;
-            }
-            &.#{$name} .swatch__selected-hover {
-                background-color: $color-S-hover;
-            }
-        }
-
-}
-
-.palette_swatch {
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-    vertical-align: middle;
 
     @each $name, $color in $palette-sta {
 
-        &.#{$name} {
+        &.#{$name} .swatch__colour {
             background-color: $color;
         }
 
     }
 }
 
-#palettes_container ul li {
-    margin-bottom: 20px;
-}
-.swatch.contrast_text > * {
-    color: #444;
-}
 
 ul.dpl-only li {
     margin-top: 10px;
@@ -135,4 +32,24 @@ ul.dpl-only li {
 
 body {
     position: relative;
+}
+
+.table-contrast {
+	td {
+		vertical-align: middle;
+	}
+	td + td {
+		text-align: center;
+	}
+	div {
+		font-weight: bold;
+	}
+
+	&.table-contrast--hide-colours {
+		td,
+		div {
+			background: #fff !important;
+			color: #202024 !important;
+		}
+	}
 }

@@ -21,7 +21,7 @@
     }
 
     &.form-banner__dkgreen {
-        background-color: $sta-dkgreen;
+        background-color: $sta-green-shade25;
         color: #fff;
     }
 
@@ -32,13 +32,13 @@
 }
 
 .form-banner__heading {
-    font-size: 30px;
-    margin-bottom: 6px;
+    @include ms-respond(font-size, 2);
+    margin-bottom: 5px;
     margin-top: 0;
 }
 
 .form-banner__sub-heading {
-    font-size: 21px;
+    @include ms-respond(font-size, 1);
 }
 
 

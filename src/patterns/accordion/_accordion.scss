@@ -11,7 +11,7 @@
 .accordion-group {
     clear: both;
     list-style: none;
-    margin: 0 0 30px 0;
+    margin: 0 0 ms(1) 0;
     padding: 0;
     
     .accordion-item {
@@ -44,20 +44,48 @@
     border: 0;
     color: $sta-blue-light;
     float: right;
-    margin:0 0 10px 0;
+    margin:0 0 0.5rem 0;
+    outline: none;
     padding: 0;
     text-decoration: underline;
+    text-underline-offset: 0.15em;
+
+    &:hover {
+        // Remove underline when hovered
+        text-decoration: none;
+        color: $sta-blue-light-shade25;
+    }
+
+    &:focus {
+        // Apply contrast 
+        background: $sta-orange-highlight;
+        box-shadow: 0 3px $sta-orange-highlight;
+        color: $sta-grey-dark;
+        text-decoration: underline;
+        outline: 3px solid $sta-orange-highlight; 
+    }  
 }
 
 .accordion-item__toggle {
     cursor: pointer;
-    padding: 15px 45px 15px 15px; // Additional padding on right to accommodate chevron
+    padding: 15px 3em 15px 15px; // Additional padding on right to accommodate chevron
     position: relative;
 
     &:hover,
     &:focus,
     &:focus-within {
+        // Add underline to button {
+            .accordion-item__toggle-button {
+                text-decoration: underline;
+                outline: none;
+            }
+
+    }
+
+    &:focus,
+    &:focus-within {
         background-color: $sta-grey-light;
+        outline: 3px solid $sta-orange-highlight; 
     }
 
     // Chevron icon
@@ -65,11 +93,11 @@
         @extend .fa;
         @extend .fa-chevron-down;
         color: $text-color;
-        font-size: 24px;
+        @include ms-respond(font-size,1);
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 15px;
+        right: 1rem;
     }
 
     &.open:before {
@@ -84,28 +112,49 @@
 .accordion-item__toggle-button {
     background: none;
     border: 0;
+    box-shadow: none;
     color: $sta-blue-light;
     padding: 0;
     text-align: left;
+
+    &:hover {
+        // Add underline when hovered
+        text-decoration: underline;
+        color: $sta-blue-light-shade25;
+    }
+
+    &:focus {
+        text-decoration: underline;
+        outline: none;
+    }
+
+    &:active {
+        // Apply contrast 
+        color: $sta-grey-dark;
+        background: $sta-orange-highlight;
+        box-shadow: 0 3px $sta-orange-highlight;
+        text-decoration: underline;
+        outline: 3px solid $sta-orange-highlight; 
+    }  
 }
 
 .accordion-item__toggle-intro {
-    margin: 5px 0 0 0;
+    margin: 0.25rem 0 0 0;
 }
 
 .accordion-item__toggle-keyfact {
     display: inline-block;
-    margin: 5px 20px 0 0;
+    margin: 0.25rem 1em 0 0;
 
     .fa {
-        margin-right:5px;
+        margin-right:0.5rem;
     }
 
     @media (max-width: 400px) {
         // Stack keyfacts on small displays
         display: block;
         margin-right: 0;
-        padding-left: 1.2em;
+        padding-left: ms(2);
         position: relative;
 
         .fa {

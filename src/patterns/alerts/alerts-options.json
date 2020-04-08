@@ -1,10 +1,11 @@
 {
     "options" : [
         {
-            "option-heading": "Success",
+            "option-heading": "Alert (Success)",
             "option-description": "<p>Use the class <code>alert--success</code> for a success alert box. This alert box indicates a successful or positive action, such as successfully submitting a form.</p>",
             "option-anchor": "alert-success",
-            "alert-class": "alert--success",
+            "alert-class": "alert alert--success",
+            "alert": true,
             "alert-message": "<h3 class=\"alert__heading\">Thank you!</h3><p>Thank you for submitting your details. If you have any questions please email <a href='mailto:#'>example@st-andrews.ac.uk</a>.</p>"
          },
 
@@ -12,10 +13,11 @@
 
 
          {
-            "option-heading": "Info",
+            "option-heading": "Alert (Info)",
             "option-description": "<p>Use the class <code>alert--info</code> for an info alert box. This alert box indicates neutral information or a neutral action, such as a recommendation or an update.</p>",
             "option-anchor": "alert-info",
-            "alert-class": "alert--info",
+            "alert-class": "alert alert--info",
+            "alert": true,
             "alert-message": "<h3 class=\"alert__heading\">Did you know?</h3><p>University of St Andrews was founded over 600 years ago? Find out more about the <a href='#'>history of St Andrews</a>.</p>"
           },
 
@@ -23,10 +25,11 @@
 
 
          {
-            "option-heading": "Warning",
+            "option-heading": "Alert (Warning)",
             "option-description": "<p>Use the class <code>alert--warning</code> for a warning alert box. This alert box indicates a warning that might need attention or carries a time limit, such as impending application deadlines.</p>",
             "option-anchor": "alert-warning",
-            "alert-class": "alert--warning",
+            "alert-class": "alert alert--warning",
+            "alert": true,
             "alert-message": "<h3 class=\"alert__heading\">Warning!</h3><p>The deadline for submissions is the end of Semester 2. If you need help, please email <a href='mailto:#'>example@st-andrews.ac.uk</a>.</p>"
           },
 
@@ -34,12 +37,56 @@
 
 
          {
-            "option-heading": "Danger",
+            "option-heading": "Alert (Danger)",
             "option-description": "<p>Use the class <code>alert--danger</code> for a danger alert box. This alert box indicates a dangerous or potentially negative action such as closures or expired deadlines.</p>",
             "option-anchor": "alert-danger",
-            "alert-class": "alert--danger",
+            "alert-class": "alert alert--danger",
+            "alert": true,
             "alert-message": "<h3 class=\"alert__heading\">Submissions have ended</h3><p>The deadline for submissions has passed. If you need help please email <a href='mailto:#'>example@st-andrews.ac.uk</a>.</p>"
+          },
+
+        {
+            "option-heading": "Callout (Success)",
+            "option-description": "<p>Use the class <code>callout--success</code> for a success callout box. This callout box indicates a successful or positive action, such as successfully submitting a form.</p>",
+            "option-anchor": "callout-success",
+            "alert-class": "callout callout--success",
+            "alert-message": "<h4 class=\"callout__heading\">Thank you!</h4><p>Thank you for submitting your details. If you have any questions please email <a href='mailto:#'>example@st-andrews.ac.uk</a>.</p>"
+         },
+
+
+
+
+         {
+            "option-heading": "Callout (Info)",
+            "option-description": "<p>Use the class <code>callout--info</code> for an info callout box. This callout box indicates neutral information or a neutral action, such as a recommendation or an update.</p>",
+            "option-anchor": "callout-info",
+            "alert-class": "callout callout--info",
+            "alert-message": "<h4 class=\"callout__heading\">Did you know?</h4><p>University of St Andrews was founded over 600 years ago? Find out more about the <a href='#'>history of St Andrews</a>.</p>"
+          },
+
+
+
+
+         {
+            "option-heading": "Callout (Warning)",
+            "option-description": "<p>Use the class <code>callout--warning</code> for a warning callout box. This callout box indicates a warning that might need attention or carries a time limit, such as impending application deadlines.</p>",
+            "option-anchor": "callout-warning",
+            "alert-class": "callout callout--warning",
+            "alert-message": "<h4 class=\"callout__heading\">Warning!</h4><p>The deadline for submissions is the end of Semester 2. If you need help, please email <a href='mailto:#'>example@st-andrews.ac.uk</a>.</p>"
+          },
+
+
+
+
+         {
+            "option-heading": "Callout (Danger)",
+            "option-description": "<p>Use the class <code>callout--danger</code> for a danger callout box. This callout box indicates a dangerous or potentially negative action such as closures or expired deadlines.</p>",
+            "option-anchor": "callout-danger",
+            "alert-class": "callout callout--danger",
+            "alert-message": "<h4 class=\"callout__heading\">Submissions have ended</h4><p>The deadline for submissions has passed. If you need help please email <a href='mailto:#'>example@st-andrews.ac.uk</a>.</p>"
           }
+
+
 
 
     ]

@@ -248,7 +248,8 @@ module.exports = function(grunt) {
                     'src/scripts/unbreakableSpaces.js',
                     'src/patterns/*/*.js', // This includes all JS in patterns.
 
-                    'src/scripts/datatables.js'
+                    'src/scripts/datatables.js',
+                    'src/scripts/application.js'
                 ],
                 dest: 'core/scripts/core.js'
             },
@@ -306,7 +307,8 @@ module.exports = function(grunt) {
                     'src/scripts/unbreakableSpaces.js',
                     'src/patterns/*/*.js', // This includes all JS in patterns.
 
-                    'src/scripts/datatables.js'
+                    'src/scripts/datatables.js',
+                    'src/scripts/application.js'
                 ],
                 dest: 'core/scripts/core-nojquery.js'
             },

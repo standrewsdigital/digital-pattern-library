@@ -1,114 +1,137 @@
 {
     "options" : [
         {
-            "option-heading": "Three profiles with description",
+            "option-heading": "Three profiles with descriptions",
             "option-description": "<p></p>",
             "option-anchor": "three-profiles-with-description",
             "featured": [
                 {
-                    "colour": "sta-blue-light",
                     "heading": "Featured academics",
                     "columns": [
                         {
                             "name": "Professor Sophia Adams",
+                            "image": "../../assets/docs/images/profile-pictures/female-001.jpg",
                             "title": "Structural Biologist",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum eget velit ac ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed est sem. Duis egestas justo hos. ",
-                            "size": "col-md-4 featured-people__person"
+                            "size": "col-md-4"
 
                         },
                         {
                             "name": "Aiden Davis",
                             "title": "School of English",
+                            "image": "../../assets/docs/images/profile-pictures/male-001.jpg",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum eget velit ac ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed est sem. Duis egestas justo hos. ",
-                            "size": "col-md-4 featured-people__person"
+                            "size": "col-md-4"
                         },
                         {
                             "name": "Olivia Evans",
                             "title": "Senior Lecturer",
+                            "image": "../../assets/docs/images/profile-pictures/female-002.jpg",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum eget velit ac ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed est sem. Duis egestas justo hos. ",
-                            "size": "col-md-4 featured-people__person"
+                            "size": "col-md-4"
                         }
                     ]
                 }
             ]
         },
         {
-            "option-heading": "Three profiles without description",
-            "option-description": "<p></p>",
+            "option-heading": "Grid of profiles",
+            "option-description": "<p>This example shows a grid of featured people without linking to further information. A light grey background has been added, with additional padding at the top.</p>",
             "option-anchor": "three-profiles-without-description",
             "featured": [
                 {
-                    "colour": "sta-burgundy",
-                    "heading": "Researchers involved",
+                    "colour": " sta-grey-light",
+                    "padding": " padding-top",
                     "columns": [
                         {
                             "name": "Dr Garrett Winters",
+                            "image": "../../assets/docs/images/profile-pictures/male-002.jpg",
                             "title": "School of Biology",
-                            "link": "#",
-                            "size": "col-md-4 featured-people__person"
+                            "size": "col-md-4"
                         },
                         {
                             "name": "Dr Rhona Davidson",
                             "title": "School of Medicine",
-                            "link": "#",
-                            "size": "col-md-4 featured-people__person"
+                            "size": "col-md-4"
                         },
                         {
                             "name": "Brielle Williamson",
+                            "image": "../../assets/docs/images/profile-pictures/female-003.jpg",
                             "title": "PhD student",
-                            "link": "#",
-                            "size": "col-md-4 featured-people__person"
+                            "size": "col-md-4"
+                        },
+                        {
+                            "name": "Professor Sophia Adams",
+                            "image": "../../assets/docs/images/profile-pictures/female-001.jpg",
+                            "title": "Structural Biologist",
+                            "size": "col-md-4"
+
+                        },
+                        {
+                            "name": "Aiden Davis",
+                            "title": "School of English",
+                            "image": "../../assets/docs/images/profile-pictures/male-001.jpg",
+                            "size": "col-md-4"
+                        },
+                        {
+                            "name": "Olivia Evans",
+                            "title": "Senior Lecturer",
+                            "image": "../../assets/docs/images/profile-pictures/female-002.jpg",
+                            "size": "col-md-4"
                         }
                     ]
                 }
             ]
         },
         {
-            "option-heading": "Two profiles with description",
-            "option-description": "<p></p>",
+            "option-heading": "Two profiles with indented descriptions",
+            "option-description": "<p>The descriptions can be indented by adding the class <code>featured-people__person--indented</code>.</p><ul><li>This class must only be used when a person has a description.</li><li>If used then all persons in the current block must also have indented descriptions.</li><li>Must not be used when more than two Featured People are on a single row.</li></ul>",
             "option-anchor": "two-profiles-with-description",
             "featured": [
                 {
-                    "colour": "sta-orange",
                     "heading": "Student participants",
                     "columns": [
                         {
                             "name": "Ashton Cox",
                             "title": "Student",
+                            "image": "../../assets/docs/images/profile-pictures/male-004.jpg",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum eget velit ac ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed est sem. Duis egestas justo hos.",
-                            "size": "col-md-6 featured-people__person"
+                            "size": "col-md-6",
+                            "indent": true
                         },
                         {
                             "name": "Olivia Liang",
                             "title": "Student",
+                            "image": "../../assets/docs/images/profile-pictures/female-003.jpg",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum eget velit ac ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed est sem. Duis egestas justo hos.",
-                            "size": "col-md-6 featured-people__person"
+                            "size": "col-md-6",
+                            "indent": true
                         }
                     ]
                 }
             ]
         },
         {
-            "option-heading": "One profile with description",
-            "option-description": "<p></p>",
+            "option-heading": "One profile with indented description",
+            "option-description": "<p>The descriptions can be indented by adding the class <code>featured-people__person--indented</code>.</p><ul><li>This class must only be used when a person has a description.</li><li>If used then all persons in the current block must also have indented descriptions.</li><li>Must not be used when more than two Featured People are on a single row.</li></ul>",
             "option-anchor": "one-profile-with-description",
             "featured": [
                 {
-                    "colour": "sta-purple",
                     "heading": "About the author",
                     "columns": [
                         {
                             "name": "Professor Sonya Frost",
                             "title": "Theoretical Physicist",
+                            "image": "../../assets/docs/images/profile-pictures/female-002.jpg",
                             "link": "#",
                             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum eget velit ac ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed est sem. Duis egestas justo hos.",
-                            "size": "featured-people__person featured-people__person--single",
-                            "single": true
+                            "size": "col-xs-12",
+                            "indent": true
                         }
                     ]
                 }

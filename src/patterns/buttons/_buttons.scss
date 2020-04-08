@@ -3,22 +3,24 @@
 /* BEGIN Pattern: buttons        */
 /*********************************/
 
-@media (max-width: 600px) {
-    .btn, .read-more a {
-        margin-bottom: 5px;
-    }
+button {
+  outline:none;
+  
+  &:focus {
+      outline: 3px solid $sta-orange-highlight; 
+  }
 }
 
 .btn-tag {
 	background: white;
 	border: 1px solid $sta-grey;
-	color: $sta-blue;
-	font-weight: bold;
+	color: $sta-grey-dark;
 
-	&:hover {
+	&:focus,
+  &:hover {
 		background: $sta-grey-light;
-        border-color: $sta-grey;
-        color: $sta-blue;
+    border-color: $sta-grey;
+    color: $sta-grey-dark;
 	}
 }
 
@@ -26,29 +28,22 @@
     @extend .btn;
     @extend .btn-primary;
     @extend .btn-block;
+    font-weight: bold;
     color: white;
-    font-size: 24px;
+    @include ms-respond(font-size,1);
     margin: 0;
-    padding: 15px 35px 15px 15px;
+    padding: 0.8rem 3rem 0.8rem 1rem;
     position: relative;
     text-align: left;
-
-    @media (max-width: 767px) {
-        font-size: 20px;
-    }
 
     &:before {
 	    @extend .fa;
 	    @extend .fa-chevron-right;
-	    font-size: 30px;
+      @include ms-respond(font-size,1);
 	    position: absolute;
 	    top: 50%;
 	    transform: translateY(-50%);
 	    right: 15px;
-
-	    @media (max-width: 767px) {
-	        font-size: 24px;
-	    }
     }
 }
 
@@ -56,19 +51,20 @@
   .btn-important {
     background: $sta-blue-light;
     border: none;
+    @include ms-respond(font-size,1);
     border-color: $sta-blue-light;
-    border-bottom: 3px $sta-blue-hover solid;
+    border-bottom: 3px $sta-blue-light-shade25 solid;
     color: white;
     font-weight: bold;
     line-height: 1;
     position:relative;
-    padding:15px 45px 12px 15px;
+    padding:0.8rem 2.5rem 0.8rem 1rem;
     text-align: left;
 
     &:before {
       @extend .fa;
       @extend .fa-chevron-right;
-      font-size: 24px;
+      @include ms-respond(font-size,1);
       position: absolute;
       top: 50%;
       transform: translateY(-50%) translateY(1px);
@@ -77,7 +73,7 @@
 
     &:hover,
     &:focus {
-      background:$sta-blue-light-hover;
+      background:$sta-blue-light-shade25;
       color: white;
     }
   }  
@@ -86,8 +82,7 @@
 .btn-action {
     background: $sta-blue-light;
     border: none;
-    border-color: $sta-blue-light;
-    border-bottom: 3px $sta-blue-hover solid;
+    border-bottom: 3px $sta-blue-light-shade25 solid;
     font-weight: bold;
     @include ms-respond(font-size,1);
     color: white;
@@ -108,44 +103,63 @@
 
     &:hover,
     &:focus {
-      background:$sta-blue-light-hover;
+      background:$sta-blue-light-shade25;
       color: white;
+    }
+
+    &:active {
+      border-bottom: 3px transparent solid;
     }
 }
 
 .btn-small-tag {
     display: inline-block;
     margin: 0.5rem 0.5rem 0 0;
-    background: $sta-grey-light-S;
+    background: white;
     border: 1px $sta-grey-highlight solid;
-    color: $sta-grey-dark-S;
+    color: $sta-grey-dark;
     font-size: 1rem;
     font-weight: normal;
     padding: 0.4rem 0.5rem;
+    text-decoration: none;
 
     &:hover,
     &:focus {
-        background: $sta-grey-light-S-hover;
-        color: $sta-grey-dark-S-hover;
+        background: $sta-grey-light;
+        color: $sta-grey-dark;
         text-decoration: none;
+    }
+    &:active {
+      background: $sta-orange-highlight;
+      color: $sta-grey-dark;
+      box-shadow: 0 3px $sta-orange-highlight;
     }
 }
 
 .btn-xsmall-tag {
     display: inline-block;
     margin: 0.5rem 0.5rem 0 0;
-    background: $sta-grey-light-S;
+    background: white;
     border: 1px $sta-grey-highlight solid;
-    color: $sta-grey-dark-S;
+    color: $sta-grey-dark;
     @include ms-respond(font-size,-1);
     font-weight: normal;
     padding: 0.4rem 0.5rem;
+    text-decoration: none;
 
     &:hover,
     &:focus {
-        background: $sta-grey-light-S-hover;
-        color: $sta-grey-dark-S-hover;
+        background: $sta-grey-light;
+        color: $sta-grey-dark;
         text-decoration: none;
+    }
+    &:focus {
+      text-decoration: underline;
+    }
+    &:active {
+      background: $sta-orange-highlight;
+      color: $sta-grey-dark;
+      box-shadow: 0 3px $sta-orange-highlight;
     }
 }
 
@@ -155,15 +169,22 @@
   padding:0;
 
   > li > a {
-    color: $sta-grey-dark-S;
+    color: $sta-grey-dark;
     padding: 10px 15px;
     text-decoration: none;
 
     &:hover,
     &:focus {
-        background: $sta-grey-light-S-hover;
-        color: $sta-grey-dark-S-hover;
+        background: $sta-grey-light;
+        color: $sta-grey-dark;
         text-decoration: none;
+    }
+
+    &:active {
+      background: $sta-orange-highlight;
+      color: $sta-grey-dark;
+      box-shadow: 0 3px $sta-orange-highlight;
+      text-decoration: underline;
     }
   }
 }
@@ -186,6 +207,30 @@
     left: auto;
     right: 0;
   }
+}
+
+  // Include small bottom margin when buttons span multiple lines
+.btn, .read-more a {
+  margin-bottom: 5px;
+}
+
+.btn.dropdown-toggle {
+  margin-bottom:0;
+}
+
+// Add focus and active states to buttons
+.btn {
+  text-decoration:none;
+  &:focus {
+    outline: 3px solid $sta-orange-highlight;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $sta-grey-dark;
+    background: $sta-orange-highlight;
+  }
+
 }
 
 /*********************************/

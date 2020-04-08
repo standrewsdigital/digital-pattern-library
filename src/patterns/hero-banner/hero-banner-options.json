@@ -11,7 +11,7 @@
             "action-url": "#",
             "action-text-2": "Entry requirements",
             "bg-image": "docs/images/cta/hero5/",
-            "button-style": "btn btn-primary btn-lg",
+            "button-style": "btn btn-action",
             "intro-buttons": true,
             "caption": "Image details"
         },
@@ -27,7 +27,7 @@
             "paragraph":  "St Andrews has more than 4,000 bed spaces and a fantastic variety of accommodation to suit all tastes and budgets. Prospective students can be sure that they will find suitable accommodation during their studies.",
             "bg-image": "docs/images/cta/hero12/",
             "intro-buttons": true,
-            "button-style": "btn btn-primary btn-lg",
+            "button-style": "btn btn-action",
             "action-text": "See the halls of residence",
             "action-url": "#",
             "caption": "Image details"

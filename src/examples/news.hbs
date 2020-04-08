@@ -10,6 +10,7 @@ title: Example news article page
 
 {{> navigation-bar examples-content-news.navigation-bar}}
 
+<a name="content-begin"></a>
 <div class="container margin-bottom">
     <div class="row">
         <article class="col-md-8">
@@ -39,20 +40,30 @@ title: Example news article page
         <aside class="col-md-4 content">
 			<section>
 				<h3>Top posts</h3>
-				<div class="news-updates">
-						<div class="news-updates__secondary news-updates__article-link ">
-                        	<div class="big-target-click-zone">
-                        		<h4><a href="https://news.st-andrews.ac.uk/archive/grey-seals-copy-human-speech-and-music/" class="big-target-anchor">Grey seals copy human speech and music</a></h4>
-                        		<small>20 June 2019</small>
-                    		</div>
-                		</div>
-                		<div class="news-updates__secondary news-updates__article-link ">
-                        	<div class="big-target-click-zone">
-                        		<h4><a href="https://news.st-andrews.ac.uk/archive/staff-and-students-help-st-andrews-to-league-table-first/" class="big-target-anchor">Staff and students help St&nbsp;Andrews to league table first</a></h4>
-                        		<small>7 June 2019</small>
-                    		</div>
-                		</div>
-            	</div>
+                <div class="row">
+                <article class="col-xs-6 col-md-12 news-updates__secondary news-updates__article-link">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h4 class="news-updates__heading news-updates__heading--small"><a href="#article">Grey seals copy human speech and music</a></h4>
+                            <dl class="metadata-list">
+                                <dt class="sr-only">Date</dt><dd class="metadata-list--full">14 August 2018</dd>
+                                <dt class="sr-only">Category</dt><dd class="metadata-list--full"><a href="#" class="featured-news__category">News at St&nbsp;Andrews</a></dd>
+                            </dl>  
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xs-6 col-md-12 news-updates__secondary news-updates__article-link">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h4 class="news-updates__heading news-updates__heading--small"><a href="#article">Staff and students help St&nbsp;Andrews to league table first</a></h4>
+                            <dl class="metadata-list">
+                                <dt class="sr-only">Date</dt><dd class="metadata-list--full">12 August 2018</dd>
+                                
+                            </dl>  
+                        </div>
+                    </div>
+                </article>
+            </div>
             </section>
 <hr>
 {{> numerical-list examples-content-news.numerical-list}}

@@ -16,16 +16,15 @@
 		<div class="row tile-grid__tiles">
 		{{#each tiles}}
 			<div class="col-sm-6 col-md-4 tile-grid__tile">
-				<article class="tile {{color}}">
+				<div class="tile {{color}}">
 					<div class="tile-image-title">
 						<img src="{{asset image.url}}" alt="{{image.alt}}">
-						<h3><a href="#" role="button">{{title}}</a></h3>
+						<h3><a href="#">{{title}}</a></h3>
 					</div>
 					<p>{{description}}</p>
 					<div class="tile-date">{{date-display}}</div>
 					<div class="tile-type"><a href="#">{{type}}</a></div>
-					<div class="clear"></div>
-				</article>
+				</div>
 			</div>
 		{{/each}}
 		</div>

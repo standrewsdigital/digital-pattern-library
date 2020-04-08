@@ -130,7 +130,7 @@
 
 
         {
-            "option-heading": "Navigation menu footer with two logos in above banner",
+            "option-heading": "Navigation menu footer with two logos placed above banner",
             "option-description": "<ul><li>The navigation menu footer with awards and affiliations logo banner must only be used on the homepage.</li><li>The awards and affiliations logo banner is used to display logos of affiliated partners, awards, and certifications.</li><li>Links must be included to the relevant website or webpage for each logo.</li></ul>",
             "option-anchor": "nav-footer-affiliation-two",
             "website-footer": true,
@@ -207,7 +207,7 @@
 
 
         {
-            "option-heading": "Navigation menu footer with three logos in above banner",
+            "option-heading": "Navigation menu footer with three logos placed above banner",
             "option-description": "<ul><li>The navigation menu footer with awards and affiliations logo banner must only be used on the homepage.</li><li>The awards and affiliations logo banner is used to display logos of affiliated partners, awards, and certifications.</li><li>Links must be included to the relevant website or webpage for each logo.</li></ul>",
             "option-anchor": "nav-footer-affiliation-three",
             "website-footer": true,

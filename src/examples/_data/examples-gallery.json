@@ -4,7 +4,6 @@
         "option-description": "<p>The top and bottom row are two separate galleries. Each gallery needs to have a unique <code>data-lightbox='[gallery name]'</code> to group photos together.</p>",
         "option-anchor": "multiple-galleries",
         "gallery-title": "<h2 class='gallery__title'>Title of gallery</h2>",
-        "gallery-description": "Gallery description",
         "gallery-images-class": "lightbox_gallery_images",
         "gallery-images": [
             {

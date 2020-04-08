@@ -6,13 +6,16 @@
     <div class="{{gallery-images-class}}">
         {{#gallery-images}}
         <figure id="{{id}}">
-            <a href="{{large-img}}" {{#if lightbox-gallery }} data-lightbox="{{lightbox-gallery}}" data-title="{{caption}}" {{/if}}><img src="{{asset thumbnail}}" alt="{{alt}}"></a>
-            <figcaption>{{{caption}}}</figcaption>
+            <a href="{{asset large-img}}" {{#if lightbox-gallery }} data-lightbox="{{lightbox-gallery}}" data-title="{{caption}}"{{/if}}{{#if title}} tabindex="-1"{{/if}}><img src="{{asset thumbnail}}" alt="{{alt}}"></a>
             {{#if download-button}}
                 <a type="button" class="btn btn-lg btn-primary" href="{{large-img}}" download>Download</a>
             {{/if}}
             {{#if title}}
+            <figcaption>
                 <p><a href="#">{{title}}</a><br />{{date}}</p>
+            </figcaption>
+            {{else}}
+            <figcaption class="lightbox-caption">{{{caption}}}</figcaption>
             {{/if}}
         </figure>
         {{/gallery-images}}

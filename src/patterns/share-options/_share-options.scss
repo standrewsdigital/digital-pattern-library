@@ -10,13 +10,20 @@
         li {
     		display: inline;
     		list-style-type: none;
-    		margin-right: 5px;
+    		margin:0 5px 0 0;
     	}
     }
 
 	a {
 		text-decoration: none;
 		font-weight: 500;
+		
+		// Remove background on active and focus state
+		&:active,
+		&:focus {
+			background: none;
+			box-shadow:none;
+		}
 	}
 
 	.fa-facebook-square {

@@ -11,23 +11,23 @@
 	}
 
 	&.sta-orange-2 {
-		background-color: darken($sta-orange, 7%);
+		background-color: shade($sta-orange, 15%);
 	}
 
 	&.sta-orange-3 {
-		background-color: darken($sta-orange, 14%);
+		background-color: shade($sta-orange, 25%);
 	}
 
 	&.sta-dkgreen-1 {
-		background-color: $sta-dkgreen;
+		background-color: shade($sta-green, 15%);
 	}
 
 	&.sta-dkgreen-2 {
-		background-color: darken($sta-dkgreen, 3.5%);
+		background-color: shade($sta-green, 25%);
 	}
 
 	&.sta-dkgreen-3 {
-		background-color: darken($sta-dkgreen, 7%);
+		background-color: shade($sta-green, 35%);
 	}
 
 	&.sta-purple-1 {
@@ -35,11 +35,11 @@
 	}
 
 	&.sta-purple-2 {
-		background-color: darken($sta-purple, 7%);
+		background-color: shade($sta-purple, 15%);
 	}
 
 	&.sta-purple-3 {
-		background-color: darken($sta-purple, 14%);
+		background-color: shade($sta-purple, 25%);
 	}
 	
 	@media (max-width:767px){

@@ -8,6 +8,15 @@
 
     a {
         color: $status-color;  
+
+        &:focus {
+            // Apply contrast 
+            color: $sta-grey-dark;
+            background: $sta-orange-highlight;
+            box-shadow: 0 3px $sta-orange-highlight;
+            text-decoration: underline;
+            outline: 3px solid $sta-orange-highlight; 
+        }  
     }
 }
 
@@ -17,11 +26,20 @@
     border: 5px solid transparent;
     border-radius: 0px;
     color: inherit; 
-    margin-bottom: 20px;
-    padding: 25px;
+    margin: 0 0 1.5625rem 0; // 25px
+    padding: 1em ms(1);
 
     a {
         text-decoration: underline;
+        
+        &:hover {
+            // Remove underline when hovered
+            text-decoration: none;
+        }
+    }
+
+    &:focus {
+        outline: none;
     }
 }
 
@@ -32,7 +50,7 @@
 
 .alert--info,
 .alert-info {
-    @include alert-status ($sta-blue-light);
+    @include alert-status ($sta-blue);
 }
 
 .alert--warning,
@@ -46,8 +64,46 @@
 }
 
 .alert__heading {
-    font-size: 24px;
     margin-top: 0;
+    @include ms-respond(font-size,1);
+}
+
+.callout {
+    margin: 0 0 1.5625rem 0; // 25px
+    padding: 1em ms(1);
+    border-left: 5px solid $sta-grey;
+ 
+    &.no-siblings {
+        margin-bottom: 0;
+    }
+ 
+    h4,
+    .callout__heading {
+        margin-top: 0;
+        margin-bottom: 5px;
+        @include ms-respond(font-size,1);
+    }
+
+    *:last-child {
+        margin-bottom: 0;
+    }
+
+    &.callout-success,
+    &.callout--success {
+        @include alert-status ($sta-green);
+    }
+    &.callout-info,
+    &.callout--info {
+        @include alert-status ($sta-blue);
+    }
+    &.callout-warning,
+    &.callout--warning {
+        @include alert-status ($sta-orange);
+    }
+    &.callout-danger,
+    &.callout--danger {
+        @include alert-status ($sta-red);
+    }
 }
 
 /*********************************/

@@ -47,6 +47,22 @@
     cursor:pointer;
     font-weight: normal;
     font-size: 14px;
+    outline: none;
+    &:active {
+        // Contrast colour (orange) to show active link
+        color: $sta-orange;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:focus {
+        // Apply contrast 
+        z-index:5;
+        text-decoration: underline;
+        outline: 3px solid $sta-orange-highlight; 
+    }  
   }
 
   .collapse-trigger:after {

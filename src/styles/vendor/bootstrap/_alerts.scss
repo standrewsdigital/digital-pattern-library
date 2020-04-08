@@ -30,7 +30,9 @@
     margin-bottom: 0;
   }
 
-  > p + p {
+  > p + p,
+  > p + ul,
+  > p + ol {
     margin-top: 5px;
   }
 }

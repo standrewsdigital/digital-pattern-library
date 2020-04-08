@@ -4,8 +4,8 @@
             "action-text": "Why St Andrews",
             "action-url": "#",
             "bg-image": "docs/images/cta/hero9/",
-            "button-style": "btn btn-primary btn-lg",
+            "button-style": "btn btn-action",
             "heading-colour": "",
             "intro-buttons": true,
-            "caption": "West Sands St Andrews"
+            "caption": "Students in teaching lab"
 }

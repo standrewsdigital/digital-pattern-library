@@ -21,12 +21,7 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: $line-height-computed;
-  font-size: ($font-size-base * 1.5);
   line-height: inherit;
-  color: $legend-color;
-  border: 0;
-  border-bottom: 1px solid $legend-border-color;
 }
 
 label {
@@ -158,6 +153,12 @@ output {
   // [converter] extracted textarea& to textarea.form-control
 }
 
+  // Set validation states also for addons
+  .input-group-addon {
+    color: $text-color;
+    border-color: $input-border !important;
+  }
+
 // Reset height for `textarea`s
 textarea.form-control {
   height: auto;
@@ -213,7 +214,7 @@ input[type="search"] {
 // horizontal forms, use the predefined grid classes.
 
 .form-group {
-  margin-bottom: $form-group-margin-bottom;
+  margin-bottom: 1.25em;
 }
 
 

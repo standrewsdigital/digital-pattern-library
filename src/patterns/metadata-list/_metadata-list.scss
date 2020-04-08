@@ -19,16 +19,19 @@ overflow:auto;
 
         &:hover {
             color: $sta-grey-dark;
-        }
-
-        &:active {
             text-decoration: none;
         }
 
+        &:active {
+          color: $sta-orange;
+        }
+
         &:focus {
-            outline: 2px dotted $sta-orange-highlight;
-            outline-offset: 0;
-            background: lighten($sta-orange,50%);
+          color: $sta-grey-dark;
+          background: $sta-orange-highlight;
+          box-shadow: 0 3px $sta-orange-highlight;
+          text-decoration: underline;
+          outline: 3px solid $sta-orange-highlight; 
         }
     }
 }

@@ -6,12 +6,14 @@
                     "column-size": "col-md-6",
                     "color": "panel-secondary",
                     "title": "Choose St Andrews",
+                    "link": true,
                     "description": "<ul><li><a href='#'>Tuition fees</a></li><li><a href='#'>Scholarships</a></li><li><a href='#'>Accommodation</a></li><li><a href='#'>How to apply</a></li><li><a href='#'>Visiting days</a></li></ul>"
                 },
                 {
                     "column-size": "col-md-6",   
                     "color": "panel-tertiary-1",
                     "title": "Current students",
+                    "link": true,
                     "description": "<ul><li><a href='#'>MySaint</a></li><li><a href='#'>Moodle</a></li><li><a href='#'>Library</a></li><li><a href='#'>MMS</a></li><li><a href='#'>Semester dates</a></li></ul>"
                 }
             ]

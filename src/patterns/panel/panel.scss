@@ -26,85 +26,62 @@
 }
 
 .panel-heading {
-    border-bottom:           1px solid transparent;
-    border-top-right-radius: -1px;
-    border-top-left-radius:  -1px;
-    font-size:   1.3em;
-    font-weight: 700;
-    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    font-size: inherit;
+    padding: 0.8rem 3rem 0.8rem 1rem;
+    position: relative;
 }
 
 .panel-title {
-    font-size:   20px;
-    font-weight: normal;
+    @include ms-respond(font-size,1);
+    font-weight: bold;
     line-height: inherit;
-}
 
-.panel-title {
-    color: inherit;
-    font-size: 21px;
-    margin-top:    0;
-    margin-bottom: 0;
+    a {
+        display: block;
+        text-decoration: none;
+        margin: -0.8rem -3rem -0.8rem -1rem;
+        padding: 0.8rem 3rem 0.8rem 1rem;
+
+        &:hover {
+            background: inherit;
+            color: inherit;
+            text-decoration: none;
+        }
+        &:focus {
+            background: inherit;
+            box-shadow: none;
+            color: inherit;
+            text-decoration: underline;
+            outline: 3px solid $sta-orange-highlight;
+        }
+        &:active {
+            background:$sta-orange-highlight;
+            color: $sta-grey-dark;
+        }
+
+        &:before{
+            @extend .fa;
+            @extend .fa-chevron-right;
+            @include ms-respond(font-size,1);
+            display:inline-block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 1rem;
+            text-decoration: none;
+        }
+    }
 }
 
 .panel-body {
-    padding: 15px;
+    padding: 1rem;
 }
 
 .panel-body ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-.panel-body li {
-    margin-bottom: 5px;
-}
-
-.panel h3 {
-    @include -dpl-transition();
-}
-
-/* Colors */
-
-.panel-primary {
-    border-color: $sta-blue;
-}
-
-.panel-primary>.panel-heading:hover {
-    background: $sta-blue-hover;
-}
-
-.panel-secondary {
-    border-color: $sta-cyan-light;
-}
-
-.panel-secondary>.panel-heading:hover {
-    background: $sta-cyan-hover;
-}
-
-.panel-tertiary-1 {
-    border-color: $sta-green;
-}
-
-.panel-tertiary-1>.panel-heading:hover {
-    background: $sta-green-hover;
-}
-
-.panel-tertiary-2 {
-    border-color: $sta-burgundy;
-}
-
-.panel-tertiary-2>.panel-heading:hover {
-    background: $sta-burgundy-hover;
-}
-
-.panel-tertiary-3 {
-    border-color: $sta-purple;
-}
-
-.panel-tertiary-3>.panel-heading:hover {
-    background: $sta-purple-hover;
 }
 
 /*********************************/

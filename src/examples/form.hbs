@@ -8,15 +8,17 @@ title: Example form elements page
 
 {{> category-header examples-form-elements.category-header}}
 
+<a name="content-begin"></a>
 <div class="page-intro__wrapper">
     <div class="page-intro">
         <div class="page-intro__text">
             <h1 class="page-intro__heading">Sample forms</h1>
-            <p class="lead">Some of the most commonly used forms on the University website.</p>
+            <p class="lead">Some example forms that could appear on the University website.</p>
+            <p>Appropriate heading levels and button styles should be used in relation to the forms importance on the page and the surrounding content.</p>
         </div>
     </div>
 </div>
-<div class="container dpl-form">
+<div class="container">
     <div class="row">
         <div class="col-sm-12">
             <h3>Options</h3>
@@ -30,22 +32,46 @@ title: Example form elements page
     </div>
     <div class="row">
         <div class="col-sm-6">
-            <form>
+            <form class="dpl-form">
                 <fieldset>
-                    <legend id="signin">Sign in</legend>
+                    <legend id="signin"><h3 class="keyline--bottom">Sign in</h3></legend>
                     <div class="form-group">
                         <label class="control-label" for="username">Username</label>
-                        <input class="form-control" id="username" type="text">
+                        <input class="form-control" id="username" type="text" required>
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="password">Password</label>
-                        <input class="form-control" id="password" type="password">
+                        <input class="form-control" id="password" type="password" required>
                     </div>
-                    <div class="container dpl-form">
+                    <button class="btn btn-action" type="submit">Submit</button>
+                </fieldset>
+            </form>
+
+            <hr />
+
+            <form class="dpl-form">
+                <fieldset><legend id="personal"><h1>Personal details</h1></legend>
                     <div class="form-group">
-                        <div class="radio-button">
-                            <label>Options</label>
-                            <p>How many fudge doughnuts would you like?</p>
+                        <label class="control-label" for="title">Title</label>
+                        <input class="form-control" id="title" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="firstName">First name</label>
+                        <input class="form-control" id="firstName" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="lastName">Last name</label>
+                        <input class="form-control" id="lastName" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="dob">Date of birth</label>
+                        <span class="help-block">Enter the date in the following format, 'DD/MM/YYYY'.</span>
+                        <input class="form-control" id="dob" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <fieldset class="radio-button">
+                            <legend><span class="font-weight--bold">Options</span></label>
+                            <span class="help-block">How many fudge doughnuts would you like?</span>
                             <ul>
                                 <li>
                                     <input class="conditional-radio" type="radio" value="default" id="option1-radio-conditional" name="conditional">
@@ -68,16 +94,15 @@ title: Example form elements page
                                     <div class="check "></div>
                                 </li>
                             </ul>
-                            </div>
                             <div class="conditional-content-radio" aria-hidden="true">
                                 <label class="control-label" for="conditional-input1">Other</label>
                                 <input class="form-control" id="conditional-input1" name="conditional" type="text">
                             </div>
-                        </div>
+                        </fieldset>
                     </div>
                     <div class="form-group select-box">
                         <label class="form-label" for="select-box">Status</label>
-                        <p>Please select your student status.</p>
+                        <span class="help-block">Please select your student status.</span>
                         <select class="conditional-select form-control" id="select-box" name="select-box">
                             <option value="">Please select one of the following…</option>
                             <option value="ug">Undergraduate</option>
@@ -90,44 +115,19 @@ title: Example form elements page
                             <input class="form-control" id="conditional-input2" type="text">
                         </div>
                     </div>
-                </fieldset>
-            </form>
-
-            <hr />
-
-            <form>
-                <fieldset><legend id="personal">Personal details</legend>
-                    <div class="form-group">
-                        <label class="control-label" for="title">Title</label>
-                        <input class="form-control" id="title" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label" for="firstName">First name</label>
-                        <input class="form-control" id="firstName" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label" for="lastName">Last name</label>
-                        <input class="form-control" id="lastName" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label" for="dob">Date of birth</label>
-                        <span class="help-block">Enter your d.o.b. in the following format, 'DD/MM/YYYY'.</span>
-                        <input class="form-control" id="dob" type="text">
-                    </div>
-
-                    <input class="btn btn-primary" type="submit" value="Submit">
+                    <button class="btn btn-primary" type="submit">Submit</button>
 
                 </fieldset>
             </form>
 
             <hr />
 
-            <form>
-                <fieldset><legend id="address">Address</legend>
+            <form class="dpl-form">
+                <fieldset><legend id="address"><h2>Address</h2></legend>
 
                     <div class="form-group">
                         <label class="control-label" for="address1">Address line 1</label>
-                        <input class="form-control" id="address1" type="text">
+                        <input class="form-control" id="address1" type="text" required>
                     </div>
 
                     <div class="form-group">
@@ -155,18 +155,18 @@ title: Example form elements page
 
                     <div class="form-group">
                         <label class="control-label" for="city">Town / city</label>
-                        <input class="form-control" id="city" type="text">
+                        <input class="form-control" id="city" type="text" required>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="county">County / state / province / region</label>
-                        <input class="form-control" id="county" type="text">
+                        <input class="form-control" id="county" type="text" required>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="Postcode">Postcode / zipcode</label>
                         <span class="help-block">Enter your postcode without any spaces. For example, 'KY169AL'.</span>
-                        <input class="form-control" id="postcode" type="text">
+                        <input class="form-control" id="postcode" type="text" required>
                     </div>
 
                     <button type="submit" class="btn btn-lg btn-primary">Submit</button>

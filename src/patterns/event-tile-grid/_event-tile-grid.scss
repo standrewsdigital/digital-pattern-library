@@ -19,14 +19,6 @@
     @extend %font-scale-4;
     margin: 0 0 15px 0;
     padding: 0;
-/*
-    @media (max-width: 767px) {
-        font-size: 1.8em;
-    }
-
-    @media (max-width: 479px) {
-        font-size: 1.5em;
-    }   */
 }
 
 /* Secondary featured events */
@@ -80,13 +72,39 @@
         max-width: 555px; // Avoid tile filling entire container if only one in a grid
     }
 
-    a {
-        background: #fafafa;
+    .expanded-link-wrapper {
+        background: white;
         color: inherit;
         font-weight: normal;
         height: 100%;
+        text-decoration: none;
         @media (min-width:380px){
             display: flex;
+        }
+
+        &:hover {
+            background: $sta-grey-light2;
+        }
+
+        a {
+            // Reset link styles
+            box-shadow: none;
+            font-weight: normal;
+            outline: none;
+            text-decoration: none;
+
+            // Make link fill container to cover card
+            &:before {
+                bottom: 0;
+                content: "";
+                left: 0;
+                overflow: hidden;
+                position: absolute;
+                right: 0;
+                top: 0;
+                white-space: nowrap;
+                z-index: 1;
+            }
         }
 
         .featured-event__image {
@@ -123,81 +141,80 @@
         }
 
         .featured-event__details {
-            padding: 15px;
+            padding: 1rem;
             @media (min-width:380px){
                 width: 60%;
             }
         }
 
         .featured-event__heading {
-            color: inherit;
-            font-size: 18px;
-            @media (min-width: 576px){
-                font-size: 22px;
-            }
+            color: $sta-blue-light;
+            @include ms-respond(font-size,1);
+            line-height: 1.3;
+            margin-bottom: 0.25rem;
             margin-top: 0;
         }
 
-        .featured-event__date,
-        .featured-event__location {
-            font-size: 16px;
-            line-height: 1.4;
-            padding-left: 20px;
-            position: relative;
-            
-            &:before {
-                font-family: "Font Awesome 5 Free";
-                font-size: inherit; // can't have font-size inherit on line above, so need to override
-                text-rendering: auto; // optimizelegibility throws things off #1094
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-                font-style: normal;
-                font-weight: 900;
-                position: absolute;
-                top: -2px;
-                left: 0;
-            }
-        }
-        .featured-event__date {
-            margin-bottom: 0.25rem;
-            &:before {
-                font-weight: 400;
-                content: "\f073";
-            }
-        }
-        .featured-event__location {
-            &:before {
-                content: "\f3c5";
-            }
-        }
-
         // Hover styles
-        &:hover,
-        &:focus {
-            background: #f0f0f0;
-            text-decoration: none; // override underline hover effect   
+        a:hover {
+            .featured-event__heading {
+                color: $sta-blue-light-shade25;
+                text-decoration: underline;
+                &:before {
+                    text-decoration: none;
+                }
+            }        
+        }
+        
+        a:focus {
+            background: none;
+            box-shadow: none;
+            outline: none;            
 
             .featured-event__heading {
-                color: #00539b;
+                color: $sta-blue-light-shade25;
                 text-decoration: underline;
+                &:before {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &:focus-within,
+        &:focus {
+            box-shadow: none;
+            outline: 3px solid $sta-orange-highlight;
+
+            .featured-event__heading {
+                color: $sta-blue-light-shade25;
+                text-decoration: underline;
+                &:before {
+                    text-decoration: none;
+                }
             }
         }
     }
 
     // Cancelled style
     &.cancelled {
-        .featured-event__details:before {
-            background: #ea1a13;
-            color: #fff;
-            content: 'Cancelled';
-            display: inline-block;
-            font-size: 14px;
-            font-weight: bold;
-            line-height: 1.42857; // Same as body
-            margin-bottom:8px;
-            padding: 3px 9px;
-            text-shadow: none;
-            text-transform: none;
+        .featured-event__heading{
+            position: relative;
+            padding-top: 1.5em;
+
+            &:before {
+                background: $sta-red;
+                color: #fff;
+                content: 'Cancelled';
+                display: inline-block;
+                font-size: 1rem;
+                font-weight: normal;
+                padding: 3px 9px;
+                text-shadow: none;
+                text-transform: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
         }
     }
 }

@@ -7,7 +7,7 @@
 }
 
 .article-list + .article-list {
-    border-top: 1px solid #dedede;
+    border-top: 1px solid $sta-grey-mid2;
     margin-top: 1em;
     padding-top: 1em;
 }
@@ -20,8 +20,10 @@
 
     // Focus state for image
     a:focus {
+        background: none;
+        box-shadow: none;
         img {
-            outline: 2px solid $sta-orange-highlight;
+            outline: 3px solid $sta-orange-highlight;
             outline-offset: 0;
         }
     }
@@ -38,26 +40,8 @@
 
 .article-list__heading {
     @include ms-respond(font-size,1);
-    line-height: 1.2;
+    line-height: 1.25;
     margin: 0 0 5px 0;
-
-    a {
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
-
-        &:focus {
-            outline: 2px dotted $sta-orange-highlight;
-            outline-offset: 0;
-            background: lighten($sta-orange,50%);
-        }
-           
-        &:active {
-            text-decoration: none;
-        }
-    }
 }
 
 .article-list__description {

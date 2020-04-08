@@ -4,33 +4,52 @@
 .event-listing {
 
     @extend %card;
-    
+    padding: 1em;
+
+    &.expanded-link-wrapper:hover {
+        background: $sta-grey-light2;
+    }
 
     .event-listing__details { 
-        background: #fafafa;
-        color: inherit;
-        display: block;
-        font-weight: normal;
-        height: 100%;
-        padding: 1em;
+        // Reset link styles
+            box-shadow: none;
+            font-weight: normal;
+            outline: none;
+            text-decoration: none;
 
         .event-listing__heading {
             color: inherit;
             @extend %font-scale-1;
             margin: 0 0 0.25rem;
         }
+    }
+
+     // Make link fill container to cover card when link
+            a.event-listing__details:before {
+                bottom: 0;
+                content: "";
+                left: 0;
+                overflow: hidden;
+                position: absolute;
+                right: 0;
+                top: 0;
+                white-space: nowrap;
+                z-index: 1;
+            }
 
         .event-listing__description {
             margin-top:0.25rem;
             max-width: 48em;  // limit width of text to help readability
         }
 
+/*
         .event-listing__date,
         .event-listing__location,
         .event-listing__time  {
             font-size: 1rem; // Don't scale up on larger displays
+            font-weight: normal; 
             margin-bottom:0.25rem;
-            padding-left: ms(2);
+            padding-left: 1.3rem;
             position: relative;
             
             &:before {
@@ -63,35 +82,74 @@
                 content: "\f017";
             }
         }
-    }
+        */
 
-    a.event-listing__details {
-        // Hover styles
-        &:hover,
-        &:focus {
-            background: #f0f0f0;
-            text-decoration: none; // override underline hover effect   
+     // Hover styles
+        a:hover {
+            .event-listing__heading {
+                color: $sta-blue-light-shade25;
+                text-decoration: underline;
+                &:before {
+                    text-decoration: none;
+                }
+            }        
+        }
+        
+        a:focus {
+            background: none;
+            box-shadow: none;
+            outline: none;            
 
             .event-listing__heading {
-                color: #00539b;
+                color: $sta-blue-light-shade25;
                 text-decoration: underline;
+                &:before {
+                    text-decoration: none;
+                }
             }
         }
-    }
+
+        &:focus-within,
+        &:focus {
+            box-shadow: none;
+            outline: 3px solid $sta-orange-highlight;
+            z-index: 5;
+
+            .event-listing__heading {
+                color: $sta-blue-light-shade25;
+                text-decoration: underline;
+                &:before {
+                    text-decoration: none;
+                }
+            }
+        }
 
     // Cancelled style
     &.cancelled {
-        .event-listing__details:before {
-            background: #ea1a13;
-            color: #fff;
-            content: 'Cancelled';
-            display: inline-block;
-            @extend %font-scale-minus-1;
-            font-weight: bold;
-            margin-bottom:0.5rem;
-            padding: 3px 9px;
-            text-shadow: none;
-            text-transform: none;
+        .event-listing__heading{
+            position: relative;
+            padding-top: 1.5em;
+
+            &:before {
+                background: $sta-red;
+                color: #fff;
+                content: 'Cancelled';
+                display: inline-block;
+                font-size: 1rem;
+                font-weight: normal;
+                padding: 3px 9px;
+                text-shadow: none;
+                text-transform: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
         }
     }
+}
+
+// Reduce borders when two adjoin
+.event-listing + .event-listing {
+    margin-top: -1px;
+    border-top: 1px solid $sta-grey-mid2;
 }

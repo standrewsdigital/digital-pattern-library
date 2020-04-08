@@ -151,6 +151,13 @@ textarea, input[type~=text], input[type~=submit] {
     -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12);
     box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12);
     box-sizing: border-box;
+
+    // Make drop shadow slightly more prominent on hover.
+    &:hover {
+       -webkit-box-shadow: 0 3px 2px -2px rgba(0,0,0,0.2), 0 3px 2px 0 rgba(0,0,0,0.14), 0 2px 5px 0 rgba(0,0,0,0.12);
+        -moz-box-shadow: 0 3px 2px -2px rgba(0,0,0,0.2),0 3px 2px 0 rgba(0,0,0,0.14),0 2px 5px 0 rgba(0,0,0,0.12);
+        box-shadow: 0 3px 2px -2px rgba(0,0,0,0.2), 0 3px 2px 0 rgba(0,0,0,0.14), 0 2px 5px 0 rgba(0,0,0,0.12); 
+    }
 }
 
 /* DPL HELPERS */
@@ -168,4 +175,56 @@ textarea, input[type~=text], input[type~=submit] {
 .lazyloaded {
     opacity: 1;
     transition: opacity 300ms;
+}
+
+// Wrapper for expanded links
+.expanded-link-wrapper {
+    position: relative;
+}
+
+// Colour pallete and swatch
+.colour-palette {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.swatch {
+    background: none !important;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em 1em 0;
+    width: 14em;
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12);
+    -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12);
+
+    p {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0.8rem 1rem 0 1rem;    
+    }
+}
+.swatch__colour {
+    height: 6em;
+    width: 100%;
+}
+.swatch-group {
+    // Group heading and description
+    flex-grow: 1;
+}
+.swatch__heading {
+    border-bottom: 1px solid $sta-grey-light;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: inherit;
+    padding: 0.8rem 1rem;
+    margin: 0;
+
+    small {
+        color: $sta-grey-dark;
+        font-size: 1rem;
+    }
+}
+.swatch__details {
+    margin-bottom: 0.8rem;
 }

@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6,
     display: block;
     font-weight: normal;
     line-height: 1;
-    color: $headings-small-color;
+    color: #6a6a6b;
 
     a {
       font-weight: normal;
@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6,
   }
 
   &.keyline--bottom {
-    border-bottom: 2px solid $sta-grey-light;
+    border-bottom: 2px solid #949494;
     padding-bottom: ($line-height-computed / 2);
   }
 }
@@ -69,7 +69,7 @@ h4, .h4 { @extend %font-scale-1; }
 h5, .h5 { @extend %font-scale-0; }
 h6, .h6 { @extend %font-scale-0; }
 
-// Override default heading sizes (may become default)
+// KEEP AS MAY BE IN USE - preferred method is specific font scale override classes
 .heading--large {
   @extend %font-scale-6; 
 }
@@ -347,7 +347,7 @@ address {
 
 // Page heading - main h1 of a page
 .page-heading {
-  line-height: 1.2;
+  line-height: 1.15;
   margin-top: $half-gutter;
 }
 

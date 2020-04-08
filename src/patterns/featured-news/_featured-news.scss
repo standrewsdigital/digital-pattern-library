@@ -4,37 +4,6 @@
 /*********************************/
 
 .featured-news {
-
-    .featured-news__article-link { //wrapper for entire link block
-        &:not(.sub-link-active){
-            &:hover,
-            &:focus {
-                cursor: pointer;
-
-                .featured-news__article-heading a {
-                    text-decoration:underline;
-                }
-            }
-        }
-    }
-
-    // Links focus state
-    a:focus {
-        //image
-        .featured-news__image {
-            outline: 2px solid $sta-orange-highlight;
-            outline-offset: 0;
-        }
-    }
-    .featured-news__article-heading a:focus {
-        outline: 2px dotted $sta-orange-highlight;
-        outline-offset: 0;
-        background: lighten($sta-orange,50%);
-    }
-    // Links active state 
-    .featured-news__article-heading a:active {
-        text-decoration: none;
-    }
     
     p {
         margin-bottom:5px;

@@ -8,7 +8,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: inherit;
-    line-height: 2;
     padding: $page-gutter 0;
 
     &.white {
@@ -29,20 +28,10 @@
 .tile-grid__heading,
 .tile-grid h2 {
     color: white;
-    //font-size: 2.5em;
     @extend %font-scale-4;
     margin: 0 0 15px 0;
     padding: 0;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-
-    /*
-    @media (max-width: 767px) {
-        font-size: 1.8em;
-    }
-
-    @media (max-width: 479px) {
-        font-size: 1.5em;
-    }  */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 
     &.sta-grey {
         color: inherit;
@@ -85,7 +74,9 @@
        -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
             box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
     margin: auto;
-    max-width: 360px;
+    max-width: 500px;
+    border: 0;
+    @include clearfix-alt;
 }
 
 .tile.tile-responsive {
@@ -108,16 +99,15 @@
 }
 
 .tile h3 {
-    background: $sta-blue-T;
-    font-size: 1.3em;
-    line-height: 1.3em;
+    background: rgba($sta-blue-light,0.9);
+    @include ms-respond(font-size,1);
+    line-height: inherit;
     margin: 0;
-    padding: .5em .8em;
+    padding: 0;
     position: absolute;
     bottom: 0;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     width: 100%;
-    @include -dpl-transition();
 }
 
 .tile:hover {
@@ -125,63 +115,100 @@
 }
 
 .tile:hover h3 {
-    background: $sta-blue-T-hover;
+    background: rgba($sta-blue-light-shade25,0.9);
 }
 
 .tile h3 a {
     color: white;
 	text-decoration: none;
+    padding: .8rem 1rem;
+    display: block;
+    &:hover {
+        text-decoration: none;
+    }
+    &:focus {
+        text-decoration: underline;
+        background: none;
+        outline: 3px solid $sta-orange-highlight; 
+    }
+    &:active {
+        // Apply contrast 
+        color: $sta-grey-dark;
+        background: $sta-orange-highlight;
+        box-shadow: 0 3px $sta-orange-highlight;
+        text-decoration: underline;
+        text-shadow: none;
+        outline: 3px solid $sta-orange-highlight; 
+    }
 }
 
 .tile p {
-    font-size: 1em;
- 	height: 5em;
- 	line-height: 1.2em;
- 	margin: 1.5em 0;
+ 	height: 7rem;
+ 	margin: 1rem 0;
     overflow: hidden;
-    padding: 0 1em;
+    padding: 0 1rem;
 }
 
 .tile-date {
     color: $sta-grey;
     float: left;
-    font-size:   15px;
-    font-weight: bold;
-    padding-left: 1em;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0 0.5rem 0.8rem 1rem;
 }
 
 .tile-type {
     color: $sta-grey;
     float: right;
-    font-size:   15px;
-    font-weight: bold;
-    padding-right: 1em;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0 1rem 0.8rem 0.5rem;
+
+    a {
+        color: $sta-grey;
+        font-weight: normal;
+        text-decoration: underline;
+
+        &:hover {
+            color: $sta-grey-dark;
+            text-decoration: none;
+        }
+
+        &:focus {
+        // Apply contrast 
+        color: $sta-grey-dark;
+        background: $sta-orange-highlight;
+        box-shadow: 0 3px $sta-orange-highlight;
+        text-decoration: underline;
+        outline: 3px solid $sta-orange-highlight; 
+        }
+    }
 }
 
 /* Colors */
 
 .tile.green h3 {
-    background: $sta-green-T;
+    background: rgba($sta-green,0.9);
 }
 
 .tile.green:hover h3 {
-    background: $sta-green-T-hover;
+    background: rgba($sta-green-shade25,0.9);
 }
 
 .tile.purple h3 {
-    background: $sta-purple-T;
+    background: rgba($sta-purple,0.9);
 }
 
 .tile.purple:hover h3 {
-    background: $sta-purple-T-hover;
+    background: rgba($sta-purple-shade25,0.9);
 }
 
 .tile.red h3 {
-    background: $sta-red-T;
+    background: rgba($sta-red,0.9);
 }
 
 .tile.red:hover h3 {
-    background: $sta-red-T-hover;
+    background: rgba($sta-red-shade25,0.9);
 }
 
 @media (max-width: 767px) {

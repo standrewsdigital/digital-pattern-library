@@ -111,10 +111,12 @@ th {
 
 // Zebra-striping
 //
-// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+// Default zebra-stripe styles (alternating gray and white backgrounds)
 
 .table-striped,
 .table-striped > table {
+  background: white;
+
   > tbody > tr:nth-of-type(odd) {
     background-color: $table-bg-accent;
   }

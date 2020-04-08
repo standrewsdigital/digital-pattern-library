@@ -10,6 +10,20 @@ function htmlDecode(value) {
 
 (function($) {
 
+    // Toggle button for Colour Contrast table
+    $("#toggle-colours-button").click(function() {
+        // Check button state
+        var state = $(this).attr('aria-pressed') === 'false' ? true : false;
+        // If true then change state and remove colours
+        if(!state){
+            $(this).attr('aria-pressed', state);
+            $('.table-contrast').toggleClass("table-contrast--hide-colours");
+        } else {
+            $(this).attr('aria-pressed', state);
+            $('.table-contrast').toggleClass("table-contrast--hide-colours");
+        }
+    });
+
     $(".pattern-source").each(function() {
         var t = $(this)
         t.html(htmlEncode(t.html()));
@@ -91,12 +105,13 @@ function htmlDecode(value) {
     //     placement: 'bottom'
     // });
 
-    $('.swatch > *:not(.swatch__title, .clearfix)').append(function ( index ) {
-        var item = $(this);
-        bgcolor = item.css('background-color');
+    $('.swatch > .swatch__details').prepend(function ( index ) {
+        var item = $(this).parent();
+        bgcolor = item.find('.swatch__colour').css('background-color');
+        console.log('color '+bgcolor);
         hexcode = rgbToHex(bgcolor);
         bgcolor = bgcolor.replace("0.74902","0.75");
-        content = "<br><p><strong>RGB:</strong> " + bgcolor ;
+        content = "<p><strong>RGB:</strong> " + bgcolor ;
         if (hexcode) {
             content += "<br><strong>Hex:</strong> " + hexcode;
         }
@@ -303,11 +318,11 @@ function htmlDecode(value) {
 
     $('.navbox').each(function() {
 
-        navbox = $('.navbox-title a', this);
+        navbox = $(this);
 
         // Get the navbox title and link.
-        var title = navbox.text();
-        var link = navbox.attr('href');
+        var title = navbox.find('.navbox__title').text();
+        var link = navbox.find('.navbox__title a').attr('href');
         title = title.replace(/-/g, ' ');
 
         // Create an object for the title and link then add it to the patterns array.
@@ -395,7 +410,7 @@ function htmlDecode(value) {
                 if ( form_id === "news-search" ) {
                     link = "<a type='button' class='btn btn-tag' href='" + link_url + "'>" + link_text + "</a>";
                 } else {
-                  link = "<a href='" + link_url + "'>" + link_text + "</a>";
+                  link = "<li class=\"search-result\"><a href='" + link_url + "'>" + link_text + "</a></li>";
                 }
 
 
@@ -438,11 +453,11 @@ function htmlDecode(value) {
 
         // Set the column heading based on the form id.
         if ( form_id === 'form-banner-pattern-search' ) {
-            list = "<h2>Patterns</h2>" + list;
+            list = "<h2>Patterns</h2><ul class=\"search-results\">" + list + "</ul>";
         } else if ( form_id === 'news-search' ) {
             list;
         } else {
-            list = "<h2>Undergraduate courses</h2>" + list;
+            list = "<h2>Undergraduate courses</h2><ul class=\"search-results\">" + list + "</ul>";
         }
 
         if ( form_id === 'news-search' ) {
@@ -455,7 +470,7 @@ function htmlDecode(value) {
 
     function add_right_results_list( form_id, list ) {
 
-        list = "<h2>Postgraduate courses</h2>" + list;
+        list = "<h2>Postgraduate courses</h2><ul class=\"search-results\">" + list + "</ul>";
         $('#' + form_id).parent('.input-group').next('.results').children('.row').children('.col-md-6.right-column').html(list);
 
     }

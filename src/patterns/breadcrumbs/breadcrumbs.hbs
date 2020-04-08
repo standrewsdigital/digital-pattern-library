@@ -2,14 +2,13 @@
 <div class="container{{#unless deprecated}} breadcrumbs--wrapper{{/unless}}">
     <div class="row">
         <div class="col-lg-12 content">
-            <h2 class="sr-only">Breadcrumbs navigation</h2>
-            <nav>
-                <ul class="breadcrumbs">
+            <nav aria-label="Breadcrumb">
+                <ol class="breadcrumbs">
                     {{#parents}}
                         <li><a href="{{url}}">{{title}}</a></li>
                     {{/parents}}
-                    <li>{{current.title}}</li>
-                </ul>
+                    <li aria-current="page">{{current.title}}</li>
+                </ol>
             </nav>
         </div>
     </div>

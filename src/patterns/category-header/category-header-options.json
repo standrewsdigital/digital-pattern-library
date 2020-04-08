@@ -2,9 +2,9 @@
     "options": [
 
 {
-            "option-heading": "Blue background - default",
-            "option-anchor": "blue",
-            "option-description": "<p>The blue colour option is to be used by default.</p>",
+            "option-heading": "Linked category heading",
+            "option-anchor": "default",
+            "option-description": "",
             "title": "Category title",
             "url": "#"
         },
@@ -12,7 +12,7 @@
         {
             "option-heading": "Image background with transparent overlay - deprecated",
             "option-anchor": "transparent",
-            "option-description": "<div class='alert alert--warning'><h3>Attention</h3><p>This implementation is now deprecated and will be removed in a future release.</p></div>",
+            "option-description": "<div class='alert alert--warning'><h4 class='alert__heading'>This option is no longer supported</h4><p>This implementation is now deprecated and will be removed in a future release.</p></div>",
             "transparent": true,
             "title": "Category title",
             "url": "#"

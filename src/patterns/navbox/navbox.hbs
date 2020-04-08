@@ -5,7 +5,8 @@
 {{#each box-size}}
 {{#if row}}<div class="row">{{/if}}
     <div class="{{column}}">
-        <div class="navbox {{#if visible}} {{visible}} {{/if}}">
+        {{#if deprecated}}
+        <div class="navbox{{#if visible}} {{visible}} {{/if}}">
             {{#if image}}
             <div class="navbox-image">
                 <img src="{{image.url}}" alt="{{image.alt}}">
@@ -17,6 +18,21 @@
         </div>
         {{#if text}}
         <p>{{text}}</p>
+        {{/if}}
+        {{else}}
+        <div class="navbox{{#if visible}} {{visible}} {{/if}}">
+            {{#if image}}
+            <div class="navbox__image">
+                <img src="{{image.url}}" alt="{{image.alt}}">
+            </div>
+            {{/if}}
+            <div class="navbox__title">
+                <a href=""><span>{{{title}}}</span></a>
+            </div>
+        </div>
+        {{#if text}}
+        <p>{{text}}</p>
+        {{/if}}
         {{/if}}
     </div>
 {{#if row}}</div>{{/if}}

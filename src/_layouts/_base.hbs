@@ -17,50 +17,47 @@ date: <%= new Date() %>
     </head>
     <body>
 
-        <header class="header" id="header">
-
-            <div class="row">
-                <div id="logo-container">
-                    <div id="header-logo">
-                        <a href="https://www.st-andrews.ac.uk/"><span>University of St Andrews</span></a>
-                    </div>
+<nav class="sr-only" aria-label="Accessibility links"><a href="#content-begin">Skip to content</a></nav>
+<header id="header" class="">
+    <div class="row">
+        <div id="logo-container">
+            <div id="header-logo"><a href="https://www.st-andrews.ac.uk/"><span>University of St&nbsp;Andrews</span></a></div>
+        </div>
+        <div id="header-search">
+            <button class="btn btn-link" id="header-search-trigger" name="btnG" aria-label="Toggle search" value=""><i class="fa fa-search" title="Search"></i></button>
+            <form action="https://www.st-andrews.ac.uk/search" method="get" role="search">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-link" id="header-search-close" name="btnG" value="" aria-label="Hide search"><i class="fa fa-times" title="Close"></i></button>
+                    </span>
+                    <input id="query" class="form-control" name="query" type="text" title="Enter search keywords" maxlength="256" placeholder="Search the University website">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" id="header-search-submit" name="btnG" type="submit" value="Search" aria-label="Submit"><i class="fa fa-search" title="Search"></i></button>
+                    </span>
                 </div>
-                <div id="header-search" role="search">
-                    <button class="btn btn-link" id="header-search-trigger" name="btnG" type="button" value=""><i class="fa fa-search" title="Search"></i></button>
-                    <form action="https://www.st-andrews.ac.uk/search" method="get">
-                        <div class="input-group">
-                            <span class="input-group-btn">
-                                <button class="btn btn-link" id="header-search-close" name="btnG" type="button" value=""><i class="fa fa-times" title="Close"></i></button>
-                            </span>
-                            <input id="query" class="form-control" name="query" type="text" title="Enter search keywords" maxlength="256" placeholder="Search the University website"/>
-                            <span class="input-group-btn">
-                                <button class="btn btn-primary" id="header-search-submit" name="btnG" type="submit" value="Search"><i class="fa fa-search" title="Search"></i></button>
-                            </span>
-                        </div>
-                        <input type="hidden" name="collection" value="Uosa-meta-global">
-                        <input type="hidden" name="profile" value="_default">
-                        <input type="hidden" name="form" value="partial">
-                    </form>
-                </div>
-              </div>
-        </header>
+                <input type="hidden" name="collection" value="Uosa-meta-global">
+                <input type="hidden" name="profile" value="_default">
+                <input type="hidden" name="form" value="partial">
+            </form>
+        </div>
+    </div>
+</header>
 
 
         <!-- Begin pattern: category-header //-->
-        <div id="category-header">
+        <nav id="category-header" aria-label="Category header">
             <div class="container">
                 <h2><a href="{{rel "index.html"}}">Digital pattern library</a></h2>
             </div>
-        </div>
+        </nav>
         <!-- End pattern: category-header //-->
 
-
-        <nav class="navigation-bar" role="navigation">
+        <nav class="navigation-bar" aria-label="Main menu">
             <div class="container">
                 <div class="toggle-navigation primary-toggle">
-                    <a class="navigation-button">Navigation <i class="chevron down"></i></a>
+                    <button class="navigation-button" aria-expanded="false" aria-controls="primary-nav">Navigation <i class="chevron down"></i></button>
                 </div>
-                <ul class="navigation-bar-nav primary-nav">
+                <ul class="navigation-bar-nav primary-nav" id="primary-nav">
                 {{#each dpl-nav.items}}
                     <li>
                         <a href="{{rel url}}">{{name}}</a>
@@ -71,18 +68,20 @@ date: <%= new Date() %>
             </div>
         </nav>
 
-        {{> body  }}
 
+        <main id="content-begin">
+        {{> body  }}
+        </main>
         <!-- Begin pattern: footer //-->
 
-        <footer role="contentinfo">
+        <footer>
 
          <div id="university-footer">
                 <div class="container">
                     <div class="row">
 
                         <div class="col-lg-8">
-                            <p id="footer-charity" role="contentinfo">© <script>document.write(new Date().getFullYear());</script> The University of St&nbsp;Andrews is a charity registered in Scotland, No SC013532.</p>
+                            <p id="footer-charity">&copy; <script>document.write(new Date().getFullYear());</script> The University of St&nbsp;Andrews is a charity registered in Scotland, No SC013532.</p>
 
                             <ul id="footer-links">
                                 <li><a href="https://www.st-andrews.ac.uk/terms/">Terms and conditions</a></li>

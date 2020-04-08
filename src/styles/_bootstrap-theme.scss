@@ -1,5 +1,17 @@
 // MODIFICATIONS TO BOOTSTRAP FOR OUR THEME
 
+// Font weights
+// ====================================================
+
+.font-weight {
+    &--bold {
+        font-weight: bold;
+    }
+    &--normal {
+        font-weight: normal;
+    }
+}
+
 
 // Block level elements
 // ====================================================
@@ -8,6 +20,17 @@ p, ul, ol {
     margin: 0 0 1.5625rem; // 25px @ 16px
 }
 
+ul > li,
+ol > li {
+    margin-bottom: 0.3125rem; //5px @ 16px
+}
+
+ol ol,
+ol ul,
+ul ul,
+ul ol {
+    margin-top: 0.3125rem; //5px @ 16px
+}
 
 hr {
     border-top: 1px solid #ededed;
@@ -27,11 +50,56 @@ hr {
 
 // Add variants for secondary, tertiary-1, tertiary-2 and tertiary-3.
 
+// GLOBAL LINK STYLE - needs overwritten on specifc patterns
 a {
-    -webkit-transition: all 200ms ease-out;
-    -moz-transition: all 200ms ease-out;
-    transition: all 200ms ease-out;
+    // Blue link with underline
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
     font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.15em; // Only works in FF and Safari
+    outline: 0; 
+
+    &:active {
+        // Contrast colour (orange) to show active link
+        color: $sta-orange;
+    }
+
+    &:hover {
+        // Remove underline when hovered
+        text-decoration: none;
+        color: $sta-blue-light-shade25;
+    }
+
+    &:focus {
+        // Apply contrast 
+        color: $sta-grey-dark;
+        background: $sta-orange-highlight;
+        box-shadow: 0 3px $sta-orange-highlight;
+        text-decoration: underline;
+        outline: 3px solid $sta-orange-highlight; 
+    }        
+}
+
+// Remove background on image links as transparency will show - place on image tag instead
+figure {
+   a:focus {
+        background: none;
+        box-shadow: none;
+        outline: none;  
+
+        img {
+            outline: 3px solid $sta-orange-highlight; 
+        }
+   }     
+   // Put background back for captions and blockquotes
+   figcaption a:focus,
+   blockquote a:focus {
+        background: $sta-orange-highlight;
+        box-shadow: 0 3px $sta-orange-highlight;
+        outline: 3px solid $sta-orange-highlight; 
+   }
 }
 
 
@@ -58,13 +126,14 @@ table {
 }
 
 thead > th, thead > tr th {
-    background-color: $gray-light;
+    background-color: $sta-grey;
     color: #fff;
 }
 
+/*
 tr:nth-child(odd) {
     background-color: lighten($gray, 80%);
-}
+}*/
 
 table.table-primary th {
     background-color: $brand-primary;
@@ -87,19 +156,19 @@ table.table-danger th {
 }
 
 table.table-secondary th {
-    background-color: -dpl-color($palette-default,'secondary','base');
+    background-color: $sta-blue-light;
 }
 
 table.table-tertiary-1 th {
-   background-color: -dpl-color($palette-default,'tertiary-1','base');
+   background-color: $sta-green;
 }
 
 table.table-tertiary-2 th {
-    background-color: -dpl-color($palette-default,'tertiary-2','base');
+    background-color: $sta-burgundy;
 }
 
 table.table-tertiary-3 th {
-    background-color: -dpl-color($palette-default,'tertiary-3','base');
+    background-color: $sta-purple;
 }
 
 
@@ -122,21 +191,21 @@ table.table-tertiary-3 th {
 
 // Additional variations for secondary and tertiary colors
 .label-secondary {
-    $bg-color: -dpl-color($palette-default,'secondary','base');
-    $bg-color: adjust-saturation($bg-color, -30%);
-    $bg-color: adjust-lightness($bg-color, 5%);
+    $bg-color: $sta-blue-light;
+    //$bg-color: adjust-saturation($bg-color, -30%);
+    //$bg-color: adjust-lightness($bg-color, 5%);
     @include label-variant($bg-color);
 }
 .label-tertiary-1 {
-    $bg-color: -dpl-color($palette-default,'tertiary-1','base');
+    $bg-color: $sta-green;
     @include label-variant($bg-color);
 }
 .label-tertiary-2 {
-    $bg-color: -dpl-color($palette-default,'tertiary-2','base');
+    $bg-color: $sta-burgundy;
     @include label-variant($bg-color);
 }
 .label-tertiary-3 {
-    $bg-color: -dpl-color($palette-default,'tertiary-3','base');
+    $bg-color: $sta-purple;
     @include label-variant($bg-color);
 }
 
@@ -161,20 +230,16 @@ table.table-tertiary-3 th {
  * the standard Bootstrap 'default', 'primary', 'success', ...
  */
 .btn-secondary {
-    $bg-color: -dpl-color($palette-default,'secondary','base');
-    @include button-variant(white, $bg-color, $bg-color);
+    @include button-variant(white, $sta-grey);
 }
 .btn-tertiary-1 {
-    $bg-color: -dpl-color($palette-default,'tertiary-1','base');
-    @include button-variant(white, $bg-color, $bg-color);
+    @include button-variant(white, $sta-green);
 }
 .btn-tertiary-2 {
-    $bg-color: -dpl-color($palette-default,'tertiary-2','base');
-    @include button-variant(white, $bg-color, $bg-color);
+    @include button-variant(white, $sta-burgundy);
 }
 .btn-tertiary-3 {
-    $bg-color: -dpl-color($palette-default,'tertiary-3','base');
-    @include button-variant(white, $bg-color, $bg-color);
+    @include button-variant(white, $sta-purple);
 }
 .btn-link {
     font-weight: bold; /* To match standard link styling */
@@ -191,17 +256,6 @@ table.table-tertiary-3 th {
     -webkit-box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
        -moz-box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
             box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
-}
-
-.panel-heading {
-    font-size: 20px;
-    font-weight: normal;
-}
-
-.panel-title {
-    font-size: 20px;
-    font-weight: normal;
-    line-height: inherit;
 }
 
 // Add variants for secondary, tertiary-1, tertiary-2 and tertiary-3.
@@ -292,6 +346,7 @@ table.table-tertiary-3 th {
 
 a.list-group-item {
     font-weight: normal;
+    text-decoration: none;
         .list-group-item-heading {
             font-weight: bold;
     }
@@ -302,7 +357,7 @@ a.list-group-item {
     overflow: auto;
     
     .badge {
-      background: rgb(240,240,240);
+      background: $sta-grey-light;
       color: inherit;
       @include ms-respond(font-size,-1);
       font-weight: bold;
@@ -313,8 +368,28 @@ a.list-group-item {
     // Only affect linked items
     &:hover,
     &:focus {
-        background: #ebebeb;
-        text-decoration: underline;
+        background: $sta-grey-light;
+        text-decoration: none;
+
+        .badge {
+            text-decoration: none;
+        }
+    }
+    &:focus {
+        z-index: 5;
+        
+        .item-label {
+            text-decoration: underline;
+        }
+    }
+    &:active {
+        color: $sta-grey-dark;
+        background: $sta-orange-highlight;
+
+        .badge {
+          background: transparent;
+        }
+
     }
 }
 

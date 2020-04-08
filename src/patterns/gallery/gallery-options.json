@@ -13,7 +13,7 @@
                     "alt":        "alt text for image 1",
                     "id":         "optional-id2",
                     "caption":    "Image 1",
-                    "large-img":  "../../assets/docs/images/placeholders/1280x853-7.jpg",
+                    "large-img":  "docs/images/placeholders/1280x853-7.jpg",
                     "lightbox-gallery": "gallery-1"
                 },
                 {
@@ -21,7 +21,7 @@
                     "alt":        "alt text for image 2",
                     "id":         "optional-id3",
                     "caption":    "Image 2",
-                    "large-img":  "../../assets/docs/images/placeholders/1280x853-8.jpg",
+                    "large-img":  "docs/images/placeholders/1280x853-8.jpg",
                     "lightbox-gallery": "gallery-1"
                 },
                 {
@@ -29,7 +29,7 @@
                     "alt":        "alt text for image 3",
                     "id":         "optional-id4",
                     "caption":    "Image 3",
-                    "large-img":  "../../assets/docs/images/placeholders/1280x853-9.jpg",
+                    "large-img":  "docs/images/placeholders/1280x853-9.jpg",
                     "lightbox-gallery": "gallery-1"
                 }
             ]
@@ -51,7 +51,7 @@
                     "alt":        "alt text for image 1",
                     "id":         "optional-id2",
                     "caption":    "Gallery 1 image 1",
-                    "large-img":  "../../assets/docs/images/placeholders/1280x853-7.jpg",
+                    "large-img":  "docs/images/placeholders/1280x853-7.jpg",
                     "lightbox-gallery": "gallery-2"
                 },
                 {
@@ -59,7 +59,7 @@
                     "alt":        "alt text for image 2",
                     "id":         "optional-id3",
                     "caption":    "Gallery 1 image 2",
-                    "large-img":  "../../assets/docs/images/placeholders/1280x853-8.jpg",
+                    "large-img":  "docs/images/placeholders/1280x853-8.jpg",
                     "lightbox-gallery": "gallery-2"
                 },
                 {
@@ -75,7 +75,7 @@
                     "alt":        "alt text for image 1",
                     "id":         "optional-id2",
                     "caption":    "Gallery 1 image 4",
-                    "large-img":  "../../assets/docs/images/placeholders/1280x853-8.jpg",
+                    "large-img":  "docs/images/placeholders/1280x853-8.jpg",
                     "lightbox-gallery": "gallery-2"
                 },
                 {
@@ -83,7 +83,7 @@
                     "alt":        "alt text for image 2",
                     "id":         "optional-id3",
                     "caption":    "Gallery 2 image 1",
-                    "large-img":  "../../assets/docs/images/placeholders/1280x853-8.jpg",
+                    "large-img":  "docs/images/placeholders/1280x853-8.jpg",
                     "lightbox-gallery": "gallery-3"
                 },
                 {
@@ -91,7 +91,7 @@
                     "alt":        "alt text for image 3",
                     "id":         "optional-id4",
                     "caption":    "Gallery 2 image 2",
-                    "large-img":  "../../assets/docs/images/placeholders/1280x853-9.jpg",
+                    "large-img":  "docs/images/placeholders/1280x853-9.jpg",
                     "lightbox-gallery": "gallery-3"
                 },
                 {
@@ -99,7 +99,7 @@
                     "alt":        "alt text for image 2",
                     "id":         "optional-id3",
                     "caption":    "Gallery 2 image 3",
-                    "large-img":  "../../assets/docs/images/placeholders/1280x853-8.jpg",
+                    "large-img":  "docs/images/placeholders/1280x853-8.jpg",
                     "lightbox-gallery": "gallery-3"
                 },
                 {
@@ -107,7 +107,7 @@
                     "alt":        "alt text for image 3",
                     "id":         "optional-id4",
                     "caption":    "Gallery 2 image 4",
-                    "large-img":  "../../assets/docs/images/placeholders/1280x853-9.jpg",
+                    "large-img":  "docs/images/placeholders/1280x853-9.jpg",
                     "lightbox-gallery": "gallery-3"
                 }
             ]
@@ -128,7 +128,7 @@
                     "alt":        "alt text for image 1",
                     "id":         "optional-id2",
                     "caption":    "Image 1",
-                    "large-img":  "../../assets/docs/images/placeholders/1280x853-7.jpg",
+                    "large-img":  "docs/images/placeholders/1280x853-7.jpg",
                     "lightbox-gallery": "gallery-4",
                     "download-button": true
                 },
@@ -137,7 +137,7 @@
                     "alt":        "alt text for image 2",
                     "id":         "optional-id3",
                     "caption":    "Image 2",
-                    "large-img":  "../../assets/docs/images/placeholders/1280x853-8.jpg",
+                    "large-img":  "docs/images/placeholders/1280x853-8.jpg",
                     "lightbox-gallery": "gallery-4",
                     "download-button": true
                 },
@@ -146,7 +146,7 @@
                     "alt":        "alt text for image 3",
                     "id":         "optional-id4",
                     "caption":    "Image 3",
-                    "large-img":  "../../assets/docs/images/placeholders/1280x853-9.jpg",
+                    "large-img":  "docs/images/placeholders/1280x853-9.jpg",
                     "lightbox-gallery": "gallery-4",
                     "download-button": true
                 },
@@ -155,7 +155,7 @@
                     "alt":        "alt text for image 3",
                     "id":         "optional-id5",
                     "caption":    "Image 4",
-                    "large-img":  "../../assets/docs/images/placeholders/1280x853-7.jpg",
+                    "large-img":  "docs/images/placeholders/1280x853-7.jpg",
                     "lightbox-gallery": "gallery-4",
                     "download-button": true
                 }
@@ -209,8 +209,8 @@
 
 
         {
-            "option-heading": "Old gallery",
-            "option-description": "<p>This is the deprecated gallery implementation, using the jQuery theatre plugin.</p>",
+            "option-heading": "Old gallery - deprecated",
+            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This old method of gallery implementation, using the jQuery theatre plugin, is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
             "option-anchor": "old-gallery",
             "gallery-title": "<h2 class='gallery__title'>Title of gallery</h2>",
 		    "gallery-description": "Gallery description",
@@ -221,21 +221,21 @@
 		            "alt":        "alt text for image 1",
 		            "id":         "optional-id2",
 		            "caption":    "Image 1",
-		            "large-img":  "../../assets/docs/images/placeholders/1280x853-7.jpg"
+		            "large-img":  "docs/images/placeholders/1280x853-7.jpg"
 		        },
 		        {
 		            "thumbnail":  "docs/images/placeholders/360x240-8.jpg",
 		            "alt":        "alt text for image 2",
 		            "id":         "optional-id3",
 		            "caption":    "Image 2",
-		            "large-img":  "../../assets/docs/images/placeholders/1280x853-8.jpg"
+		            "large-img":  "docs/images/placeholders/1280x853-8.jpg"
 		        },
 		        {
 		            "thumbnail":  "docs/images/placeholders/360x240-9.jpg",
 		            "alt":        "alt text for image 3",
 		            "id":         "optional-id4",
 		            "caption":    "Image 3",
-		            "large-img":  "../../assets/docs/images/placeholders/1280x853-9.jpg"
+		            "large-img":  "docs/images/placeholders/1280x853-9.jpg"
 		        }
 		    ]
         }

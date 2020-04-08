@@ -7,11 +7,7 @@
 		{{#if title}}<h3>{{title}}</h3>{{/if}}
 	    <ul>
 		{{#icon}}
-			<li {{#if mobile-only}} class="visible-xs"{{/if}}><a href="#"><span class="sr-only">{{title}}</span>
-			{{#if class}}
-				<i class="{{class}} fa-2x" title="{{title}}" aria-hidden="true"></i>
-			{{/if}}
-			</a></li>
+			<li {{#if mobile-only}} class="visible-xs"{{/if}}><a href="#"><span class="sr-only">{{title}}</span>{{#if class}}<i class="{{class}} fa-2x" title="{{title}}" aria-hidden="true"></i>{{/if}}</a></li>
 		{{/icon}}
 	    </ul>
 	{{#if embed}}

@@ -5,6 +5,12 @@
  *
  */
 
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
 /* Variables for adjusting colors */
 $hover-darken:          7%;
 $transparency:          0.25;
@@ -15,33 +21,39 @@ $select-lightness:      5%;
 
 /* Blue (sta-blue) */
 $sta-blue:              rgb(0, 83, 155);
-$sta-blue-hover:        darken($sta-blue, $hover-darken);
+$sta-blue-tint25:       tint($sta-blue, 25%);
+$sta-blue-tint50:       tint($sta-blue, 50%);
+$sta-blue-shade25:      shade($sta-blue, 25%);
 
+$sta-blue-hover:        darken($sta-blue, $hover-darken);
 $sta-blue-T:            transparentize($sta-blue,$transparency);
 $sta-blue-T-hover:      darken($sta-blue-T, $hover-darken);
-
 $sta-blue-S:            lighten($sta-blue,$select-lightness);
 $sta-blue-S-hover:      darken($sta-blue-S, $hover-darken);
 
 
 /* Blue-light (sta-blue-light) */
-$sta-blue-light:        rgb(0, 123, 194);
-$sta-blue-light-hover:  darken($sta-blue-light, $hover-darken);
+$sta-blue-light:            rgb(0, 123, 194);
+$sta-blue-light-tint25:     tint($sta-blue-light, 25%);
+$sta-blue-light-tint50:     tint($sta-blue-light, 50%);
+$sta-blue-light-shade25:    shade($sta-blue-light, 25%);
 
+$sta-blue-light-hover:  darken($sta-blue-light, $hover-darken);
 $sta-blue-light-T:      transparentize($sta-blue-light,$transparency);
 $sta-blue-light-T-hover:darken($sta-blue-light-T, $hover-darken);
-
 $sta-blue-light-S:      lighten($sta-blue-light,$select-lightness);
 $sta-blue-light-S-hover:darken($sta-blue-light-S, $hover-darken);
 
 
 /* Red (sta-red) */
 $sta-red:               rgb(234, 26, 19);
-$sta-red-hover:         darken($sta-red, $hover-darken);
+$sta-red-tint25:        tint($sta-red, 25%);
+$sta-red-tint50:        tint($sta-red, 50%);
+$sta-red-shade25:       shade($sta-red, 25%);
 
+$sta-red-hover:         darken($sta-red, $hover-darken);
 $sta-red-T:             transparentize($sta-red,$transparency);
 $sta-red-T-hover:       darken($sta-red-T, $hover-darken);
-
 $sta-red-S:             lighten($sta-red,$select-lightness);
 $sta-red-S-hover:       darken($sta-red-S, $hover-darken);
 
@@ -59,17 +71,19 @@ $sta-yellow-S-hover:    darken($sta-yellow-S, $hover-darken);
 
 /* Grey (sta-grey) */
 $sta-grey:              rgb(106, 106, 107);
-$sta-grey-hover:        darken($sta-grey, $hover-darken);
 
+$sta-grey-hover:        darken($sta-grey, $hover-darken);
 $sta-grey-T:            transparentize($sta-grey,$transparency);
 $sta-grey-T-hover:      darken($sta-grey-T, $hover-darken);
-
 $sta-grey-S:            lighten($sta-grey,$select-lightness);
 $sta-grey-S-hover:      darken($sta-grey-S, $hover-darken);
 
 
 /* Grey (sta-grey-light) */
 $sta-grey-light:        rgb(240,240,240);
+$sta-grey-light2:        rgb(250, 250, 250);
+$sta-grey-mid2:       rgb(222,222,222);
+
 $sta-grey-light-hover:  darken($sta-grey-light, $hover-darken);
 
 $sta-grey-light-T:      transparentize($sta-grey-light,$transparency);
@@ -80,6 +94,8 @@ $sta-grey-light-S-hover:darken($sta-grey-light-S, $hover-darken);
 
 /* Grey-dark (sta-grey-dark) */
 $sta-grey-dark:         rgb(32, 32, 36);
+$sta-grey-dark2:         rgb(15, 15, 17);
+
 $sta-grey-dark-hover:   darken($sta-grey-dark, $hover-darken);
 
 $sta-grey-dark-T:       transparentize($sta-grey-dark,$transparency);
@@ -113,6 +129,7 @@ $sta-cyan-light-S-hover:darken($sta-cyan-light-S, $hover-darken);
 
 /* Orange (sta-orange) */
 $sta-orange:            rgb(191, 89, 9);
+
 $sta-orange-hover:      darken($sta-orange, $hover-darken);
 
 $sta-orange-T:          transparentize($sta-orange,$transparency);
@@ -124,6 +141,10 @@ $sta-orange-S-hover:    darken($sta-orange-S, $hover-darken);
 
 /* Green (sta-green) */
 $sta-green:             rgb(0, 133, 63);
+$sta-green-tint25:      tint($sta-green, 25%);
+$sta-green-tint50:      tint($sta-green, 50%);
+$sta-green-shade25:     shade($sta-green, 25%);
+
 $sta-green-hover:       darken($sta-green, $hover-darken);
 
 $sta-green-T:           transparentize($sta-green,$transparency);
@@ -146,6 +167,10 @@ $sta-dkgreen-S-hover:   darken($sta-dkgreen-S, $hover-darken);
 
 /* Purple (sta-purple) */
 $sta-purple:            rgb(123, 67, 154);
+$sta-purple-tint25:     tint($sta-purple, 25%);
+$sta-purple-tint50:     tint($sta-purple, 50%);
+$sta-purple-shade25:    shade($sta-purple, 25%);
+
 $sta-purple-hover:      darken($sta-purple, $hover-darken);
 
 $sta-purple-T:          transparentize($sta-purple,$transparency);
@@ -157,6 +182,10 @@ $sta-purple-S-hover:    darken($sta-purple-S, $hover-darken);
 
 /* Burgundy (sta-burgundy) */
 $sta-burgundy:          rgb(198, 12, 70);
+$sta-burgundy-tint25:   tint($sta-burgundy, 25%);
+$sta-burgundy-tint50:   tint($sta-burgundy, 50%);
+$sta-burgundy-shade25:  shade($sta-burgundy, 25%);
+
 $sta-burgundy-hover:    darken($sta-burgundy, $hover-darken);
 
 $sta-burgundy-T:        transparentize($sta-burgundy,$transparency);
@@ -166,7 +195,7 @@ $sta-burgundy-S:        lighten($sta-burgundy,$select-lightness);
 $sta-burgundy-S-hover:  darken($sta-burgundy-S, $hover-darken);
 
 /* Additional colours - AA Compliant for UI & Graphical elements only*/
-$sta-orange-highlight: #EF6E0B;
+$sta-orange-highlight: #FFB400;
 $sta-grey-highlight: #949494;
 
 
@@ -236,62 +265,39 @@ $color_variations: (
  * this is because of how we need to use this palette in src/styles/docs.scss
  */
 $palette-sta : (
-    'sta-blue'
-        $sta-blue $sta-blue-hover
-        $sta-blue-T $sta-blue-T-hover
-        $sta-blue-S $sta-blue-S-hover,
-    'sta-blue-light'
-        $sta-blue-light $sta-blue-light-hover
-        $sta-blue-light-T $sta-blue-light-T-hover
-        $sta-blue-light-S $sta-blue-light-S-hover,
-    'sta-red'
-        $sta-red $sta-red-hover
-        $sta-red-T $sta-red-T-hover
-        $sta-red-S $sta-red-S-hover,
-    'sta-yellow'
-        $sta-yellow $sta-yellow-hover
-        $sta-yellow-T $sta-yellow-T-hover
-        $sta-yellow-S $sta-yellow-S-hover,
-    'sta-grey'
-        $sta-grey $sta-grey-hover
-        $sta-grey-T $sta-grey-T-hover
-        $sta-grey-S $sta-grey-S-hover,
-    'sta-grey-light'
-        $sta-grey-light $sta-grey-light-hover
-        $sta-grey-light-T $sta-grey-light-T-hover
-        $sta-grey-light-S $sta-grey-light-S-hover,
-    'sta-grey-dark'
-        $sta-grey-dark $sta-grey-dark-hover
-        $sta-grey-dark-T $sta-grey-dark-T-hover
-        $sta-grey-dark-S $sta-grey-dark-S-hover,
-    'sta-cyan'
-        $sta-cyan $sta-cyan-hover
-        $sta-cyan-T $sta-cyan-T-hover
-        $sta-cyan-S $sta-cyan-S-hover,
-    'sta-cyan-light'
-        $sta-cyan-light $sta-cyan-light-hover
-        $sta-cyan-light-T $sta-cyan-light-T-hover
-        $sta-cyan-light-S $sta-cyan-light-S-hover,
-    'sta-orange'
-        $sta-orange $sta-orange-hover
-        $sta-orange-T $sta-orange-T-hover
-        $sta-orange-S $sta-orange-S-hover,
-    'sta-green'
-        $sta-green $sta-green-hover
-        $sta-green-T $sta-green-T-hover
-        $sta-green-S $sta-green-S-hover,
-    'sta-dkgreen'
-        $sta-dkgreen $sta-dkgreen-hover
-        $sta-dkgreen-T $sta-dkgreen-T-hover
-        $sta-dkgreen-S $sta-dkgreen-S-hover,
-    'sta-purple'
-        $sta-purple $sta-purple-hover
-        $sta-purple-T $sta-purple-T-hover
-        $sta-purple-S $sta-purple-S-hover,
-    'sta-burgundy'
-        $sta-burgundy $sta-burgundy-hover
-        $sta-burgundy-T $sta-burgundy-T-hover
-        $sta-burgundy-S $sta-burgundy-S-hover
+    'sta-blue' $sta-blue,
+    'sta-blue-tint25' $sta-blue-tint25,
+    'sta-blue-tint50' $sta-blue-tint50,
+    'sta-blue-shade25' $sta-blue-shade25,
+    'sta-blue-light' $sta-blue-light,
+    'sta-blue-light-tint25' $sta-blue-light-tint25,
+    'sta-blue-light-tint50' $sta-blue-light-tint50,
+    'sta-blue-light-shade25' $sta-blue-light-shade25,
+    'sta-red' $sta-red,
+    'sta-red-tint25' $sta-red-tint25,
+    'sta-red-tint50' $sta-red-tint50,
+    'sta-red-shade25' $sta-red-shade25,
+    'sta-orange-highlight' $sta-orange-highlight,
+    'sta-grey' $sta-grey,
+    'sta-grey-light' $sta-grey-light,
+    'sta-grey-light2' $sta-grey-light2,
+    'sta-grey-mid2' $sta-grey-mid2,
+    'sta-grey-dark' $sta-grey-dark,
+    'sta-grey-dark2' $sta-grey-dark2,
+    'sta-grey-highlight' $sta-grey-highlight,
+    'sta-orange' $sta-orange,
+    'sta-green' $sta-green,
+    'sta-green-tint25' $sta-green-tint25,
+    'sta-green-tint50' $sta-green-tint50,
+    'sta-green-shade25' $sta-green-shade25,
+    'sta-purple' $sta-purple, 
+    'sta-purple-tint25' $sta-purple-tint25,
+    'sta-purple-tint50' $sta-purple-tint50,
+    'sta-purple-shade25' $sta-purple-shade25,
+    'sta-burgundy' $sta-burgundy, 
+    'sta-burgundy-tint25' $sta-burgundy-tint25,
+    'sta-burgundy-tint50' $sta-burgundy-tint50,
+    'sta-burgundy-shade25' $sta-burgundy-shade25
 );
 
 
@@ -346,7 +352,7 @@ $palette-study: (
         'tertiary-2':
         $sta-purple $sta-purple-hover
         $sta-purple-T $sta-purple-T-hover
-        $sta-purple-S $sta-purple-S-hover,
+        $sta-purple-S $sta-purple-S-hover
 );
 
 
@@ -356,22 +362,10 @@ $palette-study: (
  * This palette defines the colors to be used for Bootstrap contexts.
  */
 $palette-context: (
-    'success':
-        $sta-green $sta-green-hover
-        $sta-green-T $sta-green-T-hover
-        $sta-green-S $sta-green-S-hover,
-    'info':
-        $sta-blue-light $sta-blue-light-hover
-        $sta-blue-light-T $sta-blue-light-T-hover
-        $sta-blue-light-S $sta-blue-light-S-hover,
-    'warning':
-        $sta-orange $sta-orange-hover
-        $sta-orange-T $sta-orange-T-hover
-        $sta-orange-S $sta-orange-S-hover,
-    'danger':
-        $sta-red $sta-red-hover
-        $sta-red-T $sta-red-T-hover
-        $sta-red-S $sta-red-S-hover,
+    'success': $sta-green,
+    'info': $sta-blue,
+    'warning': $sta-orange,
+    'danger': $sta-red 
 );
 
 

@@ -46,7 +46,7 @@
         var regex = new RegExp(unbreakables[j], 'gi');
         // Search for the jth element of unbreakables in child elements
         // of <body>; replace using the unbreakableSpaces() callback.
-        $("body *").replaceText( regex, unbreakableSpaces );    
+        $("body *").not("textarea, input:text").replaceText( regex, unbreakableSpaces );    
     }
 
     // Finish up and store a message about the time it took for 

@@ -3,18 +3,25 @@
 /* BEGIN Pattern: secondary-call-to-action    */
 /**********************************************/
 
-@mixin secondary-call-overlay ($color-overlay, $color-cta, $color-cta-hover){
+@mixin secondary-call-overlay ($color-overlay, $color-cta){
    &:after {
        background-color: rgba($color-overlay,0.75);
    }
    .btn, .btn-primary {
         background-color: $color-cta;
-        border-bottom: 5px solid $color-cta-hover;
+        border-color: mix(black, $color-cta, 25%);
    }
 
    .btn:hover, .btn:focus {
-        background-color: $color-cta-hover;
-        border-bottom: 5px solid $color-cta-hover;
+        background-color: mix(black, $color-cta, 25%);
+        border-color: mix(black, $color-cta, 25%);
+    }
+
+    .btn:active {
+      background: $sta-orange-highlight;
+      color: $sta-grey-dark;
+      box-shadow: 0 3px $sta-orange-highlight;
+      border-color: transparent;
     }
 }
 
@@ -24,9 +31,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: $page-gutter 0 $page-gutter-overflow 0;
+    padding: $page-gutter 0;
     position: relative;
-    text-align: center;
 
     &.secondary-call--overlay {
          &:after {
@@ -42,19 +48,19 @@
 
 
     &.secondary-call--purple-transparent-overlay {
-        @include secondary-call-overlay ($sta-purple, $sta-green, $sta-green-hover)
+        @include secondary-call-overlay ($sta-purple, $sta-green)
     }
 
     &.secondary-call--blue-transparent-overlay {
-        @include secondary-call-overlay($sta-blue, $sta-orange, $sta-orange-hover)
+        @include secondary-call-overlay($sta-blue, $sta-orange)
     }
 
     &.secondary-call--orange-transparent-overlay {
-        @include secondary-call-overlay ($sta-orange, $sta-green, $sta-green-hover)
+        @include secondary-call-overlay ($sta-orange, $sta-green)
     }
 
     &.secondary-call--burgundy-transparent-overlay {
-        @include secondary-call-overlay ($sta-burgundy, $sta-blue, $sta-blue-hover)
+        @include secondary-call-overlay ($sta-burgundy, $sta-blue)
     }
 
     .container {
@@ -64,54 +70,20 @@
 
     .call-heading {
         color: white;
-        font-size: 1.5em;
-        font-weight: bold;
-        line-height: 1.2;
-        margin: 0 auto;
-        text-shadow: 2px 2px 9px rgba(68,68,68,0.7);
-
-        @media (min-width: 480px){
-          font-size: 1.8em;
-        }
-
-        @media (min-width: 768px){
-          font-size: 2.5em;
-        }
+        @include ms-respond(font-size,4);
+        margin: 0 0 0.25em 0;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     }
 
     p {
         color: white;
-        margin: 20px auto;
         max-width: 40em;
-
-        @media (min-width: 768px){
-          font-size: 21px;
-          line-height:1.5;
-        }
-    }
-
-    &.left p, &.left .call-heading {
-        text-align: left;
-        width: 100%;
-
-        @media (max-width: 991px){
-          text-align: center;
-        }
+        @include ms-respond(font-size,1);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     }
 
     .btn {
-        background-color: $sta-blue;
-        border: 0;
-        margin: 0 15px 25px 15px;
-
-        &:hover,
-        &:focus {
-            background-color: $sta-blue-hover;
-        }
-
-        @media (min-width: 768px){
-            font-size:25px;
-        }
+      margin-right:10px;
     }
 
 }

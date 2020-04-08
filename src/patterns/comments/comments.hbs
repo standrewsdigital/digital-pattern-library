@@ -8,7 +8,7 @@
 	{{#if comment-reply}}<li class="comment comment--reply">{{/if}}
 	    <div class="comment__meta">
 			{{#if image}}
-		    {{#if image-link}}<a class="comment__image" href=""><img src="{{image}}" alt="{{name}}"></a>{{else}}<div class="comment__image"><img src="{{image}}" alt="{{name}}"></div>{{/if}}
+		    {{#if image-link}}<a class="comment__image" href="" tabindex="-1"><img src="{{image}}" alt="{{name}}"></a>{{else}}<div class="comment__image"><img src="{{image}}" alt="{{name}}"></div>{{/if}}
 		    {{/if}}
 		    <div class="comment__meta-group">
 			    {{#if name}}<div class="comment__meta-author">{{#if image-link}}<a href="#">{{name}}</a>{{else}}{{name}}{{/if}}</div>{{/if}}

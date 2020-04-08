@@ -3,116 +3,164 @@
 /***********************************/
 
 .featured-people  {
-	color: white;
-	padding: 20px 0 0 0;
 
-	@media (min-width: 768px){
-		padding: 30px 0 10px 0;
-	}
-
-	@media (min-width: 992px){
-		padding: 50px 0 30px 0;
-	}
-
-	&.sta-blue-light {
-    	background-color: $sta-blue-light;
+  	// heading is now optional
+  	h2 {
+  		margin: 0 0 $third-gutter 0;
   	}
 
-  	&.sta-purple {
-    	background-color: $sta-purple;
-  	}
+}
 
-	&.sta-dkgreen {
-    	background-color: $sta-dkgreen;
-  	}
-
-  	&.sta-burgundy {
-    	background-color: $sta-burgundy;
-  	}
-
-  	&.sta-orange {
-    	background-color: $sta-orange;
-  	}
-
-  	// img.link-active {
-  	// 	border: 5px solid $sta-yellow;
-  	// }
-
-	img {
-    	@include -dpl-transition();
-    	border: 5px solid rgba($sta-yellow, 0);
-    	border-radius: 50%;
-    	display: block;
-    	margin: 0 auto;
-    	width: 200px;
-	}
-
-	a {
-		color: white;
-
-		&:hover,
-		&:focus {
-			img {
-				border-color: rgba($sta-yellow, 1);
-			}
+	.featured-people__person {
+	    display: -ms-grid;
+	    display: grid;
+	    // Small display grid
+	    -ms-grid-columns: 50px 1rem 1fr; // 2 column grid with gutter
+	    grid-template-columns: 50px 1fr; // 2 column grid
+	    grid-column-gap: 1rem;
+	    // Medium display grid
+		@media (min-width: 576px){
+		    -ms-grid-columns: 80px 1rem 1fr; // 2 column grid with gutter
+		    grid-template-columns: 80px 1fr; // 2 column grid
+		    grid-column-gap: 1rem;
 		}
+	    // Large display grid
+		@media (min-width: 768px){
+		    -ms-grid-columns: 120px 1rem 1fr; // 2 column grid with gutter
+		    grid-template-columns: 120px 1fr; // 2 column grid
+		    grid-column-gap: 1rem;
+		}
+
+		p {
+			margin: 1em 0 0 0;
+			max-width: 70ch;
+		}
+
+		@media (min-width: 576px){
+		    // Reduce top margin if indent is set and appearing directly under name/title
+		    &.featured-people__person--indent p {
+			    margin-top: 0.5em;
+		    }
+		}
+
+		margin-bottom: $page-gutter;
+
 	}
 
-	h3 { // scale big heading font
-		font-size: 1.5em;
-		margin: 0 0 30px 0;
+	.featured-people__image {	
+	    grid-column-start: 1;
+	    grid-column-end: 2;
+	    grid-row-start: 1;
+	    grid-row-end: 2;
+	    -ms-grid-column: 1;
+	    -ms-grid-row: 1;
+		
+		border: 2px solid $sta-grey-light2;
+	    border-radius: 50%;
+		height: 50px;
+		width: 50px;
+	    overflow: hidden;
+	    position: relative;
 
-		@media (min-width: 480px){
-			font-size: 1.8em;
+		img {
+	        position: absolute;
+	        left: 50%;
+	        top: 50%;
+	        -webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+		}
+
+		@media (min-width: 576px){
+			height: 80px;
+			width: 80px;
+
+		    // Span two rows if indent is set
+		    .featured-people__person--indent & {
+			    grid-row-start: 1;
+			    grid-row-end: 3;
+			    -ms-grid-row: 1;
+			    -ms-grid-row-span: 3;
+		    }
 		}
 
 		@media (min-width: 768px){
-			font-size: 2.5em;
+			height: 120px;
+			width: 120px;
 		}
 	}
 
-	h4 {
-		font-size: 24px;
-		margin: 15px 0 0 0;
+	a.featured-people__image {
+		outline: 0; // disable default focus
+    	border: 2px solid $sta-grey-light2;
+		&:active {
+			box-shadow: 0px 0px 0px 3px $sta-orange-highlight;
+		}
+		&:hover {
+			img {
+				opacity: 0.8;
+			}
+		}
+		&:focus {
+			box-shadow: 0px 0px 0px 3px $sta-orange-highlight;
+		}
 	}
 
-	small {
-		font-size: 16px;
+	.featured-people__person--group {
+	    grid-column-start: 2;
+	    grid-column-end: 3;
+	    grid-row-start: 1;
+	    grid-row-end: 2;
+	    -ms-grid-column: 3;
+	    -ms-grid-row: 1;
+	    align-self: center;
+	    -ms-grid-row-align: center;
+	}
+
+	.featured-people__description {
+	    grid-column-start: 1;
+	    grid-column-end: 3;
+	    grid-row-start: 2;
+	    grid-row-end: 3;
+	    -ms-grid-column: 1;
+	    -ms-grid-row: 3;
+		-ms-grid-column-span: 3;
+
+		@media (min-width: 576px){
+		    // Span two rows if indent is set
+		    .featured-people__person--indent & {
+			    grid-column-start: 2;
+			    grid-column-end: 3;
+			    -ms-grid-column: 3;
+			    -ms-grid-column-span: 1;
+		    }
+		}
+	}
+
+	.featured-people__name {
+		margin: 0;
+		@include ms-respond(font-size,1);
+
+		a {
+			outline: 0; // disable default focus
+			text-decoration: underline;
+		}
+
+
+		@media (min-width: 576px){
+		    // Add top margin if indent is set
+		    .featured-people__person--indent & {
+			    margin-top: 1em;
+		    }
+		}
+	}
+
+	.featured-people__title {
+		font-size: 1em;
 		font-weight: normal;
+		line-height: inherit;
+		margin: 0;
 	}
 
-	p {
-		margin: 15px 0 0 0;
-	}
-
-	.featured-people__person {
-		@include clearfix-alt; // alternate clearfix (utilities)
-		margin-bottom: 30px;
-		padding: 0 40px;
-		text-align: center;
-		
-		&.featured-people__person--single {
-			@media (min-width: 768px)  {
-				padding:0;
-			}
-			@media (min-width: 992px)  {
-				text-align:left;
-			}
-
-			&.link-active {
-				// ensure disjointed anchor links are linked in style
-				h4 {
-					text-decoration: underline;
-				}
-				img {
-					border-color: rgba($sta-yellow, 1);
-				}
-			}
-		}
-
-	}
-
-}
 
 /***********************************/
 /* END Pattern: featured-people    */

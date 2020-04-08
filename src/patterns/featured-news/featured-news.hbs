@@ -2,11 +2,11 @@
 <div class="featured-news margin-top margin-bottom--half">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 featured-news__article-link">
+            <article class="col-xs-12 featured-news__article-link">
                 <div class="row">
-                    <div class="col-sm-5 col-sm-push-7">
-                        <a href="#article"><img class="featured-news__image" src="{{asset url}}" alt="news story"></a>
-                    </div>
+                    <figure class="col-sm-5 col-sm-push-7">
+                        <a href="#article" tabindex="-1"><img class="featured-news__image" src="{{asset url}}" alt="news story"></a>
+                    </figure>
                     <div class="col-sm-7 col-sm-pull-5">
                         <h2 class="featured-news__article-heading"><a href="#article">{{title}}</a></h2>
                         <p class="lead">{{text}}</p>
@@ -16,7 +16,7 @@
                         </dl>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
     </div>
 </div>

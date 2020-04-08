@@ -3,29 +3,30 @@
 /* BEGIN Pattern: featured media */
 /*********************************/
 
-@mixin featured-media-overlay ($color-overlay, $color-cta, $color-cta-hover, $transparent-overlay: null){
+@mixin featured-media-overlay ($color-overlay, $color-cta, $transparent-overlay: null){
    @if ($transparent-overlay) {
        &:after {
            background-color: rgba($color-overlay,0.75);
        }
-        h3 {
-            text-shadow: 2px 2px 9px rgba(68,68,68,0.7);
+        .featured-media__text {
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
         }
     } @else {
         background-color: $color-overlay;
     }
    .btn, .btn-primary {
         background-color: $color-cta;
-        border: 0;
-        border-bottom: 5px solid $color-cta-hover;
+        border-color: mix(black, $color-cta ,25%);
+        text-shadow: none;
    }
 
    .btn:hover, .btn:focus {
-        background-color: $color-cta-hover;
-        border: 0;
-        border-bottom: 5px solid $color-cta-hover;
+        background-color: mix(black, $color-cta ,25%);
     }
-
+    .btn:active {
+        background: $sta-orange-highlight;
+        border-bottom: transparent;
+    }
 }
 
 .featured-media__wrapper {
@@ -203,43 +204,43 @@
     }
 
     &.featured-media--sta-blue {
-        @include featured-media-overlay ($sta-blue, $sta-orange, $sta-orange-hover)
+        @include featured-media-overlay ($sta-blue, $sta-orange)
     }
 
     &.featured-media--sta-blue-light {
-        @include featured-media-overlay ($sta-blue-light, $sta-orange, $sta-orange-hover)
+        @include featured-media-overlay ($sta-blue-light, $sta-orange)
     }
 
     &.featured-media--sta-green {
-        @include featured-media-overlay ($sta-green, $sta-orange, $sta-orange-hover)
+        @include featured-media-overlay ($sta-green, $sta-orange)
     }
 
     &.featured-media--sta-burgundy {
-        @include featured-media-overlay ($sta-burgundy, $sta-blue, $sta-blue-hover)
+        @include featured-media-overlay ($sta-burgundy, $sta-blue)
     }
 
     &.featured-media--sta-purple {
-        @include featured-media-overlay ($sta-purple, $sta-green, $sta-green-hover)
+        @include featured-media-overlay ($sta-purple, $sta-green)
     }
 
     &.featured-media--sta-orange {
-        @include featured-media-overlay ($sta-orange, $sta-green, $sta-green-hover)
+        @include featured-media-overlay ($sta-orange, $sta-green)
     }
 
     &.featured-media--blue-transparent-overlay {
-        @include featured-media-overlay ($sta-blue, $sta-orange, $sta-orange-hover, true)
+        @include featured-media-overlay ($sta-blue, $sta-orange, true)
     }
 
     &.featured-media--orange-transparent-overlay {
-        @include featured-media-overlay ($sta-orange, $sta-green, $sta-green-hover, true)
+        @include featured-media-overlay ($sta-orange, $sta-green, true)
     }
 
     &.featured-media--burgundy-transparent-overlay {
-        @include featured-media-overlay ($sta-burgundy, $sta-blue, $sta-blue-hover, true)
+        @include featured-media-overlay ($sta-burgundy, $sta-blue, true)
     }
 
     &.featured-media--purple-transparent-overlay {
-        @include featured-media-overlay ($sta-purple, $sta-green, $sta-green-hover, true)
+        @include featured-media-overlay ($sta-purple, $sta-green, true)
     }
 
     &.featured-media--featured-image{
@@ -250,6 +251,20 @@
         color: white;
         font-weight: bold;
         text-decoration: underline;
+
+        &:hover {
+            // Remove underline when hovered
+            text-decoration: none;
+        }
+
+        &:focus {
+            // Apply contrast 
+            color: $sta-grey-dark;
+            background: $sta-orange-highlight;
+            box-shadow: 0 3px $sta-orange-highlight;
+            text-decoration: underline;
+            outline: 3px solid $sta-orange-highlight; 
+        }  
     }
 
 }

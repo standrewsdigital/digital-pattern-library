@@ -10,28 +10,28 @@
 		{{/if}}
 		{{#if search-header}}<h3 class="search-bar__heading">{{search-header}}</h3>{{/if}}
 		{{#if search-subtext}}<p class="search-bar__sub-heading">{{search-subtext}}</p>{{/if}}
-	    <form class="dpl-form{{nosubmit}}" action="">
+	    <form class="dpl-form{{nosubmit}}" action="" role="search">
 	        <div class="input-group input-group-lg">
 	            {{#if title}}<span class="input-group-addon search-bar__inline-title">{{title}}</span>{{/if}}
 	            <input id="{{input-id}}" class="form-control search-box{{autocomplete}}" required type="text" title="Enter search keywords" maxlength="256" name="search" placeholder="{{placeholder}}">
 	            <button class="clear-icon{{clear-button-type}}" type="reset" aria-label="Reset" value="Reset"></button>
 	        {{#if search-button}}
 	            <span class="input-group-btn">
-	                <button class="btn btn-primary" value="Search" type="submit" aria-label="Search">
+	                <button class="btn btn-primary" value="Search" type="submit" aria-label="Submit">
 	                    <i class="fa fa-search" title="Search"></i>
 	                </button>
 	            </span>
 	        {{/if}}
 	        </div>
 	        {{#if search-tags}}
-	        <div class="results">
+	        <div class="results" aria-live="polite">
 	        	<div class="row">
 	    			<div class="col-md-12"></div>
 	    		</div>
 	        </div>
 	        {{/if}}
             {{#if results}}
-            <div class="results results__box">
+            <div class="results results__box" aria-live="polite">
             	<div class="row">
                 	<div class="col-md-6 left-column"></div>
                     <div class="col-md-6 right-column"></div>
@@ -41,8 +41,8 @@
 	    </form>
 	    {{#if horizontal-list}}
 	    <div class="horizontal-list">
-	        <h4 class="horizontal-list__toggle" aria-expanded="false">
-	        	<button class="horizontal-list__toggle-button">Popular searches</button>
+	        <h4 class="horizontal-list__toggle">
+	        	<button class="horizontal-list__toggle-button" aria-expanded="false">Popular searches</button>
 	        </h4>
 	        <ul>
 	            <li><a href="#">Upcoming events</a></li>
@@ -51,7 +51,7 @@
 	            <li><a href="#">This month</a></li>
 	            <li><a href="#">All events</a></li>
 	            <li class="dropdown-wrapper">
-	              <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-controls="more-options">More options<span class="caret"></span></a>
+	              <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-controls="more-options" role="button">More options<span class="caret"></span></a>
 	                <ul class="dropdown-menu" id="more-options">
 	                    <li><a href="#">Events open to the public</a></li>
 	                    <li><a href="#">Events for staff and students</a></li>

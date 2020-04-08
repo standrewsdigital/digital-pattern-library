@@ -4,15 +4,16 @@ title: Form elements
 
 <p class="lead">Keep forms as simple as possible, see <a href="../../examples/form.html">form example</a> for more information.</p>
 
-<h3>Rules for form elements</h3>
+<h2>Rules for form elements</h2>
 <ul>
-	<li>You must only ask for the information you absolutely need.</li>
+	<li>You should only ever ask for the information you absolutely need.</li>
 	<li>You must not mark mandatory fields with asterisks.</li>
-	<li>You must not use forms in sidebars.</li>
 	<li>You may ask for optional information, if so, you must mark the labels of optional fields with ‘(optional)’.</li>
+	<li>You must not use forms in sidebars.</li>
+	<li>Form elements that use the <code>form-control</code> class will fill the width of their container by default. For form elements that expect short inputs the <code>size</code> attribute combined with the <code>form-control--auto-width</code> can be used to change an elements width.</li>
 </ul>
 
-<h3>Options available</h3>
+<h2>Options available</h2>
 <ul>
 {{#form-elements-options.options}}
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>

@@ -9,12 +9,18 @@ title: Example search page
 {{> search-bar examples-search.searchbanner}}
 
 
+<a name="content-begin"></a>
 <div class="container">
 <div class="row">
 <div class="col-xs-12">
   <div class="margin-top--half margin-bottom">
-    <div class="row">
-    <div class="col-md-9 col-md-push-3">
+    <ul class="nav nav-tabs nav-tabs--full-width" role="tablist">
+                    <li class="active" role="presentation"><a aria-selected="true" href="#tab-1" role="tab">All results</a></li>
+                    <li class="" role="presentation"><a aria-selected="false" href="#tab-2" role="tab">News</a></li>
+                    <li class="" role="presentation"><a aria-selected="false" href="#tab-3" role="tab">Events</a></li>
+                </ul>
+    <div class="row margin-top--half">
+    <div class="col-md-9">
 
 {{> filter-box examples-search.filters}}
     <p><span id="search-page-start">1</span> - <span id="search-page-end">10</span> of <span id="search-total-matching">19</span> documents.</p>
@@ -31,7 +37,7 @@ title: Example search page
 
     </div>
 
-    <div class="col-md-3 col-md-pull-9 hidden-print">
+    <div class="col-md-3 hidden-print">
 {{> facet-list examples-search.facets}}
     </div>
 

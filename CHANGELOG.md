@@ -9,6 +9,67 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.23.0
+
+Release date: Monday 16 March 2020
+
+### Added
+* Contrasting focus state styling across all interactive elements and links. 
+* Tabs added to Search results example.
+* Documented support for additional input types within forms.
+* New colour swatch component.
+* Colour contrast accessibility guidance added to Colours page along with additional documentation.
+* ARIA support improved across a wide number of patterns.
+* Callout options added to Alert pattern with additional documentation.
+* Ability to avoid form fields spanning width of container.
+
+### Changed
+* Vertical spacing added between normal list items in ordered and unordered lists.
+* Tile grid items' maximum width increased when stacked.
+* Panel heading links now include chevron to match other block link styles.
+* Various spacing and padding changes across a wide range of patterns.
+* Link styles changed to underline with different hover, active and focus states.
+* Tabs now stack on small width displays.
+* Style changes to tabs to include greater contrast on borders and tabs, along with focus state for tab labels.
+* Documentation updates across a wide range of patterns and examples.
+* Improved accessibility to documentation pages.
+* Tabindex applied to linked images that link to the same place as an adjacent text link. This is to prevent being read out twice on screen readers. Applies to Article header, Comment, Article list patterns.
+* News landing page example updated to reflect new pattern changes.
+* Gallery example page now includes page heading and introduction.
+* Form example amended to meet new form guidance.
+* Styling removed from form legend tag, this should instead be applied to the contained heading text.
+* Form element focus state styling amended for greater contrast.
+* Datatable styling amended for focussed elements along with improved indication of selected column.
+* Colour palettes amended to reduce number of overall colours used and simplify the options available.
+* Showcase banner colours changed to reflect updated colour palettes.
+* Featured media now using 'Action' style button.
+* Secondary call to action banner now using 'Action' style button and left aligned.
+* Breadcrumbs style changes to reduce visual importance.
+* Breadcrumbs improved for screen reader users.
+* Event tile grid improved for screen reader users and more consistent components.
+* Event list improved for screen reader users and more consistent components.
+* Navbox rewritten to remove need for JS for links and to treat these as links rather than buttons.
+* Form error messages and form documentation.
+
+### Removed
+* Transition effect on links.
+* Example page for search with different styled adjacent results.
+* Support for &lt;b&gt; and &lt;i&gt; tags is instead handled by CSS.
+* Section header pattern.
+* KIS widget.
+
+### Fixed
+* Images now displaying on Long-form example page and Vimeo video removed.
+* Images now displaying correctly in lightbox on Gallery example page.
+* All tags used on Contact card pattern must be linked so examples have been updated.
+* More consistent font sizing and spacing across all patterns.
+* Contact card layout improved on small to medium width devices.
+
+### Deprecated
+* Old navbox markup.
+
+---
+
 ## v1.22.1
 
 Release date: Monday 17 February 2020

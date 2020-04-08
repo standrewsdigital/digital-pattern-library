@@ -10,6 +10,10 @@ div.container ul.show-navigation {
     font-weight: normal;
 }
 
+.navigation-bar .container {
+	padding: 0; // Collapse padding and let link padding align items instead
+}
+
 .navigation-bar ul.navigation-bar-nav {
 	padding: 0;
 	margin: 0;
@@ -18,6 +22,7 @@ div.container ul.show-navigation {
 .navigation-bar ul.navigation-bar-nav li {
 	float: left;
     list-style: none;
+    margin: 0;
 }
 
 .navigation-bar ul.navigation-bar-nav li a {
@@ -28,20 +33,22 @@ div.container ul.show-navigation {
 	text-decoration: none;
 }
 
-// This rule compensates for the padding added to the a tag.
-// This rule pulls the first <li> <a> to left by 15px
-// to compensate for the padding added to all <li> <a>'s
-// and line the first element up with the .container  edge.
-.navigation-bar ul.navigation-bar-nav:nth-child(2) li:nth-child(1) a {
-    margin-left: -15px;
-
-	@media (max-width: 991px) {
-		margin-left: 0;
-	}
+.navigation-bar ul.navigation-bar-nav li a:hover {
+	color: white;
+	text-decoration: underline;
+	z-index: 3;
 }
 
-.navigation-bar ul.navigation-bar-nav li a:hover, .navigation-bar ul.navigation-bar-nav li a:focus {
-	color: white;
+.navigation-bar ul.navigation-bar-nav li a:focus {
+	outline:3px solid $sta-orange-highlight;
+	background-color: inherit;
+	text-decoration: underline;
+	z-index: 5; //Focus has highest priority
+}
+
+.navigation-bar ul.navigation-bar-nav li a:active {
+	color: $sta-grey-dark;
+	background-color: $sta-orange-highlight !important;
 }
 
 .toggle-navigation {
@@ -80,7 +87,7 @@ div.container ul.show-navigation {
     .toggle-navigation {
     	border-bottom: solid 0px white;
         display: block;
-        font-size: 20px;
+        @include ms-respond(font-size,1);
         text-align: center;
     }
 
@@ -110,8 +117,8 @@ div.container ul.show-navigation {
 	background-color: $sta-blue;
 }
 
-.navigation-bar ul.navigation-bar-nav li a:hover, .navigation-bar ul.navigation-bar-nav li a:focus {
-	background-color: $sta-blue-hover;
+.navigation-bar ul.navigation-bar-nav li a:hover {
+	background-color: $sta-blue-shade25;
 }
 
 // Target select item in T4 and WordPress respectively
@@ -125,21 +132,46 @@ div.container ul.show-navigation {
 }
 
 @media (max-width: 991px) {
-	.toggle-navigation a:hover, .toggle-navigation a:focus {
-		background-color: $sta-blue-hover;
+	.toggle-navigation a:hover {
+		background-color: $sta-blue-shade25;
 	}
 }
 
-/* blue-study */
+// Toggle buttons
+.navigation-button {
+	background: transparent;
+	border: none;
+	color: white;
+	font-weight: bold;
+	outline: none;
+    padding: 10px 15px;
+	width: 100%;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&:focus {
+        outline: 3px solid $sta-orange-highlight; 
+	}
+
+	&:active {
+		background: $sta-orange-highlight;
+		color: $sta-grey-dark;
+        outline: 3px solid $sta-orange-highlight; 
+        text-decoration: underline;
+	}
+}
+
+/*
+/* blue-study 
 .accent-blue-study .navigation-bar,
 .navigation-bar.blue-study {
 	background-color: $sta-cyan;
 }
 
 .accent-blue-study .navigation-bar ul.navigation-bar-nav li a:hover,
-.accent-blue-study .navigation-bar ul.navigation-bar-nav li a:focus,
-.navigation-bar.blue-study ul.navigation-bar-nav li a:hover,
-.navigation-bar.blue-study ul.navigation-bar-nav li a:focus {
+.navigation-bar.blue-study ul.navigation-bar-nav li a:hover {
 	background-color: $sta-cyan-hover;
 }
 
@@ -159,13 +191,11 @@ div.container ul.show-navigation {
 }
 
 @media (max-width: 991px) {
-	.accent-blue-study .toggle-navigation a:hover,
-	.blue-study .toggle-navigation a:focus,
-	.accent-blue-study .toggle-navigation a:hover,
-	.blue-study .toggle-navigation a:focus {
+	.accent-blue-study .toggle-navigation a:hover {
 		background-color: $sta-cyan-hover;
 	}
 }
+*/
 
 /*********************************/
 /* END Pattern: navigation-bar   */

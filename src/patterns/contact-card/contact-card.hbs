@@ -1,5 +1,7 @@
 <!-- Begin pattern: contact-card //-->
 {{#if codeblock}}
+{{#if main-col}}<div class="row">
+    <div class="col-sm-8">{{/if}}
 {{#each cards}}
 <div class="contact-card">
     {{#if image}}
@@ -163,7 +165,11 @@
 -->
 {{/if}}
 {{/each}}
+{{#if main-col}}</div>
+    </div>{{/if}}
 {{else}}
+{{#if main-col}}<div class="row">
+    <div class="col-sm-8">{{/if}}
 {{#each cards}}
 <div class="contact-card">
     {{#if image}}
@@ -327,5 +333,7 @@
 </div>
 {{/if}}
 {{/each}}
+{{#if main-col}}</div>
+    </div>{{/if}}
 {{/if}}
 <!-- End pattern: contact-card //-->
