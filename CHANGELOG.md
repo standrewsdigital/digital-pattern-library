@@ -22,6 +22,7 @@ Release date: Monday 16 March 2020
 * ARIA support improved across a wide number of patterns.
 * Callout options added to Alert pattern with additional documentation.
 * Ability to avoid form fields spanning width of container.
+* Web application interface added to examples.
 
 ### Changed
 * Vertical spacing added between normal list items in ordered and unordered lists.
@@ -64,9 +65,11 @@ Release date: Monday 16 March 2020
 * All tags used on Contact card pattern must be linked so examples have been updated.
 * More consistent font sizing and spacing across all patterns.
 * Contact card layout improved on small to medium width devices.
+* More consistent formatting of documentation.
 
 ### Deprecated
 * Old navbox markup.
+* Mini authenticated header option.
 
 ---
 
