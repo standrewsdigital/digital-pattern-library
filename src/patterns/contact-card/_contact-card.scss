@@ -70,10 +70,8 @@
 
 .contact-card__image {
     @extend %contact-card-media;
-
+    background: $sta-blue-light;
     img {
-        //max-height:50px;
-        //max-width:50px;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -84,24 +82,33 @@
     a {
         display: block;
         height: 100%;
+        position: relative;
         width: 100%;
 
         &:hover,
-        &:focus {
+        &:focus,
+        &:active {
 
             img {
-                opacity: 0.4;
+                display:none;
             }
 
             &:after {
                 @extend .fa;
-                color: $sta-grey-dark;
+                color: #fff;
                 content: '\f2bb';
                 position: absolute;
                 left: 50%;
                 top: 50%;
                 -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
+            }
+        }
+
+        &:active,
+        &:focus  {
+            &:after {
+                color: $sta-grey-dark;
             }
         }
     }
@@ -132,6 +139,7 @@
     a {
         display: block;
         height: 100%;
+        position: relative;
         width: 100%;
 
         &:hover,
