@@ -2,6 +2,8 @@
 title: Header
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The header pattern includes the logo and search field. On the University homepage, the header also includes audience-specific navigation links above the search bar.</p>
 
 <h3>Rules for the header</h3>
@@ -17,11 +19,16 @@ title: Header
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/header-options.options}}
 </ul>
-
+</div>
+</div>
 {{#header-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

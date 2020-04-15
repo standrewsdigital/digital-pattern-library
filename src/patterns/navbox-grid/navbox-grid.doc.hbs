@@ -2,6 +2,8 @@
 title: Navbox grid
 ---
 
+<div class="row">
+    <div class="col-md-8">
 <p class="lead">The navbox grid pattern presents a set of <a href="../navbox/index.html">navboxes</a> in various grid layouts. For a set of navigation links that are considered secondary in importance the <a href="../navigation-grid/index.html">navigation grid</a> pattern should be used.</p>
 
 <h2>Rules for the navbox grid</h2>
@@ -31,11 +33,16 @@ title: Navbox grid
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/navbox-grid-options.options}}
 </ul>
-
+</div>
+</div>
 {{#navbox-grid-options.options}}
 <hr>
+<div class="row">
+    <div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
     <span class="label label-default">Example</span>
 </div>

@@ -2,7 +2,8 @@
 title: Featured media
 ---
 
-
+<div class="row">
+  <div class="col-md-8">
 <p class="lead">This pattern is for displaying featured content that includes media such as an image or video.</p>
 
 <h2>Rules for featured media</h2>
@@ -40,11 +41,16 @@ title: Featured media
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/featured-media-options.options}}
 </ul>
-
+</div>
+</div>
 {{#featured-media-options.options}}
 <hr>
+<div class="row">
+  <div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
   <span class="label label-default">Example</span>
 </div>

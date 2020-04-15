@@ -2,6 +2,8 @@
 title: Event list
 ---
 
+<div class="row">
+    <div class="col-md-8">
 <p class="lead">Events can be displayed as a list of individual events. If images are required then consider using the <a href="../article-list/index.html">article list</a> or <a href="../event-tile-grid/index.html">event tile grid</a> patterns.</p>
 
 <h2>Rules for event list</h2>
@@ -22,11 +24,16 @@ title: Event list
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/event-list-options.options}}
 </ul>
-
+</div>
+</div>
 {{#event-list-options.options}}
 <hr>
+<div class="row">
+    <div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

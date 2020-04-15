@@ -2,6 +2,8 @@
 title: Search bar
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The search bar is used to search pages of the University website. </p>
 <p>Once a search term has been entered an additional 'clear' button is shown with a number of different behaviours:</p>
 <ul>
@@ -15,11 +17,16 @@ title: Search bar
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/search-bar-options.options}}
 </ul>
-
+</div>
+</div>
 {{#search-bar-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

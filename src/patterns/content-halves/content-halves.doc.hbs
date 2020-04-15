@@ -2,14 +2,16 @@
 title: Content halves
 ---
 
-<p class="lead">The content halves pattern contains two, equal-width content columns. There is the option of a heading above the columns and a full-width background colour.</p>
+<div class="row">
+	<div class="col-md-8">
+<p class="lead">The content halves pattern contains two, equal-width content columns. There is the option to have a heading above the columns and a full-width background colour.</p>
 
 <h3>Rules for content halves</h3>
 
 <ul>
-	<li>A video may be used in the right-hand column.</li>
 	<li>Accordions may be used in either column.</li>
-    <li>The background colour must be either white or grey.</li>
+    <li>The background colour must be either white or grey. Add the class <code>sta-grey-light</code> for a grey background.</li>
+    <li>Add the classes <code>padding-top</code> and <code>padding-bottom</code> to add vertical padding. This must be used when applying a background colour.</li>
 </ul>
 
 <h3>Options available</h3>
@@ -18,11 +20,16 @@ title: Content halves
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/content-halves-options.options}}
 </ul>
-
+	</div>
+</div>
 {{#content-halves-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+	</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

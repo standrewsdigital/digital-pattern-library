@@ -2,6 +2,8 @@
 title: Panel
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The panel pattern comprises a heading or image, both with a description. Panels may be used in asides for additional information or combined together to form a <a href="../panel-grid/index.html">panel grid</a>.</p>
 
 <h2>Rules for panels</h2>
@@ -21,11 +23,16 @@ title: Panel
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/panel-options.options}}
 </ul>
-
+</div>
+</div>
 {{#panel-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
-{{{option-description}}}    
+{{{option-description}}}  
+</div>
+</div>  
 <!--noindex-->
 <span class="label label-default">Example</span>
 </div>

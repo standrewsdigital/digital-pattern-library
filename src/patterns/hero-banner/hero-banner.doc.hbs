@@ -3,6 +3,8 @@ title: Hero banner
 ---
 
 
+<div class="row">
+    <div class="col-md-8">
 <p class="lead">The hero banner pattern displays a large heading, introductory text and a call-to-action over a large background image.</p>
 
 <h2>Rules for hero banner</h2>
@@ -55,11 +57,16 @@ title: Hero banner
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/hero-banner-options.options}}
 </ul>
-
+</div>
+</div>
 {{#hero-banner-options.options}}
 <hr>
+<div class="row">
+    <div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
     <span class="label label-default">Example</span>
 </div>

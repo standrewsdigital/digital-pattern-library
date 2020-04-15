@@ -2,6 +2,8 @@
 title: Article list
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The article list pattern shows key information about a particular article or item, linking to further details. This can be used for a wide range of content such as news articles, blog posts, publications or events.</p>
 
 <h2>Rules for article list</h2>
@@ -23,11 +25,16 @@ title: Article list
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/article-list-options.options}}
 </ul>
-
+</div>
+</div>
 {{#article-list-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

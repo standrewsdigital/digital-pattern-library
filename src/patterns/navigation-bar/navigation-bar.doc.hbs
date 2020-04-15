@@ -2,6 +2,8 @@
 title: Navigation bar
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The navigation bar pattern displays a horizontal navigation menu for pages related to the current page.</p>
 
 <h2>Rules for the navigation bar</h2>
@@ -20,11 +22,16 @@ title: Navigation bar
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/navigation-bar-options.options}}
 </ul>
-
+</div>
+</div>
 {{#navigation-bar-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}    
+</div>
+</div>
 <!--noindex-->
 <span class="label label-default">Example</span>
 </div>

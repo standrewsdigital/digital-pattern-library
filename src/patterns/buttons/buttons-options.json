@@ -2,7 +2,7 @@
     "options" : [
         {
             "option-heading": "Primary button",
-            "option-description": "<p>Primary buttons are used on all pages with the primary blue palette theme.</p>",
+            "option-description": "<p>The standard button style.</p>",
             "option-anchor": "primary-button",
             "buttons": [
                 {
@@ -28,7 +28,7 @@
 
          {
             "option-heading": "Secondary and tertiary buttons",
-            "option-description": "<p>Secondary and tertiary buttons are used on pages currently using the secondary and tertiary palette themes.</p>",
+            "option-description": "<p>Secondary and tertiary buttons are used to compliment the primary button when not all actions are of equal importance. These different button colours may also be used when the primary blue colour does not match the context that they are used.</p>",
             "option-anchor": "secondary-buttons",
             "buttons": [
                 {
@@ -54,43 +54,9 @@
             ]
           },
 
-
-
-
-         {
-            "option-heading": "Label buttons",
-            "option-description": "<p>Label buttons must be used only on forms and other tasks that involve a user completing a task. For further information on the application of buttons in forms, see the <a href='../../patterns/form-elements/index.html'>form elements</a> pattern.</p>",
-            "option-anchor": "label-buttons",
-            "buttons": [
-                {
-                    "type": "success",
-                    "text": "Success",
-                    "size": "btn btn-lg "
-                },
-                {
-                    "type": "info",
-                    "text": "Info",
-                    "size": "btn btn-lg "
-                },
-                {
-                    "type": "warning",
-                    "text": "Warning",
-                    "size": "btn btn-lg "
-                },
-                {
-                    "type": "danger",
-                    "text": "Danger",
-                    "size": "btn btn-lg "
-                }
-            ]
-          },
-
-
-
-
         {
             "option-heading": "Icon buttons",
-            "option-description": "<ul><li>An icon button must be used when the button action is to download a file.</li><li>An associated <a href='../font-awesome/index.html'>font awesome</a> icon to the downloadable file must be included in the button.</li></ul>",
+            "option-description": "<ul><li>An icon button must be used when the button action is to download a file.</li><li>An associated <a href='../font-awesome/index.html'>Font Awesome</a> icon to the downloadable file must be included in the button.</li></ul>",
             "option-anchor": "icon-buttons",
             "buttons": [
                 {
@@ -232,7 +198,7 @@
 
         {
             "option-heading": "Dropdown buttons",
-            "option-description": "<p>Can be used to show multiple options in a single dropdown list. The button to open and close the dropdown can have any button style applied. This example shows both the primary and the small tag style of buttons, with the dropdown menu adjusting to match its parent button font size and padding.</p>",
+            "option-description": "<p>Can be used to show multiple options in a single dropdown list. This example shows both the primary and the small tag style of buttons, with the dropdown menu adjusting to match its parent button font size and padding.</p>",
             "option-anchor": "dropdown-buttons",
             "dropdown": true
           }

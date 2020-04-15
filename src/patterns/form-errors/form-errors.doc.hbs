@@ -2,6 +2,8 @@
 title: Form errors
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">This pattern is the style for showing form validation errors.</p>
 
 <h2>Rules for form errors</h2>
@@ -19,11 +21,16 @@ title: Form errors
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/form-errors-options.options}}
 </ul>
-
+</div>
+</div>
 {{#form-errors-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

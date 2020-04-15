@@ -2,6 +2,8 @@
 title: Navbox
 ---
 
+<div class="row">
+    <div class="col-md-8">
 <p class="lead">The navbox pattern is used to present featured navigation items with an optional background image and paragraph.</p>
 
 <h2>Rules for the navbox</h2>
@@ -43,11 +45,16 @@ title: Navbox
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/navbox-options.options}}
 </ul>
-
+</div>
+</div>
 {{#navbox-options.options}}
 <hr>
+<div class="row">
+    <div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
-{{{option-description}}}    
+{{{option-description}}}   
+</div>
+</div> 
 <!--noindex-->
 <span class="label label-default">Example</span>
 </div>

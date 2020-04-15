@@ -2,6 +2,8 @@
 title: Share options
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The share options pattern allows links to be shared across social media platforms.</p>
 
 <h2>Rules for share options</h2>
@@ -17,11 +19,16 @@ title: Share options
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/share-options-options.options}}
 </ul>
-
+</div>
+</div>
 {{#share-options-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

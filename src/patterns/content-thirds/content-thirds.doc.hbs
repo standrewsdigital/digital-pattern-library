@@ -2,6 +2,8 @@
 title: Content thirds
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The content thirds pattern contains a &frac23; width column for the main content and an optional &frac13; width column for related content. There is the option of a heading above the columns and a full-width background colour.</p>
 
 <h3>Rules for content thirds</h3>
@@ -16,11 +18,16 @@ title: Content thirds
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/content-thirds-options.options}}
 </ul>
-
+</div>
+</div>
 {{#content-thirds-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

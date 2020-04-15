@@ -3,6 +3,8 @@ title: Heading with section
 ---
 
 
+<div class="row">
+  <div class="col-md-8">
 <p class="lead">This pattern is for displaying a prominent heading alongside content, on a full width page.</p>
 
 <h2>Rules for heading with section</h2>
@@ -29,11 +31,16 @@ title: Heading with section
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/heading-section-options.options}}
 </ul>
-
+</div>
+</div>
 {{#heading-section-options.options}}
 <hr>
+<div class="row">
+  <div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
   <span class="label label-default">Example</span>
 </div>

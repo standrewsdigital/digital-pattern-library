@@ -2,6 +2,8 @@
 title: Sticky nav
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The sticky nav is only for linking within a page to in-page content. It appears below the normal navigation bar and will affix to the top of the browser window as you scroll down past it. The sticky nav will also highlight the current section as you scroll down the page.</p>
 
 <h2>Rules for the sticky nav</h2>
@@ -22,11 +24,16 @@ title: Sticky nav
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/sticky-nav-options.options}}
 </ul>
-
+</div>
+</div>
 {{#sticky-nav-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}    
+</div>
+</div>
 <!--noindex-->
 <span class="label label-default">Example</span>
 </div>

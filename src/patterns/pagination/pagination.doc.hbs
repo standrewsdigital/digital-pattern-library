@@ -2,6 +2,8 @@
 title: Pagination
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">Pagination links should be used as a method of navigating a set of content that is divided between multiple pages or views. Typical use of this pattern would be when a large set of results requires to be split for performance reasons, or when the ability to access a specific listings page is a user requirement.</p>
 
 <h2>Rules for pagination</h2>
@@ -17,11 +19,16 @@ title: Pagination
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/pagination-options.options}}
 </ul>
-
+</div>
+</div>
 {{#pagination-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
-{{{option-description}}}    
+{{{option-description}}}  
+</div>
+</div>  
 <!--noindex-->
 <span class="label label-default">Example</span>
 </div>

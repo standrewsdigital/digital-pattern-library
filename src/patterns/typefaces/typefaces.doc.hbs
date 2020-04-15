@@ -2,6 +2,8 @@
 title: Typefaces
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">There are two main typefaces used across the University website: <a href="https://fonts.google.com/specimen/PT+Sans">PT Sans</a> and <a href="https://fonts.google.com/specimen/PT+Serif">PT Serif</a>. Both are freely available from <a href="https://fonts.google.com/">Google Fonts</a>.</p>
 
 <h2>Options available</h2>
@@ -10,10 +12,15 @@ title: Typefaces
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/typefaces-options.options}}
 </ul>
-
+</div>
+</div>
 {{#typefaces-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 {{> typefaces}}
 {{/typefaces-options.options}}

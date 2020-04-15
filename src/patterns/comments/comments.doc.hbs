@@ -2,6 +2,8 @@
 title: Comments
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The comments pattern should be used to present feedback and discussion about a news article or blog post.</p>
 <p>Comments consist of an author's profile image and name, the date the comment was made and the comment itself. Top level comments also have a reply button that should provide a method of responding to a specific comment.</p>
 <h2>Rules for comments</h2>
@@ -17,11 +19,16 @@ title: Comments
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/comments-options.options}}
 </ul>
-
+</div>
+</div>
 {{#comments-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

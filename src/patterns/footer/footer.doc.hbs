@@ -2,6 +2,8 @@
 title: Footer
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The footer pattern presents the information that should be found at the bottom of all pages.</p>
 
 <h2>Rules for the footer</h2>
@@ -18,11 +20,16 @@ title: Footer
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/footer-options.options}}
 </ul>
-
+</div>
+</div>
 {{#footer-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

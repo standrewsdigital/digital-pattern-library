@@ -1,6 +1,8 @@
 ---
 title: Code
 ---
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The code pattern is used to display example source code on pages. For example, this may be used in documentation such as the digital pattern library or in blog post tutorials.</p>
 <div class="alert alert--info">
 <h2 class="alert__heading">Inline code</h2>
@@ -19,10 +21,16 @@ title: Code
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/code-options.options}}
 </ul>
+</div>
+</div>
 {{#code-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	{{> code}}
 <!--endnoindex-->

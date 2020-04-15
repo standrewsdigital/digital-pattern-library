@@ -2,6 +2,8 @@
 title: Google Maps
 ---
 
+<div class="row">
+    <div class="col-md-8">
 <p class="lead">The Google Maps pattern uses a modified <code>iframe</code> embed code from Google, wrapped within a <code>div</code> with specific classes to ensure that it works as expected on mobile devices.</p>
 
 <h2>Rules for Google Maps</h2>
@@ -57,13 +59,17 @@ title: Google Maps
     <li>You must replace <code>IFRAME_SRC_URL</code> with the URL from the embed code you copied from Google.</li>
     <li>You must not include any other attributes in the <code>iframe</code> element, e.g. <code>width</code>, <code>height</code>, <code>frameborder</code>, <code>style</code>, etc.</li>
 </ul>
-
-<hr>
+</div>
+</div>
 
 {{#google-maps-options.options}}
 <hr>
+<div class="row">
+    <div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
     <span class="label label-default">Example</span>
 </div>

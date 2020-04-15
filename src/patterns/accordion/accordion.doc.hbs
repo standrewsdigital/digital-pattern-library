@@ -1,7 +1,8 @@
 ---
 title: Accordion
 ---
-
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The accordion pattern presents an expandable and collapsible section of content. Accordions shorten pages and reduce scrolling, but they require users to click on topic headings to find information. Therefore, accordions should be used sparingly. For more information see the <a href="https://www.nngroup.com/articles/accordions-complex-content/"> Nielsen Norman Group report on accordion usability</a>.</p>
 
 <h2>Rules for accordions</h2>
@@ -24,10 +25,16 @@ title: Accordion
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/accordion-options.options}}
 </ul>
+</div>
+</div>
 {{#accordion-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

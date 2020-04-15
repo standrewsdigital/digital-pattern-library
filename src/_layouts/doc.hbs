@@ -4,8 +4,18 @@ layout: _base.hbs
 
 <div class="container">
 	<h1 class="page-heading">{{title}}</h1>
-
+{{#if two-thirds}}
+<div class="row">
+	<div class="col-md-8">
+{{/if}}
+{{#if lead}}
+	<p class="lead">{{lead}}</p>
+{{/if}}
 	{{#markdown}}
 		{{>body}}
 	{{/markdown}}
+{{#if two-thirds}}
+	</div>
+</div>
+{{/if}}
 </div>

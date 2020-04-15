@@ -2,6 +2,8 @@
 title: Long-form gallery
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The long-form gallery pattern allows you to displaying a large number of images on a page and makes use of the <a href="http://lokeshdhakar.com/projects/lightbox2">Lightbox JavaScript library</a> to view the images in an immersive experience.</p>
 
 <h2>Rules for long-form gallery</h2>
@@ -19,11 +21,16 @@ title: Long-form gallery
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/long-form-gallery-options.options}}
 </ul>
-
+</div>
+</div>
 {{#long-form-gallery-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

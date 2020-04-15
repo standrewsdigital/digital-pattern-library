@@ -2,6 +2,8 @@
 title: Panel grid
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The panel grid pattern arranges panel items in a column grid.</p>
 
 <h2>Rules for the panel grid</h2>
@@ -19,11 +21,16 @@ title: Panel grid
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/panel-grid-options.options}}
 </ul>
-
+</div>
+</div>
 {{#panel-grid-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3>{{option-heading}}</h3>
-{{{option-description}}}    
+{{{option-description}}}   
+</div>
+</div> 
 <!--noindex-->
 <span class="label label-default">Example</span>
 </div>

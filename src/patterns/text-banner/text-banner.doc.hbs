@@ -2,6 +2,8 @@
 title: Text banner
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The text banner pattern is a full-width, short message with a background colour.</p>
 
 <h2>Rules for the text banner</h2>
@@ -16,11 +18,16 @@ title: Text banner
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/text-banner-options.options}}
 </ul>
-
+</div>
+</div>
 {{#text-banner-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

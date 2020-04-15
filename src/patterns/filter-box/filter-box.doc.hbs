@@ -2,6 +2,8 @@
 title: Filter box
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The filter box pattern is used to display a series of filter 'tags' that have been applied to the content. A typical use would be on a filtered search results page.</p>
 
 <h2>Rules for filter box</h2>
@@ -17,11 +19,16 @@ title: Filter box
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/filter-box-options.options}}
 </ul>
-
+</div>
+</div>
 {{#filter-box-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

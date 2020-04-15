@@ -2,6 +2,8 @@
 title: Tabs
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The tabs pattern organises similar pieces of content that do not need to be shown to the user simultaneously. Users can move between tabs to see each piece of content</p>
 
 <h2>Rules for tabs</h2>
@@ -17,11 +19,16 @@ title: Tabs
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/ tabs-options.options}}
 </ul>
-
+</div>
+</div>
 {{#tabs-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

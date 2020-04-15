@@ -1,6 +1,8 @@
 ---
 title: KIS widget
 ---
+<div class="row">
+	<div class="col-md-8">
 <div class="alert alert--warning">
 <h3 class="alert__heading">Attention</h3>
 <p>The KIS widget is currently in the process of being replaced by a new version. It is not recommended to use the current version as it will shortly stop working.</p>
@@ -16,11 +18,16 @@ title: KIS widget
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/kis-widget-options.options}}
 </ul>
-
+</div>
+</div>
 {{#kis-widget-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>
