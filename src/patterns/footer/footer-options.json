@@ -71,7 +71,7 @@
 
         {
             "option-heading": "Navigation menu footer with feedback option",
-            "option-description": "<ul><li>When used, the feedback option must appear above both the <b>Navigation menu footer</b> and the <b>Copyright footer</b>.</li><li>When a feedback option is chosen an appropriate confirmation message must be shown.</li></ul>",
+            "option-description": "<ul><li>When used, the feedback option must appear above both the navigation menu footer and the copyright footer.</li><li>When a user choses a feedback option, an appropriate confirmation message must be shown.</li></ul>",
             "option-anchor": "nav-footer-feedback",
             "website-footer": true,
             "feedback": true,
@@ -130,8 +130,8 @@
 
 
         {
-            "option-heading": "Navigation menu footer with two logos placed above banner",
-            "option-description": "<ul><li>The navigation menu footer with awards and affiliations logo banner must only be used on the homepage.</li><li>The awards and affiliations logo banner is used to display logos of affiliated partners, awards, and certifications.</li><li>Links must be included to the relevant website or webpage for each logo.</li></ul>",
+            "option-heading": "Awards and affiliations logo pre-footer with two logos",
+            "option-description": "<p>The awards and affiliations logo pre-footer is used to display logos of affiliated partners, awards, and certifications.</p><ul><li>The awards and affiliations logo pre-footer must only be used on the homepage of a website.</li><li>Links may be included to the relevant website or webpage for each logo.</li></ul>",
             "option-anchor": "nav-footer-affiliation-two",
             "website-footer": true,
             "affiliation-banner": true,
@@ -207,8 +207,8 @@
 
 
         {
-            "option-heading": "Navigation menu footer with three logos placed above banner",
-            "option-description": "<ul><li>The navigation menu footer with awards and affiliations logo banner must only be used on the homepage.</li><li>The awards and affiliations logo banner is used to display logos of affiliated partners, awards, and certifications.</li><li>Links must be included to the relevant website or webpage for each logo.</li></ul>",
+            "option-heading": "Awards and affiliations logo pre-footer with three logos",
+            "option-description": "",
             "option-anchor": "nav-footer-affiliation-three",
             "website-footer": true,
             "affiliation-banner": true,
@@ -292,7 +292,7 @@
 
 
         {
-            "option-heading": "Navigation menu footer with additional branding",
+            "option-heading": "Navigation menu footer with additional sub-branding",
             "option-description": "The footer may be used to introduce additional branding that is unique to a particular website.<ul><li>The logo should be placed at the top of the first column.</li><li>Where possible an SVG file type should be used to provide a crisp image at all sizes. If this is not possible then a PNG with transparent background should be used.</li><li>The image should be no larger than 280px wide and 180px high.</li></ul>",
             "option-anchor": "nav-footer-branding",
             "website-footer": true,

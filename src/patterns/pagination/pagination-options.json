@@ -13,7 +13,7 @@
 
         {
             "option-heading": "Pagination with disabled and active states",
-            "option-description": "",
+            "option-description": "<p>Disabled links should be used when there is no preceeding or following pages to navigate to.</p>",
             "option-anchor": "disabled-active-pagination",
             "pagination": true,
             "ul-class": " pagination-lg",
@@ -25,7 +25,7 @@
 
         {
             "option-heading": "Pagination with large number of pages",
-            "option-description": "<p>When there are a large amount of pages <code>&hellip;</code> should be used to signify any page links that are not immediately displayed.</p>",
+            "option-description": "<p>When there is a large amount of pages <code>&hellip;</code> should be used to signify any page links that are not immediately displayed.</p>",
             "option-anchor": "large-results-pagination",
             "pagination": true,
             "ul-class": " pagination-lg",
@@ -48,7 +48,7 @@
 
         {
             "option-heading": "Pager",
-            "option-description": "<p>Simple 'Previous' and 'Next' links for pagination implementation use cases that need a linear navigation through adjoining results. For example these can be used at the bottom of a blog post or news article to allow the user to proceed to another post.</p>",
+            "option-description": "<p>Simple 'Previous' and 'Next' links can be used for pagination that needs a linear navigation through adjoining results. For example these can be used at the bottom of a blog post or news article to allow the user to proceed to another post.</p>",
             "option-anchor": "pager"
         },
 

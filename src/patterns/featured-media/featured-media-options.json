@@ -23,7 +23,7 @@
             "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
         },
         {
-            "option-heading": "Centered video with caption",
+            "option-heading": "Centred video with caption",
             "option-description": "<p>If a preferred side is not specified then the media is placed in the centre and more prominently on larger displays.</p>",
             "option-anchor": "featured-video-centre",
             "media-alignment": " container",

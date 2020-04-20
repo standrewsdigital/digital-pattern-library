@@ -21,7 +21,7 @@
         {
             "option-anchor": "hero-banner2",
             "option-heading": "Hero banner with introduction and one call-to-action button",
-            "option-description": "<p>This example uses an alternate heading colour and features only one button.</p>",
+            "option-description": "<p>This example uses an alternate heading background colour and has one call-to-action button.</p>",
             "heading":  "Accommodation at St Andrews",
             "heading-colour": " hero-section__heading--burgundy",
             "paragraph":  "St Andrews has more than 4,000 bed spaces and a fantastic variety of accommodation to suit all tastes and budgets. Prospective students can be sure that they will find suitable accommodation during their studies.",
@@ -36,7 +36,7 @@
         {
             "option-anchor": "hero-banner3",
             "option-heading": "Hero banner with introduction",
-            "option-description": "<p>This examples uses an alternate heading colour and features no call-to-actions.</p>",
+            "option-description": "<p>This examples uses an alternate heading background colour and has no call-to-action buttons.</p>",
             "heading":  "Visit the University",
             "heading-colour": " hero-section__heading--orange",
             "paragraph":  "Join us on a visiting day to meet with academic staff, talk to current students, see the town and ask any questions you have about applying. Book your visit today.",
@@ -49,7 +49,7 @@
         {
             "option-anchor": "hero-banner4",
             "option-heading": "Hero banner with heading only",
-            "option-description": "<p>This example uses an alternate heading colour and only includes a heading.</p>",
+            "option-description": "<p>This example uses an alternate heading background colour and only includes a heading.</p>",
             "heading":  "Academic excellence at St Andrews",
             "heading-colour": " hero-section__heading--purple",
             "bg-image": "docs/images/cta/hero6/",
@@ -60,7 +60,7 @@
         {
             "option-anchor": "hero-banner5",
             "option-heading": "Hero banner with heading only - art direction",
-            "option-description": "<p>This example shows how a cropped in version of the image is used for the mobile scaled size to focus on the key essence of the image.</p>",
+            "option-description": "<p>This example shows how a cropped version of the image is used for the mobile scaled size to focus on the key essence of the image. To see the different image adjust the width of your browser until the alternate image is shown.</p>",
             "heading":  "Class of 2020",
             "heading-colour": " hero-section__heading--green",
             "bg-image": "docs/images/cta/hero7/",

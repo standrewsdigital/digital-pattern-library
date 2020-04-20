@@ -1,8 +1,8 @@
 {
     "options": [
         {
-            "option-heading": "Navbox sizes",
-            "option-description": "",
+            "option-heading": "All available navbox sizes",
+            "option-description": "<p>The regular size of navbox takes up a third of the available space of its container, while the large navbox is half the width of its containing element.</p>",
             "option-anchor": "sizes",
             "box-size": [
                 {
@@ -10,7 +10,7 @@
                         "url": "../../assets/docs/images/placeholders/750x500.png",
                         "alt": "Description"
                     },
-                    "title": "Regular (&frac13;)",
+                    "title": "Regular",
                     "column": "col-sm-4",
                     "row": true
                 },
@@ -19,7 +19,7 @@
                         "url": "../../assets/docs/images/placeholders/1110x480.png",
                         "alt": "Description"
                     },
-                    "title": "Large (&frac12;)",
+                    "title": "Large",
                     "column": "col-sm-6",
                     "row": true
                 }
@@ -106,7 +106,7 @@
 
         {
             "option-heading": "Navbox (old version) - deprecated",
-            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This old method of implementing the navbox pattern is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
+            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This implementation is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
             "option-anchor": "old",
             "box-size": [
                 {
