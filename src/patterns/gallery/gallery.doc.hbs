@@ -2,6 +2,8 @@
 title: Gallery
 ---
 
+<div class="row">
+  <div class="col-md-8">
 <p class="lead">The gallery pattern demonstrates a method of displaying a large number of images on a page and makes use of the <a href="http://lokeshdhakar.com/projects/lightbox2">Lightbox JavaScript library</a> to view the images in an immersive experience.</p>
 
 <h2>Rules for the gallery</h2>
@@ -23,11 +25,16 @@ title: Gallery
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/gallery-options.options}}
 </ul>
-
+</div>
+</div>
 {{#gallery-options.options}}
 <hr>
+<div class="row">
+  <div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
   <span class="label label-default">Example</span>
 </div>

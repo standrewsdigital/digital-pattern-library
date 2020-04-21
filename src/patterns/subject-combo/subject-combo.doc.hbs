@@ -2,12 +2,14 @@
 title: Subject combo
 ---
 
-<p class="lead">The subject combo shows what combination of courses may be taken alongside a Modern Languages course.</p>
+<div class="row">
+	<div class="col-md-8">
+<p class="lead">The subject combo shows what combination of courses may be taken alongside an undergraduate modern languages course.</p>
 
 <h2>Rules for the subject combo</h2>
 <ul>
     <li>All list items must link to a subject page.</li>
-    <li>This pattern must only be used on the Modern Languages subject pages.</li>
+    <li>This pattern must only be used on the undergraduate in modern languages course pages.</li>
 </ul>
 <h2>Options available</h2>
 <ul>
@@ -15,13 +17,18 @@ title: Subject combo
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/subject-combo-options.options}}
 </ul>
-
+</div>
+</div>
 
 
 {{#subject-combo-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3>{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

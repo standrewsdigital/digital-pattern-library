@@ -2,6 +2,8 @@
 title: Article header
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The article header pattern should be used at the top of the main content for a news article or blog post.</p>
 
 <h2>Rules for article header</h2>
@@ -17,11 +19,16 @@ title: Article header
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/article-header-options.options}}
 </ul>
-
+</div>
+</div>
 {{#article-header-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

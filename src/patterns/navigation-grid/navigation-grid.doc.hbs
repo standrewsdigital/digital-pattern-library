@@ -2,7 +2,9 @@
 title: Navigation grid
 ---
 
-<p class="lead">The navigation grid pattern displays a grid of simple text links with optional supporting descriptions. This pattern would work best for links that are considered secondary to other items on the page. For links deserving greater visual importance the <a href="../navbox-grid/index.html">navbox grid</a> would be more suitable.</p>
+<div class="row">
+	<div class="col-md-8">
+<p class="lead">The navigation grid pattern displays a grid of simple text links with optional supporting descriptions. This pattern works best for links that are considered secondary to other items on the page. For links deserving greater visual importance the <a href="../navbox-grid/index.html">navbox grid</a> is more suitable.</p>
 
 <h2>Rules for the navigation grid</h2>
 
@@ -23,11 +25,16 @@ title: Navigation grid
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/navigation-grid-options.options}}
 </ul>
-
+</div>
+</div>
 {{#navigation-grid-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
-{{{option-description}}}    
+{{{option-description}}}   
+</div>
+</div> 
 <!--noindex-->
 <span class="label label-default">Example</span>
 </div>

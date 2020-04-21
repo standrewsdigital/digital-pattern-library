@@ -1,6 +1,8 @@
 ---
 title: More news
 ---
+<div class="row">
+	<div class="col-md-8">
 <div class="alert alert--warning"><h2 class="alert__heading">This pattern is no longer supported</h2><p>This pattern is deprecated and will be removed in a future version of the digital pattern library. Please refer to the <a href="../article-list/index.html">article list pattern</a> for the correct method.</p></div>
 <p class="lead">The more news pattern is for showing a list of news articles or blog posts that provide links to the full article. These are previous posts or articles that are not featured items.</p>
 
@@ -19,11 +21,16 @@ title: More news
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/more-news-options.options}}
 </ul>
-
+</div>
+</div>
 {{#more-news-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3>{{option-heading}}</h3><div class='alert alert--warning'><h4 class="alert__heading">This option is no longer supported</h4><p>This implementation is now deprecated and will be removed in a future release.</p></div>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

@@ -2,6 +2,8 @@
 title: Featured news
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">Featured news is used to promote a particular item such as a blog post, news article or story at the top of the page.</p>
 
 <h2>Rules for featured news</h2>
@@ -18,11 +20,16 @@ title: Featured news
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/featured-news-options.options}}
 </ul>
-
+</div>
+</div>
 {{#featured-news-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3>{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

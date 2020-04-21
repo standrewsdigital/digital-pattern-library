@@ -1,7 +1,9 @@
 ---
 title: Content whole
 ---
-<p class="lead">The content whole pattern contains a whole-width section for content.</p>
+<div class="row">
+	<div class="col-md-8">
+<p class="lead">The content whole pattern contains content that spans the full width of the available space.</p>
 
 <h3>Rules for content whole</h3>
 <ul>
@@ -15,11 +17,16 @@ title: Content whole
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/content-whole-options.options}}
 </ul>
-
+</div>
+</div>
 {{#content-whole-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

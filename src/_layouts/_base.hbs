@@ -25,12 +25,13 @@ date: <%= new Date() %>
         </div>
         <div id="header-search">
             <button class="btn btn-link" id="header-search-trigger" name="btnG" aria-label="Toggle search" value=""><i class="fa fa-search" title="Search"></i></button>
-            <form action="https://www.st-andrews.ac.uk/search" method="get" role="search">
+            <form action="https://www.st-andrews.ac.uk/search" method="get" role="search" class="dpl-form">
                 <div class="input-group">
                     <span class="input-group-btn">
-                        <button class="btn btn-link" id="header-search-close" name="btnG" value="" aria-label="Hide search"><i class="fa fa-times" title="Close"></i></button>
+                        <button class="btn btn-link" id="header-search-close" name="btnG" value="" aria-label="Hide search" type="button"><i class="fa fa-times" title="Close"></i></button>
                     </span>
-                    <input id="query" class="form-control" name="query" type="text" title="Enter search keywords" maxlength="256" placeholder="Search the University website">
+                    <input id="query" class="form-control search-box" name="query" type="text" title="Enter search keywords" maxlength="256" placeholder="Search the University website" required>
+                    <button class="clear-icon" type="reset" aria-label="Reset" value="Reset"></button>
                     <span class="input-group-btn">
                         <button class="btn btn-primary" id="header-search-submit" name="btnG" type="submit" value="Search" aria-label="Submit"><i class="fa fa-search" title="Search"></i></button>
                     </span>

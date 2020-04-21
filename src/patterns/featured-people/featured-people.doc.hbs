@@ -2,6 +2,8 @@
 title: Featured people
 ---
 
+<div class="row">
+    <div class="col-md-8">
 <p class="lead">The featured people pattern allows University academics, staff, and students to be prominently included on a webpage. This is used to link to work or research profiles of noteable people affiliated with the University of St Andrews.</p>
 
 <h2>Rules for featured people</h2>
@@ -26,11 +28,16 @@ title: Featured people
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/featured-people-options.options}}
 </ul>
-
+</div>
+</div>
 {{#featured-people-options.options}}
 <hr>
+<div class="row">
+    <div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
     <span class="label label-default">Example</span>
 </div>

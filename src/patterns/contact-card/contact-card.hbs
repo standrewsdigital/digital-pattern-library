@@ -8,11 +8,11 @@
     <div class="contact-card__image">
         {{#if modal}}
         <!-- Remove comment tags to use lightbox
-        <a href="#{{id}}" data-modal-open>
+        <a href="#{{id}}" data-modal-open tabindex="-1">
         -->
         {{/if}}
         {{#if link}}
-        <a href="{{link}}">
+        <a href="{{link}}" tabindex="-1">
         {{/if}}
         {{#if lazy}}
         <img data-src="{{image}}" alt="{{name}}" title="{{name}}" class="lazyload">
@@ -32,11 +32,11 @@
     <div class="contact-card__initials">
         {{#if modal}}
         <!-- Remove comment tags to use lightbox
-        <a href="#{{id}}" data-modal-open>
+        <a href="#{{id}}" data-modal-open tabindex="-1">
         -->
         {{/if}}
         {{#if link}}
-        <a href="{{link}}">
+        <a href="{{link}}" tabindex="-1">
         {{/if}}
         <abbr title="{{name}}">{{initials}}</abbr>
         {{#if modal}}
@@ -175,10 +175,10 @@
     {{#if image}}
     <div class="contact-card__image">
         {{#if modal}}
-        <a href="#{{id}}" data-modal-open>
+        <a href="#{{id}}" data-modal-open tabindex="-1">
         {{/if}}
         {{#if link}}
-        <a href="{{link}}">
+        <a href="{{link}}" tabindex="-1">
         {{/if}}
         {{#if lazy}}
         <img data-src="{{image}}" alt="{{name}}" title="{{name}}" class="lazyload">
@@ -195,10 +195,10 @@
     {{else}}
     <div class="contact-card__initials">
         {{#if modal}}
-        <a href="#{{id}}" data-modal-open>
+        <a href="#{{id}}" data-modal-open tabindex="-1">
         {{/if}}
         {{#if link}}
-        <a href="{{link}}">
+        <a href="{{link}}" tabindex="-1">
         {{/if}}
         <abbr title="{{name}}">{{initials}}</abbr>
         {{#if modal}}

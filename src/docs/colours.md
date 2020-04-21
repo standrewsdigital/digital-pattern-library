@@ -44,14 +44,14 @@ context:
     danger: {color: sta-red, name: Danger}
 ---
 
-<p class="lead">These are the approved colours for use on web sites and applications at the University of St Andrews.</p>
+<div class="row"><div class="col-md-8"><p class="lead">These are the approved colours for use on web sites and applications at the University of St Andrews.</p>
 <p>Primary colours are the colours most widely used but when contrast is needed between two UI elements a tint or shade variant of a primary colour should be used. This can also be used to help show a change of state on an interactive element such as a button.</p>
 <h2>Available palettes</h2>
 <ul>
     <li><a href="#main">Main colours</a></li>
     <li><a href="#additional">Additional colours</a></li>
     <li><a href="#contextual">Contextual colours</a></li>
-</ul>
+</ul></div></div>
 <hr>
 <h3 id="main">Main colours</h3>
 
@@ -107,9 +107,7 @@ context:
 {{> swatch sta-burgundy-shade25 }}
 </div>
 <hr>
-<h3 id="contextual">Contextual colours</h3>
-
-<p>Colour should never be solely used to provide meaning as this is not accessible to all users. These colours should only be used for buttons, alerts, and text banners where colour is used to assist meaning.</p>
+<h3 id="contextual">Contextual colours</h3><div class="row"><div class="col-md-8"><p>Colour should never be solely used to provide meaning as this is not accessible to all users. These colours should only be used for buttons, alerts, and text banners where colour is used to assist meaning.</p></div></div>
 <div class="colour-palette">
 {{> swatch context.success}}
 {{> swatch context.info}}
@@ -118,8 +116,7 @@ context:
 </div>
 
 <hr>
-<h2>Accessible colours</h2>
-<p>You must make sure that the contrast ratio of text and interactive elements in your web site or application meets level AA of the <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">Web Content Accessibility Guidelines (WCAG 2.1)</a>.</p><p>The following table shows how the palette colours contrast as background against the common text colours (dark grey #202020 and white #ffffff) and used as a graphical UI element such as a border against a white background. You can use this <a href="https://webaim.org/resources/contrastchecker/">colour contrast checking tool</a> by WebAIM to test other combinations.</p>
+<h2>Accessible colours</h2><div class="row"><div class="col-md-8"><p>You must make sure that the contrast ratio of text and interactive elements in your web site or application meets level AA of the <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">Web Content Accessibility Guidelines (WCAG 2.1)</a>.</p><p>The following table shows how the palette colours contrast as a background against the common text colours (dark grey #202020 and white #ffffff). It also shows the palette colours contrast when used as a graphical UI element against a white background. This is indicated with a tick for success and a cross for failure. You can use this <a href="https://webaim.org/resources/contrastchecker/">colour contrast checking tool</a> by WebAIM to test other combinations.</p></div></div>
 <p><button class="btn btn-small-tag" id="toggle-colours-button" aria-pressed="false">Show colours</button></p>
 <table class="table table-bordered table-contrast table-contrast--hide-colours">
 <thead>

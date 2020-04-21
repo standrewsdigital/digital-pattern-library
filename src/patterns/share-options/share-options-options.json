@@ -2,7 +2,7 @@
     "options" : [
         {
             "option-heading": "Share icons",
-            "option-description": "<p>This example shows all share options that should be displayed (view on a mobile sized window to see WhatsApp icon).</p>",
+            "option-description": "<p>This example shows all share options that could be displayed (view on a mobile sized window to see WhatsApp icon).</p>",
             "option-anchor": "share",
             "title": "Share this story",
             "icon": [

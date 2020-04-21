@@ -2,6 +2,8 @@
 title: Event tile grid
 ---
 
+<div class="row">
+    <div class="col-md-8">
 <p class="lead">Event tiles are used to promote featured events on a homepage.</p>
 
 <h2>Rules for event tile grid</h2>
@@ -9,13 +11,13 @@ title: Event tile grid
     <li>Must have a solid white or light grey background colour.</li>
     <li>Must have a heading.</li>
     <li>Option to include a maximum of two call-to-action buttons.</li>
-    <li>There must be a maximum of six event tiles in a grid. Consider an alternative pattern if this does not meet your needs.</li>
-    <li>All event tiles must have an associated good quality image.</li>
+    <li>There must be a maximum of six event tiles in a grid. Alternative patterns that allow more than six are <a href="../article-list/index.html#event">article list</a> and <a href="../event-list/index.html">event list</a>.</li>
+    <li>All event tiles must have an associated <a href="https://www.st-andrews.ac.uk/digital-standards/file-standards/image/">good quality image</a>.</li>
     <li>Event tile images must be 360px wide by 240px high.</li>
     <li>Event titles should not exceed 60 characters.</li>
     <li>The date of the event must be included.</li>
     <li>The location of the event should be included if known.</li>
-    <li>An event that has been cancelled must have the 'Cancelled' tag applied. This is achieved by applying the <code>cancelled</code> class to the element with the <code>featured-event</code> class.</li>
+    <li>An event that has been cancelled must have the 'Cancelled' tag applied. You can add this tag by applying the <code>cancelled</code> class to the element with the <code>featured-event</code> class.</li>
 </ul>
 
 <h2>Options available</h2>
@@ -24,11 +26,16 @@ title: Event tile grid
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/event-tile-grid-options.options}}
 </ul>
-
+</div>
+</div>
 {{#event-tile-grid-options.options}}
 <hr>
+<div class="row">
+    <div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

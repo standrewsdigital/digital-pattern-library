@@ -2,6 +2,8 @@
 title: News updates
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The news updates pattern displays featured links including meta data in two columns. The pattern is intended for landing pages and provides a solution for linking to articles, such as news items or blog posts.</p>
 
 <h2>Rules for news updates</h2>
@@ -17,11 +19,16 @@ title: News updates
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/news-updates-options.options}}
 </ul>
-
+</div>
+</div>
 {{#news-updates-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

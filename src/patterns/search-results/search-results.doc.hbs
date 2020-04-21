@@ -2,6 +2,8 @@
 title: Search results
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The search results pattern is used to present a list of links typically from a search service. Different types of results may require different content to be featured, so this pattern has a number of options to provide for this.</p>
 
 <h2>Rules for search results</h2>
@@ -16,11 +18,16 @@ title: Search results
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/search-results-options.options}}
 </ul>
-
+</div>
+</div>
 {{#search-results-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

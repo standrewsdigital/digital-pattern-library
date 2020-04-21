@@ -30,8 +30,8 @@
             "option-description": "<p>Must be used on every page within a School website.</p>",
             "audience": true,
             "links": {
-                "Students":"#",
-                "Staff":"#"
+                "Current students":"#",
+                "Current staff":"#"
             }
         },
 
@@ -41,7 +41,7 @@
         {
             "option-heading": "Authenticated header",
             "option-anchor": "auth-header",
-            "option-description": "<p>When a user is authenticated, the header should be altered to include: <ul><li>The name of the person logged in</li><li>Any user-specific links they may have access to.</li><li>A link to logout.</li></ul></p>",
+            "option-description": "<p>When a user is authenticated, the header should be altered to include: <ul><li>the name of the person logged in</li><li>any user-specific links they may have access to</li><li>alink to logout.</li></ul></p>",
             "authenticated": {
                 "username": "js73",
                 "first-name": "Josef",
@@ -53,9 +53,9 @@
 
 
         {
-            "option-heading": "Mini authenticated header",
+            "option-heading": "Mini authenticated header - deprecated",
             "option-anchor": "mini-header",
-            "option-description": "<p>This condensed header must be used only on web applications.</p>",
+            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This pattern is deprecated and will be removed in a future version of the digital pattern library.</p></div><p>This condensed header must be used only on web applications.</p>",
             "authenticated": {
                 "username": "js73",
                 "first-name": "Josef",

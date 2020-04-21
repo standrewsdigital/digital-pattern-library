@@ -78,7 +78,7 @@
 
         {
             "option-heading": "With visible heading",
-            "option-description": "<p>While the heading label should always be provided for screen reader users it may also be appropriate to display it.</p>",
+            "option-description": "<p>While the heading label should always be provided for assistive technology users it may also be appropriate to display it.</p>",
             "option-anchor": "visible-heading",
             "heading": "Heading label",
             "vertical": " navigation-grid__items--vertical",
@@ -111,7 +111,7 @@
         },
         {
             "option-heading": "Ordered vertically by column",
-            "option-description": "<p>The default placement of navigation items is horizontally by row, with any remaining items moving onto the subsequent row. However it is possible to change this ordering to a vertical order by column by adding the class <code>.navigation-grid__items--vertical</code>.</p>",
+            "option-description": "<p>By default, navigation items are placed horizontally by row, with any remaining items moving onto the next row. However it is possible to change this ordering to a vertical order by column by adding the class <code>.navigation-grid__items--vertical</code>.</p>",
             "option-anchor": "vertical-order",
             "heading": "Policy categories",
             "sr-only": " sr-only",
@@ -191,7 +191,7 @@
         },
         {
             "option-heading": "Ordered vertically by column - ignore grid",
-            "option-description": "<p>The vertical ordering into columns has a second option that ignores the grid layout and positions the items evenly underneath each other into columns. Use instead the class <code>.navigation-grid__items--vertical-flow</code> for this variant of vertical layout.</p><ul><li>This option must only be used for navigation grids that do not include descriptions. If items make use of descriptions then they must follow either a horizontal or vertical grid.</li></ul>",
+            "option-description": "<p>The vertical ordering into columns has a second option that ignores the grid layout and positions the items evenly underneath each other into columns. Use the class <code>.navigation-grid__items--vertical-flow</code> for this variant of vertical layout.</p><ul><li>This option must only be used for navigation grids that do not include descriptions. If links have descriptions then they must follow either a horizontal or vertical grid.</li></ul>",
             "option-anchor": "vertical-flow",
             "heading": "Subjects",
             "vertical": " navigation-grid__items--vertical-flow",

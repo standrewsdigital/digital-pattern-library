@@ -2,6 +2,8 @@
 title: Alerts
 ---
 
+<div class="row">
+    <div class="col-md-8">
 <p class="lead">The alert pattern is used to convey important information to users with two different levels of importance.</p>
 <h2>Alert box</h2>
 <p>This should be used to announce information that takes precedence over all other page content. The inclusion of <code>role="alert"</code> will assist screen readers in announcing this content ahead of other information, so it should be used with caution.</p>
@@ -46,10 +48,16 @@ title: Alerts
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/alerts-options.options}}
 </ul>
+</div>
+</div>
 {{#alerts-options.options}}
 <hr>
+<div class="row">
+    <div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
     <span class="label label-default">Example</span>
 </div>

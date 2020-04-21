@@ -2,11 +2,13 @@
 title: Buttons
 ---
 
-<p class="lead">Buttons are calls to action that are used to direct users to related pages.</p>
+<div class="row">
+	<div class="col-md-8">
+<p class="lead">Buttons are used to help a user carry out an action, such as starting an application process, or changing the current page, such as submitting a form.</p>
 
 <h2>Rules for buttons</h2>
 <ul>
-	<li>These buttons must be used only within main body of a page; they must not be used in asides.</li>
+	<li>Buttons must be used only within main body of a page; they must not be used in asides.</li>
 	<li>Buttons must not be used mid-sentence. They must always appear on their own line separated from written content.</li>
 	<li>Buttons linking to downloadable content must use the icon button option.</li>
 </ul>
@@ -17,10 +19,16 @@ title: Buttons
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/buttons-options.options}}
 </ul>
+</div>
+</div>
 {{#buttons-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 {{>  buttons}}
 <br><br>

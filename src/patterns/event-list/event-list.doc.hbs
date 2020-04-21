@@ -2,6 +2,8 @@
 title: Event list
 ---
 
+<div class="row">
+    <div class="col-md-8">
 <p class="lead">Events can be displayed as a list of individual events. If images are required then consider using the <a href="../article-list/index.html">article list</a> or <a href="../event-tile-grid/index.html">event tile grid</a> patterns.</p>
 
 <h2>Rules for event list</h2>
@@ -10,7 +12,7 @@ title: Event list
     <li>The date of the event must be included.</li>
     <li>The time of the event should be included if known.</li>
     <li>The location of the event should be included if known.</li>
-    <li>An event that has been cancelled must have the 'Cancelled' tag applied. This is achieved by applying the <code>cancelled</code> class to the element with the <code>event-listing</code> class.</li>
+    <li>An event that has been cancelled must have the 'Cancelled' tag applied. You can add this tag by applying the <code>cancelled</code> class to the element with the <code>event-listing</code> class.</li>
     <li>An optional description may be used to provide additional key information about the event.</li>
     <li>The optional description must be plain text only and contain no additional formatting or links.</li>
     <li>The optional description should have a maximum length of 160 characters. If additional details are required this should be added to a different page and linked to from the event listing.</li>
@@ -22,11 +24,16 @@ title: Event list
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/event-list-options.options}}
 </ul>
-
+</div>
+</div>
 {{#event-list-options.options}}
 <hr>
+<div class="row">
+    <div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

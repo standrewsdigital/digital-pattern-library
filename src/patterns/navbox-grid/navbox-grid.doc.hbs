@@ -2,21 +2,17 @@
 title: Navbox grid
 ---
 
-<p class="lead">The navbox grid pattern presents a set of <a href="../navbox/index.html">navboxes</a> in various grid layouts. For a set of navigation links that are considered secondary in importance the <a href="../navigation-grid/index.html">navigation grid</a> pattern should be used.</p>
+<div class="row">
+    <div class="col-md-8">
+<p class="lead">The navbox grid pattern presents a set of <a href="../navbox/index.html">navboxes</a> in various grid layouts. For a set of navigation links that are considered secondary in importance, to other web page content, the <a href="../navigation-grid/index.html">navigation grid</a> pattern should be used.</p>
 
 <h2>Rules for the navbox grid</h2>
 <ul>
     <li>Must only be used within the main body of the page.</li>
-    <li>Must only link to an internal webpage or web application.</li>
     <li>Navbox grids include top and bottom padding as default. This can be removed by assigning the respective classes <code>collapse-top</code> and <code>collapse-bottom</code> to the element with the <code>navbox-grid</code> class.</li>
-    <li>Medium navboxes must not have a title that exceeds 88 characters.</li>
-    <li>Small navboxes must not have a title that exceeds 57 characters.</li>
-    <li>When using an image, the image must relate to the link destination.</li>
     <li>If a navbox with an image is used, all of the navboxes in the grid must include images.</li>
     <li>If a navbox without an image is used, all of the navboxes in the grid must not include images.</li>
     <li>Navbox grids that exceed six navboxes must not have images unless there is a proven user requirement.</li>
-    <li>Navboxes with accompanying paragraph text must provide further context of the page where the navbox links to.</li>
-    <li>Navboxes with accompanying paragraphs must be concise and must not have more than 300 characters.</li>
     <li>If a navbox with a paragraph is used, all of the navboxes in the grid must include paragraphs.</li>
     <li>If a navbox without a paragraph is used, all of the navboxes in the grid must not include paragraphs.</li>
 </ul>
@@ -31,11 +27,16 @@ title: Navbox grid
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/navbox-grid-options.options}}
 </ul>
-
+</div>
+</div>
 {{#navbox-grid-options.options}}
 <hr>
+<div class="row">
+    <div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
     <span class="label label-default">Example</span>
 </div>

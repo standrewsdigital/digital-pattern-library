@@ -2,6 +2,8 @@
 title: Staff profile
 ---
 
+<div class="row">
+	<div class="col-md-8">
 <p class="lead">The staff profile pattern is used to display information about an individual with an emphasis on the role and biography. This pattern includes a short biography excerpt, contact details, and an optional link to each staff member’s full biography page. If the emphasis is instead to provide contact details then the <a href="../contact-card/index.html">Contact Card pattern</a> should be considered.</p>
 
 
@@ -22,11 +24,16 @@ title: Staff profile
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/staff-profile-options.options}}
 </ul>
-
+</div>
+</div>
 {{#staff-profile-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>

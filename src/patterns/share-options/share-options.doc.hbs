@@ -2,12 +2,14 @@
 title: Share options
 ---
 
-<p class="lead">The share options pattern allows links to be shared across social media platforms.</p>
+<div class="row">
+	<div class="col-md-8">
+<p class="lead">The share options pattern allows links to be shared across social media platforms and email, or to copy video embed code to be shared on a web page.</p>
 
 <h2>Rules for share options</h2>
 <ul>
-	<li>Share links must open in a pop-up window, not in a new tab.</li>
-	<li>Must only include the social media platforms listed in the options provided.</li>
+	<li>Share links must open in the same window or in the native application - not in a new tab.</li>
+	<li>Must only include the share options provided.</li>
 	<li>WhatsApp must only appear on mobile devices.</li>
 </ul>
 
@@ -17,11 +19,16 @@ title: Share options
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
 {{/share-options-options.options}}
 </ul>
-
+</div>
+</div>
 {{#share-options-options.options}}
 <hr>
+<div class="row">
+	<div class="col-md-8">
 <h3 id="{{option-anchor}}">{{option-heading}}</h3>
 {{{option-description}}}
+</div>
+</div>
 <!--noindex-->
 	<span class="label label-default">Example</span>
 </div>
