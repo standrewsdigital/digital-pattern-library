@@ -11,7 +11,7 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ## v1.23.0
 
-Release date: Monday 16 March 2020
+Release date: Tuesday 21 April 2020
 
 ### Added
 * Contrasting focus state styling across all interactive elements and links. 

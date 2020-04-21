@@ -36,7 +36,7 @@
         {
             "option-heading": "Success",
             "option-anchor": "success",
-            "option-description": "<p>Text is centre-aligned and the background colour is green (<code>.success</code>).</p>",
+            "option-description": "<p>To signal a positive action such as a successful login. In this example text is centre-aligned and the background colour is green (<code>.success</code>).</p>",
             "style-type": "success",
             "message": "The is the beta version of st-andrews.ac.uk. <a href='#'>Leave your feedback</a>."
         },
@@ -47,7 +47,7 @@
         {
             "option-heading": "Info",
             "option-anchor": "info",
-            "option-description": "<p>Text is centre-aligned and the background colour is blue (<code>.info</code>).</p>",
+            "option-description": "<p>To signal a neutral piece of information. In this example text is centre-aligned and the background colour is blue (<code>.info</code>).</p>",
             "style-type": "info",
             "message": "The is the beta version of st-andrews.ac.uk. <a href='#'>Leave your feedback</a>."
         },
@@ -58,7 +58,7 @@
         {
             "option-heading": "Warning",
             "option-anchor": "warning",
-            "option-description": "<p>Text is centre-aligned and the background colour is yellow (<code>.warning</code>).</p>",
+            "option-description": "<p>To signal caution about information or available actions on the page. In this example text is centre-aligned and the background colour is yellow (<code>.warning</code>).</p>",
             "style-type": "warning",
             "message": "The is the beta version of st-andrews.ac.uk. <a href='#'>Leave your feedback</a>."
         },
@@ -69,7 +69,7 @@
         {
             "option-heading": "Danger",
             "option-anchor": "danger",
-            "option-description": "<p>Text is centre-aligned and the background colour is red (<code>.danger</code>).</p>",
+            "option-description": "<p>To signal a problem with an action take, such as a failed login attempt. In this example text is centre-aligned and the background colour is red (<code>.danger</code>).</p>",
             "style-type": "danger",
             "message": "The is the beta version of st-andrews.ac.uk. <a href='#'>Leave your feedback</a>."
         },

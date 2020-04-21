@@ -2,7 +2,7 @@
     "options": [
         {
             "option-heading": "Two columns option with paragraph text",
-            "option-description": "<p>Two column layout must be used when displaying panels with paragraph text. A variety of colours are available, in keeping with the colour palette.</p>",
+            "option-description": "<p>Two column layout example displaying panels with paragraph text and showing all the colours available.</p>",
             "option-anchor": "two-column-panel-grid",
             "grid": true,
             "panels": [
@@ -35,12 +35,6 @@
                     "color": "panel-tertiary-3",
                     "title": "Tertiary 3",
                     "description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.</p>"
-                },
-                {
-                    "column-size": "col-md-6",   
-                    "color": "panel-primary",
-                    "title": "Primary",
-                    "description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci id perspiciatis veniam magnam! Numquam incidunt placeat eos cum. Beatae perspiciatis officiis sint harum.</p>"
                 }
             ]
         },
@@ -50,7 +44,7 @@
 
         {
             "option-heading": "Three columns option with links",
-            "option-description": "<p>This example has the panel headings linked.</p>",
+            "option-description": "<p>This example has the panel headings linked, with each panel containing a list of links.</p>",
             "option-anchor": "three-column-panel-grid-links",
             "grid": true,
             "panels": [
@@ -83,7 +77,7 @@
 
         {
             "option-heading": "Two columns option with links",
-            "option-description": "",
+            "option-description": "<p>This example is of a two column layout with each panel containing a list of links.</p>",
             "option-anchor": "two-column-panel-grid-links",
             "grid": true,
             "panels": [

@@ -2,7 +2,7 @@
     "categories": [
         {
             "heading": "Core",
-            "subheading": "Patterns essential to building a basic University of St Andrews webpage; listed from the top of the page to the bottom.",
+            "subheading": "Patterns for building a basic University of St Andrews webpage.",
             "class": "primary",
             "patterns": [
                 { "name": "Header",
@@ -49,7 +49,7 @@
         },
         {
             "heading": "Navigation",
-            "subheading": "Patterns used to connect content pages across the University of St Andrews website.",
+            "subheading": "Patterns used to connect web pages across the University of St Andrews website.",
             "class": "primary",
             "patterns": [
                 { "name": "Navbox",
@@ -88,7 +88,7 @@
         },
         {
             "heading": "Call to action",
-            "subheading": "Patterns used to bring attention and link to content of importance both on the University website and external.",
+            "subheading": "Patterns used to bring attentionand link to important content both on the University website and external sites.",
             "class": "primary",
             "patterns": [
                 { "name": "Buttons",
@@ -122,10 +122,6 @@
                 { "name": "Showcase banner",
                   "img": "assets/docs/images/patterns/showcase-banner.jpg",
                   "url": "patterns/showcase-banner/index.html"
-                },
-                { "name": "Subject combo",
-                  "img": "assets/docs/images/patterns/subject-combo.jpg",
-                  "url": "patterns/subject-combo/index.html"
                 },
                 { "name": "Text banner",
                   "img": "assets/docs/images/patterns/text-banner.jpg",
@@ -234,6 +230,10 @@
                   "img": "assets/docs/images/patterns/staff-profile.jpg",
                   "url": "patterns/staff-profile/index.html"
                 },
+                { "name": "Subject combo",
+                  "img": "assets/docs/images/patterns/subject-combo.jpg",
+                  "url": "patterns/subject-combo/index.html"
+                },
                 { "name": "Tables",
                   "img": "assets/docs/images/patterns/tables.jpg",
                   "url": "patterns/tables/index.html"
@@ -280,7 +280,7 @@
         },
         {
             "heading": "Long-form",
-            "subheading": "Patterns used to build long-form content pages. You MUST use the <a href='patterns/long-form-intro/index.html'>intro</a>, <a href='patterns/long-form-end-piece/index.html'>end piece</a> and <a href='patterns/long-form-credits/index.html'>credits</a> in every long-form piece, and use an assortment of the other long-form patterns that are available.",
+            "subheading": "Patterns used to build long-form pages. You must use the <a href='patterns/long-form-intro/index.html'>intro</a>, <a href='patterns/long-form-end-piece/index.html'>end piece</a> and <a href='patterns/long-form-credits/index.html'>credits</a> in every long-form piece.",
             "class": "primary",
             "patterns": [
                 { "name": "Long-form intro",
