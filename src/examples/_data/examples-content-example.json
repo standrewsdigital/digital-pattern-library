@@ -78,6 +78,6 @@
         "sidebar" : " <!-- Begin pattern: navbox //--> <div class='navbox'> <div class='navbox-image'> <img src='../assets/docs/images/placeholders/360x240.jpg' alt='Description'> </div> <div class='navbox-title'> <p><a href='#'>Study</a></p> </div> </div> <!-- End pattern: navbox //--><h3>Related content</h3><ul><li><a href='#'>Lorem ipsum dolor sit amet</a></li><li><a href='#'>Consectetuer adipiscing elit</a></li><li><a href='#'>Aenean commodo ligula</a></li></ul>",
         "col-1": "col-sm-8 content",
         "col-2": "col-sm-4 content",
-        "role": "complementary"
+        "topmargin": " content"
     }
 }

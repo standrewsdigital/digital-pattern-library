@@ -7,15 +7,15 @@
         <div class="row"><div class="col-xs-12 col-sm-8"><h2>{{heading}}</h2></div></div>
         {{/if}}
         <div class="row">
-            <div class="col-sm-8">
+            <div class="col-sm-8{{topmargin}}">
             {{#if text}}
                  {{{text}}}
             {{/if}}
             </div>
             {{#if sidebar}}
-            <div class="col-sm-4" {{#if role}}role="{{role}}"{{/if}}>
+            <aside class="col-sm-4{{topmargin}}">
                 {{{sidebar}}}
-            </div>
+            </aside>
             {{/if}}
         </div>
     </div>
