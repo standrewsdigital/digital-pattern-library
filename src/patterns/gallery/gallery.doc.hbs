@@ -17,8 +17,13 @@ title: Gallery
   <li>A gallery must only be used within the main body of a page.</li>
   <li>A page may contain multiple galleries.</li>
   <li>Use <code>data-lightbox="[gallery name]"</code> to group images together for each gallery.</li>
+  <li>The following additional scripts must be included on the page before the closing <code>&lt;/body&gt;</code> tag:
+    <ul>
+      <li><code>{{pkg.cdn.endpoint}}/{{pkg.cdn.package}}/{{pkg.version}}/scripts/lightbox.min.js</code></li>
+      <li><code>{{pkg.cdn.endpoint}}/{{pkg.cdn.package}}/{{pkg.version}}/scripts/gallery.js</code></li>
+    </ul>
+  </li>
 </ul>
-
 <h2>Options available</h2>
 <ul>
 {{#gallery-options.options}}

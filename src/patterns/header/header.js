@@ -13,8 +13,6 @@ $( '#header-search-trigger' ).click( function() {
     var trigger = $( '#header-search-trigger' );
     var logo = $( '#header-logo' );
 
-    console.log("CLicked button to open");
-
     trigger.hide();
 
     logo.css({
@@ -42,8 +40,6 @@ $( '#header-search-close' ).click( function() {
     var logo = $( '#header-logo' );
 
     form.css("display","");
-
-    console.log("CLicked button to close");
 
     search.css({
         "position": "",

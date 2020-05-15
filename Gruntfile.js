@@ -188,7 +188,7 @@ module.exports = function(grunt) {
                     banner: '/*! <%= pkg.name %> v<%= pkg.version %> ' +
                         '- <%= grunt.template.today("yyyy-mm-dd") %> */\n',
                     specify: [
-                        'src/styles/datatables.scss',
+                        //'src/styles/datatables.scss',
                         'src/styles/doc.scss',
                         'src/styles/print.scss',
                         'src/styles/screen.scss',
@@ -215,14 +215,13 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/hammer.js',
                     'src/scripts/vendor/jquery.min.js',
                     'src/scripts/vendor/jquery.bigtarget.js',
-                    'src/scripts/vendor/jquery.dataTables.min.js',
+                    //'src/scripts/vendor/jquery.dataTables.min.js',
                     'src/scripts/vendor/jquery.fitvids.js',
-                    'src/scripts/vendor/jquery.fittext.js',
+                    //'src/scripts/vendor/jquery.fittext.js',
                     'src/scripts/vendor/jquery.replacetext.js',
-                    'src/scripts/vendor/jquery.theatre.min.js',
+                    //'src/scripts/vendor/jquery.theatre.min.js',
                     'src/scripts/vendor/respond.js',
                     'src/scripts/vendor/highlight/highlight.pack.js',
-                    'src/scripts/vendor/lightbox.min.js',
                     'src/scripts/jquery-ui.js',
                     'src/scripts/vendor/lazysizes.min.js',
                     'src/scripts/vendor/picturefill.min.js',
@@ -241,6 +240,7 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/bootstrap/modal.js',
                     'src/scripts/vendor/bootstrap/tooltip.js',
                     'src/scripts/vendor/bootstrap/popover.js',
+                    
                     'src/scripts/vendor/enquire.js',
 
                     // DPL-specific scripts
@@ -248,7 +248,7 @@ module.exports = function(grunt) {
                     'src/scripts/unbreakableSpaces.js',
                     'src/patterns/*/*.js', // This includes all JS in patterns.
 
-                    'src/scripts/datatables.js',
+                    //'src/scripts/datatables.js',
                     'src/scripts/application.js'
                 ],
                 dest: 'core/scripts/core.js'
@@ -272,14 +272,12 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/a11y-modal.js',
                     'src/scripts/vendor/hammer.js',
                     'src/scripts/vendor/jquery.bigtarget.js',
-                    'src/scripts/vendor/jquery.dataTables.min.js',
                     'src/scripts/vendor/jquery.fitvids.js',
-                    'src/scripts/vendor/jquery.fittext.js',
+                    //'src/scripts/vendor/jquery.fittext.js',
                     'src/scripts/vendor/jquery.replacetext.js',
-                    'src/scripts/vendor/jquery.theatre.min.js',
+                    //'src/scripts/vendor/jquery.theatre.min.js',
                     'src/scripts/vendor/respond.js',
                     'src/scripts/vendor/highlight/highlight.pack.js',
-                    'src/scripts/vendor/lightbox.min.js',
                     'src/scripts/jquery-ui.js',
                     'src/scripts/vendor/lazysizes.min.js',
                     'src/scripts/vendor/picturefill.min.js',
@@ -298,8 +296,6 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/bootstrap/tooltip.js',
                     'src/scripts/vendor/bootstrap/popover.js',
 
-                    'src/scripts/vendor/matchmedia.polyfill.js',
-                    'src/scripts/vendor/matchMedia.addListener.js',
                     'src/scripts/vendor/enquire.js',
 
                     // DPL-specific scripts
@@ -307,7 +303,7 @@ module.exports = function(grunt) {
                     'src/scripts/unbreakableSpaces.js',
                     'src/patterns/*/*.js', // This includes all JS in patterns.
 
-                    'src/scripts/datatables.js',
+                    //'src/scripts/datatables.js',
                     'src/scripts/application.js'
                 ],
                 dest: 'core/scripts/core-nojquery.js'
@@ -362,8 +358,28 @@ module.exports = function(grunt) {
             docs_datatables: {
                 files: [{
                     expand: true,
+                    cwd: 'src/scripts/',
+                    src: ['datatables.js'],
+                    dest: 'core/scripts/'
+                },
+                {
+                    expand: true,
                     cwd: 'src/scripts/vendor/',
                     src: ['jquery.dataTables.min.js'],
+                    dest: 'core/scripts/'
+                }]
+            },
+            docs_lightbox: {
+                files: [{
+                    expand: true,
+                    cwd: 'src/scripts/vendor/',
+                    src: ['lightbox.min.js'],
+                    dest: 'core/scripts/'
+                },
+                {
+                    expand: true,
+                    cwd: 'src/scripts/',
+                    src: ['gallery.js'],
                     dest: 'core/scripts/'
                 }]
             }
@@ -488,7 +504,8 @@ module.exports = function(grunt) {
         'assemble:core_meta',
         'copy:core_images',
         'copy:core_fonts',
-        'copy:docs_datatables'
+        'copy:docs_datatables',
+        'copy:docs_lightbox'
     ]);
 
     // docs – builds the documentation, makes use of build too.
