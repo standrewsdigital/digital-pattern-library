@@ -22,6 +22,9 @@ Release date: Friday 15 May 2020
 * Display issue with Application sidebar background in Safari on certain versions of Mac OS.
 * Skip to content link in documentation pages fixed.
 
+### Removed
+* Photosphere pattern.
+
 ---
 
 ## v1.23.0

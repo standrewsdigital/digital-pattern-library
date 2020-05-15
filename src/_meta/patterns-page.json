@@ -333,10 +333,6 @@
                 { "name": "More news",
                   "img": "assets/docs/images/patterns/more-news.jpg",
                   "url": "patterns/more-news/index.html"
-                },
-                { "name": "Photosphere",
-                  "img": "assets/docs/images/patterns/photosphere.jpg",
-                  "url": "patterns/photosphere/index.html"
                 }
             ]
         }

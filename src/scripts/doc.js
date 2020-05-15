@@ -485,14 +485,14 @@ function htmlDecode(value) {
     /*********************************/
     /* BEGIN Pattern: Photospheres   */
     /*********************************/
-
+/*
     window.addEventListener('load', onVrViewLoad)
     function onVrViewLoad() {
       var vrView = new VRView.Player('#photosphere', {
       image: 'https://www.st-andrews.ac.uk/assets/university/study-at-st-andrews/images/accommodation/accommodation-photospheres/DRAFP-Pond.jpg'
       });
     }
-
+*/
 
     /*********************************/
     /* END Pattern: Photospheres     */
