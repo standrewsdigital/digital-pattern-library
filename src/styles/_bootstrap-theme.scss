@@ -135,39 +135,48 @@ tr:nth-child(odd) {
     background-color: lighten($gray, 80%);
 }*/
 
-table.table-primary th {
+table.table-primary th,
+.table.table-primary th {
     background-color: $brand-primary;
 }
 
-table.table-success th {
+table.table-success th,
+.table.table-success th  {
     background-color: $brand-success;
 }
 
-table.table-info th {
+table.table-info th,
+.table.table-info th {
     background-color: $brand-info;
 }
 
-table.table-warning th {
+table.table-warning th,
+.table.table-warning th {
     background-color: $brand-warning;
 }
 
-table.table-danger th {
+table.table-danger th,
+.table.table-danger th {
     background-color: $brand-danger;
 }
 
-table.table-secondary th {
+table.table-secondary th,
+.table.table-secondary th {
     background-color: $sta-blue-light;
 }
 
-table.table-tertiary-1 th {
+table.table-tertiary-1 th,
+.table.table-tertiary-1 th {
    background-color: $sta-green;
 }
 
-table.table-tertiary-2 th {
+table.table-tertiary-2 th,
+.table.table-tertiary-2 th {
     background-color: $sta-burgundy;
 }
 
-table.table-tertiary-3 th {
+table.table-tertiary-3 th,
+.table.table-tertiary-3 th {
     background-color: $sta-purple;
 }
 

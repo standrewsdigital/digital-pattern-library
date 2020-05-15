@@ -56,7 +56,7 @@
             outline: 3px solid $sta-orange-highlight;
         }
         &:active {
-            background:$sta-orange-highlight;
+            background:$sta-orange-highlight !important;
             color: $sta-grey-dark;
         }
 

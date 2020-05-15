@@ -9,6 +9,24 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.23.1
+
+Release date: Friday 15 May 2020
+
+### Changed
+* Lightbox and DataTable scripts now separated from core script file.
+* Minor documentation updates.
+* jQuery version updated to 3.5.1.
+
+### Fixed
+* Display issue with Application sidebar background in Safari on certain versions of Mac OS.
+* Skip to content link in documentation pages fixed.
+
+### Removed
+* Photosphere pattern.
+
+---
+
 ## v1.23.0
 
 Release date: Tuesday 21 April 2020

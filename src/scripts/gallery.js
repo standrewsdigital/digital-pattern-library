@@ -1,3 +1,5 @@
+  jQuery(document).ready(function() {
+
 lightbox.option({
     'alwaysShowNavOnTouchDevices': true,
     'fadeDuration': 100,
@@ -9,4 +11,6 @@ lightbox.option({
 
 // Extend the theatre plugin to cycle through
 // the images in the Gallery.
-$(".gallery__images figure").theatre();
+//$(".gallery__images figure").theatre();
+
+});

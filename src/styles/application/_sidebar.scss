@@ -135,6 +135,7 @@ _:-ms-fullscreen, :root #app-sidebar #app-sidebar-nav ul li a {
 @media (max-width: 979px) {
     .app-sidebar {
         background-color: rgba(68, 68, 68, 0.4);
+        width: 0;
         z-index: 1000;
     }
     

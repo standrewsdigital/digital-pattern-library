@@ -13,6 +13,13 @@ title: Long-form gallery
   <li>A page may contain multiple galleries.</li>
   <li>There should be no more than ten images in any one gallery.</li>
   <li>Use <code>data-lightbox="[gallery name]"</code> to group images together for each gallery.</li>
+  <li>The following additional scripts must be included on the page before the closing <code>&lt;/body&gt;</code> tag:
+    <ul>
+      <li><code>{{pkg.cdn.endpoint}}/{{pkg.cdn.package}}/{{pkg.version}}/scripts/lightbox.min.js</code></li>
+      <li><code>{{pkg.cdn.endpoint}}/{{pkg.cdn.package}}/{{pkg.version}}/scripts/gallery.js</code></li>
+    </ul>
+  </li>
+</ul>
 </ul>
 
 <h2>Options available</h2>
