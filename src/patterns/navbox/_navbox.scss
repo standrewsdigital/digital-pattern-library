@@ -79,7 +79,7 @@
                 }
             }
             &:active span {
-                background:$sta-orange-highlight;
+                background:$sta-orange-highlight !important;
                 color: $sta-grey-dark;
                 text-shadow: none;
             }
