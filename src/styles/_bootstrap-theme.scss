@@ -186,6 +186,12 @@ table.table-tertiary-3 th,
 
 .pagination {
     margin-top: 0;
+    
+    // Remove z-index: 3; 
+    & > .active > a,
+    & > .active > span {
+        z-index: auto !important;
+    }
 }
 
 // LABEL MODIFICATIONS
