@@ -26,6 +26,27 @@
         figcaption + p {
             margin-top:10px;
         }
+
+
+        // Fix float clear bug
+        @media (max-width: 767px){
+            &:nth-child(2n+1){
+                clear:left;
+            }
+        }
+
+        @media (max-width: 991px) and (min-width: 768px){
+            &:nth-child(3n+1){
+                clear:left;
+            }
+        }
+
+        @media (min-width: 992px){
+            &:nth-child(4n+1){
+                clear:left;
+            }
+        }
+
     }
 
 }
