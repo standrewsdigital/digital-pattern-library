@@ -43,7 +43,7 @@
         }
 
         *:last-child {
-            margin-bottom: 0;
+            margin-bottom: 0; // Remove bottom margin on last element to keep close to bottom of row CAUTION: may cause unusual behaviour on complex content
         }
     }
 }
