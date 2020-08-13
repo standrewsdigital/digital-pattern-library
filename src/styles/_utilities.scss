@@ -28,6 +28,29 @@
 	width: 100%;
 }
 
+// Alternate rows style - apply as wrapper to sequence of .row class elements to alternate background colour - useful to replicate table style with floated elements
+.alternate-rows {
+    .row {
+        border-bottom: 1px solid $sta-grey-mid2;
+        padding: 1rem 0;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:nth-child(odd) {
+            background: $sta-grey-light2;
+        }
+
+        *:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+
+
 // Spacing helpers
 $base-spacing: 1em;
 $large-spacing: $base-spacing*2;
@@ -117,6 +140,12 @@ $page-gutter-overflow: calc((3vw + 1rem) - 30px); //Removes fixed size from dyna
 	margin-bottom: 50px;
 }
 
+
+
+
+
+
+
 // Responsive images
 img {
     height: auto;
@@ -143,6 +172,11 @@ textarea, input[type~=text], input[type~=submit] {
     border-radius: 0;
 }
 
+
+
+
+
+
 /* PLACEHOLDERS */
 /* General card */
 %card {
@@ -159,6 +193,12 @@ textarea, input[type~=text], input[type~=submit] {
         box-shadow: 0 3px 2px -2px rgba(0,0,0,0.2), 0 3px 2px 0 rgba(0,0,0,0.14), 0 2px 5px 0 rgba(0,0,0,0.12); 
     }
 }
+
+
+
+
+
+
 
 /* DPL HELPERS */
 .pattern-wrapper {
