@@ -238,6 +238,10 @@
 					float: left;
 					font-weight: normal;
 					text-decoration: underline;
+
+					&:focus {
+						color: $sta-grey-dark;
+					}
 				}
 			}
 			// Dropdown elements - specific to this pattern
@@ -291,7 +295,6 @@
 						margin-left: 0;
 
 						a {
-							color: inherit;
 							float: none;
 							font-weight: normal;
 							text-decoration: none;
