@@ -83,19 +83,3 @@
     src: local('PT Serif Bold Italic'), local('PTSerif-BoldItalic'), url(//fonts.gstatic.com/s/ptserif/v8/Foydq9xJp--nfYIx2TBz9WaVI6zN22yiurzcBKxPjFE.woff2) format('woff2'), url("../fonts/pt-serif/bolditalic/PTF76F-webfont.woff") format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
-
-///////////////////////////////////////////////////////
-// PT Serif Caption                                  //
-// ------------------------------------------------  //
-// Variants: regular, italic                         //
-// Charsets: latin                                   //
-// Providers: pattern library                        //
-///////////////////////////////////////////////////////
-// PT Serif Caption, regular (latin)
-@font-face {
-    font-family: 'PT Serif Caption';
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/pt-serif-caption/regular/PTZ55F-webfont.woff") format("woff");
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}

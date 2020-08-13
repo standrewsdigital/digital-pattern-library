@@ -9,6 +9,40 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.23.3
+
+Release date: Thursday 13 August 2020
+
+### Added
+* Support for .text-muted class to lighten text colour for less important content.
+* Font size utility class to set font size to 1rem.
+* Layout support for .alternate-rows to reproduce alternating coloured rows without using tables.
+
+### Changed
+* Improved focus state on Twitter Typeahead autocomplete dropdown.
+* Spacing utility classes now !important.
+
+### Fixed
+* Pagination z-index too high for selected page.
+* Offset outline reset to prevent extra space in Chrome browser on focus state.
+* Various display issues with navigation grid CSS columns.
+* Focus states on Search bar with blue background.
+* Security updates.
+
+### Removed
+* PT Serif Caption font.
+
+---
+
+## v1.23.2
+
+Release date: Friday 5 June 2020
+
+### Fixed
+* Navbox active state background colour.
+
+---
+
 ## v1.23.1
 
 Release date: Friday 15 May 2020

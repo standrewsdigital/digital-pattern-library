@@ -316,6 +316,10 @@ address {
   @include ms-respond(font-size,-1,$ms-important: true);
   line-height:inherit !important;
 }
+.font-scale-reset {
+  font-size: 1rem !important;
+  line-height:inherit !important;
+}
 .font-scale-0 {
   @include ms-respond(font-size,0,$ms-important: true);
   line-height:inherit !important;

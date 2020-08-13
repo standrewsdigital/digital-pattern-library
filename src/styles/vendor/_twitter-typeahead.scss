@@ -13,6 +13,13 @@
     text-align: left;
 }
 
+// Reposition for smaller header search input
+#header-search {
+  .tt-menu {
+    top: 39px !important;
+  }
+}
+
 .tt-suggestion {
   padding: 8px 15px;
 }
@@ -25,4 +32,6 @@
 
 .tt-cursor {
   background-color: #f0f0f0;
+  box-shadow: inset 0 0 0 3px $sta-orange-highlight;
+  text-decoration:underline;
 }

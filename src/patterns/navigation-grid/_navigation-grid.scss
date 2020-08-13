@@ -22,8 +22,8 @@
 
 	// Reset grid items
 	.navigation-grid-item {
-		margin: 0 0 ms(-1) 0;
-		padding: 0;
+		margin: 0;
+		padding: 0 0 0.8em 0;
 	}
 
 	.navigation-grid-item__heading {
@@ -65,7 +65,7 @@
 
 				.navigation-grid-item {
 					width: auto; // Reset as grid handles this
-					margin-bottom: 0;
+					padding-bottom: 0;
 				}
 			}
 
@@ -91,7 +91,7 @@
 
 				.navigation-grid-item {
 					width: auto; // Reset as grid handles this
-					margin-bottom: 0;
+					padding-bottom: 0;
 				}
 			}
 		}
@@ -131,8 +131,9 @@
 		
 		// Vertical flow in columns
 		&--vertical-flow {
+			margin-bottom: -0.8em; //Negative margin to absorb bottom padding on items
 			.navigation-grid-item {
-				margin-bottom: ms(-1);
+				padding-bottom: 0.8em;
 				width: auto;
 				-webkit-column-break-inside: avoid;
           		page-break-inside: avoid;
@@ -145,6 +146,9 @@
 			@media (min-width: 992px) {
 				display:block;
 				column-count: 3;
+			}
+			.navigation-grid-item__heading {
+				padding: 3px 0; // Space to prevent focus outline on links bleeding into next column or causing item to jump column
 			}
 		}
 	}

@@ -1,5 +1,11 @@
 // MODIFICATIONS TO BOOTSTRAP FOR OUR THEME
 
+// Text changes
+// =================================================
+.text-muted {
+  color: $text-muted;
+}
+
 // Font weights
 // ====================================================
 
@@ -60,6 +66,7 @@ a {
     text-decoration: underline;
     text-underline-offset: 0.15em; // Only works in FF and Safari
     outline: 0; 
+    outline-offset: 0;
 
     &:active {
         // Contrast colour (orange) to show active link
@@ -186,6 +193,12 @@ table.table-tertiary-3 th,
 
 .pagination {
     margin-top: 0;
+    
+    // Remove z-index: 3; 
+    & > .active > a,
+    & > .active > span {
+        z-index: auto !important;
+    }
 }
 
 // LABEL MODIFICATIONS
