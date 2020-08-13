@@ -134,6 +134,10 @@
                     "text": "font-scale-minus-1"
                 },
                 {
+                    "class": "font-scale-reset",
+                    "text": "font-scale-reset (1rem)"
+                },
+                {
                     "class": "font-scale-0",
                     "text": "font-scale-0"
                 },
