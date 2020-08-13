@@ -45,51 +45,51 @@ $page-gutter-overflow: calc((3vw + 1rem) - 30px); //Removes fixed size from dyna
 
 // Spacing helper classes
 .margin-top {
-    margin-top: $page-gutter;
+    margin-top: $page-gutter !important;
 
     &--overflow {
-        margin-top: $page-gutter-overflow;
+        margin-top: $page-gutter-overflow !important;
     }
 }
 
 .margin-top--half {
-    margin-top: $half-gutter;
+    margin-top: $half-gutter !important;
 }
 
 .margin-bottom {
-    margin-bottom: $page-gutter;
+    margin-bottom: $page-gutter !important;
 
     &--overflow {
-        margin-bottom: $page-gutter-overflow;
+        margin-bottom: $page-gutter-overflow !important;
     }
 }
 
 .margin-bottom--half {
-    margin-bottom: $half-gutter;
+    margin-bottom: $half-gutter !important;
 }
 
 .padding-top {
-    padding-top: $page-gutter;
+    padding-top: $page-gutter !important;
 
     &--overflow {
-        padding-top: $page-gutter-overflow;
+        padding-top: $page-gutter-overflow !important;
     }
 }
 
 .padding-top--half {
-    padding-top: $half-gutter;
+    padding-top: $half-gutter !important;
 }
 
 .padding-bottom {
-    padding-bottom: $page-gutter;
+    padding-bottom: $page-gutter !important;
 
     &--overflow {
-        padding-bottom: $page-gutter-overflow;
+        padding-bottom: $page-gutter-overflow !important;
     }
 }
 
 .padding-bottom--half {
-    padding-bottom: $half-gutter;
+    padding-bottom: $half-gutter !important;
 }
 
 .no-margin-top {
