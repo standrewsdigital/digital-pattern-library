@@ -89,6 +89,37 @@ a {
     }        
 }
 
+// Inherit link style and ignore DPL style - useful for inline elements that have non DPL branding
+a.inherit--link-style,
+.inherit--link-style a {
+    -webkit-transition: inherit;
+    -moz-transition: inherit;
+    transition: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+    text-underline-offset: inherit; // Only works in FF and Safari
+    outline: inherit; 
+    outline-offset: inherit;
+    color: inherit;
+
+    &:active {
+        color: inherit;
+    }
+
+    &:hover {
+        text-decoration: inherit;
+        color: inherit;
+    }
+
+    &:focus {
+        color: inherit;
+        background: inherit;
+        box-shadow: inherit;
+        text-decoration: inherit;
+        outline: inherit; 
+    }    
+}
+
 // Remove background on image links as transparency will show - place on image tag instead
 figure {
    a:focus {
