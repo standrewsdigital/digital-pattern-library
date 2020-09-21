@@ -12,22 +12,34 @@
             "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
         },
         {
-            "option-heading": "Featured media with video on left",
-            "option-description": "",
-            "option-anchor": "featured-video-left",
+            "option-heading": "Featured media with blue background",
+            "option-description": "<p>This example has a blue background with the featured image placed on the left.</p>",
+            "option-anchor": "featured-image-blue",
+            "background": " featured-media--background featured-media--sta-blue",
            "heading": "This is the heading of the section",
-           "heading-link": true,
            "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat.</p><p>Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor.</p>",
-            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe class='embed-responsive-item' src='https://www.youtube-nocookie.com/embed/pscNTzAGVnk'></iframe></div>",
+            "image": "../../assets/docs/images/placeholders/750x500.png",
+            "cta": true,
             "media-alignment": " featured-media--left",
             "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
         },
         {
-            "option-heading": "Centred video with caption",
-            "option-description": "<p>If a preferred side is not specified then the media is placed in the centre and more prominently on larger displays.</p>",
-            "option-anchor": "featured-video-centre",
+            "option-heading": "Centred image with caption",
+            "option-description": "<p>If a preferred side is not specified then the media is placed in the centre.</p>",
+            "option-anchor": "centred-image",
+            "heading": "What's bad about being good?",
             "media-alignment": " container",
-            "video": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div>",
+            "bodytext": "<p>Research at St Andrews explores effective altruism, a rapidly growing social movement which encourages us to do the most good we can with the money and time available.</p>",
+            "image": "../../assets/docs/images/placeholders/750x500.png",
+            "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
+        },
+        {
+            "option-heading": "Video with transcript",
+            "option-description": "<p>Videos must always appear centred with a transcript included for accessibility. A title should also be added to the <code>ifrane</code> to assist users of screen reader software.</p>",
+            "option-anchor": "featured-video-centre",
+            "heading": "This is an interesting video",
+            "media-alignment": " container",
+            "video": "<div class='embed-responsive embed-responsive-16by9'><iframe title='Heading goes in here (video)' src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div>",
             "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
         },
         {
@@ -37,30 +49,20 @@
             "background": " featured-media--background featured-media--sta-blue",
             "heading": "What's bad about being good?",
             "heading-link": true,
-            "media-alignment": " featured-media--right",
-            "bodytext": "<p>Research at St Andrews explores effective altruism, a rapidly growing social movement which encourages us to do the most good we can with the money and time available.</p>",
-            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe class='embed-responsive-item' src='https://www.youtube-nocookie.com/embed/JxHfSwpddCU'></iframe></div>"
-        },
-        {
-            "option-heading": "Image background with orange transparent overlay and video",
-            "option-description": "",
-            "option-anchor": "orange-transparent-overlay",
-            "background": " featured-media--background featured-media--overlay featured-media--orange-transparent-overlay",
-            "bg-image": "docs/images/cta/hero-banner-image-002.jpg",
-            "heading": "What's bad about being good?",
-            "media-alignment": " featured-media--left",
-            "bodytext": "<p>Research at St Andrews explores effective altruism, a rapidly growing social movement which encourages us to do the most good we can with the money and time available.</p>",
-            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe class='embed-responsive-item' src='https://www.youtube-nocookie.com/embed/JxHfSwpddCU'></iframe></div>"
-        },
-        {
-            "option-heading": "Image background with burgundy transparent overlay and centered video",
-            "option-description": "",
-            "option-anchor": "burgundy-transparent-overlay",
-            "background": " featured-media--background featured-media--overlay featured-media--burgundy-transparent-overlay",
-            "bg-image": "docs/images/cta/hero-banner-image-003.jpg",
             "media-alignment": " container",
-            "heading": "What is David Russell Apartments like?",
-            "video": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div>"
+            "bodytext": "<p>Research at St Andrews explores effective altruism, a rapidly growing social movement which encourages us to do the most good we can with the money and time available.</p>",
+            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe title='Heading goes in here (video)' class='embed-responsive-item' src='https://www.youtube-nocookie.com/embed/JxHfSwpddCU'></iframe></div>"
+        },
+        {
+            "option-heading": "Featured media with video to the side - deprecated",
+            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This implementation is deprecated and will be removed in a future version of the digital pattern library. Videos must be placed centrally to allow space for transcript.</p></div>",
+            "option-anchor": "featured-video-left",
+           "heading": "This is the heading of the section",
+           "heading-link": true,
+           "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat.</p><p>Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor.</p>",
+            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe title='Heading goes in here (video)' class='embed-responsive-item' src='https://www.youtube-nocookie.com/embed/pscNTzAGVnk'></iframe></div>",
+            "media-alignment": " featured-media--left",
+            "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
         }
     ]
  }
