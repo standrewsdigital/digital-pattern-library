@@ -1,0 +1,25 @@
+{
+    "options": [
+        {
+            "option-heading": "Video",
+            "option-description": "<p>This example is a video with captions.</p>",
+            "option-anchor": "video",
+            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe title='Student services at University of St Andrews (video)' src='https://www.youtube.com/embed/6lrQJAv5U7I' allowfullscreen=''></iframe></div>"
+        },
+        {
+            "option-heading": "Video with transcript",
+            "option-description": "<p>This example includes a transcript to provide additional accessible alternative content.</p>",
+            "option-anchor": "transcript",
+            "transcript": true,
+            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe title='Meet the Environment Team (video)' src='https://www.youtube.com/embed/i6XOdlayuUs' allowfullscreen=''></iframe></div>"
+        },
+        {
+            "option-heading": "Video with transcript and label",
+            "option-description": "<p>This example shows a video with text label and transcript.",
+            "transcript": true,
+            "option-anchor": "label",
+            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe title='Applying to University of St Andrews (video)' src='https://www.youtube.com/embed/05TUMach8sE' allowfullscreen=''></iframe></div>",
+            "caption": "<figcaption>Watch current students and staff discuss the teaching facilities, research opportunities and student life at Scotland's first university.</figcaption>"
+        }
+    ]
+ }

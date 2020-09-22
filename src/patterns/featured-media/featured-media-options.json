@@ -39,7 +39,7 @@
             "option-anchor": "featured-video-centre",
             "heading": "This is an interesting video",
             "media-alignment": " container",
-            "video": "<div class='embed-responsive embed-responsive-16by9'><iframe title='Heading goes in here (video)' src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div>",
+            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe title='Heading goes in here (video)' src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div>",
             "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
         },
         {

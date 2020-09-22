@@ -22,7 +22,7 @@
 // Block level elements
 // ====================================================
 
-p, ul, ol {
+p, ul, ol, figure {
     margin: 0 0 1.5625rem; // 25px @ 16px
 }
 
@@ -138,6 +138,12 @@ figure {
         box-shadow: 0 3px $sta-orange-highlight;
         outline: 3px solid $sta-orange-highlight; 
    }
+
+   // Add top margin to accordion transcript 
+    .accordion-item {
+        margin-top: 1.5625rem;
+    }
+
 }
 
 

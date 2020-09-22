@@ -1,0 +1,43 @@
+---
+title: Image
+---
+
+<div class="row">
+  <div class="col-md-8">
+<p class="lead">This pattern is for displaying an image.</p>
+
+<h2>Rules for using images</h2>
+<ul>
+   <li>Alternative descriptions must be provided, using the <code>alt</code> attribute, to make the content accessible.</li>
+   <li>Captions should be included where they add context to the image.</li>
+</ul>
+<p>More information on image file formats and optimisation is described within <a href="https://www.st-andrews.ac.uk/digital-standards/file-standards/image/">image standards</a>.</p>
+<h2>Options available</h2>
+<ul>
+{{#image-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/image-options.options}}
+</ul>
+</div>
+</div>
+{{#image-options.options}}
+<hr>
+<div class="row">
+  <div class="col-md-8">
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+</div>
+<!--noindex-->
+  <span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+  <div class="container">
+  	{{> image}}
+  </div>
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> image}}</code></pre>
+<!--endnoindex-->
+{{/image-options.options}}

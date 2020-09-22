@@ -41,6 +41,14 @@
                   "img": "assets/docs/images/patterns/typography.jpg",
                   "url": "patterns/typography/index.html"
                 },
+                { "name": "Image",
+                  "img": "assets/docs/images/patterns/image.png",
+                  "url": "patterns/image/index.html"
+                },
+                { "name": "Video",
+                  "img": "assets/docs/images/patterns/video.png",
+                  "url": "patterns/video/index.html"
+                },
                 { "name": "Footer",
                   "img": "assets/docs/images/patterns/footer.jpg",
                   "url": "patterns/footer/index.html"
@@ -88,7 +96,7 @@
         },
         {
             "heading": "Call to action",
-            "subheading": "Patterns used to bring attentionand link to important content both on the University website and external sites.",
+            "subheading": "Patterns used to bring attention and link to important content both on the University website and external sites.",
             "class": "primary",
             "patterns": [
                 { "name": "Buttons",
@@ -102,10 +110,6 @@
                 { "name": "Event tile grid",
                   "img": "assets/docs/images/patterns/event-tile-grid.jpg",
                   "url": "patterns/event-tile-grid/index.html"
-                },
-                { "name": "Featured media",
-                  "img": "assets/docs/images/patterns/featured-media.jpg",
-                  "url": "patterns/featured-media/index.html"
                 },
                 { "name": "Hero banner",
                   "img": "assets/docs/images/patterns/hero-banner.jpg",
@@ -173,6 +177,10 @@
                 { "name": "Facet list",
                   "img": "assets/docs/images/patterns/facet-list.jpg",
                   "url": "patterns/facet-list/index.html"
+                },
+                { "name": "Featured media",
+                  "img": "assets/docs/images/patterns/featured-media.jpg",
+                  "url": "patterns/featured-media/index.html"
                 },
                 { "name": "Featured news",
                   "img": "assets/docs/images/patterns/featured-news.jpg",

@@ -1,0 +1,48 @@
+---
+title: Video
+---
+
+<div class="row">
+  <div class="col-md-8">
+<p class="lead">This pattern is for embedding a YouTube video with an optional text label. The alternate <a href="../featured-media/index.html">featured media</a> pattern may be used for videos on a full width page layout.</p>
+
+<h2>Rules for using videos</h2>
+<ul>
+   <li>A <code>title</code> attribute for the <code>&lt;iframe&gt;</code> must be provided to make the video accessible to users of screen reader software. Including the text '(video)' at the end  of the title helps to identify the type of content when read out.</li>
+   <li>Captions or a transcript must be provided to make the content of the video accessible.</li>
+   <li>A label <code>&lt;figcaption&gt;</code> may be included to add context to the video.</li>
+</ul>
+<p>More information on video transcripts and captions is described within <a href="https://www.st-andrews.ac.uk/digital-standards/caption-standards/">caption standards</a>.</p>
+<h2>Options available</h2>
+<ul>
+{{#video-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/video-options.options}}
+</ul>
+</div>
+</div>
+{{#video-options.options}}
+<hr>
+<div class="row">
+  <div class="col-md-8">
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+</div>
+<!--noindex-->
+  <span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+  	{{> video}}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> video}}</code></pre>
+<!--endnoindex-->
+{{/video-options.options}}
