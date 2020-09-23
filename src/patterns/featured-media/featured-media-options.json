@@ -54,6 +54,15 @@
             "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe title='Heading goes in here (video)' class='embed-responsive-item' src='https://www.youtube-nocookie.com/embed/JxHfSwpddCU'></iframe></div>"
         },
         {
+            "option-heading": "Audio with transcript",
+            "option-description": "<p>Audio must always appear centred with a transcript included for accessibility. A title should also be added to the <code>ifrane</code> to assist users of screen reader software. This example is shown on a light grey background.</p>",
+            "option-anchor": "featured-audio-centre",
+            "background": " sta-grey-light",
+            "media-alignment": " container",
+            "audio": true,
+            "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
+        },
+        {
             "option-heading": "Featured media with video to the side - deprecated",
             "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This implementation is deprecated and will be removed in a future version of the digital pattern library. Videos must be placed centrally to allow space for transcript.</p></div>",
             "option-anchor": "featured-video-left",

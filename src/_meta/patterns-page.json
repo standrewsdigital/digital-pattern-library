@@ -49,6 +49,10 @@
                   "img": "assets/docs/images/patterns/video.png",
                   "url": "patterns/video/index.html"
                 },
+                { "name": "Audio",
+                  "img": "assets/docs/images/patterns/audio.png",
+                  "url": "patterns/audio/index.html"
+                },
                 { "name": "Footer",
                   "img": "assets/docs/images/patterns/footer.jpg",
                   "url": "patterns/footer/index.html"
