@@ -1,12 +1,24 @@
 {
     "options": [
 
+
 {
-            "option-heading": "Linked category heading",
+            "option-heading": "Linked category header",
             "option-anchor": "default",
             "option-description": "",
             "title": "Category title",
-            "url": "#"
+            "url": "#",
+            "text-start": "<div class='category-header__title'>",
+            "text-end": "</div>"
+        },
+{
+            "option-heading": "Linked category heading - deprecated",
+            "option-anchor": "default",
+            "option-description": "<div class='alert alert--warning'><h4 class='alert__heading'>This option is no longer supported</h4><p>This implementation is now deprecated and will be removed in a future release.</p></div>",
+            "title": "Category title",
+            "url": "#",
+            "text-start": "<h2>",
+            "text-end": "</h2>"
         },
 
         {
@@ -15,7 +27,9 @@
             "option-description": "<div class='alert alert--warning'><h4 class='alert__heading'>This option is no longer supported</h4><p>This implementation is now deprecated and will be removed in a future release.</p></div>",
             "transparent": true,
             "title": "Category title",
-            "url": "#"
+            "url": "#",
+            "text-start": "<h2>",
+            "text-end": "</h2>"
         }
     ]
 }

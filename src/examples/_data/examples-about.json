@@ -55,7 +55,9 @@
     },
     "category-header": {
         "title": "About",
-        "url": "#"
+        "url": "#",
+            "text-start": "<div class='category-header__title'>",
+            "text-end": "</div>"
     },
     "breadcrumbs": {
         "parents": [
