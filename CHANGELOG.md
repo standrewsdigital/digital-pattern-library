@@ -9,6 +9,33 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.24.0
+
+Release date: Thursday 24 September 2020
+
+### Added
+* Option for an element to not inherit the default DPL link styling.
+* Support for SoundCloud audio on featured media pattern.
+* Light grey background option for featured media pattern.
+* Transcripts added to video embed patterns.
+* New pattern for inline images.
+* New pattern for YouTube video embeds.
+* New pattern for SoundCloud audio embeds.
+
+### Changed
+* Heading levels for footer pattern.
+* Light blue colour now AA compliant on light grey backgrounds.
+* Minor changes to documentation.
+* Category header pattern no longer includes a heading tag.
+
+### Deprecated
+* Video is no longer an option for page intro pattern.
+
+### Removed
+* Redundant styling for old KIS widget.
+
+---
+
 ## v1.23.3
 
 Release date: Thursday 13 August 2020
