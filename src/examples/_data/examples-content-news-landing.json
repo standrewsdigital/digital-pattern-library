@@ -21,7 +21,9 @@
       },
       "category-header": {
           "title": "News",
-          "url": "#"
+          "url": "#",
+            "text-start": "<div class='category-header__title'>",
+            "text-end": "</div>"
       },
         "numerical-list": {
             "title": "Most read",

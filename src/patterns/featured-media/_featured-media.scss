@@ -34,6 +34,8 @@
 }
 
 .featured-media {
+    margin: 0;
+    max-width: 780px; // Max width of a centred media
 
     &--right,
     &--left {
@@ -43,14 +45,25 @@
         grid-template-columns: 15px auto 15px;
         -ms-grid-rows: auto auto;
         grid-template-rows: auto auto; //2nd grid row for media
+
+        //reset default
+        margin: inherit;
+        max-width: none;
     }
     
     @media (min-width: 992px) and (max-width:1199px){
+        margin: 0 auto;
+        max-width: 750px; // Max width of a centred media
+
         &--right {
             -ms-grid-columns: 15px minmax(20em,45%) 1fr 15px;
             -ms-grid-rows: auto;
             grid-template-columns: 15px minmax(20em,45%) 1fr 15px; 
             grid-template-rows: auto;
+
+            //reset default
+            margin: inherit;
+            max-width: none;
         }
 
         &--left {
@@ -58,15 +71,26 @@
             -ms-grid-rows: auto;
             grid-template-columns: 15px 1fr minmax(20em,45%) 15px; 
             grid-template-rows: auto;
+
+            //reset default
+            margin: inherit;
+            max-width: none;
         }
     }
     
     @media (min-width: 1200px){
+        margin: 0 auto;
+        max-width: 750px; // Max width of a centred media
+
         &--right {
             -ms-grid-columns: 1fr 750px 390px 1fr;
             -ms-grid-rows: auto;
             grid-template-columns: 1fr 750px 390px 1fr;
             grid-template-rows: auto;
+
+            //reset default
+            margin: inherit;
+            max-width: none;
         }
 
         &--left {
@@ -74,6 +98,10 @@
             -ms-grid-rows: auto;
             grid-template-columns: 1fr 390px 750px 1fr;
             grid-template-rows: auto;
+
+            //reset default
+            margin: inherit;
+            max-width: none;
         }
     }
 
@@ -105,7 +133,7 @@
     }
 
     @media (max-width: 991px){
-        max-width: 48em; // limit width of text to help readability
+        max-width: 750px; // limit width of text to help readability
     }
 }
 
@@ -146,18 +174,16 @@
     }
 
     .featured-media__media-wrapper {
-        .featured-media--right &,
-        .featured-media--left & {
-            max-width:600px; // No size restriction when centred media (aka big vid)
-        }
         margin-bottom: 1.5625rem; // 25px @ 16
 
         @media (min-width: 992px) {
             .featured-media--right & {
                 margin: 0 15px 1.5625rem 30px;
+                max-width:600px; 
             }
             .featured-media--left & {
                 margin: 0 30px 1.5625rem auto;
+                max-width:600px; 
                 padding-left: 15px;    
             }
         }
@@ -165,7 +191,7 @@
         figcaption {
             padding-bottom: 0;
         }
-    }
+    }  
 }
 
 .featured-media__heading {
@@ -188,7 +214,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: white;
     position: relative;
     z-index: 0;
 
@@ -247,24 +272,35 @@
         background-image: url(../images/secondary-call/9.jpg); background-size: cover;
     }
 
-    a:not(.btn) {
+    .featured-media__text,
+    figcaption {
         color: white;
-        font-weight: bold;
-        text-decoration: underline;
 
-        &:hover {
-            // Remove underline when hovered
-            text-decoration: none;
-        }
-
-        &:focus {
-            // Apply contrast 
-            color: $sta-grey-dark;
-            background: $sta-orange-highlight;
-            box-shadow: 0 3px $sta-orange-highlight;
+        a:not(.btn) {
+            color: white;
+            font-weight: bold;
             text-decoration: underline;
-            outline: 3px solid $sta-orange-highlight; 
-        }  
+
+            &:hover {
+                // Remove underline when hovered
+                text-decoration: none;
+            }
+
+            &:focus {
+                // Apply contrast 
+                color: $sta-grey-dark;
+                background: $sta-orange-highlight;
+                box-shadow: 0 3px $sta-orange-highlight;
+                text-decoration: underline;
+                outline: 3px solid $sta-orange-highlight; 
+            }  
+        }
+    }
+
+    .accordion-item {
+        background: white;
+        border-left: 1px $sta-grey solid;
+        border-right: 1px $sta-grey solid;
     }
 
 }

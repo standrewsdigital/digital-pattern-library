@@ -14,7 +14,7 @@
                     "class": "pt-sans bold"
                 },
                 {
-                    "name": "PT Sans regular",
+                    "name": "PT Sans regular italic",
                     "class": "pt-sans italic"
                 }
             ]
@@ -37,7 +37,7 @@
                     "class": "pt-serif bold"
                 },
                 {
-                    "name": "PT Serif regular",
+                    "name": "PT Serif regular italic",
                     "class": "pt-serif italic"
                 }
             ]

@@ -1,0 +1,48 @@
+---
+title: Audio
+---
+
+<div class="row">
+  <div class="col-md-8">
+<p class="lead">This pattern is for embedding a SoundCloud audio file with an optional text label. The alternate <a href="../featured-media/index.html">featured media</a> pattern may be used for audio embeds on a full width page layout.</p>
+
+<h2>Rules for using audio</h2>
+<ul>
+   <li>A <code>title</code> attribute for the <code>&lt;iframe&gt;</code> must be provided to make the audio accessible to users of screen reader software. Including the text '(Audio)' at the end  of the title helps to identify the type of content when read out.</li>
+   <li>For pre-recorded audio a transcript must be provided to make the content of the audio file accessible.</li>
+   <li>A label <code>&lt;figcaption&gt;</code> may be included to add context to the audio file.</li>
+</ul>
+<p>More information on transcripts is described within <a href="https://www.st-andrews.ac.uk/digital-standards/caption-standards/">caption standards</a>.</p>
+<h2>Options available</h2>
+<ul>
+{{#audio-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/audio-options.options}}
+</ul>
+</div>
+</div>
+{{#audio-options.options}}
+<hr>
+<div class="row">
+  <div class="col-md-8">
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+</div>
+<!--noindex-->
+  <span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+  	{{> audio}}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> audio}}</code></pre>
+<!--endnoindex-->
+{{/audio-options.options}}

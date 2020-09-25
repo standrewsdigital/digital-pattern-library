@@ -22,6 +22,12 @@
 	}
 }
 
+#website-footer h2 {
+  	@include ms-respond(font-size,2,$ms-important: true);
+  	line-height:inherit !important;
+	margin-bottom:0;
+}
+
 #university-footer {
 	background-color: $sta-grey-dark2;
 	border-top: 1px solid $sta-grey;

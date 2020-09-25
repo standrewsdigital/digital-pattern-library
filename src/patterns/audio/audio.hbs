@@ -1,0 +1,20 @@
+<!-- Begin pattern: image //-->
+<figure>	
+	{{{audio}}}
+    {{#if caption}}{{{caption}}}{{/if}}
+    {{#if transcript}}
+	<!-- Begin pattern: accordion //-->
+    <div class="accordion-item">
+    	<div class="accordion-item__toggle">
+        	<div class="accordion-item__toggle-title">
+            	<button class="accordion-item__toggle-button" aria-expanded="false">Audio transcript</button>
+            </div>
+        </div>
+        <div class="accordion-item__content" aria-hidden="true"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac rutrum tellus, quis porttitor urna. Donec ultricies libero erat, id efficitur risus blandit nec. Donec et ipsum in dui blandit rutrum. Praesent rhoncus lobortis ligula, viverra tincidunt ante lobortis at. Sed vehicula luctus quam sit amet lacinia. Sed eu nulla vel ex tempus accumsan in sit amet metus. Vestibulum a venenatis mi. Ut ac semper arcu.</p><p>Morbi pellentesque, mauris nec porta laoreet, neque magna tempor eros, eget suscipit tellus purus nec ligula. In accumsan turpis eu porttitor tempus. Praesent rutrum quam id felis consequat, et mattis elit laoreet. Nunc maximus, dui vitae tincidunt elementum, elit tortor mattis quam, ut sodales arcu lectus eu nisi. Phasellus tincidunt at risus nec fringilla. Nunc ultricies nisl sodales, vestibulum nunc in, vulputate nisl. Vestibulum lacinia auctor hendrerit. Sed in lectus dapibus, volutpat justo vel, pellentesque ipsum. Vivamus vitae metus euismod, vestibulum odio eu, elementum quam.</p>
+        </div>
+   	</div>
+    <!-- End pattern: accordion //-->
+    {{/if}}
+</figure>
+<!-- End pattern: image //-->
+

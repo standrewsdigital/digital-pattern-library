@@ -17,7 +17,9 @@
       },
       "category-header": {
           "title": "Digital communications team blog",
-          "url": "#"
+          "url": "#",
+            "text-start": "<div class='category-header__title'>",
+            "text-end": "</div>"
       },
       "article-header": {
             "heading": "How to make videos accessible with closed captions",

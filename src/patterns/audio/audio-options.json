@@ -1,0 +1,25 @@
+{
+    "options": [
+        {
+            "option-heading": "SoundCloud audio",
+            "option-description": "<p>This example contains no dialogue so a transcript is not required.</p>",
+            "option-anchor": "video",
+            "audio": "<div class='embed-responsive-item'><iframe width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' title='Sperm echolocation sonar (Audio)' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/793679809&color=%230071b3&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false'></iframe></div>"
+        },
+        {
+            "option-heading": "SoundCloud audio with transcript",
+            "option-description": "<p>This example includes a transcript to provide accessible alternative content.</p>",
+            "option-anchor": "transcript",
+            "transcript": true,
+            "audio": "<div class='embed-responsive-item'><iframe width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' title='Don Paterson Sonnets (Audio)' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129623338&color=%230071b3&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false'></iframe></div>"
+        },
+        {
+            "option-heading": "SoundCloud audio with transcript and label",
+            "option-description": "<p>This example shows a sound clip with text label and transcript.",
+            "transcript": true,
+            "option-anchor": "label",
+            "audio": "<div class='embed-responsive-item'><iframe width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' title='Don Paterson Sonnets (Audio)' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129623338&color=%230071b3&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false'></iframe></div>",
+            "caption": "<figcaption>Poet Don Paterson talks about his book Reading Shakespeare's Sonnets and reads from the sonnets.</figcaption>"
+        }
+    ]
+ }

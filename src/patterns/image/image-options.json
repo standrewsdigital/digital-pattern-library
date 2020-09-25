@@ -1,0 +1,25 @@
+{
+    "options": [
+        {
+            "option-heading": "Image",
+            "option-description": "",
+            "option-anchor": "image",
+            "image": "../../assets/docs/images/placeholders/360x240.png"
+        },
+        {
+            "option-heading": "Image with caption",
+            "option-description": "<p>A caption should be used to provide additional context about the image.</p>",
+            "option-anchor": "caption",
+            "image": "../../assets/docs/images/placeholders/500x500.jpg",
+            "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
+        },
+        {
+            "option-heading": "Linked image",
+            "option-description": "<p>This example shows a linked image with a caption containing a separate link.",
+            "link": true,
+            "option-anchor": "linked",
+           "image": "../../assets/docs/images/placeholders/750x500.png",
+            "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec <a href=\"#\">pellentesque hendrerit neque</a> et tincidunt.</figcaption>"
+        }
+    ]
+ }

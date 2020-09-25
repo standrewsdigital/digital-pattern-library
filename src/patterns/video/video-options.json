@@ -1,0 +1,25 @@
+{
+    "options": [
+        {
+            "option-heading": "Video",
+            "option-description": "<p>This example contains no dialogue so a transcript is not required.</p>",
+            "option-anchor": "video",
+            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe title='St Andrews from above (video)' src='https://www.youtube.com/embed/pscNTzAGVnk' allowfullscreen=''></iframe></div>"
+        },
+        {
+            "option-heading": "Video with transcript",
+            "option-description": "<p>This example includes a transcript to provide accessible alternative content.</p>",
+            "option-anchor": "transcript",
+            "transcript": true,
+            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe title='Student Services at University of St Andrews (video)' src='https://www.youtube.com/embed/6lrQJAv5U7I' allowfullscreen=''></iframe></div>"
+        },
+        {
+            "option-heading": "Video with transcript and label",
+            "option-description": "<p>This example shows a video with text label and transcript.",
+            "transcript": true,
+            "option-anchor": "label",
+            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe title='Student Services at University of St Andrews (video)' src='https://www.youtube.com/embed/6lrQJAv5U7I' allowfullscreen=''></iframe></div>",
+            "caption": "<figcaption>An introduction to the support provided by Student Services.</figcaption>"
+        }
+    ]
+ }

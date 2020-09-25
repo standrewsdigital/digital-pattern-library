@@ -22,7 +22,7 @@
 // Block level elements
 // ====================================================
 
-p, ul, ol {
+p, ul, ol, figure {
     margin: 0 0 1.5625rem; // 25px @ 16px
 }
 
@@ -89,6 +89,37 @@ a {
     }        
 }
 
+// Reset link style and ignore DPL style - useful for inline elements that have non DPL branding
+a.reset--link-style,
+.reset--link-style a {
+    -webkit-transition: initial;
+    -moz-transition: initial;
+    transition: initial;
+    font-weight: initial;
+    text-decoration: initial;
+    text-underline-offset: initial; // Only works in FF and Safari
+    outline: initial; 
+    outline-offset: initial;
+    color: initial;
+
+    &:active {
+        color: initial;
+    }
+
+    &:hover {
+        text-decoration: initial;
+        color: initial;
+    }
+
+    &:focus {
+        color: initial;
+        background: initial;
+        box-shadow: initial;
+        text-decoration: initial;
+        outline: initial; 
+    }    
+}
+
 // Remove background on image links as transparency will show - place on image tag instead
 figure {
    a:focus {
@@ -107,6 +138,12 @@ figure {
         box-shadow: 0 3px $sta-orange-highlight;
         outline: 3px solid $sta-orange-highlight; 
    }
+
+   // Add top margin to accordion transcript 
+    .accordion-item {
+        margin-top: 1.5625rem;
+    }
+
 }
 
 

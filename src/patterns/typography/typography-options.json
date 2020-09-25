@@ -66,7 +66,7 @@
 
         {
             "option-heading": "Links",
-            "option-description": "<p>The default styling of a link is bold-weighted blue text with an underline.</p><h4>Focus states</h4><p>A contrasting yellow background is applied to text links when they receive focus. This is to improve usability for users navigating by keyboard. Further information on focus states can be found in our blog post - <a href=\"https://digitalcommunications.wp.st-andrews.ac.uk/2020/04/14/keyboard-accessibility-improvements-to-the-university-website/\">Keyboard accessibility improvements to the University website</a>.</p>",
+            "option-description": "<p>The default styling of a link is bold-weighted blue text with an underline.</p><h4>Focus states</h4><p>A contrasting yellow background is applied to text links when they receive focus. This is to improve usability for users navigating by keyboard. Further information on focus states can be found in our blog post - <a href=\"https://digitalcommunications.wp.st-andrews.ac.uk/2020/04/14/keyboard-accessibility-improvements-to-the-university-website/\">Keyboard accessibility improvements to the University website</a>.</p><h4>Reset link style</h4><p>In situations where external content is included where it has its own branding, it may be necessary to prevent links inheriting the default style. The <code>.reset--link-style</code> class can be applied either to a link element directly or to a parent element to achieve this.</p>",
             "option-anchor": "links",
             "body-text": [
                 {
