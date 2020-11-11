@@ -185,32 +185,6 @@
     }
 }
 
-/* Colors */
-
-.tile.green h3 {
-    background: rgba($sta-green,0.9);
-}
-
-.tile.green:hover h3 {
-    background: rgba($sta-green-shade25,0.9);
-}
-
-.tile.purple h3 {
-    background: rgba($sta-purple,0.9);
-}
-
-.tile.purple:hover h3 {
-    background: rgba($sta-purple-shade25,0.9);
-}
-
-.tile.red h3 {
-    background: rgba($sta-red,0.9);
-}
-
-.tile.red:hover h3 {
-    background: rgba($sta-red-shade25,0.9);
-}
-
 @media (max-width: 767px) {
 
     .tile p {
