@@ -513,10 +513,21 @@ function htmlDecode(value) {
           alpha: '0.5',
           show: '8',
           sort: '0',
-          group: true
+          group: true,
+          template: {
+            suggestion: function(context) {
+                var pos = context.label.toLowerCase().indexOf(context.query.toLowerCase());
+                var pos2 = pos+context.query.length;
+                console.log(pos + ' ' + pos2);
+                return '<div class="tt-suggestion tt-selectable"><span class="tt-highlight">'+context.label.slice(0, pos) + "</span>" + context.label.slice(pos,pos2)+'<span class="tt-highlight">'+context.label.slice(pos2)+'</span></div>';
+                }
+            }
         },
       },
-      typeahead: {hint: true},
+      typeahead: {
+        hint: true,
+        highlight: false
+        },
       length: 3
     });
   });

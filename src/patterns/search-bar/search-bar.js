@@ -37,6 +37,11 @@ $(document).on('click', '.horizontal-list__toggle', function(){
         $(this).parent('.input-group').next('.results').fadeOut('fast');
     });
 
+    // Clear button autocomplete that cleans up suggested results
+    $(".clear-icon__autocomplete").click(function(){
+        $(this.form).find(".form-control--autocomplete").typeahead('val', '');
+    });
+
     // Hide clear button if input field is empty
     $(".search-box").keyup(function () {
 	    if( $(this).val() ) {
