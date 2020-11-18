@@ -6,10 +6,10 @@
             "option-description": "",
             "nav-link": [
                 { "name":"Courses",
-                  "link":"courses"
+                  "link":"d.en.courses"
                 },
                 { "name":"Testimonial",
-                  "link":"testimonial"
+                  "link":"d.en.testimonial"
                 },
                 { "name":"Visiting",
                   "link":"visiting"

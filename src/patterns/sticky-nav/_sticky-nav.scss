@@ -3,7 +3,68 @@
 /* BEGIN Pattern: sticky-nav     */
 /*********************************/
 
-/* LONG FORM NAV STYLES */
+.sticky-nav {
+    border-bottom: 1px solid $sta-grey-mid2;
+    box-shadow: 0 1px 2px 0 $sta-grey-mid2;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+
+    &.affix {
+        background: white;
+    }
+
+    .container {
+        padding: 0;
+    }
+}
+
+.sticky-nav__menu {
+    margin: 0;
+    padding: 0;
+
+    li {
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        &.active {
+            background: $sta-blue;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    a {
+        color: $sta-grey-dark;
+        display: block;
+        font-weight: normal;
+        padding: 15px 15px;
+
+        &:focus {
+            outline: 0;
+            box-shadow: inset 0 0 0 3px $sta-orange-highlight;
+            background-color: inherit;
+        }
+    }
+}
+
+/* Switch to collapsing menu when smaller than container */
+@media (max-width: 1170px) {
+    .sticky-nav__menu {
+        li {
+            display: block;
+            float: none;
+        }
+    }    
+}
+
+
+/*
 
 #nav-top {
     display: none;
@@ -42,6 +103,8 @@
 #internal-nav-dep {
     display: none;
 }
+
+*/
 
 /* A cool hack to get the offset right when linking to internal id's
  * whilst also having a nav bar absolutely positioned on the top.

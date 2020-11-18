@@ -4,6 +4,10 @@
 /*********************************/
 
 
+
+
+
+
 // Code for affixing the internal nav to the top
 if ( $('#nav-top').length ) {
     var normal_top = $('#nav-top').offset().top;
@@ -18,6 +22,12 @@ $('#nav-top').affix({
     }
 });
 
+
+var spy = new Gumshoe('#nav-top a', {
+    offset: 60
+});
+
+/*
 $('body').scrollspy({ target: '#nav-top', offset: 50 });
 
     // Modified version of this smooth scrolling:
