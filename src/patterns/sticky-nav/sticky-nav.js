@@ -23,9 +23,40 @@ $('#nav-top').affix({
 });
 
 
-var spy = new Gumshoe('#nav-top a', {
+var spy = new Gumshoe('.sticky-nav__menu--link', {
     offset: 60
 });
+
+
+
+
+// Toggle contents list
+$(document).on('click', '.sticky-nav__toggle', function(){
+    $(this).next('ul').slideToggle(200, "linear");
+    $(this).toggleClass( "open" ); // add class for styling.
+    // Set the aria properties.
+    var state = $(this).find('.sticky-nav__toggle-button').attr('aria-expanded') === 'false' ? true : false;
+    $(this).find('.sticky-nav__toggle-button').attr('aria-expanded', state);
+    $(this).next('ul').attr('aria-hidden', !state);
+    return false; // disable default event.
+});
+
+// Hide memu if clicked on list view
+$(document).on('click', '.sticky-nav__menu--link', function(){
+    if (matchMedia('only screen and (max-width: 1170px)').matches) {
+        $(this).closest('.sticky-nav').find('.sticky-nav__toggle').toggleClass( "open" );
+        $(this).closest('ul').hide();
+        $(this).closest('ul').attr('aria-hidden', true);
+        $(this).closest('.sticky-nav').find('.sticky-nav__toggle-button').attr('aria-expanded', false);
+    }
+});
+
+
+
+
+
+
+
 
 /*
 $('body').scrollspy({ target: '#nav-top', offset: 50 });

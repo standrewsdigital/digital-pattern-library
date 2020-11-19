@@ -4,14 +4,22 @@
 /*********************************/
 
 .sticky-nav {
-    border-bottom: 1px solid $sta-grey-mid2;
-    box-shadow: 0 1px 2px 0 $sta-grey-mid2;
+    border-bottom: 1px solid $sta-grey-highlight;
     top: 0;
     width: 100%;
     z-index: 9999;
 
     &.affix {
         background: white;
+        box-shadow: 0 1px 2px 0 $sta-grey-highlight;
+    }
+
+    @media (max-width: 1170px) {
+        border-top: 1px solid $sta-grey-highlight;
+
+        &.affix {
+            border-top: none;
+        }
     }
 
     .container {
@@ -30,11 +38,16 @@
         padding: 0;
 
         &.active {
-            background: $sta-blue;
+            background-color: $sta-blue-light-tint90;
 
             a {
-                color: white;
+                color: $sta-blue-light;
                 text-decoration: none;
+                box-shadow: inset 0 -3px 0 $sta-blue-light;
+
+                @media (max-width: 1170px) {
+                    box-shadow: inset 3px 0 0 $sta-blue-light;
+                }
             }
         }
     }
@@ -42,26 +55,109 @@
     a {
         color: $sta-grey-dark;
         display: block;
-        font-weight: normal;
         padding: 15px 15px;
 
         &:focus {
             outline: 0;
-            box-shadow: inset 0 0 0 3px $sta-orange-highlight;
+            box-shadow: inset 0 0 0 3px $sta-orange-highlight !important;
             background-color: inherit;
         }
     }
-}
 
-/* Switch to collapsing menu when smaller than container */
-@media (max-width: 1170px) {
-    .sticky-nav__menu {
+    // Switch to collapsing menu when smaller than container
+    @media (max-width: 1170px) {
+        display: none;
         li {
             display: block;
             float: none;
+            border-top: 1px solid $sta-grey-highlight;
         }
-    }    
+    }
+    // Force sticky menu to always show on large displays
+    @media (min-width: 1171px) {
+        display: block !important;
+    }
+
 }
+
+
+.sticky-nav__toggle {
+
+    @media (min-width: 1171px){
+        // Hide toggle button on larger displays
+        display:none;
+    }
+
+        cursor: pointer;
+        padding: 15px 3em 15px 15px; // Additional padding on right to accommodate chevron
+        position: relative;
+
+        &:hover,
+        &:focus,
+        &:focus-within {
+            // Add underline to button {
+                .accordion-item__toggle-button {
+                    text-decoration: underline;
+                    outline: none;
+                }
+
+        }
+
+        &:focus,
+        &:focus-within {
+            background-color: $sta-grey-light;
+            outline: 3px solid $sta-orange-highlight; 
+        }
+
+        // Chevron icon
+        &:before {
+            @extend .fa;
+            @extend .fa-chevron-down;
+            color: $text-color;
+            @include ms-respond(font-size,1);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 1rem;
+        }
+
+        &.open:before {
+            @extend .fa-chevron-up;
+        }
+    }
+
+    .sticky-nav__toggle-button {
+        background: none;
+        border: 0;
+        box-shadow: none;
+        color: $sta-blue-light;
+        font-weight: bold;
+        padding: 0;
+        text-align: left;
+
+        &:hover {
+            // Add underline when hovered
+            text-decoration: underline;
+            color: $sta-blue-light-shade25;
+        }
+
+        &:focus {
+            text-decoration: underline;
+            outline: none;
+        }
+
+        &:active {
+            // Apply contrast 
+            color: $sta-grey-dark;
+            background: $sta-orange-highlight;
+            box-shadow: 0 3px $sta-orange-highlight;
+            text-decoration: underline;
+            outline: 3px solid $sta-orange-highlight; 
+        }  
+    }
+
+
+
 
 
 /*
@@ -104,12 +200,10 @@
     display: none;
 }
 
-*/
-
 /* A cool hack to get the offset right when linking to internal id's
  * whilst also having a nav bar absolutely positioned on the top.
  * Hat tip -  UCL.
- */
+
 
 .copy__anchor:before {
     content: '';
@@ -119,6 +213,8 @@
     position: relative;
     width: 0;
 }
+
+*/
 
 /*********************************/
 /* END Pattern: sticky-nav       */

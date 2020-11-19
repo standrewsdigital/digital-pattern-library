@@ -37,6 +37,7 @@ $sta-blue-light:            rgb(0, 113, 179);
 $sta-blue-light-tint25:     tint($sta-blue-light, 25%);
 $sta-blue-light-tint50:     tint($sta-blue-light, 50%);
 $sta-blue-light-shade25:    shade($sta-blue-light, 25%);
+$sta-blue-light-tint90:     tint($sta-blue-light, 90%);
 
 $sta-blue-light-hover:  darken($sta-blue-light, $hover-darken);
 $sta-blue-light-T:      transparentize($sta-blue-light,$transparency);

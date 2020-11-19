@@ -12,10 +12,13 @@
  <!-- Begin pattern: sticky-nav //-->
 	<nav id="nav-top" class="sticky-nav affix-top" aria-label="Page content navigation">
 		<div class="container">
-			<button class="sticky-nav__heading">Current page</button>
+			<div class="sticky-nav__toggle">
+				<button class="sticky-nav__toggle-button" aria-expanded="false">Contents</button>
+				<span id="sticky-nav__active-section"></span>
+			</div>
 			<ul class="sticky-nav__menu">
 			{{#each nav-link}}
-				<li><a href="#{{link}}">{{name}}</a></li>
+				<li><a href="#{{link}}" class="sticky-nav__menu--link">{{name}}</a></li>
 			{{/each}}
 		    </ul>
 		</div>

@@ -4,9 +4,9 @@ title: Sticky nav
 
 <div class="row">
 	<div class="col-md-8">
-<p class="lead">The sticky nav is only used for linking within a page to in-page content. It appears below the normal navigation bar and affixes to the top of the browser window as you scroll down past it. The sticky nav also highlights the current section as you scroll down the page.</p>
+<p class="lead">(rewrite)The sticky nav is only used for linking within a page to in-page content. It appears below the normal navigation bar and affixes to the top of the browser window as you scroll down past it. The sticky nav also highlights the current section as you scroll down the page.</p>
 
-<h2>Rules for the sticky nav</h2>
+<h2>(rewrite)Rules for the sticky nav</h2>
 
 <ul>
     <li>Must add the CSS <code>position: relative;</code> to the <code>body</code> for section highlighting to work.</li>
@@ -15,6 +15,13 @@ title: Sticky nav
     <li>Must not contain any dropdown menus.</li>
     <li>Must only contain links to in-page content.</li>
     <li>Must not display on more than one row.</li>
+    <li>Only one per page.</li>
+</ul>
+<h2>(rewrite)Quirks</h2>
+<ul>
+    <li>If at bottom of the page then automatically jumps to last item.</li>
+    <li>Watchout for tabbing up.</li>
+    <li>Have suffiecient space for offset.</li>
 </ul>
 
 <h2>Options available</h2>
@@ -41,6 +48,5 @@ title: Sticky nav
 </div>
 <div class="container">
 <span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> sticky-nav}}</code></pre>
 <!--endnoindex-->
 {{/sticky-nav-options.options}}
