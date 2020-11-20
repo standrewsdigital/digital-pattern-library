@@ -3,6 +3,14 @@
 /* BEGIN Pattern: sticky-nav     */
 /*********************************/
 
+:root {
+    --sticky-nav-height: 0;
+}
+
+html {
+    scroll-padding-top: var(--sticky-nav-height);
+}
+
 .sticky-nav {
     border-bottom: 1px solid $sta-grey-highlight;
     top: 0;
@@ -154,6 +162,14 @@
             text-decoration: underline;
             outline: 3px solid $sta-orange-highlight; 
         }  
+    }
+
+    #sticky-nav__active-section {
+        color: $sta-grey;
+        font-size: 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
 

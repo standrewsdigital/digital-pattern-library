@@ -22,12 +22,32 @@ $('#nav-top').affix({
     }
 });
 
+var header = document.querySelector('#nav-top');
+var currentSection = document.querySelector('#sticky-nav__active-section');
+var root = document.documentElement;
+root.style.setProperty('--sticky-nav-height', header.offsetHeight + "px");
 
 var spy = new Gumshoe('.sticky-nav__menu--link', {
-    offset: 60
+    reflow: true,
+    offset: function () {
+        return header.offsetHeight;
+    }
 });
 
+// Listen for activate events
+document.addEventListener('gumshoeActivate', function (event) {
 
+    var link = event.detail.link.innerHTML;
+    currentSection.innerHTML = link;
+
+}, false);
+// Listen for deactivate events
+document.addEventListener('gumshoeDeactivate', function (event) {
+
+    var link = event.detail.link.innerHTML;
+    currentSection.innerHTML = "";
+
+}, false);
 
 
 // Toggle contents list
