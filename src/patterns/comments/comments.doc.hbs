@@ -43,6 +43,10 @@ title: Comments
 </div>
 <div class="container">
 <span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> comments}}</code></pre>
+{{#markdown}}
+```html
+{{> comments}}
+```
+{{/markdown}}
 <!--endnoindex-->
 {{/comments-options.options}}
