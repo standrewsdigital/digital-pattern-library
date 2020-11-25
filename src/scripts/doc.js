@@ -1,12 +1,46 @@
-function htmlEncode(value) {
-    //create a in-memory div, set it's inner text(which jQuery automatically encodes)
-    //then grab the encoded contents back out.  The div never exists on the page.
-    return $('<div/>').text(value).html();
+// Copy button for code blocks
+function addCopyButtons(clipboard) {
+    document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+        var button = document.createElement('button');
+        button.className = 'btn btn-xsmall-tag btn-icon__copy';
+        button.type = 'button';
+        button.innerText = 'Copy code';
+
+        button.addEventListener('click', function () {
+            clipboard.writeText(codeBlock.innerText).then(function () {
+                /* Chrome doesn't seem to blur automatically,
+                   leaving the button in a focused state. */
+                button.blur();
+
+                button.innerText = 'Copied';
+
+                setTimeout(function () {
+                    button.innerText = 'Copy code';
+                }, 2000);
+            }, function (error) {
+                button.innerText = 'Error';
+            });
+        });
+
+        var pre = codeBlock.parentNode;
+        pre.parentNode.insertBefore(button, pre.nextSibling);
+
+    });
+}
+if (navigator && navigator.clipboard) {
+    addCopyButtons(navigator.clipboard);
+} else {
+    var script = document.createElement('script');
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+    script.integrity = 'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+    script.crossOrigin = 'anonymous';
+    script.onload = function() {
+        addCopyButtons(clipboard);
+    };
+
+    document.body.appendChild(script);
 }
 
-function htmlDecode(value) {
-    return $('<div/>').html(value).text();
-}
 
 (function($) {
 
@@ -24,10 +58,7 @@ function htmlDecode(value) {
         }
     });
 
-    $(".pattern-source").each(function() {
-        var t = $(this)
-        t.html(htmlEncode(t.html()));
-    });
+    
 
     $(".anchor-jump").change(function() {
         var dest = $(this).val();
@@ -479,24 +510,6 @@ function htmlDecode(value) {
     /* END Pattern: form-banner      */
     /*********************************/
 
-
-
-
-    /*********************************/
-    /* BEGIN Pattern: Photospheres   */
-    /*********************************/
-/*
-    window.addEventListener('load', onVrViewLoad)
-    function onVrViewLoad() {
-      var vrView = new VRView.Player('#photosphere', {
-      image: 'https://www.st-andrews.ac.uk/assets/university/study-at-st-andrews/images/accommodation/accommodation-photospheres/DRAFP-Pond.jpg'
-      });
-    }
-*/
-
-    /*********************************/
-    /* END Pattern: Photospheres     */
-    /*********************************/
 
 
 })(jQuery);

@@ -5,11 +5,15 @@
 
 /* Background colour for code snippets */
 pre, pre code.pattern-source {
-    background-color: rgb(29, 31, 33);
+    background-color: $sta-grey-light;
 }
 pre {
+    border-color:$sta-grey;
+    font-size: 1rem;
+    line-height: 1.5;
     max-height: 15em;
     overflow: auto;
+    padding: 0;
 }
 
 code {
@@ -17,19 +21,12 @@ code {
 }
 
 
-/* Tomorrow Night Theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Changed to meet WCAG 2.1 AA standards */
-
-/* Tomorrow Comment */
 .hljs-comment,
 .hljs-quote {
-  color: #969896;
+  color: $sta-grey;
 }
 
-/* Tomorrow Red */
+
 .hljs-variable,
 .hljs-template-variable,
 .hljs-tag,
@@ -38,10 +35,10 @@ code {
 .hljs-selector-class,
 .hljs-regexp,
 .hljs-deletion {
-  color: #cd6a6a;
+  color: $sta-blue-light;
 }
 
-/* Tomorrow Orange */
+
 .hljs-number,
 .hljs-built_in,
 .hljs-builtin-name,
@@ -50,39 +47,39 @@ code {
 .hljs-params,
 .hljs-meta,
 .hljs-link {
-  color: #de935f;
+  color: $sta-green;
 }
 
-/* Tomorrow Yellow */
+
 .hljs-attribute {
-  color: #f0c674;
+  color: $sta-orange;
 }
 
-/* Tomorrow Green */
+
 .hljs-string,
 .hljs-symbol,
 .hljs-bullet,
 .hljs-addition {
-  color: #b5bd68;
+  color: $sta-burgundy;
 }
 
-/* Tomorrow Blue */
+
 .hljs-title,
 .hljs-section {
-  color: #81a2be;
+  color: $sta-blue;
 }
 
-/* Tomorrow Purple */
+
 .hljs-keyword,
 .hljs-selector-tag {
-  color: #b294bb;
+  color: $sta-purple;
 }
 
 .hljs {
   display: block;
   overflow-x: auto;
-  background: #1d1f21;
-  color: #c5c8c6;
+  background: $sta-grey-light;
+  color: $sta-grey-dark;
   padding: 0.5em;
 }
 

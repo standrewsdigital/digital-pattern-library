@@ -233,6 +233,14 @@ button {
 
 }
 
+// New method for icon buttons based on icon class
+.btn-icon__copy:before {
+  @extend .far;
+  //@extend .fa-copy;
+  content: '\f0c5';
+  margin-right: 0.5em;
+}
+
 /*********************************/
 /* END Pattern: buttons          */
 /*********************************/
