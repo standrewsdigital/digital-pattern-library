@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import 'colors';
 
+
 .swatch {
 
     @each $name, $color in $palette-sta {

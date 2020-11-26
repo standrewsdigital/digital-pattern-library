@@ -233,10 +233,9 @@ button {
 
 }
 
-// New method for icon buttons based on icon class
+// Copy button for code blocks
 .btn-icon__copy:before {
   @extend .far;
-  //@extend .fa-copy;
   content: '\f0c5';
   margin-right: 0.5em;
 }

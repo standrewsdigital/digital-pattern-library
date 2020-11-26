@@ -173,64 +173,11 @@ html {
     }
 
 
-
-
-
-/*
-
-#nav-top {
-    display: none;
-    transition: background .2s linear, border-radius 1s ease-in 1s;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
+// Set offset margin to first element when nav kicks in
+.sticky-nav.affix + * {
+    margin-top: var(--sticky-nav-height);
 }
 
-#internal-nav {
-	height: 45px;
-}
-
-#nav-top .top-link {
-    display: none;
-}
-
-#nav-top.affix .top-link {
-    display: block;
-}
-
-#nav-top li.active {
-    background-color: $sta-blue-hover;
-}
-
-#nav-top .navbar.nav {
-    min-height: 45px;
-}
-
-@media (min-width: 768px) {
-    #nav-top {
-        display: block;
-    }
-}
-
-#internal-nav-dep {
-    display: none;
-}
-
-/* A cool hack to get the offset right when linking to internal id's
- * whilst also having a nav bar absolutely positioned on the top.
- * Hat tip -  UCL.
-
-
-.copy__anchor:before {
-    content: '';
-    display: block;
-    height: 80px;
-    margin-top: -80px;
-    position: relative;
-    width: 0;
-}
-
-*/
 
 /*********************************/
 /* END Pattern: sticky-nav       */

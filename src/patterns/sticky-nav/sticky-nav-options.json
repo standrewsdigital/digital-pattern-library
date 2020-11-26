@@ -1,24 +1,34 @@
 {
     "options": [
         {
-            "option-heading": "Sticky nav",
+            "option-heading": "Sticky horizontal nav",
             "option-anchor": "default",
-            "option-description": "",
+            "option-description": "<p>This example shows a number of linked content blocks with various margins and padding. Current section highlighting on mobile is enabled.</p>",
+            "toggle-active-section": true,
             "nav-link": [
                 { "name":"Courses",
-                  "link":"courses"
+                  "link":"courses",
+                  "classes":" class=\"content\""
                 },
                 { "name":"Testimonial",
-                  "link":"testimonial"
+                  "link":"testimonial",
+                  "classes":" class=\"padding-top padding-bottom sta-grey-light\"",
+                  "intro":"Vertical padding and background colour. "
                 },
                 { "name":"Visiting",
-                  "link":"visiting"
+                  "link":"visiting",
+                  "classes":" class=\"padding-top padding-bottom\"",
+                  "intro":"Vertical padding. "
                 },
                 { "name":"News",
-                  "link":"news"
+                  "link":"news",
+                  "classes":" class=\"margin-top--half margin-bottom--half\"",
+                  "intro":"Vertical margin. "
                 },
                 { "name":"Contact",
-                  "link":"contact"
+                  "link":"contact",
+                  "heading-classes":" class=\"margin-top--half\"",
+                  "intro":"Heading has top margin. "
                 }
             ]
 

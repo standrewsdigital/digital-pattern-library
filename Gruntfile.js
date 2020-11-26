@@ -225,7 +225,7 @@ module.exports = function(grunt) {
                     'src/scripts/jquery-ui.js',
                     'src/scripts/vendor/lazysizes.min.js',
                     'src/scripts/vendor/picturefill.min.js',
-                    'src/scripts/vendor/gumshoe.min.js',
+                    'src/scripts/vendor/gumshoe.polyfills.min.js',
 
 
                     // Bootstrap JavaScript
@@ -282,7 +282,7 @@ module.exports = function(grunt) {
                     'src/scripts/jquery-ui.js',
                     'src/scripts/vendor/lazysizes.min.js',
                     'src/scripts/vendor/picturefill.min.js',
-                    'src/scripts/vendor/gumshoe.min.js',
+                    'src/scripts/vendor/gumshoe.polyfills.min.js',
 
                     // Bootstrap JavaScript
                     // Note these scripts should align with the CSS

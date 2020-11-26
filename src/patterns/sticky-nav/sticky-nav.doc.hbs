@@ -1,12 +1,12 @@
 ---
-title: Sticky nav
+title: Sticky horizontal nav
 ---
 
 <div class="row">
 	<div class="col-md-8">
-<p class="lead">The sticky nav pattern can be used to help keep users orientated on a long web page that requires a lot of scrolling. It appears within the flow of content, below the normal navigation bar and affixes to the top of the browser window as you scroll down past it. The sticky nav also highlights the current section as you scroll down the page.</p>
+<p class="lead">The sticky horizontal nav pattern can be used to help users stay orientated on a long web page that requires a lot of scrolling.</p><p>It appears within the flow of content, below the normal navigation bar and affixes to the top of the browser window as you scroll down past it. The sticky horizontal nav also highlights the current section as you scroll down the page. On smaller width browser windows the navigation changes to a dropdown list.</p>
 
-<h2>Rules for the sticky nav</h2>
+<h2>Rules for sticky horizontal nav</h2>
 
 <ul>
     <li>Must only be used on long pages where there is a need to provide a quick means of navigating between sections.</li>
@@ -14,14 +14,16 @@ title: Sticky nav
     <li>Must not contain any dropdown menus.</li>
     <li>Must only contain links to in-page content.</li>
     <li>Must not display on more than one row.</li>
-    <li>Only one sticky nav should be used on a page.</li>
-    <li>
+    <li>Only one sticky horizontal nav can be used on a page.</li>
+    <li>Sticky horizontal nav links should link to unique, clearly labelled sections.</li>
+    <li>The linked sections should appear vertically and match the order they appear in the sticky horizontal nav.</li>
+    <li>Including <code>&lt;div id="sticky-nav__active-section"&gt;&lt;/div&gt;</code> within the <code>sticky-nav__toggle</code> will highlight the current section when the navigation switches to a dropdown list on smaller width browser windows.</li>
 </ul>
-<h2>(rewrite)Quirks</h2>
+<h2>Other things to consider</h2>
 <ul>
-    <li>If at bottom of the page then automatically jumps to last item.</li>
-    <li>Watchout for tabbing up.</li>
-    <li>Have suffiecient space for offset.</li>
+    <li>If the bottom of the page is reached then selection automatically jumps to the last navigation item.</li>
+    <li>Linking to a section that has top margins will anchor to the top of that section's first child element, with the margin being ignored.</li>
+    <li>Linking to a section that has top padding will anchor to the top of that section, above the padded area. This can be used to include more visual 'breathing space', offers improved browser support and is the preferred method that should be used.</li>
 </ul>
 
 <h2>Options available</h2>
