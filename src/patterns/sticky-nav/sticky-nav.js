@@ -25,18 +25,13 @@ $('#nav-top').affix({
 var header = document.querySelector('#nav-top');
 var currentSection = document.querySelector('#sticky-nav__active-section');
 var root = document.documentElement;
-root.style.setProperty('--sticky-nav-height', header.offsetHeight + "px");
 
 var spy = new Gumshoe('.sticky-nav__menu--link', {
-    reflow: true,
-    offset: function () {
-        return header.offsetHeight;
-    }
+    reflow: true
 });
 
 // Listen for activate events
 document.addEventListener('gumshoeActivate', function (event) {
-
     var link = event.detail.link.innerHTML;
     currentSection.innerHTML = link;
 
@@ -71,34 +66,6 @@ $(document).on('click', '.sticky-nav__menu--link', function(){
     }
 });
 
-
-
-
-
-
-
-
-/*
-$('body').scrollspy({ target: '#nav-top', offset: 50 });
-
-    // Modified version of this smooth scrolling:
-    // https://css-tricks.com/snippets/jquery/smooth-scrolling/
-
-$('nav a[href*="#"]:not([href="#"])').click(function() {
-
-    if ( location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'' ) || location.hostname == this.hostname ) {
-
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-
-        if ( target.length ) {
-            $('html,body').animate({
-                scrollTop: target.offset().top - 45
-            }, 500);
-        }
-    }
-
-});
 /*********************************/
 /* END Pattern: sticky-nav       */
 /*********************************/

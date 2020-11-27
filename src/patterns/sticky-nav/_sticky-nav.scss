@@ -7,8 +7,9 @@
     --sticky-nav-height: 0;
 }
 
+// Set padding top for scroll anchors
 html {
-    scroll-padding-top: var(--sticky-nav-height);
+    scroll-padding-top: 55px;
 }
 
 .sticky-nav {
@@ -91,12 +92,8 @@ html {
 
 .sticky-nav__toggle {
 
-    @media (min-width: 1171px){
-        // Hide toggle button on larger displays
-        display:none;
-    }
-
         cursor: pointer;
+        display: flex;
         padding: 15px 3em 15px 15px; // Additional padding on right to accommodate chevron
         position: relative;
 
@@ -132,7 +129,13 @@ html {
         &.open:before {
             @extend .fa-chevron-up;
         }
+
+
+    @media (min-width: 1171px){
+        // Hide toggle button on larger displays
+        display:none;
     }
+}
 
     .sticky-nav__toggle-button {
         background: none;
@@ -166,18 +169,25 @@ html {
 
     #sticky-nav__active-section {
         color: $sta-grey;
-        font-size: 1rem;
+        margin-left: 0.5em;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        display: block;
     }
 
 
-// Set offset margin to first element when nav kicks in
-.sticky-nav.affix + * {
-    margin-top: var(--sticky-nav-height);
+
+// Improves support for Safari
+.section__anchor--sticky {
+    margin-top: -56px;
+    padding-top: 56px;
 }
 
+// Set offset padding to first element when nav kicks in
+.sticky-nav.affix + .section__anchor--sticky {
+    padding-top: 112px;
+}
 
 /*********************************/
 /* END Pattern: sticky-nav       */

@@ -8,27 +8,30 @@
             "nav-link": [
                 { "name":"Courses",
                   "link":"courses",
+                  "anchor":"courses",
                   "classes":" class=\"content\""
                 },
-                { "name":"Testimonial",
+                { "name":"Testimonial with a long title to check overlap on mobile menu that shortens it to fit on one line",
                   "link":"testimonial",
+                  "anchor":"testimonial",
                   "classes":" class=\"padding-top padding-bottom sta-grey-light\"",
                   "intro":"Vertical padding and background colour. "
                 },
                 { "name":"Visiting",
                   "link":"visiting",
+                  "anchor":"visiting",
                   "classes":" class=\"padding-top padding-bottom\"",
                   "intro":"Vertical padding. "
                 },
                 { "name":"News",
                   "link":"news",
+                  "anchor":"news",
                   "classes":" class=\"margin-top--half margin-bottom--half\"",
                   "intro":"Vertical margin. "
                 },
                 { "name":"Contact",
                   "link":"contact",
-                  "heading-classes":" class=\"margin-top--half\"",
-                  "intro":"Heading has top margin. "
+                  "anchor":"contact"
                 }
             ]
 

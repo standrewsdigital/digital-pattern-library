@@ -15,7 +15,7 @@
 			<div class="sticky-nav__toggle">
 				<button class="sticky-nav__toggle-button" aria-expanded="false">Contents</button>
 {{#if toggle-active-section}}
-				<div id="sticky-nav__active-section"></div>
+				<span id="sticky-nav__active-section"></span>
 {{/if}}
 			</div>
 			<ul class="sticky-nav__menu">
@@ -27,17 +27,19 @@
 	</nav>
 <!-- End pattern: sticky-nav //-->
 {{#each nav-link}}
-	<div id="{{link}}"{{{classes}}}>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<h3{{{heading-classes}}}>{{name}}</h3>
-					<p>{{intro}}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet sem ac dolor hendrerit sagittis a auctor dolor. Nulla velit metus, sollicitudin eu tristique nec, ultricies nec nisi. Quisque lobortis neque in diam gravida posuere. Nunc egestas posuere sem, vitae rhoncus felis scelerisque molestie. Mauris mi massa, iaculis gravida molestie in, facilisis non lorem. Quisque at nunc at nisl gravida sollicitudin. Vestibulum volutpat pretium purus et sodales. Integer sagittis sollicitudin molestie.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet sem ac dolor hendrerit sagittis a auctor dolor. Nulla velit metus, sollicitudin eu tristique nec, ultricies nec nisi. Quisque lobortis neque in diam <a href="https://www.google.com">gravida</a> posuere. Nunc egestas posuere sem, vitae rhoncus felis scelerisque molestie. Mauris mi massa, iaculis gravida molestie in, facilisis non lorem. Quisque at nunc at nisl gravida sollicitudin. Vestibulum volutpat pretium purus et sodales. Integer sagittis sollicitudin molestie.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet sem ac dolor hendrerit sagittis a auctor dolor. Nulla velit metus, sollicitudin eu tristique nec, ultricies nec nisi. Quisque lobortis neque in diam gravida posuere. Nunc egestas posuere sem, vitae rhoncus felis scelerisque molestie. Mauris mi massa, iaculis gravida molestie in, facilisis non lorem. Quisque at nunc at nisl gravida sollicitudin. Vestibulum volutpat pretium purus et sodales. Integer sagittis sollicitudin molestie.</p>
+	<section id="{{anchor}}" class="section__anchor--sticky">
+		<div{{{classes}}}>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h3{{{heading-classes}}}>{{name}}</h3>
+						<p>{{intro}}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet sem ac dolor hendrerit sagittis a auctor dolor. Nulla velit metus, sollicitudin eu tristique nec, ultricies nec nisi. Quisque lobortis neque in diam gravida posuere. Nunc egestas posuere sem, vitae rhoncus felis scelerisque molestie. Mauris mi massa, iaculis gravida molestie in, facilisis non lorem. Quisque at nunc at nisl gravida sollicitudin. Vestibulum volutpat pretium purus et sodales. Integer sagittis sollicitudin molestie.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet sem ac dolor hendrerit sagittis a auctor dolor. Nulla velit metus, sollicitudin eu tristique nec, ultricies nec nisi. Quisque lobortis neque in diam <a href="https://www.google.com">gravida</a> posuere. Nunc egestas posuere sem, vitae rhoncus felis scelerisque molestie. Mauris mi massa, iaculis gravida molestie in, facilisis non lorem. Quisque at nunc at nisl gravida sollicitudin. Vestibulum volutpat pretium purus et sodales. Integer sagittis sollicitudin molestie.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet sem ac dolor hendrerit sagittis a auctor dolor. Nulla velit metus, sollicitudin eu tristique nec, ultricies nec nisi. Quisque lobortis neque in diam gravida posuere. Nunc egestas posuere sem, vitae rhoncus felis scelerisque molestie. Mauris mi massa, iaculis gravida molestie in, facilisis non lorem. Quisque at nunc at nisl gravida sollicitudin. Vestibulum volutpat pretium purus et sodales. Integer sagittis sollicitudin molestie.</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 {{/each}}
 {{/if}}
