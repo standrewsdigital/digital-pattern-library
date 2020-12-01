@@ -27,12 +27,12 @@
 	</nav>
 <!-- End pattern: sticky-nav //-->
 {{#each nav-link}}
-	<section id="{{anchor}}" class="section__anchor--sticky">
+	<section id="{{anchor}}" class="section__anchor--sticky" aria-labelledby="{{anchor}}-heading">
 		<div{{{classes}}}>
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h3{{{heading-classes}}}>{{name}}</h3>
+						<h3{{{heading-classes}}} id="{{anchor}}-heading">{{name}}</h3>
 						<p>{{intro}}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet sem ac dolor hendrerit sagittis a auctor dolor. Nulla velit metus, sollicitudin eu tristique nec, ultricies nec nisi. Quisque lobortis neque in diam gravida posuere. Nunc egestas posuere sem, vitae rhoncus felis scelerisque molestie. Mauris mi massa, iaculis gravida molestie in, facilisis non lorem. Quisque at nunc at nisl gravida sollicitudin. Vestibulum volutpat pretium purus et sodales. Integer sagittis sollicitudin molestie.</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet sem ac dolor hendrerit sagittis a auctor dolor. Nulla velit metus, sollicitudin eu tristique nec, ultricies nec nisi. Quisque lobortis neque in diam <a href="https://www.google.com">gravida</a> posuere. Nunc egestas posuere sem, vitae rhoncus felis scelerisque molestie. Mauris mi massa, iaculis gravida molestie in, facilisis non lorem. Quisque at nunc at nisl gravida sollicitudin. Vestibulum volutpat pretium purus et sodales. Integer sagittis sollicitudin molestie.</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet sem ac dolor hendrerit sagittis a auctor dolor. Nulla velit metus, sollicitudin eu tristique nec, ultricies nec nisi. Quisque lobortis neque in diam gravida posuere. Nunc egestas posuere sem, vitae rhoncus felis scelerisque molestie. Mauris mi massa, iaculis gravida molestie in, facilisis non lorem. Quisque at nunc at nisl gravida sollicitudin. Vestibulum volutpat pretium purus et sodales. Integer sagittis sollicitudin molestie.</p>

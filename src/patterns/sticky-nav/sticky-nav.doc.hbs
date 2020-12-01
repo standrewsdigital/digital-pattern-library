@@ -17,13 +17,15 @@ title: Sticky horizontal nav
     <li>Only one sticky horizontal nav can be used on a page.</li>
     <li>Sticky horizontal nav links should link to unique, clearly labelled sections.</li>
     <li>The linked sections should appear vertically and match the order they appear in the sticky horizontal nav.</li>
-    <li>Including <code>&lt;div id="sticky-nav__active-section"&gt;&lt;/div&gt;</code> within the <code>sticky-nav__toggle</code> will highlight the current section when the navigation switches to a dropdown list on smaller width browser windows.</li>
+    <li>Linked sections should be wrapped in an additional block element with the <code>section__anchor--sticky</code> class. This adds top padding and the equivalent negative top margin, to offset the height of the sticky navigation bar and provide improved browser support.</li>
+    <li>Including <code>&lt;div id="sticky-nav__active-section"&gt;&lt;/div&gt;</code> within the <code>sticky-nav__toggle</code> element will highlight the current section when the navigation switches to a dropdown list on smaller width browser windows.</li>
 </ul>
 <h2>Other things to consider</h2>
 <ul>
     <li>If the bottom of the page is reached then selection automatically jumps to the last navigation item.</li>
-    <li>Linking to a section that has top margins will anchor to the top of that section's first child element, with the margin being ignored.</li>
-    <li>Linking to a section that has top padding will anchor to the top of that section, above the padded area. This can be used to include more visual 'breathing space', offers improved browser support and is the preferred method that should be used.</li>
+    <li>Linking to a section that has a top margin will anchor to the top of that section's first child element, with the margin being ignored.</li>
+    <li>Linking to a section that has a top padding will anchor to the top of that section, above the padded area. This can be used to include more visual 'breathing space', offers improved browser support and is the preferred method that should be used.</li>
+    <li>The fixed positioning of the sticky navigation bar may obscure a focussed element in some device's browsers, for example when navigating by keyboard and using the 'shift + tab' keys to change focus to an element higher on the page. This accessibility limitation should be carefully considered when weighing up any overall benefits of implementing this navigation pattern.</li> 
 </ul>
 
 <h2>Options available</h2>

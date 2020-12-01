@@ -3,7 +3,7 @@
         {
             "option-heading": "Sticky horizontal nav",
             "option-anchor": "default",
-            "option-description": "<p>This example shows a number of linked content blocks with various margins and padding. Current section highlighting on mobile is enabled.</p>",
+            "option-description": "<p>This example shows a number of linked content blocks with various margins and padding values. Current section highlighting on mobile is enabled.</p>",
             "toggle-active-section": true,
             "nav-link": [
                 { "name":"Courses",
@@ -11,9 +11,9 @@
                   "anchor":"courses",
                   "classes":" class=\"content\""
                 },
-                { "name":"Testimonial with a long title to check overlap on mobile menu that shortens it to fit on one line",
-                  "link":"testimonial",
-                  "anchor":"testimonial",
+                { "name":"Testimonials",
+                  "link":"testimonials",
+                  "anchor":"testimonials",
                   "classes":" class=\"padding-top padding-bottom sta-grey-light\"",
                   "intro":"Vertical padding and background colour. "
                 },

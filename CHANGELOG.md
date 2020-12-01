@@ -7,6 +7,35 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+
+---
+
+## v1.25.0
+
+Release date: Tuesday 1 December 2020
+
+### Added
+* Gumshoe script for fixed position navigation.
+* Copy code button for each code block.
+* ARIA label to search form fields.
+
+### Changed
+* Sticky horizontal pattern now visible on all displays, with new styling and documentation.
+* Styling for code blocks.
+* Code blocks now encoded to show raw HTML that is not altered by pattern's JavaScript.
+* Saerch autocomplete (Typeahead) now bold on the non query part.
+* Reduce font size of headings when in a sidebar.
+* Documentation and example sidebar heading levels.
+
+### Removed
+* Bootstrap scrollspy script.
+* Deprecated tile option.
+* Tile colour options.
+
+### Fixed
+* Documentation heading levels.
+* Search reset button now also resets autocomplete.
+
 ---
 
 ## v1.24.0

@@ -3,20 +3,12 @@
 /* BEGIN Pattern: sticky-nav     */
 /*********************************/
 
-:root {
-    --sticky-nav-height: 0;
-}
-
-// Set padding top for scroll anchors
-html {
-    scroll-padding-top: 55px;
-}
-
 .sticky-nav {
     border-bottom: 1px solid $sta-grey-highlight;
     top: 0;
     width: 100%;
     z-index: 9999;
+    line-height: 1.4;
 
     &.affix {
         background: white;
@@ -64,7 +56,7 @@ html {
     a {
         color: $sta-grey-dark;
         display: block;
-        padding: 15px 15px;
+        padding: 1em 15px;
 
         &:focus {
             outline: 0;
@@ -94,7 +86,7 @@ html {
 
         cursor: pointer;
         display: flex;
-        padding: 15px 3em 15px 15px; // Additional padding on right to accommodate chevron
+        padding: 1em 3em 1em 15px; // Additional padding on right to accommodate chevron
         position: relative;
 
         &:hover,
@@ -180,13 +172,13 @@ html {
 
 // Improves support for Safari
 .section__anchor--sticky {
-    margin-top: -56px;
-    padding-top: 56px;
+    margin-top: calc(-1 * 3.4em);
+    padding-top: 3.4em;
 }
 
 // Set offset padding to first element when nav kicks in
 .sticky-nav.affix + .section__anchor--sticky {
-    padding-top: 112px;
+    padding-top: 6.8em;
 }
 
 /*********************************/
