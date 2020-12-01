@@ -1,7 +1,7 @@
 {
     "options": [
         {
-            "option-heading": "List of days with associated times",
+            "option-heading": "List of paired values",
             "option-description": "<p>A common use of this pattern would be to display the days of the week with associated opening times.</p>",
             "option-anchor": "day-time-list",
 		    "list": [
@@ -37,7 +37,7 @@
         },
 
         {
-            "option-heading": "List of days, with associated times, showing current day",
+            "option-heading": "List of paired values, with highlighted pair",
             "option-description": "<p>For a repeating weekly list of days it may be beneficial to highlight the current day to aid quick identification of the corresponding time. This example demonstrates how it should display if viewed on a Thursday.</p>",
             "option-anchor": "day-time-list-current",
             "list": [
@@ -56,7 +56,8 @@
                 {
                     "list-name" : "Thursday",
                     "list-value" : "9.00am to 5.00pm",  
-                    "item-selected": true
+                    "name-selected": true,  
+                    "value-selected": true
                 },
                 {
                     "list-name" : "Friday",
@@ -69,6 +70,45 @@
                 {
                     "list-name" : "Sunday",
                     "list-value" : "Closed"        
+                }
+            ]
+        },
+
+        {
+            "option-heading": "List of paired values, with horizontal dividing lines",
+            "option-description": "<p>For a longer list it may be beneficial to introduce dividing lines to add greater visual separation between pairs. The lines will span the width of the wrapping element.</p>",
+            "option-anchor": "day-time-list-current",
+            "list-classes": " paired-values-list--divided",
+            "list": [
+                {
+                    "list-name" : "Monday",
+                    "list-value" : "9.00am to 12.30pm, 1.00pm to 4.30pm, and 5.00pm to 8.30pm"        
+                },
+                {
+                    "list-name" : "Tuesday",
+                    "list-value" : "9.00am to 12.30pm, 1.00pm to 4.30pm, and 5.00pm to 8.30pm"        
+                },
+                {
+                    "list-name" : "Wednesday",
+                    "list-value" : "9.00am to 12.30pm, 1.00pm to 4.30pm, and 5.00pm to 8.30pm"        
+                },
+                {
+                    "list-name" : "Thursday",
+                    "list-value" : "9.00am to 12.30pm, 1.00pm to 4.30pm, and 5.00pm to 8.30pm",  
+                    "name-selected": true,  
+                    "value-selected": true
+                },
+                {
+                    "list-name" : "Friday",
+                    "list-value" : "9.00am to 12.30pm, 1.00pm to 4.30pm, and 5.00pm to 8.30pm"        
+                },
+                {
+                    "list-name" : "Saturday",
+                    "list-value" : "9.00am to 12.30pm and 1.00pm to 4.30pm"        
+                },
+                {
+                    "list-name" : "Sunday",
+                    "list-value" : "9.00am to 12.30pm and 1.00pm to 4.30pm"        
                 }
             ]
         }

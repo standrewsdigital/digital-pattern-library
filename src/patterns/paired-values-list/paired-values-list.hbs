@@ -1,8 +1,8 @@
 <!-- Begin pattern: paired-values-list //-->
-<dl class="paired-values-list">
+<dl class="paired-values-list{{list-classes}}">
     {{#each list}}
-    <dt class="paired-values-list__name{{#if item-selected}} selected{{/if}}">{{list-name}}</dt>
-    <dd class="paired-values-list__value{{#if item-selected}} selected{{/if}}">{{list-value}}</dd>
+    <dt class="paired-values-list__name{{#if name-selected}} font-weight--bold{{/if}}">{{list-name}}</dt>
+    <dd class="paired-values-list__value{{#if value-selected}} font-weight--bold{{/if}}">{{list-value}}</dd>
     {{/each}}
 </dl>
 <!-- End pattern: paired-values-list //-->
