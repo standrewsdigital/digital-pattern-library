@@ -18,6 +18,7 @@ Release date: Tuesday 1 December 2020
 * Gumshoe script for fixed position navigation.
 * Copy code button for each code block.
 * ARIA label to search form fields.
+* More options for paired value list.
 
 ### Changed
 * Sticky horizontal pattern now visible on all displays, with new styling and documentation.

@@ -76,9 +76,11 @@
 
         {
             "option-heading": "List of paired values, with horizontal dividing lines",
-            "option-description": "<p>For a longer list it may be beneficial to introduce dividing lines to add greater visual separation between pairs. The lines will span the width of the wrapping element.</p>",
-            "option-anchor": "day-time-list-current",
+            "option-description": "<p>For a longer list it may be beneficial to introduce dividing lines to add greater visual separation between pairs. The lines will span the width of the wrapping element. This example is set to one-third the width of the main container.</p>",
+            "option-anchor": "day-time-list-extended",
             "list-classes": " paired-values-list--divided",
+            "before-pattern": "<div class=\"row\"><div class=\"col-md-4\">",
+            "after-pattern": "</div></div>",
             "list": [
                 {
                     "list-name" : "Monday",
@@ -109,6 +111,47 @@
                 {
                     "list-name" : "Sunday",
                     "list-value" : "9.00am to 12.30pm and 1.00pm to 4.30pm"        
+                }
+            ]
+        },
+
+        {
+            "option-heading": "Additional style options",
+            "option-description": "<p>This example shows a variety of the different types of value that can be used, the size of text has been reduced using the <code>font-scale-reset</code> class and the name of each pair has been set to bold to add visual emphasis. This example is set to half the width of the main container and placed on a light grey background.</p>",
+            "option-anchor": "paired-list-styles",
+            "list-classes": " paired-values-list--divided font-scale-reset",
+            "before-pattern": "</div><div class=\"sta-grey-light\"><div class=\"container\"><div class=\"row\"><div class=\"col-md-6\">",
+            "after-pattern": "</div></div></div></div><div class=\"container\">",
+            "list": [
+                {
+                    "list-name" : "Text block",
+                    "name-selected": true,  
+                    "list-value" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."        
+                },
+                {
+                    "list-name" : "Paragraphs of text",
+                    "name-selected": true,  
+                    "list-value" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"        
+                },
+                {
+                    "list-name" : "Linked text",
+                    "name-selected": true,  
+                    "list-value" : "<a href=\"#\">Lorem ipsum dolor sit amet</a>"        
+                },
+                {
+                    "list-name" : "Unordered list",
+                    "name-selected": true,  
+                    "list-value" : "<ul><li>Lorem ipsum dolor sit amet.</li><li>Consectetur adipiscing elit, sed do eiusmod tempor.</li><li>Incididunt ut labore et dolore magna aliqua.</li></ul>"        
+                },
+                {
+                    "list-name" : "List of linked text",
+                    "name-selected": true,  
+                    "list-value" : "<ul><li><a href=\"#\">Lorem ipsum dolor sit amet</a></li><li><a href=\"#\">Consectetur adipiscing elit, sed do eiusmod tempor</a></li><li><a href=\"#\">Incididunt ut labore et dolore magna aliqua</a></li></ul>"        
+                },
+                {
+                    "list-name" : "Ordered list",
+                    "name-selected": true,  
+                    "list-value" : "<ol><li>Lorem ipsum dolor sit amet.</li><li>Consectetur adipiscing elit, sed do eiusmod tempor.</li><li>Incididunt ut labore et dolore magna aliqua.</li><li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li><li> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</li></ol>"        
                 }
             ]
         }
