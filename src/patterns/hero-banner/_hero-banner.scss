@@ -5,9 +5,7 @@
 
 .hero-section {
 
- .hero-section__content {
-    padding: 0 0 30px 0;
-  }
+
 
   .hero-section__heading {
     background: rgba($sta-blue,1);
@@ -33,20 +31,41 @@
     }
   }
 
+  .hero-section__content-group {
+    padding: 15px 0 $page-gutter;
+  }
+
   .hero-section__intro {
-    margin: 15px 0 0 0;
+    margin: 0;
     padding: 0;
     @include ms-respond(font-size,1);
   }
-.btn {
-    margin: 15px 10px 0 0;
-}
 
-@media (max-width:540px){
-  .btn {
-    width: 100%;
+  // Add space to content following the intro 
+  .hero-section__intro + .btn-action,
+  .btn-action + .btn-action,
+  .hero-section__intro + .dpl-form, {
+    margin-top: 0.8em;
   }
-}
+
+  // Reset margins on btn
+  .btn {
+    margin: 0;
+  }
+
+  .btn-action {
+    margin-right: 0.5em;
+
+    @media (max-width: 420px){
+      display: block;
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+
+  .btn-action + .btn-action {
+    margin-right: 0;
+  }
 
 // Position content over image
 @media (min-width:768px){
@@ -71,13 +90,11 @@
     z-index: 90; // Moved down from 100 so search autocomplete will sit above it.
   }  
 
-    .hero-section__content {
+  .hero-section__content {
       position: absolute;
       bottom: $half-gutter;
       left: 15px;
-      margin: 0;
       max-width: 580px;
-      padding: 0;
     }
 
   .hero-section__heading {
@@ -114,10 +131,7 @@
     padding: 0;
   }
 
-  // Increase spacing of buttons
-  .btn {
-    margin-top:25px;
-  }  
+
 }
 
 
