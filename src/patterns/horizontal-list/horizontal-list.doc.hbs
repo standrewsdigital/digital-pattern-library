@@ -1,0 +1,47 @@
+---
+title: Horizontal list
+---
+
+<div class="row">
+	<div class="col-md-8">
+<p class="lead">The horizontal list can be used to display groups of related links in a structured format that adapts to smaller width displays.</p>
+<h2>Rules for horizontal list</h2>
+<ul>
+	<li>This pattern should not be used a replacement for the <a href='../navigation-bar/index.html'>navigation bar</a>.</li>
+	<li>It should be used to provide secondary links supporting other content, for example the <a href='../search-bar/index.html'>search bar</a>.</li>
+	<li>A suitable heading should be used to introduce the list of links. This is visible to screen readers at all sizes and also functions as a collapsed menu toggle on smaller displays.</li>
+	<li>If the number of links wrap on to more than one line consider condensing this list into groups using the <a href="#list-group-links">list with sub-groups</a> option.</li>
+</ul>
+<h2>Options available</h2>
+<ul>
+{{#horizontal-list-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/horizontal-list-options.options}}
+</ul>
+</div>
+</div>
+{{#horizontal-list-options.options}}
+<hr>
+<div class="row">
+	<div class="col-md-8">
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+</div>
+<!--noindex-->
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+<div class="container">
+	{{> horizontal-list}}
+</div>
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+{{#markdown}}
+```html
+{{> horizontal-list}}
+```
+{{/markdown}}
+<!--endnoindex-->
+{{/horizontal-list-options.options}}

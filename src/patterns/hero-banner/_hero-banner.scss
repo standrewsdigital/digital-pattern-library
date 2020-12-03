@@ -41,11 +41,16 @@
     @include ms-respond(font-size,1);
   }
 
+  // Add bottom margin when used in legend
+  legend > .hero-section__intro {
+      margin-bottom: 0.8rem;
+  }
+
   // Add space to content following the intro 
   .hero-section__intro + .btn-action,
   .btn-action + .btn-action,
-  .hero-section__intro + .dpl-form, {
-    margin-top: 0.8em;
+  .hero-section__intro + .dpl-form{
+    margin-top: 0.8rem;
   }
 
   // Reset margins on btn
@@ -65,6 +70,11 @@
 
   .btn-action + .btn-action {
     margin-right: 0;
+  }
+
+  // Reduce spacing on form groups
+  .form-group {
+    margin-bottom: 0.5rem;
   }
 
 // Position content over image

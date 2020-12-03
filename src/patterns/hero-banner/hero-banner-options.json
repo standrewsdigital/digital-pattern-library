@@ -87,10 +87,9 @@
         {
             "option-anchor": "hero-banner7",
             "option-heading": "Hero banner with complex search form",
-            "option-description": "<p>This example includes a heading, introduction and complex search form.</p>",
-            "heading":  "Search the library",
-            "paragraph":  "Search the library's print and online resources.",
-            "bg-image": "docs/images/cta/hero9/",
+            "option-description": "<p>This example includes a heading, introduction and complex search form with checkbox options and additional links underneath.</p>",
+            "heading":  "University of St Andrews Library",
+            "bg-image": "docs/images/cta/hero11/",
             "caption": "Image details",
             "complexform": true,
             "content": true

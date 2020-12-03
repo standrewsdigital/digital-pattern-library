@@ -1,0 +1,42 @@
+<!-- Begin pattern: horizontal-list //-->
+{{#if horizontal-list}}
+<div class="horizontal-list">
+	<h4 class="horizontal-list__toggle">
+		<button class="horizontal-list__toggle-button" aria-expanded="false">Popular searches</button>
+	</h4>
+	<ul>
+		<li><a href="#">Upcoming events</a></li>
+		<li><a href="#">Today</a></li>
+		<li><a href="#">This week</a></li>
+		<li><a href="#">This month</a></li>
+		<li><a href="#">All events</a></li>
+		<li class="dropdown-wrapper">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-controls="more-options" role="button">More options<span class="caret"></span></a>
+			<ul class="dropdown-menu" id="more-options">
+				<li><a href="#">Events open to the public</a></li>
+				<li><a href="#">Events for staff and students</a></li>
+				<li><a href="#">Lectures</a></li>
+				<li><a href="#">Seminars</a></li>
+				<li><a href="#">Workshops</a></li>
+				<li><a href="#">Chaplaincy events</a></li>
+				<li><a href="#">Music events</a></li>
+				<li><a href="#">Museum events</a></li>
+				<li><a href="#">Theatre events</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+{{/if}}
+{{#if horizontal-list-links}}
+<div class="horizontal-list no-margin-top no-margin-bottom">
+	<h4 class="horizontal-list__toggle" aria-expanded="false">
+		<button class="horizontal-list__toggle-button">Additional options</button>
+	</h4>
+	<ul>
+		<li><a href="#">Option one</a></li>
+		<li><a href="#">Another option</a></li>
+		<li><a href="#">Option three</a></li>
+	</ul>
+</div>
+{{/if}}
+<!-- End pattern: horizontal-list //-->  
