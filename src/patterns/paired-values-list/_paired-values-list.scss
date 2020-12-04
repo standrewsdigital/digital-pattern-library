@@ -21,7 +21,7 @@
         }
         .paired-values-list__name:not(:first-child),
         .paired-values-list__value:not(:nth-child(2)) {
-            border-top: 1px solid rgba(148, 148, 148, 0.31); // Equivalent to Mid grey 2 (#dedede) on white
+            border-top: 1px solid $sta-grey-mid2-alpha;
         }
     }
 

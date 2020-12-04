@@ -7,8 +7,8 @@
             "horizontal-list-links": true
          },
         {
-            "option-heading": "List with sub-groups",
-            "option-description": "<p>Additional links can be grouped into categories to limit the number that are initially shown. This is useful in situations where the links would otherwise wrap on to more than one line or some links warrant more importance than others.</p>",
+            "option-heading": "Priority+ list",
+            "option-description": "<p>Additional links can be grouped into categories to limit the number that are initially shown. This is useful in situations where the links would otherwise wrap on to more than one line or some links warrant more importance than others.</p><ul><li>Any dropdown lists must be placed last.</li><li>List items should be placed in order of importance.</li></ul>",
             "option-anchor": "list-group-links",
             "horizontal-list": true
          }

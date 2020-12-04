@@ -115,11 +115,11 @@
                     "accordion-heading":"Main library",
                     "accordion-keyfacts": [
                         {
-                            "keyfact-icon": "fa fa-clock",
+                            "keyfact-icon": "fa fa-clock-o",
                             "keyfact-text": "8.00am to 2.00am"            
                         },
                         {
-                            "keyfact-icon": "fa fa-user",
+                            "keyfact-icon": "fa fa-user-o",
                             "keyfact-text": "1,200 capacity (open to all)"            
                         }
                     ],
@@ -129,11 +129,11 @@
                     "accordion-heading":"St Mary's College Library",
                     "accordion-keyfacts": [
                         {
-                            "keyfact-icon": "fa fa-clock",
+                            "keyfact-icon": "fa fa-clock-o",
                             "keyfact-text": "9.00am to 7.45pm"            
                         },
                         {
-                            "keyfact-icon": "fa fa-user",
+                            "keyfact-icon": "fa fa-user-o",
                             "keyfact-text": "400 capacity (open to all students)"            
                         }
                     ],
@@ -143,11 +143,11 @@
                     "accordion-heading":"History",
                     "accordion-keyfacts": [
                         {
-                            "keyfact-icon": "fa fa-clock",
+                            "keyfact-icon": "fa fa-clock-o",
                             "keyfact-text": "9.00am to 9.45pm"            
                         },
                         {
-                            "keyfact-icon": "fa fa-user",
+                            "keyfact-icon": "fa fa-user-o",
                             "keyfact-text": "400 capacity (open to all students)"            
                         }
                     ],

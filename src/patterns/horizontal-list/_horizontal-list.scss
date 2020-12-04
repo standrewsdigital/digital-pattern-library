@@ -3,15 +3,11 @@
 /*********************************/
 
 .horizontal-list {
-	display: inline-block;
-	float: left;
+	@include clearfix-alt;
 	margin: 0.5em 0;
 
-	&.horizontal-list--right {
-		float: right;
-	}
-
 	@media (max-width: 767px){
+		background: white;
 		display: block;
 		float: none;
 	}
@@ -30,8 +26,7 @@
 
 		@media (max-width: 767px){
 		// Dropdown toggle on smaller displays
-	    	border-top: 1px solid $sta-grey;
-	    	border-bottom: 1px solid $sta-grey;
+	    	border: 1px solid $sta-grey;
 		    cursor: pointer;
 		    @include ms-respond(font-size,1);
 		    margin-bottom: 0;
@@ -105,8 +100,9 @@
 
 			// Vertical on smaller displays
 			@media (max-width: 767px){
+				border-bottom: 1px solid $sta-grey;
+				
 				a {
-					border-bottom: 1px solid $sta-grey;
 					color: inherit;
 					display: block;
 					font-weight: normal;
@@ -116,32 +112,29 @@
 					&:hover,
 					&:focus {
 						text-decoration: underline;
-						background-color: #f5f5f5;
+						background-color: #f0f0f0;
 					}
+
+				    &:active {
+				    	background-color: $sta-orange-highlight;
+				    }
 				}
 			}
 
 			// Horizontal on larger displays
 			@media (min-width: 768px){
 				float:left;
-				margin-left: 10px;
 
-				&:before {
-					content: '|';
-					float: left;
-					margin-right: 10px;
-					opacity: 0.4;
-				}
+				&:not(:last-child){
+					margin-right: 0.5em;
 
-				&:first-child {
-					margin-left: 0;
-
-					&:before {
-						content: '';
-						margin-right: 0;
+					&:after {
+						content: '|';
+						float: left;
+						margin-left: 0.5em;
+						color: $sta-grey-mid2-alpha;
 					}
 				}
-
 
 				> a {
 					color: inherit;
@@ -165,22 +158,41 @@
 					.dropdown-toggle {
 						text-decoration: none;
 					
-						.caret {
-							transform: rotate(180deg); // DPL - move to mixin
+						&:before {
+							@extend .fa-chevron-up;
 						}
 					}
+				}
+
+				// Use focus within to include chevron
+				&:focus-within {
+		        	outline: 3px solid $sta-orange-highlight; 
 				}
 
 			}
 
 			.dropdown-toggle {
-				.caret {
-					margin-left: 8px;
-					
-					// Discount caret width for centred text on small displays
+				padding-right: 1.5em;
+				position: relative;
+
+				&:before {
+					@extend .fa;
+		    		@extend .fa-chevron-down;
+		    		color: $text-color;
+			        display: block;
+			        font-size: 1rem;
+			        position: absolute;
+			        	top: 50%;
+			        	right: 0.5rem;
+			        transform: translateY(-50%);
+
 					@media (max-width: 767px){
-						margin-right: -16px;
+						right: 1rem;
 					}
+				}
+
+				&.open:before {
+					@extend .fa-chevron-up;
 				}
 			}
 
@@ -193,30 +205,31 @@
 					box-shadow: none;
 					width: 100%;
 					border: 0;
-				}
-				@media (min-width: 768px){
-
-				}
-					font-size: 1rem;
-					min-width: 260px;
 
 					li {
+						border-top: 1px solid $sta-grey;
+					}
+				}
+				
+				font-size: 1rem;
+				min-width: 260px;
+
+				li {
+					float: none;
+					margin-left: 0;
+
+					a {
 						float: none;
-						margin-left: 0;
+						font-weight: normal;
+						text-decoration: none;
+						white-space: normal;
 
-						a {
-							float: none;
-							font-weight: normal;
-							text-decoration: none;
-							white-space: normal;
-							border: none;
-
-							&:hover,
-							&:focus {
-								text-decoration: underline;
-							}
+						&:hover,
+						&:focus {
+							text-decoration: underline;
 						}
 					}
+				}
 			}
 
 			// Right align dropdown on rightmost menu item
