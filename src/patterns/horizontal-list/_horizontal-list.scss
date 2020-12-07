@@ -103,7 +103,7 @@
 				border-bottom: 1px solid $sta-grey;
 				
 				a {
-					color: inherit;
+					color: $text-color;
 					display: block;
 					font-weight: normal;
 					padding: 10px 15px;
@@ -178,7 +178,7 @@
 				&:before {
 					@extend .fa;
 		    		@extend .fa-chevron-down;
-		    		color: $text-color;
+		    		color: inherit;
 			        display: block;
 			        font-size: 1rem;
 			        position: absolute;

@@ -41,9 +41,9 @@
     @include ms-respond(font-size,1);
   }
 
-  // Add bottom margin when used in legend
+  // Add bottom padding when used in legend
   legend > .hero-section__intro {
-      margin-bottom: 0.8rem;
+      padding-bottom: 0.8rem;
   }
 
   // Add space to content following the intro 

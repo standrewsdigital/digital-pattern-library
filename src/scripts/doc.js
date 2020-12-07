@@ -1,6 +1,6 @@
 // Copy button for code blocks
 function addCopyButtons(clipboard) {
-    document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+    Array.prototype.slice.call(document.querySelectorAll('pre > code')).forEach(function (codeBlock) {
         var button = document.createElement('button');
         button.className = 'btn btn-xsmall-tag btn-icon__copy';
         button.type = 'button';
