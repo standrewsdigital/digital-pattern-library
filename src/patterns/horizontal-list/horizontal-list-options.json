@@ -1,0 +1,16 @@
+{
+    "options" : [
+        {
+            "option-heading": "Simple list",
+            "option-description": "<p>This example is a simple list of links with the top and bottom margins removed using the <code>no-margin-top</code> and <code>no-margin-bottom</code> classes.</p>",
+            "option-anchor": "list-links",
+            "horizontal-list-links": true
+         },
+        {
+            "option-heading": "Priority+ list",
+            "option-description": "<p>Additional links can be grouped into categories to limit the number that are initially shown. This is useful in situations where the links would otherwise wrap on to more than one line or some links warrant more importance than others.</p><ul><li>Any dropdown lists must be placed last.</li><li>List items should be placed in order of importance, with most important first.</li></ul>",
+            "option-anchor": "list-group-links",
+            "horizontal-list": true
+         }
+    ]
+}

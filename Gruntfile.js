@@ -225,6 +225,7 @@ module.exports = function(grunt) {
                     'src/scripts/jquery-ui.js',
                     'src/scripts/vendor/lazysizes.min.js',
                     'src/scripts/vendor/picturefill.min.js',
+                    'src/scripts/vendor/gumshoe.polyfills.min.js',
 
 
                     // Bootstrap JavaScript
@@ -236,7 +237,7 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/bootstrap/dropdown.js',
                     'src/scripts/vendor/bootstrap/tab.js',
                     'src/scripts/vendor/bootstrap/transition.js',
-                    'src/scripts/vendor/bootstrap/scrollspy.js',
+                    //'src/scripts/vendor/bootstrap/scrollspy.js',
                     'src/scripts/vendor/bootstrap/modal.js',
                     'src/scripts/vendor/bootstrap/tooltip.js',
                     'src/scripts/vendor/bootstrap/popover.js',
@@ -281,6 +282,7 @@ module.exports = function(grunt) {
                     'src/scripts/jquery-ui.js',
                     'src/scripts/vendor/lazysizes.min.js',
                     'src/scripts/vendor/picturefill.min.js',
+                    'src/scripts/vendor/gumshoe.polyfills.min.js',
 
                     // Bootstrap JavaScript
                     // Note these scripts should align with the CSS
@@ -291,7 +293,7 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/bootstrap/dropdown.js',
                     'src/scripts/vendor/bootstrap/tab.js',
                     'src/scripts/vendor/bootstrap/transition.js',
-                    'src/scripts/vendor/bootstrap/scrollspy.js',
+                    //'src/scripts/vendor/bootstrap/scrollspy.js',
                     'src/scripts/vendor/bootstrap/modal.js',
                     'src/scripts/vendor/bootstrap/tooltip.js',
                     'src/scripts/vendor/bootstrap/popover.js',

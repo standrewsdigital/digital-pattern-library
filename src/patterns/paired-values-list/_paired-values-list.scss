@@ -6,11 +6,23 @@
 .paired-values-list {
     display: grid;
     grid-template-columns: auto 1fr; // 2 column grid
-    grid-column-gap: 15px;
 
     // IE 11 specific fallback as dynamic grids are not supported
     @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) { 
         overflow: auto;
+    }
+
+    // Dividing lines between pairs with vertical padding
+    &--divided {
+        .paired-values-list__name,
+        .paired-values-list__value {
+            padding-top: 0.5em;   
+            padding-bottom: 0.5em;                
+        }
+        .paired-values-list__name:not(:first-child),
+        .paired-values-list__value:not(:nth-child(2)) {
+            border-top: 1px solid $sta-grey-mid2-alpha;
+        }
     }
 
 }
@@ -18,14 +30,22 @@
 .paired-values-list__name {
     font-weight: normal;
     max-width: 200px;
+    padding-right: 1em;
+
+    // Reduce the max width on smaller displays
+    @media (max-width: 430px) {
+        max-width: 140px;
+    }
 
     // IE 11 specific fallback as dynamic grids are not supported
     @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) { 
         clear: both;
         float: left;
-        margin-right: 15px;
+        width: 40%;
+        padding-right: 5%;
     }
 
+    // Deprecated - now just uses font-weight--bold override
     &.selected {
     	font-weight: bold;
     }
@@ -36,10 +56,30 @@
     // IE 11 specific fallback as dynamic grids are not supported
     @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) { 
         float: left;
+        width: 55%;
     }
 
     &.selected {
     	font-weight: bold;
+    }
+
+    // Remove bullets and left padding for unordered lists
+    ul {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    // Left align numbers for ordered lists
+    ol {
+        list-style-position: inside;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    // Remove bottom margin on last element
+    & > *:last-child {
+        margin-bottom: 0;
     }
 }
 

@@ -5,7 +5,7 @@
             "option-description": "<p></p>",
             "option-anchor": "16by9content-whole",
             "ratio": "16by9",
-            "iframe": "<iframe src='https://www.youtube.com/embed/JxHfSwpddCU' class='embed-responsive-item'></iframe>"
+            "iframe": "<iframe src='https://www.youtube-nocookie.com/embed/JxHfSwpddCU' class='embed-responsive-item'></iframe>"
         },
         {
             "option-heading": "4:3 (content whole)",
@@ -22,7 +22,7 @@
             "column2": "col-sm-4",
             "text": " <!-- Begin pattern: navbox //--> <div class='navbox big-target-click-zone'> <div class='navbox-image'> <img src='../../assets/docs/images/placeholders/360x240.jpg' alt='Description'> </div> <div class='navbox-title'> <p><a class='big-target-anchor' href='#'>Accommodation</a></p> </div> </div> <!-- End pattern: navbox //--><h3>Related content</h3><ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>",
             "ratio": "16by9",
-            "iframe": "<iframe src='https://www.youtube.com/embed/JxHfSwpddCU' class='embed-responsive-item'></iframe>"
+            "iframe": "<iframe src='https://www.youtube-nocookie.com/embed/JxHfSwpddCU' class='embed-responsive-item'></iframe>"
         },
         {
             "option-heading": "4:3 (content thirds)",
@@ -42,7 +42,7 @@
             "column2": "col-sm-6",
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices eu elit id tempor. Fusce at porta lorem, eget porta libero. Ut vitae odio id lacus faucibus ornare at vitae orci. Sed lacus quam.</p>",
             "ratio": "16by9",
-            "iframe": "<iframe src='https://www.youtube.com/embed/JxHfSwpddCU' class='embed-responsive-item'></iframe>"
+            "iframe": "<iframe src='https://www.youtube-nocookie.com/embed/JxHfSwpddCU' class='embed-responsive-item'></iframe>"
         },
         {
             "option-heading": "4:3 (content halves)",

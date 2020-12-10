@@ -4,7 +4,7 @@
        
         {
             "option-heading": "Tile grid with light grey background",
-            "option-description": "<p>This is the default background.</p>",
+            "option-description": "<p>This example contains the maximum number of tiles, placed on a light grey background.</p>",
             "option-anchor": "light-grey-background",
             "bg-color": "light-grey",
             "heading": "What's happening in St Andrews",
@@ -16,10 +16,8 @@
                     "title": "See all news"
                 }
             ],
-            "bg-image": "",
             "tiles": [
                 {
-                    "color": "",
                     "image": {
                         "url": "docs/images/placeholders/360x240-1.jpg",
                         "alt": "Description"
@@ -30,7 +28,6 @@
                     "type" : "News"
                 },
                 {
-                    "color": "red",
                     "image": {
                         "url": "docs/images/placeholders/360x240-2.jpg",
                         "alt": "Description"
@@ -41,7 +38,6 @@
                     "type" : "Photo of the week"
                 },
                 {
-                    "color": "red",
                     "image": {
                         "url": "docs/images/placeholders/360x240-3.jpg",
                         "alt": "Description"
@@ -52,7 +48,6 @@
                     "type" : "Photo of the week"
                 },
                 {
-                    "color": "",
                     "image": {
                         "url": "docs/images/placeholders/360x240-4.jpg",
                         "alt": "Description"
@@ -63,7 +58,6 @@
                     "type" : "News"
                 },
                 {
-                    "color": "red",
                     "image": {
                         "url": "docs/images/placeholders/360x240-5.jpg",
                         "alt": "Description"
@@ -74,7 +68,6 @@
                     "type" : "Photo of the week"
                 },
                 {
-                    "color": "green",
                     "image": {
                         "url": "docs/images/placeholders/360x240-6.jpg",
                         "alt": "Description"
@@ -92,61 +85,11 @@
 
         {
             "option-heading": "Tile grid with white background",
-            "option-description": "",
+            "option-description": "<p>This example features two call-to-action buttons, while the tiles do not feature the optional date value.</p>",
             "option-anchor": "white-background",
             "bg-color": "white",
-            "heading": "What's happening in St Andrews",
-            "heading-color": " sta-grey",
-            "single-call-to-action" : true,
-            "call-to-action-text": [
-                {
-                    "read-more-size": "col-xs-12 col-md-6 col-lg-4",
-                    "title": "See all news"
-                }
-            ],
-            "bg-image": "",
-            "tiles": [
-                {
-                    "color": "",
-                    "image": {
-                        "url": "docs/images/placeholders/360x240-1.jpg",
-                        "alt": "Description"
-                    },
-                    "title": "MUSA is going greener",
-                    "description": "The Museum of the University of St Andrews (MUSA) has attained the top standard for sustainability from the Green Tourism Business Scheme.",
-                    "date-display" : "23 August 2017",
-                    "type" : "News"
-                },
-                {
-                    "color": "red",
-                    "image": {
-                        "url": "docs/images/placeholders/360x240-2.jpg",
-                        "alt": "Description"
-                    },
-                    "title": "A Rae of artistic sunshine",
-                    "description": "The work of one of Scotland's most revered contemporary artists, Barbara Rae, is to go on display in St Andrews.",
-                    "date-display" : "16 August 2017",
-                    "type" : "Photo of the week"
-                },
-                {
-                    "color": "red",
-                    "image": {
-                        "url": "docs/images/placeholders/360x240-3.jpg",
-                        "alt": "Description"
-                    },
-                    "title": "World Cup fever at Sandy's Bar",
-                    "description": "Hundreds of football fans watched the World Cup final in the newly opened Sandy's Bar at the Students' Association on Sunday.",
-                    "date-display" : "12 July 2017",
-                    "type" : "Photo of the week"
-                }
-            ]
-        },
-         {
-            "option-heading": "Tile grid with background image - deprecated",
-            "option-description": "<div class='alert alert--warning'><h4 class='alert__heading'>This option is no longer supported</h4><p>This option is now deprecated and will be removed in a future release.</p></div><p>To add a background image, attach the image using an inline style, for example <code>&lt;div class=&quot;tile-grid&quot; style=&quot;background-image: url(path/to/image.jpg)&quot;&gt;</code>.</p><ul><li>The background image must be blurred, this can be done in Photoshop.</li><li>The background image must be large, this example is 2100 x 1400 pixels.</li></ul>",
-            "option-anchor": "image-background",
-            "bg-color": "",
             "heading": "Recent highlights",
+            "heading-color": " sta-grey",
             "call-to-action-text": [
                 {
                     "read-more-size": "col-xs-6 col-md-3 col-lg-3",
@@ -157,73 +100,33 @@
                     "title": "Events"
                 }
             ],
-            "bg-image": "docs/images/background/bg1.jpg",
             "tiles": [
                 {
-                    "color": "",
                     "image": {
                         "url": "docs/images/placeholders/360x240-1.jpg",
                         "alt": "Description"
                     },
                     "title": "MUSA is going greener",
                     "description": "The Museum of the University of St Andrews (MUSA) has attained the top standard for sustainability from the Green Tourism Business Scheme.",
-                    "date-display" : "23 August 2017",
                     "type" : "News"
                 },
                 {
-                    "color": "red",
                     "image": {
                         "url": "docs/images/placeholders/360x240-2.jpg",
                         "alt": "Description"
                     },
                     "title": "A Rae of artistic sunshine",
                     "description": "The work of one of Scotland's most revered contemporary artists, Barbara Rae, is to go on display in St Andrews.",
-                    "date-display" : "16 August 2017",
                     "type" : "Photo of the week"
                 },
                 {
-                    "color": "red",
                     "image": {
                         "url": "docs/images/placeholders/360x240-3.jpg",
                         "alt": "Description"
                     },
                     "title": "World Cup fever at Sandy's Bar",
                     "description": "Hundreds of football fans watched the World Cup final in the newly opened Sandy's Bar at the Students' Association on Sunday.",
-                    "date-display" : "12 July 2017",
                     "type" : "Photo of the week"
-                },
-                {
-                    "color": "",
-                    "image": {
-                        "url": "docs/images/placeholders/360x240-4.jpg",
-                        "alt": "Description"
-                    },
-                    "title": "All in hand",
-                    "description": "Scientists have, for the first time, decoded the meanings of chimpanzee gestures.",
-                    "date-display" : "5 July 2017",
-                    "type" : "News"
-                },
-                {
-                    "color": "red",
-                    "image": {
-                        "url": "docs/images/placeholders/360x240-5.jpg",
-                        "alt": "Description"
-                    },
-                    "title": "Dogrees all round!",
-                    "description": "Graduation is a time for all the family but this year one pet dog made its way into the post-ceremony celebrations in the Quad.",
-                    "date-display" : "28 June 2017",
-                    "type" : "Photo of the week"
-                },
-                {
-                    "color": "green",
-                    "image": {
-                        "url": "docs/images/placeholders/360x240-6.jpg",
-                        "alt": "Description"
-                    },
-                    "title": "Darling: \"We belong together\"",
-                    "description": "Alistair Darling to use public address to make the case for Scotland remaining in the UK",
-                    "date-display" : "21 June 2017",
-                    "type" : "Featured events"
                 }
             ]
         }

@@ -1,0 +1,250 @@
+/*********************************/
+/* BEGIN Pattern: horizontal-list */
+/*********************************/
+
+.horizontal-list {
+	@include clearfix-alt;
+	margin: 0.5em 0;
+
+	@media (max-width: 767px){
+		background: white;
+		display: block;
+		float: none;
+	}
+
+	.horizontal-list__toggle {
+
+		&:before {
+			@extend .fa;
+    		@extend .fa-chevron-down;
+    		display: none;
+		}
+
+		&.open:before {
+			@extend .fa-chevron-up;
+		}
+
+		@media (max-width: 767px){
+		// Dropdown toggle on smaller displays
+	    	border: 1px solid $sta-grey;
+		    cursor: pointer;
+		    @include ms-respond(font-size,1);
+		    margin-bottom: 0;
+		    padding: 15px 3em 15px 15px; // Additional padding on right to accommodate chevron
+		    position: relative;
+
+		    &:hover,
+		    &:focus,
+		    &:focus-within {
+		        // Add underline to button {
+		            .horizontal-list__toggle-button {
+		                text-decoration: underline;
+		                outline: none;
+		            }
+
+		    }
+
+		    &:focus,
+		    &:focus-within {
+		        background-color: $sta-grey-light;
+		        outline: 3px solid $sta-orange-highlight; 
+		    }
+
+		    // Chevron icon
+		    &:before {
+		        color: $text-color;
+		        display: block;
+		        position: absolute;
+		        top: 50%;
+		        transform: translateY(-50%);
+		        right: 1rem;
+		    }
+
+		}
+
+		@media (min-width: 768px){
+			// Hide button on larger displays
+			display:none;
+		}
+	}
+
+	.horizontal-list__toggle-button {
+		background: none;
+		border: 0;
+		color: $sta-blue-light;
+		margin: 0;
+		outline: none;
+		padding: 0;
+	}
+
+	> ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		@media (max-width: 767px){
+			background: #fff;
+			border: 1px solid $sta-grey;
+			border-bottom: none;
+			border-top: none;
+			display: none;
+		}
+
+		@media (min-width: 768px){
+			display: block !important; // Always visible on large displays
+		}
+
+		> Li {
+			// Reset margins
+			margin: 0;
+
+			// Vertical on smaller displays
+			@media (max-width: 767px){
+				border-bottom: 1px solid $sta-grey;
+				
+				a {
+					color: $text-color;
+					display: block;
+					font-weight: normal;
+					padding: 10px 15px;
+					text-decoration: none;
+
+					&:hover,
+					&:focus {
+						text-decoration: underline;
+						background-color: #f0f0f0;
+					}
+
+				    &:active {
+				    	background-color: $sta-orange-highlight;
+				    }
+				}
+			}
+
+			// Horizontal on larger displays
+			@media (min-width: 768px){
+				float:left;
+
+				&:not(:last-child){
+					margin-right: 0.5em;
+
+					&:after {
+						content: '|';
+						float: left;
+						margin-left: 0.5em;
+						color: $sta-grey-mid2-alpha;
+					}
+				}
+
+				> a {
+					color: inherit;
+					float: left;
+					font-weight: normal;
+					text-decoration: underline;
+
+					&:focus {
+						color: $sta-grey-dark;
+					}
+				}
+			}
+			// Dropdown elements - specific to this pattern
+
+			&.dropdown-wrapper {
+				display: block;
+				position: relative;
+				
+				// Style for open dropdowns
+				&.open {
+					.dropdown-toggle {
+						text-decoration: none;
+					
+						&:before {
+							@extend .fa-chevron-up;
+						}
+					}
+				}
+
+				// Use focus within to include chevron
+				&:focus-within {
+		        	outline: 3px solid $sta-orange-highlight; 
+				}
+
+			}
+
+			.dropdown-toggle {
+				padding-right: 1.5em;
+				position: relative;
+
+				&:before {
+					@extend .fa;
+		    		@extend .fa-chevron-down;
+		    		color: inherit;
+			        display: block;
+			        font-size: 1rem;
+			        position: absolute;
+			        	top: 50%;
+			        	right: 0.5rem;
+			        transform: translateY(-50%);
+
+					@media (max-width: 767px){
+						right: 1rem;
+					}
+				}
+
+				&.open:before {
+					@extend .fa-chevron-up;
+				}
+			}
+
+			.dropdown-menu {
+				@media (max-width: 767px){
+					float: none;
+					margin: 0;
+					padding: 0;
+					position: relative;
+					box-shadow: none;
+					width: 100%;
+					border: 0;
+
+					li {
+						border-top: 1px solid $sta-grey;
+					}
+				}
+				
+				font-size: 1rem;
+				min-width: 260px;
+
+				li {
+					float: none;
+					margin-left: 0;
+
+					a {
+						float: none;
+						font-weight: normal;
+						text-decoration: none;
+						white-space: normal;
+
+						&:hover,
+						&:focus {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+
+			// Right align dropdown on rightmost menu item
+			&:last-child {
+				.dropdown-menu {
+					left: auto;
+					right: 0;
+				}
+			}
+			
+		}
+
+	}
+}
+
+/*********************************/
+/* END Pattern: search-bar    */
+/*********************************/

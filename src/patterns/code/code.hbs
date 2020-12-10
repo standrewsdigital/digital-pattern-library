@@ -4,29 +4,29 @@
 <div class="pattern-wrapper">
   <div class="container">
 <pre><code class="pattern-source  {{code-language}}">
-	{{#if html}}
+{{~#if html ~}}
 <div class="container">
-    <div class="toggle-navigation primary-toggle"><a class="navigation-button">Navigation <i class="chevron left"></i></a></div>
+  <div class="toggle-navigation primary-toggle"><a class="navigation-button">Navigation <i class="chevron left"></i></a></div>
     <ul class="navigation-bar-nav primary-nav">
-        <li><a href="/study/">Study at St&nbsp;Andrews</a></li>
-        <li><a href="/research/">Research</a></li>
-        <li><a href="/alumni/">Alumni and donors</a></li>
-        <li><a href="/community/">Community facilities</a></li>
-        <li><a href="/business-services/">Business services</a></li>
-        <li><a href="/about/">About</a></li>
-    </ul>
+      <li><a href="/study/">Study at St&nbsp;Andrews</a></li>
+      <li><a href="/research/">Research</a></li>
+      <li><a href="/alumni/">Alumni and donors</a></li>
+      <li><a href="/community/">Community facilities</a></li>
+      <li><a href="/business-services/">Business services</a></li>
+      <li><a href="/about/">About</a></li>
+  </ul>
 </div>
-	{{/if}}
-	{{#if css}}
+{{~/if ~}}
+{{~#if css ~}}
 pre, pre code.pattern-source {
-    background-color: #23241f;
+  background-color: #23241f;
 }
 pre {
-    max-height: 15em;
-    overflow: auto;
+  max-height: 15em;
+  overflow: auto;
 }
-	{{/if}}
-	{{#if javascript}}
+{{~/if ~}}
+{{~#if javascript ~}}
 function $initHighlight(block, cls) {
   try {
     if (cls.search(/\bno\-highlight\b/) != -1)
@@ -42,22 +42,22 @@ function $initHighlight(block, cls) {
 }
 
 export  $initHighlight;
-	{{/if}}
-	{{#if json}}
+{{~/if ~}}
+{{~#if json ~}}
 [
-    {
-        "title": "apples",
-        "count": [12000, 20000],
-        "description": {"text": "...", "sensitive": false}
-    },
-    {
-        "title": "oranges",
-        "count": [17500, null],
-        "description": {"text": "...", "sensitive": false}
-    }
+  {
+    "title": "apples",
+    "count": [12000, 20000],
+    "description": {"text": "...", "sensitive": false}
+  },
+  {
+    "title": "oranges",
+    "count": [17500, null],
+    "description": {"text": "...", "sensitive": false}
+  }
 ]
-	{{/if}}
-	{{#if php}}
+{{~/if ~}}
+{{~#if php ~}}
 function sum($x, $y) {
     $z = $x + $y;
     return $z;
@@ -67,10 +67,9 @@ while($x <= 5) {
   echo "The number is: $x <br>";
   $x++;
 }
-	{{/if}}
-</code></pre>
+{{~/if ~}}</code></pre>
 </div>
 </div>
 <div class="container">
 <span class="label label-default">Code</span>
-<pre><code class="pattern-source {{code-language}}"><pre><code class="pattern-source {{code-language}}">[...]</code></pre></code></pre>
+<pre><code class="language-html">&lt;pre&gt;&lt;code class="pattern-source {{code-language}}"&gt;[...]&lt;/code&gt;&lt;/pre&gt;</code></pre>

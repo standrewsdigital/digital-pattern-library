@@ -1,15 +1,26 @@
 <!-- Begin pattern: event-list //-->
-			{{#each events}}
-			<div class="event-listing{{status}}">
-				{{{linkblock-start}}}
-					<h3 class="event-listing__heading">{{title}}</h3>
-				{{{linkblock-end}}}
-				<dl class="metadata-list inherit--colour">
-		            {{#if date-display}}<dt class="metadata-list--full"><i class="far fa-calendar-alt" aria-hidden="true" title="Date"></i><span class="sr-only">Date</span></dt><dd class="metadata-list--full">{{date-display}}</dd>{{/if}}
-		            {{#if time-display}}<dt class="metadata-list--full"><i class="far fa-clock" aria-hidden="true" title="Time"></i><span class="sr-only">Time</span></dt><dd class="metadata-list--full">{{time-display}}</dd>{{/if}}
-		            {{#if event-location}}<dt class="metadata-list--full"><i class="fas fa-map-marker-alt" aria-hidden="true" title="Location"></i><span class="sr-only">Location</span></dt><dd class="metadata-list--full">{{event-location}}</dd>{{/if}}
-		        </dl>
-			    {{#if event-description}}<div class="event-listing__description">{{event-description}}</div>{{/if}}	
-			</div>
-			{{/each}}
+{{#each events}}
+<div class="event-listing{{status}}">
+	{{{linkblock-start}}}
+		<h3 class="event-listing__heading">{{title}}</h3>
+	{{{linkblock-end}}}
+	<dl class="metadata-list inherit--colour">
+		{{#if date-display}}
+		<dt class="metadata-list--full"><i class="far fa-calendar-alt" aria-hidden="true" title="Date"></i><span class="sr-only">Date</span></dt>
+		<dd class="metadata-list--full">{{date-display}}</dd>
+		{{/if ~}}
+		{{#if time-display}}
+		<dt class="metadata-list--full"><i class="far fa-clock" aria-hidden="true" title="Time"></i><span class="sr-only">Time</span></dt>
+		<dd class="metadata-list--full">{{time-display}}</dd>
+		{{/if ~}}
+		{{#if event-location}}
+		<dt class="metadata-list--full"><i class="fas fa-map-marker-alt" aria-hidden="true" title="Location"></i><span class="sr-only">Location</span></dt>
+		<dd class="metadata-list--full">{{event-location}}</dd>
+		{{/if ~}}
+	</dl>
+	{{#if event-description}}
+	<div class="event-listing__description">{{event-description}}</div>
+	{{/if ~}}	
+</div>
+{{/each}}
 <!-- End pattern: event-list //-->

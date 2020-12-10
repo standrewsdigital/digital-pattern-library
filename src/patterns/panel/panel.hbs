@@ -1,7 +1,8 @@
-{{#if grid}}<div class="panel-grid">{{/if}}
-{{#if grid-row}}<div class="row">{{/if}}
-<!-- Begin pattern: panel //-->
+{{#if grid}}
+<div class="panel-grid">
+{{/if ~}}
 {{#each panels}}
+<!-- Begin pattern: panel //-->
 <div class="{{column-size}}">
 {{#if image}}
 	<div class="panel">
@@ -19,7 +20,6 @@
 		</div>
 	</div>
 </div>
-{{/each}}
 <!-- End pattern: panel //-->
-{{#if grid-row}}</div>{{/if}}
-{{#if grid}}</div>{{/if}}
+{{/each ~}}
+{{#if grid}}</div>{{/if ~}}

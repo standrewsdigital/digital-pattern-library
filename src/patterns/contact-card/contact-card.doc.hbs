@@ -47,7 +47,11 @@ title: Contact card
 </div>
 <div class="container">
 <span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> contact-card codeblock=true}}</code></pre> 
+{{#markdown}}
+```html
+{{> contact-card codeblock=false}}
+```
+{{/markdown}}
 <!--endnoindex-->
 {{/contact-card-options.options}}
 

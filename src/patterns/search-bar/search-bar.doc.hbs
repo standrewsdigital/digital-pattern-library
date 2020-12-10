@@ -8,6 +8,7 @@ title: Search bar
 <p>Once a search term has been entered an additional 'clear' button is shown with a number of different behaviours:</p>
 <ul>
 	<li>The default behavior is to clear the search input field - enabling a new search to be entered.</li>
+	<li>This can be extended to reset any autcomplete suggestions by adding the class <code>clear-icon__autocomplete</code> to the clear button.</li>
 	<li>This can be changed to resubmit the form with a blank search by adding the class <code>clear-icon__resubmit</code> to the clear button.</li>
 	<li>This can be further changed to instead clear any suggested results by adding the class <code>clear-icon__results</code> to the clear button.</li>
 </ul>
@@ -35,6 +36,10 @@ title: Search bar
 </div>
 <div class="container">
 <span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> search-bar}}</code></pre>
+{{#markdown}}
+```html
+{{> search-bar}}
+```
+{{/markdown}}
 <!--endnoindex-->
 {{/search-bar-options.options}}

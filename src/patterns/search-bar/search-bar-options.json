@@ -5,19 +5,22 @@
             "option-description": "<p>The standalone search bar element is the minimum implementaton for a search form.</p><ul><li>The placeholder text must indicate the scope of what will be searched.</li></ul>",
             "option-anchor": "search-bar-default",
             "placeholder": "Search the University website",
+            "aria-label": "Search the University website",
             "default": true,
             "input-id": "default-search",
             "search-button": true
         },
         {
             "option-heading": "Search with autocomplete",
-            "option-description": "<p>Suggested search terms can be displayed as a user types keyterms. The basic autocomplete suggests a range of alternate search terms.</p><p>This example uses an autocomplete script that is linked to the University's main search service. For this example, start typing to see suggestions based on your entered text.</p>",
+            "option-description": "<p>Suggested search terms can be displayed as a user types. The basic autocomplete suggests a range of alternate search terms.</p><p>This example uses an autocomplete script that is linked to the University's main search service. For this example, start typing to see suggestions based on your entered text. The 'clear' button resets the autocomplete as well as clearing the search input field.</p>",
             "option-anchor": "search-bar-autocomplete",
             "placeholder": "Search the University website",
+            "aria-label": "Search the University website, use arrow keys to move between suggested search terms",
             "default": true,
             "input-id": "autocomplete-search",
             "autocomplete": " form-control--autocomplete",
-            "search-button": true
+            "search-button": true,
+            "clear-button-type": " clear-icon__autocomplete"
         },
         {
             "option-heading": "Search banner",
@@ -26,6 +29,7 @@
             "background-color": "search-bar__grey",
             "full-width": true,
             "placeholder": "Search by keyword or phrase",
+            "aria-label": "Search by keyword or phrase",
             "search-header": "News search",
             "search-subtext": "Search through our entire news archive",
             "input-id": "banner-search",
@@ -38,23 +42,11 @@
             "background-color": "search-bar__blue",
             "full-width": true,
             "placeholder": "Search by keyword or phrase",
+            "aria-label": "Search by keyword or phrase",
             "search-header": "News search",
             "input-id": "banner-search-blue",
             "search-button": true,
             "clear-button-type": " clear-icon__resubmit"
-         },
-        {
-            "option-heading": "Search banner (background image)",
-            "option-description": "<p>The search banner option with a background image applied. This is achieved by replacing the class <code>search-bar__grey</code> with <code>search-bar__image</code> and applying the background image as an inline style. A dark grey transparent overlay will be automatically applied.</p><ul><li>The size of the background image must be 1905 × 362 pixels.</li><li>The main focus of this pattern is the search form so the background image shouldn't be overly complicated.</li><li>Multiple images must not be used (for example, to form a collage) as they are complicated.</li></ul>",
-            "option-anchor": "search-banner-image",
-            "background-color": "search-bar__image",
-            "bg-image": "docs/images/cta/hero-banner-image-005.jpg",
-            "full-width": true,
-            "placeholder": "Search by keyword or phrase",
-            "search-header": "News search",
-            "search-subtext": "Search through our entire news archive",
-            "input-id": "banner-search-image",
-            "search-button": true
          },
         {
             "option-heading": "Search banner (constrained)",
@@ -63,6 +55,7 @@
             "background-color": "search-bar__blue",
             "constrain-width": true,
             "placeholder": "Search by keyword or phrase",
+            "aria-label": "Search by keyword or phrase",
             "search-header": "News search",
             "search-subtext": "Search through our entire news archive",
             "input-id": "banner-search-constrained",
@@ -76,6 +69,7 @@
             "full-width": true,
             "horizontal-list-links": true,
             "placeholder": "Search by keyword or phrase",
+            "aria-label": "Search by keyword or phrase",
             "search-header": "News search",
             "search-subtext": "Search through our entire news archive",
             "input-id": "banner-search-links",
@@ -89,6 +83,7 @@
             "full-width": true,
             "horizontal-list": true,
             "placeholder": "Search by keyword or phrase", 
+            "aria-label": "Search by keyword or phrase",
             "search-header": "Find an event",
             "search-subtext": "Search through our entire event calendar",
             "input-id": "banner-search-group-links",
@@ -102,6 +97,7 @@
             "full-width": true,
             "background-color": "search-bar__grey",
             "placeholder": "Start typing to receive suggested search terms",
+            "aria-label": "Search by keyword or phrase, use arrow keys to move between suggested search terms",
             "search-header": "News search",
             "search-subtext": "Search through our entire news archive",
             "input-id": "news-search",
@@ -116,6 +112,7 @@
             "full-width": true,
             "background-color": "search-bar__blue",
             "placeholder": "Start typing to receive suggested search terms",
+            "aria-label": "Search by keyword or phrase, use arrow keys to move between suggested search terms",
             "search-header": "News search",
             "search-subtext": "Search through our entire news archive",
             "input-id": "news-search",
@@ -133,6 +130,7 @@
             "search-header": "Course search",
             "search-subtext": "Search for all the courses we offer",
             "placeholder": "Start typing to see courses",
+            "aria-label": "Start typing to search courses, use arrow keys to move between suggested courses",
             "input-id": "form-banner-search-grey",
             "clear-button-type": " clear-icon__results"
          },
@@ -147,6 +145,7 @@
             "search-header": "Course search",
             "search-subtext": "Search for all the courses we offer",
             "placeholder": "Start typing to see courses",
+            "aria-label": "Start typing to search courses, use arrow keys to move between suggested courses",
             "input-id": "form-banner-search-blue",
             "clear-button-type": " clear-icon__results"
          },
@@ -158,7 +157,22 @@
             "full-width": true,
             "title": "Search posts",
             "placeholder": "Search by keyword or phrase",
+            "aria-label": "Search by keyword or phrase",
             "input-id": "banner-search-inline",
+            "search-button": true
+         },
+        {
+            "option-heading": "Search banner (background image) - deprecated",
+            "option-description": "<div class='alert alert--warning'><h4 class='alert__heading'>This option is no longer supported</h4><p>This implementation is now deprecated and will be removed in a future release.</p></div>",
+            "option-anchor": "search-banner-image",
+            "background-color": "search-bar__image",
+            "bg-image": "docs/images/cta/hero-banner-image-005.jpg",
+            "full-width": true,
+            "placeholder": "Search by keyword or phrase",
+            "aria-label": "Search by keyword or phrase",
+            "search-header": "News search",
+            "search-subtext": "Search through our entire news archive",
+            "input-id": "banner-search-image",
             "search-button": true
          }
     ]

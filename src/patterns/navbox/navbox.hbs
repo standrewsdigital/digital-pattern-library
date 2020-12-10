@@ -1,7 +1,7 @@
-{{#if grid}}<div class="navbox-grid{{grid-padding}}">{{/if}}
+{{#if grid}}<div class="navbox-grid{{grid-padding}}">{{/if ~}}
 <!-- Begin pattern: navbox //-->
-{{#if sidebar}}<div class="col-md-8">{{/if}}
-{{#if grid-row}}<div class="row">{{/if}}
+{{#if sidebar}}<div class="col-md-8">{{/if ~}}
+{{#if grid-row}}<div class="row">{{/if ~}}
 {{#each box-size}}
 {{#if row}}<div class="row">{{/if}}
     <div class="{{column}}">
@@ -35,14 +35,14 @@
         {{/if}}
         {{/if}}
     </div>
-{{#if row}}</div>{{/if}}
-{{/each}}
-{{#if grid-row}}</div>{{/if}}
+{{#if row}}</div>{{/if ~}}
+{{/each ~}}
+{{#if grid-row}}</div>{{/if ~}}
 {{#if sidebar}}
         </div>
         <div class="col-sm-4" {{#if role}}role="{{role}}"{{/if}}>
             {{{sidebar}}}
         </div>
-    {{/if}}
+    {{/if ~}}
 <!-- End pattern: navbox //-->
 {{#if grid}}</div>{{/if}}

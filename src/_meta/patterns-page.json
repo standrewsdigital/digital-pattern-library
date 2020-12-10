@@ -64,6 +64,10 @@
             "subheading": "Patterns used to connect web pages across the University of St Andrews website.",
             "class": "primary",
             "patterns": [
+                { "name": "Horizontal list",
+                  "img": "assets/docs/images/patterns/horizontal-list.jpg",
+                  "url": "patterns/horizontal-list/index.html"
+                },
                 { "name": "Navbox",
                   "img": "assets/docs/images/patterns/navbox.jpg",
                   "url": "patterns/navbox/index.html"

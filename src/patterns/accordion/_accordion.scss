@@ -106,7 +106,7 @@
 }
 
 .accordion-item__toggle-title {
-    @include ms-respond(font-size,2);
+    @include ms-respond(font-size,1);
     line-height: 1.1;
     font-weight: bold;
     margin: 0;
@@ -142,10 +142,12 @@
 }
 
 .accordion-item__toggle-intro {
+    color: $sta-grey;
     margin: 0.25rem 0 0 0;
 }
 
 .accordion-item__toggle-keyfact {
+    color: $sta-grey;
     display: inline-block;
     margin: 0.25rem 1em 0 0;
 

@@ -1,6 +1,10 @@
 <!-- Begin pattern: search results //-->
 <ol class="search-results">
-    {{#if group-heading}}<li class="search-results__group-heading"><h3 class="sr-only">{{group-heading}}</h3></li>{{/if}}
+    {{#if group-heading}}
+    <li class="search-results__group-heading">
+        <h3 class="sr-only">{{group-heading}}</h3>
+    </li>
+    {{/if}}
     {{#each search-results}}
     <li class="search-result">
     {{#if contact}}
@@ -8,15 +12,24 @@
     {{else}}
         <a href="{{{url}}}" title="{{heading}}"{{{link-class}}}>
             <h4 class="search-result__heading">{{heading}}</h4>
-            {{#if heading-label}}<span class="search-result__label">{{heading-label}}</span>{{/if}}
-            {{#if url}}<cite class="search-result__url">{{{url}}}</cite>{{/if}}
+            {{#if heading-label}}
+            <span class="search-result__label">{{heading-label}}</span>
+            {{/if}}
+            {{#if url}}
+            <cite class="search-result__url">{{{url}}}</cite>
+            {{/if}}
         </a>
-        {{#if thumbnail}}<a href="{{{url}}}" title="{{heading}}"{{{link-class}}}><img class="search-result__thumbnail" src="{{thumbnail-src}}" alt="Alt text for image"></a>{{/if}}
-        {{#if description}}<p class="search-result__summary">{{{description}}}</p>{{/if}}
+        {{#if thumbnail}}
+        <a href="{{{url}}}" title="{{heading}}"{{{link-class}}}><img class="search-result__thumbnail" src="{{thumbnail-src}}" alt="Alt text for image"></a>
+        {{/if}}
+        {{#if description}}
+        <p class="search-result__summary">{{{description}}}</p>
+        {{/if}}
         {{#if metadata}}
         <dl class="metadata-list">
             {{#each metadata}}
-            <dt{{#if full}} class="metadata-list--full"{{/if}}><i class="{{icon}}" aria-hidden="true" title="{{term}}"></i><span class="sr-only">{{term}}</span></dt><dd{{#if full}} class="metadata-list--full"{{/if}}>{{#if link}}<a href="#">{{/if}}{{{definition}}}{{#if link}}</a>{{/if}}</dd>
+            <dt{{#if full}} class="metadata-list--full"{{/if}}><i class="{{icon}}" aria-hidden="true" title="{{term}}"></i><span class="sr-only">{{term}}</span></dt>
+            <dd{{#if full}} class="metadata-list--full"{{/if}}>{{#if link}}<a href="#">{{/if}}{{{definition}}}{{#if link}}</a>{{/if}}</dd>
             {{/each}}
         </dl>
         {{/if}}
@@ -24,5 +37,4 @@
     </li>
     {{/each}}
 </ol>
-
 <!-- End pattern: search results //-->

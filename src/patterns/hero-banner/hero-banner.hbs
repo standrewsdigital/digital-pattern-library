@@ -7,14 +7,81 @@
     <div class="container">
         <div class="hero-section__content">
             <h1 class="hero-section__heading{{heading-colour}}">{{default heading "[heading]"}}</h1>
-        {{#if intro-buttons}}
+            {{#if content}}
             <div class="hero-section__content-group">
-            <p class="hero-section__intro">{{default paragraph "[paragraph]"}}</p>
-            {{#if action-text}}
-            <a class="{{button-style}}" href="{{default action-url "[action-url]"}}">{{default action-text "[action-text]"}}</a>
-            {{/if}}
-            {{#if action-text-2}}
-            <a class="{{button-style}}" href="{{default action-url "[action-url]"}}">{{default action-text-2 "[action-text-2]"}}</a>
+                {{#if paragraph}}
+                <p class="hero-section__intro">{{paragraph}}</p>
+                {{/if ~}}
+                {{#if action-text}}
+                <a class="{{button-style}}" href="{{default action-url "[action-url]"}}">{{default action-text "[action-text]"}}</a>
+                {{/if ~}}
+                {{#if action-text-2}}
+                <a class="{{button-style}}" href="{{default action-url "[action-url]"}}">{{default action-text-2 "[action-text-2]"}}</a>
+                {{/if ~}}
+                {{#if search}}
+                <form class="dpl-form" action="" role="search">
+                    <div class="input-group input-group-lg">
+                        <input id="hero-section__search" class="form-control search-box" required type="text" aria-label="Course search" maxlength="256" name="search" placeholder="Search all our courses">
+                        <button class="clear-icon" type="reset" aria-label="Reset" value="Reset"></button>
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" value="Search" type="submit" aria-label="Submit">
+                                <i class="fa fa-search" title="Search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+                {{/if ~}}
+                {{#if complexform}}
+                <form class="dpl-form" action="" role="search">
+                    <fieldset>
+                        <legend><p class="hero-section__intro">Search the library's print and online resources.</p></legend>
+                        <div class="form-group">
+                           <div class="input-group input-group-lg">
+                                <input id="hero-section__search2" class="form-control search-box" required type="text" aria-label="Course search" maxlength="256" name="search" placeholder="Search by keyword or phrase">
+                                <button class="clear-icon" type="reset" aria-label="Reset" value="Reset"></button>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" value="Search" type="submit" aria-label="Submit">
+                                        <i class="fa fa-search" title="Search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <fieldset class="checkbox-box checkbox-box--small inline" aria-describedby="help-checkboxes-inline">
+                                <legend class="sr-only"<span class="font-weight--bold">Search specific areas only</span></legend>
+                                <p class="help-block sr-only" id="help-checkboxes-inline-small">Select all options that apply.</p>
+                                <ul>
+                                    <li>
+                                        <input  type="checkbox" value="default" id="option1-inline-small" name="option1-inline-small">
+                                        <label for="option1-inline-small">Option 1</label>
+                                        <div class="check"><i class="fa fa-check" title="checked"></i></div>
+                                    </li>
+                                    <li>
+                                        <input  type="checkbox" value="default" id="option2-inline-small" name="option2-inline-small">
+                                        <label for="option2-inline-small">Option 2</label>
+                                        <div class="check"><i class="fa fa-check" title="checked"></i></div>
+                                    </li>
+                                    <li>
+                                        <input  type="checkbox" value="default" id="option3-inline-small" name="option2-inline-small">
+                                        <label for="option3-inline-small">Option 3</label>
+                                        <div class="check"><i class="fa fa-check" title="checked"></i></div>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </div>
+                    </fieldset>
+                </form>
+                <!-- Begin pattern: horizontal-list //-->  
+                <div class="horizontal-list no-margin-top no-margin-bottom">
+                    <h4 class="horizontal-list__toggle">
+                        <button class="horizontal-list__toggle-button">Additional options</button>
+                    </h4>
+                    <ul>
+                        <li><a href="#">Advanced search</a></li>
+                        <li><a href="#">Alternate searches</a></li>
+                    </ul>
+                </div>
+                <!-- End pattern: horizontal-list //-->
             {{/if}}
             </div>
         {{/if}}

@@ -75,6 +75,16 @@ h6, .h6 { @extend %font-scale-0; }
 }
 
 
+// Sidebar aside - move font size down scale
+
+.sidebar {
+  h2, .h2 { @extend %font-scale-2; }
+  h3, .h3 { @extend %font-scale-1; }
+  h4, .h4 { @extend %font-scale-0; }
+  h5, .h5 { @extend %font-scale-0; }
+  h6, .h6 { @extend %font-scale-0; }
+}
+
 // Body text
 // -------------------------
 

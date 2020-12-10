@@ -201,6 +201,13 @@
             "option-description": "<p>Can be used to show multiple options in a single dropdown list. This example shows both the primary and the small tag style of buttons, with the dropdown menu adjusting to match its parent button font size and padding.</p>",
             "option-anchor": "dropdown-buttons",
             "dropdown": true
+          },
+
+        {
+            "option-heading": "Dropdown buttons - deprecated",
+            "option-description": "<div class='alert alert--warning'><h4 class='alert__heading'>This option is no longer supported</h4><p>This implementation is now deprecated and will be removed in a future release. Please use the updated <a href=\"#dropdown-buttons\">dropdown buttons</a> option.</p></div>",
+            "option-anchor": "dropdown-buttons-deprecated",
+            "dropdown-deprecated": true
           }
     ]
 }

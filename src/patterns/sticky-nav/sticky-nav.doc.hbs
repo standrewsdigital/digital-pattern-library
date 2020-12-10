@@ -1,20 +1,31 @@
 ---
-title: Sticky nav
+title: Sticky horizontal nav
 ---
 
 <div class="row">
 	<div class="col-md-8">
-<p class="lead">The sticky nav is only used for linking within a page to in-page content. It appears below the normal navigation bar and affixes to the top of the browser window as you scroll down past it. The sticky nav also highlights the current section as you scroll down the page.</p>
+<p class="lead">The sticky horizontal nav pattern can be used to help users stay orientated on a long web page that requires a lot of scrolling.</p><p>It appears within the flow of content, below the normal navigation bar and affixes to the top of the browser window as you scroll down past it. The sticky horizontal nav also highlights the current section as you scroll down the page. On smaller width browser windows the navigation changes to a dropdown list.</p>
 
-<h2>Rules for the sticky nav</h2>
+<h2>Rules for sticky horizontal nav</h2>
 
 <ul>
-    <li>Must add the CSS <code>position: relative;</code> to the <code>body</code> for section highlighting to work.</li>
     <li>Must only be used on long pages where there is a need to provide a quick means of navigating between sections.</li>
-    <li>Must come below the page intro so that it is clear it is secondary navigation only related to the page content.</li>
+    <li>Must not immediately follow the navigation bar so that it is clear it is secondary navigation only related to the current page.</li>
     <li>Must not contain any dropdown menus.</li>
     <li>Must only contain links to in-page content.</li>
     <li>Must not display on more than one row.</li>
+    <li>Only one sticky horizontal nav can be used on a page.</li>
+    <li>Sticky horizontal nav links should link to unique, clearly labelled sections.</li>
+    <li>The linked sections should appear vertically and match the order they appear in the sticky horizontal nav.</li>
+    <li>Linked sections should be wrapped in an additional block element with the <code>section__anchor--sticky</code> class. This adds top padding and the equivalent negative top margin, to offset the height of the sticky navigation bar and provide improved browser support.</li>
+    <li>Including <code>&lt;div id="sticky-nav__active-section"&gt;&lt;/div&gt;</code> within the <code>sticky-nav__toggle</code> element will highlight the current section when the navigation switches to a dropdown list on smaller width browser windows.</li>
+</ul>
+<h2>Other things to consider</h2>
+<ul>
+    <li>If the bottom of the page is reached then selection automatically jumps to the last navigation item.</li>
+    <li>Linking to a section that has a top margin will anchor to the top of that section's first child element, with the margin being ignored.</li>
+    <li>Linking to a section that has a top padding will anchor to the top of that section, above the padded area. This can be used to include more visual 'breathing space', offers improved browser support and is the preferred method that should be used.</li>
+    <li>The fixed positioning of the sticky navigation bar may obscure a focussed element in some device's browsers, for example when navigating by keyboard and using the 'shift + tab' keys to change focus to an element higher on the page. This accessibility limitation should be carefully considered when weighing up any overall benefits of implementing this navigation pattern.</li> 
 </ul>
 
 <h2>Options available</h2>
@@ -41,6 +52,10 @@ title: Sticky nav
 </div>
 <div class="container">
 <span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> sticky-nav}}</code></pre>
+{{#markdown}}
+```html
+{{> sticky-nav }}
+```
+{{/markdown}}
 <!--endnoindex-->
 {{/sticky-nav-options.options}}

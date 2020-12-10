@@ -1,7 +1,9 @@
-<!-- Begin pattern: image //-->
+<!-- Begin pattern: audio //-->
 <figure>	
 	{{{audio}}}
-    {{#if caption}}{{{caption}}}{{/if}}
+    {{#if caption}}
+    {{{caption}}}
+    {{/if ~}}
     {{#if transcript}}
 	<!-- Begin pattern: accordion //-->
     <div class="accordion-item">
@@ -14,7 +16,7 @@
         </div>
    	</div>
     <!-- End pattern: accordion //-->
-    {{/if}}
+    {{/if ~}}
 </figure>
-<!-- End pattern: image //-->
+<!-- End pattern: audio //-->
 

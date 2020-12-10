@@ -13,7 +13,8 @@
             "bg-image": "docs/images/cta/hero5/",
             "button-style": "btn btn-action",
             "intro-buttons": true,
-            "caption": "Image details"
+            "caption": "Image details",
+            "content": true
         },
 
 
@@ -30,7 +31,8 @@
             "button-style": "btn btn-action",
             "action-text": "See the halls of residence",
             "action-url": "#",
-            "caption": "Image details"
+            "caption": "Image details",
+            "content": true
         },
         
         {
@@ -42,7 +44,8 @@
             "paragraph":  "Join us on a visiting day to meet with academic staff, talk to current students, see the town and ask any questions you have about applying. Book your visit today.",
             "bg-image": "docs/images/cta/hero4/",
             "intro-buttons": true,
-            "caption": "Image details"
+            "caption": "Image details",
+            "content": true
         },
 
         
@@ -65,6 +68,31 @@
             "heading-colour": " hero-section__heading--green",
             "bg-image": "docs/images/cta/hero7/",
             "caption": "Image details"
+        },
+
+        
+        {
+            "option-anchor": "hero-banner6",
+            "option-heading": "Hero banner with simple search form",
+            "option-description": "<p>This example includes a heading, introduction and simple search form.</p>",
+            "heading":  "Scotland’s first university",
+            "paragraph":  "Additional tagline can appear here to add context.",
+            "bg-image": "docs/images/cta/hero2/",
+            "caption": "Image details",
+            "search": true,
+            "content": true
+        },
+
+        
+        {
+            "option-anchor": "hero-banner7",
+            "option-heading": "Hero banner with complex search form",
+            "option-description": "<p>This example includes a heading, introduction and complex search form with checkbox options and additional links underneath.</p>",
+            "heading":  "University of St Andrews Library",
+            "bg-image": "docs/images/cta/hero11/",
+            "caption": "Image details",
+            "complexform": true,
+            "content": true
         }
     ]
 }

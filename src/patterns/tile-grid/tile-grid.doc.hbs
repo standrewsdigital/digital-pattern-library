@@ -19,15 +19,6 @@ title: Tile grid
     <li>Tile description text should be between 80 to 140 characters, or roughly three to four lines in length.</li>
 </ul>
 
-<h3>Tile colours</h3>
-<p>Tile colours may be used to represent different categories. For example, in the below options, tile colours represent the following categories:
-<ul>
-	<li><strong>Blue</strong>, primary: News</li>
-	<li><strong>Green</strong>, secondary: Featured event</li>
-	<li><strong>Red</strong>, tertiary: Photo of the week</li>
-</ul>
-<p>Blue is the primary colour used for the most popular category. Tile grids must not include more than three category colours.</p>
-
 <h2>Options available</h2>
 <ul>
 {{#tile-grid-options.options}}
@@ -52,7 +43,11 @@ title: Tile grid
 </div>
 <div class="container">
 <span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> tile-grid}}</code></pre>
+{{#markdown}}
+```html
+{{> tile-grid}}
+```
+{{/markdown}}
 <!--endnoindex-->
 {{/tile-grid-options.options}}
 

@@ -6,7 +6,9 @@
     </figure>
     <div class="article-list__snippet">
         <h3 class="article-list__heading"><a href="#article">{{title}}</a></h3>
-        {{#if description}}<p class="article-list__description{{show-all}}">{{description}}</p>{{/if}}
+        {{#if description}}
+        <p class="article-list__description{{show-all}}">{{description}}</p>
+        {{/if}}
         {{#if metadata}}
         <dl class="metadata-list{{inherit}}">
             {{#each metadata}}
@@ -14,7 +16,9 @@
             {{/each}}
         </dl>
         {{/if}}
-        {{#if description2}}<p class="article-list__description{{show-all}}">{{description2}}</p>{{/if}}
+        {{#if description2}}
+        <p class="article-list__description{{show-all}}">{{description2}}</p>
+        {{/if}}
     </div>
 </{{wrapper}}>
 {{/each}}

@@ -12,7 +12,7 @@ title: Category header
     <li>The link must always navigate to the top-level page of the current category or section.</li>
 </ul>
 
-<h3>Options available</h3>
+<h2>Options available</h2>
 <ul>
 {{#category-header-options.options}}
     <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
@@ -24,7 +24,7 @@ title: Category header
 <hr>
 <div class="row">
 	<div class="col-md-8">
-<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+<h2 id="{{option-anchor}}">{{option-heading}}</h2>
 {{{option-description}}}
 </div>
 </div>
@@ -36,6 +36,10 @@ title: Category header
 </div>
 <div class="container">
 <span class="label label-default">Code</span>
-<pre><code class="pattern-source html">{{> category-header}}</code></pre>
+{{#markdown}}
+```html
+{{> category-header }}
+```
+{{/markdown}}
 <!--endnoindex-->
 {{/category-header-options.options}}

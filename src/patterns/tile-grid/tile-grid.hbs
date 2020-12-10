@@ -1,5 +1,5 @@
 <!-- Begin pattern: tile-grid //-->
-<div class="tile-grid {{bg-color}}"{{#if bg-image}} style="background-image: url({{asset bg-image}});"{{/if}}>
+<div class="tile-grid {{bg-color}}">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6{{#if single-call-to-action}} col-lg-8{{/if}}">
@@ -16,7 +16,7 @@
 		<div class="row tile-grid__tiles">
 		{{#each tiles}}
 			<div class="col-sm-6 col-md-4 tile-grid__tile">
-				<div class="tile {{color}}">
+				<div class="tile">
 					<div class="tile-image-title">
 						<img src="{{asset image.url}}" alt="{{image.alt}}">
 						<h3><a href="#">{{title}}</a></h3>

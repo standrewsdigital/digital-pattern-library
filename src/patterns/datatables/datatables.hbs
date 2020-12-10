@@ -13,8 +13,12 @@
             <td class='sorting_1'>{{name}}</td>
             <td>{{job-title}}</td>
             <td>{{city}}</td>
-            {{#if age}}<td>{{age}}</td>{{/if}}
-            {{#if start-date}}<td>{{start-date}}</td>{{/if}}
+            {{#if age}}
+            <td>{{age}}</td>
+            {{/if}}
+            {{#if start-date}}
+            <td>{{start-date}}</td>
+            {{/if}}
             <td class="dt-body-right">&pound;{{salary}}</td>
         </tr>
         {{/each}}

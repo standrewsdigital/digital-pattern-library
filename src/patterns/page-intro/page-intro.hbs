@@ -37,7 +37,9 @@
         <div class="page-intro__media">
             <figure class="page-intro__media-wrapper">
                 <img src="{{image}}" />
+                {{#if caption}}
                 {{{caption}}}
+                {{/if}}
             </figure>
         </div>
         {{/if}}
@@ -45,7 +47,9 @@
         <div class="page-intro__media">
             <figure class="page-intro__media-wrapper">
                 {{{video}}}
+                {{#if caption}}
                 {{{caption}}}
+                {{/if}}
             </figure>
         </div>
         {{/if}}

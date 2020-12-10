@@ -7,25 +7,26 @@
     {{/each}}
     </ul>
 </div>
-<div class="dpl-form">
+<form class="dpl-form">
     <fieldset>
-        <legend>{{legend}}</legend>
+        <legend>{{{legend}}}</legend>
         <div class="row">
             <div class="col-xs-12">
-                <form>
-                    {{#each input-field}}
-                    <div class="{{class}}">
-                        <label for="{{id}}" id="{{id}}">{{label-text}}</label>
-                        {{#if help-block}}
-                        <span class="help-block">{{help-block}}</span>
-                        {{/if}}
-                        <span class="text-danger" id="{{error-id}}"><strong>{{error-text}}</strong></span>
-                        <input class="form-control has-error" id="{{id}}" type="text" name="{{input-name}}" value="" aria-describedby="{{error-id}}">
-                    </div>
-                    {{/each}}
-                    {{#if radio}}
-                    <div class="{{class}}">
-                        <p id="example-personal-details">Are your personal details 
+                {{#each input-field}}
+                <div class="{{class}}">
+                    <label for="{{id}}" id="{{id}}">{{label-text}}</label>
+                    {{#if help-block}}
+                    <span class="help-block">{{help-block}}</span>
+                    {{/if}}
+                    <span class="text-danger" id="{{error-id}}"><strong>{{error-text}}</strong></span>
+                    <input class="form-control has-error" id="{{id}}" type="text" name="{{input-name}}" value="" aria-describedby="{{error-id}}">
+                </div>
+                {{/each}}
+                {{#if radio}}
+                <div class="{{class}}">
+                    <fieldset class="radio-button" aria-describedby="example-personal-details">
+                        <legend><span class="font-weight--bold">Check your personal details</span></legend>
+                        <p class="help-block" id="example-personal-details">Are your personal details 
                         correct and up-to-date?</p>
                         <span class="text-danger"><strong>Please select an option</strong></span>
                         <div class="radio-button">
@@ -39,11 +40,11 @@
                                 {{/each}}
                             </ul>
                         </div>
-                    </div>
-                    {{/if}}
-                    <input class="btn btn-primary" type="submit" value="Continue">
-                </form>
+                    </fieldset>
+                </div>
+                {{/if}}
+                <input class="btn btn-primary" type="submit" value="Continue">
             </div>
         </div>
     </fieldset>
-</div>
+</form>

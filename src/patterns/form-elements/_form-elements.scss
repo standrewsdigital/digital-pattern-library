@@ -70,8 +70,9 @@
 
         ul li label {
             cursor: pointer;
-            margin: 10px auto;
-            padding: 5px 25px 5px 60px;
+            font-weight: normal;
+            margin: 10px 0;
+            padding: 5px 1rem 5px 40px;
             position: relative;
             -webkit-transition: all 0.25s linear;
                     transition: all 0.25s linear;
@@ -80,12 +81,12 @@
 
         ul li .check {
             background-color: white;
-            border: 3px solid $sta-grey-dark;
+            border: 2px solid $sta-grey-dark;
             border-radius: 100%;
             height: 25px;
             position: absolute;
             top:  13px;
-            left: 20px;
+            left: 0;
             width: 25px;
             -webkit-transition: border .25s linear;
                     transition: border .25s linear;
@@ -98,8 +99,8 @@
             height: 13px;
             margin: auto;
             position: absolute;
-            top:  3px;
-            left: 3px;
+            top:  4px;
+            left: 4px;
             width: 13px;
             -webkit-transition: background 0.25s linear;
                     transition: background 0.25s linear;
@@ -119,18 +120,16 @@
         &--small {
             ul li label {
                 font-size: 1rem;
-                font-weight: normal;
-                margin: 0 auto;
-                padding: 8px 25px 8px 40px;
+                margin: 0;
+                padding: 8px 1rem 8px 25px;
             }
 
             ul li .check {
-                border-width:2px;
                 height: 15px;
                 width: 15px;
                 font-size:10px;
                 top: 11px;
-                left: 15px;
+                left: 0;
             }
         }
     }
@@ -138,6 +137,10 @@
     .inline ul li {
         display: inline-block;
         width: auto;
+
+        label {
+            margin-right: 1rem;
+        }
     }
 
     .checkbox-box {

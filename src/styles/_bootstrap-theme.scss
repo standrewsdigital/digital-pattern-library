@@ -6,15 +6,15 @@
   color: $text-muted;
 }
 
-// Font weights
+// Font weight overrides
 // ====================================================
 
 .font-weight {
     &--bold {
-        font-weight: bold;
+        font-weight: bold !important;
     }
     &--normal {
-        font-weight: normal;
+        font-weight: normal !important;
     }
 }
 

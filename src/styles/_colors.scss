@@ -37,6 +37,7 @@ $sta-blue-light:            rgb(0, 113, 179);
 $sta-blue-light-tint25:     tint($sta-blue-light, 25%);
 $sta-blue-light-tint50:     tint($sta-blue-light, 50%);
 $sta-blue-light-shade25:    shade($sta-blue-light, 25%);
+$sta-blue-light-tint90:     tint($sta-blue-light, 90%);
 
 $sta-blue-light-hover:  darken($sta-blue-light, $hover-darken);
 $sta-blue-light-T:      transparentize($sta-blue-light,$transparency);
@@ -83,6 +84,7 @@ $sta-grey-S-hover:      darken($sta-grey-S, $hover-darken);
 $sta-grey-light:        rgb(240,240,240);
 $sta-grey-light2:        rgb(250, 250, 250);
 $sta-grey-mid2:       rgb(222,222,222);
+$sta-grey-mid2-alpha: rgba(148, 148, 148, 0.31); // Equivalent to Mid grey 2 (#dedede) on white
 
 $sta-grey-light-hover:  darken($sta-grey-light, $hover-darken);
 

@@ -1,111 +1,125 @@
 <!-- Begin pattern: facet list //-->
-{{#if facet-title}}<h2 class="font-scale-1 facet-title{{#if facet-accordion}} facet-title--group{{/if}}">{{facet-title}}</h2>{{/if}}
-
+{{#if facet-title}}
+<h2 class="font-scale-1 facet-title{{#if facet-accordion}} facet-title--group{{/if}}">{{facet-title}}</h2>
+{{/if}}
 {{#if facet-accordion}}
-          <button class="accordion-group__toggle">Open all</button>
-          <ul class="accordion-group accordion-group__toggle-container">
-          {{#each facet-list}}
-
-            <li class="accordion-item">
-
-                {{#if facet-list-selected}}
-              <div class="accordion-item__toggle open">
-              <h3 class="accordion-item__toggle-title font-scale-0">
-                  <button class="accordion-item__toggle-button" aria-expanded="true" aria-controls="facet-{{facet-list-id}}">{{facet-list-name}}</button>
-                </h3>
-              </div>
-             <div class="accordion-item__content remove-outer-padding" id="facet-{{facet-list-id}}" aria-hidden="false" style="display:block;">
-                <a href="#" class="facet-clear">
-                  <i class="fa fa-times" aria-hidden="true"></i>Clear all
-                </a>
-                {{else}}
-              <div class="accordion-item__toggle">
-              <h3 class="accordion-item__toggle-title font-scale-0">
-                  <button class="accordion-item__toggle-button" aria-expanded="false" aria-controls="facet-{{facet-list-id}}">{{facet-list-name}}</button>
-                </h3>
-              </div>
-                <div class="accordion-item__content remove-outer-padding" id="facet-{{facet-list-id}}" aria-hidden="true">
-                {{/if}}
-              
-              <div class="list-group list-group--remove-outer-border list-group--border-top remove-margin-bottom{{#if facet-list-has-collapsed}} panel-collapse collapse in{{/if}} font-scale-minus-1 facet">
-              {{#each facet-list-items}}
-                {{#if facet-list-collapsed-start}}<div id="facet-list-{{../../facet-list-id}}" class="collapse">{{/if}}
-                <a class="list-group-item" href="#">
-                  <span class="item-label">
-                    {{#if ../facet-list-type-radio}}
-                      <span class="facet-control">{{#if facet-list-item-selected}}<i class="far fa-dot-circle" aria-hidden="true"></i>{{else}}<i class="far fa-circle" aria-hidden="true"></i>{{/if}}</span>
-                    {{/if}}
-                    {{#if ../facet-list-type-checkbox}}
-                      <span class="facet-control">{{#if facet-list-item-selected}}<i class="far fa-check-square" aria-hidden="true"></i>{{else}}<i class="far fa-square" aria-hidden="true"></i>{{/if}}</span>
-                    {{/if}}
-                    {{#if ../facet-list-type-text}}
-                    {{#if facet-list-type-drilldown}}<span style="margin-left: {{facet-list-item-margin}}px" class="facet-control">&#8627;</span>{{/if}}
-                    {{#if facet-list-item-selected}}<i class="fa fa-times" aria-hidden="true"></i>{{/if}}
-                    {{/if}}
-                    {{facet-list-item-value}}
-                    {{#if ../facet-list-type-radio}}
-                    {{#if facet-list-item-selected}} <span class="sr-only">(Current)</span>{{/if}}
-                    {{else}}
-                    {{#if facet-list-item-selected}} <span class="sr-only">(Selected)</span>{{/if}}
-                    {{/if}}
-                  </span>
-                  {{#if facet-list-item-badge}}<span><span class="badge">{{facet-list-item-badge}}</span></span>{{/if}}
-                </a>
-                {{#if facet-list-collapsed-end}}
-                  </div>
-                {{/if}}
-              {{/each}}
-                {{#if facet-list-has-collapsed}}
-                  <a class="list-group-item collapse-trigger collapsed" data-target="#facet-list-{{../facet-list-id}}" data-toggle="collapse"></a>
-                {{/if}}
-              </div>
-
-              </div>
-            </li>
-            {{/each}}
-          </ul>
-
+<button class="accordion-group__toggle">Open all</button>
+<ul class="accordion-group accordion-group__toggle-container">
+  {{#each facet-list}}
+  <li class="accordion-item">
+    {{#if facet-list-selected}}
+    <div class="accordion-item__toggle open">
+      <h3 class="accordion-item__toggle-title font-scale-0">
+        <button class="accordion-item__toggle-button" aria-expanded="true" aria-controls="facet-{{facet-list-id}}">{{facet-list-name}}</button>
+      </h3>
+    </div>
+    <div class="accordion-item__content remove-outer-padding" id="facet-{{facet-list-id}}" aria-hidden="false" style="display:block;">
+      <a href="#" class="facet-clear"><i class="fa fa-times" aria-hidden="true"></i>Clear all</a>
+    {{else}}
+    <div class="accordion-item__toggle">
+      <h3 class="accordion-item__toggle-title font-scale-0">
+        <button class="accordion-item__toggle-button" aria-expanded="false" aria-controls="facet-{{facet-list-id}}">{{facet-list-name}}</button>
+      </h3>
+    </div>
+    <div class="accordion-item__content remove-outer-padding" id="facet-{{facet-list-id}}" aria-hidden="true">
+    {{/if}}
+    <div class="list-group list-group--remove-outer-border list-group--border-top remove-margin-bottom{{#if facet-list-has-collapsed}} panel-collapse collapse in{{/if}} font-scale-minus-1 facet">
+      {{#each facet-list-items}}
+      {{#if facet-list-collapsed-start}}
+      <div id="facet-list-{{../../facet-list-id}}" class="collapse">
+      {{/if}}
+      <a class="list-group-item" href="#">
+        <span class="item-label">
+          {{#if ../facet-list-type-radio}}
+          <span class="facet-control">{{#if facet-list-item-selected}}<i class="far fa-dot-circle" aria-hidden="true"></i>{{else}}<i class="far fa-circle" aria-hidden="true"></i>{{/if}}</span>
+          {{/if}}
+          {{#if ../facet-list-type-checkbox}}
+          <span class="facet-control">{{#if facet-list-item-selected}}<i class="far fa-check-square" aria-hidden="true"></i>{{else}}<i class="far fa-square" aria-hidden="true"></i>{{/if}}</span>
+          {{/if}}
+          {{#if ../facet-list-type-text}}
+          {{#if facet-list-type-drilldown}}
+          <span style="margin-left: {{facet-list-item-margin}}px" class="facet-control">&#8627;</span>
+          {{/if}}
+          {{#if facet-list-item-selected}}
+          <i class="fa fa-times" aria-hidden="true"></i>
+          {{/if}}
+          {{/if}}
+          {{facet-list-item-value}}
+          {{#if ../facet-list-type-radio}}
+          {{#if facet-list-item-selected}}
+          <span class="sr-only">(Current)</span>
+          {{/if}}
+          {{else}}
+          {{#if facet-list-item-selected}} 
+          <span class="sr-only">(Selected)</span>
+          {{/if}}
+          {{/if}}
+          </span>
+          {{#if facet-list-item-badge}}
+          <span><span class="badge">{{facet-list-item-badge}}</span></span>
+          {{/if}}
+        </a>
+      {{#if facet-list-collapsed-end}}
+      </div>
+      {{/if}}
+      {{/each}}
+      {{#if facet-list-has-collapsed}}
+      <a class="list-group-item collapse-trigger collapsed" data-target="#facet-list-{{../facet-list-id}}" data-toggle="collapse"></a>
+      {{/if}}
+      </div>
+    </div>
+  </li>
+  {{/each}}
+</ul>
 {{else}}
 {{#each facet-list}}
-    {{#if facet-list-selected}}
-    <a href="#" class="facet-clear">
-        <i class="fa fa-times" aria-hidden="true"></i>Clear all
-    </a>
+{{#if facet-list-selected}}
+<a href="#" class="facet-clear"><i class="fa fa-times" aria-hidden="true"></i>Clear all</a>
+{{/if}}
+<div class="list-group{{#if facet-list-has-collapsed}} panel-collapse collapse in{{/if}} font-scale-minus-1 facet">
+  {{#each facet-list-items}}
+  {{#if facet-list-collapsed-start}}
+  <div id="facet-list-{{../../facet-list-id}}" class="collapse">
+  {{/if}}
+  <a class="list-group-item" href="#">
+    <span class="item-label">
+      {{#if ../facet-list-type-radio}}
+      <span class="facet-control">{{#if facet-list-item-selected}}<i class="far fa-dot-circle" aria-hidden="true"></i>{{else}}<i class="far fa-circle" aria-hidden="true"></i>{{/if}}</span>
+      {{/if}}
+      {{#if ../facet-list-type-checkbox}}
+      <span class="facet-control">{{#if facet-list-item-selected}}<i class="far fa-check-square" aria-hidden="true"></i>{{else}}<i class="far fa-square" aria-hidden="true"></i>{{/if}}</span>
+      {{/if}}
+      {{#if ../facet-list-type-text}}
+      {{#if facet-list-type-drilldown}}
+      <span style="margin-left: {{facet-list-item-margin}}px" class="facet-control">&#8627;</span>
+      {{/if}}
+      {{#if facet-list-item-selected}}
+      <i class="fa fa-times" aria-hidden="true"></i>
+      {{/if}}
+      {{/if}}
+      {{facet-list-item-value}}
+      {{#if ../facet-list-type-radio}}
+      {{#if facet-list-item-selected}}
+      <span class="sr-only">(Current)</span>
+      {{/if}}
+      {{else}}
+      {{#if facet-list-item-selected}}
+      <span class="sr-only">(Selected)</span>
+      {{/if}}
+      {{/if}}
+    </span>
+    {{#if facet-list-item-badge}}
+    <span class="badge">{{facet-list-item-badge}}</span>
     {{/if}}
-    <div class="list-group{{#if facet-list-has-collapsed}} panel-collapse collapse in{{/if}} font-scale-minus-1 facet">
-              {{#each facet-list-items}}
-                {{#if facet-list-collapsed-start}}<div id="facet-list-{{../../facet-list-id}}" class="collapse">{{/if}}
-                <a class="list-group-item" href="#">
-                  <span class="item-label">
-                    {{#if ../facet-list-type-radio}}
-                      <span class="facet-control">{{#if facet-list-item-selected}}<i class="far fa-dot-circle" aria-hidden="true"></i>{{else}}<i class="far fa-circle" aria-hidden="true"></i>{{/if}}</span>
-                    {{/if}}
-                    {{#if ../facet-list-type-checkbox}}
-                      <span class="facet-control">{{#if facet-list-item-selected}}<i class="far fa-check-square" aria-hidden="true"></i>{{else}}<i class="far fa-square" aria-hidden="true"></i>{{/if}}</span>
-                    {{/if}}
-                    {{#if ../facet-list-type-text}}
-                    {{#if facet-list-type-drilldown}}<span style="margin-left: {{facet-list-item-margin}}px" class="facet-control">&#8627;</span>{{/if}}
-                    {{#if facet-list-item-selected}}<i class="fa fa-times" aria-hidden="true"></i>{{/if}}
-                    {{/if}}
-                    {{facet-list-item-value}}
-                    {{#if ../facet-list-type-radio}}
-                    {{#if facet-list-item-selected}} <span class="sr-only">(Current)</span>{{/if}}
-                    {{else}}
-                    {{#if facet-list-item-selected}} <span class="sr-only">(Selected)</span>{{/if}}
-                    {{/if}}
-                  </span>
-                  {{#if facet-list-item-badge}}<span class="badge">{{facet-list-item-badge}}</span>{{/if}}
-                </a>
-                {{#if facet-list-collapsed-end}}
-                  </div>
-                {{/if}}
-              {{/each}}
-                {{#if facet-list-has-collapsed}}
-                  <button class="list-group-item collapse-trigger collapsed" data-target="#facet-list-{{../facet-list-id}}" data-toggle="collapse" aria-expanded="false" aria-controls="facet-list-{{../facet-list-id}}"></button>
-                {{/if}}
-              </div>
-
+  </a>
+  {{#if facet-list-collapsed-end}}
+  </div>
+  {{/if}}
+  {{/each}}
+  {{#if facet-list-has-collapsed}}
+  <button class="list-group-item collapse-trigger collapsed" data-target="#facet-list-{{../facet-list-id}}" data-toggle="collapse" aria-expanded="false" aria-controls="facet-list-{{../facet-list-id}}"></button>
+  {{/if}}
+</div>
 {{/each}}
-
 {{/if}}
 <!-- End pattern: facet list //-->

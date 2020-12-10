@@ -8,18 +8,14 @@
             "alert": true,
             "alert-message": "<h3 class=\"alert__heading\">Thank you!</h3><p>Thank you for submitting your details. If you have any questions please email <a href='mailto:#'>example@st-andrews.ac.uk</a>.</p>"
          },
-
-
-
-
-         {
+        {
             "option-heading": "Alert (Info)",
             "option-description": "<p>Use the class <code>alert--info</code> for an info alert box. This alert box indicates neutral information or a neutral action, such as a recommendation or an update.</p>",
             "option-anchor": "alert-info",
             "alert-class": "alert alert--info",
             "alert": true,
-            "alert-message": "<h3 class=\"alert__heading\">Did you know?</h3><p>University of St Andrews was founded over 600 years ago? Find out more about the <a href='#'>history of St Andrews</a>.</p>"
-          },
+            "alert-message": "<h3 class=\"alert__heading\">Did you know?</h3><p>University of St Andrews was founded over 600 years ago. Find out more about the <a href='#'>history of St Andrews</a>.</p>"
+         },
 
 
 

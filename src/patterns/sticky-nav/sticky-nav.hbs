@@ -1,37 +1,33 @@
-{{#if deprecated-code}}
-	{{{deprecated-code}}}
-{{else}}
-<div class="container">
-	<div class="row">
-		<div class="col-xs-12">
-			<h2>Lorem ipsum</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet sem ac dolor hendrerit sagittis a auctor dolor. Nulla velit metus, sollicitudin eu tristique nec, ultricies nec nisi. Quisque lobortis neque in diam gravida posuere.</p>
-		</div>
-	</div>
-</div>
  <!-- Begin pattern: sticky-nav //-->
-<div class="visible-md-block visible-lg-block" id="internal-nav">
-	<div id="nav-top" class="affix-top">
-		<nav class="navigation-bar nav navbar" aria-label="Section links">
-		    <div class="container">
-		        <ul class="navigation-bar-nav primary-nav">
-					{{#each nav-link}}
-						<li><a href="#{{link}}">{{name}}</a></li>
-					{{/each}}
-		        </ul>
-		    </div>
-		</nav>
-	</div>
-</div>
-<!-- End pattern: sticky-nav //-->
-<div class="container">
-	<div class="row">
-		<div class="col-xs-12 content">
-		{{#each nav-link}}
-			<h3 id="{{link}}">{{name}}</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet sem ac dolor hendrerit sagittis a auctor dolor. Nulla velit metus, sollicitudin eu tristique nec, ultricies nec nisi. Quisque lobortis neque in diam gravida posuere. Nunc egestas posuere sem, vitae rhoncus felis scelerisque molestie. Mauris mi massa, iaculis gravida molestie in, facilisis non lorem. Quisque at nunc at nisl gravida sollicitudin. Vestibulum volutpat pretium purus et sodales. Integer sagittis sollicitudin molestie.</p>
-		{{/each}}
-		</div>
-	</div>
-</div>
+	<nav id="nav-top" class="sticky-nav affix-top" aria-label="Page content navigation">
+		<div class="container">
+			<div class="sticky-nav__toggle">
+				<button class="sticky-nav__toggle-button" aria-expanded="false">Contents</button>
+{{#if toggle-active-section}}
+				<span id="sticky-nav__active-section"></span>
 {{/if}}
+			</div>
+			<ul class="sticky-nav__menu">
+			{{#each nav-link}}
+				<li><a href="#{{link}}" class="sticky-nav__menu--link">{{name}}</a></li>
+			{{/each}}
+		    </ul>
+		</div>
+	</nav>
+<!-- End pattern: sticky-nav //-->
+{{#each nav-link}}
+	<section id="{{anchor}}" class="section__anchor--sticky" aria-labelledby="{{anchor}}-heading">
+		<div{{{classes}}}>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h3{{{heading-classes}}} id="{{anchor}}-heading">{{name}}</h3>
+						<p>{{intro}}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet sem ac dolor hendrerit sagittis a auctor dolor. Nulla velit metus, sollicitudin eu tristique nec, ultricies nec nisi. Quisque lobortis neque in diam gravida posuere. Nunc egestas posuere sem, vitae rhoncus felis scelerisque molestie. Mauris mi massa, iaculis gravida molestie in, facilisis non lorem. Quisque at nunc at nisl gravida sollicitudin. Vestibulum volutpat pretium purus et sodales. Integer sagittis sollicitudin molestie.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet sem ac dolor hendrerit sagittis a auctor dolor. Nulla velit metus, sollicitudin eu tristique nec, ultricies nec nisi. Quisque lobortis neque in diam <a href="https://www.google.com">gravida</a> posuere. Nunc egestas posuere sem, vitae rhoncus felis scelerisque molestie. Mauris mi massa, iaculis gravida molestie in, facilisis non lorem. Quisque at nunc at nisl gravida sollicitudin. Vestibulum volutpat pretium purus et sodales. Integer sagittis sollicitudin molestie.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet sem ac dolor hendrerit sagittis a auctor dolor. Nulla velit metus, sollicitudin eu tristique nec, ultricies nec nisi. Quisque lobortis neque in diam gravida posuere. Nunc egestas posuere sem, vitae rhoncus felis scelerisque molestie. Mauris mi massa, iaculis gravida molestie in, facilisis non lorem. Quisque at nunc at nisl gravida sollicitudin. Vestibulum volutpat pretium purus et sodales. Integer sagittis sollicitudin molestie.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{{/each}}
