@@ -164,6 +164,28 @@ button {
 }
 
 // DROPDOWN STYLES - replace this with own dropdown util
+
+.dropdown-toggle {
+        padding-right: 2rem;
+        position: relative;
+
+        &:before {
+          @extend .fa;
+          @extend .fa-chevron-down;
+          color: inherit;
+          display: block;
+          font-size: 1rem;
+          position: absolute;
+            top: 50%;
+            right: 0.5rem;
+          transform: translateY(-50%);
+        }
+
+        &[aria-expanded="true"]:before {
+          @extend .fa-chevron-up;
+        }
+      }
+
 .dropdown-menu {
   margin:0;
   padding:0;

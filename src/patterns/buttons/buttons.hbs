@@ -3,14 +3,32 @@
 {{/each}}
 {{#if dropdown}}
 <div class="dropdown">
+  <button id="dropdown-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-primary dropdown-toggle">Dropdown trigger</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-primary">
+    <li><a href="">Dropdown option 1</a></li>
+    <li><a href="">Dropdown option 2</a></li>
+    <li><a href="">Dropdown option 3</a></li>
+  </ul>
+</div>
+<div class="dropdown">
+  <button id="dropdown-small" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-small-tag dropdown-toggle">Dropdown trigger</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-small">
+    <li><a href="">Dropdown option 1</a></li>
+    <li><a href="">Dropdown option 2</a></li>
+    <li><a href="">Dropdown option 3</a></li>
+  </ul>
+</div>
+{{/if}}
+{{#if dropdown-deprecated}}
+<div class="dropdown">
   <button id="dropdown-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-primary">
     Dropdown trigger
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-primary">
-	<li><a href="">Dropdown option 1</a></li>
-	<li><a href="">Dropdown option 2</a></li>
-	<li><a href="">Dropdown option 3</a></li>
+  	<li><a href="">Dropdown option 1</a></li>
+  	<li><a href="">Dropdown option 2</a></li>
+  	<li><a href="">Dropdown option 3</a></li>
   </ul>
 </div>
 <div class="dropdown">
@@ -19,9 +37,9 @@
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-small">
-	<li><a href="">Dropdown option 1</a></li>
-	<li><a href="">Dropdown option 2</a></li>
-	<li><a href="">Dropdown option 3</a></li>
+  	<li><a href="">Dropdown option 1</a></li>
+  	<li><a href="">Dropdown option 2</a></li>
+  	<li><a href="">Dropdown option 3</a></li>
   </ul>
 </div>
 {{/if}}

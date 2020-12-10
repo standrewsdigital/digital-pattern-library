@@ -4,15 +4,17 @@
 	<div class="col-md-8">
 {{/unless}}
 <figure class="blockquote{{pull}}">
-<blockquote{{{cite}}}>
-{{{quote}}}
-</blockquote>
-<figcaption class="blockquote__author">
-{{#if author-image}}<div class="blockquote__author-thumbnail">
-	<img src="{{author-image}}" alt="{{author-name}}">
-</div>{{/if}}
-<div><strong>{{author-name}}</strong>{{#if author-source}} <br>- {{{author-source}}}{{/if}}</div>
-</figcaption>
+	<blockquote{{{cite}}}>
+		{{{quote}}}
+	</blockquote>
+	<figcaption class="blockquote__author">
+		{{#if author-image}}
+		<div class="blockquote__author-thumbnail">
+			<img src="{{author-image}}" alt="{{author-name}}">
+		</div>
+		{{/if}}
+		<div><strong>{{author-name}}</strong>{{#if author-source}} <br>- {{{author-source}}}{{/if}}</div>
+	</figcaption>
 </figure>
 {{#unless pull}}
 </div>

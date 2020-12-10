@@ -12,30 +12,44 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ## v1.25.0
 
-Release date: Tuesday 1 December 2020
+Release date: Thursday 10 December 2020
 
 ### Added
 * Gumshoe script for fixed position navigation.
 * Copy code button for each code block.
 * ARIA label to search form fields.
 * More options for paired value list.
+* Form options for hero banner pattern.
+* Horizontal list pattern.
+* Grey colour with alpha transparency for one implementation over multiple background colours.
+* Dropdown button option with chevron.
 
 ### Changed
 * Sticky horizontal pattern now visible on all displays, with new styling and documentation.
 * Styling for code blocks.
 * Code blocks now encoded to show raw HTML that is not altered by pattern's JavaScript.
+* Code blocks spacing and formatting improved.
 * Saerch autocomplete (Typeahead) now bold on the non query part.
 * Reduce font size of headings when in a sidebar.
 * Documentation and example sidebar heading levels.
+* Aligned checkbox and radiobutton elements to left.
+* Sizing and spacing on checkboxes and radiobuttons.
+* Reduced font size of accordion item headings by one on the scale.
+
+### Deprecated
+* Dropdown button option with caret.
+* Search banner with background image.
 
 ### Removed
 * Bootstrap scrollspy script.
 * Deprecated tile option.
 * Tile colour options.
+* Horizontal list code from search bar pattern to become new standalone pattern.
 
 ### Fixed
 * Documentation heading levels.
 * Search reset button now also resets autocomplete.
+* Tidy up hero banner spacing of elements.
 
 ---
 

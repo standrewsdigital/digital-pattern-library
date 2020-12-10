@@ -71,8 +71,8 @@
         ul li label {
             cursor: pointer;
             font-weight: normal;
-            margin: 10px auto;
-            padding: 5px 25px 5px 40px;
+            margin: 10px 0;
+            padding: 5px 1rem 5px 40px;
             position: relative;
             -webkit-transition: all 0.25s linear;
                     transition: all 0.25s linear;
@@ -120,8 +120,8 @@
         &--small {
             ul li label {
                 font-size: 1rem;
-                margin: 0 auto;
-                padding: 8px 25px 8px 25px;
+                margin: 0;
+                padding: 8px 1rem 8px 25px;
             }
 
             ul li .check {
@@ -137,6 +137,10 @@
     .inline ul li {
         display: inline-block;
         width: auto;
+
+        label {
+            margin-right: 1rem;
+        }
     }
 
     .checkbox-box {

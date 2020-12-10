@@ -1,6 +1,7 @@
 <!-- Begin pattern: category-header //-->
 <nav id="category-header" aria-label="Category header">
-{{#if transparent}}<div class="transparent-overlay">
+{{#if transparent}}
+	<div class="transparent-overlay">
     	<div class="container">
         	<h2><a href="{{url}}">{{title}}</a></h2>
     	</div>
@@ -8,6 +9,7 @@
     {{else}}
     <div class="container">
         {{{text-start}}}<a href="{{url}}">{{title}}</a>{{{text-end}}}
-    </div>{{/if}}
+    </div>
+    {{/if ~}}
 </nav>
 <!-- End pattern: category-header //-->

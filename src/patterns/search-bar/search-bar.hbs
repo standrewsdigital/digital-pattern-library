@@ -8,11 +8,17 @@
 		<div class="row">
 		<div class="search-bar search-bar__constrained{{#if background-color}} {{background-color}}{{/if}}">
 		{{/if}}
-		{{#if search-header}}<h2 class="search-bar__heading">{{search-header}}</h2>{{/if}}
-		{{#if search-subtext}}<p class="search-bar__sub-heading">{{search-subtext}}</p>{{/if}}
+		{{#if search-header}}
+		<h2 class="search-bar__heading">{{search-header}}</h2>
+		{{/if}}
+		{{#if search-subtext}}
+		<p class="search-bar__sub-heading">{{search-subtext}}</p>
+		{{/if}}
 	    <form class="dpl-form{{nosubmit}}" action="" role="search">
 	        <div class="input-group input-group-lg">
-	            {{#if title}}<span class="input-group-addon search-bar__inline-title">{{title}}</span>{{/if}}
+	            {{#if title}}
+	            <span class="input-group-addon search-bar__inline-title">{{title}}</span>
+	            {{/if}}
 	            <input id="{{input-id}}" class="form-control search-box{{autocomplete}}" required type="text" aria-label="{{aria-label}}" maxlength="256" name="search" placeholder="{{placeholder}}">
 	            <button class="clear-icon{{clear-button-type}}" type="reset" aria-label="Reset" value="Reset"></button>
 	        {{#if search-button}}

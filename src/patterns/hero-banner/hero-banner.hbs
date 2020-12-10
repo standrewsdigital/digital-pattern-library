@@ -7,18 +7,18 @@
     <div class="container">
         <div class="hero-section__content">
             <h1 class="hero-section__heading{{heading-colour}}">{{default heading "[heading]"}}</h1>
-        {{#if content ~}}
+            {{#if content}}
             <div class="hero-section__content-group">
-                {{#if paragraph ~}}
+                {{#if paragraph}}
                 <p class="hero-section__intro">{{paragraph}}</p>
                 {{/if ~}}
-                {{#if action-text ~}}
+                {{#if action-text}}
                 <a class="{{button-style}}" href="{{default action-url "[action-url]"}}">{{default action-text "[action-text]"}}</a>
                 {{/if ~}}
-                {{#if action-text-2 ~}}
+                {{#if action-text-2}}
                 <a class="{{button-style}}" href="{{default action-url "[action-url]"}}">{{default action-text-2 "[action-text-2]"}}</a>
                 {{/if ~}}
-            {{#if search ~}}
+                {{#if search}}
                 <form class="dpl-form" action="" role="search">
                     <div class="input-group input-group-lg">
                         <input id="hero-section__search" class="form-control search-box" required type="text" aria-label="Course search" maxlength="256" name="search" placeholder="Search all our courses">
@@ -30,8 +30,8 @@
                         </span>
                     </div>
                 </form>
-            {{/if ~}}
-            {{#if complexform ~}}
+                {{/if ~}}
+                {{#if complexform}}
                 <form class="dpl-form" action="" role="search">
                     <fieldset>
                         <legend><p class="hero-section__intro">Search the library's print and online resources.</p></legend>
@@ -82,9 +82,9 @@
                     </ul>
                 </div>
                 <!-- End pattern: horizontal-list //-->
-            {{/if ~}}
+            {{/if}}
             </div>
-        {{/if ~}}
+        {{/if}}
         </div>
     </div>
 </section>

@@ -15,7 +15,7 @@
                     "text": "Please enter a valid telephone number"
                 }
             ],
-            "legend": "Your personal details",
+            "legend": "<h3>Your personal details</h3>",
             "input-field": [
                 {
                     "class": "form-group has-error dpl-form",
@@ -49,7 +49,7 @@
                     "text": "Please confirm your personal details are correct and up-to-date."
                 }
             ],
-            "legend": "Check your personal details",
+            "legend": "<h3>Example form</h3>",
             "class": "form-group has-error dpl-form",
             "radio": true,
             "radio-buttons": [

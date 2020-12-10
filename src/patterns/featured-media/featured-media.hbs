@@ -1,6 +1,6 @@
 <!-- Begin pattern: featured media //-->
 <div class="featured-media__wrapper{{background}}"{{#if bg-image}} style="background-image: url({{asset bg-image}});"{{/if}}>
-<div class="featured-media{{media-alignment}}">
+    <div class="featured-media{{media-alignment}}">
        <div class="featured-media__text">
             <h2 class="featured-media__heading">{{#if heading-link}}<a href="#">{{/if}}{{heading}}{{#if heading-link}}</a>{{/if}}</h2>
             {{#if bodytext}}
@@ -22,7 +22,9 @@
         <div class="featured-media__media">
             <figure class="featured-media__media-wrapper">
                 {{{video}}}
+                {{#if caption}}
                 {{{caption}}}
+                {{/if}}
                 <!-- Begin pattern: accordion //-->
                 <div class="accordion-item">
                     <div class="accordion-item__toggle">
