@@ -25,7 +25,7 @@ Release date: Thursday 10 December 2020
 * Dropdown button option with chevron.
 
 ### Changed
-* Sticky horizontal pattern now visible on all displays, with new styling and documentation.
+* Sticky horizontal nav pattern now visible on all displays, with new styling and documentation.
 * Styling for code blocks.
 * Code blocks now encoded to show raw HTML that is not altered by pattern's JavaScript.
 * Code blocks spacing and formatting improved.
@@ -50,6 +50,7 @@ Release date: Thursday 10 December 2020
 * Documentation heading levels.
 * Search reset button now also resets autocomplete.
 * Tidy up hero banner spacing of elements.
+* Formatting of code blocks.
 
 ---
 
