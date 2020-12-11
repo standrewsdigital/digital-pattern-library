@@ -16,17 +16,17 @@ General users load pages in their browser, using the core CSS and JavaScript fro
 
 ### Web developers
 
-Developers outwith the digital communications team build applications or websites using the core CSS and JavaScript from the DPL. These developers need to know what the official patterns are and how to use them.
+Developers outwith the Digital Communications team build applications or websites using the core CSS and JavaScript from the DPL. These developers need to know what the official patterns are and how to use them.
 
 * As a web developer I want clear documentation about how, when and where to use design patterns so that there is a consistency across the applications and websites that I develop.
 
-### Digital communications team
+### Digital Communications team
 
 The team develops and designs the pattern library and uses it to build digital assets. The team needs a central place to work on, test and document the design patterns.
 
-* As a member of the digital communications team I want a test-driven approach to developing websites and web applications so that new patterns are quality assured.
-* As a member of the digital communications team I want the digital pattern library to be stored in a central code repository so that I may collaborate with other developers.
-* As a member of the digital communications team I want the digital pattern library to be stored in a central code repository so that I may version control the code (and roll back if required).
+* As a member of the Digital Communications team I want a test-driven approach to developing websites and web applications so that new patterns are quality assured.
+* As a member of the Digital Communications team I want the digital pattern library to be stored in a central code repository so that I may collaborate with other developers.
+* As a member of the Digital Communications team I want the digital pattern library to be stored in a central code repository so that I may version control the code (and roll back if required).
 
 ### Content creators, editors and moderators
 Users creating and publishing content on a website that uses the DPL need a central place to review how the various patterns should be used.
@@ -39,7 +39,7 @@ Users creating and publishing content on a website that uses the DPL need a cent
 * **Documentation** The 'patterns' folder includes documentation about each pattern available in the pattern library, examples of each one and guidance on their use.
 
 ## Browsers supported
-The digital communications team is committed to making the University website and web applications as usable as possible, irrespective of browser or platform (see the [accessibility](https://www.st-andrews.ac.uk/digital-standards/accessibility/) section within digital standards for more information). The team uses the following baseline of browsers to actively support and test against.
+The Digital Communications team is committed to making the University website and web applications as usable as possible, irrespective of browser or platform (see the [accessibility](https://www.st-andrews.ac.uk/digital-standards/accessibility/) section within digital standards for more information). The team uses the following baseline of browsers to actively support and test against.
 
 ### Desktop
 Generally, the digital pattern library supports the current major desktop releases of: 

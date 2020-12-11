@@ -33,7 +33,7 @@
 
         {
             "option-heading": "Headings with a dividing line",
-            "option-description": "<p>Headings that are followed by content which is wider than the heading itself may benefit from a visual indicator that the heading is related to that content. In these situations adding <code>keyline--bottom</code> to the heading will add a full width dividing line.</p><ul><li>Please discuss your design requirements with the digital communications team before using this option.</li></ul>",
+            "option-description": "<p>Headings that are followed by content which is wider than the heading itself may benefit from a visual indicator that the heading is related to that content. In these situations adding <code>keyline--bottom</code> to the heading will add a full width dividing line.</p><ul><li>Please discuss your design requirements with the Digital Communications team before using this option.</li></ul>",
             "option-anchor": "headings-dividing",
             "headings": [
                 {

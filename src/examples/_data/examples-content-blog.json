@@ -16,7 +16,7 @@
         ]
       },
       "category-header": {
-          "title": "Digital communications team blog",
+          "title": "Digital Communications team blog",
           "url": "#",
             "text-start": "<div class='category-header__title'>",
             "text-end": "</div>"

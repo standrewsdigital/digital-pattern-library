@@ -176,9 +176,12 @@
     padding-top: 3.4em;
 }
 
-// Set offset padding to first element when nav kicks in
-.sticky-nav.affix + .section__anchor--sticky {
+// Set offset padding to first element when nav kicks in (This technique allows for junk getting in between sections)
+.sticky-nav.affix ~ .section__anchor--sticky {
     padding-top: 6.8em;
+}
+.section__anchor--sticky ~ .section__anchor--sticky {
+    padding-top: 3.4em !important;
 }
 
 /*********************************/
