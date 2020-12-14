@@ -7,23 +7,25 @@ section.sta-grey-light {
 	background-color: $sta-grey-light;
 }
 
-section.sta-blue,
-section.sta-blue-light,
-section.sta-green,
-section.sta-burgundy,
-section.sta-purple {
+section,
+div {
+	&.sta-blue,
+	&.sta-blue-light,
+	&.sta-green,
+	&.sta-burgundy,
+	&.ta-purple {
 
-    color: white;
+	    color: white;
 
-    p a, ul a {
-        color: white;
-        text-decoration: underline;
-    }
+	    p a, ul a {
+	        color: white;
+	        text-decoration: underline;
+	    }
 
-    .navbox .navbox-title p a, .btn {
-        text-decoration: none;
-    }
-
+	    .navbox .navbox-title p a, .btn {
+	        text-decoration: none;
+	    }
+	}
 }
 
 /*********************************/
