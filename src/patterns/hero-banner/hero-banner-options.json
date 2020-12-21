@@ -74,7 +74,7 @@
         {
             "option-anchor": "hero-banner6",
             "option-heading": "Hero banner with simple search form",
-            "option-description": "<p>This example includes a heading, introduction and simple search form.</p>",
+            "option-description": "<p>This example includes a heading, introduction and simple search form with autocomplete.</p>",
             "heading":  "Scotland’s first university",
             "paragraph":  "Additional tagline can appear here to add context.",
             "bg-image": "docs/images/cta/hero2/",

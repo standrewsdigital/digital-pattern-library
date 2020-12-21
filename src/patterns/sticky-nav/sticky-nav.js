@@ -26,24 +26,26 @@ var header = document.querySelector('#nav-top');
 var currentSection = document.querySelector('#sticky-nav__active-section');
 var root = document.documentElement;
 
-var spy = new Gumshoe('.sticky-nav__menu--link', {
-    reflow: true
-});
+// Check if sticky nav is being used on the page before loading it
+if(document.body.contains(document.getElementById('nav-top'))){
+    var spy = new Gumshoe('.sticky-nav__menu--link', {
+        reflow: true
+    });
 
-// Listen for activate events
-document.addEventListener('gumshoeActivate', function (event) {
-    var link = event.detail.link.innerHTML;
-    currentSection.innerHTML = link;
+    // Listen for activate events
+    document.addEventListener('gumshoeActivate', function (event) {
+        var link = event.detail.link.innerHTML;
+        currentSection.innerHTML = link;
 
-}, false);
-// Listen for deactivate events
-document.addEventListener('gumshoeDeactivate', function (event) {
+    }, false);
+    // Listen for deactivate events
+    document.addEventListener('gumshoeDeactivate', function (event) {
 
-    var link = event.detail.link.innerHTML;
-    currentSection.innerHTML = "";
+        var link = event.detail.link.innerHTML;
+        currentSection.innerHTML = "";
 
-}, false);
-
+    }, false);
+}
 
 // Toggle contents list
 $(document).on('click', '.sticky-nav__toggle', function(){

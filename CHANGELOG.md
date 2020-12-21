@@ -10,6 +10,18 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.25.1
+
+Release date: Monday 21 December 2020
+
+### Fixed
+* Hero banner pattern image further separated from content to prevent overflow issues.
+* Gumshoe script only runs if sticky navigation bar is present in the DOM.
+* ARIA label added to header search field.
+* Header pattern's dropdown button, removal of redundant caret icon.
+
+---
+
 ## v1.25.0
 
 Release date: Thursday 10 December 2020

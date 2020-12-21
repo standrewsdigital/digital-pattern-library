@@ -80,8 +80,16 @@
 // Position content over image
 @media (min-width:768px){
   position:relative;
-  overflow: hidden;
   height: 480px;
+
+  .hero-section__image-mask {
+    height: 480px;  
+    overflow: hidden;
+    position: absolute;
+      top: 0;
+      left: 0;
+    width: 100%;
+  }
 
   img {
      position: absolute;
@@ -147,19 +155,35 @@
 
 @media (min-width:992px){
   height: 530px;
+
+  .hero-section__image-mask {
+    height: 530px;  
+  }
 }
 
 @media (min-width:1200px){
   height: 540px;
+
+  .hero-section__image-mask {
+    height: 540px;  
+  }
 }
 
 @media (min-width:1400px){
   height: 580px;
+
+  .hero-section__image-mask {
+    height: 580px;  
+  }
 }
 
 // Supersize on big screens
 @media (min-width:1601px){
   height: 600px;
+
+  .hero-section__image-mask {
+    height: 600px;  
+  }
 
 }
 
