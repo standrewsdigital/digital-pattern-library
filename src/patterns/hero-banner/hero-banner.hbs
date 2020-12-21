@@ -1,9 +1,11 @@
 <!-- Begin pattern: hero-banner //-->                                  
 <section class="hero-section">
-    <picture class="hero-section__image">
-      <source srcset="{{asset bg-image}}1920x600.jpg" media="(min-width: 640px)">
-      <img src="{{asset bg-image}}750x500.jpg" alt="{{caption}}">
-    </picture>
+    <div class="hero-section__image-mask">
+        <picture class="hero-section__image">
+          <source srcset="{{asset bg-image}}1920x600.jpg" media="(min-width: 640px)">
+          <img src="{{asset bg-image}}750x500.jpg" alt="{{caption}}">
+        </picture>
+    </div>
     <div class="container">
         <div class="hero-section__content">
             <h1 class="hero-section__heading{{heading-colour}}">{{default heading "[heading]"}}</h1>
@@ -21,8 +23,8 @@
                 {{#if search}}
                 <form class="dpl-form" action="" role="search">
                     <div class="input-group input-group-lg">
-                        <input id="hero-section__search" class="form-control search-box" required type="text" aria-label="Course search" maxlength="256" name="search" placeholder="Search all our courses">
-                        <button class="clear-icon" type="reset" aria-label="Reset" value="Reset"></button>
+                        <input id="hero-section__search" class="form-control search-box form-control--autocomplete" required type="text" aria-label="Course search" maxlength="256" name="search" placeholder="Search website">
+                        <button class="clear-icon clear-icon__autocomplete" type="reset" aria-label="Reset" value="Reset"></button>
                         <span class="input-group-btn">
                             <button class="btn btn-primary" value="Search" type="submit" aria-label="Submit">
                                 <i class="fa fa-search" title="Search"></i>
