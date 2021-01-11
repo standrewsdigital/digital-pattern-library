@@ -9,7 +9,7 @@
 
 .media,
 .media-body {
-  zoom: 1;
+  //zoom: 1; Non-standard property flagged in Firefox
   overflow: hidden;
 }
 
