@@ -25,7 +25,16 @@
             "option-anchor": "headings-secondary",
             "headings": [
                 {
+                    "heading": "<h1>Heading 1<small>This is secondary text</small></h1>"
+                },
+                {
                     "heading": "<h2>Heading 2<small>This is secondary text</small></h2>"
+                },
+                {
+                    "heading": "<h3>Heading 3<small>This is secondary text</small></h3>"
+                },
+                {
+                    "heading": "<h4>Heading 4<small>This is secondary text</small></h4>"
                 }
             ]
         },
@@ -37,8 +46,18 @@
             "option-anchor": "headings-dividing",
             "headings": [
                 {
+                    "heading": "<h1 class='keyline--bottom'>Heading of an article</h1>"
+                },
+                {
                     "heading": "<h2 class='keyline--bottom'>Heading of an article</h2>"
+                },
+                {
+                    "heading": "<h3 class='keyline--bottom'>Heading of an article</h3>"
+                },
+                {
+                    "heading": "<h4 class='keyline--bottom'>Heading of an article</h4>"
                 }
+
             ]
         },
 

@@ -261,6 +261,10 @@
                 { "name": "Tabs",
                   "img": "assets/docs/images/patterns/tabs.jpg",
                   "url": "patterns/tabs/index.html"
+                },
+                { "name": "Tags",
+                  "img": "assets/docs/images/patterns/tags.jpg",
+                  "url": "patterns/tags/index.html"
                 }
             ]
         },

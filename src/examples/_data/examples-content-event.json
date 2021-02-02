@@ -1,0 +1,24 @@
+{
+    "navigation-bar" : {
+        "primary":[
+            {"title": "Events",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Calendar",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Submit an event",
+             "url": "#",
+             "selected":false
+            }
+        ]
+      },
+      "category-header": {
+          "title": "Events",
+          "url": "#",
+            "text-start": "<div class='category-header__title'>",
+            "text-end": "</div>"
+      }
+}

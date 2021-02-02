@@ -1,0 +1,49 @@
+---
+title: Tags
+---
+
+<div class="row">
+	<div class="col-md-8">
+<p class="lead">A tag can be used to assign a status or label to an associated content block.</p>
+
+<h2>Rules for tags</h2>
+<ul>
+	<li>Limit the use of tags to only convey what is essential, to maximise their impact.</li>
+	<li>Try to only use one tag per associated content block.</li>
+	<li>Colours can be used to help differentiate tags but shouldn't be used alone to convey meaning as this is not accessible.</li>
+	<li>Use consistent colour and naming conventions.</li>
+</ul>
+
+<h2>Options available</h2>
+<ul>
+{{#tags-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/tags-options.options}}
+</ul>
+</div>
+</div>
+{{#tags-options.options}}
+<hr>
+<div class="row">
+	<div class="col-md-8">
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+</div>
+<!--noindex-->
+	<span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+<div class="container">
+	{{> tags}}
+</div>
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+{{#markdown}}
+```html
+{{> tags}}
+```
+{{/markdown}}
+<!--endnoindex-->
+{{/tags-options.options}}
