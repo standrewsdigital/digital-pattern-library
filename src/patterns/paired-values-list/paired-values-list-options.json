@@ -117,9 +117,9 @@
 
         {
             "option-heading": "Additional style options",
-            "option-description": "<p>This example shows a variety of the different types of value that can be used, the size of text has been reduced using the <code>font-scale-reset</code> class and the name of each pair has been set to bold to add visual emphasis. This example is set to half the width of the main container and placed on a light grey background.</p>",
+            "option-description": "<p>This example shows a variety of the different types of value that can be used, the size of text has been reduced using the <code>font-scale-reset</code> class and the name of each pair has been set to bold to add visual emphasis. This example is set to half the width of the main container and placed on a light grey background. The <code>collapse-top</code> and <code>collapse-bottom</code> helper classes have been used to remove all top and bottom padding and margins so that the list fits exactly within its container element.</p>",
             "option-anchor": "paired-list-styles",
-            "list-classes": " paired-values-list--divided font-scale-reset",
+            "list-classes": " paired-values-list--divided font-scale-reset collapse-top collapse-bottom",
             "before-pattern": "</div><div class=\"sta-grey-light\"><div class=\"container\"><div class=\"row\"><div class=\"col-md-6\">",
             "after-pattern": "</div></div></div></div><div class=\"container\">",
             "list": [

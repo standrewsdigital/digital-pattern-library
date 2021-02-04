@@ -39,14 +39,11 @@ ul ol {
 }
 
 hr {
-    border-top: 1px solid #dedede;
-    border-bottom: 1px solid #dedede;
+    background: $sta-grey-mid2-alpha;
     clear: both;
-    height: 8px;
-    margin: 0 auto;
-    width: 60%;
-    margin-top: $half-gutter; 
-    margin-bottom: $half-gutter;
+    height: 1px;
+    margin-top: $third-gutter; 
+    margin-bottom: $third-gutter;
 }
 
 

@@ -13,7 +13,7 @@ title: Example event page
 <main id="content-begin">
 <div class="container margin-bottom">
     <article class="content"> 
-    <p><span class="sta-tag sta-tag--info font-scale-minus-1">Limited access</span></p>
+    <p><span class="sta-tag sta-tag--danger font-scale-minus-1">Cancelled</span></p>
     <div class="article-header">
     	<div class="row">
     		<div class="col-md-8">
@@ -30,18 +30,23 @@ title: Example event page
 							<dt><i class="far fa-clock" aria-hidden="true" title="Time"></i><span class="sr-only">Time</span></dt>
 							<dd>5:15pm to 6:00pm</dd>
 							<dt><i class="fas fa-map-marker-alt" aria-hidden="true" title="Location"></i><span class="sr-only">Location</span></dt>
-							<dd><a href="#location">Can Do marquee, Tripod</a></dd>
+							<dd>Online event</dd>
 							<dt><i class="far fa-user" aria-hidden="true" title="Attend"></i><span class="sr-only">Attend</span></dt>
 							<dd>10 spaces remaining <a href="#attend">Book now</a></dd>
 						</dl>
-
-				<div class="dropdown">
-				  <button id="dropdown-small" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-small-tag dropdown-toggle">Add to calendar</button>
-				  <ul class="dropdown-menu" aria-labelledby="dropdown-small">
-				    <li><a href="">Download file</a></li>
-				    <li><a href="">Google Calendar</a></li>
-				  </ul>
+					</div>
 				</div>
+				<div class="article-header__meta">
+					<div class="article-header__meta--group">
+						<a href="" class="btn btn-small btn-primary">Access event</a>
+
+						<div class="dropdown">
+						  <button id="dropdown-small" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-small-tag dropdown-toggle">Add to calendar</button>
+						  <ul class="dropdown-menu" aria-labelledby="dropdown-small">
+						    <li><a href="">Download file</a></li>
+						    <li><a href="">Google Calendar</a></li>
+						  </ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -116,22 +121,11 @@ title: Example event page
         </div>
         <aside class="col-md-6 sidebar">
         	<figure><img src="../assets/docs/images/placeholders/750x500.png" alt="Optional image"></figure>
-        	<figure id="location">
-        		<a href="#">
-        			<picture class="hero-section__image">
-			         	<source srcset="../assets/docs/images/placeholders/map750x375.jpg" media="(min-width: 640px)">
-			          	<img src="../assets/docs/images/placeholders/map750x275.jpg" alt="Google map of location" style="border:1px solid #dedede;">
-			        </picture>
-			    </a>
-	        	<div class="font-scale-reset" style="margin-top:1em;">
-				Can Do marquee, Tripod, St Salvators Quad, St Andrews, Fife, UK, KY16 9AJ<br>
-					<a href="">Get directions</a>
-				</div>
-			</figure>
+			<hr>
         	<div class="filter-box">
 	        	<dl class="paired-values-list paired-values-list--divided font-scale-reset collapse-top collapse-bottom">
 					<dt class="paired-values-list__name font-weight--bold">Event location</dt>
-					<dd class="paired-values-list__value"><a href="#">Can Do marquee, Tripod</a></dd>
+					<dd class="paired-values-list__value"><a href="#">Online event</a></dd>
 					<dt class="paired-values-list__name font-weight--bold">Event type</dt>
 					<dd class="paired-values-list__value"><a href="#">Academic</a></dd>
 					<dt class="paired-values-list__name font-weight--bold">Audience</dt>
