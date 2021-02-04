@@ -9,12 +9,12 @@
             "events": [
                 {
                     "title": "Piano Masterclass",
+                    "subtitle": "Entry is free",
                     "date-display" : "Tuesday 18 September 2018",
                     "time-display" : "7.30pm to 9.00pm",
                     "event-location" : "Younger Hall",
                     "linkblock-start": "<div class=\"event-listing__details\">",
-                    "linkblock-end": "</div>",
-                    "status" : ""
+                    "linkblock-end": "</div>"
                 }
             ]
         },
@@ -30,9 +30,10 @@
                     "date-display" : "Tuesday 18 September 2018",
                     "time-display" : "7.30pm to 9.00pm",
                     "event-location" : "Younger Hall",
+                    "attend": "10 spaces available",
                     "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
                     "linkblock-end": "</a>",
-                    "status" : " expanded-link-wrapper"
+                    "cancelled": true
                 }
             ]
         },
@@ -50,7 +51,7 @@
                     "event-location" : "Younger Hall",
                     "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
                     "linkblock-end": "</a>",
-                    "status" : " expanded-link-wrapper"
+                    "limited": true
                 },
                 {
                     "title": "Bike to Work Breakfast",
@@ -58,8 +59,7 @@
                     "time-display" : "8.00am to 9.00am",
                     "event-location" : "Rector's Café",
                     "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
-                    "linkblock-end": "</a>",
-                    "status" : " cancelled expanded-link-wrapper"
+                    "linkblock-end": "</a>"
                 },
                 {
                     "title": "Study Abroad Fair",
@@ -67,8 +67,7 @@
                     "event-location" : "Students' Association",
                     "event-description" : "Are you in second year and thinking about studying abroad in 2019-2020? If so, come along to our Study Abroad Fair where there will be a presentation followed by a fair during which you can meet other students who have studied abroad.",
                     "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
-                    "linkblock-end": "</a>",
-                    "status" : " expanded-link-wrapper"
+                    "linkblock-end": "</a>"
                 },
                 {
                     "title": "An Introduction to The Alexander Technique with Heather Coates",
@@ -76,24 +75,23 @@
                     "event-location" : "Younger Hall",
                     "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
                     "linkblock-end": "</a>",
-                    "status" : " expanded-link-wrapper"
+                    "cancelled": true
                 },
                 {
                     "title": "Early Career Women Network Meet-up",
                     "date-display" : "Monday 29 October 2018 to Tuesday 30 October 2018",
                     "event-location" : "Hebdomadar's Room",
                     "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
-                    "linkblock-end": "</a>",
-                    "status" : " expanded-link-wrapper"
+                    "linkblock-end": "</a>"
                 },
                 {
                     "title": "Choral Evensong",
+                    "subtitle": "Part of the choral season of 2018",
                     "date-display" : "Wednesday 7 November 2018",
                     "time-display" : "7.45pm",
                     "event-location" : "St Salvator's Chapel",
                     "linkblock-start": "<a href=\"#\" class=\"event-listing__details\">",
-                    "linkblock-end": "</a>",
-                    "status" : " expanded-link-wrapper"
+                    "linkblock-end": "</a>"
                 }
             ]
         }

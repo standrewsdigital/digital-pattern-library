@@ -15,7 +15,7 @@
 		</div>
 		<div class="event-grid__tiles">
 			{{#each tiles}}
-			<div class="featured-event{{status}}">
+			<div class="featured-event">
 				<div class="expanded-link-wrapper">
 					<div class="featured-event__image">
 					      <img 
@@ -25,6 +25,12 @@
 					      class="lazyload">
 				   	</div>
 			        <div class="featured-event__details">
+						{{#if cancelled}}
+						<span class="sta-tag sta-tag--danger font-scale-minus-1">Cancelled</span>
+						{{/if ~}}
+						{{#if limited}}
+						<span class="sta-tag sta-tag--info font-scale-minus-1">Limited access</span>
+						{{/if ~}}
 						<a href="#"><h3 class="featured-event__heading">{{title}}</h3></a>
 			            <dl class="metadata-list inherit--colour">
 				            <dt class="metadata-list--full"><i class="far fa-calendar-alt" aria-hidden="true" title="Date"></i><span class="sr-only">Date</span></dt>
