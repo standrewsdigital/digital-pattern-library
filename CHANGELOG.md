@@ -10,6 +10,27 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v1.26.0
+
+Release date: Friday 5 February 2021
+
+### Added
+* Tags pattern.
+* Example pages for event and online event.
+
+### Changed
+* Horizontal rule style.
+* Improved spacing for headings within a content block.
+* Documentation and HTML of event tile grid pattern.
+* Documentation and HTML of event list pattern.
+* Paired values list pattern now includes collapse utility class to remove vertical padding.
+
+### Fixed
+* Console warning messages.
+* Colours page text colours.
+
+---
+
 ## v1.25.1
 
 Release date: Monday 21 December 2020

@@ -8,28 +8,27 @@
                 {    
                 "tags-list-group": [
                     {
-                        "label": "No status",
-                        "size": " font-scale-minus-1"
+                        "label": "No status"
                     },
                     {
                         "label": "Success",
                         "colour": " sta-tag--success",
-                        "size": " font-scale-minus-1"
+                        "size": " font-scale-reset"
                     },
                     {
                         "label": "Information",
                         "colour": " sta-tag--info",
-                        "size": " font-scale-minus-1"
+                        "size": " font-scale-reset"
                     },
                     {
                         "label": "Warning",
                         "colour": " sta-tag--warning",
-                        "size": " font-scale-minus-1"
+                        "size": " font-scale-reset"
                     },
                     {
                         "label": "Danger",
                         "colour": " sta-tag--danger",
-                        "size": " font-scale-minus-1"
+                        "size": " font-scale-reset"
                     }
                 ]
                 }

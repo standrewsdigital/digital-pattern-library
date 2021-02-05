@@ -13,7 +13,7 @@ title: Example event page
 <main id="content-begin">
 <div class="container margin-bottom">
     <article class="content"> 
-    <p><span class="sta-tag sta-tag--info font-scale-minus-1">Limited access</span></p>
+    <p><span class="sta-tag sta-tag--info">Limited access</span></p>
     <div class="article-header">
     	<div class="row">
     		<div class="col-md-8">
@@ -24,15 +24,11 @@ title: Example event page
 			<div class="col-md-12">
 				<div class="article-header__meta">
 					<div class="article-header__meta--group">
-						<dl class="metadata-list inherit--colour font-scale-0">
-							<dt><i class="far fa-calendar-alt" aria-hidden="true" title="Date"></i><span class="sr-only">Date</span></dt>
-							<dd>Wednesday 3 February 2021</dd>		
-							<dt><i class="far fa-clock" aria-hidden="true" title="Time"></i><span class="sr-only">Time</span></dt>
-							<dd>5:15pm to 6:00pm</dd>
-							<dt><i class="fas fa-map-marker-alt" aria-hidden="true" title="Location"></i><span class="sr-only">Location</span></dt>
-							<dd><a href="#location">Can Do marquee, Tripod</a></dd>
-							<dt><i class="far fa-user" aria-hidden="true" title="Attend"></i><span class="sr-only">Attend</span></dt>
-							<dd>10 spaces remaining <a href="#attend">Book now</a></dd>
+						<dl class="metadata-list inherit--colour font-scale-0" aria-label="Key event information">
+							<dt><i class="far fa-calendar-alt" aria-hidden="true" title="Date"></i><span class="sr-only">Date</span></dt><dd>Wednesday 3 February 2021</dd>	
+							<dt><i class="far fa-clock" aria-hidden="true" title="Time"></i><span class="sr-only">Time</span></dt><dd>5:15pm to 6:00pm</dd>
+							<dt><i class="fas fa-map-marker-alt" aria-hidden="true" title="Location"></i><span class="sr-only">Location</span></dt><dd><a href="#location">Can Do marquee, Tripod</a></dd>
+							<dt><i class="far fa-user" aria-hidden="true" title="Attend"></i><span class="sr-only">Attend</span></dt><dd>10 spaces remaining <a href="#attend">Book now</a></dd>
 						</dl>
 					</div>
 				</div>
@@ -118,11 +114,11 @@ title: Example event page
 						           	</ul>
 						        </fieldset>
 						    </div>
-
-					    </fieldset>
 					    <p>In the event that you need to cancel your booking, please contact the event organiser.</p>
 
 						<button type="submit" class="btn btn-lg btn-primary" name="submit">Submit</button>
+
+					    </fieldset>
 					</form>
 					<!-- /end booking form -->
 
@@ -136,13 +132,14 @@ title: Example event page
 			          	<img src="../assets/docs/images/placeholders/map750x275.jpg" alt="Google map of location" style="border:1px solid #dedede;">
 			        </picture>
 			    </a>
-	        	<div class="font-scale-reset" style="margin-top:1em;">
+	        	<figcaption>
 				Can Do marquee, Tripod, St Salvators Quad, St Andrews, Fife, UK, KY16 9AJ<br>
 					<a href="">Get directions</a>
-				</div>
+				</figcaption>
 			</figure>
+			<hr>
         	<div class="filter-box">
-	        	<dl class="paired-values-list paired-values-list--divided font-scale-reset collapse-top collapse-bottom">
+	        	<dl class="paired-values-list paired-values-list--divided font-scale-reset collapse-top collapse-bottom" aria-label="Additional event information">
 					<dt class="paired-values-list__name font-weight--bold">Event location</dt>
 					<dd class="paired-values-list__value"><a href="#">Can Do marquee, Tripod</a></dd>
 					<dt class="paired-values-list__name font-weight--bold">Event type</dt>
