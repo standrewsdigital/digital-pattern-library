@@ -1,0 +1,39 @@
+
+/*********************************/
+/* BEGIN Pattern: tags     */
+/*********************************/
+
+.sta-tag {
+  border: 3px solid $sta-grey;
+  color: $sta-grey;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1 !important;
+  padding: 0.3em;
+  white-space: nowrap;
+
+  &--success {
+    border-color: $sta-green;
+    color: $sta-green;
+  }
+
+  &--info {
+    border-color: $sta-blue;
+    color: $sta-blue;
+  }
+
+  &--warning {
+    border-color: $sta-orange;
+    color: $sta-orange;
+  }
+
+  &--danger {
+    border-color: $sta-red;
+    color: $sta-red;
+  }
+}
+
+/*********************************/
+/* END Pattern: tags      */
+/*********************************/

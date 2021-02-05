@@ -54,5 +54,9 @@
     "news-landing": {
       "style-type": "success",
       "message": "Example news landing page. <a href='../examples.html'>Back to example pages</a>."
+    },
+    "event": {
+      "style-type": "success",
+      "message": "Example event page. <a href='../examples.html'>Back to example pages</a>."
     }
 }

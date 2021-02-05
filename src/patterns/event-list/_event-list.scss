@@ -20,7 +20,7 @@
         .event-listing__heading {
             color: inherit;
             @extend %font-scale-1;
-            margin: 0 0 0.25rem;
+            margin: 0;
         }
     }
 
@@ -42,47 +42,14 @@
             max-width: 48em;  // limit width of text to help readability
         }
 
-/*
-        .event-listing__date,
-        .event-listing__location,
-        .event-listing__time  {
-            font-size: 1rem; // Don't scale up on larger displays
-            font-weight: normal; 
-            margin-bottom:0.25rem;
-            padding-left: 1.3rem;
-            position: relative;
-            
-            &:before {
-                font-family: "Font Awesome 5 Free";
-                font-size: inherit; // can't have font-size inherit on line above, so need to override
-                text-rendering: auto; // optimizelegibility throws things off #1094
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-                font-style: normal;
-                font-weight: 900;
-                position: absolute;
-                top: -2px;
-                left: 0;
-            }
+        .event-listing__subtitle {
+            font-size: 1rem;
+            font-weight: bold;
         }
-        .event-listing__date {
-            &:before {
-                font-weight: 400;
-                content: "\f073";
-            }
+
+        .metadata-list {
+            margin: 0.25rem 0 0 0;
         }
-        .event-listing__location {
-            &:before {
-                content: "\f3c5";
-            }
-        }
-        .event-listing__time {
-            &:before {
-                font-weight: 400;
-                content: "\f017";
-            }
-        }
-        */
 
      // Hover styles
         a:hover {
@@ -124,7 +91,7 @@
             }
         }
 
-    // Cancelled style
+    // Cancelled style - DEPRECATED
     &.cancelled {
         .event-listing__heading{
             position: relative;
@@ -145,6 +112,10 @@
                 left: 0;
             }
         }
+    }
+
+    .sta-tag {
+        margin-bottom: 0.5rem;
     }
 }
 

@@ -16,8 +16,7 @@
                     },
                     "title": "Piano Masterclass",
                     "date-display" : "Tuesday 18 September 2018",
-                    "event-location" : "Younger Hall",
-                    "status" : ""
+                    "event-location" : "Younger Hall"
                 },
                 {
                     "image": {
@@ -27,7 +26,7 @@
                     "title": "Bike to Work Breakfast",
                     "date-display" : "Friday 21 September 2018",
                     "event-location" : "Rector's Café",
-                    "status" : " cancelled"
+                    "cancelled": true
                 }
             ]
         },
@@ -54,8 +53,7 @@
                     },
                     "title": "Piano Masterclass",
                     "date-display" : "Tuesday 18 September 2018",
-                    "event-location" : "Younger Hall",
-                    "status" : ""
+                    "event-location" : "Younger Hall"
                 },
                 {
                     "image": {
@@ -65,7 +63,7 @@
                     "title": "Bike to Work Breakfast",
                     "date-display" : "Friday 21 September 2018",
                     "event-location" : "Rector's Café",
-                    "status" : " cancelled"
+                    "limited": true
                 },
                 {
                     "image": {
@@ -75,7 +73,7 @@
                     "title": "Early Career Women Network Meet-up",
                     "date-display" : "Monday 29 October 2018 to Tuesday 30 October 2018",
                     "event-location" : "Hebdomadar's Room",
-                    "status" : ""
+                    "cancelled": true
                 },
                 {
                     "image": {
@@ -84,8 +82,7 @@
                     },
                     "title": "Choral Evensong",
                     "date-display" : "Wednesday 7 November 2018",
-                    "event-location" : "St Salvator's Chapel",
-                    "status" : ""
+                    "event-location" : "St Salvator's Chapel"
                 }
             ]
         },
@@ -115,8 +112,7 @@
                     },
                     "title": "Piano Masterclass",
                     "date-display" : "Tuesday 18 September 2018",
-                    "event-location" : "Younger Hall",
-                    "status" : ""
+                    "event-location" : "Younger Hall"
                 },
                 {
                     "image": {
@@ -125,8 +121,7 @@
                     },
                     "title": "Bike to Work Breakfast",
                     "date-display" : "Friday 21 September 2018",
-                    "event-location" : "Rector's Café",
-                    "status" : " cancelled"
+                    "event-location" : "Rector's Café"
                 },
                 {
                     "image": {
@@ -135,8 +130,7 @@
                     },
                     "title": "Study Abroad Fair",
                     "date-display" : "Wednesday 3 October 2018 to Friday 5 October 2018",
-                    "event-location" : "Students' Association",
-                    "status" : ""
+                    "event-location" : "Students' Association"
                 },
                 {
                     "image": {
@@ -145,8 +139,7 @@
                     },
                     "title": "An Introduction to The Alexander Technique with Heather Coates",
                     "date-display" : "Saturday 6 October 2018",
-                    "event-location" : "Younger Hall",
-                    "status" : ""
+                    "event-location" : "Younger Hall"
                 },
                 {
                     "image": {
@@ -155,8 +148,7 @@
                     },
                     "title": "Early Career Women Network Meet-up",
                     "date-display" : "Monday 29 October 2018 to Tuesday 30 October 2018",
-                    "event-location" : "Hebdomadar's Room",
-                    "status" : ""
+                    "event-location" : "Hebdomadar's Room"
                 },
                 {
                     "image": {
@@ -165,8 +157,7 @@
                     },
                     "title": "Choral Evensong",
                     "date-display" : "Wednesday 7 November 2018",
-                    "event-location" : "St Salvator's Chapel",
-                    "status" : ""
+                    "event-location" : "St Salvator's Chapel"
                 }
             ]
         }

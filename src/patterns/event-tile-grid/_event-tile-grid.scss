@@ -195,7 +195,7 @@
         }
     }
 
-    // Cancelled style
+    // Cancelled style - DEPRECATED
     &.cancelled {
         .featured-event__heading{
             position: relative;
@@ -216,5 +216,10 @@
                 left: 0;
             }
         }
+    }
+
+    
+    .sta-tag {
+        margin-bottom: 0.5rem;
     }
 }

@@ -1,0 +1,145 @@
+---
+title: Example online event page
+---
+
+{{> text-banner examples-text-banner.event}}
+
+{{> header}}
+
+{{> category-header examples-content-event.category-header}}
+
+{{> navigation-bar examples-content-event.navigation-bar}}
+
+<main id="content-begin">
+<div class="container margin-bottom">
+    <article class="content"> 
+    <p><span class="sta-tag sta-tag--danger">Cancelled</span></p>
+    <div class="article-header">
+    	<div class="row">
+    		<div class="col-md-8">
+				<h1 class="article-header__heading page-heading">Conversation with Tom Tugendhat MP: A Rules-Based International Order<small>The Centre for Global Law and Governance</small></h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="article-header__meta">
+					<div class="article-header__meta--group">
+						<dl class="metadata-list inherit--colour font-scale-0" aria-label="Key event information">
+							<dt><i class="far fa-calendar-alt" aria-hidden="true" title="Date"></i><span class="sr-only">Date</span></dt><dd>Wednesday 3 February 2021</dd>	
+							<dt><i class="far fa-clock" aria-hidden="true" title="Time"></i><span class="sr-only">Time</span></dt><dd>5:15pm to 6:00pm</dd>
+							<dt><i class="fas fa-map-marker-alt" aria-hidden="true" title="Location"></i><span class="sr-only">Location</span></dt><dd>Online event</dd>
+							<dt><i class="far fa-user" aria-hidden="true" title="Attend"></i><span class="sr-only">Attend</span></dt><dd>10 spaces remaining <a href="#attend">Book now</a></dd>
+						</dl>
+					</div>
+				</div>
+				<div class="article-header__meta">
+					<div class="article-header__meta--group">
+						<a href="" class="btn btn-small btn-primary">Join online event</a>
+
+						<div class="dropdown">
+						  <button id="dropdown-small" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-small-tag dropdown-toggle">Add to calendar</button>
+						  <ul class="dropdown-menu" aria-labelledby="dropdown-small">
+						    <li><a href="">Download file</a></li>
+						    <li><a href="">Google Calendar</a></li>
+						  </ul>
+						</div>
+					</div>
+				</div>
+			</div>
+	    </div>
+	</div>
+	<div class="row">
+        <div class="col-md-6 margin-bottom--half">
+			<p>The Centre for Global Law and Governance (CGLG) presents a conversation with Tom Tugendhat MP and Professor of Practice in International Relations, Stephin Gethins on ‘A Rules-Based International Order’.</p>
+<p>Tom Tugendhat MP is the Chair of the Foreign Affairs Committee in the UK Parliament. A former intelligence officer in the British Army, Mr Tugendhat served in a range of operational deployments in Afghanistan and Iraq, including helping to establish the National Security Council of Afghanistan.</p>
+<p>Mr Tugendhat was first elected as Member of Parliament for Tonbridge, Edenbridge and Malling in the 2015 general election. As Chair of the Foreign Affairs Committee, he has spearheaded a number of initiatives concerning international law and governance, including a recent report, <a href="https://publications.parliament.uk/pa/cm201719/cmselect/cmfaff/612/61202.htm">China and the Rules-Based International System</a>.</p>
+<p>The conversation, with Professor Stephen Gethins (School of International Relations), will explore current challenges to a rules-based international system, and the UK’s role in promoting a robust international legal order.</p>
+<p>Email <a href="mailto:irevents@st-andrews.ac.uk">irevents@st-andrews.ac.uk</a> to register by 5pm on Monday 1 February.</p>
+			<hr>
+			<!-- Booking form -->
+			<form class="dpl-form" action="" method="post" id="attend">
+				<fieldset>
+					<legend><h2>Book tickets</h2></legend>
+						<div class="form-group">
+							<label class="form-label" for="first_name">First name</label>
+							<input type="text" id="first_name" class="form-control" name="first_name" required="" value="">
+						</div>
+						<div class="form-group">
+							<label class="form-label" for="last_name">Last name</label>
+							<input type="text" id="last_name" class="form-control" name="last_name" required="" value="">
+						</div>
+						<div class="form-group">
+							<label class="form-label" for="email">Email</label>
+							<input type="email" id="email" class="form-control" name="email" required="" value="">
+						</div>
+						<div class="form-group">
+							<fieldset class="radio-button conditional">
+							<legend><span class="font-weight--bold">Would you like to book tickets for other people?</span></legend>
+								<ul>
+									<li>
+										<input class="conditional-radio" type="radio" value="default" id="option1-radio-conditional" name="conditional">
+										<label for="option1-radio-conditional">No</label>
+										<div class="check"></div>
+									</li>
+									<li>
+										<input class="conditional-radio" type="radio" value="other" id="option2-radio-conditional" name="conditional">
+										<label for="option2-radio-conditional">Yes</label>
+										<div class="check"></div>
+									</li>
+								</ul>
+							</fieldset>
+						</div>
+							<div class="conditional-content-radio form-group " aria-hidden="true">
+								<label class="control-label" for="conditional-input">Full names of other guests.</label>
+								<span class="help-block" id="help-radio-stacked-conditional">Please enter full names separated by a comma.</span>
+								<input class="form-control" id="conditional-input" type="text" name="conditional-input" aria-describedby="help-radio-stacked-conditional">
+							</div>
+							<div class="form-group">
+						    	<fieldset class="checkbox-box inline">
+						        	<legend><span class="font-weight--bold">By using this form you agree with the storage and handling of your data by this website as outlined in the <a href="#">terms of use</a>.</span></legend>
+						            <ul>
+						            	<li>
+						                 	<input type="checkbox" name="gdpr-check" id="gdpr-check" aria-required="true" required="">
+						                    <label for="gdpr-check">I agree.</label>
+						                    <div class="check"><i class="fa fa-check" title="checked"></i></div>
+						                </li>
+						           	</ul>
+						        </fieldset>
+						    </div>
+
+					    </fieldset>
+					    <p>In the event that you need to cancel your booking, please contact the event organiser.</p>
+
+						<button type="submit" class="btn btn-lg btn-primary" name="submit">Submit</button>
+					</form>
+					<!-- /end booking form -->
+
+        </div>
+        <aside class="col-md-6 sidebar">
+        	<figure><img src="../assets/docs/images/placeholders/750x500.png" alt="Optional image"></figure>
+			<hr>
+        	<div class="filter-box">
+	        	<dl class="paired-values-list paired-values-list--divided font-scale-reset collapse-top collapse-bottom" aria-label="Additional event information">
+					<dt class="paired-values-list__name font-weight--bold">Event location</dt>
+					<dd class="paired-values-list__value"><a href="#">Online event</a></dd>
+					<dt class="paired-values-list__name font-weight--bold">Event type</dt>
+					<dd class="paired-values-list__value"><a href="#">Academic</a></dd>
+					<dt class="paired-values-list__name font-weight--bold">Audience</dt>
+					<dd class="paired-values-list__value"><a href="#">All audiences</a></dd>
+					<dt class="paired-values-list__name font-weight--bold">Academic Schools and Departments</dt>
+					<dd class="paired-values-list__value"><a href="#">International Relations</a></dd>
+					<dt class="paired-values-list__name font-weight--bold">Created by</dt>
+					<dd class="paired-values-list__value">Joe Bloggs <a href="#">jb1234@st-andrews.ac.uk</a></dd>
+					<dt class="paired-values-list__name font-weight--bold">Organised by</dt>
+					<dd class="paired-values-list__value"><a href="#">School of International Relations</a></dd>
+				</dl>
+			</div>
+        </aside>
+
+    </article>
+    </div>
+</div>
+
+</main>
+
+{{> footer examples-footer}}

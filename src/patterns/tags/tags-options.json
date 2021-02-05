@@ -1,0 +1,73 @@
+{
+    "options": [
+        {
+            "option-heading": "Tags",
+            "option-anchor": "tags",
+            "option-description": "<p>This example shows all possible tag colours and their example context.</p>",
+            "tags-list": [
+                {    
+                "tags-list-group": [
+                    {
+                        "label": "No status"
+                    },
+                    {
+                        "label": "Success",
+                        "colour": " sta-tag--success",
+                        "size": " font-scale-reset"
+                    },
+                    {
+                        "label": "Information",
+                        "colour": " sta-tag--info",
+                        "size": " font-scale-reset"
+                    },
+                    {
+                        "label": "Warning",
+                        "colour": " sta-tag--warning",
+                        "size": " font-scale-reset"
+                    },
+                    {
+                        "label": "Danger",
+                        "colour": " sta-tag--danger",
+                        "size": " font-scale-reset"
+                    }
+                ]
+                }
+            ]
+        },
+        {
+            "option-heading": "Tag sizes",
+            "option-anchor": "tags-sizes",
+            "option-description": "<p>The size of the tag can be adjusted to match its associated content.</p>",
+            "tags-list": [
+                {    
+                "tags-list-group": [
+                    {
+                        "label": "No status",
+                        "size": " font-scale-0"
+                    },
+                    {
+                        "label": "Success",
+                        "colour": " sta-tag--success",
+                        "size": " font-scale-1"
+                    },
+                    {
+                        "label": "Information",
+                        "colour": " sta-tag--info",
+                        "size": " font-scale-2"
+                    },
+                    {
+                        "label": "Warning",
+                        "colour": " sta-tag--warning",
+                        "size": " font-scale-3"
+                    },
+                    {
+                        "label": "Danger",
+                        "colour": " sta-tag--danger",
+                        "size": " font-scale-4"
+                    }
+                ]
+                }
+            ]
+        }
+    ]
+ }

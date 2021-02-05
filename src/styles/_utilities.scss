@@ -250,6 +250,7 @@ textarea, input[type~=text], input[type~=submit] {
 }
 .swatch-group {
     // Group heading and description
+    color: $sta-grey-dark;
     flex-grow: 1;
 }
 .swatch__heading {
@@ -266,5 +267,6 @@ textarea, input[type~=text], input[type~=submit] {
     }
 }
 .swatch__details {
+    color: $sta-grey-dark;
     margin-bottom: 0.8rem;
 }

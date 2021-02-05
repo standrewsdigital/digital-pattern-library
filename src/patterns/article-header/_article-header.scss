@@ -6,6 +6,18 @@
 .article-header {
 	border-bottom: 1px $sta-grey-mid2 solid;
 	margin-bottom: $half-gutter;
+
+	// Line up any buttons in a row
+
+	.dropdown,
+	.btn {
+		display: inline-block;
+		margin: 0;
+
+		&:first-child {
+			margin-right:1em;
+		}
+	}
 }
 
 .article-header__heading {
@@ -77,6 +89,8 @@ a.article-header__meta-image {
 		margin-bottom: 0;
 	}
 }
+
+
 
 /*********************************/
 /* END Pattern: article-header      */

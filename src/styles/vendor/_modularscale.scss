@@ -55,7 +55,7 @@ $modularscale: (
 }
 %font-scale-4 {
   @include ms-respond(font-size,4);
-  line-height: 1.2;
+  line-height: 1.15;
 }
 %font-scale-5 {
   @include ms-respond(font-size,5);

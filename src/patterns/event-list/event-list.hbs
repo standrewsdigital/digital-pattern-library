@@ -1,9 +1,18 @@
 <!-- Begin pattern: event-list //-->
 {{#each events}}
-<div class="event-listing{{status}}">
+<div class="event-listing expanded-link-wrapper">
+	{{#if cancelled}}
+	<span class="sta-tag sta-tag--danger font-scale-minus-1">Cancelled</span>
+	{{/if ~}}
+	{{#if limited}}
+	<span class="sta-tag sta-tag--info font-scale-minus-1">Limited access</span>
+	{{/if ~}}
 	{{{linkblock-start}}}
-		<h3 class="event-listing__heading">{{title}}</h3>
+	<h3 class="event-listing__heading">{{title}}</h3>
 	{{{linkblock-end}}}
+	{{#if subtitle}}
+	<div class="event-listing__subtitle">{{subtitle}}</div>
+	{{/if ~}}	
 	<dl class="metadata-list inherit--colour">
 		{{#if date-display}}
 		<dt class="metadata-list--full"><i class="far fa-calendar-alt" aria-hidden="true" title="Date"></i><span class="sr-only">Date</span></dt>
@@ -16,6 +25,10 @@
 		{{#if event-location}}
 		<dt class="metadata-list--full"><i class="fas fa-map-marker-alt" aria-hidden="true" title="Location"></i><span class="sr-only">Location</span></dt>
 		<dd class="metadata-list--full">{{event-location}}</dd>
+		{{/if ~}}
+		{{#if attend}}
+		<dt class="metadata-list--full"><i class="far fa-user" aria-hidden="true" title="Attend"></i><span class="sr-only">Attend</span></dt>
+		<dd class="metadata-list--full">{{attend}}</dd>
 		{{/if ~}}
 	</dl>
 	{{#if event-description}}

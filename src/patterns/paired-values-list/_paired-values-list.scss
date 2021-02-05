@@ -25,6 +25,30 @@
         }
     }
 
+    // Remove top padding on first child pair
+    &.collapse-top {
+        .paired-values-list__name:first-child {
+            padding-top: 0;
+        }   
+        .paired-values-list__value:nth-child(2) {
+            padding-top: 0;
+        }   
+    }
+
+    // Remove bottom margin and bottom padding on last child pair
+    &.collapse-bottom {
+        margin-bottom: 0;
+
+        .paired-values-list__name:nth-last-child(2) {
+            padding-bottom: 0;
+        }   
+        .paired-values-list__value:last-child {
+            padding-bottom: 0;
+        }   
+    }
+
+
+
 }
 
 .paired-values-list__name {
