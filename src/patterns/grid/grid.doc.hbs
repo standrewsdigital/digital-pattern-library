@@ -1,0 +1,39 @@
+---
+title: Grid
+---
+
+<div class="row">
+  <div class="col-md-8">
+<p class="lead">The grid system uses CSS Grid to offer a more flexible layout system for pages.</p>
+
+<h2>Options available</h2>
+<ul>
+{{#grid-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/grid-options.options}}
+</ul>
+</div>
+</div>
+{{#grid-options.options}}
+<hr>
+<div class="row">
+  <div class="col-md-8">
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+</div>
+<!--noindex-->
+  <span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+  {{> grid}}
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+{{#markdown}}
+```html
+{{> grid}}
+```
+{{/markdown}}
+<!--endnoindex-->
+{{/grid-options.options}}

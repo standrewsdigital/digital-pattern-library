@@ -45,3 +45,50 @@ body {
 		}
 	}
 }
+
+// Placeholders for grid examples
+.docs-content-placeholder {
+	background: mix(white, $sta-green, 85%);
+	border: 3px dashed $sta-green;
+	color: $sta-green;
+	font-weight: bold;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&:after {
+		content: "Content";
+	}
+}
+.docs-offset-placeholder {
+	background: mix(white, $sta-purple, 85%);
+	border: 3px dashed $sta-purple;
+	color: $sta-purple;
+	font-weight: bold;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&:after {
+		content: "Offset";
+	}
+}
+.docs-aside-placeholder {
+	background: mix(white, $sta-burgundy, 85%);
+	border: 3px dashed $sta-burgundy;
+	color: $sta-burgundy;
+	font-weight: bold;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&:after {
+		content: "Aside";
+	}
+}
