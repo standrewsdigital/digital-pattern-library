@@ -58,5 +58,9 @@
     "event": {
       "style-type": "success",
       "message": "Example event page. <a href='../examples.html'>Back to example pages</a>."
+    },
+    "course": {
+      "style-type": "success",
+      "message": "Example course page. <a href='../examples.html'>Back to example pages</a>."
     }
 }

@@ -4,8 +4,13 @@ title: Grid
 
 <div class="row">
   <div class="col-md-8">
-<p class="lead">The grid system uses CSS Grid to offer a more flexible layout system for pages.</p>
-
+<p class="lead">The grid system provides a set of layouts to present content in a consistent way.</p>
+<h2>Rules for grid</h2>
+<ul>
+  <li>Must only be used on full width page layouts.</li>
+  <li>Parts of a grid layout may be left empty.</li>
+  <li>CSS classes are primarily used to assign the correct placement of items in the grid rather than the order they appear.</li>
+</ul>
 <h2>Options available</h2>
 <ul>
 {{#grid-options.options}}
@@ -32,7 +37,7 @@ title: Grid
 <span class="label label-default">Code</span>
 {{#markdown}}
 ```html
-{{> grid}}
+{{> grid-code}}
 ```
 {{/markdown}}
 <!--endnoindex-->
