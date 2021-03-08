@@ -2,8 +2,8 @@
 // Grid system to layout pages
 
 // Grid settings
-$container-max-width: 1800px;
-$container-default-width: 1170px;
+$container-max-width: 1670px;
+$container-default-width: 1170px; 
 
 
 // Fallback to DPL 1 container / grid - LOOK TO INCREASE THESE OVER ENTIRE GRID AND ALL PATTERNS - CHANGE FROM PX
@@ -13,9 +13,9 @@ $container-default-width: 1170px;
 	padding: 0 15px;
 }
 
-// Wider container that includes space for offset 
+// Wider container that includes space for fixed width offsets 
 .sta-container--wide {
-	@media (min-width: 1830px){
+	@media (min-width: 1670px){
 		max-width: $container-max-width;
 	}
 }
@@ -35,22 +35,22 @@ $container-default-width: 1170px;
 	grid-template-areas: "main";
 }
 
-// ! main column with offset columns (Offsets are fixed width at large size)
+// ! main column with offset columns (Offsets are 200px wide at large size and 100% when stacked)
 .sta-grid__main--with-offsets {
 
 	// Place offsets either side 
-	@media (min-width: 1830px){
+	@media (min-width: 1670px){
 		display: -ms-grid; // IE11 support
 		display: grid;
-		-ms-grid-columns: 265px 50px 1fr 50px 265px; // IE11 doesnt support gaps so these must be extra columns
-		grid-template-columns: 265px 1fr 265px;
+		-ms-grid-columns: 200px 50px 1fr 50px 200px; // IE11 doesnt support gaps so these must be extra columns
+		grid-template-columns: 200px 1fr 200px;
 		grid-column-gap: 50px;
 		grid-template-rows: auto;
 		grid-template-areas: "offset-1 main offset-2";
 	}
 }
 
-// ! main column with aside column (Aside is fixed width at large size)
+// ! main column with aside column on right (Aside is 300px at large size)
 .sta-grid__main-aside {
 
 	// Place aside beside main
@@ -65,11 +65,26 @@ $container-default-width: 1170px;
 	}
 }
 
+// ! main column with aside column on left (Aside is 300px wide at large size)
+.sta-grid__aside-main {
+
+	// Place aside beside main
+	@media (min-width: 900px){
+		display: -ms-grid; // IE11 support
+		display: grid;
+		-ms-grid-columns: 300px 50px 1fr; // IE11 doesnt support gaps so these must be extra columns
+		grid-template-columns: 300px 1fr;
+		grid-column-gap: 50px;
+		grid-template-rows: auto;
+		grid-template-areas: "aside main";
+	}
+}
+
 // ! main column with aside column and offsets (Aside and offsets are fixed width at large size)
 .sta-grid__main-aside--with-offsets {
 
 	// Place aside beside main
-	@media (min-width: 900px) and (max-width: 1829px){
+	@media (min-width: 900px) and (max-width: 1669px){
 		display: -ms-grid; // IE11 support
 		display: grid;
 		-ms-grid-columns: 1fr 50px 300px; // IE11 doesnt support gaps so these must be extra columns
@@ -80,16 +95,17 @@ $container-default-width: 1170px;
 	}
 
 	// Place offsets either side 
-	@media (min-width: 1830px){
+	@media (min-width: 1670px){
 		display: -ms-grid; // IE11 support
 		display: grid;
-		-ms-grid-columns: 265px 50px 1fr 50px 300px 50px 265px; // IE11 doesnt support gaps so these must be extra columns
-		grid-template-columns: 265px 1fr 300px 265px;
+		-ms-grid-columns: 200px 50px 1fr 50px 300px 50px 200px; // IE11 doesnt support gaps so these must be extra columns
+		grid-template-columns: 200px 1fr 300px 200px;
 		grid-column-gap: 50px;
 		grid-template-rows: auto;
 		grid-template-areas: "offset-1 main aside offset-2";
 	}
 }
+
 
 // Place items in grid depending on their name
 .sta-grid-item__main {
@@ -107,11 +123,11 @@ $container-default-width: 1170px;
 .sta-grid-item__aside {
 	grid-area: aside;
 }
-
+	
 // IE11 support for directly placing an item in the grid
-.sta-grid__main--with-offsets{
+.sta-grid__main-offsets{
 	// Place offsets either side 
-	@media (min-width: 1830px){
+	@media (min-width: 1670px){
 		.sta-grid-item__main {
 	        -ms-grid-row: 1;
 	        -ms-grid-column: 3;
@@ -144,7 +160,7 @@ $container-default-width: 1170px;
 
 .sta-grid__main-aside--with-offsets {
 	// Place aside beside main
-	@media (min-width: 900px) and (max-width: 1829px){
+	@media (min-width: 900px) and (max-width: 1669px){
 		.sta-grid-item__main {
 	        -ms-grid-row: 2;
 	        -ms-grid-column: 1;
@@ -166,7 +182,7 @@ $container-default-width: 1170px;
 	}
 
 	// Place offsets either side 
-	@media (min-width: 1830px){
+	@media (min-width: 1670px){
 		.sta-grid-item__main {
 	        -ms-grid-row: 1;
 	        -ms-grid-column: 3;
