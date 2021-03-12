@@ -6,15 +6,28 @@
 .contents {
 
   ul {
-    font-size: 1rem;
     list-style: none;
     padding: 0;
 
     > li {
-      margin-bottom:0.5em;
+      margin:0.5em 0 0 0;
 
       ul li {
-        margin-bottom: 0.3125rem;
+        font-size: 1rem;
+        &:before {
+          content: '-';
+          margin-right:0.5em;
+        }
+      }
+
+      &.active {
+        box-shadow: inset 3px 0 0 $sta-blue-light;
+        margin-left: -15px;
+        padding-left: 15px;
+        a {
+          color: $sta-grey-dark;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -26,19 +39,20 @@
 }
 
 .contents-aside {
-  padding-top: calc(1vw + 1rem);
+  padding: calc(1vw + 1rem) 0;
 }
 
 .contents-aside--sticky {
   // Sticks position when alongside content and browser has reasonable height
-  @media (min-height: 300px){
+  @media (min-width: 900px) and (min-height: 600px){
+    position: -webkit-sticky; 
     position: sticky;
     top: 0;
   }
 }
 
 .contents__heading {
-  margin-top: 0;
+  margin: 0;
   @include ms-respond(font-size,0);
 }
 
