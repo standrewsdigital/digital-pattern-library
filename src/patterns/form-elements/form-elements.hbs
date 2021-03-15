@@ -1,7 +1,5 @@
 <div class="dpl-form">
 {{#if select-box}}
-	<div class="row">
-	    <div class="col-md-6">
 	        <div class="form-group select-box">
 	            <label class="form-label" {{#if id}}for="{{id}}"{{/if}}>{{label-text}}</label>
 	            <p class="help-block" id="help-{{option-anchor}}">Please select your student status.</p>
@@ -18,14 +16,15 @@
 				</div>
 				{{/if}}
 	        </div>
-	    </div>
-	</div>
 {{else if radio-check}}
 	<div class="form-group">
 	    <fieldset class="{{class}}" aria-describedby="help-{{option-anchor}}">
 		    <legend><span class="font-weight--bold">{{option-text}}</span></legend>
 		    <p class="help-block" id="help-{{option-anchor}}">{{option-text-help}}</p>
-	        <ul>
+		    {{#if checkbox-collapsed}}
+		    <p class="help-block"><button class="checkbox-box__expand help-block__link">Expand list</button> <a class="sr-only sr-only-focusable checkbox-box__skip help-block__link" href="#radio-inline">Skip this question</a></p>
+			{{/if ~}}
+	        <ul{{{checkbox-collapsed}}}>
 	        	{{#each option-boxes}}
 	        	<li>
 	                <input {{#if class}}class="{{class}}"{{/if}} type="{{type}}" value="{{option-value}}" id="{{id}}" name="{{name}}">
@@ -48,8 +47,6 @@
 	<legend><h3>{{field-legend}}</h3></legend>
 {{/if}}
 	{{#each columns}}
-	<div class="row">
-		<div class="{{column-size}}">
 			<div class="form-group">
 				{{#if wrapper}}
 				<div class="{{wrapper}}">
@@ -84,18 +81,14 @@
 				</div>
 				{{/if}}
 			</div>
-		</div>
-	</div>
 	{{/each}}
 {{#if field-legend}}
 	</fieldset>
 {{/if}}
 {{/if}}
 {{#if submit-button}}
-	<div class="row">
-	    <div class="col-md-6">
+	<div class="form-group">
 			<button type="submit" class="btn btn-lg btn-primary">Submit</button>
-		</div>
 	</div>
 {{/if}}
 </div>

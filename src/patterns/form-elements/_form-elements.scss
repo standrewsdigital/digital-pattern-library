@@ -50,9 +50,6 @@
     }
 
     .radio-button, .checkbox-box {
-        p {
-            margin-bottom: 0;
-        }
 
         ul {
             list-style: none;
@@ -162,6 +159,18 @@
             content: '\f00c';
             top: 1px;
             left: 1px;
+        }
+    }
+
+    .checkbox-box__collapsed {
+        border:1px $sta-grey-highlight solid;
+        padding: 0 12px !important;
+
+        // Show scroll and fix height when collapsed
+        &[aria-expanded=false]{
+            min-height: 6em;
+            max-height: 30vh;
+            overflow-y: scroll;
         }
     }
 
@@ -303,6 +312,35 @@
 
 .ui-datepicker .ui-datepicker-today .ui-state-default.ui-state-active {
     color: #fff;
+}
+
+// Text links and buttons on form field help blocks
+.help-block__link {
+    background: none;
+    border: 0;
+    color: $sta-blue-light;
+    display: inline-block;
+    font-weight: normal;
+    margin:0;
+    outline: none;
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+
+    &:hover {
+        // Remove underline when hovered
+        text-decoration: none;
+        color: $sta-blue-light-shade25;
+    }
+
+    &:focus {
+        // Apply contrast 
+        background: $sta-orange-highlight;
+        box-shadow: 0 3px $sta-orange-highlight;
+        color: $sta-grey-dark;
+        text-decoration: underline;
+        outline: 3px solid $sta-orange-highlight; 
+    }  
 }
 
 /*********************************/
