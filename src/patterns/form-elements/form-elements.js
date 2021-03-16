@@ -56,6 +56,32 @@ if ( $(".limit-counter").length ) {
     });
 }
 
+// Set aria controls for every checkbox collapse list and their toggle buttons
+$('.checkbox-box__expand').each(function() {    
+    $(this).attr('aria-expanded', 'false');
+    $(this).parent().next('.checkbox-box__collapsed').attr('aria-expanded', 'false');
+});
+
+// Expand / collapse a long list of checkboxes
+$(document).on('click', '.checkbox-box__expand', function(){
+
+    // Swap the current state of the toggle button
+    var state = $(this).attr('aria-expanded') === 'false' ? true : false;
+    $(this).attr('aria-expanded', state);
+    if(state) {
+        // If open change text to 'Collapse list'
+        $(this).text('Collapse list');
+        // Find the next checkbox list and toggle state
+        $(this).parent().next('.checkbox-box__collapsed').attr('aria-expanded', state);
+    } else {
+        // If closed change text to 'Expand list'
+        $(this).text('Expand list');
+        // Find the next checkbox list and toggle state
+        $(this).parent().next('.checkbox-box__collapsed').attr('aria-expanded', state);
+    }
+    return false; // disable default event.
+});
+
 /* Deprecated method targeting id, this should be removed in a future release */
 if ( $(window).width() > 450 ) {
     $('#datepicker').attr("type","text");
