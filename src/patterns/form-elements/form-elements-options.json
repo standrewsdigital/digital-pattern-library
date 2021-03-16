@@ -407,7 +407,7 @@
         {
             "option-heading": "Checkboxes stacked - collapsed list",
             "option-anchor": "checkboxes-stacked-collapsed",
-            "option-description": "<p>A large list of stacked checkboxes may be placed in a collapsible container to reduce the amount of scrolling to the next form field.</p><ul><li>A text button to expand or collapse the list will toggle the reduced height and scrollbar.</li><li>An additional text button, visible to keyboard users, provides an option to bypass the list of checkboxes and skip to the next focusable element by linking to its ID. This example uses <code>#radio-inline</code> as the anchor link which is the next option listed on this page.</li></ul>",
+            "option-description": "<p>A large list of stacked checkboxes may be placed in a collapsible container to reduce the amount of scrolling to the next form field.</p><ul><li>Should not be used if there are fewer than seven checkboxes.</li><li>Also consider whether the checkboxes may be split into different lists, to shorten their lengths, as this will make the form easier to complete.</li><li>A text button to expand or collapse the list will toggle the reduced height and scrollbar.</li><li>An additional text button, visible to keyboard users, provides an option to bypass the list of checkboxes and skip to the next focusable element by linking to its ID. This example uses <code>#radio-inline</code> as the anchor link which is the next option listed on this page.</li></ul>",
             "radio-check": true,
             "class": "checkbox-box",
             "checkbox-collapsed": " class=\"checkbox-box__collapsed\"",

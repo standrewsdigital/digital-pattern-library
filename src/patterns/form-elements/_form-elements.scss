@@ -343,6 +343,11 @@
     }  
 }
 
+// Add space if two links adjoining
+.help-block__link + .help-block__link {
+    margin-left: ms(-1);
+}
+
 /*********************************/
 /* END Pattern: form-elements    */
 /*********************************/
