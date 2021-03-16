@@ -12,11 +12,13 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ## v1.26.0
 
-Release date: Friday 5 February 2021
+Release date: Tuesday 16 March 2021
 
 ### Added
 * Tags pattern.
 * Example pages for event and online event.
+* Expand code button for code blocks in documentation.
+* Checkbox list with scroll and expand functionality.
 
 ### Changed
 * Horizontal rule style.
@@ -28,6 +30,7 @@ Release date: Friday 5 February 2021
 ### Fixed
 * Console warning messages.
 * Colours page text colours.
+* Various minor design changes to form elements.
 
 ---
 
