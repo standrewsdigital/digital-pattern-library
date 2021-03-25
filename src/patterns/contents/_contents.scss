@@ -7,6 +7,7 @@
 
   ul {
     list-style: none;
+    margin: 0;
     padding: 0;
 
     > li {
@@ -21,19 +22,13 @@
       }
 
       &.active {
-        box-shadow: inset 3px 0 0 $sta-blue-light;
-        margin-left: -15px;
-        padding-left: 15px;
         a {
           color: $sta-grey-dark;
+          font-weight: bold;
           text-decoration: none;
         }
       }
     }
-  }
-
-  a {
-    font-weight: normal;
   }
 
 }
@@ -51,10 +46,6 @@
   }
 }
 
-.contents__heading {
-  margin: 0;
-  @include ms-respond(font-size,0);
-}
 
 /*********************************/
 /* END Pattern: contents      */

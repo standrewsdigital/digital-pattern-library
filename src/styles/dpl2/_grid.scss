@@ -106,6 +106,33 @@ $container-default-width: 1170px;
 	}
 }
 
+// ! main column with aside column and offsets (Aside and offsets are fixed width at large size)
+.sta-grid__aside-main--with-offsets {
+
+	// Place aside beside main
+	@media (min-width: 900px) and (max-width: 1669px){
+		display: -ms-grid; // IE11 support
+		display: grid;
+		-ms-grid-columns: 300px 50px 1px; // IE11 doesnt support gaps so these must be extra columns
+		grid-template-columns: 300px 1fr;
+		grid-column-gap: 50px;
+		grid-template-rows: auto;
+		grid-template-areas: "offset-1 offset-1" "aside main" "offset-2 offset-2";
+	}
+
+	// Place offsets either side 
+	@media (min-width: 1670px){
+		display: -ms-grid; // IE11 support
+		display: grid;
+		-ms-grid-columns: 200px 50px 300px 50px 1fr 50px 200px; // IE11 doesnt support gaps so these must be extra columns
+		grid-template-columns: 200px 300px 1fr 200px;
+		grid-column-gap: 50px;
+		grid-template-rows: auto;
+		grid-template-areas: "offset-1 aside main offset-2";
+	}
+}
+
+// ITEMS IN GRID
 
 // Place items in grid depending on their name
 .sta-grid-item__main {
@@ -216,3 +243,57 @@ $container-default-width: 1170px;
 	}
 }
 
+.sta-grid__aside-main--with-offsets {
+	// Place aside beside main
+	@media (min-width: 900px) and (max-width: 1669px){
+		.sta-grid-item__main {
+	        -ms-grid-row: 2;
+	        -ms-grid-column: 3;
+	    }
+		.sta-grid-item__aside {
+	        -ms-grid-row: 2;
+	        -ms-grid-column: 1;
+	    }
+	    .sta-grid-item__offset-1 {
+	        -ms-grid-row: 1;
+	        -ms-grid-column: 1;
+	        -ms-grid-column-span: 3;
+		}
+		.sta-grid-item__offset-2 {
+	        -ms-grid-row: 3;
+	        -ms-grid-column: 1;
+	        -ms-grid-column-span: 3;
+		}
+	}
+
+	// Place offsets either side 
+	@media (min-width: 1670px){
+		.sta-grid-item__main {
+	        -ms-grid-row: 1;
+	        -ms-grid-column: 5;
+	    }
+		.sta-grid-item__aside {
+	        -ms-grid-row: 1;
+	        -ms-grid-column: 3;
+	    }
+	    .sta-grid-item__offset-1 {
+	        -ms-grid-row: 1;
+	        -ms-grid-column: 1;
+		}
+		.sta-grid-item__offset-2 {
+	        -ms-grid-row: 1;
+	        -ms-grid-column: 7;
+		}
+	}
+}
+
+// Move an item from main column to its adjoining offset
+.sta-grid__aside-main--with-offsets { 
+	@media (min-width: 1670px){
+		.sta-grid-item__main--offset-2 {
+			float: right;
+			margin-right: -250px;
+			width: 200px;
+		}
+	}
+}
