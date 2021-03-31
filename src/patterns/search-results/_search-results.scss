@@ -56,10 +56,23 @@
 	}
 }
 
+// Option for dividing lines between results
+.search-results--divided {
+	// Remove bottom margin from everything but the last result
+	.search-result:not(:last-child) {
+		margin-bottom: 0;
+	}
+	.search-result + .search-result {
+    	border-top: 1px solid $sta-grey-mid2-alpha;
+    	margin-top: 1em;
+    	padding-top: 1em;
+	}	
+}
+
 .search-result__heading {
 	@include ms-respond(font-size, 1);
 	display: inline;
-	line-height: 1.1;
+	line-height: 1.3;
   	margin: 0;
 }
 
@@ -87,8 +100,9 @@
 	margin-bottom: 0;
 }
 
-// Add space if metadata follows the summary
-.search-result__summary + .metadata-list {
+// Add space if metadata follows the summary or the link
+.search-result__summary + .metadata-list,
+.search-result__link + .metadata-list {
 	margin-top: 5px;
 }
 
