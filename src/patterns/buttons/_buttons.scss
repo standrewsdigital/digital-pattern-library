@@ -112,6 +112,40 @@ button {
     }
 }
 
+.btn-link {
+    background: none;
+    border: 1px $sta-blue-light solid;
+    border-bottom: 3px $sta-blue-light solid;
+    color: $sta-blue-light;
+    display: inline-block;
+    font-weight: bold;
+    position:relative;
+    padding:0.5em 2.4em 0.5em 15px;
+    text-align: left;
+
+    &:before {
+      @extend .fa;
+      @extend .fa-chevron-right;
+      font-size: 1.2em;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) translateY(1px);
+      right: 15px;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: $sta-blue-light-shade25;
+      color: $sta-blue-light-shade25;
+    }
+
+    &:active {
+      background: $sta-orange-highlight;
+      border-color: $sta-orange-highlight;
+      color: $sta-grey-dark;
+    }
+}
+
 .btn-small-tag {
     display: inline-block;
     margin: 0.5rem 0.5rem 0 0;
