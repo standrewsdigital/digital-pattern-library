@@ -177,13 +177,24 @@
 
     .sta-container {
         display: flex;
-            align-items: center;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
+          align-items: center;
     }
 
     .btn {
-        margin: 0 0.5em 0 0;
+        margin: 0;
+
+        // Reduce size and remove chevron on mobile to fit 2 sidebyside in space
+        @media (max-width: 600px){
+            font-size: 1em;
+            padding-right: 15px;
+
+            &:before {
+                display:none;
+            }
+        }
+    }
+    .btn + .btn {
+        margin-left: 15px;
     }
 
     .sticky-cta__label {
@@ -195,16 +206,32 @@
         border-bottom: 1px solid $sta-grey-highlight;
         box-shadow: 0 1px 2px 0 $sta-grey-highlight;
 
-        // Only show label when sticky
-        .sticky-cta__label {
-            display: block;
-            @include ms-respond(font-size,1);
-            line-height: 1;
-            flex-grow: 1;
-            white-space: nowrap;
-            overflow: hidden;
-            text-align: right;
-            text-overflow: ellipsis;
+        .sta-container {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+        }
+
+        .btn {
+            font-size: 1em;
+
+            &:before {
+                font-size: 1.2em;
+            }
+        }
+
+        // Only show label when sticky and wide enough
+        @media (min-width: 900px){
+            .sticky-cta__label {
+                display: block;
+                @include ms-respond(font-size,1);
+                flex-grow: 1;
+                line-height: 1;
+                margin-left: 0.5em;
+                overflow: hidden;
+                text-align: right;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
         }
     }
 

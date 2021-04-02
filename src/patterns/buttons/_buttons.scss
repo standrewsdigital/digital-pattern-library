@@ -112,10 +112,9 @@ button {
     }
 }
 
-.btn-link {
+.sta-btn-link {
     background: none;
     border: 1px $sta-blue-light solid;
-    border-bottom: 3px $sta-blue-light solid;
     color: $sta-blue-light;
     display: inline-block;
     font-weight: bold;
@@ -129,7 +128,7 @@ button {
       font-size: 1.2em;
       position: absolute;
       top: 50%;
-      transform: translateY(-50%) translateY(1px);
+      transform: translateY(-50%);
       right: 15px;
     }
 
