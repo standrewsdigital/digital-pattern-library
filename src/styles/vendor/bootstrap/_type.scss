@@ -370,7 +370,7 @@ address {
   margin-top: $third-gutter;
 }
 
-// Wrapper class to control CMS body text
+// Wrapper class to control CMS body text - CURRENTLY INCLUDES TOP MARGIN ASPECT, SHOULD BE SPLIT OUT OR DEPRECATED
 .content {
 /* Clear top margin of everything inc. headings when at top of content block
   *:first-child {
@@ -382,6 +382,11 @@ address {
     margin-top: 0;
   }
 
+}
+
+// Wrapper class for standard content blocks - scope restricted to this to avoid conflicts with other patterns
+
+.content-section {
   // Add additional top space to sibling headings after basic block elements
   p + h2,
   p + h3,
@@ -398,12 +403,14 @@ address {
   blockquote + h2,
   blockquote + h3,
   blockquote + h4 {
-    margin-top: 1.5em;
+    margin-top: 1.3em;
   }  
 
+}
+
   // Add additional top space to first heading of a content section if immediately following a basic block element or another content section
-  // This is to cater for two or more sequential html editor sections
-  // It may be better to separate content sections with hr
+  // This is to cater for two or more standard content sections
+  // For complex layouts it may be better to separate content sections with hr at the start of each subsequent section
   p + .content-section h2:nth-child(1),
   p + .content-section h3:nth-child(1),
   p + .content-section h4:nth-child(1),
@@ -434,7 +441,5 @@ address {
   .content-section + .content-section h2:nth-child(1),
   .content-section + .content-section h3:nth-child(1),
   .content-section + .content-section h4:nth-child(1) {
-    margin-top: 1.5em;
+    margin-top: 1.3em;
   }  
-
-}
