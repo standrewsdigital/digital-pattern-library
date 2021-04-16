@@ -8,21 +8,21 @@
     display: -ms-grid;
     display: grid;
     // Small display grid
-    -ms-grid-columns: 54px 15px 1fr; // 2 column grid with gutter
-    grid-template-columns: 54px 1fr; // 2 column grid
+    -ms-grid-columns: 4rem 1rem 1fr; // 2 column grid with gutter
+    grid-template-columns: 4rem 1fr; // 2 column grid
     grid-column-gap: 1rem;
 
     // Medium display grid
     @media (min-width: 576px){
-        -ms-grid-columns: 74px 15px 1fr; // 2 column grid with gutter
-        grid-template-columns: 74px 1fr; // 2 column grid
+        -ms-grid-columns: 5rem 1rem 1fr; // 2 column grid with gutter
+        grid-template-columns: 5rem 1fr; // 2 column grid
         grid-column-gap: 1rem;
     }
 
     // Large display grid
     @media (min-width: 970px){
-        -ms-grid-columns: 84px ms(1) 1fr ms(1) auto; // 3 column grid with two gutters
-        grid-template-columns: 84px 1fr auto; // 3 column grid
+        -ms-grid-columns: 6rem ms(1) 1fr ms(1) auto; // 3 column grid with two gutters
+        grid-template-columns: 6rem 1fr auto; // 3 column grid
         grid-column-gap: ms(1);
     }
 }
@@ -38,15 +38,14 @@
     grid-row-end: 2;
     -ms-grid-column: 1;
     -ms-grid-row: 1;
-    border: 2px solid $sta-grey-mid2;
     border-radius: 50%;
-    height: 50px;
-    font-size: 1.2em;
+    height: 4rem;
+    width: 4rem;
+    font-size: 1.4rem;
     font-weight: bold;
     line-height: 1;
     overflow: hidden;
     position: relative;
-    width: 50px;
 
     @media (min-width: 576px){
         grid-column-start: 1;
@@ -56,27 +55,29 @@
         -ms-grid-column: 1;
         -ms-grid-row: 1;
         -ms-grid-row-span: 2;
-        height: 70px;
-        width: 70px;
-        font-size: 1.5em
+        height: 5rem;
+        width: 5rem;
+        font-size: 2rem
     } 
 
-    @media (min-width: 768px){
-        height: 80px;
-        width: 80px;
-        font-size: 1.8em;
+    @media (min-width: 970px){
+        height: 6rem;
+        width: 6rem;
+        font-size: 2.2rem;
     } 
 }
 
 .contact-card__image {
     @extend %contact-card-media;
-    background: $sta-blue-light;
+
     img {
         position: absolute;
         left: 50%;
         top: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: auto;
     }
 
     a {
@@ -105,6 +106,10 @@
             }
         }
 
+        &:hover {
+            background: $sta-blue-light;
+        }
+
         &:active,
         &:focus  {
             &:after {
@@ -113,10 +118,6 @@
         }
     }
 
-    // Add highlight if focus on image
-    &:focus-within {
-        box-shadow: 0px 0px 0px 2px $sta-orange-highlight;
-    }
 }
 
 .contact-card__initials {
@@ -170,10 +171,6 @@
         }
     }
 
-    // Add highlight if focus on image
-    &:focus-within {
-        box-shadow: 0px 0px 0px 3px $sta-orange-highlight;
-    }
 }
 
 .contact-card__titles {
@@ -366,14 +363,14 @@
 // Contact details - modal popup content
 %contact-details-media {
     border-radius: 50%;
-    height: 60px;
-    font-size: 1.2em;
+    font-size: 2rem;
     font-weight: bold;
     line-height: 1;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    width: 60px;
+    height: 5rem;
+    width: 5rem;
 
     @media (min-width: 576px){
         grid-column-start: 1;
@@ -383,38 +380,28 @@
         -ms-grid-column: 1;
         -ms-grid-row: 1;
         -ms-grid-row-span: 2;
-        height: 80px;
-        width: 80px;
-        font-size: 1.5em
+        height: 6rem;
+        width: 6rem;
+        font-size: 2.2rem
     } 
 
     @media (min-width: 768px){
-        height: 120px;
-        width: 120px;
-        font-size: 2.2em;
+        height: 8rem;
+        width: 8rem;
+        font-size: 3rem;
     } 
 }
 .contact-details__image {
     @extend %contact-details-media;
 
     img {
-        //max-height:60px;
-        //max-width:60px;
         position: absolute;
         left: 50%;
         top: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-
-        @media (min-width: 576px){
-            //max-height:80px;
-            //max-width:80px;
-        } 
-
-        @media (min-width: 768px){
-            //max-height:120px;
-           // max-width:120px;
-        } 
+        max-width: auto;
+        width: 100%;
     }
 }
 

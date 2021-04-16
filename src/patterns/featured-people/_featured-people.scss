@@ -55,7 +55,6 @@
 	    -ms-grid-column: 1;
 	    -ms-grid-row: 1;
 		
-		border: 2px solid $sta-grey-light2;
 	    border-radius: 50%;
 		height: 50px;
 		width: 50px;
@@ -91,7 +90,7 @@
 
 	a.featured-people__image {
 		outline: 0; // disable default focus
-    	border: 2px solid $sta-grey-light2;
+
 		&:active {
 			box-shadow: 0px 0px 0px 3px $sta-orange-highlight;
 		}
@@ -139,11 +138,11 @@
 	.featured-people__name {
 		margin: 0;
 		@include ms-respond(font-size,1);
-
+/*
 		a {
 			outline: 0; // disable default focus
 			text-decoration: underline;
-		}
+		} */
 
 
 		@media (min-width: 576px){
