@@ -106,6 +106,136 @@
                     "link-class": " class=\"search-result__link\""
                 }
             ]
+        },
+
+        {
+            "option-heading": "Search results with horizontal dividing lines",
+            "option-anchor": "divided",
+            "option-description": "<p>For complex results it may be beneficial to introduce dividing lines to add greater visual separation between results. The lines will span the width of the wrapping element.</p>",
+            "group-heading": "Heading for the results group",
+            "search-divided": " search-results--divided",
+            "search-results": [
+                {
+                    "heading": "This is the heading of the web page",
+                    "url": "https://www.st-andrews.ac.uk/path/to/page/",
+                    "description": "This is a short description for the web page where any matching <strong>search term</strong> is highlighted.",
+                    "heading-label": "Password protected",
+                    "metadata": [
+                        {
+                            "full": true,
+                            "icon": "far fa-folder-open",
+                            "term": "File location",
+                            "definition": "This is a full width metadata field that can be used for prominent or longer values"
+                        },  
+                        {
+                            "icon": "far fa-calendar-alt",
+                            "term": "Published date",
+                            "definition": "18 July 2019"
+                        },  
+                        {
+                            "icon": "far fa-file-alt",
+                            "term": "Document type",
+                            "definition": "Guidance"
+                        },  
+                        {
+                            "icon": "far fa-user",
+                            "term": "Scope (applies to)",
+                            "definition": "All staff"
+                        }
+                    ],
+                    "link-class": " class=\"search-result__link\""
+                },
+                {
+                    "heading": "This is the name of a document",
+                    "url": "https://www.st-andrews.ac.uk/path-to-file/<strong>search-term</strong>",
+                    "description": "This is a short description for the document where any matching <strong>search term</strong> is highlighted.",
+                    "heading-label": "PDF (525k)",
+                    "metadata": [
+                        {
+                            "icon": "far fa-calendar-alt",
+                            "term": "Published date",
+                            "definition": "21 April 2019"
+                        },  
+                        {
+                            "icon": "far fa-file-alt",
+                            "term": "Document type",
+                            "definition": "Guidance"
+                        },  
+                        {
+                            "icon": "far fa-user",
+                            "term": "Scope (applies to)",
+                            "definition": "All staff"
+                        },  
+                        {
+                            "icon": "far fa-envelope",
+                            "term": "Email",
+                            "definition": "help@st-andrews.ac.uk",
+                            "link": true
+                        }
+                    ],
+                    "link-class": " class=\"search-result__link\""
+                },
+                {
+                    "heading": "This is the name of a document",
+                    "url": "https://www.st-andrews.ac.uk/path-to-file/<strong>search-term</strong>",
+                    "description": "This is a short description for the document where any matching <strong>search term</strong> is highlighted.",
+                    "heading-label": "PDF (525k)",
+                    "metadata": [
+                        {
+                            "icon": "far fa-calendar-alt",
+                            "term": "Published date",
+                            "definition": "21 April 2019"
+                        },  
+                        {
+                            "icon": "far fa-file-alt",
+                            "term": "Document type",
+                            "definition": "Guidance"
+                        },  
+                        {
+                            "icon": "far fa-user",
+                            "term": "Scope (applies to)",
+                            "definition": "All staff"
+                        },  
+                        {
+                            "icon": "far fa-envelope",
+                            "term": "Email",
+                            "definition": "help@st-andrews.ac.uk",
+                            "link": true
+                        }
+                    ],
+                    "link-class": " class=\"search-result__link\""
+                },
+                {
+                    "heading": "This is the name of a document",
+                    "url": "https://www.st-andrews.ac.uk/path-to-file/<strong>search-term</strong>",
+                    "description": "This is a short description for the document where any matching <strong>search term</strong> is highlighted.",
+                    "heading-label": "PDF (525k)",
+                    "metadata": [
+                        {
+                            "icon": "far fa-calendar-alt",
+                            "term": "Published date",
+                            "definition": "21 April 2019"
+                        },  
+                        {
+                            "icon": "far fa-file-alt",
+                            "term": "Document type",
+                            "definition": "Guidance"
+                        },  
+                        {
+                            "icon": "far fa-user",
+                            "term": "Scope (applies to)",
+                            "definition": "All staff"
+                        },  
+                        {
+                            "icon": "far fa-envelope",
+                            "term": "Email",
+                            "definition": "help@st-andrews.ac.uk",
+                            "link": true
+                        }
+                    ],
+                    "link-class": " class=\"search-result__link\""
+                }
+            ]
         }
 
     ]

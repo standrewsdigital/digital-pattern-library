@@ -1,5 +1,5 @@
 <!-- Begin pattern: search results //-->
-<ol class="search-results">
+<ol class="search-results{{search-divided}}">
     {{#if group-heading}}
     <li class="search-results__group-heading">
         <h3 class="sr-only">{{group-heading}}</h3>
@@ -19,9 +19,6 @@
             <cite class="search-result__url">{{{url}}}</cite>
             {{/if}}
         </a>
-        {{#if thumbnail}}
-        <a href="{{{url}}}" title="{{heading}}"{{{link-class}}}><img class="search-result__thumbnail" src="{{thumbnail-src}}" alt="Alt text for image"></a>
-        {{/if}}
         {{#if description}}
         <p class="search-result__summary">{{{description}}}</p>
         {{/if}}
