@@ -22,6 +22,24 @@
                     "type": "action",
                     "text": "Action",
                     "size": "btn btn-lg "
+                },
+                {
+                    "type": "link",
+                    "text": "Secondary action",
+                    "size": "btn "
+                }
+            ]
+         },
+
+        {
+            "option-heading": "Secondary action button",
+            "option-description": "<p>Secondary action buttons are used to signify other prominent call to actions on a page that are in addition to the action button.</p>",
+            "option-anchor": "secondary-action-button",
+            "buttons": [
+                {
+                    "type": "link",
+                    "text": "Secondary action",
+                    "size": "btn "
                 }
             ]
          },

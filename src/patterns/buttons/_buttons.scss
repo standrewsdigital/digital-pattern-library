@@ -81,14 +81,14 @@ button {
 
 .btn-action {
     background: $sta-blue-light;
-    border: none;
+    border: 1px $sta-blue-light solid;
     border-bottom: 3px $sta-blue-light-shade25 solid;
     font-weight: bold;
     @include ms-respond(font-size,1);
     color: white;
-    line-height: 1;
+    line-height: 1.3;
     position:relative;
-    padding:15px 45px 12px 15px;
+    padding:0.5em 2.4em calc(0.5em - 2px) 15px;
     text-align: left;
 
     &:before {
@@ -105,30 +105,36 @@ button {
     &:focus {
       background:$sta-blue-light-shade25;
       color: white;
+      text-decoration: underline;
     }
 
     &:active {
-      border-bottom: 3px $sta-orange-highlight solid;
+      border-color: $sta-orange-highlight;
     }
 }
 
-.sta-btn-link {
+.btn-link {
     background: none;
     border: 1px $sta-blue-light solid;
+    border-bottom: 3px $sta-blue-light solid;
     color: $sta-blue-light;
+    @include ms-respond(font-size,1);
     display: inline-block;
     font-weight: bold;
+    line-height: 1.3;
     position:relative;
-    padding:0.5em 2.4em 0.5em 15px;
+    padding:0.5em 2.4em calc(0.5em - 2px) 15px;
     text-align: left;
+    text-decoration: none;
+    white-space: normal; //allows link buttons to span lines
 
     &:before {
       @extend .fa;
       @extend .fa-chevron-right;
-      font-size: 1.2em;
+      font-size: 1.5rem;
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
+      transform: translateY(-50%) translateY(1px);
       right: 15px;
     }
 
@@ -136,6 +142,7 @@ button {
     &:focus {
       border-color: $sta-blue-light-shade25;
       color: $sta-blue-light-shade25;
+      text-decoration: underline;
     }
 
     &:active {
