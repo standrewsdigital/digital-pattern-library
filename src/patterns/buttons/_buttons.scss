@@ -47,38 +47,6 @@ button {
     }
 }
 
-// REMOVE THIS DUPLICATE
-  .btn-important {
-    background: $sta-blue-light;
-    border: none;
-    @include ms-respond(font-size,1);
-    border-color: $sta-blue-light;
-    border-bottom: 3px $sta-blue-light-shade25 solid;
-    color: white;
-    font-weight: bold;
-    line-height: 1;
-    position:relative;
-    padding:0.8rem 2.5rem 0.8rem 1rem;
-    text-align: left;
-
-    &:before {
-      @extend .fa;
-      @extend .fa-chevron-right;
-      @include ms-respond(font-size,1);
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%) translateY(1px);
-      right: 15px;
-    }
-
-    &:hover,
-    &:focus {
-      background:$sta-blue-light-shade25;
-      color: white;
-    }
-  }  
-  // END 
-
 .btn-action {
     background: $sta-blue-light;
     border: 1px $sta-blue-light solid;
@@ -113,8 +81,8 @@ button {
     }
 }
 
-.btn-link {
-    background: none;
+.btn-action-secondary {
+    background: white;
     border: 1px $sta-blue-light solid;
     border-bottom: 3px $sta-blue-light solid;
     color: $sta-blue-light;
@@ -140,6 +108,7 @@ button {
 
     &:hover,
     &:focus {
+      background: white;
       border-color: $sta-blue-light-shade25;
       color: $sta-blue-light-shade25;
       text-decoration: underline;
@@ -227,12 +196,13 @@ button {
       }
 
 .dropdown-menu {
+  font-size: 1rem;
   margin:0;
   padding:0;
 
   > li > a {
     color: $sta-grey-dark;
-    padding: 10px 15px;
+    padding: 0.4rem 0.5rem;
     text-decoration: none;
 
     &:hover,
@@ -252,11 +222,11 @@ button {
 }
 
 // Reduce size of dropdown to match smaller button
-.btn-small-tag + .dropdown-menu {
-  font-size: 1rem;
+.btn-lg + .dropdown-menu {
+  font-size: 1em;
 
   > li > a {
-    padding: 0.4rem 0.5rem;
+    padding: 10px 15px;
   }
 }
 
@@ -295,12 +265,58 @@ button {
 
 }
 
+// Resize button when inline with input group to match form fields
+.input-group-btn {
+  .btn {
+    line-height: 1.5;
+    padding: 6px 12px;
+  }
+}
+
+
+
 // Copy button for code blocks
 .btn-icon__copy:before {
   @extend .far;
   content: '\f0c5';
   margin-right: 0.5em;
 }
+
+
+
+
+
+// REMOVE THIS DUPLICATE
+  .btn-important {
+    background: $sta-blue-light;
+    border: none;
+    @include ms-respond(font-size,1);
+    border-color: $sta-blue-light;
+    border-bottom: 3px $sta-blue-light-shade25 solid;
+    color: white;
+    font-weight: bold;
+    line-height: 1;
+    position:relative;
+    padding:0.8rem 2.5rem 0.8rem 1rem;
+    text-align: left;
+
+    &:before {
+      @extend .fa;
+      @extend .fa-chevron-right;
+      @include ms-respond(font-size,1);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) translateY(1px);
+      right: 15px;
+    }
+
+    &:hover,
+    &:focus {
+      background:$sta-blue-light-shade25;
+      color: white;
+    }
+  }  
+  // END 
 
 /*********************************/
 /* END Pattern: buttons          */

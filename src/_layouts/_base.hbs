@@ -24,16 +24,16 @@ date: <%= new Date() %>
             <div id="header-logo"><a href="https://www.st-andrews.ac.uk/"><span>University of St&nbsp;Andrews</span></a></div>
         </div>
         <div id="header-search">
-            <button class="btn btn-link" id="header-search-trigger" name="btnG" aria-label="Toggle search" value=""><i class="fa fa-search" title="Search"></i></button>
+            <button class="btn btn-link" id="header-search-trigger" name="btnG" aria-label="Toggle search" value=""><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Toggle search</span></button>
             <form action="https://www.st-andrews.ac.uk/search" method="get" role="search" class="dpl-form">
                 <div class="input-group">
                     <span class="input-group-btn">
-                        <button class="btn btn-link" id="header-search-close" name="btnG" value="" aria-label="Hide search" type="button"><i class="fa fa-times" title="Close"></i></button>
+                        <button class="btn btn-link" id="header-search-close" name="btnG" value="" aria-label="Hide search" type="button"><i class="fa fa-times" aria-hidden="true"></i><span class="sr-only">Hide search</span></button>
                     </span>
                     <input id="query" class="form-control search-box form-control--autocomplete" name="query" type="text" aria-label="Search the University website, use arrow keys to move between suggested search terms" maxlength="256" placeholder="Search the University website" required>
                     <button class="clear-icon clear-icon__autocomplete" type="reset" aria-label="Reset" value="Reset"></button>
                     <span class="input-group-btn">
-                        <button class="btn btn-primary" id="header-search-submit" name="btnG" type="submit" value="Search" aria-label="Submit"><i class="fa fa-search" title="Search"></i></button>
+                        <button class="btn btn-lg btn-primary" id="header-search-submit" name="btnG" type="submit" value="Search" aria-label="Submit"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Submit</span></button>
                     </span>
                 </div>
                 <input type="hidden" name="collection" value="Uosa-meta-global">
@@ -56,7 +56,7 @@ date: <%= new Date() %>
         <nav class="navigation-bar" aria-label="Main menu">
             <div class="container">
                 <div class="toggle-navigation primary-toggle">
-                    <button class="navigation-button" aria-expanded="false" aria-controls="primary-nav">Navigation <i class="chevron down"></i></button>
+                    <button class="navigation-button" aria-expanded="false" aria-controls="primary-nav">Navigation<i class="chevron down"></i></button>
                 </div>
                 <ul class="navigation-bar-nav primary-nav" id="primary-nav">
                 {{#each dpl-nav.items}}

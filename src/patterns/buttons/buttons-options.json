@@ -15,18 +15,13 @@
 
         {
             "option-heading": "Action button",
-            "option-description": "<p>Action buttons are used to signify the most prominent call to action on a page.</p>",
+            "option-description": "<p>Action buttons are used to signify the most prominent call to action on a page.<ul><li>There should only be one per page.</li></ul></p>",
             "option-anchor": "action-button",
             "buttons": [
                 {
                     "type": "action",
                     "text": "Action",
                     "size": "btn btn-lg "
-                },
-                {
-                    "type": "link",
-                    "text": "Secondary action",
-                    "size": "btn "
                 }
             ]
          },
@@ -37,7 +32,7 @@
             "option-anchor": "secondary-action-button",
             "buttons": [
                 {
-                    "type": "link",
+                    "type": "action-secondary",
                     "text": "Secondary action",
                     "size": "btn "
                 }

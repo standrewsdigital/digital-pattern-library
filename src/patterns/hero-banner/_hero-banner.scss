@@ -48,7 +48,7 @@
 
   // Add space to content following the intro 
   .hero-section__intro + .btn-action,
-  .btn-action + .btn-action,
+  .btn-action + .btn-action-secondary,
   .hero-section__intro + .dpl-form{
     margin-top: 0.8rem;
   }
