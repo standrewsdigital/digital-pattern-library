@@ -83,12 +83,8 @@
     {{#if areas-expertise}}
     <ul class="contact-card__tags">
         {{#each areas-expertise}}
-        {{#if tag-link}}
-        <li class="contact-card__tag"><a class="contact-card__tag-link contact-card__tag-link-small" href="#">{{area}}</a></li>
-        {{else}}
-        <li class="contact-card__tag"><span class="contact-card__tag-label contact-card__tag-label-small">{{area}}</span></li>
-        {{/if}}
-        {{/each}}
+        {{#if tag-link ~}}
+        <li class="contact-card__tag"><a class="contact-card__tag-link contact-card__tag-link-small" href="#">{{area}}</a></li>{{else}}<li class="contact-card__tag"><span class="contact-card__tag-label contact-card__tag-label-small">{{area}}</span></li>{{/if}}{{/each}}
     </ul>
     {{/if}}
 </div>

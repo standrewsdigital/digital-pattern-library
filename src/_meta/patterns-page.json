@@ -246,10 +246,6 @@
                   "img": "assets/docs/images/patterns/staff-profile.jpg",
                   "url": "patterns/staff-profile/index.html"
                 },
-                { "name": "Subject combo",
-                  "img": "assets/docs/images/patterns/subject-combo.jpg",
-                  "url": "patterns/subject-combo/index.html"
-                },
                 { "name": "Tables",
                   "img": "assets/docs/images/patterns/tables.jpg",
                   "url": "patterns/tables/index.html"
@@ -353,13 +349,17 @@
                 { "name": "More news",
                   "img": "assets/docs/images/patterns/more-news.jpg",
                   "url": "patterns/more-news/index.html"
+                },
+                { "name": "Subject combo",
+                  "img": "assets/docs/images/patterns/subject-combo.jpg",
+                  "url": "patterns/subject-combo/index.html"
                 }
             ]
         }
     ],
     "options": {
             "background-color": "search-bar__blue",
-            "full-width": true,
+            "constrain-width": true,
             "results": true,
             "search-header": "Find a pattern",
             "search-subtext": "Search through all available patterns",

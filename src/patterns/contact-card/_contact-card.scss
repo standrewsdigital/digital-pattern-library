@@ -112,6 +112,7 @@
 
         &:active,
         &:focus  {
+            background: $sta-orange-highlight;
             &:after {
                 color: $sta-grey-dark;
             }
@@ -165,6 +166,7 @@
 
         &:active,
         &:focus  {
+            background: $sta-orange-highlight;
             &:after {
                 color: $sta-grey-dark;
             }
@@ -339,6 +341,7 @@
 
     &-small {
         @include ms-respond(font-size,-1);
+        color: $sta-grey;
     }
 }
 

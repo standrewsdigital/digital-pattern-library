@@ -23,6 +23,12 @@
       box-shadow: 0 3px $sta-orange-highlight;
       border-color: transparent;
     }
+
+    .btn-action-secondary {
+      background: rgba(0,0,0,0.2);
+      border-color: white;
+      color: white; 
+    }
 }
 
 .secondary-call {
@@ -60,7 +66,7 @@
     }
 
     &.secondary-call--burgundy-transparent-overlay {
-        @include secondary-call-overlay ($sta-burgundy, $sta-blue)
+        @include secondary-call-overlay ($sta-burgundy, $sta-blue-light)
     }
 
     .container {

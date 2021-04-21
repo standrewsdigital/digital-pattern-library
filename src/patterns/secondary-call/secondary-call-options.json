@@ -73,10 +73,12 @@
                     "url": "#"
                 },
                 {
+                    "secondary": "-secondary",
                     "text": "Postgraduate opportunities",
                     "url": "#"
                 },
                 {
+                    "secondary": "-secondary",
                     "text": "Current vacancies",
                     "url": "#"
                 }

@@ -11,44 +11,51 @@ core-assets: true
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="row">
-                <div class="col-xs-12">
-                    <h2>Categories</h2>
-                    <ul class="list-inline dpl-only">
-                    {{#each patterns-page.categories}}
-                        <li><a href="#{{heading}}" class="btn btn-{{class}}">{{heading}}</a></li>
-                    {{/each}}
-                    </ul>
-                </div>
-    </div>
-</div>
+
 
 {{> search-bar patterns-page.options}}
+<div class="content container">
+    <h2 class="sr-only">Categories</h2>
+</div>
+    <nav id="nav-top" class="sticky-nav affix-top" aria-label="Page content navigation">
+        <div class="container">
+            <div class="sticky-nav__toggle">
+                <button class="sticky-nav__toggle-button" aria-expanded="false">Contents</button>
+                <span id="sticky-nav__active-section"></span>
+            </div>
+            <ul class="sticky-nav__menu">
+            {{#each patterns-page.categories}}
+                <li><a href="#{{heading}}" class="sticky-nav__menu--link">{{heading}}</a></li>
+            {{/each}}
+            </ul>
+        </div>
+    </nav>
 
 {{#each patterns-page.categories}}
-<div class="navbox-grid">
-    <div class="container">
-    	<div class="row">
-            <div id="{{heading}}" class="col-md-12 col-sm-12">
-                <h3>{{heading}}</h3>
-                <p>{{{subheading}}}</p>
-            </div>
-            {{#each patterns}}
-                <div class="col-sm-4">
-                    <!-- Begin pattern: navbox //-->
-                    <div class="navbox">
-                        <div class="navbox__image">
-                            <img src="{{img}}" alt="Description">
+<section id="{{heading}}" class="section__anchor--sticky" aria-labelledby="{{heading}}-heading">
+    <div class="container margin-top--half">
+        <h3>{{heading}}</h3>
+        <p>{{{subheading}}}</p>
+    </div>
+    <div class="navbox-grid collapse-top collapse-bottom">
+        <div class="container">
+        	<div class="row">
+                {{#each patterns}}
+                    <div class="col-sm-4">
+                        <!-- Begin pattern: navbox //-->
+                        <div class="navbox">
+                            <div class="navbox__image">
+                                <img src="{{img}}" alt="Description">
+                            </div>
+                            <div class="navbox__title">
+                                <a href="{{url}}"><span>{{name}}</span></a>
+                            </div>
                         </div>
-                        <div class="navbox__title">
-                            <a href="{{url}}"><span>{{name}}</span></a>
-                        </div>
+                    <!-- End pattern: navbox //-->
                     </div>
-                <!-- End pattern: navbox //-->
-                </div>
-            {{/each}}
+                {{/each}}
+            </div>
         </div>
     </div>
-</div>
+</section>
 {{/each}}

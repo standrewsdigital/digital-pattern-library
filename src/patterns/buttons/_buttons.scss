@@ -22,6 +22,13 @@ button {
     border-color: $sta-grey;
     color: $sta-grey-dark;
 	}
+
+    &:active {
+      background: $sta-orange-highlight;
+      border-color: $sta-orange-highlight;
+      color: $sta-grey-dark;
+      box-shadow: 0 3px $sta-orange-highlight;
+    }
 }
 
 .read-more a {
@@ -140,6 +147,7 @@ button {
     }
     &:active {
       background: $sta-orange-highlight;
+      border-color: $sta-orange-highlight;
       color: $sta-grey-dark;
       box-shadow: 0 3px $sta-orange-highlight;
     }
@@ -167,6 +175,7 @@ button {
     }
     &:active {
       background: $sta-orange-highlight;
+      border-color: $sta-orange-highlight;
       color: $sta-grey-dark;
       box-shadow: 0 3px $sta-orange-highlight;
     }
@@ -270,6 +279,7 @@ button {
   .btn {
     line-height: 1.5;
     padding: 6px 12px;
+    margin-bottom: 0;
   }
 }
 
