@@ -2,9 +2,19 @@
 /* BEGIN Pattern: blockquote  */
 /***********************************/
 
+// Reset blockquote in content blocks
+.content-section {
+	blockquote {
+		border: 0;
+		border-left:5px solid $sta-grey-mid2;
+		font-size: inherit;
+		margin: 0 0 1.5625rem 0; // 25px
+		padding: 1em ms(1);
+	}
+}
+
 .blockquote {
-	background: $sta-grey-light;
-	border-left:5px solid $sta-grey;
+	border-left:5px solid $sta-grey-mid2;
 	margin: 0 0 1.5625rem 0; // 25px
 	padding: 1em ms(1);
 	@include clearfix-alt;
@@ -52,7 +62,7 @@
 	}
 }
 
-// Alternate layout for shorter quotes
+// Alternate layout for shorter quotes - used for pull quotes and full width blocks
 .blockquote--pull {
 	background: none;
 	border-left: 0;

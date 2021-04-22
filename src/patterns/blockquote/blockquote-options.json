@@ -19,6 +19,15 @@
             "cite": " cite=\"http://www.st-andrews.ac.uk\""    
         },
         {
+            "option-heading": "Blockquote - pull quote",
+            "option-description": "<p>Increase the size of the font and reduce the length of characters for a <a href=\"https://en.wikipedia.org/wiki/Pull_quote\">pull quote</a> that is repeating a short part of the main content.</p>",
+            "option-anchor": "blockquote",
+            "quote": "<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, auris ornare maximus risus at rhoncus.&rdquo;</p>",
+            "author-name": "Dr Garrett Winters",
+            "author-source": "School of Biology",
+            "fontsize": " class=\"font-scale-2\""    
+        },
+        {
             "option-heading": "Blockquote - full width",
             "option-description": "<p>An example of a blockquote on a full width page.</p><ul><li>The maximum number of characters for this type of quote should be no larger than 300.</li></ul>",
             "option-anchor": "blockquote-wide",

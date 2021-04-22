@@ -1,6 +1,24 @@
 {
     "options": [
         {
+            "option-heading": "Default secondary call to action",
+            "option-description": "",
+            "option-anchor": "default",
+            "heading": "Why St Andrews",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
+            "action": [
+                {
+                    "text": "Apply now",
+                    "url": "#"
+                },
+                {
+                    "secondary": "-secondary",
+                    "text": "Register for updates",
+                    "url": "#"
+                }
+            ]
+       },
+        {
             "option-heading": "Blue transparent overlay",
             "option-description": "",
             "option-anchor": "blue-transparent",
@@ -10,9 +28,14 @@
                 {
                     "text": "Apply now",
                     "url": "#"
+                },
+                {
+                    "secondary": "-secondary",
+                    "text": "Register for updates",
+                    "url": "#"
                 }
             ],
-            "classes": "secondary-call--overlay secondary-call--blue-transparent-overlay",
+            "classes": " secondary-call--overlay secondary-call--blue-transparent-overlay",
             "bg-image": "docs/images/cta/hero-banner-image-001.jpg"
        },
 
@@ -31,11 +54,12 @@
                     "url": "#"
                 },
                 {
+                    "secondary": "-secondary",
                     "text": "Events",
                     "url": "#"
                 }
             ],
-            "classes": "secondary-call--overlay secondary-call--orange-transparent-overlay",
+            "classes": " secondary-call--overlay secondary-call--orange-transparent-overlay",
             "bg-image": "docs/images/cta/hero-banner-image-002.jpg"
        },
 
@@ -52,9 +76,14 @@
                 {
                     "text": "Apply now",
                     "url": "#"
+                },
+                {
+                    "secondary": "-secondary",
+                    "text": "Register for updates",
+                    "url": "#"
                 }
             ],
-            "classes": "secondary-call--overlay secondary-call--burgundy-transparent-overlay",
+            "classes": " secondary-call--overlay secondary-call--burgundy-transparent-overlay",
             "bg-image": "docs/images/cta/hero-banner-image-003.jpg"
        },
 
@@ -76,14 +105,9 @@
                     "secondary": "-secondary",
                     "text": "Postgraduate opportunities",
                     "url": "#"
-                },
-                {
-                    "secondary": "-secondary",
-                    "text": "Current vacancies",
-                    "url": "#"
                 }
             ],
-            "classes": "secondary-call--overlay secondary-call--purple-transparent-overlay",
+            "classes": " secondary-call--overlay secondary-call--purple-transparent-overlay",
             "bg-image": "docs/images/cta/hero-banner-image-004.jpg"
        },
 
@@ -127,13 +151,9 @@
                 {
                     "text": "Call to action 2",
                     "url": "#"
-                },
-                {
-                    "text": "Call to action 3",
-                    "url": "#"
                 }
             ],
-            "classes": "left",
+            "classes": " left",
             "style": "1"
        }
     ]

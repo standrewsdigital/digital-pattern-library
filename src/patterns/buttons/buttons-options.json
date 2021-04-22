@@ -8,6 +8,18 @@
                 {
                     "type": "primary",
                     "text": "Primary",
+                    "size": "btn "
+                }
+            ]
+         },
+        {
+            "option-heading": "Primary button - larger size",
+            "option-description": "<p>The standard button style in a larger size using <code>btn-lg</code> class.</p>",
+            "option-anchor": "primary-button-large",
+            "buttons": [
+                {
+                    "type": "primary",
+                    "text": "Primary",
                     "size": "btn btn-lg "
                 }
             ]
@@ -21,7 +33,7 @@
                 {
                     "type": "action",
                     "text": "Action",
-                    "size": "btn btn-lg "
+                    "size": "btn "
                 }
             ]
          },
@@ -69,7 +81,7 @@
 
         {
             "option-heading": "Icon buttons",
-            "option-description": "<ul><li>An icon button must be used when the button action is to download a file.</li><li>An associated <a href='../font-awesome/index.html'>Font Awesome</a> icon to the downloadable file must be included in the button.</li></ul>",
+            "option-description": "<ul><li>The icon must be placed after the button text.</li><li>An icon button must be used when the button action is to download a file.</li><li>An associated <a href='../font-awesome/index.html'>Font Awesome</a> icon to the downloadable file must be included in the button.</li></ul>",
             "option-anchor": "icon-buttons",
             "buttons": [
                 {
