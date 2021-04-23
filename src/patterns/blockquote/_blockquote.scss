@@ -2,9 +2,19 @@
 /* BEGIN Pattern: blockquote  */
 /***********************************/
 
+// Reset blockquote in content blocks
+.content-section {
+	blockquote {
+		border: 0;
+		border-left:5px solid $sta-grey-mid2;
+		font-size: inherit;
+		margin: 0 0 1.5625rem 0; // 25px
+		padding: 1em ms(1);
+	}
+}
+
 .blockquote {
-	background: $sta-grey-light;
-	border-left:5px solid $sta-grey;
+	border-left:5px solid $sta-grey-mid2;
 	margin: 0 0 1.5625rem 0; // 25px
 	padding: 1em ms(1);
 	@include clearfix-alt;
@@ -31,7 +41,6 @@
 }
 
 .blockquote__author-thumbnail {
-	border: 2px solid $sta-grey-mid2;
 	border-radius: 50%;
 	height: 50px;
 	width: 50px;
@@ -53,15 +62,15 @@
 	}
 }
 
-// Alternate layout for full width pages
+// Alternate layout for shorter quotes - used for pull quotes and full width blocks
 .blockquote--pull {
 	background: none;
 	border-left: 0;
 	@include ms-respond(font-size,1);
 	margin: 0 auto;
 	max-width: 70ch;
-	padding: 0 1em;
-
+	padding: 0;
+/*
 	&::before {
 		background-color: $sta-grey;
 		content: '';
@@ -70,6 +79,7 @@
 		width: 5rem;
 		margin: 0 0 1em 0;
 	}
+	*/
 }
 
 /***********************************/

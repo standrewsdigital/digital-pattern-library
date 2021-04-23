@@ -1,0 +1,52 @@
+{
+    "navigation-bar" : {
+        "primary":[
+            {"title": "Study options",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Non-degree courses",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Entry requirements",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Qualification indicator",
+             "url": "#",
+             "selected":false
+            },
+            {"title": "Academic entry explained",
+             "url": "#",
+             "selected":false
+            }
+        ]
+      },
+      "category-header": {
+          "title": "Subjects",
+          "url": "#",
+            "text-start": "<div class='category-header__title'>",
+            "text-end": "</div>"
+      },
+      "breadcrumbs": {
+        "parents": [
+          {
+              "title": "University",
+              "url": "#"
+          },
+          {
+              "title": "Subjects",
+              "url": "#"
+          },
+          {
+              "title": "Ancient History",
+              "url": "#"
+          }
+        ],
+        "current": {
+            "title": "Ancient History MA (Hons)",
+            "url": "#"
+        }
+    }
+}

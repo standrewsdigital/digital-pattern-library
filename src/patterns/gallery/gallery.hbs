@@ -8,7 +8,7 @@
         <figure id="{{id}}">
             <a href="{{#if video}}https://www.youtube.com/watch?v=5RCsv3732v4{{else}}{{asset large-img}}{{/if}}" {{#if lightbox-gallery }} data-lightbox="{{lightbox-gallery}}" data-title="{{caption}}"{{/if}}{{#if title}} tabindex="-1"{{/if}}><img src="{{asset thumbnail}}" alt="{{alt}}"></a>
             {{#if download-button}}
-                <a type="button" class="btn btn-lg btn-primary" href="{{large-img}}" download>Download</a>
+                <a type="button" class="btn btn-secondary" href="{{large-img}}" download>Download</a>
             {{/if}}
             {{#if title}}
             <figcaption>

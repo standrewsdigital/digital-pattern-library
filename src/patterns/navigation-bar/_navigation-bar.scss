@@ -152,6 +152,7 @@ div.container ul.show-navigation {
 	outline: none;
     padding: 10px 15px;
 	width: 100%;
+    text-underline-offset: 0.15em;
 
 	&:hover {
 		text-decoration: underline;
@@ -167,6 +168,10 @@ div.container ul.show-navigation {
 		color: $sta-grey-dark;
         outline: 3px solid $sta-orange-highlight; 
         text-decoration: underline;
+	}
+
+	i {
+		margin-left: 0.5em;
 	}
 }
 

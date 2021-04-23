@@ -1,0 +1,44 @@
+---
+title: Grid
+---
+
+<div class="row">
+  <div class="col-md-8">
+<p class="lead">The grid system provides a set of layouts to present content in a consistent way.</p>
+<h2>Rules for grid</h2>
+<ul>
+  <li>Must only be used on full width page layouts.</li>
+  <li>Parts of a grid layout may be left empty.</li>
+  <li>CSS classes are primarily used to assign the correct placement of items in the grid rather than the order they appear.</li>
+</ul>
+<h2>Options available</h2>
+<ul>
+{{#grid-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/grid-options.options}}
+</ul>
+</div>
+</div>
+{{#grid-options.options}}
+<hr>
+<div class="row">
+  <div class="col-md-8">
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+</div>
+<!--noindex-->
+  <span class="label label-default">Example</span>
+</div>
+<div class="pattern-wrapper">
+  {{> grid}}
+</div>
+<div class="container">
+<span class="label label-default">Code</span>
+{{#markdown}}
+```html
+{{> grid-code}}
+```
+{{/markdown}}
+<!--endnoindex-->
+{{/grid-options.options}}

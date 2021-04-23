@@ -7,34 +7,70 @@
    &:after {
        background-color: rgba($color-overlay,0.75);
    }
-   .btn, .btn-primary {
-        background-color: $color-cta;
-        border-color: mix(black, $color-cta, 25%);
+   .btn-action {
+      background-color: $color-cta;
+      border-color: $color-cta;
+      border-bottom-color: mix(black, $color-cta, 25%);
+     
+     &:hover, 
+     &:focus {
+          background-color: mix(black, $color-cta, 25%);
+          border-color: mix(black, $color-cta, 25%);
+      }
+
+      &:active {
+        background: $sta-orange-highlight;
+        color: $sta-grey-dark;
+        box-shadow: 0 3px $sta-orange-highlight;
+        border-color: $sta-orange-highlight;
+      }
    }
 
-   .btn:hover, .btn:focus {
-        background-color: mix(black, $color-cta, 25%);
-        border-color: mix(black, $color-cta, 25%);
-    }
 
-    .btn:active {
-      background: $sta-orange-highlight;
-      color: $sta-grey-dark;
-      box-shadow: 0 3px $sta-orange-highlight;
-      border-color: transparent;
+    .btn-action-secondary {
+      background: rgba(0,0,0,0.1);
+      border-color: white;
+      color: white; 
+
+      &:hover,
+      &:focus {
+        background: rgba(0,0,0,0.2);
+        border-color: white;
+        color: white; 
+      }
+
+      &:active {
+        background: $sta-orange-highlight;
+        color: $sta-grey-dark;
+        box-shadow: 0 3px $sta-orange-highlight;
+        border-color: $sta-orange-highlight;
+      }
+
     }
 }
 
 .secondary-call {
-    background-color: $sta-grey;
-    background-image: url(../images/secondary-call/0.jpg); //fallback background image
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: $sta-grey-light; // Default is grey
     padding: $page-gutter 0;
-    position: relative;
+
+
+    .call-heading {
+        @include ms-respond(font-size,4);
+        margin: 0 0 0.25em 0;
+    }
+
+    p {
+        max-width: 70ch;
+        @include ms-respond(font-size,1);
+    }
+
 
     &.secondary-call--overlay {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+
          &:after {
              content: ' ';
              height: 100%;
@@ -43,47 +79,49 @@
                 left: 0;
              width: 100%;
              z-index: 1;
-         }   
+         }  
+
+
+      &.secondary-call--purple-transparent-overlay {
+          @include secondary-call-overlay ($sta-purple, $sta-orange);
+      }
+
+      &.secondary-call--blue-transparent-overlay {
+          @include secondary-call-overlay($sta-blue, $sta-orange);
+      }
+
+      &.secondary-call--orange-transparent-overlay {
+          @include secondary-call-overlay ($sta-orange, $sta-blue-light);
+      }
+
+      &.secondary-call--burgundy-transparent-overlay {
+          @include secondary-call-overlay ($sta-burgundy, $sta-blue-light);
+      }
+
+      .container {
+          position: relative;
+          z-index: 10;
+      }
+
+      .call-heading {
+          color: white;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+      }
+
+      p {
+          color: white;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+      }
+
     }
 
-
-    &.secondary-call--purple-transparent-overlay {
-        @include secondary-call-overlay ($sta-purple, $sta-green)
-    }
-
-    &.secondary-call--blue-transparent-overlay {
-        @include secondary-call-overlay($sta-blue, $sta-orange)
-    }
-
-    &.secondary-call--orange-transparent-overlay {
-        @include secondary-call-overlay ($sta-orange, $sta-green)
-    }
-
-    &.secondary-call--burgundy-transparent-overlay {
-        @include secondary-call-overlay ($sta-burgundy, $sta-blue)
-    }
-
-    .container {
-        position: relative;
-        z-index: 10;
-    }
-
-    .call-heading {
-        color: white;
-        @include ms-respond(font-size,4);
-        margin: 0 0 0.25em 0;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    }
-
-    p {
-        color: white;
-        max-width: 40em;
-        @include ms-respond(font-size,1);
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    }
-
-    .btn {
-      margin-right:10px;
+    .call-to-action-buttons {
+      .btn {
+        margin-right: 0.5em;
+      }
+      .btn + .btn {
+        margin-right: 0;
+      }
     }
 
 }

@@ -7,6 +7,28 @@
 .search-results {
 	list-style: none;
 	padding-left: 0;
+
+	// Dividing lines between results
+    &--divided {
+		// Remove bottom margin from everything but the last result
+		.search-result:not(:last-child) {
+            padding-bottom: 1em; 
+			margin-bottom: 0;
+		}
+        .search-result:not(:first-child) {
+            padding-top: 1em;  
+            border-top: 1px solid $sta-grey-mid2-alpha;
+        }
+        .search-results__group-heading + .search-result {
+        	padding-top: 0;
+        	border-top: none;
+        }
+
+        // Remove margin on trailing metadata
+        .metadata-list:last-child {
+        	margin-bottom: -5px;
+        }
+    }
 }
 
 .search-result {
@@ -56,10 +78,11 @@
 	}
 }
 
+
 .search-result__heading {
 	@include ms-respond(font-size, 1);
 	display: inline;
-	line-height: 1.1;
+	line-height: 1.3;
   	margin: 0;
 }
 
@@ -87,10 +110,19 @@
 	margin-bottom: 0;
 }
 
-// Add space if metadata follows the summary
-.search-result__summary + .metadata-list {
+// Add space if metadata follows the summary, heading or the link
+.search-result__summary + .metadata-list,
+.search-result__link + .metadata-list {
 	margin-top: 5px;
 }
+
+
+
+
+
+
+
+
 
 /* REMOVE THIS META STYLE AS NOW USING metadata-list PATTERN */
 .search-result__meta {

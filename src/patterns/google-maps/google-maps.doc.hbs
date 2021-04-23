@@ -4,7 +4,7 @@ title: Google Maps
 
 <div class="row">
     <div class="col-md-8">
-<p class="lead">The Google Maps pattern uses a modified <code>iframe</code> embed code from Google, wrapped within a <code>div</code> with specific classes to ensure that it works as expected on mobile devices.</p>
+<p class="lead">The Google Maps pattern should be used to embed a Google Map using the <a href="../responsive-embed/index.html">responsive embed pattern</a> and supported with accessible content.</p>
 
 <h2>Rules for Google Maps</h2>
 
@@ -15,7 +15,16 @@ title: Google Maps
     <li><a href="../content-thirds/index.html">Content thirds</a></li>
     <li><a href="../content-halves/index.html">Content halves</a> (single-point map only)</li>
 </ul>
-
+<div class="callout callout--info">
+<h2 class="callout__heading">Accessibility</h2>
+<p>Embedded maps are not screen reader accessible so the following steps should be taken:</p>
+<ul>
+    <li>Include a suitable <code>title</code> attribute on the <code>iframe</code>.</li>
+    <li>If the map provides directions to a location then include text based directions alongside the map.</li>
+    <li>If the map includes multiple locations then these should be listed as text alongside the map.</li>
+    <li>The Google Maps application has better accessibility support than embedded maps so consider a promiment link to this.</li>
+</ul> 
+</div>
 <h2>Options available</h2>
 {{!-- Note: the Google My Maps example has been created using the digital communications Google account. --}}
 <ul>
@@ -51,12 +60,13 @@ title: Google Maps
 <p>To ensure that the maps are responsive and work on all sizes of devices, use the following code:</p>
 
 <pre><code class="language-html">&lt;div class="embed-responsive embed-responsive-16by9 google-map"&gt;
-  &lt;iframe src="IFRAME_SRC_URL" class="embed-responsive-item google-map"&gt;&lt;/iframe&gt;
+  &lt;iframe src="IFRAME_SRC_URL" class="embed-responsive-item google-map" title="A suitable title for the map"&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </code></pre>
 
 <ul>
     <li>You must replace <code>IFRAME_SRC_URL</code> with the URL from the embed code you copied from Google.</li>
+    <li>There must be a suitable <code>title</code> attribute included for accessibility.</li>
     <li>You must not include any other attributes in the <code>iframe</code> element, e.g. <code>width</code>, <code>height</code>, <code>frameborder</code>, <code>style</code>, etc.</li>
 </ul>
 </div>

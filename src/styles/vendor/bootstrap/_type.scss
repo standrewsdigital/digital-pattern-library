@@ -402,7 +402,10 @@ address {
   table + h4,
   blockquote + h2,
   blockquote + h3,
-  blockquote + h4 {
+  blockquote + h4,
+  .tabs-container + h2,
+  .tabs-container + h3,
+  .tabs-container + h4  {
     margin-top: 1.3em;
   }  
 
@@ -426,18 +429,9 @@ address {
   blockquote + .content-section h2:nth-child(1),
   blockquote + .content-section h3:nth-child(1),
   blockquote + .content-section h4:nth-child(1),
-  .content-section + .content-section h2:nth-child(1),
-  .content-section + .content-section h3:nth-child(1),
-  .content-section + .content-section h4:nth-child(1),
-  .content-section + .content-section h2:nth-child(1),
-  .content-section + .content-section h3:nth-child(1),
-  .content-section + .content-section h4:nth-child(1),
-  .content-section + .content-section h2:nth-child(1),
-  .content-section + .content-section h3:nth-child(1),
-  .content-section + .content-section h4:nth-child(1),
-  .content-section + .content-section h2:nth-child(1),
-  .content-section + .content-section h3:nth-child(1),
-  .content-section + .content-section h4:nth-child(1),
+  .tabs-container + .content-section h2:nth-child(1),
+  .tabs-container + .content-section h3:nth-child(1),
+  .tabs-container + .content-section h4:nth-child(1),
   .content-section + .content-section h2:nth-child(1),
   .content-section + .content-section h3:nth-child(1),
   .content-section + .content-section h4:nth-child(1) {

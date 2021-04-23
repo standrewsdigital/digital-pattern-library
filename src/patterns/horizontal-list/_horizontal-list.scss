@@ -164,15 +164,10 @@
 					}
 				}
 
-				// Use focus within to include chevron
-				&:focus-within {
-		        	outline: 3px solid $sta-orange-highlight; 
-				}
-
 			}
 
 			.dropdown-toggle {
-				padding-right: 1.5em;
+				padding-right: 1.25em;
 				position: relative;
 
 				&:before {
@@ -183,7 +178,7 @@
 			        font-size: 1rem;
 			        position: absolute;
 			        	top: 50%;
-			        	right: 0.5rem;
+			        	right: 0;
 			        transform: translateY(-50%);
 
 					@media (max-width: 767px){

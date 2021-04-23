@@ -7,11 +7,17 @@ title: Responsive embed
 <p class="lead">The responsive embed pattern automatically determines the dimensions of media content based on the width of the containers they are embedded in. A fixed ratio allows embedded content to scale appropriately on any device.</p>
 
 <h2>Rules for responsive embed</h2>
-<p>This wrapper div must have two classes: <code>embed-responsive</code> plus one that determines its aspect ratio.</p>
+<ul>
+<li><strong>To embed YouTube videos</strong> please use the <a href="../video/index.html">video pattern</a>.</li>
+<li><strong>To embed SoundCloud files</strong> please use the <a href="../audio/index.html">audio pattern</a>.</li>
+<li><strong>To embed Google maps</strong> please use the <a href="../google-maps/index.html">Google Maps pattern</a>.</li>
+</ul>
+<h2>How to use</h2>
+<p>This wrapper div must have two classes: <code>embed-responsive</code> class, and another that specifies its aspect ratio.</p>
 <p>There are two ratios available:</p>
 <ul>
 <li><strong>16:9</strong> <code>embed-responsive-16by9</code>. Use this to show videos, it is better suited for use with HD media.</li>
-<li><strong>4:3</strong> <code>embed-responsive-4by3</code>. Use this to display maps, in mobile view a smaller ratio makes them hard to view.</li>
+<li><strong>4:3</strong> <code>embed-responsive-4by3</code>.</li>
 </ul>
 
 <pre><code class="language-html">&lt;div class="embed-responsive embed-responsive-16by9"&gt;
@@ -41,7 +47,9 @@ title: Responsive embed
 	<span class="label label-default">Example</span>
 </div>
 <div class="pattern-wrapper">
+<div class="container">
 {{> responsive-embed}}
+</div>
 </div>
 <div class="container">
 <span class="label label-default">Code</span>

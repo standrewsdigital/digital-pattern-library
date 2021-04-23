@@ -55,6 +55,8 @@
     font-weight: normal;
     max-width: 200px;
     padding-right: 1em;
+    padding-top: 0.2em;   
+    padding-bottom: 0.2em;   
 
     // Reduce the max width on smaller displays
     @media (max-width: 430px) {
@@ -76,6 +78,8 @@
 }
 
 .paired-values-list__value {
+    padding-top: 0.2em;   
+    padding-bottom: 0.2em;   
 
     // IE 11 specific fallback as dynamic grids are not supported
     @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) { 

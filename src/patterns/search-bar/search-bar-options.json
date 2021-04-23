@@ -24,7 +24,7 @@
         },
         {
             "option-heading": "Search banner",
-            "option-description": "<p>The search banner is used to prominently feature a search form on the page.</p><ul><li>The search banner may be used on the body section of a webpage.</li><li>The background colour must either be light grey or light blue. Alternatively a background image with a transparent overlay may be used.</li><li>There must be an associated heading introducing the search.</li><li>An optional sub-heading may also be included to give additional context to the search.</li><li>Placeholder text should be used to indicate the recommended type of search query.</li></ul>",
+            "option-description": "<p>The search banner is used to prominently feature a search form on the page.</p><ul><li>The search banner may be used on the body section of a webpage.</li><li>The background colour must either be light grey or light blue.</li><li>There must be an associated heading introducing the search.</li><li>An optional sub-heading may also be included to give additional context to the search.</li><li>Placeholder text should be used to indicate the recommended type of search query.</li></ul>",
             "option-anchor": "search-banner",
             "background-color": "search-bar__grey",
             "full-width": true,
@@ -49,7 +49,7 @@
             "clear-button-type": " clear-icon__resubmit"
          },
         {
-            "option-heading": "Search banner (constrained)",
+            "option-heading": "Search banner (constrained width)",
             "option-description": "<p>It is also acceptable to constrain the search banner to a column layout.</p><ul><li>This must follow the guidelines of the <a href=\"#search-banner\">search banner</a> option.</li><li>The width of the search banner column must be at least the same size as any other adjoining column.</li></ul>",
             "option-anchor": "search-banner-constrained",
             "background-color": "search-bar__blue",

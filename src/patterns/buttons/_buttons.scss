@@ -11,6 +11,40 @@ button {
   }
 }
 
+.btn {
+  // Change padding to relative sizes
+  padding: 0.5em 1em;
+// Add focus and active states to buttons
+  text-decoration:none;
+  text-underline-offset: 0.15em;
+  &:focus {
+    outline: 3px solid $sta-orange-highlight;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $sta-grey-dark;
+    background: $sta-orange-highlight;
+  }
+
+}
+
+// Resize button when inline with input group to match form fields
+.input-group-btn {
+  .btn {
+    line-height: 1.5;
+    padding: 6px 12px;
+    margin-bottom: 0;
+  }
+}
+
+// Icon should be placed at end of button text
+.btn-icon i {
+  margin-left: 0.5em; // remove whitespace and using margin removes underlined gap on hover
+}
+
+
+// Specific button styles
 .btn-tag {
 	background: white;
 	border: 1px solid $sta-grey;
@@ -22,8 +56,16 @@ button {
     border-color: $sta-grey;
     color: $sta-grey-dark;
 	}
+
+    &:active {
+      background: $sta-orange-highlight;
+      border-color: $sta-orange-highlight;
+      color: $sta-grey-dark;
+      box-shadow: 0 3px $sta-orange-highlight;
+    }
 }
 
+// .read-more should get deprecated and btn-action used instead
 .read-more a {
     @extend .btn;
     @extend .btn-primary;
@@ -39,13 +81,248 @@ button {
     &:before {
 	    @extend .fa;
 	    @extend .fa-chevron-right;
-      @include ms-respond(font-size,1);
 	    position: absolute;
 	    top: 50%;
 	    transform: translateY(-50%);
 	    right: 15px;
     }
 }
+
+.btn-action {
+    background: $sta-blue-light;
+    border: 1px $sta-blue-light solid;
+    border-bottom: 3px $sta-blue-light-shade25 solid;
+    font-weight: bold;
+    @include ms-respond(font-size,1);
+    color: white;
+    line-height: 1.3;
+    position:relative;
+    padding:0.5em 2.4em calc(0.5em - 2px) 15px;
+    text-align: left;
+
+    &:before {
+      @extend .fa;
+      @extend .fa-chevron-right;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 15px;
+    }
+
+    &:hover,
+    &:focus {
+      background:$sta-blue-light-shade25;
+      border-color: $sta-blue-light-shade25;
+      color: white;
+      text-decoration: underline;
+    }
+
+    &:active {
+      border-color: $sta-orange-highlight;
+    }
+}
+
+.btn-action-secondary {
+    background: white;
+    border: 1px $sta-blue-light solid;
+    border-bottom: 3px $sta-blue-light solid;
+    color: $sta-blue-light;
+    @include ms-respond(font-size,1);
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.3;
+    position:relative;
+    padding:0.5em 2.4em calc(0.5em - 2px) 15px;
+    text-align: left;
+    text-decoration: none;
+    white-space: normal; //allows link buttons to span lines
+
+    &:before {
+      @extend .fa;
+      @extend .fa-chevron-right;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 15px;
+    }
+
+    &:hover,
+    &:focus {
+      background: white;
+      border-color: $sta-blue-light-shade25;
+      color: $sta-blue-light-shade25;
+      text-decoration: underline;
+    }
+
+    &:active {
+      background: $sta-orange-highlight;
+      border-color: $sta-orange-highlight;
+      color: $sta-grey-dark;
+    }
+}
+
+.btn-small-tag {
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0 0;
+    background: white;
+    border: 1px $sta-grey-highlight solid;
+    color: $sta-grey-dark;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0.4rem 0.5rem;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        background: $sta-grey-light;
+        color: $sta-grey-dark;
+        text-decoration: none;
+    }
+    &:active {
+      background: $sta-orange-highlight;
+      border-color: $sta-orange-highlight;
+      color: $sta-grey-dark;
+      box-shadow: 0 3px $sta-orange-highlight;
+    }
+}
+
+.btn-xsmall-tag {
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0 0;
+    background: white;
+    border: 1px $sta-grey-highlight solid;
+    color: $sta-grey-dark;
+    @include ms-respond(font-size,-1);
+    font-weight: normal;
+    padding: 0.4rem 0.5rem;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        background: $sta-grey-light;
+        color: $sta-grey-dark;
+        text-decoration: none;
+    }
+    &:focus {
+      text-decoration: underline;
+    }
+    &:active {
+      background: $sta-orange-highlight;
+      border-color: $sta-orange-highlight;
+      color: $sta-grey-dark;
+      box-shadow: 0 3px $sta-orange-highlight;
+    }
+}
+
+// DROPDOWN STYLES - replace this with own dropdown util
+
+.dropdown-toggle {
+        padding-right: 2rem;
+        position: relative;
+
+        &:before {
+          @extend .fa;
+          @extend .fa-chevron-down;
+          color: inherit;
+          display: block;
+          font-size: 1rem;
+          position: absolute;
+            top: 50%;
+            right: 0.5rem;
+          transform: translateY(-50%);
+        }
+
+        &[aria-expanded="true"]:before {
+          @extend .fa-chevron-up;
+        }
+      }
+
+.dropdown-menu {
+  font-size: 1rem;
+  margin:0;
+  padding:0;
+
+  > li > a {
+    color: $sta-grey-dark;
+    padding: 0.4rem 0.5rem;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        background: $sta-grey-light;
+        color: $sta-grey-dark;
+        text-decoration: none;
+    }
+
+    &:active {
+      background: $sta-orange-highlight;
+      color: $sta-grey-dark;
+      box-shadow: 0 3px $sta-orange-highlight;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Reduce size of dropdown to match smaller button
+.btn-lg + .dropdown-menu {
+  font-size: 1em;
+
+  > li > a {
+    padding: 10px 15px;
+  }
+}
+
+// Specific to sort dropdowns
+@media (min-width: 768px){
+  .pull-right-sm .btn-small-tag {
+    margin:0 0 0 0.5rem;
+  }
+  .pull-right-sm .dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+}
+
+  // Include small bottom margin when buttons span multiple lines
+.btn, .read-more a {
+  margin-bottom: 5px;
+}
+
+.btn.dropdown-toggle {
+  margin-bottom:0;
+}
+
+
+
+
+
+
+
+
+
+
+// Copy button for code blocks
+.btn-icon__copy:before {
+  @extend .far;
+  content: '\f0c5';
+  margin-right: 0.5em;
+}
+
+
+// Expand button for code blocks
+.btn-icon__expand:before {
+  @extend .fa;
+  content: '\f065';
+  margin-right: 0.5em;
+}
+
+.btn-icon__expand[aria-expanded="true"]:before {
+  content: '\f066';
+}
+
+
+
+
 
 // REMOVE THIS DUPLICATE
   .btn-important {
@@ -79,199 +356,6 @@ button {
   }  
   // END 
 
-.btn-action {
-    background: $sta-blue-light;
-    border: none;
-    border-bottom: 3px $sta-blue-light-shade25 solid;
-    font-weight: bold;
-    @include ms-respond(font-size,1);
-    color: white;
-    line-height: 1;
-    position:relative;
-    padding:15px 45px 12px 15px;
-    text-align: left;
-
-    &:before {
-      @extend .fa;
-      @extend .fa-chevron-right;
-      font-size: 1.5rem;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%) translateY(1px);
-      right: 15px;
-    }
-
-    &:hover,
-    &:focus {
-      background:$sta-blue-light-shade25;
-      color: white;
-    }
-
-    &:active {
-      border-bottom: 3px $sta-orange-highlight solid;
-    }
-}
-
-.btn-small-tag {
-    display: inline-block;
-    margin: 0.5rem 0.5rem 0 0;
-    background: white;
-    border: 1px $sta-grey-highlight solid;
-    color: $sta-grey-dark;
-    font-size: 1rem;
-    font-weight: normal;
-    padding: 0.4rem 0.5rem;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-        background: $sta-grey-light;
-        color: $sta-grey-dark;
-        text-decoration: none;
-    }
-    &:active {
-      background: $sta-orange-highlight;
-      color: $sta-grey-dark;
-      box-shadow: 0 3px $sta-orange-highlight;
-    }
-}
-
-.btn-xsmall-tag {
-    display: inline-block;
-    margin: 0.5rem 0.5rem 0 0;
-    background: white;
-    border: 1px $sta-grey-highlight solid;
-    color: $sta-grey-dark;
-    @include ms-respond(font-size,-1);
-    font-weight: normal;
-    padding: 0.4rem 0.5rem;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-        background: $sta-grey-light;
-        color: $sta-grey-dark;
-        text-decoration: none;
-    }
-    &:focus {
-      text-decoration: underline;
-    }
-    &:active {
-      background: $sta-orange-highlight;
-      color: $sta-grey-dark;
-      box-shadow: 0 3px $sta-orange-highlight;
-    }
-}
-
-// DROPDOWN STYLES - replace this with own dropdown util
-
-.dropdown-toggle {
-        padding-right: 2rem;
-        position: relative;
-
-        &:before {
-          @extend .fa;
-          @extend .fa-chevron-down;
-          color: inherit;
-          display: block;
-          font-size: 1rem;
-          position: absolute;
-            top: 50%;
-            right: 0.5rem;
-          transform: translateY(-50%);
-        }
-
-        &[aria-expanded="true"]:before {
-          @extend .fa-chevron-up;
-        }
-      }
-
-.dropdown-menu {
-  margin:0;
-  padding:0;
-
-  > li > a {
-    color: $sta-grey-dark;
-    padding: 10px 15px;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-        background: $sta-grey-light;
-        color: $sta-grey-dark;
-        text-decoration: none;
-    }
-
-    &:active {
-      background: $sta-orange-highlight;
-      color: $sta-grey-dark;
-      box-shadow: 0 3px $sta-orange-highlight;
-      text-decoration: underline;
-    }
-  }
-}
-
-// Reduce size of dropdown to match smaller button
-.btn-small-tag + .dropdown-menu {
-  font-size: 1rem;
-
-  > li > a {
-    padding: 0.4rem 0.5rem;
-  }
-}
-
-// Specific to sort dropdowns
-@media (min-width: 768px){
-  .pull-right-sm .btn-small-tag {
-    margin:0 0 0 0.5rem;
-  }
-  .pull-right-sm .dropdown-menu {
-    left: auto;
-    right: 0;
-  }
-}
-
-  // Include small bottom margin when buttons span multiple lines
-.btn, .read-more a {
-  margin-bottom: 5px;
-}
-
-.btn.dropdown-toggle {
-  margin-bottom:0;
-}
-
-// Add focus and active states to buttons
-.btn {
-  text-decoration:none;
-  &:focus {
-    outline: 3px solid $sta-orange-highlight;
-    text-decoration: underline;
-  }
-
-  &:active {
-    color: $sta-grey-dark;
-    background: $sta-orange-highlight;
-  }
-
-}
-
-// Copy button for code blocks
-.btn-icon__copy:before {
-  @extend .far;
-  content: '\f0c5';
-  margin-right: 0.5em;
-}
-
-// Expand button for code blocks
-.btn-icon__expand:before {
-  @extend .fa;
-  content: '\f065';
-  margin-right: 0.5em;
-}
-
-.btn-icon__expand[aria-expanded="true"]:before {
-  content: '\f066';
-}
 
 /*********************************/
 /* END Pattern: buttons          */

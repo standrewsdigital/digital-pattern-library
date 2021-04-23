@@ -512,11 +512,11 @@ if (navigator && navigator.clipboard) {
 
         // Set the column heading based on the form id.
         if ( form_id === 'form-banner-pattern-search' ) {
-            list = "<h2>Patterns</h2><ul class=\"search-results\">" + list + "</ul>";
+            list = "<h3>Patterns</h3><ul class=\"search-results no-margin-bottom\">" + list + "</ul>";
         } else if ( form_id === 'news-search' ) {
             list;
         } else {
-            list = "<h2>Undergraduate courses</h2><ul class=\"search-results\">" + list + "</ul>";
+            list = "<h3>Undergraduate courses</h3><ul class=\"search-results no-margin-bottom\">" + list + "</ul>";
         }
 
         if ( form_id === 'news-search' ) {
@@ -529,7 +529,7 @@ if (navigator && navigator.clipboard) {
 
     function add_right_results_list( form_id, list ) {
 
-        list = "<h2>Postgraduate courses</h2><ul class=\"search-results\">" + list + "</ul>";
+        list = "<h3>Postgraduate courses</h3><ul class=\"search-results no-margin-bottom\">" + list + "</ul>";
         $('#' + form_id).parent('.input-group').next('.results').children('.row').children('.col-md-6.right-column').html(list);
 
     }

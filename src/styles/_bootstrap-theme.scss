@@ -59,9 +59,9 @@ a {
     -webkit-transition: none;
     -moz-transition: none;
     transition: none;
-    font-weight: 700;
+    font-weight: inherit;
     text-decoration: underline;
-    text-underline-offset: 0.15em; // Only works in FF and Safari
+    text-underline-offset: 0.15em;
     outline: 0; 
     outline-offset: 0;
 
@@ -446,6 +446,7 @@ a.list-group-item {
     &:active {
         color: $sta-grey-dark;
         background: $sta-orange-highlight;
+        border-color: $sta-orange-highlight; 
 
         .badge {
           background: transparent;

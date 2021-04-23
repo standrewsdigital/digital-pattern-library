@@ -8,6 +8,18 @@
                 {
                     "type": "primary",
                     "text": "Primary",
+                    "size": "btn "
+                }
+            ]
+         },
+        {
+            "option-heading": "Primary button - larger size",
+            "option-description": "<p>The standard button style in a larger size using <code>btn-lg</code> class.</p>",
+            "option-anchor": "primary-button-large",
+            "buttons": [
+                {
+                    "type": "primary",
+                    "text": "Primary",
                     "size": "btn btn-lg "
                 }
             ]
@@ -15,13 +27,26 @@
 
         {
             "option-heading": "Action button",
-            "option-description": "<p>Action buttons are used to signify the most prominent call to action on a page.</p>",
+            "option-description": "<p>Action buttons are used to signify the most prominent call to action on a page.<ul><li>There should only be one per page.</li></ul></p>",
             "option-anchor": "action-button",
             "buttons": [
                 {
                     "type": "action",
                     "text": "Action",
-                    "size": "btn btn-lg "
+                    "size": "btn "
+                }
+            ]
+         },
+
+        {
+            "option-heading": "Secondary action button",
+            "option-description": "<p>Secondary action buttons are used to signify other prominent call to actions on a page that are in addition to the action button.</p>",
+            "option-anchor": "secondary-action-button",
+            "buttons": [
+                {
+                    "type": "action-secondary",
+                    "text": "Secondary action",
+                    "size": "btn "
                 }
             ]
          },
@@ -56,7 +81,7 @@
 
         {
             "option-heading": "Icon buttons",
-            "option-description": "<ul><li>An icon button must be used when the button action is to download a file.</li><li>An associated <a href='../font-awesome/index.html'>Font Awesome</a> icon to the downloadable file must be included in the button.</li></ul>",
+            "option-description": "<p>Icons are not a replacement for clear text labels, but they can act as an additional visual clue for the button action.</p><ul><li>The icon must be placed immediately after the button text.</li><li>Include the <code>btn-icon</code> class to adjust the position of the icon</li><li>An icon button must be used when the button action is to download a file.</li><li>An associated <a href='../font-awesome/index.html'>Font Awesome</a> icon to the downloadable file must be included in the button.</li></ul>",
             "option-anchor": "icon-buttons",
             "buttons": [
                 {
@@ -64,28 +89,28 @@
                     "text": "PDF document",
                     "icon-class": "fa fa-file-pdf-o",
                     "icon-title": "PDF",
-                    "size": "btn btn-lg "
+                    "size": "btn btn-lg btn-icon "
                 },
                 {
                     "type": "primary",
                     "text": "ZIP file",
                     "icon-class": "fa fa-file-zip-o",
                     "icon-title": "ZIP",
-                    "size": "btn btn-lg "
+                    "size": "btn btn-lg btn-icon "
                 },
                 {
                     "type": "primary",
                     "text": "Word document",
                     "icon-class": "fa fa-file-word-o",
                     "icon-title": "Word",
-                    "size": "btn btn-lg "
+                    "size": "btn btn-lg btn-icon "
                 },
                 {
                     "type": "primary",
                     "text": "Powerpoint presentation",
                     "icon-class": "fa fa-file-powerpoint-o",
                     "icon-title": "Powerpoint",
-                    "size": "btn btn-lg "
+                    "size": "btn btn-lg btn-icon "
                 }
             ]
         },

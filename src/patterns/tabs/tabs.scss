@@ -9,6 +9,7 @@
     border-bottom: 1px solid $sta-grey-highlight;
     > li {
       float: left;
+      font-weight:bold;
       // Make the list-items overlay the bottom border
       margin-bottom: -1px;
 
@@ -126,11 +127,11 @@
         margin-top: 10px;
         margin-bottom: 5px;
     }
-
-    ul {
+/*
+    ul:not(.search-results) {
         padding: 5px 0 0 20px;
         margin:0;
-    }
+    } */
 }
 
 

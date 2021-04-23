@@ -1,0 +1,45 @@
+{
+    "options": [
+        {
+            "option-heading": "Single main column",
+            "option-description": "<p>A single column that spans the standard width grid.</p>",
+            "option-anchor": "single-columnn",
+            "sta-grid__main": true
+        },
+
+        {
+            "option-heading": "Single main column with offsetted secondary columns",
+            "option-description": "<p>Additional columns may be offset on either side of the standard width grid on larger width displays.</p>",
+            "option-anchor": "single-columnn-offsets",
+            "sta-grid__main--with-offsets": true
+        },
+
+        {
+            "option-heading": "Main column with side column",
+            "option-description": "<p>An additional side column on medium to larger displays provides an option for secondary content such as an aside.</p>",
+            "option-anchor": "single-columnn-aside",
+            "sta-grid__main-aside": true
+        },
+
+        {
+            "option-heading": "Side column with main column",
+            "option-description": "<p>An additional side column may also be placed on the left on medium to larger displays providing an option for secondary content such as a contents menu.</p>",
+            "option-anchor": "aside-single-column",
+            "sta-grid__aside-main": true
+        },
+
+        {
+            "option-heading": "Main column with empty side column",
+            "option-description": "<p>Grid elements can be removed from a grid without affecting the layout of the other elements. In this example the side column has been left out to retain the width of the main column.</p>",
+            "option-anchor": "single-columnn-aside-blank",
+            "sta-grid__main-aside-empty": true
+        },
+
+        {
+            "option-heading": "Main column with side column and offsetted secondary columns",
+            "option-description": "<p>This example demonstrates the placement of the offsetted columns is only affected by their order on small width displays.</p>",
+            "option-anchor": "single-columnn-aside-offsets",
+            "sta-grid__main-aside--with-offsets": true
+        }
+    ]
+ }
