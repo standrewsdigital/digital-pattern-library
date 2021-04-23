@@ -1,3 +1,32 @@
+// Add expand code block button
+function addExpandButtons() {
+    Array.prototype.slice.call(document.querySelectorAll('pre > code')).forEach(function (codeBlock) {
+        var button = document.createElement('button');
+        var pre = codeBlock.parentNode;
+        button.className = 'btn btn-xsmall-tag btn-icon__expand';
+        button.type = 'button';
+        button.innerText = 'Expand code';
+        button.setAttribute("aria-expanded", "false");
+
+        button.addEventListener('click', function () {
+            var state =  button.getAttribute("aria-expanded");
+            if(state == "true"){
+            button.innerText = 'Expand code';
+            button.setAttribute("aria-expanded", "false");
+            pre.classList.remove("pre-expanded");
+            } else {
+            button.innerText = 'Collapse code';
+            button.setAttribute("aria-expanded", "true");
+            pre.classList.add("pre-expanded");
+            }
+        });
+
+        pre.parentNode.insertBefore(button, pre.nextSibling);
+
+    });
+}
+addExpandButtons();
+
 // Copy button for code blocks
 function addCopyButtons(clipboard) {
     Array.prototype.slice.call(document.querySelectorAll('pre > code')).forEach(function (codeBlock) {
@@ -40,7 +69,6 @@ if (navigator && navigator.clipboard) {
 
     document.body.appendChild(script);
 }
-
 
 (function($) {
 

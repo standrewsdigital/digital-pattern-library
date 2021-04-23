@@ -404,6 +404,110 @@
 
 
 
+        {
+            "option-heading": "Checkboxes stacked - collapsed list",
+            "option-anchor": "checkboxes-stacked-collapsed",
+            "option-description": "<p>A large list of stacked checkboxes may be placed in a collapsible container to reduce the amount of scrolling to the next form field.</p><ul><li>Should not be used if there are fewer than seven checkboxes.</li><li>Also consider whether the checkboxes may be split into different lists, to shorten their lengths, as this will make the form easier to complete.</li><li>A text button to expand or collapse the list will toggle the reduced height and scrollbar.</li><li>An additional text button, visible to keyboard users, provides an option to bypass the list of checkboxes and skip to the next focusable element by linking to its ID. This example uses <code>#radio-inline</code> as the anchor link which is the next option listed on this page.</li></ul>",
+            "radio-check": true,
+            "class": "checkbox-box",
+            "checkbox-collapsed": " class=\"checkbox-box__collapsed\"",
+            "option-text": "What colours do you like?",
+            "option-text-help": "Select all options that apply.",
+            "option-boxes": [
+                {
+                    "id": "option1-stack-collapsed",
+                    "type": "checkbox",
+                    "label": "Gold",
+                    "option-value": "default",
+                    "name": "option1-stack",
+                    "checkbox": true
+                },
+                {
+                    "id": "option2-stack-collapsed",
+                    "type": "checkbox",
+                    "label": "Silver",
+                    "option-value": "default",
+                    "name": "option2-stack",
+                    "checkbox": true
+                },
+                {
+                    "id": "option3-stack-collapsed",
+                    "type": "checkbox",
+                    "label": "Bronze",
+                    "option-value": "default",
+                    "name": "option3-stack",
+                    "checkbox": true
+                },
+                {
+                    "id": "option4-stack-collapsed",
+                    "type": "checkbox",
+                    "label": "White",
+                    "option-value": "default",
+                    "name": "option4-stack-collapsed",
+                    "checkbox": true
+                },
+                {
+                    "id": "option5-stack-collapsed",
+                    "type": "checkbox",
+                    "label": "Black",
+                    "option-value": "default",
+                    "name": "option5-stack-collapsed",
+                    "checkbox": true
+                },
+                {
+                    "id": "option6-stack-collapsed",
+                    "type": "checkbox",
+                    "label": "Red",
+                    "option-value": "default",
+                    "name": "option6-stack-collapsed",
+                    "checkbox": true
+                },
+                {
+                    "id": "option7-stack-collapsed",
+                    "type": "checkbox",
+                    "label": "Green",
+                    "option-value": "default",
+                    "name": "option7-stack-collapsed",
+                    "checkbox": true
+                },
+                {
+                    "id": "option8-stack-collapsed",
+                    "type": "checkbox",
+                    "label": "Blue",
+                    "option-value": "default",
+                    "name": "option8-stack-collapsed",
+                    "checkbox": true
+                },
+                {
+                    "id": "option9-stack-collapsed",
+                    "type": "checkbox",
+                    "label": "Yellow",
+                    "option-value": "default",
+                    "name": "option9-stack-collapsed",
+                    "checkbox": true
+                },
+                {
+                    "id": "option10-stack-collapsed",
+                    "type": "checkbox",
+                    "label": "Pink",
+                    "option-value": "default",
+                    "name": "option10-stack-collapsed",
+                    "checkbox": true
+                },
+                {
+                    "id": "option11-stack-collapsed",
+                    "type": "checkbox",
+                    "label": "Orange",
+                    "option-value": "default",
+                    "name": "option11-stack-collapsed",
+                    "checkbox": true
+                }
+            ]
+        },
+
+
+
+
 
         {
             "option-heading": "Radio buttons inline",
@@ -528,7 +632,7 @@
         {
             "option-heading": "Select box",
             "option-anchor": "select-box",
-            "option-description": "<ul><li>You should avoid using select boxes (drop-down lists), instead you should use radio buttons or checkboxes.<li>You must only pre-select options for the user if there’s a strong, user-centred reason to do this.</ul>",
+            "option-description": "<ul><li>You should try and avoid using select boxes (drop-down lists) as they can be difficult for some users to operate - instead you should use radio buttons or checkboxes where possible.<li>You must only pre-select options for the user if there’s a strong, user-centred reason to do this.</ul>",
             "select-box": true,
             "id": "select-box",
             "label-text": "Student status",

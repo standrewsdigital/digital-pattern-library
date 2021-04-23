@@ -309,6 +309,18 @@ button {
 }
 
 
+// Expand button for code blocks
+.btn-icon__expand:before {
+  @extend .fa;
+  content: '\f065';
+  margin-right: 0.5em;
+}
+
+.btn-icon__expand[aria-expanded="true"]:before {
+  content: '\f066';
+}
+
+
 
 
 
@@ -343,6 +355,7 @@ button {
     }
   }  
   // END 
+
 
 /*********************************/
 /* END Pattern: buttons          */
