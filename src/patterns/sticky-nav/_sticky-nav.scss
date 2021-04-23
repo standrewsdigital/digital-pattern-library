@@ -186,6 +186,7 @@
     .sta-container {
         display: flex;
           align-items: center;
+        height: 4em;
     }
 
     .btn {
@@ -213,10 +214,6 @@
         background: white;
         border-bottom: 1px solid $sta-grey-highlight;
         box-shadow: 0 1px 2px 0 $sta-grey-highlight;
-
-        .sta-container {
-            height: 4em;
-        }
 
         // Only show label when sticky and wide enough
         @media (min-width: 900px){

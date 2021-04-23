@@ -81,7 +81,7 @@
 
         {
             "option-heading": "Icon buttons",
-            "option-description": "<ul><li>The icon must be placed after the button text.</li><li>An icon button must be used when the button action is to download a file.</li><li>An associated <a href='../font-awesome/index.html'>Font Awesome</a> icon to the downloadable file must be included in the button.</li></ul>",
+            "option-description": "<p>Icons are not a replacement for clear text labels, but they can act as an additional visual clue for the button action.</p><ul><li>The icon must be placed immediately after the button text.</li><li>Include the <code>btn-icon</code> class to adjust the position of the icon</li><li>An icon button must be used when the button action is to download a file.</li><li>An associated <a href='../font-awesome/index.html'>Font Awesome</a> icon to the downloadable file must be included in the button.</li></ul>",
             "option-anchor": "icon-buttons",
             "buttons": [
                 {
@@ -89,28 +89,28 @@
                     "text": "PDF document",
                     "icon-class": "fa fa-file-pdf-o",
                     "icon-title": "PDF",
-                    "size": "btn btn-lg "
+                    "size": "btn btn-lg btn-icon "
                 },
                 {
                     "type": "primary",
                     "text": "ZIP file",
                     "icon-class": "fa fa-file-zip-o",
                     "icon-title": "ZIP",
-                    "size": "btn btn-lg "
+                    "size": "btn btn-lg btn-icon "
                 },
                 {
                     "type": "primary",
                     "text": "Word document",
                     "icon-class": "fa fa-file-word-o",
                     "icon-title": "Word",
-                    "size": "btn btn-lg "
+                    "size": "btn btn-lg btn-icon "
                 },
                 {
                     "type": "primary",
                     "text": "Powerpoint presentation",
                     "icon-class": "fa fa-file-powerpoint-o",
                     "icon-title": "Powerpoint",
-                    "size": "btn btn-lg "
+                    "size": "btn btn-lg btn-icon "
                 }
             ]
         },

@@ -68,13 +68,13 @@
 
 .accordion-item__toggle {
     cursor: pointer;
-    padding: 15px 3em 15px 15px; // Additional padding on right to accommodate chevron
+    padding: 0.8em 3em 0.8em 15px; // Additional padding on right to accommodate chevron
     position: relative;
 
     &:hover,
     &:focus,
     &:focus-within {
-        // Add underline to button {
+        // Add underline to button 
             .accordion-item__toggle-button {
                 text-decoration: underline;
                 outline: none;
@@ -84,7 +84,7 @@
 
     &:focus,
     &:focus-within {
-        background-color: $sta-grey-light;
+        //background-color: $sta-grey-light;
         outline: 3px solid $sta-orange-highlight; 
     }
 
@@ -107,7 +107,7 @@
 
 .accordion-item__toggle-title {
     @include ms-respond(font-size,1);
-    line-height: 1.1;
+    line-height: 1.3;
     font-weight: bold;
     margin: 0;
 }
@@ -119,6 +119,7 @@
     color: $sta-blue-light;
     padding: 0;
     text-align: left;
+    text-underline-offset: 0.15em;
 
     &:hover {
         // Add underline when hovered

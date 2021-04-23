@@ -11,6 +11,40 @@ button {
   }
 }
 
+.btn {
+  // Change padding to relative sizes
+  padding: 0.5em 1em;
+// Add focus and active states to buttons
+  text-decoration:none;
+  text-underline-offset: 0.15em;
+  &:focus {
+    outline: 3px solid $sta-orange-highlight;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $sta-grey-dark;
+    background: $sta-orange-highlight;
+  }
+
+}
+
+// Resize button when inline with input group to match form fields
+.input-group-btn {
+  .btn {
+    line-height: 1.5;
+    padding: 6px 12px;
+    margin-bottom: 0;
+  }
+}
+
+// Icon should be placed at end of button text
+.btn-icon i {
+  margin-left: 0.5em; // remove whitespace and using margin removes underlined gap on hover
+}
+
+
+// Specific button styles
 .btn-tag {
 	background: white;
 	border: 1px solid $sta-grey;
@@ -31,6 +65,7 @@ button {
     }
 }
 
+// .read-more should get deprecated and btn-action used instead
 .read-more a {
     @extend .btn;
     @extend .btn-primary;
@@ -46,7 +81,6 @@ button {
     &:before {
 	    @extend .fa;
 	    @extend .fa-chevron-right;
-      @include ms-respond(font-size,1);
 	    position: absolute;
 	    top: 50%;
 	    transform: translateY(-50%);
@@ -69,10 +103,9 @@ button {
     &:before {
       @extend .fa;
       @extend .fa-chevron-right;
-      font-size: 1.5rem;
       position: absolute;
       top: 50%;
-      transform: translateY(-50%) translateY(1px);
+      transform: translateY(-50%);
       right: 15px;
     }
 
@@ -107,10 +140,9 @@ button {
     &:before {
       @extend .fa;
       @extend .fa-chevron-right;
-      font-size: 1.5rem;
       position: absolute;
       top: 50%;
-      transform: translateY(-50%) translateY(1px);
+      transform: translateY(-50%);
       right: 15px;
     }
 
@@ -258,35 +290,6 @@ button {
 
 .btn.dropdown-toggle {
   margin-bottom:0;
-}
-
-// Add focus and active states to buttons
-.btn {
-  text-decoration:none;
-  &:focus {
-    outline: 3px solid $sta-orange-highlight;
-    text-decoration: underline;
-  }
-
-  &:active {
-    color: $sta-grey-dark;
-    background: $sta-orange-highlight;
-  }
-
-}
-
-// Resize button when inline with input group to match form fields
-.input-group-btn {
-  .btn {
-    line-height: 1.5;
-    padding: 6px 12px;
-    margin-bottom: 0;
-  }
-}
-
-// Icon should be placed at end of button text
-.btn i {
-  margin-left: 0.5em; // remove whitespace and using margin removes underlined gap on hover
 }
 
 
