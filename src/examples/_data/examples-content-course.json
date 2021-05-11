@@ -84,5 +84,25 @@
             "title": "Management (MLitt)",
             "url": "#"
         }
+    },
+      "breadcrumbs4": {
+        "parents": [
+          {
+              "title": "University",
+              "url": "#"
+          },
+          {
+              "title": "Subjects",
+              "url": "#"
+          },
+          {
+              "title": "French",
+              "url": "#"
+          }
+        ],
+        "current": {
+            "title": "French MA (Hons)",
+            "url": "#"
+        }
     }
 }
