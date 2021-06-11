@@ -7,9 +7,35 @@
 	color: inherit;
 }
 
+// Selected column
+.dataTable th.sorting_desc,
+.dataTable th.sorting_asc {
+	background-color: $sta-grey-dark;
+}
+.dataTable.table-primary th.sorting_desc,
+.dataTable.table-primary th.sorting_asc {
+	background-color: $sta-blue-shade25;
+}
+.dataTable.table-secondary th.sorting_desc,
+.dataTable.table-secondary th.sorting_asc {
+	background-color: $sta-blue-light-shade25;
+}
+.dataTable.table-tertiary-1 th.sorting_desc,
+.dataTable.table-tertiary-1 th.sorting_asc {
+	background-color: $sta-green-shade25;
+}
+.dataTable.table-tertiary-2 th.sorting_desc,
+.dataTable.table-tertiary-2 th.sorting_asc {
+	background-color: $sta-burgundy-shade25;
+}
+.dataTable.table-tertiary-3 th.sorting_desc,
+.dataTable.table-tertiary-3 th.sorting_asc {
+	background-color: $sta-purple-shade25;
+}
+
 .dataTable td.sorting_1 {
-	border-left: 3px $sta-grey-highlight solid;
-	border-right: 3px $sta-grey-highlight solid;
+	border-left: 1px $sta-grey-highlight dashed;
+	border-right: 1px $sta-grey-highlight dashed;
 }
 
 .dataTable .even td.sorting_1 {
