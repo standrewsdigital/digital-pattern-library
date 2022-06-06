@@ -10,6 +10,24 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v.1.27.0
+
+Release date: 
+
+### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+---
+
 ## v1.26.0
 
 Release date: Tuesday 16 March 2021
