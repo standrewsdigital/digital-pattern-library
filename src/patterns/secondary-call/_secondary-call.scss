@@ -3,9 +3,9 @@
 /* BEGIN Pattern: secondary-call-to-action    */
 /**********************************************/
 
-@mixin secondary-call-overlay ($color-overlay, $color-cta){
+@mixin secondary-call-background ($color-overlay, $color-cta){
    &:after {
-       background-color: rgba($color-overlay,0.75);
+       background-color: $color-overlay;
    }
    .btn-action {
       background-color: $color-cta;
@@ -65,7 +65,7 @@
     }
 
 
-    &.secondary-call--overlay {
+    &.secondary-call--background {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -82,20 +82,20 @@
          }  
 
 
-      &.secondary-call--purple-transparent-overlay {
-          @include secondary-call-overlay ($sta-purple, $sta-orange);
+      &.secondary-call--purple-background {
+          @include secondary-call-background ($sta-purple, $sta-orange);
       }
 
-      &.secondary-call--blue-transparent-overlay {
-          @include secondary-call-overlay($sta-blue, $sta-orange);
+      &.secondary-call--blue-background {
+          @include secondary-call-background($sta-blue, $sta-orange);
       }
 
-      &.secondary-call--orange-transparent-overlay {
-          @include secondary-call-overlay ($sta-orange, $sta-blue-light);
+      &.secondary-call--orange-background {
+          @include secondary-call-background ($sta-orange, $sta-blue-light);
       }
 
-      &.secondary-call--burgundy-transparent-overlay {
-          @include secondary-call-overlay ($sta-burgundy, $sta-blue-light);
+      &.secondary-call--burgundy-background {
+          @include secondary-call-background ($sta-burgundy, $sta-blue-light);
       }
 
       .container {
