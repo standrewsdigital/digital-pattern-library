@@ -112,7 +112,7 @@
         {
             "option-heading": "Blue transparent overlay - deprecated",
             "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This old method of implementation is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
-            "option-anchor": "blue-transparent",
+            "option-anchor": "blue-transparent-deprecated",
             "heading": "Why St Andrews",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
             "action": [
@@ -121,7 +121,6 @@
                     "url": "#"
                 },
                 {
-                    "secondary": "-secondary",
                     "text": "Register for updates",
                     "url": "#"
                 }
@@ -136,7 +135,7 @@
        {
             "option-heading": "Orange transparent overlay - deprecated",
             "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This old method of implementation is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
-            "option-anchor": "orange-transparent",
+            "option-anchor": "orange-transparent-deprecated",
             "heading": "News and events",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
             "action": [
@@ -145,7 +144,6 @@
                     "url": "#"
                 },
                 {
-                    "secondary": "-secondary",
                     "text": "Events",
                     "url": "#"
                 }
@@ -160,7 +158,7 @@
        {
             "option-heading": "Burgundy transparent overlay - deprecated",
             "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This old method of implementation is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
-            "option-anchor": "burgundy-transparent",
+            "option-anchor": "burgundy-transparent-deprecated",
             "heading": "Apply for accommodation",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
             "action": [
@@ -169,7 +167,6 @@
                     "url": "#"
                 },
                 {
-                    "secondary": "-secondary",
                     "text": "Register for updates",
                     "url": "#"
                 }
@@ -184,7 +181,7 @@
         {
             "option-heading": "Purple transparent overlay - deprecated",
             "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This old method of implementation is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
-            "option-anchor": "purple-transparent",
+            "option-anchor": "purple-transparent-deprecated",
             "heading": "Research with us",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
             "action": [
@@ -193,7 +190,6 @@
                     "url": "#"
                 },
                 {
-                    "secondary": "-secondary",
                     "text": "Postgraduate opportunities",
                     "url": "#"
                 }

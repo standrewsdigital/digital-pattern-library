@@ -26,29 +26,6 @@
       }
    }
 
-@mixin secondary-call-overlay ($color-overlay, $color-cta){
-   &:after {
-       background-color: rgba($color-overlay,0.75);
-   }
-   .btn, .btn-primary {
-        background-color: $color-cta;
-        border-color: mix(black, $color-cta, 25%);
-   }
-
-   .btn:hover, .btn:focus {
-        background-color: mix(black, $color-cta, 25%);
-        border-color: mix(black, $color-cta, 25%);
-    }
-
-    .btn:active {
-      background: $sta-orange-highlight;
-      color: $sta-grey-dark;
-      box-shadow: 0 3px $sta-orange-highlight;
-      border-color: transparent;
-    }
-}
-
-
     .btn-action-secondary {
       background: rgba(0,0,0,0.1);
       border-color: white;
@@ -69,6 +46,28 @@
       }
 
     }
+}
+
+@mixin secondary-call-overlay ($color-overlay, $color-cta){
+  &:after {
+      background-color: rgba($color-overlay,0.75);
+  }
+  .btn, .btn-primary {
+       background-color: $color-cta;
+       border-color: mix(black, $color-cta, 25%);
+  }
+
+  .btn:hover, .btn:focus {
+       background-color: mix(black, $color-cta, 25%);
+       border-color: mix(black, $color-cta, 25%);
+   }
+
+   .btn:active {
+     background: $sta-orange-highlight;
+     color: $sta-grey-dark;
+     box-shadow: 0 3px $sta-orange-highlight;
+     border-color: transparent;
+   }
 }
 
 .secondary-call {
@@ -120,6 +119,41 @@
           @include secondary-call-background ($sta-burgundy, $sta-blue-light);
       }
 
+      .container {
+          position: relative;
+          z-index: 10;
+      }
+
+      .call-heading {
+          color: white;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+      }
+
+      p {
+          color: white;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+      }
+
+    }
+
+    // Depreciated secondary cta
+    &.secondary-call--overlay {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+
+         &:after {
+             content: ' ';
+             height: 100%;
+             position: absolute;
+                top: 0;
+                left: 0;
+             width: 100%;
+             z-index: 1;
+         }  
+
+
       &.secondary-call--purple-transparent-overlay {
           @include secondary-call-overlay ($sta-purple, $sta-orange);
       }
@@ -152,7 +186,7 @@
       }
 
     }
-
+    
     .call-to-action-buttons {
       .btn {
         margin-right: 0.5em;

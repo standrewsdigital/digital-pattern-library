@@ -17,8 +17,11 @@ Release date:
 ### Added
 
 ### Changed
+* Documentation and HTML of secondary call-to-action.
+* Secondary call-to-action transparent overlays now use solid colour.
 
 ### Deprecated
+* Secondary call-to-action with transparent overlay.
 
 ### Removed
 
