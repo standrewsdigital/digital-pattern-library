@@ -1,5 +1,6 @@
+<nav class="sr-only" aria-label="Accessibility links"><a href="#app-content">Skip to content</a></nav>
 <div id="app-wrapper" aria-expanded="true">
-    <nav id="app-nav" class="app-navbar app-navbar--fixed">
+    <header id="app-nav" class="app-navbar app-navbar--fixed">
         <div class="app-navbar__container ">
             <button id="app-sidebar-toggle" class="app-navbar__menu-toggle" aria-expanded="true" aria-label="Toggle navigation" aria-controls="app-sidebar-nav">
                 <i class="fas fa-bars app-navbar__menu-toggle-icon" aria-hidden="true"></i><span class="sr-only">Toggle navigation</span> 
@@ -13,9 +14,9 @@
             </div>
             <div id="logged-in" class="app-logged-in"><span class="app-logged-in__info">You are signed in as </span><a href="">Bob Smith</a></div>
         </div>
-    </nav>
-    <div id="app-sidebar" class="app-sidebar">
-        <nav id="app-sidebar-nav" class="app-sidebar__nav">
+    </header>
+    <aside id="app-sidebar" class="app-sidebar">
+        <nav id="app-sidebar-nav" class="app-sidebar__nav" aria-label="Main menu">
             <ul class="app-sidebar__nav-list">
                 <li class="active">
                     <a href="#" class="app-sidebar__nav-item app-sidebar__nav-item--link" title="Home">
@@ -77,15 +78,15 @@
             </div>
         </nav>
         <div id="app-sidebar-scrim"></div>
-    </div>
-    <div id="app-content" class="app--padding">
+    </aside>
+    <main id="app-content" class="app--padding">
         <p>Vestibulum a sodales nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas finibus ullamcorper lectus, elementum ultrices enim condimentum et. Suspendisse potenti. Ut ut elit blandit, tincidunt libero vitae, pulvinar elit. Donec consectetur purus tristique, euismod turpis sit amet, scelerisque sapien. Praesent mollis eros quam, sed pharetra ligula posuere sit amet. Duis non nisi egestas metus imperdiet facilisis. Maecenas libero odio, mattis at sollicitudin id, commodo non tortor. Ut viverra mattis lorem eget tincidunt. Vivamus egestas metus non urna fermentum lacinia.</p>
         <p>Sed id eleifend velit. Donec consequat felis eget metus elementum commodo. Suspendisse sit amet ligula velit. Morbi sagittis tempor dolor, volutpat laoreet felis finibus at. Vivamus suscipit ante non diam semper eleifend. Pellentesque imperdiet lectus sollicitudin lacus aliquam elementum. Proin quis dapibus elit, eu gravida tellus. Maecenas magna ante, maximus ut hendrerit maximus, luctus in velit. Aliquam in velit ut nunc tempus interdum. Proin sollicitudin, erat et hendrerit tincidunt, magna arcu porttitor nibh, et dictum risus lorem a mi. Aliquam erat volutpat. Sed sed purus arcu.</p>
         <p>In egestas congue urna. Aliquam feugiat placerat dolor, sit amet sagittis diam accumsan et. Nam a dignissim velit. Curabitur non lorem eget eros ornare imperdiet id vitae nisi. Sed et sodales velit. Aenean varius nulla quis ligula volutpat, id tincidunt lectus vehicula. Donec metus odio, viverra eget auctor eget, viverra id tortor.</p>
         <p>Vestibulum condimentum bibendum mauris at egestas. Maecenas sed sagittis urna, id congue libero. Etiam sit amet magna vel mi porttitor aliquet vel id magna. Aliquam a mattis ante. Praesent aliquet dui magna, ac condimentum tortor vehicula quis. Suspendisse potenti. Aenean quis placerat est.</p>
         <p>In pretium pharetra gravida. Vivamus tincidunt purus non tellus convallis tristique. Sed posuere mi vitae rutrum porta. Sed quis libero dapibus, mollis mi vel, hendrerit metus. Cras posuere sagittis nisi eu aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum lorem nunc, iaculis ut erat bibendum, dignissim rutrum ligula. Nullam semper erat neque, finibus scelerisque nunc suscipit at. Aliquam risus odio, rutrum eu augue quis, sollicitudin sodales nisl. Integer ut sagittis libero, id commodo sem.</p>
         <p>Proin condimentum, sapien sed ultricies gravida, velit lectus varius tortor, eget pharetra augue libero eu erat. Integer at ex non leo dapibus bibendum sit amet nec erat. Vestibulum gravida tempus enim non porttitor. Phasellus sit amet congue magna, ut venenatis leo. Aliquam ornare in velit aliquet tristique. Etiam mattis magna in arcu dictum, sit amet rhoncus nulla pretium. Aenean efficitur dapibus ipsum, a sollicitudin sapien laoreet vitae. Praesent sollicitudin neque a sapien ullamcorper, at elementum mi tincidunt. Suspendisse a tristique massa. Cras ut semper mauris, tempor egestas purus. Curabitur maximus nunc risus, sit amet suscipit metus fermentum in.</p>
-    </div>
+    </main>
     <footer id="app-footer">
         <div class="app-footer">
             <p>&copy; 2020 The University of St Andrews is a charity registered in Scotland, No: SC013532</p>

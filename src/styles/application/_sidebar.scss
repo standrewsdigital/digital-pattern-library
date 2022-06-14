@@ -9,11 +9,23 @@
     margin: 0;
 
     li {
+        color: $sta-grey-dark;
         margin: 0;
         
         // Style for active menu item
         &.active {
-            background-color: $sta-grey-mid2;
+            color: $sta-blue-light;
+            background-color: $sta-blue-light-tint90;
+
+            // Override default link style if active
+            .app-sidebar__nav-item--link {
+                &:hover,
+                &:focus {
+                    color: $sta-blue-light;
+                    background-color: $sta-blue-light-tint90;    
+                }
+            }
+
         }
     }
 }
@@ -62,8 +74,9 @@
 
 // Additional styling when item is a icon/value link
 .app-sidebar__nav-item--link {
-    color: $sta-grey-dark;
+    color: inherit;
     display: flex;
+    font-weight: bold;
     text-decoration: none;
     -ms-flex-align: center;
     align-items: center;
@@ -79,6 +92,7 @@
     &:focus {
         background-color: $sta-grey-mid2;
         box-shadow: 0 0 0 3px inset $sta-orange-highlight;
+        color:$sta-grey-dark;
         outline: none;
 
         .app-sidebar__nav-text {

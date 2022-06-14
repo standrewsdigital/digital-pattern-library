@@ -19,7 +19,7 @@
             ]
        },
         {
-            "option-heading": "Blue transparent overlay",
+            "option-heading": "Blue background",
             "option-description": "",
             "option-anchor": "blue-transparent",
             "heading": "Why St Andrews",
@@ -35,15 +35,14 @@
                     "url": "#"
                 }
             ],
-            "classes": " secondary-call--overlay secondary-call--blue-transparent-overlay",
-            "bg-image": "docs/images/cta/hero-banner-image-001.jpg"
+            "classes": " secondary-call--background secondary-call--blue-background"
        },
 
 
 
 
        {
-            "option-heading": "Orange transparent overlay",
+            "option-heading": "Orange background",
             "option-description": "",
             "option-anchor": "orange-transparent",
             "heading": "News and events",
@@ -59,15 +58,14 @@
                     "url": "#"
                 }
             ],
-            "classes": " secondary-call--overlay secondary-call--orange-transparent-overlay",
-            "bg-image": "docs/images/cta/hero-banner-image-002.jpg"
+            "classes": " secondary-call--background secondary-call--orange-background"
        },
 
 
 
 
        {
-            "option-heading": "Burgundy transparent overlay",
+            "option-heading": "Burgundy background",
             "option-description": "",
             "option-anchor": "burgundy-transparent",
             "heading": "Apply for accommodation",
@@ -83,15 +81,14 @@
                     "url": "#"
                 }
             ],
-            "classes": " secondary-call--overlay secondary-call--burgundy-transparent-overlay",
-            "bg-image": "docs/images/cta/hero-banner-image-003.jpg"
+            "classes": " secondary-call--background secondary-call--burgundy-background"
        },
 
 
 
 
         {
-            "option-heading": "Purple transparent overlay",
+            "option-heading": "Purple background",
             "option-description": "",
             "option-anchor": "purple-transparent",
             "heading": "Research with us",
@@ -107,54 +104,98 @@
                     "url": "#"
                 }
             ],
+            "classes": " secondary-call--background secondary-call--purple-background"
+       },
+
+
+
+        {
+            "option-heading": "Blue transparent overlay - deprecated",
+            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This old method of implementation is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
+            "option-anchor": "blue-transparent-deprecated",
+            "heading": "Why St Andrews",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
+            "action": [
+                {
+                    "text": "Apply now",
+                    "url": "#"
+                },
+                {
+                    "text": "Register for updates",
+                    "url": "#"
+                }
+            ],
+            "classes": " secondary-call--overlay secondary-call--blue-transparent-overlay",
+            "bg-image": "docs/images/cta/hero-banner-image-001.jpg"
+       },
+
+
+
+
+       {
+            "option-heading": "Orange transparent overlay - deprecated",
+            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This old method of implementation is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
+            "option-anchor": "orange-transparent-deprecated",
+            "heading": "News and events",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
+            "action": [
+                {
+                    "text": "News",
+                    "url": "#"
+                },
+                {
+                    "text": "Events",
+                    "url": "#"
+                }
+            ],
+            "classes": " secondary-call--overlay secondary-call--orange-transparent-overlay",
+            "bg-image": "docs/images/cta/hero-banner-image-002.jpg"
+       },
+
+
+
+
+       {
+            "option-heading": "Burgundy transparent overlay - deprecated",
+            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This old method of implementation is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
+            "option-anchor": "burgundy-transparent-deprecated",
+            "heading": "Apply for accommodation",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
+            "action": [
+                {
+                    "text": "Apply now",
+                    "url": "#"
+                },
+                {
+                    "text": "Register for updates",
+                    "url": "#"
+                }
+            ],
+            "classes": " secondary-call--overlay secondary-call--burgundy-transparent-overlay",
+            "bg-image": "docs/images/cta/hero-banner-image-003.jpg"
+       },
+
+
+
+
+        {
+            "option-heading": "Purple transparent overlay - deprecated",
+            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This old method of implementation is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
+            "option-anchor": "purple-transparent-deprecated",
+            "heading": "Research with us",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
+            "action": [
+                {
+                    "text": "Find a collaborator",
+                    "url": "#"
+                },
+                {
+                    "text": "Postgraduate opportunities",
+                    "url": "#"
+                }
+            ],
             "classes": " secondary-call--overlay secondary-call--purple-transparent-overlay",
             "bg-image": "docs/images/cta/hero-banner-image-004.jpg"
-       },
-
-
-
-
-       {
-            "option-heading": "Default text center aligned - deprecated",
-            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This old method of implementation is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
-            "option-anchor": "default",
-            "heading": "News and events",
-            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
-            "action": [
-                {
-                      "text": "Call to action",
-                      "url": "#"
-                },
-                {
-                    "text": "Call again",
-                    "url": "#"
-                }
-            ],
-            "classes": "",
-            "style":"0"
-       },
-
-
-
-
-       {
-            "option-heading": "Text left aligned - deprecated",
-            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This old method of implementation is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
-            "option-anchor": "background-1",
-            "heading": "News and events",
-            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
-            "action": [
-                {
-                    "text": "Call to action",
-                    "url": "#"
-                },
-                {
-                    "text": "Call to action 2",
-                    "url": "#"
-                }
-            ],
-            "classes": " left",
-            "style": "1"
        }
     ]
 }

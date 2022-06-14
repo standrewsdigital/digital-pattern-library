@@ -5,14 +5,14 @@
 
 .heading-section__heading {
     
-        margin-top: 0;
+        margin-top: 0 !important;
 
         &::before {
-            background-color: $sta-grey;
+            background-color: $sta-blue;
             content: '';
             display: block;
             height: 5px;
-            width: 5rem;
+            width: 4rem;
             margin: 0 0  0.5em 0;
         }
 }
