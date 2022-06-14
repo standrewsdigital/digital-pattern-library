@@ -12,7 +12,7 @@
         "url": "https://github.com/standrewsdigital/digital-pattern-library.git"
     },
     "devDependencies": {
-        "grunt": "~1.0.0",
+        "grunt": "~1.5.3",
         "grunt-assemble": "~0.5.0",
         "grunt-contrib-clean": "~1.0.0",
         "grunt-contrib-compass": "~1.1.0",
