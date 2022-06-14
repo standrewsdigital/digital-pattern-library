@@ -79,7 +79,7 @@
  
     h4,
     .callout__heading {
-        margin-top: 0;
+        margin-top: 0 !important;
         margin-bottom: 5px;
         @include ms-respond(font-size,1);
     }

@@ -118,7 +118,9 @@ button {
     }
 
     &:active {
+      background: $sta-orange-highlight;
       border-color: $sta-orange-highlight;
+      color: $sta-grey-dark;
     }
 }
 

@@ -10,6 +10,27 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v.1.27.0
+
+Release date: 
+
+### Added
+
+### Changed
+* Documentation and HTML of secondary call-to-action.
+* Secondary call-to-action transparent overlays now use solid colour.
+
+### Deprecated
+* Secondary call-to-action with transparent overlay.
+
+### Removed
+
+### Fixed
+
+### Security
+
+---
+
 ## v1.26.0
 
 Release date: Tuesday 16 March 2021

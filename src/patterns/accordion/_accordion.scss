@@ -109,7 +109,7 @@
     @include ms-respond(font-size,1);
     line-height: 1.3;
     font-weight: bold;
-    margin: 0;
+    margin: 0 !important;
 }
 
 .accordion-item__toggle-button {
