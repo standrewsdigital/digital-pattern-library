@@ -6,7 +6,7 @@
 @mixin alert-status ($status-color) {
     border-color: $status-color;
 
-    a {
+    a:not(.btn) {
         color: $status-color;  
 
         &:focus {
@@ -29,7 +29,7 @@
     margin: 0 0 1.5625rem 0; // 25px
     padding: 1em ms(1);
 
-    a {
+    a:not(.btn) {
         text-decoration: underline;
         
         &:hover {
