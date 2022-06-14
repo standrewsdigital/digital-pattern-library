@@ -196,52 +196,6 @@
             ],
             "classes": " secondary-call--overlay secondary-call--purple-transparent-overlay",
             "bg-image": "docs/images/cta/hero-banner-image-004.jpg"
-       },
-
-
-
-
-       {
-            "option-heading": "Default text center aligned - deprecated",
-            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This old method of implementation is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
-            "option-anchor": "default",
-            "heading": "News and events",
-            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
-            "action": [
-                {
-                      "text": "Call to action",
-                      "url": "#"
-                },
-                {
-                    "text": "Call again",
-                    "url": "#"
-                }
-            ],
-            "classes": "",
-            "style":"0"
-       },
-
-
-
-
-       {
-            "option-heading": "Text left aligned - deprecated",
-            "option-description": "<div class=\"alert alert--warning\"><h4 class=\"alert__heading\">This option is no longer supported</h4><p>This old method of implementation is deprecated and will be removed in a future version of the digital pattern library.</p></div>",
-            "option-anchor": "background-1",
-            "heading": "News and events",
-            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor massa eget metus molestie fermentum. Pellentesque interdum sem nunc, vitae blandit tellus tempus eget.",
-            "action": [
-                {
-                    "text": "Call to action",
-                    "url": "#"
-                },
-                {
-                    "text": "Call to action 2",
-                    "url": "#"
-                }
-            ],
-            "classes": " left",
-            "style": "1"
        }
     ]
 }
