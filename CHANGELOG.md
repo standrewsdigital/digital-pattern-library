@@ -12,20 +12,24 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ## v.1.27.0
 
-Release date: 
+Release date: Tuesday 14 June 2022
 
 ### Added
 
 ### Changed
 * Documentation and HTML of secondary call-to-action.
 * Secondary call-to-action transparent overlays now use solid colour.
+* Course page examples amended.
+* Styling for various patterns.
 
 ### Deprecated
 * Secondary call-to-action with transparent overlay.
 
 ### Removed
+* Secondary call-to-action with no overlay.
 
 ### Fixed
+* Prevent margins on headings when in content block.
 
 ### Security
 
