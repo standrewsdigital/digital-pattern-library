@@ -7,14 +7,24 @@ This project adheres to [semantic versioning](http://semver.org/).
 Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`, 
 `Removed`, `Fixed`, and `Security`.
 
+---
+
+## v.1.27.1
+
+Release date: 
+
+### Changed
+* Documentation of gallery.
+* Text underline distance reduced slightly.
+
+### Fixed
+* Button styling when inserted into an alert.
 
 ---
 
 ## v.1.27.0
 
 Release date: Tuesday 14 June 2022
-
-### Added
 
 ### Changed
 * Documentation and HTML of secondary call-to-action.
@@ -30,8 +40,6 @@ Release date: Tuesday 14 June 2022
 
 ### Fixed
 * Prevent margins on headings when in content block.
-
-### Security
 
 ---
 
