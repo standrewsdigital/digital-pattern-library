@@ -16,9 +16,11 @@ Release date:
 ### Changed
 * Documentation of gallery.
 * Text underline distance reduced slightly.
+* Documentation of secondary call-to-action.
 
 ### Fixed
 * Button styling when inserted into an alert.
+* Button spacing in secondary call-to-action when more than two buttons are used.
 
 ---
 
