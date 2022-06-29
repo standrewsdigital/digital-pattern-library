@@ -2,19 +2,20 @@
 
 # Digital pattern library
 
-Version 0.3
-Last updated: Tuesday 22 November 2016
+Version 1.27.1
+Last updated: Wednesday 29 June 2022
 
 <!-- MarkdownTOC -->
 
-- [1. Introduction](#1-introduction)
-- [2. Getting started](#2-getting-started)
+- [Digital pattern library](#digital-pattern-library)
+  - [1. Introduction](#1-introduction)
+  - [2. Getting started](#2-getting-started)
     - [Quick start](#quick-start)
     - [What is included?](#what-is-included)
-- [3. Contributing to the DPL](#3-contributing-to-the-dpl)
+  - [3. Contributing to the DPL](#3-contributing-to-the-dpl)
     - [Development milestones](#development-milestones)
     - [Bug reports and feature requests](#bug-reports-and-feature-requests)
-- [4. License](#4-license)
+  - [4. License](#4-license)
 
 <!-- /MarkdownTOC -->
 

@@ -2,6 +2,21 @@
 /*********************************/
 /* BEGIN Pattern: header         */
 /*********************************/
+nav.sr-only[aria-label="Accessibility links"] {
+    &:active,
+    &:focus-within {
+        display: block;
+        position: absolute;
+        width: auto;
+        height: auto;
+        margin: 10px;
+        overflow: visible;
+        clip: unset;
+        padding: 10px 15px;
+        outline: 3px solid $sta-orange-highlight;
+        outline-offset: 2px;
+    }
+}
 
 #header {
     @extend .container;
