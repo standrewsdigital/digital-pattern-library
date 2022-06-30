@@ -9,6 +9,15 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v.1.27.2
+
+Release date: Thursday 30 June 2022
+
+### Changed
+* Skip to content link is now visible on hover.
+
+---
+
 ## v.1.27.1
 
 Release date: Wednesday 29 June 2022
@@ -17,7 +26,6 @@ Release date: Wednesday 29 June 2022
 * Documentation of gallery.
 * Text underline distance reduced slightly.
 * Documentation of secondary call-to-action.
-* Skip to content link is now visible on hover.
 
 ### Fixed
 * Button styling when inserted into an alert.
