@@ -55,7 +55,9 @@
       },
       "category-header": {
           "title": "Sample forms",
-          "url": "#"
+          "url": "#",
+          "text-start": "<div class='category-header__title'>",
+          "text-end": "</div>"
       },
     "content": {
         "text" : "<h3>Form elements</h3>",
