@@ -212,6 +212,10 @@
             "option-description": "<p>See the <a href='../content-halves/index.html#key-info'>Content halves</a> pattern for this usage. It must not be used outwith that usage.</p>",
             "option-anchor": "table-border",
             "colour-class": "table-bordered",
+            "table-head" : [
+                "Qualification",
+                "Entry grades"
+            ],
             "table-body": [
                 {
                     "column-one": "SQA Highers",
