@@ -50,7 +50,8 @@
             "heading": "This a larger heading for the section",
             "lead": "<p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt. Mauris sodales eleifend sodales. Nunc aliquam blandit ipsum ac rutrum. Pellentesque sapien erat, consectetur sed dui nec, rutrum congue sem.</p>",
             "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat. Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor. Etiam elementum neque erat, in interdum lacus accumsan sit amet. Donec congue vulputate massa, vitae pharetra orci vulputate eget.</p>",
-            "image": "../../assets/docs/images/placeholders/750x500.png"
+            "image": "../../assets/docs/images/placeholders/750x500.png",
+            "alttext": "750 by 500px place holder image"
         },
         {
             "option-heading": "Page intro - image with caption",
@@ -60,6 +61,7 @@
             "lead": "<p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt. Mauris sodales eleifend sodales. Nunc aliquam blandit ipsum ac rutrum. Pellentesque sapien erat, consectetur sed dui nec, rutrum congue sem.</p>",
             "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat. Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor. Etiam elementum neque erat, in interdum lacus accumsan sit amet. Donec congue vulputate massa, vitae pharetra orci vulputate eget.</p>",
             "image": "../../assets/docs/images/placeholders/500x500.jpg",
+            "alttext": "750 by 500px place holder image",
             "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
         },
         {
@@ -70,6 +72,7 @@
             "lead": "<p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt. Mauris sodales eleifend sodales. Nunc aliquam blandit ipsum ac rutrum. Pellentesque sapien erat, consectetur sed dui nec, rutrum congue sem.</p>",
             "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat. Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor. Etiam elementum neque erat, in interdum lacus accumsan sit amet.</p><p>Donec congue vulputate massa, vitae pharetra orci vulputate eget. Vestibulum sagittis eros id mauris blandit tincidunt. Sed in pellentesque orci, fermentum tincidunt enim. Morbi a dictum nunc. Nulla a metus ut erat euismod auctor. Fusce finibus arcu sit amet tortor blandit, sed tempus ipsum faucibus. Cras ut lectus iaculis, pellentesque leo nec, accumsan purus. Vivamus nec nunc maximus lorem dapibus volutpat.</p>",
             "image": "../../assets/docs/images/placeholders/750x500.png",
+            "alttext": "750 by 500px place holder image",
             "follow-hero": true        
         },
         {
