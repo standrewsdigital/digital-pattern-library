@@ -112,16 +112,30 @@ date: <%= new Date() %>
         <script src="{{asset 'core/scripts/datatables.js'}}" ></script>
         <script src="{{asset 'core/scripts/lightbox.min.js'}}" ></script>
         <script src="{{asset 'core/scripts/gallery.js'}}" ></script>
+ <script >
 
+// replace css ids
+const collection=document.getElementsByClassName("pattern-wrapper");var newCSSRules=new Array;const count=collection.length;for(let e=count;e>-1;e--)collection[e]&&(newCSSRules=newCSSRules.concat(getAllElements(collection[e])));function getAllElements(e){var l=new Array;e.length;for(var t=e.children,n=0;n<t.length;n++){let e=t[n];if(e.id.length>0){let r="newid"+(Math.random()+1).toString(36).substring(7);l=(l=l.concat(getCSSWithID(e.id,r))).concat(getCSSMediaWithID(e.id,r)),t[n].id=r}e.hasChildNodes()&&(l=l.concat(getAllElements(e)))}return l}function getCSSMediaWithID(e,l){for(var t=document.styleSheets,n=new Array,r=0;r<t.length;r++)if("print"!==t[r].media[0])for(var s=0;s<t[r].rules.length;s++){if(String(t[r].rules[s].selectorText).includes(","))for(var c=String(t[r].rules[s].selectorText).split(","),i=0;i<c.length;i++){var a;if(String(c[i]).includes("#"+e+" ")||String(c[i]).trim()==String("#"+e).trim()||String(c[i]).includes("#"+e+",")||String(c[i]).includes("#"+e+":"))a=(a=(a=(a=(a=String(c[i]).replaceAll("#"+e+" ","#"+l+" ")+"{ ").replaceAll("#"+e+",","#"+l+",")).replaceAll("#"+e+":","#"+l+":")).replaceAll("#"+e,"#"+l)).replaceAll("::",":"),init=String(t[r].rules[s].cssText).indexOf("{"),fin=String(t[r].rules[s].cssText).indexOf("}"),innercsss=String(t[r].rules[s].cssText).substr(init+1,fin-init-1),a+=innercsss,(a+="} ")&&!n[a]&&(n=n.concat(a))}else if(String(t[r].rules[s].cssText).includes("#"+e))(a=(a=(a=(a=(a=t[r].rules[s].cssText.replaceAll("#"+e+" ","#"+l+" ")).replaceAll("#"+e+",","#"+l+",")).replaceAll("#"+e+":","#"+l+":")).replaceAll("#"+e,"#"+l)).replaceAll("::",":"))&&!n[a]&&(n=n.concat(a))}return n}function getCSSWithID(e,l){for(var t=document.styleSheets,n=new Array,r=0;r<t.length;r++)if("print"!==t[r].media[0])for(var s=0;s<t[r].cssRules.length;s++)if(String(t[r].cssRules[s].selectorText).includes("#"+e))if(String(t[r].cssRules[s].selectorText).includes(",")){for(var c=String(t[r].cssRules[s].selectorText).split(","),i="",a=0;a<c.length;a++)(String(c[a]).includes("#"+e+" ")||String(c[a]).trim()==String("#"+e).trim()||String(c[a]).includes("#"+e+",")||String(c[a]).includes("#"+e+":"))&&(""!==i&&(i+=","),i=(i=(i=(i+=String(c[a]).replaceAll("#"+e+" ","#"+l+" ")).replaceAll("#"+e+":","#"+l+":")).replaceAll("#"+e,"#"+l)).replaceAll("::",":"));i.length>0&&(u=(i+="{ ")+t[r].cssRules[s].style.cssText,(u+="} ")&&!n[u]&&(n=n.concat(u)))}else{var u=t[r].cssRules[s].selectorText.replaceAll("#"+e+" ","#"+l+" ")+"{";u=(u=(u=(u=u.replaceAll("#"+e+" ","#"+l+" ")).replaceAll("#"+e+":","#"+l+":")).replaceAll("#"+e,"#"+l)).replaceAll("::",":"),u+=t[r].cssRules[s].style.cssText,(u+="} ")&&!n[u]&&(n=n.concat(u))}return n}function addStylesheetRules(e){const l=document.createElement("style");document.head.appendChild(l);const t=l.sheet;var n=e.reduce(function(e,l){return e.indexOf(l)<0&&e.push(l),e},[]);for(let l=0;l<n.length;l++)e[l]&&t.insertRule(n[l],t.cssRules.length)}addStylesheetRules(newCSSRules);
+  
+
+ </script>
 
         <!-- Google analytics -->
         <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+        
+
+
+
+
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
             ga('create', 'UA-517626-1', {'cookieFlags': 'SameSite=None; Secure'});
             ga('send', 'pageview');
+
+ 
         </script>
 
     </body>
