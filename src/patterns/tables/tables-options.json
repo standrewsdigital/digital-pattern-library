@@ -203,33 +203,6 @@
                 }
 
             ]
-        },
-
-
-
-        {
-            "option-heading": "Key info table",
-            "option-description": "<p>See the <a href='../content-halves/index.html#key-info'>Content halves</a> pattern for this usage. It must not be used outwith that usage.</p>",
-            "option-anchor": "table-border",
-            "colour-class": "table-bordered",
-            "table-head" : [
-                "Qualification",
-                "Entry grades"
-            ],
-            "table-body": [
-                {
-                    "column-one": "SQA Highers",
-                    "column-two": "<p>AAAB, including at least two of the following subjects:</p><ul><li>Mathematics</li><li>Biology</li><li>Chemistry</li><li>Computing Science or equivalent</li><li>Geography</li><li>Geology</li><li>Physics</li><li>Psychology.</li></ul>"
-                },
-                {
-                    "column-one": "GCE A-Levels",
-                    "column-two": "<p>AAA, including at least two of the following subjects:</p><ul><li>Mathematics</li><li>Biology</li><li>Chemistry</li><li>Computing Science or equivalent</li><li>Geography</li><li>Geology</li><li>Physics</li><li>Psychology.</li></ul>"
-                },
-                {
-                    "column-one": "IB points",
-                    "column-two": "38"
-                }
-            ]
         }
 
     ]
