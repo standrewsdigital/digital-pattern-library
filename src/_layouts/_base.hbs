@@ -115,8 +115,162 @@ date: <%= new Date() %>
  <script >
 
 // replace css ids
-const collection=document.getElementsByClassName("pattern-wrapper");var newCSSRules=new Array;const count=collection.length;for(let e=count;e>-1;e--)collection[e]&&(newCSSRules=newCSSRules.concat(getAllElements(collection[e])));function getAllElements(e){var l=new Array;e.length;for(var t=e.children,n=0;n<t.length;n++){let e=t[n];if(e.id.length>0){let r="newid"+(Math.random()+1).toString(36).substring(7);l=(l=l.concat(getCSSWithID(e.id,r))).concat(getCSSMediaWithID(e.id,r)),t[n].id=r}e.hasChildNodes()&&(l=l.concat(getAllElements(e)))}return l}function getCSSMediaWithID(e,l){for(var t=document.styleSheets,n=new Array,r=0;r<t.length;r++)if("print"!==t[r].media[0])for(var s=0;s<t[r].rules.length;s++){if(String(t[r].rules[s].selectorText).includes(","))for(var c=String(t[r].rules[s].selectorText).split(","),i=0;i<c.length;i++){var a;if(String(c[i]).includes("#"+e+" ")||String(c[i]).trim()==String("#"+e).trim()||String(c[i]).includes("#"+e+",")||String(c[i]).includes("#"+e+":"))a=(a=(a=(a=(a=String(c[i]).replaceAll("#"+e+" ","#"+l+" ")+"{ ").replaceAll("#"+e+",","#"+l+",")).replaceAll("#"+e+":","#"+l+":")).replaceAll("#"+e,"#"+l)).replaceAll("::",":"),init=String(t[r].rules[s].cssText).indexOf("{"),fin=String(t[r].rules[s].cssText).indexOf("}"),innercsss=String(t[r].rules[s].cssText).substr(init+1,fin-init-1),a+=innercsss,(a+="} ")&&!n[a]&&(n=n.concat(a))}else if(String(t[r].rules[s].cssText).includes("#"+e))(a=(a=(a=(a=(a=t[r].rules[s].cssText.replaceAll("#"+e+" ","#"+l+" ")).replaceAll("#"+e+",","#"+l+",")).replaceAll("#"+e+":","#"+l+":")).replaceAll("#"+e,"#"+l)).replaceAll("::",":"))&&!n[a]&&(n=n.concat(a))}return n}function getCSSWithID(e,l){for(var t=document.styleSheets,n=new Array,r=0;r<t.length;r++)if("print"!==t[r].media[0])for(var s=0;s<t[r].cssRules.length;s++)if(String(t[r].cssRules[s].selectorText).includes("#"+e))if(String(t[r].cssRules[s].selectorText).includes(",")){for(var c=String(t[r].cssRules[s].selectorText).split(","),i="",a=0;a<c.length;a++)(String(c[a]).includes("#"+e+" ")||String(c[a]).trim()==String("#"+e).trim()||String(c[a]).includes("#"+e+",")||String(c[a]).includes("#"+e+":"))&&(""!==i&&(i+=","),i=(i=(i=(i+=String(c[a]).replaceAll("#"+e+" ","#"+l+" ")).replaceAll("#"+e+":","#"+l+":")).replaceAll("#"+e,"#"+l)).replaceAll("::",":"));i.length>0&&(u=(i+="{ ")+t[r].cssRules[s].style.cssText,(u+="} ")&&!n[u]&&(n=n.concat(u)))}else{var u=t[r].cssRules[s].selectorText.replaceAll("#"+e+" ","#"+l+" ")+"{";u=(u=(u=(u=u.replaceAll("#"+e+" ","#"+l+" ")).replaceAll("#"+e+":","#"+l+":")).replaceAll("#"+e,"#"+l)).replaceAll("::",":"),u+=t[r].cssRules[s].style.cssText,(u+="} ")&&!n[u]&&(n=n.concat(u))}return n}function addStylesheetRules(e){const l=document.createElement("style");document.head.appendChild(l);const t=l.sheet;var n=e.reduce(function(e,l){return e.indexOf(l)<0&&e.push(l),e},[]);for(let l=0;l<n.length;l++)e[l]&&t.insertRule(n[l],t.cssRules.length)}addStylesheetRules(newCSSRules);
-  
+                                                          //        const collection = document.getElementsByClassName("pattern-wrapper"); var newCSSRules = new Array; const count = collection.length; for (let e = count; e > -1; e--)collection[e] && (newCSSRules = newCSSRules.concat(getAllElements(collection[e]))); function getAllElements(e) { var l = new Array; e.length; for (var t = e.children, n = 0; n < t.length; n++) { let e = t[n]; if (e.id.length > 0) { let r = "newid" + (Math.random() + 1).toString(36).substring(7); l = (l = l.concat(getCSSWithID(e.id, r))).concat(getCSSMediaWithID(e.id, r)), t[n].id = r } e.hasChildNodes() && (l = l.concat(getAllElements(e))) } return l } function getCSSMediaWithID(e, l) { for (var t = document.styleSheets, n = new Array, r = 0; r < t.length; r++)if ("print" !== t[r].media[0]) for (var s = 0; s < t[r].rules.length; s++) { if (String(t[r].rules[s].selectorText).includes(",")) for (var c = String(t[r].rules[s].selectorText).split(","), i = 0; i < c.length; i++) { var a; if (String(c[i]).includes("#" + e + " ") || String(c[i]).trim() == String("#" + e).trim() || String(c[i]).includes("#" + e + ",") || String(c[i]).includes("#" + e + ":")) a = (a = (a = (a = (a = String(c[i]).replaceAll("#" + e + " ", "#" + l + " ") + "{ ").replaceAll("#" + e + ",", "#" + l + ",")).replaceAll("#" + e + ":", "#" + l + ":")).replaceAll("#" + e, "#" + l)).replaceAll("::", ":"), init = String(t[r].rules[s].cssText).indexOf("{"), fin = String(t[r].rules[s].cssText).indexOf("}"), innercsss = String(t[r].rules[s].cssText).substr(init + 1, fin - init - 1), a += innercsss, (a += "} ") && !n[a] && (n = n.concat(a)) } else if (String(t[r].rules[s].cssText).includes("#" + e)) (a = (a = (a = (a = (a = t[r].rules[s].cssText.replaceAll("#" + e + " ", "#" + l + " ")).replaceAll("#" + e + ",", "#" + l + ",")).replaceAll("#" + e + ":", "#" + l + ":")).replaceAll("#" + e, "#" + l)).replaceAll("::", ":")) && !n[a] && (n = n.concat(a)) } return n } function getCSSWithID(e, l) { for (var t = document.styleSheets, n = new Array, r = 0; r < t.length; r++)if ("print" !== t[r].media[0]) for (var s = 0; s < t[r].cssRules.length; s++)if (String(t[r].cssRules[s].selectorText).includes("#" + e)) if (String(t[r].cssRules[s].selectorText).includes(",")) { for (var c = String(t[r].cssRules[s].selectorText).split(","), i = "", a = 0; a < c.length; a++)(String(c[a]).includes("#" + e + " ") || String(c[a]).trim() == String("#" + e).trim() || String(c[a]).includes("#" + e + ",") || String(c[a]).includes("#" + e + ":")) && ("" !== i && (i += ","), i = (i = (i = (i += String(c[a]).replaceAll("#" + e + " ", "#" + l + " ")).replaceAll("#" + e + ":", "#" + l + ":")).replaceAll("#" + e, "#" + l)).replaceAll("::", ":")); i.length > 0 && (u = (i += "{ ") + t[r].cssRules[s].style.cssText, (u += "} ") && !n[u] && (n = n.concat(u))) } else { var u = t[r].cssRules[s].selectorText.replaceAll("#" + e + " ", "#" + l + " ") + "{"; u = (u = (u = (u = u.replaceAll("#" + e + " ", "#" + l + " ")).replaceAll("#" + e + ":", "#" + l + ":")).replaceAll("#" + e, "#" + l)).replaceAll("::", ":"), u += t[r].cssRules[s].style.cssText, (u += "} ") && !n[u] && (n = n.concat(u)) } return n } function addStylesheetRules(e) { const l = document.createElement("style"); document.head.appendChild(l); const t = l.sheet; var n = e.reduce(function (e, l) { return e.indexOf(l) < 0 && e.push(l), e }, []); for (let l = 0; l < n.length; l++)e[l] && t.insertRule(n[l], t.cssRules.length) } addStylesheetRules(newCSSRules);
+
+
+
+
+// --------------------------
+//
+// --------------------------
+const patternWrappers = document.getElementsByClassName('pattern-wrapper');   // get all Example wrappers
+var newCSSRules = new Array();                                                // will hold the new classes
+var patternWrappersChildIds = new Array(); 
+var cssRules = new Array();
+var  newAndOldIDs = new Array();
+Array.from(patternWrappers).forEach((pattern) =>{
+    // get all the elements that have ids
+    patternWrappersChildIds = patternWrappersChildIds.concat(getElementIDS(pattern));
+    // remove all the duplicate ids
+    patternWrappersChildIds = [...new Set(patternWrappersChildIds)];
+
+});
+
+
+
+// loop over all attached stylesheets
+Array.from(document.styleSheets).forEach((stylesheet) =>{
+    // get any style that has a relevent id
+    cssRules = cssRules.concat(getEffectedRules(stylesheet,patternWrappersChildIds ));
+});
+
+// remove all the duplicate sytles
+allCSSRules = [...new Set(cssRules)];
+// console.log(cssRules);
+patternWrappersChildIds = [...new Set(patternWrappersChildIds)];
+// build the new css rules replacing in ids 
+ newCSSRules = createNewStyles(allCSSRules,patternWrappersChildIds );
+ newCSSRules  = [...new Set( newCSSRules )];
+attachStyles(newCSSRules);
+
+
+// ---------------------------------------------------------------------
+// ---------------------------------------------------------------------
+// --------------------------------------------------------------------- 
+
+ function attachStyles(e) { 
+    const styleEl = document.createElement("style"); 
+    document.head.appendChild(styleEl); 
+    const styleSheet = styleEl.sheet;
+    Array.from(e).forEach((rule) =>{
+        console.log(rule);
+     styleSheet.insertRule(rule);
+    }); 
+ }
+
+
+
+function createNewStyles(allCSSRules,newAndOldIDs){
+    var allCSSRulesText = [];
+    var newCSSRules = new Array();
+    Array.from(allCSSRules).forEach((rule,i,allCSSRules) =>{
+        
+        if(rule.parentRule){
+            allCSSRulesText.push(rule.parentRule.cssText);
+        }else{
+            allCSSRulesText.push(rule.cssText);
+        }
+    });
+  // console.log( allCSSRulesText);
+
+    Array.from(newAndOldIDs).forEach((ids,i) =>{
+        Array.from(allCSSRulesText).forEach((rule,j) =>{           
+            if(rule.includes(ids['oldID'])){
+                allCSSRulesText[j] = allCSSRulesText[j].replace(ids['oldID']+':before', ids['oldID']+':before, '+ids['newID']+':before').toString();
+                allCSSRulesText[j] = allCSSRulesText[j].replace(ids['oldID']+':after', ids['oldID']+':after, '+ids['newID']+':after').toString();
+                allCSSRulesText[j] = allCSSRulesText[j].replace(ids['oldID']+',', ids['oldID']+',', ', '+ids['newID']+',').toString();
+                allCSSRulesText[j] = allCSSRulesText[j].replace(ids['oldID']+' ', ids['oldID']+', '+ids['newID']+' ').toString();
+            }
+        });
+    });
+
+    Array.from(newAndOldIDs).forEach((ids,i) =>{
+        Array.from(allCSSRulesText).forEach((rule,j) =>{           
+            if(rule.includes(ids['oldID'])){
+                allCSSRulesText[j] = allCSSRulesText[j].replaceAll(ids['oldID']+':', '').toString();
+                allCSSRulesText[j] = allCSSRulesText[j].replaceAll(ids['oldID']+',', '').toString();
+                allCSSRulesText[j] = allCSSRulesText[j].replaceAll(ids['oldID']+' ', '').toString();                   
+             //   allCSSRulesText[j] = allCSSRulesText[j].replaceAll(' ', '').toString();
+                allCSSRulesText[j] = allCSSRulesText[j].replaceAll(',,', ',').toString();
+                allCSSRulesText[j] = allCSSRulesText[j].replaceAll(', ,', ', ').toString();
+                allCSSRulesText[j] = allCSSRulesText[j].replaceAll('{,', '{').toString();
+                allCSSRulesText[j] = allCSSRulesText[j].replaceAll('::', ':').toString();
+                allCSSRulesText[j] = allCSSRulesText[j].replaceAll(',:after', '').toString();
+                allCSSRulesText[j] = allCSSRulesText[j].replaceAll(',:before', '').toString();
+                if(allCSSRulesText[j].startsWith(",")){
+                   allCSSRulesText[j] = allCSSRulesText[j].substring(1);
+                }
+     
+            }
+        });
+    });
+  return allCSSRulesText;
+
+}
+
+
+
+ // get all styles for the ids
+function getEffectedRules(stylesheet,patternWrappersChildIds){
+    var styles = new Array();
+    if(stylesheet.cssRules && stylesheet.media ){
+        Array.from(stylesheet.cssRules).forEach((rule) =>{
+          if(rule.cssRules && rule.cssRules.length > 0){
+              // has child rules, Likely a media query 
+              styles =  styles.concat(getEffectedRules(rule,patternWrappersChildIds));
+          }
+          if( (!rule.media || !rule.media[0] =='print' ) && rule.cssText && rule.cssText.length > 0 &&  (patternWrappersChildIds.some(patternWrappersChildId => rule.cssText.includes(patternWrappersChildId.oldID)))){
+            styles.push(rule);                
+          }     
+        });
+    }
+    return styles;
+}
+
+ // Recursively loop over all the child elements and get the ids
+function getElementIDS(patternWrapper){
+    let IDs = [];
+    if(patternWrapper.id && !IDs.includes(patternWrapper.id)){
+        var newID =  creatNewID();
+        var sub = {
+            'oldID':'#'+patternWrapper.id,
+            'newID': '#'+newID
+        }
+        patternWrapper.id = newID;
+        IDs.push(sub);
+    }
+    patternWrapper.childNodes.forEach((node) =>{
+       IDs = IDs.concat(getElementIDS(node));
+    });
+    return IDs;
+}
+
+function creatNewID(){
+    return "newid" + (Math.random() + 1).toString(36).substring(7);
+}
+
+	
+
+/*
+	if ( document.getElementById("header-logo"))
+	{
+		var e = document.getElementById("header-logo");
+		e.id = "appheader";
+		alert('bo');
+	}
+*/
+
+
 
  </script>
 

@@ -572,3 +572,6 @@ if (navigator && navigator.clipboard) {
       length: 3
     });
   });
+
+
+ 

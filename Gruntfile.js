@@ -45,7 +45,10 @@ module.exports = function(grunt) {
     //    * Uglify
     //    * Watch
 
+
     grunt.initConfig({
+
+
 
         pkg: grunt.file.readJSON('package.json'),
 
@@ -59,7 +62,7 @@ module.exports = function(grunt) {
                 now:        '<%= grunt.template.today("isoDateTime") %>',
                 assets:     'docs/assets',
                 layoutdir:  'src/_layouts',
-                partials:   ['src/patterns/*/*.hbs', 'src/_partials/*.hbs'],
+                partials:   ['src/patterns/*/*.hbs', 'src/_partials/*.hbs','!src/patterns/examples'],
                 ext:        '.html',
                 data:       [
                                 'src/_meta/*.json',
@@ -68,8 +71,10 @@ module.exports = function(grunt) {
                             ],
                 helpers:    [
                                 'handlebars-helper-asset',
-                                'handlebars-helper-rel'
+                                'handlebars-helper-rel',
+                                'src/scripts/rend-helper.js'
                             ],
+          
                 site:       {
                                 root: "docs",
                             },
@@ -80,7 +85,8 @@ module.exports = function(grunt) {
             // Patterns - uses /src/_layouts/pattern.hbs
             patterns: {
                 options: {
-                    layout: 'pattern.hbs'
+                    layout: 'pattern.hbs',
+                    helpers: ['src/scripts/rend-helper.js'],
                 },
                 files: [{
                     expand: true,
@@ -114,10 +120,12 @@ module.exports = function(grunt) {
                 }]
             },
 
+
             // General guidance pages - uses /src/_layouts/doc.hbs
             docs: {
                 options: {
-                    layout: 'doc.hbs'
+                    layout: 'doc.hbs',
+                    helpers: ['src/scripts/rend-helper.js'],
                 },
                 files: [{
                     expand: true,
@@ -226,7 +234,7 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/lazysizes.min.js',
                     'src/scripts/vendor/picturefill.min.js',
                     'src/scripts/vendor/gumshoe.polyfills.min.js',
-
+               
 
                     // Bootstrap JavaScript
                     // Note these scripts should align with the CSS
@@ -243,7 +251,7 @@ module.exports = function(grunt) {
                     'src/scripts/vendor/bootstrap/popover.js',
                     
                     'src/scripts/vendor/enquire.js',
-
+'src/scripts/rend-helper.js',
                     // DPL-specific scripts
                     'src/scripts/base.js',
                     'src/scripts/unbreakableSpaces.js',
@@ -305,6 +313,7 @@ module.exports = function(grunt) {
                     'src/scripts/unbreakableSpaces.js',
                     'src/patterns/*/*.js', // This includes all JS in patterns.
 
+                    'src/scripts/rend-helper.js',
                     //'src/scripts/datatables.js',
                     'src/scripts/application.js'
                 ],
@@ -316,7 +325,8 @@ module.exports = function(grunt) {
                     // Autocomplete scripts for Funnelback search
                     'src/scripts/vendor/typeahead.bundle-0.11.1.min.js',
                     'src/scripts/vendor/handlebars-4.0.5.min.js',
-                    'src/scripts/vendor/funnelback.autocompletion-2.6.0.js'
+                    'src/scripts/vendor/funnelback.autocompletion-2.6.0.js',
+                    'src/scripts/rend-helper.js',
                 ],
                 dest: 'core/scripts/doc.js'
             }
