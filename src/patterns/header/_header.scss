@@ -1,4 +1,3 @@
-
 /*********************************/
 /* BEGIN Pattern: header         */
 /*********************************/
@@ -92,7 +91,7 @@ nav.sr-only[aria-label="Accessibility links"] {
     margin: 13px 0;
 
     a {
-        background-image:    url(../../assets/core/images/furniture/logo-standard.svg);
+        background-image:    url(../images/furniture/logo-standard.svg);
         background-position: left center;
         background-repeat:   no-repeat;
         background-size:     100%;
@@ -121,7 +120,7 @@ nav.sr-only[aria-label="Accessibility links"] {
 
     a {
         // Logo - crest only.
-       background-image: url(../../assets/core/images/furniture/university-of-st-andrews-crest.svg);
+        background-image: url(../images/furniture/university-of-st-andrews-crest.svg);
         height: 30px;
         margin-top: 5px;
     }
@@ -194,30 +193,12 @@ nav.sr-only[aria-label="Accessibility links"] {
         right: 0;
         left:  auto;
     }
-    #appheader {
-        margin: 25px 0px 16px;
 
-        a {
-            background-image: url(../../assets/core/images/furniture/logo-foundation.svg);
-            height: 60px;
-            max-width: 325px;
-        }
-    }
     #header-logo {
         margin: 25px 0px 16px;
 
         a {
-            background-image: url(../../assets/core/images/furniture/logo-foundation.svg);
-            height: 60px;
-            max-width: 325px;
-        }
-    }
-
-     .pattern-wrapper header div > #header-logo {
-        margin: 25px 0px 16px;
-
-        a {
-            background-image: url(../../assets/core/images/furniture/logo-foundation.svg);
+            background-image: url(../images/furniture/logo-foundation.svg);
             height: 60px;
             max-width: 325px;
         }
@@ -225,12 +206,7 @@ nav.sr-only[aria-label="Accessibility links"] {
 
     #web-application-header-logo a {
         // Logo - crest with text.
-      background-image: url(../../assets/core/images/furniture/logo-standard.svg);
-    }
-
-    .pattern-wrapper header  div div > #web-application-header-logo a {
-        // Logo - crest with text.
-        background-image: url(../../assets/core/images/furniture/logo-standard.svg);
+        background-image: url(../images/furniture/logo-standard.svg);
     }
 }
 // END desktop styles

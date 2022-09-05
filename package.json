@@ -24,13 +24,14 @@
         "grunt-gitinfo": "~0.1.0",
         "handlebars-helper-asset": "git://github.com/sjparsons/handlebars-helper-asset.git#relative-links",
         "handlebars-helper-rel": "git://github.com/sjparsons/handlebars-helper-rel.git#fix",
-        "handlebars-helpers": "~0.7.0",
+        "handlebars-helpers": "^0.7.7",
         "swag": "~0.7.0"
     },
     "keywords": [
         "handlebars-helper-rel"
     ],
     "dependencies": {
+        "coffeescript": "^2.7.0",
         "handlebars": "^4.7.2"
     }
 }

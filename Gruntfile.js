@@ -21,6 +21,8 @@
 
 module.exports = function(grunt) {
 
+
+
     // == 1. Load task libraries
 
     grunt.loadNpmTasks('grunt-assemble');
@@ -72,7 +74,7 @@ module.exports = function(grunt) {
                 helpers:    [
                                 'handlebars-helper-asset',
                                 'handlebars-helper-rel',
-                                'src/scripts/rend-helper.js'
+                                'src/scripts/exam-helper.js'
                             ],
           
                 site:       {
@@ -85,8 +87,7 @@ module.exports = function(grunt) {
             // Patterns - uses /src/_layouts/pattern.hbs
             patterns: {
                 options: {
-                    layout: 'pattern.hbs',
-                    helpers: ['src/scripts/rend-helper.js'],
+                    layout: 'pattern.hbs'
                 },
                 files: [{
                     expand: true,
@@ -106,6 +107,19 @@ module.exports = function(grunt) {
                 }]
             },
 
+            // Standalone example pages 
+            docexamples: {
+                    options: {
+                        layout: 'example.hbs'
+                },
+                files: [{
+                    expand: true,
+                    cwd:    'src/patterns/'  ,
+                    src:    ['*/*__example.html'],
+                    dest:   'docs/patterns/',
+                    ext:    '.html'
+                }]
+            },
             // Example pages - uses /src/_layouts/example.hbs
             examples: {
                 options: {
@@ -124,8 +138,7 @@ module.exports = function(grunt) {
             // General guidance pages - uses /src/_layouts/doc.hbs
             docs: {
                 options: {
-                    layout: 'doc.hbs',
-                    helpers: ['src/scripts/rend-helper.js'],
+                    layout: 'doc.hbs'
                 },
                 files: [{
                     expand: true,
@@ -173,6 +186,9 @@ module.exports = function(grunt) {
             },
             styles: {
                 src: ["core/styles"]
+            },
+            examples: {
+                 src: ["src/patterns/*/*__example.html"]
             },
             core: {
                 src: ["core"]
@@ -248,10 +264,8 @@ module.exports = function(grunt) {
                     //'src/scripts/vendor/bootstrap/scrollspy.js',
                     'src/scripts/vendor/bootstrap/modal.js',
                     'src/scripts/vendor/bootstrap/tooltip.js',
-                    'src/scripts/vendor/bootstrap/popover.js',
-                    
+                    'src/scripts/vendor/bootstrap/popover.js',                  
                     'src/scripts/vendor/enquire.js',
-'src/scripts/rend-helper.js',
                     // DPL-specific scripts
                     'src/scripts/base.js',
                     'src/scripts/unbreakableSpaces.js',
@@ -313,7 +327,6 @@ module.exports = function(grunt) {
                     'src/scripts/unbreakableSpaces.js',
                     'src/patterns/*/*.js', // This includes all JS in patterns.
 
-                    'src/scripts/rend-helper.js',
                     //'src/scripts/datatables.js',
                     'src/scripts/application.js'
                 ],
@@ -325,8 +338,7 @@ module.exports = function(grunt) {
                     // Autocomplete scripts for Funnelback search
                     'src/scripts/vendor/typeahead.bundle-0.11.1.min.js',
                     'src/scripts/vendor/handlebars-4.0.5.min.js',
-                    'src/scripts/vendor/funnelback.autocompletion-2.6.0.js',
-                    'src/scripts/rend-helper.js',
+                    'src/scripts/vendor/funnelback.autocompletion-2.6.0.js'
                 ],
                 dest: 'core/scripts/doc.js'
             }
@@ -508,6 +520,7 @@ module.exports = function(grunt) {
     // core – builds the core assets from source
     grunt.registerTask('core', [
         'clean:core',
+        'clean:examples',
         'compass',
         'jshint',
         'concat',
@@ -523,9 +536,11 @@ module.exports = function(grunt) {
     // docs – builds the documentation, makes use of build too.
     grunt.registerTask('docs', [
         'clean:docs',
+        'clean:examples',
         'assemble:patterns',
         'assemble:examples',
         'assemble:docs',
+        'assemble:docexamples',
         'copy:docs_core',
         'copy:docs_images'
     ]);
