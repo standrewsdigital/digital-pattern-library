@@ -2,8 +2,8 @@
 
 # Digital pattern library
 
-Version 1.27.2
-Last updated: Thursday 30 June 2022
+Version 1.27.3
+Last updated: Tuesday 04 October 2022
 
 <!-- MarkdownTOC -->
 

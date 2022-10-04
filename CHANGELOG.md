@@ -9,6 +9,23 @@ Changes are grouped under the labels: `Added`, `Changed`, `Deprecated`,
 
 ---
 
+## v.1.27.3
+
+Release date: Tuesday 04 October 2022
+
+### Changed
+* Headings not properly structured
+* Various other accessibility changes
+
+### Fixed
+* Links, images and inline iFrames without text alternatives on Docs and Patterns pages
+* Colour contrast issues
+* Docs and example pages missing Page title and headings
+* Empty container elements
+* Various other accessibility fixes
+
+---
+
 ## v.1.27.2
 
 Release date: Thursday 30 June 2022
