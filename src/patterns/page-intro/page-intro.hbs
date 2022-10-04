@@ -16,7 +16,7 @@
             {{/if}}
             {{#if form}}
             <div class="search-bar search-bar__constrained search-bar__blue">
-                <h3 class="search-bar__heading">Search this section</h3>
+                <h2 class="search-bar__heading">Search this section</h2>
                 <form class="dpl-form" action="">
                     <div class="input-group input-group-lg">                        
                         <input id="banner-search-constrained" class="form-control" type="text" title="Enter search keywords" maxlength="256" name="search" placeholder="Search by keyword or phrase">
@@ -36,7 +36,7 @@
         {{#if image}}
         <div class="page-intro__media">
             <figure class="page-intro__media-wrapper">
-                <img src="{{image}}" />
+                <img src="{{image}}" alt="{{alttext}}" />
                 {{#if caption}}
                 {{{caption}}}
                 {{/if}}

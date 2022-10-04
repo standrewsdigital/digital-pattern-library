@@ -6,7 +6,7 @@
             "option-anchor": "option-one",
             "title": "Honours modules",
             "subtext": "You can take this degree as part of a joint Honours degree alongside one of the following subjects from each column.",
-		    "column_1": "<h4>If you are taking:</h4><ul><li>Arabic</li></ul>",
+		    "column_1": "<h3>If you are taking:</h3><ul><li>Arabic</li></ul>",
             "column_2": "<h4>You can also take one modern language:</h4><ul><li><a href='#'>German</a></li><li><a href='#'>French</a></li><li><a href='#'>German</a></li></ul>",
             "column_3": "<h4>And one other subject:</h4><ul><li><a href='#'>Middle eastern studies</a></li><li><a href='#'>International Relations</a></li></ul>"
         }

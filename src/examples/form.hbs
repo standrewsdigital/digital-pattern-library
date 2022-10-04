@@ -21,7 +21,7 @@ title: Example form elements page
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <h3>Options</h3>
+            <h2>Options</h2>
             <ul>
                 <li><a href="#signin">Sign in</a></li>
                 <li><a href="#personal">Personal details</a></li>
@@ -32,46 +32,46 @@ title: Example form elements page
     </div>
     <div class="row">
         <div class="col-sm-6">
-            <form class="dpl-form">
+            <div class="dpl-form">
                 <fieldset>
                     <legend id="signin"><h3 class="keyline--bottom">Sign in</h3></legend>
                     <div class="form-group">
                         <label class="control-label" for="username">Username</label>
-                        <input class="form-control" id="username" type="text" required>
+                        <input class="form-control" id="username" type="text" name="username" required>
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="password">Password</label>
-                        <input class="form-control" id="password" type="password" required>
+                        <input class="form-control" id="password" type="password" name="password" required>
                     </div>
-                    <button class="btn btn-action" type="submit">Submit</button>
+                    <button class="btn btn-lg btn-primary" type="submit">Submit</button>
                 </fieldset>
-            </form>
+            </div>
 
             <hr />
 
-            <form class="dpl-form">
-                <fieldset><legend id="personal"><h1>Personal details</h1></legend>
+            <div class="dpl-form">
+                <fieldset><legend id="personal"><h3>Personal details</h3></legend>
                     <div class="form-group">
                         <label class="control-label" for="title">Title</label>
-                        <input class="form-control" id="title" type="text" required>
+                        <input class="form-control" id="title" type="text" name="title" required>
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="firstName">First name</label>
-                        <input class="form-control" id="firstName" type="text" required>
+                        <input class="form-control" id="firstName" type="text" name="firstName" required>
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="lastName">Last name</label>
-                        <input class="form-control" id="lastName" type="text" required>
+                        <input class="form-control" id="lastName" type="text" name="lastName" required>
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="dob">Date of birth</label>
-                        <span class="help-block">Enter the date in the following format, 'DD/MM/YYYY'.</span>
-                        <input class="form-control" id="dob" type="text" required>
+                        <div class="help-block" id="help-dob-hint">Enter the date in the following format, 'DD/MM/YYYY'.</div>
+                        <input class="form-control" id="dob" type="text" aria-describedby="help-dob-hint" name="dob" required>
                     </div>
                     <div class="form-group">
-                        <fieldset class="radio-button">
+                        <fieldset class="radio-button" aria-describedby="help-radio-stacked">
                             <legend><span class="font-weight--bold">Options</span></label>
-                            <span class="help-block">How many fudge doughnuts would you like?</span>
+                            <p class="help-block" id="help-radio-stacked">How many fudge doughnuts would you like?</p>
                             <ul>
                                 <li>
                                     <input class="conditional-radio" type="radio" value="default" id="option1-radio-conditional" name="conditional">
@@ -102,8 +102,8 @@ title: Example form elements page
                     </div>
                     <div class="form-group select-box">
                         <label class="form-label" for="select-box">Status</label>
-                        <span class="help-block">Please select your student status.</span>
-                        <select class="conditional-select form-control" id="select-box" name="select-box">
+                        <p class="help-block" id="help-select-box">Please select your student status.</p>
+                        <select class="conditional-select form-control" id="select-box" name="select-box" aria-describedby="help-select-box">
                             <option value="">Please select one of the following…</option>
                             <option value="ug">Undergraduate</option>
                             <option value="pgr">Research postgraduate</option>
@@ -115,29 +115,29 @@ title: Example form elements page
                             <input class="form-control" id="conditional-input2" type="text">
                         </div>
                     </div>
-                    <button class="btn btn-primary" type="submit">Submit</button>
+                    <button class="btn btn-lg btn-primary" type="submit">Submit</button>
 
                 </fieldset>
-            </form>
+            </div>
 
             <hr />
 
-            <form class="dpl-form">
-                <fieldset><legend id="address"><h2>Address</h2></legend>
+            <div class="dpl-form">
+                <fieldset><legend id="address"><h3>Address</h3></legend>
 
                     <div class="form-group">
                         <label class="control-label" for="address1">Address line 1</label>
-                        <input class="form-control" id="address1" type="text" required>
+                        <input class="form-control" id="address1" type="text" name="address1" required>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="address2">Address line 2 (optional)</label>
-                        <input class="form-control" id="address2" type="text">
+                        <input class="form-control" id="address2" type="text" name="address2">
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group select-box">
                         <label class="form-label" for="country">Country</label>
-                        <select class="form-control" id="country">
+                        <select class="form-control" id="country" name="country">
                             <option value="">Please select one of the following...</option>
                             <option value="AFG">Afghanistan</option>
                             <option value="ALA">Åland Islands</option>
@@ -155,24 +155,24 @@ title: Example form elements page
 
                     <div class="form-group">
                         <label class="control-label" for="city">Town / city</label>
-                        <input class="form-control" id="city" type="text" required>
+                        <input class="form-control" id="city" type="text" name="city" required>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="county">County / state / province / region</label>
-                        <input class="form-control" id="county" type="text" required>
+                        <input class="form-control" id="county" type="text" name="county" required>
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label" for="Postcode">Postcode / zipcode</label>
-                        <span class="help-block">Enter your postcode without any spaces. For example, 'KY169AL'.</span>
-                        <input class="form-control" id="postcode" type="text" required>
+                        <label class="control-label" for="postcode">Postcode / zipcode</label>
+                        <div class="help-block" id="help-postcode-hint">Enter your postcode without any spaces. For example, 'KY169AL'.</div>
+                        <input class="form-control" id="postcode" type="text" aria-describedby="help-postcode-hint" name="postcode" required>
                     </div>
 
                     <button type="submit" class="btn btn-lg btn-primary">Submit</button>
 
                 </fieldset>
-            </form>
+            </div>
 
         </div>
     </div>

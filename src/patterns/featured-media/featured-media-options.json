@@ -7,6 +7,7 @@
            "heading": "This is the heading of the section",
            "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat.</p><p>Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor.</p>",
             "image": "../../assets/docs/images/placeholders/750x500.png",
+            "alttext":"750 by 500px place holder image",
             "cta": true,
             "media-alignment": " featured-media--right",
             "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
@@ -19,6 +20,7 @@
            "heading": "This is the heading of the section",
            "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. <a href='#'>Nulla non enim</a> nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat.</p><p>Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor.</p>",
             "image": "../../assets/docs/images/placeholders/750x500.png",
+            "alttext":"750 by 500px place holder imagee",
             "cta": true,
             "media-alignment": " featured-media--left",
             "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
@@ -31,6 +33,7 @@
             "media-alignment": " container",
             "bodytext": "<p>Research at St Andrews explores effective altruism, a rapidly growing social movement which encourages us to do the most good we can with the money and time available.</p>",
             "image": "../../assets/docs/images/placeholders/750x500.png",
+            "alttext":"750 by 500px place holder image",
             "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
         },
         {
