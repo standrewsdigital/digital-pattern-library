@@ -31,23 +31,25 @@ var root = document.documentElement;
 // Check if sticky content is being used on the page before loading it
 if(document.body.contains(document.getElementById('sta-contents-sticky'))){
     var currentSection = document.querySelector('#sticky-nav__active-section');
-    var spy = new Gumshoe('#sta-contents-sticky a', {
-        reflow: true
-    });
+    if(currentSection){
+        var spy = new Gumshoe('#sta-contents-sticky a', {
+            reflow: true
+        });
 
-    // Listen for activate events
-    document.addEventListener('gumshoeActivate', function (event) {
-        var link = event.detail.link.innerHTML;
-        currentSection.innerHTML = link;
+        // Listen for activate events
+        document.addEventListener('gumshoeActivate', function (event) {
+            var link = event.detail.link.innerHTML;
+            currentSection.innerHTML = link;
 
-    }, false);
-    // Listen for deactivate events
-    document.addEventListener('gumshoeDeactivate', function (event) {
+        }, false);
+        // Listen for deactivate events
+        document.addEventListener('gumshoeDeactivate', function (event) {
 
-        var link = event.detail.link.innerHTML;
-        currentSection.innerHTML = "";
+            var link = event.detail.link.innerHTML;
+            currentSection.innerHTML = "";
 
-    }, false);
+        }, false);
+    }
 }
 
 /*
