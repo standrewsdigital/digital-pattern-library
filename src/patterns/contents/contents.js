@@ -23,12 +23,14 @@ $('#nav-top').affix({
 });
 
 var header = document.querySelector('#nav-top');
-var currentSection = document.querySelector('#sticky-nav__active-section');
 */
+
+
 var root = document.documentElement;
 
 // Check if sticky content is being used on the page before loading it
 if(document.body.contains(document.getElementById('sta-contents-sticky'))){
+    var currentSection = document.querySelector('#sticky-nav__active-section');
     var spy = new Gumshoe('#sta-contents-sticky a', {
         reflow: true
     });
