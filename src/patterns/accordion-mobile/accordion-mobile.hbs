@@ -1,0 +1,19 @@
+<ul class="accordion-group">
+    {{#each accordion}}
+    {{{../accordion-item-open}}}
+        <div class="accordion-item__toggle">
+            <h3 class="accordion-item__toggle-title">
+                <button class="accordion-item__toggle-button">{{accordion-heading}}</button>
+            </h3>
+        </div>
+        {{!-- {{#each accordion-content}} --}}
+        <div class="accordion-item__content" aria-hidden="true">
+                    {{#each accordion-content}}
+                        <input type='checkbox' id='{{this.id}}'>
+                        <label for='{{this.id}}'>{{this.label}}</label><br>
+                    {{/each}}
+        </div>
+        {{!-- {{/each}} --}}
+    {{{../accordion-item-close}}}
+    {{/each}}
+</ul>
