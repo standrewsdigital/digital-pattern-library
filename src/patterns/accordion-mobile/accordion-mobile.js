@@ -4,7 +4,6 @@
 
 
 // Assign ARIA roles for every accordion item
-// Assign ARIA roles for every accordion item
 var accordion_increment = 0;
 
 
