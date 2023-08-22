@@ -1,19 +1,19 @@
-<ul class="accordion-group">
-    {{#each accordion}}
-    {{{../accordion-item-open}}}
-        <div class="accordion-item__toggle">
-            <h3 class="accordion-item__toggle-title">
-                <button class="accordion-item__toggle-button">{{accordion-heading}}</button>
+<ul class="accordion-mobile-group">
+    {{#each accordion-mobile}}
+    {{{../accordion-mobile-item-open}}}
+        <div class="accordion-mobile-item__toggle">
+            <h3 class="accordion-mobile-item__toggle-title">
+                <button class="accordion-mobile-item__toggle-button">{{accordion-mobile-heading}}</button>
             </h3>
         </div>
-        {{!-- {{#each accordion-content}} --}}
-        <div class="accordion-item__content" aria-hidden="true">
-                    {{#each accordion-content}}
+        {{!-- {{#each accordion-content}} --}}#
+        <div class="accordion-mobile-item__content" aria-hidden="true">
+                    {{#each accordion-mobile-content}}
                         <input type='checkbox' id='{{this.id}}'>
                         <label for='{{this.id}}'>{{this.label}}</label><br>
                     {{/each}}
         </div>
         {{!-- {{/each}} --}}
-    {{{../accordion-item-close}}}
+    {{{../accordion-mobile-item-close}}}
     {{/each}}
 </ul>

@@ -5,13 +5,13 @@
             "option-description": "<p>This example shows an accordion to be used on mobile devices, without the 'open all / close all' toggle button. This could be used when an accordion only allows one accordion item to be open at a time.</p>",
             "option-anchor": "group-notoggle",
             "background-color": "sta-grey-light",
-            "accordion-group": true,
-            "accordion-item-open": "<li class='accordion-item'>",
-            "accordion-item-close": "</li>",
-            "accordion": [
+            "accordion-mobile-group": true,
+            "accordion-mobile-item-open": "<li class='accordion-item'>",
+            "accordion-mobile-item-close": "</li>",
+            "accordion-mobile": [
                 {
-                    "accordion-heading": "Teaching mode",
-                    "accordion-content": [
+                    "accordion-mobile-heading": "Teaching mode",
+                    "accordion-mobile-content": [
                         {
                             "id": "online",
                             "label": "Online"
@@ -27,8 +27,8 @@
                     ]
                 },
                 {
-                    "accordion-heading": "Duration",
-                    "accordion-content": [
+                    "accordion-mobile-heading": "Duration",
+                    "accordion-mobile-content": [
                         {
                             "id": "one-year",
                             "label": "One year"
