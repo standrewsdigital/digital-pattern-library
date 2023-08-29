@@ -1,11 +1,9 @@
 /*********************************/
-/* BEGIN Pattern: accordion      */
+/* BEGIN Pattern: accordion-mobile      */
 /*********************************/
-
 
 // Assign ARIA roles for every accordion item
 var accordion_mobile_increment = 0;
-
 
 $('.accordion-mobile-item').each(function() {
     var $this = $(this);
@@ -24,18 +22,15 @@ $('.accordion-mobile-item').each(function() {
     accordion_mobile_increment++;
 });
 
-
 // Individual accordion item toggle
 $(document).on('click', '.accordion-mobile-item__toggle', function() {
     var $this = $(this);
     var $content = $this.next('.accordion-mobile-item__content');
     var state = $this.find('.accordion-mobile-item__toggle-button').attr('aria-expanded') === 'false' ? true : false;
 
-
     // Close other accordions
     $('.accordion-mobile-item__content').not($content).slideUp(200, "linear");
     $('.accordion-mobile-item__content').not($content).prev().find('.accordion-mobile-item__toggle-button').attr('aria-expanded', 'false');
-
 
     // Toggle visibility of other accordion item toggles
     if (state) {
@@ -44,7 +39,6 @@ $(document).on('click', '.accordion-mobile-item__toggle', function() {
         $('.accordion-mobile-item__toggle').show();
     }
 
-
     // Toggle current accordion
     $content.slideToggle(200, "linear");
     $this.find('.accordion-mobile-item__toggle-button').attr('aria-expanded', state.toString());
@@ -52,11 +46,6 @@ $(document).on('click', '.accordion-mobile-item__toggle', function() {
     return false;
 });
 
-
-
-
 /*********************************/
-/* END Pattern: accordion        */
+/* END Pattern: accordion-mobile        */
 /*********************************/
-
-

@@ -6,7 +6,7 @@
             "option-anchor": "group-notoggle",
             "background-color": "sta-grey-light",
             "accordion-mobile-group": true,
-            "accordion-mobile-item-open": "<li class='accordion-item'>",
+            "accordion-mobile-item-open": "<li class='accordion-mobile-item'>",
             "accordion-mobile-item-close": "</li>",
             "accordion-mobile": [
                 {

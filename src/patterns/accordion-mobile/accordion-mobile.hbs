@@ -6,12 +6,12 @@
                 <button class="accordion-mobile-item__toggle-button">{{accordion-mobile-heading}}</button>
             </h3>
         </div>
-        {{!-- {{#each accordion-content}} --}}#
+        {{!-- {{#each accordion-content}} --}}
         <div class="accordion-mobile-item__content" aria-hidden="true">
-                    {{#each accordion-mobile-content}}
-                        <input type='checkbox' id='{{this.id}}'>
-                        <label for='{{this.id}}'>{{this.label}}</label><br>
-                    {{/each}}
+            {{#each accordion-mobile-content}}
+                <input type='checkbox' id='{{this.id}}'>
+                <label for='{{this.id}}'>{{this.label}}</label><br>
+            {{/each}}
         </div>
         {{!-- {{/each}} --}}
     {{{../accordion-mobile-item-close}}}
