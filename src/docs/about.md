@@ -47,7 +47,6 @@ Generally, the digital pattern library supports the current major desktop releas
 * Chrome
 * Edge
 * Firefox
-* Internet Explorer (version 11 only)
 * Safari
 
 ### Mobile

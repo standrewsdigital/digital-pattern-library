@@ -15,6 +15,10 @@
                         "class": "fab fa-twitter-square"
                     },
                     {
+                        "title": "Share this with X Twitter",
+                        "class": "fab fa-square-x-twitter"
+                    },
+                    {
                         "title": "Share this with Facebook Messenger",
                         "class": "fab fa-facebook-messenger"
                     },
@@ -47,6 +51,10 @@
                     {
                         "title": "Share this with Twitter",
                         "class": "fab fa-twitter-square"
+                    },
+                    {
+                        "title": "Share this with X Twitter",
+                        "class": "fab fa-square-x-twitter"
                     },
                     {
                         "title": "Share this with Facebook Messenger",
