@@ -42,7 +42,7 @@
             "option-anchor": "featured-video-centre",
             "heading": "This is an interesting video",
             "media-alignment": " container",
-            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe title='Heading goes in here (video)' src='https://www.youtube.com/embed/JxHfSwpddCU' allowfullscreen=''></iframe></div>",
+            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe title='Heading goes in here (video)' class='embed-responsive-item' data-src='https://www.youtube-nocookie.com/embed/JxHfSwpddCU' data-cc-category='functionality' referrerpolicy='strict-origin-when-cross-origin' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe></div>",
             "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
         },
         {
@@ -54,7 +54,7 @@
             "heading-link": true,
             "media-alignment": " container",
             "bodytext": "<p>Research at St Andrews explores effective altruism, a rapidly growing social movement which encourages us to do the most good we can with the money and time available.</p>",
-            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe title='Heading goes in here (video)' class='embed-responsive-item' src='https://www.youtube-nocookie.com/embed/JxHfSwpddCU'></iframe></div>"
+            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe title='Heading goes in here (video)' class='embed-responsive-item' data-src='https://www.youtube-nocookie.com/embed/JxHfSwpddCU' data-cc-category='functionality' referrerpolicy='strict-origin-when-cross-origin' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe></div>"
         },
         {
             "option-heading": "Audio with transcript",
@@ -72,7 +72,7 @@
            "heading": "This is the heading of the section",
            "heading-link": true,
            "bodytext": "<p>Nulla viverra justo vitae erat lobortis, eu consectetur risus faucibus. Nulla non enim nec eros congue eleifend. Quisque vel aliquet sapien. Duis ultricies dictum justo, et convallis nulla lacinia eget. Etiam magna mauris, pellentesque ut ornare vel, commodo et lacus. Integer rutrum non nulla sed consequat.</p><p>Etiam tincidunt vel quam id rhoncus. Suspendisse et justo at mauris tempor ornare. Ut pulvinar condimentum felis accumsan egestas. Nunc bibendum tincidunt magna, a mattis mi tincidunt nec. Ut nunc est, scelerisque in imperdiet at, maximus ut nulla. Mauris sollicitudin dui quis ante dapibus, vel tempus tellus tempor.</p>",
-            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe title='Heading goes in here (video)' class='embed-responsive-item' src='https://www.youtube-nocookie.com/embed/pscNTzAGVnk'></iframe></div>",
+            "video": "<div class='embed-responsive embed-responsive-16by9 youtube-embed'><iframe title='Heading goes in here (video)' class='embed-responsive-item' data-src='https://www.youtube-nocookie.com/embed/pscNTzAGVnk' data-cc-category='functionality' referrerpolicy='strict-origin-when-cross-origin' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe></div>",
             "media-alignment": " featured-media--left",
             "caption": "<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque hendrerit neque et tincidunt.</figcaption>"
         }

@@ -14,6 +14,9 @@ title: Video
    <li>A label <code>&lt;figcaption&gt;</code> may be included to add context to the video.</li>
 </ul>
 <p>More information on video transcripts and captions is described within <a href="https://www.st-andrews.ac.uk/digital-standards/caption-standards/">caption standards</a>.</p>
+<h2>Cookie consent for YouTube videos</h2>
+<p>YouTube embeds use <code>youtube-nocookie.com</code>, with the video URL in <code>data-src</code> and <code>data-cc-category="functionality"</code>. Keep the iframe without a <code>src</code> attribute until consent is granted.</p>
+<p>The embedding site's Civic Cookie Control integration must activate these iframes after functionality consent and unload them when consent is withdrawn. This pattern supplies the iframe markup; the site must provide the consent handling code.</p>
 <h2>Options available</h2>
 <ul>
 {{#video-options.options}}
